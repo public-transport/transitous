@@ -1,47 +1,49 @@
-from typing import List, Union
+from typing import List
 
 
 class Maintainer:
     name: str
     email: str
 
-    @staticmethod
-    def fromJson(parsed: dict):
-        maintainer = Maintainer()
-        maintainer.name = parsed["name"]
-        maintainer.email = parsed["email"]
-        return maintainer
+    def __init__(self, parsed: dict):
+        self.name = parsed["name"]
+        self.email = parsed["email"]
 
 
-class TransitlandSource:
+class Source:
+    name: str
+    fix: bool = False
+
+    def __init__(self, parsed: dict = None):
+        if parsed:
+            self.name = parsed["name"]
+            if "fix" in parsed:
+                self.fix = bool(parsed["fix"])
+
+
+class TransitlandSource(Source):
     transitland_atlas_id: str
 
-    @staticmethod
-    def fromJson(parsed: dict):
-        source = TransitlandSource()
-        source.transitland_atlas_id = parsed["transitland-atlas-id"]
-        return source
+    def __init__(self, parsed: dict):
+        super().__init__(parsed)
+        self.transitland_atlas_id = parsed["transitland-atlas-id"]
 
 
-class HttpSource:
+class HttpSource(Source):
     url: str
 
-    @staticmethod
-    def fromJson(parsed: dict):
-        source = HttpSource()
-        source.url = parsed["url"]
-        return source
-
-
-Source = Union[TransitlandSource, HttpSource]
+    def __init__(self, parsed: dict = None):
+        if parsed:
+            super().__init__(parsed)
+            self.url = parsed["url"]
 
 
 def sourceFromJson(parsed: dict) -> Source:
     match parsed["type"]:
         case "transitland-atlas":
-            return TransitlandSource.fromJson(parsed)
+            return TransitlandSource(parsed)
         case "http":
-            return HttpSource.fromJson(parsed)
+            return HttpSource(parsed)
 
     return None
 
@@ -50,9 +52,6 @@ class Region:
     maintainers: List[Maintainer]
     sources: Source
 
-    @staticmethod
-    def fromJson(parsed: dict):
-        region = Region()
-        region.maintainers = map(Maintainer.fromJson, parsed["maintainers"])
-        region.sources = map(sourceFromJson, parsed["sources"])
-        return region
+    def __init__(self, parsed: dict):
+        self.maintainers = map(Maintainer, parsed["maintainers"])
+        self.sources = map(sourceFromJson, parsed["sources"])

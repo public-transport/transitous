@@ -7,8 +7,25 @@
     ],
     "sources": [
         {
+            "name": "pv",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-pv~lv"
+        },
+        {
+            "name": "rigas-satiksme",
+            "type": "http",
+            "url": "https://gtfs.pro/files/uran/improved-gtfs-satiksme.zip"
+        },
+        {
+            "name": "rigas-saraksti",
+            "type": "http",
+            "url": "https://gtfs.pro/files/uran/improved-gtfs-saraksti.zip"
+        },
+        {
+            "name": "valsts-sia-autotransporta",
+            "type": "http",
+            "url": "https://www.atd.lv/sites/default/files/GTFS/gtfs-latvia-lv.zip",
+            "fix": true
         }
     ]
 }

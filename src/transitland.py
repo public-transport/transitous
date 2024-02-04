@@ -19,8 +19,8 @@ class Atlas:
 
         return atlas
 
-    def source_by_id(self, feed_id: str) -> HttpSource:
-        feed = self.by_id[feed_id]
+    def source_by_id(self, source: TransitlandSource) -> HttpSource:
+        feed = self.by_id[source.transitland_atlas_id]
         http_source = HttpSource()
         http_source.url = feed["urls"]["static_current"]
         return http_source

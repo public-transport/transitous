@@ -18,7 +18,7 @@ class Fetcher:
     def fetch_source(self, name: str, source: Source) -> Path:
         match source:
             case TransitlandSource():
-                http_source = self.transitland_atlas.source_by_id(source.transitland_atlas_id)
+                http_source = self.transitland_atlas.source_by_id(source)
                 return self.fetch_source(name, http_source)
             case HttpSource():
                 content = requests.get(source.url).content
@@ -36,7 +36,7 @@ class Fetcher:
         print("Uknown data source", source, file=sys.stderr)
         assert False
 
-    def postprocess(self, path: Path):
+    def postprocess(self, source: Source, path: Path):
         tmpdir = Path("transitious-gtfs-tmpdir")
         outdir = Path("out")
 
@@ -50,27 +50,28 @@ class Fetcher:
 
         output_file_path = str(outdir.absolute() / path.name)
 
-        subprocess.call(["gtfstidy", str(path.absolute()), "--output", output_file_path], cwd=tmpdir)
+        command = ["gtfstidy", str(path.absolute()), "--output", output_file_path]
+        if source.fix:
+            command.append("--fix")
+
+        subprocess.call(command, cwd=tmpdir)
 
         shutil.rmtree(tmpdir)
 
     def fetch(self, metadata: Path):
-        region = Region.fromJson(json.load(open(metadata, "r")))
+        region = Region(json.load(open(metadata, "r")))
+        metadata_filename = metadata.name
+        region_name = metadata_filename[:metadata_filename.rfind('.')]
 
-        i = 0
+        print(f"Fetching {region_name}…")
+
         for source in region.sources:
-            metadata_filename = metadata.name
-            region_name = metadata_filename[:metadata_filename.rfind('.')]
-            download_name = f"{region_name}_{i}"
-
-            print(f"Fetching {region_name}…")
+            download_name = f"{region_name}_{source.name}"
 
             dest_path = self.fetch_source(download_name, source)
 
             print(f"Postproccing {region_name} with gtfstidy…")
-            self.postprocess(dest_path)
-
-            i += 1
+            self.postprocess(source, dest_path)
 
 
 if __name__ == "__main__":
