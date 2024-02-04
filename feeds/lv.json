@@ -1,0 +1,14 @@
+{
+    "maintainers": [
+        {
+            "name": "Jonah Brüchert",
+            "github": "jbbgameich"
+        }
+    ],
+    "sources": [
+        {
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-pv~lv"
+        }
+    ]
+}
