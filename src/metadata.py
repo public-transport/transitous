@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: 2023 Jonah Brüchert <jbb@kaidan.im>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
 from typing import List
 
 
