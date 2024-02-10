@@ -1,0 +1,9 @@
+# SPDX-FileCopyrightText: 2024 Jonah Brüchert <jbb@kaidan.im>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+motis:
+  hosts:
+    spline-vm-motis:
+      ansible_user: root
+      ansible_host: 130.133.110.196

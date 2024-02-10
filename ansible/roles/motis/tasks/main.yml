@@ -1,0 +1,43 @@
+# SPDX-FileCopyrightText: 2024 Jonah Brüchert <jbb@kaidan.im>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+- name: Create MOTIS user
+  user:
+    name: motis
+
+- name: Unpack MOTIS
+  unarchive:
+    src: https://github.com/motis-project/motis/releases/download/v0.11.14/motis-linux-amd64.tar.bz2
+    dest: /opt/
+    remote_src: yes
+
+- name: Create MOTIS runtime directory
+  file:
+    path: /var/lib/motis
+    owner: motis
+    group: motis
+    state: directory
+
+- name: Copy MOTIS config file
+  copy:
+    src: config.ini
+    dest: /var/lib/motis/config.ini
+
+- name: Copy MOTIS systemd service
+  copy:
+    src: motis.service
+    dest: /etc/systemd/system/motis.service
+
+# - name: Download Europe
+#   get_url:
+#     url: https://download.geofabrik.de/europe-latest.osm.pbf
+#     dest: /var/lib/motis/europe-latest.osm.pbf
+
+- name: Enable motis systemd service
+  systemd:
+    name: motis.service
+    enabled: true
+    state: started
+    masked: false
+    daemon_reload: true

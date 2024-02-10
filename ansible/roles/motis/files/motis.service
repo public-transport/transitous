@@ -1,0 +1,17 @@
+# SPDX-FileCopyrightText: 2024 Jonah Brüchert <jbb@kaidan.im>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+[Unit]
+Description=MOTIS public transport router
+After=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/opt/motis/motis -c /var/lib/motis/config.ini
+Restart=always
+User=motis
+WorkingDirectory=/var/lib/motis
+
+[Install]
+WantedBy=multi-user.target
