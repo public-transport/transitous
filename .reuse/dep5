@@ -1,0 +1,8 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Transitous
+Source: https://github.com/public-transport/transitous/
+
+Files: feeds/*.json
+Copyright: none
+License: CC0-1.0
+
