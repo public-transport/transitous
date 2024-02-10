@@ -17,3 +17,8 @@ routing service that:
 ## Contact
 
 * Matrix channel: [#opentransport:matrix.org](https://matrix.to/#/#opentransport:matrix.org) (for now)
+
+<!--
+SPDX-License-Identifier: CC0-1.0
+SPDX-FileCopyrightText: none
+-->
