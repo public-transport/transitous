@@ -7,3 +7,7 @@ motis:
     spline-vm-motis:
       ansible_user: root
       ansible_host: 130.133.110.196
+      cert_domains:
+        - transitous.jbb.ghsq.de
+        - api.transitous.jbb.ghsq.de
+      email: jbb@kaidan.im

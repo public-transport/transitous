@@ -1,0 +1,69 @@
+# SPDX-FileCopyrightText: 2024 Jonah Brüchert <jbb@kaidan.im>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+- name: Install nginx
+  apt:
+    name: nginx
+
+- name: Make sure nginx is running
+  systemd:
+    name: nginx.service
+    state: started
+#
+# - name: Install certbot
+#   apt:
+#     name: certbot
+#
+# - name: Check if certificate already exists.
+#   stat:
+#     path: /etc/letsencrypt/live/{{ cert_domains | first | replace('*.', '') }}/cert.pem
+#   register: letsencrypt_cert
+#
+# - name: Generate new certificate if one doesn't exist.
+#   command: >-
+#     certbot certonly --noninteractive --agree-tos --dry-run
+#     --email {{ email }}
+#     -w /var/www/html/
+#     -d {{ cert_domains | join(',') }}
+#     --webroot
+#     --expand
+#   when: not letsencrypt_cert.stat.exists
+#
+# - name: Enable automatic certificate renewal
+#   service:
+#     name: certbot.timer
+#     enabled: true
+#     masked: false
+
+- name: Install nginx config
+  copy:
+    src: nginx.conf
+    dest: /etc/nginx/nginx.conf
+
+- name: Install site config
+  copy:
+    src: "{{ item }}.conf"
+    dest: "/etc/nginx/sites-available/{{ item }}.conf"
+  with_items:
+    - transitous.jbb.ghsq.de
+    - api.transitous.jbb.ghsq.de
+
+- name: Disable default site configuration
+  file:
+    path: /etc/nginx/sites-enabled/default
+    state: absent
+
+- name: Enable nginx sites
+  file:
+    src: "/etc/nginx/sites-available/{{ item }}.conf"
+    dest: "/etc/nginx/sites-enabled/{{ item }}.conf"
+    state: link
+  with_items:
+    - transitous.jbb.ghsq.de
+    - api.transitous.jbb.ghsq.de
+
+- name: Reload nginx
+  systemd:
+    name: nginx.service
+    state: reloaded
