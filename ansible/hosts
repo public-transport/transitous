@@ -6,7 +6,7 @@ motis:
   hosts:
     spline-vm-motis:
       ansible_user: root
-      ansible_host: 130.133.110.196
+      ansible_host: vm-motis.spline.de
       cert_domains:
         - transitous.jbb.ghsq.de
         - api.transitous.jbb.ghsq.de
