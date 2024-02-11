@@ -37,7 +37,7 @@ class Fetcher:
 
                 return dest_path
 
-        print("Uknown data source", source, file=sys.stderr)
+        print("Unknown data source", source, file=sys.stderr)
         assert False
 
     def postprocess(self, source: Source, path: Path):
