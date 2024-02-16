@@ -18,13 +18,9 @@ dataset.no_schedule=true
 host=127.0.0.1
 
 [import]
-{% if pbf_file %}
-paths=osm:{{ pbf_file }}
-{% endif %}
-{% for feed in gtfs_feeds %}
-paths=schedule-{{ feed.id }}:{{ feed.path }}
+{% if pbf_file %}paths=osm:{{ pbf_file }}{% endif %}
+{% for feed in gtfs_feeds %}paths=schedule-{{ feed.id }}:{{ feed.path }}
 {% endfor %}
-
 [nigiri]
 first_day=TODAY
 num_days=365
