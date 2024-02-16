@@ -4,6 +4,7 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 import sys
+import os
 from pathlib import Path
 import subprocess
 
@@ -20,9 +21,16 @@ match run_reason:
         for feed in feed_dir.glob("*.json"):
             subprocess.check_call(["./src/fetch.py", str(feed.absolute())])
     case "merge-request":
+        # Silence warnings about different ownerships inside and outside of the
+        # container on actions
+        subprocess.check_call(
+            ["git", "config", "--global",
+             "--add", "safe.directory", os.getcwd()])
+
+        # Find all files that were changed in the latest commit
         changed_files = subprocess.check_output(
-            ["git", "diff", "--name-only", "-r", "HEAD^1", "HEAD"]) \
-                .decode().splitlines()
+            ["git", "diff", "--name-only", "origin/main", "HEAD"]) \
+            .decode().splitlines()
 
         changed_feeds = [f for f in changed_files if
                          f.startswith("feeds/") and f.endswith(".json")]
