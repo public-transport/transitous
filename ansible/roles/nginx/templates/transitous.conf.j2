@@ -26,5 +26,11 @@ server {
 
     location /api/ {
         proxy_pass http://localhost:8080/;
+
+        proxy_cache            motis;
+        proxy_cache_valid      200 302 404 5d;
+        proxy_cache_use_stale  error timeout invalid_header updating
+                                http_500 http_502 http_503 http_504;
+
     }
 }

@@ -11,6 +11,11 @@
     name: nginx.service
     state: started
 
+- name: Create nginx cache directory
+  file:
+    path: /var/cache/nginx
+    state: directory
+
 - name: Install nginx config
   copy:
     src: nginx.conf
