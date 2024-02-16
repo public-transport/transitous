@@ -10,10 +10,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Check out code
-      uses: actions/checkout@v3
-    - name: Fetch submodules
-      run: git submodule update --init --checkout --remote
+      uses: actions/checkout@v4
+    - name: Fetch branches and submodules
+      run: git fetch --unshallow && git fetch --all && git submodule update --init --checkout --remote
     - name: Build docker images
       run: docker build -t transitous . -f ci/container/Containerfile
-    - name: Verify that new feeds can be downloaded
+    - name: Verify that new feeds can be downloaded and parsed
       run: docker run -v $PWD:/transitous -w /transitous transitous ci/fetch-feeds.py merge-request
