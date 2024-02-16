@@ -1,0 +1,30 @@
+# SPDX-FileCopyrightText: 2024 Jonah Brüchert <jbb@kaidan.im>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+server {
+    listen 443 http2 ssl;
+    listen [::]:443 http2 ssl;
+
+    {% if transitous_nginx_site_include_extra %}
+    include '{{ transitous_nginx_site_include_extra }}';
+    {% endif %}
+
+    server_name {{ transitous_domain }};
+
+    location ~ ^/$ {
+        if ($arg_motis != https%3A%2F%2F{{ transitous_domain }}%2Fapi) {
+                return 301 https://$host?motis=https%3A%2F%2F{{ transitous_domain }}%2Fapi;
+        }
+
+        root /opt/motis/web/;
+    }
+
+    location / {
+        root /opt/motis/web/;
+    }
+
+    location /api/ {
+        proxy_pass http://localhost:8080/;
+    }
+}

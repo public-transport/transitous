@@ -7,7 +7,5 @@ motis:
     spline-vm-motis:
       ansible_user: root
       ansible_host: vm-motis.spline.de
-      cert_domains:
-        - transitous.jbb.ghsq.de
-        - api.transitous.jbb.ghsq.de
-      email: jbb@kaidan.im
+      transitous_nginx_site_include_extra: /etc/ssl/routing.spline.inf.fu-berlin.de/include.nginx
+      transitous_domain: routing.spline.de

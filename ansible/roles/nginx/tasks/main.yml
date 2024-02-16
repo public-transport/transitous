@@ -10,31 +10,6 @@
   systemd:
     name: nginx.service
     state: started
-#
-# - name: Install certbot
-#   apt:
-#     name: certbot
-#
-# - name: Check if certificate already exists.
-#   stat:
-#     path: /etc/letsencrypt/live/{{ cert_domains | first | replace('*.', '') }}/cert.pem
-#   register: letsencrypt_cert
-#
-# - name: Generate new certificate if one doesn't exist.
-#   command: >-
-#     certbot certonly --noninteractive --agree-tos --dry-run
-#     --email {{ email }}
-#     -w /var/www/html/
-#     -d {{ cert_domains | join(',') }}
-#     --webroot
-#     --expand
-#   when: not letsencrypt_cert.stat.exists
-#
-# - name: Enable automatic certificate renewal
-#   service:
-#     name: certbot.timer
-#     enabled: true
-#     masked: false
 
 - name: Install nginx config
   copy:
@@ -42,12 +17,9 @@
     dest: /etc/nginx/nginx.conf
 
 - name: Install site config
-  copy:
-    src: "{{ item }}.conf"
-    dest: "/etc/nginx/sites-available/{{ item }}.conf"
-  with_items:
-    - transitous.jbb.ghsq.de
-    - api.transitous.jbb.ghsq.de
+  template:
+    src: "transitous.conf.j2"
+    dest: "/etc/nginx/sites-available/transitous.conf"
 
 - name: Disable default site configuration
   file:
@@ -56,12 +28,9 @@
 
 - name: Enable nginx sites
   file:
-    src: "/etc/nginx/sites-available/{{ item }}.conf"
-    dest: "/etc/nginx/sites-enabled/{{ item }}.conf"
+    src: "/etc/nginx/sites-available/transitous.conf"
+    dest: "/etc/nginx/sites-enabled/transitous.conf"
     state: link
-  with_items:
-    - transitous.jbb.ghsq.de
-    - api.transitous.jbb.ghsq.de
 
 - name: Reload nginx
   systemd:
