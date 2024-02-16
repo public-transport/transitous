@@ -1,0 +1,15 @@
+{
+    "maintainers": [
+        {
+            "name": "Jonah Brüchert",
+            "github": "jbbgameich"
+        }
+    ],
+    "sources": [
+        {
+            "name": "vbb",
+            "type": "http",
+            "url": "https://www.vbb.de/fileadmin/user_upload/VBB/Dokumente/API-Datensaetze/gtfs-mastscharf/GTFS.zip"
+        }
+    ]
+}
