@@ -1,0 +1,21 @@
+# SPDX-FileCopyrightText: 2024 Jonah Brüchert <jbb@kaidan.im>
+# SPDX-License-Identifier: CC0-1.0
+
+name: Import data
+
+on: [push, workflow_dispatch]
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out code
+      uses: actions/checkout@v3
+    - name: Fetch submodules
+      run: git submodule update --init --checkout --remote
+    - name: Build docker images
+      run: docker build -t transitous . -f ci/container/Containerfile
+    - name: Fetch GTFS-Feeds
+      run: docker run -v $PWD:/transitous -w /transitous transitous ci/fetch-feeds.py timer
+    - name: Generate MOTIS config file
+      run: docker run --env PYTHONPATH=src -v $PWD:/transitous -w /transitous transitous ci/generate-motis-config.py

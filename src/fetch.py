@@ -68,15 +68,19 @@ class Fetcher:
         metadata_filename = metadata.name
         region_name = metadata_filename[:metadata_filename.rfind('.')]
 
-        print(f"Fetching {region_name}…")
-
         for source in region.sources:
             download_name = f"{region_name}_{source.name}"
 
+            print(f"Fetching {region_name}-{source.name}…")
+            sys.stdout.flush()
             dest_path = self.fetch_source(download_name, source)
 
-            print(f"Postproccing {region_name} with gtfstidy…")
+            print(f"Postproccing {region_name}-{source.name} with gtfstidy…")
+            sys.stdout.flush()
             self.postprocess(source, dest_path)
+
+            print()
+            sys.stdout.flush()
 
 
 if __name__ == "__main__":

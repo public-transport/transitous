@@ -1,0 +1,19 @@
+# SPDX-FileCopyrightText: 2024 Jonah Brüchert <jbb@kaidan.im>
+# SPDX-License-Identifier: CC0-1.0
+
+name: Verfy new data can be imported
+
+on: [pull_request]
+
+jobs:
+  test-import:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out code
+      uses: actions/checkout@v3
+    - name: Fetch submodules
+      run: git submodule update --init --checkout --remote
+    - name: Build docker images
+      run: docker build -t transitous . -f ci/container/Containerfile
+    - name: Verify that new feeds can be downloaded
+      run: docker run -v $PWD:/transitous -w /transitous transitous ci/fetch-feeds.py merge-request
