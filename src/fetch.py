@@ -61,6 +61,20 @@ class Fetcher:
         subprocess.call(command, cwd=tmpdir)
 
         shutil.rmtree(tmpdir)
+        
+        if os.path.exists("/input/schedule/"):
+            shutil.copy(output_file_path, "/input/schedule/")
+            
+            # TODO: write a motis ini class
+            if not os.path.exists("/input/config.ini"):
+                with open('/input/config.ini', 'a') as config_ini:
+                    config_ini.write("[import]\n")
+                    config_ini.write("data_dir=/data\n")
+                    config_ini.write("paths=osm:/input/osm.pbf\n")
+
+            
+            with open('/input/config.ini', 'a') as config_ini:
+                config_ini.write(f"paths=schedule-{path.name.split('.')[0].replace('_','-')}:/input/schedule/{path.name}\n")
 
     def fetch(self, metadata: Path):
         region = Region(json.load(open(metadata, "r")))

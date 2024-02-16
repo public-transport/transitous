@@ -1,0 +1,19 @@
+#!/bin/sh
+
+fetch() {
+    cd /tools
+    PATH=$PATH:$HOME/go/bin
+    python src/fetch.py feeds/$1
+}
+
+
+case $1 in
+    "fetch" )
+        fetch $2
+        ;;
+    *)
+        echo >&2 "use 'fetch <filename>'"
+        exit 1
+        ;;
+esac
+
