@@ -3,7 +3,7 @@
 
 FROM docker.io/debian:bookworm-slim
 
-RUN apt-get update && apt-get install git python3-requests python3-jinja2 golang -y && apt clean
+RUN apt-get update && apt-get install git python3-requests python3-jinja2 golang wget bzip2 -y && apt clean
 
-ADD https://github.com/motis-project/motis/releases/download/v0.11.18/motis-linux-amd64.tar.bz2 /opt/
+RUN wget -qO - https://github.com/motis-project/motis/releases/download/v0.11.18/motis-linux-amd64.tar.bz2 | tar -C /opt/ -jx
 RUN GOBIN=/usr/local/bin/ go install github.com/patrickbr/gtfstidy@latest
