@@ -51,7 +51,7 @@ class Fetcher:
                     last_modified_server = datetime.strptime(
                         server_headers["last-modified"], "%a, %d %b %Y %X %Z")
 
-                    if last_modified and last_modified_server < last_modified:
+                    if last_modified and last_modified_server <= last_modified:
                         return None
 
                 # Tell the server not to send data if it is older
