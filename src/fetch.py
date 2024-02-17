@@ -5,6 +5,8 @@
 
 from metadata import *
 from pathlib import Path
+from datetime import datetime
+
 import requests
 import transitland
 import json
@@ -12,6 +14,7 @@ import sys
 import os
 import subprocess
 import shutil
+
 
 class Fetcher:
     transitland_atlas: transitland.Atlas
@@ -26,15 +29,51 @@ class Fetcher:
                 http_source = self.transitland_atlas.source_by_id(source)
                 return self.fetch_source(name, http_source)
             case HttpSource():
-                content = requests.get(source.url).content
+                # Detect last modification time of local file
+                last_modified = None
+                dest_path = Path(f"downloads/{name}.gtfs.zip")
+                if dest_path.exists():
+                    mtime = dest_path.stat().st_mtime
+                    last_modified = datetime.fromtimestamp(mtime)
+
+                # Fetch last modification time from the server
+                server_headers = requests.head(source.url).headers
+
+                # If server version is older, return
+                last_modified_server = None
+                if "last-modified" in server_headers:
+                    last_modified_server = datetime.strptime(
+                        server_headers["last-modified"], "%a, %d %b %Y %X %Z")
+
+                    if last_modified and last_modified_server < last_modified:
+                        return None
+
+                # Tell the server not to send data if it is older
+                # than what we have
+                headers = {}
+                if last_modified:
+                    headers["if-modified-since"] = last_modified \
+                        .strftime("%a, %d %b %Y %X %Z")
+
+                response = requests.get(source.url, headers=headers)
+
+                # If the file was not modified, return
+                if response.status_code == 304:
+                    return None
+
                 download_dir = "downloads"
 
                 if not os.path.exists(download_dir):
                     os.mkdir(download_dir)
 
-                dest_path = Path(f"downloads/{name}.gtfs.zip")
                 with open(dest_path, "wb") as dest:
-                    dest.write(content)
+                    dest.write(response.content)
+
+                # Set server mtime on local file
+                if last_modified_server:
+                    atime_mtime = (last_modified_server.timestamp(),
+                                   last_modified_server.timestamp())
+                    os.utime(dest_path, atime_mtime)
 
                 return dest_path
 
@@ -74,6 +113,9 @@ class Fetcher:
             print(f"Fetching {region_name}-{source.name}…")
             sys.stdout.flush()
             dest_path = self.fetch_source(download_name, source)
+            # Nothing was downloaded
+            if not dest_path:
+                continue
 
             print(f"Postproccing {region_name}-{source.name} with gtfstidy…")
             sys.stdout.flush()
