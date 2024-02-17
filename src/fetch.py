@@ -67,6 +67,10 @@ class Fetcher:
                 if response.status_code == 304:
                     return None
 
+                # If the file was not successfully retrieved, return
+                if response.status_code != 200:
+                    return None
+
                 download_dir = "downloads"
 
                 if not os.path.exists(download_dir):
