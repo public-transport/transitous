@@ -7,3 +7,4 @@ RUN apt-get update && apt-get install git python3-requests python3-jinja2 golang
 
 RUN wget -qO - https://github.com/motis-project/motis/releases/download/v0.11.18/motis-linux-amd64.tar.bz2 | tar -C /opt/ -jx
 RUN GOBIN=/usr/local/bin/ go install github.com/patrickbr/gtfstidy@latest
+ENV PATH=/opt/motis:$PATH
