@@ -29,6 +29,8 @@ jobs:
           downloads/
           out/
         key: feeds
+        restore-keys: |
+          feeds
 
     - name: Fetch GTFS-Feeds
       run: docker run -v $PWD:/transitous -w /transitous transitous ci/fetch-feeds.py timer
@@ -44,4 +46,4 @@ jobs:
         path: |
           downloads/
           out/
-        key: feeds
+        key: feeds-${{ hashFiles('downloads/*') }}
