@@ -59,9 +59,11 @@ class HttpSource(Source):
             super().__init__(parsed)
             self.url = parsed["url"]
 
-            if "fetch-interval-days" in parsed["options"]:
-                self.options.fetch_interval_days = \
-                    int(parsed["options"]["fetch-interval-days"])
+            if "options" in parsed:
+                options = parsed["options"]
+                if "fetch-interval-days" in options:
+                    self.options.fetch_interval_days = \
+                        int(parsed["options"]["fetch-interval-days"])
 
 
 def sourceFromJson(parsed: dict) -> Source:
