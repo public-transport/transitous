@@ -33,8 +33,10 @@ jobs:
     - name: Fetch GTFS-Feeds
       run: docker run -v $PWD:/transitous -w /transitous transitous ci/fetch-feeds.py timer
 
-    - name: Generate MOTIS config file
-      run: docker run -v $PWD:/transitous -w /transitous transitous src/generate-motis-config.py
+    - name: Import Feeds into motis
+      run: |
+        docker run -v $PWD:/transitous -w /transitous transitous src/generate-motis-config.py import
+        docker run -v $PWD:/transitous -w /transitous/out transitous ../ci/motis-import.py
 
     - name: Cache feeds
       uses: actions/cache/save@v4
