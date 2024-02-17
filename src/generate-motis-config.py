@@ -7,12 +7,19 @@ import subprocess
 import json
 import metadata
 import tomllib
+import sys
 
 from pathlib import Path
 from jinja2 import Template
 
 
 if __name__ == "__main__":
+    if len(sys.argv) < 2:
+        print("First argument must be one of import, full")
+        sys.exit(1)
+
+    flavour = sys.argv[1]
+
     feed_dir = Path("feeds/")
     osm_map = "berlin-latest.osm.pbf"
 
@@ -39,4 +46,6 @@ if __name__ == "__main__":
         template = Template(f.read())
 
         with open("out/config.ini", "w") as fo:
-            fo.write(template.render(gtfs_feeds=gtfs_feeds, pbf_file=osm_map))
+            fo.write(template.render(gtfs_feeds=gtfs_feeds,
+                                     pbf_file=osm_map,
+                                     flavour=flavour))
