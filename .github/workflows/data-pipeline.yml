@@ -15,11 +15,31 @@ jobs:
     steps:
     - name: Check out code
       uses: actions/checkout@v3
+
     - name: Fetch submodules
       run: git submodule update --init --checkout --remote
+
     - name: Build docker images
       run: docker build -t transitous . -f ci/container/Containerfile
+
+    - name: Restore cached feeds
+      uses: actions/cache/restore@v4
+      with:
+        path: |
+          downloads/
+          out/
+        key: feeds
+
     - name: Fetch GTFS-Feeds
       run: docker run -v $PWD:/transitous -w /transitous transitous ci/fetch-feeds.py timer
+
     - name: Generate MOTIS config file
       run: docker run --env PYTHONPATH=src -v $PWD:/transitous -w /transitous transitous ci/generate-motis-config.py
+
+    - name: Cache feeds
+      uses: actions/cache/save@v4
+      with:
+        path: |
+          downloads/
+          out/
+        key: feeds
