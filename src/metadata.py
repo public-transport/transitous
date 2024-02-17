@@ -46,13 +46,22 @@ class TransitlandSource(Source):
         self.transitland_atlas_id = parsed["transitland-atlas-id"]
 
 
+class HttpOptions:
+    fetch_interval_days: Optional[int] = None
+
+
 class HttpSource(Source):
     url: str
+    options: HttpOptions = HttpOptions()
 
     def __init__(self, parsed: dict = None):
         if parsed:
             super().__init__(parsed)
             self.url = parsed["url"]
+
+            if "fetch-interval-days" in parsed["options"]:
+                self.options.fetch_interval_days = \
+                    int(parsed["options"]["fetch-interval-days"])
 
 
 def sourceFromJson(parsed: dict) -> Source:

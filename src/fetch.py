@@ -23,7 +23,7 @@ class Fetcher:
         self.transitland_atlas = transitland.Atlas.load(
             Path("transitland-atlas/"))
 
-    def fetch_source(self, name: str, source: Source) -> Path:
+    def fetch_source(self, name: str, source: Source) -> Optional[Path]:
         match source:
             case TransitlandSource():
                 http_source = self.transitland_atlas.source_by_id(source)
@@ -35,6 +35,12 @@ class Fetcher:
                 if dest_path.exists():
                     mtime = dest_path.stat().st_mtime
                     last_modified = datetime.fromtimestamp(mtime)
+
+                # Check if the last download was longer than the interval ago
+                if source.options.fetch_interval_days and last_modified \
+                        and (datetime.now() - last_modified).days \
+                        < source.options.fetch_interval_days:
+                    return None
 
                 # Fetch last modification time from the server
                 server_headers = requests.head(source.url).headers
@@ -113,6 +119,7 @@ class Fetcher:
             print(f"Fetching {region_name}-{source.name}…")
             sys.stdout.flush()
             dest_path = self.fetch_source(download_name, source)
+
             # Nothing was downloaded
             if not dest_path:
                 continue
