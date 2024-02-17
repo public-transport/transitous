@@ -2,7 +2,7 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-from typing import List
+from typing import List, Optional
 
 
 class Maintainer:
@@ -14,12 +14,25 @@ class Maintainer:
         self.email = parsed["email"]
 
 
+class License:
+    spdx_identifier: Optional[str] = None
+    url: Optional[str] = None
+
+
 class Source:
     name: str
     fix: bool = False
+    license: License
 
     def __init__(self, parsed: dict = None):
+        self.license = License()
         if parsed:
+            if "license" in parsed:
+                if "spdx-identifier" in parsed["license"]:
+                    self.license.spdx_identifier = parsed["license"]["spdx-identifier"]
+                if "url" in parsed["license"]:
+                    self.license.url = parsed["license"]["url"]
+
             self.name = parsed["name"]
             if "fix" in parsed:
                 self.fix = bool(parsed["fix"])

@@ -26,5 +26,14 @@ class Atlas:
     def source_by_id(self, source: TransitlandSource) -> HttpSource:
         feed = self.by_id[source.transitland_atlas_id]
         http_source = HttpSource()
+        http_source.name = source.name
         http_source.url = feed["urls"]["static_current"]
+
+        if "license" in feed:
+            http_source.license = License()
+            if "spdx_identifier" in feed["license"]:
+                http_source.license.spdx_identifier = feed["license"]["spdx_identifier"]
+            if "url" in feed["license"]:
+                http_source.license.url = feed["license"]["url"]
+
         return http_source
