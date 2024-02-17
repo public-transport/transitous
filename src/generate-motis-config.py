@@ -38,5 +38,5 @@ if __name__ == "__main__":
     with open("motis/config.ini.j2") as f:
         template = Template(f.read())
 
-        with open("motis/config.ini", "w") as fo:
+        with open("out/config.ini", "w") as fo:
             fo.write(template.render(gtfs_feeds=gtfs_feeds, pbf_file=osm_map))
