@@ -86,7 +86,7 @@ First, build the container:
 podman build ci/container/ -t transitous -f ci/container/Containerfile
 ```
 
-Enterh the container:
+Enter the container:
 ```bash
 podman run -it -p 8080:8080 -v $PWD:/transitous -w /transitous transitous
 ```
