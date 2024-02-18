@@ -47,3 +47,14 @@ jobs:
           downloads/
           out/
         key: feeds-${{ hashFiles('downloads/*') }}
+
+    - name: Compress results
+      run: |
+        tar -C out/ --zstd -cf feeds.tar.zst .
+
+    - name: Upload results
+      uses: actions/upload-artifact@v4
+      with:
+        name: feeds
+        path: feeds.tar.zst
+        retention-days: 5
