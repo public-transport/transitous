@@ -53,8 +53,4 @@ jobs:
         tar -C out/ --zstd -cf feeds.tar.zst .
 
     - name: Upload results
-      uses: actions/upload-artifact@v4
-      with:
-        name: feeds
-        path: feeds.tar.zst
-        retention-days: 5
+      run: curl --upload-file feeds.tar.zst https://transfer.sh/feeds.tar.zst
