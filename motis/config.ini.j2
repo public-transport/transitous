@@ -3,7 +3,6 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 {% if flavour != "import" %}
-modules=intermodal
 modules=address
 modules=tiles
 modules=osrm
@@ -11,6 +10,7 @@ modules=ppr
 #modules=parking
 {% endif %}
 modules=nigiri
+modules=intermodal
 
 intermodal.router=nigiri
 dataset.no_schedule=true
