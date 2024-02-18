@@ -24,6 +24,7 @@ if __name__ == "__main__":
     osm_map = "berlin-latest.osm.pbf"
 
     gtfs_feeds = []
+    gtfsrt_feeds = []
 
     for feed in feed_dir.glob("*.json"):
         with open(feed, "r") as f:
@@ -35,17 +36,26 @@ if __name__ == "__main__":
 
             for source in region.sources:
                 schedule_name = f"{region_name}-{source.name}"
-                schedule_file = f"{region_name}_{source.name}.gtfs.zip"
+                match source.spec:
+                    case "gtfs":
+                        schedule_file = f"{region_name}_{source.name}.gtfs.zip"
 
-                gtfs_feeds.append({
-                    "id": schedule_name,
-                    "path": schedule_file
-                })
+                        gtfs_feeds.append({
+                            "id": schedule_name,
+                            "path": schedule_file
+                        })
+                    case "gtfs-rt":
+                        gtfsrt_feeds.append({
+                            "id": schedule_name,
+                            "url": source.url,
+                            "authorization": source.authorization
+                        })
 
     with open("motis/config.ini.j2") as f:
         template = Template(f.read())
 
         with open("out/config.ini", "w") as fo:
             fo.write(template.render(gtfs_feeds=gtfs_feeds,
+                                     gtfsrt_feeds=gtfsrt_feeds,
                                      pbf_file=osm_map,
                                      flavour=flavour))

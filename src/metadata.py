@@ -23,6 +23,7 @@ class Source:
     name: str
     fix: bool = False
     license: License
+    spec: str = "gtfs"
 
     def __init__(self, parsed: dict = None):
         self.license = License()
@@ -36,6 +37,8 @@ class Source:
             self.name = parsed["name"]
             if "fix" in parsed:
                 self.fix = bool(parsed["fix"])
+            if "spec" in parsed:
+                self.spec = parsed["spec"]
 
 
 class TransitlandSource(Source):
@@ -66,12 +69,26 @@ class HttpSource(Source):
                         int(parsed["options"]["fetch-interval-days"])
 
 
+class UrlSource(Source):
+    url: str
+    authorization: str = None
+
+    def __init__(self, parsed: dict = None):
+        if parsed:
+            super().__init__(parsed)
+            self.url = parsed["url"]
+            if "authorization" in parsed:
+                self.authorization = parsed["authorization"]
+
+
 def sourceFromJson(parsed: dict) -> Source:
     match parsed["type"]:
         case "transitland-atlas":
             return TransitlandSource(parsed)
         case "http":
             return HttpSource(parsed)
+        case "url":
+            return UrlSource(parsed)
 
     return None
 
