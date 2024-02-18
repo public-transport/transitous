@@ -13,3 +13,4 @@
         name:
           - rsync
           - htop
+          - zstd
