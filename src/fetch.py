@@ -24,6 +24,8 @@ class Fetcher:
             Path("transitland-atlas/"))
 
     def fetch_source(self, name: str, source: Source) -> Optional[Path]:
+        if source.spec != "gtfs":
+            return None
         match source:
             case TransitlandSource():
                 http_source = self.transitland_atlas.source_by_id(source)
@@ -86,6 +88,8 @@ class Fetcher:
                     os.utime(dest_path, atime_mtime)
 
                 return dest_path
+            case UrlSource():
+                return None
 
         print("Unknown data source", source, file=sys.stderr)
         assert False
