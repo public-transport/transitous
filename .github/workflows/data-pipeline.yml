@@ -27,7 +27,7 @@ jobs:
       with:
         path: |
           downloads/
-          out/
+          out/*.zip
         key: feeds
         restore-keys: |
           feeds
