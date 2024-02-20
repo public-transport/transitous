@@ -31,6 +31,9 @@ fn default_timeout() -> u64 {
 fn default_motis_address() -> String {
     "http://localhost:8080".to_string()
 }
+fn default_proxy_assets() -> bool {
+    false
+}
 
 #[derive(Deserialize, DefaultFromSerde)]
 struct Config {
@@ -40,6 +43,11 @@ struct Config {
     timeout: u64,
     #[serde(default = "default_motis_address")]
     motis_address: String,
+
+    /// Proxy endpoints other than `/`. This should only ever be used for debugging.
+    /// It is slow and incomplete.
+    #[serde(default = "default_proxy_assets" )]
+    proxy_assets: bool
 }
 
 #[derive(Deserialize, Serialize)]
@@ -379,6 +387,11 @@ fn rocket() -> _ {
         }
     };
 
+    let mut routes = routes![proxy_api];
+    if config.proxy_assets {
+        routes.append(&mut routes![proxy_everything]);
+    }
+
     rocket
         .manage(
             Client::builder()
@@ -390,6 +403,6 @@ fn rocket() -> _ {
         .attach(cors.clone())
         .manage(cors)
         .manage(config)
-        .mount("/", routes![proxy_api, proxy_everything])
+        .mount("/", routes)
         .mount("/", rocket_cors::catch_all_options_routes())
 }

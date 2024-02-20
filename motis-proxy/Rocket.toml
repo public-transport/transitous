@@ -1,0 +1,10 @@
+# SPDX-FileCopyrightText: 2024 Jonah Brüchert <jbb@kaidan.im>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+[debug]
+log_level = "debug"
+
+[debug.proxy]
+proxy_assets = true
+motis_address = "https://europe.motis-project.de"
