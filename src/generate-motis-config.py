@@ -22,6 +22,7 @@ if __name__ == "__main__":
 
     feed_dir = Path("feeds/")
     osm_map = "berlin-latest.osm.pbf"
+    osm_coastline = "land-polygons-complete-4326.zip"
 
     gtfs_feeds = []
     gtfsrt_feeds = []
@@ -58,4 +59,5 @@ if __name__ == "__main__":
             fo.write(template.render(gtfs_feeds=gtfs_feeds,
                                      gtfsrt_feeds=gtfsrt_feeds,
                                      pbf_file=osm_map,
+                                     coastline_file=osm_coastline,
                                      flavour=flavour))

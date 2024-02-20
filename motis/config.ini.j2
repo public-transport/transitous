@@ -3,10 +3,10 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 {% if flavour != "import" %}
-modules=address
+#modules=address
 modules=tiles
-modules=osrm
-modules=ppr
+#modules=osrm
+#modules=ppr
 #modules=parking
 {% endif %}
 modules=nigiri
@@ -20,6 +20,7 @@ dataset.no_schedule=true
 host=127.0.0.1
 
 [import]
+{% if coastline_file and flavour != "import" %}paths=coastline:{{ coastline_file }}{% endif %}
 {% if pbf_file and flavour != "import" %}paths=osm:{{ pbf_file }}{% endif %}
 {% for feed in gtfs_feeds %}paths=schedule-{{ feed.id }}:{{ feed.path }}
 {% endfor %}
@@ -39,3 +40,4 @@ profile=/opt/motis/ppr-profiles/default.json
 
 [tiles]
 profile=/opt/motis/tiles-profiles/background.lua
+{% if coastline_file and flavour != "import" %}import.use_coastline=true{% endif %}
