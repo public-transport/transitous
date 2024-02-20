@@ -34,6 +34,9 @@ fn default_motis_address() -> String {
 fn default_proxy_assets() -> bool {
     false
 }
+fn default_allowed_endpoints() -> Option<Vec<Endpoint>> {
+    None
+}
 
 #[derive(Deserialize, DefaultFromSerde)]
 struct Config {
@@ -47,11 +50,16 @@ struct Config {
     /// Proxy endpoints other than `/`. This should only ever be used for debugging.
     /// It is slow and incomplete.
     #[serde(default = "default_proxy_assets" )]
-    proxy_assets: bool
+    proxy_assets: bool,
+
+    /// List of endpoints (by path) that should be allowed through the proxy.
+    /// If this option is not set, all known endpoints will be allowed.
+    #[serde(default = "default_allowed_endpoints")]
+    allowed_endpoints: Option<Vec<Endpoint>>
 }
 
-#[derive(Deserialize, Serialize)]
-enum AllowedEndpoints {
+#[derive(Deserialize, Serialize, PartialEq, Eq)]
+enum Endpoint {
     #[serde(rename = "/intermodal")]
     Intermodal,
     #[serde(rename = "/guesser")]
@@ -77,7 +85,7 @@ enum AllowedEndpoints {
 #[derive(Deserialize, Serialize)]
 #[serde(tag = "type")]
 enum RequestDestination {
-    Module { target: AllowedEndpoints },
+    Module { target: Endpoint },
 }
 
 #[derive(Deserialize, Serialize)]
@@ -312,6 +320,17 @@ async fn proxy_api(
     config: &State<Config>,
 ) -> ResultResponse<Custom<Json<serde_json::Value>>> {
     let request = request.into_inner();
+
+    // Check if the requested endpoint is allowed
+    match &request.destination {
+        RequestDestination::Module { target } => {
+            if let Some(allowed_endpoints) = &config.allowed_endpoints {
+                if !allowed_endpoints.contains(&target) {
+                    return Err(Custom(Status::UnprocessableEntity, ()))
+                }
+            }
+        }
+    }
 
     trace!("MOTIS Request <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<");
     trace!("{}", serde_json::to_string_pretty(&request).unwrap());

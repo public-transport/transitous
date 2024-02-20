@@ -5,6 +5,13 @@
 [debug]
 log_level = "debug"
 
+[release.proxy]
+proxy_assets = false
+allowed_endpoints = [ "/intermodal","/guesser", "/address",
+                      "/railviz/get_trains", "/railviz/get_trips", "/railviz/get_station",
+                      "/lookup/schedule_info", "/gbfs/info",  "/ppr/route", "/trip_to_connection" ]
+
+
 [debug.proxy]
 proxy_assets = true
 motis_address = "https://europe.motis-project.de"
