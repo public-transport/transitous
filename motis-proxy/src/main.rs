@@ -16,6 +16,7 @@ use rocket::{
 use rocket_cors::{AllowedOrigins, CorsOptions};
 use serde::{Deserialize, Serialize};
 use serde_default::DefaultFromSerde;
+use log::{trace, warn};
 
 use std::time::Duration;
 
@@ -276,7 +277,8 @@ async fn proxy_api(
 ) -> ResultResponse<Custom<Json<serde_json::Value>>> {
     let request = request.into_inner();
 
-    println!("{}", serde_json::to_string_pretty(&request).unwrap());
+    trace!("MOTIS Request <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<");
+    trace!("{}", serde_json::to_string_pretty(&request).unwrap());
 
     let response = http_client
         .post(&config.motis_address)
@@ -307,6 +309,9 @@ async fn proxy_api(
         .await
         .map_err(|_| Custom(Status::InternalServerError, ()))?;
 
+    trace!("MOTIS Response >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>", );
+    trace!("{}", serde_json::to_string_pretty(&json).unwrap());
+
     Ok(Custom(Status::new(status), Json(json)))
 }
 
@@ -321,7 +326,8 @@ async fn proxy_everything<'r>(
     config: &State<Config>,
 ) -> ResultResponse<Custom<(ContentType, Vec<u8>)>> {
     let upstream_url = format!("{}{}", config.motis_address, uri);
-    println!("{}", upstream_url);
+
+    trace!("Proxing to upstream url: {upstream_url}");
 
     let response = http_client
         .get(&upstream_url)
@@ -368,7 +374,7 @@ fn rocket() -> _ {
     let config: Config = match rocket.figment().extract_inner("proxy") {
         Ok(config) => config,
         Err(e) => {
-            eprintln!("Falling back to default config because: {e}");
+            warn!("Falling back to default config because: {e}");
             Config::default()
         }
     };

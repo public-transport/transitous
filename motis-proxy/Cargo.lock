@@ -702,6 +702,7 @@ dependencies = [
 name = "motis-proxy"
 version = "0.1.0"
 dependencies = [
+ "log",
  "reqwest",
  "rocket",
  "rocket_cors",
