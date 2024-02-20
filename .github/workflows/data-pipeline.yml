@@ -33,7 +33,9 @@ jobs:
           feeds
 
     - name: Fetch GTFS-Feeds
-      run: docker run -v $PWD:/transitous -w /transitous transitous ci/fetch-feeds.py timer
+      run: |
+        docker run -v $PWD:/transitous -w /transitous transitous ci/fetch-feeds.py timer
+        docker run -v $PWD:/transitous -w /transitous transitous src/generate-attribution.py
 
     - name: Import Feeds into motis
       run: |
