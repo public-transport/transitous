@@ -6,7 +6,7 @@ Free and open public transport routing.
 
 A community-run provider-neutral international public transport routing service.
 
-Using openly available GTFS/GTFS-RT/etc feeds and FOSS routing engine we want to operate a
+Using openly available GTFS/GTFS-RT/etc. feeds and FOSS routing engine we want to operate a
 routing service that:
 * focuses on the interest of the user rather than the public transport operators
 * is free to use
@@ -20,7 +20,7 @@ routing service that:
 
 ## Adding a region
 
-Transitous data sources are divided by region, so they can be continously tested and verified by locals.
+Transitous data sources are divided by region, so they can be continuously tested and verified by locals.
 
 A region file in the [feeds](feeds) directory has a `maintainers` attribute, which contains a list of people responsible for keeping the feeds for the region up to date.
 
@@ -42,7 +42,7 @@ A person is represented like this:
 The main attribute of a region is `sources`. It contains a list of feeds that should be fetched.
 
 Each source can either be of `type` "transitland-atlas" or "http".
-A transitland-atlas source is a feed from [transit.land](https://www.transit.land/feeds), identified by its Onestop ID.
+A transitland-atlas source is a feed from [Transitland](https://www.transit.land/feeds), identified by its Onestop ID.
 
 ```json
 {
@@ -52,7 +52,7 @@ A transitland-atlas source is a feed from [transit.land](https://www.transit.lan
 }
 ```
 
-If the feed is not known in transit.land, a http source can be used instead.
+If the feed is not known in Transitland, a http source can be used instead.
 
 ```json
 {
@@ -91,7 +91,7 @@ Enter the container:
 podman run -it -p 8080:8080 -v $PWD:/transitous -w /transitous transitous
 ```
 
-Now inside the container, you can download and postprocess all the feeds. This may take a while.
+Now inside the container, you can download and post-process all the feeds. This may take a while.
 ```bash
 ./ci/fetch-feeds.py timer
 ```
