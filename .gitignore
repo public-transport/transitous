@@ -2,3 +2,6 @@
 # SPDX-FileCopyrightText: none
 
 __pycache__
+downloads/
+motis-proxy/target
+out/

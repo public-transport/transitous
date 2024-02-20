@@ -70,6 +70,8 @@ enum AllowedEndpoints {
     RailVizGetStation,
     #[serde(rename = "/ppr/route")]
     PprRoute,
+    #[serde(rename = "/trip_to_connection")]
+    TripId,
 }
 
 #[derive(Deserialize, Serialize)]
@@ -145,12 +147,20 @@ struct CarParkingOptions {
 }
 
 #[derive(Deserialize, Serialize)]
+struct GBFSOptions {
+    provider: String,
+    max_walk_duration: u32,
+    max_vehicle_duration: u32,
+}
+
+#[derive(Deserialize, Serialize)]
 #[serde(tag = "mode_type", content = "mode")]
 enum TransportMode {
     FootPPR(PprOptions),
     Bike(BikeOptions),
     Car(CarOptions),
     CarParking(CarParkingOptions),
+    GBFS(GBFSOptions),
 }
 
 #[derive(Deserialize, Serialize)]
@@ -237,6 +247,10 @@ struct MotisNoMessage {}
 enum StationDepartureDirection {
     #[serde(rename = "BOTH")]
     Both,
+    #[serde(rename = "EARLIER")]
+    Earlier,
+    #[serde(rename = "LATER")]
+    Later,
 }
 
 #[derive(Deserialize, Serialize)]
@@ -259,6 +273,17 @@ struct FootRoutingRequest {
 }
 
 #[derive(Deserialize, Serialize)]
+struct TripId {
+  id: String,
+  station_id: String,
+  train_nr: u32,
+  time: u64,
+  target_station_id: String,
+  target_time: u64,
+  line_id: String,
+}
+
+#[derive(Deserialize, Serialize)]
 #[serde(tag = "content_type", content = "content")]
 enum RequestContent {
     IntermodalConnectionRequest(IntermodalConnectionRequest),
@@ -269,7 +294,8 @@ enum RequestContent {
     RailVizTripsRequest(RailVizTripsRequest),
     MotisNoMessage(MotisNoMessage),
     RailVizStationRequest(RailVizStationRequest),
-    FootRoutingRequest(FootRoutingRequest)
+    FootRoutingRequest(FootRoutingRequest),
+    TripId(TripId)
 }
 
 #[derive(Deserialize, Serialize)]
