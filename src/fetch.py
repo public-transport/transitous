@@ -78,6 +78,16 @@ class Fetcher:
                 if not os.path.exists(download_dir):
                     os.mkdir(download_dir)
 
+                # Update our last_modified_server information from the response
+                # of the actual download. The values of the head request can
+                # differ, if the response of the head request is a redirect.
+                # The redirect then usually has no last-modified information,
+                # but the actual target does.
+                server_headers = response.headers
+                if "last-modified" in server_headers:
+                    last_modified_server = datetime.strptime(
+                        server_headers["last-modified"], "%a, %d %b %Y %X %Z")
+
                 with open(dest_path, "wb") as dest:
                     dest.write(response.content)
 
