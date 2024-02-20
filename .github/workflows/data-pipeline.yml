@@ -41,6 +41,7 @@ jobs:
       run: |
         docker run -v $PWD:/transitous -w /transitous transitous src/generate-motis-config.py import
         docker run -v $PWD:/transitous -w /transitous/out transitous ../ci/motis-import.py
+        docker run -v $PWD:/transitous -w /transitous transitous src/generate-motis-config.py full
 
     - name: Cache feeds
       uses: actions/cache/save@v4
