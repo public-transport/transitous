@@ -210,6 +210,8 @@ struct RailVizTrainsRequest {
     corner2: Location,
     max_trains: u16,
     last_trains: u16,
+    start_time: u64,
+    end_time: u64,
 }
 
 #[derive(Deserialize, Serialize)]
