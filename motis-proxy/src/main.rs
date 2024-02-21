@@ -20,6 +20,13 @@ use log::{trace, warn};
 
 use std::time::Duration;
 
+// For documetation generation
+use rocket_okapi::okapi::schemars;
+use rocket_okapi::okapi::schemars::JsonSchema;
+use rocket_okapi::settings::UrlObject;
+use rocket_okapi::{openapi, openapi_get_routes, rapidoc::*};
+
+
 pub type ResultResponse<T> = Result<T, Custom<()>>;
 
 fn default_connections_per_host() -> usize {
@@ -58,10 +65,12 @@ struct Config {
     allowed_endpoints: Option<Vec<Endpoint>>
 }
 
-#[derive(Deserialize, Serialize, PartialEq, Eq)]
+#[derive(Deserialize, Serialize, PartialEq, Eq, JsonSchema)]
 enum Endpoint {
+    /// Endpoint for routing. This endpoint tries to find a route using the optimal mix of modes of transportation.
     #[serde(rename = "/intermodal")]
     Intermodal,
+    /// Endpoint for for completing station names
     #[serde(rename = "/guesser")]
     Guesser,
     #[serde(rename = "/address")]
@@ -82,14 +91,16 @@ enum Endpoint {
     TripId,
 }
 
-#[derive(Deserialize, Serialize)]
+#[derive(Deserialize, Serialize, JsonSchema)]
 #[serde(tag = "type")]
 enum RequestDestination {
     Module { target: Endpoint },
 }
 
-#[derive(Deserialize, Serialize)]
+#[derive(Deserialize, Serialize, JsonSchema)]
 enum StartDestinationType {
+    /// The user is planning in advance and has not boarded any vehicles yet.
+    /// The optimal mode of transportation should be chosen automatically.
     IntermodalPretripStart,
     PretripStart,
     IntermodalOntripStart,
@@ -97,25 +108,25 @@ enum StartDestinationType {
     InputPosition,
 }
 
-#[derive(Deserialize, Serialize)]
+#[derive(Deserialize, Serialize, JsonSchema)]
 struct Interval {
     begin: u64,
     end: u64,
 }
 
-#[derive(Deserialize, Serialize)]
+#[derive(Deserialize, Serialize, JsonSchema)]
 struct GeoLocation {
     lat: f32,
     lng: f32,
 }
 
-#[derive(Deserialize, Serialize)]
+#[derive(Deserialize, Serialize, JsonSchema)]
 struct StationLocation {
     id: String,
     name: String,
 }
 
-#[derive(Deserialize, Serialize)]
+#[derive(Deserialize, Serialize, JsonSchema)]
 struct Start {
     #[serde(skip_serializing_if = "Option::is_none")]
     position: Option<GeoLocation>,
@@ -127,41 +138,41 @@ struct Start {
     extend_interval_later: bool,
 }
 
-#[derive(Deserialize, Serialize)]
+#[derive(Deserialize, Serialize, JsonSchema)]
 struct FootSearchOptions {
     profile: String,
     duration_limit: u32,
 }
 
-#[derive(Deserialize, Serialize)]
+#[derive(Deserialize, Serialize, JsonSchema)]
 struct PprOptions {
     search_options: FootSearchOptions,
 }
 
-#[derive(Deserialize, Serialize)]
+#[derive(Deserialize, Serialize, JsonSchema)]
 struct BikeOptions {
     max_duration: u32,
 }
 
-#[derive(Deserialize, Serialize)]
+#[derive(Deserialize, Serialize, JsonSchema)]
 struct CarOptions {
     max_duration: u32,
 }
 
-#[derive(Deserialize, Serialize)]
+#[derive(Deserialize, Serialize, JsonSchema)]
 struct CarParkingOptions {
     max_car_duration: u32,
     ppr_search_options: PprOptions,
 }
 
-#[derive(Deserialize, Serialize)]
+#[derive(Deserialize, Serialize, JsonSchema)]
 struct GBFSOptions {
     provider: String,
     max_walk_duration: u32,
     max_vehicle_duration: u32,
 }
 
-#[derive(Deserialize, Serialize)]
+#[derive(Deserialize, Serialize, JsonSchema)]
 #[serde(tag = "mode_type", content = "mode")]
 enum TransportMode {
     FootPPR(PprOptions),
@@ -171,32 +182,32 @@ enum TransportMode {
     GBFS(GBFSOptions),
 }
 
-#[derive(Deserialize, Serialize)]
+#[derive(Deserialize, Serialize, JsonSchema)]
 #[serde(untagged)]
 enum Location {
     Geo(GeoLocation),
     Station(StationLocation),
 }
 
-#[derive(Deserialize, Serialize)]
+#[derive(Deserialize, Serialize, JsonSchema)]
 enum SearchType {
     r#Default,
     Accessibility,
 }
 
-#[derive(Deserialize, Serialize)]
+#[derive(Deserialize, Serialize, JsonSchema)]
 enum SearchDirection {
     Forward,
     Backward,
 }
 
-#[derive(Deserialize, Serialize)]
+#[derive(Deserialize, Serialize, JsonSchema)]
 enum AllowedRouters {
     #[serde(rename = "")]
     DefaultRouter,
 }
 
-#[derive(Deserialize, Serialize)]
+#[derive(Deserialize, Serialize, JsonSchema)]
 struct IntermodalConnectionRequest {
     start_type: StartDestinationType,
     start: Start,
@@ -209,18 +220,18 @@ struct IntermodalConnectionRequest {
     router: AllowedRouters,
 }
 
-#[derive(Deserialize, Serialize)]
+#[derive(Deserialize, Serialize, JsonSchema)]
 struct StationGuesserRequest {
     guess_count: u8,
     input: String,
 }
 
-#[derive(Deserialize, Serialize)]
+#[derive(Deserialize, Serialize, JsonSchema)]
 struct AddressRequest {
     input: String,
 }
 
-#[derive(Deserialize, Serialize)]
+#[derive(Deserialize, Serialize, JsonSchema)]
 struct RailVizTrainsRequest {
     zoom_bounds: u8,
     zoom_geo: u8,
@@ -232,7 +243,7 @@ struct RailVizTrainsRequest {
     end_time: u64,
 }
 
-#[derive(Deserialize, Serialize)]
+#[derive(Deserialize, Serialize, JsonSchema)]
 struct Trip {
     id: String,
     line_id: String,
@@ -243,15 +254,15 @@ struct Trip {
     train_nr: u32,
 }
 
-#[derive(Deserialize, Serialize)]
+#[derive(Deserialize, Serialize, JsonSchema)]
 struct RailVizTripsRequest {
     trips: Vec<Trip>,
 }
 
-#[derive(Deserialize, Serialize)]
+#[derive(Deserialize, Serialize, JsonSchema)]
 struct MotisNoMessage {}
 
-#[derive(Deserialize, Serialize)]
+#[derive(Deserialize, Serialize, JsonSchema)]
 enum StationDepartureDirection {
     #[serde(rename = "BOTH")]
     Both,
@@ -261,7 +272,7 @@ enum StationDepartureDirection {
     Later,
 }
 
-#[derive(Deserialize, Serialize)]
+#[derive(Deserialize, Serialize, JsonSchema)]
 struct RailVizStationRequest {
     station_id: String,
     time: u64,
@@ -270,7 +281,7 @@ struct RailVizStationRequest {
     by_schedule_time: bool,
 }
 
-#[derive(Deserialize, Serialize)]
+#[derive(Deserialize, Serialize, JsonSchema)]
 struct FootRoutingRequest {
     destinations: Vec<Location>,
     include_edges: bool,
@@ -280,7 +291,7 @@ struct FootRoutingRequest {
     start: Location,
 }
 
-#[derive(Deserialize, Serialize)]
+#[derive(Deserialize, Serialize, JsonSchema)]
 struct TripId {
   id: String,
   station_id: String,
@@ -291,7 +302,7 @@ struct TripId {
   line_id: String,
 }
 
-#[derive(Deserialize, Serialize)]
+#[derive(Deserialize, Serialize, JsonSchema)]
 #[serde(tag = "content_type", content = "content")]
 enum RequestContent {
     IntermodalConnectionRequest(IntermodalConnectionRequest),
@@ -306,13 +317,22 @@ enum RequestContent {
     TripId(TripId)
 }
 
-#[derive(Deserialize, Serialize)]
+#[derive(Deserialize, Serialize, JsonSchema)]
 struct Request {
     destination: RequestDestination,
     #[serde(flatten)]
     content: RequestContent
 }
 
+/// # MOTIS API
+///
+/// All MOTIS requests need to be sent to this URL.
+///
+/// You can use the destionation field to choose the endpoint to call.
+///
+/// Have a look at what the MOTIS web interface sends for examples.
+///
+#[openapi(tag = "MOTIS")]
 #[post("/", format = "application/json", data = "<request>", rank = 2)]
 async fn proxy_api(
     request: Json<Request>,
@@ -434,7 +454,7 @@ fn rocket() -> _ {
         }
     };
 
-    let mut routes = routes![proxy_api];
+    let mut routes =  openapi_get_routes![proxy_api];
     if config.proxy_assets {
         routes.append(&mut routes![proxy_everything]);
     }
@@ -452,4 +472,40 @@ fn rocket() -> _ {
         .manage(config)
         .mount("/", routes)
         .mount("/", rocket_cors::catch_all_options_routes())
+        .mount(
+            "/doc/",
+            make_rapidoc(&RapiDocConfig {
+                title: Some("Transitous API".to_string()),
+                general: GeneralConfig {
+                    spec_urls: vec![UrlObject::new("General", "../openapi.json")],
+                    heading_text: "Transitous API".to_string(),
+                    ..Default::default()
+                },
+                hide_show: HideShowConfig {
+                    allow_spec_url_load: false,
+                    allow_spec_file_load: false,
+                    allow_try: false,
+                    allow_authentication: false,
+                    allow_server_selection: false,
+                    ..Default::default()
+                },
+                ui: UiConfig {
+                    // Don't use Google Fonts
+                    load_fonts: false,
+                    header_color: "#dddddd".to_string(),
+                    primary_color: "#F4AB45".to_string(),
+                    ..Default::default()
+                },
+                nav: NavConfig {
+                    nav_bg_color: "#EFF0F1".to_string(),
+                    ..Default::default()
+                },
+                schema: SchemaConfig {
+                    schema_expand_level: 3,
+                    schema_description_expanded: true,
+                    ..Default::default()
+                },
+                ..Default::default()
+            }),
+        )
 }
