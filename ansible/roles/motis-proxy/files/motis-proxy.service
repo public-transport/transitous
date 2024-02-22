@@ -1,0 +1,17 @@
+# SPDX-FileCopyrightText: 2024 Jonah Brüchert <jbb@kaidan.im>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+[Unit]
+Description=MOTIS Proxy
+After=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/motis-proxy
+Restart=always
+User=motis
+WorkingDirectory=/var/lib/motis-proxy
+
+[Install]
+WantedBy=multi-user.target
