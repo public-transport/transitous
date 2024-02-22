@@ -5,6 +5,7 @@
 #[macro_use]
 extern crate rocket;
 
+use log::{trace, warn};
 use reqwest::{Client, StatusCode};
 use rocket::{
     http::Status,
@@ -16,7 +17,6 @@ use rocket::{
 use rocket_cors::{AllowedOrigins, CorsOptions};
 use serde::{Deserialize, Serialize};
 use serde_default::DefaultFromSerde;
-use log::{trace, warn};
 
 use std::time::Duration;
 
@@ -25,7 +25,6 @@ use rocket_okapi::okapi::schemars;
 use rocket_okapi::okapi::schemars::JsonSchema;
 use rocket_okapi::settings::UrlObject;
 use rocket_okapi::{openapi, openapi_get_routes, rapidoc::*};
-
 
 pub type ResultResponse<T> = Result<T, Custom<()>>;
 
@@ -56,13 +55,13 @@ struct Config {
 
     /// Proxy endpoints other than `/`. This should only ever be used for debugging.
     /// It is slow and incomplete.
-    #[serde(default = "default_proxy_assets" )]
+    #[serde(default = "default_proxy_assets")]
     proxy_assets: bool,
 
     /// List of endpoints (by path) that should be allowed through the proxy.
     /// If this option is not set, all known endpoints will be allowed.
     #[serde(default = "default_allowed_endpoints")]
-    allowed_endpoints: Option<Vec<Endpoint>>
+    allowed_endpoints: Option<Vec<Endpoint>>,
 }
 
 #[derive(Deserialize, Serialize, PartialEq, Eq, JsonSchema)]
@@ -98,16 +97,32 @@ enum RequestDestination {
 }
 
 #[derive(Deserialize, Serialize, JsonSchema)]
-enum StartDestinationType {
+enum StartType {
     /// The user is planning in advance and has not boarded any vehicles yet.
-    /// The optimal mode of transportation should be chosen automatically.
+    /// The optimal mode of transportation from their coordinates should be chosen automatically.
     IntermodalPretripStart,
+    /// Similar to `IntermodalPretripStart`, but starting from a station.
+    /// See [Pretrip Start](https://motis-project.de/docs/api/endpoint/intermodal.html#pretrip-start) in the MOTIS documentation.
     PretripStart,
+    /// See [Intermodal Ontrip Start](https://motis-project.de/docs/api/endpoint/intermodal.html#intermodal-ontrip-start) in the MOTIS documentation.
     IntermodalOntripStart,
+    /// The user is already at a station or the trip is supposed to start from a station. The planned departure time is already known.
+    /// See [Ontrip Station Start](https://motis-project.de/docs/api/endpoint/intermodal.html#ontrip-station-start) in the MOTIS documentation.
+    OntripStationStart,
+    /// The user is already on a train and wants to find connections from there.
+    /// See [Ontrip Train Start](https://motis-project.de/docs/api/endpoint/intermodal.html#ontrip-train-start) in the MOTIS documentation.
+    OntripTrainStart
+}
+
+#[derive(Deserialize, Serialize, JsonSchema)]
+enum DestinationType {
+    /// The `destination` is a `Station`
     InputStation,
+    /// The `destination` is a `GeoLocation`
     InputPosition,
 }
 
+/// See [Interval](https://motis-project.de/docs/api/buildingblocks.html#interval) in the MOTIS documentation for more details.
 #[derive(Deserialize, Serialize, JsonSchema)]
 struct Interval {
     /// Unix time stamp
@@ -116,15 +131,34 @@ struct Interval {
     end: u64,
 }
 
+/// See [Position](https://motis-project.de/docs/api/buildingblocks.html#position) in the MOTIS Documentation for more details.
 #[derive(Deserialize, Serialize, JsonSchema)]
 struct GeoLocation {
+    /// Latitude
     lat: f32,
+    /// Longitude
     lng: f32,
 }
 
+/// See [Station](https://motis-project.de/docs/api/buildingblocks.html#station)
+/// in the MOTIS documentation for more details.
 #[derive(Deserialize, Serialize, JsonSchema)]
-struct StationLocation {
+struct Station {
+    /// Station identifier. Can be retrieved using a `StationGuesserRequest` or `LookupGeoStationRequest`.
     id: String,
+    /// Station name
+    name: String,
+    /// Station position
+    pos: GeoLocation,
+}
+
+/// See [Input Station](https://motis-project.de/docs/api/buildingblocks.html#input-station)
+/// in the MOTIS documentation for more details.
+#[derive(Deserialize, Serialize, JsonSchema)]
+struct InputStation {
+    /// Station identifier. Can be retrieved using a `StationGuesserRequest` or `LookupGeoStationRequest`.
+    id: String,
+    /// Station name
     name: String,
 }
 
@@ -133,16 +167,22 @@ struct Start {
     #[serde(skip_serializing_if = "Option::is_none")]
     position: Option<GeoLocation>,
     #[serde(skip_serializing_if = "Option::is_none")]
-    station: Option<StationLocation>,
+    station: Option<InputStation>,
+    /// Time interval in which the connection should be. If there is none in the interval, connections close to the requested interval will be returned.
     interval: Interval,
+    /// The minimum number of connections to be found until stopping to increase the time interval. Please note that the actual number of returned connections may be less, if finding more connections takes a very long time. This can happen if a connection is only available very few times.
     min_connection_count: u8,
+    /// Whether to include earlier connections if not enough are found in the requested time interval.
     extend_interval_earlier: bool,
+    /// Whether to include later connections if not enough are found in the requested time interval.
     extend_interval_later: bool,
 }
 
 #[derive(Deserialize, Serialize, JsonSchema)]
 struct FootSearchOptions {
+    /// PPR profile, for example `"default"`
     profile: String,
+    /// Duration limit in seconds
     duration_limit: u32,
 }
 
@@ -153,18 +193,21 @@ struct PprOptions {
 
 #[derive(Deserialize, Serialize, JsonSchema)]
 struct BikeOptions {
+    /// Duration limit in seconds
     max_duration: u32,
 }
 
 #[derive(Deserialize, Serialize, JsonSchema)]
 struct CarOptions {
+    /// Duration limit in seconds
     max_duration: u32,
 }
 
 #[derive(Deserialize, Serialize, JsonSchema)]
 struct CarParkingOptions {
+    /// Duration limit in seconds
     max_car_duration: u32,
-    ppr_search_options: PprOptions,
+    ppr_search_options: FootSearchOptions,
 }
 
 #[derive(Deserialize, Serialize, JsonSchema)]
@@ -174,12 +217,17 @@ struct GBFSOptions {
     max_vehicle_duration: u32,
 }
 
+/// See [Modes](https://motis-project.de/docs/api/endpoint/intermodal.html#modes) in the MOTIS documentation.
 #[derive(Deserialize, Serialize, JsonSchema)]
 #[serde(tag = "mode_type", content = "mode")]
 enum TransportMode {
+    /// Walking
     FootPPR(PprOptions),
+    /// Riding a bicycle
     Bike(BikeOptions),
+    /// Driving a car
     Car(CarOptions),
+    /// Driving a car including finding a location to park near the station
     CarParking(CarParkingOptions),
     GBFS(GBFSOptions),
 }
@@ -188,7 +236,7 @@ enum TransportMode {
 #[serde(untagged)]
 enum Location {
     Geo(GeoLocation),
-    Station(StationLocation),
+    Station(InputStation),
 }
 
 #[derive(Deserialize, Serialize, JsonSchema)]
@@ -199,23 +247,33 @@ enum SearchType {
 
 #[derive(Deserialize, Serialize, JsonSchema)]
 enum SearchDirection {
+    /// Search from start to destination
     Forward,
+    /// Search from destination to start, useful when searching by arrival time.
     Backward,
 }
 
 #[derive(Deserialize, Serialize, JsonSchema)]
 enum AllowedRouters {
+    /// The default routing engine
     #[serde(rename = "")]
     DefaultRouter,
 }
 
+/// See [Intermodal Routing](https://motis-project.de/docs/api/endpoint/intermodal.html#intermodal-routing-request) in the MOTIS documentation for more details.
 #[derive(Deserialize, Serialize, JsonSchema)]
 struct IntermodalConnectionRequest {
-    start_type: StartDestinationType,
+    /// Situation for which a connection should be searched
+    start_type: StartType,
+    /// The start location
     start: Start,
+    /// Transport modes to consider for the start of the trip
     start_modes: Vec<TransportMode>,
-    destination_type: StartDestinationType,
+    /// Type of destination
+    destination_type: DestinationType,
+    /// The destination location
     destination: Location,
+    /// Modes of transport to consider for the arrival
     destination_modes: Vec<TransportMode>,
     search_type: SearchType,
     search_dir: SearchDirection,
@@ -224,7 +282,9 @@ struct IntermodalConnectionRequest {
 
 #[derive(Deserialize, Serialize, JsonSchema)]
 struct StationGuesserRequest {
+    /// Maximum number of guesses to return
     guess_count: u8,
+    /// User input to guess from
     input: String,
 }
 
@@ -314,30 +374,40 @@ struct TripId {
 #[derive(Deserialize, Serialize, JsonSchema)]
 #[serde(tag = "content_type", content = "content")]
 enum RequestContent {
+    /// This request can be sent to the `/intermodal` target
     IntermodalConnectionRequest(IntermodalConnectionRequest),
+    /// This request can be sent to the `/intermodal` target
     IntermodalRoutingRequest(IntermodalConnectionRequest),
+    /// This request can be sent to the `/guesser` target
     StationGuesserRequest(StationGuesserRequest),
+    /// This request can be sent to the `/address` target
     AddressRequest(AddressRequest),
+    /// This request can be sent to the `/railviz/get_trains` target
     RailVizTrainsRequest(RailVizTrainsRequest),
+    /// This request can be sent to the `/railviz/get_trips` target
     RailVizTripsRequest(RailVizTripsRequest),
+    /// This request can be sent to the `/lookup/schedule_info` or the `/gbfs/info` target
     MotisNoMessage(MotisNoMessage),
+    /// This request can be sent to the `/railviz/get_station` target
     RailVizStationRequest(RailVizStationRequest),
+    /// This request can be sent to the `/ppr/route` target
     FootRoutingRequest(FootRoutingRequest),
-    TripId(TripId)
+    /// This request can be sent to the `/trip_to_connection` target
+    TripId(TripId),
 }
 
 #[derive(Deserialize, Serialize, JsonSchema)]
 struct Request {
     destination: RequestDestination,
     #[serde(flatten)]
-    content: RequestContent
+    content: RequestContent,
 }
 
 /// # MOTIS API
 ///
 /// All MOTIS requests need to be sent to this URL.
 ///
-/// You can use the destionation field to choose the endpoint to call.
+/// You can use the destination field to choose the endpoint to call.
 ///
 /// Have a look at what the MOTIS web interface sends for examples.
 ///
@@ -355,7 +425,7 @@ async fn proxy_api(
         RequestDestination::Module { target } => {
             if let Some(allowed_endpoints) = &config.allowed_endpoints {
                 if !allowed_endpoints.contains(&target) {
-                    return Err(Custom(Status::UnprocessableEntity, ()))
+                    return Err(Custom(Status::UnprocessableEntity, ()));
                 }
             }
         }
@@ -371,11 +441,11 @@ async fn proxy_api(
         .await
         .map_err(|error| {
             if error.is_timeout() {
-                return Custom(Status::GatewayTimeout, ())
+                return Custom(Status::GatewayTimeout, ());
             }
 
             if error.is_connect() {
-                return Custom(Status::BadGateway, ())
+                return Custom(Status::BadGateway, ());
             }
 
             let error_code = error
@@ -393,7 +463,7 @@ async fn proxy_api(
         .await
         .map_err(|_| Custom(Status::InternalServerError, ()))?;
 
-    trace!("MOTIS Response >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>", );
+    trace!("MOTIS Response >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
     trace!("{}", serde_json::to_string_pretty(&json).unwrap());
 
     Ok(Custom(Status::new(status), Json(json)))
