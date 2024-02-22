@@ -110,7 +110,9 @@ enum StartDestinationType {
 
 #[derive(Deserialize, Serialize, JsonSchema)]
 struct Interval {
+    /// Unix time stamp
     begin: u64,
+    /// Unix time stamp
     end: u64,
 }
 
@@ -239,7 +241,9 @@ struct RailVizTrainsRequest {
     corner2: Location,
     max_trains: u16,
     last_trains: u16,
+    /// Unix time stamp
     start_time: u64,
+    /// Unix time stamp
     end_time: u64,
 }
 
@@ -249,7 +253,9 @@ struct Trip {
     line_id: String,
     station_id: String,
     target_station_id: String,
+    /// Unix time stamp
     target_time: u64,
+    /// Unix time stamp
     time: u64,
     train_nr: u32,
 }
@@ -275,6 +281,7 @@ enum StationDepartureDirection {
 #[derive(Deserialize, Serialize, JsonSchema)]
 struct RailVizStationRequest {
     station_id: String,
+    /// Unix time stamp
     time: u64,
     event_count: u16,
     direction: StationDepartureDirection,
@@ -293,13 +300,15 @@ struct FootRoutingRequest {
 
 #[derive(Deserialize, Serialize, JsonSchema)]
 struct TripId {
-  id: String,
-  station_id: String,
-  train_nr: u32,
-  time: u64,
-  target_station_id: String,
-  target_time: u64,
-  line_id: String,
+    id: String,
+    station_id: String,
+    train_nr: u32,
+    /// Unix time stamp
+    time: u64,
+    target_station_id: String,
+    /// Unix time stamp
+    target_time: u64,
+    line_id: String,
 }
 
 #[derive(Deserialize, Serialize, JsonSchema)]
@@ -454,7 +463,7 @@ fn rocket() -> _ {
         }
     };
 
-    let mut routes =  openapi_get_routes![proxy_api];
+    let mut routes = openapi_get_routes![proxy_api];
     if config.proxy_assets {
         routes.append(&mut routes![proxy_everything]);
     }
