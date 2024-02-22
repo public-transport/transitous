@@ -31,6 +31,9 @@ num_days=365
 {% for feed in gtfsrt_feeds %}gtfsrt={{ feed.id }}|{{ feed.url }}|{{ feed.authorization }}
 {% endfor %}
 {% endif %}
+[intermodal]
+timeout = 5
+
 [osrm]
 profiles=/opt/motis/osrm-profiles/car.lua
 profiles=/opt/motis/osrm-profiles/bike.lua
