@@ -20,17 +20,28 @@ server {
         root /opt/motis/web/;
     }
 
+    # MOTIS Web Interface
     location / {
         root /opt/motis/web/;
     }
 
-    location /api/ {
-        proxy_pass http://localhost:8080/;
+    # Proxy and cache tiles
+    location /api/tiles/ {
+        proxy_pass http://localhost:8080/tiles/;
 
         proxy_cache            motis;
         proxy_cache_valid      200 302 404 5d;
         proxy_cache_use_stale  error timeout invalid_header updating
                                 http_500 http_502 http_503 http_504;
+    }
 
+    # MOTIS Proxy
+    location /api/ {
+        proxy_pass http://localhost:8000/;
+    }
+
+    # API Documentation
+    location ~ ^/(doc/|openapi.json) {
+        proxy_pass http://localhost:8000;
     }
 }
