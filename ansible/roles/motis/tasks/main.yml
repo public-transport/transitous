@@ -19,20 +19,10 @@
     group: motis
     state: directory
 
-- name: Copy MOTIS config file
-  copy:
-    src: config.ini
-    dest: /var/lib/motis/config.ini
-
 - name: Copy MOTIS systemd service
   copy:
     src: motis.service
     dest: /etc/systemd/system/motis.service
-
-# - name: Download Europe
-#   get_url:
-#     url: https://download.geofabrik.de/europe-latest.osm.pbf
-#     dest: /var/lib/motis/europe-latest.osm.pbf
 
 - name: Enable motis systemd service
   systemd:
