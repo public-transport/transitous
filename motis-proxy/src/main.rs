@@ -487,17 +487,20 @@ fn rocket() -> _ {
                     allow_try: false,
                     allow_authentication: false,
                     allow_server_selection: false,
+                    show_info: false,
                     ..Default::default()
                 },
                 ui: UiConfig {
                     // Don't use Google Fonts
                     load_fonts: false,
-                    header_color: "#dddddd".to_string(),
+                    header_color: "#F4AB45".to_string(),
                     primary_color: "#F4AB45".to_string(),
+                    bg_color: "#FFFFFF".to_string(),
+                    font_size: FontSize::Large,
                     ..Default::default()
                 },
                 nav: NavConfig {
-                    nav_bg_color: "#EFF0F1".to_string(),
+                    nav_bg_color: "#F5F5F5".to_string(),
                     ..Default::default()
                 },
                 schema: SchemaConfig {

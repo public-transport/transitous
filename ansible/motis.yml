@@ -6,6 +6,7 @@
   hosts: motis
   roles:
     - motis
+    - motis-proxy
     - nginx
   tasks:
     - name: Install rsync
