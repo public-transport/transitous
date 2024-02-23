@@ -15,3 +15,4 @@ allowed_endpoints = [ "/intermodal", "/guesser", "/address",
 [debug.proxy]
 proxy_assets = true
 motis_address = "https://europe.motis-project.de"
+routes_per_minute_limit = 20
