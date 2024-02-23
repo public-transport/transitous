@@ -1,0 +1,15 @@
+{
+    "maintainers": [
+        {
+            "name": "Ederson Mota Pereira",
+            "github": "edrmp"
+        }
+    ],
+    "sources": [
+        {
+            "name": "ee",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-ud-atkoliinidoÜ~aktsiaseltshansabussiliinid~kihnuveeteedas~väi"
+        }
+    ]
+}
