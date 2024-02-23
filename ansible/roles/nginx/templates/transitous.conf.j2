@@ -10,6 +10,9 @@ server {
     include '{{ transitous_nginx_site_include_extra }}';
     {% endif %}
 
+    # Override TLS settings from included file
+    ssl_protocols TLSv1.2 TLSv1.3;
+
     server_name {{ transitous_domain }};
 
     location ~ ^/$ {
