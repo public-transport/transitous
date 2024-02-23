@@ -21,7 +21,7 @@ if __name__ == "__main__":
     flavour = sys.argv[1]
 
     feed_dir = Path("feeds/")
-    osm_map = "berlin-latest.osm.pbf"
+    osm_map = "europe-latest.osm.pbf"
     osm_coastline = "land-polygons-complete-4326.zip"
 
     gtfs_feeds = []
