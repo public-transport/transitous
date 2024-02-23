@@ -22,7 +22,7 @@ class License:
 class Source:
     name: str
     fix: bool = False
-    license: License
+    license: Optional[License] = None
     spec: str = "gtfs"
 
     def __init__(self, parsed: dict = None):
