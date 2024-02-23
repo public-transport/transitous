@@ -17,5 +17,5 @@ jobs:
       run: docker build -t transitous . -f ci/container/Containerfile
     - name: Verify that new feeds can be downloaded and parsed
       run: |
-        chmod 777 .
+        find . -type d -exec chmod 777 {} \;
         docker run -v $PWD:/transitous -w /transitous transitous ci/fetch-feeds.py merge-request
