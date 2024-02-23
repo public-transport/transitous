@@ -2,9 +2,11 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
+[release]
+ip_header = "X-Forwarded-For"
+
 [release.proxy]
 # TODO: Add /address and /ppr/route once we have it set up
 allowed_endpoints = [ "/intermodal", "/guesser",
                       "/railviz/get_trains", "/railviz/get_trips", "/railviz/get_station",
                       "/lookup/schedule_info", "/gbfs/info", "/trip_to_connection" ]
-

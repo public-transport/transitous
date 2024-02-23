@@ -5,6 +5,8 @@
 #[macro_use]
 extern crate rocket;
 
+mod rate_limit;
+
 use log::{trace, warn};
 use reqwest::{Client, StatusCode};
 use rocket::{
@@ -18,7 +20,9 @@ use rocket_cors::{AllowedOrigins, CorsOptions};
 use serde::{Deserialize, Serialize};
 use serde_default::DefaultFromSerde;
 
-use std::time::Duration;
+use std::{net::IpAddr, num::NonZeroUsize, time::Duration};
+
+use rate_limit::IpRateLimit;
 
 // For documetation generation
 use rocket_okapi::okapi::schemars;
@@ -43,6 +47,12 @@ fn default_proxy_assets() -> bool {
 fn default_allowed_endpoints() -> Option<Vec<Endpoint>> {
     None
 }
+fn default_routes_per_minute_limit() -> u16 {
+    20
+}
+fn default_lru_rate_limit_entries() -> usize {
+    10_000
+}
 
 #[derive(Deserialize, DefaultFromSerde)]
 struct Config {
@@ -62,6 +72,12 @@ struct Config {
     /// If this option is not set, all known endpoints will be allowed.
     #[serde(default = "default_allowed_endpoints")]
     allowed_endpoints: Option<Vec<Endpoint>>,
+
+    #[serde(default = "default_routes_per_minute_limit")]
+    routes_per_minute_limit: u16,
+
+    #[serde(default = "default_lru_rate_limit_entries")]
+    lru_rate_limit_entries: usize,
 }
 
 #[derive(Deserialize, Serialize, PartialEq, Eq, JsonSchema)]
@@ -417,6 +433,8 @@ async fn proxy_api(
     request: Json<Request>,
     http_client: &State<Client>,
     config: &State<Config>,
+    route_rate_limit: &State<IpRateLimit>,
+    remote_address: IpAddr,
 ) -> ResultResponse<Custom<Json<serde_json::Value>>> {
     let request = request.into_inner();
 
@@ -428,6 +446,17 @@ async fn proxy_api(
                     return Err(Custom(Status::UnprocessableEntity, ()));
                 }
             }
+        }
+    }
+
+    // Check if routing limit was exceeded
+    if matches!(
+        request.content,
+        RequestContent::IntermodalConnectionRequest(_)
+            | RequestContent::IntermodalRoutingRequest(_)
+    ) {
+        if route_rate_limit.should_limit(&remote_address) {
+            return Err(Custom(Status::TooManyRequests, ()))
         }
     }
 
@@ -548,6 +577,11 @@ fn rocket() -> _ {
         )
         .attach(cors.clone())
         .manage(cors)
+        .manage(IpRateLimit::new(
+            NonZeroUsize::new(config.lru_rate_limit_entries)
+                .expect("lru_rate_limit_entries must not be zero"),
+            config.routes_per_minute_limit
+        ))
         .manage(config)
         .mount("/", routes)
         .mount("/", rocket_cors::catch_all_options_routes())

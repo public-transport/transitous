@@ -18,3 +18,4 @@ rocket_cors = { version = "0.6.0", default-features = false }
 serde_default = "0.1"
 log = "0.4"
 rocket_okapi = { version = "0.8", features = [ "rapidoc" ] }
+lru = "0.12"
