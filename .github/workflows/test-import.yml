@@ -16,4 +16,6 @@ jobs:
     - name: Build docker images
       run: docker build -t transitous . -f ci/container/Containerfile
     - name: Verify that new feeds can be downloaded and parsed
-      run: docker run -v $PWD:/transitous -w /transitous transitous ci/fetch-feeds.py merge-request
+      run: |
+        chmod 777 .
+        docker run -v $PWD:/transitous -w /transitous transitous ci/fetch-feeds.py merge-request
