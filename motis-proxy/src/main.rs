@@ -442,7 +442,7 @@ async fn proxy_api(
     match &request.destination {
         RequestDestination::Module { target } => {
             if let Some(allowed_endpoints) = &config.allowed_endpoints {
-                if !allowed_endpoints.contains(&target) {
+                if !allowed_endpoints.contains(target) {
                     return Err(Custom(Status::UnprocessableEntity, ()));
                 }
             }
@@ -454,14 +454,15 @@ async fn proxy_api(
         request.content,
         RequestContent::IntermodalConnectionRequest(_)
             | RequestContent::IntermodalRoutingRequest(_)
-    ) {
-        if route_rate_limit.should_limit(&remote_address) {
-            return Err(Custom(Status::TooManyRequests, ()))
-        }
+    ) && route_rate_limit.should_limit(&remote_address)
+    {
+        return Err(Custom(Status::TooManyRequests, ()));
     }
 
     trace!("MOTIS Request <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<");
-    trace!("{}", serde_json::to_string_pretty(&request).unwrap());
+    if let Ok(json) = serde_json::to_string_pretty(&request) {
+        trace!("{json}");
+    }
 
     let response = http_client
         .post(&config.motis_address)
@@ -493,7 +494,9 @@ async fn proxy_api(
         .map_err(|_| Custom(Status::InternalServerError, ()))?;
 
     trace!("MOTIS Response >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
-    trace!("{}", serde_json::to_string_pretty(&json).unwrap());
+    if let Ok(json) = serde_json::to_string_pretty(&json) {
+        trace!("{json}");
+    }
 
     Ok(Custom(Status::new(status), Json(json)))
 }
@@ -527,12 +530,11 @@ async fn proxy_everything<'r>(
 
     let status = response.status().as_u16();
     let headers = response.headers();
-    let content_type = if let Some(content_type) = headers.get("content-type") {
-        ContentType::parse_flexible(content_type.to_str().unwrap_or("application/octet-stream"))
-            .unwrap()
-    } else {
-        ContentType::Any
-    };
+    let content_type = headers
+        .get("content-type")
+        .and_then(|content_type| content_type.to_str().ok())
+        .and_then(ContentType::parse_flexible)
+        .unwrap_or(ContentType::Any);
 
     let body = response
         .bytes()
