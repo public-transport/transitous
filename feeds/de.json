@@ -15,7 +15,7 @@
             },
             "fix": true,
             "options": {
-                "fetch-interval-days": 5
+                "fetch-interval-days": 2
             }
         }
     ]

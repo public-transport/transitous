@@ -45,7 +45,8 @@ class Fetcher:
                     return None
 
                 # Fetch last modification time from the server
-                server_headers = requests.head(source.url).headers
+                server_headers = \
+                    requests.head(source.url, allow_redirects=True).headers
 
                 # If server version is older, return
                 last_modified_server = None
