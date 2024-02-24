@@ -1,3 +1,8 @@
+<!--
+SPDX-License-Identifier: CC0-1.0
+SPDX-FileCopyrightText: none
+-->
+
 # Transitous
 
 Free and open public transport routing.
@@ -98,7 +103,12 @@ Now inside the container, you can download and post-process all the feeds. This 
 
 The `out/` directory should now contain a number of zip files.
 
-In addition to those, you also need a background map. Importing all of europe would take too long, so for now we just use Berlin.
+In addition to those, you also need a background map. Importing all of europe would take too long,
+so for now just a smaller region.
+You can find working map pbf downloads at [Geofabrik](https://download.geofabrik.de/).
+You can click on the region names to find downloads for smaller subregions.
+
+Then download the chosen region:
 ```bash
 wget https://download.geofabrik.de/europe/germany/berlin-latest.osm.pbf -P out
 ```
@@ -109,6 +119,9 @@ You can generate one using our script:
 ./src/generate-motis-config.py full
 ```
 
+The generated config file still needs a small adjustment.
+Edit the line in `out/config.ini` that starts with `paths=osm` to point to your map.
+
 You can then go to the `out` directory, and start motis:
 ```bash
 cd out
@@ -117,9 +130,3 @@ motis -c config.ini --server.host 0.0.0.0 --server.static_path /opt/motis/web
 
 The first start will take a while, as it imports all the maps and feeds.
 Once it's done, the motis web interface should be reachable on [localhost:8080](http://localhost:8080).
-
-
-<!--
-SPDX-License-Identifier: CC0-1.0
-SPDX-FileCopyrightText: none
--->
