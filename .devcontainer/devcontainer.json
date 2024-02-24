@@ -4,7 +4,7 @@
 	"name": "Transitous",
 	"build": {
 		"dockerfile": "../ci/container/Containerfile",
-		"context": ".."
+		"context": "../ci/container/"
 	},
 
 	"runArgs": [
@@ -16,12 +16,12 @@
 		// Configure properties specific to VS Code.
 		"vscode": {
 			// Set *default* container specific settings.json values on container create.
-			"settings": { 
+			"settings": {
 				"python.defaultInterpreterPath": "/usr/bin/python3",
 				"python.linting.enabled": true,
 				"python.linting.pylintEnabled": true
 			},
-			
+
 			// Add the IDs of extensions you want installed when the container is created.
 			"extensions": [
 				"ms-python.python",
@@ -31,7 +31,7 @@
 	},
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	// "forwardPorts": [],
+	"forwardPorts": [ 8080 ],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// "postCreateCommand": "pip3 install --user -r requirements.txt",
