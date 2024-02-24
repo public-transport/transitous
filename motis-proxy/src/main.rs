@@ -127,7 +127,7 @@ enum StartType {
     OntripStationStart,
     /// The user is already on a train and wants to find connections from there.
     /// See [Ontrip Train Start](https://motis-project.de/docs/api/endpoint/intermodal.html#ontrip-train-start) in the MOTIS documentation.
-    OntripTrainStart
+    OntripTrainStart,
 }
 
 #[derive(Deserialize, Serialize, JsonSchema)]
@@ -582,7 +582,7 @@ fn rocket() -> _ {
         .manage(IpRateLimit::new(
             NonZeroUsize::new(config.lru_rate_limit_entries)
                 .expect("lru_rate_limit_entries must not be zero"),
-            config.routes_per_minute_limit
+            config.routes_per_minute_limit,
         ))
         .manage(config)
         .mount("/", routes)

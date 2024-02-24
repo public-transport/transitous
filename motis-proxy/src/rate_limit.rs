@@ -3,7 +3,12 @@
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
 use lru::LruCache;
-use std::{net::IpAddr, num::NonZeroUsize, time::Duration, sync::{Arc, Mutex}};
+use std::{
+    net::IpAddr,
+    num::NonZeroUsize,
+    sync::{Arc, Mutex},
+    time::Duration,
+};
 
 use std::time::Instant;
 
@@ -14,7 +19,7 @@ struct Inner {
 }
 
 pub struct IpRateLimit {
-    inner: Arc<Mutex<Inner>>
+    inner: Arc<Mutex<Inner>>,
 }
 
 impl IpRateLimit {
@@ -24,7 +29,7 @@ impl IpRateLimit {
                 requests: LruCache::new(size),
                 rate_limit,
                 last_cleared: Instant::now(),
-            }))
+            })),
         }
     }
 
@@ -44,11 +49,11 @@ impl IpRateLimit {
             inner.requests.put(*ip, 1);
         }
 
-
         // Check if ip has reached rate limit
         let rate_limit = inner.rate_limit;
-        inner.requests
-            .get(&ip)
+        inner
+            .requests
+            .get(ip)
             .map(|count| *count >= rate_limit)
             .unwrap_or(false)
     }
