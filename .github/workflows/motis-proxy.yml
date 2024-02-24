@@ -3,7 +3,14 @@
 
 name: MOTIS Proxy Build
 
-on: [push, pull_request]
+on:
+  push:
+    paths:
+      - "motis-proxy/**"
+  pull_request:
+    paths:
+      - "motis-proxy/**"
+
 
 jobs:
   check:
