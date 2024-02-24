@@ -3,7 +3,10 @@
 
 name: Verfy new data can be imported
 
-on: [pull_request]
+on:
+  pull_request:
+    paths:
+      - "feeds/**"
 
 jobs:
   test-import:
