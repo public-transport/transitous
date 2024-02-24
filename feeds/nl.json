@@ -1,0 +1,15 @@
+{
+    "maintainers": [
+        {
+            "name": "Jonah Brüchert",
+            "github": "jbruechert"
+        }
+    ],
+    "sources": [
+        {
+            "name": "ovapi",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u-nl"
+        }
+    ]
+}
