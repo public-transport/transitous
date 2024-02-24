@@ -1,0 +1,15 @@
+{
+    "maintainers": [
+        {
+            "name": "Mathis Brüchert",
+            "github": "mbruchert"
+        }
+    ],
+    "sources": [
+        {
+            "name": "Trafiklab",
+            "type": "http",
+            "url": "https://gtfs.pro/files/uran/improved-gtfs-sverige.zip",
+        }
+    ]
+}
