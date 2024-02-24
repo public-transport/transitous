@@ -34,7 +34,7 @@ jobs:
 
     - name: Fetch GTFS-Feeds
       run: |
-        find . -type d -exec chmod 777 {} \;
+        sudo chown 1000:1000 -R .
         docker run -v $PWD:/transitous -w /transitous transitous ci/fetch-feeds.py timer
         docker run -v $PWD:/transitous -w /transitous transitous src/generate-attribution.py
 
@@ -54,7 +54,7 @@ jobs:
 
     - name: Compress results
       run: |
-        tar -C out/ --zstd -cf feeds.tar.zst .
+        sudo tar -C out/ --zstd -cf feeds.tar.zst .
 
     - name: Upload results
       run: curl --upload-file feeds.tar.zst https://transfer.sh/feeds.tar.zst
