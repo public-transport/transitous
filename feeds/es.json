@@ -7,6 +7,14 @@
     ],
     "sources": [
         {
+            "name": "Renfe — Alta velocidad, larga distancia y media distancia",
+            "type": "http",
+            "url": "https://ssl.renfe.com/gtransit/Fichero_AV_LD/google_transit.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
+        },
+        {
             "name": "VITRASA",
             "type": "http",
             "url": "https://datos.vigo.org/data/transporte/gtfs_vigo.zip",
