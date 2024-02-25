@@ -7,7 +7,7 @@
     ],
     "sources": [
         {
-            "name": "Renfe — Alta velocidad, larga distancia y media distancia",
+            "name": "es-renfe-hsldmd",
             "type": "http",
             "url": "https://ssl.renfe.com/gtransit/Fichero_AV_LD/google_transit.zip",
             "license": {
@@ -15,12 +15,13 @@
             }
         },
         {
-            "name": "VITRASA",
+            "name": "es-vitrasa",
             "type": "http",
             "url": "https://datos.vigo.org/data/transporte/gtfs_vigo.zip",
             "license": {
                 "spdx-identifier": "ODC-By-1.0"
             },
+            "fix": true,
             "options": {
                 "fetch-interval-days": 1
             }
