@@ -123,7 +123,7 @@ class Fetcher:
         if source.fix:
             command.append("--fix")
 
-        subprocess.call(command, cwd=tmpdir)
+        subprocess.check_call(command, cwd=tmpdir)
 
         shutil.rmtree(tmpdir)
 
