@@ -7,7 +7,7 @@
     ],
     "sources": [
         {
-            "name": "es-renfe-hsldmd",
+            "name": "renfe-hsldmd",
             "type": "http",
             "url": "https://ssl.renfe.com/gtransit/Fichero_AV_LD/google_transit.zip",
             "license": {
@@ -15,7 +15,7 @@
             }
         },
         {
-            "name": "es-vitrasa",
+            "name": "vitrasa",
             "type": "http",
             "url": "https://datos.vigo.org/data/transporte/gtfs_vigo.zip",
             "license": {
