@@ -17,6 +17,19 @@
             "options": {
                 "fetch-interval-days": 2
             }
+        },
+        {
+            "name": "ZVV",
+            "type": "http",
+            "url": "https://vogtlandauskunft.de/media/vogtlandauskunft/Download/Open-Data/GTFS_ZVV_20240131.zip"
+        },
+        {
+            "name": "VMS",
+            "type": "http",
+            "url": "https://www.vms.de/wp-content/uploads/2024/02/GTFS_VMS_2024-02-05.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
         }
     ]
 }
