@@ -17,6 +17,9 @@
             "url": "https://www.dati.lombardia.it/download/3z4k-mxz9/application%2Fx-zip-compressed",
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
+            },
+            "options": {
+                "fetch-interval-days": 2
             }
         }
     ]
