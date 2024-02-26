@@ -1,0 +1,13 @@
+# SPDX-FileCopyrightText: 2024 Jonah Brüchert <jbb@kaidan.im>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+[Unit]
+Description=Update MOTIS Feeds
+
+[Timer]
+Unit=motis-update-feeds.service
+OnCalendar=*-*-* 4:00:00
+
+[Install]
+WantedBy=timers.target
