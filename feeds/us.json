@@ -1,0 +1,22 @@
+{
+    "maintainers": [
+        {
+            "name": "Nathan Upchurch",
+            "github": "N-Upchurch"
+        }
+    ],
+    "sources": [
+        {
+            "name": "CTA",
+            "type": "http",
+            "url": "https://www.transitchicago.com/downloads/sch_data/google_transit.zip",
+            "license": {
+                "url": "https://www.transitchicago.com/downloads/sch_data/developers_license_agreement.htm"
+            },
+            "fix": true,
+            "options": {
+                "fetch-interval-days": 1
+            }
+        }
+    ]
+}
