@@ -12,6 +12,11 @@
             "transitland-atlas-id": "f-u0nd-comunedimilano"
         },
         {
+            "name": "Toscana-Trenitalia",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-sp-trenitaliaspa"
+        },
+        {
             "name": "Trenord",
             "type": "http",
             "url": "https://www.dati.lombardia.it/download/3z4k-mxz9/application%2Fx-zip-compressed",
