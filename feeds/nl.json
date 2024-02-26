@@ -10,6 +10,18 @@
             "name": "ovapi",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u-nl"
+        },
+        {
+            "name": "ovapi",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://gtfs.ovapi.nl/nl/trainUpdates.pb"
+        },
+        {
+            "name": "ovapi",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://gtfs.ovapi.nl/nl/tripUpdates.pb"
         }
     ]
 }
