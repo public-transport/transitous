@@ -1,19 +1,32 @@
 # SPDX-FileCopyrightText: 2024 Jonah Brüchert <jbb@kaidan.im>
 # SPDX-License-Identifier: CC0-1.0
 
-FROM docker.io/debian:bookworm-slim
+FROM docker.io/debian:bookworm-slim AS motis
 
 ARG MOTIS_VERSION=v0.11.20
+
+RUN apt-get update -y && \
+    apt-get install -y --no-install-recommends bzip2 ca-certificates wget && \
+    apt-get clean -y && \
+    rm -rf /var/lib/apt/lists/* 
+
+RUN wget -qO - https://github.com/motis-project/motis/releases/download/${MOTIS_VERSION}/motis-linux-amd64.tar.bz2 | tar -C /opt/ -jx
+
+FROM docker.io/debian:bookworm-slim
+
 ARG USERNAME=transitous
 ARG USER_UID=1000
 ARG USER_GID=$USER_UID
 
 RUN apt-get update -y && \
-    apt-get install -y --no-install-recommends git python3-requests python3-jinja2 golang wget bzip2 && \
+    apt-get install -y --no-install-recommends git python3-requests python3-jinja2 golang && \
     apt-get clean -y && \
     rm -rf /var/lib/apt/lists/* 
 
-RUN wget -qO - https://github.com/motis-project/motis/releases/download/${MOTIS_VERSION}/motis-linux-amd64.tar.bz2 | tar -C /opt/ -jx
+# install MOTIS from `motis` stage
+COPY --from=motis /opt/motis /opt/motis
+RUN \
+    chown -R "$USER_UID:$USER_GID" /opt/motis
 ENV PATH=/opt/motis:$PATH
 
 RUN GOBIN=/usr/local/bin/ go install github.com/patrickbr/gtfstidy@latest
@@ -21,7 +34,6 @@ RUN GOBIN=/usr/local/bin/ go install github.com/patrickbr/gtfstidy@latest
 # Create the user / set user rights
 RUN groupadd --gid $USER_GID $USERNAME && \
     useradd --uid $USER_UID --gid $USER_GID -m $USERNAME && \
-    mkdir /workspace && chown -R $USER_UID:$USER_GID /workspace && \
-    chown -R $USER_UID:$USER_GID /opt/motis
+    mkdir /workspace && chown -R $USER_UID:$USER_GID /workspace
 
 USER ${USERNAME}
