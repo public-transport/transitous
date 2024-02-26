@@ -143,7 +143,7 @@ class Fetcher:
             if not dest_path:
                 continue
 
-            print(f"Postproccing {region_name}-{source.name} with gtfstidy…")
+            print(f"Postprocessing {region_name}-{source.name} with gtfstidy…")
             sys.stdout.flush()
             self.postprocess(source, dest_path)
 
