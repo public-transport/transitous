@@ -14,8 +14,9 @@ RUN apt-get update -y && \
     rm -rf /var/lib/apt/lists/* 
 
 RUN wget -qO - https://github.com/motis-project/motis/releases/download/${MOTIS_VERSION}/motis-linux-amd64.tar.bz2 | tar -C /opt/ -jx
-RUN GOBIN=/usr/local/bin/ go install github.com/patrickbr/gtfstidy@latest
 ENV PATH=/opt/motis:$PATH
+
+RUN GOBIN=/usr/local/bin/ go install github.com/patrickbr/gtfstidy@latest
 
 # Create the user / set user rights
 RUN groupadd --gid $USER_GID $USERNAME && \
