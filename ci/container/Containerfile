@@ -10,7 +10,10 @@ RUN apt-get update -y && \
     apt-get clean -y && \
     rm -rf /var/lib/apt/lists/* 
 
-RUN wget -qO - https://github.com/motis-project/motis/releases/download/${MOTIS_VERSION}/motis-linux-amd64.tar.bz2 | tar -C /opt/ -jx
+RUN \
+    wget -nv -O /tmp/motis.tar.bz2 https://github.com/motis-project/motis/releases/download/${MOTIS_VERSION}/motis-linux-amd64.tar.bz2 && \
+    tar -C /opt/ -jx </tmp/motis.tar.bz2 && \
+    rm /tmp/motis.tar.bz2
 
 FROM ghcr.io/gtfstidy/gtfstidy AS gtfstidy
 
