@@ -1,0 +1,26 @@
+{
+    "maintainers": [
+        {
+            "name": "Fabio Alessandro Locati",
+            "github": "fale"
+        }
+    ],
+    "sources": [
+        {
+            "name": "ATM",
+            "type": "http",
+            "url": "https://dati.comune.milano.it/gtfs.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
+        },
+        {
+            "name": "Trenord",
+            "type": "http",
+            "url": "https://www.dati.lombardia.it/download/3z4k-mxz9/application%2Fx-zip-compressed",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
+        }
+    ]
+}
