@@ -1,0 +1,36 @@
+# SPDX-FileCopyrightText: 2024 Jonah Brüchert <jbb@kaidan.im>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+[Unit]
+Description=SSH Server for RSync push
+After=network.target
+
+[Service]
+ExecStartPre=/usr/sbin/sshd -t
+ExecStart=/usr/sbin/sshd -f /var/lib/rsync-ssh/sshd_config
+ExecReload=/usr/sbin/sshd -t
+ExecReload=/bin/kill -HUP $MAINPID
+KillMode=process
+Restart=on-failure
+RestartPreventExitStatus=255
+Type=notify
+RuntimeDirectory=rsync-sshd
+RuntimeDirectoryMode=0755
+
+# Sandboxing
+RestrictSUIDSGID=true
+RestrictRealtime=true
+PrivateDevices=true
+PrivateTmp=true
+ProtectHostname=true
+NoNewPrivileges=true
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectKernelLogs=true
+ProtectControlGroups=true
+MemoryDenyWriteExecute=true
+ProtectSystem=full
+
+[Install]
+WantedBy=multi-user.target
