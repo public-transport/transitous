@@ -9,3 +9,4 @@ motis:
       ansible_host: vm-motis.spline.de
       transitous_nginx_site_include_extra: /etc/ssl/routing.spline.inf.fu-berlin.de/include.nginx
       transitous_domain: routing.spline.de
+      transitous_rsync_public_key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIL4Pxul2Bci8Vjowx4Q75wQaAXvvWvw1HsCzxBRgi/tI jbb@hyperion"

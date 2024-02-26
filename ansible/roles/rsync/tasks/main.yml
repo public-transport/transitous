@@ -1,0 +1,47 @@
+# SPDX-FileCopyrightText: 2024 Jonah Brüchert <jbb@kaidan.im>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+- name: Install rsync
+  apt:
+    name:
+      - rsync
+      - bubblewrap
+      - dash
+      - openssh-server
+
+- name: Create user for rsync upload
+  user:
+    name: rsync
+    shell: /usr/bin/dash
+    create_home: true
+    home: /var/lib/rsync-ssh
+
+- name: Copy custom sshd_config
+  copy:
+    src: sshd_config
+    dest: /var/lib/rsync-ssh/sshd_config
+
+- name: Install rsync-ssh.service
+  copy:
+    src: rsync-ssh.service
+    dest: /etc/systemd/system/
+
+- name: Create rsync target directory
+  file:
+    path: /srv/rsync/transitous/
+    state: directory
+    owner: rsync
+
+- name: Add restricted authorized key for rsync
+  authorized_key:
+    user: rsync
+    state: present
+    key: 'command="bwrap --new-session --die-with-parent --cap-drop ALL --unshare-all --ro-bind /usr/lib/ /usr/lib/ --ro-bind /usr/bin/env /usr/bin/env --ro-bind /usr/bin/python3 /usr/bin/python3 --ro-bind /usr/bin/rrsync /usr/bin/rrsync --ro-bind /usr/bin/rsync /usr/bin/rsync --ro-bind /lib/ /lib/ --ro-bind /lib64/ /lib64 --bind /srv/rsync/transitous/ /srv/rsync/transitous/ -- /usr/bin/rrsync -wo /srv/rsync/transitous/",restrict {{ transitous_rsync_public_key }}'
+
+- name: Enable rsync-ssh.service
+  systemd:
+    name: rsync-ssh
+    enabled: true
+    masked: false
+    state: started
