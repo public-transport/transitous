@@ -2,6 +2,10 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
+- name: Install bzip2 for unpacking motis
+  apt:
+    name: bzip2
+
 - name: Create MOTIS user
   user:
     name: motis
@@ -28,6 +32,4 @@
   systemd:
     name: motis.service
     enabled: true
-    state: started
     masked: false
-    daemon_reload: true

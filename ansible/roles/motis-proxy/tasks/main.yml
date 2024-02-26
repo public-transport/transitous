@@ -26,7 +26,5 @@
 - name: Enable motis-proxy systemd service
   systemd:
     name: motis-proxy.service
-    enabled: true
-    state: started
     masked: false
-    daemon_reload: true
+    enabled: true

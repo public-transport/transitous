@@ -9,9 +9,20 @@
     - motis-proxy
     - nginx
   tasks:
-    - name: Install rsync
-      apt:
-        name:
-          - rsync
-          - htop
-          - zstd
+    - name: Start motis
+      systemd:
+        name: motis
+        daemon_reload: true
+        state: started
+
+    - name: Start motis-proxy
+      systemd:
+        name: motis-proxy
+        daemon_reload: true
+        state: started
+
+    - name: Start nginx
+      systemd:
+        name: motis-proxy
+        daemon_reload: true
+        state: reloaded
