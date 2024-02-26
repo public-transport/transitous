@@ -1,0 +1,15 @@
+{
+    "maintainers": [
+        {
+            "name": "Jonah Brüchert",
+            "github": "jbruechert"
+        }
+    ],
+    "sources": [
+        {
+            "name": "visimarsrutai",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-visimarsrutai~lt~all"
+        }
+    ]
+}
