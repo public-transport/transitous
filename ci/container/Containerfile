@@ -26,13 +26,13 @@ RUN \
     chown -R "$USER_UID:$USER_GID" /opt/motis
 ENV PATH=/opt/motis:$PATH
 
+# install gtfstidy from `gtfstidy` stage
+COPY --from=gtfstidy /usr/local/bin/gtfstidy /usr/local/bin/gtfstidy
+
 RUN apt-get update -y && \
     apt-get install -y --no-install-recommends git python3-requests python3-jinja2 && \
     apt-get clean -y && \
     rm -rf /var/lib/apt/lists/* 
-
-# install gtfstidy from `gtfstidy` stage
-COPY --from=gtfstidy /usr/local/bin/gtfstidy /usr/local/bin/gtfstidy
 
 # Create the user / set user rights
 RUN groupadd --gid $USER_GID $USERNAME && \
