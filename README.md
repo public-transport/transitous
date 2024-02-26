@@ -51,7 +51,7 @@ A transitland-atlas source is a feed from [Transitland](https://www.transit.land
 
 ```json
 {
-    "name": "<name to be used for the output filename>",
+    "name": "<name to be used for the output filename, should not contain spaces>",
     "type": "transitland-atlas",
     "transitland-atlas-id": "<onestop id>"
 }
