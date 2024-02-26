@@ -8,11 +8,8 @@
     "sources": [
         {
             "name": "ATM",
-            "type": "http",
-            "url": "https://dati.comune.milano.it/gtfs.zip",
-            "license": {
-                "spdx-identifier": "CC-BY-4.0"
-            }
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u0nd-comunedimilano"
         },
         {
             "name": "Trenord",
