@@ -29,6 +29,8 @@ if __name__ == "__main__":
         for source in region.sources:
             if (type(source) == TransitlandSource):
                 source = transitland_atlas.source_by_id(source)
+                if not source:
+                    continue
 
             attribution = {}
 

@@ -77,11 +77,6 @@
             "transitland-atlas-id": "f-u3q-warszawski~transport~publiczny~rt~alerts"
         },
         {
-            "name": "Warszawa-RT-Vehicle-Positions",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u3q-warszawski~transport~publiczny~rt~positions"
-        },
-        {
             "name": "Warszawska-Kolej-Dojazdowa",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u3qb-warszawskakolejdojazdowa"
