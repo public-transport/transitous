@@ -17,11 +17,6 @@
             "transitland-atlas-id": "f-pol~regio~pl"
         },
         {
-            "name": "Rybnik",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u2vh-rybnik"
-        },
-        {
             "name": "Rzeszów",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u2zs-rzeszow"
@@ -77,21 +72,6 @@
             "transitland-atlas-id": "f-u3q-warszawski~transport~publiczny~rt~alerts"
         },
         {
-            "name": "Warszawska-Kolej-Dojazdowa",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u3qb-warszawskakolejdojazdowa"
-        },
-        {
-            "name": "Warszawska-Kolej-Dojazdowa-RT",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u3qb-warszawskakolejdojazdowa~rt"
-        },
-        {
-            "name": "Łomianki",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u3qc-komunikacjamiejskaŁomiankispzoo"
-        },
-        {
             "name": "Łomża",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u3rw-lomza"
@@ -110,17 +90,6 @@
             "name": "Giżycko",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u3x7-gizycko"
-        },
-        {
-            "name": "Ełk",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u3xf-elk",
-            "fix": "true"
-        },
-        {
-            "name": "Ełk-RT",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u3xf-elk~rt"
         },
         {
             "name": "Lublin",
