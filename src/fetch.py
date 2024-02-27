@@ -29,6 +29,9 @@ class Fetcher:
         match source:
             case TransitlandSource():
                 http_source = self.transitland_atlas.source_by_id(source)
+                if not http_source:
+                    return None
+
                 return self.fetch_source(name, http_source)
             case HttpSource():
                 # Detect last modification time of local file

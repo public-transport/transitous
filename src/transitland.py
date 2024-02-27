@@ -3,7 +3,7 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 from pathlib import Path
-from typing import Dict
+from typing import Dict, Union
 import json
 from metadata import *
 
@@ -23,17 +23,27 @@ class Atlas:
 
         return atlas
 
-    def source_by_id(self, source: TransitlandSource) -> HttpSource:
+    def source_by_id(self, source: TransitlandSource) -> Union[HttpSource, UrlSource, None]:
+        result = None
         feed = self.by_id[source.transitland_atlas_id]
-        http_source = HttpSource()
-        http_source.name = source.name
-        http_source.url = feed["urls"]["static_current"]
+        if "static_current" in feed["urls"]:
+            result = HttpSource()
+            result.name = source.name
+            result.url = feed["urls"]["static_current"]
+            result.spec = "gtfs"
+        elif "realtime_trip_updates" in feed["urls"]:
+            result = UrlSource()
+            result.name = source.name
+            result.url = feed["urls"]["realtime_trip_updates"]
+            result.spec = "gtfs-rt"
+        else:
+            return None
 
         if "license" in feed:
-            http_source.license = License()
+            result.license = License()
             if "spdx_identifier" in feed["license"]:
-                http_source.license.spdx_identifier = feed["license"]["spdx_identifier"]
+                result.license.spdx_identifier = feed["license"]["spdx_identifier"]
             if "url" in feed["license"]:
-                http_source.license.url = feed["license"]["url"]
+                result.license.url = feed["license"]["url"]
 
-        return http_source
+        return result

@@ -8,6 +8,7 @@ import json
 import metadata
 import tomllib
 import sys
+import transitland
 
 from pathlib import Path
 from jinja2 import Template
@@ -24,6 +25,8 @@ if __name__ == "__main__":
     osm_map = "europe-latest.osm.pbf"
     osm_coastline = "land-polygons-complete-4326.zip"
 
+    atlas = transitland.Atlas.load(Path("transitland-atlas/"))
+
     gtfs_feeds = []
     gtfsrt_feeds = []
 
@@ -37,6 +40,13 @@ if __name__ == "__main__":
 
             for source in region.sources:
                 schedule_name = f"{region_name}-{source.name}"
+
+                match source:
+                    case metadata.TransitlandSource():
+                        source = atlas.source_by_id(source)
+                        if not source:
+                            continue
+
                 match source.spec:
                     case "gtfs":
                         schedule_file = f"{region_name}_{source.name}.gtfs.zip"
