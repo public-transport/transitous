@@ -1,0 +1,30 @@
+# SPDX-FileCopyrightText: 2024 Jonah Brüchert <jbb@kaidan.im>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+- name: Set up MOTIS servers
+  hosts: localhost
+  connection: local
+  vars:
+    transitous_nginx_site_include_extra: "/etc/nginx/ssl.conf"
+    transitous_domain: "localhost"
+  pre_tasks:
+    - name: Install openssl
+      apt:
+        name: openssl
+    - name: Generate self-signed certificate
+      command: openssl req -newkey rsa:4096  -x509  -sha512  -days 365 -nodes -out /etc/ssl/certificate.pem -keyout /etc/ssl/privatekey.pem -subj "/C=DE/ST=Berlin/L=Berlin/O=Trnsitous/OU=Transitous/CN=localhost"
+    - name: Create /etc/nginx
+      file:
+        path: /etc/nginx
+        state: directory
+    - name: Generate nginx ssl config
+      copy:
+        dest: /etc/nginx/ssl.conf
+        content: |
+            ssl_certificate /etc/ssl/certificate.pem;
+            ssl_certificate_key /etc/ssl/privatekey.pem;
+  roles:
+    - motis
+    - motis-proxy
+    - nginx

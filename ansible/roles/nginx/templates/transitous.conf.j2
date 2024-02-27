@@ -16,8 +16,8 @@ server {
     server_name {{ transitous_domain }};
 
     location ~ ^/$ {
-        if ($arg_motis != https%3A%2F%2F{{ transitous_domain }}%2Fapi) {
-                return 301 https://$host?motis=https%3A%2F%2F{{ transitous_domain }}%2Fapi;
+        if ($arg_motis != https%3A%2F%2F$http_host%2Fapi) {
+                return 301 https://$http_host?motis=https%3A%2F%2F$http_host%2Fapi;
         }
 
         root /opt/motis/web/;

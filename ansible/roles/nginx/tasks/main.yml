@@ -6,11 +6,6 @@
   apt:
     name: nginx
 
-- name: Make sure nginx is running
-  systemd:
-    name: nginx.service
-    state: started
-
 - name: Create nginx cache directory
   file:
     path: /var/cache/nginx
@@ -36,8 +31,3 @@
     src: "/etc/nginx/sites-available/transitous.conf"
     dest: "/etc/nginx/sites-enabled/transitous.conf"
     state: link
-
-- name: Reload nginx
-  systemd:
-    name: nginx.service
-    state: reloaded
