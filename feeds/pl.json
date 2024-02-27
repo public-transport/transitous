@@ -1,0 +1,136 @@
+{
+    "maintainers": [
+        {
+            "name": "Jonah Brüchert",
+            "github": "jbruechert"
+        }
+    ],
+    "sources": [
+        {
+            "name": "PKP-Intercity",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-pkp~intercity~pl"
+        },
+        {
+            "name": "PolRegio",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-pol~regio~pl"
+        },
+        {
+            "name": "Rybnik",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u2vh-rybnik"
+        },
+        {
+            "name": "Rzeszów",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u2zs-rzeszow"
+        },
+        {
+            "name": "Koleje-Mazowieckie",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u3-kolejemazowieckie"
+        },
+        {
+            "name": "Świnoujście",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u3d4-swinoujscie"
+        },
+        {
+            "name": "Koleje-Dolnośląskie",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u3h-koleje~dolnoslaskie"
+        },
+        {
+            "name": "Bydgoszcz",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u3ky-bydgoszcz"
+        },
+        {
+            "name": "Włocławek",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u3me-wloclawek"
+        },
+        {
+            "name": "Toruń",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u3mj-torun"
+        },
+        {
+            "name": "Kielce",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u3n9-kielce"
+        },
+        {
+            "name": "Radom",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u3ph-radom"
+        },
+        {
+            "name": "Warszawa",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u3q-warszawski~transport~publiczny"
+        },
+        {
+            "name": "Warszawa-Alerts",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u3q-warszawski~transport~publiczny~rt~alerts"
+        },
+        {
+            "name": "Warszawa-RT-Vehicle-Positions",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u3q-warszawski~transport~publiczny~rt~positions"
+        },
+        {
+            "name": "Warszawska-Kolej-Dojazdowa",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u3qb-warszawskakolejdojazdowa"
+        },
+        {
+            "name": "Warszawska-Kolej-Dojazdowa-RT",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u3qb-warszawskakolejdojazdowa~rt"
+        },
+        {
+            "name": "Łomianki",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u3qc-komunikacjamiejskaŁomiankispzoo"
+        },
+        {
+            "name": "Łomża",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u3rw-lomza"
+        },
+        {
+            "name": "Wejherowo",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u3sy-wejherowo"
+        },
+        {
+            "name": "Trójmiasto-(Gdańsk,-Gdynia,-Sopot)-combined",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u3t-gdansk~gdynia"
+        },
+        {
+            "name": "Giżycko",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u3x7-gizycko"
+        },
+        {
+            "name": "Ełk",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u3xf-elk",
+            "fix": "true"
+        },
+        {
+            "name": "Ełk-RT",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u3xf-elk~rt"
+        },
+        {
+            "name": "Lublin",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u905-lublin"
+        }
+    ]
+}
