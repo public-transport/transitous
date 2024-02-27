@@ -19,6 +19,7 @@ use rocket::{
 use rocket_cors::{AllowedOrigins, CorsOptions};
 use serde::{Deserialize, Serialize};
 use serde_default::DefaultFromSerde;
+use serde_repr::*;
 
 use std::{net::IpAddr, num::NonZeroUsize, time::Duration};
 
@@ -276,6 +277,24 @@ enum AllowedRouters {
     DefaultRouter,
 }
 
+#[derive(Serialize_repr, Deserialize_repr, JsonSchema)]
+#[repr(u8)]
+enum AllowedClasses {
+    Air = 0,
+    HighSpeed = 1,
+    LongDistance = 2,
+    Coach = 3,
+    Night = 4,
+    RegionalFast = 5,
+    Regional = 6,
+    Metro = 7,
+    Subway = 8,
+    Tram = 9,
+    Bus = 10,
+    Ship = 11,
+    Other = 12
+}
+
 /// See [Intermodal Routing](https://motis-project.de/docs/api/endpoint/intermodal.html#intermodal-routing-request) in the MOTIS documentation for more details.
 #[derive(Deserialize, Serialize, JsonSchema)]
 struct IntermodalConnectionRequest {
@@ -294,6 +313,8 @@ struct IntermodalConnectionRequest {
     search_type: SearchType,
     search_dir: SearchDirection,
     router: AllowedRouters,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    allowed_claszes: Option<Vec<AllowedClasses>>
 }
 
 #[derive(Deserialize, Serialize, JsonSchema)]
