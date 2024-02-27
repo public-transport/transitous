@@ -11,6 +11,12 @@
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u4-ruter~flybussen~stfoldkollektivtrafikk~hedmarktrafikk~oppla",
             "fix": true
+        },
+        {
+            "name": "Entur",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.entur.io/realtime/v1/gtfs-rt/trip-updates"
         }
     ]
 }
