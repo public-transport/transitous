@@ -62,13 +62,17 @@
     - motis-update-feeds.service
     - motis-update-feeds.timer
 
-- name: Enable motis-update-feeds
+- name: Enable motis-update-feeds service
   systemd:
-    name: "{{ item }}"
+    name: motis-update-feeds.service
+    enabled: true
+    masked: false
+    daemon_reload: true
+
+- name: Enable motis-update-feeds timer
+  systemd:
+    name: motis-update-feeds.timer
     enabled: true
     masked: false
     daemon_reload: true
     state: started
-  with_items:
-    - motis-update-feeds.service
-    - motis-update-feeds.timer
