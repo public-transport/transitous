@@ -40,7 +40,7 @@
         {
             "name": "RTD-bustang",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-denver~rtd~bustang-rt"
+            "transitland-atlas-id": "f-denver~rtd~bustang~rt"
         }
     ]
 }
