@@ -1,0 +1,208 @@
+{
+    "maintainers": [
+        {
+            "name": "Stephen Horvath",
+            "github": "Steve-Tech"
+        }
+    ],
+    "sources": [
+        {
+            "name": "Translink - South East Queensland",
+            "type": "http",
+            "url": "https://gtfsrt.api.translink.com.au/GTFS/SEQ_GTFS.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            },
+            "options": {
+                "fetch-interval-days": 2
+            }
+        },
+        {
+            "name": "Translink - Bowen",
+            "type": "http",
+            "url": "https://gtfsrt.api.translink.com.au/GTFS/BOW_GTFS.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            },
+            "options": {
+                "fetch-interval-days": 2
+            }
+        },
+        {
+            "name": "Translink - Bundaberg",
+            "type": "http",
+            "url": "https://gtfsrt.api.translink.com.au/GTFS/BUN_GTFS.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            },
+            "options": {
+                "fetch-interval-days": 2
+            }
+        },
+        {
+            "name": "Translink - Cairns",
+            "type": "http",
+            "url": "https://gtfsrt.api.translink.com.au/GTFS/CNS_GTFS.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            },
+            "options": {
+                "fetch-interval-days": 2
+            }
+        },
+        {
+            "name": "Translink - Gladstone",
+            "type": "http",
+            "url": "https://gtfsrt.api.translink.com.au/GTFS/GLT_GTFS.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            },
+            "options": {
+                "fetch-interval-days": 2
+            }
+        },
+        {
+            "name": "Translink - Gympie",
+            "type": "http",
+            "url": "https://gtfsrt.api.translink.com.au/GTFS/GYM_GTFS.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            },
+            "options": {
+                "fetch-interval-days": 2
+            }
+        },
+        {
+            "name": "Translink - Innisfail",
+            "type": "http",
+            "url": "https://gtfsrt.api.translink.com.au/GTFS/INN_GTFS.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            },
+            "options": {
+                "fetch-interval-days": 2
+            }
+        },
+        {
+            "name": "Translink - Kilcoy",
+            "type": "http",
+            "url": "https://gtfsrt.api.translink.com.au/GTFS/KIL_GTFS.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            },
+            "options": {
+                "fetch-interval-days": 2
+            }
+        },
+        {
+            "name": "Translink - Mackay",
+            "type": "http",
+            "url": "https://gtfsrt.api.translink.com.au/GTFS/MKY_GTFS.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            },
+            "options": {
+                "fetch-interval-days": 2
+            }
+        },
+        {
+            "name": "Translink - Magnetic Island",
+            "type": "http",
+            "url": "https://gtfsrt.api.translink.com.au/GTFS/MAG_GTFS.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            },
+            "options": {
+                "fetch-interval-days": 2
+            }
+        },
+        {
+            "name": "Translink - Magnetic Island Ferry",
+            "type": "http",
+            "url": "https://gtfsrt.api.translink.com.au/GTFS/MIF_GTFS.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            },
+            "options": {
+                "fetch-interval-days": 2
+            }
+        },
+        {
+            "name": "Translink - Maleny-Landsborough",
+            "type": "http",
+            "url": "https://gtfsrt.api.translink.com.au/GTFS/MAL_GTFS.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            },
+            "options": {
+                "fetch-interval-days": 2
+            }
+        },
+        {
+            "name": "Translink - Maryborough-Hervey Bay",
+            "type": "http",
+            "url": "https://gtfsrt.api.translink.com.au/GTFS/MHB_GTFS.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            },
+            "options": {
+                "fetch-interval-days": 2
+            }
+        },
+        {
+            "name": "Translink - North Stradbroke Island",
+            "type": "http",
+            "url": "https://gtfsrt.api.translink.com.au/GTFS/NSI_GTFS.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            },
+            "options": {
+                "fetch-interval-days": 2
+            }
+        },
+        {
+            "name": "Translink - Rockhampton-Yeppoon",
+            "type": "http",
+            "url": "https://gtfsrt.api.translink.com.au/GTFS/RKY_GTFS.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            },
+            "options": {
+                "fetch-interval-days": 2
+            }
+        },
+        {
+            "name": "Translink - Toowoomba",
+            "type": "http",
+            "url": "https://gtfsrt.api.translink.com.au/GTFS/TWB_GTFS.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            },
+            "options": {
+                "fetch-interval-days": 2
+            }
+        },
+        {
+            "name": "Translink - Warwick",
+            "type": "http",
+            "url": "https://gtfsrt.api.translink.com.au/GTFS/WAR_GTFS.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            },
+            "options": {
+                "fetch-interval-days": 2
+            }
+        },
+        {
+            "name": "Translink - Whitsundays",
+            "type": "http",
+            "url": "https://gtfsrt.api.translink.com.au/GTFS/WHT_GTFS.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            },
+            "options": {
+                "fetch-interval-days": 2
+            }
+        }
+    ]
+}
