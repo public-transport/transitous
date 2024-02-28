@@ -3,7 +3,7 @@
 
 FROM docker.io/debian:bookworm-slim
 
-ARG MOTIS_VERSION=v0.11.20
+ARG MOTIS_VERSION=v0.11.21
 ARG USERNAME=transitous
 ARG USER_UID=1000
 ARG USER_GID=$USER_UID
