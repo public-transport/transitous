@@ -10,6 +10,7 @@ if [ -z "$(ls -A /srv/rsync/transitous/)" ]; then
     exit 0
 fi
 
+rm /var/lib/motis/data/nigiri/ -rf
 cp -r /srv/rsync/transitous/* /var/lib/motis/
 chown motis:motis -R /var/lib/motis/data/
 
