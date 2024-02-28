@@ -12,7 +12,7 @@
             "transitland-atlas-id": "f-r7h-translink"
         },
         {
-            "name": "Translink-SEQ-RT",
+            "name": "Translink-SEQ",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-r7h-translink~rt"
         },
@@ -22,7 +22,7 @@
             "transitland-atlas-id": "f-rk3qj-qconnect~bowen"
         },
         {
-            "name": "Translink-BOW-RT",
+            "name": "Translink-BOW",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-rk3qj-qconnect~bowen~rt"
         },
@@ -37,7 +37,7 @@
             "transitland-atlas-id": "f-rhzx-translink~cairns"
         },
         {
-            "name": "Translink-CNS-RT",
+            "name": "Translink-CNS",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-rhzx-translink~cairns~rt"
         },
@@ -57,7 +57,7 @@
             "transitland-atlas-id": "f-rhzu-qconnect~transnorth"
         },
         {
-            "name": "Translink-INN-RT",
+            "name": "Translink-INN",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-rhzu-qconnect~transnorth~rt"
         },
@@ -92,7 +92,7 @@
             "transitland-atlas-id": "f-qconnect~maryborough~hervey~bay"
         },
         {
-            "name": "Translink-MHB-RT",
+            "name": "Translink-MHB",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-qconnect~maryborough~hervey~bay~rt"
         },
@@ -102,7 +102,7 @@
             "transitland-atlas-id": "f-qconnect~north~stradbroke~island"
         },
         {
-            "name": "Translink-NSI-RT",
+            "name": "Translink-NSI",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-qconnect~north~stradbroke~island~rt"
         },
