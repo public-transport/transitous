@@ -35,6 +35,7 @@ jobs:
     - name: Fetch GTFS-Feeds
       run: |
         sudo chown 1000:1000 -R out/ downloads/
+        sudo chmod 777 .
         docker run -v $PWD:/transitous -w /transitous transitous ci/fetch-feeds.py timer
         docker run -v $PWD:/transitous -w /transitous transitous src/generate-attribution.py
 
