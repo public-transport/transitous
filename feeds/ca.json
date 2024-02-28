@@ -72,72 +72,72 @@
             "transitland-atlas-id": "f-f257-exo~citlaurentides~rt"
         },
         {
-            "name": "Exo-citduhaut~saint~laurent",
+            "name": "Exo-citduhaut-saint-laurent",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-f259-exo~citduhaut~saint~laurent"
         },
         {
-            "name": "Exo-citduhaut~saint~laurent",
+            "name": "Exo-citduhaut-saint-laurent",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-f259-exo~citduhaut~saint~laurent~rt"
         },
         {
-            "name": "Exo~richelain~roussillon",
+            "name": "Exo-richelain-roussillon",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-f25d-exo~richelain~roussillon"
         },
         {
-            "name": "Exo~richelain~roussillon",
+            "name": "Exo-richelain-roussillon",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-f25d-exo~richelain~roussillon~rt"
         },
         {
-            "name": "Exo~citchambly~richelieu~carignan",
+            "name": "Exo-citchambly-richelieu-carignan",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-f25f-exo~citchambly~richelieu~carignan"
         },
         {
-            "name": "Exo~citchambly~richelieu~carignan",
+            "name": "Exo-citchambly-richelieu-carignan",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-f25f-exo~citchambly~richelieu~carignan~rt"
         },
         {
-            "name": "Exo~citvallée~du~richelieu",
+            "name": "Exo-citvallée-du-richelieu",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-f25g-exo~citvallée~du~richelieu"
         },
         {
-            "name": "Exo~citvallée~du~richelieu",
+            "name": "Exo-citvallée-du-richelieu",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-f25g-exo~citvallée~du~richelieu~rt"
         },
         {
-            "name": "Exo~omitsainte~julie",
+            "name": "Exo-omitsainte-julie",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-f25g-exo~omitsainte~julie"
         },
         {
-            "name": "Exo~omitsainte~julie",
+            "name": "Exo-omitsainte-julie",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-f25g-exo~omitsainte~julie~rt"
         },
         {
-            "name": "Exo~mrclesmoulinsurbis",
+            "name": "Exo-mrclesmoulinsurbis",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-f25s-exo~mrclesmoulinsurbis"
         },
         {
-            "name": "Exo~mrclesmoulinsurbis",
+            "name": "Exo-mrclesmoulinsurbis",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-f25s-exo~mrclesmoulinsurbis~rt"
         },
         {
-            "name": "Exo~mrcdelassomption",
+            "name": "Exo-mrcdelassomption",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-f25u-exo~mrcdelassomption"
         },
         {
-            "name": "Exo~mrcdelassomption",
+            "name": "Exo-mrcdelassomption",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-f25u-exo~mrcdelassomption~rt"
         },
@@ -182,7 +182,7 @@
             "transitland-atlas-id": "f-kawartha~on~ca~rt"
         },
         {
-            "name": "Metrolinx-metrolinx~gtfs",
+            "name": "Metrolinx-metrolinx",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-metrolinx~gtfs~rt~vehicles"
         },
