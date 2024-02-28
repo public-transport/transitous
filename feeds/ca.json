@@ -104,7 +104,8 @@
         {
             "name": "Exo-citvallée-du-richelieu",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-f25g-exo~citvallée~du~richelieu"
+            "transitland-atlas-id": "f-f25g-exo~citvallée~du~richelieu",
+            "fix": true
         },
         {
             "name": "Exo-citvallée-du-richelieu",
