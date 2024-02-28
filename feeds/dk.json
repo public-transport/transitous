@@ -1,0 +1,15 @@
+{
+    "maintainers": [
+        {
+            "name": "Claus Christensen",
+            "github": "claus-chr"
+        }
+    ],
+    "sources": [
+        {
+            "name": "rejseplanen",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-rejseplanen~dk~gtfs"
+        }
+    ]
+}
