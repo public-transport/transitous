@@ -34,7 +34,7 @@ jobs:
 
     - name: Fetch GTFS-Feeds
       run: |
-        sudo chown 1000:1000 -R .
+        sudo chown 1000:1000 -R out/ downloads/
         docker run -v $PWD:/transitous -w /transitous transitous ci/fetch-feeds.py timer
         docker run -v $PWD:/transitous -w /transitous transitous src/generate-attribution.py
 
@@ -52,9 +52,11 @@ jobs:
           out/*.zip
         key: feeds-${{ hashFiles('downloads/*') }}
 
-    - name: Compress results
-      run: |
-        sudo tar -C out/ --zstd -cf feeds.tar.zst .
-
     - name: Upload results
-      run: curl --upload-file feeds.tar.zst https://transfer.sh/feeds.tar.zst
+      run: |
+        echo "${{secrets.RSYNC_PRIVATE_KEY}}" > deploy_key
+        chmod 600 ./deploy_key
+        rsync -avz --progress --delete \
+          -e 'ssh -i ./deploy_key -p 22 -o StrictHostKeyChecking=no' \
+          out/ rsync@vm-motis.spline.de:
+        rm deploy_key
