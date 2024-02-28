@@ -14,4 +14,4 @@ cp -r /srv/rsync/transitous/* /var/lib/motis/
 chown motis:motis -R /var/lib/motis/data/
 
 echo "Restarting MOTIS…"
-systemctl restart motis.service
+systemctl --no-ask-password restart motis.service
