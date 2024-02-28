@@ -71,6 +71,9 @@ If the feed is not known in Transitland, a http source can be used instead.
 }
 ```
 
+In both cases, the name needs to be unique in the file, except for if it is an GTFS-RT feed. These are realtime feeds that contain updates for a GTFS feed.
+In order to know which one to apply the updates to, the names must match.
+
 If the feed contains errors, you can try to add the `"fix": true` attribute, to try to automatically correct errors.
 
 Once you create a pull request, fetching your feed will automatically be tested.
