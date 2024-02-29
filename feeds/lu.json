@@ -1,0 +1,15 @@
+{
+    "maintainers": [
+        {
+            "name": "Volker Krause",
+            "github": "vkrause"
+        }
+    ],
+    "sources": [
+        {
+            "name": "openov",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u0-openov~lu"
+        }
+    ]
+}
