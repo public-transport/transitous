@@ -1,0 +1,35 @@
+# SPDX-FileCopyrightText: 2024 Jonah Brüchert <jbb@kaidan.im>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+- name: Install rsync
+  apt:
+    name: rsync
+
+- name: Copy rsyncd config file
+  copy:
+    src: rsyncd.conf
+    dest: /etc/rsyncd.conf
+
+- name: Create /etc/systemd/system/rsync.service.d
+  file:
+    path: /etc/systemd/system/rsync.service.d
+    state: directory
+
+- name: Configure rsyncd to run in bwrap
+  copy:
+    dest: /etc/systemd/system/rsync.service.d/bwrap.conf
+    content: |
+        [Service]
+        ExecStart=
+        ExecStart=bwrap --new-session --die-with-parent --cap-drop ALL --cap-add CAP_NET_BIND_SERVICE --unshare-all --ro-bind /usr/lib/ /usr/lib/ --ro-bind /lib/ /lib/ --ro-bind /lib64/ /lib64  --ro-bind /etc/rsyncd.conf /etc/rsyncd.conf --ro-bind /usr/bin/rsync /usr/bin/rsync --ro-bind /srv/rsync/transitous/ /srv/rsync/transitous/ -- /usr/bin/rsync --daemon --no-detach
+        RestrictRealtime=true
+        MemoryDenyWriteExecute=true
+
+- name: Enable rsync service
+  systemd:
+    name: rsync
+    state: started
+    daemon_reload: true
+    enabled: true
+    masked: false
