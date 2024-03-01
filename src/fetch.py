@@ -127,7 +127,8 @@ class Fetcher:
 
         output_file_path = str(outdir.absolute() / path.name)
 
-        command = ["gtfstidy", str(path.absolute()), "--output", output_file_path]
+        command = ["gtfstidy", str(path.absolute()), "--check-null-coords",
+                   "--output", output_file_path]
         if source.fix:
             command.append("--fix")
 
