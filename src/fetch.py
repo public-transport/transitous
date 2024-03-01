@@ -5,7 +5,8 @@
 
 from metadata import *
 from pathlib import Path
-from datetime import datetime
+from datetime import datetime, timezone
+import email.utils
 
 import requests
 import transitland
@@ -39,11 +40,12 @@ class Fetcher:
                 dest_path = Path(f"downloads/{name}.gtfs.zip")
                 if dest_path.exists():
                     mtime = dest_path.stat().st_mtime
-                    last_modified = datetime.fromtimestamp(mtime)
+                    last_modified = datetime.fromtimestamp(mtime,
+                                                           tz=timezone.utc)
 
                 # Check if the last download was longer than the interval ago
                 if source.options.fetch_interval_days and last_modified \
-                        and (datetime.now() - last_modified).days \
+                        and (datetime.now(tz=timezone.utc) - last_modified).days \
                         < source.options.fetch_interval_days:
                     return None
 
@@ -54,8 +56,8 @@ class Fetcher:
                 # If server version is older, return
                 last_modified_server = None
                 if "last-modified" in server_headers:
-                    last_modified_server = datetime.strptime(
-                        server_headers["last-modified"], "%a, %d %b %Y %X %Z")
+                    last_modified_server = email.utils.parsedate_to_datetime(
+                        server_headers["last-modified"])
 
                     if last_modified and last_modified_server <= last_modified:
                         return None
@@ -92,8 +94,8 @@ class Fetcher:
                 # but the actual target does.
                 server_headers = response.headers
                 if "last-modified" in server_headers:
-                    last_modified_server = datetime.strptime(
-                        server_headers["last-modified"], "%a, %d %b %Y %X %Z")
+                    last_modified_server = email.utils.parsedate_to_datetime(
+                        server_headers["last-modified"])
 
                 with open(dest_path, "wb") as dest:
                     dest.write(response.content)
