@@ -1,0 +1,15 @@
+{
+    "maintainers": [
+        {
+            "github": "heckenfolker",
+            "name": "Heckenfolker"
+        }
+    ],
+    "sources": [
+        {
+            "name": "transit-for-ireland",
+            "type": "http",
+            "url": "https://gtfs.pro/files/uran/improved-gtfs-google-transit-combined.zip"
+        }
+    ]
+}
