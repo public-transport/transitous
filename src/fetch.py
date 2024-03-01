@@ -75,7 +75,10 @@ class Fetcher:
 
                 # If the file was not successfully retrieved, return
                 if response.status_code != 200:
-                    return None
+                    print("Error: Could not fetch file:")
+                    print("Status Code:", response.status_code,
+                          "Body:", response.content)
+                    sys.exit(1)
 
                 download_dir = "downloads"
 
