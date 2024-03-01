@@ -1,0 +1,45 @@
+{
+    "maintainers": [
+        {
+            "name": "Jonah Brüchert",
+            "github": "jbruechert"
+        }
+    ],
+    "sources": [
+        {
+            "name": "TGV",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u0-sncf~tgv"
+        },
+        {
+            "name": "TGV",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u0-sncf~tgv~rt"
+        },
+        {
+            "name": "Intercites",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u0-sncf~intercites"
+        },
+        {
+            "name": "Intercites",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u0-sncf~intercites~rt"
+        },
+        {
+            "name": "Transilien",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u0-sncf~transilien~rer"
+        },
+        {
+            "name": "TER",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u0-sncf~ter"
+        },
+        {
+            "name": "TER",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u0-sncf~ter~rt"
+        }
+    ]
+}
