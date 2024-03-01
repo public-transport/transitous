@@ -40,6 +40,11 @@
             "name": "TER",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u0-sncf~ter~rt"
+        },
+        {
+            "name": "Paris",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u09-paris~metro~bus~tram"
         }
     ]
 }
