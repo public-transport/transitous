@@ -9,7 +9,8 @@
         {
             "name": "visimarsrutai",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-visimarsrutai~lt~all"
+            "transitland-atlas-id": "f-visimarsrutai~lt~all",
+            "fix": true
         }
     ]
 }
