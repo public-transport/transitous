@@ -3,6 +3,10 @@
         {
             "name": "Marcus Lundblad",
             "github": "mlundblad"
+        },
+        {
+            "name": "Gordon Leung",
+            "github": "pi-cla"
         }
     ],
     "sources": [
@@ -286,6 +290,142 @@
             "name": "Metrolinx-timmins",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-timmins~on~ca~rt"
+        },
+        {
+            "name": "Brandon-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-brandon~mb~ca"
+        },
+        {
+            "name": "Calgary-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-c3nf-calgarytransit"
+        },
+        {
+            "name": "Calgary-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-calgarytransit~rt"
+        },
+        {
+            "name": "Codiac-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-f81y-codiactranspo"
+        },
+        {
+            "name": "Cold-Lake-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-coldlake~ab~ca"
+        },
+        {
+            "name": "Edmonton-Transit-Service",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-c3x-edmontontransitsystem"
+        },
+        {
+            "name": "Edmonton-Transit-Service",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-ets~rt"
+        },
+        {
+            "name": "Fredericton-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-frederictontransit",
+            "fix": true
+        },
+        {
+            "name": "Grande-Prairie-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-grande~prairie~ab~ca"
+        },
+        {
+            "name": "Halifax-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dxfy-halifaxtransit~hrm"
+        },
+        {
+            "name": "Halifax-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-halifax~rt"
+        },
+        {
+            "name": "Lethbridge-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-lethbridgetransit"
+        },
+        {
+            "name": "Medicine-Hat-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-medicine~hat~transit"
+        },
+        {
+            "name": "Medicine-Hat-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-medicine~hat~transit~rt"
+        },
+        {
+            "name": "Metrobus-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-fb6q-metrobus"
+        },
+        {
+            "name": "Prince-Albert-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-prince~albert~sk~ca"
+        },
+        {
+            "name": "Regina-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-c8vx-thecityofregina"
+        },
+        {
+            "name": "Roam-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-c3j-757"
+        },
+        {
+            "name": "Saint-John-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-saint~john~nb~ca"
+        },
+        {
+            "name": "Saskatoon-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-c9k0-saskatoontransit"
+        },
+        {
+            "name": "Saskatoon-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-saskatoon~rt"
+        },
+        {
+            "name": "T3-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-coachatlantic~pe~ca"
+        },
+        {
+            "name": "Whitehorse-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-bfzc-cityofwhitehorse~transit"
+        },
+        {
+            "name": "Winnipeg-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-cbfg-winnipegtransit"
+        },
+        {
+            "name": "Wood-Buffalo-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-regional~municipality~of~wood~buffalo"
+        },
+        {
+            "name": "Wood-Buffalo-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-regional~municipality~of~wood~buffalo~rt"
+        },
+        {
+            "name": "Yellowknife-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-yellowknife~transit"
         }
     ]
 }
