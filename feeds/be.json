@@ -1,0 +1,42 @@
+{
+    "maintainers": [
+        {
+            "name": "Volker Krause",
+            "github": "vkrause"
+        }
+    ],
+    "sources": [
+        {
+            "name": "sncb",
+            "type": "http",
+            "url": "https://sncb-opendata.hafas.de/gtfs/static/c21ac6758dd25af84cca5b707f3cb3de"
+        },
+        {
+            "name": "sncb",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://sncb-opendata.hafas.de/gtfs/realtime/c21ac6758dd25af84cca5b707f3cb3de"
+        },
+        {
+            "name": "stib",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u151-stib"
+        },
+        {
+            "name": "delijn",
+            "type": "http",
+            "url": "https://data.gtfs.be/delijn/gtfs/be-delijn-gtfs.zip",
+            "fix": true
+        },
+        {
+            "name": "dewaterbus",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u155-dewaterbus"
+        },
+        {
+            "name": "tec",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u0g-tec"
+        }
+    ]
+}
