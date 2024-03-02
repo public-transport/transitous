@@ -41,6 +41,16 @@
             "name": "RTD-bustang",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-denver~rtd~bustang~rt"
+        },
+        {
+            "name": "Trimet",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-c20-trimet"
+        },
+        {
+            "name": "Trimet",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-trimet~rt"
         }
     ]
 }
