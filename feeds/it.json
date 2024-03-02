@@ -7,25 +7,122 @@
     ],
     "sources": [
         {
-            "name": "ATM",
+            "name": "Lombardia-ATM",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u0nd-comunedimilano"
+        },
+        {
+            "name": "Lombardia-Trenord",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u0n-trenord"
+        },
+        {
+            "name": "Sardegna-Contributate",
+            "type": "http",
+            "url": "https://www.sardegnamobilita.it/opendata/R_SARDEGTRASP_00007_1_dati_privati.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
+        },
+        {
+            "name": "Sardegna-ARST",
+            "type": "http",
+            "url": "https://www.arstspa.info/arst-cagliari-it.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
+        },
+        {
+            "name": "Sardegna-ASPO_Olbia",
+            "type": "http",
+            "url": "https://www.aspo.it/wp-content/uploads/open_data.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
+        },
+        {
+            "name": "Sardegna-ATP_Nuoro",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-s-atpnuoro"
+        },
+        {
+            "name": "Sardegna-ATP_Sassari",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-spnp-atpsassari"
+        },
+        {
+            "name": "Sardegna-CTM",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-snyr-ctmspa~cagliari"
+        },
+        {
+            "name": "Sardegna-Ferries-Collegamenti_marittimi_Corsica",
+            "type": "http",
+            "url": "https://www.sardegnamobilita.it/opendata/R_SARDEGTRASP_00010_1_dati_mare_corsica.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
+        },
+        {
+            "name": "Sardegna-Ferries-Collegamenti_isole_minori",
+            "type": "http",
+            "url": "https://www.sardegnamobilita.it/opendata/R_SARDEGTRASP_00006_1_dati_mare.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
+        },
+        {
+            "name": "Sardegna-Ferries-Sardinia_Ferries",
+            "type": "http",
+            "url": "https://www.sardegnamobilita.it/opendata/R_SARDEGTRASP_00028_1_dati_sardinia_ferries.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
+        },
+        {
+            "name": "Sardegna-Ferries-Tirrenia",
+            "type": "http",
+            "url": "https://www.sardegnamobilita.it/opendata/R_SARDEGTRASP_00026_1_GTFS_dati_tirrenia.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
+        },
+        {
+            "name": "Sardegna-Planes-Alghero_Airport",
+            "type": "http",
+            "url": "https://www.sardegnamobilita.it/opendata/R_SARDEGTRASP_00024_3_GTFS_timetable_winter_it.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
+        },
+        {
+            "name": "Sardegna-Planes-Cagliari_Airport",
+            "type": "http",
+            "url": "https://www.sardegnamobilita.it/opendata/R_SARDEGTRASP_00030_10_cagliari_timetable.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
+        },
+        {
+            "name": "Sardegna-Planes-Olbia_Airport",
+            "type": "http",
+            "url": "https://www.sardegnamobilita.it/opendata/R_SARDEGTRASP_00025_10_olbia_timetable.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
+        },
+        {
+            "name": "Sardegna-Trenitalia",
+            "type": "http",
+            "url": "https://www.sardegnamobilita.it/opendata/R_SARDEGTRASP_00008_1_dati_trenitalia.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
         },
         {
             "name": "Toscana-Trenitalia",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-sp-trenitaliaspa"
-        },
-        {
-            "name": "Trenord",
-            "type": "http",
-            "url": "https://www.dati.lombardia.it/download/3z4k-mxz9/application%2Fx-zip-compressed",
-            "license": {
-                "spdx-identifier": "CC-BY-4.0"
-            },
-            "options": {
-                "fetch-interval-days": 2
-            }
         }
     ]
 }
