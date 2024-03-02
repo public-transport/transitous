@@ -186,6 +186,22 @@
                 "spdx-identifier": "CC-BY-3.0",
                 "url": "https://dati.venezia.it/?q=licenza/cc"
             }
+        },
+        {
+            "name": "Trentino-Extraurbano",
+            "type": "http",
+            "url": "https://www.trentinotrasporti.it/opendata/google_transit_extraurbano_tte.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
+        },
+        {
+            "name": "Trentino-Urbano",
+            "type": "http",
+            "url": "https://www.trentinotrasporti.it/opendata/google_transit_urbano_tte.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
         }
     ]
 }
