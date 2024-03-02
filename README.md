@@ -89,14 +89,20 @@ You can also use the container described below.
 Running a local instance of the transitous setup can be useful for debugging.
 The easiest way is to use the same container image that we use for fetching and importing the data on the CI.
 
-First, build the container:
+First, ensure that you have the Git submodules:
+
+```bash
+git submodule update --remote --checkout --init
+```
+
+Proceed by building the container:
 ```bash
 podman build ci/container/ -t transitous -f ci/container/Containerfile
 ```
 
 Enter the container:
 ```bash
-podman run -it -p 8080:8080 -v $PWD:/transitous -w /transitous transitous
+podman run -it -p 8080:8080 -v $PWD:/transitous:Z --userns=keep-id -w /transitous transitous
 ```
 
 Now inside the container, you can download and post-process all the feeds. This may take a while.
