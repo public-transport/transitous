@@ -92,7 +92,7 @@ The easiest way is to use the same container image that we use for fetching and 
 First, ensure that you have the Git submodules:
 
 ```bash
-git submodule init && git submodule update
+git submodule update --remote --checkout --init
 ```
 
 Proceed by building the container:
