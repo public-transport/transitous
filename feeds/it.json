@@ -43,6 +43,25 @@
             }
         },
         {
+            "name": "Piemonte-Bus",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u0j-piemonte~autobus",
+            "proxy": true,
+            "fix": true
+        },
+        {
+            "name": "Piemonte-Gruppo-Torinese-Trasporti",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u0j-torino",
+            "proxy": true
+        },
+        {
+            "name": "Piemonte-Trenitalia",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u0j-trenitalia",
+            "proxy": true
+        },
+        {
             "name": "Sardegna-Contributate",
             "type": "http",
             "url": "https://www.sardegnamobilita.it/opendata/R_SARDEGTRASP_00007_1_dati_privati.zip",
