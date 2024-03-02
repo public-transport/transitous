@@ -7,25 +7,59 @@
     ],
     "sources": [
         {
-            "name": "ATM",
+            "name": "Lombardia - AirPullman",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-airpullmanspa"
+        },
+        {
+            "name": "Lombardia - ATM",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u0nd-comunedimilano"
         },
         {
-            "name": "Toscana-Trenitalia",
+            "name": "Lombardia - Azienda Varesina Trasporti",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-sp-trenitaliaspa"
+            "transitland-atlas-id": "f-u0nkbh2-aziendavaresinatrasporti"
         },
         {
-            "name": "Trenord",
-            "type": "http",
-            "url": "https://www.dati.lombardia.it/download/3z4k-mxz9/application%2Fx-zip-compressed",
-            "license": {
-                "spdx-identifier": "CC-BY-4.0"
-            },
-            "options": {
-                "fetch-interval-days": 2
-            }
+            "name": "Lombardia - Castano Turismo",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u0nh-autolineevaresine~trasportourbano~autolineevaresine~trasp"
+        },
+        {
+            "name": "Lombardia - Movibus",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-movibus~srl"
+        },
+        {
+            "name": "Lombardia - Nord Est Trasporti",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-net~nord~est~trasporti"
+        },
+        {
+            "name": "Lombardia - Pavia Milano Trasporti",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-pmt~pavia~milano~trasporti~srl"
+        },
+        {
+            "name": "Lombardia - Trenord",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u0n-trenord"
+        },
+        {
+            "name": "Lombardia - Trotta Bus Services",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u0n5w-malpensa~shuttle"
+        },
+        {
+            "name": "Lombardia - STAV Vigevano",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-stav~spa"
+        },
+        {
+            "name": "Toscana - Trenitalia",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-sp-trenitaliaspa"
         }
     ]
 }
