@@ -6,8 +6,9 @@
 from metadata import *
 from pathlib import Path
 from datetime import datetime, timezone
-import email.utils
+from utils import eprint
 
+import email.utils
 import requests
 import transitland
 import json
@@ -15,10 +16,6 @@ import sys
 import os
 import subprocess
 import shutil
-
-
-def eprint(*args, **kwargs):
-    print(*args, file=sys.stderr, **kwargs)
 
 
 def validate_source_name(name: str):

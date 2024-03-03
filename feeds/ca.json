@@ -204,12 +204,12 @@
         {
             "name": "Metrolinx-orangeville",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-orangeville~on~ca~rt"
+            "transitland-atlas-id": "f-orangeville~transit~ca"
         },
         {
             "name": "Metrolinx-orangeville",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-orangeville~transit~ca"
+            "transitland-atlas-id": "f-orangeville~on~ca~rt"
         },
         {
             "name": "Metrolinx-orillia",
