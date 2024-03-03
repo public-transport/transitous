@@ -20,6 +20,8 @@ match run_reason:
     case "timer":
         for feed in feed_dir.glob("*.json"):
             subprocess.check_call(["./src/fetch.py", str(feed.absolute())])
+
+        subprocess.check_call(["./src/garbage-collect.py"])
     case "merge-request":
         # Silence warnings about different ownerships inside and outside of the
         # container on actions
