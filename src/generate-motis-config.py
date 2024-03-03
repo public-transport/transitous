@@ -12,6 +12,7 @@ import transitland
 
 from pathlib import Path
 from jinja2 import Template
+from utils import eprint
 
 
 if __name__ == "__main__":
@@ -56,6 +57,17 @@ if __name__ == "__main__":
                             "path": schedule_file
                         })
                     case "gtfs-rt" if isinstance(source, metadata.UrlSource):
+                        referenced_static_feed = list(filter(
+                            lambda f: f["id"] == schedule_name, gtfs_feeds))
+
+                        if not referenced_static_feed:
+                            eprint("Error: The name of a realtime (gtfs-rt) "
+                                   + "feed needs to match the name of its "
+                                   + "static base feed defined before the "
+                                   + "realtime feed. Found nothing "
+                                   + "belonging to", source.name)
+                            sys.exit(1)
+
                         gtfsrt_feeds.append({
                             "id": schedule_name,
                             "url": source.url,
