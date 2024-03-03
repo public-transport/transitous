@@ -17,6 +17,24 @@ import subprocess
 import shutil
 
 
+def eprint(*args, **kwargs):
+    print(*args, file=sys.stderr, **kwargs)
+
+
+def validate_source_name(name: str):
+    if " " in name:
+        eprint(f"Error: Feed names must not contain spaces, found {name}.")
+        sys.exit(1)
+
+    if "_" in name:
+        eprint(f"Error: Feed names must not contain underscores, found {name}.")
+        sys.exit(1)
+
+    if "/" in name:
+        eprint(f"Error: Feed names must not contain slashes, found {name}.")
+        sys.exit(1)
+
+
 class Fetcher:
     transitland_atlas: transitland.Atlas
 
@@ -142,6 +160,7 @@ class Fetcher:
         region_name = metadata_filename[:metadata_filename.rfind('.')]
 
         for source in region.sources:
+            validate_source_name(source.name)
             download_name = f"{region_name}_{source.name}"
 
             print(f"Fetching {region_name}-{source.name}…")
