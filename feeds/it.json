@@ -7,6 +7,11 @@
     ],
     "sources": [
         {
+            "name": "Lazio-Rome",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-sr-atac~romatpl~trenitalia"
+        },
+        {
             "name": "Lombardia-ATM",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u0nd-comunedimilano"
