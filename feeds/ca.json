@@ -373,6 +373,14 @@
             "transitland-atlas-id": "f-prince~albert~sk~ca"
         },
         {
+            "name": "Red-Deer-Transit",
+            "type": "http",
+            "url": "https://data.reddeer.ca/datasets/gtfsdatafeed/download/zip",
+            "license": {
+                "url": "https://data.reddeer.ca/About"
+            }
+        },
+        {
             "name": "Regina-Transit",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-c8vx-thecityofregina"
