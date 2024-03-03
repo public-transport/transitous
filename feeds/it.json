@@ -33,7 +33,7 @@
             }
         },
         {
-            "name": "Sardegna-ASPO_Olbia",
+            "name": "Sardegna-ASPO-Olbia",
             "type": "http",
             "url": "https://www.aspo.it/wp-content/uploads/open_data.zip",
             "license": {
@@ -41,12 +41,12 @@
             }
         },
         {
-            "name": "Sardegna-ATP_Nuoro",
+            "name": "Sardegna-ATP-Nuoro",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-s-atpnuoro"
         },
         {
-            "name": "Sardegna-ATP_Sassari",
+            "name": "Sardegna-ATP-Sassari",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-spnp-atpsassari"
         },
@@ -56,7 +56,7 @@
             "transitland-atlas-id": "f-snyr-ctmspa~cagliari"
         },
         {
-            "name": "Sardegna-Ferries-Collegamenti_marittimi_Corsica",
+            "name": "Sardegna-Ferries-Collegamenti-marittimi-Corsica",
             "type": "http",
             "url": "https://www.sardegnamobilita.it/opendata/R_SARDEGTRASP_00010_1_dati_mare_corsica.zip",
             "license": {
@@ -64,7 +64,7 @@
             }
         },
         {
-            "name": "Sardegna-Ferries-Collegamenti_isole_minori",
+            "name": "Sardegna-Ferries-Collegamenti-isole-minori",
             "type": "http",
             "url": "https://www.sardegnamobilita.it/opendata/R_SARDEGTRASP_00006_1_dati_mare.zip",
             "license": {
@@ -72,7 +72,7 @@
             }
         },
         {
-            "name": "Sardegna-Ferries-Sardinia_Ferries",
+            "name": "Sardegna-Ferries-Sardinia-Ferries",
             "type": "http",
             "url": "https://www.sardegnamobilita.it/opendata/R_SARDEGTRASP_00028_1_dati_sardinia_ferries.zip",
             "license": {
@@ -88,7 +88,7 @@
             }
         },
         {
-            "name": "Sardegna-Planes-Alghero_Airport",
+            "name": "Sardegna-Planes-Alghero-Airport",
             "type": "http",
             "url": "https://www.sardegnamobilita.it/opendata/R_SARDEGTRASP_00024_3_GTFS_timetable_winter_it.zip",
             "license": {
@@ -96,7 +96,7 @@
             }
         },
         {
-            "name": "Sardegna-Planes-Cagliari_Airport",
+            "name": "Sardegna-Planes-Cagliari-Airport",
             "type": "http",
             "url": "https://www.sardegnamobilita.it/opendata/R_SARDEGTRASP_00030_10_cagliari_timetable.zip",
             "license": {
@@ -104,7 +104,7 @@
             }
         },
         {
-            "name": "Sardegna-Planes-Olbia_Airport",
+            "name": "Sardegna-Planes-Olbia-Airport",
             "type": "http",
             "url": "https://www.sardegnamobilita.it/opendata/R_SARDEGTRASP_00025_10_olbia_timetable.zip",
             "license": {
