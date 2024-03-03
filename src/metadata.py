@@ -41,16 +41,23 @@ class Source:
                 self.spec = parsed["spec"]
 
 
+class HttpOptions:
+    fetch_interval_days: Optional[int] = None
+
+
 class TransitlandSource(Source):
     transitland_atlas_id: str
+    options: HttpOptions = HttpOptions()
 
     def __init__(self, parsed: dict):
         super().__init__(parsed)
         self.transitland_atlas_id = parsed["transitland-atlas-id"]
 
-
-class HttpOptions:
-    fetch_interval_days: Optional[int] = None
+        if "options" in parsed:
+            options = parsed["options"]
+            if "fetch-interval-days" in options:
+                self.options.fetch_interval_days = \
+                    int(parsed["options"]["fetch-interval-days"])
 
 
 class HttpSource(Source):

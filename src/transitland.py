@@ -30,6 +30,7 @@ class Atlas:
             result = HttpSource()
             result.name = source.name
             result.url = feed["urls"]["static_current"]
+            result.options = source.options
             result.spec = "gtfs"
         elif "realtime_trip_updates" in feed["urls"]:
             result = UrlSource()
