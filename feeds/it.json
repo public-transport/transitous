@@ -19,7 +19,10 @@
         {
             "name": "Lombardia-Trenord",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u0n-trenord"
+            "transitland-atlas-id": "f-u0n-trenord",
+            "options": {
+                "fetch-interval-days": 2
+            }
         },
         {
             "name": "Sardegna-Contributate",
