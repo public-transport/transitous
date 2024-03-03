@@ -26,6 +26,7 @@
         RestrictRealtime=true
         MemoryDenyWriteExecute=true
         DynamicUser=yes
+        Restart=always
 
 - name: Enable rsync service
   systemd:
