@@ -55,7 +55,7 @@ if __name__ == "__main__":
                             "id": schedule_name,
                             "path": schedule_file
                         })
-                    case "gtfs-rt":
+                    case "gtfs-rt" if isinstance(source, metadata.UrlSource):
                         gtfsrt_feeds.append({
                             "id": schedule_name,
                             "url": source.url,
