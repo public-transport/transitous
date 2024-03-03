@@ -1,0 +1,18 @@
+{
+    "maintainers": [
+        {
+            "name": "Volker Krause",
+            "github": "vkrause"
+        }
+    ],
+    "sources": [
+        {
+            "name": "oebb",
+            "type": "http",
+            "url": "https://static.oebb.at/open-data/soll-fahrplan-gtfs/GTFS_OP_2024_obb.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
+        }
+    ]
+}
