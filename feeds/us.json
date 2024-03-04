@@ -51,6 +51,16 @@
             "name": "Trimet",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-trimet~rt"
+        },
+        {
+            "name": "Metro-stlouis",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9yzg-metrostlouis"
+        },
+        {
+            "name": "Metro-stlouis",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-saintlouis~rt"
         }
     ]
 }
