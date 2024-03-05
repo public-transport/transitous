@@ -61,6 +61,16 @@
             "name": "Metro-stlouis",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-saintlouis~rt"
+        },
+        {
+            "name": "SMTD",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dp04-smtd"
+        },
+        {
+            "name": "SMTD",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dp04-smtd~rt"
         }
     ]
 }
