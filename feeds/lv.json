@@ -9,8 +9,7 @@
         {
             "name": "pv",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-pv~lv",
-            "fix": true
+            "transitland-atlas-id": "f-pv~lv"
         },
         {
             "name": "rigas-satiksme",
