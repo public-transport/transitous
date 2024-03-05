@@ -380,11 +380,8 @@
         },
         {
             "name": "Red-Deer-Transit",
-            "type": "http",
-            "url": "https://data.reddeer.ca/datasets/gtfsdatafeed/download/zip",
-            "license": {
-                "url": "https://data.reddeer.ca/About"
-            }
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-c3r1-red~deer~alberta"
         },
         {
             "name": "Regina-Transit",
