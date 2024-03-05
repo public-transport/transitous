@@ -71,6 +71,11 @@
             "name": "SMTD",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-dp04-smtd~rt"
+        },
+        {
+            "name": "ChampaignUrbana-MTD",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dp1h-champaignurbanamasstransitdistrict"
         }
     ]
 }
