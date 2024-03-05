@@ -3,6 +3,10 @@
         {
             "name": "Jonah Brüchert",
             "github": "jbruechert"
+        },
+        {
+            "name": "Marcus Lundblad",
+            "github": "mlundblad"
         }
     ],
     "sources": [
@@ -40,6 +44,38 @@
             "name": "TER",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u0-sncf~ter~rt"
+        },
+        {
+            "name": "Mobilites-M-bul",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-mobilites~m~bul"
+        },
+        {
+            "name": "Mobilites-M-fun",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-mobilites~m~fun"
+        },
+        {
+            "name": "Mobilites-M-gsv",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-mobilites~m~gsv"
+        },
+        {
+            "name": "Mobilites-M-mco",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-mobilites~m~mco",
+            "fix": true
+        },
+        {
+            "name": "Mobilites-M-tpv",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-mobilites~m~tpv",
+            "fix": true
+        },
+        {
+            "name": "Mobilites-M-tag",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u0h0-tag"
         }
     ]
 }
