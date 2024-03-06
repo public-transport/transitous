@@ -48,34 +48,52 @@
         {
             "name": "Mobilites-M-bul",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-mobilites~m~bul"
+            "transitland-atlas-id": "f-mobilites~m~bul",
+            "options": {
+                "fetch-interval-days": 2
+            }
         },
         {
             "name": "Mobilites-M-fun",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-mobilites~m~fun"
+            "transitland-atlas-id": "f-mobilites~m~fun",
+            "options": {
+                "fetch-interval-days": 2
+            }
         },
         {
             "name": "Mobilites-M-gsv",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-mobilites~m~gsv"
+            "transitland-atlas-id": "f-mobilites~m~gsv",
+            "options": {
+                "fetch-interval-days": 2
+            }
         },
         {
             "name": "Mobilites-M-mco",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-mobilites~m~mco",
+            "options": {
+                "fetch-interval-days": 2
+            },
             "fix": true
         },
         {
             "name": "Mobilites-M-tpv",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-mobilites~m~tpv",
+            "options": {
+                "fetch-interval-days": 2
+            },
             "fix": true
         },
         {
             "name": "Mobilites-M-tag",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u0h0-tag"
+            "transitland-atlas-id": "f-u0h0-tag",
+            "options": {
+                "fetch-interval-days": 2
+            }
         }
     ]
 }
