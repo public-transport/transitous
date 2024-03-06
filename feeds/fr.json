@@ -94,6 +94,17 @@
             "options": {
                 "fetch-interval-days": 2
             }
+        },
+        {
+            "name": "TBC",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-ezzx-tbc",
+            "fix": true
+        },
+        {
+            "name": "TBC-bus",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-ezzx-tbc~bus"
         }
     ]
 }
