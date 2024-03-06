@@ -3,7 +3,7 @@
 title: Transitous
 social:
   cards_layout_options:
-    title: Free and Open Public Transport Routin
+    title: Free and Open Public Transport Routing
 ---
 
 # Transitous
