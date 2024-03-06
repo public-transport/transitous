@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Check out code
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     - name: Fetch submodules
       run: git submodule update --init --checkout --remote
@@ -30,22 +30,17 @@ jobs:
         path: |
           downloads/
           out/*.zip
-        key: feeds
+        key: feeds-
         restore-keys: |
-          feeds
+          feeds-
 
     - name: Fetch GTFS-Feeds
       run: |
-        sudo chown 1000:1000 -R out/ downloads/
+        sudo mkdir -p out
+        sudo mkdir -p downloads
+        sudo chown 1000:1000 -R out/ downloads/ mkdocs-site/
         sudo chmod 777 .
         docker run -v $PWD:/transitous -w /transitous transitous ci/fetch-feeds.py timer
-        docker run -v $PWD:/transitous -w /transitous transitous src/generate-attribution.py
-
-    - name: Import Feeds into motis
-      run: |
-        docker run -v $PWD:/transitous -w /transitous transitous src/generate-motis-config.py import
-        docker run -v $PWD:/transitous -w /transitous/out transitous ../ci/motis-import.py
-        docker run -v $PWD:/transitous -w /transitous transitous src/generate-motis-config.py full
 
     - name: Cache feeds
       uses: actions/cache/save@v4
@@ -54,6 +49,24 @@ jobs:
           downloads/
           out/*.zip
         key: feeds-${{ hashFiles('downloads/*') }}
+        save-always: true
+
+    - name: Update attribution
+      run: |
+        docker run -v $PWD:/transitous -w /transitous transitous src/generate-attribution.py
+
+    - name: Cache licenses.md
+      uses: actions/cache/save@v4
+      with:
+        path: |
+          mkdocs-site/docs/licenses.md
+        key: licenses-${{ hashFiles('mkdocs-site/docs/licenses.md') }}
+
+    - name: Import Feeds into motis
+      run: |
+        docker run -v $PWD:/transitous -w /transitous transitous src/generate-motis-config.py import
+        docker run -v $PWD:/transitous -w /transitous/out transitous ../ci/motis-import.py
+        docker run -v $PWD:/transitous -w /transitous transitous src/generate-motis-config.py full
 
     - name: Upload results
       run: |
@@ -63,3 +76,40 @@ jobs:
           -e 'ssh -i ./deploy_key -p 22 -o StrictHostKeyChecking=no' \
           out/ rsync@vm-motis.spline.de:
         rm deploy_key
+
+  deploy_updated_mkdocs_site:
+    runs-on: ubuntu-latest
+    needs: import
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v4
+
+      - name: Configure Git Credentials
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: 3.x
+
+      - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV 
+          
+      - name: Restore cached licenses.md
+        uses: actions/cache/restore@v4
+        with:
+          path: |
+            mkdocs-site/docs/licenses.md
+          key: licenses-
+          restore-keys: |
+            licenses-
+
+      - uses: actions/cache@v4
+        with:
+          key: mkdocs-material-${{ env.cache_id }}
+          path: .cache
+          restore-keys: |
+            mkdocs-material-
+
+      - run: pip install mkdocs
+      - run: mkdocs gh-deploy -f mkdocs-site/mkdocs.yml --force
