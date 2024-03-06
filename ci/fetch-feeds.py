@@ -18,7 +18,9 @@ feed_dir = Path("feeds/")
 
 match run_reason:
     case "timer":
-        for feed in feed_dir.glob("*.json"):
+        json_files = list(feed_dir.glob("*.json"))
+        for index, feed in enumerate(json_files):
+            print(f'PROGRESS: Processing file {index+1} of {len(json_files)} | {index/len(json_files)*100:.1f}% done...')
             subprocess.check_call(["./src/fetch.py", str(feed.absolute())])
 
         subprocess.check_call(["./src/garbage-collect.py"])
