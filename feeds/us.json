@@ -85,6 +85,11 @@
             "name": "Peoria-CityLink",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-dp0r-citylink"
+        },
+        {
+            "name": "Amtrak",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9-amtrak~amtrakcalifornia~amtrakcharteredvehicle"
         }
     ]
 }
