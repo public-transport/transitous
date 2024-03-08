@@ -32,11 +32,13 @@ class Atlas:
             result.url = feed["urls"]["static_current"]
             result.options = source.options
             result.spec = "gtfs"
+            result.enabled = source.enabled
         elif "realtime_trip_updates" in feed["urls"]:
             result = UrlSource()
             result.name = source.name
             result.url = feed["urls"]["realtime_trip_updates"]
             result.spec = "gtfs-rt"
+            result.enabled = source.enabled
         else:
             return None
 
