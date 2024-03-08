@@ -1,0 +1,15 @@
+{
+    "maintainers": [
+        {
+            "name": "Gordon Leung",
+            "github": "pi-cla"
+        }
+    ],
+    "sources": [
+        {
+            "name": "Hong-Kong-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-hong~kong~en"
+        }
+    ]
+}
