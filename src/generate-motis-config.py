@@ -54,7 +54,8 @@ if __name__ == "__main__":
 
                         gtfs_feeds.append({
                             "id": schedule_name,
-                            "path": schedule_file
+                            "path": schedule_file,
+                            "enabled": source.enabled
                         })
                     case "gtfs-rt" if isinstance(source, metadata.UrlSource):
                         referenced_static_feed = list(filter(
@@ -71,7 +72,8 @@ if __name__ == "__main__":
                         gtfsrt_feeds.append({
                             "id": schedule_name,
                             "url": source.url,
-                            "authorization": source.authorization
+                            "authorization": source.authorization,
+                            "enabled": source.enabled
                         })
 
     with open("motis/config.ini.j2") as f:

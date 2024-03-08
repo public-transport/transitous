@@ -24,10 +24,14 @@ class Source:
     fix: bool = False
     license: Optional[License] = None
     spec: str = "gtfs"
+    enabled: bool = True
 
     def __init__(self, parsed: dict = None):
         self.license = License()
         if parsed:
+            if "enabled" in parsed:
+                self.enabled = bool(parsed["enabled"])
+
             if "license" in parsed:
                 if "spdx-identifier" in parsed["license"]:
                     self.license.spdx_identifier = parsed["license"]["spdx-identifier"]
