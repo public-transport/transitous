@@ -94,6 +94,11 @@
             "options": {
                 "fetch-interval-days": 2
             }
+        },
+        {
+            "name": "Paris",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u09-paris~metro~bus~tram"
         }
     ]
 }
