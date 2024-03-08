@@ -9,14 +9,16 @@
         {
             "name": "opentransportdataswiss",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u0-switzerland"
+            "transitland-atlas-id": "f-u0-switzerland",
+            "enabled": false
         },
         {
             "name": "opentransportdataswiss",
             "type": "url",
             "spec": "gtfs-rt",
             "url": "https://api.opentransportdata.swiss/gtfsrt2020",
-            "authorization": "57c5dbbbf1fe4d000100001833a821a9de3748e5876bfb6c1efe6973"
+            "authorization": "57c5dbbbf1fe4d000100001833a821a9de3748e5876bfb6c1efe6973",
+            "enabled": false
         }
     ]
 }
