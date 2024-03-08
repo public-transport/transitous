@@ -1,0 +1,18 @@
+{
+    "maintainers": [
+        {
+            "name": "Volker Krause",
+            "github": "vkrause"
+        }
+    ],
+    "sources": [
+        {
+            "name": "hz",
+            "type": "http",
+            "url": "http://www.hzpp.hr/Media/Default/GTFS/GTFS_files.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        }
+    ]
+}
