@@ -1,0 +1,240 @@
+{
+    "maintainers": [
+        {
+            "name": "Gordon Leung",
+            "github": "pi-cla"
+        }
+    ],
+    "sources": [
+        {
+            "name": "BC-Ferries",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-c0-bcferries~bc~ca"
+        },
+        {
+            "name": "Black-Ball-Ferry-Line",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-c284-blackballferryline"
+        },
+        {
+            "name": "Campbell-River-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-c0yu-bctransit~campbellrivertransitsystem"
+        },
+        {
+            "name": "Campbell-River-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-c0yu-bctransit~campbellrivertransitsystem~rt"
+        },
+        {
+            "name": "Comox-Valley-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-c0z4-bctransit~comoxvalleytransitsystem"
+        },
+        {
+            "name": "Comox-Valley-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-c0z4-bctransit~comoxvalleytransitsystem~rt"
+        },
+        {
+            "name": "Cowichan-Valley-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-c28-bctransit~cowichanvalleyregionaltransitsystem"
+        },
+        {
+            "name": "Cowichan-Valley-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-c28-bctransit~cowichanvalleyregionaltransitsystem~rt"
+        },
+        {
+            "name": "Creston-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-c28-bctransit~creston"
+        },
+        {
+            "name": "Creston-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-c28-bctransit~creston~rt"
+        },
+        {
+            "name": "Dawson-Creek-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-c3ft0-bctransit~dawsoncreektransitsystem"
+        },
+        {
+            "name": "Dawson-Creek-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-c3ft0-bctransit~dawsoncreektransitsystem~rt"
+        },
+        {
+            "name": "East-Kootenay-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-bctransit~east~kootenay~region"
+        },
+         {
+            "name": "East-Kootenay-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-bctransit~east~kootenay~region~rt"
+        },
+        {
+            "name": "Fort-St-John-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-c3fpf-bctransit~fortstjohntransitsystem"
+        },
+        {
+            "name": "Fort-St-John-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-c3fpf-bctransit~fortstjohntransitsystem~rt"
+        },
+        {
+            "name": "Fraser-Valley-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-bctransit~fraser~valley~region"
+        },
+        {
+            "name": "Fraser-Valley-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-bctransit~fraser~valley~region~rt"
+        },
+        {
+            "name": "Kamloops-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-c342-bctransit~kamloopstransitsystem"
+        },
+        {
+            "name": "Kamloops-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-c342-bctransit~kamloopstransitsystem~rt"
+        },
+        {
+            "name": "Nanaimo-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-c0z-bctransit~rdntransitsystem"
+        },
+        {
+            "name": "Nanaimo-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-c0z-bctransit~rdntransitsystem~rt"
+        },
+        {
+            "name": "North-Okanagan-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-bctransit~north~okanagan~region"
+        },
+        {
+            "name": "North-Okanagan-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-bctransit~north~okanagan~region~rt"
+        },
+        {
+            "name": "Port-Alberni-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-bctransit~port~alberni"
+        },
+        {
+            "name": "Port-Alberni-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-bctransit~port~alberni~rt"
+        },
+        {
+            "name": "Powell-River-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-bctransit~powell~river"
+        },
+        {
+            "name": "Powell-River-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-bctransit~powell~river~rt"
+        },
+        {
+            "name": "Prince-George-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-c38d-bctransit~princegeorgetransitsystem"
+        },
+        {
+            "name": "Prince-George-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-c38d-bctransit~princegeorgetransitsystem~rt"
+        },
+        {
+            "name": "Prince-Rupert-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-bctransit~prince~rupert"
+        },
+        {
+            "name": "Prince-Rupert-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-bctransit~prince~rupert~rt"
+        },
+        {
+            "name": "South-Okanagan-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-bctransit~south~okanagan~similkameen"
+        },
+        {
+            "name": "South-Okanagan-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-bctransit~south~okanagan~similkameen~rt"
+        },
+        {
+            "name": "Squamish-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-c2b6v-bctransit~squamishtransitsystem"
+        },
+        {
+            "name": "Squamish-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-c2b6v-bctransit~squamishtransitsystem~rt"
+        },
+        {
+            "name": "Sunshine-Coast-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-c2b1-bctransit~sunshinecoasttransitsystem"
+        },
+        {
+            "name": "Sunshine-Coast-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-c2b1-bctransit~sunshinecoasttransitsystem~rt"
+        },
+        {
+            "name": "TransLink",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-c28-nstranslinkca"
+        },
+        {
+            "name": "TransLink",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-translink~rt"
+        },
+        {
+            "name": "Victoria-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-c28-bctransit~victoriaregionaltransitsystem"
+        },
+        {
+            "name": "Victoria-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-c28-bctransit~victoriaregionaltransitsystem~rt"
+        },
+        {
+            "name": "West-Kootenay-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-c2u-bctransit~westkootenaytransitsystem"
+        },
+        {
+            "name": "West-Kootenay-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-c2u-bctransit~westkootenaytransitsystem~rt"
+        },
+        {
+            "name": "Whistler-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-c2bt-bctransit~whistlertransitsystem"
+        },
+        {
+            "name": "Whistler-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-c2bt-bctransit~whistlertransitsystem~rt"
+        }
+    ]
+}
