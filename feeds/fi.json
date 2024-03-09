@@ -15,6 +15,16 @@
                 "url": "https://www.digitraffic.fi/en/railway-traffic/"
             },
             "fix": true
+        },
+        {
+            "name": "digitraffic",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://rata.digitraffic.fi/api/v1/trains/gtfs-rt-updates",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0",
+                "url": "https://www.digitraffic.fi/en/railway-traffic/"
+            }
         }
     ]
 }
