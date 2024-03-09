@@ -1,0 +1,17 @@
+# SPDX-License-Identifier: CC0-1.0
+# SPDX-FileCopyrightText: none
+
+/bower_components/
+/node_modules/
+/.pulp-cache/
+/output/
+/output-es/
+/generated-docs/
+/.psc-package/
+/.psc*
+/.purs*
+/.psa*
+/.spago
+/static/index.js
+/public
+/resources
