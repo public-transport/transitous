@@ -36,7 +36,7 @@ match run_reason:
             ["git", "diff", "--name-only", "origin/main", "HEAD"]) \
             .decode().splitlines()
 
-        changed_feeds = [f for f in changed_files if
+        changed_feeds = [f for f in changed_files if Path(f).exists() and
                          f.startswith("feeds/") and f.endswith(".json")]
 
         for feed in changed_feeds:
