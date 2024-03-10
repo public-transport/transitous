@@ -49,4 +49,7 @@ class Atlas:
             if "url" in feed["license"]:
                 result.license.url = feed["license"]["url"]
 
+        if source.url_override:
+            result.url = source.url_override
+
         return result
