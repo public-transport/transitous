@@ -128,6 +128,11 @@
             "name": "Translink-WHT",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-rk3s-qconnect~whitsundaytransit"
+        },
+        {
+            "name": "Transperth",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-q-transperth~transalbany~transbunbury~transbusselton~transgera"
         }
     ]
 }
