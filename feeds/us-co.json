@@ -1,0 +1,30 @@
+{
+    "maintainers": [
+        {
+            "name": "Marcus Lundblad",
+            "github": "mlundblad"
+        }
+    ],
+    "sources": [
+        {
+            "name": "RTD",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9xj-rtd"
+        },
+        {
+            "name": "RTD",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-rtddenver~rt"
+        },
+        {
+            "name": "RTD-bustang",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-denver~rtd~bustang"
+        },
+        {
+            "name": "RTD-bustang",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-denver~rtd~bustang~rt"
+        }
+    ]
+}

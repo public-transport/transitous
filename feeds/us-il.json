@@ -1,0 +1,46 @@
+{
+    "maintainers": [
+        {
+            "name": "Nathan Upchurch",
+            "github": "N-Upchurch"
+        },
+        {
+            "name": "Kurt Kremitzki",
+            "github": "kkremitzki"
+        }
+    ],
+    "sources": [
+        {
+            "name": "CTA",
+            "type": "http",
+            "url": "https://www.transitchicago.com/downloads/sch_data/google_transit.zip",
+            "license": {
+                "url": "https://www.transitchicago.com/downloads/sch_data/developers_license_agreement.htm"
+            },
+            "fix": true,
+            "options": {
+                "fetch-interval-days": 1
+            }
+        },
+        {
+            "name": "SMTD",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dp04-smtd"
+        },
+        {
+            "name": "SMTD",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dp04-smtd~rt"
+        },
+        {
+            "name": "ChampaignUrbana-MTD",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dp1h-champaignurbanamasstransitdistrict"
+        },
+        {
+            "name": "Peoria-CityLink",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dp0r-citylink"
+        }
+    ]
+}

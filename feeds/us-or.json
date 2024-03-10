@@ -1,0 +1,20 @@
+{
+    "maintainers": [
+        {
+            "name": "Marcus Lundblad",
+            "github": "mlundblad"
+        }
+    ],
+    "sources": [
+        {
+            "name": "Trimet",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-c20-trimet"
+        },
+        {
+            "name": "Trimet",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-trimet~rt"
+        }
+    ]
+}
