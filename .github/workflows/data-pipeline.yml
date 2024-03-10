@@ -44,12 +44,12 @@ jobs:
 
     - name: Cache feeds
       uses: actions/cache/save@v4
+      if: always()
       with:
         path: |
           downloads/
           out/*.zip
         key: feeds-${{ hashFiles('downloads/*') }}
-        save-always: true
 
     - name: Update attribution
       run: |
