@@ -96,7 +96,7 @@ podman build ci/container/ -t transitous -f ci/container/Containerfile
 
 Enter the container:
 ```bash
-podman run -it -p 8080:8080 -v $PWD:/transitous -w /transitous transitous
+podman run -it -p 8080:8080 -v $PWD:/transitous:Z --userns=keep-id -w /transitous transitous
 ```
 
 Now inside the container, you can download and post-process all the feeds. This may take a while.
