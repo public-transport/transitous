@@ -7,6 +7,10 @@
         {
             "name": "Marcus Lundblad",
             "github": "mlundblad"
+        },
+        {
+            "name": "Alexandre Franke",
+            "github": "afranke"
         }
     ],
     "sources": [
@@ -99,6 +103,11 @@
             "name": "Paris",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u09-paris~metro~bus~tram"
+        },
+        {
+            "name": "CTS",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u0tk-cts"
         }
     ]
 }
