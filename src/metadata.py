@@ -47,6 +47,7 @@ class Source:
 
 class HttpOptions:
     fetch_interval_days: Optional[int] = None
+    headers: dict[str, str] = {}
 
 
 class TransitlandSource(Source):
@@ -80,6 +81,10 @@ class HttpSource(Source):
                 if "fetch-interval-days" in options:
                     self.options.fetch_interval_days = \
                         int(parsed["options"]["fetch-interval-days"])
+
+            if "http-headers" in parsed:
+                for key in parsed["http-headers"]:
+                    self.options.headers[key] = parsed["http-headers"][key]
 
 
 class UrlSource(Source):

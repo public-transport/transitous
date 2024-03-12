@@ -66,7 +66,7 @@ class Fetcher:
 
                 # Fetch last modification time from the server
                 server_headers = \
-                    requests.head(source.url, allow_redirects=True).headers
+                    requests.head(source.url, headers=source.options.headers, allow_redirects=True).headers
 
                 # If server version is older, return
                 last_modified_server = None
@@ -79,7 +79,7 @@ class Fetcher:
 
                 # Tell the server not to send data if it is older
                 # than what we have
-                headers = {}
+                headers = source.options.headers
                 if last_modified:
                     headers["if-modified-since"] = last_modified \
                         .strftime("%a, %d %b %Y %X %Z")
