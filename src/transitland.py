@@ -52,4 +52,7 @@ class Atlas:
         if source.url_override:
             result.url = source.url_override
 
+        if source.proxy:
+            result.url = "https://gtfsproxy.fwan.it/" + source.transitland_atlas_id
+
         return result
