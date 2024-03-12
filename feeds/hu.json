@@ -13,6 +13,16 @@
             "http-headers": {
                 "Authorization": "Basic YXJvbmt2aEBnbWFpbC5jb206M09jOHpNRFc3c3RCQ2ljVg=="
             }
+        },
+        {
+            "name": "volanbusz",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-volanbusz~hu"
+        },
+        {
+            "name": "bkk",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u2m-bkk"
         }
     ]
 }
