@@ -39,7 +39,8 @@
         {
             "name": "Exo-citsud",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-f253-exo~citsud~ouest"
+            "transitland-atlas-id": "f-f253-exo~citsud~ouest",
+            "fix": true
         },
         {
             "name": "Exo-citsud",
