@@ -59,7 +59,7 @@ class TransitlandSource(Source):
         super().__init__(parsed)
         self.transitland_atlas_id = parsed["transitland-atlas-id"]
         self.url_override = parsed.get("url-override", None)
-        self.proxy = parsed.get("proxy")
+        self.proxy = parsed.get("proxy", False)
 
         if "options" in parsed:
             options = parsed["options"]
