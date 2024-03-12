@@ -114,6 +114,11 @@
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-vaasa~fi",
             "fix": true
+        },
+        {
+            "name": "hsl",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-ud9-helsinginseudunliikenne"
         }
     ]
 }
