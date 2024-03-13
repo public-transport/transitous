@@ -1,0 +1,15 @@
+{
+    "maintainers": [
+        {
+            "name": "Jonah Brüchert",
+            "github": "jbruechert"
+        }
+    ],
+    "sources": [
+        {
+            "name": "nap",
+            "url": "https://jbb.ghsq.de/gtfs/nap-si.gtfs.zip",
+            "type": "http"
+        }
+    ]
+}
