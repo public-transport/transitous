@@ -3,6 +3,10 @@
         {
             "name": "Adrian Chaves",
             "github": "Gallaecio"
+        },
+        {
+            "name": "Paul Brown",
+            "github": "Bro66666"
         }
     ],
     "sources": [
@@ -25,6 +29,11 @@
             "options": {
                 "fetch-interval-days": 1
             }
+        },
+        {
+            "name": "malaga-metro",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-metro~malaga"
         }
     ]
 }
