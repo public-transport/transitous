@@ -36,12 +36,6 @@
             "transitland-atlas-id": "f-metro~malaga"
         },        
         {
-            "name": "malaga-bus-emt",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-eysb-empresamalagueñadetransportes",
-            "proxy": true
-        },
-        {
             "name": "valencia-bus-emt",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-ezp8-emtvalencia"
