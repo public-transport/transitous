@@ -19,6 +19,11 @@
             }
         },
         {
+            "name": "renfe-cercanias",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-ez-renfecercanias"
+        },        
+        {
             "name": "vitrasa",
             "type": "http",
             "url": "https://datos.vigo.org/data/transporte/gtfs_vigo.zip",
@@ -34,11 +39,6 @@
             "name": "malaga-metro",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-metro~malaga"
-        },        
-        {
-            "name": "valencia-bus-emt",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-ezp8-emtvalencia"
         }
     ]
 }
