@@ -38,7 +38,7 @@
         {
             "name": "malaga-bus-emt",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "o-eysb-empresamalagueñadetransportes"
+            "transitland-atlas-id": "f-eysb-empresamalagueñadetransportes"
         }
     ]
 }
