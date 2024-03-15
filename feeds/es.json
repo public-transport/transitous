@@ -19,6 +19,12 @@
             }
         },
         {
+            "name": "renfe-cercanias",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-ez-renfecercanias",
+            "fix": true
+        },        
+        {
             "name": "vitrasa",
             "type": "http",
             "url": "https://datos.vigo.org/data/transporte/gtfs_vigo.zip",
