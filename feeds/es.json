@@ -44,7 +44,7 @@
         {
             "name": "valencia-bus-emt",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-ezp8-emtvalencia"
+            "transitland-atlas-id": "f-ezp8-emtvalencia",
             "fix": true
         }
     ]
