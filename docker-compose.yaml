@@ -1,0 +1,26 @@
+version: "3.7"
+
+services:
+  motis:
+    build: .
+    # image: ghcr.io/motis-project/motis:latest
+    volumes:
+      - input:/input
+      - data:/data
+      - web:/motis/web
+    ports:
+      - 8080:8080
+
+  # web:
+  #   image: nginx
+  #   volumes:
+  #     - web:/usr/share/nginx/html:ro
+  #   ports:
+  #     - 80:80
+  #   depends_on:
+  #     - motis
+
+volumes:
+  input:
+  data:
+  web:

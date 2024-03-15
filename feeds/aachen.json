@@ -1,0 +1,15 @@
+{
+    "maintainers": [
+        {
+            "name": "ex",
+            "github": "exmatrikulator"
+        }
+    ],
+    "sources": [
+        {
+            "name": "aachen",
+            "type": "http",
+            "url": "http://opendata.avv.de/archive_GTFS/2024/2024-01/AVV_GTFS_Masten_mit_SPNV_20240113.zip"
+        }
+    ]
+}
