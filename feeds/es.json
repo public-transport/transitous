@@ -34,6 +34,11 @@
             "name": "malaga-metro",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-metro~malaga"
+        },        
+        {
+            "name": "malaga-bus-emt",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "o-eysb-empresamalagueñadetransportes"
         }
     ]
 }
