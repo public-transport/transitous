@@ -21,7 +21,8 @@
         {
             "name": "renfe-cercanias",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-ez-renfecercanias"
+            "transitland-atlas-id": "f-ez-renfecercanias",
+            "fix": true
         },        
         {
             "name": "vitrasa",
