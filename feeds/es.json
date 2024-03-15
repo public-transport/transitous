@@ -40,6 +40,12 @@
             "name": "malaga-metro",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-metro~malaga"
+        },
+        {
+            "name": "valencia-bus-emt",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-ezp8-emtvalencia"
+            "fix": true
         }
     ]
 }
