@@ -48,10 +48,28 @@
             "fix": true
         },
         {
-            "name": "madrid-bus-crtm",
+            "name": "madrid-bus-interurban-crtm",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-ezj-informaciónoficial~consorcioregionaldetransportesdemadrid",
             "fix": true
-        }
+        },
+        {
+            "name": "madrid-bus-emt",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-ezjm-empresamunicipaldetransportes",
+            "fix": true
+        },
+        {
+            "name": "madrid-metro-crtm",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-ezjm-informaciónoficial~consorcioregionaldetransportesdemadrid",
+            "fix": true
+        },
+        {
+            "name": "madrid-metro-ligero-crtm",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-ezjm-consorcioregionaldetransportesdemadrid",
+            "fix": true
+        },
     ]
 }
