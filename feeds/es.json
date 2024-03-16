@@ -48,9 +48,10 @@
             "fix": true
         },
         {
-            "name": "madrid-bust-crtm",
+            "name": "madrid-bus-crtm",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-ezj-informaciónoficial~consorcioregionaldetransportesdemadrid"
+            "transitland-atlas-id": "f-ezj-informaciónoficial~consorcioregionaldetransportesdemadrid",
+            "fix": true
         }
     ]
 }
