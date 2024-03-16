@@ -13,6 +13,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
+            "options": {
+                "fetch-interval-days": 2
+            },
             "fix": true
         },
         {
