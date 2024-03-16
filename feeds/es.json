@@ -42,6 +42,15 @@
             "transitland-atlas-id": "f-metro~malaga"
         },
         {
+            "name": "malaga-bus-emt",
+            "type": "http",
+            "url": "https://datosabiertos.malaga.eu/recursos/transporte/EMT/lineasYHorarios/google_transit_txt.zip",
+            "fix": true,
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
+        },        
+        {
             "name": "valencia-bus-emt",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-ezp8-emtvalencia",
