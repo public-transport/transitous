@@ -81,6 +81,12 @@
             "proxy": true
         },
         {
+            "name": "Puglia-Lecce",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-srhv-sgmspa",
+            "fix": true
+        },
+        {
             "name": "Sardegna-Contributate",
             "type": "http",
             "url": "https://www.sardegnamobilita.it/opendata/R_SARDEGTRASP_00007_1_dati_privati.zip",
