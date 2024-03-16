@@ -53,6 +53,12 @@
             "transitland-atlas-id": "f-sr-atac~romatpl~trenitalia"
         },
         {
+            "name": "Liguria-Genova",
+            "type": "http",
+            "url": "https://www.amt.genova.it/amt/GTFS/GTFS_AMT_GENOVA.zip",
+            "fix": true
+        },
+        {
             "name": "Lombardia-ATM",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u0nd-comunedimilano"
