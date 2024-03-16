@@ -119,6 +119,26 @@
             "name": "hsl",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-ud9-helsinginseudunliikenne"
+        },
+        {
+            "name": "tampere",
+            "type": "http",
+            "url": "https://data.itsfactory.fi/journeys/files/gtfs/latest/gtfs_tampere.zip",
+            "http-headers": {
+                "User-Agent": "Transitous GTFS Fetcher"
+            }
+        },
+        {
+            "name": "turku",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u6x-turunlinja~autoilijainosakeyhtiö~savonlinjaoy~sl~autolinja"
+        },
+        {
+            "name": "finferries",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u6xr-finferries~sundqvistinvestmentsoyab~nordiccoastline",
+            "url-override": "http://gtfs.lautta.net",
+            "fix": true
         }
     ]
 }
