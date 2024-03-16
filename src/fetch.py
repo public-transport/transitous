@@ -62,7 +62,7 @@ class Fetcher:
                 if source.options.fetch_interval_days and last_modified \
                         and (datetime.now(tz=timezone.utc) - last_modified).days \
                         < source.options.fetch_interval_days:
-                    return false
+                    return False
 
                 # Fetch last modification time from the server
                 server_headers = \
@@ -137,6 +137,15 @@ class Fetcher:
         region_name = metadata_filename[:metadata_filename.rfind('.')]
 
         for source in region.sources:
+            # Resolve transitland sources to http / url sources
+            match source:
+                case TransitlandSource():
+                    source = self.transitland_atlas.source_by_id(source)
+
+                    # Transitland source type that we cannot handle
+                    if not source:
+                        continue
+
             validate_source_name(source.name)
             download_name = f"{region_name}_{source.name}"
 

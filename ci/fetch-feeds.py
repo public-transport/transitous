@@ -21,6 +21,7 @@ match run_reason:
         json_files = list(feed_dir.glob("*.json"))
         for index, feed in enumerate(json_files):
             print(f'PROGRESS: Processing file {index+1} of {len(json_files)} | {index/len(json_files)*100:.1f}% done...')
+            sys.stdout.flush()
             subprocess.check_call(["./src/fetch.py", str(feed.absolute())])
 
         subprocess.check_call(["./src/garbage-collect.py"])

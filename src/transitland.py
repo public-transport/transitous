@@ -6,6 +6,7 @@ from pathlib import Path
 from typing import Dict, Union
 import json
 from metadata import *
+import sys
 
 
 class Atlas:
@@ -40,6 +41,8 @@ class Atlas:
             result.spec = "gtfs-rt"
             result.enabled = source.enabled
         else:
+            print("Warning: Found Transitland source that we can't handle:", source.transitland_atlas_id)
+            sys.stdout.flush()
             return None
 
         if "license" in feed:
