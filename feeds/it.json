@@ -84,7 +84,8 @@
             "url": "http://www.amtabservizio.it/gtfs/google_transit.zip",
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
-            }
+            },
+            "fix": true
         },
         {
             "name": "Puglia-Lecce",
