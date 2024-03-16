@@ -21,7 +21,8 @@
         {
             "name": "Campania-ANM",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-s-anm~it"
+            "transitland-atlas-id": "f-s-anm~it",
+            "proxy": true
         },
         {
             "name": "Campania-EAV",
