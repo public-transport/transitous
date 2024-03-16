@@ -46,6 +46,11 @@
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-ezp8-emtvalencia",
             "fix": true
+        },
+        {
+            "name": "madrid-bust-crtm",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-ezj-informaciónoficial~consorcioregionaldetransportesdemadrid"
         }
     ]
 }
