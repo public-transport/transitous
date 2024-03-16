@@ -7,6 +7,15 @@
     ],
     "sources": [
         {
+            "name": "Basilicata-Matera",
+            "type": "http",
+            "url": "http://wgmatera.paesit.it/documents/1027/download",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            },
+            "fix": true
+        },
+        {
             "name": "Campania-EAV",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-eave~wimob~it"
