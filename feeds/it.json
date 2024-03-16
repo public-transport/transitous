@@ -84,6 +84,14 @@
             "proxy": true
         },
         {
+            "name": "Puglia-Bari",
+            "type": "http",
+            "url": "http://www.amtabservizio.it/gtfs/google_transit.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
+        },
+        {
             "name": "Puglia-Lecce",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-srhv-sgmspa",
