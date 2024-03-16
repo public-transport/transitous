@@ -19,14 +19,14 @@
             "fix": true
         },
         {
-            "name": "Campania-EAV",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-eave~wimob~it"
-        },
-        {
             "name": "Campania-ANM",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-s-anm~it"
+        },
+        {
+            "name": "Campania-EAV",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-eave~wimob~it"
         },
         {
             "name": "Emilia-Romagna-TPER-Bologna",
