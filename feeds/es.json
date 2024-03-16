@@ -70,6 +70,16 @@
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-ezjm-consorcioregionaldetransportesdemadrid",
             "fix": true
+        },
+        {
+            "name": "Alsa-buses",
+            "type": "http",
+            "url": "https://nap.mitma.es/api/Fichero/GetByName/ALSA",
+            "authorization": "e8143a1e-d12e-4a01-9b08-caf3071e4853",
+            "fix": true,
+            "options": {
+                "fetch-interval-days": 1
+            }
         }
     ]
 }
