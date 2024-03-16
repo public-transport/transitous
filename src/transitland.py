@@ -34,6 +34,7 @@ class Atlas:
             result.options = source.options
             result.spec = "gtfs"
             result.enabled = source.enabled
+            result.fix = source.fix
         elif "realtime_trip_updates" in feed["urls"]:
             result = UrlSource()
             result.name = source.name
