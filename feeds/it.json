@@ -7,6 +7,11 @@
     ],
     "sources": [
         {
+            "name": "Campania-EAV",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-eave~wimob~it"
+        },
+        {
             "name": "Emilia-Romagna-TPER-Bologna",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-srb-tperspa~bologna",
