@@ -2,14 +2,14 @@
 # SPDX-License-Identifier: CC0-1.0
 # Project information
 site_name: Transitous
-site_url: https://routing.spline.de/
+site_url: https://transitous.org/doc/
 site_author: Transitous contributors
 site_description: >-
   A community-run provider-neutral international public transport routing service.
 
 # Repository
 repo_name: public-transport/transitous
-repo_url: https://github.com/public-transport/transitous/mkdocs-site
+repo_url: https://github.com/public-transport/transitous/docs
 
 # Copyright
 copyright: Copyright &copy; 2024 Transitous contributors

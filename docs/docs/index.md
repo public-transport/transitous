@@ -36,7 +36,7 @@ routing service that:
 
 Transitous data sources are divided by region, so they can be continuously tested and verified by locals.
 
-A region file in the [feeds](feeds) directory has a `maintainers` attribute, which contains a list of people responsible for keeping the feeds for the region up to date.
+A region file in the [feeds](https://github.com/public-transport/transitous/tree/main/feeds) directory has a `maintainers` attribute, which contains a list of people responsible for keeping the feeds for the region up to date.
 
 ```json
 {
