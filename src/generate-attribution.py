@@ -27,13 +27,13 @@ if __name__ == "__main__":
 
         region = Region(parsed)
         for source in region.sources:
-            if source.spec == "gtfs-rt":
-                continue
-
             if (type(source) == TransitlandSource):
                 source = transitland_atlas.source_by_id(source)
                 if not source:
                     continue
+
+            if source.spec == "gtfs-rt":
+                continue
 
             attribution = {}
 
