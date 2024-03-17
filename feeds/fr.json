@@ -112,7 +112,8 @@
         {
             "name": "Semitan",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-gbqu-semitan"
+            "transitland-atlas-id": "f-gbqu-semitan",
+            "fix": true
         }
     ]
 }
