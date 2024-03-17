@@ -4,7 +4,7 @@
 
 - name: Install motis-proxy executable
   get_url:
-    url: https://github.com/public-transport/transitous/releases/download/motis-proxy-v0.3.0/motis-proxy
+    url: https://github.com/public-transport/transitous/releases/download/motis-proxy-v0.3.1/motis-proxy
     dest: /usr/local/bin/motis-proxy
     mode: '0777'
 
