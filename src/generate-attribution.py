@@ -18,11 +18,6 @@ if __name__ == "__main__":
 
     transitland_atlas = transitland.Atlas.load(Path("transitland-atlas/"))
 
-    markdown = """
-# Licenses of included feeds
-
-"""
-
     attributions = []
 
     for feed in feed_dir.glob("*.json"):
@@ -44,12 +39,13 @@ if __name__ == "__main__":
 
             if source.license:
                 if source.license.spdx_identifier:
-                    attribution["spdx_identifier"] \
+                    attribution["spdx_license_identifier"] \
                         = source.license.spdx_identifier
                 if source.license.url:
-                    attribution["url"] = source.license.url
+                    attribution["license_url"] = source.license.url
 
-            attribution["copyright_holders"] = []
+            attribution["operators"] = []
+            attribution["source"] = source.url
 
             metadata_filename = feed.name
             region_name = metadata_filename[:metadata_filename.rfind('.')]
@@ -57,7 +53,6 @@ if __name__ == "__main__":
             feed_path = Path(f"out/{region_name}_{source.name}.gtfs.zip")
 
             attribution["filename"] = feed_path.name
-            markdown += "## Filename: " + feed_path.name + "  \r\n"
 
             if not feed_path.exists():
                 print(f"Info: {feed_path} does not exist, skipping…")
@@ -68,23 +63,11 @@ if __name__ == "__main__":
                     with io.TextIOWrapper(a) as at:
                         agencyreader = \
                             csv.DictReader(at, delimiter=',', quotechar='"')
-                        markdown += "### Copyright holders  \r\n"
                         for row in agencyreader:
-                            attribution["copyright_holders"] \
+                            attribution["operators"] \
                                 .append(row["agency_name"])
-                            markdown += " * " + row["agency_name"] + "  \r\n"
 
             attributions.append(attribution)
 
     with open("out/license.json", "w") as outfile:
         json.dump(attributions, outfile, indent=4, ensure_ascii=False)
-    
-
-    markdown += """
-<!--
-SPDX-FileCopyrightText: None
-SPDX-License-Identifier: CC0-1.0
--->
-"""
-    with open("docs/docs/licenses.md", "w") as outfile:
-        outfile.write(markdown)

@@ -64,9 +64,11 @@ class Fetcher:
                         < source.options.fetch_interval_days:
                     return False
 
+                download_url = source.url_override if source.url_override else source.url
+
                 # Fetch last modification time from the server
                 server_headers = \
-                    requests.head(source.url, headers=source.options.headers, allow_redirects=True).headers
+                    requests.head(download_url, headers=source.options.headers, allow_redirects=True).headers
 
                 # If server version is older, return
                 last_modified_server = None
@@ -84,7 +86,7 @@ class Fetcher:
                     headers["if-modified-since"] = last_modified \
                         .strftime("%a, %d %b %Y %X %Z")
 
-                response = requests.get(source.url, headers=headers)
+                response = requests.get(download_url, headers=headers)
 
                 # If the file was not modified, return
                 if response.status_code == 304:

@@ -6,3 +6,7 @@ Files: feeds/*.json
 Copyright: none
 License: CC0-1.0
 
+Files: website/data/license.json
+Copyright: none
+License: CC0-1.0
+

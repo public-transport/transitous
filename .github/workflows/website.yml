@@ -54,11 +54,11 @@ jobs:
         with:
           python-version: 3.x
 
-      - name: Restore cached licenses.md
+      - name: Restore cached licenses.json
         uses: actions/cache/restore@v4
         with:
           path: |
-            docs/docs/licenses.md
+            out/license.json
           key: licenses-
           restore-keys: |
             licenses-
@@ -72,6 +72,7 @@ jobs:
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
         run: |
+          cp out/license.json website/data/
           cd website && npm run release
 
       - name: Upload artifact
