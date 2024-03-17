@@ -129,6 +129,7 @@ You can click on the region names to find downloads for smaller subregions.
 Then download the chosen region:
 ```bash
 wget https://download.geofabrik.de/europe/germany/berlin-latest.osm.pbf -P out
+wget https://osmdata.openstreetmap.de/download/land-polygons-complete-3857.zip -P out
 ```
 
 In order to start motis, we need a config file listing all the feeds we want to use.
