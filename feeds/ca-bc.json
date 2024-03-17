@@ -29,7 +29,8 @@
         {
             "name": "Comox-Valley-Transit",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-c0z4-bctransit~comoxvalleytransitsystem"
+            "transitland-atlas-id": "f-c0z4-bctransit~comoxvalleytransitsystem",
+            "proxy": true
         },
         {
             "name": "Comox-Valley-Transit",
