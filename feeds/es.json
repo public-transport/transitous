@@ -75,7 +75,7 @@
         {
             "name": "Alsa-buses",
             "type": "http",
-            "url": "https://nap.mitma.es/api/Organizacion/GetByName/ALSA",
+            "url": "https://nap.transportes.gob.es/api/Fichero/download/1133",
             "http-headers": {
                 "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
             },
