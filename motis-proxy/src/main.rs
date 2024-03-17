@@ -442,7 +442,7 @@ struct Request {
 
 /// # MOTIS API
 ///
-/// All MOTIS requests need to be sent to this URL.
+/// All MOTIS requests need to be sent to this URL. For Transitous, it is located at `https://routing.spline.de/api/`.
 ///
 /// You can use the destination field to choose the endpoint to call.
 ///
