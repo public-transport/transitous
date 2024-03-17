@@ -214,6 +214,18 @@
             "transitland-atlas-id": "f-sp-trenitaliaspa"
         },
         {
+            "name": "Trentino-Extraurbano",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u0p-trentinotrasportieserciziospa",
+            "proxy": true
+        },
+        {
+            "name": "Trentino-Urbano",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u0pv-ttesercizio",
+            "proxy": true
+        },
+        {
             "name": "Veneto-Venezia-Bus",
             "type": "http",
             "url": "https://actv.avmspa.it/sites/default/files/attachments/opendata/automobilistico/actv_aut.zip",
