@@ -9,7 +9,8 @@ site_description: >-
 
 # Repository
 repo_name: public-transport/transitous
-repo_url: https://github.com/public-transport/transitous/docs
+repo_url: https://github.com/public-transport/transitous/
+edit_uri: edit/main/docs/docs/
 
 # Copyright
 copyright: Copyright &copy; 2024 Transitous contributors
