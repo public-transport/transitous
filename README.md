@@ -24,6 +24,6 @@ routing service that:
 
 Matrix channel: [#opentransport:matrix.org](https://matrix.to/#/#opentransport:matrix.org) (for now)
 
-## Further documentation
+## Adding a region
 
-More information can be found on the [Project Website](https://public-transport.github.io/transitous/), the license information for the included feeds is [here](https://public-transport.github.io/transitous/licenses/).
+Find the documentation on the [Project Website](https://transitous.org/doc/#adding-a-region).
