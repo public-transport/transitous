@@ -36,4 +36,3 @@ markdown_extensions:
 # Page tree
 nav:
   - Home: index.md
-  - Feed-Licenses: licenses.md

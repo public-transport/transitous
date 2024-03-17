@@ -51,10 +51,10 @@ class HttpOptions:
 
 
 class TransitlandSource(Source):
-    transitland_atlas_id: str
+    transitland_atlas_id: str = ""
     options: HttpOptions = HttpOptions()
-    url_override: str
-    proxy: bool
+    url_override: Optional[str] = None
+    proxy: bool = False
 
     def __init__(self, parsed: dict):
         super().__init__(parsed)
@@ -70,13 +70,15 @@ class TransitlandSource(Source):
 
 
 class HttpSource(Source):
-    url: str
+    url: str = ""
     options: HttpOptions = HttpOptions()
+    url_override: Optional[str] = None
 
     def __init__(self, parsed: dict = None):
         if parsed:
             super().__init__(parsed)
             self.url = parsed["url"]
+            self.url_override = parsed.get("url-override", None)
 
             if "options" in parsed:
                 options = parsed["options"]
@@ -90,7 +92,7 @@ class HttpSource(Source):
 
 
 class UrlSource(Source):
-    url: str
+    url: str = ""
     authorization: str = None
 
     def __init__(self, parsed: dict = None):
@@ -114,8 +116,8 @@ def sourceFromJson(parsed: dict) -> Source:
 
 
 class Region:
-    maintainers: List[Maintainer]
-    sources: Source
+    maintainers: List[Maintainer] = []
+    sources: Source = Source()
 
     def __init__(self, parsed: dict):
         self.maintainers = map(Maintainer, parsed["maintainers"])

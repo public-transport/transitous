@@ -59,8 +59,8 @@ jobs:
       uses: actions/cache/save@v4
       with:
         path: |
-          docs/docs/licenses.md
-        key: licenses-${{ hashFiles('docs/docs/licenses.md') }}
+          out/license.json
+        key: licenses-${{ hashFiles('out/license.json') }}
 
     - name: Import Feeds into motis
       run: |

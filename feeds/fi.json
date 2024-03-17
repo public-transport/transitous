@@ -123,7 +123,8 @@
         {
             "name": "tampere",
             "type": "http",
-            "url": "https://jbb.ghsq.de/gtfs/fi-tampere.gtfs.zip",
+            "url": "https://data.itsfactory.fi/journeys/files/gtfs/latest/gtfs_tampere.zip",
+            "url-override": "https://jbb.ghsq.de/gtfs/fi-tampere.gtfs.zip",
             "http-headers": {
                 "User-Agent": "Transitous GTFS Fetcher"
             }

@@ -93,7 +93,8 @@
         {
             "name": "Puglia-Bari",
             "type": "http",
-            "url": "https://jbb.ghsq.de/gtfs/it-Puglia-Bari.gtfs.zip",
+            "url": "http://www.amtabservizio.it/gtfs/google_transit.zip",
+            "url-override": "https://jbb.ghsq.de/gtfs/it-Puglia-Bari.gtfs.zip",
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
