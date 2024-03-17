@@ -108,6 +108,12 @@
             "name": "CTS",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u0tk-cts"
+        },
+        {
+            "name": "Semitan",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-gbqu-semitan",
+            "fix": true
         }
     ]
 }
