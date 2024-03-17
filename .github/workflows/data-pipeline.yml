@@ -38,7 +38,7 @@ jobs:
       run: |
         sudo mkdir -p out
         sudo mkdir -p downloads
-        sudo chown 1000:1000 -R out/ downloads/ mkdocs-site/
+        sudo chown 1000:1000 -R out/ downloads/ docs/
         sudo chmod 777 .
         docker run -v $PWD:/transitous -w /transitous transitous ci/fetch-feeds.py timer
 
@@ -59,8 +59,8 @@ jobs:
       uses: actions/cache/save@v4
       with:
         path: |
-          mkdocs-site/docs/licenses.md
-        key: licenses-${{ hashFiles('mkdocs-site/docs/licenses.md') }}
+          docs/docs/licenses.md
+        key: licenses-${{ hashFiles('docs/docs/licenses.md') }}
 
     - name: Import Feeds into motis
       run: |

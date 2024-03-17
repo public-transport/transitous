@@ -86,5 +86,5 @@ SPDX-FileCopyrightText: None
 SPDX-License-Identifier: CC0-1.0
 -->
 """
-    with open("mkdocs-site/docs/licenses.md", "w") as outfile:
+    with open("docs/docs/licenses.md", "w") as outfile:
         outfile.write(markdown)

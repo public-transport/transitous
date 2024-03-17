@@ -58,13 +58,13 @@ jobs:
         uses: actions/cache/restore@v4
         with:
           path: |
-            mkdocs-site/docs/licenses.md
+            docs/docs/licenses.md
           key: licenses-
           restore-keys: |
             licenses-
 
       - run: pip install mkdocs
-      - run: mkdocs build --site-dir ../website/static/doc/ -f mkdocs-site/mkdocs.yml
+      - run: mkdocs build --site-dir ../website/static/doc/ -f docs/mkdocs.yml
 
       - name: Build with Hugo
         env:
