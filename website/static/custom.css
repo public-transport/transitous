@@ -9,8 +9,10 @@
   --bs-btn-border-color: #e69e41;
   --bs-btn-hover-bg: #d9963d;
   --bs-btn-hover-border-color: #b57d33;
-  --bs-btn-active-bg: #e8cc42;
+  --bs-btn-active-bg: #cf8f3a;
   --bs-btn-color: #000000;
+  --bs-btn-hover-color: #000000;
+  --bs-btn-active-color: #000000;
 }
 
 .dropdown-menu {
