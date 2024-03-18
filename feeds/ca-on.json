@@ -119,7 +119,8 @@
         {
             "name": "Metrolinx-stthomas",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-stthomas~on~ca"
+            "transitland-atlas-id": "f-stthomas~on~ca",
+            "fix": true
         },
         {
             "name": "Metrolinx-stthomas",
