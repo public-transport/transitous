@@ -101,6 +101,26 @@
             "fix": true
         },
         {
+            "name": "Puglia-Brindisi",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-s-societàtrasportipubblicibrindisi~brindisi"
+        },
+        {
+            "name": "Puglia-Brindisi-Extraurbano",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-s-societàtrasportipubblicibrindisi~extraurbano"
+        },
+        {
+            "name": "Puglia-Brindisi-Francavilla",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-s-societàtrasportipubblicibrindisi~francavilla"
+        },
+        {
+            "name": "Puglia-Brindisi-Ostuni",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-s-societàtrasportipubblicibrindisi~ostuni"
+        },
+        {
             "name": "Puglia-Lecce",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-srhv-sgmspa",
