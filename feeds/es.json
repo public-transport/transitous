@@ -83,6 +83,19 @@
             "options": {
                 "fetch-interval-days": 1
             }
-        }
+        },
+      {
+          "name": "Alavabus",
+          "type": "http",
+          "url": "https://nap.transportes.gob.es/api/Fichero/download/1362",
+          "http-headers": {
+                "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+          },
+          "fix": true,
+          "options": {
+                "fetch-interval-days": 1
+          }
+      }        
+        
     ]
 }
