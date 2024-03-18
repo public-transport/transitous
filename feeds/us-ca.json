@@ -1,0 +1,55 @@
+{
+    "maintainers": [
+        {
+            "name": "Marcus Lundblad",
+            "github": "mlundblad"
+        }
+    ],
+    "sources": [
+        {
+            "name": "BART",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9q9-bart"
+        },
+        {
+            "name": "BART",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-bart~rt"
+        },
+        {
+            "name": "SFMTA",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9q8y-sfmta",
+            "url-override": "http://api.511.org/transit/datafeeds?operator_id=SF&api_key=7fa322f6-dd5f-495c-a05b-026dcb1ba472"
+        },
+        {
+            "name": "Capitolcorridor",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9qc-capitolcorridor",
+            "proxy": true
+        },
+        {
+            "name": "SF-bayarea",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-sf~bay~area~rg",
+            "url-override": "http://api.511.org/transit/datafeeds?operator_id=RG&api_key=7fa322f6-dd5f-495c-a05b-026dcb1ba472",
+            "fix": true
+        },
+        {
+            "name": "Goldengatetransit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9qb-goldengatetransit",
+            "fix": true
+        },
+        {
+            "name": "Caltrain",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9q9-caltrain"
+        },
+        {
+            "name": "Samtrans",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9q8-samtrans"
+        }
+    ]
+}
