@@ -95,7 +95,78 @@
           "options": {
                 "fetch-interval-days": 1
           }
-      }        
-        
+        },
+        {
+          "name": "Autobús-Comarca-de-Pamplona",
+          "type": "http",
+          "url": "https://nap.transportes.gob.es/api/Fichero/download/1177",
+          "http-headers": {
+              "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+          },
+          "fix": true,
+          "options": {
+              "fetch-interval-days": 1
+          }
+        },
+        {
+          "name": "Autobús-de-la-isla-de-Ibiza",
+          "type": "http",
+          "url": "https://nap.transportes.gob.es/api/Fichero/download/1273",
+          "http-headers": {
+              "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+          },
+          "fix": true,
+          "options": {
+              "fetch-interval-days": 1
+          }
+        },
+        {
+          "name": "Autobús-de-la-isla-de-Menorca",
+          "type": "http",
+          "url": "https://nap.transportes.gob.es/api/Fichero/download/1363",
+          "http-headers": {
+              "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+          },
+          "fix": true,
+          "options": {
+              "fetch-interval-days": 1
+          }
+        },
+        {
+          "name": "Autobús-en-Cantabria",
+          "type": "http",
+          "url": "https://nap.transportes.gob.es/api/Fichero/download/1560",
+          "http-headers": {
+              "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+          },
+          "fix": true,
+          "options": {
+              "fetch-interval-days": 1
+          }
+        },
+        {
+          "name": "Autobuses-Empresa-Casas",
+          "type": "http",
+          "url": "https://nap.transportes.gob.es/api/Fichero/download/1578",
+          "http-headers": {
+              "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+          },
+          "fix": true,
+          "options": {
+              "fetch-interval-days": 1
+          }
+        },
+        {
+          "name": "Autobuses-interurbanos-de-la-Comunidad-de-Madrid",
+          "type": "http",
+          "url": "https://nap.transportes.gob.es/api/Fichero/download/1361",
+          "http-headers": {
+              "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+          },
+          "fix": true,
+          "options": {
+              "fetch-interval-days": 1
+          }
+        }        
     ]
 }
