@@ -1,0 +1,60 @@
+# SPDX-FileCopyrightText: 2024 Jonah Brüchert <jbb@kaidan.im>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+- name: Install nginx
+  apt:
+    name: nginx
+
+- name: Install woodpecker from GitHub Releases
+  apt:
+    deb: https://github.com/woodpecker-ci/woodpecker/releases/download/v2.4.0/woodpecker-server_2.4.0_amd64.deb
+
+- name: Create woodpecker user
+  user:
+    name: woodpecker
+    comment: Woodpecker CI user
+
+- name: Create woodpecker database directory
+  file:
+    path: /var/lib/woodpecker/
+    owner: woodpecker
+    mode: '0744'
+    state: directory
+
+- name: Set up woodpecker systemd service
+  copy:
+    dest: /etc/systemd/system/woodpecker.service
+    src: woodpecker.service.j2
+    owner: root
+    group: root
+    mode: '0644'
+
+- name: Enable woodpecker service
+  systemd:
+    name: woodpecker.service
+    enabled: true
+    state: started
+    masked: false
+    daemon_reload: true
+
+- name: Disable default nginx site
+  file:
+    path: /etc/nginx/sites-enabled/default
+    state: absent
+
+- name: Install nginx config
+  copy:
+    src: woodpecker.conf
+    dest: /etc/nginx/sites-available/
+
+- name: Enable nginx site
+  template:
+    src: "/etc/nginx/sites-available/woodpecker.conf"
+    dest: "/etc/nginx/sites-enabled/woodpecker.conf"
+    state: link
+
+- name: Reload nginx
+  systemd:
+    name: nginx.service
+    state: reloaded
