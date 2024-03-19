@@ -19,10 +19,20 @@ feed_dir = Path("feeds/")
 match run_reason:
     case "timer":
         json_files = list(feed_dir.glob("*.json"))
+
+        feeds = list()
         for index, feed in enumerate(json_files):
             print(f'PROGRESS: Processing file {index+1} of {len(json_files)} | {index/len(json_files)*100:.1f}% done...')
             sys.stdout.flush()
-            subprocess.check_call(["./src/fetch.py", str(feed.absolute())])
+            feeds.append(str(feed.absolute()))
+
+        max_workers = 4
+        with concurrent.futures.ThreadPoolExecutor(max_workers) as executor:
+            executor.map(
+                subprocess.check_call,
+                [["./src/fetch.py", feed] for feed in feeds],
+            )
+
 
         subprocess.check_call(["./src/garbage-collect.py"])
     case "merge-request":
@@ -40,5 +50,9 @@ match run_reason:
         changed_feeds = [f for f in changed_files if Path(f).exists() and
                          f.startswith("feeds/") and f.endswith(".json")]
 
-        for feed in changed_feeds:
-            subprocess.check_call(["./src/fetch.py", feed])
+        max_workers = 4
+        with concurrent.futures.ThreadPoolExecutor(max_workers) as executor:
+            executor.map(
+                subprocess.check_call,
+                [["./src/fetch.py", feed] for feed in changed_feeds],
+            )
