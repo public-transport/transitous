@@ -22,7 +22,9 @@ routing service that:
 
 ## Contact
 
-Matrix channel: [#opentransport:matrix.org](https://matrix.to/#/#opentransport:matrix.org) (for now)
+For general discussions about data availability: [#opentransport:matrix.org](https://matrix.to/#/#opentransport:matrix.org)
+
+For Transitous-specific technical topics: [#transitous:matrix.spline.de](https://matrix.to/#/#transitous:matrix.spline.de)
 
 ## Adding a region
 
