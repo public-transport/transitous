@@ -7,6 +7,8 @@ import sys
 import os
 from pathlib import Path
 import subprocess
+import multiprocessing
+import concurrent.futures
 
 if len(sys.argv) < 2:
     print("Argument run-reason is missing.")
@@ -16,23 +18,23 @@ if len(sys.argv) < 2:
 run_reason = sys.argv[1]
 feed_dir = Path("feeds/")
 
+def do_fetch(feed: str):
+    try:
+        subprocess.check_call(["./src/fetch.py", feed])
+    except:
+        print(f"Error fetching {feed}")
+        # TODO: create an issue on the repository
+
 match run_reason:
     case "timer":
         json_files = list(feed_dir.glob("*.json"))
 
-        feeds = list()
-        for index, feed in enumerate(json_files):
-            print(f'PROGRESS: Processing file {index+1} of {len(json_files)} | {index/len(json_files)*100:.1f}% done...')
-            sys.stdout.flush()
-            feeds.append(str(feed.absolute()))
-
-        max_workers = 4
+        max_workers = multiprocessing.cpu_count()
         with concurrent.futures.ThreadPoolExecutor(max_workers) as executor:
-            executor.map(
-                subprocess.check_call,
-                [["./src/fetch.py", feed] for feed in feeds],
-            )
-
+            for index, feed in enumerate(json_files):
+                print(f'PROGRESS: Processing file {index+1} of {len(json_files)} | {index/len(json_files)*100:.1f}% done...')
+                sys.stdout.flush()
+                executor.submit(do_fetch, feed)
 
         subprocess.check_call(["./src/garbage-collect.py"])
     case "merge-request":
@@ -52,7 +54,7 @@ match run_reason:
 
         max_workers = 4
         with concurrent.futures.ThreadPoolExecutor(max_workers) as executor:
-            executor.map(
-                subprocess.check_call,
-                [["./src/fetch.py", feed] for feed in changed_feeds],
-            )
+            for index, feed in enumerate(changed_feeds):
+                print(f'PROGRESS: Processing file {index+1} of {len(changed_feeds)} | {index/len(changed_feeds)*100:.1f}% done...')
+                sys.stdout.flush()
+                executor.submit(do_fetch, feed)
