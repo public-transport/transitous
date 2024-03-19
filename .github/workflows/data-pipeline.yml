@@ -21,6 +21,11 @@ jobs:
     - name: Fetch submodules
       run: git submodule update --init --checkout --remote
 
+    - name: Add Swap Space
+      uses: pierotofy/set-swap-space@master
+      with:
+        swap-size-gb: 4
+
     - name: Build docker images
       run: docker build -t transitous . -f ci/container/Containerfile
 
