@@ -63,9 +63,6 @@ jobs:
           restore-keys: |
             licenses-
 
-      - run: pip install mkdocs
-      - run: mkdocs build --site-dir ../website/static/doc/ -f docs/mkdocs.yml
-
       - name: Build with Hugo
         env:
           # For maximum backward compatibility with Hugo modules
