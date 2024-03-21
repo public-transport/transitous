@@ -138,7 +138,7 @@
             "name": "finferries",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u6xr-finferries~sundqvistinvestmentsoyab~nordiccoastline",
-            "url-override": "http://gtfs.lautta.net",
+            "url-override": "https://gtfs.pro/files/uran/improved-gtfs-finferries.zip",
             "fix": true
         }
     ]
