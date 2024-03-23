@@ -160,7 +160,8 @@
         {
             "name": "Yellowknife-Transit",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-yellowknife~transit"
+            "transitland-atlas-id": "f-yellowknife~transit",
+            "proxy": true
         }
     ]
 }
