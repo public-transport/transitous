@@ -49,4 +49,10 @@ server {
     location ~ ^/(doc/|openapi.json) {
         proxy_pass http://localhost:8000;
     }
+
+    # Source files
+    location /gtfs/ {
+        alias /srv/rsync/transitous/;
+        autoindex on;
+    }
 }

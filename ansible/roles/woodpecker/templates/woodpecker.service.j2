@@ -15,10 +15,11 @@ Environment="WOODPECKER_HOST=https://routing-import.spline.de"
 Environment="WOODPECKER_ADMIN=jbruechert"
 Environment="WOODPECKER_AGENT_SECRET={{ transitous_woodpecker_agent_secret }}"
 Environment="WOODPECKER_REPO_OWNERS=public-transport"
+Environment="WOODPECKER_ORGS=public-transport"
 User=woodpecker
 Group=nogroup
 Restart=always
-ExecStart=/usr/local/bin/woodpecker
+ExecStart=/usr/local/bin/woodpecker-server
 WorkingDirectory=/var/lib/woodpecker/
 
 [Install]

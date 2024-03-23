@@ -13,14 +13,15 @@
     state: started
     masked: false
 
-- name: Copy woodpecker-agent executable
+- name: Install woodpecker-agent
   apt:
-    deb: https://github.com/woodpecker-ci/woodpecker/releases/download/v2.4.0/woodpecker-agent_linux_amd64.tar.gz
+    deb: https://github.com/woodpecker-ci/woodpecker/releases/download/v2.4.1/woodpecker-agent_2.4.1_amd64.deb
 
 - name: Create woodpecker-agent user
   user:
     name: woodpecker-agent
     comment: Woodpecker CI user
+    groups: docker
 
 - name: Set up woodpecker agent systemd service
   template:
