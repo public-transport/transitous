@@ -10,46 +10,18 @@
         }
     ],
     "sources": [
-        {
-            "name": "renfe-hsldmd",
-            "type": "http",
-            "url": "https://ssl.renfe.com/gtransit/Fichero_AV_LD/google_transit.zip",
-            "license": {
-                "spdx-identifier": "CC-BY-4.0"
-            }
-        },
-        {
-            "name": "vitrasa",
-            "type": "http",
-            "url": "https://datos.vigo.org/data/transporte/gtfs_vigo.zip",
-            "license": {
-                "spdx-identifier": "ODC-By-1.0"
-            },
-            "fix": true,
-            "options": {
-                "fetch-interval-days": 1
-            }
-        },
-        {
-            "name": "malaga-metro",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-metro~malaga",
-            "fix": true
-        },
-        {
-            "name": "madrid-bus-interurban-crtm",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-ezj-informaciónoficial~consorcioregionaldetransportesdemadrid",
-            "fix": true
-        },
-        {
-            "name": "madrid-metro-ligero-crtm",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-ezjm-consorcioregionaldetransportesdemadrid",
-            "fix": true
-        },
-
-        
+         {
+          "name": "AECFA-slots",
+          "type": "http",
+          "url": "https://nap.transportes.gob.es/api/Fichero/download/1096",
+          "http-headers": {
+              "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+          },
+          "fix": true,
+          "options": {
+              "fetch-interval-days": 1
+          }
+        },      
         {
           "name": "Alavabus",
           "type": "http",
@@ -757,6 +729,606 @@
           "options": {
               "fetch-interval-days": 1
           }
-        }        
+        },
+        {
+          "name": "Ferry-Fred.Olsen",
+          "type": "http",
+          "url": "https://nap.transportes.gob.es/api/Fichero/download/1528",
+          "http-headers": {
+              "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+          },
+          "fix": true,
+          "options": {
+              "fetch-interval-days": 1
+          }
+        },
+        {
+          "name": "Feve",
+          "type": "http",
+          "url": "https://nap.transportes.gob.es/api/Fichero/download/1131",
+          "http-headers": {
+              "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+          },
+          "fix": true,
+          "options": {
+              "fetch-interval-days": 1
+          }
+        },
+        {
+          "name": "Funicular-de-Artxanda",
+          "type": "http",
+          "url": "https://nap.transportes.gob.es/api/Fichero/download/1264",
+          "http-headers": {
+              "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+          },
+          "fix": true,
+          "options": {
+              "fetch-interval-days": 1
+          }
+        },
+        {
+          "name": "Lurraldebus-Arrasate",
+          "type": "http",
+          "url": "https://nap.transportes.gob.es/api/Fichero/download/1198",
+          "http-headers": {
+              "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+          },
+          "fix": true,
+          "options": {
+              "fetch-interval-days": 1
+          }
+        },
+        {
+          "name": "Lurraldebus-auif",
+          "type": "http",
+          "url": "https://nap.transportes.gob.es/api/Fichero/download/1199",
+          "http-headers": {
+              "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+          },
+          "fix": true,
+          "options": {
+              "fetch-interval-days": 1
+          }
+        },
+        {
+          "name": "Lurraldebus-Eibar",
+          "type": "http",
+          "url": "https://nap.transportes.gob.es/api/Fichero/download/1200",
+          "http-headers": {
+              "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+          },
+          "fix": true,
+          "options": {
+              "fetch-interval-days": 1
+          }
+        },
+        {
+          "name": "Lurraldebus-Ekialdebus",
+          "type": "http",
+          "url": "https://nap.transportes.gob.es/api/Fichero/download/1201",
+          "http-headers": {
+              "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+          },
+          "fix": true,
+          "options": {
+              "fetch-interval-days": 1
+          }
+        },
+        {
+          "name": "Lurraldebus-Euskotren-bus",
+          "type": "http",
+          "url": "https://nap.transportes.gob.es/api/Fichero/download/1202",
+          "http-headers": {
+              "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+          },
+          "fix": true,
+          "options": {
+              "fetch-interval-days": 1
+          }
+        },
+        {
+          "name": "Lurraldebus-Goierrialdea",
+          "type": "http",
+          "url": "https://nap.transportes.gob.es/api/Fichero/download/1229",
+          "http-headers": {
+              "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+          },
+          "fix": true,
+          "options": {
+              "fetch-interval-days": 1
+          }
+        },
+        {
+          "name": "Lurraldebus-Guipuzcoana",
+          "type": "http",
+          "url": "https://nap.transportes.gob.es/api/Fichero/download/1204",
+          "http-headers": {
+              "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+          },
+          "fix": true,
+          "options": {
+              "fetch-interval-days": 1
+          }
+        },
+        {
+          "name": "Lurraldebus-Hernani",
+          "type": "http",
+          "url": "https://nap.transportes.gob.es/api/Fichero/download/1230",
+          "http-headers": {
+              "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+          },
+          "fix": true,
+          "options": {
+              "fetch-interval-days": 1
+          }
+        },
+        {
+          "name": "Lurraldebus-Lasarte",
+          "type": "http",
+          "url": "https://nap.transportes.gob.es/api/Fichero/download/1231",
+          "http-headers": {
+              "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+          },
+          "fix": true,
+          "options": {
+              "fetch-interval-days": 1
+          }
+        },
+        {
+          "name": "Lurraldebus-Oiartzun",
+          "type": "http",
+          "url": "https://nap.transportes.gob.es/api/Fichero/download/1232",
+          "http-headers": {
+              "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+          },
+          "fix": true,
+          "options": {
+              "fetch-interval-days": 1
+          }
+        },
+        {
+          "name": "Lurraldebus-Pesa",
+          "type": "http",
+          "url": "https://nap.transportes.gob.es/api/Fichero/download/1233",
+          "http-headers": {
+              "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+          },
+          "fix": true,
+          "options": {
+              "fetch-interval-days": 1
+          }
+        },
+        {
+          "name": "Lurraldebus-Rentería",
+          "type": "http",
+          "url": "https://nap.transportes.gob.es/api/Fichero/download/1234",
+          "http-headers": {
+              "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+          },
+          "fix": true,
+          "options": {
+              "fetch-interval-days": 1
+          }
+        },
+        {
+          "name": "Lurraldebus-TBH-(Interurbano-Tolosa-Buruntzaldea)",
+          "type": "http",
+          "url": "https://nap.transportes.gob.es/api/Fichero/download/1608",
+          "http-headers": {
+              "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+          },
+          "fix": true,
+          "options": {
+              "fetch-interval-days": 1
+          }
+        },
+        {
+          "name": "Lurraldebus-Tolosaldea",
+          "type": "http",
+          "url": "https://nap.transportes.gob.es/api/Fichero/download/1235",
+          "http-headers": {
+              "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+          },
+          "fix": true,
+          "options": {
+              "fetch-interval-days": 1
+          }
+        },
+        {
+          "name": "Lurraldebus-Zarautz",
+          "type": "http",
+          "url": "https://nap.transportes.gob.es/api/Fichero/download/1237",
+          "http-headers": {
+              "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+          },
+          "fix": true,
+          "options": {
+              "fetch-interval-days": 1
+          }
+        },
+        {
+          "name": "Metro-Bilbao",
+          "type": "http",
+          "url": "https://nap.transportes.gob.es/api/Fichero/download/1267",
+          "http-headers": {
+              "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+          },
+          "fix": true,
+          "options": {
+              "fetch-interval-days": 1
+          }
+        },
+        {
+          "name": "Metro-de-Granada",
+          "type": "http",
+          "url": "https://nap.transportes.gob.es/api/Fichero/download/1568",
+          "http-headers": {
+              "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+          },
+          "fix": true,
+          "options": {
+              "fetch-interval-days": 1
+          }
+        },
+        {
+          "name": "Metro-de-Madrid",
+          "type": "http",
+          "url": "https://nap.transportes.gob.es/api/Fichero/download/1134",
+          "http-headers": {
+              "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+          },
+          "fix": true,
+          "options": {
+              "fetch-interval-days": 1
+          }
+        },
+        {
+          "name": "Metro-de-Málaga",
+          "type": "http",
+          "url": "https://nap.transportes.gob.es/api/Fichero/download/1497",
+          "http-headers": {
+              "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+          },
+          "fix": true,
+          "options": {
+              "fetch-interval-days": 1
+          }
+        },
+        {
+          "name": "Metro-de-Sevilla",
+          "type": "http",
+          "url": "https://nap.transportes.gob.es/api/Fichero/download/1583",
+          "http-headers": {
+              "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+          },
+          "fix": true,
+          "options": {
+              "fetch-interval-days": 1
+          }
+        },
+        {
+          "name": "Metro-de-Valencia",
+          "type": "http",
+          "url": "https://nap.transportes.gob.es/api/Fichero/download/1168",
+          "http-headers": {
+              "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+          },
+          "fix": true,
+          "options": {
+              "fetch-interval-days": 1
+          }
+        },
+        {
+          "name": "Metro-Ligero-y-Tranvía-Comunidad-de-Madrid",
+          "type": "http",
+          "url": "https://nap.transportes.gob.es/api/Fichero/download/1427",
+          "http-headers": {
+              "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+          },
+          "fix": true,
+          "options": {
+              "fetch-interval-days": 1
+          }
+        },
+        {
+          "name": "Metrotenerife",
+          "type": "http",
+          "url": "https://nap.transportes.gob.es/api/Fichero/download/1690",
+          "http-headers": {
+              "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+          },
+          "fix": true,
+          "options": {
+              "fetch-interval-days": 1
+          }
+        },
+        {
+          "name": "Ouigo",
+          "type": "http",
+          "url": "https://nap.transportes.gob.es/api/Fichero/download/1766",
+          "http-headers": {
+              "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+          },
+          "fix": true,
+          "options": {
+              "fetch-interval-days": 1
+          }
+        },
+        {
+          "name": "Pujol-autobuses",
+          "type": "http",
+          "url": "https://nap.transportes.gob.es/api/Fichero/download/1577",
+          "http-headers": {
+              "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+          },
+          "fix": true,
+          "options": {
+              "fetch-interval-days": 1
+          }
+        },
+        {
+          "name": "RENFE---Media,-Larga-Distancia-y-AVE",
+          "type": "http",
+          "url": "https://nap.transportes.gob.es/api/Fichero/download/1098",
+          "http-headers": {
+              "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+          },
+          "fix": true,
+          "options": {
+              "fetch-interval-days": 1
+          }
+        },
+        {
+          "name": "Reus-Transport",
+          "type": "http",
+          "url": "https://nap.transportes.gob.es/api/Fichero/download/1788",
+          "http-headers": {
+              "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+          },
+          "fix": true,
+          "options": {
+              "fetch-interval-days": 1
+          }
+        },
+        {
+          "name": "Salamanca-de-Transportes-S.A.-",
+          "type": "http",
+          "url": "https://nap.transportes.gob.es/api/Fichero/download/1598",
+          "http-headers": {
+              "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+          },
+          "fix": true,
+          "options": {
+              "fetch-interval-days": 1
+          }
+        },
+        {
+          "name": "Sarfa-autobuses",
+          "type": "http",
+          "url": "https://nap.transportes.gob.es/api/Fichero/download/1576",
+          "http-headers": {
+              "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+          },
+          "fix": true,
+          "options": {
+              "fetch-interval-days": 1
+          }
+        },
+        {
+          "name": "Transbordador-Puente-Bizkaia",
+          "type": "http",
+          "url": "https://nap.transportes.gob.es/api/Fichero/download/1270",
+          "http-headers": {
+              "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+          },
+          "fix": true,
+          "options": {
+              "fetch-interval-days": 1
+          }
+        },
+        {
+          "name": "Transporte-metropolitano-Andalucía",
+          "type": "http",
+          "url": "https://nap.transportes.gob.es/api/Fichero/download/1562",
+          "http-headers": {
+              "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+          },
+          "fix": true,
+          "options": {
+              "fetch-interval-days": 1
+          }
+        },
+        {
+          "name": "Transporte-metropolitano-de-Barcelona-(Bus-y-Metro)",
+          "type": "http",
+          "url": "https://nap.transportes.gob.es/api/Fichero/download/1328",
+          "http-headers": {
+              "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+          },
+          "fix": true,
+          "options": {
+              "fetch-interval-days": 1
+          }
+        },
+        {
+          "name": "Transporte-público-de-la-Isla-de-Mallorca",
+          "type": "http",
+          "url": "https://nap.transportes.gob.es/api/Fichero/download/1272",
+          "http-headers": {
+              "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+          },
+          "fix": true,
+          "options": {
+              "fetch-interval-days": 1
+          }
+        },
+        {
+          "name": "Transportes-de-Murcia",
+          "type": "http",
+          "url": "https://nap.transportes.gob.es/api/Fichero/download/1597",
+          "http-headers": {
+              "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+          },
+          "fix": true,
+          "options": {
+              "fetch-interval-days": 1
+          }
+        },
+        {
+          "name": "Transportes-Urbanos-de-Santander",
+          "type": "http",
+          "url": "https://nap.transportes.gob.es/api/Fichero/download/1602",
+          "http-headers": {
+              "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+          },
+          "fix": true,
+          "options": {
+              "fetch-interval-days": 1
+          }
+        },
+        {
+          "name": "Transportes-Urbanos-de-Vitoria-(TUVISA)",
+          "type": "http",
+          "url": "https://nap.transportes.gob.es/api/Fichero/download/1271",
+          "http-headers": {
+              "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+          },
+          "fix": true,
+          "options": {
+              "fetch-interval-days": 1
+          }
+        },
+        {
+          "name": "Transporte-urbano-de-Zaragoza",
+          "type": "http",
+          "url": "https://nap.transportes.gob.es/api/Fichero/download/1176",
+          "http-headers": {
+              "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+          },
+          "fix": true,
+          "options": {
+              "fetch-interval-days": 1
+          }
+        },
+        {
+          "name": "Tranvía-de-Murcia",
+          "type": "http",
+          "url": "https://nap.transportes.gob.es/api/Fichero/download/1569",
+          "http-headers": {
+              "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+          },
+          "fix": true,
+          "options": {
+              "fetch-interval-days": 1
+          }
+        },
+        {
+          "name": "Tranvía-de-Zaragoza",
+          "type": "http",
+          "url": "https://nap.transportes.gob.es/api/Fichero/download/1687",
+          "http-headers": {
+              "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+          },
+          "fix": true,
+          "options": {
+              "fetch-interval-days": 1
+          }
+        },
+        {
+          "name": "Tranvía-Metropolitano-Barcelona",
+          "type": "http",
+          "url": "https://nap.transportes.gob.es/api/Fichero/download/1329",
+          "http-headers": {
+              "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+          },
+          "fix": true,
+          "options": {
+              "fetch-interval-days": 1
+          }
+        },
+        {
+          "name": "Tranvía-Metropolitano-Besós-Barcelona",
+          "type": "http",
+          "url": "https://nap.transportes.gob.es/api/Fichero/download/1330",
+          "http-headers": {
+              "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+          },
+          "fix": true,
+          "options": {
+              "fetch-interval-days": 1
+          }
+        },
+        {
+          "name": "Trenes-y-tranvías-de-Alicante-y-Costa-Blanca",
+          "type": "http",
+          "url": "https://nap.transportes.gob.es/api/Fichero/download/1167",
+          "http-headers": {
+              "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+          },
+          "fix": true,
+          "options": {
+              "fetch-interval-days": 1
+          }
+        },
+        {
+          "name": "Unauto",
+          "type": "http",
+          "url": "https://nap.transportes.gob.es/api/Fichero/download/1575",
+          "http-headers": {
+              "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+          },
+          "fix": true,
+          "options": {
+              "fetch-interval-days": 1
+          }
+        },
+        {
+          "name": "VAC-124.-Huesca-Lleida-con-hijuelas",
+          "type": "http",
+          "url": "https://nap.transportes.gob.es/api/Fichero/download/1713",
+          "http-headers": {
+              "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+          },
+          "fix": true,
+          "options": {
+              "fetch-interval-days": 1
+          }
+        },
+        {
+          "name": "VAC-231.-Madrid,-Piedrabuena-(Ciudad-Real)-y-Agudo-(Ciudad-Real)",
+          "type": "http",
+          "url": "https://nap.transportes.gob.es/api/Fichero/download/1711",
+          "http-headers": {
+              "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+          },
+          "fix": true,
+          "options": {
+              "fetch-interval-days": 1
+          }
+        },
+        {
+          "name": "VAC-232.-Madrid,-Málaga-y-Algeciras-(Cádiz)",
+          "type": "http",
+          "url": "https://nap.transportes.gob.es/api/Fichero/download/1132",
+          "http-headers": {
+              "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+          },
+          "fix": true,
+          "options": {
+              "fetch-interval-days": 1
+          }
+        },
+        {
+          "name": "VAC-245.-Huesca-Barcelona",
+          "type": "http",
+          "url": "https://nap.transportes.gob.es/api/Fichero/download/1712",
+          "http-headers": {
+              "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+          },
+           "fix": true,
+          "options": {
+              "fetch-interval-days": 1
+          }
+        }
     ]
 }
