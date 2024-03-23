@@ -54,7 +54,6 @@ jobs:
         with:
           python-version: 3.x
 
-      - run: wget https://routing.spline.de/gtfs/license.json -O out/license.json
       - run: pip install mkdocs
       - run: mkdocs build --site-dir ../website/static/doc/ -f docs/mkdocs.yml
 
@@ -64,7 +63,7 @@ jobs:
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
         run: |
-          cp out/license.json website/data/
+          wget https://routing.spline.de/gtfs/license.json -O website/data/license.json
           cd website && npm run release
 
       - name: Upload artifact
