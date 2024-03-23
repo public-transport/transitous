@@ -68,6 +68,10 @@ class TransitlandSource(Source):
                 self.options.fetch_interval_days = \
                     int(parsed["options"]["fetch-interval-days"])
 
+        if "http-headers" in parsed:
+            for key in parsed["http-headers"]:
+                self.options.headers[key] = parsed["http-headers"][key]
+
 
 class HttpSource(Source):
     url: str = ""
