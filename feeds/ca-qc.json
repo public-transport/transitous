@@ -136,11 +136,6 @@
             "name": "Exo-mrcdelassomption",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-f25u-exo~mrcdelassomption~rt"
-        },
-        {
-            "name": "Laval",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-f25e-societedetransportdelaval"
         }
     ]
 }
