@@ -9,7 +9,8 @@
         {
             "name": "Brandon-Transit",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-brandon~mb~ca"
+            "transitland-atlas-id": "f-brandon~mb~ca",
+            "fix": true
         },
         {
             "name": "Calgary-Transit",
