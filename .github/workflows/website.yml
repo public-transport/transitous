@@ -54,15 +54,7 @@ jobs:
         with:
           python-version: 3.x
 
-      - name: Restore cached licenses.json
-        uses: actions/cache/restore@v4
-        with:
-          path: |
-            out/license.json
-          key: licenses-
-          restore-keys: |
-            licenses-
-
+      - run: wget https://routing.spline.de/gtfs/license.json -O out/license.json
       - run: pip install mkdocs
       - run: mkdocs build --site-dir ../website/static/doc/ -f docs/mkdocs.yml
 
