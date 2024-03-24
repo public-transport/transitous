@@ -4,6 +4,10 @@
 when:
   - event: push
     branch: [main, work/jbb/woodpecker]
+    path:
+      - 'feeds/*'
+      - 'src/*'
+      - 'ci/*'
   - event: cron
     cron: daily-import
 
