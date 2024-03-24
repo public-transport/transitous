@@ -14,6 +14,9 @@ when:
 steps:
   fetch:
     image: ghcr.io/public-transport/transitous/import:latest
+    environment:
+      GITHUB_TOKEN:
+        from_secret: github_issues_token
     commands:
       - git submodule update --init --checkout --remote
       - ./ci/fetch-feeds.py timer

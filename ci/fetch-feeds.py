@@ -10,6 +10,8 @@ import subprocess
 import multiprocessing
 import concurrent.futures
 import requests
+import json
+from datetime import datetime, timezone
 
 if len(sys.argv) < 2:
     print("Argument run-reason is missing.")
@@ -19,6 +21,7 @@ if len(sys.argv) < 2:
 run_reason = sys.argv[1]
 feed_dir = Path("feeds/")
 repo = "public-transport/transitous"
+bot_account = "transitous-bot"
 
 
 def create_feed_error_issue(feed: str, details: str, github_token: str) -> None:
@@ -28,7 +31,7 @@ def create_feed_error_issue(feed: str, details: str, github_token: str) -> None:
     response = requests.get(
         "https://api.github.com/search/issues",
         headers={"Authorization": f"Bearer {github_token}"},
-        params={"q": f"repo:{repo} is:issue {issue_title}"},
+        params={"q": f"repo:{repo} user:{bot_account} is:issue is:open {issue_title}"},
     )
 
     if response.status_code < 200 or response.status_code >= 300:
@@ -36,17 +39,49 @@ def create_feed_error_issue(feed: str, details: str, github_token: str) -> None:
         print(response.json())
         return
 
+    assignees = []
+    with open(feed) as f:
+        maintainers = json.load(f)["maintainers"]
+        assignees = [maintainer["github"] for maintainer in maintainers]
+
+    time_string = datetime.now(tz=timezone.utc).strftime("%Y-%m-%d %H:%M:%S %Z")
+
     if response.json()["total_count"] > 0:
-        if issue["title"] == issue_title:
-            # Update the issue with the new error
-            issue_number = response.json()["items"][0]["number"]
-            requests.patch(
-                f"https://api.github.com/repos/{repo}/issues/{issue_number}",
-                headers={"Authorization": f"Bearer {github_token}"},
-                json={"body": f"{issue['body']}\n\n```{details}```"},
-            )
-            print(f"Updated error issue for {feed}")
-            return
+        issues = response.json()["items"]
+        for issue in issues:
+            if issue["title"] == issue_title:
+                # Update the issue with the new error
+                issue_number = issue["number"]
+
+                issue_text = \
+f"""
+{issue['body']}
+
+On **{time_string}**
+```{details}```
+"""
+                requests.patch(
+                    f"https://api.github.com/repos/{repo}/issues/{issue_number}",
+                    headers={"Authorization": f"Bearer {github_token}"},
+                    json={"body": issue_text},
+                )
+                print(f"Updated error issue for {feed}")
+                return
+
+    mentions = " ".join(assignees)
+
+    issue_text = \
+f"""
+**CC**: {mentions}
+
+An error occured while fetching a feed from `{feed}`.
+If the error is not temporary, please consider replacing or removing the feed.
+Thanks!
+
+Here are the logs of the error(s):
+On **{time_string}**:
+```{details}```
+"""
 
     # Create an issue on the repository
     response = requests.post(
@@ -54,8 +89,8 @@ def create_feed_error_issue(feed: str, details: str, github_token: str) -> None:
         headers={"Authorization": f"Bearer {github_token}"},
         json={
             "title": issue_title,
-            "body": f"Error fetching {feed}\n\n```{details}```",
-            "labels": ["import-issue"],
+            "body": issue_text,
+            "labels": ["import-issue"]
         },
     )
 
@@ -69,14 +104,17 @@ def create_feed_error_issue(feed: str, details: str, github_token: str) -> None:
 
 def do_fetch(feed: str):
     try:
-        subprocess.check_call(["./src/fetch.py", feed])
-    except:
-        print(f"Error fetching {feed}")
+        details = subprocess.check_output(
+            ["./src/fetch.py", feed], stderr=subprocess.STDOUT
+        ).decode()
+        print(details)
+    except subprocess.CalledProcessError as error:
+        print(f"Error fetching {feed}:")
+        print(error.output.decode())
         if "GITHUB_TOKEN" in os.environ:
-            details = subprocess.check_output(
-                ["./src/fetch.py", feed], stderr=subprocess.STDOUT
-            ).decode()
-            create_feed_error_issue(feed, details, os.environ["GITHUB_TOKEN"])
+            create_feed_error_issue(feed, error.output.decode(), os.environ["GITHUB_TOKEN"])
+        else:
+            print("Can't report issue, because no token is set")
 
 
 match run_reason:
