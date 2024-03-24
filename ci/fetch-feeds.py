@@ -86,11 +86,7 @@ match run_reason:
         with concurrent.futures.ThreadPoolExecutor(
             max_workers=multiprocessing.cpu_count()
         ) as executor:
-            for index, feed in enumerate(json_files):
-                print(
-                    f"PROGRESS: Processing file {index+1} of {len(json_files)} | {index/len(json_files)*100:.1f}% done..."
-                )
-                sys.stdout.flush()
+            for feed in json_files:
                 executor.submit(do_fetch, feed)
 
         subprocess.check_call(["./src/garbage-collect.py"])
@@ -119,9 +115,5 @@ match run_reason:
         with concurrent.futures.ThreadPoolExecutor(
             max_workers=multiprocessing.cpu_count()
         ) as executor:
-            for index, feed in enumerate(changed_feeds):
-                print(
-                    f"PROGRESS: Processing file {index+1} of {len(changed_feeds)} | {index/len(changed_feeds)*100:.1f}% done..."
-                )
-                sys.stdout.flush()
+            for feed in changed_feeds:
                 executor.submit(do_fetch, feed)
