@@ -1,0 +1,20 @@
+{
+    "maintainers": [
+        {
+            "name": "Steven Whitaker",
+            "github": "sjwhitak"
+        }
+    ],
+    "sources": [
+        {
+            "name": "RIPTA",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-drm-rhodeislandpublictransitauthority"
+        },
+        {
+            "name": "RIPTA",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-ripta~rt"
+        }
+    ]
+}
