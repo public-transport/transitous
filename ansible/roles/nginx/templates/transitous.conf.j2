@@ -15,6 +15,8 @@ server {
 
     server_name {{ transitous_domain }};
 
+    charset UTF-8;
+
     location ~ ^/$ {
         if ($arg_motis != https%3A%2F%2F{{ transitous_domain }}%2Fapi) {
                 return 301 https://$host?motis=https%3A%2F%2F{{ transitous_domain }}%2Fapi;
