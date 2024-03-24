@@ -112,8 +112,5 @@ match run_reason:
             if Path(f).exists() and f.startswith("feeds/") and f.endswith(".json")
         ]
 
-        with concurrent.futures.ThreadPoolExecutor(
-            max_workers=multiprocessing.cpu_count()
-        ) as executor:
-            for feed in changed_feeds:
-                executor.submit(do_fetch, feed)
+        for feed in changed_feeds:
+            do_fetch(feed)
