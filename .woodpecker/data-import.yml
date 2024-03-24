@@ -33,3 +33,6 @@ steps:
       - chmod 600 ./deploy_key
       - "rsync -avz --progress --delete -e 'ssh -i ./deploy_key -p 22 -o StrictHostKeyChecking=no' out/ rsync@vm-motis.spline.de:"
       - rm deploy_key
+    environment:
+      GITHUB_TOKEN:
+        from_secret: github_issues_token
