@@ -98,6 +98,11 @@
             "name": "Lublin",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u905-lublin"
+        },
+        {
+            "name": "Gorzów Wielkopolski",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u36g-gorzow~wielkopolski"
         }
     ]
 }
