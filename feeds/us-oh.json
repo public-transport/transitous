@@ -1,0 +1,40 @@
+{
+    "maintainers": [
+        {
+            "name": "Marcus Lundblad",
+            "github": "mlundblad"
+        }
+    ],
+    "sources": [
+        {
+            "name": "RTA",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dpmg-rta"
+        },
+        {
+            "name": "RTA",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-greaterclevelandregionaltransitauthority~rt"
+        },
+        {
+            "name": "Yourmetrobus",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dpq-metro"
+        },
+        {
+            "name": "Yourmetrobus",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-akronmetro~rt"
+        },
+        {
+            "name": "Miller-Transportation",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-miller~transportation~in~ky"
+        },
+        {
+            "name": "Stark-Area-Regional-Transit-Authority",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-stark~area~regional~transit~authority"
+        }
+    ]
+}
