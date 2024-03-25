@@ -9,4 +9,4 @@ ip_header = "Forwarded"
 # TODO: Add /address and /ppr/route once we have it set up
 allowed_endpoints = [ "/intermodal", "/guesser",
                       "/railviz/get_trains", "/railviz/get_trips", "/railviz/get_station",
-                      "/lookup/schedule_info", "/gbfs/info", "/trip_to_connection" ]
+                      "/lookup/schedule_info", "/gbfs/info", "/trip_to_connection", "/lookup/geo_station" ]
