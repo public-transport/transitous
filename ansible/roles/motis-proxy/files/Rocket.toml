@@ -10,3 +10,4 @@ ip_header = "Forwarded"
 allowed_endpoints = [ "/intermodal", "/guesser",
                       "/railviz/get_trains", "/railviz/get_trips", "/railviz/get_station",
                       "/lookup/schedule_info", "/gbfs/info", "/trip_to_connection", "/lookup/geo_station" ]
+timeout = 20
