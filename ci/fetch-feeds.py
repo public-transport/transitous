@@ -68,7 +68,7 @@ On **{time_string}**
                 print(f"Updated error issue for {feed}")
                 return
 
-    mentions = " ".join(assignees)
+    mentions = " ".join(map(lambda a: "@" + a, assignees))
 
     issue_text = \
 f"""
