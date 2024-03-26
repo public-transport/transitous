@@ -181,10 +181,10 @@ view state dispatch = H.div "mb-3"
   suggestionEntries =
     map
       ( \(Tuple i { name, id, pos }) ->
-          if i == state.currentlySelectedIndex then H.li_ "dropdown-item dropdown-item-active"
+          if i == state.currentlySelectedIndex then H.li_ "dropdown-item dropdown-item-active cursor-shape-pointer"
             { onClick: dispatch <| Select { name, id, pos }, autoFocus: true }
             name
-          else H.li_ "dropdown-item"
+          else H.li_ "dropdown-item cursor-shape-pointer"
             { onClick: dispatch <| Select { name, id, pos } }
             name
       )
