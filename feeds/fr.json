@@ -121,7 +121,7 @@
             "transitland-atlas-id": "f-zenbus~paris~saclay"
         },
         {
-            "name": "TGV",
+            "name": "Navettes Paris Saclay",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-zenbus~paris~saclay~rt"
         }
