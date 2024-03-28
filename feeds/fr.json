@@ -114,6 +114,16 @@
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-gbqu-semitan",
             "fix": true
+        },
+        {
+            "name": "Navettes-Paris-Saclay",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-zenbus~paris~saclay"
+        },
+        {
+            "name": "Navettes-Paris-Saclay",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-zenbus~paris~saclay~rt"
         }
     ]
 }
