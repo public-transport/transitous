@@ -175,7 +175,8 @@
         {
             "name": "STTR",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-societe~de~transport~de~trois-rivieres"
+            "transitland-atlas-id": "f-societe~de~transport~de~trois-rivieres",
+            "fix": true
         }
     ]
 }
