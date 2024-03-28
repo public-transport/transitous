@@ -167,11 +167,6 @@
             "transitland-atlas-id": "f-f25f-rseaudetransportdelongueuil"
         },
         {
-            "name": "STL",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-f25e-societedetransportdelaval"
-        },
-        {
             "name": "STO",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-f244-sto"
