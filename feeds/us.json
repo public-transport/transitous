@@ -1,46 +1,15 @@
 {
     "maintainers": [
         {
-            "name": "Nathan Upchurch",
-            "github": "N-Upchurch"
-        },
-        {
             "name": "Marcus Lundblad",
             "github": "mlundblad"
         }
     ],
     "sources": [
         {
-            "name": "CTA",
-            "type": "http",
-            "url": "https://www.transitchicago.com/downloads/sch_data/google_transit.zip",
-            "license": {
-                "url": "https://www.transitchicago.com/downloads/sch_data/developers_license_agreement.htm"
-            },
-            "fix": true,
-            "options": {
-                "fetch-interval-days": 1
-            }
-        },
-        {
-            "name": "RTD",
+            "name": "Amtrak",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-9xj-rtd"
-        },
-        {
-            "name": "RTD",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-rtddenver~rt"
-        },
-        {
-            "name": "RTD-bustang",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-denver~rtd~bustang"
-        },
-        {
-            "name": "RTD-bustang",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-denver~rtd~bustang~rt"
+            "transitland-atlas-id": "f-9-amtrak~amtrakcalifornia~amtrakcharteredvehicle"
         }
     ]
 }

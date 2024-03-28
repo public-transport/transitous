@@ -24,10 +24,14 @@ class Source:
     fix: bool = False
     license: Optional[License] = None
     spec: str = "gtfs"
+    enabled: bool = True
 
     def __init__(self, parsed: dict = None):
         self.license = License()
         if parsed:
+            if "enabled" in parsed:
+                self.enabled = bool(parsed["enabled"])
+
             if "license" in parsed:
                 if "spdx-identifier" in parsed["license"]:
                     self.license.spdx_identifier = parsed["license"]["spdx-identifier"]
@@ -41,26 +45,44 @@ class Source:
                 self.spec = parsed["spec"]
 
 
+class HttpOptions:
+    fetch_interval_days: Optional[int] = None
+    headers: dict[str, str] = {}
+
+
 class TransitlandSource(Source):
-    transitland_atlas_id: str
+    transitland_atlas_id: str = ""
+    options: HttpOptions = HttpOptions()
+    url_override: Optional[str] = None
+    proxy: bool = False
 
     def __init__(self, parsed: dict):
         super().__init__(parsed)
         self.transitland_atlas_id = parsed["transitland-atlas-id"]
+        self.url_override = parsed.get("url-override", None)
+        self.proxy = parsed.get("proxy", False)
 
+        if "options" in parsed:
+            options = parsed["options"]
+            if "fetch-interval-days" in options:
+                self.options.fetch_interval_days = \
+                    int(parsed["options"]["fetch-interval-days"])
 
-class HttpOptions:
-    fetch_interval_days: Optional[int] = None
+        if "http-headers" in parsed:
+            for key in parsed["http-headers"]:
+                self.options.headers[key] = parsed["http-headers"][key]
 
 
 class HttpSource(Source):
-    url: str
+    url: str = ""
     options: HttpOptions = HttpOptions()
+    url_override: Optional[str] = None
 
     def __init__(self, parsed: dict = None):
         if parsed:
             super().__init__(parsed)
             self.url = parsed["url"]
+            self.url_override = parsed.get("url-override", None)
 
             if "options" in parsed:
                 options = parsed["options"]
@@ -68,9 +90,13 @@ class HttpSource(Source):
                     self.options.fetch_interval_days = \
                         int(parsed["options"]["fetch-interval-days"])
 
+            if "http-headers" in parsed:
+                for key in parsed["http-headers"]:
+                    self.options.headers[key] = parsed["http-headers"][key]
+
 
 class UrlSource(Source):
-    url: str
+    url: str = ""
     authorization: str = None
 
     def __init__(self, parsed: dict = None):
@@ -94,8 +120,8 @@ def sourceFromJson(parsed: dict) -> Source:
 
 
 class Region:
-    maintainers: List[Maintainer]
-    sources: Source
+    maintainers: List[Maintainer] = []
+    sources: Source = Source()
 
     def __init__(self, parsed: dict):
         self.maintainers = map(Maintainer, parsed["maintainers"])

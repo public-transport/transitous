@@ -9,7 +9,7 @@ log_level = "debug"
 proxy_assets = false
 allowed_endpoints = [ "/intermodal", "/guesser", "/address",
                       "/railviz/get_trains", "/railviz/get_trips", "/railviz/get_station",
-                      "/lookup/schedule_info", "/gbfs/info", "/ppr/route", "/trip_to_connection" ]
+                      "/lookup/schedule_info", "/gbfs/info", "/ppr/route", "/trip_to_connection", "/lookup/geo_station" ]
 
 
 [debug.proxy]

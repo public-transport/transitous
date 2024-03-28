@@ -1,291 +1,161 @@
 {
     "maintainers": [
         {
-            "name": "Marcus Lundblad",
-            "github": "mlundblad"
+            "name": "Gordon Leung",
+            "github": "pi-cla"
         }
     ],
     "sources": [
+        {
+            "name": "Brandon-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-brandon~mb~ca",
+            "fix": true
+        },
+        {
+            "name": "Calgary-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-c3nf-calgarytransit",
+            "options": {
+                "fetch-interval-days": 2
+            }
+        },
+        {
+            "name": "Calgary-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-calgarytransit~rt"
+        },
+        {
+            "name": "Codiac-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-f81y-codiactranspo"
+        },
+        {
+            "name": "Cold-Lake-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-coldlake~ab~ca"
+        },
+        {
+            "name": "Edmonton-Transit-Service",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-c3x-edmontontransitsystem"
+        },
+        {
+            "name": "Edmonton-Transit-Service",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-ets~rt"
+        },
+        {
+            "name": "Fredericton-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-frederictontransit",
+            "fix": true
+        },
+        {
+            "name": "Grande-Prairie-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-grande~prairie~ab~ca"
+        },
+        {
+            "name": "Halifax-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dxfy-halifaxtransit~hrm"
+        },
+        {
+            "name": "Halifax-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-halifax~rt"
+        },
+        {
+            "name": "Lethbridge-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-lethbridgetransit"
+        },
+        {
+            "name": "Medicine-Hat-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-medicine~hat~transit",
+            "options": {
+                "fetch-interval-days": 2
+            }
+        },
+        {
+            "name": "Medicine-Hat-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-medicine~hat~transit~rt"
+        },
+        {
+            "name": "Metrobus-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-fb6q-metrobus"
+        },
+        {
+            "name": "Prince-Albert-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-prince~albert~sk~ca"
+        },
+        {
+            "name": "Red-Deer-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-c3r1-red~deer~alberta"
+        },
+        {
+            "name": "Regina-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-c8vx-thecityofregina"
+        },
+        {
+            "name": "Roam-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-c3j-757"
+        },
+        {
+            "name": "Saint-John-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-saint~john~nb~ca",
+            "options": {
+                "fetch-interval-days": 2
+            }
+        },
+        {
+            "name": "Saskatoon-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-c9k0-saskatoontransit"
+        },
+        {
+            "name": "Saskatoon-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-saskatoon~rt"
+        },
+        {
+            "name": "T3-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-coachatlantic~pe~ca"
+        },
         {
             "name": "Viarail",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-f-viarail~traindecharlevoix"
         },
         {
-            "name": "STM",
+            "name": "Whitehorse-Transit",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-f25d-socitdetransportdemontral"
+            "transitland-atlas-id": "f-bfzc-cityofwhitehorse~transit"
         },
         {
-            "name": "STM",
+            "name": "Winnipeg-Transit",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-f25d-socitdetransportdemontral~rt"
+            "transitland-atlas-id": "f-cbfg-winnipegtransit"
         },
         {
-            "name": "Exo-reseaudetransportmetropolitain",
+            "name": "Wood-Buffalo-Transit",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-f25d-exo~reseaudetransportmetropolitain"
+            "transitland-atlas-id": "f-regional~municipality~of~wood~buffalo"
         },
         {
-            "name": "Exo-reseaudetransportmetropolitain",
+            "name": "Wood-Buffalo-Transit",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-exo~reseaudetransportmetropolitain~rt"
-        },
-        {
-            "name": "Exo-varannes",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-f25-exo~citsorel~varennes"
-        },
-        {
-            "name": "Exo-varannes",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-f25-exo~citsorel~varennes~rt"
-        },
-        {
-            "name": "Exo-citsud",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-f253-exo~citsud~ouest"
-        },
-        {
-            "name": "Exo-citsud",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-f253-exo~citsud~ouest~rt"
-        },
-        {
-            "name": "Exo-citlapresquîle",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-f256-exo~citlapresquîle"
-        },
-        {
-            "name": "Exo-citlapresquîle",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-f256-exo~citlapresquîle~rt"
-        },
-        {
-            "name": "Exo-citlaurentides",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-f257-exo~citlaurentides"
-        },
-        {
-            "name": "Exo-citlaurentides",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-f257-exo~citlaurentides~rt"
-        },
-        {
-            "name": "Exo-citduhaut-saint-laurent",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-f259-exo~citduhaut~saint~laurent"
-        },
-        {
-            "name": "Exo-citduhaut-saint-laurent",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-f259-exo~citduhaut~saint~laurent~rt"
-        },
-        {
-            "name": "Exo-richelain-roussillon",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-f25d-exo~richelain~roussillon"
-        },
-        {
-            "name": "Exo-richelain-roussillon",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-f25d-exo~richelain~roussillon~rt"
-        },
-        {
-            "name": "Exo-citchambly-richelieu-carignan",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-f25f-exo~citchambly~richelieu~carignan"
-        },
-        {
-            "name": "Exo-citchambly-richelieu-carignan",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-f25f-exo~citchambly~richelieu~carignan~rt"
-        },
-        {
-            "name": "Exo-citvallée-du-richelieu",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-f25g-exo~citvallée~du~richelieu",
-            "fix": true
-        },
-        {
-            "name": "Exo-citvallée-du-richelieu",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-f25g-exo~citvallée~du~richelieu~rt"
-        },
-        {
-            "name": "Exo-omitsainte-julie",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-f25g-exo~omitsainte~julie"
-        },
-        {
-            "name": "Exo-omitsainte-julie",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-f25g-exo~omitsainte~julie~rt"
-        },
-        {
-            "name": "Exo-mrclesmoulinsurbis",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-f25s-exo~mrclesmoulinsurbis"
-        },
-        {
-            "name": "Exo-mrclesmoulinsurbis",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-f25s-exo~mrclesmoulinsurbis~rt"
-        },
-        {
-            "name": "Exo-mrcdelassomption",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-f25u-exo~mrcdelassomption"
-        },
-        {
-            "name": "Exo-mrcdelassomption",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-f25u-exo~mrcdelassomption~rt"
-        },
-        {
-            "name": "Laval",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-f25e-societedetransportdelaval"
-        },
-        {
-            "name": "TTC",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-dpz8-ttc"
-        },
-        {
-            "name": "Metrolinx-belleville",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-belleville~on~ca"
-        },
-        {
-            "name": "Metrolinx-belleville",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-belleville~on~ca~rt"
-        },
-        {
-            "name": "Metrolinx-cornwall",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-cornwall~on~ca"
-        },
-        {
-            "name": "Metrolinx-cornwall",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-cornwall~on~ca~rt"
-        },
-        {
-            "name": "Metrolinx-kawartha",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-kawartha~on~ca"
-        },
-        {
-            "name": "Metrolinx-kawartha",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-kawartha~on~ca~rt"
-        },
-        {
-            "name": "Metrolinx-metrolinx",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-metrolinx~gtfs~rt~vehicles"
-        },
-        {
-            "name": "Metrolinx-milton",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-milton~on~ca"
-        },
-        {
-            "name": "Metrolinx-milton",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-milton~on~ca~rt"
-        },
-        {
-            "name": "Metrolinx-orangeville",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-orangeville~on~ca~rt"
-        },
-        {
-            "name": "Metrolinx-orangeville",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-orangeville~transit~ca"
-        },
-        {
-            "name": "Metrolinx-orillia",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-orillia~on~ca"
-        },
-        {
-            "name": "Metrolinx-orillia",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-orillia~on~ca~rt"
-        },
-        {
-            "name": "Metrolinx-sarnia",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-sarnia~on~ca"
-        },
-        {
-            "name": "Metrolinx-sarnia",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-sarnia~on~ca~rt"
-        },
-        {
-            "name": "Metrolinx-saultstemarie",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-saultstemarie~on~ca"
-        },
-        {
-            "name": "Metrolinx-saultstemarie",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-saultstemarie~on~ca~rt"
-        },
-        {
-            "name": "Metrolinx-simcoe",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-simcoe~on~ca"
-        },
-        {
-            "name": "Metrolinx-simcoe",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-simcoe~on~ca~rt"
-        },
-        {
-            "name": "Metrolinx-stratford",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-stratford~on~ca"
-        },
-        {
-            "name": "Metrolinx-stratford",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-stratford~on~ca~rt"
-        },
-        {
-            "name": "Metrolinx-stthomas",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-stthomas~on~ca"
-        },
-        {
-            "name": "Metrolinx-stthomas",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-stthomas~on~ca~rt"
-        },
-        {
-            "name": "Metrolinx-temiskaming",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-temiskaming~on~ca"
-        },
-        {
-            "name": "Metrolinx-temiskaming",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-temiskaming~on~ca~rt"
-        },
-        {
-            "name": "Metrolinx-timmins",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-timmins~on~ca"
-        },
-        {
-            "name": "Metrolinx-timmins",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-timmins~on~ca~rt"
+            "transitland-atlas-id": "f-regional~municipality~of~wood~buffalo~rt"
         }
     ]
 }

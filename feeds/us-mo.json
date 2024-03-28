@@ -1,0 +1,20 @@
+{
+    "maintainers": [
+        {
+            "name": "Marcus Lundblad",
+            "github": "mlundblad"
+        }
+    ],
+    "sources": [
+        {
+            "name": "Metro-stlouis",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9yzg-metrostlouis"
+        },
+        {
+            "name": "Metro-stlouis",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-saintlouis~rt"
+        }
+    ]
+}

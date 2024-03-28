@@ -5,8 +5,10 @@
 
 from metadata import *
 from pathlib import Path
-from datetime import datetime
+from datetime import datetime, timezone
+from utils import eprint
 
+import email.utils
 import requests
 import transitland
 import json
@@ -16,6 +18,20 @@ import subprocess
 import shutil
 
 
+def validate_source_name(name: str):
+    if " " in name:
+        eprint(f"Error: Feed names must not contain spaces, found {name}.")
+        sys.exit(1)
+
+    if "_" in name:
+        eprint(f"Error: Feed names must not contain underscores, found {name}.")
+        sys.exit(1)
+
+    if "/" in name:
+        eprint(f"Error: Feed names must not contain slashes, found {name}.")
+        sys.exit(1)
+
+
 class Fetcher:
     transitland_atlas: transitland.Atlas
 
@@ -23,64 +39,65 @@ class Fetcher:
         self.transitland_atlas = transitland.Atlas.load(
             Path("transitland-atlas/"))
 
-    def fetch_source(self, name: str, source: Source) -> Optional[Path]:
+    # Returns whether something was downloaded
+    def fetch_source(self, dest_path: Path, source: Source) -> bool:
         if source.spec != "gtfs":
-            return None
+            return False
         match source:
             case TransitlandSource():
                 http_source = self.transitland_atlas.source_by_id(source)
                 if not http_source:
-                    return None
+                    return False
 
-                return self.fetch_source(name, http_source)
+                return self.fetch_source(dest_path, http_source)
             case HttpSource():
                 # Detect last modification time of local file
                 last_modified = None
-                dest_path = Path(f"downloads/{name}.gtfs.zip")
                 if dest_path.exists():
                     mtime = dest_path.stat().st_mtime
-                    last_modified = datetime.fromtimestamp(mtime)
+                    last_modified = datetime.fromtimestamp(mtime,
+                                                           tz=timezone.utc)
 
                 # Check if the last download was longer than the interval ago
                 if source.options.fetch_interval_days and last_modified \
-                        and (datetime.now() - last_modified).days \
+                        and (datetime.now(tz=timezone.utc) - last_modified).days \
                         < source.options.fetch_interval_days:
-                    return None
+                    return False
+
+                download_url = source.url_override if source.url_override else source.url
 
                 # Fetch last modification time from the server
                 server_headers = \
-                    requests.head(source.url, allow_redirects=True).headers
+                    requests.head(download_url, headers=source.options.headers, allow_redirects=True).headers
 
                 # If server version is older, return
                 last_modified_server = None
                 if "last-modified" in server_headers:
-                    last_modified_server = datetime.strptime(
-                        server_headers["last-modified"], "%a, %d %b %Y %X %Z")
+                    last_modified_server = email.utils.parsedate_to_datetime(
+                        server_headers["last-modified"])
 
                     if last_modified and last_modified_server <= last_modified:
-                        return None
+                        return False
 
                 # Tell the server not to send data if it is older
                 # than what we have
-                headers = {}
+                headers = source.options.headers
                 if last_modified:
                     headers["if-modified-since"] = last_modified \
                         .strftime("%a, %d %b %Y %X %Z")
 
-                response = requests.get(source.url, headers=headers)
+                response = requests.get(download_url, headers=headers)
 
                 # If the file was not modified, return
                 if response.status_code == 304:
-                    return None
+                    return False
 
                 # If the file was not successfully retrieved, return
                 if response.status_code != 200:
-                    return None
-
-                download_dir = "downloads"
-
-                if not os.path.exists(download_dir):
-                    os.mkdir(download_dir)
+                    print("Error: Could not fetch file:")
+                    print("Status Code:", response.status_code,
+                          "Body:", response.content)
+                    sys.exit(1)
 
                 # Update our last_modified_server information from the response
                 # of the actual download. The values of the head request can
@@ -89,8 +106,8 @@ class Fetcher:
                 # but the actual target does.
                 server_headers = response.headers
                 if "last-modified" in server_headers:
-                    last_modified_server = datetime.strptime(
-                        server_headers["last-modified"], "%a, %d %b %Y %X %Z")
+                    last_modified_server = email.utils.parsedate_to_datetime(
+                        server_headers["last-modified"])
 
                 with open(dest_path, "wb") as dest:
                     dest.write(response.content)
@@ -103,32 +120,18 @@ class Fetcher:
 
                 return dest_path
             case UrlSource():
-                return None
+                return False
 
         print("Unknown data source", source, file=sys.stderr)
         assert False
 
-    def postprocess(self, source: Source, path: Path):
-        tmpdir = Path("transitious-gtfs-tmpdir")
-        outdir = Path("out")
-
-        if os.path.exists(tmpdir):
-            shutil.rmtree(tmpdir)
-
-        os.mkdir(tmpdir)
-
-        if not os.path.exists(outdir):
-            os.mkdir(outdir)
-
-        output_file_path = str(outdir.absolute() / path.name)
-
-        command = ["gtfstidy", str(path.absolute()), "--output", output_file_path]
+    def postprocess(self, source: Source, input_path: Path, output_path: Path):
+        command = ["gtfstidy", str(input_path.absolute()), "--check-null-coords",
+                   "--output", output_path]
         if source.fix:
             command.append("--fix")
 
-        subprocess.check_call(command, cwd=tmpdir)
-
-        shutil.rmtree(tmpdir)
+        subprocess.check_call(command)
 
     def fetch(self, metadata: Path):
         region = Region(json.load(open(metadata, "r")))
@@ -136,19 +139,46 @@ class Fetcher:
         region_name = metadata_filename[:metadata_filename.rfind('.')]
 
         for source in region.sources:
+            # Resolve transitland sources to http / url sources
+            match source:
+                case TransitlandSource():
+                    source = self.transitland_atlas.source_by_id(source)
+
+                    # Transitland source type that we cannot handle
+                    if not source:
+                        continue
+
+            validate_source_name(source.name)
             download_name = f"{region_name}_{source.name}"
 
             print(f"Fetching {region_name}-{source.name}…")
             sys.stdout.flush()
-            dest_path = self.fetch_source(download_name, source)
 
-            # Nothing was downloaded
-            if not dest_path:
+            # Nothing to download for realtime feeds
+            if source.spec != "gtfs":
                 continue
 
+            download_dir = Path("downloads/")
+            if not download_dir.exists():
+                os.mkdir(download_dir)
+
+            outdir = Path("out/")
+            if not outdir.exists():
+                os.mkdir(outdir)
+
+            download_path = download_dir.absolute() / f"{download_name}.gtfs.zip"
+            output_path = outdir.absolute() / f"{download_name}.gtfs.zip"
+
+            new_data = self.fetch_source(download_path, source)
+
+            # Nothing new was downloaded, and data is already processed
+            if not new_data and output_path.exists():
+                continue
+
+            # Something new was downloaded or the data was previously not processed
             print(f"Postprocessing {region_name}-{source.name} with gtfstidy…")
             sys.stdout.flush()
-            self.postprocess(source, dest_path)
+            self.postprocess(source, download_path, output_path)
 
             print()
             sys.stdout.flush()

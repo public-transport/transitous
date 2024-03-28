@@ -4,3 +4,6 @@
 [submodule "transitland-atlas"]
 	path = transitland-atlas
 	url = https://github.com/transitland/transitland-atlas
+[submodule "website/themes/ananke"]
+	path = website/themes/ananke
+	url = https://github.com/theNewDynamic/gohugo-theme-ananke

@@ -1,0 +1,21 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "",
+  "license": "AGPL-3.0-or-later",
+  "scripts": {
+    "start": "spago build && esbuild ./output/Main/index.js --bundle --outfile=static/index.js --global-name=Main && hugo server",
+    "release-start": "spago -x release.dhall build && esbuild ./output-es/Main/index.js --bundle --minify --outfile=static/index.js --global-name=Main && hugo --minify server",
+    "release": "spago -x release.dhall build && esbuild ./output-es/Main/index.js --bundle --minify --outfile=static/index.js --global-name=Main && hugo --minify --baseURL https://transitous.org/"
+  },
+  "dependencies": {
+    "esbuild": "^0.20.1",
+    "purescript": "^0.15.15",
+    "purs-backend-es": "^1.4.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "spago": "^0.21.0"
+  }
+}

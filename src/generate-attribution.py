@@ -32,16 +32,20 @@ if __name__ == "__main__":
                 if not source:
                     continue
 
+            if source.spec == "gtfs-rt":
+                continue
+
             attribution = {}
 
             if source.license:
                 if source.license.spdx_identifier:
-                    attribution["spdx_identifier"] \
+                    attribution["spdx_license_identifier"] \
                         = source.license.spdx_identifier
                 if source.license.url:
-                    attribution["url"] = source.license.url
+                    attribution["license_url"] = source.license.url
 
-            attribution["copyright_holders"] = []
+            attribution["operators"] = []
+            attribution["source"] = source.url
 
             metadata_filename = feed.name
             region_name = metadata_filename[:metadata_filename.rfind('.')]
@@ -60,7 +64,7 @@ if __name__ == "__main__":
                         agencyreader = \
                             csv.DictReader(at, delimiter=',', quotechar='"')
                         for row in agencyreader:
-                            attribution["copyright_holders"] \
+                            attribution["operators"] \
                                 .append(row["agency_name"])
 
             attributions.append(attribution)

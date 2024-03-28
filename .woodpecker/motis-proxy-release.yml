@@ -1,0 +1,21 @@
+# SPDX-FileCopyrightText: 2024 Jonah Brüchert <jbb@kaidan.im>
+# SPDX-License-Identifier: CC0-1.0
+
+when:
+  - event: tag
+
+steps:
+  build-release-amd64:
+    image: docker.io/rust:alpine
+    commands:
+      - apk add musl-dev
+      - cd motis-proxy && cargo build --release
+
+  upload:
+    image: docker.io/woodpeckerci/plugin-github-release
+    settings:
+      files:
+        - motis-proxy/target/release/motis-proxy
+      title: ${CI_COMMIT_TAG##v}
+      api-key:
+        from_secret: github_release_token

@@ -105,6 +105,8 @@ enum Endpoint {
     PprRoute,
     #[serde(rename = "/trip_to_connection")]
     TripId,
+    #[serde(rename = "/lookup/geo_station")]
+    LookupGeoStation,
 }
 
 #[derive(Deserialize, Serialize, JsonSchema)]
@@ -409,6 +411,12 @@ struct TripId {
 }
 
 #[derive(Deserialize, Serialize, JsonSchema)]
+struct LookupGeoStationRequest {
+    max_radius: u32,
+    pos: GeoLocation,
+}
+
+#[derive(Deserialize, Serialize, JsonSchema)]
 #[serde(tag = "content_type", content = "content")]
 enum RequestContent {
     /// This request can be sent to the `/intermodal` target
@@ -431,6 +439,8 @@ enum RequestContent {
     FootRoutingRequest(FootRoutingRequest),
     /// This request can be sent to the `/trip_to_connection` target
     TripId(TripId),
+    /// This request can be sent to the `/lookup/geo_station` target
+    LookupGeoStationRequest(LookupGeoStationRequest),
 }
 
 #[derive(Deserialize, Serialize, JsonSchema)]
@@ -442,7 +452,7 @@ struct Request {
 
 /// # MOTIS API
 ///
-/// All MOTIS requests need to be sent to this URL.
+/// All MOTIS requests need to be sent to this URL. For Transitous, it is located at `https://routing.spline.de/api/`.
 ///
 /// You can use the destination field to choose the endpoint to call.
 ///

@@ -1,0 +1,15 @@
+{
+    "maintainers": [
+        {
+            "github": "vkrause",
+            "name": "Volker Krause"
+        }
+    ],
+    "sources": [
+        {
+            "name": "straeto",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-ge2kx-straeto"
+        }
+    ]
+}

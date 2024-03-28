@@ -5,7 +5,8 @@
 - name: Set up MOTIS servers
   hosts: motis
   roles:
-    - rsync
+    - rsync-push
+    - rsync-anonymous
     - motis
     - motis-proxy
     - nginx

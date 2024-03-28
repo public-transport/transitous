@@ -1,0 +1,38 @@
+# SPDX-FileCopyrightText: 2024 Lars Röglin <git@parttimedatascientist.de>
+# SPDX-License-Identifier: CC0-1.0
+# Project information
+site_name: Transitous
+site_url: https://transitous.org/doc/
+site_author: Transitous contributors
+site_description: >-
+  A community-run provider-neutral international public transport routing service.
+
+# Repository
+repo_name: public-transport/transitous
+repo_url: https://github.com/public-transport/transitous/
+edit_uri: edit/main/docs/docs/
+
+# Copyright
+copyright: Copyright &copy; 2024 Transitous contributors
+
+# Configuration
+theme:
+  name: readthedocs
+  highlightjs: true
+  hljs_languages:
+    - yaml
+    - rust
+    - python
+
+# Extensions
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+
+# Page tree
+nav:
+  - Home: index.md

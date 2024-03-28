@@ -1,0 +1,42 @@
+---
+description: "Get to places by public transport"
+theme_version: '2.8.2'
+cascade:
+  featured_image: '/images/train.webp'
+layout: single
+---
+
+<!--
+SPDX-FileCopyrightText: 2024 Jonah Brüchert <jbb@kaidan.im>
+
+SPDX-License-Identifier: AGPL-3.0-or-later
+-->
+
+<style>
+h2 {
+  margin-top: 50px;
+}
+
+.app-icon {
+  margin: 10px;
+}
+</style>
+
+<p>Transitous is a community-run provider-neutral international public transport routing service.</p>
+
+<p>Using openly available data and a FOSS routing engine we operate a free to use
+routing service that does not stop at borders.</p>
+
+<h2>Apps That Use Transitous</h2>
+
+<div class="mt-4">
+{{< app-card name="KDE Itinerary" website="https://apps.kde.org/org.kde.itinerary" icon="images/apps/kde-itinerary.svg" >}}
+</div>
+
+<h2>Use In Your App</h2>
+<p>Transitous provides a free to use API that can provide journey planning in your app.</p>
+<a class="btn btn-primary text-black" href="https://routing.spline.de/doc/index.html"><i class="bi bi-arrow-right m-1"></i>Developer Documentation</a>
+
+<h2>Public Transport Coverage</h2>
+<p>If you know where to find public transport data for your region, or if you are a public transport operator, you can help by adding the feed to our data set.</p>
+<a class="btn btn-primary theme-button text-black" href="https://transitous.org/doc#adding-a-region"><i class="bi bi-arrow-right m-1"></i>Contributor Documentation</a>

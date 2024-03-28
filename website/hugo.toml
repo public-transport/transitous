@@ -1,0 +1,17 @@
+# SPDX-FileCopyrightText: 2024 Jonah Brüchert <jbb@kaidan.im>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'Transitous'
+theme = "ananke"
+sectionPagesMenu = 'main'
+
+[params]
+  custom_css = ["bootstrap.min.css", "bootstrap-icons.min.css", "custom.css"]
+
+[[params.ananke_socials]]
+  name = "github"
+  url = "https://github.com/public-transport/transitous"
+  label = "Transitous on GitHub"

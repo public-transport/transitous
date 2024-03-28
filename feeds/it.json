@@ -7,9 +7,227 @@
     ],
     "sources": [
         {
-            "name": "ATM",
+            "name": "Basilicata-Matera",
+            "type": "http",
+            "url": "http://wgmatera.paesit.it/documents/1027/download",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            },
+            "options": {
+                "fetch-interval-days": 2
+            },
+            "fix": true
+        },
+        {
+            "name": "Campania-ANM",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-s-anm~it",
+            "proxy": true
+        },
+        {
+            "name": "Campania-EAV",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-eave~wimob~it"
+        },
+        {
+            "name": "Emilia-Romagna-TPER-Bologna",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-srb-tperspa~bologna",
+            "proxy": true
+        },
+        {
+            "name": "Emilia-Romagna-TPER-Ferrara",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-srb-tperspa~ferrara",
+            "proxy": true
+        },
+        {
+            "name": "Emilia-Romagna-TPER-BLQ-Airport",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-srbj1-tperspa~blq~aeroporto",
+            "proxy": true
+        },
+        {
+            "name": "Lazio-Rome",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-sr-atac~romatpl~trenitalia"
+        },
+        {
+            "name": "Liguria-Genova",
+            "type": "http",
+            "url": "https://www.amt.genova.it/amt/GTFS/GTFS_AMT_GENOVA.zip",
+            "fix": true
+        },
+        {
+            "name": "Lombardia-ATM",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u0nd-comunedimilano"
+        },
+        {
+            "name": "Lombardia-Trenord",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u0n-trenord",
+            "options": {
+                "fetch-interval-days": 2
+            }
+        },
+        {
+            "name": "Piemonte-Bus",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u0j-piemonte~autobus",
+            "proxy": true,
+            "fix": true
+        },
+        {
+            "name": "Piemonte-Gruppo-Torinese-Trasporti",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u0j-torino",
+            "proxy": true
+        },
+        {
+            "name": "Piemonte-Trenitalia",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u0j-trenitalia",
+            "proxy": true
+        },
+        {
+            "name": "Puglia-Bari",
+            "type": "http",
+            "url": "http://www.amtabservizio.it/gtfs/google_transit.zip",
+            "url-override": "https://jbb.ghsq.de/gtfs/it-Puglia-Bari.gtfs.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            },
+            "fix": true
+        },
+        {
+            "name": "Puglia-Brindisi",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-s-societàtrasportipubblicibrindisi~brindisi"
+        },
+        {
+            "name": "Puglia-Brindisi-Extraurbano",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-s-societàtrasportipubblicibrindisi~extraurbano"
+        },
+        {
+            "name": "Puglia-Brindisi-Francavilla",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-s-societàtrasportipubblicibrindisi~francavilla"
+        },
+        {
+            "name": "Puglia-Brindisi-Ostuni",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-s-societàtrasportipubblicibrindisi~ostuni"
+        },
+        {
+            "name": "Puglia-Lecce",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-srhv-sgmspa",
+            "fix": true
+        },
+        {
+            "name": "Sardegna-Contributate",
+            "type": "http",
+            "url": "https://www.sardegnamobilita.it/opendata/R_SARDEGTRASP_00007_1_dati_privati.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
+        },
+        {
+            "name": "Sardegna-ARST",
+            "type": "http",
+            "url": "https://www.arstspa.info/arst-cagliari-it.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
+        },
+        {
+            "name": "Sardegna-ASPO-Olbia",
+            "type": "http",
+            "url": "https://www.aspo.it/wp-content/uploads/open_data.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
+        },
+        {
+            "name": "Sardegna-ATP-Nuoro",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-s-atpnuoro"
+        },
+        {
+            "name": "Sardegna-ATP-Sassari",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-spnp-atpsassari"
+        },
+        {
+            "name": "Sardegna-CTM",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-snyr-ctmspa~cagliari"
+        },
+        {
+            "name": "Sardegna-Ferries-Collegamenti-marittimi-Corsica",
+            "type": "http",
+            "url": "https://www.sardegnamobilita.it/opendata/R_SARDEGTRASP_00010_1_dati_mare_corsica.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
+        },
+        {
+            "name": "Sardegna-Ferries-Collegamenti-isole-minori",
+            "type": "http",
+            "url": "https://www.sardegnamobilita.it/opendata/R_SARDEGTRASP_00006_1_dati_mare.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
+        },
+        {
+            "name": "Sardegna-Ferries-Sardinia-Ferries",
+            "type": "http",
+            "url": "https://www.sardegnamobilita.it/opendata/R_SARDEGTRASP_00028_1_dati_sardinia_ferries.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
+        },
+        {
+            "name": "Sardegna-Ferries-Tirrenia",
+            "type": "http",
+            "url": "https://www.sardegnamobilita.it/opendata/R_SARDEGTRASP_00026_1_GTFS_dati_tirrenia.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
+        },
+        {
+            "name": "Sardegna-Planes-Alghero-Airport",
+            "type": "http",
+            "url": "https://www.sardegnamobilita.it/opendata/R_SARDEGTRASP_00024_3_GTFS_timetable_winter_it.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
+        },
+        {
+            "name": "Sardegna-Planes-Cagliari-Airport",
+            "type": "http",
+            "url": "https://www.sardegnamobilita.it/opendata/R_SARDEGTRASP_00030_10_cagliari_timetable.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
+        },
+        {
+            "name": "Sardegna-Planes-Olbia-Airport",
+            "type": "http",
+            "url": "https://www.sardegnamobilita.it/opendata/R_SARDEGTRASP_00025_10_olbia_timetable.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
+        },
+        {
+            "name": "Sardegna-Trenitalia",
+            "type": "http",
+            "url": "https://www.sardegnamobilita.it/opendata/R_SARDEGTRASP_00008_1_dati_trenitalia.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
         },
         {
             "name": "Toscana-Trenitalia",
@@ -17,14 +235,33 @@
             "transitland-atlas-id": "f-sp-trenitaliaspa"
         },
         {
-            "name": "Trenord",
+            "name": "Trentino-Extraurbano",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u0p-trentinotrasportieserciziospa",
+            "proxy": true
+        },
+        {
+            "name": "Trentino-Urbano",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u0pv-ttesercizio",
+            "proxy": true
+        },
+        {
+            "name": "Veneto-Venezia-Bus",
             "type": "http",
-            "url": "https://www.dati.lombardia.it/download/3z4k-mxz9/application%2Fx-zip-compressed",
+            "url": "https://actv.avmspa.it/sites/default/files/attachments/opendata/automobilistico/actv_aut.zip",
             "license": {
-                "spdx-identifier": "CC-BY-4.0"
-            },
-            "options": {
-                "fetch-interval-days": 2
+                "spdx-identifier": "CC-BY-3.0",
+                "url": "https://dati.venezia.it/?q=licenza/cc"
+            }
+        },
+        {
+            "name": "Veneto-Venezia-Ferries",
+            "type": "http",
+            "url": "https://actv.avmspa.it/sites/default/files/attachments/opendata/navigazione/actv_nav.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-3.0",
+                "url": "https://dati.venezia.it/?q=licenza/cc"
             }
         }
     ]

@@ -22,13 +22,14 @@ host=127.0.0.1
 [import]
 {% if coastline_file and flavour != "import" %}paths=coastline:{{ coastline_file }}{% endif %}
 {% if pbf_file and flavour != "import" %}paths=osm:{{ pbf_file }}{% endif %}
-{% for feed in gtfs_feeds %}paths=schedule-{{ feed.id }}:{{ feed.path }}
+{% for feed in gtfs_feeds %}{% if feed.enabled %}paths=schedule-{{ feed.id }}:{{ feed.path }}{% endif %}
 {% endfor %}
 [nigiri]
 first_day=TODAY
 num_days=365
+match_duplicates=true
 {% if flavour != "import" %}
-{% for feed in gtfsrt_feeds %}gtfsrt={{ feed.id }}|{{ feed.url }}{% if feed.authorization %}|{{ feed.authorization }}{% endif %}
+{% for feed in gtfsrt_feeds %}{% if feed.enabled %}gtfsrt={{ feed.id }}|{{ feed.url }}{% if feed.authorization %}|{{ feed.authorization }}{% endif %}{% endif %}
 {% endfor %}
 {% endif %}
 [intermodal]

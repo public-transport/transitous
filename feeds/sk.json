@@ -1,0 +1,17 @@
+{
+    "maintainers": [
+        {
+            "name": "Volker Krause",
+            "github": "vkrause"
+        }
+    ],
+    "sources": [
+        {
+            "name": "zssk",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-eo0-zssk",
+            "url": "https://www.zsr.sk/files/pre-cestujucich/cestovny-poriadok/gtfs/gtfs.zip",
+            "url-override": "https://jbb.ghsq.de/gtfs/zssk.gtfs.zip"
+        }
+    ]
+}

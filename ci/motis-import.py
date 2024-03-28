@@ -8,24 +8,21 @@ import time
 import sys
 
 
-def run_motis_import() -> bool:
+def run_motis_import() -> int:
     p = subprocess.Popen(["motis", "--import.require_successful", "1"],
                          stderr=subprocess.PIPE)
 
     for line in iter(p.stderr.readline, ""):
         if p.poll():
-            return False
+            return p.returncode
 
         sys.stdout.buffer.write(line)
         if b"system boot finished" in line:
             p.terminate()
-            return True
+            return 0
         else:
             time.sleep(1)
 
 
 if __name__ == "__main__":
-    if run_motis_import():
-        sys.exit(0)
-    else:
-        sys.exit(1)
+    sys.exit(run_motis_import())

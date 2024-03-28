@@ -1,0 +1,129 @@
+{
+    "maintainers": [
+        {
+            "name": "Jonah Brüchert",
+            "github": "jbruechert"
+        },
+        {
+            "name": "Marcus Lundblad",
+            "github": "mlundblad"
+        },
+        {
+            "name": "Alexandre Franke",
+            "github": "afranke"
+        }
+    ],
+    "sources": [
+        {
+            "name": "TGV",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u0-sncf~tgv"
+        },
+        {
+            "name": "TGV",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u0-sncf~tgv~rt"
+        },
+        {
+            "name": "Intercites",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u0-sncf~intercites"
+        },
+        {
+            "name": "Intercites",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u0-sncf~intercites~rt"
+        },
+        {
+            "name": "Transilien",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u0-sncf~transilien~rer"
+        },
+        {
+            "name": "TER",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u0-sncf~ter"
+        },
+        {
+            "name": "TER",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u0-sncf~ter~rt"
+        },
+        {
+            "name": "Mobilites-M-bul",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-mobilites~m~bul",
+            "options": {
+                "fetch-interval-days": 2
+            }
+        },
+        {
+            "name": "Mobilites-M-fun",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-mobilites~m~fun",
+            "options": {
+                "fetch-interval-days": 2
+            }
+        },
+        {
+            "name": "Mobilites-M-gsv",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-mobilites~m~gsv",
+            "options": {
+                "fetch-interval-days": 2
+            }
+        },
+        {
+            "name": "Mobilites-M-mco",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-mobilites~m~mco",
+            "options": {
+                "fetch-interval-days": 2
+            },
+            "fix": true
+        },
+        {
+            "name": "Mobilites-M-tpv",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-mobilites~m~tpv",
+            "options": {
+                "fetch-interval-days": 2
+            },
+            "fix": true
+        },
+        {
+            "name": "Mobilites-M-tag",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u0h0-tag",
+            "options": {
+                "fetch-interval-days": 2
+            }
+        },
+        {
+            "name": "Paris",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u09-paris~metro~bus~tram"
+        },
+        {
+            "name": "CTS",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u0tk-cts"
+        },
+        {
+            "name": "Semitan",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-gbqu-semitan",
+            "fix": true
+        },
+        {
+            "name": "Navettes-Paris-Saclay",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-zenbus~paris~saclay"
+        },
+        {
+            "name": "Navettes-Paris-Saclay",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-zenbus~paris~saclay~rt"
+        }
+    ]
+}
