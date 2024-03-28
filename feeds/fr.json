@@ -124,6 +124,16 @@
             "name": "Navettes-Paris-Saclay",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-zenbus~paris~saclay~rt"
-        }
+        },
+        {
+            "name": "Nouvelle-Aquitaine-Mobilites",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-naq~pigma"
+        },
+        {
+            "name": "Nouvelle-Aquitaine-Mobilites",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-ezzx-tbc~rt"
+        }       
     ]
 }
