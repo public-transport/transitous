@@ -14,6 +14,16 @@
             "options": {
                 "fetch-interval-days": 1
             }
+        },
+        {
+            "name": "Metro-Lisboa",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-eyckr-metrodelisboa"
+        },
+        {
+            "name": "Cascais_Próxima",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-eyck-cascaispróximaemsa"
         }
-    ]
+     ]
 }
