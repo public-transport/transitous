@@ -135,9 +135,14 @@
             "transitland-atlas-id": "f-naq~pigma"
         },
         {
-            "name": "Nouvelle-Aquitaine-Mobilites",
+            "name": "TBM",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-ezzx-tbc"
+        },
+        {
+            "name": "TBM",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-ezzx-tbc~rt"
-        }       
+        }
     ]
 }
