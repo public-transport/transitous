@@ -132,7 +132,8 @@
         {
             "name": "Nouvelle-Aquitaine-Mobilites",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-naq~pigma"
+            "transitland-atlas-id": "f-naq~pigma",
+            "fix": true
         },
         {
             "name": "TBM",
@@ -143,6 +144,21 @@
             "name": "TBM",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-ezzx-tbc~rt"
+        },
+        {
+            "name": "Atoumod",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-sp9x-normandie"
+        },
+        {
+            "name": "Cap-Cotentin",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-cap~cotentin"
+        },
+        {
+            "name": "Cap-Cotentin",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-cap~cotentin~rt"
         }
     ]
 }
