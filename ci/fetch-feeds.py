@@ -151,4 +151,4 @@ match run_reason:
         ]
 
         for feed in changed_feeds:
-            do_fetch(feed)
+            subprocess.check_call(["./src/fetch.py", feed])
