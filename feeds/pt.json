@@ -3,6 +3,10 @@
         {
             "name": "Paul Brown",
             "github": "Bro66666"
+        },
+        {
+            "name": "Marcus Lundblad",
+            "github": "mlundblad"
         }
     ],
     "sources": [
@@ -14,6 +18,11 @@
             "options": {
                 "fetch-interval-days": 1
             }
+        },
+        {
+            "name": "Carris",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-carris~pt"
         },
         {
             "name": "Metro-Lisboa",
