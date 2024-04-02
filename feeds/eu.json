@@ -32,7 +32,8 @@
             "url": "https://www.data.gouv.fr/fr/datasets/r/cf7adb62-bbfe-4f1f-93f7-dbbad9fd60e4",
             "license": {
                 "url": "https://www.etalab.gouv.fr/licence-ouverte-open-licence/"
-            }
+            },
+            "fix": true
         }
     ]
 }
