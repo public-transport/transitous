@@ -3,9 +3,9 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 from pathlib import Path
-from typing import Dict, Union
+from typing import Dict, Union, Optional
 import json
-from metadata import *
+from metadata import UrlSource, HttpSource, Source, TransitlandSource, License
 import sys
 
 
@@ -24,8 +24,8 @@ class Atlas:
 
         return atlas
 
-    def source_by_id(self, source: TransitlandSource) -> Union[HttpSource, UrlSource, None]:
-        result = None
+    def source_by_id(self, source: TransitlandSource) -> Union[Source, None]:
+        result: Optional[Source] = None
         feed = self.by_id[source.transitland_atlas_id]
         if "static_current" in feed["urls"]:
             result = HttpSource()
