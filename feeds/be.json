@@ -21,7 +21,8 @@
         {
             "name": "stib",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u151-stib"
+            "transitland-atlas-id": "f-u151-stib",
+            "fix": true
         },
         {
             "name": "delijn",
