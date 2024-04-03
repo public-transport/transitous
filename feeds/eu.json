@@ -19,7 +19,8 @@
         {
             "name": "blablacar-bus",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u0-ouibus"
+            "transitland-atlas-id": "f-u0-ouibus",
+            "fix": true
         },
         {
             "name": "eurostar",
