@@ -1,0 +1,81 @@
+{
+    "maintainers": [
+        {
+            "name": "Jonathan Jesse",
+            "github": "jjesse"
+        }
+    ],
+    "sources": [
+        {
+            "name": "TheRide",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dps2-annarborareatransportationauthority",
+            "fix": true
+        },
+        {
+            "name": "Bay-Area-Transportation-Authority",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-bay~area~transportation~authority~mi",
+            "fix": true,
+            "options": {
+                "fetch-interval-days": 1
+            }
+        },
+        {
+            "name": "CATA",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dpeg-capitalareatransportationauthority"
+        },
+        {
+            "name": "DDOT",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dpsc-detroitdepartmentoftransportation",
+            "fix": true
+        },
+        {
+            "name": "DPM",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dpsby4-detroitpeoplemover"
+        },
+        {
+            "name": "Mass-Transportation-Authority-Flint",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dpsk-masstransportationauthorityflint"
+        },
+        {
+            "name": "MAX",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-macatawa~area~express"
+        },
+        {
+            "name": "Michigan-Flyer",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dps-michiganflyer~mi~us"
+        },
+        {
+            "name": "MATS",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-muskegon~area~transit"
+        },
+        {
+            "name": "STARS",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-saginaw~stars"
+        },
+        {
+            "name": "The-Rapid",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dpe-therapid"
+        },
+        {
+            "name": "The-Rapid",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dpe-therapid~rt"
+        },
+        {
+            "name": "University-of-Michigan-Transit-Services",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dps2w-universityofmichigantransitservices"
+        }
+    ]
+}
