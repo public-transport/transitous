@@ -1,0 +1,72 @@
+{
+    "maintainers": [
+        {
+            "name": "Jonathan Jesse",
+            "github": "jjesse"
+        }
+    ],
+    "sources": [
+        {
+            "name": "Ann Arbor Area Transortation Authority (TheRide)",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "o-dps2-annarborareatransportationauthority"
+        },
+        {
+            "name": "Bay Area Transportation Authority",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "o-dpg-bayareatransportationauthority"
+        },
+        {
+            "name": "Capital Area Transportation Authority (CATA)",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "o-dpeg-capitalareatransportationauthority"
+        },
+        
+        {
+            "name": "Detroit Department of Transportation (DDOT)",
+            "type": "transitland-atlas-id",
+            "transitland-atlas-id": "f-dpsc-detroitdepartmentoftransportation"
+        },
+        {
+            "name": "Detroit People Mover (DPM)",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dpsby4-detroitpeoplemover"
+        },
+        {
+            "name": "Mass Transportation Authority Flint",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "o-dpsk-masstransportationauthorityflint"
+        },
+        {
+            "name": "Macatawa Area Express (MAX)",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "o-macatawa~area~express"
+        },
+        {
+            "name": "Michigan Flyer",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "o-dps-michiganflyer"
+        },
+        {
+            "name": "Muskegon Area Transit System (MATS)",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "o-muskegon~area~transit"
+        },
+        {
+            "name": "Saginaw Transit Authority Regional Service (STARS)",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "o-saginaw~stars"
+
+        },
+        {
+            "name": "The Rapid",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dpe-therapid~rt"
+        },
+        {
+            "name": "University of Michigan Transit Services",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "o-dps2w-universityofmichigantransitservices"
+        }
+    ]
+}
