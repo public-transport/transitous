@@ -3,6 +3,9 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 from typing import List, Optional
+from utils import eprint
+
+import sys
 
 
 class Maintainer:
@@ -116,7 +119,9 @@ def sourceFromJson(parsed: dict) -> Source:
         case "url":
             return UrlSource(parsed)
 
-    assert False
+    eprint("Error: Unknown value for type:", parsed["type"])
+    eprint("Allowed values: transitland-atlas, http, url")
+    sys.exit(1)
 
 
 class Region:
