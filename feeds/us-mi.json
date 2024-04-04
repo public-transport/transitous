@@ -7,66 +7,70 @@
     ],
     "sources": [
         {
-            "name": "Ann Arbor Area Transortation Authority (TheRide)",
+            "name": "TheRide",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "o-dps2-annarborareatransportationauthority"
+            "transitland-atlas-id": "f-dps2-annarborareatransportationauthority",
+            "fix": true
         },
         {
-            "name": "Bay Area Transportation Authority",
+            "name": "Bay-Area-Transportation-Authority",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "o-dpg-bayareatransportationauthority"
+            "transitland-atlas-id": "f-bay~area~transportation~authority~mi",
+            "fix": true,
+            "options": {
+                "fetch-interval-days": 1
+            }
         },
         {
-            "name": "Capital Area Transportation Authority (CATA)",
+            "name": "CATA",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "o-dpeg-capitalareatransportationauthority"
-        },
-        
-        {
-            "name": "Detroit Department of Transportation (DDOT)",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-dpsc-detroitdepartmentoftransportation"
+            "transitland-atlas-id": "f-dpeg-capitalareatransportationauthority"
         },
         {
-            "name": "Detroit People Mover (DPM)",
+            "name": "DDOT",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dpsc-detroitdepartmentoftransportation",
+            "fix": true
+        },
+        {
+            "name": "DPM",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-dpsby4-detroitpeoplemover"
         },
         {
-            "name": "Mass Transportation Authority Flint",
+            "name": "Mass-Transportation-Authority-Flint",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "o-dpsk-masstransportationauthorityflint"
+            "transitland-atlas-id": "f-dpsk-masstransportationauthorityflint"
         },
         {
-            "name": "Macatawa Area Express (MAX)",
+            "name": "MAX",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "o-macatawa~area~express"
+            "transitland-atlas-id": "f-macatawa~area~express"
         },
         {
-            "name": "Michigan Flyer",
+            "name": "Michigan-Flyer",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "o-dps-michiganflyer"
+            "transitland-atlas-id": "f-dps-michiganflyer~mi~us"
         },
         {
-            "name": "Muskegon Area Transit System (MATS)",
+            "name": "MATS",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "o-muskegon~area~transit"
+            "transitland-atlas-id": "f-muskegon~area~transit"
         },
         {
-            "name": "Saginaw Transit Authority Regional Service (STARS)",
+            "name": "STARS",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "o-saginaw~stars"
-
+            "transitland-atlas-id": "f-saginaw~stars"
         },
         {
-            "name": "The Rapid",
+            "name": "The-Rapid",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-dpe-therapid~rt"
         },
         {
-            "name": "University of Michigan Transit Services",
+            "name": "University-of-Michigan-Transit-Services",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "o-dps2w-universityofmichigantransitservices"
+            "transitland-atlas-id": "f-dps2w-universityofmichigantransitservices"
         }
     ]
 }
