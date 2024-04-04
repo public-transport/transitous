@@ -1,0 +1,55 @@
+{
+    "maintainers": [
+        {
+            "name": "Jonathan Jesse",
+            "github": "jjesse"
+        }
+    ],
+    "sources": [
+                {
+            "name": "CityBus-of-Greater-Lafayette-Indiana",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dp4j-citybus"
+        },
+        {
+            "name": "Gary-Public-Transportation-Corporation",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-gary~public~transportation~in~us"
+        },
+        {
+            "name": "IndyGo",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dp4d-indygo"
+        },
+        {
+            "name": "Indiana-County-Transit-Authority",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-indiana~county~transit~authority"
+        },
+        {
+            "name": "Interurban-Trolley",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-macog"
+        },
+        {
+            "name": "Muncie-Indiana-Transit-System",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dp5k-indiana~mits"
+        },
+        {
+            "name": "Northern-Indiana-Commuter-Transportation-District",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-northern~indiana~commuter~transportation~district"
+        },
+        {
+            "name": "Terre-Haute-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dp1b-terrehautetransit~in~us"
+        },
+        {
+            "name": "Valparaiso-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-valpotransit~chi~us"
+        }
+    ]
+}
