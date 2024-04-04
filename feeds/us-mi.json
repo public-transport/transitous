@@ -24,7 +24,7 @@
         
         {
             "name": "Detroit Department of Transportation (DDOT)",
-            "type": "transitland-atlas-id",
+            "type": "transitland-atlas",
             "transitland-atlas-id": "f-dpsc-detroitdepartmentoftransportation"
         },
         {
