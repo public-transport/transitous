@@ -9,8 +9,9 @@ import io
 import transitland
 
 from pathlib import Path
-from metadata import *
+from metadata import Source, TransitlandSource, Region
 from zipfile import ZipFile
+from typing import Optional
 
 
 if __name__ == "__main__":
@@ -35,7 +36,7 @@ if __name__ == "__main__":
             if source.spec == "gtfs-rt":
                 continue
 
-            attribution = {}
+            attribution: dict = {}
 
             if source.license:
                 if source.license.spdx_identifier:

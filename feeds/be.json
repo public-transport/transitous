@@ -9,7 +9,8 @@
         {
             "name": "sncb",
             "type": "http",
-            "url": "https://sncb-opendata.hafas.de/gtfs/static/c21ac6758dd25af84cca5b707f3cb3de"
+            "url": "https://sncb-opendata.hafas.de/gtfs/static/c21ac6758dd25af84cca5b707f3cb3de",
+            "fix": true
         },
         {
             "name": "sncb",
@@ -20,7 +21,8 @@
         {
             "name": "stib",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u151-stib"
+            "transitland-atlas-id": "f-u151-stib",
+            "fix": true
         },
         {
             "name": "delijn",

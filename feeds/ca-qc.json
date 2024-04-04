@@ -3,6 +3,10 @@
         {
             "name": "Marcus Lundblad",
             "github": "mlundblad"
+        },
+        {
+            "name": "wolfy1339",
+            "github": "wolfy1339"
         }
     ],
     "sources": [
@@ -136,6 +140,42 @@
             "name": "Exo-mrcdelassomption",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-f25u-exo~mrcdelassomption~rt"
+        },
+        {
+            "name": "STS-Sherbrooke",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-f2hf-sociétédetransportdesherbrooke"
+        },
+        {
+            "name": "STS-Sherbrooke",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-f2hf-sociétédetransportdesherbrooke~rt"
+        },
+        {
+            "name": "RTC",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-f2m6-rseaudetransportdelacapitalertc"
+        },
+        {
+            "name": "STLevis",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-societedetransportdelevis"
+        },
+        {
+            "name": "RTL",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-f25f-rseaudetransportdelongueuil"
+        },
+        {
+            "name": "STO",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-f244-sto"
+        },
+        {
+            "name": "STTR",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-societe~de~transport~de~trois-rivieres",
+            "fix": true
         }
     ]
 }

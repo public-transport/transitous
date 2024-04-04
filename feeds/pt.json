@@ -1,0 +1,38 @@
+{
+    "maintainers": [
+        {
+            "name": "Paul Brown",
+            "github": "Bro66666"
+        },
+        {
+            "name": "Marcus Lundblad",
+            "github": "mlundblad"
+        }
+    ],
+    "sources": [
+        {
+            "name": "Carris-Metropolitana",
+            "type": "http",
+            "url": "https://api.carrismetropolitana.pt/gtfs",
+            "fix": true,
+            "options": {
+                "fetch-interval-days": 1
+            }
+        },
+        {
+            "name": "Carris",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-carris~pt"
+        },
+        {
+            "name": "Metro-Lisboa",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-eyckr-metrodelisboa"
+        },
+        {
+            "name": "Cascais-Próxima",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-eyck-cascaispróximaemsa"
+        }
+     ]
+}

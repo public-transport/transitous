@@ -3,15 +3,18 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 from typing import List, Optional
+from utils import eprint
+
+import sys
 
 
 class Maintainer:
     name: str
-    email: str
+    github: str
 
     def __init__(self, parsed: dict):
         self.name = parsed["name"]
-        self.email = parsed["email"]
+        self.github = parsed["github"]
 
 
 class License:
@@ -26,7 +29,7 @@ class Source:
     spec: str = "gtfs"
     enabled: bool = True
 
-    def __init__(self, parsed: dict = None):
+    def __init__(self, parsed: Optional[dict] = None):
         self.license = License()
         if parsed:
             if "enabled" in parsed:
@@ -78,7 +81,7 @@ class HttpSource(Source):
     options: HttpOptions = HttpOptions()
     url_override: Optional[str] = None
 
-    def __init__(self, parsed: dict = None):
+    def __init__(self, parsed: Optional[dict] = None):
         if parsed:
             super().__init__(parsed)
             self.url = parsed["url"]
@@ -97,9 +100,9 @@ class HttpSource(Source):
 
 class UrlSource(Source):
     url: str = ""
-    authorization: str = None
+    authorization: Optional[str] = None
 
-    def __init__(self, parsed: dict = None):
+    def __init__(self, parsed: Optional[dict] = None):
         if parsed:
             super().__init__(parsed)
             self.url = parsed["url"]
@@ -116,13 +119,15 @@ def sourceFromJson(parsed: dict) -> Source:
         case "url":
             return UrlSource(parsed)
 
-    return None
+    eprint("Error: Unknown value for type:", parsed["type"])
+    eprint("Allowed values: transitland-atlas, http, url")
+    sys.exit(1)
 
 
 class Region:
     maintainers: List[Maintainer] = []
-    sources: Source = Source()
+    sources: List[Source] = []
 
     def __init__(self, parsed: dict):
-        self.maintainers = map(Maintainer, parsed["maintainers"])
-        self.sources = map(sourceFromJson, parsed["sources"])
+        self.maintainers = list(map(Maintainer, parsed["maintainers"]))
+        self.sources = list(map(sourceFromJson, parsed["sources"]))

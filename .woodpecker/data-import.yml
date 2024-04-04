@@ -8,6 +8,7 @@ when:
       - 'feeds/*'
       - 'src/*'
       - 'ci/*'
+      - 'ci/container/*'
   - event: cron
     cron: daily-import
 

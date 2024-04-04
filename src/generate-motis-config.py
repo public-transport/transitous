@@ -28,10 +28,10 @@ if __name__ == "__main__":
 
     atlas = transitland.Atlas.load(Path("transitland-atlas/"))
 
-    gtfs_feeds = []
+    gtfs_feeds: list[dict] = []
     gtfsrt_feeds = []
 
-    for feed in feed_dir.glob("*.json"):
+    for feed in sorted(feed_dir.glob("*.json")):
         with open(feed, "r") as f:
             parsed = json.load(f)
             region = metadata.Region(parsed)
