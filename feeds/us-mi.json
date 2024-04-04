@@ -65,6 +65,11 @@
         {
             "name": "The-Rapid",
             "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dpe-therapid"
+        },
+        {
+            "name": "The-Rapid",
+            "type": "transitland-atlas",
             "transitland-atlas-id": "f-dpe-therapid~rt"
         },
         {
