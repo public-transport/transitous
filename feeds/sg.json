@@ -1,0 +1,15 @@
+{
+    "maintainers": [
+        {
+            "name": "Marcus Lundblad",
+            "github": "mlundblad"
+        }
+    ],
+    "sources": [
+        {
+            "name": "LTA",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-w21z-lta"
+        }
+    ]
+}
