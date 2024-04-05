@@ -5,4 +5,61 @@
             "github": "jjesse"
         }
     ],
+    "sources": [
+        {
+            "name": "Bloomfield Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "o-dnfq-bloomingtontransit"
+        },
+        {
+            "name": "CityBus of Greater Lafayette Indiana (CityBus)",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "o-dp4j-citybus"
+        },
+        {
+            "name": "ColumBUS Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "o-columBUS~in"
+        },
+        {
+            "name": "Fort Wayne Citilink",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "o-dp73-citilink"
+        },
+        {
+            "name": "Gary Public Transportation Corporation",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "o-gary~public~transportation~in~us"
+        },
+        {
+            "name": "IndyGo",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "o-dp4d-indygo"
+        },
+        {
+            "name": "Interurban Trolley",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "o-macog"
+        },
+        {
+            "name": "Muncie Indiana Transit System (MITS)",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "o-dp5k-indiana~mits"
+        },
+        {
+            "name": "Northern Indiana Commuter Transportation District",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "o-dp3-northernindianacommutertransportationdistrict"
+        },
+        {
+            "name": "Terre Haute Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "o-dp1b-terrehautetransit"
+        },
+        {
+            "name": "Valparaiso Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "o-dp6-valparaisotransit"
+        }
+    ]
 }
