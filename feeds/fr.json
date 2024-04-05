@@ -159,6 +159,16 @@
             "name": "Cap-Cotentin",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-cap~cotentin~rt"
+        },
+        {
+            "name": "Thello",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-thello"
+        },
+        {
+            "name": "Thello",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-thello~rt"
         }
     ]
 }
