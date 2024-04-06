@@ -93,6 +93,11 @@ git submodule update --remote --checkout --init
 ```
 
 You also need to have [gtfstidy](https://github.com/patrickbr/gtfstidy) installed.
+We provide a static build so you don't need to build your own.
+```
+wget -P ~/.local/bin https://github.com/public-transport/transitous/releases/download/gtfstidy/gtfstidy
+chmod +x ~/.local/bin/gtfstidy
+```
 You can also use the container described below.
 
 Then you can fetch individual regions using
