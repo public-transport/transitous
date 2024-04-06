@@ -15,6 +15,10 @@
         {
             "name": "Nicolas Derive",
             "github": "kalon33"
+        },
+        {
+            "name": "Tanguy Fardet",
+            "github": "tfardet"
         }
     ],
     "sources": [
@@ -169,6 +173,11 @@
             "name": "Thello",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-thello~rt"
+        },
+        {
+            "name": "Tisseo",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-spc0-tisséo"
         }
     ]
 }
