@@ -87,10 +87,18 @@ If the feed contains errors, you can try to add the `"fix": true` attribute, to 
 
 Once you create a pull request, fetching your feed will automatically be tested.
 
-You can also test it locally, by running `./src/fetch.py feeds/<region>.json`.
+You can also test it locally. For that, first get an up to date copy of transitland-atlas:
+```bash
+git submodule update --remote --checkout --init
+```
 
-For that you need to have [gtfstidy](https://github.com/patrickbr/gtfstidy) installed.
+You also need to have [gtfstidy](https://github.com/patrickbr/gtfstidy) installed.
 You can also use the container described below.
+
+Then you can fetch individual regions using
+```bash
+./src/fetch.py feeds/<region>.json
+```
 
 
 ## Running a transitous instance locally
