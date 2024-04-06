@@ -50,6 +50,96 @@
             "name": "Samtrans",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-9q8-samtrans"
+        },
+        {
+            "name": "Monterey-Salinas-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9q9-monterey~salinastransit"
+        },
+        {
+            "name": "Monterey-Salinas-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-mst~rt"
+        },
+        {
+            "name": "Santa-Cruz-Metro",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9q9-scmtdcom"
+        },
+        {
+            "name": "Santa-Cruz-Metro",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9q9-scmtdcom~rt"
+        },
+        {
+            "name": "Metro-LosAngeles",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9q5-metro~losangeles"
+        },
+        {
+            "name": "Metro-LosAngeles",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-metro~losangeles~alerts"
+        },
+        {
+            "name": "Metro-LosAngeles-Rail",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9q5-metro~losangeles~rail"
+        },
+        {
+            "name": "Catalina-Express",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-catalina~express"
+        },
+        {
+            "name": "LA-County",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-la~county"
+        },
+        {
+            "name": "Elkgrove",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9qcd-etranelkgrove"
+        },
+        {
+            "name": "Elkgrove",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9qcd-etranelkgrove~rt"
+        },
+        {
+            "name": "Sacramento-Regional-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9qce-sacramentoregionaltransit"
+        },
+        {
+            "name": "Sacramento-Regional-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9qce-sacramentoregionaltransit~rt"
+        },
+        {
+            "name": "Roseville-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9qcs-rosevilletransit"
+        },
+        {
+            "name": "Roseville-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-rosevilletransit~rt"
+        },
+        {
+            "name": "Southcounty-Transitlink",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-southcountytransitlink~ca~us"
+        },
+        {
+            "name": "SDMTS",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9mu-mts"
+        },
+        {
+            "name": "SDMTS",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-mts~rt~onebusaway"
         }
     ]
 }
