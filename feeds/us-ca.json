@@ -90,16 +90,6 @@
             "transitland-atlas-id": "f-9qcd-etranelkgrove~rt"
         },
         {
-            "name": "Sacramento-Regional-Transit",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-9qce-sacramentoregionaltransit"
-        },
-        {
-            "name": "Sacramento-Regional-Transit",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-9qce-sacramentoregionaltransit~rt"
-        },
-        {
             "name": "Roseville-Transit",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-9qcs-rosevilletransit"
