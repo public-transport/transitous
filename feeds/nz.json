@@ -1,0 +1,30 @@
+{
+    "maintainers": [
+        {
+            "name": "Thomas Dickson",
+            "github": "Hoverth"
+        }
+    ],
+    "sources": [
+        {
+            "name": "AT",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-rck-gowest~sealinkgroup~atairporter~atmetro~thepartybuscompany"
+        },
+        {
+            "name": "AT",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-auckland~transport~rt"
+        },
+        {
+            "name": "Uzabus-Wellington",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-rbs-gowellington~tranzitcoachlines~paraparaumutaxisltd~kapitic"
+        },
+        {
+            "name": "Otago-Regional-Council",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-pz-otagoregionalcouncil~otagoregionalcouncil"
+        }
+    ]
+}
