@@ -90,11 +90,6 @@
             "transitland-atlas-id": "f-9qcd-etranelkgrove~rt"
         },
         {
-            "name": "Southcounty-Transitlink",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-southcountytransitlink~ca~us"
-        },
-        {
             "name": "SDMTS",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-9mu-mts"
