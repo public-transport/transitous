@@ -98,6 +98,36 @@
             "name": "SDMTS",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-mts~rt~onebusaway"
+        },
+        {
+            "name": "Monterey-Salinas-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9q9-monterey~salinastransit",
+            "proxy": true
+        },
+        {
+            "name": "Monterey-Salinas-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-mst~rt",
+            "proxy": true
+        },
+        {
+            "name": "Roseville-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9qcs-rosevilletransit",
+            "proxy": true
+        },
+        {
+            "name": "Roseville-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-rosevilletransit~rt",
+            "proxy": true
+        },
+        {
+            "name": "Southcounty-Transitlink",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-southcountytransitlink~ca~us",
+            "proxy": true
         }
     ]
 }
