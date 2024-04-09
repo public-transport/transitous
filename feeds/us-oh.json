@@ -3,9 +3,23 @@
         {
             "name": "Marcus Lundblad",
             "github": "mlundblad"
+        },
+        {
+            "name": "Jonathan Jesse"
+            "github": "jjesse"
         }
     ],
     "sources": [
+        {
+            "name": "Butler-County-RTA",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-butler~county~rta"
+        },
+        {
+            "name": "Greater-Dayton-RTA",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dph4-greaterdaytonrta"
+        },
         {
             "name": "RTA",
             "type": "transitland-atlas",
@@ -32,9 +46,19 @@
             "transitland-atlas-id": "f-miller~transportation~in~ky"
         },
         {
+            "name": "Sandusky-Transit-System",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-sandusky"
+        },
+        {
             "name": "Stark-Area-Regional-Transit-Authority",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-stark~area~regional~transit~authority"
+        },
+        {
+            "name": "SORTA-Metro",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dngy-southwestohioregionaltransitauthority"
         }
     ]
 }
