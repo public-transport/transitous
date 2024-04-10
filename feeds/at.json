@@ -3,6 +3,10 @@
         {
             "name": "Volker Krause",
             "github": "vkrause"
+        },
+        {
+            "name": "Marcus Lundblad",
+            "github": "mlundblad"
         }
     ],
     "sources": [
@@ -13,6 +17,12 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             }
+        },
+        {
+            "name": "Wienerlinien-WLB",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u2ed-wienerlinien~wlb",
+            "proxy": true
         }
     ]
 }
