@@ -19,7 +19,8 @@
         {
             "name": "Yourmetrobus",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-dpq-metro"
+            "transitland-atlas-id": "f-dpq-metro",
+            "fix": true
         },
         {
             "name": "Yourmetrobus",
