@@ -1,0 +1,19 @@
+{
+   "maintainers": [
+        {
+            "name": "Volker Krause",
+            "github": "vkrause"
+        },
+        {
+            "name": "Marcus Lundblad",
+            "github": "mlundblad"
+        }
+    ],
+    "sources": [
+        {
+            "name": "Athens",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-swb-ΟργανισμόςΑστικώνΣυγκοινωνιώνΟΑΣΑ~Αthensurbantransportorga"
+        }
+    ]
+}
