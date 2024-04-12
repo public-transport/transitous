@@ -152,7 +152,8 @@
         {
             "name": "Atoumod",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-sp9x-normandie"
+            "transitland-atlas-id": "f-sp9x-normandie",
+            "fix": true
         },
         {
             "name": "Cap-Cotentin",
