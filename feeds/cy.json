@@ -1,0 +1,41 @@
+{
+   "maintainers": [
+        {
+            "name": "Marcus Lundblad",
+            "github": "mlundblad"
+        }
+    ],
+    "sources": [
+        {
+            "name": "EMEL",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-emel~limassol~cy",
+            "fix": true
+        },
+        {
+            "name": "Intercity",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-intercity~buses~cy"
+        },
+        {
+            "name": "LPT",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-lpt~cy"
+        },
+        {
+            "name": "NPT",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-npt~cy"
+        },
+        {
+            "name": "OSEA-Famagusta",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-osea~famagusta~cy"
+        },
+        {
+            "name": "Osypa-Pafos",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-osypa~pafos~cy"
+        }
+    ]
+}
