@@ -29,6 +29,8 @@ class Source:
     spec: str = "gtfs"
     enabled: bool = True
     fix_csv_quotes: bool = False
+    skip: bool = False
+    description: str = ""
 
     def __init__(self, parsed: Optional[dict] = None):
         self.license = License()
@@ -49,6 +51,10 @@ class Source:
                 self.fix_csv_quotes = bool(parsed["fix-csv-quotes"])
             if "spec" in parsed:
                 self.spec = parsed["spec"]
+            if "skip" in parsed:
+                self.skip = bool(parsed["skip"])
+            if "description" in parsed:
+                self.description = parsed["description"]
 
 
 class HttpOptions:
