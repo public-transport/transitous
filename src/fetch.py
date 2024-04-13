@@ -125,9 +125,15 @@ class Fetcher:
         print("Unknown data source", source, file=sys.stderr)
         assert False
 
-    def postprocess(self, source: Source, input_path: Path, output_path: Path):
-        command = ["gtfstidy", str(input_path.absolute()), "--check-null-coords",
-                   "--output", output_path]
+    def postprocess(self, source: Source,
+                    input_path: Path, output_path: Path):
+        shutil.copyfile(input_path, output_path)
+
+        if source.fix_csv_quotes:
+            subprocess.check_call(["./src/fix-csv-quotes.py", output_path])
+
+        command = ["gtfstidy", output_path,
+                   "--check-null-coords", "--output", output_path]
         if source.fix:
             command.append("--fix")
 

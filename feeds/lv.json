@@ -33,6 +33,7 @@
             "type": "http",
             "url": "https://www.atd.lv/sites/default/files/GTFS/gtfs-latvia-lv.zip",
             "fix": true,
+            "fix-csv-quotes": true,
             "license": {
                 "spdx-identifier": "CC0-1.0"
             }
