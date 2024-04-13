@@ -28,6 +28,7 @@ class Source:
     license: Optional[License] = None
     spec: str = "gtfs"
     enabled: bool = True
+    fix_csv_quotes: bool = False
 
     def __init__(self, parsed: Optional[dict] = None):
         self.license = License()
@@ -44,6 +45,8 @@ class Source:
             self.name = parsed["name"]
             if "fix" in parsed:
                 self.fix = bool(parsed["fix"])
+            if "fix-csv-quotes" in parsed:
+                self.fix_csv_quotes = bool(parsed["fix-csv-quotes"])
             if "spec" in parsed:
                 self.spec = parsed["spec"]
 
