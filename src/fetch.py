@@ -144,6 +144,8 @@ class Fetcher:
         metadata_filename = metadata.name
         region_name = metadata_filename[:metadata_filename.rfind('.')]
 
+        errors = 0
+
         for source in region.sources:
             # Resolve transitland sources to http / url sources
             match source:
@@ -175,7 +177,12 @@ class Fetcher:
             download_path = download_dir.absolute() / f"{download_name}.gtfs.zip"
             output_path = outdir.absolute() / f"{download_name}.gtfs.zip"
 
-            new_data = self.fetch_source(download_path, source)
+            try:
+                new_data = self.fetch_source(download_path, source)
+            except requests.exceptions.ConnectionError as e:
+                eprint(f"Error: Could not fetch {region_name}-{source.name}: {e}")
+                errors += 1
+                continue
 
             # Nothing new was downloaded, and data is already processed
             if not new_data and output_path.exists():
@@ -189,9 +196,13 @@ class Fetcher:
             print()
             sys.stdout.flush()
 
+        return errors
 
 if __name__ == "__main__":
     fetcher = Fetcher()
 
     metadata_file = sys.argv[1]
-    fetcher.fetch(Path(metadata_file))
+    errors = fetcher.fetch(Path(metadata_file))
+    if errors > 0:
+        eprint(f"Error: {errors} errors occurred during fetching.")
+        sys.exit(1)
