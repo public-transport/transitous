@@ -42,6 +42,9 @@ if __name__ == "__main__":
             for source in region.sources:
                 schedule_name = f"{region_name}-{source.name}"
 
+                if source.skip:
+                    continue
+
                 match source:
                     case metadata.TransitlandSource():
                         source = atlas.source_by_id(source)
