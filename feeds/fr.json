@@ -19,6 +19,10 @@
         {
             "name": "Tanguy Fardet",
             "github": "tfardet"
+        },
+        {
+            "name": "Gildas GH",
+            "github": "gildas-gh"
         }
     ],
     "sources": [
@@ -179,6 +183,12 @@
             "name": "Tisseo",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-spc0-tisséo"
+        },
+        {
+            "name": "Brittany",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-gbwc-mobibreizh",
+            "fix": true
         }
     ]
 }
