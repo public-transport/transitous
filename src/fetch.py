@@ -47,7 +47,7 @@ class Fetcher:
             case TransitlandSource():
                 http_source = self.transitland_atlas.source_by_id(source)
                 if not http_source:
-                    return False
+                    sys.exit(1)
 
                 return self.fetch_source(dest_path, http_source)
             case HttpSource():
@@ -68,7 +68,8 @@ class Fetcher:
 
                 # Fetch last modification time from the server
                 server_headers = \
-                    requests.head(download_url, headers=source.options.headers, allow_redirects=True).headers
+                    requests.head(download_url, headers=source.options.headers,
+                                  allow_redirects=True).headers
 
                 # If server version is older, return
                 last_modified_server = None
