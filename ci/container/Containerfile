@@ -7,7 +7,7 @@ RUN GOBIN=/usr/local/bin/ go install github.com/patrickbr/gtfstidy@25d4d6d1079a5
 
 FROM docker.io/debian:bookworm-slim
 
-ARG MOTIS_VERSION=v0.11.30
+ARG MOTIS_VERSION=v0.11.32
 
 RUN apt-get update -y && \
     apt-get install -y --no-install-recommends git python3-requests python3-jinja2 wget bzip2 rsync openssh-client && \
