@@ -23,7 +23,7 @@ if __name__ == "__main__":
     flavour = sys.argv[1]
 
     feed_dir = Path("feeds/")
-    osm_map = "europe-latest.osm.pbf"
+    osm_map = "planet-latest.osm.pbf"
     osm_coastline = "land-polygons-complete-4326.zip"
 
     atlas = transitland.Atlas.load(Path("transitland-atlas/"))
