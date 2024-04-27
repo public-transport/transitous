@@ -54,6 +54,7 @@ class Source:
 class HttpOptions:
     fetch_interval_days: Optional[int] = None
     headers: dict[str, str] = {}
+    ignore_tls_errors: bool = False
 
 
 class TransitlandSource(Source):
@@ -73,6 +74,9 @@ class TransitlandSource(Source):
             if "fetch-interval-days" in options:
                 self.options.fetch_interval_days = \
                     int(parsed["options"]["fetch-interval-days"])
+            if "ignore-tls-errors" in options:
+                self.options.ignore_tls_errors = \
+                    bool(parsed["options"]["ignore-tls-errors"])
 
         if "http-headers" in parsed:
             for key in parsed["http-headers"]:
@@ -95,6 +99,9 @@ class HttpSource(Source):
                 if "fetch-interval-days" in options:
                     self.options.fetch_interval_days = \
                         int(parsed["options"]["fetch-interval-days"])
+                if "ignore-tls-errors" in options:
+                    self.options.ignore_tls_errors = \
+                        bool(parsed["options"]["ignore-tls-errors"])
 
             if "http-headers" in parsed:
                 for key in parsed["http-headers"]:

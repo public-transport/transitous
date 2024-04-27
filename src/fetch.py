@@ -51,6 +51,10 @@ class Fetcher:
 
                 return self.fetch_source(dest_path, http_source)
             case HttpSource():
+                request_options = {
+                    "verify": not source.options.ignore_tls_errors
+                }
+
                 # Detect last modification time of local file
                 last_modified = None
                 if dest_path.exists():
@@ -69,7 +73,8 @@ class Fetcher:
                 # Fetch last modification time from the server
                 server_headers = \
                     requests.head(download_url, headers=source.options.headers,
-                                  allow_redirects=True).headers
+                                  allow_redirects=True,
+                                  **request_options).headers
 
                 # If server version is older, return
                 last_modified_server = None
@@ -87,7 +92,8 @@ class Fetcher:
                     headers["if-modified-since"] = last_modified \
                         .strftime("%a, %d %b %Y %X %Z")
 
-                response = requests.get(download_url, headers=headers)
+                response = requests.get(download_url, headers=headers,
+                                        **request_options)
 
                 # If the file was not modified, return
                 if response.status_code == 304:
