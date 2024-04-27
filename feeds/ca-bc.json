@@ -201,7 +201,8 @@
         {
             "name": "TransLink",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-c28-nstranslinkca"
+            "transitland-atlas-id": "f-c28-nstranslinkca",
+            "fix": true
         },
         {
             "name": "TransLink",
