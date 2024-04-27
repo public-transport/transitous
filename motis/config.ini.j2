@@ -4,17 +4,20 @@
 
 {% if flavour != "import" %}
 #modules=address
+modules=adr
+modules=osr
 modules=tiles
 #modules=osrm
 #modules=ppr
 #modules=parking
 {% endif %}
+{% if flavour != "osm" %}
 modules=nigiri
 modules=intermodal
 
 intermodal.router=nigiri
 dataset.no_schedule=true
-
+{% endif %}
 
 [server]
 host=127.0.0.1
@@ -22,8 +25,12 @@ host=127.0.0.1
 [import]
 {% if coastline_file and flavour != "import" %}paths=coastline:{{ coastline_file }}{% endif %}
 {% if pbf_file and flavour != "import" %}paths=osm:{{ pbf_file }}{% endif %}
+{% if flavour != "osm" %}
 {% for feed in gtfs_feeds %}{% if feed.enabled %}paths=schedule-{{ feed.id }}:{{ feed.path }}{% endif %}
 {% endfor %}
+{% endif %}
+
+{% if flavour != "osm" %}
 [nigiri]
 first_day=TODAY
 num_days=365
@@ -34,14 +41,8 @@ match_duplicates=true
 {% endif %}
 [intermodal]
 timeout = 5
-
-[osrm]
-profiles=/opt/motis/osrm-profiles/car.lua
-profiles=/opt/motis/osrm-profiles/bike.lua
-
-[ppr]
-profile=/opt/motis/ppr-profiles/default.json
+{% endif %}
 
 [tiles]
-profile=/opt/motis/tiles-profiles/background.lua
+profile=/opt/motis/tiles-profiles/profile.lua
 {% if coastline_file and flavour != "import" %}import.use_coastline=true{% endif %}
