@@ -15,6 +15,7 @@ when:
 steps:
   fetch:
     image: ghcr.io/public-transport/transitous/import:latest
+    pull: true
     environment:
       GITHUB_TOKEN:
         from_secret: github_issues_token
@@ -23,6 +24,7 @@ steps:
       - ./ci/fetch-feeds.py timer
   import:
     image: ghcr.io/public-transport/transitous/import:latest
+    pull: true
     commands:
       - rm out/data -rf
       - ./src/generate-attribution.py
