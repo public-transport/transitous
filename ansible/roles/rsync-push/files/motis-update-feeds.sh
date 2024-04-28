@@ -11,7 +11,7 @@ if [ -z "$(ls -A /srv/rsync/transitous/)" ]; then
 fi
 
 rm /var/lib/motis/data/nigiri/ -rf
-cp -r /srv/rsync/transitous/* /var/lib/motis/
+rsync --progress -r -u /srv/rsync/transitous/ /var/lib/motis/
 chown motis:motis -R /var/lib/motis/data/
 
 echo "Restarting MOTIS…"
