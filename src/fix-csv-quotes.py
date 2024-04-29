@@ -20,8 +20,9 @@ def strip_quotes(field: str):
 
 def parse_fuzzy_csv(csv: str) -> list[list[str]]:
     rows = []
+
+    # Split lines and fields
     for line in csv.splitlines():
-        line = line.decode()
         start = 0
         current_field_start = 0
         fields = []
@@ -44,6 +45,11 @@ def parse_fuzzy_csv(csv: str) -> list[list[str]]:
                 current_field_start = start
                 start = fieldsep + 1
 
+    # Unescape
+    for i, row in enumerate(rows):
+        for j, field in enumerate(row):
+            rows[i][j] = field.replace('""', '"')
+
     return rows
 
 
@@ -56,7 +62,7 @@ def edit_zip(source: str, destination: str):
                 if inzipinfo.filename.endswith(".txt"):
                     print("Rewriting", inzipinfo.filename)
                     content = infile.read()
-                    rows = parse_fuzzy_csv(content)
+                    rows = parse_fuzzy_csv(content.decode())
 
                     with io.StringIO() as outcsv:
                         writer = csv.writer(outcsv)
