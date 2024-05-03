@@ -35,8 +35,10 @@
             "name": "Koleje-Dolnośląskie",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u3h-koleje~dolnoslaskie",
-            "http-headers": {
-                "Authorization": "Basic a2Q6QmFld29uZ29od3VnM0Fv"
+            "http-options": {
+                "headers": {
+                    "Authorization": "Basic a2Q6QmFld29uZ29od3VnM0Fv"
+                }
             }
         },
         {

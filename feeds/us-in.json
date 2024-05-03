@@ -25,7 +25,7 @@
             "name": "Indiana-County-Transit-Authority",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-indiana~county~transit~authority",
-            "options": {
+            "http-options": {
                 "fetch-interval-days": 1
             }
         },

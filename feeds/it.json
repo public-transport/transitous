@@ -13,10 +13,10 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "options": {
+            "fix": true,
+            "http-options": {
                 "fetch-interval-days": 2
-            },
-            "fix": true
+            }
         },
         {
             "name": "Campania-ANM",
@@ -68,7 +68,7 @@
             "name": "Lombardia-Trenord",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u0n-trenord",
-            "options": {
+            "http-options": {
                 "fetch-interval-days": 2
             }
         },

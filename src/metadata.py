@@ -58,6 +58,18 @@ class HttpOptions:
     headers: dict[str, str] = {}
     ignore_tls_errors: bool = False
 
+    def __init__(self, parsed: Optional[dict] = None):
+        if parsed:
+            if "fetch-interval-days" in parsed:
+                self.fetch_interval_days = \
+                    int(parsed["fetch-interval-days"])
+            if "ignore-tls-errors" in parsed:
+                self.ignore_tls_errors = \
+                    bool(parsed["ignore-tls-errors"])
+            if "headers" in parsed:
+                for key in parsed["headers"]:
+                    self.headers[key] = parsed["headers"][key]
+
 
 class TransitlandSource(Source):
     transitland_atlas_id: str = ""
@@ -71,18 +83,8 @@ class TransitlandSource(Source):
         self.url_override = parsed.get("url-override", None)
         self.proxy = parsed.get("proxy", False)
 
-        if "options" in parsed:
-            options = parsed["options"]
-            if "fetch-interval-days" in options:
-                self.options.fetch_interval_days = \
-                    int(parsed["options"]["fetch-interval-days"])
-            if "ignore-tls-errors" in options:
-                self.options.ignore_tls_errors = \
-                    bool(parsed["options"]["ignore-tls-errors"])
-
-        if "http-headers" in parsed:
-            for key in parsed["http-headers"]:
-                self.options.headers[key] = parsed["http-headers"][key]
+        if "http-options" in parsed:
+            self.options = HttpOptions(parsed["http-options"])
 
 
 class HttpSource(Source):
@@ -96,18 +98,8 @@ class HttpSource(Source):
             self.url = parsed["url"]
             self.url_override = parsed.get("url-override", None)
 
-            if "options" in parsed:
-                options = parsed["options"]
-                if "fetch-interval-days" in options:
-                    self.options.fetch_interval_days = \
-                        int(parsed["options"]["fetch-interval-days"])
-                if "ignore-tls-errors" in options:
-                    self.options.ignore_tls_errors = \
-                        bool(parsed["options"]["ignore-tls-errors"])
-
-            if "http-headers" in parsed:
-                for key in parsed["http-headers"]:
-                    self.options.headers[key] = parsed["http-headers"][key]
+            if "http-options" in parsed:
+                self.options = HttpOptions(parsed["http-options"])
 
 
 class UrlSource(Source):

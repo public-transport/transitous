@@ -10,8 +10,10 @@
             "name": "mav",
             "type": "http",
             "url": "https://www.mavcsoport.hu/gtfs/gtfsMavMenetrend.zip",
-            "http-headers": {
-                "Authorization": "Basic YXJvbmt2aEBnbWFpbC5jb206M09jOHpNRFc3c3RCQ2ljVg=="
+            "http-options": {
+                "headers": {
+                    "Authorization": "Basic YXJvbmt2aEBnbWFpbC5jb206M09jOHpNRFc3c3RCQ2ljVg=="
+                }
             }
         },
         {

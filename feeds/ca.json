@@ -16,7 +16,7 @@
             "name": "Calgary-Transit",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-c3nf-calgarytransit",
-            "options": {
+            "http-options": {
                 "fetch-interval-days": 2
             }
         },
@@ -75,7 +75,7 @@
             "name": "Medicine-Hat-Transit",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-medicine~hat~transit",
-            "options": {
+            "http-options": {
                 "fetch-interval-days": 2
             }
         },
@@ -113,7 +113,7 @@
             "name": "Saint-John-Transit",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-saint~john~nb~ca",
-            "options": {
+            "http-options": {
                 "fetch-interval-days": 2
             }
         },

@@ -35,7 +35,7 @@
             "name": "Brampton-Transit",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-dpz2-bramptontransit~rt",
-            "options": {
+            "http-options": {
                 "fetch-interval-days": 1
             }
         },

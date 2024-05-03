@@ -15,7 +15,7 @@
             "type": "http",
             "url": "https://api.carrismetropolitana.pt/gtfs",
             "fix": true,
-            "options": {
+            "http-options": {
                 "fetch-interval-days": 1
             }
         },
@@ -28,7 +28,7 @@
             "name": "Metro-Lisboa",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-eyckr-metrodelisboa",
-            "options": {
+            "http-options": {
                 "ignore-tls-errors": true
             }
         },
