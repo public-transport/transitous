@@ -146,7 +146,8 @@
         {
             "name": "TBM",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-ezzx-tbc"
+            "transitland-atlas-id": "f-ezzx-tbc",
+            "fix": true
         },
         {
             "name": "TBM",
