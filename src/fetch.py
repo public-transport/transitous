@@ -159,8 +159,8 @@ class Fetcher:
 
         for source in region.sources:
             if source.skip:
-                if source.description != "":
-                    print("Skipping " + source.name + ": " + source.description)
+                if source.skip_reason != "":
+                    print("Skipping " + source.name + ": " + source.skip_reason)
                 else:
                     print("Skipping " + source.name)
                 continue
