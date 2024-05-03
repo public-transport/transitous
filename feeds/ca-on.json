@@ -112,11 +112,6 @@
             "transitland-atlas-id": "f-guelph~rt"
         },
         {
-            "name": "Hamilton-Street-Railway",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-dpxj-hamiltonstreetrailway"
-        },
-        {
             "name": "Kingston-Transit",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-drce-kingstontransit"
