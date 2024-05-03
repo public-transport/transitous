@@ -27,7 +27,10 @@
         {
             "name": "Metro-Lisboa",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-eyckr-metrodelisboa"
+            "transitland-atlas-id": "f-eyckr-metrodelisboa",
+            "options": {
+                "ignore-tls-errors": true
+            }
         },
         {
             "name": "Cascais-Próxima",
