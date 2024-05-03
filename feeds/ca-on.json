@@ -34,22 +34,30 @@
         {
             "name": "Brampton-Transit",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-dpz2-bramptontransit~rt"
+            "transitland-atlas-id": "f-dpz2-bramptontransit~rt",
+            "options": {
+                "fetch-interval-days": 1
+            }
         },
         {
             "name": "Burlington-Transit",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-dpxq-burlingtontransit"
+            "transitland-atlas-id": "f-dpxq-burlingtontransit",
+            "skip": true,
+            "skip-reason": "Server is unavailable"
         },
         {
             "name": "Burlington-Transit",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-burt~rt"
+            "transitland-atlas-id": "f-burt~rt",
+            "skip": true,
+            "skip-reason": "Server is unavailable"
         },
         {
             "name": "Chatham-Kent-Transit",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-chatham~kent~on~ca"
+            "transitland-atlas-id": "f-chatham~kent~on~ca",
+            "proxy": true
         },
         {
             "name": "Cornwall-Transit",
@@ -112,6 +120,13 @@
             "transitland-atlas-id": "f-guelph~rt"
         },
         {
+            "name": "Hamilton-Street-Railway",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dpxj-hamiltonstreetrailway",
+            "skip": true,
+            "skip-reason": "Server is unavailable"
+        },
+        {
             "name": "Kingston-Transit",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-drce-kingstontransit"
@@ -134,12 +149,16 @@
         {
             "name": "London-Transit",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-dpwh-londontransit"
+            "transitland-atlas-id": "f-dpwh-londontransit",
+            "skip": true,
+            "skip-reason": "Server is unavailable"
         },
         {
             "name": "London-Transit",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-dpwh-londontransit~rt"
+            "transitland-atlas-id": "f-dpwh-londontransit~rt",
+            "skip": true,
+            "skip-reason": "Server is unavailable"
         },
         {
             "name": "Middlesex-County-Connect",
@@ -174,7 +193,8 @@
         {
             "name": "North-Bay-Transit",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-north~bay~transit"
+            "transitland-atlas-id": "f-north~bay~transit",
+            "fix": true
         },
         {
             "name": "North-Bay-Transit",
@@ -229,12 +249,16 @@
         {
             "name": "PCConnect",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-perth~county~on~ca"
+            "transitland-atlas-id": "f-perth~county~on~ca",
+            "skip": true,
+            "skip-reason": "GTFS is contained in a subdirectory, which would need a custom script to fix"
         },
         {
             "name": "Quinte-Transit",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-quinte~transit~ca"
+            "transitland-atlas-id": "f-quinte~transit~ca",
+            "skip": true,
+            "skip-reason": "Internal server error"
         },
         {
             "name": "Railway-City-Transit",
@@ -339,7 +363,9 @@
         {
             "name": "York-Region-Transit",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "o-dpz-yorkregiontransit"
+            "transitland-atlas-id": "f-dpz-yorkregiontransit",
+            "skip": true,
+            "skip-reason": "Broken TLS setup"
         },
         {
             "name": "York-Region-Transit",
