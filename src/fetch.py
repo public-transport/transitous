@@ -125,7 +125,7 @@ class Fetcher:
                                    last_modified_server.timestamp())
                     os.utime(dest_path, atime_mtime)
 
-                return dest_path
+                return True
             case UrlSource():
                 return False
 
