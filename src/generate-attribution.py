@@ -33,6 +33,9 @@ if __name__ == "__main__":
                 if not source:
                     continue
 
+            if source.skip:
+                continue
+
             if source.spec == "gtfs-rt":
                 continue
 
