@@ -33,14 +33,16 @@ class Atlas:
             result.url = feed["urls"]["static_current"]
             result.options = source.options
             result.spec = "gtfs"
-            result.enabled = source.enabled
             result.fix = source.fix
+            result.skip = source.skip
+            result.skip_reason = source.skip_reason
         elif "realtime_trip_updates" in feed["urls"]:
             result = UrlSource()
             result.name = source.name
             result.url = feed["urls"]["realtime_trip_updates"]
             result.spec = "gtfs-rt"
-            result.enabled = source.enabled
+            result.skip = source.skip
+            result.skip_reason = source.skip_reason
         else:
             print("Warning: Found Transitland source that we can't handle:", source.transitland_atlas_id)
             sys.stdout.flush()
