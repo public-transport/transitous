@@ -1,0 +1,24 @@
+{
+    "maintainers": [
+        {
+            "github": "jbruechert",
+            "name": "Jonah Brüchert"
+        }
+    ],
+    "sources": [
+        {
+            "name": "lviv",
+            "type": "http",
+            "url": "http://track.ua-gis.com/gtfs/lviv/static.zip",
+            "options": {
+                "ignore-tls-errors": true
+            }
+        },
+        {
+            "name": "lviv",
+            "spec": "gtfs-rt",
+            "type": "url",
+            "url": "http://track.ua-gis.com/gtfs/lviv/vehicle_position"
+        }
+    ]
+}
