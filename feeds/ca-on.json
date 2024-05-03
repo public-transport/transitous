@@ -7,145 +7,349 @@
     ],
     "sources": [
         {
+            "name": "Barrie-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dpzk-barrietransit"
+        },
+        {
+            "name": "Barrie-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-barrie~rt"
+        },
+        {
+            "name": "Belleville-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-belleville~on~ca"
+        },
+        {
+            "name": "Belleville-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-belleville~on~ca~rt"
+        },
+        {
+            "name": "Brampton-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dpz2-bramptontransit"
+        },
+        {
+            "name": "Brampton-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dpz2-bramptontransit~rt"
+        },
+        {
+            "name": "Burlington-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dpxq-burlingtontransit"
+        },
+        {
+            "name": "Burlington-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-burt~rt"
+        },
+        {
+            "name": "Chatham-Kent-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-chatham~kent~on~ca"
+        },
+        {
+            "name": "Cornwall-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-cornwall~on~ca"
+        },
+        {
+            "name": "Cornwall-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-cornwall~on~ca~rt"
+        },
+        {
+            "name": "Durham-Region-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dpz-durhamregiontransit"
+        },
+        {
+            "name": "Durham-Region-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dpz-durhamregiontransit~rt"
+        },
+        {
+            "name": "Metrolinx-gotransit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dpz-gotransit"
+        },
+        {
+            "name": "Metrolinx-gotransit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-metrolinx~gtfs~rt~vehicles"
+        },
+        {
+            "name": "Grand-River-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dpwz-grandrivertransit"
+        },
+        {
+            "name": "Grand-River-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-grt~rt"
+        },
+        {
+            "name": "Greater-Sudbury-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-f0q2-greatersudburytransit"
+        },
+        {
+            "name": "Greater-Sudbury-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-f0q2-greatersudburytransit~rt"
+        },
+        {
+            "name": "Guelph-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dpwz-guelphtransit"
+        },
+        {
+            "name": "Guelph-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-guelph~rt"
+        },
+        {
+            "name": "Hamilton-Street-Railway",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dpxj-hamiltonstreetrailway"
+        },
+        {
+            "name": "Kingston-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-drce-kingstontransit"
+        },
+        {
+            "name": "Kingston-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-kingston~rt"
+        },
+        {
+            "name": "Lindsay-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-kawartha~on~ca"
+        },
+        {
+            "name": "Lindsay-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-kawartha~on~ca~rt"
+        },
+        {
+            "name": "London-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dpwh-londontransit"
+        },
+        {
+            "name": "London-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dpwh-londontransit~rt"
+        },
+        {
+            "name": "Middlesex-County-Connect",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-middlesex~county~on~ca"
+        },
+        {
+            "name": "Mid-Pen-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-midland~penetanguishene~transit"
+        },
+        {
+            "name": "Milton-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-milton~on~ca"
+        },
+        {
+            "name": "Milton-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-milton~on~ca~rt"
+        },
+        {
+            "name": "MiWay",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dpz2-miway"
+        },
+        {
+            "name": "MiWay",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-miway~rt"
+        },
+        {
+            "name": "North-Bay-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-north~bay~transit"
+        },
+        {
+            "name": "North-Bay-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-north~bay~transit~rt"
+        },
+        {
+            "name": "Oakville-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dpxr-oakvilletransit"
+        },
+        {
+            "name": "Ontario-Northland",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-ontario~northland~ca"
+        },
+        {
+            "name": "Ontario-Northland",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-ontario~northland~ca~rt"
+        },
+        {
+            "name": "Orangeville-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-orangeville~transit~ca"
+        },
+        {
+            "name": "Orangeville-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-orangeville~on~ca~rt"
+        },
+        {
+            "name": "Orillia-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-orillia~on~ca"
+        },
+        {
+            "name": "Orillia-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-orillia~on~ca~rt"
+        },
+        {
+            "name": "OCTranspo",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-f24-octranspo"
+        },
+        {
+            "name": "OCTranspo",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-f24-octranspo~rt"
+        },
+        {
+            "name": "PCConnect",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-perth~county~on~ca"
+        },
+        {
+            "name": "Quinte-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-quinte~transit~ca"
+        },
+        {
+            "name": "Railway-City-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-stthomas~on~ca"
+        },
+        {
+            "name": "Railway-City-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-stthomas~on~ca~rt"
+        },
+        {
+            "name": "Ride-Norfolk",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-norfolk~county~on~ca"
+        },
+        {
+            "name": "Sarnia-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-sarnia~on~ca"
+        },
+        {
+            "name": "Sarnia-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-sarnia~on~ca~rt"
+        },
+        {
+            "name": "Sault-Ste-Marie-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-saultstemarie~on~ca"
+        },
+        {
+            "name": "Sault-Ste-Marie-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-saultstemarie~on~ca~rt"
+        },
+        {
+            "name": "Simcoe-County-LINX",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-simcoe~on~ca"
+        },
+        {
+            "name": "Simcoe-County-LINX",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-simcoe~on~ca~rt"
+        },
+        {
+            "name": "Stratford-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-stratford~on~ca"
+        },
+        {
+            "name": "Stratford-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-stratford~on~ca~rt"
+        },
+        {
+            "name": "Temiskaming-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-temiskaming~on~ca"
+        },
+        {
+            "name": "Temiskaming-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-temiskaming~on~ca~rt"
+        },
+        {
+            "name": "Thunder-Bay-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-f08e-thunderbaytransit"
+        },
+        {
+            "name": "Thunder-Bay-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-thunderbay~rt"
+        },
+        {
+            "name": "Timmins-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-timmins~on~ca"
+        },
+        {
+            "name": "Timmins-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-timmins~on~ca~rt"
+        },
+        {
             "name": "TTC",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-dpz8-ttc"
         },
         {
-            "name": "Metrolinx-belleville",
+            "name": "Transit-Windsor",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-belleville~on~ca"
+            "transitland-atlas-id": "f-dpsb-transitwindsor"
         },
         {
-            "name": "Metrolinx-belleville",
+            "name": "UP-Express",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-belleville~on~ca~rt"
+            "transitland-atlas-id": "f-dpz2-upexpress"
         },
         {
-            "name": "Metrolinx-cornwall",
+            "name": "York-Region-Transit",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-cornwall~on~ca"
+            "transitland-atlas-id": "o-dpz-yorkregiontransit"
         },
         {
-            "name": "Metrolinx-cornwall",
+            "name": "York-Region-Transit",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-cornwall~on~ca~rt"
-        },
-        {
-            "name": "Metrolinx-kawartha",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-kawartha~on~ca"
-        },
-        {
-            "name": "Metrolinx-kawartha",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-kawartha~on~ca~rt"
-        },
-        {
-            "name": "Metrolinx-metrolinx",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-metrolinx~gtfs~rt~vehicles"
-        },
-        {
-            "name": "Metrolinx-milton",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-milton~on~ca"
-        },
-        {
-            "name": "Metrolinx-milton",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-milton~on~ca~rt"
-        },
-        {
-            "name": "Metrolinx-orangeville",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-orangeville~transit~ca"
-        },
-        {
-            "name": "Metrolinx-orangeville",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-orangeville~on~ca~rt"
-        },
-        {
-            "name": "Metrolinx-orillia",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-orillia~on~ca"
-        },
-        {
-            "name": "Metrolinx-orillia",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-orillia~on~ca~rt"
-        },
-        {
-            "name": "Metrolinx-sarnia",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-sarnia~on~ca"
-        },
-        {
-            "name": "Metrolinx-sarnia",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-sarnia~on~ca~rt"
-        },
-        {
-            "name": "Metrolinx-saultstemarie",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-saultstemarie~on~ca"
-        },
-        {
-            "name": "Metrolinx-saultstemarie",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-saultstemarie~on~ca~rt"
-        },
-        {
-            "name": "Metrolinx-simcoe",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-simcoe~on~ca"
-        },
-        {
-            "name": "Metrolinx-simcoe",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-simcoe~on~ca~rt"
-        },
-        {
-            "name": "Metrolinx-stratford",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-stratford~on~ca"
-        },
-        {
-            "name": "Metrolinx-stratford",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-stratford~on~ca~rt"
-        },
-        {
-            "name": "Metrolinx-stthomas",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-stthomas~on~ca",
-            "fix": true
-        },
-        {
-            "name": "Metrolinx-stthomas",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-stthomas~on~ca~rt"
-        },
-        {
-            "name": "Metrolinx-temiskaming",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-temiskaming~on~ca"
-        },
-        {
-            "name": "Metrolinx-temiskaming",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-temiskaming~on~ca~rt"
-        },
-        {
-            "name": "Metrolinx-timmins",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-timmins~on~ca"
-        },
-        {
-            "name": "Metrolinx-timmins",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-timmins~on~ca~rt"
+            "transitland-atlas-id": "f-yrt~rt"
         }
     ]
 }
