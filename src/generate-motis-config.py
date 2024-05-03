@@ -42,6 +42,9 @@ if __name__ == "__main__":
             for source in region.sources:
                 schedule_name = f"{region_name}-{source.name}"
 
+                if source.skip:
+                    continue
+
                 match source:
                     case metadata.TransitlandSource():
                         source = atlas.source_by_id(source)
@@ -54,8 +57,7 @@ if __name__ == "__main__":
 
                         gtfs_feeds.append({
                             "id": schedule_name,
-                            "path": schedule_file,
-                            "enabled": source.enabled
+                            "path": schedule_file
                         })
                     case "gtfs-rt" if isinstance(source, metadata.UrlSource):
                         referenced_static_feed = list(filter(
@@ -72,8 +74,7 @@ if __name__ == "__main__":
                         gtfsrt_feeds.append({
                             "id": schedule_name,
                             "url": source.url,
-                            "authorization": source.authorization,
-                            "enabled": source.enabled
+                            "authorization": source.authorization
                         })
 
     with open("motis/config.ini.j2") as f:

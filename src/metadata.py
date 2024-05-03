@@ -27,15 +27,13 @@ class Source:
     fix: bool = False
     license: Optional[License] = None
     spec: str = "gtfs"
-    enabled: bool = True
     fix_csv_quotes: bool = False
+    skip: bool = False
+    skip_reason: str = ""
 
     def __init__(self, parsed: Optional[dict] = None):
         self.license = License()
         if parsed:
-            if "enabled" in parsed:
-                self.enabled = bool(parsed["enabled"])
-
             if "license" in parsed:
                 if "spdx-identifier" in parsed["license"]:
                     self.license.spdx_identifier = parsed["license"]["spdx-identifier"]
@@ -49,6 +47,10 @@ class Source:
                 self.fix_csv_quotes = bool(parsed["fix-csv-quotes"])
             if "spec" in parsed:
                 self.spec = parsed["spec"]
+            if "skip" in parsed:
+                self.skip = bool(parsed["skip"])
+            if "skip-reason" in parsed:
+                self.skip_reason = parsed["skip-reason"]
 
 
 class HttpOptions:

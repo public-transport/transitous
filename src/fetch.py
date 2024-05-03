@@ -153,7 +153,17 @@ class Fetcher:
 
         errors = 0
 
+        outdir = Path("out/")
+        if not outdir.exists():
+            os.mkdir(outdir)
+
         for source in region.sources:
+            if source.skip:
+                if source.description != "":
+                    print("Skipping " + source.name + ": " + source.description)
+                else:
+                    print("Skipping " + source.name)
+                continue
             # Resolve transitland sources to http / url sources
             match source:
                 case TransitlandSource():
@@ -176,10 +186,6 @@ class Fetcher:
             download_dir = Path("downloads/")
             if not download_dir.exists():
                 os.mkdir(download_dir)
-
-            outdir = Path("out/")
-            if not outdir.exists():
-                os.mkdir(outdir)
 
             download_path = download_dir.absolute() / f"{download_name}.gtfs.zip"
             output_path = outdir.absolute() / f"{download_name}.gtfs.zip"
