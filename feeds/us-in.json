@@ -6,7 +6,7 @@
         }
     ],
     "sources": [
-                {
+        {
             "name": "CityBus-of-Greater-Lafayette-Indiana",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-dp4j-citybus"

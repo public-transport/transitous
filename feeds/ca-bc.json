@@ -73,7 +73,7 @@
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-bctransit~east~kootenay~region"
         },
-         {
+        {
             "name": "East-Kootenay-Transit",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-bctransit~east~kootenay~region~rt"
