@@ -370,7 +370,9 @@
         {
             "name": "York-Region-Transit",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-yrt~rt"
+            "transitland-atlas-id": "f-yrt~rt",
+            "skip": true,
+            "skip-reason": "Broken TLS setup"
         }
     ]
 }
