@@ -135,7 +135,7 @@ Option Name           | Description
 --------------------- | -----------------------------------------------------------------------------------------------------------------------------
 `headers`             | Dictionary of custom HTTP headers to send when checking for updates / downloading.
 `ignore-tls-errrors`  | Ignore expired / invalid TLS certificate
-`fetch-interval-days` | Fetch this feed at most every `n` days. Useful if a server doesn't send `Last-Modified`, or too comply with terms of service.
+`fetch-interval-days` | Fetch this feed at most every `n` days. Useful if a server doesn't send `Last-Modified`, or to comply with terms of service.
 
 
 ## Running a transitous instance locally
