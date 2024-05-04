@@ -37,6 +37,16 @@
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
+.app-card-row {
+  display: grid;
+  grid-auto-flow: column;
+  overflow-x: scroll;
+  padding-bottom: 1em;
+  align-items: left;
+  justify-content: left;
+  gap: 20px;
+}
+
 .cursor-shape-pointer:hover {
   cursor: pointer;
 }
