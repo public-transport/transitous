@@ -105,6 +105,38 @@ Then you can fetch individual regions using
 ./src/fetch.py feeds/<region>.json
 ```
 
+### More source options
+
+There are all kinds of options that may be specified in a source:
+
+Option Name       | Description
+----------------- | ------------------------------------------------------------------------------------------------------------------------------------
+`type`            | `http`, `transitland-atlas` or `url`. Url sources are not downloaded, but passed to MOTIS as URL. This is used for realtime feeds.
+`spec`            | `gtfs` or `gtfs-rt`. `gtfs-rt` may only be used when `type` is `url`.
+`fix`             | Fix / drop fields that are not correct.
+`skip`            | Don't download or use this feed.
+`skip-reason`     | Reason for why this feed can't be used right now.
+`fix_csv_quotes`  | Try to fix GTFS files in which fields are improperly quoted. A symptom of this is if stop names start containing CSV.
+`license`         | Dictionary of license-related options
+`http-options`    | Dictionary of HTTP-related options
+
+
+#### License Options
+
+Option Name       | Description
+----------------- | --------------------------------------------------
+`spdx-identifier` | License identifier from https://spdx.org/licenses/
+`url`             | Website that states the License of the data
+
+
+#### HTTP Options
+
+Option Name           | Description
+--------------------- | -----------------------------------------------------------------------------------------------------------------------------
+`headers`             | Dictionary of custom HTTP headers to send when checking for updates / downloading.
+`ignore-tls-errrors`  | Ignore expired / invalid TLS certificate
+`fetch-interval-days` | Fetch this feed at most every `n` days. Useful if a server doesn't send `Last-Modified`, or too comply with terms of service.
+
 
 ## Running a transitous instance locally
 
