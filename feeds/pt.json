@@ -40,7 +40,10 @@
         {
             "name": "Soflusa",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-eycs0-soflusa"
+            "transitland-atlas-id": "f-eycs0-soflusa",
+            "http-options": {
+                "ignore-tls-errors": true
+            }
         }
     ]
 }
