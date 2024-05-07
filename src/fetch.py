@@ -139,7 +139,7 @@ class Fetcher:
         if source.fix_csv_quotes:
             subprocess.check_call(["./src/fix-csv-quotes.py", output_path])
 
-        command = ["gtfstidy", output_path,
+        command = ["gtfsclean", output_path,
                    "--check-null-coords", "--output", output_path]
         if source.fix:
             command.append("--fix")

@@ -1,8 +1,8 @@
 # SPDX-FileCopyrightText: 2024 Jonah Brüchert <jbb@kaidan.im>
 # SPDX-License-Identifier: CC0-1.0
 
-FROM docker.io/golang:1.21 as build
-RUN GOBIN=/usr/local/bin/ go install github.com/patrickbr/gtfstidy@25d4d6d1079a5926d9a558546bbe36d5b4cdb45f
+FROM docker.io/golang:1.22 as build
+RUN GOBIN=/usr/local/bin/ go install github.com/public-transport/gtfsclean@latest
 
 
 FROM docker.io/debian:bookworm-slim
@@ -14,6 +14,6 @@ RUN apt-get update -y && \
     apt-get clean -y && \
     rm -rf /var/lib/apt/lists/* 
 
-COPY --from=build /usr/local/bin/gtfstidy /usr/local/bin/gtfstidy
+COPY --from=build /usr/local/bin/gtfsclean /usr/local/bin/gtfsclean
 RUN wget -qO - https://github.com/motis-project/motis/releases/download/${MOTIS_VERSION}/motis-linux-amd64.tar.bz2 | tar -C /opt/ -jx
 ENV PATH=/opt/motis:$PATH
