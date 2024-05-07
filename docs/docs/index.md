@@ -94,11 +94,11 @@ You can also test it locally. For that, first get an up to date copy of transitl
 git submodule update --remote --checkout --init
 ```
 
-You also need to have [gtfstidy](https://github.com/patrickbr/gtfstidy) installed.
-We provide a static build so you don't need to build your own.
+You also need to have [gtfscleany](https://github.com/public-transport/gtfsclean) installed.
+We provide a static build for linux so you don't need to build your own.
 ```
-wget -P ~/.local/bin https://github.com/public-transport/transitous/releases/download/gtfstidy/gtfstidy
-chmod +x ~/.local/bin/gtfstidy
+wget -P ~/.local/bin https://github.com/public-transport/gtfsclean/releases/download/snapshot-1/gtfsclean
+chmod +x ~/.local/bin/gtfsclean
 ```
 You can also use the container described below.
 
