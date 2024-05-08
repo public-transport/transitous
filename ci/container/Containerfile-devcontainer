@@ -2,7 +2,7 @@
 # SPDX-License-Identifier: CC0-1.0
 
 FROM docker.io/golang:1.22 as build
-RUN GOBIN=/usr/local/bin/ go install github.com/public-transport/gtfsclean@latest
+RUN GOPROXY=direct GOBIN=/usr/local/bin/ go install github.com/public-transport/gtfsclean@latest
 
 FROM docker.io/debian:bookworm-slim
 
