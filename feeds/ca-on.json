@@ -112,7 +112,8 @@
         {
             "name": "Guelph-Transit",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-dpwz-guelphtransit"
+            "transitland-atlas-id": "f-dpwz-guelphtransit",
+            "proxy": true
         },
         {
             "name": "Guelph-Transit",
