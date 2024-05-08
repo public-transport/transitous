@@ -55,6 +55,10 @@ class Fetcher:
                     "verify": not source.options.ignore_tls_errors
                 }
 
+                headers = source.options.headers
+                headers["user-agent"] \
+                    = "Transitous GTFS Fetcher (https://transitous.org)"
+
                 # Detect last modification time of local file
                 last_modified = None
                 if dest_path.exists():
@@ -72,7 +76,7 @@ class Fetcher:
 
                 # Fetch last modification time from the server
                 server_headers = \
-                    requests.head(download_url, headers=source.options.headers,
+                    requests.head(download_url, headers=headers,
                                   allow_redirects=True,
                                   **request_options).headers
 
@@ -87,7 +91,6 @@ class Fetcher:
 
                 # Tell the server not to send data if it is older
                 # than what we have
-                headers = source.options.headers
                 if last_modified:
                     headers["if-modified-since"] = last_modified \
                         .strftime("%a, %d %b %Y %X %Z")
