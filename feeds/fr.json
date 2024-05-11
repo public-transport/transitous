@@ -107,6 +107,7 @@
             "name": "Mobilites-M-tag",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u0h0-tag",
+            "fix": true,
             "http-options": {
                 "fetch-interval-days": 2
             }
