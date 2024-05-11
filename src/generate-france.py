@@ -17,7 +17,8 @@ if __name__ == "__main__":
             "gtfs-static-et-real-time-transporteur-thalys",
             "eurostar-gtfs",
             "arrets-horaires-et-parcours-theoriques-du-reseau-routier-regional-de-transport-scolaire-et-interurbain-60-oise",  # broken
-            "horaires-prevus-sur-les-lignes-de-transport-en-commun-dile-de-france-gtfs-jeux-olympiques-et-paralympiques-de-paris-2024-datahub" # try removing
+            "horaires-prevus-sur-les-lignes-de-transport-en-commun-dile-de-france-gtfs-jeux-olympiques-et-paralympiques-de-paris-2024-datahub", # try removing
+            "horaires-theoriques-des-cars-du-rhone"  # requires authentication
             ]
 
     out: list[dict] = []

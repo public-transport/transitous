@@ -489,13 +489,6 @@
             "license": "fr-lo"
         },
         {
-            "name": "horaires-theoriques-des-cars-du-rhone",
-            "type": "http",
-            "url": "https://download.data.grandlyon.com/files/rdata/cdr_carsdurhone.cdrtheorique/gtfs.zip",
-            "fix": true,
-            "license": "mobility-licence"
-        },
-        {
             "name": "horaires-theoriques-des-cars-region-ain-dans-la-metropole-de-lyon",
             "type": "http",
             "url": "https://download.data.grandlyon.com/files/rdata/carsregionain/GTFS.zip",
