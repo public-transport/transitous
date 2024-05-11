@@ -29,7 +29,7 @@ steps:
       - rm out/data -rf
       - ./src/generate-attribution.py
       - ./src/generate-motis-config.py import
-      - cd out && ../ci/motis-import.py > /dev/null && cd ..
+      - cd out && ../ci/motis-import.py > motis-import.log && cd ..
       - src/generate-motis-config.py full
   push:
     image: ghcr.io/public-transport/transitous/import:latest
