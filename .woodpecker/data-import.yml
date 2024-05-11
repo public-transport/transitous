@@ -9,6 +9,7 @@ when:
       - 'src/*'
       - 'ci/*'
       - 'ci/container/*'
+      - '.woodpecker/*.yml'
   - event: cron
     cron: daily-import
 
