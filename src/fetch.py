@@ -137,22 +137,20 @@ class Fetcher:
 
     def postprocess(self, source: Source,
                     input_path: Path, output_path: Path):
-        shutil.copyfile(input_path, output_path)
+        temp_file = output_path.parent / f".tmp-{output_path.name}"
+        shutil.copyfile(input_path, temp_file)
 
-        try:
-            if source.fix_csv_quotes:
-                subprocess.check_call(["./src/fix-csv-quotes.py", output_path])
+        if source.fix_csv_quotes:
+            subprocess.check_call(["./src/fix-csv-quotes.py", temp_file])
 
-            command = ["gtfsclean", str(output_path),
-                       "--check-null-coords", "--output", str(output_path)]
-            if source.fix:
-                command.append("--fix")
+        command = ["gtfsclean", str(temp_file),
+                   "--check-null-coords", "--output", str(temp_file)]
+        if source.fix:
+            command.append("--fix")
 
-            subprocess.check_call(command)
-        except subprocess.CalledProcessError as e:
-            os.remove(output_path)
-            os.remove(input_path)
-            raise e
+        subprocess.check_call(command)
+
+        os.rename(temp_file, output_path)
 
     def fetch(self, metadata: Path):
         region = Region(json.load(open(metadata, "r")))
