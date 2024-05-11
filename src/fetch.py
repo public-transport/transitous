@@ -55,7 +55,7 @@ class Fetcher:
                     "verify": not source.options.ignore_tls_errors
                 }
 
-                headers = source.options.headers
+                headers = source.options.headers.copy()
                 headers["user-agent"] \
                     = "Transitous GTFS Fetcher (https://transitous.org)"
 
