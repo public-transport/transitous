@@ -32,6 +32,9 @@ if __name__ == "__main__":
         "horaires-theoriques-et-temps-reel-des-navettes-hivernales-de-lalpe-dhuez-gtfs-gtfs-rt",  # 404 not found
         "arrets-horaires-et-parcours-theoriques-des-bus-du-reseau-des-transports-publics-envibus",  # timeout
         "horaires-theoriques-du-service-rhonexpress-de-la-metropole-de-lyon-et-du-departement-du-rhone",  # 401 not authorized
+        "breizhgo-bateaux",  # Confuses MOTIS and doesn't contain any trips
+        "donnees-theoriques-et-temps-reel-du-reseau-pass-thelle-bus-communaute-de-communes-thelloise",   # Confuses MOTIS and doesn't contain any trips
+        "3cm-horaires-theoriques-du-reseau-de-transport-urbain-solutions-transport-3cm"  # Confuses MOTIS and doesn't contain any trips
     ]
 
     out: list[dict] = []
@@ -54,4 +57,18 @@ if __name__ == "__main__":
 
             out.append(source)
 
-    json.dump(out, indent=4, fp=sys.stdout)
+    # This is an aggregated and improved feed that we want to keep
+    out.append({
+            "name": "Brittany",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-gbwc-mobibreizh",
+            "fix": True
+    })
+
+    with open("feeds/fr.json", "r") as f:
+        region = json.load(f)
+
+    region["sources"] = out
+
+    with open("feeds/fr.json", "w") as f:
+        json.dump(region, f, indent=4, ensure_ascii=False)

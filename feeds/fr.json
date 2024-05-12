@@ -96,7 +96,7 @@
         {
             "name": "reseau-urbain-et-interurbain-dile-de-france-mobilites",
             "type": "http",
-            "url": "https://eu.ftp.opendatasoft.com/stif/GTFS/IDFM-gtfs.zip",
+            "url": "https://gtech-transit-prod.apigee.net/v1/google/gtfs/odbl/iledefrance_public.zip?apikey=BasyG6OFZXgXnzWdQLTwJFGcGmeOs204&secret=gNo6F5PhQpsGRBCK",
             "fix": true,
             "license": "mobility-licence"
         },
@@ -222,7 +222,7 @@
         {
             "name": "arrets-horaires-et-parcours-theoriques-du-reseau-routier-regional-de-transport-scolaire-et-interurbain-60-oise",
             "type": "http",
-            "url": "https://api.oisemob.cityway.fr/dataflow/offre-tc/download?provider=KO2&amp;dataFormat=GTFS&amp;dataProfil=OPENDATA",
+            "url": "https://api.oisemob.cityway.fr/dataflow/offre-tc/download?provider=KO2&amp;dataFormat=gtfs&amp;dataProfil=REGION",
             "fix": true,
             "skip": true,
             "license": "odc-odbl"
@@ -230,7 +230,7 @@
         {
             "name": "arrets-horaires-et-parcours-theoriques-gtfs-du-reseau-routier-regional-de-transport-35",
             "type": "http",
-            "url": "https://opendata.hautsdefrance.fr/sites/default/files/data/transport/RHDF_GTFS_COM_SCO_59_P3A.zip",
+            "url": "https://opendata.hautsdefrance.fr/sites/default/files/data/transport/RHDF_GTFS_COM_SCO_59_P3B.zip",
             "fix": true,
             "license": "odc-odbl"
         },
@@ -433,7 +433,7 @@
         {
             "name": "lignes-des-reseaux-de-transport-zou-en-provence-alpes-cote-dazur",
             "type": "http",
-            "url": "https://trouver.datasud.fr/dataset/44187c20-e037-4733-950a-b4463d314b90/resource/94e94c79-6d3e-486d-b65b-79aa0c2f6ed1/download/gtfs.zip",
+            "url": "https://trouver.datasud.fr/dataset/44187c20-e037-4733-950a-b4463d314b90/resource/9ebd1d24-cca2-4f2e-9185-69db96fede8f/download/gtfs.zip",
             "fix": true,
             "license": "lov2"
         },
@@ -475,14 +475,15 @@
         {
             "name": "breizhgo-bateaux",
             "type": "http",
-            "url": "https://www.korrigo.bzh/ftp/OPENDATA/BREIZHGO_BATEAU_BREHAT.gtfs.zip",
+            "url": "https://www.korrigo.bzh/ftp/OPENDATA/BREIZHGO_BATEAU_ARZ.gtfs.zip",
             "fix": true,
+            "skip": true,
             "license": "odc-odbl"
         },
         {
             "name": "breizhgo-car",
             "type": "http",
-            "url": "https://www.korrigo.bzh/ftp/OPENDATA/BREIZHGO_CAR_RLP.gtfs.zip",
+            "url": "https://www.korrigo.bzh/ftp/OPENDATA/BREIZHGO_CAR_NS.gtfs.zip",
             "fix": true,
             "license": "odc-odbl"
         },
@@ -510,7 +511,7 @@
         {
             "name": "reseau-de-transport-interurbain-mobigo-en-bourgogne-franche-comte",
             "type": "http",
-            "url": "https://exs.mobigo.cityway.fr/gtfs.aspx?key=OPENDATA&operatorCode=UT70",
+            "url": "https://exs.mobigo.cityway.fr/gtfs.aspx?key=OPENDATA&operatorCode=UT25",
             "fix": true,
             "license": "lov2"
         },
@@ -531,7 +532,7 @@
         {
             "name": "reseaux-de-transports-en-commun-de-la-metropole-daix-marseille-provence-et-des-bouches-du-rhone",
             "type": "http",
-            "url": "https://tsvc2.pilote3.cityway.fr/api/Export/v1/GetExportedDataFile?ExportFormat=Gtfs&OperatorCode=SANPROVENCE",
+            "url": "https://app.mecatran.com/utw/ws/gtfsfeed/static/mamp-mrc?apiKey=70560f77767d05157479657b597a6544026b4b75",
             "fix": true,
             "license": "fr-lo"
         },
@@ -572,7 +573,7 @@
         {
             "name": "horaires-theoriques-du-reseau-libellule-sytral-de-la-communaute-dagglomeration-de-villefranche-beaujolais-saone",
             "type": "http",
-            "url": "https://download.data.grandlyon.com/files/rdata/lbl_libellule.lbltheorique/gtfs_libellule.zip",
+            "url": "https://gtech-transit-prod.apigee.net/v1/google/gtfs/odbl/lyon_libellule.zip?apikey=BasyG6OFZXgXnzWdQLTwJFGcGmeOs204&secret=gNo6F5PhQpsGRBCK",
             "fix": true,
             "skip": true,
             "license": "mobility-licence"
@@ -673,7 +674,7 @@
         {
             "name": "export-quotidien-au-format-gtfs-du-reseau-de-transport-lignes-d-azur",
             "type": "http",
-            "url": "http://opendata.nicecotedazur.org/data/storage/f/gtfs1715382901/GTFSExport.zip",
+            "url": "http://opendata.nicecotedazur.org/data/storage/f/gtfs1715469301/GTFSExport.zip",
             "fix": true,
             "license": "lov2"
         },
@@ -841,7 +842,7 @@
         {
             "name": "description-de-loffre-tad-tao-gtfs-flex-orleans-metropole",
             "type": "http",
-            "url": "https://data.orleans-metropole.fr/api/v2/catalog/datasets/om-mobilite-tao-tad-gtfsflex/attachments/gtfs_flex_tao_102023_zip",
+            "url": "https://data.orleans-metropole.fr/api/v2/catalog/datasets/om-mobilite-tao-tad-gtfsflex/attachments/gtfs_flex_stopsupdated_zip",
             "fix": true,
             "skip": true,
             "license": "fr-lo"
@@ -1039,7 +1040,7 @@
         {
             "name": "ametis",
             "type": "http",
-            "url": "https://static.data.gouv.fr/resources/ametis/20240320-120300/gtfs-sae-du-20-03-2024-au-05-07-2024.zip",
+            "url": "https://static.data.gouv.fr/resources/ametis/20240403-123438/gtfs-opendata-du-11-03-2025-au-05-07-2024.zip",
             "fix": true,
             "license": "odc-odbl"
         },
@@ -1361,7 +1362,7 @@
         {
             "name": "gtfs-urbain-de-la-zone-sud",
             "type": "http",
-            "url": "https://static.data.gouv.fr/resources/gtfs-urbain-de-la-zone-sud/20230821-030926/gtfs-maritime-martinique.zip",
+            "url": "https://static.data.gouv.fr/resources/gtfs-urbain-de-la-zone-sud/20240110-124752/gtfs-sud-sudlib.zip",
             "fix": true,
             "license": "lov2"
         },
@@ -1375,7 +1376,7 @@
         {
             "name": "donnees-theoriques-et-temps-reel-du-reseau-corolis-interurbain-communaute-dagglomeration-du-beauvaisis",
             "type": "http",
-            "url": "https://api.oisemob.cityway.fr/dataflow/offre-tc/download?provider=COROLIS_INT&dataFormat=GTFS&dataProfil=OPENDATA",
+            "url": "https://api.oisemob.cityway.fr/dataflow/tad/download?provider=COROLIS_INT&dataFormat=gtfs",
             "fix": true,
             "license": "lov2"
         },
@@ -1522,7 +1523,7 @@
         {
             "name": "agen-gtfs-urbain",
             "type": "http",
-            "url": "https://static.data.gouv.fr/resources/agen-gtfs-urbain/20230602-074204/agen-gtfs-urbain-navette-gravier-avril-2023-v2.zip",
+            "url": "https://static.data.gouv.fr/resources/agen-gtfs-urbain/20240108-130157/agen-gtfs-urbain-rentree-janvier-2024.zip",
             "fix": true,
             "license": "lov2"
         },
@@ -1585,7 +1586,7 @@
         {
             "name": "donnees-theoriques-et-temps-reel-du-reseau-axo-communaute-dagglomeration-creil-sud-oise",
             "type": "http",
-            "url": "https://api.oisemob.cityway.fr/dataflow/offre-tc/download?provider=AXO&dataFormat=GTFS&dataProfil=OPENDATA",
+            "url": "https://api.oisemob.cityway.fr/dataflow/tad/download?provider=AXO&dataFormat=gtfs",
             "fix": true,
             "license": "lov2"
         },
@@ -1732,7 +1733,7 @@
         {
             "name": "offre-de-transports-du-grand-albigeois-gtfs",
             "type": "http",
-            "url": "https://static.data.gouv.fr/resources/offre-de-transports-du-grand-albigeois-gtfs/20240111-081913/libea-reseau-periurbain-23-24-v1.8.zip",
+            "url": "https://static.data.gouv.fr/resources/offre-de-transports-du-grand-albigeois-gtfs/20231205-095206/libea-reseau-navettes-23-24.zip",
             "fix": true,
             "license": "odc-odbl"
         },
@@ -1851,7 +1852,7 @@
         {
             "name": "reseau-de-bus-urbain-horizon",
             "type": "http",
-            "url": "https://data.chateauroux-metropole.fr/api/v2/catalog/datasets/reseau-de-bus-urbain_horizon/alternative_exports/gtfs_20231109_115706_zip",
+            "url": "https://static.data.gouv.fr/resources/reseau-de-bus-urbain-horizon/20231109-153356/gtfs-20231109-115706.zip",
             "fix": true,
             "skip": true
         },
@@ -2126,6 +2127,7 @@
             "type": "http",
             "url": "https://api.oisemob.cityway.fr/dataflow/tad/download?provider=PASSTHELLE&dataFormat=gtfs",
             "fix": true,
+            "skip": true,
             "license": "lov2"
         },
         {
@@ -2223,7 +2225,7 @@
         {
             "name": "horaires-theoriques-de-la-navette-velo-du-pont-de-saint-nazaire-gtfs",
             "type": "http",
-            "url": "https://zenbus.net/gtfs/static/download.zip?dataset=loire-atlantique915785",
+            "url": "https://zenbus.net/gtfs/rt/poll.proto?dataset=loire-atlantique915785",
             "fix": true,
             "skip": true,
             "license": "lov2"
@@ -2245,7 +2247,7 @@
         {
             "name": "reseau-de-transport-urbains-dignois",
             "type": "http",
-            "url": "https://static.data.gouv.fr/resources/reseau-de-transport-urbains-dignois/20240115-102017/rtud-v6-gtfs-2024-01-15-10-50-02.zip",
+            "url": "https://static.data.gouv.fr/resources/reseau-de-transport-urbains-dignois/20240115-095308/rtud-v6-gtfs-2024-01-15-10-50-02.zip",
             "fix": true,
             "license": "lov2"
         },
@@ -2357,7 +2359,7 @@
         {
             "name": "offre-transport-en-commun-du-reseau-transpor-gtfs",
             "type": "http",
-            "url": "https://static.data.gouv.fr/resources/offre-transport-en-commun-du-reseau-transpor-gtfs/20220601-110936/transp-or-presaison-2022-gtfs-2022-06-01-10-46-06.zip",
+            "url": "https://static.data.gouv.fr/resources/offre-transport-en-commun-du-reseau-transpor-gtfs/20220107-105927/transp-or-hiver-travaux-pont-perols-gtfs-2022-01-07-10-57-41.zip",
             "fix": true,
             "license": "odc-odbl"
         },
@@ -2392,7 +2394,7 @@
         {
             "name": "reseau-urbain-interurbain-et-scolaire-de-la-communaute-dagglomeration-privas-centre-ardeche",
             "type": "http",
-            "url": "https://static.data.gouv.fr/resources/reseau-urbain-interurbain-et-scolaire-de-la-communaute-dagglomeration-privas-centre-ardeche/20240506-073041/t-cap-tcap56-2024-05-06.zip",
+            "url": "https://static.data.gouv.fr/resources/reseau-tcap/20220923-153856/t-cap-tcap-56-gtfs-2022-09-23-14-42-50.zip",
             "fix": true,
             "license": "fr-lo"
         },
@@ -2644,8 +2646,9 @@
         {
             "name": "3cm-horaires-theoriques-du-reseau-de-transport-urbain-solutions-transport-3cm",
             "type": "http",
-            "url": "https://api.mlt4.cityway.fr/dataflow/tad/download?provider=3CM",
+            "url": "https://exs.mlt4.cityway.fr/gtfs.aspx?operatorCode=3CM&key=OPENDATA",
             "fix": true,
+            "skip": true,
             "license": "odc-odbl"
         },
         {
@@ -2665,7 +2668,7 @@
         {
             "name": "horaires-theoriques-du-reseau-neobus-communaute-de-communes-de-louest-vosgien-gtfs",
             "type": "http",
-            "url": "https://static.data.gouv.fr/resources/horaires-theoriques-du-reseau-neobus-communaute-de-communes-de-louest-vosgien-gtfs/20240108-100313/gtfs-sadapnfc-neobus.zip",
+            "url": "https://static.data.gouv.fr/resources/horaires-theoriques-du-reseau-neobus-communaute-de-communes-de-louest-vosgien-gtfs/20240108-100432/gtfs-sadapnfc-neobus.zip",
             "fix": true,
             "license": "fr-lo"
         },
@@ -2714,7 +2717,7 @@
         {
             "name": "transport-urbain-du-bassin",
             "type": "http",
-            "url": "https://static.data.gouv.fr/resources/transport-urbain-du-bassin/20200805-161154/transports-urbains-du-bassin-version-1-3-gtfs-2020-07-30-17-59-13.zip",
+            "url": "https://static.data.gouv.fr/resources/transport-urbain-du-bassin/20240122-151122/transports-urbains-du-bassin-2-5-1-gtfs-2023-06-06-15-33-38.zip",
             "fix": true,
             "license": "lov2"
         },
