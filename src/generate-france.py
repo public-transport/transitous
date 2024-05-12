@@ -43,13 +43,17 @@ if __name__ == "__main__":
 
     out: list[dict] = []
     for dataset in datasets:
-        gtfs = list(filter(lambda r: "format" in r and r["format"] == "GTFS", dataset["resources"]))
+        gtfs = list(filter(lambda r: "format" in r and (r["format"] == "GTFS" or r["format"] == "gtfs-rt"), dataset["resources"]))
         if gtfs:
-            resource = gtfs[0]
+            resources = list(filter(lambda r: "format" in r and r["format"] == "GTFS", gtfs))
+            if not resources:
+                print(f"{dataset['slug']} only has GTFS-RT data?", file=sys.stderr)
+                continue
+
             source = {
                 "name": dataset["slug"],
                 "type": "http",
-                "url": resource["original_url"],
+                "url": resources[0]["original_url"],
                 "fix": True,
             }
 
@@ -59,6 +63,20 @@ if __name__ == "__main__":
             if "licence" in dataset and dataset["licence"] != "notspecified":
                 source["license"] = dataset["licence"]
 
+            out.append(source)
+
+            resources = list(filter(lambda r: "format" in r and r["format"] == "gtfs-rt", gtfs))
+            if not resources:
+                continue
+            if len(resources) > 1:
+                print(f"{dataset['slug']} has multiple GTFS-RT feeds?", file=sys.stderr)
+                continue
+
+            source = source.copy()
+            source["spec"] = "gtfs-rt"
+            source["type"] = "url"
+            source["url"] = resources[0]["original_url"]
+            del source["fix"]
             out.append(source)
 
     # This is an aggregated and improved feed that we want to keep
