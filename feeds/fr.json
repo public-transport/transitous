@@ -230,7 +230,7 @@
         {
             "name": "arrets-horaires-et-parcours-theoriques-gtfs-du-reseau-routier-regional-de-transport-35",
             "type": "http",
-            "url": "https://opendata.hautsdefrance.fr/sites/default/files/data/transport/RHDF_GTFS_COM_SCO_59_P3B.zip",
+            "url": "https://opendata.hautsdefrance.fr/sites/default/files/data/transport/RHDF_GTFS_COM_SCO_59_P3A.zip",
             "fix": true,
             "license": "odc-odbl"
         },
@@ -483,7 +483,7 @@
         {
             "name": "breizhgo-car",
             "type": "http",
-            "url": "https://www.korrigo.bzh/ftp/OPENDATA/BREIZHGO_CAR_NS.gtfs.zip",
+            "url": "https://www.korrigo.bzh/ftp/OPENDATA/BREIZHGO_CAR_56.gtfs.zip",
             "fix": true,
             "license": "odc-odbl"
         },
@@ -589,7 +589,7 @@
         {
             "name": "horaires-theoriques-du-reseau-transports-en-commun-lyonnais",
             "type": "http",
-            "url": "https://gtech-transit-prod.apigee.net/v1/google/gtfs/odbl/lyon_tcl.zip?apikey=BasyG6OFZXgXnzWdQLTwJFGcGmeOs204&secret=gNo6F5PhQpsGRBCK",
+            "url": "https://download.data.grandlyon.com/files/rdata/tcl_sytral.tcltheorique/GTFS_TCL.ZIP",
             "fix": true,
             "skip": true,
             "license": "mobility-licence"
@@ -962,7 +962,7 @@
         {
             "name": "horaires-theoriques-du-reseau-izilo-format-gtfs-de-lorient-agglomeration",
             "type": "http",
-            "url": "https://ratpdev-mosaic-prod-bucket-raw.s3-eu-west-1.amazonaws.com/99/exports/1/gtfs.zip",
+            "url": "https://s3.eu-west-1.amazonaws.com/files.orchestra.ratpdev.com/networks/rdla-lorient/exports/medias.zip",
             "fix": true,
             "license": "lov2"
         },
@@ -1011,7 +1011,7 @@
         {
             "name": "horaires-theoriques-et-en-temps-reel-des-bus-et-autocars-circulant-sur-le-reseau-cap-cotentin",
             "type": "http",
-            "url": "https://static.data.gouv.fr/resources/horaires-theoriques-et-en-temps-reel-des-bus-et-autocars-circulant-sur-le-reseau-cap-cotentin/20240229-084742/gtfs-capcotentin-29022024-au-30062024.zip",
+            "url": "https://static.data.gouv.fr/resources/horaires-theoriques-et-en-temps-reel-des-bus-et-autocars-circulant-sur-le-reseau-cap-cotentin/20240223-075645/lr-cap-cotentin-cherbourg-rennes.zip",
             "fix": true,
             "license": "fr-lo"
         },
@@ -1040,7 +1040,7 @@
         {
             "name": "ametis",
             "type": "http",
-            "url": "https://static.data.gouv.fr/resources/ametis/20240403-123438/gtfs-opendata-du-11-03-2025-au-05-07-2024.zip",
+            "url": "https://static.data.gouv.fr/resources/ametis/20240320-120300/gtfs-sae-du-20-03-2024-au-05-07-2024.zip",
             "fix": true,
             "license": "odc-odbl"
         },
@@ -1378,6 +1378,7 @@
             "type": "http",
             "url": "https://api.oisemob.cityway.fr/dataflow/tad/download?provider=COROLIS_INT&dataFormat=gtfs",
             "fix": true,
+            "skip": true,
             "license": "lov2"
         },
         {
@@ -1523,7 +1524,7 @@
         {
             "name": "agen-gtfs-urbain",
             "type": "http",
-            "url": "https://static.data.gouv.fr/resources/agen-gtfs-urbain/20240108-130157/agen-gtfs-urbain-rentree-janvier-2024.zip",
+            "url": "https://static.data.gouv.fr/resources/agen-gtfs-urbain/20230602-074204/agen-gtfs-urbain-navette-gravier-avril-2023-v2.zip",
             "fix": true,
             "license": "lov2"
         },
@@ -1588,6 +1589,7 @@
             "type": "http",
             "url": "https://api.oisemob.cityway.fr/dataflow/tad/download?provider=AXO&dataFormat=gtfs",
             "fix": true,
+            "skip": true,
             "license": "lov2"
         },
         {
@@ -1852,7 +1854,7 @@
         {
             "name": "reseau-de-bus-urbain-horizon",
             "type": "http",
-            "url": "https://static.data.gouv.fr/resources/reseau-de-bus-urbain-horizon/20231109-153356/gtfs-20231109-115706.zip",
+            "url": "https://data.chateauroux-metropole.fr/api/v2/catalog/datasets/reseau-de-bus-urbain_horizon/alternative_exports/gtfs_20231109_115706_zip",
             "fix": true,
             "skip": true
         },
@@ -2247,7 +2249,7 @@
         {
             "name": "reseau-de-transport-urbains-dignois",
             "type": "http",
-            "url": "https://static.data.gouv.fr/resources/reseau-de-transport-urbains-dignois/20240115-095308/rtud-v6-gtfs-2024-01-15-10-50-02.zip",
+            "url": "https://static.data.gouv.fr/resources/reseau-de-transport-urbains-dignois/20240115-102017/rtud-v6-gtfs-2024-01-15-10-50-02.zip",
             "fix": true,
             "license": "lov2"
         },
@@ -2298,6 +2300,7 @@
             "type": "http",
             "url": "https://api.oisemob.cityway.fr/dataflow/offre-tc/download?provider=SABLONS&dataFormat=GTFS&dataProfil=OPENDATA",
             "fix": true,
+            "skip": true,
             "license": "lov2"
         },
         {
@@ -2668,7 +2671,7 @@
         {
             "name": "horaires-theoriques-du-reseau-neobus-communaute-de-communes-de-louest-vosgien-gtfs",
             "type": "http",
-            "url": "https://static.data.gouv.fr/resources/horaires-theoriques-du-reseau-neobus-communaute-de-communes-de-louest-vosgien-gtfs/20240108-100432/gtfs-sadapnfc-neobus.zip",
+            "url": "https://static.data.gouv.fr/resources/horaires-theoriques-du-reseau-neobus-communaute-de-communes-de-louest-vosgien-gtfs/20240108-100313/gtfs-sadapnfc-neobus.zip",
             "fix": true,
             "license": "fr-lo"
         },
@@ -2761,6 +2764,7 @@
             "type": "http",
             "url": "https://api.oisemob.cityway.fr/dataflow/offre-tc/download?provider=HOPLA&dataFormat=GTFS&dataProfil=OPENDATA",
             "fix": true,
+            "skip": true,
             "license": "lov2"
         },
         {

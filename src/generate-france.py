@@ -33,8 +33,12 @@ if __name__ == "__main__":
         "arrets-horaires-et-parcours-theoriques-des-bus-du-reseau-des-transports-publics-envibus",  # timeout
         "horaires-theoriques-du-service-rhonexpress-de-la-metropole-de-lyon-et-du-departement-du-rhone",  # 401 not authorized
         "breizhgo-bateaux",  # Confuses MOTIS and doesn't contain any trips
-        "donnees-theoriques-et-temps-reel-du-reseau-pass-thelle-bus-communaute-de-communes-thelloise",   # Confuses MOTIS and doesn't contain any trips
-        "3cm-horaires-theoriques-du-reseau-de-transport-urbain-solutions-transport-3cm"  # Confuses MOTIS and doesn't contain any trips
+        "donnees-theoriques-et-temps-reel-du-reseau-pass-thelle-bus-communaute-de-communes-thelloise",  # Confuses MOTIS and doesn't contain any trips
+        "3cm-horaires-theoriques-du-reseau-de-transport-urbain-solutions-transport-3cm",  # Confuses MOTIS and doesn't contain any trips
+        "donnees-theoriques-et-temps-reel-du-reseau-corolis-interurbain-communaute-dagglomeration-du-beauvaisis",  # Confuses MOTIS
+        "donnees-theoriques-et-temps-reel-du-reseau-axo-communaute-dagglomeration-creil-sud-oise",  # Confuses MOTIS
+        "donnees-theoriques-et-temps-reel-du-reseau-sablons-bus-communaute-de-communes-des-sablons",  # Confuses MOTIS
+        "donnees-theoriques-du-reseau-hopla-communaute-de-communes-de-la-plaine-destrees",  # Confuses MOTIS
     ]
 
     out: list[dict] = []
@@ -58,12 +62,9 @@ if __name__ == "__main__":
             out.append(source)
 
     # This is an aggregated and improved feed that we want to keep
-    out.append({
-            "name": "Brittany",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-gbwc-mobibreizh",
-            "fix": True
-    })
+    out.append(
+        {"name": "Brittany", "type": "transitland-atlas", "transitland-atlas-id": "f-gbwc-mobibreizh", "fix": True}
+    )
 
     with open("feeds/fr.json", "r") as f:
         region = json.load(f)
