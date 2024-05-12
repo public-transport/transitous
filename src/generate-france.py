@@ -60,8 +60,9 @@ if __name__ == "__main__":
             if dataset["slug"] in skip:
                 source["skip"] = True
 
-            if "licence" in dataset and dataset["licence"] != "notspecified":
-                source["license"] = dataset["licence"]
+            if "page_url" in dataset:
+                source["license"] = {}
+                source["license"]["url"] = dataset["page_url"]
 
             out.append(source)
 
