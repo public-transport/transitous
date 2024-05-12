@@ -30,7 +30,8 @@ if __name__ == "__main__":
             "horaires-theoriques-et-temps-reel-des-navettes-de-la-station-de-tignes-gtfs-gtfs-rt",
             "horaires-theoriques-et-temps-reel-des-navettes-de-val-disere-gtfs-gtfs-rt", # 404 not found
             "horaires-theoriques-et-temps-reel-des-navettes-hivernales-de-lalpe-dhuez-gtfs-gtfs-rt", # 404 not found
-            "arrets-horaires-et-parcours-theoriques-des-bus-du-reseau-des-transports-publics-envibus" # timeout
+            "arrets-horaires-et-parcours-theoriques-des-bus-du-reseau-des-transports-publics-envibus", # timeout
+            "fr-horaires-theoriques-du-service-rhonexpress-de-la-metropole-de-lyon-et-du-departement-du-rhone" # 401 not authorized
             ]
 
     out: list[dict] = []
