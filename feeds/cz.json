@@ -3,9 +3,19 @@
         {
             "name": "Marcus Lundblad",
             "github": "mlundblad"
+        },
+        {
+            "name": "Jonah Brüchert",
+            "github": "jbruechert"
         }
     ],
     "sources": [
+        {
+            "name": "aggregated",
+            "type": "http",
+            "url": "https://data.jr.ggu.cz/results/latest/CZPTT_GTFS.zip",
+            "fix": true
+        },
         {
             "name": "PID",
             "type": "transitland-atlas",
