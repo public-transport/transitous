@@ -34,6 +34,7 @@ host=127.0.0.1
 first_day=TODAY
 num_days=365
 match_duplicates=true
+link_stop_distance=20
 {% if flavour != "import" %}
 {% for feed in gtfsrt_feeds %}gtfsrt={{ feed.id }}|{{ feed.url }}{% if feed.authorization %}|{{ feed.authorization }}{% endif %}
 {% endfor %}
