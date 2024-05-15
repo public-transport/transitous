@@ -44,6 +44,11 @@ server {
     location /api/ {
         proxy_pass http://localhost:8000/;
 
+        proxy_connect_timeout       60;
+        proxy_send_timeout          60;
+        proxy_read_timeout          60;
+        send_timeout                60;
+
         proxy_set_header Forwarded $remote_addr;
     }
 
