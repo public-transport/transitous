@@ -8,7 +8,7 @@
 
 - name: Unpack MOTIS
   unarchive:
-    src: https://github.com/motis-project/motis/releases/download/v0.12.4/motis-linux-amd64.tar.bz2
+    src: https://github.com/motis-project/motis/releases/download/v0.12.5/motis-linux-amd64.tar.bz2
     dest: /opt/
     remote_src: yes
 
