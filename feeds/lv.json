@@ -15,7 +15,7 @@
         {
             "name": "rigas-satiksme",
             "type": "http",
-            "url": "https://gtfs.pro/files/uran/improved-gtfs-satiksme.zip",
+            "url": "https://s3.gtfs.pro/files/uran/improved-gtfs-satiksme.zip",
             "license": {
                 "spdx-identifier": "CC0-1.0"
             }
@@ -23,7 +23,7 @@
         {
             "name": "rigas-saraksti",
             "type": "http",
-            "url": "https://gtfs.pro/files/uran/improved-gtfs-saraksti.zip",
+            "url": "https://s3.gtfs.pro/files/uran/improved-gtfs-saraksti.zip",
             "license": {
                 "spdx-identifier": "CC0-1.0"
             }

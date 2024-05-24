@@ -9,13 +9,13 @@
         {
             "name": "great-britain",
             "type": "http",
-            "url": "https://gtfs.pro/files/uran/improved-gtfs-great-britain.zip",
+            "url": "https://s3.gtfs.pro/files/uran/improved-gtfs-great-britain.zip",
             "fix": true
         },
         {
             "name": "northern-ireland",
             "type": "http",
-            "url": "https://gtfs.pro/files/uran/improved-gtfs-northern-ireland.zip"
+            "url": "https://s3.gtfs.pro/files/uran/improved-gtfs-northern-ireland.zip"
         }
     ]
 }
