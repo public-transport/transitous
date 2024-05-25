@@ -210,7 +210,13 @@ class Fetcher:
             # Something new was downloaded or the data was previously not processed
             print(f"Postprocessing {region_name}-{source.name} with gtfstidy…")
             sys.stdout.flush()
-            self.postprocess(source, download_path, output_path)
+
+            try:
+                self.postprocess(source, download_path, output_path)
+            except Exception as e:
+                eprint(f"Error: Could not postprocess {region_name}-{source.name}: {e}")
+                errors += 1
+                continue
 
             print()
             sys.stdout.flush()
