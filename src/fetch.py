@@ -107,7 +107,7 @@ class Fetcher:
                     print("Error: Could not fetch file:")
                     print("Status Code:", response.status_code,
                           "Body:", response.content)
-                    sys.exit(1)
+                    raise Exception()
 
                 # Update our last_modified_server information from the response
                 # of the actual download. The values of the head request can
@@ -198,7 +198,7 @@ class Fetcher:
 
             try:
                 new_data = self.fetch_source(download_path, source)
-            except requests.exceptions.ConnectionError as e:
+            except Exception as e:
                 eprint(f"Error: Could not fetch {region_name}-{source.name}: {e}")
                 errors += 1
                 continue
