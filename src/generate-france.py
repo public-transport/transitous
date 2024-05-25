@@ -39,7 +39,8 @@ if __name__ == "__main__":
         "donnees-theoriques-et-temps-reel-du-reseau-axo-communaute-dagglomeration-creil-sud-oise",  # Confuses MOTIS
         "donnees-theoriques-et-temps-reel-du-reseau-sablons-bus-communaute-de-communes-des-sablons",  # Confuses MOTIS
         "donnees-theoriques-du-reseau-hopla-communaute-de-communes-de-la-plaine-destrees",  # Confuses MOTIS
-        "tedbus-horaires"  # GTFS-RT tagges as GTFS
+        "tedbus-horaires",  # GTFS-RT tagges as GTFS
+        "donnees-theoriques-et-temps-reel-du-reseau-le-bus-communaute-de-communes-du-clermontois"  # Confuses MOTIS
     ]
 
     out: list[dict] = []

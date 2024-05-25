@@ -4087,6 +4087,7 @@
             "type": "http",
             "url": "https://api.oisemob.cityway.fr/dataflow/tad/download?provider=LEBUS&dataFormat=gtfs",
             "fix": true,
+            "skip": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/donnees-theoriques-et-temps-reel-du-reseau-le-bus-communaute-de-communes-du-clermontois"
             }
