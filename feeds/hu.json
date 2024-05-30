@@ -25,6 +25,16 @@
             "name": "bkk",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u2m-bkk"
+        },
+        {
+            "name": "v-busz",
+            "type": "http",
+            "url": "https://www.vbusz.hu/gtfs"
+        },
+        {
+            "name": "mkv",
+            "type": "http",
+            "url": "https://gtfsapi.mvkzrt.hu/gtfs/gtfs.zip"
         }
     ]
 }
