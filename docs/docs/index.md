@@ -169,7 +169,7 @@ Now inside the container, you can download and post-process all the feeds. This 
 The `out/` directory should now contain a number of zip files.
 
 In addition to those, you also need a background map. Importing all of europe would take too long,
-so for now just a smaller region.
+so for now, use a smaller region.
 You can find working map pbf downloads at [Geofabrik](https://download.geofabrik.de/).
 You can click on the region names to find downloads for smaller subregions.
 
