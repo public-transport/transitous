@@ -1,0 +1,20 @@
+{
+    "maintainers": [
+        {
+            "name": "Ken Bloom",
+            "github": "kbloom"
+        }
+    ],
+    "sources": [
+        {
+            "name": "MBTA",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-drt-mbta"
+        },
+        {
+            "name": "MBTA",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-mbta~rt"
+        }
+    ]
+}
