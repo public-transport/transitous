@@ -15,6 +15,31 @@
             "name": "MBTA",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-mbta~rt"
+        },
+        {
+            "name": "LoganExpress",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-drt3-909983"
+        },
+        {
+            "name": "MWRTA",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-drt0-metrowestregionaltransitauthority"
+        },
+        {
+            "name": "BrocktonMA",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-drmr-brockton~ma~us"
+        },
+        {
+            "name": "LexingtonMA",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-lexpress~lexington~ma"
+        },
+        {
+            "name": "Massport",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-drt3-909983"
         }
     ]
 }
