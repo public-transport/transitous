@@ -94,7 +94,7 @@ You can also test it locally. For that, first get an up to date copy of transitl
 git submodule update --remote --checkout --init
 ```
 
-You also need to have [gtfscleany](https://github.com/public-transport/gtfsclean) installed.
+You also need to have [gtfsclean](https://github.com/public-transport/gtfsclean) installed.
 We provide a static build for linux so you don't need to build your own.
 ```
 wget -P ~/.local/bin https://github.com/public-transport/gtfsclean/releases/download/snapshot-1/gtfsclean
