@@ -11,6 +11,12 @@
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-9-amtrak~amtrakcalifornia~amtrakcharteredvehicle",
             "fix": true
+        },
+        {
+            "name": "flixbus",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9-flixbus",
+            "fix": true
         }
     ]
 }
