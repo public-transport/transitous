@@ -27,11 +27,6 @@
             "transitland-atlas-id": "f-busit~nz"
         },
         {
-            "name": "Metro-Christchurch",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-rb6b-metrochristchurch~rt"
-        },
-        {
             "name": "Uzabus-Wellington",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-rbs-gowellington~tranzitcoachlines~paraparaumutaxisltd~kapitic"
