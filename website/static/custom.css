@@ -50,3 +50,7 @@
 .cursor-shape-pointer:hover {
   cursor: pointer;
 }
+
+.text-xs {
+  font-size: 10px;
+}

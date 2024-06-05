@@ -76,10 +76,23 @@ type AddressResponse = { content :: { guesses :: Array Address } }
 
 data Guess = StationGuess Station | AddressGuess Address
 
+getCity :: Address -> Maybe String
+getCity address =
+  address.regions
+    # find (\r -> r.admin_level <= 8)
+    # map (_.name)
+
+getCountry :: Address -> Maybe String
+getCountry address =
+  address.regions
+    # find (\r -> r.admin_level == 2)
+    # map (_.name)
+
 getRegion :: Address -> Maybe String
 getRegion address = do
-  region <- find (\region -> region.admin_level == 6) address.regions
-  Just region.name
+  city <- getCity address
+  country <- getCountry address
+  Just $ city <> ", " <> country
 
 parseMotisResponse :: forall a. DecodeJson a => String -> Either JsonDecodeError a
 parseMotisResponse text = do
@@ -222,23 +235,25 @@ view state dispatch = H.div "mb-3"
               if i == state.currentlySelectedIndex then H.li_ "dropdown-item dropdown-item-active cursor-shape-pointer"
                 { onClick: dispatch <| Select (StationGuess station), autoFocus: true }
                 [ H.i "bi bi-train-front-fill" ""
-                , H.span "p-2" (station.name <> " ")
+                , H.span "p-2" (station.name)
                 ]
               else H.li_ "dropdown-item cursor-shape-pointer"
                 { onClick: dispatch <| Select (StationGuess station) }
                 [ H.i "bi bi-train-front-fill" ""
-                , H.span "p-2" (station.name <> " ")
+                , H.span "p-2" (station.name)
                 ]
             AddressGuess address -> do
               if i == state.currentlySelectedIndex then H.li_ "dropdown-item dropdown-item-active cursor-shape-pointer"
                 { onClick: dispatch <| Select (AddressGuess address), autoFocus: true }
                 [ H.i "bi bi-geo-alt-fill" ""
-                , H.span "p-2" (address.name <> " " <> fromMaybe "" (getRegion address))
+                , H.span "p-2" address.name
+                , H.span "text-secondary text-xs" (fromMaybe "" $ getRegion address)
                 ]
               else H.li_ "dropdown-item cursor-shape-pointer"
                 { onClick: dispatch <| Select (AddressGuess address) }
                 [ H.i "bi bi-geo-alt-fill" ""
-                , H.span "p-2" (address.name <> " " <> fromMaybe "" (getRegion address))
+                , H.span "p-2" address.name
+                , H.span "text-secondary text-xs" (fromMaybe "" $ getRegion address)
                 ]
       )
       (zip (0 .. (length state.entries)) state.entries)
