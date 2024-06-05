@@ -14,7 +14,7 @@ import Elmish.HTML.Styled as H
 import Elmish.Component (fork, forkMaybe)
 
 import Data.Either (Either(..))
-import Data.Array (length, zip, (..), (!!))
+import Data.Array (length, zip, (..), (!!), null)
 import Data.Maybe (Maybe(..), fromMaybe)
 import Data.Tuple (Tuple(..))
 import Data.Foldable (find)
@@ -150,11 +150,10 @@ requestGuesses :: String -> Aff (Array Guess)
 requestGuesses query = do
   (stationResponse :: Maybe StationResponse) <- sendMotisRequest (stationRequest query)
   (addressResponse :: Maybe AddressResponse) <- sendMotisRequest (addressRequest query)
-  pure $ case stationResponse of
-    Just sr -> case addressResponse of
-      Just ar -> map StationGuess sr.content.guesses <> map AddressGuess ar.content.guesses
-      Nothing -> []
-    Nothing -> []
+  pure $ fromMaybe [] do
+    sr <- stationResponse
+    ar <- addressResponse
+    Just $ map StationGuess sr.content.guesses <> map AddressGuess ar.content.guesses
 
 requestGuessesDebounced :: State -> String -> Transition Message State
 requestGuessesDebounced state query =
@@ -223,8 +222,9 @@ view state dispatch = H.div "mb-3"
             AddressGuess { name } -> name
           Nothing -> state.query
       }
-  , if state.showSuggestions && (length state.entries) > 0 then H.ul "dropdown-menu show" $ suggestionEntries
-    else H.ul "dropdown-menu" $ suggestionEntries
+  , case state.showSuggestions && not (null state.entries) of
+      true -> H.ul "dropdown-menu show" suggestionEntries
+      false -> H.ul "dropdown-menu" suggestionEntries
   ]
   where
   suggestionEntries =
