@@ -219,17 +219,15 @@ view state dispatch = H.div "mb-3"
       ( \(Tuple i guess) ->
           case guess of
             StationGuess station -> do
-              H.div ""
-                [ if i == state.currentlySelectedIndex then H.li_ "dropdown-item dropdown-item-active cursor-shape-pointer"
-                    { onClick: dispatch <| Select (StationGuess station), autoFocus: true }
-                    [ H.i "bi bi-train-front-fill" ""
-                    , H.span "p-2" (station.name <> " ")
-                    ]
-                  else H.li_ "dropdown-item cursor-shape-pointer"
-                    { onClick: dispatch <| Select (StationGuess station) }
-                    [ H.i "bi bi-train-front-fill" ""
-                    , H.span "p-2" (station.name <> " ")
-                    ]
+              if i == state.currentlySelectedIndex then H.li_ "dropdown-item dropdown-item-active cursor-shape-pointer"
+                { onClick: dispatch <| Select (StationGuess station), autoFocus: true }
+                [ H.i "bi bi-train-front-fill" ""
+                , H.span "p-2" (station.name <> " ")
+                ]
+              else H.li_ "dropdown-item cursor-shape-pointer"
+                { onClick: dispatch <| Select (StationGuess station) }
+                [ H.i "bi bi-train-front-fill" ""
+                , H.span "p-2" (station.name <> " ")
                 ]
             AddressGuess address -> do
               if i == state.currentlySelectedIndex then H.li_ "dropdown-item dropdown-item-active cursor-shape-pointer"
