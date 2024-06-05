@@ -6,7 +6,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 
 module MotisForward where
 
-import Prelude ((<<<), ($))
+import Prelude (($))
 
 import Data.Argonaut.Encode (toJsonString)
 
@@ -22,13 +22,20 @@ type StationMessage = { type :: String, station :: Station }
 toStationMessage :: Station -> StationMessage
 toStationMessage = { type: "Station", station: _ }
 
-encodeStation :: Station -> String
-encodeStation = toJsonString <<< toStationMessage
+type PositionMessage = { type :: String, position :: Position }
 
-toMotisWebUrl :: Station -> Station -> String
+toPositionMessage :: Position -> PositionMessage
+toPositionMessage = { type: "Position", position: _ }
+
+encodeEnd :: Guess -> String
+encodeEnd = case _ of
+  StationGuess station -> toJsonString $ toStationMessage station
+  AddressGuess address -> toJsonString $ toPositionMessage address.pos
+
+toMotisWebUrl :: Guess -> Guess -> String
 toMotisWebUrl start destination = "https://routing.spline.de/?motis=https%3A%2F%2Frouting.spline.de%2Fapi&" <> urlQuery
   where
   urlQuery = fromMaybe "" $ encode $ fromArray
-    [ Tuple "fromLocation" (Just (encodeStation start))
-    , Tuple "toLocation" (Just (encodeStation destination))
+    [ Tuple "fromLocation" (Just (encodeEnd start))
+    , Tuple "toLocation" (Just (encodeEnd destination))
     ]

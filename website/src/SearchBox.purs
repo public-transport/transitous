@@ -15,16 +15,17 @@ import Elmish.Component (fork, forkMaybe)
 
 import Data.Either (Either(..))
 import Data.Array (length, zip, (..), (!!))
-import Data.Maybe (Maybe(..))
+import Data.Maybe (Maybe(..), fromMaybe)
 import Data.Tuple (Tuple(..))
+import Data.Foldable (find)
 import Effect.Class (liftEffect)
 import Effect.Console (log)
 import Effect.Aff (Aff, delay)
 
-import Data.Argonaut.Decode (decodeJson)
+import Data.Argonaut.Decode (decodeJson, class DecodeJson)
 import Data.Argonaut.Decode.Parser (parseJson)
 import Data.Argonaut.Decode.Error (JsonDecodeError)
-import Data.Argonaut.Encode (toJsonString)
+import Data.Argonaut.Encode (toJsonString, class EncodeJson)
 
 import Fetch (Method(..), fetch)
 
@@ -35,13 +36,13 @@ import Data.Time.Duration (Milliseconds(..))
 
 -- Requests
 type StationGuesserRequest = { input :: String, guess_count :: Int }
-type MotisRequest = { content_type :: String, content :: StationGuesserRequest, destination :: { type :: String, target :: String } }
+type MotisRequest a = { content_type :: String, content :: a, destination :: { type :: String, target :: String } }
 
-serializeMotisRequest :: MotisRequest -> String
+serializeMotisRequest :: forall a. (EncodeJson a) => MotisRequest a -> String
 serializeMotisRequest = toJsonString
 
-guessRequest :: String -> String
-guessRequest text = serializeMotisRequest
+stationRequest :: String -> String
+stationRequest text = serializeMotisRequest
   { content_type: "StationGuesserRequest"
   , destination:
       { type: "Module"
@@ -53,30 +54,52 @@ guessRequest text = serializeMotisRequest
       }
   }
 
+addressRequest :: String -> String
+addressRequest text = serializeMotisRequest
+  { content_type: "AddressRequest"
+  , destination:
+      { type: "Module"
+      , target: "/address"
+      }
+  , content:
+      { input: text }
+  }
+
 -- Response
 type Position = { lat :: Number, lng :: Number }
 type Station = { id :: String, name :: String, pos :: Position }
 type StationResponse = { content :: { guesses :: Array Station } }
 
-parseMotisResponse :: String -> Either JsonDecodeError StationResponse
+type Region = { name :: String, admin_level :: Int }
+type Address = { pos :: Position, name :: String, type :: String, regions :: Array Region }
+type AddressResponse = { content :: { guesses :: Array Address } }
+
+data Guess = StationGuess Station | AddressGuess Address
+
+getRegion :: Address -> Maybe String
+getRegion address = do
+  region <- find (\region -> region.admin_level == 6) address.regions
+  Just region.name
+
+parseMotisResponse :: forall a. DecodeJson a => String -> Either JsonDecodeError a
 parseMotisResponse text = do
   decoded <- parseJson text
   decodeJson decoded
 
 data Message
   = SearchChanged String
-  | GotResults (Array Station)
+  | GotResults (Array Guess)
   | ShowSuggestions Boolean
-  | Select Station
+  | Select Guess
   | NewInput DateTime
   | StartGuessRequest String
   | SelectionUp
   | SelectionDown
 
 type State =
-  { entries :: Array Station
+  { entries :: Array Guess
   , showSuggestions :: Boolean
-  , station :: Maybe Station
+  , station :: Maybe Guess
   , query :: String
   , placeholderText :: String
   , lastRequestTime :: Maybe DateTime
@@ -86,28 +109,38 @@ type State =
 debounceDelay :: Milliseconds
 debounceDelay = Milliseconds 150.0
 
-requestGuesses :: String -> Aff (Array Station)
-requestGuesses query = do
+logAff = log >>> liftEffect
+
+sendMotisRequest :: forall a. DecodeJson a => String -> Aff (Maybe a)
+sendMotisRequest request = do
   let requestUrl = "https://routing.spline.de/api/"
   { status, statusText, text } <- fetch requestUrl
     { method: POST
     , headers: { "Content-Type": "application/json" }
-    , body: guessRequest query
+    , body: request
     }
   responseBody <- text
 
   if status /= 200 then do
     logAff (statusText <> responseBody)
-    pure []
+    pure Nothing
   else do
     let result = parseMotisResponse responseBody
     case result of
       Left err -> do
         logAff (show err)
-        pure []
-      Right response -> pure (response.content.guesses)
-  where
-  logAff = log >>> liftEffect
+        pure Nothing
+      Right response -> pure (Just response)
+
+requestGuesses :: String -> Aff (Array Guess)
+requestGuesses query = do
+  (stationResponse :: Maybe StationResponse) <- sendMotisRequest (stationRequest query)
+  (addressResponse :: Maybe AddressResponse) <- sendMotisRequest (addressRequest query)
+  case stationResponse of
+    Just sr -> case addressResponse of
+      Just ar -> pure $ map StationGuess sr.content.guesses <> map AddressGuess ar.content.guesses
+      Nothing -> pure []
+    Nothing -> pure []
 
 requestGuessesDebounced :: State -> String -> Transition Message State
 requestGuessesDebounced state query =
@@ -171,7 +204,9 @@ view state dispatch = H.div "mb-3"
             pure $ Select station
           _ -> Nothing
       , value: case state.station of
-          Just { name } -> name
+          Just guess -> case guess of
+            StationGuess { name } -> name
+            AddressGuess { name } -> name
           Nothing -> state.query
       }
   , if state.showSuggestions && (length state.entries) > 0 then H.ul "dropdown-menu show" $ suggestionEntries
@@ -180,12 +215,29 @@ view state dispatch = H.div "mb-3"
   where
   suggestionEntries =
     map
-      ( \(Tuple i { name, id, pos }) ->
-          if i == state.currentlySelectedIndex then H.li_ "dropdown-item dropdown-item-active cursor-shape-pointer"
-            { onClick: dispatch <| Select { name, id, pos }, autoFocus: true }
-            name
-          else H.li_ "dropdown-item cursor-shape-pointer"
-            { onClick: dispatch <| Select { name, id, pos } }
-            name
+      ( \(Tuple i guess) ->
+          case guess of
+            StationGuess station -> do
+              if i == state.currentlySelectedIndex then H.li_ "dropdown-item dropdown-item-active cursor-shape-pointer"
+                { onClick: dispatch <| Select (StationGuess station), autoFocus: true }
+                [ H.i "bi bi-train-front-fill" ""
+                , H.span "p-2" (station.name <> " ")
+                ]
+              else H.li_ "dropdown-item cursor-shape-pointer"
+                { onClick: dispatch <| Select (StationGuess station) }
+                [ H.i "bi bi-train-front-fill" ""
+                , H.span "p-2" (station.name <> " ")
+                ]
+            AddressGuess address -> do
+              if i == state.currentlySelectedIndex then H.li_ "dropdown-item dropdown-item-active cursor-shape-pointer"
+                { onClick: dispatch <| Select (AddressGuess address), autoFocus: true }
+                [ H.i "bi bi-geo-alt-fill" ""
+                , H.span "p-2" (address.name <> " " <> fromMaybe "" (getRegion address))
+                ]
+              else H.li_ "dropdown-item cursor-shape-pointer"
+                { onClick: dispatch <| Select (AddressGuess address) }
+                [ H.i "bi bi-geo-alt-fill" ""
+                , H.span "p-2" (address.name <> " " <> fromMaybe "" (getRegion address))
+                ]
       )
       (zip (0 .. (length state.entries)) state.entries)
