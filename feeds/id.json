@@ -1,0 +1,15 @@
+{
+    "maintainers": [
+        {
+            "name": "Sander van Kasteel",
+            "github": "sandervankasteel"
+        }
+    ],
+    "sources": [
+        {
+            "name": "Transjakarta",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-transjakarta~id"
+        }
+    ]
+}
