@@ -50,7 +50,7 @@ stationRequest text = serializeMotisRequest
       }
   , content:
       { input: text
-      , guess_count: 10
+      , guess_count: 6
       }
   }
 
