@@ -9,7 +9,10 @@
         {
             "name": "Transjakarta",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-transjakarta~id"
+            "transitland-atlas-id": "f-transjakarta~id",
+            "http-options": {
+                "ignore-tls-errors": true
+            }
         }
     ]
 }
