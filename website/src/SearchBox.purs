@@ -14,7 +14,7 @@ import Elmish.HTML.Styled as H
 import Elmish.Component (fork, forkMaybe)
 
 import Data.Either (Either(..))
-import Data.Array (length, zip, (..), (!!), null)
+import Data.Array (length, zip, (..), (!!), null, nubBy)
 import Data.Maybe (Maybe(..), fromMaybe)
 import Data.Tuple (Tuple(..))
 import Data.Foldable (find)
@@ -94,6 +94,9 @@ getRegion address = do
   country <- getCountry address
   Just $ city <> ", " <> country
 
+uniqueAddresses :: Array Address -> Array Address
+uniqueAddresses = nubBy (\a b -> compare (getRegion a) (getRegion b))
+
 parseMotisResponse :: forall a. DecodeJson a => String -> Either JsonDecodeError a
 parseMotisResponse text = do
   decoded <- parseJson text
@@ -153,7 +156,7 @@ requestGuesses query = do
   pure $ fromMaybe [] do
     sr <- stationResponse
     ar <- addressResponse
-    Just $ map StationGuess sr.content.guesses <> map AddressGuess ar.content.guesses
+    Just $ map StationGuess sr.content.guesses <> map AddressGuess (uniqueAddresses ar.content.guesses)
 
 requestGuessesDebounced :: State -> String -> Transition Message State
 requestGuessesDebounced state query =
