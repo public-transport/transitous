@@ -9,10 +9,7 @@
         {
             "name": "rejseplanen",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-rejseplanen~dk~gtfs",
-            "http-options": {
-                "ignore-tls-errors": true
-            }
+            "transitland-atlas-id": "f-rejseplanen~dk~gtfs"
         }
     ]
 }
