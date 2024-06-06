@@ -9,7 +9,8 @@
         {
             "name": "straeto",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-ge2kx-straeto"
+            "transitland-atlas-id": "f-ge2kx-straeto",
+            "fix": true
         }
     ]
 }
