@@ -10,6 +10,32 @@
             "name": "CDTA",
             "type": "transitland-atlas",
             "transitland-atlas-id": "o-dre-cdta"
+        },
+        {
+            "name": "UCAT",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "o-dr7-ulstercountyareatransit"
+        },
+        {
+            "name": "LIRR",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "o-dr5-longislandrailroad"
+        },
+        {
+            "name": "MTA_NYCTransit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "o-dr5r-nyct"
+        }
+        ,
+        {
+            "name": "PATH",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "o-dr5r-path"
+        }
+        {
+            "name": "MetroNorth",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "o-dr72w-metro~northrailroad"
         }
     ]
 }
