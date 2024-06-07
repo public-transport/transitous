@@ -1,0 +1,15 @@
+{
+    "maintainers": [
+        {
+            "name": "David Rhoads",
+            "github": "kd2flz"
+        }
+    ],
+    "sources": [
+        {
+            "name": "CDTA",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "o-dre-cdta"
+        }
+    ]
+}
