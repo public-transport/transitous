@@ -15,7 +15,8 @@ import Data.Maybe (Maybe(..), fromMaybe)
 import Data.Tuple (Tuple(..))
 import Data.Semigroup ((<>))
 
-import SearchBox
+import SearchBox (Guess(..))
+import Motis (Position, Station)
 
 type StationMessage = { type :: String, station :: Station }
 
