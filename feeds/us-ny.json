@@ -37,6 +37,46 @@
       "transitland-atlas-id": "f-dr5r-nyctsubway"
     },
     {
+      "name": "MTA_NYCSubway",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-mta~nyc~rt~subway~1~2~3~4~5~6~7"
+    },
+    {
+      "name": "MTA_NYCSubway",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-mta~nyc~rt~subway~a~c~e"
+    },
+    {
+      "name": "MTA_NYCSubway",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-mta~nyc~rt~subway~b~d~f~m"
+    },
+    {
+      "name": "MTA_NYCSubway",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-mta~nyc~rt~subway~g"
+    },
+    {
+      "name": "MTA_NYCSubway",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-mta~nyc~rt~subway~j~z"
+    },
+    {
+      "name": "MTA_NYCSubway",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-mta~nyc~rt~subway~l"
+    },
+    {
+      "name": "MTA_NYCSubway",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-mta~nyc~rt~subway~n~q~r~w"
+    },
+    {
+      "name": "MTA_NYCSubway",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-mta~nyc~rt~subway~sir"
+    },
+    {
       "name": "MTA_BusManhattan",
       "type": "transitland-atlas",
       "transitland-atlas-id": "f-dr5r-mtanyctbusmanhattan"
