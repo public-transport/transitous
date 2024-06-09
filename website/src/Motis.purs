@@ -23,7 +23,6 @@ import Fetch (Method(..), fetch)
 
 
 -- Requests
-type StationGuesserRequest = { input :: String, guess_count :: Int }
 type MotisRequest a = { content_type :: String, content :: a, destination :: { type :: String, target :: String } }
 
 serializeMotisRequest :: forall a. (EncodeJson a) => MotisRequest a -> String
@@ -53,6 +52,78 @@ addressRequest text = serializeMotisRequest
       { input: text }
   }
 
+intermodalRoutingRequest :: Position -> Position -> String
+intermodalRoutingRequest start dest = serializeMotisRequest
+  { content_type: "IntermodalRoutingRequest"
+  , destination:
+      { type: "Module"
+      , target: "/intermodal"
+      }
+  , content:
+      { start_type: "PretripStart"
+      , start:
+          {
+          }
+      }
+
+  }
+{-
+{
+   "content" : {
+      "destination" : {
+         "lat" : 0,
+         "lng" :
+      },
+      "destination_modes" : [
+         {
+            "mode" : {
+               "search_options" : {
+                  "duration_limit" : 900,
+                  "profile" : "default"
+               }
+            },
+            "mode_type" : "FootPPR"
+         }
+      ],
+      "destination_type" : "InputPosition",
+      "router" : "",
+      "search_dir" : "Forward",
+      "search_type" : "Accessibility",
+      "start" : {
+         "extend_interval_earlier" : true,
+         "extend_interval_later" : true,
+         "interval" : {
+            "begin" : 1717879200,
+            "end" : 1717886400
+         },
+         "min_connection_count" : 5,
+         "station" : {
+            "id" : ""
+            "name" : ""
+         }
+      },
+      "start_modes" : [
+         {
+            "mode" : {
+               "search_options" : {
+                  "duration_limit" : 900,
+                  "profile" : "default"
+               }
+            },
+            "mode_type" : "FootPPR"
+         }
+      ],
+      "start_type" : "PretripStart"
+   },
+   "content_type" : "IntermodalRoutingRequest",
+   "destination" : {
+      "target" : "/intermodal",
+      "type" : "Module"
+   }
+}-}
+
+
+
 -- Response
 type Position = { lat :: Number, lng :: Number }
 type Station = { id :: String, name :: String, pos :: Position }
@@ -61,7 +132,7 @@ type StationResponse = { content :: { guesses :: Array Station } }
 type Region = { name :: String, admin_level :: Int }
 type Address = { pos :: Position, name :: String, type :: String, regions :: Array Region }
 type AddressResponse = { content :: { guesses :: Array Address } }
-
+type IntermodalRoutingResponse = { content :: {  } }
 
 parseMotisResponse :: forall a. DecodeJson a => String -> Either JsonDecodeError a
 parseMotisResponse text = do
@@ -97,3 +168,7 @@ sendStationRequest = stationRequest >>> sendMotisRequest
 
 sendAddressRequest :: String -> Aff (Maybe AddressResponse)
 sendAddressRequest = addressRequest >>> sendMotisRequest
+
+sendIntermodalRoutingRequest :: Position -> Position -> Aff (Maybe IntermodalRoutingResponse)
+sendIntermodalRoutingRequest start dest = intermodalRoutingRequest start dest
+    # sendMotisRequest
