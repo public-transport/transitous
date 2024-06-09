@@ -1,41 +1,75 @@
 {
-    "maintainers": [
-        {
-            "name": "David Rhoads",
-            "github": "kd2flz"
-        }
-    ],
-    "sources": [
-        {
-            "name": "CDTA",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "o-dre-cdta"
-        },
-        {
-            "name": "UCAT",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "o-dr7-ulstercountyareatransit"
-        },
-        {
-            "name": "LIRR",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "o-dr5-longislandrailroad"
-        },
-        {
-            "name": "MTA_NYCTransit",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "o-dr5r-nyct"
-        }
-        ,
-        {
-            "name": "PATH",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "o-dr5r-path"
-        }
-        {
-            "name": "MetroNorth",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "o-dr72w-metro~northrailroad"
-        }
-    ]
+  "maintainers": [
+    {
+      "name": "David Rhoads",
+      "github": "kd2flz"
+    }
+  ],
+  "sources": [
+    {
+      "name": "CDTA",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-dre-cdta"
+    },
+    {
+      "name": "UCAT",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-dr7-ulstercountyareatransit"
+    },
+    {
+      "name": "TransitOrange",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-transit~orange~ny~us"
+    },
+    {
+      "name": "LIRR",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-dr5-mtanyclirr"
+    },
+    {
+      "name": "MTA_NYCSubway",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-dr5r-nyctsubway"
+    },
+    {
+      "name": "MTA_BusManhattan",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-dr5r-mtanyctbusmanhattan"
+    },
+    {
+      "name": "MTA_BusQueens",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-dr5x-mtanyctbusqueens"
+    },
+    {
+        "name": "MTA_BusStatenIsland",
+        "type": "transitland-atlas",
+        "transitland-atlas-id": "f-dr5r-mtanyctbusstatenisland"
+      },
+      {
+        "name": "MTA_BusBrooklyn",
+        "type": "transitland-atlas",
+        "transitland-atlas-id": "f-dr5r-mtanyctbusbrooklyn"
+      },
+      {
+        "name": "MTA_BusBronx",
+        "type": "transitland-atlas",
+        "transitland-atlas-id": "f-dr72-mtanyctbusbronx"
+      },
+      {
+        "name": "MTA_BusCompany",
+        "type": "transitland-atlas",
+        "transitland-atlas-id": "f-dr5r-mtabc"
+      },
+    {
+      "name": "PATH",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-dr5r-path~nj~us"
+    },
+    {
+      "name": "MetroNorth",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-dr7-mtanyc~metro~north"
+    }
+  ]
 }
