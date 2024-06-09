@@ -27,6 +27,11 @@
       "transitland-atlas-id": "f-dr5-mtanyclirr"
     },
     {
+      "name": "LIRR",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-mta~nyc~rt~lirr"
+    },
+    {
       "name": "MTA_NYCSubway",
       "type": "transitland-atlas",
       "transitland-atlas-id": "f-dr5r-nyctsubway"
@@ -42,25 +47,25 @@
       "transitland-atlas-id": "f-dr5x-mtanyctbusqueens"
     },
     {
-        "name": "MTA_BusStatenIsland",
-        "type": "transitland-atlas",
-        "transitland-atlas-id": "f-dr5r-mtanyctbusstatenisland"
-      },
-      {
-        "name": "MTA_BusBrooklyn",
-        "type": "transitland-atlas",
-        "transitland-atlas-id": "f-dr5r-mtanyctbusbrooklyn"
-      },
-      {
-        "name": "MTA_BusBronx",
-        "type": "transitland-atlas",
-        "transitland-atlas-id": "f-dr72-mtanyctbusbronx"
-      },
-      {
-        "name": "MTA_BusCompany",
-        "type": "transitland-atlas",
-        "transitland-atlas-id": "f-dr5r-mtabc"
-      },
+      "name": "MTA_BusStatenIsland",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-dr5r-mtanyctbusstatenisland"
+    },
+    {
+      "name": "MTA_BusBrooklyn",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-dr5r-mtanyctbusbrooklyn"
+    },
+    {
+      "name": "MTA_BusBronx",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-dr72-mtanyctbusbronx"
+    },
+    {
+      "name": "MTA_BusCompany",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-dr5r-mtabc"
+    },
     {
       "name": "PATH",
       "type": "transitland-atlas",
@@ -70,6 +75,11 @@
       "name": "MetroNorth",
       "type": "transitland-atlas",
       "transitland-atlas-id": "f-dr7-mtanyc~metro~north"
+    },
+    {
+      "name": "MetroNorth",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-mta~nyc~rt~mnr"
     }
   ]
 }
