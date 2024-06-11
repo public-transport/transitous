@@ -11,10 +11,10 @@ import Data.Unit (Unit)
 import Elmish.Boot (defaultMain)
 
 import SearchBox as SearchBox
+import SearchResults as SearchResults
 
 searchBoxMain :: Effect Unit
 searchBoxMain = defaultMain { def: { init: SearchBox.init, view: SearchBox.view, update: SearchBox.update }, elementId: "searchbox" }
 
-{-
 searchResultsMain :: Effect Unit
-searchResultsMain = defaultMain { def: { init, view, update }, elementId: "searchbox" }-}
+searchResultsMain = defaultMain { def: { init: SearchResults.init, view: SearchResults.view, update: SearchResults.update }, elementId: "searchresults" }

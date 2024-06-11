@@ -21,7 +21,6 @@ import Data.Argonaut.Encode (toJsonString, class EncodeJson)
 
 import Fetch (Method(..), fetch)
 
-
 -- Requests
 type MotisRequest a = { content_type :: String, content :: a, destination :: { type :: String, target :: String } }
 
@@ -67,6 +66,7 @@ intermodalRoutingRequest start dest = serializeMotisRequest
       }
 
   }
+
 {-
 {
    "content" : {
@@ -122,8 +122,6 @@ intermodalRoutingRequest start dest = serializeMotisRequest
    }
 }-}
 
-
-
 -- Response
 type Position = { lat :: Number, lng :: Number }
 type Station = { id :: String, name :: String, pos :: Position }
@@ -132,7 +130,7 @@ type StationResponse = { content :: { guesses :: Array Station } }
 type Region = { name :: String, admin_level :: Int }
 type Address = { pos :: Position, name :: String, type :: String, regions :: Array Region }
 type AddressResponse = { content :: { guesses :: Array Address } }
-type IntermodalRoutingResponse = { content :: {  } }
+type IntermodalRoutingResponse = { content :: {} }
 
 parseMotisResponse :: forall a. DecodeJson a => String -> Either JsonDecodeError a
 parseMotisResponse text = do
@@ -171,4 +169,4 @@ sendAddressRequest = addressRequest >>> sendMotisRequest
 
 sendIntermodalRoutingRequest :: Position -> Position -> Aff (Maybe IntermodalRoutingResponse)
 sendIntermodalRoutingRequest start dest = intermodalRoutingRequest start dest
-    # sendMotisRequest
+  # sendMotisRequest

@@ -6,7 +6,6 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 
 module SearchBox where
 
-
 import Prelude (pure, ($), (<<<), bind)
 
 import Elmish (Transition, Dispatch, ReactElement)
