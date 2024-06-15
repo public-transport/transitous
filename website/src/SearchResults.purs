@@ -6,31 +6,30 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 
 module SearchResults where
 
-import Data.Argonaut.Encode (toJsonString)
+import Data.DateTime (DateTime)
 import Data.Either (hush)
-import Data.Maybe (Maybe(..))
-import Data.Unit (Unit)
+import Data.Functor (map)
+import Data.Maybe (Maybe)
 import Effect.Aff (Aff)
 import Effect.Class (liftEffect)
+import Effect.Now (nowDateTime)
 import Elmish (Dispatch, ReactElement, Transition, forkMaybe)
 import Elmish.HTML.Styled as H
-import Motis (Position, logAff, parseData, sendIntermodalRoutingRequest)
-import Prelude (pure, bind, discard, (#), show)
+import Motis (Position, Connection, parseData, sendIntermodalRoutingRequest)
+import Prelude (pure, bind, discard, (#), ($))
 import Web.HTML (window)
 import Web.HTML.Location (search)
 import Web.HTML.Window (location)
 import Web.URL.URLSearchParams as SearchParams
 
-
-type Connnection = Unit
-
 type PositionQuery = { position :: Position }
 
-data Message = Query PositionQuery PositionQuery
-             | ReceivedConnections (Array Connnection)
+data Message
+  = Query Position Position DateTime
+  | ReceivedConnections (Array Connection)
 
 type State =
-  {
+  { connections :: Array Connection
   }
 
 getSearchParams :: Aff SearchParams.URLSearchParams
@@ -43,29 +42,34 @@ getSearchParams = do
 
 startSearch :: Aff (Maybe Message)
 startSearch = do
-    params <- getSearchParams
-    pure do
-      from <- SearchParams.get "fromLocation" params
-      to <- SearchParams.get "toLocation" params
-      fromPos <- hush (parseData from)
-      toPos <- hush (parseData to)
-      pure (Query fromPos toPos)
+  params <- getSearchParams
+  now <- liftEffect nowDateTime
+  pure do
+    from <- SearchParams.get "fromLocation" params
+    to <- SearchParams.get "toLocation" params
+    fromPos <- hush (parseData from) :: Maybe PositionQuery
+    toPos <- hush (parseData to) :: Maybe PositionQuery
+    pure (Query fromPos.position toPos.position now)
 
 init :: Transition Message State
 init = do
   forkMaybe startSearch
 
-  pure {}
+  pure
+    { connections: []
+    }
 
 update :: State -> Message -> Transition Message State
-update state (ReceivedConnections connections) = pure state
-update state (Query from to) = do
+update state (ReceivedConnections connections) = pure state { connections = connections }
+update state (Query from to departure) = do
   forkMaybe do
-    resp <- sendIntermodalRoutingRequest from.position to.position
-    logAff (show (toJsonString resp))
-    pure Nothing
+    resp <- sendIntermodalRoutingRequest from to departure
+    pure $ map (\r -> ReceivedConnections r.connections) resp
 
-  pure {}
+  pure state
 
 view :: State -> Dispatch Message -> ReactElement
-view state dispatch = H.span "" "Hello world"
+view state _dispatch = H.ul "" $ map connectionEntry state.connections
+  where
+  connectionEntry connection = H.ul "card" $ map transportEntry connection.transports
+  transportEntry transport = H.li "" transport.move_type

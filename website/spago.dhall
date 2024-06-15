@@ -27,10 +27,13 @@ Need help? See the following resources:
   , "fetch"
   , "foldable-traversable"
   , "form-urlencoded"
+  , "integers"
   , "maybe"
   , "now"
   , "prelude"
   , "tuples"
+  , "web-html"
+  , "web-url"
   ]
 , packages = ./packages.dhall
 , sources = [ "src/**/*.purs" ]

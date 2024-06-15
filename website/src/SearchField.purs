@@ -80,7 +80,7 @@ requestGuesses query = do
   pure $ fromMaybe [] do
     sr <- stationResponse
     ar <- addressResponse
-    Just $ map StationGuess sr.content.guesses <> map AddressGuess (uniqueAddresses ar.content.guesses)
+    Just $ map StationGuess sr.guesses <> map AddressGuess (uniqueAddresses ar.guesses)
 
 requestGuessesDebounced :: State -> String -> Transition Message State
 requestGuessesDebounced state query =
