@@ -4,7 +4,7 @@ SPDX-FileCopyrightText: 2024 Jonah Brüchert <jbb@kaidan.im>
 SPDX-License-Identifier: AGPL-3.0-or-later
 -}
 
-module Motis (sendAddressRequest, sendStationRequest, Address(..), Station(..), Position(..), Region(..)) where
+module Motis where
 
 import Prelude
 
@@ -132,8 +132,8 @@ type Address = { pos :: Position, name :: String, type :: String, regions :: Arr
 type AddressResponse = { content :: { guesses :: Array Address } }
 type IntermodalRoutingResponse = { content :: {} }
 
-parseMotisResponse :: forall a. DecodeJson a => String -> Either JsonDecodeError a
-parseMotisResponse text = do
+parseData :: forall a. DecodeJson a => String -> Either JsonDecodeError a
+parseData text = do
   decoded <- parseJson text
   decodeJson decoded
 
@@ -154,7 +154,7 @@ sendMotisRequest request = do
     logAff (statusText <> responseBody)
     pure Nothing
   else do
-    let result = parseMotisResponse responseBody
+    let result = parseData responseBody
     case result of
       Left err -> do
         logAff (show err)
