@@ -59,6 +59,7 @@ data Message
   | StartGuessRequest String
   | SelectionUp
   | SelectionDown
+  | Swap State
 
 type State =
   { entries :: Array Guess
@@ -129,10 +130,11 @@ update state (NewInput time) = pure state { lastRequestTime = Just time }
 update state (StartGuessRequest query) = requestGuessesDebounced state query
 update state SelectionUp = pure state { currentlySelectedIndex = (state.currentlySelectedIndex - 1) `mod` (length state.entries) }
 update state SelectionDown = pure state { currentlySelectedIndex = (state.currentlySelectedIndex + 1) `mod` (length state.entries) }
+update state (Swap newState) = pure newState { placeholderText = state.placeholderText }
 
 view :: State -> Dispatch Message -> ReactElement
-view state dispatch = H.div "mb-3"
-  [ H.input_ "form-control mb-2"
+view state dispatch = H.span "col-md-auto"
+  [ H.input_ "form-control"
       { onChange: dispatch <| E.inputText >>> SearchChanged
       , onFocus: dispatch <| ShowSuggestions true
       , placeholder: state.placeholderText
