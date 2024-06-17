@@ -15,14 +15,20 @@ import Data.Argonaut.Decode.Parser (parseJson)
 import Data.Argonaut.Encode (toJsonString, class EncodeJson)
 import Data.DateTime (DateTime)
 import Data.DateTime.Instant (fromDateTime, unInstant)
-import Data.Either (Either(..))
+import Data.Either (Either(..), hush)
 import Data.Int (floor)
 import Data.Maybe (Maybe(..))
 import Data.Time.Duration (Seconds(..), convertDuration)
+import Effect (Effect)
 import Effect.Aff (Aff)
 import Effect.Class (liftEffect)
 import Effect.Console (log)
+import Effect.Now (nowDateTime)
 import Fetch (Method(..), fetch)
+import Web.HTML (window)
+import Web.HTML.Location (search)
+import Web.HTML.Window (location)
+import Web.URL.URLSearchParams as SearchParams
 
 -- Types
 type Region = { name :: String, admin_level :: Int }
@@ -38,27 +44,27 @@ serializeMotisRequest :: forall a. (EncodeJson a) => MotisRequest a -> String
 serializeMotisRequest = toJsonString
 
 stationRequest :: String -> String
-stationRequest text = serializeMotisRequest
+stationRequest query = serializeMotisRequest
   { content_type: "StationGuesserRequest"
   , destination:
       { type: "Module"
       , target: "/guesser"
       }
   , content:
-      { input: text
+      { input: query
       , guess_count: 6
       }
   }
 
 addressRequest :: String -> String
-addressRequest text = serializeMotisRequest
+addressRequest query = serializeMotisRequest
   { content_type: "AddressRequest"
   , destination:
       { type: "Module"
       , target: "/address"
       }
   , content:
-      { input: text }
+      { input: query }
   }
 
 intermodalRoutingRequest :: Position -> Position -> DateTime -> String
@@ -110,7 +116,11 @@ intermodalRoutingRequest start dest departure =
     }
 
 dateTimeToUnix :: DateTime -> Int
-dateTimeToUnix dateTime = let (Seconds unixTime) = convertDuration (unInstant (fromDateTime dateTime)) in floor unixTime
+dateTimeToUnix dateTime =
+  let
+    (Seconds unixTime) = convertDuration (unInstant (fromDateTime dateTime))
+  in
+    floor unixTime
 
 -- Responses
 type MotisResponse a = { content :: a }
@@ -119,20 +129,67 @@ type StationResponse = { guesses :: Array Station }
 
 type AddressResponse = { guesses :: Array Address }
 
-type Connection =
-  { transports ::
-      Array
-        { move_type :: String
-        , move ::
-            { direction :: Maybe String
-            , line_id :: Maybe String
-            , name :: Maybe String
-            , provider :: Maybe String
-            }
-        }
+type Stop = { station :: Station, departure :: { time :: Int }, arrival :: { time :: Int } }
+type Transport =
+  { move_type :: String
+  , move ::
+      { direction :: Maybe String
+      , line_id :: Maybe String
+      , name :: Maybe String
+      , provider :: Maybe String
+      , clasz :: Maybe Int
+      , range ::
+          { from :: Int
+          , to :: Int
+          }
+      }
   }
 
-type IntermodalRoutingResponse = { connections :: Array Connection }
+type Trip = {}
+
+type Connection =
+  { stops :: Array Stop
+  , transports :: Array Transport
+  }
+
+type IntermodalRoutingResponse = { connections :: Array Connection, interval_begin :: Int, interval_end :: Int }
+
+-- Url query
+type PositionQuery = { position :: Position }
+type StationQuery = { station :: Station }
+
+type RouteQuery =
+  { from :: Position
+  , to :: Position
+  , departure :: DateTime
+  }
+
+getUrlSearchParams :: Effect SearchParams.URLSearchParams
+getUrlSearchParams = do
+  w <- window
+  loc <- w # location
+  queries <- loc # search
+  pure (SearchParams.fromString queries)
+
+getQueryFromUrl :: Effect (Maybe RouteQuery)
+getQueryFromUrl = do
+  params <- getUrlSearchParams
+  now <- nowDateTime
+  pure do
+    from <- SearchParams.get "fromLocation" params
+    to <- SearchParams.get "toLocation" params
+    let fromPos = hush (parseData from) :: Maybe PositionQuery
+    let toPos = hush (parseData to) :: Maybe PositionQuery
+
+    case fromPos of
+      Just f -> case toPos of
+        Just t -> Just { from: f.position, to: t.position, departure: now }
+        Nothing -> Nothing
+      Nothing -> do
+        fromStation <- hush (parseData from) :: Maybe StationQuery
+        toStation <- hush (parseData to) :: Maybe StationQuery
+        Just { from: fromStation.station.pos, to: toStation.station.pos, departure: now }
+
 
 parseData :: forall a. DecodeJson a => String -> Either JsonDecodeError a
 parseData text = do

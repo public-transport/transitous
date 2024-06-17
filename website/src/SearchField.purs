@@ -6,26 +6,22 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 
 module SearchField where
 
-import Prelude (bind, compare, discard, map, mod, negate, not, pure, (#), ($), (&&), (+), (-), (<=), (<>), (==), (>), (>>>))
-
+import Data.Array (length, (!!), null, nubBy)
+import Data.DateTime (DateTime, diff)
+import Data.Foldable (find)
+import Data.Maybe (Maybe(..), fromMaybe)
+import Data.Time.Duration (Milliseconds(..))
+import Data.Tuple (Tuple(..))
+import Effect.Aff (Aff, delay)
+import Effect.Class (liftEffect)
+import Effect.Now (nowDateTime)
 import Elmish (Transition, Dispatch, ReactElement, (<|), (<?|))
+import Elmish.Component (fork, forkMaybe)
 import Elmish.HTML.Events as E
 import Elmish.HTML.Styled as H
-import Elmish.Component (fork, forkMaybe)
-
-import Data.Array (length, zip, (..), (!!), null, nubBy)
-import Data.Maybe (Maybe(..), fromMaybe)
-import Data.Tuple (Tuple(..))
-import Data.Foldable (find)
-import Effect.Class (liftEffect)
-import Effect.Aff (Aff, delay)
-
-import Effect.Now (nowDateTime)
-
-import Data.DateTime (DateTime, diff)
-import Data.Time.Duration (Milliseconds(..))
-
 import Motis (Address, Station, sendAddressRequest, sendStationRequest)
+import Prelude (bind, compare, discard, map, mod, negate, not, pure, (#), ($), (&&), (+), (-), (<=), (<>), (==), (>), (>>>))
+import Utils (enumerate)
 
 data Guess = StationGuess Station | AddressGuess Address
 
@@ -133,7 +129,7 @@ update state SelectionDown = pure state { currentlySelectedIndex = (state.curren
 update state (Swap newState) = pure newState { placeholderText = state.placeholderText }
 
 view :: State -> Dispatch Message -> ReactElement
-view state dispatch = H.span "col-md-auto"
+view state dispatch = H.span "col"
   [ H.input_ "form-control"
       { onChange: dispatch <| E.inputText >>> SearchChanged
       , onFocus: dispatch <| ShowSuggestions true
@@ -185,4 +181,4 @@ view state dispatch = H.span "col-md-auto"
                 , H.span "text-secondary text-xs" (fromMaybe "" $ getRegion address)
                 ]
       )
-      (zip (0 .. (length state.entries)) state.entries)
+      (enumerate state.entries)

@@ -34,7 +34,7 @@ encodeEnd = case _ of
   AddressGuess address -> toJsonString $ toPositionMessage address.pos
 
 toMotisWebUrl :: Guess -> Guess -> String
-toMotisWebUrl start destination = "https://routing.spline.de/?motis=https%3A%2F%2Frouting.spline.de%2Fapi&" <> urlQuery
+toMotisWebUrl start destination = "/results/?" <> urlQuery
   where
   urlQuery = fromMaybe "" $ encode $ fromArray
     [ Tuple "fromLocation" (Just (encodeEnd start))
