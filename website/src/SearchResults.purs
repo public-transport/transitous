@@ -90,7 +90,8 @@ unixToDateTime seconds = do
   Just (toDateTime inst)
 
 formatTime :: Time -> String
-formatTime time = pad (show (fromEnum (hour time)))
+formatTime time =
+  pad (show (fromEnum (hour time)))
   <> ":"
   <> pad (show (fromEnum (minute time)))
   where

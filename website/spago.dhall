@@ -19,6 +19,7 @@ Need help? See the following resources:
   , "arrays"
   , "bifunctors"
   , "console"
+  , "control"
   , "datetime"
   , "effect"
   , "either"

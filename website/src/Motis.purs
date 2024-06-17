@@ -8,6 +8,7 @@ module Motis where
 
 import Prelude
 
+import Control.Alt (alt)
 import Data.Argonaut.Decode (decodeJson, class DecodeJson)
 import Data.Argonaut.Decode.Class (class DecodeJsonField)
 import Data.Argonaut.Decode.Error (JsonDecodeError)
@@ -176,20 +177,19 @@ getQueryFromUrl = do
   params <- getUrlSearchParams
   now <- nowDateTime
   pure do
-    from <- SearchParams.get "fromLocation" params
-    to <- SearchParams.get "toLocation" params
-    let fromPos = hush (parseData from) :: Maybe PositionQuery
-    let toPos = hush (parseData to) :: Maybe PositionQuery
+    fromJson <- SearchParams.get "fromLocation" params
+    toJson <- SearchParams.get "toLocation" params
 
-    case fromPos of
-      Just f -> case toPos of
-        Just t -> Just { from: f.position, to: t.position, departure: now }
-        Nothing -> Nothing
-      Nothing -> do
-        fromStation <- hush (parseData from) :: Maybe StationQuery
-        toStation <- hush (parseData to) :: Maybe StationQuery
-        Just { from: fromStation.station.pos, to: toStation.station.pos, departure: now }
+    -- Try to parse as either station or position, and take the one that worked
+    let fromPosMsg = hush (parseData fromJson) :: Maybe PositionQuery
+    let toPosMsg = hush (parseData toJson) :: Maybe PositionQuery
+    let fromStationMsg = hush (parseData fromJson) :: Maybe StationQuery
+    let toStationMsg = hush (parseData toJson) :: Maybe StationQuery
 
+    from <- alt (map (_.position) fromPosMsg) (map (_.station.pos) fromStationMsg)
+    to <- alt (map (_.position) toPosMsg) (map (_.station.pos) toStationMsg)
+
+    Just { from, to, departure: now }
 
 parseData :: forall a. DecodeJson a => String -> Either JsonDecodeError a
 parseData text = do
