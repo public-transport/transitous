@@ -13,6 +13,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
  * npm
 
 ```sh
+git submodule update --init --checkout
 npm install
 npm run start
 ```
