@@ -12,6 +12,7 @@ import Data.Foldable (find)
 import Data.Maybe (Maybe(..), fromMaybe)
 import Data.Time.Duration (Milliseconds(..))
 import Data.Tuple (Tuple(..))
+import Data.Functor (mapFlipped)
 import Effect.Aff (Aff, delay)
 import Effect.Class (liftEffect)
 import Effect.Now (nowDateTime)
@@ -20,31 +21,10 @@ import Elmish.Component (fork, forkMaybe)
 import Elmish.HTML.Events as E
 import Elmish.HTML.Styled as H
 import Motis (Address, Station, sendAddressRequest, sendStationRequest)
-import Prelude (bind, compare, discard, map, mod, negate, not, pure, (#), ($), (&&), (+), (-), (<=), (<>), (==), (>), (>>>))
+import Prelude
 import Utils (enumerate)
 
 data Guess = StationGuess Station | AddressGuess Address
-
-getCity :: Address -> Maybe String
-getCity address =
-  address.regions
-    # find (\r -> r.admin_level <= 8)
-    # map (_.name)
-
-getCountry :: Address -> Maybe String
-getCountry address =
-  address.regions
-    # find (\r -> r.admin_level == 2)
-    # map (_.name)
-
-getRegion :: Address -> Maybe String
-getRegion address = do
-  city <- getCity address
-  country <- getCountry address
-  Just $ city <> ", " <> country
-
-uniqueAddresses :: Array Address -> Array Address
-uniqueAddresses = nubBy (\a b -> compare (getRegion a) (getRegion b))
 
 data Message
   = SearchChanged String
@@ -66,6 +46,27 @@ type State =
   , lastRequestTime :: Maybe DateTime
   , currentlySelectedIndex :: Int
   }
+
+getCity :: Address -> Maybe String
+getCity address =
+  address.regions
+    # find (\r -> r.admin_level <= 8)
+    # map (_.name)
+
+getCountry :: Address -> Maybe String
+getCountry address =
+  address.regions
+    # find (\r -> r.admin_level == 2)
+    # map (_.name)
+
+getRegion :: Address -> Maybe String
+getRegion address = do
+  city <- getCity address
+  country <- getCountry address
+  Just $ city <> ", " <> country
+
+uniqueAddresses :: Array Address -> Array Address
+uniqueAddresses = nubBy (\a b -> compare (getRegion a) (getRegion b))
 
 debounceDelay :: Milliseconds
 debounceDelay = Milliseconds 150.0
@@ -128,6 +129,37 @@ update state SelectionUp = pure state { currentlySelectedIndex = (state.currentl
 update state SelectionDown = pure state { currentlySelectedIndex = (state.currentlySelectedIndex + 1) `mod` (length state.entries) }
 update state (Swap newState) = pure newState { placeholderText = state.placeholderText }
 
+suggestionEntries :: State -> Dispatch Message -> Array ReactElement
+suggestionEntries state dispatch =
+  mapFlipped (enumerate state.entries)
+    ( \(Tuple i guess) ->
+        case guess of
+          StationGuess station -> do
+            if i == state.currentlySelectedIndex then H.li_ "dropdown-item dropdown-item-active cursor-shape-pointer"
+              { onClick: dispatch <| Select (StationGuess station), autoFocus: true }
+              [ H.i "bi bi-train-front-fill" ""
+              , H.span "p-2" (station.name)
+              ]
+            else H.li_ "dropdown-item cursor-shape-pointer"
+              { onClick: dispatch <| Select (StationGuess station) }
+              [ H.i "bi bi-train-front-fill" ""
+              , H.span "p-2" (station.name)
+              ]
+          AddressGuess address -> do
+            if i == state.currentlySelectedIndex then H.li_ "dropdown-item dropdown-item-active cursor-shape-pointer"
+              { onClick: dispatch <| Select (AddressGuess address), autoFocus: true }
+              [ H.i "bi bi-geo-alt-fill" ""
+              , H.span "p-2" address.name
+              , H.span "text-secondary text-xs" (fromMaybe "" $ getRegion address)
+              ]
+            else H.li_ "dropdown-item cursor-shape-pointer"
+              { onClick: dispatch <| Select (AddressGuess address) }
+              [ H.i "bi bi-geo-alt-fill" ""
+              , H.span "p-2" address.name
+              , H.span "text-secondary text-xs" (fromMaybe "" $ getRegion address)
+              ]
+    )
+
 view :: State -> Dispatch Message -> ReactElement
 view state dispatch = H.span "col"
   [ H.input_ "form-control"
@@ -148,37 +180,6 @@ view state dispatch = H.span "col"
           Nothing -> state.query
       }
   , case state.showSuggestions && not (null state.entries) of
-      true -> H.ul "dropdown-menu show" suggestionEntries
-      false -> H.ul "dropdown-menu" suggestionEntries
+      true -> H.ul "dropdown-menu show" (suggestionEntries state dispatch)
+      false -> H.ul "dropdown-menu" (suggestionEntries state dispatch)
   ]
-  where
-  suggestionEntries =
-    map
-      ( \(Tuple i guess) ->
-          case guess of
-            StationGuess station -> do
-              if i == state.currentlySelectedIndex then H.li_ "dropdown-item dropdown-item-active cursor-shape-pointer"
-                { onClick: dispatch <| Select (StationGuess station), autoFocus: true }
-                [ H.i "bi bi-train-front-fill" ""
-                , H.span "p-2" (station.name)
-                ]
-              else H.li_ "dropdown-item cursor-shape-pointer"
-                { onClick: dispatch <| Select (StationGuess station) }
-                [ H.i "bi bi-train-front-fill" ""
-                , H.span "p-2" (station.name)
-                ]
-            AddressGuess address -> do
-              if i == state.currentlySelectedIndex then H.li_ "dropdown-item dropdown-item-active cursor-shape-pointer"
-                { onClick: dispatch <| Select (AddressGuess address), autoFocus: true }
-                [ H.i "bi bi-geo-alt-fill" ""
-                , H.span "p-2" address.name
-                , H.span "text-secondary text-xs" (fromMaybe "" $ getRegion address)
-                ]
-              else H.li_ "dropdown-item cursor-shape-pointer"
-                { onClick: dispatch <| Select (AddressGuess address) }
-                [ H.i "bi bi-geo-alt-fill" ""
-                , H.span "p-2" address.name
-                , H.span "text-secondary text-xs" (fromMaybe "" $ getRegion address)
-                ]
-      )
-      (enumerate state.entries)

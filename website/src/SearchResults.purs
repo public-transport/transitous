@@ -92,8 +92,8 @@ unixToDateTime seconds = do
 formatTime :: Time -> String
 formatTime time =
   pad (show (fromEnum (hour time)))
-  <> ":"
-  <> pad (show (fromEnum (minute time)))
+    <> ":"
+    <> pad (show (fromEnum (minute time)))
   where
   pad str = if String.length str < 2 then "0" <> str else str
 
@@ -119,66 +119,71 @@ formatArrivalTime connection =
     # map formatUnixTime
     # fromMaybe ""
 
+connectionDetails :: Connection -> Array ReactElement
+connectionDetails connection = mapFlipped connection.transports
+  ( \transport -> do
+      let
+        to =
+          connection.stops !! transport.move.range.to
+            # filterMaybe (\s -> s.station.name /= "END")
+            # map (_.station.name)
+
+        icon =
+          map classIcon transport.move.clasz
+            # fromMaybe (moveTypeIcon transport.move_type)
+
+        time =
+          connection.stops !! transport.move.range.to
+            # filterMaybe (\s -> s.station.name /= "END")
+            # map (_.departure.time)
+            # map formatUnixTime
+
+        lineName = fromMaybe "" transport.move.name
+
+      H.span ""
+        ( [ H.div "m-3"
+              [ H.span "rounded transport-icon p-1"
+                  [ H.i_ ("m-2 bi " <> icon) { title: moveTypeText transport.move_type } ""
+                  , H.text lineName
+                  ]
+              ]
+          ] <> case to of
+            Just dest -> case time of
+              Just t -> [ H.span "me-4" t, H.span "fw-bold" dest ]
+              Nothing -> []
+            Nothing -> []
+        )
+  )
+
 displayConnectionDetails :: Connection -> Int -> Dispatch Message -> ReactElement
 displayConnectionDetails connection i dispatch =
   H.button_ "card mb-4 p-4 flex-col text-start w-100" { onClick: dispatch <| ToggleConnection i } $
     [ H.text (formatStartTime connection) ]
-      <> mapFlipped connection.transports
-        ( \transport -> do
-            let
-              to =
-                connection.stops !! transport.move.range.to
-                  # filterMaybe (\s -> s.station.name /= "END")
-                  # map (_.station.name)
-
-              icon =
-                map classIcon transport.move.clasz
-                  # fromMaybe (moveTypeIcon transport.move_type)
-
-              time =
-                connection.stops !! transport.move.range.to
-                  # filterMaybe (\s -> s.station.name /= "END")
-                  # map (_.departure.time)
-                  # map formatUnixTime
-
-              lineName = fromMaybe "" transport.move.name
-
-            H.span ""
-              ( [ H.div "m-3"
-                    [ H.span "rounded transport-icon p-1"
-                        [ H.i_ ("m-2 bi " <> icon) { title: moveTypeText transport.move_type } ""
-                        , H.text lineName
-                        ]
-                    ]
-                ] <> case to of
-                  Just dest -> case time of
-                    Just t -> [ H.span "me-4" t, H.span "fw-bold" dest ]
-                    Nothing -> []
-                  Nothing -> []
-              )
-        )
+      <> connectionDetails connection
       <> [ H.text (formatArrivalTime connection) ]
+
+connectionMovesOverview :: Connection -> Array ReactElement
+connectionMovesOverview connection = mapFlipped connection.transports
+  ( \transport -> do
+      let
+        icon = fromMaybe (moveTypeIcon transport.move_type) (map classIcon transport.move.clasz)
+
+      H.div "" $
+        [ H.span "m-1"
+            [ H.span "rounded transport-icon p-1"
+                [ H.i_ ("m-2 bi " <> icon) { title: moveTypeText transport.move_type } ""
+                , H.text (fromMaybe "" transport.move.name)
+                ]
+            ]
+        ]
+  )
 
 displayConnection :: Connection -> Int -> Dispatch Message -> ReactElement
 displayConnection connection i dispatch =
   H.button_ "card mb-4 p-4 flex-row" { onClick: dispatch <| ToggleConnection i } $
     [ H.span "me-2" (formatStartTime connection) ]
-      <> mapFlipped connection.transports
-        ( \transport -> do
-            let
-              icon = fromMaybe (moveTypeIcon transport.move_type) (map classIcon transport.move.clasz)
-
-            H.div "" $
-              [ H.span "m-1"
-                  [ H.span "rounded transport-icon p-1"
-                      [ H.i_ ("m-2 bi " <> icon) { title: moveTypeText transport.move_type } ""
-                      , H.text (fromMaybe "" transport.move.name)
-                      ]
-                  ]
-              ]
-        )
-      <>
-        [ H.span "ms-2" (formatArrivalTime connection) ]
+      <> connectionMovesOverview connection
+      <> [ H.span "ms-2" (formatArrivalTime connection) ]
 
 view :: State -> Dispatch Message -> ReactElement
 view state dispatch = case state.loading of
