@@ -32,77 +32,77 @@
       "transitland-atlas-id": "f-mta~nyc~rt~lirr"
     },
     {
-      "name": "MTA_NYCSubway",
+      "name": "MTA-NYCSubway",
       "type": "transitland-atlas",
       "transitland-atlas-id": "f-dr5r-nyctsubway"
     },
     {
-      "name": "MTA_NYCSubway",
+      "name": "MTA-NYCSubway",
       "type": "transitland-atlas",
       "transitland-atlas-id": "f-mta~nyc~rt~subway~1~2~3~4~5~6~7"
     },
     {
-      "name": "MTA_NYCSubway",
+      "name": "MTA-NYCSubway",
       "type": "transitland-atlas",
       "transitland-atlas-id": "f-mta~nyc~rt~subway~a~c~e"
     },
     {
-      "name": "MTA_NYCSubway",
+      "name": "MTA-NYCSubway",
       "type": "transitland-atlas",
       "transitland-atlas-id": "f-mta~nyc~rt~subway~b~d~f~m"
     },
     {
-      "name": "MTA_NYCSubway",
+      "name": "MTA-NYCSubway",
       "type": "transitland-atlas",
       "transitland-atlas-id": "f-mta~nyc~rt~subway~g"
     },
     {
-      "name": "MTA_NYCSubway",
+      "name": "MTA-NYCSubway",
       "type": "transitland-atlas",
       "transitland-atlas-id": "f-mta~nyc~rt~subway~j~z"
     },
     {
-      "name": "MTA_NYCSubway",
+      "name": "MTA-NYCSubway",
       "type": "transitland-atlas",
       "transitland-atlas-id": "f-mta~nyc~rt~subway~l"
     },
     {
-      "name": "MTA_NYCSubway",
+      "name": "MTA-NYCSubway",
       "type": "transitland-atlas",
       "transitland-atlas-id": "f-mta~nyc~rt~subway~n~q~r~w"
     },
     {
-      "name": "MTA_NYCSubway",
+      "name": "MTA-NYCSubway",
       "type": "transitland-atlas",
       "transitland-atlas-id": "f-mta~nyc~rt~subway~sir"
     },
     {
-      "name": "MTA_BusManhattan",
+      "name": "MTA-BusManhattan",
       "type": "transitland-atlas",
       "transitland-atlas-id": "f-dr5r-mtanyctbusmanhattan"
     },
     {
-      "name": "MTA_BusQueens",
+      "name": "MTA-BusQueens",
       "type": "transitland-atlas",
       "transitland-atlas-id": "f-dr5x-mtanyctbusqueens"
     },
     {
-      "name": "MTA_BusStatenIsland",
+      "name": "MTA-BusStatenIsland",
       "type": "transitland-atlas",
       "transitland-atlas-id": "f-dr5r-mtanyctbusstatenisland"
     },
     {
-      "name": "MTA_BusBrooklyn",
+      "name": "MTA-BusBrooklyn",
       "type": "transitland-atlas",
       "transitland-atlas-id": "f-dr5r-mtanyctbusbrooklyn"
     },
     {
-      "name": "MTA_BusBronx",
+      "name": "MTA-BusBronx",
       "type": "transitland-atlas",
       "transitland-atlas-id": "f-dr72-mtanyctbusbronx"
     },
     {
-      "name": "MTA_BusCompany",
+      "name": "MTA-BusCompany",
       "type": "transitland-atlas",
       "transitland-atlas-id": "f-dr5r-mtabc"
     },
