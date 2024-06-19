@@ -1,0 +1,15 @@
+{
+    "maintainers": [
+        {
+            "name": "Flo Edelmann",
+            "github": "FloEdelmann"
+        }
+    ],
+    "sources": [
+        {
+            "name": "addisababatransportall",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-addis~ababa"
+        }
+    ]
+}
