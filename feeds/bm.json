@@ -1,0 +1,15 @@
+{
+    "maintainers": [
+        {
+            "name": "Marcus Lundblad",
+            "github": "mlundblad"
+        }
+    ],
+    "sources": [
+        {
+            "name": "Bermuda-Department-of-Public-Transportation",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-bermuda~bm"
+        }
+    ]
+}
