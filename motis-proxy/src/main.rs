@@ -316,7 +316,11 @@ struct IntermodalConnectionRequest {
     search_dir: SearchDirection,
     router: AllowedRouters,
     #[serde(skip_serializing_if = "Option::is_none")]
-    allowed_claszes: Option<Vec<AllowedClasses>>
+    allowed_claszes: Option<Vec<AllowedClasses>>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    max_transfers: Option<i32>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    bike_transport: Option<bool>
 }
 
 #[derive(Deserialize, Serialize, JsonSchema)]
