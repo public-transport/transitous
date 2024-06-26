@@ -47,10 +47,50 @@
             "fix": true
         },
         {
+            "name": "Lombardia-AirPullman",
+            "type": "http",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            },
+            "url": "https://usbshare.agenziatpl.it/index.php/s/icR3wYc53Frnbfe/download/2024-02-12_AirPullman.zip"
+        },
+        {
             "name": "Lombardia-ATM",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u0nd-comunedimilano",
             "proxy": true
+        },
+        {
+            "name": "Lombardia-Movibus",
+            "type": "http",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            },
+            "url": "https://usbshare.agenziatpl.it/index.php/s/as63KiKmeK6Kwb3/download/2024-06-11_Movibus.zip"
+        },
+        {
+            "name": "Lombardia-NET",
+            "type": "http",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            },
+            "url": "https://usbshare.agenziatpl.it/index.php/s/s3j9BZqcarzRZoN/download/2024-06-07_NET.zip"
+        },
+        {
+            "name": "Lombardia-STAR",
+            "type": "http",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            },
+            "url": "https://usbshare.agenziatpl.it/index.php/s/7PrFyAHRrqnxKFj/download/2024-02-14_PMT.zip"
+        },
+        {
+            "name": "Lombardia-STAV",
+            "type": "http",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            },
+            "url": "https://usbshare.agenziatpl.it/index.php/s/r7J4s8Q324kFtx8/download/2024-06-13_STAV.zip"
         },
         {
             "name": "Lombardia-Trenord",
