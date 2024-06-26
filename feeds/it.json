@@ -49,6 +49,7 @@
         {
             "name": "Lombardia-AirPullman",
             "type": "http",
+            "fix": true
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
