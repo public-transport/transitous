@@ -89,7 +89,7 @@
         {
             "name": "Trójmiasto-(Gdańsk,-Gdynia,-Sopot)-combined",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u3t-gdansk~gdynia"
+            "transitland-atlas-id": "f-u3t-skm~trojmiasto"
         },
         {
             "name": "Giżycko",
