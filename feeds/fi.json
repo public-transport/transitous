@@ -107,7 +107,8 @@
         {
             "name": "239",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-salo~fi"
+            "transitland-atlas-id": "f-salo~fi",
+            "fix": true
         },
         {
             "name": "249",
