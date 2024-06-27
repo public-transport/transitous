@@ -1,0 +1,61 @@
+{
+    "maintainers": [
+        {
+            "name": "Marcus Lundblad",
+            "github": "mlundblad"
+        }
+    ],
+    "sources": [
+        {
+             "name": "Metro-Transit",
+             "type": "transitland-atlas",
+             "transitland-atlas-id": "f-c23-metrokingcounty"
+        },
+        {
+             "name": "Sound-Transit",
+             "type": "transitland-atlas",
+             "transitland-atlas-id": "f-c23-soundtransit"
+        },
+        {
+             "name": "Pierce-Transit",
+             "type": "transitland-atlas",
+             "transitland-atlas-id": "f-c22-piercetransit~soundtransit",
+             "fix": true
+        },
+        {
+             "name": "Seattle-Childrens-Hospital-Shuttle",
+             "type": "transitland-atlas",
+             "transitland-atlas-id": "f-c23p1-seattlechildrenshospitalshuttle"
+        },
+        {
+             "name": "Everett-Transit",
+             "type": "transitland-atlas",
+             "transitland-atlas-id": "f-c290-everetttransit"
+        },
+        {
+             "name": "Kitsap-Transit",
+             "type": "transitland-atlas",
+             "transitland-atlas-id": "f-c22y-kitsaptransit"
+        },
+        {
+             "name": "Washington-State-Ferries",
+             "type": "transitland-atlas",
+             "transitland-atlas-id": "f-c28-washingtonstateferries"
+        },
+        {
+             "name": "Appleline-Goldline-Dungenessline-Grapeline",
+             "type": "transitland-atlas",
+             "transitland-atlas-id": "f-c2-appleline~goldline~dungenessline~grapeline"
+        },
+        {
+             "name": "TheVictoriaClipper",
+             "type": "transitland-atlas",
+             "transitland-atlas-id": "f-c28-thevictoriaclipper"
+        },
+        {
+             "name": "Microsoft-Shuttles",
+             "type": "transitland-atlas",
+             "transitland-atlas-id": "f-c23n-microsoftshuttles"
+        }
+    ]
+}
