@@ -40,7 +40,12 @@ if __name__ == "__main__":
         "donnees-theoriques-et-temps-reel-du-reseau-sablons-bus-communaute-de-communes-des-sablons",  # Confuses MOTIS
         "donnees-theoriques-du-reseau-hopla-communaute-de-communes-de-la-plaine-destrees",  # Confuses MOTIS
         "tedbus-horaires",  # GTFS-RT tagges as GTFS
-        "donnees-theoriques-et-temps-reel-du-reseau-le-bus-communaute-de-communes-du-clermontois"  # Confuses MOTIS
+        "donnees-theoriques-et-temps-reel-du-reseau-le-bus-communaute-de-communes-du-clermontois",  # Confuses MOTIS
+        "arrets-horaires-et-parcours-theoriques-gtfs-du-reseau-routier-regional-de-transport-scolaire-62-pas-de-calais",  # agency.txt
+        "arrets-horaires-et-parcours-theoriques-gtfs-du-reseau-routier-regional-de-transport-interurbain-62-pas-de-calais",  # agency.txt
+        "naolib-arrets-horaires-et-circuits",  # Incomplete read
+        "offre-transport-du-reseau-txik-txak-nord-ex-chronoplus-gtfs",  # 404
+        "horaires-theoriques-et-temps-reel-lignes-scolaires-sankeo-perpignan-gtfs-gtfs-rt"  # 404
     ]
 
     out: list[dict] = []
