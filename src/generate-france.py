@@ -68,11 +68,18 @@ if __name__ == "__main__":
 
             out.append(source)
 
-            resources = list(filter(lambda r: "format" in r and r["format"] == "gtfs-rt", gtfs))
+            def cond(r) -> bool:
+                return "format" in r \
+                    and r["format"] == "gtfs-rt" \
+                    and "features" in r \
+                    and "trip_updates" in r["features"]
+
+            resources = list(filter(cond, gtfs))
             if not resources:
                 continue
             if len(resources) > 1:
-                print(f"{dataset['slug']} has multiple GTFS-RT feeds?", file=sys.stderr)
+                print(f"{dataset['slug']} has multiple GTFS-RT feeds?",
+                      file=sys.stderr)
                 continue
 
             source = source.copy()
