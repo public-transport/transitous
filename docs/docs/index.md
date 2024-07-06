@@ -118,7 +118,7 @@ Option Name       | Description
 `fix`             | Fix / drop fields that are not correct.
 `skip`            | Don't download or use this feed.
 `skip-reason`     | Reason for why this feed can't be used right now.
-`fix_csv_quotes`  | Try to fix GTFS files in which fields are improperly quoted. A symptom of this is if stop names start containing CSV.
+`fix-csv-quotes`  | Try to fix GTFS files in which fields are improperly quoted. A symptom of this is if stop names start containing CSV.
 `license`         | Dictionary of license-related options
 `http-options`    | Dictionary of HTTP-related options
 
