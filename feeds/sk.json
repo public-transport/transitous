@@ -20,7 +20,8 @@
         {
             "name": "Bratislava",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u2s1vm0ergtc~bratislava"
+            "transitland-atlas-id": "f-u2s1vm0ergtc~bratislava",
+            "url-override": "https://www.arcgis.com/sharing/rest/content/items/aba12fd2cbac4843bc7406151bc66106/data"
         }
     ]
 }

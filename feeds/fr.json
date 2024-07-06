@@ -333,7 +333,7 @@
         {
             "name": "arrets-horaires-et-parcours-theoriques-du-reseau-routier-regional-de-transport-scolaire-et-interurbain-60-oise-1",
             "type": "http",
-            "url": "https://api.oisemob.cityway.fr/dataflow/offre-tc/download?provider=TRIO3&dataFormat=GTFS&dataProfil=OPENDATA",
+            "url": "https://geocatalogue.hautsdefrance.fr/gtfs/RHDF_GTFS_COM_SCO_60_P3.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/arrets-horaires-et-parcours-theoriques-du-reseau-routier-regional-de-transport-scolaire-et-interurbain-60-oise-1"
@@ -342,7 +342,7 @@
         {
             "name": "arrets-horaires-et-parcours-theoriques-gtfs-du-reseau-routier-regional-de-transport-scolaire-et-interurbain-59-nord",
             "type": "http",
-            "url": "https://geocatalogue.hautsdefrance.fr/gtfs/RHDF_GTFS_COM_SCO_59_P3A.zip",
+            "url": "https://geocatalogue.hautsdefrance.fr/gtfs/RHDF_GTFS_COM_SCO_59_P1.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/arrets-horaires-et-parcours-theoriques-gtfs-du-reseau-routier-regional-de-transport-scolaire-et-interurbain-59-nord"
@@ -667,7 +667,7 @@
         {
             "name": "breizhgo-bateaux",
             "type": "http",
-            "url": "https://www.korrigo.bzh/ftp/OPENDATA/BREIZHGO_BATEAU_ARZ.gtfs.zip",
+            "url": "https://www.korrigo.bzh/ftp/OPENDATA/BREIZHGO_BATEAU_29.gtfs.zip",
             "fix": true,
             "skip": true,
             "license": {
@@ -677,7 +677,7 @@
         {
             "name": "breizhgo-car",
             "type": "http",
-            "url": "https://www.korrigo.bzh/ftp/OPENDATA/BREIZHGO_CAR_56.gtfs.zip",
+            "url": "https://www.korrigo.bzh/ftp/OPENDATA/BREIZHGO_CAR_35.gtfs.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/breizhgo-car"
@@ -740,7 +740,7 @@
         {
             "name": "reseaux-de-transports-en-commun-de-la-metropole-daix-marseille-provence-et-des-bouches-du-rhone",
             "type": "http",
-            "url": "https://app.mecatran.com/utw/ws/gtfsfeed/static/mamp-c13?apiKey=3675433c4f196f4d3c6b62316e130536196f0336",
+            "url": "https://app.mecatran.com/utw/ws/gtfsfeed/static/mamp-aix?apiKey=020c7c326b6c5e750b168064336e344c61213521",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/reseaux-de-transports-en-commun-de-la-metropole-daix-marseille-provence-et-des-bouches-du-rhone"
@@ -962,7 +962,7 @@
         {
             "name": "export-quotidien-au-format-gtfs-du-reseau-de-transport-lignes-d-azur",
             "type": "http",
-            "url": "http://opendata.nicecotedazur.org/data/storage/f/gtfs1720134901/GTFSExport.zip",
+            "url": "http://opendata.nicecotedazur.org/data/storage/f/gtfs1720221301/GTFSExport.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/export-quotidien-au-format-gtfs-du-reseau-de-transport-lignes-d-azur"
@@ -1196,7 +1196,7 @@
         {
             "name": "offre-transport-du-reseau-txik-txak-nord-ex-chronoplus-gtfs",
             "type": "http",
-            "url": "https://static.data.gouv.fr/resources/offre-transport-du-reseau-txik-txak-nord-ex-chronoplus-gtfs/20240626-085748/gtfs.zip",
+            "url": "https://static.data.gouv.fr/resources/offre-transport-du-reseau-txik-txak-nord-ex-chronoplus-gtfs/20240705-122343/gtfs.zip",
             "fix": true,
             "skip": true,
             "license": {
@@ -1287,7 +1287,7 @@
         {
             "name": "syndicat-mixte-des-transports-en-commun-de-lagglomeration-clermontoise-smtc-ac-reseau-t2c-gtfs-gtfs-rt",
             "type": "http",
-            "url": "https://opendata.clermontmetropole.eu/api/v2/catalog/datasets/gtfs-smtc/attachments/gtfs_t2c_plus_scolaire_zip",
+            "url": "https://opendata.clermontmetropole.eu/api/v2/catalog/datasets/gtfs-smtc/alternative_exports/gtfs",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/syndicat-mixte-des-transports-en-commun-de-lagglomeration-clermontoise-smtc-ac-reseau-t2c-gtfs-gtfs-rt"
@@ -1678,7 +1678,7 @@
         {
             "name": "ametis",
             "type": "http",
-            "url": "https://static.data.gouv.fr/resources/ametis/20240617-135355/gtfs-opendata-du-15-05-2025-au-01-09-2024.zip",
+            "url": "https://static.data.gouv.fr/resources/ametis/20240701-142854/gtfs-sae-du-05-06-2024-au-01-09-2024.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/ametis"
@@ -2236,7 +2236,7 @@
         {
             "name": "gtfs-urbain-de-la-zone-sud",
             "type": "http",
-            "url": "https://static.data.gouv.fr/resources/gtfs-urbain-de-la-zone-sud/20230821-030926/gtfs-maritime-martinique.zip",
+            "url": "https://static.data.gouv.fr/resources/gtfs-urbain-de-la-zone-sud/20230109-181149/gtfs-sud-sudlib.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/gtfs-urbain-de-la-zone-sud"
@@ -3104,7 +3104,7 @@
         {
             "name": "transport-scolaire-redon-agglomeration-format-gtfs",
             "type": "http",
-            "url": "https://static.data.gouv.fr/resources/transport-scolaire-redon-agglomeration-format-gtfs/20221123-104848/gtfs-ts-annee22-23.zip",
+            "url": "https://static.data.gouv.fr/resources/transport-scolaire-redon-agglomeration-format-gtfs/20240206-144951/export-gtfs-883.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/transport-scolaire-redon-agglomeration-format-gtfs"
@@ -3150,7 +3150,7 @@
         {
             "name": "rentree-2023-2024",
             "type": "http",
-            "url": "https://static.data.gouv.fr/resources/rentree-2023-2024/20230829-135158/gtfs.zip",
+            "url": "https://static.data.gouv.fr/resources/rentree-2023-2024/20240705-144518/gtfs.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/rentree-2023-2024"
@@ -4200,7 +4200,7 @@
         {
             "name": "reseau-urbain-interurbain-et-scolaire-de-la-communaute-dagglomeration-privas-centre-ardeche",
             "type": "http",
-            "url": "https://static.data.gouv.fr/resources/reseau-urbain-interurbain-et-scolaire-de-la-communaute-dagglomeration-privas-centre-ardeche/20240506-073041/t-cap-tcap56-2024-05-06.zip",
+            "url": "https://static.data.gouv.fr/resources/reseau-tcap/20220923-153856/t-cap-tcap-56-gtfs-2022-09-23-14-42-50.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/reseau-urbain-interurbain-et-scolaire-de-la-communaute-dagglomeration-privas-centre-ardeche"
@@ -4797,7 +4797,7 @@
         {
             "name": "transport-urbain-du-bassin",
             "type": "http",
-            "url": "https://static.data.gouv.fr/resources/transport-urbain-du-bassin/20200805-161154/transports-urbains-du-bassin-version-1-3-gtfs-2020-07-30-17-59-13.zip",
+            "url": "https://static.data.gouv.fr/resources/transport-urbain-du-bassin/20240122-151122/transports-urbains-du-bassin-2-5-1-gtfs-2023-06-06-15-33-38.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/transport-urbain-du-bassin"
@@ -4820,6 +4820,15 @@
                 "url": "https://transport.data.gouv.fr/datasets/reseau-urbain-nosbus"
             },
             "spec": "gtfs-rt"
+        },
+        {
+            "name": "tudbus-douarnenez-communaute-transport",
+            "type": "http",
+            "url": "https://www.korrigo.bzh/ftp/OPENDATA/TUDBUS.gtfs.zip",
+            "fix": true,
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/tudbus-douarnenez-communaute-transport"
+            }
         },
         {
             "name": "horaires-theoriques-et-temps-reel-du-reseau-ile-de-re-la-rochelle-nouvelle-aquitaine-3-3e-et-scolaires-gtfs-gtfs-rt",
@@ -5083,6 +5092,15 @@
             }
         },
         {
+            "name": "horaires-theoriques-et-temps-reel-du-reseau-coeur-de-tarentaise-gtfs-gtfs-rt",
+            "type": "url",
+            "url": "https://zenbus.net/gtfs/rt/poll.proto?dataset=coeur-de-tarentaise",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/horaires-theoriques-et-temps-reel-du-reseau-coeur-de-tarentaise-gtfs-gtfs-rt"
+            },
+            "spec": "gtfs-rt"
+        },
+        {
             "name": "reseau-meribel",
             "type": "http",
             "url": "https://static.data.gouv.fr/resources/reseau-meribel/20240702-080133/gtfs.zip",
@@ -5099,6 +5117,15 @@
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/gtfs-noirmoutier-gratibus-ete-2023"
             }
+        },
+        {
+            "name": "gtfs-noirmoutier-gratibus-ete-2023",
+            "type": "url",
+            "url": "https://pysae.com/api/v2/groups/noirmoutiers/gtfs-rt",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/gtfs-noirmoutier-gratibus-ete-2023"
+            },
+            "spec": "gtfs-rt"
         },
         {
             "name": "horaires-theoriques-et-temps-reel-de-la-station-de-ski-valmorel-gtfs-gtfs-rt",
