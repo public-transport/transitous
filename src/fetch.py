@@ -16,6 +16,7 @@ import sys
 import os
 import subprocess
 import shutil
+import region_helpers
 
 
 def validate_source_name(name: str):
@@ -164,6 +165,9 @@ class Fetcher:
             os.mkdir(outdir)
 
         for source in region.sources:
+            if source.function:
+                source = getattr(region_helpers, source.function)(source)
+
             if source.skip:
                 if source.skip_reason != "":
                     print("Skipping " + source.name + ": " + source.skip_reason)
