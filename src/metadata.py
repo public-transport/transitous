@@ -30,6 +30,7 @@ class Source:
     fix_csv_quotes: bool = False
     skip: bool = False
     skip_reason: str = ""
+    function: Optional[str] = None
 
     def __init__(self, parsed: Optional[dict] = None):
         self.license = License()
@@ -51,6 +52,8 @@ class Source:
                 self.skip = bool(parsed["skip"])
             if "skip-reason" in parsed:
                 self.skip_reason = parsed["skip-reason"]
+            if "function" in parsed:
+                self.function = parsed["function"]
 
 
 class HttpOptions:
