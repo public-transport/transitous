@@ -145,7 +145,7 @@ class Fetcher:
             subprocess.check_call(["./src/fix-csv-quotes.py", temp_file])
 
         command = ["gtfsclean", str(temp_file),
-                   "--check-null-coords", "--delete-orphans",
+                   "--check-null-coords",
                    "--remove-red-routes", "--remove-red-services", "--remove-red-stops", "--remove-red-trips", "--red-trips-fuzzy",
                    "--output", str(temp_file)]
         if source.fix:
