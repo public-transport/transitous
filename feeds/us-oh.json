@@ -30,7 +30,8 @@
         {
             "name": "Miller-Transportation",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-miller~transportation~in~ky"
+            "transitland-atlas-id": "f-miller~transportation~in~ky",
+            "fix": true
         },
         {
             "name": "Stark-Area-Regional-Transit-Authority",
