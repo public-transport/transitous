@@ -250,9 +250,7 @@
         {
             "name": "PCConnect",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-perth~county~on~ca",
-            "skip": true,
-            "skip-reason": "GTFS is contained in a subdirectory, which would need a custom script to fix"
+            "transitland-atlas-id": "f-perth~county~on~ca"
         },
         {
             "name": "Quinte-Transit",
