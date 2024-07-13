@@ -32,6 +32,11 @@
             "name": "tursib",
             "type": "http",
             "url": "https://s3.gtfs.pro/files/uran/improved-gtfs-tursib.zip"
+        },
+        {
+            "name": "constanța",
+            "type": "http",
+            "url": "https://external.gtfs.ro/constanta/CONSTANTA.zip"
         }
     ]
 }
