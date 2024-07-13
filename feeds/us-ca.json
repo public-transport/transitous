@@ -52,6 +52,33 @@
             "transitland-atlas-id": "f-9q8-samtrans"
         },
         {
+            "name": "Santa-Cruz-Metro",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9q9-scmtdcom",
+            "proxy": true,
+            "skip": true,
+            "skip-reason": "Generates 404"
+        },
+        {
+            "name": "Santa-Cruz-Metro",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9q9-scmtdcom~rt",
+            "skip": true,
+            "skip-reason": "Generates 404"
+        },
+        {
+            "name": "Sacramento-Regional-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9qce-sacramentoregionaltransit",
+            "proxy": true
+        },
+        {
+            "name": "Sacramento-Regional-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9qce-sacramentoregionaltransit~rt",
+            "proxy": true
+        },
+        {
             "name": "Metro-LosAngeles",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-9q5-metro~losangeles"
