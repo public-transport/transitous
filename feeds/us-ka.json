@@ -7,9 +7,9 @@
     ],
     "sources": [
         {
-            "name": "Rock-Region-Metro",
+            "name": "Kansas-City-MO",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-9ynm-centralarkansastransitauthority",
+            "transitland-atlas-id": "f-bird~kansas~city~mo~gbfs",
             "fix": true
         }
     ]
