@@ -3,6 +3,10 @@
         {
             "name": "Marcus Lundblad",
             "github": "mlundblad"
+        },
+        {
+            "name": "Jonah Brüchert",
+            "github": "jbruechert"
         }
     ],
     "sources": [
@@ -10,6 +14,11 @@
             "name": "Athens",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-swb-ΟργανισμόςΑστικώνΣυγκοινωνιώνΟΑΣΑ~Αthensurbantransportorga"
+        },
+        {
+            "name": "TrainOSE",
+            "type": "http",
+            "url": "https://extranet.trainose.gr/epivatikos/transit/google_transit.zip"
         }
     ]
 }
