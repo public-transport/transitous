@@ -146,7 +146,7 @@ class Fetcher:
 
         command = ["gtfsclean", str(temp_file),
                    "--fix-zip",
-                   "--check-null-coords",
+                   "--check-null-coords", "--drop-too-fast-trips",
                    "--empty-agency-url-repl", "https://transitous.org",
                    "--remove-red-routes", "--remove-red-services", "--remove-red-stops", "--remove-red-trips", "--red-trips-fuzzy",
                    "--output", str(temp_file)]
