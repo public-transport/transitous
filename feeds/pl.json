@@ -100,6 +100,17 @@
             "name": "Lublin",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u905-lublin"
+        },
+        {
+            "name": "Gdańsk",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-ztm~gdansk",
+            "fix": true
+        },
+        {
+            "name": "Elbląg",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u3tu-elblag"
         }
     ]
 }
