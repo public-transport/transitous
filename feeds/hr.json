@@ -13,6 +13,31 @@
             "license": {
                 "spdx-identifier": "CC0-1.0"
             }
+        },
+        {
+            "name": "zet",
+            "type": "http",
+            "url": "https://b2b.promet-info.hr/dc/b2b.gtfs.zet",
+            "url-override": "https://jbb.ghsq.de/gtfs/hr-zet.gtfs.zip"
+        },
+        {
+            "name": "jl",
+            "type": "http",
+            "url": "https://b2b.promet-info.hr/dc/b2b.gtfs.jl",
+            "url-override": "https://jbb.ghsq.de/gtfs/hr-jl.gtfs.zip"
+        },
+        {
+            "name": "pulapromet",
+            "type": "http",
+            "url": "https://b2b.promet-info.hr/dc/b2b.gtfs.pulapromet",
+            "url-override": "https://jbb.ghsq.de/gtfs/hr-pulapromet.gtfs.zip"
+        },
+        {
+            "name": "osijekgpp",
+            "type": "http",
+            "url": "https://b2b.promet-info.hr/dc/b2b.gtfs.osijekgpp",
+            "url-override": "https://jbb.ghsq.de/gtfs/hr-osijekgpp.gtfs.zip",
+            "fix": true
         }
     ]
 }
