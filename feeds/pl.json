@@ -4,6 +4,10 @@
             "name": "Jonah Brüchert",
             "github": "jbruechert"
         }
+        {
+            "name": "Wojciech Kulesza"
+            "github": "wkulesza"
+        }
     ],
     "sources": [
         {
@@ -111,6 +115,11 @@
             "name": "Elbląg",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u3tu-elblag"
+        }
+        {
+            "name": "Poznań"
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u3k4-miejskieprzedsiębiorstwokomunikacyjnespzoowpoznaniu~kórni"
         }
     ]
 }
