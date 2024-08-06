@@ -29,7 +29,7 @@
         {
             "name": "v-busz",
             "type": "http",
-            "url": "https://www.vbusz.hu/gtfs"
+            "url": "https://vbusz.hu/wp-content/uploads/2024/08/gtfs.zip"
         },
         {
             "name": "mkv",
