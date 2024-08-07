@@ -9,7 +9,8 @@
         {
             "name": "ovapi",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u-nl"
+            "transitland-atlas-id": "f-u-nl",
+            "fix": true
         },
         {
             "name": "ovapi",
