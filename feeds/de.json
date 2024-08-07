@@ -3,6 +3,10 @@
         {
             "name": "Jonah Brüchert",
             "github": "jbruechert"
+        },
+        {
+            "name": "Robin Durner",
+            "github": "traines-source"
         }
     ],
     "sources": [
@@ -16,6 +20,16 @@
             "fix": true,
             "http-options": {
                 "fetch-interval-days": 2
+            }
+        },
+        {
+            "name": "DELFI",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://stc.traines.eu/mirror/german-delfi-gtfs-rt/latest.gtfs-rt.pbf",
+            "license": {
+                "spdx-identifier": "CC-BY-SA-4.0",
+                "url": "https://mobilithek.info/offers/755009281410899968"
             }
         }
     ]
