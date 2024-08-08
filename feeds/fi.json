@@ -97,7 +97,8 @@
             "license": {
                 "spdx_identifier": "CC-BY-4.0",
                 "url": "https://opendata.waltti.fi/docs#gtfs-static-packages"
-            }
+            },
+            "fix": true
         },
         {
             "name": "237",
