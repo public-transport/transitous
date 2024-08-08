@@ -9,7 +9,8 @@
     {
       "name": "CDTA",
       "type": "transitland-atlas",
-      "transitland-atlas-id": "f-dre-cdta"
+      "transitland-atlas-id": "f-dre-cdta",
+      "fix": true
     },
     {
       "name": "UCAT",
