@@ -81,7 +81,8 @@
         {
             "name": "Metro-LosAngeles",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-9q5-metro~losangeles"
+            "transitland-atlas-id": "f-9q5-metro~losangeles",
+            "fix": true
         },
         {
             "name": "Metro-LosAngeles",
