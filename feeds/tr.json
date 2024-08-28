@@ -7,15 +7,14 @@
     ],
     "sources": [
         {
-    	   "name": "izmir-eshot",
+           "name": "izmir-eshot",
            "type": "transitland-atlas",
            "transitland-atlas-id": "f-eshot~tr"
         },
         {
             "name": "izmir-metro",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-izmir~metro",
-            "fix": true
+            "type": "http",
+            "url": "https://yasinkaraaslan.com/gtfs/izmir-metro.zip"
         },
         {
             "name": "izmir-izban",
@@ -31,14 +30,13 @@
         {
             "name": "istanbul-ibb",
             "type": "http",
-            "url": "https://s3.gtfs.pro/files/uran/improved-gtfs-ibb-istanbul.zip",
+            "url": "https://yasinkaraaslan.com/gtfs/istanbul-ibb.zip",
             "fix": true
         },
         {
             "name": "istanbul-iett",
             "type": "http",
-            "url": "https://s3.gtfs.pro/files/sourcedata/iett.zip",
-            "fix": true
+            "url": "https://yasinkaraaslan.com/gtfs/istanbul-iett.zip"
         },
         {
             "name": "konya",
