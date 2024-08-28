@@ -14,12 +14,14 @@
         {
             "name": "izmir-metro",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-izmir~metro"
+            "transitland-atlas-id": "f-izmir~metro",
+            "fix": true
         },
         {
             "name": "izmir-izban",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-izmir~rail"
+            "transitland-atlas-id": "f-izmir~rail",
+            "fix": true
         },
         {
             "name": "izmir-tram",
@@ -29,12 +31,14 @@
         {
             "name": "istanbul-ibb",
             "type": "http",
-            "url": "https://s3.gtfs.pro/files/uran/improved-gtfs-ibb-istanbul.zip"
+            "url": "https://s3.gtfs.pro/files/uran/improved-gtfs-ibb-istanbul.zip",
+            "fix": true
         },
         {
             "name": "istanbul-iett",
             "type": "http",
-            "url": "https://s3.gtfs.pro/files/sourcedata/iett.zip"
+            "url": "https://s3.gtfs.pro/files/sourcedata/iett.zip",
+            "fix": true
         },
         {
             "name": "konya",
