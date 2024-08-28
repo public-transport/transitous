@@ -1,0 +1,30 @@
+{
+    "maintainers": [
+        {
+            "name": "Yasin Karaaslan",
+            "github": "yasinkaraaslan"
+        }
+    ],
+    "sources": [
+        {
+    	   "name": "izmir-eshot",
+           "type": "transitland-atlas",
+           "transitland-atlas-id": "f-eshot~tr"
+        },
+        {
+            "name": "izmir-metro",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-izmir~metro"
+        },
+        {
+            "name": "izmir-izban",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-izmir~rail"
+        },
+        {
+            "name": "izmir-tram",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-izmir~tram"
+        },
+    ]
+}
