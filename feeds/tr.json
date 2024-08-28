@@ -1,0 +1,49 @@
+{
+    "maintainers": [
+        {
+            "name": "Yasin Karaaslan",
+            "github": "yasinkaraaslan"
+        }
+    ],
+    "sources": [
+        {
+    	   "name": "izmir-eshot",
+           "type": "transitland-atlas",
+           "transitland-atlas-id": "f-eshot~tr"
+        },
+        {
+            "name": "izmir-metro",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-izmir~metro",
+            "fix": true
+        },
+        {
+            "name": "izmir-izban",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-izmir~rail",
+            "fix": true
+        },
+        {
+            "name": "izmir-tram",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-izmir~tram"
+        },
+        {
+            "name": "istanbul-ibb",
+            "type": "http",
+            "url": "https://s3.gtfs.pro/files/uran/improved-gtfs-ibb-istanbul.zip",
+            "fix": true
+        },
+        {
+            "name": "istanbul-iett",
+            "type": "http",
+            "url": "https://s3.gtfs.pro/files/sourcedata/iett.zip",
+            "fix": true
+        },
+        {
+            "name": "konya",
+            "type": "http",
+            "url": "https://acikveri.konya.bel.tr/tr/dataset/c2e034e6-e015-49c6-8eec-6e2f7de9c105/resource/5742b7bd-3cbf-4784-bee1-f949fc0ca118/download/gtfs_07_2024.zip"
+        }
+    ]
+}
