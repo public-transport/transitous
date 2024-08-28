@@ -26,5 +26,15 @@
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-izmir~tram"
         },
+        {
+            "name": "istanbul-ibb",
+            "type": "http",
+            "url": "https://s3.gtfs.pro/files/uran/improved-gtfs-ibb-istanbul.zip"
+        },
+        {
+            "name": "istanbul-iett",
+            "type": "http",
+            "url": "https://s3.gtfs.pro/files/sourcedata/iett.zip"
+        }
     ]
 }
