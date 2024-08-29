@@ -66,5 +66,10 @@
 				"type": "transitland-atlas",
 				"transitland-atlas-id": "f-dq259-ncsu~wolfline~nc~us"
 			},
+			{
+				"name": "NCSU Wolfline",
+				"type": "transitland-atlas",
+				"transitland-atlas-id": "f-dq259-ncsu~wolfline~nc~us~rt"
+			}
 		]
 }
