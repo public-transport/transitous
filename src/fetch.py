@@ -146,12 +146,14 @@ class Fetcher:
 
         command = ["gtfsclean", str(temp_file),
                    "--fix-zip",
-                   "--check-null-coords", "--drop-too-fast-trips",
+                   "--check-null-coords",
                    "--empty-agency-url-repl", "https://transitous.org",
                    "--remove-red-routes", "--remove-red-services", "--remove-red-stops", "--remove-red-trips", "--red-trips-fuzzy",
                    "--output", str(temp_file)]
         if source.fix:
             command.append("--fix")
+        if source.drop_too_fast_trips:
+            command.append("--drop-too-fast-trips")
 
         subprocess.check_call(command)
 

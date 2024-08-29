@@ -36,7 +36,8 @@
         {
             "name": "istanbul-iett",
             "type": "http",
-            "url": "https://yasinkaraaslan.com/gtfs/istanbul-iett.zip"
+            "url": "https://yasinkaraaslan.com/gtfs/istanbul-iett.zip",
+            "drop-too-fast-trips": false
         },
         {
             "name": "konya",
