@@ -1,0 +1,70 @@
+{
+    "maintainers": [
+			{
+				"name": "Dean Pearce",
+				"github": "deanapearce"
+			}
+		],
+    "sources": [
+			{
+				"name": "GoTriangle",
+				"type": "transitland-atlas",
+				"transitland-atlas-id": "f-dnr-tta~regionalbus~nc~us"
+			},
+			{
+				"name": "GoTriangle",
+				"type": "transitland-atlas",
+				"transitland-atlas-id": "f-dnr-tta~regionalbus~nc~us~rt"
+			},
+			{
+				"name": "GoDurham",
+				"type": "transitland-atlas",
+				"transitland-atlas-id": "f-dnru-durham~area~transit~authority~nc~us"
+			},
+			{
+				"name": "GoDurham",
+				"type": "transitland-atlas",
+				"transitland-atlas-id": "f-dnru-durham~area~transit~authority~nc~us~rt"
+			},
+			{
+				"name": "GoRaleigh",
+				"type": "transitland-atlas",
+				"transitland-atlas-id": "f-dq25-capital~area~transit~nc~us"
+			},
+			{
+				"name": "GoRaleigh",
+				"type": "transitland-atlas",
+				"transitland-atlas-id": "f-dq25-capital~area~transit~nc~us~rt"
+			},
+			{
+				"name": "GoCary",
+				"type": "transitland-atlas",
+				"transitland-atlas-id": "f-dnrg-cary~transit~nc~us"
+			},
+			{
+				"name": "GoCary",
+				"type": "transitland-atlas",
+				"transitland-atlas-id": "f-dnrg-cary~transit~nc~us~rt"
+			},
+			{
+				"name": "Chapel Hill Transit",
+				"type": "transitland-atlas",
+				"transitland-atlas-id": "f-dnru-chapel~hill~transit~nc~us"
+			},
+			{
+				"name": "Chapel Hill Transit",
+				"type": "transitland-atlas",
+				"transitland-atlas-id": "f-dnru-chapel~hill~transit~nc~us~rt"
+			},
+			{
+				"name": "Duke Transit",
+				"type": "transitland-atlas",
+				"transitland-atlas-id": "f-dnrug-duke~nc~us"
+			},
+			{
+				"name": "NCSU Wolfline",
+				"type": "transitland-atlas",
+				"transitland-atlas-id": "f-dq259-ncsu~wolfline~nc~us"
+			},
+		]
+}
