@@ -132,7 +132,8 @@
         {
             "name": "turku",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u6x-turunlinja~autoilijainosakeyhtiö~savonlinjaoy~sl~autolinja"
+            "transitland-atlas-id": "f-u6x-turunlinja~autoilijainosakeyhtiö~savonlinjaoy~sl~autolinja",
+            "fix": true
         },
         {
             "name": "finferries",
