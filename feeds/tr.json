@@ -14,7 +14,7 @@
         {
             "name": "izmir-metro",
             "type": "http",
-            "url": "https://yasinkaraaslan.com/gtfs/izmir-metro.zip"
+            "url": "https://dl.dropboxusercontent.com/scl/fi/4pq6whnox4yzunrql6xdh/izmir-metro.zip?rlkey=cy6i0qbjq4hod0d5yh4i5efmi"
         },
         {
             "name": "izmir-izban",
@@ -30,13 +30,13 @@
         {
             "name": "istanbul-ibb",
             "type": "http",
-            "url": "https://yasinkaraaslan.com/gtfs/istanbul-ibb.zip",
+            "url": "https://dl.dropboxusercontent.com/scl/fi/v937qi0xnytzl21a3bbd0/istanbul-ibb.zip?rlkey=dgi6l0cxb2203fresf1s16r7i",
             "fix": true
         },
         {
             "name": "istanbul-iett",
             "type": "http",
-            "url": "https://yasinkaraaslan.com/gtfs/istanbul-iett.zip",
+            "url": "https://dl.dropboxusercontent.com/scl/fi/t57vx1ivwq02x0xy51tum/istanbul-iett.zip?rlkey=qb0ien7ba5s2okt3or2lzc2nn",
             "drop-too-fast-trips": false
         },
         {
