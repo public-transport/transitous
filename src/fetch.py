@@ -57,8 +57,9 @@ class Fetcher:
                 }
 
                 headers = source.options.headers.copy()
-                headers["user-agent"] \
-                    = "Transitous GTFS Fetcher (https://transitous.org)"
+                if not "user-agent" in headers:
+                    headers["user-agent"] \
+                        = "Transitous GTFS Fetcher (https://transitous.org)"
 
                 # Detect last modification time of local file
                 last_modified = None
