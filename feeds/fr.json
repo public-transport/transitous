@@ -704,7 +704,7 @@
         {
             "name": "base-de-donnees-multimodale-des-reseaux-de-transport-public-normands",
             "type": "http",
-            "url": "https://static.data.gouv.fr/resources/base-de-donnees-multimodale-des-reseaux-de-transport-public-normands/20240702-085115/pt-th-offer-atoumod-gtfs-20240702-608-opendata.zip",
+            "url": "https://www.data.gouv.fr/fr/datasets/r/3873ccc7-44d9-40f3-a133-920944af0c29",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/base-de-donnees-multimodale-des-reseaux-de-transport-public-normands"
