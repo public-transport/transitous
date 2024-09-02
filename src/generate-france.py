@@ -60,7 +60,7 @@ if __name__ == "__main__":
             source = {
                 "name": dataset["slug"],
                 "type": "http",
-                "url": resources[0]["original_url"],
+                "url": resources[0]["url"],
                 "fix": True,
             }
 
