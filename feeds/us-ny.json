@@ -3,6 +3,10 @@
     {
       "name": "David Rhoads",
       "github": "kd2flz"
+    },
+    {
+      "name": "Marcus Lundblad",
+      "github": "mlundblad"
     }
   ],
   "sources": [
@@ -121,6 +125,36 @@
       "name": "MetroNorth",
       "type": "transitland-atlas",
       "transitland-atlas-id": "f-mta~nyc~rt~mnr"
+    },
+    {
+      "name": "SuffolkCountyTransit",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-drk-ny~suffolkcountytransit"
+    },
+    {
+      "name": "SuffolkCountyTransit",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-drk-ny~suffolkcountytransit~rt"
+    },
+    {
+      "name": "NassauInterCountyExpress",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-dr5x-wwwnicebuscom",
+      "http-options": {
+        "ignore-tls-errors": true
+      },
+      "skip": true,
+      "skip-reason": "Getting [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate"
+    },
+    {
+      "name": "LongBeach",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-clbt~nassau~ny~us"
+    },
+    {
+      "name": "GlenCove",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-glen~cove~ny"
     }
   ]
 }
