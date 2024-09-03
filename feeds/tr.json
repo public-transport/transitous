@@ -47,7 +47,7 @@
         {
             "name": "kocaeli",
             "type": "http",
-            "url": "http://kocaeli.bel.tr/webfiles/userfiles/files/birimler/bilgi-islem-dairesi-baskanligi/kocaeli-gtfs.zip",
+            "url": "https://dl.dropboxusercontent.com/scl/fi/2x02vtnwmtfmloygeuc3y/kocaeli.zip?rlkey=jarn6ofb7gu5g9gdeopkcbw5k",
             "fix": true
         }
     ]
