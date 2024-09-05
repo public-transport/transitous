@@ -1,16 +1,50 @@
 {
     "maintainers": [
         {
-            "name": "Jonathan Jesse",
-            "github": "jjesse"
+            "name": "Marcus Lundblad",
+            "github": "mlundblad"
         }
     ],
     "sources": [
         {
-            "name": "Rock-Region-Metro",
+            "name": "Wichita-Transit",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-9ynm-centralarkansastransitauthority",
-            "fix": true
+            "transitland-atlas-id": "f-9ydy-wichitatransit"
+        },
+        {
+            "name": "Wichita-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9ydy-wichitatransit~rt"
+        },
+        {
+            "name": "RideKC",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9yum-thejo"
+        },
+        {
+            "name": "Lawrence-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9yum-kuonwheels~lawrencetransitsystem"
+        },
+        {
+            "name": "Topeka-Metro",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-topeka~metro"
+        },
+        {
+            "name": "Flint-Hills",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-ata~bus~ks"
+        },
+        {
+            "name": "Flint-Hills",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-ata~bus~ks~rt"
+        },
+        {
+            "name": "Salina-CityGo",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-salina~city~go~ks"
         }
     ]
 }
