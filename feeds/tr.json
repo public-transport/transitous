@@ -31,13 +31,15 @@
             "name": "istanbul-ibb",
             "type": "http",
             "url": "https://dl.dropboxusercontent.com/scl/fi/v937qi0xnytzl21a3bbd0/istanbul-ibb.zip?rlkey=dgi6l0cxb2203fresf1s16r7i",
-            "fix": true
+            "fix": true,
+            "skip": true
         },
         {
             "name": "istanbul-iett",
             "type": "http",
             "url": "https://dl.dropboxusercontent.com/scl/fi/t57vx1ivwq02x0xy51tum/istanbul-iett.zip?rlkey=qb0ien7ba5s2okt3or2lzc2nn",
-            "drop-too-fast-trips": false
+            "drop-too-fast-trips": false,
+            "skip": true
         },
         {
             "name": "konya",
