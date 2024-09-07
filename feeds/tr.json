@@ -39,7 +39,8 @@
             "type": "http",
             "url": "https://dl.dropboxusercontent.com/scl/fi/t57vx1ivwq02x0xy51tum/istanbul-iett.zip?rlkey=qb0ien7ba5s2okt3or2lzc2nn",
             "drop-too-fast-trips": false,
-            "skip": true
+            "skip": true,
+            "skip-reason": "Most trips are not usable, causes routing to return nonsensical results."
         },
         {
             "name": "konya",
