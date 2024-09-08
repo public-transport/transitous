@@ -31,18 +31,27 @@
             "name": "istanbul-ibb",
             "type": "http",
             "url": "https://dl.dropboxusercontent.com/scl/fi/v937qi0xnytzl21a3bbd0/istanbul-ibb.zip?rlkey=dgi6l0cxb2203fresf1s16r7i",
-            "fix": true
+            "fix": true,
+            "skip": true
         },
         {
             "name": "istanbul-iett",
             "type": "http",
             "url": "https://dl.dropboxusercontent.com/scl/fi/t57vx1ivwq02x0xy51tum/istanbul-iett.zip?rlkey=qb0ien7ba5s2okt3or2lzc2nn",
-            "drop-too-fast-trips": false
+            "drop-too-fast-trips": false,
+            "skip": true,
+            "skip-reason": "Most trips are not usable, causes routing to return nonsensical results."
         },
         {
             "name": "konya",
             "type": "http",
             "url": "https://acikveri.konya.bel.tr/tr/dataset/c2e034e6-e015-49c6-8eec-6e2f7de9c105/resource/5742b7bd-3cbf-4784-bee1-f949fc0ca118/download/gtfs_07_2024.zip"
+        },
+        {
+            "name": "kocaeli",
+            "type": "http",
+            "url": "https://dl.dropboxusercontent.com/scl/fi/2x02vtnwmtfmloygeuc3y/kocaeli.zip?rlkey=jarn6ofb7gu5g9gdeopkcbw5k",
+            "fix": true
         }
     ]
 }
