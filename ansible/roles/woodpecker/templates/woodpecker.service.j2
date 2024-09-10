@@ -15,6 +15,8 @@ Environment="WOODPECKER_HOST=https://routing-import.spline.de"
 Environment="WOODPECKER_ADMIN=jbruechert"
 Environment="WOODPECKER_AGENT_SECRET={{ transitous_woodpecker_agent_secret }}"
 Environment="WOODPECKER_REPO_OWNERS=public-transport"
+Environment="WOODPECKER_DATABASE_DRIVER=postgres"
+Environment="WOODPECKER_DATABASE_DATASOURCE=postgres://motis_import:{{ transitous_woodpecker_postgres_password }}@vm-postgres.spline.de/motis_import"
 #Environment="WOODPECKER_ORGS=public-transport"
 User=woodpecker
 Group=nogroup
