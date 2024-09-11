@@ -705,7 +705,7 @@
         {
             "name": "base-de-donnees-multimodale-des-reseaux-de-transport-public-normands",
             "type": "http",
-            "url": "https://static.data.gouv.fr/resources/base-de-donnees-multimodale-des-reseaux-de-transport-public-normands/20240702-085115/pt-th-offer-atoumod-gtfs-20240702-608-opendata.zip",
+            "url": "https://www.data.gouv.fr/fr/datasets/r/3873ccc7-44d9-40f3-a133-920944af0c29",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/base-de-donnees-multimodale-des-reseaux-de-transport-public-normands"
@@ -1631,9 +1631,18 @@
             }
         },
         {
+            "name": "horaires-theoriques-cap-cotentin-cherbourg-rennes",
+            "type": "http",
+            "url": "https://www.data.gouv.fr/fr/datasets/r/07f7a5b7-7ece-413d-952a-66603e426b7c",
+            "fix": true,
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/horaires-theoriques-et-en-temps-reel-des-bus-et-autocars-circulant-sur-le-reseau-cap-cotentin"
+            }
+        },
+        {
             "name": "horaires-theoriques-et-en-temps-reel-des-bus-et-autocars-circulant-sur-le-reseau-cap-cotentin",
             "type": "http",
-            "url": "https://static.data.gouv.fr/resources/horaires-theoriques-et-en-temps-reel-des-bus-et-autocars-circulant-sur-le-reseau-cap-cotentin/20240604-074459/gtfs-capcotentin-31052024-au-25082024-v2.zip",
+            "url": "https://www.data.gouv.fr/fr/datasets/r/2e97c9b3-a59f-42dd-9b9e-a232fa771f21",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/horaires-theoriques-et-en-temps-reel-des-bus-et-autocars-circulant-sur-le-reseau-cap-cotentin"
