@@ -57,7 +57,7 @@
             "name": "ankara",
             "type": "http",
             "url": "https://dl.dropboxusercontent.com/scl/fi/d7u3d00gd85w2qbzedze6/ankara.zip?rlkey=4x8oz2sby5vvqgf1iuaeit70l",
-            "drop-too-fast-trips": false
+            "drop-too-fast-trips": true
         },
         {
             "name": "antalya",
