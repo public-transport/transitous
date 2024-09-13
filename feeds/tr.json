@@ -52,6 +52,18 @@
             "type": "http",
             "url": "https://dl.dropboxusercontent.com/scl/fi/2x02vtnwmtfmloygeuc3y/kocaeli.zip?rlkey=jarn6ofb7gu5g9gdeopkcbw5k",
             "fix": true
+        },
+        {
+            "name": "ankara",
+            "type": "http",
+            "url": "https://dl.dropboxusercontent.com/scl/fi/d7u3d00gd85w2qbzedze6/ankara.zip?rlkey=4x8oz2sby5vvqgf1iuaeit70l",
+            "drop-too-fast-trips": true
+        },
+        {
+            "name": "antalya",
+            "type": "http",
+            "url": "https://dl.dropboxusercontent.com/scl/fi/3wsws4ukgdi3uio68cvu4/antalya.zip?rlkey=nafdcydx4pvbuz908luhk6i9x",
+            "drop-too-fast-trips": false
         }
     ]
 }
