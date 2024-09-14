@@ -40,13 +40,6 @@ h2 {
     <button class="btn btn-outline-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-{{ crypto.SHA256 .source }}" aria-expanded="false" aria-controls="collapse-{{ crypto.SHA256 $source.source }}">
       Show Operators…
     </button>
-    <div class="collapse mt-2" id="collapse-{{ crypto.SHA256 $source.source }}">
-      <div class="card card-body">
-        <p class="fs-6">
-        {{ delimit $source.operators ", " }}
-        </p>
-      </div>
-    </div>
   {{ else }}
     <p class="fs-6">{{ delimit $source.operators ", " }}</p>
   {{ end }}
@@ -54,6 +47,13 @@ h2 {
   <a class="btn btn-outline-secondary" href="{{ $source.source }}">Original File</a>
   <a class="btn btn-outline-secondary" href="https://routing.spline.de/gtfs/{{ $source.filename }}">Processed File</a>
 
+  <div class="collapse mt-2" id="collapse-{{ crypto.SHA256 $source.source }}">
+    <div class="card card-body">
+      <p class="fs-6">
+      {{ delimit $source.operators ", " }}
+      </p>
+    </div>
+  </div>
 {{ end }}
 
 <script src="/bootstrap.min.js"></script>
