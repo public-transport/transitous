@@ -155,6 +155,31 @@
       "name": "GlenCove",
       "type": "transitland-atlas",
       "transitland-atlas-id": "f-glen~cove~ny"
+    },
+    {
+      "name": "Seastreak",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-drk-seastreak"
+    },
+    {
+      "name": "NY-Waterway",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-dr7-nywaterway"
+    },
+    {
+      "name": "NYC-Ferry",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-dr5r-nycferry"
+    },
+    {
+      "name": "NewYorkCityDOT",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-dr5r7-nycdotsiferry"
+    },
+    {
+      "name": "NationalParkService",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-statue~of~liberty~ferries"
     }
   ]
 }
