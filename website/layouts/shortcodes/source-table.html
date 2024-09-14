@@ -1,0 +1,59 @@
+<!--
+SPDX-FileCopyrightText: 2024 Jonah Brüchert <jbb@kaidan.im>
+
+SPDX-License-Identifier: AGPL-3.0-or-later
+-->
+
+<style>
+h3 {
+  margin-top: 30px;
+}
+
+h2 {
+  margin-top: 60px;
+}
+</style>
+
+{{ range $index, $source := $.Site.Data.license }}
+  {{ if not (compare.Eq ((index $.Site.Data.license $index).region_name) ((index $.Site.Data.license (sub $index 1)).region_name)) }}
+    <h2>{{ .region_name }}</h2>
+  {{ end }}
+
+  <h3>{{ .human_name }}</h3>
+
+  <p>Data from {{ (urls.Parse $source.source).Host }} is used
+
+  {{ if or $source.license_url $source.spdx_license_identifier }}
+    under
+    {{ if $source.license_url }}
+    <a href="{{ .license_url }}">
+    {{ else }}
+    <a href="https://spdx.org/licenses/{{ .spdx_license_identifier }}.html">
+    {{ end }}
+
+    these conditions</a>
+  {{ end }}
+
+  for the following operators:</p>
+
+  {{ if compare.Gt (len $source.operators) 10 }}
+    <button class="btn btn-outline-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-{{ crypto.SHA256 .source }}" aria-expanded="false" aria-controls="collapse-{{ crypto.SHA256 $source.source }}">
+      Show Operators…
+    </button>
+    <div class="collapse mt-2" id="collapse-{{ crypto.SHA256 $source.source }}">
+      <div class="card card-body">
+        <p class="fs-6">
+        {{ delimit $source.operators ", " }}
+        </p>
+      </div>
+    </div>
+  {{ else }}
+    <p class="fs-6">{{ delimit $source.operators ", " }}</p>
+  {{ end }}
+
+  <a class="btn btn-outline-secondary" href="{{ $source.source }}">Original File</a>
+  <a class="btn btn-outline-secondary" href="https://routing.spline.de/gtfs/{{ $source.filename }}">Processed File</a>
+
+{{ end }}
+
+<script src="/bootstrap.min.js"></script>

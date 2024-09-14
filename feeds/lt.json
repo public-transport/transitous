@@ -15,7 +15,7 @@
         {
             "name": "vilnius",
             "type": "http",
-            "url": " https://stops.lt/vilnius/vilnius/gtfs.zip"
+            "url": "https://stops.lt/vilnius/vilnius/gtfs.zip"
         },
         {
             "name": "vilnius",
@@ -26,12 +26,12 @@
         {
             "name": "kaunas",
             "type": "http",
-            "url": " https://stops.lt/kaunas/kaunas/gtfs.zip"
+            "url": "https://stops.lt/kaunas/kaunas/gtfs.zip"
         },
         {
             "name": "panevezys",
             "type": "http",
-            "url": " https://stops.lt/panevezys/panevezys/gtfs.zip"
+            "url": "https://stops.lt/panevezys/panevezys/gtfs.zip"
         },
         {
             "name": "panevezys",
@@ -42,7 +42,7 @@
         {
             "name": "klaipeda",
             "type": "http",
-            "url": " https://stops.lt/klaipeda/klaipeda/gtfs.zip"
+            "url": "https://stops.lt/klaipeda/klaipeda/gtfs.zip"
         },
         {
             "name": "klaipeda",
@@ -53,27 +53,27 @@
         {
             "name": "druskininkai",
             "type": "http",
-            "url": " https://stops.lt/druskininkai/druskininkai/gtfs.zip"
+            "url": "https://stops.lt/druskininkai/druskininkai/gtfs.zip"
         },
         {
             "name": "alytus",
             "type": "http",
-            "url": " https://stops.lt/alytus/alytus/gtfs.zip"
+            "url": "https://stops.lt/alytus/alytus/gtfs.zip"
         },
         {
             "name": "siauliai",
             "type": "http",
-            "url": " https://stops.lt/siauliai/siauliai/gtfs.zip"
+            "url": "https://stops.lt/siauliai/siauliai/gtfs.zip"
         },
         {
             "name": "taurage",
             "type": "http",
-            "url": " https://stops.lt/taurage/taurage/gtfs.zip"
+            "url": "https://stops.lt/taurage/taurage/gtfs.zip"
         },
         {
             "name": "traukiniai",
             "type": "http",
-            "url": " https://stops.lt/traukiniai/traukiniai/gtfs.zip"
+            "url": "https://stops.lt/traukiniai/traukiniai/gtfs.zip"
         }
     ]
 }

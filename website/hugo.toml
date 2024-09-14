@@ -6,7 +6,6 @@ baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'Transitous'
 theme = "ananke"
-sectionPagesMenu = 'main'
 
 [params]
   custom_css = ["bootstrap.min.css", "bootstrap-icons.min.css", "custom.css"]
