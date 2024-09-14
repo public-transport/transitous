@@ -25,7 +25,7 @@ if __name__ == "__main__":
 
     attributions = []
 
-    for feed in feed_dir.glob("*.json"):
+    for feed in sorted(feed_dir.glob("*.json")):
         parsed = {}
         with open(feed, "r") as f:
             parsed = json.load(f)
