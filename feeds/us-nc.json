@@ -47,27 +47,27 @@
 				"transitland-atlas-id": "f-dnrg-cary~transit~nc~us~rt"
 			},
 			{
-				"name": "Chapel Hill Transit",
+				"name": "ChapelHillTransit",
 				"type": "transitland-atlas",
 				"transitland-atlas-id": "f-dnru-chapel~hill~transit~nc~us"
 			},
 			{
-				"name": "Chapel Hill Transit",
+				"name": "ChapelHillTransit",
 				"type": "transitland-atlas",
 				"transitland-atlas-id": "f-dnru-chapel~hill~transit~nc~us~rt"
 			},
 			{
-				"name": "Duke Transit",
+				"name": "DukeTransit",
 				"type": "transitland-atlas",
 				"transitland-atlas-id": "f-dnrug-duke~nc~us"
 			},
 			{
-				"name": "NCSU Wolfline",
+				"name": "NCSU-Wolfline",
 				"type": "transitland-atlas",
 				"transitland-atlas-id": "f-dq259-ncsu~wolfline~nc~us"
 			},
 			{
-				"name": "NCSU Wolfline",
+				"name": "NCSU-Wolfline",
 				"type": "transitland-atlas",
 				"transitland-atlas-id": "f-dq259-ncsu~wolfline~nc~us~rt"
 			}
