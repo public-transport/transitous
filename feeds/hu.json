@@ -19,7 +19,8 @@
         {
             "name": "volanbusz",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-volanbusz~hu"
+            "transitland-atlas-id": "f-volanbusz~hu",
+            "fix": true
         },
         {
             "name": "bkk",
