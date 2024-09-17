@@ -15,7 +15,8 @@
         {
             "name": "vilnius",
             "type": "http",
-            "url": "https://stops.lt/vilnius/vilnius/gtfs.zip"
+            "url": "https://stops.lt/vilnius/vilnius/gtfs.zip",
+            "fix": true
         },
         {
             "name": "vilnius",
