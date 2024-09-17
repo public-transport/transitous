@@ -17,6 +17,16 @@
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-9-flixbus",
             "fix": true
+        },
+        {
+            "name": "Peter-Pan-Bus-Lines",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dr-peterpanbuslines"
+        },
+        {
+            "name": "Megabus",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-megabus~us"
         }
     ]
 }
