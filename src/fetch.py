@@ -7,6 +7,7 @@ from metadata import *
 from pathlib import Path
 from datetime import datetime, timezone
 from utils import eprint
+from zipfile import ZipFile
 
 import email.utils
 import requests
@@ -17,6 +18,7 @@ import os
 import subprocess
 import shutil
 import region_helpers
+import io
 
 
 def validate_source_name(name: str):
@@ -121,8 +123,16 @@ class Fetcher:
                     last_modified_server = email.utils.parsedate_to_datetime(
                         server_headers["last-modified"])
 
-                with open(dest_path, "wb") as dest:
-                    dest.write(response.content)
+                if "#" in download_url:
+                    # if URL contains #, treat the path after # as an embedded ZIP file
+                    sub_path = download_url.partition("#")[2]
+                    zipfile = ZipFile(io.BytesIO(response.content))
+
+                    with open(dest_path, "wb") as dest:
+                        dest.write(zipfile.read(sub_path))
+                else:
+                    with open(dest_path, "wb") as dest:
+                        dest.write(response.content)
 
                 # Set server mtime on local file
                 if last_modified_server:
