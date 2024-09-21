@@ -13,7 +13,7 @@
         {
             "name": "aggregated",
             "type": "http",
-            "url": "https://data.jr.ggu.cz/results/latest/CZPTT_GTFS.zip",
+            "url": "https://data.jr.ggu.cz/results/latest/JDF_merged_GTFS.zip",
             "fix": true
         },
         {
