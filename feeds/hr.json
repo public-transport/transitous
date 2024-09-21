@@ -3,6 +3,10 @@
         {
             "name": "Volker Krause",
             "github": "vkrause"
+        },
+        {
+            "name": "Jonah Brüchert",
+            "github": "jbruechert"
         }
     ],
     "sources": [
@@ -16,9 +20,13 @@
         },
         {
             "name": "zet",
-            "type": "http",
-            "url": "https://b2b.promet-info.hr/dc/b2b.gtfs.zet",
-            "url-override": "https://jbb.ghsq.de/gtfs/hr-zet.gtfs.zip"
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u25k-zagrebačkielektričnitramvaj"
+        },
+        {
+            "name": "zet",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u25k-zagrebačkielektričnitramvaj~rt"
         },
         {
             "name": "jl",
