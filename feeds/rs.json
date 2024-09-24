@@ -7,6 +7,11 @@
     ],
     "sources": [
         {
+            "name": "Srbijavoz",
+            "type": "http",
+            "url": "https://jbb.ghsq.de/gtfs/rs-srbijavoz.gtfs.zip"
+        },
+        {
             "name": "Subotica",
             "type": "http",
             "url": "https://data.gov.rs/sr/datasets/r/c1b7db4b-cd0c-49c6-bfa1-a08dab70a446"
