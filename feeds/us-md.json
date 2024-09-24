@@ -76,12 +76,16 @@
       "name": "TransIt",
       "type": "transitland-atlas",
       "transitland-atlas-id": "f-dr0b-transitservicesoffrederickcounty",
-      "fix": true
+      "fix": true,
+      "skip": true,
+      "skip-reason": "Connection timed out"
     },
     {
       "name": "TransIt",
       "type": "transitland-atlas",
-      "transitland-atlas-id": "f-dr0b-transitservicesoffrederickcounty~rt"
+      "transitland-atlas-id": "f-dr0b-transitservicesoffrederickcounty~rt",
+      "skip": true,
+      "skip-reason": "Connection timed out"
     },
     {
       "name": "RideOn",
