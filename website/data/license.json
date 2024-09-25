@@ -21,7 +21,10 @@
         "filename": "au_Translink-BOW.gtfs.zip",
         "human_name": "Bowen Transit",
         "region_code": "AU",
-        "region_name": "Australia"
+        "region_name": "Australia",
+        "rt_spdx_license_identifier": "CC-BY-4.0",
+        "rt_license_url": "https://www.data.qld.gov.au/dataset/translink-real-time-data",
+        "rt_source": "https://gtfsrt.api.translink.com.au/api/realtime/BOW/TripUpdates"
     },
     {
         "spdx_license_identifier": "CC-BY-4.0",
@@ -45,7 +48,10 @@
         "filename": "au_Translink-CNS.gtfs.zip",
         "human_name": "Sunbus Cairns",
         "region_code": "AU",
-        "region_name": "Australia"
+        "region_name": "Australia",
+        "rt_spdx_license_identifier": "CC-BY-4.0",
+        "rt_license_url": "https://www.data.qld.gov.au/dataset/translink-real-time-data",
+        "rt_source": "https://gtfsrt.api.translink.com.au/api/realtime/CNS/TripUpdates"
     },
     {
         "license_url": "https://www.data.qld.gov.au/dataset/general-transit-feed-specification-gtfs-qconnect/resource/254f67be-ea12-4da1-8475-c5424359290e",
@@ -80,7 +86,10 @@
         "filename": "au_Translink-INN.gtfs.zip",
         "human_name": "Trans North Innisfail",
         "region_code": "AU",
-        "region_name": "Australia"
+        "region_name": "Australia",
+        "rt_spdx_license_identifier": "CC-BY-4.0",
+        "rt_license_url": "https://www.data.qld.gov.au/dataset/translink-real-time-data",
+        "rt_source": "https://gtfsrt.api.translink.com.au/api/realtime/INN/TripUpdates"
     },
     {
         "spdx_license_identifier": "CC-BY-4.0",
@@ -162,7 +171,10 @@
         "filename": "au_Translink-NSI.gtfs.zip",
         "human_name": "North Stradbroke Island Buses",
         "region_code": "AU",
-        "region_name": "Australia"
+        "region_name": "Australia",
+        "rt_spdx_license_identifier": "CC-BY-4.0",
+        "rt_license_url": "https://www.data.qld.gov.au/dataset/translink-real-time-data",
+        "rt_source": "https://gtfsrt.api.translink.com.au/api/realtime/NSI/TripUpdates"
     },
     {
         "spdx_license_identifier": "CC-BY-4.0",
@@ -297,7 +309,8 @@
         "filename": "ca-bc_Campbell-River-Transit.gtfs.zip",
         "human_name": "BCTransit",
         "region_code": "CA-BC",
-        "region_name": "British Columbia"
+        "region_name": "British Columbia",
+        "rt_source": "https://bct.tmix.se/gtfs-realtime/tripupdates.pb?operatorIds=12"
     },
     {
         "license_url": "https://www.bctransit.com/open-data/terms-of-use",
@@ -308,7 +321,9 @@
         "filename": "ca-bc_Comox-Valley-Transit.gtfs.zip",
         "human_name": "BC Transit - Comox Valley Transit System",
         "region_code": "CA-BC",
-        "region_name": "British Columbia"
+        "region_name": "British Columbia",
+        "rt_license_url": "https://www.bctransit.com/open-data/terms-of-use",
+        "rt_source": "http://comox.mapstrat.com/current/gtfrealtime_TripUpdates.bin"
     },
     {
         "license_url": "https://www.bctransit.com/open-data/terms-of-use",
@@ -319,7 +334,8 @@
         "filename": "ca-bc_Cowichan-Valley-Transit.gtfs.zip",
         "human_name": "BCTransit",
         "region_code": "CA-BC",
-        "region_name": "British Columbia"
+        "region_name": "British Columbia",
+        "rt_source": "https://bct.tmix.se/gtfs-realtime/tripupdates.pb?operatorIds=10"
     },
     {
         "license_url": "https://www.bctransit.com/open-data/terms-of-use",
@@ -330,7 +346,8 @@
         "filename": "ca-bc_Creston-Transit.gtfs.zip",
         "human_name": "BCTransit",
         "region_code": "CA-BC",
-        "region_name": "British Columbia"
+        "region_name": "British Columbia",
+        "rt_source": "https://bct.tmix.se/gtfs-realtime/tripupdates.pb?operatorIds=16"
     },
     {
         "license_url": "https://www.bctransit.com/open-data/terms-of-use",
@@ -351,7 +368,8 @@
         "filename": "ca-bc_East-Kootenay-Transit.gtfs.zip",
         "human_name": "BCTransit",
         "region_code": "CA-BC",
-        "region_name": "British Columbia"
+        "region_name": "British Columbia",
+        "rt_source": "https://bct.tmix.se/gtfs-realtime/tripupdates.pb?operatorIds=21"
     },
     {
         "license_url": "https://www.bctransit.com/open-data/terms-of-use",
@@ -362,7 +380,8 @@
         "filename": "ca-bc_Fort-St-John-Transit.gtfs.zip",
         "human_name": "BCTransit",
         "region_code": "CA-BC",
-        "region_name": "British Columbia"
+        "region_name": "British Columbia",
+        "rt_source": "https://bct.tmix.se/gtfs-realtime/tripupdates.pb?operatorIds=28"
     },
     {
         "operators": [
@@ -372,7 +391,8 @@
         "filename": "ca-bc_Fraser-Valley-Transit.gtfs.zip",
         "human_name": "BCTransit",
         "region_code": "CA-BC",
-        "region_name": "British Columbia"
+        "region_name": "British Columbia",
+        "rt_source": "https://bct.tmix.se/gtfs-realtime/tripupdates.pb?operatorIds=13"
     },
     {
         "license_url": "https://www.bctransit.com/open-data/terms-of-use",
@@ -383,7 +403,9 @@
         "filename": "ca-bc_Kamloops-Transit.gtfs.zip",
         "human_name": "BC Transit - Kamloops Transit System",
         "region_code": "CA-BC",
-        "region_name": "British Columbia"
+        "region_name": "British Columbia",
+        "rt_license_url": "https://www.bctransit.com/open-data/terms-of-use",
+        "rt_source": "http://kamloops.mapstrat.com/current/gtfrealtime_TripUpdates.bin"
     },
     {
         "license_url": "https://www.bctransit.com/open-data/terms-of-use",
@@ -394,7 +416,9 @@
         "filename": "ca-bc_Nanaimo-Transit.gtfs.zip",
         "human_name": "BC Transit - RDN Transit System",
         "region_code": "CA-BC",
-        "region_name": "British Columbia"
+        "region_name": "British Columbia",
+        "rt_license_url": "https://www.bctransit.com/open-data/terms-of-use",
+        "rt_source": "http://nanaimo.mapstrat.com/current/gtfrealtime_TripUpdates.bin"
     },
     {
         "operators": [
@@ -404,7 +428,8 @@
         "filename": "ca-bc_North-Okanagan-Transit.gtfs.zip",
         "human_name": "BCTransit",
         "region_code": "CA-BC",
-        "region_name": "British Columbia"
+        "region_name": "British Columbia",
+        "rt_source": "https://bct.tmix.se/gtfs-realtime/tripupdates.pb?operatorIds=14"
     },
     {
         "operators": [
@@ -436,7 +461,8 @@
         "filename": "ca-bc_Prince-George-Transit.gtfs.zip",
         "human_name": "BCTransit",
         "region_code": "CA-BC",
-        "region_name": "British Columbia"
+        "region_name": "British Columbia",
+        "rt_source": "https://bct.tmix.se/gtfs-realtime/tripupdates.pb?operatorIds=22"
     },
     {
         "operators": [
@@ -446,7 +472,8 @@
         "filename": "ca-bc_Prince-Rupert-Transit.gtfs.zip",
         "human_name": "BCTransit",
         "region_code": "CA-BC",
-        "region_name": "British Columbia"
+        "region_name": "British Columbia",
+        "rt_source": "https://bct.tmix.se/gtfs-realtime/tripupdates.pb?operatorIds=23"
     },
     {
         "operators": [
@@ -456,7 +483,8 @@
         "filename": "ca-bc_South-Okanagan-Transit.gtfs.zip",
         "human_name": "BCTransit",
         "region_code": "CA-BC",
-        "region_name": "British Columbia"
+        "region_name": "British Columbia",
+        "rt_source": "https://bct.tmix.se/gtfs-realtime/tripupdates.pb?operatorIds=15"
     },
     {
         "license_url": "https://www.bctransit.com/open-data/terms-of-use",
@@ -467,7 +495,9 @@
         "filename": "ca-bc_Squamish-Transit.gtfs.zip",
         "human_name": "BC Transit - Squamish Transit System",
         "region_code": "CA-BC",
-        "region_name": "British Columbia"
+        "region_name": "British Columbia",
+        "rt_license_url": "https://www.bctransit.com/open-data/terms-of-use",
+        "rt_source": "http://squamish.mapstrat.com/current/gtfrealtime_TripUpdates.bin"
     },
     {
         "license_url": "https://www.bctransit.com/open-data/terms-of-use",
@@ -489,7 +519,9 @@
         "filename": "ca-bc_TransLink.gtfs.zip",
         "human_name": "TransLink",
         "region_code": "CA-BC",
-        "region_name": "British Columbia"
+        "region_name": "British Columbia",
+        "rt_license_url": "https://developer.translink.ca/Home/TermsOfUse",
+        "rt_source": "https://gtfs.translink.ca/v3/gtfsrealtime"
     },
     {
         "license_url": "https://www.bctransit.com/open-data/terms-of-use",
@@ -500,7 +532,9 @@
         "filename": "ca-bc_Victoria-Transit.gtfs.zip",
         "human_name": "BC Transit - Victoria Regional Transit System",
         "region_code": "CA-BC",
-        "region_name": "British Columbia"
+        "region_name": "British Columbia",
+        "rt_license_url": "https://www.bctransit.com/open-data/terms-of-use",
+        "rt_source": "http://victoria.mapstrat.com/current/gtfrealtime_TripUpdates.bin"
     },
     {
         "license_url": "https://www.bctransit.com/open-data/terms-of-use",
@@ -511,7 +545,8 @@
         "filename": "ca-bc_West-Kootenay-Transit.gtfs.zip",
         "human_name": "BCTransit",
         "region_code": "CA-BC",
-        "region_name": "British Columbia"
+        "region_name": "British Columbia",
+        "rt_source": "https://bct.tmix.se/gtfs-realtime/tripupdates.pb?operatorIds=20"
     },
     {
         "license_url": "https://www.bctransit.com/open-data/terms-of-use",
@@ -542,7 +577,9 @@
         "filename": "ca_Calgary-Transit.gtfs.zip",
         "human_name": "Calgary Transit",
         "region_code": "CA",
-        "region_name": "Canada"
+        "region_name": "Canada",
+        "rt_license_url": "https://data.calgary.ca/stories/s/Open-Calgary-Terms-of-Use/u45n-7awa",
+        "rt_source": "https://data.calgary.ca/download/gs4m-mdc2/application%2Foctet-stream"
     },
     {
         "license_url": "https://moncton.maps.arcgis.com/sharing/rest/content/items/3ec310926cbd436cbaa609d8ee9fac15/data",
@@ -580,7 +617,9 @@
         "filename": "ca_Edmonton-Transit-Service.gtfs.zip",
         "human_name": "Edmonton Transit Service",
         "region_code": "CA",
-        "region_name": "Canada"
+        "region_name": "Canada",
+        "rt_license_url": "https://www.edmonton.ca/transportation/Web-version2.1-OpenDataAgreement.pdf",
+        "rt_source": "http://gtfs.edmonton.ca/TMGTFSRealTimeWebService/TripUpdate/TripUpdates.pb"
     },
     {
         "operators": [
@@ -611,7 +650,8 @@
         "filename": "ca_Halifax-Transit.gtfs.zip",
         "human_name": "Halifax Transit",
         "region_code": "CA",
-        "region_name": "Canada"
+        "region_name": "Canada",
+        "rt_source": "http://gtfs.halifax.ca/realtime/TripUpdate/TripUpdates.pb"
     },
     {
         "license_url": "https://www.arcgis.com/home/item.html?id=e5ce3aa182114d66926d06ba732fb668",
@@ -632,7 +672,8 @@
         "filename": "ca_Medicine-Hat-Transit.gtfs.zip",
         "human_name": "Medicine Hat Transit",
         "region_code": "CA",
-        "region_name": "Canada"
+        "region_name": "Canada",
+        "rt_source": "https://medicinehat.tmix.se/gtfs-realtime/tripupdates.pb"
     },
     {
         "operators": [
@@ -705,7 +746,8 @@
         "filename": "ca_Saskatoon-Transit.gtfs.zip",
         "human_name": "Saskatoon Transit",
         "region_code": "CA",
-        "region_name": "Canada"
+        "region_name": "Canada",
+        "rt_source": "https://apps2.saskatoon.ca/app/data/TripUpdate/TripUpdates.pb"
     },
     {
         "operators": [
@@ -1441,7 +1483,8 @@
         "filename": "ch_opentransportdataswiss.gtfs.zip",
         "human_name": "Opentransportdataswiss",
         "region_code": "CH",
-        "region_name": "Switzerland"
+        "region_name": "Switzerland",
+        "rt_source": "https://api.opentransportdata.swiss/gtfsrt2020"
     },
     {
         "operators": [
@@ -12937,7 +12980,9 @@
         "filename": "us-ny_MTA-BusBrooklyn.gtfs.zip",
         "human_name": "MTA New York City Transit",
         "region_code": "US-NY",
-        "region_name": "New York"
+        "region_name": "New York",
+        "rt_license_url": "https://api.mta.info/#/DataFeedAgreement",
+        "rt_source": "https://api-endpoint.mta.info/Dataservice/mtagtfsfeeds/nyct%2Fgtfs-si"
     },
     {
         "license_url": "http://web.mta.info/developers/developer-data-terms.html",

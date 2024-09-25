@@ -54,6 +54,20 @@ h2 {
       </p>
     </div>
   </div>
+  {{ if or $source.rt_source }}
+    <p class="mt-3 fs-6">
+    Realtime data is sourced from <a href="{{ .rt_source }}">{{ (urls.Parse $source.rt_source).Host }}</a>
+    {{- if or $source.rt_license_url $source.rt_spdx_license_identifier }}
+      under
+      {{ if $source.rt_license_url }}
+      <a href="{{ .rt_license_url }}">
+      {{ else }}
+      <a href="https://spdx.org/licenses/{{ .rt_spdx_license_identifier }}.html">
+      {{ end }}
+      these conditions</a>
+    {{- end }}.
+    </p>
+  {{ end }}
 {{ end }}
 
 <script src="/bootstrap.min.js"></script>
