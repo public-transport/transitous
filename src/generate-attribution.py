@@ -18,6 +18,18 @@ from typing import Optional
 REGIONS = {"EU": "European Union"}
 
 
+def filter_duplicates(elems):
+    prev = None
+    out = []
+    for elem in elems:
+        if prev == elem:
+            continue
+        prev = elem
+        out.append(elem)
+
+    return out
+
+
 if __name__ == "__main__":
     feed_dir = Path("feeds/")
 
@@ -61,7 +73,9 @@ if __name__ == "__main__":
                     attributions[source_id] = {}
                 if source.license:
                     if source.license.spdx_identifier:
-                        attributions[source_id]["rt_spdx_license_identifier"] = source.license.spdx_identifier
+                        attributions[source_id][
+                            "rt_spdx_license_identifier"
+                        ] = source.license.spdx_identifier
                     if source.license.url:
                         attributions[source_id]["rt_license_url"] = source.license.url
                 attributions[source_id]["rt_source"] = source.url
@@ -81,8 +95,12 @@ if __name__ == "__main__":
             feed_path = Path(f"out/{source_id}.gtfs.zip")
             attribution["filename"] = feed_path.name
 
-            human_name: str = feed_path.name.replace(".gtfs.zip", "").split("_")[1].replace("-", " ")
-            human_name = " ".join(map(lambda w: w[0].upper() + w[1:] if len(w) > 0 else w, human_name.split(" ")))
+            human_name: str = (
+                feed_path.name.replace(".gtfs.zip", "").split("_")[1].replace("-", " ")
+            )
+            human_name = " ".join(
+                map(lambda w: w[0].upper() + w[1:] if len(w) > 0 else w, human_name.split(" "))
+            )
             attribution["human_name"] = human_name
 
             if not feed_path.exists():
@@ -95,6 +113,27 @@ if __name__ == "__main__":
                         agencyreader = csv.DictReader(at, delimiter=",", quotechar='"')
                         for row in agencyreader:
                             attribution["operators"].append(row["agency_name"])
+                if "feed_info.txt" in z.namelist():
+                    with z.open("feed_info.txt", "r") as i:
+                        with io.TextIOWrapper(i) as it:
+                            inforeader = csv.DictReader(it, delimiter=",", quotechar='"')
+                            publisher = next(inforeader)
+                            attribution["publisher"] = {}
+                            attribution["publisher"]["name"] = publisher["feed_publisher_name"]
+                            attribution["publisher"]["url"] = publisher["feed_publisher_url"]
+                if "attributions.txt" in z.namelist():
+                    with z.open("attributions.txt", "r") as a:
+                        with io.TextIOWrapper(a) as at:
+                            attributionstxt = csv.DictReader(at, delimiter=",", quotechar='"')
+                            attribution["attributions"] = filter_duplicates(
+                                map(
+                                    lambda contrib: {
+                                        "name": contrib["organization_name"],
+                                        "url": contrib.get("attribution_url"),
+                                    },
+                                    attributionstxt,
+                                )
+                            )
 
             if (
                 "operators" in attribution
@@ -106,11 +145,16 @@ if __name__ == "__main__":
             attribution["region_code"] = region_code
             attribution["region_name"] = region_name
 
-            if not source_id in attributions:
+            if source_id not in attributions:
                 attributions[source_id] = attribution
             else:
                 print("Warning: Found duplicate source name:", source_id)
                 attributions[source_id] |= attribution
 
     with open("out/license.json", "w") as outfile:
-        json.dump([e[1] for e in sorted(attributions.items())], outfile, indent=4, ensure_ascii=False)
+        json.dump(
+            [item for id, item in sorted(attributions.items())],
+            outfile,
+            indent=4,
+            ensure_ascii=False,
+        )
