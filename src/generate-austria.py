@@ -26,6 +26,7 @@ def remove_duplicate_dashes(text: str) -> str:
 
 if __name__ == "__main__":
     ignore = [
+        "70",  # Same data but outdated
         "72"  # contains multiple zip files, not what we need
     ]
 

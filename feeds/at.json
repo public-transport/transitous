@@ -93,19 +93,6 @@
             }
         },
         {
-            "name": "Railway-Reference-Data-for-Timetable-Changeover",
-            "type": "http",
-            "url": "https://data.mobilitaetsverbuende.at/api/public/v1/data-sets/70/2024/file",
-            "license": {
-                "url": "https://mobilitaetsverbuende.atlassian.net/wiki/spaces/DBP/pages/185237505/Terms+of+Use"
-            },
-            "fix": true,
-            "function": "mvo_keycloak_token",
-            "http-options": {
-                "fetch-interval-days": 2
-            }
-        },
-        {
             "name": "Linz-AG",
             "type": "http",
             "url": "https://data.mobilitaetsverbuende.at/api/public/v1/data-sets/69/2024/file",
