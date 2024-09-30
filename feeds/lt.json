@@ -43,7 +43,8 @@
         {
             "name": "klaipeda",
             "type": "http",
-            "url": "https://stops.lt/klaipeda/klaipeda/gtfs.zip"
+            "url": "https://stops.lt/klaipeda/klaipeda/gtfs.zip",
+            "fix": true
         },
         {
             "name": "klaipeda",

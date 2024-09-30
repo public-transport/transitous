@@ -18,7 +18,7 @@ npm install
 npm run start
 ```
 
-All hugo content fill be automatically rebuilt on the fly, but a restart is still needed to rebuild the purescript files.
+All hugo content will be automatically rebuilt on the fly, but a restart is still needed to rebuild the PureScript files.
 
 ## Release builds
 

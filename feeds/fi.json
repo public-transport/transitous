@@ -3,9 +3,23 @@
         {
             "name": "Volker Krause",
             "github": "vkrause"
+        },
+        {
+            "name": "Jonah Brüchert",
+            "github": "jbruechert"
         }
     ],
     "sources": [
+        {
+            "name": "matka",
+            "type": "http",
+            "url": "https://traffic.navici.com/tiedostot/gtfs.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0",
+                "url": "https://developer.matka.fi/pages/en/home.php"
+            },
+            "fix": true
+        },
         {
             "name": "digitraffic",
             "type": "http",

@@ -34,26 +34,58 @@ h2 {
     these conditions</a>
   {{ end }}
 
-  for the following operators:</p>
+  for the following operators:
 
   {{ if compare.Gt (len $source.operators) 10 }}
-    <button class="btn btn-outline-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-{{ crypto.SHA256 .source }}" aria-expanded="false" aria-controls="collapse-{{ crypto.SHA256 $source.source }}">
+    <button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-{{ crypto.SHA256 .source }}" aria-expanded="false" aria-controls="collapse-{{ crypto.SHA256 $source.source }}">
       Show Operators…
     </button>
   {{ else }}
     <p class="fs-6">{{ delimit $source.operators ", " }}</p>
   {{ end }}
 
-  <a class="btn btn-outline-secondary" href="{{ $source.source }}">Original File</a>
-  <a class="btn btn-outline-secondary" href="https://routing.spline.de/gtfs/{{ $source.filename }}">Processed File</a>
-
-  <div class="collapse mt-2" id="collapse-{{ crypto.SHA256 $source.source }}">
-    <div class="card card-body">
+  <div class="collapse mt-2 mb-2" id="collapse-{{ crypto.SHA256 $source.source }}">
+    <div>
       <p class="fs-6">
       {{ delimit $source.operators ", " }}
       </p>
     </div>
   </div>
+
+  {{ if and $source.publisher.name $source.publisher.url }}
+    <p>
+    It is published by <a href="{{ $source.publisher.url }}">{{ $source.publisher.name }}</a>.
+    </p>
+  {{ end }}
+
+  {{ if $source.attributions }}
+    <p>
+    It contains information under copyright of
+    {{ range $index, $attribution := $source.attributions }}
+      {{ if and $attribution.url $attribution.name }}
+        <a href="{{ $attribution.url }}">{{ $attribution.name }}</a>{{ if compare.Lt $index (sub (len $source.attributions) 1) }},{{ else }}.{{ end }}
+      {{ end }}
+    {{ end }}
+    </p>
+  {{ end }}
+
+  <a class="btn btn-outline-secondary" href="{{ $source.source }}">Original File</a>
+  <a class="btn btn-outline-secondary" href="https://routing.spline.de/gtfs/{{ $source.filename }}">Processed File</a>
+
+  {{ if or $source.rt_source }}
+    <p class="mt-3 fs-6">
+    Realtime data is sourced from <a href="{{ .rt_source }}">{{ (urls.Parse $source.rt_source).Host }}</a>
+    {{- if or $source.rt_license_url $source.rt_spdx_license_identifier }}
+      under
+      {{ if $source.rt_license_url }}
+      <a href="{{ .rt_license_url }}">
+      {{ else }}
+      <a href="https://spdx.org/licenses/{{ .rt_spdx_license_identifier }}.html">
+      {{ end }}
+      these conditions</a>
+    {{- end }}.
+    </p>
+  {{ end }}
 {{ end }}
 
 <script src="/bootstrap.min.js"></script>

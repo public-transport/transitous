@@ -1,0 +1,30 @@
+{
+  "maintainers": [
+    {
+      "name": "Marcus Lundblad",
+      "github": "mlundblad"
+    }
+  ],
+  "sources": [
+    {
+      "name": "SEPTA-Rail",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-dr4-septa~rail"
+    },
+    {
+      "name": "SEPTA-Rail",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-septa~rail~rt"
+    },
+    {
+      "name": "SEPTA-Bus",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-dr4-septa~bus"
+    },
+    {
+      "name": "SEPTA-Bus",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-septa~rt"
+    }
+  ]
+}
