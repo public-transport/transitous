@@ -19,7 +19,7 @@
         {
             "name": "CZPTT",
             "type": "http",
-            "url": "https://data.jr.ggu.cz/results/2024-09-17/CZPTT_GTFS.zip",
+            "url": "https://data.jr.ggu.cz/results/latest/CZPTT_GTFS.zip",
             "fix": true
         },
         {
