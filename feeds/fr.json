@@ -253,6 +253,7 @@
             "type": "http",
             "url": "https://www.itinisere.fr/fr/donnees-open-data/169/OpenData/Download?fileName=TRANSAL.GTFS.zip",
             "fix": true,
+            "skip": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/reseau-cars-region-isere-38"
             }
@@ -261,6 +262,7 @@
             "name": "reseau-cars-region-isere-38",
             "type": "url",
             "url": "https://www.itinisere.fr/ftp/GtfsRT/GtfsRT.CG38.pb",
+            "skip": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/reseau-cars-region-isere-38"
             },
