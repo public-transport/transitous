@@ -8,8 +8,8 @@
     "sources": [
         {
            "name": "izmir-eshot",
-           "type": "http",
-           "url": "https://dl.dropboxusercontent.com/scl/fi/1cwgv9koziyvnmv9yc0ik/izmir-eshot.zip?rlkey=9bm98u0tqrrwi90zekqakx20h"
+           "type": "transitland-atlas",
+           "transitland-atlas-id": "f-eshot~tr"
         },
         {
             "name": "izmir-metro",
