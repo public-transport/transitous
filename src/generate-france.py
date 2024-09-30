@@ -45,7 +45,8 @@ if __name__ == "__main__":
         "arrets-horaires-et-parcours-theoriques-gtfs-du-reseau-routier-regional-de-transport-interurbain-62-pas-de-calais",  # agency.txt
         "naolib-arrets-horaires-et-circuits",  # Incomplete read
         "offre-transport-du-reseau-txik-txak-nord-ex-chronoplus-gtfs",  # 404
-        "horaires-theoriques-et-temps-reel-lignes-scolaires-sankeo-perpignan-gtfs-gtfs-rt"  # 404
+        "horaires-theoriques-et-temps-reel-lignes-scolaires-sankeo-perpignan-gtfs-gtfs-rt",  # 404
+        "reseau-cars-region-isere-38",  # empty, confuses MOTIS
     ]
 
     out: list[dict] = []
