@@ -10,7 +10,8 @@
             "name": "nap",
             "url": "https://b2b.nap.si/data/b2b.gtfs",
             "url-override": "https://jbb.ghsq.de/gtfs/nap-si.gtfs.zip",
-            "type": "http"
+            "type": "http",
+            "fix": true
         }
     ]
 }
