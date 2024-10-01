@@ -24,11 +24,6 @@
             "url": "https://s3.gtfs.pro/files/uran/improved-gtfs-bucuresti.zip"
         },
         {
-            "name": "lasi",
-            "type": "http",
-            "url": "https://s3.gtfs.pro/files/uran/improved-gtfs-lasi.zip"
-        },
-        {
             "name": "tursib",
             "type": "http",
             "url": "https://s3.gtfs.pro/files/uran/improved-gtfs-tursib.zip"
