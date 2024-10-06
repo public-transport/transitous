@@ -1,0 +1,18 @@
+{
+    "maintainers": [
+        {
+            "name": "Jonah Brüchert",
+            "github": "jbruechert"
+        }
+    ],
+    "sources": [
+        {
+            "name": "tirana",
+            "type": "http",
+            "url": "https://pt.tirana.al/gtfs/gtfs.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-SA-4.0"
+            }
+        }
+    ]
+}
