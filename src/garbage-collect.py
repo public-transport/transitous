@@ -49,5 +49,6 @@ if __name__ == "__main__":
         time.sleep(5)
 
     for f in to_delete_filenames:
-        delete_file(out_dir / f)
-        delete_file(downloads_dir / f)
+        for p in [out_dir / f, downloads_dir / f]:
+            if p.exists():
+                delete_file(p)
