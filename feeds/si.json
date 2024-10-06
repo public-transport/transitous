@@ -16,7 +16,10 @@
         {
             "name": "lpp",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u24q-ljubljanskipotniškipromet"
+            "transitland-atlas-id": "f-u24q-ljubljanskipotniškipromet",
+            "http-options": {
+                "fetch-interval-days": 2
+            }
         }
     ]
 }
