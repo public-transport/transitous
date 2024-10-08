@@ -13,6 +13,11 @@
             "fix": true
         },
         {
+            "name": "Brightline",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-brightline~trails~rt"
+        },
+        {
             "name": "flixbus",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-9-flixbus",
