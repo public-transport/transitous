@@ -58,7 +58,8 @@
         {
             "name": "Kielce",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u3n9-kielce"
+            "transitland-atlas-id": "f-u3n9-kielce",
+            "fix": true
         },
         {
             "name": "Radom",
