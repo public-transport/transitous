@@ -6,7 +6,7 @@ RUN GOPROXY=direct GOBIN=/usr/local/bin/ go install github.com/public-transport/
 
 FROM docker.io/debian:bookworm-slim
 
-ARG MOTIS_VERSION=v0.12.14
+ARG MOTIS_VERSION=v0.12.15
 ARG USERNAME=transitous
 ARG USER_UID=1000
 ARG USER_GID=$USER_UID
