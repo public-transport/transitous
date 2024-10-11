@@ -30,7 +30,9 @@
             "transitland-atlas-id": "f-eyckr-metrodelisboa",
             "http-options": {
                 "ignore-tls-errors": true
-            }
+            },
+            "skip": true,
+            "skip-reason": "Connection to www.transporlis.pt timed out"
         },
         {
             "name": "Cascais-Próxima",
@@ -43,7 +45,9 @@
             "transitland-atlas-id": "f-eycs0-soflusa",
             "http-options": {
                 "ignore-tls-errors": true
-            }
+            },
+            "skip": true,
+            "skip-reason": "Connection to www.transporlis.pt timed out"
         },
         {
             "name": "Comboios-de-Portugal(CP)",
