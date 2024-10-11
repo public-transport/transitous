@@ -46,7 +46,7 @@
             }
         },
         {
-            "name": "Comboios de Portugal (CP)",
+            "name": "Comboios-de-Portugal(CP)",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-eyc-cp"
         }
