@@ -44,6 +44,11 @@
             "http-options": {
                 "ignore-tls-errors": true
             }
+        },
+        {
+            "name": "Comboios de Portugal (CP)",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-eyc-cp"
         }
     ]
 }
