@@ -19,6 +19,7 @@ import subprocess
 import shutil
 import region_helpers
 import io
+import hashlib
 
 
 def validate_source_name(name: str):
@@ -128,11 +129,27 @@ class Fetcher:
                     sub_path = download_url.partition("#")[2]
                     zipfile = ZipFile(io.BytesIO(response.content))
 
-                    with open(dest_path, "wb") as dest:
-                        dest.write(zipfile.read(sub_path))
+                    content: bytes = zipfile.read(sub_path)
                 else:
-                    with open(dest_path, "wb") as dest:
-                        dest.write(response.content)
+                    content: bytes = response.content
+
+                # Only write file if the new version changed. Helps to at least
+                # skip postprocessing with servers that don't send a
+                # last-modified header.
+                if dest_path.exists() and not last_modified_server:
+                    h = hashlib.new("sha256")
+                    h.update(content)
+                    digest = h.hexdigest()
+
+                    with open(dest_path, "rb") as tfp:
+                        new_digest = hashlib.file_digest(tfp, "sha256") \
+                            .hexdigest()
+
+                    if digest == new_digest:
+                        return False
+
+                with open(dest_path, "wb") as dest:
+                    dest.write(content)
 
                 # Set server mtime on local file
                 if last_modified_server:
