@@ -14,7 +14,8 @@
                 "headers": {
                     "Authorization": "Basic YXJvbmt2aEBnbWFpbC5jb206M09jOHpNRFc3c3RCQ2ljVg=="
                 }
-            }
+            },
+            "drop-shapes": true
         },
         {
             "name": "volanbusz",
