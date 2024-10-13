@@ -182,6 +182,8 @@ class Fetcher:
             command.append("--fix")
         if source.drop_too_fast_trips:
             command.append("--drop-too-fast-trips")
+        if source.drop_shapes:
+            command.append("--drop-shapes")
 
         subprocess.check_call(command)
 
