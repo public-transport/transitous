@@ -5,6 +5,7 @@
 
 import subprocess
 import json
+import yaml
 import metadata
 import tomllib
 import sys
@@ -86,3 +87,32 @@ if __name__ == "__main__":
                                      pbf_file=osm_map,
                                      coastline_file=osm_coastline,
                                      flavour=flavour))
+
+    with open("motis/config.yml") as f:
+        config = yaml.safe_load(f)
+        print(config)
+
+        config["datasets"] = []
+        for feed in gtfs_feeds:
+            config["datasets"].append({
+                feed["id"]: {
+                    "path": feed["path"]
+                }
+            })
+
+        match flavour:
+            case "import":
+                config["street_routing"] = False
+                config["osr_footpath"] = False
+                config["elevators"] = False
+                config["geocoding"] = False
+                config["reverse_geocoding"] = True
+            case "full":
+                config["street_routing"] = True
+                config["osr_footpath"] = True
+                config["elevators"] = True
+                config["geocoding"] = True
+                config["reverse_geocoding"] = True
+
+        with open("out/config.yml", "w") as fo:
+            yaml.dump(config, fo)
