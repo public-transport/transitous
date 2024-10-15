@@ -9,7 +9,8 @@
         {
             "name": "mexico",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-9g3-semovi"
+            "transitland-atlas-id": "f-9g3-semovi",
+            "fix": true
         }
     ]
 }
