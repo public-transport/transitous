@@ -113,14 +113,14 @@ class HttpSource(Source):
 
 class UrlSource(Source):
     url: str = ""
-    authorization: Optional[str] = None
+    headers: Optional[dict[str, str]] = None
 
     def __init__(self, parsed: Optional[dict] = None):
         if parsed:
             super().__init__(parsed)
             self.url = parsed["url"]
-            if "authorization" in parsed:
-                self.authorization = parsed["authorization"]
+            if "headers" in parsed:
+                self.headers = parsed["headers"]
 
 
 def sourceFromJson(parsed: dict) -> Source:

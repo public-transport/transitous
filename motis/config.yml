@@ -2,13 +2,13 @@ server:
   host: 127.0.0.1
   port: 8080
   web_folder: ""
-  n_threads: 20
 
-street_routing: true
-osr_footpath: true
-elevators: true
-geocoding: true
-reverse_geocoding: true
+# These options are filled in by ./src/generate-motis-config.py
+street_routing: null
+osr_footpath: null
+elevators: null
+geocoding: null
+reverse_geocoding: null
 
 timetable:
   first_day: TODAY
@@ -23,4 +23,5 @@ timetable:
   update_interval: 60
   incremental_rt_update: false
   max_footpath_length: 20
-  datasets: []
+# The datasets are filled in by ./src/generate-motis-config.py
+  datasets:
