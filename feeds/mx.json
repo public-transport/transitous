@@ -1,0 +1,16 @@
+{
+    "maintainers": [
+        {
+            "name": "Altonss",
+            "github": "altonss"
+        }
+    ],
+    "sources": [
+        {
+            "name": "mexico",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9g3-semovi",
+            "fix": true
+        }
+    ]
+}
