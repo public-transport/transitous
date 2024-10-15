@@ -1,0 +1,32 @@
+server:
+  host: 127.0.0.1
+  port: 8080
+  web_folder: ""
+
+street_routing: true
+osr_footpath: true
+elevators: false
+geocoding: true
+reverse_geocoding: true
+
+osm: planet-latest.osm
+
+tiles:
+  profile: /opt/motis/tiles-profiles/full.lua
+  coastline: land-polygons-complete-4326.zip
+
+timetable:
+  first_day: TODAY
+  num_days: 365
+  railviz: true
+  with_shapes: true
+  ignore_errors: true
+  adjust_footpaths: true
+  merge_dupes_intra_src: true
+  merge_dupes_inter_src: true
+  link_stop_distance: 100
+  update_interval: 60
+  incremental_rt_update: false
+  max_footpath_length: 20
+# The datasets are filled in by ./src/generate-motis-config.py
+  datasets:
