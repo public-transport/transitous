@@ -30,7 +30,18 @@ import Elmish.HTML.Styled as H
 import Fetch (fetch)
 
 type Area = { name :: String, adminLevel :: Int }
-type Location = { type :: String, name :: String, lat :: Number, lon :: Number, areas :: Array Area }
+type Location =
+  { type :: String
+  , id :: String
+  , tokens :: Array (Array Int)
+  , name :: String
+  , lat :: Number
+  , lon :: Number
+  , areas :: Array Area
+  , level :: Int
+  , zip :: Maybe String
+  , score :: Number
+  }
 
 motisInstance :: String
 motisInstance = "https://europe.motis-project.de"
@@ -91,7 +102,7 @@ logAff = log >>> liftEffect
 requestGuesses :: String -> Aff (Array Location)
 requestGuesses query = do
   { status, statusText, text } <- fetch
-    (motisInstance <> "/api/v1/geocode?" <>
+    ( motisInstance <> "/api/v1/geocode?" <>
         ( fromMaybe "" $ encode $ fromArray
             [ Tuple "text" (Just query) ]
         )
