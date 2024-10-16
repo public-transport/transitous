@@ -17,25 +17,27 @@ import Data.Semigroup ((<>))
 
 import SearchBox
 
+{-
 type StationMessage = { type :: String, station :: Station }
-
 toStationMessage :: Station -> StationMessage
 toStationMessage = { type: "Station", station: _ }
 
 type PositionMessage = { type :: String, position :: Position }
 
 toPositionMessage :: Position -> PositionMessage
-toPositionMessage = { type: "Position", position: _ }
+toPositionMessage = { type: "Position", position: _ }-}
 
-encodeEnd :: Guess -> String
-encodeEnd = case _ of
-  StationGuess station -> toJsonString $ toStationMessage station
-  AddressGuess address -> toJsonString $ toPositionMessage address.pos
+-- encodeEnd :: Guess -> String
+-- encodeEnd = case _ of
+--   StationGuess station -> toJsonString $ toStationMessage station
+--   AddressGuess address -> toJsonString $ toPositionMessage address.pos
 
+toMotisWebUrl start dest = ""
+{-
 toMotisWebUrl :: Guess -> Guess -> String
 toMotisWebUrl start destination = "https://routing.spline.de/?motis=https%3A%2F%2Frouting.spline.de%2Fapi&" <> urlQuery
   where
   urlQuery = fromMaybe "" $ encode $ fromArray
     [ Tuple "fromLocation" (Just (encodeEnd start))
     , Tuple "toLocation" (Just (encodeEnd destination))
-    ]
+    ]-}
