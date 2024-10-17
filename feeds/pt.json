@@ -53,6 +53,11 @@
             "name": "Fergatus",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-eyce-fertagus"
+        },
+        {
+            "name": "Barreiro",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-transportes~colectivos~do~barreiro~pt"
         }
     ]
 }
