@@ -26,13 +26,8 @@
         },
         {
             "name": "Metro-Lisboa",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-eyckr-metrodelisboa",
-            "http-options": {
-                "ignore-tls-errors": true
-            },
-            "skip": true,
-            "skip-reason": "Connection to www.transporlis.pt timed out"
+            "type": "http",
+            "url": "https://www.metrolisboa.pt/google_transit/googleTransit.zip"
         },
         {
             "name": "Cascais-Próxima",
