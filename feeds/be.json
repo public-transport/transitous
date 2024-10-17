@@ -44,8 +44,7 @@
         {
             "name": "tec",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u0g-tec~rt",
-            "fix": true
+            "transitland-atlas-id": "f-u0g-tec~rt"
         }
     ]
 }
