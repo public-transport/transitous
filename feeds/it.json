@@ -41,6 +41,11 @@
             "transitland-atlas-id": "f-sr-atac~romatpl~trenitalia"
         },
         {
+            "name": "Lazio-Cotral",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-cotral~lazio~italia"
+        },
+        {
             "name": "Liguria-Genova",
             "type": "http",
             "url": "https://www.amt.genova.it/amt/GTFS/GTFS_AMT_GENOVA.zip",
