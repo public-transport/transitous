@@ -53,6 +53,11 @@
             "name": "Comboios-de-Portugal(CP)",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-eyc-cp"
-        }
+        },
+        {
+            "name": "Fergatus",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-eyce-fertagus"
+        },
     ]
 }
