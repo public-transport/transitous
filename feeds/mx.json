@@ -10,7 +10,9 @@
             "name": "mexico",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-9g3-semovi",
-            "fix": true
+            "fix": true,
+            "skip-reason": "Crashes MOTIS 1, seems to be fixed in MOTIS 2",
+            "skip": true
         }
     ]
 }
