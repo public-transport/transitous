@@ -22,7 +22,8 @@
         {
             "name": "Carris",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-carris~pt"
+            "transitland-atlas-id": "f-carris~pt",
+            "fix": true
         },
         {
             "name": "Metro-Lisboa",
