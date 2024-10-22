@@ -28,6 +28,7 @@ steps:
     image: ghcr.io/public-transport/transitous/import:latest
     pull: true
     commands:
+      - motis --version
       - rm out/data -rf
       - ./src/generate-attribution.py
       - ./src/generate-motis-config.py import

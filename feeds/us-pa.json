@@ -19,7 +19,8 @@
     {
       "name": "SEPTA-Bus",
       "type": "transitland-atlas",
-      "transitland-atlas-id": "f-dr4-septa~bus"
+      "transitland-atlas-id": "f-dr4-septa~bus",
+      "fix": true
     },
     {
       "name": "SEPTA-Bus",

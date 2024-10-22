@@ -11,12 +11,6 @@
     ],
     "sources": [
         {
-            "name": "JDF",
-            "type": "http",
-            "url": "https://data.jr.ggu.cz/results/latest/JDF_merged_GTFS.zip",
-            "fix": true
-        },
-        {
             "name": "CZPTT",
             "type": "http",
             "url": "https://data.jr.ggu.cz/results/latest/CZPTT_GTFS.zip",

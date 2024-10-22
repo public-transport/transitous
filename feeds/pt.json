@@ -26,11 +26,8 @@
         },
         {
             "name": "Metro-Lisboa",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-eyckr-metrodelisboa",
-            "http-options": {
-                "ignore-tls-errors": true
-            }
+            "type": "http",
+            "url": "https://www.metrolisboa.pt/google_transit/googleTransit.zip"
         },
         {
             "name": "Cascais-Próxima",
@@ -43,7 +40,24 @@
             "transitland-atlas-id": "f-eycs0-soflusa",
             "http-options": {
                 "ignore-tls-errors": true
-            }
+            },
+            "skip": true,
+            "skip-reason": "Connection to www.transporlis.pt timed out"
+        },
+        {
+            "name": "Comboios-de-Portugal(CP)",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-eyc-cp"
+        },
+        {
+            "name": "Fergatus",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-eyce-fertagus"
+        },
+        {
+            "name": "Barreiro",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-transportes~colectivos~do~barreiro~pt"
         }
     ]
 }

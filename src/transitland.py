@@ -36,6 +36,9 @@ class Atlas:
             result.fix = source.fix
             result.skip = source.skip
             result.skip_reason = source.skip_reason
+            result.drop_too_fast_trips = source.drop_too_fast_trips
+            result.function = source.function
+            result.drop_shapes = source.drop_shapes
         elif "realtime_trip_updates" in feed["urls"]:
             result = UrlSource()
             result.name = source.name

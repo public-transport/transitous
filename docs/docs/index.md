@@ -121,6 +121,7 @@ Option Name       | Description
 `fix-csv-quotes`  | Try to fix GTFS files in which fields are improperly quoted. A symptom of this is if stop names start containing CSV.
 `license`         | Dictionary of license-related options
 `http-options`    | Dictionary of HTTP-related options
+`drop-shapes`     | Remove route shapes, use if the shapes are mostly wrong
 
 
 #### License Options
