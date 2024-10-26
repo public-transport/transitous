@@ -70,7 +70,8 @@
         {
             "name": "taurage",
             "type": "http",
-            "url": "https://stops.lt/taurage/taurage/gtfs.zip"
+            "url": "https://stops.lt/taurage/taurage/gtfs.zip",
+            "fix": true
         },
         {
             "name": "traukiniai",
