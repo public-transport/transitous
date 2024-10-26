@@ -18,7 +18,7 @@ import Data.Semigroup ((<>))
 import SearchBox
 
 toMotisWebUrl :: Location -> Location -> String
-toMotisWebUrl start destination = "https://europe.motis-project.de/?" <> urlQuery
+toMotisWebUrl start destination = motisInstance <> "?" <> urlQuery
   where
   urlQuery = fromMaybe "" $ encode $ fromArray
     [ Tuple "from" (Just (toJsonString start))
