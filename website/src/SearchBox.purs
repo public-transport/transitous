@@ -38,7 +38,7 @@ type Location =
   , lat :: Number
   , lon :: Number
   , areas :: Array Area
-  , level :: Int
+  , level :: Maybe Int
   , zip :: Maybe String
   , score :: Number
   }
