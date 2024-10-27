@@ -3,11 +3,9 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-import subprocess
 import json
 from ruamel.yaml import YAML
 import metadata
-import tomllib
 import sys
 import transitland
 
@@ -84,9 +82,11 @@ if __name__ == "__main__":
 
                     match source.spec:
                         case "gtfs":
-                            schedule_file = f"{region_name}_{source.name}.gtfs.zip"
+                            schedule_file = \
+                                f"{region_name}_{source.name}.gtfs.zip"
                             name = f"{region_name}-{source.name}"
-                            config["timetable"]["datasets"][name] = {"path": schedule_file}
+                            config["timetable"]["datasets"][name] = \
+                                {"path": schedule_file}
 
                         case "gtfs-rt" if isinstance(source, metadata.UrlSource):
                             name = f"{region_name}-{source.name}"
@@ -101,10 +101,18 @@ if __name__ == "__main__":
                                 )
                                 sys.exit(1)
 
-                            config["timetable"]["datasets"][name]["rt"] = {
-                                "url": source.url,
-                                "headers": source.headers,
+                            if "rt" not in config["timetable"]["datasets"][name]:
+                                config["timetable"]["datasets"][name]["rt"] = []
+
+                            rt_feed = {
+                                "url": source.url
                             }
+
+                            if source.headers:
+                                rt_feed["headers"] = source.headers
+
+                            config["timetable"]["datasets"][name]["rt"] \
+                                .append(rt_feed)
 
         with open("out/config.yml", "w") as fo:
             yaml.dump(config, fo)
