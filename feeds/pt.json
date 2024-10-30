@@ -35,16 +35,6 @@
             "transitland-atlas-id": "f-eyck-cascaispróximaemsa"
         },
         {
-            "name": "Soflusa",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-eycs0-soflusa",
-            "http-options": {
-                "ignore-tls-errors": true
-            },
-            "skip": true,
-            "skip-reason": "Connection to www.transporlis.pt timed out"
-        },
-        {
             "name": "Comboios-de-Portugal(CP)",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-eyc-cp"
