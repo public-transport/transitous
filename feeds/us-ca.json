@@ -7,16 +7,6 @@
     ],
     "sources": [
         {
-            "name": "BART",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-9q9-bart"
-        },
-        {
-            "name": "BART",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-bart~rt"
-        },
-        {
             "name": "SFMTA",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-9q8y-sfmta",
@@ -34,6 +24,12 @@
             "transitland-atlas-id": "f-sf~bay~area~rg",
             "url-override": "http://api.511.org/transit/datafeeds?operator_id=RG&api_key=7fa322f6-dd5f-495c-a05b-026dcb1ba472",
             "fix": true
+        },
+        {
+            "name": "SF-bayarea",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.511.org/Transit/TripUpdates?api_key=7fa322f6-dd5f-495c-a05b-026dcb1ba472&agency=RG"
         },
         {
             "name": "Goldengatetransit",
