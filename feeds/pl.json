@@ -87,9 +87,20 @@
             "transitland-atlas-id": "f-u3sy-wejherowo"
         },
         {
-            "name": "Trójmiasto-(Gdańsk,-Gdynia,-Sopot)-combined",
+            "name": "Gdańsk",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u3t-skm~trojmiasto"
+            "transitland-atlas-id": "f-ztm~gdansk",
+            "fix": true
+        },
+        {
+            "name": "Gdańsk",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u3tm-ztm~gdansk~rt"
+        },
+        {
+            "name": "Gdynia",
+            "type": "http",
+            "url": "http://api.zdiz.gdynia.pl/pt/gtfs.zip"
         },
         {
             "name": "Giżycko",
@@ -100,12 +111,6 @@
             "name": "Lublin",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u905-lublin"
-        },
-        {
-            "name": "Gdańsk",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-ztm~gdansk",
-            "fix": true
         },
         {
             "name": "Elbląg",
