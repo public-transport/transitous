@@ -65,7 +65,8 @@
             "name": "Lombardia-ATM",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u0nd-comunedimilano",
-            "proxy": true
+            "proxy": true,
+            "fix": true
         },
         {
             "name": "Lombardia-Movibus",
