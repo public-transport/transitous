@@ -35,6 +35,26 @@
             "name": "Otago-Regional-Council",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-pz-otagoregionalcouncil~otagoregionalcouncil"
+        },
+        {
+            "name": "Metro-Christchurch",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-rb6b-metrochristchurch",
+            "http-options": {
+                "headers": {
+                    "Ocp-Apim-Subscription-Key": "920de6bcafdb445699a7ba92dd5cc005"
+                }
+            }
+        },
+        {
+            "name": "Metro-Christchurch",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-rb6b-metrochristchurch~rt",
+            "http-options": {
+                "headers": {
+                    "Ocp-Apim-Subscription-Key": "920de6bcafdb445699a7ba92dd5cc005"
+                }
+            }
         }
     ]
 }
