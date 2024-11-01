@@ -48,6 +48,7 @@ A region file in the [feeds](https://github.com/public-transport/transitous/tree
 ```
 
 A person is represented like this:
+
 ```json
 {
     "name": "< name of the maintainer >",
@@ -90,19 +91,23 @@ If the feed contains errors, you can try to add the `"fix": true` attribute, to 
 Once you create a pull request, fetching your feed will automatically be tested.
 
 You can also test it locally. For that, first get an up to date copy of transitland-atlas:
+
 ```bash
 git submodule update --remote --checkout --init
 ```
 
 You also need to have [gtfsclean](https://github.com/public-transport/gtfsclean) installed.
 We provide a static build for linux so you don't need to build your own.
+
 ```
 wget -P ~/.local/bin https://github.com/public-transport/gtfsclean/releases/download/snapshot-3/gtfsclean
 chmod +x ~/.local/bin/gtfsclean
 ```
+
 You can also use the container described below.
 
 Then you can fetch individual regions using
+
 ```bash
 ./src/fetch.py feeds/<region>.json
 ```
@@ -123,14 +128,12 @@ Option Name       | Description
 `http-options`    | Dictionary of HTTP-related options
 `drop-shapes`     | Remove route shapes, use if the shapes are mostly wrong
 
-
 #### License Options
 
 Option Name       | Description
 ----------------- | --------------------------------------------------
-`spdx-identifier` | License identifier from https://spdx.org/licenses/
+`spdx-identifier` | License identifier from <https://spdx.org/licenses/>
 `url`             | Website that states the License of the data
-
 
 #### HTTP Options
 
@@ -140,6 +143,23 @@ Option Name           | Description
 `ignore-tls-errors`   | Ignore expired / invalid TLS certificate
 `fetch-interval-days` | Fetch this feed at most every `n` days. Useful if a server doesn't send `Last-Modified`, or to comply with terms of service.
 
+### Common Patterns
+
+You can use `http-options` even with `transitland-atlas-id`.
+This is useful for passing in things like headers with API keys.
+
+```json
+{
+    "name": "Example-Feed",
+    "type": "transitland-atlas",
+    "transitland-atlas-id": "example-feed-id",
+    "http-options": {
+        "headers": {
+            "api-key": "key"
+        }
+    }
+}
+```
 
 ## Running a transitous instance locally
 
@@ -153,16 +173,19 @@ git submodule update --remote --checkout --init
 ```
 
 Proceed by building the container:
+
 ```bash
 podman build ci/container/ -t transitous -f ci/container/Containerfile
 ```
 
 Enter the container:
+
 ```bash
 podman run -it -p 8080:8080 -v $PWD:/transitous:Z --userns=keep-id -w /transitous transitous
 ```
 
 Now inside the container, you can download and post-process all the feeds. This may take a while.
+
 ```bash
 ./ci/fetch-feeds.py timer
 ```
@@ -175,6 +198,7 @@ You can find working map pbf downloads at [Geofabrik](https://download.geofabrik
 You can click on the region names to find downloads for smaller subregions.
 
 Then download the chosen region:
+
 ```bash
 wget https://download.geofabrik.de/europe/germany/berlin-latest.osm.pbf -P out
 wget https://osmdata.openstreetmap.de/download/land-polygons-complete-4326.zip -P out
@@ -182,6 +206,7 @@ wget https://osmdata.openstreetmap.de/download/land-polygons-complete-4326.zip -
 
 In order to start motis, we need a config file listing all the feeds we want to use.
 You can generate one using our script:
+
 ```bash
 ./src/generate-motis-config.py full
 ```
@@ -190,6 +215,7 @@ The generated config file still needs a small adjustment.
 Edit the line in `out/config.ini` that starts with `paths=osm` to point to your map.
 
 You can then go to the `out` directory, and start motis:
+
 ```bash
 cd out
 motis -c config.ini --server.host 0.0.0.0 --server.static_path /opt/motis/web
