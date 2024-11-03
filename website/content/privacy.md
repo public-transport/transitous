@@ -39,7 +39,7 @@ We collect this based on our legitimate interest of fixing software issues to ke
 
 ## Duration
 
-The log files are kept for up to 14 days, and deleted afterwards.
+The log files are kept for up to 2 days, and deleted afterwards.
 
 ## Updating and Deletion
 
