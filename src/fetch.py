@@ -47,7 +47,7 @@ def check_feed_timeframe_valid(zip_content: bytes):
                 feedinforeader = csv.DictReader(at, delimiter=",",
                                                 quotechar='"')
                 for row in feedinforeader:
-                    if "feed_start_date" not in row:
+                    if "feed_start_date" not in row or not row["feed_start_date"]:
                         return True
 
                     start_date = \
