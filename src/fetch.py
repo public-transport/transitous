@@ -39,19 +39,24 @@ def validate_source_name(name: str):
 
 def check_feed_timeframe_valid(zip_content: bytes):
     with ZipFile(file=io.BytesIO(zip_content)) as z:
-        if "feed_info.txt" in z.namelist():
-            with z.open("feed_info.txt", "r") as a:
-                with io.TextIOWrapper(a) as at:
-                    feedinforeader = csv.DictReader(at, delimiter=",",
-                                                    quotechar='"')
-                    for row in feedinforeader:
-                        start_date = \
-                            datetime.strptime(row["feed_start_date"],
-                                              "%Y%m%d")
+        if "feed_info.txt" not in z.namelist():
+            return True
 
-                        today = datetime.today()
-                        if start_date > today:
-                            return False
+        with z.open("feed_info.txt", "r") as a:
+            with io.TextIOWrapper(a) as at:
+                feedinforeader = csv.DictReader(at, delimiter=",",
+                                                quotechar='"')
+                for row in feedinforeader:
+                    if "feed_start_date" not in row:
+                        return True
+
+                    start_date = \
+                        datetime.strptime(row["feed_start_date"],
+                                          "%Y%m%d")
+
+                    today = datetime.today()
+                    if start_date > today:
+                        return False
 
     return True
 
