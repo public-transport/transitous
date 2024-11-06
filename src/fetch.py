@@ -20,6 +20,7 @@ import shutil
 import region_helpers
 import io
 import hashlib
+import csv
 
 
 def validate_source_name(name: str):
@@ -34,6 +35,25 @@ def validate_source_name(name: str):
     if "/" in name:
         eprint(f"Error: Feed names must not contain slashes, found {name}.")
         sys.exit(1)
+
+
+def check_feed_timeframe_valid(zip_content: bytes):
+    with ZipFile(file=io.BytesIO(zip_content)) as z:
+        if "feed_info.txt" in z.namelist():
+            with z.open("feed_info.txt", "r") as a:
+                with io.TextIOWrapper(a) as at:
+                    feedinforeader = csv.DictReader(at, delimiter=",",
+                                                    quotechar='"')
+                    for row in feedinforeader:
+                        start_date = \
+                            datetime.strptime(row["feed_start_date"],
+                                              "%Y%m%d")
+
+                        today = datetime.today()
+                        if start_date > today:
+                            return False
+
+    return True
 
 
 class Fetcher:
@@ -147,6 +167,11 @@ class Fetcher:
 
                     if digest == new_digest:
                         return False
+
+                if not check_feed_timeframe_valid(content) \
+                        and dest_path.exists():
+                    print("Feed is not yet valid, using old version")
+                    return False
 
                 with open(dest_path, "wb") as dest:
                     dest.write(content)
