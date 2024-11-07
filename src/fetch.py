@@ -8,6 +8,8 @@ from pathlib import Path
 from datetime import datetime, timezone
 from utils import eprint
 from zipfile import ZipFile
+from typing import Optional
+from zoneinfo import ZoneInfo
 
 import email.utils
 import requests
@@ -37,24 +39,40 @@ def validate_source_name(name: str):
         sys.exit(1)
 
 
-def check_feed_timeframe_valid(zip_content: bytes):
+def get_feed_timezone(zip_file: ZipFile) -> Optional[str]:
+    with zip_file.open("agency.txt", "r") as a:
+        with io.TextIOWrapper(a) as at:
+            feedinforeader = csv.DictReader(at, delimiter=",",
+                                            quotechar='"')
+            for row in feedinforeader:
+                if "agency_timezone" in row \
+                        and row["agency_timezone"]:
+                    return row["agency_timezone"]
+
+    return None
+
+
+def check_feed_timeframe_valid(zip_content: bytes) -> bool:
     with ZipFile(file=io.BytesIO(zip_content)) as z:
         if "feed_info.txt" not in z.namelist():
             return True
+
+        feed_timezone = ZoneInfo(get_feed_timezone(z))
 
         with z.open("feed_info.txt", "r") as a:
             with io.TextIOWrapper(a) as at:
                 feedinforeader = csv.DictReader(at, delimiter=",",
                                                 quotechar='"')
                 for row in feedinforeader:
-                    if "feed_start_date" not in row or not row["feed_start_date"]:
+                    if "feed_start_date" not in row \
+                            or not row["feed_start_date"]:
                         return True
 
                     start_date = \
-                        datetime.strptime(row["feed_start_date"],
-                                          "%Y%m%d")
+                        datetime.strptime(row["feed_start_date"], "%Y%m%d") \
+                        .replace(tzinfo=feed_timezone)
 
-                    today = datetime.today()
+                    today = datetime.now(tz=feed_timezone)
                     if start_date > today:
                         return False
 
