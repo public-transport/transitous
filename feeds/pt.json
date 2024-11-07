@@ -48,6 +48,11 @@
             "name": "Barreiro",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-transportes~colectivos~do~barreiro~pt"
+        },
+        {
+            "name": "Funchal",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-etgc-hf~urbano~hf~interurbano"
         }
     ]
 }
