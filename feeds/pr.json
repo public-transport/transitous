@@ -1,0 +1,15 @@
+{
+    "maintainers": [
+        {
+            "name": "Altonss",
+            "github": "altonss"
+        }
+    ],
+    "sources": [
+        {
+            "name": "puerto-rico",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-de30-ati"
+        }
+    ]
+}
