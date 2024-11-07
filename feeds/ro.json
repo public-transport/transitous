@@ -32,6 +32,11 @@
             "name": "constanța",
             "type": "http",
             "url": "https://external.gtfs.ro/constanta/CONSTANTA.zip"
+        },
+        {
+            "name": "brasov",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-ratbv~ro"
         }
     ]
 }
