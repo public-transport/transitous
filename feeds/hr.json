@@ -46,6 +46,11 @@
             "url": "https://b2b.promet-info.hr/dc/b2b.gtfs.osijekgpp",
             "url-override": "https://jbb.ghsq.de/gtfs/hr-osijekgpp.gtfs.zip",
             "fix": true
+        },
+        {
+            "name": "gradski-parking",
+            "type": "http",
+            "url": "https://www.gradski-parking.hr/upload/stranice/2022/08/2022-08-30/89/gtfs.zip"
         }
     ]
 }
