@@ -55,6 +55,16 @@
                     "Ocp-Apim-Subscription-Key": "920de6bcafdb445699a7ba92dd5cc005"
                 }
             }
+        },
+        {
+            "name": "BUSIT",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-busit~nz"
+        },
+        {
+            "name": "Baybus",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-boprc~nz"
         }
     ]
 }
