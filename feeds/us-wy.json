@@ -1,0 +1,25 @@
+{
+    "maintainers": [
+        {
+            "name": "Altonss",
+            "github": "altonss"
+        }
+    ],
+    "sources": [
+        {
+            "name": "sheridan",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-sheridan~wy~us"
+        },
+        {
+            "name": "sheridan",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-goose~creek~transit~rt"
+        },
+        {
+            "name": "sheridan",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-goose~creek~transit~rt~alerts"
+        }
+    ]
+}
