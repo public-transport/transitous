@@ -38,12 +38,12 @@
 }
 
 .app-card-row {
-  display: grid;
-  grid-auto-flow: column;
-  overflow-x: scroll;
+  display: flex;
   padding-bottom: 1em;
-  align-items: left;
   justify-content: left;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
   gap: 20px;
 }
 
