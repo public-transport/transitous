@@ -8,7 +8,7 @@ from pathlib import Path
 from datetime import datetime, timezone
 from utils import eprint
 from zipfile import ZipFile
-from typing import Optional
+from typing import Optional, Any
 from zoneinfo import ZoneInfo
 
 import email.utils
@@ -57,7 +57,9 @@ def check_feed_timeframe_valid(zip_content: bytes) -> bool:
         if "feed_info.txt" not in z.namelist():
             return True
 
-        feed_timezone = ZoneInfo(get_feed_timezone(z))
+        tz = get_feed_timezone(z)
+        assert tz
+        feed_timezone = ZoneInfo(tz)
 
         with z.open("feed_info.txt", "r") as a:
             with io.TextIOWrapper(a) as at:
@@ -98,7 +100,7 @@ class Fetcher:
 
                 return self.fetch_source(dest_path, http_source)
             case HttpSource():
-                request_options = {
+                request_options: dict[str, Any] = {
                     "verify": not source.options.ignore_tls_errors,
                     "timeout": 5
                 }
@@ -168,14 +170,15 @@ class Fetcher:
                     last_modified_server = email.utils.parsedate_to_datetime(
                         server_headers["last-modified"])
 
+                content: bytes
                 if "#" in download_url:
                     # if URL contains #, treat the path after # as an embedded ZIP file
                     sub_path = download_url.partition("#")[2]
                     zipfile = ZipFile(io.BytesIO(response.content))
 
-                    content: bytes = zipfile.read(sub_path)
+                    content = zipfile.read(sub_path)
                 else:
-                    content: bytes = response.content
+                    content = response.content
 
                 # Only write file if the new version changed. Helps to at least
                 # skip postprocessing with servers that don't send a
@@ -262,11 +265,13 @@ class Fetcher:
             # Resolve transitland sources to http / url sources
             match source:
                 case TransitlandSource():
-                    source = self.transitland_atlas.source_by_id(source)
+                    http_source = self.transitland_atlas.source_by_id(source)
 
                     # Transitland source type that we cannot handle
-                    if not source:
+                    if not http_source:
                         continue
+
+                    source = http_source
 
             validate_source_name(source.name)
             download_name = f"{region_name}_{source.name}"
@@ -311,6 +316,7 @@ class Fetcher:
             sys.stdout.flush()
 
         return errors
+
 
 if __name__ == "__main__":
     fetcher = Fetcher()

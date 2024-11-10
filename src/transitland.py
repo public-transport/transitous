@@ -39,6 +39,14 @@ class Atlas:
             result.drop_too_fast_trips = source.drop_too_fast_trips
             result.function = source.function
             result.drop_shapes = source.drop_shapes
+
+            if source.url_override:
+                result.url_override = source.url_override
+
+            if source.proxy:
+                result.url_override = "https://gtfsproxy.fwan.it/" + \
+                    source.transitland_atlas_id
+
         elif "realtime_trip_updates" in feed["urls"]:
             result = UrlSource()
             result.name = source.name
@@ -57,11 +65,5 @@ class Atlas:
                 result.license.spdx_identifier = feed["license"]["spdx_identifier"]
             if "url" in feed["license"]:
                 result.license.url = feed["license"]["url"]
-
-        if source.url_override:
-            result.url_override = source.url_override
-
-        if source.proxy:
-            result.url_override = "https://gtfsproxy.fwan.it/" + source.transitland_atlas_id
 
         return result
