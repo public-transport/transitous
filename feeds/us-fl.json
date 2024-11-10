@@ -1,0 +1,65 @@
+{
+    "maintainers": [
+        {
+            "name": "Altonss",
+            "github": "altonss"
+        }
+    ],
+    "sources": [
+        {
+            "name": "miami-dade",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dhw-miamidadetransit"
+        },
+        {
+            "name": "miami-dade",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-miamidadetransit~rt"
+        },
+        {
+            "name": "miami-dade",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-miamidadetransit~rt~alerts"
+        },
+        {
+            "name": "miami-beach",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-miamibeach"
+        },
+        {
+            "name": "miami-beach",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-miamibeach~rt"
+        },
+        {
+            "name": "miami-beach",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-miamibeach~rt~alerts"
+        },
+        {
+            "name": "tri-rail",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dhx-tri~rail"
+        },
+        {
+            "name": "tri-rail",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dhx-tri~rail~rt"
+        },
+        {
+            "name": "sunrail",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-djn-floridadepartmentoftransportation"
+        },
+        {
+            "name": "lynx",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-djn-centralfloridaregionaltransitauthority"
+        },
+        {
+            "name": "lynx",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-djn-centralfloridaregionaltransitauthority~rt"
+        }
+    ]
+}
