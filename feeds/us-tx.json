@@ -1,0 +1,116 @@
+{
+    "maintainers": [
+        {
+            "name": "Altonss",
+            "github": "altonss"
+        }
+    ],
+    "sources": [
+        {
+            "name": "dallas-area-rapidtransit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9vg-dallasarearapidtransit"
+        },
+        {
+            "name": "houston-metro",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9vk-metropolitantransitauthorityofharriscounty"
+        },
+        {
+            "name": "houston-metro",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-metropolitantransitauthorityofharriscounty~rt"
+        },
+        {
+            "name": "capital-metro",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9v6-capitalmetro"
+        },
+        {
+            "name": "capital-metro",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-capitalmetro~rt"
+        },
+        {
+            "name": "capital-metro",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-capitalmetro~rt~alerts"
+        },
+        {
+            "name": "via-san-antonio",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9v1z-viametropolitantransit"
+        },
+        {
+            "name": "via-san-antonio",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-via~rt"
+        },
+        {
+            "name": "amarillo",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-amarillo~city~transit",
+            "fix": true
+        },
+        {
+            "name": "lubbock",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-lubbock~tx~us"
+        },
+        {
+            "name": "lubbock",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-lubbock~tx~us~rt"
+        },
+        {
+            "name": "lubbock",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-lubbock~tx~us~rt~alerts"
+        },
+        {
+            "name": "abilene",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-abilene~tx~us"
+        },
+        {
+            "name": "concho-valley",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-concho~valley~tx~us"
+        },
+        {
+            "name": "concho-valley",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-concho~valley~tx~us~rt"
+        },
+        {
+            "name": "corpus-christi",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-corpus~christi~regional~transportation~authority"
+        },
+        {
+            "name": "denton",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9vfu-dentoncountytransportationauthority"
+        },
+        {
+            "name": "denton",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dentoncountytransportationauthority~rt"
+        },
+        {
+            "name": "fortworth-TA",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9vff-fortworthtransportationauthority"
+        },
+        {
+            "name": "sun-metro",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9tsk-sunmetro"
+        },
+        {
+            "name": "star-transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9vg3-startransit~tx~us"
+        }
+    ]
+}
