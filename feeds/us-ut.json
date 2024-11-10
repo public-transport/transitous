@@ -29,7 +29,8 @@
         {
             "name": "cache-valley",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-9x2-cachevalleytransitdistrict"
+            "transitland-atlas-id": "f-9x2-cachevalleytransitdistrict",
+            "fix": true
         },
         {
             "name": "cache-valley",
