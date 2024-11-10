@@ -1,0 +1,40 @@
+{
+    "maintainers": [
+        {
+            "name": "Altonss",
+            "github": "altonss"
+        }
+    ],
+    "sources": [
+        {
+            "name": "UTA",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9x0-uta"
+        },
+        {
+            "name": "UTA",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9x0-uta~rt"
+        },
+        {
+            "name": "high-valley",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-high~valley~transit~district"
+        },
+        {
+            "name": "park-city",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-park~city~ut"
+        },
+        {
+            "name": "cache-valley",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9x2-cachevalleytransitdistrict"
+        },
+        {
+            "name": "cache-valley",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-cachevalleytransitdistrict~rt"
+        }
+    ]
+}
