@@ -49,7 +49,8 @@
         {
             "name": "amarillo",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-amarillo~city~transit"
+            "transitland-atlas-id": "f-amarillo~city~transit",
+            "fix": true
         },
         {
             "name": "lubbock",
