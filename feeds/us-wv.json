@@ -1,0 +1,35 @@
+{
+    "maintainers": [
+        {
+            "name": "Altonss",
+            "github": "altonss"
+        }
+    ],
+    "sources": [
+        {
+            "name": "epta",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-epta~wv"
+        },
+        {
+            "name": "mlta",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dpp-mountainlinetransitauthority~wvuprt"
+        },
+        {
+            "name": "beckley",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-beckley~wv~us"
+        },
+        {
+            "name": "beckley",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-beckley~wv~us~rt"
+        },
+        {
+            "name": "WVU-PRT",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-west~virginia~university"
+        }
+    ]
+}
