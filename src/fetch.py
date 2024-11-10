@@ -99,11 +99,12 @@ class Fetcher:
                 return self.fetch_source(dest_path, http_source)
             case HttpSource():
                 request_options = {
-                    "verify": not source.options.ignore_tls_errors
+                    "verify": not source.options.ignore_tls_errors,
+                    "timeout": 5
                 }
 
                 headers = source.options.headers.copy()
-                if not "user-agent" in headers:
+                if "user-agent" not in headers:
                     headers["user-agent"] \
                         = "Transitous GTFS Fetcher (https://transitous.org)"
 
