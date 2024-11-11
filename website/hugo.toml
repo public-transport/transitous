@@ -14,3 +14,8 @@ theme = "ananke"
   name = "github"
   url = "https://github.com/public-transport/transitous"
   label = "Transitous on GitHub"
+
+[menus]
+  [[menus.main]]
+    name = "Status"
+    url = "https://uptime.ghsq.de/status/transitous"
