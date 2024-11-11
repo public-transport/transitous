@@ -56,12 +56,14 @@
             "name": "lynx",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-djn-centralfloridaregionaltransitauthority",
-            "proxy": true
+            "skip": true,
+            "skip-reason": "Not accessible from our import server or the transitland proxy"
         },
         {
             "name": "lynx",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-djn-centralfloridaregionaltransitauthority~rt"
+            "transitland-atlas-id": "f-djn-centralfloridaregionaltransitauthority~rt",
+            "skip": true
         }
     ]
 }
