@@ -38,7 +38,13 @@ For Transitous-specific technical topics: [#transitous:matrix.spline.de](https:/
 
 Transitous data sources are divided by region, so they can be continuously tested and verified by locals.
 
-A region file in the [feeds](https://github.com/public-transport/transitous/tree/main/feeds) directory has a `maintainers` attribute, which contains a list of people responsible for keeping the feeds for the region up to date.
+All the data from a specific region is stored in a region file,
+located in the [feeds](https://github.com/public-transport/transitous/tree/main/feeds) directory.
+This region file is a `json` file, which is named after the unique country
+[ISO_3166-1](https://en.wikipedia.org/wiki/ISO_3166-1) code or the unique principal subdivision
+[ISO_3166-2](https://en.wikipedia.org/wiki/ISO_3166-2) code (for example for US states).
+
+A region file has a `maintainers` attribute, which contains a list of people responsible for keeping the feeds for the region up to date.
 
 ```json
 {
