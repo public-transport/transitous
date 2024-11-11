@@ -39,7 +39,8 @@
         {
             "name": "ketchikan",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-c1f6-thebus~ketchikangatewayborough~airportferry"
+            "transitland-atlas-id": "f-c1f6-thebus~ketchikangatewayborough~airportferry",
+            "fix": true
         }
     ]
 }
