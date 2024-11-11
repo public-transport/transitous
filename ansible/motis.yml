@@ -8,5 +8,4 @@
     - rsync-push
     - rsync-anonymous
     - motis
-    - motis-proxy
     - nginx
