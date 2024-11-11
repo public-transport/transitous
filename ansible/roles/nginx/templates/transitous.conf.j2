@@ -17,21 +17,13 @@ server {
 
     charset UTF-8;
 
-    location ~ ^/$ {
-        if ($arg_motis != https%3A%2F%2F{{ transitous_domain }}%2Fapi) {
-                return 301 https://$host?motis=https%3A%2F%2F{{ transitous_domain }}%2Fapi;
-        }
-
-        root /opt/motis/web/;
-    }
-
     # MOTIS Web Interface
     location / {
-        root /opt/motis/web/;
+        root /opt/motis/ui/_app/;
     }
 
     # Proxy and cache tiles
-    location /api/tiles/ {
+    location /api/v1/tiles/ {
         proxy_pass http://localhost:8080/tiles/;
 
         proxy_cache            motis;
@@ -40,9 +32,9 @@ server {
                                 http_500 http_502 http_503 http_504;
     }
 
-    # MOTIS Proxy
+    # MOTIS
     location /api/ {
-        proxy_pass http://localhost:8000/;
+        proxy_pass http://localhost:8080/;
 
         proxy_connect_timeout       60;
         proxy_send_timeout          60;
@@ -52,14 +44,8 @@ server {
         proxy_set_header Forwarded $remote_addr;
     }
 
-    # API Documentation
-    location ~ ^/(doc/|openapi.json) {
-        proxy_pass http://localhost:8000;
-    }
-
     # Source files
     location /gtfs/ {
-        alias /srv/rsync/transitous/;
-        autoindex on;
+        return 301 https://routing-import.spline.de/gtfs/
     }
 }
