@@ -33,6 +33,36 @@
             "fix": true
         },
         {
+            "name": "qline",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-qline~mi~us"
+        },
+        {
+            "name": "qline",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-qline~mi~rt"
+        },
+        {
+            "name": "qline",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-qline~mi~rt~alerts"
+        },
+        {
+            "name": "smart",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dps-smart"
+        },
+        {
+            "name": "smart",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-smart~mi~rt"
+        },
+        {
+            "name": "smart",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-smart~mi~rt~alerts"
+        },
+        {
             "name": "DPM",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-dpsby4-detroitpeoplemover"
