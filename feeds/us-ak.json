@@ -1,0 +1,45 @@
+{
+    "maintainers": [
+        {
+            "name": "Altonss",
+            "github": "altonss"
+        }
+    ],
+    "sources": [
+        {
+            "name": "anchorage",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-bdvk-anchoragepeoplemover"
+        },
+        {
+            "name": "anchorage",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-peoplemover~rt"
+        },
+        {
+            "name": "juneau",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-c427-cityandboroughofjuneau~ak~us"
+        },
+        {
+            "name": "juneau",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-cityandboroughofjuneau~rt"
+        },
+        {
+            "name": "denali-park",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-denali~national~park"
+        },
+        {
+            "name": "seldovia-bay-ferry",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-seldovia~village~tribe"
+        },
+        {
+            "name": "ketchikan",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-c1f6-thebus~ketchikangatewayborough~airportferry"
+        }
+    ]
+}
