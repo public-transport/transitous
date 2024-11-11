@@ -1,0 +1,20 @@
+{
+    "maintainers": [
+        {
+            "name": "Altonss",
+            "github": "altonss"
+        }
+    ],
+    "sources": [
+        {
+            "name": "valleymetro",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9tb-valleymetro"
+        },
+        {
+            "name": "valleymetro",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-valleymetro~rt"
+        }
+    ]
+}
