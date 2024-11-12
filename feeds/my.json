@@ -34,7 +34,8 @@
         {
             "name": "ktmb",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-ktmb"
+            "transitland-atlas-id": "f-ktmb",
+            "fix" : true
         },
         {
             "name": "ktmb",
