@@ -12,6 +12,7 @@ ExecStart=/opt/motis/motis -c /var/lib/motis/config.ini
 Restart=always
 User=motis
 WorkingDirectory=/var/lib/motis
+LimitNOFILE=30000
 
 [Install]
 WantedBy=multi-user.target
