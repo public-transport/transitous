@@ -102,7 +102,7 @@ class Fetcher:
             case HttpSource():
                 request_options: dict[str, Any] = {
                     "verify": not source.options.ignore_tls_errors,
-                    "timeout": 10
+                    "timeout": 30
                 }
 
                 headers = source.options.headers.copy()
