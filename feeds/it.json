@@ -44,7 +44,8 @@
         {
             "name": "Lazio-Cotral",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-cotral~lazio~italia"
+            "transitland-atlas-id": "f-cotral~lazio~italia",
+            "fix": true
         },
         {
             "name": "Liguria-Genova",
