@@ -96,9 +96,17 @@
             "transitland-atlas-id": "f-antelope~valley~transit~authority"
         },
         {
+            "name": "Glendale-Beeline",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9q5f-glendalebeeline",
+            "skip": true,
+            "skip-reason": "403 error code when downloading, no documentation from agency on fix"
+        },
+        {
             "name": "Burbank-Bus",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-9q5f7-burbankbus"
+            "transitland-atlas-id": "f-9q5f7-burbankbus",
+            "fix": true
         },
         {
             "name": "Santa-Clarita-Transit",
