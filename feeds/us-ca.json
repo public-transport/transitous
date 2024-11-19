@@ -97,11 +97,16 @@
             "transitland-atlas-id": "f-antelope~valley~transit~authority"
         },
         {
+            "name": "Antelope-Valley-Transit-Authority",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-antelope~valley~transit~authority~rt"
+        },
+        {
             "name": "Glendale-Beeline",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-9q5f-glendalebeeline",
             "skip": true,
-            "skip-reason": "403 error code when downloading, no documentation from agency on fix"
+            "skip-reason": "403 error code when downloading, no documentation from agency on fix, supposedly requires compression on download which isnt supported yet"
         },
         {
             "name": "Burbank-Bus",
@@ -110,10 +115,22 @@
             "fix": true
         },
         {
+            "name": "Burbank-Bus",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-burbankbus~rt",
+            "fix": true
+        },
+        {
             "name": "Santa-Clarita-Transit",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-santa~clarita"
-        },        {
+        },
+        {
+            "name": "Santa-Clarita-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-santa~clarita~rt"
+        },
+        {
             "name": "Metrolink",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-9qh-metrolinktrains"
