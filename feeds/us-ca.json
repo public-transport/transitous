@@ -96,11 +96,6 @@
             "transitland-atlas-id": "f-antelope~valley~transit~authority"
         },
         {
-            "name": "Glendale-Beeline",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-9q5f-glendalebeeline"
-        },
-        {
             "name": "Burbank-Bus",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-9q5f7-burbankbus"
