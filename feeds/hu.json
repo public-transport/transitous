@@ -36,8 +36,7 @@
         {
             "name": "szkt",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u2nr-dakkzrt~szkt",
-            /*source url: "http://szegedimenetrend.hu/google_transit.zip*/
+            "transitland-atlas-id": "f-u2nr-dakkzrt~szkt"
         }
         {
             "name": "v-busz",
