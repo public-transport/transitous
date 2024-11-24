@@ -29,9 +29,36 @@
             "transitland-atlas-id": "f-u2m-bkk"
         },
         {
-            "name": "mkv",
+            "name": "mvk",
             "type": "http",
             "url": "https://gtfsapi.mvkzrt.hu/gtfs/gtfs.zip"
         }
+        {
+            "name": "szkt",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u2nr-dakkzrt~szkt",
+            /*source url: "http://szegedimenetrend.hu/google_transit.zip*/
+        }
+        {
+            "name": "v-busz",
+            "type": "http",
+            "url": "https://gtfs.menetbrand.com/download/veszprem"
+        }
+        {
+            "name": "tukebusz",
+            "type": "http",
+            "url": "http://mobilitas.biokom.hu/gtfs"
+        }
+        {
+            "name": "blaguss-agora",
+            "type": "http",
+            "url": "https://szombathely.utas.hu/api/static/v1/gtfs-google/gtfs-google.zip"
+        }
+        {
+            "name": "paksbusz",
+            "type": "http",
+            "url": "https://utazastervezo.paksbusz.hu/api/static/v1/gtfs-google/gtfs-google.zip"
+        }
+        
     ]
 }
