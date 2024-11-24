@@ -12,6 +12,11 @@
             "transitland-atlas-id": "f-u0-switzerland"
         },
         {
+            "name": "opentransportdataswiss25",
+            "type": "http",
+            "url": "https://opentransportdata.swiss/de/dataset/timetable-2025-gtfs2020/permalink"
+        },
+        {
             "name": "opentransportdataswiss",
             "type": "url",
             "spec": "gtfs-rt",
