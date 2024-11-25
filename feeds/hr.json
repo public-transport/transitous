@@ -51,6 +51,28 @@
             "name": "gradski-parking",
             "type": "http",
             "url": "https://www.gradski-parking.hr/upload/stranice/2022/08/2022-08-30/89/gtfs.zip"
+        },
+        {
+            "name": "split",
+            "type": "http",
+            "url": "https://gitlab.com/vekejsn/gtfs-generators/-/jobs/artifacts/main/raw/split_gtfs.zip?job=split"
+        },
+        {
+            "name": "rijeka",
+            "type": "http",
+            "url": "https://gitlab.com/vekejsn/gtfs-generators/-/jobs/artifacts/main/raw/autotrolej_gtfs.zip?job=rijeka",
+            "fix": true
+        },
+        {
+            "name": "sisak",
+            "type": "http",
+            "url": "https://gitlab.com/vekejsn/gtfs-generators/-/jobs/artifacts/main/raw/ap_sisak_gtfs.zip?job=sisak"
+        },
+        {
+            "name": "dubrovnik-libertas",
+            "type": "http",
+            "url": "https://gitlab.com/vekejsn/gtfs-generators/-/jobs/artifacts/main/raw/libertas_gtfs.zip?job=libertas",
+            "fix": true
         }
     ]
 }
