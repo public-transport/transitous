@@ -9,7 +9,8 @@
     {
       "name": "NJ-Transit-Bus",
       "type": "transitland-atlas",
-      "transitland-atlas-id": "f-dr5-nj~transit~bus"
+      "transitland-atlas-id": "f-dr5-nj~transit~bus",
+      "fix": true
     },
     {
       "name": "NJ-Transit-Rail",
