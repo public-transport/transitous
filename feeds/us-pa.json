@@ -13,7 +13,8 @@
     {
       "name": "SEPTA-Rail",
       "type": "transitland-atlas",
-      "transitland-atlas-id": "f-dr4-septa~rail"
+      "transitland-atlas-id": "f-dr4-septa~rail",
+      "fix": true
     },
     {
       "name": "SEPTA-Rail",
