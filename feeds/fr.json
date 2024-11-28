@@ -107,7 +107,7 @@
         {
             "name": "horaires-des-lignes-intercites-sncf",
             "type": "http",
-            "url": "https://eu.ftp.opendatasoft.com/sncf/gtfs/export-intercites-gtfs-last.zip",
+            "url": "https://eu.ftp.opendatasoft.com/sncf/plandata/export-intercites-gtfs-last.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/horaires-des-lignes-intercites-sncf"
@@ -125,7 +125,7 @@
         {
             "name": "horaires-des-lignes-ter-sncf",
             "type": "http",
-            "url": "https://eu.ftp.opendatasoft.com/sncf/gtfs/export-ter-gtfs-last.zip",
+            "url": "https://eu.ftp.opendatasoft.com/sncf/plandata/export-ter-gtfs-last.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/horaires-des-lignes-ter-sncf"
@@ -143,7 +143,7 @@
         {
             "name": "horaires-des-tgv",
             "type": "http",
-            "url": "https://eu.ftp.opendatasoft.com/sncf/gtfs/export_gtfs_voyages.zip",
+            "url": "https://eu.ftp.opendatasoft.com/sncf/plandata/export_gtfs_voyages.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/horaires-des-tgv"
@@ -334,7 +334,7 @@
         {
             "name": "arrets-horaires-et-parcours-theoriques-du-reseau-routier-regional-de-transport-scolaire-et-interurbain-60-oise-1",
             "type": "http",
-            "url": "https://geocatalogue.hautsdefrance.fr/gtfs/RHDF_GTFS_COM_SCO_60_P2.zip",
+            "url": "https://geocatalogue.hautsdefrance.fr/gtfs/RHDF_GTFS_COM_SCO_60_P1.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/arrets-horaires-et-parcours-theoriques-du-reseau-routier-regional-de-transport-scolaire-et-interurbain-60-oise-1"
@@ -704,7 +704,7 @@
         {
             "name": "breizhgo-bateaux",
             "type": "http",
-            "url": "https://www.korrigo.bzh/ftp/OPENDATA/BREIZHGO_BATEAU_ARZ.gtfs.zip",
+            "url": "https://www.korrigo.bzh/ftp/OPENDATA/BREIZHGO_BATEAU_BREHAT.gtfs.zip",
             "fix": true,
             "skip": true,
             "license": {
@@ -714,7 +714,7 @@
         {
             "name": "breizhgo-car",
             "type": "http",
-            "url": "https://www.korrigo.bzh/ftp/OPENDATA/BREIZHGO_CAR_NS.gtfs.zip",
+            "url": "https://www.korrigo.bzh/ftp/OPENDATA/BREIZHGO_CAR_22.gtfs.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/breizhgo-car"
@@ -741,7 +741,7 @@
         {
             "name": "base-de-donnees-multimodale-des-reseaux-de-transport-public-normands",
             "type": "http",
-            "url": "https://static.data.gouv.fr/resources/base-de-donnees-multimodale-des-reseaux-de-transport-public-normands/20241106-081941/pt-th-offer-atoumod-gtfs-20241105-949-opendata.zip",
+            "url": "https://static.data.gouv.fr/resources/base-de-donnees-multimodale-des-reseaux-de-transport-public-normands/20241120-095501/pt-th-offer-atoumod-gtfs-20241120-308-opendata.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/base-de-donnees-multimodale-des-reseaux-de-transport-public-normands"
@@ -777,7 +777,7 @@
         {
             "name": "reseau-de-transport-interurbain-mobigo-en-bourgogne-franche-comte",
             "type": "http",
-            "url": "https://exs.mobigo.cityway.fr/gtfs.aspx?key=OPENDATA&operatorCode=UT21",
+            "url": "https://exs.mobigo.cityway.fr/gtfs.aspx?key=OPENDATA&operatorCode=UT70",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/reseau-de-transport-interurbain-mobigo-en-bourgogne-franche-comte"
@@ -804,7 +804,7 @@
         {
             "name": "reseaux-de-transports-en-commun-de-la-metropole-daix-marseille-provence-et-des-bouches-du-rhone",
             "type": "http",
-            "url": "https://app.mecatran.com/utw/ws/gtfsfeed/static/mamp-col?apiKey=776d384907333d300f1b0077344506394e09501d",
+            "url": "https://app.mecatran.com/utw/ws/gtfsfeed/static/mamp-ctb?apiKey=686525656f2c3228054e6a7c3e38330037076207",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/reseaux-de-transports-en-commun-de-la-metropole-daix-marseille-provence-et-des-bouches-du-rhone"
@@ -833,7 +833,7 @@
         {
             "name": "horaires-theoriques-du-reseau-libellule-sytral-de-la-communaute-dagglomeration-de-villefranche-beaujolais-saone",
             "type": "http",
-            "url": "https://gtech-transit-prod.apigee.net/v1/google/gtfs/odbl/lyon_libellule.zip?apikey=BasyG6OFZXgXnzWdQLTwJFGcGmeOs204&secret=gNo6F5PhQpsGRBCK",
+            "url": "https://download.data.grandlyon.com/files/rdata/lbl_libellule.lbltheorique/gtfs_libellule.zip",
             "fix": true,
             "skip": true,
             "license": {
@@ -853,7 +853,7 @@
         {
             "name": "horaires-theoriques-du-reseau-transports-en-commun-lyonnais",
             "type": "http",
-            "url": "https://download.data.grandlyon.com/files/rdata/tcl_sytral.tcltheorique/GTFS_TCL.ZIP",
+            "url": "https://gtech-transit-prod.apigee.net/v1/google/gtfs/odbl/lyon_tcl.zip?apikey=BasyG6OFZXgXnzWdQLTwJFGcGmeOs204&secret=gNo6F5PhQpsGRBCK",
             "fix": true,
             "skip": true,
             "license": {
@@ -990,7 +990,7 @@
         {
             "name": "export-quotidien-au-format-gtfs-du-reseau-de-transport-lignes-d-azur",
             "type": "http",
-            "url": "http://opendata.nicecotedazur.org/data/storage/f/gtfs1730938501/GTFSExport.zip",
+            "url": "http://opendata.nicecotedazur.org/data/storage/f/gtfs1732752901/GTFSExport.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/export-quotidien-au-format-gtfs-du-reseau-de-transport-lignes-d-azur"
@@ -1089,7 +1089,7 @@
         {
             "name": "versions-des-horaires-theoriques-des-lignes-de-bus-et-de-metro-du-reseau-star-au-format-gtfs",
             "type": "http",
-            "url": "https://eu.ftp.opendatasoft.com/star/gtfs/GTFS_1_20241029_20241210_20241029153431.zip",
+            "url": "https://eu.ftp.opendatasoft.com/star/gtfs/GTFS_1_20241127_20250107_20241127095650.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/versions-des-horaires-theoriques-des-lignes-de-bus-et-de-metro-du-reseau-star-au-format-gtfs"
@@ -1170,7 +1170,7 @@
         {
             "name": "gtfs-transport-horaires-chemins-de-fer-corse-1",
             "type": "http",
-            "url": "https://static.data.gouv.fr/resources/gtfs-transport-horaires-chemins-de-fer-corse-1/20241031-104301/chemins-de-fer-de-la-corse-horaires.zip",
+            "url": "https://static.data.gouv.fr/resources/gtfs-transport-horaires-chemins-de-fer-corse-1/20241119-101122/chemins-de-fer-de-la-corse-horaires.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/gtfs-transport-horaires-chemins-de-fer-corse-1"
@@ -1242,7 +1242,7 @@
         {
             "name": "offre-transport-du-reseau-txik-txak-nord-ex-chronoplus-gtfs",
             "type": "http",
-            "url": "https://static.data.gouv.fr/resources/offre-transport-du-reseau-txik-txak-nord-ex-chronoplus-gtfs/20241028-152538/gtfs.zip",
+            "url": "https://static.data.gouv.fr/resources/offre-transport-du-reseau-txik-txak-nord-ex-chronoplus-gtfs/20241126-154652/gtfs.zip",
             "fix": true,
             "skip": true,
             "license": {
@@ -1252,7 +1252,7 @@
         {
             "name": "offre-transport-du-reseau-tixk-txak-sud-ex-hegobus-gtfs",
             "type": "http",
-            "url": "https://static.data.gouv.fr/resources/offre-transport-du-reseau-tixk-txak-sud-ex-hegobus-gtfs/20241028-151944/gtfs.zip",
+            "url": "https://static.data.gouv.fr/resources/offre-transport-du-reseau-tixk-txak-sud-ex-hegobus-gtfs/20241120-163647/gtfs.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/offre-transport-du-reseau-tixk-txak-sud-ex-hegobus-gtfs"
@@ -1333,7 +1333,7 @@
         {
             "name": "syndicat-mixte-des-transports-en-commun-de-lagglomeration-clermontoise-smtc-ac-reseau-t2c-gtfs-gtfs-rt",
             "type": "http",
-            "url": "https://opendata.clermontmetropole.eu/api/v2/catalog/datasets/gtfs-smtc/attachments/gtfs_t2c_plus_scolaire_zip",
+            "url": "https://opendata.clermontmetropole.eu/api/v2/catalog/datasets/gtfs-smtc/alternative_exports/gtfs",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/syndicat-mixte-des-transports-en-commun-de-lagglomeration-clermontoise-smtc-ac-reseau-t2c-gtfs-gtfs-rt"
@@ -1469,7 +1469,7 @@
         {
             "name": "offre-de-transport-du-reseau-tango-de-nimes-metropole-gtfs-gtfs-rt",
             "type": "http",
-            "url": "https://static.data.gouv.fr/resources/offre-de-transport-du-reseau-tango-de-nimes-metropole-gtfs-gtfs-rt/20241031-162249/gtfs-production.zip",
+            "url": "https://static.data.gouv.fr/resources/offre-de-transport-du-reseau-tango-de-nimes-metropole-gtfs-gtfs-rt/20241125-161355/gtfs-production.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/offre-de-transport-du-reseau-tango-de-nimes-metropole-gtfs-gtfs-rt"
@@ -1487,7 +1487,7 @@
         {
             "name": "gtfs-diviamobilites",
             "type": "http",
-            "url": "https://static.data.gouv.fr/resources/gtfs-diviamobilites/20241107-153605/gtfs-diviamobilites-current.zip",
+            "url": "https://static.data.gouv.fr/resources/gtfs-diviamobilites/20241120-135732/gtfs-diviamobilites-current.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/gtfs-diviamobilites"
@@ -1521,27 +1521,9 @@
             "spec": "gtfs-rt"
         },
         {
-            "name": "reseau-urbain-illygo",
-            "type": "http",
-            "url": "https://static.data.gouv.fr/resources/reseau-urbain-illygo/20231215-134711/gtfs-20231215-horsbord-illygo.zip",
-            "fix": true,
-            "license": {
-                "url": "https://transport.data.gouv.fr/datasets/reseau-urbain-illygo"
-            }
-        },
-        {
-            "name": "reseau-urbain-illygo",
-            "type": "url",
-            "url": "https://pysae.com/api/v2/groups/illygo/gtfs-rt",
-            "license": {
-                "url": "https://transport.data.gouv.fr/datasets/reseau-urbain-illygo"
-            },
-            "spec": "gtfs-rt"
-        },
-        {
             "name": "eveole-douai-reseau-bus-du-syndicat-mixte-des-transports-du-douaisis-smtd",
             "type": "http",
-            "url": "https://static.data.gouv.fr/resources/eveole-douai-reseau-bus-du-syndicat-mixte-des-transports-du-douaisis-smtd/20241001-135426/gtfs.zip",
+            "url": "https://static.data.gouv.fr/resources/eveole-douai-reseau-bus-du-syndicat-mixte-des-transports-du-douaisis-smtd/20241118-092450/gtfs.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/eveole-douai-reseau-bus-du-syndicat-mixte-des-transports-du-douaisis-smtd"
@@ -1577,7 +1559,7 @@
         {
             "name": "offre-de-transports-sibra-a-annecy-gtfs",
             "type": "http",
-            "url": "https://static.data.gouv.fr/resources/offre-de-transports-sibra-a-annecy-gtfs/20241031-132544/gtfs-sibra.zip",
+            "url": "https://static.data.gouv.fr/resources/offre-de-transports-sibra-a-annecy-gtfs/20241112-164950/gtfs-sibra.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/offre-de-transports-sibra-a-annecy-gtfs"
@@ -1640,7 +1622,7 @@
         {
             "name": "ce-jeu-de-donnees-contient-la-liste-des-arrets-des-horaires-et-des-parcours-theoriques-du-reseau-de-transport-urbain-et-interurbain-de-vrm",
             "type": "http",
-            "url": "https://static.data.gouv.fr/resources/ce-jeu-de-donnees-contient-la-liste-des-arrets-des-horaires-et-des-parcours-theoriques-du-reseau-de-transport-urbain-et-interurbain-de-vrm/20240826-150936/gtfs-citea-sept2024.zip",
+            "url": "https://static.data.gouv.fr/resources/ce-jeu-de-donnees-contient-la-liste-des-arrets-des-horaires-et-des-parcours-theoriques-du-reseau-de-transport-urbain-et-interurbain-de-vrm/20241115-103431/inter-modif-nov24-citea.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/ce-jeu-de-donnees-contient-la-liste-des-arrets-des-horaires-et-des-parcours-theoriques-du-reseau-de-transport-urbain-et-interurbain-de-vrm"
@@ -1658,7 +1640,7 @@
         {
             "name": "gtfs-du-reseau-des-transports-bus-et-tramway-setram-circulant-sur-le-territoire-le-mans-metropole",
             "type": "http",
-            "url": "https://static.data.gouv.fr/resources/gtfs-du-reseau-des-transports-bus-et-tramway-setram-circulant-sur-le-territoire-le-mans-metropole/20241029-152547/gtfs-setram-lmm.zip",
+            "url": "https://static.data.gouv.fr/resources/gtfs-du-reseau-des-transports-bus-et-tramway-setram-circulant-sur-le-territoire-le-mans-metropole/20241114-075439/gtfs-setram-lmm.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/gtfs-du-reseau-des-transports-bus-et-tramway-setram-circulant-sur-le-territoire-le-mans-metropole"
@@ -1776,7 +1758,7 @@
         {
             "name": "reseau-urbain-kiceo",
             "type": "http",
-            "url": "https://cotesdarmor.transdev-bretagne.com/sites/default/files/2024-01/GTFS_Kic%C3%A9o.zip",
+            "url": "https://static.data.gouv.fr/resources/reseau-urbain-kiceo/20241126-131350/gtfs-kiceo-20241103.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/reseau-urbain-kiceo"
@@ -1839,7 +1821,7 @@
         {
             "name": "horaires-theoriques-et-temps-reel-gtfs-gtfs-rt-du-reseau-palmbus-cannes-pays-de-lerins",
             "type": "http",
-            "url": "https://static.data.gouv.fr/resources/horaires-theoriques-et-temps-reel-gtfs-gtfs-rt-du-reseau-palmbus-cannes-pays-de-lerins/20241018-074616/palmbus-cannes-fr.zip",
+            "url": "https://static.data.gouv.fr/resources/horaires-theoriques-et-temps-reel-gtfs-gtfs-rt-du-reseau-palmbus-cannes-pays-de-lerins/20241120-155045/palmbus-cannes-fr.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/horaires-theoriques-et-temps-reel-gtfs-gtfs-rt-du-reseau-palmbus-cannes-pays-de-lerins"
@@ -1954,6 +1936,24 @@
             }
         },
         {
+            "name": "reseau-urbain-illygo",
+            "type": "http",
+            "url": "https://static.data.gouv.fr/resources/reseau-urbain-illygo/20231215-134711/gtfs-20231215-horsbord-illygo.zip",
+            "fix": true,
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/reseau-urbain-illygo"
+            }
+        },
+        {
+            "name": "reseau-urbain-illygo",
+            "type": "url",
+            "url": "https://pysae.com/api/v2/groups/illygo/gtfs-rt",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/reseau-urbain-illygo"
+            },
+            "spec": "gtfs-rt"
+        },
+        {
             "name": "filibus-urbain",
             "type": "http",
             "url": "https://static.data.gouv.fr/resources/filibus-urbain/20240729-125753/chartres.zip",
@@ -1974,7 +1974,7 @@
         {
             "name": "horaires-theoriques-des-lignes-urbaines-et-interurbaines-sur-le-reseau-alesy-gtfs",
             "type": "http",
-            "url": "https://static.data.gouv.fr/resources/horaires-theoriques-des-lignes-urbaines-et-interurbaines-sur-le-reseau-alesy-gtfs/20241031-152741/gtfs-is-20241104.zip",
+            "url": "https://static.data.gouv.fr/resources/horaires-theoriques-des-lignes-urbaines-et-interurbaines-sur-le-reseau-alesy-gtfs/20241123-143726/gtfs-is-20241125.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/horaires-theoriques-des-lignes-urbaines-et-interurbaines-sur-le-reseau-alesy-gtfs"
@@ -1990,18 +1990,9 @@
             "spec": "gtfs-rt"
         },
         {
-            "name": "offre-de-transport-du-reseau-linggo-en-ville-petr-du-pays-de-langres",
-            "type": "http",
-            "url": "https://www.datagrandest.fr/metadata/fluo-grand-est/FR-200052264-T0029-0000/fluo-grand-est-lan-gtfs.zip",
-            "fix": true,
-            "license": {
-                "url": "https://transport.data.gouv.fr/datasets/offre-de-transport-du-reseau-linggo-en-ville-petr-du-pays-de-langres"
-            }
-        },
-        {
             "name": "arrets-de-bus-communaute-dagglomeration-le-grand-narbonne",
             "type": "http",
-            "url": "https://static.data.gouv.fr/resources/arrets-de-bus-communaute-dagglomeration-le-grand-narbonne/20240927-121953/gtfs-gn-du-24-9-24-au-31-12-24.zip",
+            "url": "https://static.data.gouv.fr/resources/arrets-de-bus-communaute-dagglomeration-le-grand-narbonne/20241115-131704/gtfs-citibus-du-19-10-24-au-31-12-24-v2.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/arrets-de-bus-communaute-dagglomeration-le-grand-narbonne"
@@ -2055,7 +2046,7 @@
         {
             "name": "gtfs-3",
             "type": "http",
-            "url": "https://static.data.gouv.fr/resources/gtfs-3/20241104-170625/gtfs-20241024-172707.zip",
+            "url": "https://static.data.gouv.fr/resources/gtfs-3/20241125-093438/gtfs-20241024-172839.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/gtfs-3"
@@ -2280,7 +2271,7 @@
         {
             "name": "gtfs-urbain-de-la-zone-centre",
             "type": "http",
-            "url": "https://static.data.gouv.fr/resources/gtfs-urbain-de-la-zone-centre/20240910-160306/gtfs-centre-rtm.zip",
+            "url": "https://static.data.gouv.fr/resources/gtfs-urbain-de-la-zone-centre/20241107-201847/gtfs-centre-rtm.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/gtfs-urbain-de-la-zone-centre"
@@ -2298,7 +2289,7 @@
         {
             "name": "gtfs-urbain-de-la-zone-sud",
             "type": "http",
-            "url": "https://static.data.gouv.fr/resources/gtfs-urbain-de-la-zone-sud/20241106-151027/gtfs-sud-sudlib.zip",
+            "url": "https://static.data.gouv.fr/resources/gtfs-urbain-de-la-zone-sud/20230109-181149/gtfs-sud-sudlib.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/gtfs-urbain-de-la-zone-sud"
@@ -2613,6 +2604,15 @@
             }
         },
         {
+            "name": "offre-de-transports-reseau-tac-annemasse-agglo",
+            "type": "url",
+            "url": "https://proxy.transport.data.gouv.fr/resource/tac-annemasse-gtfs-rt-trip-update",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/offre-de-transports-reseau-tac-annemasse-agglo"
+            },
+            "spec": "gtfs-rt"
+        },
+        {
             "name": "arrets-horaires-et-parcours-theoriques-des-reseaux-naq-lib-nva-m-1",
             "type": "http",
             "url": "https://www.pigma.org/public/opendata/nouvelle_aquitaine_mobilites/publication/ca_du_libournais-aggregated-gtfs.zip",
@@ -2669,7 +2669,7 @@
         {
             "name": "reseau-urbain-mat",
             "type": "http",
-            "url": "https://www.transdev-bretagne.com/bzh/open-data/mat/gtfs",
+            "url": "https://static.data.gouv.fr/resources/reseau-urbain-mat/20241120-153724/gtfs-mat.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/reseau-urbain-mat"
@@ -2768,6 +2768,15 @@
             }
         },
         {
+            "name": "donnees-theoriques-et-temps-reel-du-reseau-tic-interurbain-communaute-dagglomeration-de-la-region-de-compiegne-et-de-la-basse-automne",
+            "type": "url",
+            "url": "https://api.oisemob.cityway.fr/dataflow/horaire-tc-tr/download?provider=TIC_INT&dataFormat=gtfs-rt",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/donnees-theoriques-et-temps-reel-du-reseau-tic-interurbain-communaute-dagglomeration-de-la-region-de-compiegne-et-de-la-basse-automne"
+            },
+            "spec": "gtfs-rt"
+        },
+        {
             "name": "donnees-theoriques-et-temps-reel-du-reseau-tic-urbain-communaute-dagglomeration-de-la-region-de-compiegne-et-de-la-basse-automne",
             "type": "http",
             "url": "https://api.oisemob.cityway.fr/dataflow/offre-tc/download?provider=TIC_URB&dataFormat=GTFS&dataProfil=OPENDATA",
@@ -2833,7 +2842,7 @@
         {
             "name": "gtfs-de-la-societe-de-transport-urbain-du-grand-montauban-semtm",
             "type": "http",
-            "url": "https://static.data.gouv.fr/resources/gtfs-de-la-societe-de-transport-urbain-du-grand-montauban-semtm/20241025-105206/gtfs-241024.zip",
+            "url": "https://static.data.gouv.fr/resources/gtfs-de-la-societe-de-transport-urbain-du-grand-montauban-semtm/20241025-105649/gtfs-241024.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/gtfs-de-la-societe-de-transport-urbain-du-grand-montauban-semtm"
@@ -2869,7 +2878,7 @@
         {
             "name": "offre-de-transport-du-reseau-trema-gtfs",
             "type": "http",
-            "url": "https://static.data.gouv.fr/resources/offre-de-transport-du-reseau-trema-gtfs/20241028-112348/gtfs-site.zip",
+            "url": "https://static.data.gouv.fr/resources/offre-de-transport-du-reseau-trema-gtfs/20241108-160404/trema-gtfs-2024-11-08-17-03-22.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/offre-de-transport-du-reseau-trema-gtfs"
@@ -2941,7 +2950,7 @@
         {
             "name": "offre-de-transports-du-grand-albigeois-gtfs",
             "type": "http",
-            "url": "https://static.data.gouv.fr/resources/offre-de-transports-du-grand-albigeois-gtfs/20240808-092020/reseau-libea-navettes.zip",
+            "url": "https://static.data.gouv.fr/resources/offre-de-transports-du-grand-albigeois-gtfs/20240912-070432/reseau-libea-urbain-2024.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/offre-de-transports-du-grand-albigeois-gtfs"
@@ -3183,12 +3192,12 @@
             }
         },
         {
-            "name": "rentree-2023-2024",
+            "name": "horaires-a-compter-du-18-novembre-2024",
             "type": "http",
-            "url": "https://static.data.gouv.fr/resources/rentree-2023-2024/20240710-123129/gtfs.zip",
+            "url": "https://static.data.gouv.fr/resources/horaires-a-compter-du-18-novembre-2024/20241114-090441/gtfs-montelibus-mybus.zip",
             "fix": true,
             "license": {
-                "url": "https://transport.data.gouv.fr/datasets/rentree-2023-2024"
+                "url": "https://transport.data.gouv.fr/datasets/horaires-a-compter-du-18-novembre-2024"
             }
         },
         {
@@ -3212,7 +3221,7 @@
         {
             "name": "versions-des-horaires-theoriques-des-lignes-du-reseau-de-bus-au-format-gtfs",
             "type": "http",
-            "url": "https://static.data.gouv.fr/resources/versions-des-horaires-theoriques-des-lignes-du-reseau-de-bus-au-format-gtfs/20240829-061404/gtfs-20240828.zip",
+            "url": "https://static.data.gouv.fr/resources/versions-des-horaires-theoriques-des-lignes-du-reseau-de-bus-au-format-gtfs/20241125-063911/gtfs-20241001-20240706.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/versions-des-horaires-theoriques-des-lignes-du-reseau-de-bus-au-format-gtfs"
@@ -3270,6 +3279,15 @@
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/regie-des-transports-baag-gtfs"
+            }
+        },
+        {
+            "name": "donnees-gtfs-1",
+            "type": "http",
+            "url": "https://static.data.gouv.fr/resources/donnees-gtfs-1/20241119-134820/gtfs-24-10-14-au-25-08-31.zip",
+            "fix": true,
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/donnees-gtfs-1"
             }
         },
         {
@@ -3615,6 +3633,15 @@
             }
         },
         {
+            "name": "reseau-nemus",
+            "type": "url",
+            "url": "https://proxy.transport.data.gouv.fr/resource/flers-nemus-gtfs-rt-trip-update",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/reseau-nemus"
+            },
+            "spec": "gtfs-rt"
+        },
+        {
             "name": "donnees-theoriques-du-reseau-urbain-de-flers-agglo-au-format-gtfs",
             "type": "http",
             "url": "https://static.data.gouv.fr/resources/donnees-theoriques-du-reseau-urbain-de-flers-agglo-au-format-gtfs/20240917-144958/gtfs-nemus-urbain-du-17-09-2024-au-06-07-2025.zip",
@@ -3622,6 +3649,15 @@
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/donnees-theoriques-du-reseau-urbain-de-flers-agglo-au-format-gtfs"
             }
+        },
+        {
+            "name": "donnees-theoriques-du-reseau-urbain-de-flers-agglo-au-format-gtfs",
+            "type": "url",
+            "url": "https://proxy.transport.data.gouv.fr/resource/flers-nemus-gtfs-rt-trip-update",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/donnees-theoriques-du-reseau-urbain-de-flers-agglo-au-format-gtfs"
+            },
+            "spec": "gtfs-rt"
         },
         {
             "name": "reseau-urbain-surf",
@@ -3689,7 +3725,7 @@
         {
             "name": "donnees-theoriques-et-temps-reel-du-reseau-pass-thelle-bus-communaute-de-communes-thelloise",
             "type": "http",
-            "url": "https://api.oisemob.cityway.fr/dataflow/tad/download?provider=PASSTHELLE&dataFormat=gtfs",
+            "url": "https://api.oisemob.cityway.fr/dataflow/offre-tc/download?provider=PASSTHELLE&dataFormat=GTFS&dataProfil=OPENDATA",
             "fix": true,
             "skip": true,
             "license": {
@@ -3769,6 +3805,15 @@
             }
         },
         {
+            "name": "fr-200052264-t0015-0000-1",
+            "type": "http",
+            "url": "https://www.datagrandest.fr/metadata/fluo-grand-est/FR-200052264-T0015-0000/fluo-grand-est-transavold-gtfs.zip",
+            "fix": true,
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/fr-200052264-t0015-0000-1"
+            }
+        },
+        {
             "name": "horaires-theoriques-et-temps-reel-du-reseau-transavold-saint-avold-gtfs-gtfs-rt",
             "type": "http",
             "url": "https://zenbus.net/gtfs/static/download.zip?dataset=transavold-stavold",
@@ -3785,15 +3830,6 @@
                 "url": "https://transport.data.gouv.fr/datasets/horaires-theoriques-et-temps-reel-du-reseau-transavold-saint-avold-gtfs-gtfs-rt"
             },
             "spec": "gtfs-rt"
-        },
-        {
-            "name": "fr-200052264-t0015-0000-1",
-            "type": "http",
-            "url": "https://www.datagrandest.fr/metadata/fluo-grand-est/FR-200052264-T0015-0000/fluo-grand-est-transavold-gtfs.zip",
-            "fix": true,
-            "license": {
-                "url": "https://transport.data.gouv.fr/datasets/fr-200052264-t0015-0000-1"
-            }
         },
         {
             "name": "lignes-arrets-et-horaires-theorique-du-reseau-de-transport-gtfs-et-netex-les-sables-dolonne-agglomeration",
@@ -3907,7 +3943,7 @@
         {
             "name": "reseau-de-transport-urbains-dignois",
             "type": "http",
-            "url": "https://static.data.gouv.fr/resources/reseau-de-transport-urbains-dignois/20240603-093334/rtud-v8-gtfs-2024-06-03-11-20-05.zip",
+            "url": "https://static.data.gouv.fr/resources/reseau-de-transport-urbains-dignois/20240603-092831/rtud-v8-gtfs-2024-06-03-11-20-05.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/reseau-de-transport-urbains-dignois"
@@ -4159,6 +4195,15 @@
             "spec": "gtfs-rt"
         },
         {
+            "name": "offre-de-transport-du-reseau-linggo-en-ville-petr-du-pays-de-langres",
+            "type": "http",
+            "url": "https://www.datagrandest.fr/metadata/fluo-grand-est/FR-200052264-T0029-0000/fluo-grand-est-lan-gtfs.zip",
+            "fix": true,
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/offre-de-transport-du-reseau-linggo-en-ville-petr-du-pays-de-langres"
+            }
+        },
+        {
             "name": "horaires-theoriques-du-reseau-figeac-le-bus-gtfs",
             "type": "http",
             "url": "https://zenbus.net/gtfs/static/download.zip?dataset=figeac",
@@ -4258,24 +4303,6 @@
             }
         },
         {
-            "name": "horaires-theoriques-et-temps-reel-des-navettes-buseolien-puteaux-gtfs-gtfs-rt",
-            "type": "http",
-            "url": "https://zenbus.net/gtfs/static/download.zip?dataset=buseolien",
-            "fix": true,
-            "license": {
-                "url": "https://transport.data.gouv.fr/datasets/horaires-theoriques-et-temps-reel-des-navettes-buseolien-puteaux-gtfs-gtfs-rt"
-            }
-        },
-        {
-            "name": "horaires-theoriques-et-temps-reel-des-navettes-buseolien-puteaux-gtfs-gtfs-rt",
-            "type": "url",
-            "url": "https://zenbus.net/gtfs/rt/poll.proto?dataset=buseolien",
-            "license": {
-                "url": "https://transport.data.gouv.fr/datasets/horaires-theoriques-et-temps-reel-des-navettes-buseolien-puteaux-gtfs-gtfs-rt"
-            },
-            "spec": "gtfs-rt"
-        },
-        {
             "name": "arrets-horaires-et-parcours-theoriques-des-reseaux-naq-tut-nva-m-1",
             "type": "http",
             "url": "https://www.pigma.org/public/opendata/nouvelle_aquitaine_mobilites/publication/ca_tulle-aggregated-gtfs.zip",
@@ -4292,6 +4319,24 @@
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/donnees-gtfs-du-reseau-de-transports-public-du-grand-cahors"
             }
+        },
+        {
+            "name": "horaires-theoriques-et-temps-reel-des-navettes-buseolien-puteaux-gtfs-gtfs-rt",
+            "type": "http",
+            "url": "https://zenbus.net/gtfs/static/download.zip?dataset=buseolien",
+            "fix": true,
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/horaires-theoriques-et-temps-reel-des-navettes-buseolien-puteaux-gtfs-gtfs-rt"
+            }
+        },
+        {
+            "name": "horaires-theoriques-et-temps-reel-des-navettes-buseolien-puteaux-gtfs-gtfs-rt",
+            "type": "url",
+            "url": "https://zenbus.net/gtfs/rt/poll.proto?dataset=buseolien",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/horaires-theoriques-et-temps-reel-des-navettes-buseolien-puteaux-gtfs-gtfs-rt"
+            },
+            "spec": "gtfs-rt"
         },
         {
             "name": "elios-transports-urbains-du-grand-villeneuvois",
@@ -4386,7 +4431,7 @@
         {
             "name": "reseau-urbain-le-vib",
             "type": "http",
-            "url": "https://www.transdev-centrevaldeloire.com/cvl/open-data/le-vib/gtfs",
+            "url": "https://static.data.gouv.fr/resources/reseau-urbain-le-vib/20241122-153417/gtfs-20241119-170745-levib-hb.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/reseau-urbain-le-vib"
@@ -4611,7 +4656,7 @@
         {
             "name": "reseau-urbain-brevibus",
             "type": "http",
-            "url": "https://static.data.gouv.fr/resources/reseau-urbain-brevibus/20240906-095843/gtfs-20240906-104634-brevibus.zip",
+            "url": "https://static.data.gouv.fr/resources/reseau-urbain-brevibus/20241114-153442/gtfs-20241114-155121-brevibus-hors-bord.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/reseau-urbain-brevibus"
@@ -5029,6 +5074,16 @@
             }
         },
         {
+            "name": "horaires-theoriques-et-temps-reel-des-navettes-de-la-station-de-tignes-gtfs-gtfs-rt",
+            "type": "url",
+            "url": "https://zenbus.net/gtfs/rt/poll.proto?dataset=tignes",
+            "skip": true,
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/horaires-theoriques-et-temps-reel-des-navettes-de-la-station-de-tignes-gtfs-gtfs-rt"
+            },
+            "spec": "gtfs-rt"
+        },
+        {
             "name": "horaires-theoriques-et-temps-reel-des-navettes-de-val-disere-gtfs-gtfs-rt",
             "type": "http",
             "url": "https://zenbus.net/gtfs/static/download.zip?dataset=valdisere",
@@ -5037,6 +5092,16 @@
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/horaires-theoriques-et-temps-reel-des-navettes-de-val-disere-gtfs-gtfs-rt"
             }
+        },
+        {
+            "name": "horaires-theoriques-et-temps-reel-des-navettes-de-val-disere-gtfs-gtfs-rt",
+            "type": "url",
+            "url": "https://zenbus.net/gtfs/rt/poll.proto?dataset=valdisere",
+            "skip": true,
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/horaires-theoriques-et-temps-reel-des-navettes-de-val-disere-gtfs-gtfs-rt"
+            },
+            "spec": "gtfs-rt"
         },
         {
             "name": "transport-urbain-3cma-bus",
@@ -5128,6 +5193,15 @@
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/horaires-theoriques-et-temps-reel-du-reseau-coeur-de-tarentaise-gtfs-gtfs-rt"
             }
+        },
+        {
+            "name": "horaires-theoriques-et-temps-reel-du-reseau-coeur-de-tarentaise-gtfs-gtfs-rt",
+            "type": "url",
+            "url": "https://zenbus.net/gtfs/rt/poll.proto?dataset=coeur-de-tarentaise",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/horaires-theoriques-et-temps-reel-du-reseau-coeur-de-tarentaise-gtfs-gtfs-rt"
+            },
+            "spec": "gtfs-rt"
         },
         {
             "name": "reseau-meribel",
