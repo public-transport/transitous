@@ -15,7 +15,7 @@
 
 - name: Install woodpecker-agent
   apt:
-    deb: https://github.com/woodpecker-ci/woodpecker/releases/download/v2.7.3/woodpecker-agent_2.7.3_amd64.deb
+    deb: https://github.com/woodpecker-ci/woodpecker/releases/download/v2.8.0/woodpecker-agent_2.8.0_amd64.deb
 
 - name: Create woodpecker-agent user
   user:
