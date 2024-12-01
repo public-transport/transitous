@@ -6,7 +6,7 @@
 import requests
 import json
 
-CURRENT_TIMETABLE_YEAR = 2024
+TIMETABLE_YEARS = [2024, 2025]
 
 
 def remove_duplicate_dashes(text: str) -> str:
@@ -24,6 +24,28 @@ def remove_duplicate_dashes(text: str) -> str:
     return "".join(out)
 
 
+def add_feed(sources: list[dict], year: int):
+    url = f"https://data.mobilitaetsverbuende.at/api/public/v1/data-sets/{set_id}/{year}/file"
+    sources.append(
+        {
+            "name": remove_duplicate_dashes(
+                data_set["nameEn"]
+                .replace("Timetable Data", "")
+                .replace("(GTFS)", "")
+                .strip()
+                .replace(" ", "-")) + "-" + str(year),
+            "type": "http",
+            "url": url,
+            "license": {"url": data_set["termsOfUseUrlEn"]},
+            "fix": True,
+            "function": "mvo_keycloak_token",
+            "http-options": {
+                "fetch-interval-days": 2
+            }
+        }
+    )
+
+
 if __name__ == "__main__":
     ignore = [
         "70",  # Same data but outdated
@@ -34,32 +56,18 @@ if __name__ == "__main__":
         "https://data.mobilitaetsverbuende.at/api/public/v1/data-sets?tagIds=20&tagFilterModeInclusive=false"
     ).json()
 
-    sources = []
+    sources: list[dict] = []
 
     for data_set in data_sets:
         set_id = data_set["id"]
         if set_id in ignore:
             continue
 
-        url = f"https://data.mobilitaetsverbuende.at/api/public/v1/data-sets/{set_id}/{CURRENT_TIMETABLE_YEAR}/file"
-        sources.append(
-            {
-                "name": remove_duplicate_dashes(
-                    data_set["nameEn"]
-                    .replace("Timetable Data", "")
-                    .replace("(GTFS)", "")
-                    .strip()
-                    .replace(" ", "-")),
-                "type": "http",
-                "url": url,
-                "license": {"url": data_set["termsOfUseUrlEn"]},
-                "fix": True,
-                "function": "mvo_keycloak_token",
-                "http-options": {
-                    "fetch-interval-days": 2
-                }
-            }
-        )
+        if "Flex" in data_set["nameEn"]:
+            continue
+
+        for year in TIMETABLE_YEARS:
+            add_feed(sources, year)
 
     region = {}
 
