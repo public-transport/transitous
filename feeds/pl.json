@@ -18,7 +18,8 @@
         {
             "name": "PolRegio",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-pol~regio~pl"
+            "transitland-atlas-id": "f-pol~regio~pl",
+            "fix": true
         },
         {
             "name": "Rzeszów",
