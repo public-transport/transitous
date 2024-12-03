@@ -2,6 +2,9 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
+# Limit for routing requests
+limit_req_zone $binary_remote_addr zone=api_plan:10m rate=20r/m;
+
 server {
     listen 443 http2 ssl;
     listen [::]:443 http2 ssl;
@@ -19,12 +22,12 @@ server {
 
     # MOTIS Web Interface
     location / {
-        root /opt/motis/ui/_app/;
+        root /opt/motis/ui/;
     }
 
     # Proxy and cache tiles
-    location /api/v1/tiles/ {
-        proxy_pass http://localhost:8080/tiles/;
+    location /api/v1/tiles {
+        proxy_pass http://localhost:8080/api/v1/tiles/;
 
         proxy_cache            motis;
         proxy_cache_valid      200 302 404 5d;
@@ -32,16 +35,26 @@ server {
                                 http_500 http_502 http_503 http_504;
     }
 
+    # Rate limit plan API
+    location /api/v1/plan {
+        proxy_pass http://location:8080/api/v1/plan/
+
+        limit_req zone=api_plan;
+
+        proxy_connect_timeout       60;
+        proxy_send_timeout          60;
+        proxy_read_timeout          120;
+        send_timeout                60;
+    }
+
     # MOTIS
     location /api/ {
-        proxy_pass http://localhost:8080/;
+        proxy_pass http://localhost:8080/api/;
 
         proxy_connect_timeout       60;
         proxy_send_timeout          60;
         proxy_read_timeout          60;
         send_timeout                60;
-
-        proxy_set_header Forwarded $remote_addr;
     }
 
     # Source files
