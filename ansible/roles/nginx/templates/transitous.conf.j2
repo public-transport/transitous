@@ -5,6 +5,9 @@
 # Limit for routing requests
 limit_req_zone $binary_remote_addr zone=api_plan:10m rate=20r/m;
 
+# General limit
+limit_req_zone $binary_remote_addr zone=api:10m rate=60r/s;
+
 server {
     listen 443 http2 ssl;
     listen [::]:443 http2 ssl;
@@ -51,6 +54,8 @@ server {
     location /api/ {
         proxy_pass http://localhost:8080/api/;
 
+        limit_req zone=api;
+
         proxy_connect_timeout       60;
         proxy_send_timeout          60;
         proxy_read_timeout          60;
@@ -59,6 +64,6 @@ server {
 
     # Source files
     location /gtfs/ {
-        return 301 https://routing-import.spline.de/gtfs/
+        return 301 https://routing-import.spline.de/$request_uri
     }
 }
