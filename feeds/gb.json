@@ -9,7 +9,7 @@
         {
             "name": "great-britain",
             "type": "http",
-            "url": "https://s3.gtfs.pro/files/uran/improved-gtfs-great-britain.zip",
+            "url": "https://data.bus-data.dft.gov.uk/timetable/download/gtfs-file/all",
             "fix": true
         },
         {

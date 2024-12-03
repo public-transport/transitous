@@ -7,9 +7,12 @@
     ],
     "sources": [
         {
-            "name": "transit-for-ireland",
+            "name": "transport-for-ireland",
             "type": "http",
-            "url": "https://www.transportforireland.ie/transitData/google_transit_combined.zip"
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            },
+            "url": "https://www.transportforireland.ie/transitData/Data/GTFS_All.zip"
         }
     ]
 }
