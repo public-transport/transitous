@@ -21,12 +21,18 @@
         {
             "name": "bucuresti",
             "type": "http",
-            "url": "https://s3.gtfs.pro/files/uran/improved-gtfs-bucuresti.zip"
+            "url": "https://gtfs.tpbi.ro/regional/BUCHAREST-REGION.zip"
+        },
+        {
+            "name": "bucuresti",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://gtfs.tpbi.ro/api/gtfs-rt/tripUpdates"
         },
         {
             "name": "tursib",
-            "type": "http",
-            "url": "https://s3.gtfs.pro/files/uran/improved-gtfs-tursib.zip"
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u81ht8-tursib~ro"
         },
         {
             "name": "constanța",
