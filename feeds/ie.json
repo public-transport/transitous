@@ -9,7 +9,7 @@
         {
             "name": "transit-for-ireland",
             "type": "http",
-            "url": "https://s3.gtfs.pro/files/uran/improved-gtfs-google-transit-combined.zip"
+            "url": "https://www.transportforireland.ie/transitData/google_transit_combined.zip"
         }
     ]
 }
