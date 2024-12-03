@@ -27,7 +27,7 @@
         {
             "name": "delijn",
             "type": "http",
-            "url": "https://s3.gtfs.pro/files/sourcedata/de-lijn.zip",
+            "url": "https://gtfs.irail.be/de-lijn/de_lijn-gtfs.zip",
             "fix": true
         },
         {
