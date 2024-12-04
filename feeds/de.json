@@ -31,6 +31,23 @@
                 "spdx-identifier": "CC-BY-SA-4.0",
                 "url": "https://mobilithek.info/offers/755009281410899968"
             }
+        },
+        {
+            "name": "VBB",
+            "type": "http",
+            "url": "https://www.vbb.de/vbbgtfs",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
+        },
+        {
+            "name": "VBB",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://production.gtfsrt.vbb.de/data",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
         }
     ]
 }
