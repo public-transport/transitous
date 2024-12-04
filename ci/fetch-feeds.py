@@ -38,6 +38,12 @@ def create_feed_error_issue(feed: str, details: str, github_token: str) -> None:
         print(f"Error searching for existing issue for {feed}")
         print(response.json())
         return
+    
+    # Get latest commit hash for the feed file
+    commit_id = subprocess.check_output(
+        ["git", "log", "-n", "1", "--pretty=format:%H", "--", feed]
+    ).decode().strip()
+    feed_permalink = f"https://github.com/{repo}/blob/{commit_id}/{feed}"
 
     assignees = []
     with open(feed) as f:
@@ -74,7 +80,7 @@ On **{time_string}**
 f"""
 **CC**: {mentions}
 
-An error occured while fetching a feed from `{feed}`.
+An error occured while fetching a feed from [`{feed}`]({feed_permalink}).
 If the error is not temporary, please consider replacing or removing the feed.
 Thanks!
 
