@@ -1,0 +1,50 @@
+{
+    "maintainers": [
+        {
+            "github": "yotamN",
+            "name": "Yotam Nachum"
+        }
+    ],
+    "sources": [
+        {
+            "name": "busofash",
+            "type": "http",
+            "url": "https://opendatasource.tel-aviv.gov.il/opendata_ducaments/gtfs.zip"
+        },
+        {
+            "name": "busofash",
+            "spec": "gtfs-rt",
+            "type": "url",
+            "url": "https://api.busnear.by/external/gtfsrt/export",
+            "http-options": {
+                "headers": {
+                    "authorization": "tlv_848e1b42-c0c2"
+                }
+            }
+        },
+        {
+            "name": "Israel-MOT",
+            "type": "http",
+            "url": "https://gtfs.mot.gov.il/gtfsfiles/israel-public-transportation.zip",
+            "http-options": {
+                "headers": {
+                    "user-agent": "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+                },
+                "ignore-tls-errors": true
+            },
+            "fix": true,
+            "skip": true
+        },
+        {
+            "name": "Sababus",
+            "type": "http",
+            "url": "https://yotam.net/transport/gtfs/sababus.zip",
+            "http-options": {
+                "headers": {
+                    "authorization": "il_4X5R7tClJAK1"
+                }
+            },
+            "fix": true
+        }
+    ]
+}
