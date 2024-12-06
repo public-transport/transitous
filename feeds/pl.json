@@ -13,7 +13,8 @@
         {
             "name": "PKP-Intercity",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-pkp~intercity~pl"
+            "transitland-atlas-id": "f-pkp~intercity~pl",
+            "fix": true
         },
         {
             "name": "PolRegio",
