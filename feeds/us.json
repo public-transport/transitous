@@ -3,6 +3,10 @@
         {
             "name": "Marcus Lundblad",
             "github": "mlundblad"
+        },
+        {
+            "name": "Kyler Chin",
+            "github": "kylerchin"
         }
     ],
     "sources": [
@@ -11,7 +15,13 @@
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-9-amtrak~amtrakcalifornia~amtrakcharteredvehicle",
             "fix": true,
-            "drop-shapes": true
+            "drop-shapes": false
+        },
+        {
+            "name": "Amtrak",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://birch.catenarymaps.org/gtfs_rt?feed_id=f-amtrak~rt&feed_type=trip"
         },
         {
             "name": "Brightline",
