@@ -1,0 +1,32 @@
+# SPDX-FileCopyrightText: 2024 Jonah Brüchert <jbb@kaidan.im>
+# SPDX-License-Identifier: CC0-1.0
+
+when:
+  - event: tag
+
+steps:
+  build-release-amd64:
+    image: docker.io/alpine
+    commands:
+      - export GITHUB_ACTIONS=1
+      - export MOTIS_TAG=v2.0.1
+      - apk add musl-dev cmake ninja gcc g++ git npm linux-headers
+      - git clone https://github.com/motis-project/motis -b $MOTIS_TAG motis-src
+      - mkdir -p motis-src/build
+      - export flags="-static -O3 -fomit-frame-pointer -march=haswell -mabm -maes -flto"
+      - cmake -DCMAKE_BUILD_TYPE=Release -DMOTIS_MIMALLOC=ON -DCMAKE_CXX_FLAGS="$flags" -DCMAKE_C_FLAGS="$flags" -GNinja -DNO_BUILDCACHE=ON -Bmotis-src/build -Smotis-src
+      - ninja -C motis-src/build motis motis-test motis-web-ui
+      - mkdir -p motis-out
+      - mv motis-src/build/motis motis-out/motis
+      - mv motis-src/ui/build motis-out/ui
+      - cp -r motis-src/deps/tiles/profile motis-out/tiles-profiles
+      - tar -C ./motis-out -cjf motis-$MOTIS_TAG.tar.bz2 ./motis ./tiles-profiles ./ui
+
+  upload:
+    image: docker.io/woodpeckerci/plugin-release
+    settings:
+      files:
+        - motis-*.tar.bz2
+      title: ${CI_COMMIT_TAG##v}
+      api-key:
+        from_secret: github_release_token
