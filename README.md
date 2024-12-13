@@ -3,9 +3,13 @@ SPDX-License-Identifier: CC0-1.0
 SPDX-FileCopyrightText: none
 -->
 
-# Transitous
+<p align="center">
+    <img src="website/static/images/logo-text-dark.svg" alt="Transitous" width="400"><br>
+</p>
 
-**Free and open public transport routing.**
+<p align="center">
+    <b>Free and open public transport routing.</b>
+</p>
 
 ## Goal
 
