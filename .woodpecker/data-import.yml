@@ -36,7 +36,9 @@ steps:
       - src/generate-motis-config.py full
   push:
     image: ghcr.io/public-transport/transitous/import:latest
-    secrets: [ RSYNC_PRIVATE_KEY ]
+    environment:
+      RSYNC_PRIVATE_KEY:
+        from_secret: RSYNC_PRIVATE_KEY
     commands:
       - echo "$${RSYNC_PRIVATE_KEY}" > deploy_key
       - chmod 600 ./deploy_key
