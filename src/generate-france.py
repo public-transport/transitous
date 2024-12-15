@@ -39,6 +39,7 @@ if __name__ == "__main__":
         "naolib-arrets-horaires-et-circuits",  # Incomplete read
         "offre-transport-du-reseau-txik-txak-nord-ex-chronoplus-gtfs",  # 404
         "horaires-theoriques-et-temps-reel-lignes-scolaires-sankeo-perpignan-gtfs-gtfs-rt",  # 404
+        "reseau-de-transport-en-commun-transagglo-de-dlva",  # Resource not available
     ]
 
     remove_title = [
