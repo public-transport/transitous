@@ -40,6 +40,10 @@ if __name__ == "__main__":
         "offre-transport-du-reseau-txik-txak-nord-ex-chronoplus-gtfs",  # 404
         "horaires-theoriques-et-temps-reel-lignes-scolaires-sankeo-perpignan-gtfs-gtfs-rt",  # 404
         "reseau-de-transport-en-commun-transagglo-de-dlva",  # Resource not available
+        "donnees-theoriques-et-temps-reel-du-reseau-corolis-urbain-communaute-dagglomeration-du-beauvaisis",  # agency.txt
+        "donnees-theoriques-et-temps-reel-du-reseau-tic-interurbain-communaute-dagglomeration-de-la-region-de-compiegne-et-de-la-basse-automne",  # agency.txt
+        "donnees-theoriques-et-temps-reel-du-reseau-tic-urbain-communaute-dagglomeration-de-la-region-de-compiegne-et-de-la-basse-automne",  # agency.txt
+        "caen-la-mer-reseau-twisto-gtfs-siri",  # Temporary removal, 401 error
     ]
 
     remove_title = [

@@ -1222,7 +1222,7 @@
         {
             "name": "export-quotidien-au-format-gtfs-du-reseau-de-transport-lignes-d-azur",
             "type": "http",
-            "url": "http://opendata.nicecotedazur.org/data/storage/f/gtfs1734135301/GTFSExport.zip",
+            "url": "http://opendata.nicecotedazur.org/data/storage/f/gtfs1734221701/GTFSExport.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/export-quotidien-au-format-gtfs-du-reseau-de-transport-lignes-d-azur"
@@ -1677,6 +1677,7 @@
             "type": "http",
             "url": "https://twisto.opendatasoft.com/api/v2/catalog/datasets/fichier-gtfs-du-reseau-twisto/alternative_exports/gtfs_twisto_zip",
             "fix": true,
+            "skip": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/caen-la-mer-reseau-twisto-gtfs-siri"
             }
@@ -2090,7 +2091,7 @@
         {
             "name": "horaires-theoriques-et-temps-reel-gtfs-gtfs-rt-du-reseau-palmbus-cannes-pays-de-lerins",
             "type": "http",
-            "url": "https://static.data.gouv.fr/resources/horaires-theoriques-et-temps-reel-gtfs-gtfs-rt-du-reseau-palmbus-cannes-pays-de-lerins/20241120-155045/palmbus-cannes-fr.zip",
+            "url": "https://static.data.gouv.fr/resources/horaires-theoriques-et-temps-reel-gtfs-gtfs-rt-du-reseau-palmbus-cannes-pays-de-lerins/20241215-084442/palmbus-cannes-fr.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/horaires-theoriques-et-temps-reel-gtfs-gtfs-rt-du-reseau-palmbus-cannes-pays-de-lerins"
@@ -2616,6 +2617,7 @@
             "type": "http",
             "url": "https://api.oisemob.cityway.fr/dataflow/offre-tc/download?provider=COROLIS_URB&dataFormat=GTFS&dataProfil=OPENDATA",
             "fix": true,
+            "skip": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/donnees-theoriques-et-temps-reel-du-reseau-corolis-urbain-communaute-dagglomeration-du-beauvaisis"
             }
@@ -2624,6 +2626,7 @@
             "name": "donnees-theoriques-et-temps-reel-du-reseau-corolis-urbain-communaute-dagglomeration-du-beauvaisis",
             "type": "url",
             "url": "https://api.oisemob.cityway.fr/dataflow/horaire-tc-tr/download?provider=COROLIS_URB&dataFormat=gtfs-rt",
+            "skip": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/donnees-theoriques-et-temps-reel-du-reseau-corolis-urbain-communaute-dagglomeration-du-beauvaisis"
             },
@@ -3050,6 +3053,7 @@
             "type": "http",
             "url": "https://api.oisemob.cityway.fr/dataflow/offre-tc/download?provider=TIC_INT&dataFormat=GTFS&dataProfil=OPENDATA",
             "fix": true,
+            "skip": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/donnees-theoriques-et-temps-reel-du-reseau-tic-interurbain-communaute-dagglomeration-de-la-region-de-compiegne-et-de-la-basse-automne"
             }
@@ -3058,6 +3062,7 @@
             "name": "donnees-theoriques-et-temps-reel-du-reseau-tic-interurbain-communaute-dagglomeration-de-la-region-de-compiegne-et-de-la-basse-automne",
             "type": "url",
             "url": "https://api.oisemob.cityway.fr/dataflow/horaire-tc-tr/download?provider=TIC_INT&dataFormat=gtfs-rt",
+            "skip": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/donnees-theoriques-et-temps-reel-du-reseau-tic-interurbain-communaute-dagglomeration-de-la-region-de-compiegne-et-de-la-basse-automne"
             },
@@ -3068,6 +3073,7 @@
             "type": "http",
             "url": "https://api.oisemob.cityway.fr/dataflow/offre-tc/download?provider=TIC_URB&dataFormat=GTFS&dataProfil=OPENDATA",
             "fix": true,
+            "skip": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/donnees-theoriques-et-temps-reel-du-reseau-tic-urbain-communaute-dagglomeration-de-la-region-de-compiegne-et-de-la-basse-automne"
             }
@@ -3076,6 +3082,7 @@
             "name": "donnees-theoriques-et-temps-reel-du-reseau-tic-urbain-communaute-dagglomeration-de-la-region-de-compiegne-et-de-la-basse-automne",
             "type": "url",
             "url": "https://api.oisemob.cityway.fr/dataflow/horaire-tc-tr/download?provider=TIC_URB&dataFormat=gtfs-rt",
+            "skip": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/donnees-theoriques-et-temps-reel-du-reseau-tic-urbain-communaute-dagglomeration-de-la-region-de-compiegne-et-de-la-basse-automne"
             },
@@ -3681,6 +3688,7 @@
             "type": "http",
             "url": "https://trouver.datasud.fr/dataset/0c5ad935-272e-4d9e-b0db-cdcb1a5309b8/resource/0ca29750-b689-4580-afc0-4b127ee4b914/download/dlva.gtfs.zip",
             "fix": true,
+            "skip": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/reseau-de-transport-en-commun-transagglo-de-dlva"
             }
