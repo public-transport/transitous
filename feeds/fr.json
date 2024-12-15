@@ -3280,7 +3280,7 @@
         {
             "name": "reseau-urbain-la-navette-commune-de-gaillac--gtfs-gaillac.zip",
             "type": "http",
-            "url": "https://static.data.gouv.fr/resources/reseau-urbain-la-navette-commune-de-gaillac/20240924-121002/gtfs-gaillac.zip",
+            "url": "https://static.data.gouv.fr/resources/reseau-urbain-la-navette-commune-de-gaillac/20241205-080814/gtfs-gaillac.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/reseau-urbain-la-navette-commune-de-gaillac"
@@ -3289,7 +3289,7 @@
         {
             "name": "reseau-urbain-la-navette-commune-de-gaillac--gtfs-gaillac.zip",
             "type": "http",
-            "url": "https://static.data.gouv.fr/resources/reseau-urbain-la-navette-commune-de-gaillac/20241205-080814/gtfs-gaillac.zip",
+            "url": "https://static.data.gouv.fr/resources/reseau-urbain-la-navette-commune-de-gaillac/20240924-121002/gtfs-gaillac.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/reseau-urbain-la-navette-commune-de-gaillac"
@@ -5172,7 +5172,7 @@
             }
         },
         {
-            "name": "moca-communaute-de-communes-caux-austreberthe--pt-th-offer-moca-gtfs-20240529-816-opendata.zip",
+            "name": "moca-communaute-de-communes-caux-austreberthe",
             "type": "url",
             "url": "https://proxy.transport.data.gouv.fr/resource/moca-caux-austreberthe-gtfs-rt",
             "license": {

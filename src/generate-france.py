@@ -197,6 +197,8 @@ if __name__ == "__main__":
                             source = {}
                             source["name"] = (
                                 dataset["slug"]
+                                if unique_GTFS
+                                else dataset["slug"]
                                 + "--"
                                 + matches.get(resource["title"])
                             )
