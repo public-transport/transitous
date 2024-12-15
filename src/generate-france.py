@@ -43,6 +43,7 @@ if __name__ == "__main__":
         "donnees-theoriques-et-temps-reel-du-reseau-corolis-urbain-communaute-dagglomeration-du-beauvaisis",  # agency.txt
         "donnees-theoriques-et-temps-reel-du-reseau-tic-interurbain-communaute-dagglomeration-de-la-region-de-compiegne-et-de-la-basse-automne",  # agency.txt
         "donnees-theoriques-et-temps-reel-du-reseau-tic-urbain-communaute-dagglomeration-de-la-region-de-compiegne-et-de-la-basse-automne",  # agency.txt
+        "arrets-horaires-et-circuit-de-la-lignes-yeu-continent-gtfs",  # agency.txt
         "caen-la-mer-reseau-twisto-gtfs-siri",  # Temporary removal, 401 error
     ]
 

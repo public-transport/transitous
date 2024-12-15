@@ -3607,6 +3607,7 @@
             "type": "http",
             "url": "https://donnees.paysdelaloire.fr/data/pdlYeuContinent.gtfs.zip",
             "fix": true,
+            "skip": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/arrets-horaires-et-circuit-de-la-lignes-yeu-continent-gtfs"
             }
