@@ -169,7 +169,9 @@
         {
             "name": "STO",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-f244-sto"
+            "transitland-atlas-id": "f-f244-sto",
+            "skip": true,
+            "skip-reason": "Connection to www.contenu.sto.ca timed out"
         },
         {
             "name": "STTR",
