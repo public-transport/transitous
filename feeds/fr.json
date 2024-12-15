@@ -65,7 +65,7 @@
             }
         },
         {
-            "name": "eurostar-gtfs--Eurostar_GTFS_a_partir_du_15/10/2024",
+            "name": "eurostar-gtfs--Eurostar-GTFS-a-partir-du-15-10-2024",
             "type": "http",
             "url": "https://gtfs.eurostar.com/assets/gtfs.zip",
             "fix": true,
@@ -75,7 +75,7 @@
             }
         },
         {
-            "name": "eurostar-gtfs--EUROSTAR_GTFS_jusqu'au_14/10/2024",
+            "name": "eurostar-gtfs--EUROSTAR-GTFS-jusqu'au-14-10-2024",
             "type": "http",
             "url": "https://eurostar-prod-gtfs.s3.eu-central-1.amazonaws.com/gtfs.zip",
             "fix": true,
@@ -349,7 +349,7 @@
             }
         },
         {
-            "name": "arrets-horaires-et-parcours-theoriques-du-reseau-routier-regional-de-transport-scolaire-et-interurbain-60-oise-1--Fichier_GTFS_commercial_et_scolaire_de_l'Oise_-_Périmètre_1",
+            "name": "arrets-horaires-et-parcours-theoriques-du-reseau-routier-regional-de-transport-scolaire-et-interurbain-60-oise-1--Fichier-GTFS-commercial-et-scolaire-de-l'Oise---Périmètre-1",
             "type": "http",
             "url": "https://geocatalogue.hautsdefrance.fr/gtfs/RHDF_GTFS_COM_SCO_60_P1.zip",
             "fix": true,
@@ -358,7 +358,7 @@
             }
         },
         {
-            "name": "arrets-horaires-et-parcours-theoriques-du-reseau-routier-regional-de-transport-scolaire-et-interurbain-60-oise-1--Fichier_GTFS_commercial_et_scolaire_de_l’Oise_–_Périmètre_2",
+            "name": "arrets-horaires-et-parcours-theoriques-du-reseau-routier-regional-de-transport-scolaire-et-interurbain-60-oise-1--Fichier-GTFS-commercial-et-scolaire-de-l’Oise-–-Périmètre-2",
             "type": "http",
             "url": "https://geocatalogue.hautsdefrance.fr/gtfs/RHDF_GTFS_COM_SCO_60_P2.zip",
             "fix": true,
@@ -367,7 +367,7 @@
             }
         },
         {
-            "name": "arrets-horaires-et-parcours-theoriques-du-reseau-routier-regional-de-transport-scolaire-et-interurbain-60-oise-1--Fichier_GTFS_commercial_et_scolaire_de_l’Oise_–_Périmètre_3",
+            "name": "arrets-horaires-et-parcours-theoriques-du-reseau-routier-regional-de-transport-scolaire-et-interurbain-60-oise-1--Fichier-GTFS-commercial-et-scolaire-de-l’Oise-–-Périmètre-3",
             "type": "http",
             "url": "https://geocatalogue.hautsdefrance.fr/gtfs/RHDF_GTFS_COM_SCO_60_P3.zip",
             "fix": true,
@@ -376,7 +376,7 @@
             }
         },
         {
-            "name": "arrets-horaires-et-parcours-theoriques-du-reseau-routier-regional-de-transport-scolaire-et-interurbain-60-oise-1--Fichier_GTFS_commercial_et_scolaire_de_l’Oise_–_Périmètre_4",
+            "name": "arrets-horaires-et-parcours-theoriques-du-reseau-routier-regional-de-transport-scolaire-et-interurbain-60-oise-1--Fichier-GTFS-commercial-et-scolaire-de-l’Oise-–-Périmètre-4",
             "type": "http",
             "url": "https://geocatalogue.hautsdefrance.fr/gtfs/RHDF_GTFS_COM_SCO_60_P4.zip",
             "fix": true,
@@ -385,7 +385,7 @@
             }
         },
         {
-            "name": "arrets-horaires-et-parcours-theoriques-gtfs-du-reseau-routier-regional-de-transport-scolaire-et-interurbain-59-nord--Fichier_GTFS_commercial_et_scolaire_du_Nord_–_Périmètre_1",
+            "name": "arrets-horaires-et-parcours-theoriques-gtfs-du-reseau-routier-regional-de-transport-scolaire-et-interurbain-59-nord--Fichier-GTFS-commercial-et-scolaire-du-Nord-–-Périmètre-1",
             "type": "http",
             "url": "https://geocatalogue.hautsdefrance.fr/gtfs/RHDF_GTFS_COM_SCO_59_P1.zip",
             "fix": true,
@@ -394,7 +394,7 @@
             }
         },
         {
-            "name": "arrets-horaires-et-parcours-theoriques-gtfs-du-reseau-routier-regional-de-transport-scolaire-et-interurbain-59-nord--Fichier_GTFS_commercial_et_scolaire_du_Nord_–_Périmètre_2",
+            "name": "arrets-horaires-et-parcours-theoriques-gtfs-du-reseau-routier-regional-de-transport-scolaire-et-interurbain-59-nord--Fichier-GTFS-commercial-et-scolaire-du-Nord-–-Périmètre-2",
             "type": "http",
             "url": "https://geocatalogue.hautsdefrance.fr/gtfs/RHDF_GTFS_COM_SCO_59_P2.zip",
             "fix": true,
@@ -403,7 +403,7 @@
             }
         },
         {
-            "name": "arrets-horaires-et-parcours-theoriques-gtfs-du-reseau-routier-regional-de-transport-scolaire-et-interurbain-59-nord--Fichier_GTFS_commercial_et_scolaire_du_Nord_–_Périmètre_3A",
+            "name": "arrets-horaires-et-parcours-theoriques-gtfs-du-reseau-routier-regional-de-transport-scolaire-et-interurbain-59-nord--Fichier-GTFS-commercial-et-scolaire-du-Nord-–-Périmètre-3A",
             "type": "http",
             "url": "https://geocatalogue.hautsdefrance.fr/gtfs/RHDF_GTFS_COM_SCO_59_P3A.zip",
             "fix": true,
@@ -412,7 +412,7 @@
             }
         },
         {
-            "name": "arrets-horaires-et-parcours-theoriques-gtfs-du-reseau-routier-regional-de-transport-scolaire-et-interurbain-59-nord--Fichier_GTFS_commercial_et_scolaire_du_Nord_–_Périmètre_3B",
+            "name": "arrets-horaires-et-parcours-theoriques-gtfs-du-reseau-routier-regional-de-transport-scolaire-et-interurbain-59-nord--Fichier-GTFS-commercial-et-scolaire-du-Nord-–-Périmètre-3B",
             "type": "http",
             "url": "https://geocatalogue.hautsdefrance.fr/gtfs/RHDF_GTFS_COM_SCO_59_P3B.zip",
             "fix": true,
@@ -421,7 +421,7 @@
             }
         },
         {
-            "name": "arrets-horaires-et-parcours-theoriques-gtfs-du-reseau-routier-regional-de-transport-scolaire-et-interurbain-59-nord--Fichier_GTFS_commercial_et_scolaire_du_Nord_–_Périmètre_4",
+            "name": "arrets-horaires-et-parcours-theoriques-gtfs-du-reseau-routier-regional-de-transport-scolaire-et-interurbain-59-nord--Fichier-GTFS-commercial-et-scolaire-du-Nord-–-Périmètre-4",
             "type": "http",
             "url": "https://geocatalogue.hautsdefrance.fr/gtfs/RHDF_GTFS_COM_SCO_59_P4.zip",
             "fix": true,
@@ -782,7 +782,7 @@
             }
         },
         {
-            "name": "breizhgo-bateaux--Breizhgo_Bateaux_Arz",
+            "name": "breizhgo-bateaux--Breizhgo-Bateaux-Arz",
             "type": "http",
             "url": "https://www.korrigo.bzh/ftp/OPENDATA/BREIZHGO_BATEAU_ARZ.gtfs.zip",
             "fix": true,
@@ -791,7 +791,7 @@
             }
         },
         {
-            "name": "breizhgo-bateaux--Breizhgo_Bateaux_Bréhat",
+            "name": "breizhgo-bateaux--Breizhgo-Bateaux-Bréhat",
             "type": "http",
             "url": "https://www.korrigo.bzh/ftp/OPENDATA/BREIZHGO_BATEAU_BREHAT.gtfs.zip",
             "fix": true,
@@ -800,7 +800,7 @@
             }
         },
         {
-            "name": "breizhgo-bateaux--Breizhgo_Bateaux_Finistère",
+            "name": "breizhgo-bateaux--Breizhgo-Bateaux-Finistère",
             "type": "http",
             "url": "https://www.korrigo.bzh/ftp/OPENDATA/BREIZHGO_BATEAU_29.gtfs.zip",
             "fix": true,
@@ -809,7 +809,7 @@
             }
         },
         {
-            "name": "breizhgo-bateaux--Breizhgo_Bateaux_Morbihan",
+            "name": "breizhgo-bateaux--Breizhgo-Bateaux-Morbihan",
             "type": "http",
             "url": "https://www.korrigo.bzh/ftp/OPENDATA/BREIZHGO_BATEAU_56.gtfs.zip",
             "fix": true,
@@ -818,7 +818,7 @@
             }
         },
         {
-            "name": "breizhgo-car--Breizhgo_Car_-_Nord-Sud",
+            "name": "breizhgo-car--Breizhgo-Car---Nord-Sud",
             "type": "http",
             "url": "https://www.korrigo.bzh/ftp/OPENDATA/BREIZHGO_CAR_NS.gtfs.zip",
             "fix": true,
@@ -827,7 +827,7 @@
             }
         },
         {
-            "name": "breizhgo-car--Breizhgo_Car_-_Rennes_–_Loudéac/Pontivy",
+            "name": "breizhgo-car--Breizhgo-Car---Rennes-–-Loudéac-Pontivy",
             "type": "http",
             "url": "https://www.korrigo.bzh/ftp/OPENDATA/BREIZHGO_CAR_RLP.gtfs.zip",
             "fix": true,
@@ -836,7 +836,7 @@
             }
         },
         {
-            "name": "breizhgo-car--Breizhgo_Car_22",
+            "name": "breizhgo-car--Breizhgo-Car-22",
             "type": "http",
             "url": "https://www.korrigo.bzh/ftp/OPENDATA/BREIZHGO_CAR_22.gtfs.zip",
             "fix": true,
@@ -845,7 +845,7 @@
             }
         },
         {
-            "name": "breizhgo-car--Breizhgo_Car_29",
+            "name": "breizhgo-car--Breizhgo-Car-29",
             "type": "http",
             "url": "https://www.korrigo.bzh/ftp/OPENDATA/BREIZHGO_CAR_29.gtfs.zip",
             "fix": true,
@@ -854,7 +854,7 @@
             }
         },
         {
-            "name": "breizhgo-car--Breizhgo_Car_35",
+            "name": "breizhgo-car--Breizhgo-Car-35",
             "type": "http",
             "url": "https://www.korrigo.bzh/ftp/OPENDATA/BREIZHGO_CAR_35.gtfs.zip",
             "fix": true,
@@ -863,7 +863,7 @@
             }
         },
         {
-            "name": "breizhgo-car--Breizhgo_Car_56",
+            "name": "breizhgo-car--Breizhgo-Car-56",
             "type": "http",
             "url": "https://www.korrigo.bzh/ftp/OPENDATA/BREIZHGO_CAR_56.gtfs.zip",
             "fix": true,
@@ -872,7 +872,7 @@
             }
         },
         {
-            "name": "breizhgo-car--Breizhgo_Car_-_Rennes_–_Loudéac/Pontivy",
+            "name": "breizhgo-car--Breizhgo-Car---Rennes-–-Loudéac-Pontivy",
             "type": "url",
             "url": "https://www.korrigo.bzh/ftp/OPENDATA/gtfsrt/BREIZHGO_CAR_RLP.GtfsRt.pb",
             "license": {
@@ -881,7 +881,7 @@
             "spec": "gtfs-rt"
         },
         {
-            "name": "breizhgo-car--Breizhgo_Car_22",
+            "name": "breizhgo-car--Breizhgo-Car-22",
             "type": "url",
             "url": "https://www.korrigo.bzh/ftp/OPENDATA/gtfsrt/TIBUS.GtfsRt.pb",
             "license": {
@@ -890,7 +890,7 @@
             "spec": "gtfs-rt"
         },
         {
-            "name": "breizhgo-car--Breizhgo_Car_35",
+            "name": "breizhgo-car--Breizhgo-Car-35",
             "type": "url",
             "url": "https://www.korrigo.bzh/ftp/OPENDATA/gtfsrt/BREIZHGO_CAR_35.GtfsRt.pb",
             "license": {
@@ -953,7 +953,7 @@
             }
         },
         {
-            "name": "reseau-de-transport-interurbain-mobigo-en-bourgogne-franche-comte--Données_du_réseau_(Côte_d'Or)",
+            "name": "reseau-de-transport-interurbain-mobigo-en-bourgogne-franche-comte--Données-du-réseau-(Côte-d'Or)",
             "type": "http",
             "url": "https://exs.mobigo.cityway.fr/gtfs.aspx?key=OPENDATA&operatorCode=UT21",
             "fix": true,
@@ -962,7 +962,7 @@
             }
         },
         {
-            "name": "reseau-de-transport-interurbain-mobigo-en-bourgogne-franche-comte--Données_du_réseau_(Doubs)",
+            "name": "reseau-de-transport-interurbain-mobigo-en-bourgogne-franche-comte--Données-du-réseau-(Doubs)",
             "type": "http",
             "url": "https://exs.mobigo.cityway.fr/gtfs.aspx?key=OPENDATA&operatorCode=UT25",
             "fix": true,
@@ -971,7 +971,7 @@
             }
         },
         {
-            "name": "reseau-de-transport-interurbain-mobigo-en-bourgogne-franche-comte--Données_du_réseau_(Haute-Saône)",
+            "name": "reseau-de-transport-interurbain-mobigo-en-bourgogne-franche-comte--Données-du-réseau-(Haute-Saône)",
             "type": "http",
             "url": "https://exs.mobigo.cityway.fr/gtfs.aspx?key=OPENDATA&operatorCode=UT70",
             "fix": true,
@@ -980,7 +980,7 @@
             }
         },
         {
-            "name": "reseau-de-transport-interurbain-mobigo-en-bourgogne-franche-comte--Données_du_réseau_(Jura)",
+            "name": "reseau-de-transport-interurbain-mobigo-en-bourgogne-franche-comte--Données-du-réseau-(Jura)",
             "type": "http",
             "url": "https://exs.mobigo.cityway.fr/gtfs.aspx?key=OPENDATA&operatorCode=UT39",
             "fix": true,
@@ -989,7 +989,7 @@
             }
         },
         {
-            "name": "reseau-de-transport-interurbain-mobigo-en-bourgogne-franche-comte--Données_du_réseau_(Nièvre)",
+            "name": "reseau-de-transport-interurbain-mobigo-en-bourgogne-franche-comte--Données-du-réseau-(Nièvre)",
             "type": "http",
             "url": "https://exs.mobigo.cityway.fr/gtfs.aspx?key=OPENDATA&operatorCode=UT58",
             "fix": true,
@@ -998,7 +998,7 @@
             }
         },
         {
-            "name": "reseau-de-transport-interurbain-mobigo-en-bourgogne-franche-comte--Données_du_réseau_(Saône_et_Loire)",
+            "name": "reseau-de-transport-interurbain-mobigo-en-bourgogne-franche-comte--Données-du-réseau-(Saône-et-Loire)",
             "type": "http",
             "url": "https://exs.mobigo.cityway.fr/gtfs.aspx?key=OPENDATA&operatorCode=UT71",
             "fix": true,
@@ -1007,7 +1007,7 @@
             }
         },
         {
-            "name": "reseau-de-transport-interurbain-mobigo-en-bourgogne-franche-comte--Données_du_réseau_(Yonne)",
+            "name": "reseau-de-transport-interurbain-mobigo-en-bourgogne-franche-comte--Données-du-réseau-(Yonne)",
             "type": "http",
             "url": "https://exs.mobigo.cityway.fr/gtfs.aspx?key=OPENDATA&operatorCode=UT89",
             "fix": true,
@@ -1400,7 +1400,7 @@
             }
         },
         {
-            "name": "horaires-du-reseau-transvilles-au-format-gtfs--Réseau_08_juillet_2024_23_09_2024",
+            "name": "horaires-du-reseau-transvilles-au-format-gtfs--Réseau-08-juillet-2024-23-09-2024",
             "type": "http",
             "url": "https://static.data.gouv.fr/resources/horaires-du-reseau-transvilles-au-format-gtfs/20240924-134833/google-transit-23-09-24.zip",
             "fix": true,
@@ -1409,7 +1409,7 @@
             }
         },
         {
-            "name": "horaires-du-reseau-transvilles-au-format-gtfs--réseau_du_27_11_2024_au_31_08_2025",
+            "name": "horaires-du-reseau-transvilles-au-format-gtfs--réseau-du-27-11-2024-au-31-08-2025",
             "type": "http",
             "url": "https://static.data.gouv.fr/resources/horaires-du-reseau-transvilles-au-format-gtfs/20241205-131815/google-transit-27-11-24-au-31-08-25.zip",
             "fix": true,
@@ -1617,7 +1617,7 @@
             "spec": "gtfs-rt"
         },
         {
-            "name": "description-de-loffre-tad-tao-gtfs-flex-orleans-metropole--GTFS_FLEX_stopsUpdated.zip",
+            "name": "description-de-loffre-tad-tao-gtfs-flex-orleans-metropole--GTFS-FLEX-stopsUpdated.zip",
             "type": "http",
             "url": "https://data.orleans-metropole.fr/api/v2/catalog/datasets/om-mobilite-tao-tad-gtfsflex/attachments/gtfs_flex_stopsupdated_zip",
             "fix": true,
@@ -1627,7 +1627,7 @@
             }
         },
         {
-            "name": "description-de-loffre-tad-tao-gtfs-flex-orleans-metropole--GTFS_FLEX_TAO_102023.zip",
+            "name": "description-de-loffre-tad-tao-gtfs-flex-orleans-metropole--GTFS-FLEX-TAO-102023.zip",
             "type": "http",
             "url": "https://data.orleans-metropole.fr/api/v2/catalog/datasets/om-mobilite-tao-tad-gtfsflex/attachments/gtfs_flex_tao_102023_zip",
             "fix": true,
@@ -1925,7 +1925,7 @@
             }
         },
         {
-            "name": "horaires-theoriques-et-en-temps-reel-des-bus-et-autocars-circulant-sur-le-reseau-cap-cotentin--Horaires_théoriques_de_la_ligne_Cap_Cotentin_de_Cherbourg-en-Cotentin_à_Rennes",
+            "name": "horaires-theoriques-et-en-temps-reel-des-bus-et-autocars-circulant-sur-le-reseau-cap-cotentin--Horaires-théoriques-de-la-ligne-Cap-Cotentin-de-Cherbourg-en-Cotentin-à-Rennes",
             "type": "http",
             "url": "https://static.data.gouv.fr/resources/horaires-theoriques-et-en-temps-reel-des-bus-et-autocars-circulant-sur-le-reseau-cap-cotentin/20240919-100419/lr-capcotentin-cherbourg-rennes-sept24.zip",
             "fix": true,
@@ -1934,7 +1934,7 @@
             }
         },
         {
-            "name": "horaires-theoriques-et-en-temps-reel-des-bus-et-autocars-circulant-sur-le-reseau-cap-cotentin--Horaires_théoriques_des_lignes_régulières_et_secondaires_du_réseau_Cap_Cotentin",
+            "name": "horaires-theoriques-et-en-temps-reel-des-bus-et-autocars-circulant-sur-le-reseau-cap-cotentin--Horaires-théoriques-des-lignes-régulières-et-secondaires-du-réseau-Cap-Cotentin",
             "type": "http",
             "url": "https://static.data.gouv.fr/resources/horaires-theoriques-et-en-temps-reel-des-bus-et-autocars-circulant-sur-le-reseau-cap-cotentin/20240825-194010/gtfs-capcotentin-26082024-au-05012025.zip",
             "fix": true,
@@ -1943,7 +1943,7 @@
             }
         },
         {
-            "name": "horaires-theoriques-et-en-temps-reel-des-bus-et-autocars-circulant-sur-le-reseau-cap-cotentin--Horaires_théoriques_des_lignes_régulières_et_secondaires_du_réseau_Cap_Cotentin",
+            "name": "horaires-theoriques-et-en-temps-reel-des-bus-et-autocars-circulant-sur-le-reseau-cap-cotentin--Horaires-théoriques-des-lignes-régulières-et-secondaires-du-réseau-Cap-Cotentin",
             "type": "url",
             "url": "https://pysae.com/api/v2/groups/transdev-cotentin/gtfs-rt",
             "license": {
@@ -2106,7 +2106,7 @@
             "spec": "gtfs-rt"
         },
         {
-            "name": "reseau-taneo-1--Tanéo_-_Lot_1",
+            "name": "reseau-taneo-1--Tanéo---Lot-1",
             "type": "http",
             "url": "https://static.data.gouv.fr/resources/reseau-taneo-1/20240201-060816/gtfs-lot1-20240205-20241215.zip",
             "fix": true,
@@ -2115,7 +2115,7 @@
             }
         },
         {
-            "name": "reseau-taneo-1--Tanéo_-_Lot_2",
+            "name": "reseau-taneo-1--Tanéo---Lot-2",
             "type": "http",
             "url": "https://static.data.gouv.fr/resources/reseau-taneo-1/20240201-060853/gtfs-lot2-20240205-20241231.zip",
             "fix": true,
@@ -2151,7 +2151,7 @@
             }
         },
         {
-            "name": "reseau-urbain-cacl-agglobus--Ligne_10",
+            "name": "reseau-urbain-cacl-agglobus--Ligne-10",
             "type": "http",
             "url": "https://static.data.gouv.fr/resources/reseau-urbain-cacl-agglobus/20241008-124301/monbus-matoury-gf.zip",
             "fix": true,
@@ -2702,7 +2702,7 @@
             "spec": "gtfs-rt"
         },
         {
-            "name": "lignes-regulieres-de-transports-sillages-en-pays-de-grasse-urbain-et-scolaire--Réseau_Scolaire_Sillages_2024",
+            "name": "lignes-regulieres-de-transports-sillages-en-pays-de-grasse-urbain-et-scolaire--Réseau-Scolaire-Sillages-2024",
             "type": "http",
             "url": "https://static.data.gouv.fr/resources/lignes-regulieres-de-transports-sillages-en-pays-de-grasse-urbain-et-scolaire/20240823-101105/grasse-scolaire.gtfs-5-.zip",
             "fix": true,
@@ -2711,7 +2711,7 @@
             }
         },
         {
-            "name": "lignes-regulieres-de-transports-sillages-en-pays-de-grasse-urbain-et-scolaire--Réseau_Urbain_Sillages_2024",
+            "name": "lignes-regulieres-de-transports-sillages-en-pays-de-grasse-urbain-et-scolaire--Réseau-Urbain-Sillages-2024",
             "type": "http",
             "url": "https://static.data.gouv.fr/resources/lignes-regulieres-de-transports-sillages-en-pays-de-grasse-urbain-et-scolaire/20240823-101208/grasse-urbain.gtfs-2-.zip",
             "fix": true,
@@ -4064,7 +4064,7 @@
             "spec": "gtfs-rt"
         },
         {
-            "name": "donnees-theoriques-et-temps-reel-du-reseau-pass-thelle-bus-communaute-de-communes-thelloise--Arrêts,_horaires_et_parcours_théoriques_(GTFS)_-_réseau_Pass_Thelle_Bus",
+            "name": "donnees-theoriques-et-temps-reel-du-reseau-pass-thelle-bus-communaute-de-communes-thelloise--Arrêts,-horaires-et-parcours-théoriques-(GTFS)---réseau-Pass-Thelle-Bus",
             "type": "http",
             "url": "https://api.oisemob.cityway.fr/dataflow/offre-tc/download?provider=PASSTHELLE&dataFormat=GTFS&dataProfil=OPENDATA",
             "fix": true,
@@ -4073,7 +4073,7 @@
             }
         },
         {
-            "name": "donnees-theoriques-et-temps-reel-du-reseau-pass-thelle-bus-communaute-de-communes-thelloise--Description_du_TAD_zonal_(GTFS-Flex)_-_réseau_Pass_Thelle_Bus",
+            "name": "donnees-theoriques-et-temps-reel-du-reseau-pass-thelle-bus-communaute-de-communes-thelloise--Description-du-TAD-zonal-(GTFS-Flex)---réseau-Pass-Thelle-Bus",
             "type": "http",
             "url": "https://api.oisemob.cityway.fr/dataflow/tad/download?provider=PASSTHELLE&dataFormat=gtfs",
             "fix": true,
@@ -4380,7 +4380,7 @@
             "spec": "gtfs-rt"
         },
         {
-            "name": "offre-de-transport-de-la-c-a-beaune-cote-sud-gtfs--GTFS_Interurbain",
+            "name": "offre-de-transport-de-la-c-a-beaune-cote-sud-gtfs--GTFS-Interurbain",
             "type": "http",
             "url": "https://static.data.gouv.fr/resources/offre-de-transport-de-la-c-a-beaune-cote-sud-gtfs/20240812-075618/gtfs-coteetbus-iu.zip",
             "fix": true,
@@ -5136,7 +5136,7 @@
             }
         },
         {
-            "name": "tico-bus-horaires-theoriques-du-reseau-de-transport-urbain-tico--Offre_TAD_Allo_TICO",
+            "name": "tico-bus-horaires-theoriques-du-reseau-de-transport-urbain-tico--Offre-TAD-Allo-TICO",
             "type": "http",
             "url": "https://api.mlt4.cityway.fr/dataflow/tad/download?provider=3CM",
             "fix": true,
@@ -5145,7 +5145,7 @@
             }
         },
         {
-            "name": "tico-bus-horaires-theoriques-du-reseau-de-transport-urbain-tico--Offre_TC_théorique_TICO_Bus",
+            "name": "tico-bus-horaires-theoriques-du-reseau-de-transport-urbain-tico--Offre-TC-théorique-TICO-Bus",
             "type": "http",
             "url": "https://exs.mlt4.cityway.fr/gtfs.aspx?operatorCode=3CM&key=OPENDATA",
             "fix": true,
@@ -5361,7 +5361,7 @@
             }
         },
         {
-            "name": "donnees-theoriques-du-reseau-hopla-communaute-de-communes-de-la-plaine-destrees--Arrêts,_horaires_et_parcours_théoriques_(GTFS)_-_réseau_Hoplà",
+            "name": "donnees-theoriques-du-reseau-hopla-communaute-de-communes-de-la-plaine-destrees--Arrêts,-horaires-et-parcours-théoriques-(GTFS)---réseau-Hoplà",
             "type": "http",
             "url": "https://api.oisemob.cityway.fr/dataflow/offre-tc/download?provider=HOPLA&dataFormat=GTFS&dataProfil=OPENDATA",
             "fix": true,
@@ -5370,7 +5370,7 @@
             }
         },
         {
-            "name": "donnees-theoriques-du-reseau-hopla-communaute-de-communes-de-la-plaine-destrees--Description_du_TAD_zonal_(GTFS-Flex)_-_réseau_Hoplà",
+            "name": "donnees-theoriques-du-reseau-hopla-communaute-de-communes-de-la-plaine-destrees--Description-du-TAD-zonal-(GTFS-Flex)---réseau-Hoplà",
             "type": "http",
             "url": "https://api.oisemob.cityway.fr/dataflow/tad/download?Provider=HOPLA&dataFormat=gtfs&dataProfil=OPENDATA",
             "fix": true,

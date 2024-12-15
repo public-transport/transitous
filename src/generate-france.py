@@ -74,15 +74,15 @@ if __name__ == "__main__":
             "Données gobales en temps réel du réseau MOCA": "pt-th-offer-moca-gtfs-20240529-816-opendata.zip",
         },
         "breizhgo-car": {
-            "Breizhgo Car 35": "Breizhgo_Car_35",
-            "Breizhgo Car - Rennes – Loudéac/Pontivy": "Breizhgo_Car_-_Rennes_–_Loudéac/Pontivy",
-            "Breizhgo Car 22": "Breizhgo_Car_22",
+            "Breizhgo Car 35": "Breizhgo-Car-35",
+            "Breizhgo Car - Rennes – Loudéac/Pontivy": "Breizhgo-Car---Rennes-–-Loudéac-Pontivy",
+            "Breizhgo Car 22": "Breizhgo-Car-22",
         },
         "versions-des-horaires-theoriques-des-lignes-de-bus-et-de-metro-du-reseau-star-au-format-gtfs": {
             "https://proxy.transport.data.gouv.fr/resource/star-rennes-integration-gtfs-rt-trip-update": "ID82587",
         },
         "horaires-theoriques-et-en-temps-reel-des-bus-et-autocars-circulant-sur-le-reseau-cap-cotentin": {
-            "Horaires en temps réel des lignes régulières du réseau Cap Cotentin": "Horaires_théoriques_des_lignes_régulières_et_secondaires_du_réseau_Cap_Cotentin"
+            "Horaires en temps réel des lignes régulières du réseau Cap Cotentin": "Horaires-théoriques-des-lignes-régulières-et-secondaires-du-réseau-Cap-Cotentin"
         },
     }
 
@@ -129,9 +129,9 @@ if __name__ == "__main__":
                     dataset["slug"]
                     if unique_GTFS
                     else (
-                        dataset["slug"] + "--ID" + str(resource["id"]).replace(" ", "_")
+                        dataset["slug"] + "--ID" + str(resource["id"]).replace(" ", "-").replace("_", "-").replace("/", "-")
                         if dataset["slug"] in naming_exceptions
-                        else dataset["slug"] + "--" + resource["title"].replace(" ", "_")
+                        else dataset["slug"] + "--" + resource["title"].replace(" ", "-").replace("_", "-").replace("/", "-")
                     )
                 )
                 source = {
