@@ -45,6 +45,9 @@ if __name__ == "__main__":
         "donnees-theoriques-et-temps-reel-du-reseau-tic-urbain-communaute-dagglomeration-de-la-region-de-compiegne-et-de-la-basse-automne",  # agency.txt
         "arrets-horaires-et-circuit-de-la-lignes-yeu-continent-gtfs",  # agency.txt
         "caen-la-mer-reseau-twisto-gtfs-siri",  # Temporary removal, 401 error
+        "reseau-de-transport-interurbain-mobigo-en-bourgogne-franche-comte",  # Temporary removal, resource not available
+        "gtfs-transport-horaires-des-lignes-de-la-communaute-de-communes-corse-du-sud-a-berlina",  # Temporary removal, 404 error
+        "gtfs-transport-horaires-des-lignes-de-la-communaute-dile-rousse-balagne-a-balanina",  # Temporary removal, 404 error
     ]
 
     # List of individual resource ids (located in datasets) we want to remove
