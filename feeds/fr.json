@@ -890,7 +890,7 @@
             "spec": "gtfs-rt"
         },
         {
-            "name": "breizhgo-car--Breizhgo-Car-35",
+            "name": "breizhgo-car--Breizhgo-35",
             "type": "url",
             "url": "https://www.korrigo.bzh/ftp/OPENDATA/gtfsrt/BREIZHGO_CAR_35.GtfsRt.pb",
             "license": {
