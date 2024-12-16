@@ -1,0 +1,50 @@
+{
+    "maintainers": [
+        {
+            "name": "Altonss",
+            "github": "altonss"
+        }
+    ],
+    "sources": [
+        {
+            "name": "acadia",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-acadia~national~park~island~explorer"
+        },
+        {
+            "name": "acadia",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-acadia~national~park~island~explorer~rt"
+        },
+        {
+            "name": "biddeford-saco-old-orchard-beach",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-biddeford~saco~old~orchard~beach"
+        },
+        {
+            "name": "casco-bay",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dry0-cascobayislandtransitdistrict"
+        },
+        {
+            "name": "lewiston",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-lewiston~me~us"
+        },
+        {
+            "name": "greater-portland-metro-bus",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dry0-maine~greaterportlandmetrobus"
+        },
+        {
+            "name": "lakes-region-explorer",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-drvc-rtp~me~us"
+        },
+        {
+            "name": "south-portland",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dry0-cityofsouthportland"
+        }
+    ]
+}
