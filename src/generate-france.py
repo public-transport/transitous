@@ -80,7 +80,7 @@ if __name__ == "__main__":
             "Données gobales en temps réel du réseau MOCA": "pt-th-offer-moca-gtfs-20240529-816-opendata.zip",
         },
         "breizhgo-car": {
-            "Breizhgo Car 35": "Breizhgo-Car-35",
+            "Breizhgo Car 35": "Breizhgo-35",
             "Breizhgo Car - Rennes – Loudéac/Pontivy": "Breizhgo-Car---Rennes-–-Loudéac-Pontivy",
             "Breizhgo Car 22": "Breizhgo-Car-22",
         },
