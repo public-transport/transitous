@@ -818,15 +818,6 @@
             }
         },
         {
-            "name": "breizhgo-car--Breizhgo-35",
-            "type": "http",
-            "url": "https://www.korrigo.bzh/ftp/OPENDATA/BREIZHGO_CAR_35.gtfs.zip",
-            "fix": true,
-            "license": {
-                "url": "https://transport.data.gouv.fr/datasets/breizhgo-car"
-            }
-        },
-        {
             "name": "breizhgo-car--Breizhgo-Car---Nord-Sud",
             "type": "http",
             "url": "https://www.korrigo.bzh/ftp/OPENDATA/BREIZHGO_CAR_NS.gtfs.zip",
@@ -857,6 +848,15 @@
             "name": "breizhgo-car--Breizhgo-Car-29",
             "type": "http",
             "url": "https://www.korrigo.bzh/ftp/OPENDATA/BREIZHGO_CAR_29.gtfs.zip",
+            "fix": true,
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/breizhgo-car"
+            }
+        },
+        {
+            "name": "breizhgo-car--Breizhgo-Car-35",
+            "type": "http",
+            "url": "https://www.korrigo.bzh/ftp/OPENDATA/BREIZHGO_CAR_35.gtfs.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/breizhgo-car"
@@ -1222,7 +1222,7 @@
         {
             "name": "export-quotidien-au-format-gtfs-du-reseau-de-transport-lignes-d-azur",
             "type": "http",
-            "url": "http://opendata.nicecotedazur.org/data/storage/f/gtfs1734308101/GTFSExport.zip",
+            "url": "http://opendata.nicecotedazur.org/data/storage/f/gtfs1734221701/GTFSExport.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/export-quotidien-au-format-gtfs-du-reseau-de-transport-lignes-d-azur"
@@ -1319,18 +1319,18 @@
             "spec": "gtfs-rt"
         },
         {
-            "name": "versions-des-horaires-theoriques-des-lignes-de-bus-et-de-metro-du-reseau-star-au-format-gtfs--ID82587",
+            "name": "versions-des-horaires-theoriques-des-lignes-de-bus-et-de-metro-du-reseau-star-au-format-gtfs--ID82588",
             "type": "http",
-            "url": "https://eu.ftp.opendatasoft.com/star/gtfs/GTFS_1_20241206_20241227_20241206155024.zip",
+            "url": "https://eu.ftp.opendatasoft.com/star/gtfs/GTFS_2_20241228_20250105_20241206155105.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/versions-des-horaires-theoriques-des-lignes-de-bus-et-de-metro-du-reseau-star-au-format-gtfs"
             }
         },
         {
-            "name": "versions-des-horaires-theoriques-des-lignes-de-bus-et-de-metro-du-reseau-star-au-format-gtfs--ID82588",
+            "name": "versions-des-horaires-theoriques-des-lignes-de-bus-et-de-metro-du-reseau-star-au-format-gtfs--ID82587",
             "type": "http",
-            "url": "https://eu.ftp.opendatasoft.com/star/gtfs/GTFS_2_20241228_20250105_20241206155105.zip",
+            "url": "https://eu.ftp.opendatasoft.com/star/gtfs/GTFS_1_20241206_20241227_20241206155024.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/versions-des-horaires-theoriques-des-lignes-de-bus-et-de-metro-du-reseau-star-au-format-gtfs"
@@ -1937,7 +1937,7 @@
         {
             "name": "horaires-theoriques-et-en-temps-reel-des-bus-et-autocars-circulant-sur-le-reseau-cap-cotentin--Horaires-théoriques-des-lignes-régulières-et-secondaires-du-réseau-Cap-Cotentin",
             "type": "http",
-            "url": "https://static.data.gouv.fr/resources/horaires-theoriques-et-en-temps-reel-des-bus-et-autocars-circulant-sur-le-reseau-cap-cotentin/20241216-083043/gtfs-capcotentin-16122024-au-29062025.zip",
+            "url": "https://static.data.gouv.fr/resources/horaires-theoriques-et-en-temps-reel-des-bus-et-autocars-circulant-sur-le-reseau-cap-cotentin/20240825-194010/gtfs-capcotentin-26082024-au-05012025.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/horaires-theoriques-et-en-temps-reel-des-bus-et-autocars-circulant-sur-le-reseau-cap-cotentin"
@@ -2226,7 +2226,7 @@
         {
             "name": "reseau-urbain-illygo",
             "type": "http",
-            "url": "https://static.data.gouv.fr/resources/reseau-urbain-illygo/20241216-070931/gtfs-20241213-horsbord-illygo.zip",
+            "url": "https://static.data.gouv.fr/resources/reseau-urbain-illygo/20241211-162720/gtfs-20241211-123345-illygo.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/reseau-urbain-illygo"
@@ -3280,7 +3280,7 @@
         {
             "name": "reseau-urbain-la-navette-commune-de-gaillac--gtfs-gaillac.zip",
             "type": "http",
-            "url": "https://static.data.gouv.fr/resources/reseau-urbain-la-navette-commune-de-gaillac/20240924-121002/gtfs-gaillac.zip",
+            "url": "https://static.data.gouv.fr/resources/reseau-urbain-la-navette-commune-de-gaillac/20241205-080814/gtfs-gaillac.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/reseau-urbain-la-navette-commune-de-gaillac"
@@ -3289,7 +3289,7 @@
         {
             "name": "reseau-urbain-la-navette-commune-de-gaillac--gtfs-gaillac.zip",
             "type": "http",
-            "url": "https://static.data.gouv.fr/resources/reseau-urbain-la-navette-commune-de-gaillac/20241205-080814/gtfs-gaillac.zip",
+            "url": "https://static.data.gouv.fr/resources/reseau-urbain-la-navette-commune-de-gaillac/20240924-121002/gtfs-gaillac.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/reseau-urbain-la-navette-commune-de-gaillac"
@@ -5030,7 +5030,7 @@
         {
             "name": "agglobus",
             "type": "http",
-            "url": "https://static.data.gouv.fr/resources/agglobus/20241216-125701/241216-agglobus-janvier-2025.zip",
+            "url": "https://static.data.gouv.fr/resources/agglobus/20241213-111326/241212-agglobus-janvier-2025.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/agglobus"
@@ -5619,6 +5619,15 @@
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/gtfs-noirmoutier-gratibus-ete"
             }
+        },
+        {
+            "name": "gtfs-noirmoutier-gratibus-ete",
+            "type": "url",
+            "url": "https://pysae.com/api/v2/groups/noirmoutiers/gtfs-rt",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/gtfs-noirmoutier-gratibus-ete"
+            },
+            "spec": "gtfs-rt"
         },
         {
             "name": "horaires-theoriques-et-temps-reel-de-la-station-de-ski-valmorel-gtfs-gtfs-rt",
