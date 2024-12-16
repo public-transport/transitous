@@ -29,7 +29,8 @@
         {
             "name": "lewiston",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-lewiston~me~us"
+            "transitland-atlas-id": "f-lewiston~me~us",
+            "fix": true
         },
         {
             "name": "greater-portland-metro-bus",
