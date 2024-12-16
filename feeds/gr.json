@@ -18,7 +18,10 @@
         {
             "name": "TrainOSE",
             "type": "http",
-            "url": "https://extranet.trainose.gr/epivatikos/transit/google_transit.zip"
+            "url": "https://extranet.trainose.gr/epivatikos/transit/google_transit.zip",
+            "http-options": {
+                "ignore-tls-errors": true
+            }
         }
     ]
 }
