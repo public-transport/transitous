@@ -9,7 +9,7 @@
         {
             "name": "railway",
             "type": "http",
-            "url": "https://github.com/vasile/data.gov.ro-gtfs-exporter/archive/refs/heads/master.zip",
+            "url": "https://github.com/jbruechert/data.gov.ro-gtfs-exporter/archive/refs/heads/main.zip",
             "license": {
                 "url": "https://github.com/vasile/data.gov.ro-gtfs-exporter"
             },
