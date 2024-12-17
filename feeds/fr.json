@@ -4848,7 +4848,7 @@
         {
             "name": "arrets-lignes-regulieres-reseau-de-transport-urbain-a-autun",
             "type": "http",
-            "url": "https://static.data.gouv.fr/resources/arrets-lignes-regulieres-reseau-de-transport-urbain-a-autun/20231218-104337/gtfs-20231212-ca-roule.zip",
+            "url": "https://static.data.gouv.fr/resources/arrets-lignes-regulieres-reseau-de-transport-urbain-a-autun/20241217-163652/gtfs-20240703-111144-bfc-sud.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/arrets-lignes-regulieres-reseau-de-transport-urbain-a-autun"
