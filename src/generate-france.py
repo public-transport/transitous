@@ -58,7 +58,7 @@ if __name__ == "__main__":
         "39591",
         # "GTFS CG13 Cartreize",  # Duplicate data
         "39602",
-        "GTFS Libébus",  # Duplicate data
+        # "GTFS Libébus",  # Duplicate data
         "39592",
         # "GTFS Les bus de la Côte Bleue",  # Duplicate data
         "39596",

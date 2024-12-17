@@ -1229,7 +1229,7 @@
         {
             "name": "export-quotidien-au-format-gtfs-du-reseau-de-transport-lignes-d-azur",
             "type": "http",
-            "url": "http://opendata.nicecotedazur.org/data/storage/f/gtfs1734308101/GTFSExport.zip",
+            "url": "http://opendata.nicecotedazur.org/data/storage/f/gtfs1734394501/GTFSExport.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/export-quotidien-au-format-gtfs-du-reseau-de-transport-lignes-d-azur"
@@ -1407,16 +1407,7 @@
             }
         },
         {
-            "name": "horaires-du-reseau-transvilles-au-format-gtfs--81001",
-            "type": "http",
-            "url": "https://static.data.gouv.fr/resources/horaires-du-reseau-transvilles-au-format-gtfs/20240924-134833/google-transit-23-09-24.zip",
-            "fix": true,
-            "license": {
-                "url": "https://transport.data.gouv.fr/datasets/horaires-du-reseau-transvilles-au-format-gtfs"
-            }
-        },
-        {
-            "name": "horaires-du-reseau-transvilles-au-format-gtfs--82442",
+            "name": "horaires-du-reseau-transvilles-au-format-gtfs",
             "type": "http",
             "url": "https://static.data.gouv.fr/resources/horaires-du-reseau-transvilles-au-format-gtfs/20241205-131815/google-transit-27-11-24-au-31-08-25.zip",
             "fix": true,
@@ -1692,7 +1683,7 @@
         {
             "name": "gtfs-sankeo",
             "type": "http",
-            "url": "https://static.data.gouv.fr/resources/gtfs-sankeo/20241209-093152/gtfs-sankeo.zip",
+            "url": "https://static.data.gouv.fr/resources/gtfs-sankeo/20241217-080311/gtfs-sankeo.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/gtfs-sankeo"
@@ -1737,7 +1728,7 @@
         {
             "name": "offre-de-transport-du-reseau-tango-de-nimes-metropole-gtfs-gtfs-rt",
             "type": "http",
-            "url": "https://static.data.gouv.fr/resources/offre-de-transport-du-reseau-tango-de-nimes-metropole-gtfs-gtfs-rt/20241125-161355/gtfs-production.zip",
+            "url": "https://static.data.gouv.fr/resources/offre-de-transport-du-reseau-tango-de-nimes-metropole-gtfs-gtfs-rt/20241217-132601/gtfs-production.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/offre-de-transport-du-reseau-tango-de-nimes-metropole-gtfs-gtfs-rt"
@@ -1755,7 +1746,7 @@
         {
             "name": "gtfs-diviamobilites",
             "type": "http",
-            "url": "https://static.data.gouv.fr/resources/gtfs-diviamobilites/20241211-095227/gtfs-diviamobilites-current.zip",
+            "url": "https://static.data.gouv.fr/resources/gtfs-diviamobilites/20241217-105757/gtfs-diviamobilites-current.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/gtfs-diviamobilites"
@@ -2098,7 +2089,7 @@
         {
             "name": "horaires-theoriques-et-temps-reel-gtfs-gtfs-rt-du-reseau-palmbus-cannes-pays-de-lerins",
             "type": "http",
-            "url": "https://static.data.gouv.fr/resources/horaires-theoriques-et-temps-reel-gtfs-gtfs-rt-du-reseau-palmbus-cannes-pays-de-lerins/20241215-084442/palmbus-cannes-fr.zip",
+            "url": "https://static.data.gouv.fr/resources/horaires-theoriques-et-temps-reel-gtfs-gtfs-rt-du-reseau-palmbus-cannes-pays-de-lerins/20241217-132808/palmbus-cannes-fr.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/horaires-theoriques-et-temps-reel-gtfs-gtfs-rt-du-reseau-palmbus-cannes-pays-de-lerins"
@@ -2409,6 +2400,15 @@
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/agglobus-offre-theorique-mobilite-reseau-urbain-de-bourges"
             }
+        },
+        {
+            "name": "agglobus-offre-theorique-mobilite-reseau-urbain-de-bourges",
+            "type": "url",
+            "url": "https://data.centrevaldeloire.fr/api/explore/v2.1/catalog/datasets/agglobus-offre-theorique-mobilite-reseau-urbain-de-bourges/files/9b6551fc2897c3d8669770e215a836c7",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/agglobus-offre-theorique-mobilite-reseau-urbain-de-bourges"
+            },
+            "spec": "gtfs-rt"
         },
         {
             "name": "fr-200052264-t0009-0000-1",
@@ -3612,7 +3612,7 @@
         {
             "name": "arrets-horaires-et-circuit-de-la-lignes-yeu-continent-gtfs",
             "type": "http",
-            "url": "https://donnees.paysdelaloire.fr/data/pdlYeuContinent.gtfs.zip",
+            "url": "https://app.mecatran.com/utw/ws/gtfsfeed/static/pdlYeuContinent?apiKey=2c715462180f36483d5f24340c706b627f2f2361",
             "fix": true,
             "skip": true,
             "license": {
@@ -3645,6 +3645,15 @@
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/horaires-rlv-mobilites"
             }
+        },
+        {
+            "name": "horaires-rlv-mobilites",
+            "type": "url",
+            "url": "http://H23.hanoverdisplays.com:52350/api-1.0/gtfs-rt/trip-updates",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/horaires-rlv-mobilites"
+            },
+            "spec": "gtfs-rt"
         },
         {
             "name": "arrets-horaires-et-parcours-theoriques-des-reseaux-naq-roc-nva-m-1",
@@ -3794,7 +3803,7 @@
         {
             "name": "transports-urbains-tad-ville-de-soissons",
             "type": "http",
-            "url": "https://static.data.gouv.fr/resources/transports-urbains-tad-ville-de-soissons/20240228-133121/gtfs-soissons-tad.zip",
+            "url": "https://static.data.gouv.fr/resources/transports-urbains-tad-ville-de-soissons/20241217-142349/gtfs-soissons-tad.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/transports-urbains-tad-ville-de-soissons"
@@ -4064,7 +4073,7 @@
         {
             "name": "reseau-transport-urbain-de-bernay",
             "type": "http",
-            "url": "https://static.data.gouv.fr/resources/reseau-transport-urbain-de-bernay/20231016-143505/knsbernay-18129489-gtfs-urbain-bernay.zip",
+            "url": "https://static.data.gouv.fr/resources/reseau-transport-urbain-de-bernay/20241217-142157/bernay-ibus-gtfs-18122024.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/reseau-transport-urbain-de-bernay"
@@ -5244,7 +5253,7 @@
         {
             "name": "gtfs-transport-horaires-des-lignes-de-la-communaute-de-communes-corse-du-sud-a-berlina",
             "type": "http",
-            "url": "https://static.data.gouv.fr/resources/gtfs-transport-horaires-des-lignes-de-la-communaute-de-communes-corse-du-sud-a-berlina/20241206-130438/a-berlina-horaires.zip",
+            "url": "https://static.data.gouv.fr/resources/gtfs-transport-horaires-des-lignes-de-la-communaute-de-communes-corse-du-sud-a-berlina/20241216-100804/a-berlina-horaires.zip",
             "fix": true,
             "skip": true,
             "license": {
@@ -5568,7 +5577,7 @@
         {
             "name": "gtfs-transport-horaires-des-lignes-de-la-communaute-dile-rousse-balagne-a-balanina",
             "type": "http",
-            "url": "https://static.data.gouv.fr/resources/gtfs-transport-horaires-des-lignes-de-la-communaute-dile-rousse-balagne-a-balanina/20241206-125922/a-balanina-horaires.zip",
+            "url": "https://static.data.gouv.fr/resources/gtfs-transport-horaires-des-lignes-de-la-communaute-dile-rousse-balagne-a-balanina/20241216-100713/a-balanina-horaires.zip",
             "fix": true,
             "skip": true,
             "license": {
