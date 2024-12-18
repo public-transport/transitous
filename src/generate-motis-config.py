@@ -4,11 +4,12 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 import json
-from ruamel.yaml import YAML
 import metadata
 import sys
 import transitland
 
+from ruamel.yaml import YAML
+from typing import Any
 from pathlib import Path
 from utils import eprint
 
@@ -21,13 +22,11 @@ if __name__ == "__main__":
     flavour = sys.argv[1]
 
     feed_dir = Path("feeds/")
-    osm_map = "planet-latest.osm.pbf"
-    osm_coastline = "land-polygons-complete-4326.zip"
 
     atlas = transitland.Atlas.load(Path("transitland-atlas/"))
 
     gtfs_feeds: list[dict] = []
-    gtfsrt_feeds = []
+    gtfsrt_feeds: list[dict] = []
 
     with open("motis/config.yml") as f:
         yaml = YAML(typ="rt")
@@ -42,23 +41,6 @@ if __name__ == "__main__":
             "datasets", before="Modified by generate-motis-config.py"
         )
         config["timetable"]["datasets"] = {}
-
-        config.yaml_set_comment_before_after_key(
-            "street_routing", before="Modified by generate-motis-config.py"
-        )
-        match flavour:
-            case "import":
-                config["street_routing"] = False
-                config["osr_footpath"] = False
-                config["elevators"] = False
-                config["geocoding"] = False
-                config["reverse_geocoding"] = True
-            case "full":
-                config["street_routing"] = True
-                config["osr_footpath"] = True
-                config["elevators"] = True
-                config["geocoding"] = True
-                config["reverse_geocoding"] = True
 
         for feed in sorted(feed_dir.glob("*.json")):
             with open(feed, "r") as f:
@@ -104,7 +86,7 @@ if __name__ == "__main__":
                             if "rt" not in config["timetable"]["datasets"][name]:
                                 config["timetable"]["datasets"][name]["rt"] = []
 
-                            rt_feed = {
+                            rt_feed: dict[str, Any] = {
                                 "url": source.url
                             }
 

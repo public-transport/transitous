@@ -3,12 +3,17 @@ server:
   port: 8080
   web_folder: ""
 
-# These options are filled in by ./src/generate-motis-config.py
-street_routing: null
-osr_footpath: null
-elevators: null
-geocoding: null
-reverse_geocoding: null
+street_routing: true
+osr_footpath: true
+elevators: false
+geocoding: true
+reverse_geocoding: true
+
+osm: planet-latest.osm
+
+tiles:
+  profile: /opt/motis/tiles-profiles/full.lua
+  coastline: land-polygons-complete-4326.zip
 
 timetable:
   first_day: TODAY
