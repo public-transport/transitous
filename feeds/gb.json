@@ -10,12 +10,14 @@
             "name": "great-britain",
             "type": "http",
             "url": "https://s3.busmaps.com/files/uran/improved-gtfs-great-britain.zip",
-            "fix": true
+            "fix": true,
+            "proxy": true
         },
         {
             "name": "northern-ireland",
             "type": "http",
-            "url": "https://s3.gtfs.pro/files/uran/improved-gtfs-northern-ireland.zip"
+            "url": "https://s3.gtfs.pro/files/uran/improved-gtfs-northern-ireland.zip",
+            "proxy": true
         }
     ]
 }
