@@ -9,7 +9,7 @@
         {
             "name": "Trafiklab",
             "type": "http",
-            "url": "https://s3.gtfs.pro/files/uran/improved-gtfs-sverige.zip"
+            "url": "https://s3.transitpdf.com/files/uran/improved-gtfs-sverige.zip"
         }
     ]
 }
