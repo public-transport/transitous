@@ -29,7 +29,9 @@
         {
             "name": "DPMLJ",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u348-dpmlj"
+            "transitland-atlas-id": "f-u348-dpmlj",
+            "skip": true,
+            "skip-reason": "Feed not available"
         },
         {
             "name": "DPMO",
