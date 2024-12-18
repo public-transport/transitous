@@ -85,7 +85,8 @@
         {
             "name": "corpus-christi",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-corpus~christi~regional~transportation~authority"
+            "transitland-atlas-id": "f-corpus~christi~regional~transportation~authority",
+            "fix": true
         },
         {
             "name": "denton",
