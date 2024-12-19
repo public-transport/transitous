@@ -54,3 +54,11 @@
 .text-xs {
   font-size: 10px;
 }
+
+h3 {
+  margin-top: 30px;
+}
+
+h2 {
+  margin-top: 60px;
+}
