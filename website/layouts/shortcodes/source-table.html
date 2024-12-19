@@ -4,16 +4,6 @@ SPDX-FileCopyrightText: 2024 Jonah Brüchert <jbb@kaidan.im>
 SPDX-License-Identifier: AGPL-3.0-or-later
 -->
 
-<style>
-h3 {
-  margin-top: 30px;
-}
-
-h2 {
-  margin-top: 60px;
-}
-</style>
-
 {{ range $index, $source := $.Site.Data.license }}
   {{ if not (compare.Eq ((index $.Site.Data.license $index).region_name) ((index $.Site.Data.license (sub $index 1)).region_name)) }}
     <h2>{{ .region_name }}</h2>
