@@ -51,7 +51,9 @@
             "name": "Fredericton-Transit",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-frederictontransit",
-            "fix": true
+            "fix": true,
+            "skip": true,
+            "skip-reason": "Getting 403 error"
         },
         {
             "name": "Grande-Prairie-Transit",
