@@ -220,7 +220,8 @@
             "url": "https://www.sardegnamobilita.it/opendata/R_SARDEGTRASP_00006_1_dati_mare.zip",
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
-            }
+            },
+            "fix": true
         },
         {
             "name": "Sardegna-Ferries-Sardinia-Ferries",
