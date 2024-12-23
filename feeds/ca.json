@@ -33,7 +33,9 @@
         {
             "name": "Cold-Lake-Transit",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-coldlake~ab~ca"
+            "transitland-atlas-id": "f-coldlake~ab~ca",
+            "skip": true,
+            "skip-reason": "Getting 404 error"
         },
         {
             "name": "Edmonton-Transit-Service",
@@ -49,7 +51,9 @@
             "name": "Fredericton-Transit",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-frederictontransit",
-            "fix": true
+            "fix": true,
+            "skip": true,
+            "skip-reason": "Getting 403 error"
         },
         {
             "name": "Grande-Prairie-Transit",
