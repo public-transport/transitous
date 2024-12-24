@@ -1,24 +1,19 @@
-<?xml version="1.0"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 8.467 8.467">
-    <defs>
-        <filter id="a" width="2.321" height="2.321" x="-.661" y="-.661" color-interpolation-filters="sRGB">
-            <feGaussianBlur stdDeviation=".16"/>
-        </filter>
-    </defs>
-    <g stroke-linecap="round" stroke-linejoin="round">
-        <path fill="#fff" d="M7.673 1.323H.794" style="-inkscape-stroke:none"/>
-        <path fill="#286caa" d="m3.848 1.023.024.023c.158.158.265.36.31.576h3.49a.3.3 0 1 0 .001-.599zm-3.069.003a.3.3 0 0 0-.286.298.3.3 0 0 0 .301.298h2.24l-.555-.553a.137.137 0 0 0-.098-.04H.793a.478.478 0 0 1-.014-.003z" style="-inkscape-stroke:none"/>
-        <g fill="#fff">
-            <path fill-opacity=".23" d="M.794 1.222a.1.1 0 0 0-.1.102.1.1 0 0 0 .1.099h2.04l-.202-.201zm3.221 0c.042.063.078.13.106.201h3.552a.1.1 0 0 0 .1-.1.1.1 0 0 0-.1-.101H6.136z" style="-inkscape-stroke:none"/>
-            <path d="M7.673 1.323H.794" style="-inkscape-stroke:none"/>
-        </g>
-        <path fill="#ffbf00" d="M5.027 1.817a.834.834 0 0 0-.83.829v5.29a.3.3 0 0 0 .301.301.3.3 0 0 0 .301-.3V2.646c0-.13.098-.229.228-.229h2.647a.3.3 0 0 0 .299-.3.3.3 0 0 0-.299-.3z" style="-inkscape-stroke:none"/>
-        <path fill="#fffdfd" fill-opacity=".232" d="M5.027 2.017a.63.63 0 0 0-.628.629v5.29a.1.1 0 0 0 .1.102.1.1 0 0 0 .099-.101V2.646c0-.239.191-.43.43-.43h2.646a.1.1 0 0 0 .1-.1.1.1 0 0 0-.1-.1z" style="-inkscape-stroke:none"/>
-        <path fill="#9c133a" d="M.793.23a.3.3 0 0 0-.299.298.3.3 0 0 0 .3.301H2.38a.34.34 0 0 1 .24.1l.684.683c.063.064.1.15.1.24v6.085a.3.3 0 0 0 .3.3.3.3 0 0 0 .299-.3V1.853a.94.94 0 0 0-.275-.665L3.045.505a.94.94 0 0 0-.664-.276z" style="-inkscape-stroke:none"/>
-    </g>
-    <path fill="gray" stroke="#000" stroke-linecap="square" stroke-linejoin="bevel" stroke-width=".128" d="M5.954 2.845a.338.338 0 0 1-.339-.339V1.151a.338.338 0 1 1 .678 0v1.355a.338.338 0 0 1-.339.339z" filter="url(#a)" opacity=".533"/>
-    <path fill="#fff" stroke="#0d1d32" stroke-linecap="square" stroke-linejoin="bevel" stroke-width=".2" d="M5.955.713c.188 0 .339.151.339.339v1.355a.338.338 0 1 1-.678 0V1.052c0-.188.151-.339.339-.339z"/>
-    <path fill="#fffdfd" fill-opacity=".232" d="M.793.429a.1.1 0 0 0-.1.1.1.1 0 0 0 .1.1h1.588c.143 0 .28.056.38.157l.686.686a.537.537 0 0 1 .157.38v6.085a.1.1 0 0 0 .101.101.1.1 0 0 0 .1-.101V1.853a.742.742 0 0 0-.217-.524L2.904.645A.742.742 0 0 0 2.381.43z" style="-inkscape-stroke:none"/>
-    <path fill="gray" stroke="#000" stroke-linecap="square" stroke-linejoin="bevel" stroke-width=".128" d="M5.12 4.599a.338.338 0 0 1-.339.339H3.426a.338.338 0 1 1 0-.678h1.355c.188 0 .339.151.339.339z" filter="url(#a)" opacity=".533"/>
-    <path fill="#fff" stroke="#0d1d32" stroke-linecap="square" stroke-linejoin="bevel" stroke-width=".2" d="M5.119 4.498a.338.338 0 0 1-.339.339H3.425a.338.338 0 1 1 0-.678H4.78c.188 0 .339.151.339.339z"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 8.467 8.467" version="1.1" id="svg12" sodipodi:docname="logo.svg" inkscape:version="1.4 (e7c3feb100, 2024-10-09)">
+  <sodipodi:namedview id="namedview12" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:showpageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0" inkscape:deskcolor="#d1d1d1" inkscape:zoom="9.5073421" inkscape:cx="-3.4184107" inkscape:cy="12.569233" inkscape:window-width="1920" inkscape:window-height="1004" inkscape:window-x="0" inkscape:window-y="0" inkscape:window-maximized="1" inkscape:current-layer="g7"/>
+  <defs id="defs1">
+    <filter id="a" width="2.3215282" height="2.321531" x="-0.66076409" y="-0.66076551" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation=".16" id="feGaussianBlur1"/>
+    </filter>
+  </defs>
+  <g stroke-linecap="round" stroke-linejoin="round" id="g7">
+    <path fill="#fff" d="M7.673 1.323H.794" style="-inkscape-stroke:none" id="path1"/>
+    <path fill="#286caa" d="m3.848 1.023.024.023c.158.158.265.36.31.576h3.49a.3.3 0 1 0 .001-.599zm-3.069.003a.3.3 0 0 0-.286.298.3.3 0 0 0 .301.298h2.24l-.555-.553a.137.137 0 0 0-.098-.04H.793a.478.478 0 0 1-.014-.003z" style="-inkscape-stroke:none" id="path2"/>
+    <path fill="#ffbf00" d="M5.027 1.817a.834.834 0 0 0-.83.829v5.29a.3.3 0 0 0 .301.301.3.3 0 0 0 .301-.3V2.646c0-.13.098-.229.228-.229h2.647a.3.3 0 0 0 .299-.3.3.3 0 0 0-.299-.3z" style="-inkscape-stroke:none" id="path5"/>
+    <path fill="#9c133a" d="M.793.23a.3.3 0 0 0-.299.298.3.3 0 0 0 .3.301H2.38a.34.34 0 0 1 .24.1l.684.683c.063.064.1.15.1.24v6.085a.3.3 0 0 0 .3.3.3.3 0 0 0 .299-.3V1.853a.94.94 0 0 0-.275-.665L3.045.505a.94.94 0 0 0-.664-.276z" style="-inkscape-stroke:none" id="path7"/>
+  </g>
+  <path fill="gray" stroke="#000" stroke-linecap="square" stroke-linejoin="bevel" stroke-width=".128" d="M5.954 2.845a.338.338 0 0 1-.339-.339V1.151a.338.338 0 1 1 .678 0v1.355a.338.338 0 0 1-.339.339z" filter="url(#a)" opacity=".533" id="path8"/>
+  <path fill="#fff" stroke="#0d1d32" stroke-linecap="square" stroke-linejoin="bevel" stroke-width=".2" d="M5.955.713c.188 0 .339.151.339.339v1.355a.338.338 0 1 1-.678 0V1.052c0-.188.151-.339.339-.339z" id="path9"/>
+  <path fill="gray" stroke="#000" stroke-linecap="square" stroke-linejoin="bevel" stroke-width=".128" d="M5.12 4.599a.338.338 0 0 1-.339.339H3.426a.338.338 0 1 1 0-.678h1.355c.188 0 .339.151.339.339z" filter="url(#a)" opacity=".533" id="path11"/>
+  <path fill="#fff" stroke="#0d1d32" stroke-linecap="square" stroke-linejoin="bevel" stroke-width=".2" d="M5.119 4.498a.338.338 0 0 1-.339.339H3.425a.338.338 0 1 1 0-.678H4.78c.188 0 .339.151.339.339z" id="path12"/>
 </svg>
