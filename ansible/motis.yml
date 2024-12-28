@@ -6,6 +6,4 @@
   hosts: motis
   roles:
     - rsync-push
-    - rsync-anonymous
     - motis
-    - nginx

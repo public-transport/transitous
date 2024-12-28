@@ -11,8 +11,9 @@ motis:
 
 reverse-proxy:
   hosts:
-    spline-vm-motis:
+    spline-vm-motis-proxy:
       ansible_user: root
+      ansible_host: vm-motis-proxy.spline.de
 
 woodpecker:
   hosts:

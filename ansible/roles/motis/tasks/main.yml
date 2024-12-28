@@ -8,7 +8,7 @@
 
 - name: Create MOTIS directory
   file:
-    patch: /opt/motis/
+    path: /opt/motis/
     state: directory
 
 - name: Unpack MOTIS

@@ -6,15 +6,18 @@
 limit_req_zone $binary_remote_addr zone=api_plan:10m rate=20r/m;
 
 # General limit
-limit_req_zone $binary_remote_addr zone=api:10m rate=60r/s;
+limit_req_zone $binary_remote_addr zone=api:10m rate=42r/s;
 
 server {
-    listen 443 http2 ssl default_server;
-    listen [::]:443 http2 ssl default_server;
+    listen 80;
+    server_name api.transitous.org;
 
-    server_name routing-proxy.spline.de;
+    # For certbot
+    location ^~ /.well-known/acme-challenge/ {
+        root /var/www/html/;
+    }
 
-    deny all;
+    return 301 https://$host$request_uri;
 }
 
 server {
@@ -26,6 +29,9 @@ server {
 
     server_name api.transitous.org;
 
+    ssl_certificate /etc/letsencrypt/live/api.transitous.org/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/api.transitous.org/privkey.pem;
+
     charset UTF-8;
 
     # MOTIS Web Interface
@@ -34,8 +40,8 @@ server {
     }
 
     # Proxy and cache tiles
-    location /api/v1/tiles {
-        proxy_pass http://crunchy:8080/api/v1/tiles/;
+    location /tiles {
+        proxy_pass http://crunchy:8080/tiles/;
 
         proxy_cache            motis;
         proxy_cache_valid      200 302 404 5d;
@@ -45,7 +51,7 @@ server {
 
     # Rate limit plan API
     location /api/v1/plan {
-        proxy_pass http://crunchy:8080/api/v1/plan/
+        proxy_pass http://crunchy:8080/api/v1/plan/;
 
         limit_req zone=api_plan;
 
@@ -59,7 +65,7 @@ server {
     location /api/ {
         proxy_pass http://crunchy:8080/api/;
 
-        limit_req zone=api;
+        limit_req zone=api burst=10;
 
         proxy_connect_timeout       60;
         proxy_send_timeout          60;
@@ -69,6 +75,6 @@ server {
 
     # Source files
     location /gtfs/ {
-        return 301 https://routing-import.spline.de/$request_uri
+        return 301 https://routing-import.spline.de/$request_uri;
     }
 }
