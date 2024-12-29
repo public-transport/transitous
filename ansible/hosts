@@ -4,9 +4,9 @@
 
 motis:
   hosts:
-    spline-vm-motis:
+    crunchy:
       ansible_user: root
-      ansible_host: vm-motis.spline.de
+      ansible_host: crunchy.spline.de
       transitous_rsync_public_key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIECSh3Ot5IbFfdZYrOstBJTzSva8VUh/rz2KikvIyokn github-actions"
 
 reverse-proxy:
