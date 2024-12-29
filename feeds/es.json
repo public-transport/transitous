@@ -1337,7 +1337,7 @@
         {
             "name": "Trasnportes Insular de La Palma (TILP)",
             "type": "http",
-            "url": "https://www.arcgis.com/sharing/rest/content/items/a00541a34b4b432aa7c9937f34b3e19e/data"
+            "url": "https://www.arcgis.com/sharing/rest/content/items/a00541a34b4b432aa7c9937f34b3e19e/data",
             "fix": "true"
         }
     ]
