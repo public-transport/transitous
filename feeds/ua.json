@@ -9,14 +9,14 @@
         {
             "name": "lviv",
             "type": "http",
-            "url": "http://track.ua-gis.com/gtfs/lviv/static.zip",
+            "url": "https://track.ua-gis.com/gtfs/lviv/static.zip",
 	    "fix": true
         },
         {
             "name": "lviv",
             "spec": "gtfs-rt",
             "type": "url",
-            "url": "http://track.ua-gis.com/gtfs/lviv/vehicle_position"
+            "url": "https://track.ua-gis.com/gtfs/lviv/trip_updates"
         }
     ]
 }
