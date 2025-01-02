@@ -33,6 +33,7 @@ class Source:
     function: Optional[str] = None
     drop_too_fast_trips: bool = True
     drop_shapes: bool = False
+    drop_agency_names: List[str] = []
 
     def __init__(self, parsed: Optional[dict] = None):
         self.license = License()
@@ -60,6 +61,8 @@ class Source:
                 self.drop_too_fast_trips = parsed["drop-too-fast-trips"]
             if "drop-shapes" in parsed:
                 self.drop_shapes = parsed["drop-shapes"]
+            if "drop-agency-names" in parsed:
+                self.drop_agency_names = parsed["drop-agency-names"]
 
 
 class HttpOptions:

@@ -245,6 +245,10 @@ class Fetcher:
             command.append("--drop-too-fast-trips")
         if source.drop_shapes:
             command.append("--drop-shapes")
+        if source.drop_agency_names:
+            for agency in source.drop_agency_names:
+                command.append("--drop-agency-names")
+                command.append(agency)
 
         subprocess.check_call(command)
 

@@ -122,17 +122,18 @@ Then you can fetch individual regions using
 
 There are all kinds of options that may be specified in a source:
 
-Option Name       | Description
------------------ | ------------------------------------------------------------------------------------------------------------------------------------
-`type`            | `http`, `transitland-atlas` or `url`. Url sources are not downloaded, but passed to MOTIS as URL. This is used for realtime feeds.
-`spec`            | `gtfs` or `gtfs-rt`. `gtfs-rt` may only be used when `type` is `url`.
-`fix`             | Fix / drop fields that are not correct.
-`skip`            | Don't download or use this feed.
-`skip-reason`     | Reason for why this feed can't be used right now.
-`fix-csv-quotes`  | Try to fix GTFS files in which fields are improperly quoted. A symptom of this is if stop names start containing CSV.
-`license`         | Dictionary of license-related options
-`http-options`    | Dictionary of HTTP-related options
-`drop-shapes`     | Remove route shapes, use if the shapes are mostly wrong
+Option Name         | Description
+------------------- | ------------------------------------------------------------------------------------------------------------------------------------
+`type`              | `http`, `transitland-atlas` or `url`. Url sources are not downloaded, but passed to MOTIS as URL. This is used for realtime feeds.
+`spec`              | `gtfs` or `gtfs-rt`. `gtfs-rt` may only be used when `type` is `url`.
+`fix`               | Fix / drop fields that are not correct.
+`skip`              | Don't download or use this feed.
+`skip-reason`       | Reason for why this feed can't be used right now.
+`fix-csv-quotes`    | Try to fix GTFS files in which fields are improperly quoted. A symptom of this is if stop names start containing CSV.
+`license`           | Dictionary of license-related options
+`http-options`      | Dictionary of HTTP-related options
+`drop-shapes`       | Remove route shapes, use if the shapes are mostly wrong
+`drop-agency-names` | Removes a list of agencies. Can be used to avoid duplicates if the agency provides its own feed.
 
 #### License Options
 

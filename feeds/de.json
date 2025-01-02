@@ -18,6 +18,7 @@
                 "spdx-identifier": "CC-BY-4.0"
             },
             "fix": true,
+            "drop-agency-names": ["Berliner Verkehrsbetriebe", "S-Bahn Berlin GmbH", "Verkehrsgesellschaft Teltow-Fläming mbH"],
             "http-options": {
                 "fetch-interval-days": 2
             }
