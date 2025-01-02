@@ -13,7 +13,8 @@
         {
             "name": "Bloomington-Transit",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-dnfq-bloomingtontransit"
+            "transitland-atlas-id": "f-dnfq-bloomingtontransit",
+            "fix": true
         },
         {
             "name": "CityBus-of-Greater-Lafayette-Indiana",
