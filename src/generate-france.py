@@ -101,7 +101,7 @@ if __name__ == "__main__":
         # "Description du TAD zonal (GTFS-Flex) - réseau Le Bus",  # Remove additional DRT feed, + easier GTFS-RT matching
         "81652",
         # Very invalid calendar_dates.txt
-        "81648"
+        "81648", "81649"
     ]
 
     # Map for each dataset slug, if needed, the selected GTFS-RT id to the corresponding GTFS id
