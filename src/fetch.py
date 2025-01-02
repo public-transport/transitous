@@ -10,6 +10,7 @@ from utils import eprint
 from zipfile import ZipFile
 from typing import Optional, Any
 from zoneinfo import ZoneInfo
+from requests.adapters import HTTPAdapter, Retry
 
 import email.utils
 import requests
@@ -100,6 +101,14 @@ class Fetcher:
 
                 return self.fetch_source(dest_path, http_source)
             case HttpSource():
+                session = requests.Session()
+
+                retries = Retry(total=5,
+                                backoff_factor=0.1,
+                                status_forcelist=[500, 502, 503, 504])
+
+                session.mount('http://', HTTPAdapter(max_retries=retries))
+
                 request_options: dict[str, Any] = {
                     "verify": not source.options.ignore_tls_errors,
                     "timeout": 30
@@ -127,7 +136,7 @@ class Fetcher:
 
                 # Fetch last modification time from the server
                 server_headers = \
-                    requests.head(download_url, headers=headers,
+                    session.head(download_url, headers=headers,
                                   allow_redirects=True,
                                   **request_options).headers
 
@@ -146,7 +155,7 @@ class Fetcher:
                     headers["if-modified-since"] = last_modified \
                         .strftime("%a, %d %b %Y %X %Z")
 
-                response = requests.get(download_url, headers=headers,
+                response = session.get(download_url, headers=headers,
                                         **request_options)
 
                 # If the file was not modified, return
