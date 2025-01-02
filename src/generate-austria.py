@@ -6,7 +6,7 @@
 import requests
 import json
 
-TIMETABLE_YEARS = [2024, 2025]
+TIMETABLE_YEARS = [2025]
 
 
 def remove_duplicate_dashes(text: str) -> str:
