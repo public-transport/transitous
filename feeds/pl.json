@@ -101,7 +101,8 @@
         {
             "name": "Gdynia",
             "type": "http",
-            "url": "http://api.zdiz.gdynia.pl/pt/gtfs.zip"
+            "url": "http://api.zdiz.gdynia.pl/pt/gtfs.zip",
+            "fix": true
         },
         {
             "name": "Giżycko",
