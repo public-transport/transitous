@@ -215,6 +215,7 @@
             "name": "Sardegna-Ferries-Collegamenti-isole-minori",
             "type": "http",
             "url": "https://www.sardegnamobilita.it/opendata/R_SARDEGTRASP_00006_1_dati_mare.zip",
+            "fix": true,
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             }
