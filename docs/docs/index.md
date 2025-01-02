@@ -64,7 +64,9 @@ A person is represented like this:
 
 The main attribute of a region is `sources`. It contains a list of feeds that should be fetched.
 
-Each source can either be of `type` "transitland-atlas" or "http".
+### Static feeds (timetable)
+
+Each source can either be of `type` `transitland-atlas` or `http`.
 A transitland-atlas source is a feed from [Transitland](https://www.transit.land/feeds), identified by its Onestop ID.
 
 ```json
@@ -89,10 +91,32 @@ If the feed is not known in Transitland, a http source can be used instead.
 }
 ```
 
-In both cases, the name needs to be unique in the file, except for if it is an GTFS-RT feed. These are realtime feeds that contain updates for a GTFS feed.
-In order to know which one to apply the updates to, the names must match.
+In both cases, the name needs to be unique in the file.
+If the feed contains invalid entries, you can try to add the `"fix": true` attribute, to try to automatically correct errors.
 
-If the feed contains errors, you can try to add the `"fix": true` attribute, to try to automatically correct errors.
+### Realtime feeds
+
+GTFS-RT feeds contain updates for a GTFS feed.
+In order to know which feed to apply the updates to, their name must match the name of the static timetable.
+
+This example applies the updates to the `lviv` feed:
+```
+[
+    {
+        "name": "lviv",
+        "type": "http",
+        "url": "https://track.ua-gis.com/gtfs/lviv/static.zip",
+    },
+    {
+        "name": "lviv",
+        "spec": "gtfs-rt",
+        "type": "url",
+        "url": "https://track.ua-gis.com/gtfs/lviv/trip_updates"
+    }
+]
+```
+
+### Testing
 
 Once you create a pull request, fetching your feed will automatically be tested.
 
