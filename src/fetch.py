@@ -108,6 +108,7 @@ class Fetcher:
                                 status_forcelist=[500, 502, 503, 504])
 
                 session.mount('http://', HTTPAdapter(max_retries=retries))
+                session.mount('https://', HTTPAdapter(max_retries=retries))
 
                 request_options: dict[str, Any] = {
                     "verify": not source.options.ignore_tls_errors,
@@ -137,8 +138,8 @@ class Fetcher:
                 # Fetch last modification time from the server
                 server_headers = \
                     session.head(download_url, headers=headers,
-                                  allow_redirects=True,
-                                  **request_options).headers
+                                 allow_redirects=True,
+                                 **request_options).headers
 
                 # If server version is older, return
                 last_modified_server = None
@@ -156,7 +157,7 @@ class Fetcher:
                         .strftime("%a, %d %b %Y %X %Z")
 
                 response = session.get(download_url, headers=headers,
-                                        **request_options)
+                                       **request_options)
 
                 # If the file was not modified, return
                 if response.status_code == 304:
