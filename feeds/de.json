@@ -18,7 +18,7 @@
                 "spdx-identifier": "CC-BY-4.0"
             },
             "fix": true,
-            "drop-agency-names": ["Berliner Verkehrsbetriebe", "S-Bahn Berlin GmbH", "Verkehrsgesellschaft Teltow-Fläming mbH"],
+            "drop-agency-names": ["Berliner Verkehrsbetriebe", "S-Bahn Berlin GmbH", "Verkehrsgesellschaft Teltow-Fläming mbH", "Verkehrsbetriebe Oldenburger Land", "üstra Hannoversche Verkehrsbetriebe AG", "Braunschweiger Verkehrs-GmbH", "Kraftverkehrsgesellschaft mbH Braunschweig", "SWO Mobil GmbH"],
             "http-options": {
                 "fetch-interval-days": 2
             }
@@ -48,6 +48,23 @@
             "url": "https://production.gtfsrt.vbb.de/data",
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
+            }
+        },
+        {
+            "name": "VBN",
+            "type": "http",
+            "url": "https://www.connect-info.net/opendata/gtfs/connect-nds-lowlevel/eyqasqtsse",
+            "license": {
+                "spdx-identifier": "CC-BY-SA-4.0"
+            }
+        },
+        {
+            "name": "VBN",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "http://gtfsr.vbn.de/gtfsr_connect.bin",
+            "license": {
+                "spdx-identifier": "CC-BY-SA-4.0"
             }
         }
     ]
