@@ -18,7 +18,7 @@
                 "spdx-identifier": "CC-BY-4.0"
             },
             "fix": true,
-            "drop-agency-names": ["Berliner Verkehrsbetriebe", "S-Bahn Berlin GmbH", "Verkehrsgesellschaft Teltow-Fläming mbH", "Verkehrsbetriebe Oldenburger Land", "üstra Hannoversche Verkehrsbetriebe AG", "Braunschweiger Verkehrs-GmbH", "Kraftverkehrsgesellschaft mbH Braunschweig", "SWO Mobil GmbH"],
+            "drop-agency-names": ["Berliner Verkehrsbetriebe", "S-Bahn Berlin GmbH", "Verkehrsgesellschaft Teltow-Fläming mbH", "Verkehrsbetriebe Oldenburger Land", "üstra Hannoversche Verkehrsbetriebe AG", "Braunschweiger Verkehrs-GmbH", "Kraftverkehrsgesellschaft mbH Braunschweig", "SWO Mobil GmbH", "FlixBus-de"],
             "http-options": {
                 "fetch-interval-days": 2
             }
