@@ -75,7 +75,7 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "url": "https://usbshare.agenziatpl.it/index.php/s/CqsfTkpSgYRqW9L/download/2024-09-13_Movibus.zip"
+            "url": "https://usbshare.agenziatpl.it/index.php/s/6QmAWaKnWNfD3JP/download/2024-12-19_Movibus.zip"
         },
         {
             "name": "Lombardia-NET",
@@ -83,7 +83,7 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "url": "https://usbshare.agenziatpl.it/index.php/s/yGBQbrkG97XPp3y/download/2024-11-29_NET.zip"
+            "url": "https://usbshare.agenziatpl.it/index.php/s/cSswJyLgEGsYp7p/download/2024-12-16_NET.zip"
         },
         {
             "name": "Lombardia-STAR",
@@ -215,6 +215,7 @@
             "name": "Sardegna-Ferries-Collegamenti-isole-minori",
             "type": "http",
             "url": "https://www.sardegnamobilita.it/opendata/R_SARDEGTRASP_00006_1_dati_mare.zip",
+            "fix": true,
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             }
