@@ -14,8 +14,6 @@ if __name__ == "__main__":
     skip = [
         "blablacar-bus-horaires-theoriques-et-temps-reel-du-reseau-europeen",  # Already in eu.json
         "flixbus-horaires-theoriques-du-reseau-europeen-1",  # Already in eu.json
-        "gtfs-static-et-real-time-transporteur-thalys",  # Already in eu.json
-        "eurostar-gtfs",  # Already in eu.json
         "arrets-horaires-et-parcours-theoriques-du-reseau-routier-regional-de-transport-scolaire-et-interurbain-60-oise",  # broken
         "horaires-theoriques-des-cars-du-rhone",  # requires authentication
         "horaires-theoriques-des-lignes-scolaires-du-reseau-transports-en-commun-lyonnais",  # requires authentication
@@ -115,7 +113,7 @@ if __name__ == "__main__":
             "81806": "81461",
         },
         "versions-des-horaires-theoriques-des-lignes-de-bus-et-de-metro-du-reseau-star-au-format-gtfs": {
-            "82161": "82587",
+            "82161": "82666",
         },
         "horaires-theoriques-et-en-temps-reel-des-bus-et-autocars-circulant-sur-le-reseau-cap-cotentin": {
             "79830": "79831"
