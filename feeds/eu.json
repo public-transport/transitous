@@ -24,16 +24,9 @@
         {
             "name": "eurostar",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-eurostar"
-        },
-        {
-            "name": "thalys",
-            "type": "http",
-            "url": "https://www.data.gouv.fr/fr/datasets/r/cf7adb62-bbfe-4f1f-93f7-dbbad9fd60e4",
-            "license": {
-                "url": "https://www.etalab.gouv.fr/licence-ouverte-open-licence/"
-            },
-            "fix": true
+            "transitland-atlas-id": "f-eurostar",
+            "skip": true,
+            "skip-reason": "Use up to date feed generated in fr.json"
         }
     ]
 }
