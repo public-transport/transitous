@@ -2272,16 +2272,7 @@
             "spec": "gtfs-rt"
         },
         {
-            "name": "offre-de-transport-communaute-dagglomeration-le-grand-narbonne--81906",
-            "type": "http",
-            "url": "https://static.data.gouv.fr/resources/arrets-de-bus-communaute-dagglomeration-le-grand-narbonne/20241115-131704/gtfs-citibus-du-19-10-24-au-31-12-24-v2.zip",
-            "fix": true,
-            "license": {
-                "url": "https://transport.data.gouv.fr/datasets/offre-de-transport-communaute-dagglomeration-le-grand-narbonne"
-            }
-        },
-        {
-            "name": "offre-de-transport-communaute-dagglomeration-le-grand-narbonne--82661",
+            "name": "offre-de-transport-communaute-dagglomeration-le-grand-narbonne",
             "type": "http",
             "url": "https://s3.eu-west-1.amazonaws.com/files.orchestra.ratpdev.com/networks/narbonne/exports/scolaires-sans-tad.zip",
             "fix": true,
@@ -5126,6 +5117,7 @@
             "type": "http",
             "url": "https://zenbus.net/gtfs/static/download.zip?dataset=hobus",
             "fix": true,
+            "skip": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/horaires-theoriques-et-temps-reel-du-reseau-hobus-de-honfleur-gtfs-gtfs-rt"
             }
@@ -5134,6 +5126,7 @@
             "name": "horaires-theoriques-et-temps-reel-du-reseau-hobus-de-honfleur-gtfs-gtfs-rt",
             "type": "url",
             "url": "https://zenbus.net/gtfs/rt/poll.proto?dataset=hobus",
+            "skip": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/horaires-theoriques-et-temps-reel-du-reseau-hobus-de-honfleur-gtfs-gtfs-rt"
             },

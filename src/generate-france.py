@@ -46,6 +46,7 @@ if __name__ == "__main__":
         "reseau-de-transport-interurbain-mobigo-en-bourgogne-franche-comte",  # Temporary removal, resource not available
         "gtfs-transport-horaires-des-lignes-de-la-communaute-de-communes-corse-du-sud-a-berlina",  # Temporary removal, 404 error
         "gtfs-transport-horaires-des-lignes-de-la-communaute-dile-rousse-balagne-a-balanina",  # Temporary removal, 404 error
+        "horaires-theoriques-et-temps-reel-du-reseau-hobus-de-honfleur-gtfs-gtfs-rt",  # Skip outdated and unavailable feed
     ]
 
     # List of individual resource ids (located in datasets) we want to remove
@@ -99,7 +100,9 @@ if __name__ == "__main__":
         # "Description du TAD zonal (GTFS-Flex) - réseau Le Bus",  # Remove additional DRT feed, + easier GTFS-RT matching
         "81652",
         # Very invalid calendar_dates.txt
-        "81648", "81649"
+        "81648", "81649",
+        # Remove old unavailable feed
+        "81906"
     ]
 
     # Map for each dataset slug, if needed, the selected GTFS-RT id to the corresponding GTFS id
