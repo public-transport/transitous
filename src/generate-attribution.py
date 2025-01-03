@@ -58,12 +58,9 @@ def http_source_attribution(source: HttpSource) -> Optional[dict]:
         print(f"Info: {feed_path} does not exist, skipping…")
         return None
 
+    contacts: list[dict] = []
+
     with ZipFile(feed_path) as z:
-        with z.open("agency.txt", "r") as a:
-            with io.TextIOWrapper(a) as at:
-                agencyreader = csv.DictReader(at, delimiter=",", quotechar='"')
-                for row in agencyreader:
-                    attribution["operators"].append(row["agency_name"])
         if "feed_info.txt" in z.namelist():
             with z.open("feed_info.txt", "r") as i:
                 with io.TextIOWrapper(i) as it:
@@ -72,6 +69,31 @@ def http_source_attribution(source: HttpSource) -> Optional[dict]:
                     attribution["publisher"] = {}
                     attribution["publisher"]["name"] = publisher["feed_publisher_name"]
                     attribution["publisher"]["url"] = publisher["feed_publisher_url"]
+
+                    contact = {
+                            "type": "publisher",
+                            "name": publisher["feed_publisher_name"],
+                            "email": publisher.get("feed_contact_email"),
+                            "url": publisher.get("feed_contact_url")
+                    }
+
+                    contacts.append(contact)
+
+        with z.open("agency.txt", "r") as a:
+            with io.TextIOWrapper(a) as at:
+                agencyreader = list(csv.DictReader(at, delimiter=",", quotechar='"'))
+
+                attribution["operators"] = \
+                    filter_duplicates(map(lambda agency: agency["agency_name"],
+                                          agencyreader))
+
+                contacts += map(lambda agency: {
+                        "type": "agency",
+                        "agency_id": agency.get("agency_id"),
+                        "name": agency["agency_name"],
+                        "email": agency.get("agency_email")
+                    }, agencyreader)
+
         if "attributions.txt" in z.namelist():
             with z.open("attributions.txt", "r") as a:
                 with io.TextIOWrapper(a) as at:
@@ -80,11 +102,23 @@ def http_source_attribution(source: HttpSource) -> Optional[dict]:
                         map(
                             lambda contrib: {
                                 "name": contrib["organization_name"],
-                                "url": contrib.get("attribution_url"),
+                                "url": contrib.get("attribution_url")
                             },
                             attributionstxt,
                         )
                     )
+
+                    attribution_contacts = map(lambda operator: {
+                            "type": "attribution",
+                            "name": operator["organization_name"],
+                            "email": operator.get("attribution_email")
+                        }, attributionstxt)
+
+                    contacts += attribution_contacts
+
+    attribution["contacts"] = \
+        list(filter(lambda c: c.get("email") or c.get("url"),
+                    contacts))
 
     if (
         "operators" in attribution
