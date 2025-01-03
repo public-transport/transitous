@@ -12,7 +12,8 @@
             "url": "https://opentransportdata.swiss/de/dataset/timetable-2025-gtfs2020/permalink",
             "license": {
                 "url": "https://opentransportdata.swiss/de/terms-of-use/"
-            }
+            },
+            "drop-agency-names": ["Société Nationale des Chemins de fer Français"]
         },
         {
             "name": "opentransportdataswiss25",
