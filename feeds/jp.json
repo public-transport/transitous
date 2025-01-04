@@ -1,0 +1,15 @@
+{
+    "maintainers": [
+        {
+            "name": "Altonss",
+            "github": "altonss"
+        }
+    ],
+    "sources": [
+        {
+            "name": "toeibus",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-toeibus~gtfs~jp"
+        }
+    ]
+}
