@@ -180,7 +180,7 @@ if __name__ == "__main__":
         for source in region.sources:
             source_id = f"{region_code_lower}_{source.name}"
 
-            if source is TransitlandSource:
+            if type(source) is TransitlandSource:
                 source = transitland_atlas.source_by_id(source)
                 if not source:
                     continue
