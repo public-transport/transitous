@@ -9,14 +9,28 @@ h3 {
   margin-top: 30px;
 }
 
-h2 {
+h2, summary {
   margin-top: 60px;
+}
+
+summary h2 {
+  display: inline;
 }
 </style>
 
+{{ $lastRegion := "_initial_" }}
 {{ range $index, $source := $.Site.Data.license }}
-  {{ if not (compare.Eq ((index $.Site.Data.license $index).region_name) ((index $.Site.Data.license (sub $index 1)).region_name)) }}
-    <h2>{{ .region_name }}</h2>
+  {{ $region := .region_name }}
+
+  <!--If new region, open a new <details> section -->
+  {{ if ne $region $lastRegion }}
+    <!-- If it's not the first <details> section, first close the previous one -->
+    {{ if ne $lastRegion "_initial_" }}
+      </details>
+    {{ end }}
+    
+    <details>
+      <summary><h2>{{ .region_name }}</h2></summary>
   {{ end }}
 
   <h3>{{ .human_name }}</h3>
@@ -88,6 +102,12 @@ h2 {
     {{- end }}.
     </p>
   {{ end }}
+  <!-- Update lastRegion value -->
+  {{ $lastRegion = $region }}
+{{ end }}
+<!-- Close last <details> -->
+{{ if ne $lastRegion "_initial_" }}
+  </details>
 {{ end }}
 
 <script src="/bootstrap.min.js"></script>
