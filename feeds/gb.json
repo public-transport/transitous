@@ -13,6 +13,11 @@
             "fix": true
         },
         {
+            "name": "bus-dft",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-bus~dft~gov~uk"
+        },
+        {
             "name": "northern-ireland",
             "type": "http",
             "url": "https://s3.transitpdf.com/files/uran/improved-gtfs-northern-ireland.zip"
