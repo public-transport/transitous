@@ -122,7 +122,8 @@
         {
             "name": "Poznań",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u3k4-miejskieprzedsiębiorstwokomunikacyjnespzoowpoznaniu~kórni"
+            "transitland-atlas-id": "f-u3k4-miejskieprzedsiębiorstwokomunikacyjnespzoowpoznaniu~kórni",
+            "fix": true
         }
     ]
 }
