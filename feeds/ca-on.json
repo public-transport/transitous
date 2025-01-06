@@ -365,12 +365,16 @@
         {
             "name": "York-Region-Transit",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-dpz-yorkregiontransit"
+            "transitland-atlas-id": "f-dpz-yorkregiontransit",
+            "skip": true,
+            "skip-reason": "Broken TLS setup"
         },
         {
             "name": "York-Region-Transit",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-yrt~rt"
+            "transitland-atlas-id": "f-yrt~rt",
+            "skip": true,
+            "skip-reason": "Broken TLS setup"
         }
     ]
 }
