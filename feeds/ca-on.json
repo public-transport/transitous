@@ -164,7 +164,9 @@
         {
             "name": "Middlesex-County-Connect",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-middlesex~county~on~ca"
+            "transitland-atlas-id": "f-middlesex~county~on~ca",
+            "skip": true,
+            "skip-reason": "No file or invalid data"
         },
         {
             "name": "Mid-Pen-Transit",
@@ -184,7 +186,8 @@
         {
             "name": "MiWay",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-dpz2-miway"
+            "transitland-atlas-id": "f-dpz2-miway",
+            "fix": true
         },
         {
             "name": "MiWay",
