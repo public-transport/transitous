@@ -181,7 +181,7 @@ class Fetcher:
                         server_headers["last-modified"])
 
                 content: bytes
-                if "#" in download_url:
+                if "#" in download_url and download_url.partition("#")[2]:
                     # if URL contains #, treat the path after # as an embedded ZIP file
                     sub_path = download_url.partition("#")[2]
                     zipfile = ZipFile(io.BytesIO(response.content))
