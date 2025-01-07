@@ -185,7 +185,8 @@
         {
             "name": "MiWay",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-dpz2-miway"
+            "transitland-atlas-id": "f-dpz2-miway",
+            "proxy": true
         },
         {
             "name": "MiWay",
