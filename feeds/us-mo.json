@@ -19,7 +19,8 @@
         {
             "name": "KCATA",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-9yu-kcata"
+            "transitland-atlas-id": "f-9yu-kcata",
+            "fix": true
         },
         {
             "name": "KCATA",
