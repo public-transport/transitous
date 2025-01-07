@@ -164,7 +164,8 @@
         {
             "name": "Middlesex-County-Connect",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-middlesex~county~on~ca"
+            "transitland-atlas-id": "f-middlesex~county~on~ca",
+            "url-override": "https://drive.google.com/uc?id=1pCs6qk9nHvP7ff18AJZas2dQVB3kF28l&export=download"
         },
         {
             "name": "Mid-Pen-Transit",
