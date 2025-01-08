@@ -288,7 +288,8 @@
             "name": "Trentino-Urbano",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u0pv-ttesercizio",
-            "proxy": true
+            "proxy": true,
+            "fix": true
         },
         {
             "name": "Veneto-Venezia-Bus",
