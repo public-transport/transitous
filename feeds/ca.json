@@ -96,7 +96,8 @@
         {
             "name": "Prince-Albert-Transit",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-prince~albert~sk~ca"
+            "transitland-atlas-id": "f-prince~albert~sk~ca",
+            "url-override": "https://www.citypa.ca/en/parking-streets-and-transportation/resources/Transit/2025-01-02-Google-Transit-GTFS.zip"
         },
         {
             "name": "Red-Deer-Transit",
