@@ -60,7 +60,7 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "url": "https://usbshare.agenziatpl.it/index.php/s/A4WnpiijoAZ2co7/download/2024-09-12_AirPullman.zip"
+            "url": "https://usbshare.agenziatpl.it/index.php/s/NCX252ombsxjzzz/download/2025-01-03_Airpullman.zip"
         },
         {
             "name": "Lombardia-ATM",
@@ -288,7 +288,8 @@
             "name": "Trentino-Urbano",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u0pv-ttesercizio",
-            "proxy": true
+            "proxy": true,
+            "fix": true
         },
         {
             "name": "Veneto-Venezia-Bus",
