@@ -7,6 +7,10 @@
         {
             "name": "Robin Durner",
             "github": "traines-source"
+        },
+        {
+            "name": "Dan Cojocaru",
+            "github": "dancojocaru2000"
         }
     ],
     "sources": [
@@ -65,6 +69,15 @@
             "url": "http://gtfsr.vbn.de/gtfsr_connect.bin",
             "license": {
                 "spdx-identifier": "CC-BY-SA-4.0"
+            }
+        },
+        {
+            "name": "AVV-Aachen",
+            "type": "http",
+            "url": "https://opendata.avv.de/current_GTFS/AVV_GTFS_Masten_mit_SPNV_Global-ID.zip",
+            "license": {
+                "spdx-identifier": "ODbL-1.0",
+                "url": "https://opendata.avv.de/current_GTFS/lizenz_und_readme.txt"
             }
         }
     ]
