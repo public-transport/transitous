@@ -1,0 +1,100 @@
+{
+    "maintainers": [
+        {
+            "name": "Altonss",
+            "github": "altonss"
+        }
+    ],
+    "sources": [
+        {
+            "name": "stevens-point",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-stevens~point~wi"
+        },
+        {
+            "name": "kenosha",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-kenosha~wi~us"
+        },
+        {
+            "name": "kenosha",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-kenosha~wi~us~rt"
+        },
+        {
+            "name": "madison",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dp8m-metrotransit~cityofmadison"
+        },
+        {
+            "name": "madison",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-madison~rt"
+        },
+        {
+            "name": "eauclairetransit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9zyy-eauclairetransit"
+        },
+        {
+            "name": "oshkosh",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dpc4-oshkosh~wi~us"
+        },
+        {
+            "name": "green-bay",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-green~bay~wi~us"
+        },
+        {
+            "name": "green-bay",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-green~bay~wi~us~rt"
+        },
+        {
+            "name": "janesville-jts",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dp8d-jts~wi~us"
+        },
+        {
+            "name": "wausau",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-wausau~wi~us"
+        },
+        {
+            "name": "milwaukee",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dp9-milwaukeecountytransitsystem"
+        },
+        {
+            "name": "milwaukee",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dp9-milwaukeecountytransitsystem~rt"
+        },
+        {
+            "name": "racine",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dp9e-belleurbansystem"
+        },
+        {
+            "name": "racine",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dp9e-belleurbansystem~rt"
+        },
+        {
+            "name": "sheboygan",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dpc8-sheboygan~wi~us"
+        },
+        {
+            "name": "waukesha",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dp9k-waukeshacounty~wi~us"
+        },
+        {
+            "name": "waukesha",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dp9k-waukeshacounty~wi~us~rt"
+        }
+    ]
+}
