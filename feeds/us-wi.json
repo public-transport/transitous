@@ -52,7 +52,9 @@
         {
             "name": "green-bay",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-green~bay~wi~us~rt"
+            "transitland-atlas-id": "f-green~bay~wi~us~rt",
+            "skip": true,
+            "skip-reason": "overblocking DDOS protection"
         },
         {
             "name": "janesville-jts",
@@ -74,7 +76,9 @@
         {
             "name": "milwaukee",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-dp9-milwaukeecountytransitsystem~rt"
+            "transitland-atlas-id": "f-dp9-milwaukeecountytransitsystem~rt",
+            "skip": true,
+            "skip-reason": "Connection timeout"
         },
         {
             "name": "racine",
