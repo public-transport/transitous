@@ -68,15 +68,13 @@
             "name": "milwaukee",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-dp9-milwaukeecountytransitsystem",
-            "skip": true,
-            "skip-reason": "Connection timeout"
+            "proxy": true
         },
         {
             "name": "milwaukee",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-dp9-milwaukeecountytransitsystem~rt",
-            "skip": true,
-            "skip-reason": "Connection timeout"
+            "proxy": true
         },
         {
             "name": "racine",
