@@ -46,8 +46,7 @@
             "name": "green-bay",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-green~bay~wi~us",
-            "skip": true,
-            "skip-reason": "overblocking DDOS protection"
+            "proxy": true
         },
         {
             "name": "green-bay",
