@@ -138,6 +138,11 @@
             "fix": true
         },
         {
+            "name": "Ferrovie-del-Nord-Barese",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-sr7f-ferrotramviariaspa~ferroviedelnordbarese"
+        },
+        {
             "name": "Puglia-Brindisi",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-s-societàtrasportipubblicibrindisi~brindisi"
