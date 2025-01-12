@@ -10,6 +10,11 @@
             "name": "toeibus",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-toeibus~gtfs~jp"
+        },
+        {
+            "name": "hiroden",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-hiroden~jp"
         }
     ]
 }
