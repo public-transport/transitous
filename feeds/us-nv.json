@@ -1,0 +1,66 @@
+{
+    "maintainers": [
+        {
+            "name": "Altonss",
+            "github": "altonss"
+        }
+    ],
+    "sources": [
+        {
+            "name": "lasvegasloop",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-lasvegasloop~nv~us"
+        },
+        {
+            "name": "lasvegasloop",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-lasvegasloop~nv~us~rt"
+        },
+        {
+            "name": "lasvegasloop",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-lasvegasloop~nv~us~rt~alerts"
+        },
+        {
+            "name": "North-Lake-Tahoe",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9qf-laketahoe~ca~us"
+        },
+        {
+            "name": "reno",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9r4-rtcride",
+            "fix": true
+        },
+        {
+            "name": "las-vegas-rtc",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9qqj-rtcsnv"
+        },
+        {
+            "name": "las-vegas-rtc",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-rtcsnv~rt"
+        },
+        {
+            "name": "las-vegas-rtc",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-rtcsnv~rt~alerts"
+        },
+        {
+            "name": "tahoe",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-tahoe~ca~us"
+        },
+        {
+            "name": "tahoe",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-tahoe~ca~rt"
+        },
+        {
+            "name": "tahoe",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-tahoe~ca~rt~alerts"
+        }
+    ]
+}
