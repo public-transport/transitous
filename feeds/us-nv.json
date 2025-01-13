@@ -29,8 +29,7 @@
         {
             "name": "reno",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-9r4-rtcride",
-            "fix": true
+            "transitland-atlas-id": "f-9r4-rtcride"
         },
         {
             "name": "las-vegas-rtc",
