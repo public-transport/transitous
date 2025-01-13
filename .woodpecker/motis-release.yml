@@ -15,7 +15,7 @@ steps:
       - mkdir -p motis-src/build
       - export flags="-static -O3 -fomit-frame-pointer -flto"
       - export target_flags="-march=skylake-avx512"
-      - cmake -DCMAKE_BUILD_TYPE=Release -DMOTIS_MIMALLOC=ON -DCMAKE_CXX_FLAGS="$flags" -DCMAKE_C_FLAGS="$flags" -DMOTIS_TARGET_FLAGS="$target_flags" -GNinja -DNO_BUILDCACHE=ON -Bmotis-src/build -Smotis-src
+      - cmake -DCMAKE_BUILD_TYPE=RelWithDebInfo -DMOTIS_MIMALLOC=ON -DCMAKE_CXX_FLAGS="$flags" -DCMAKE_C_FLAGS="$flags" -DMOTIS_TARGET_FLAGS="$target_flags" -GNinja -DNO_BUILDCACHE=ON -Bmotis-src/build -Smotis-src
       - ninja -C motis-src/build motis motis-test motis-web-ui
       - mkdir -p motis-out
       - mv motis-src/build/motis motis-out/motis
