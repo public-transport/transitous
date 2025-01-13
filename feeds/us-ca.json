@@ -197,6 +197,11 @@
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-southcountytransitlink~ca~us",
             "proxy": true
+        },
+        {
+            "name": "Sage-Stage",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9r-sagestage"
         }
     ]
 }
