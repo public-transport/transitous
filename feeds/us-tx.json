@@ -112,6 +112,11 @@
             "name": "star-transit",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-9vg3-startransit~tx~us"
+        },
+        {
+            "name": "laredo",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-laredo~tx~us"
         }
     ]
 }
