@@ -74,7 +74,8 @@
         {
             "name": "Fairfax-CUE-Bus",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-dqcj1-fairfaxcue"
+            "transitland-atlas-id": "f-dqcj1-fairfaxcue",
+            "proxy": true
         },
         {
             "name": "farmville",
@@ -99,7 +100,8 @@
         {
             "name": "richmond",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-grtc~va"
+            "transitland-atlas-id": "f-grtc~va",
+            "fix": true
         },
         {
             "name": "Greensville-Emporia",
@@ -169,7 +171,8 @@
         {
             "name": "star-transit",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-startransit~va~us"
+            "transitland-atlas-id": "f-startransit~va~us",
+            "fix": true
         },
         {
             "name": "university-virginia",
@@ -179,7 +182,8 @@
         {
             "name": "roanoke",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-dnx-roanoke~va~us"
+            "transitland-atlas-id": "f-dnx-roanoke~va~us",
+            "fix": true
         },
         {
             "name": "roanoke",
@@ -189,7 +193,8 @@
         {
             "name": "virginia-railway-express",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-dqc-virginiarailwayexpress"
+            "transitland-atlas-id": "f-dqc-virginiarailwayexpress",
+            "fix": true
         },
         {
             "name": "virginia-railway-express",
@@ -204,7 +209,8 @@
         {
             "name": "williamsburg",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-dq9k-wata"
+            "transitland-atlas-id": "f-dq9k-wata",
+            "fix": true
         },
         {
             "name": "williamsburg",
