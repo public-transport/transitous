@@ -1,0 +1,220 @@
+{
+    "maintainers": [
+        {
+            "name": "Altonss",
+            "github": "altonss"
+        }
+    ],
+    "sources": [
+        {
+            "name": "alexandria-dash",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dqchv-alexandriatransitcompanydash"
+        },
+        {
+            "name": "alexandria-dash",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dqchv-alexandriatransitcompanydash~rt"
+        },
+        {
+            "name": "altavista",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-altavista~va~us"
+        },
+        {
+            "name": "arlington",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dqcjj-arlingtontransit"
+        },
+        {
+            "name": "arlington",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-art~rt"
+        },
+        {
+            "name": "bay-transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-bay~transit~va"
+        },
+        {
+            "name": "blacksburgtransit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dnwg-blacksburgtransit"
+        },
+        {
+            "name": "blackstone",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-blackstone~va~us"
+        },
+        {
+            "name": "bristol",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-bristol~va~us"
+        },
+        {
+            "name": "brite-bus",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-brite~bus~va"
+        },
+        {
+            "name": "danville",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-danville~va~us"
+        },
+        {
+            "name": "fairfax-connector",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dqcj-fairfaxconnector"
+        },
+        {
+            "name": "fairfax-connector",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-fairfaxconnector~rt"
+        },
+        {
+            "name": "Fairfax-CUE-Bus",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dqcj1-fairfaxcue"
+        },
+        {
+            "name": "farmville",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-farmville~va~us"
+        },
+        {
+            "name": "four-county",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-four~county~transit~va~us"
+        },
+        {
+            "name": "graham",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-grahamtransit~va~us"
+        },
+        {
+            "name": "gltc-lynchburg",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dnxs-gltc~lynchburg~va~us"
+        },
+        {
+            "name": "richmond",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-grtc~va"
+        },
+        {
+            "name": "Greensville-Emporia",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-get~va~us"
+        },
+        {
+            "name": "hrt",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dq9-hrt"
+        },
+        {
+            "name": "hrt",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dq9-hrt~rt"
+        },
+        {
+            "name": "harrisonburg",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dnzft-harrisonburghdpt"
+        },
+        {
+            "name": "jaunt",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-jaunt~inc~va"
+        },
+        {
+            "name": "loudoun-county",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-loudouncounty~va~us"
+        },
+        {
+            "name": "districtthree",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-districtthree~va~us"
+        },
+        {
+            "name": "hafe-shuttle-transport",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-hafe~shuttle~transport"
+        },
+        {
+            "name": "petersburg",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-petersburg~va~us"
+        },
+        {
+            "name": "dqch-prtc",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dqch-prtc"
+        },
+        {
+            "name": "pulaski",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dnwe-pulaski~va~us"
+        },
+        {
+            "name": "radartransit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dnx-radartransit"
+        },
+        {
+            "name": "radford",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dnwe-radford~va~us"
+        },
+        {
+            "name": "star-transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-startransit~va~us"
+        },
+        {
+            "name": "university-virginia",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-university~of~virginia"
+        },
+        {
+            "name": "roanoke",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dnx-roanoke~va~us"
+        },
+        {
+            "name": "roanoke",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dnx-roanoke~va~us~rt"
+        },
+        {
+            "name": "virginia-railway-express",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dqc-virginiarailwayexpress"
+        },
+        {
+            "name": "virginia-railway-express",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-vre~rt"
+        },
+        {
+            "name": "vatransit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-vatransit~va~us"
+        },
+        {
+            "name": "williamsburg",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dq9k-wata"
+        },
+        {
+            "name": "williamsburg",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-wata~rt"
+        },
+        {
+            "name": "winchester",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-wintran~va~us"
+        }
+    ]
+}
