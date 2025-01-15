@@ -7,7 +7,6 @@ server:
   port: 8080
   web_folder: ""
 
-# overwritten by generate-motis-config
 street_routing: true
 osr_footpath: true
 elevators: false

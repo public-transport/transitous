@@ -3,7 +3,7 @@
 
 when:
   - event: push
-    branch: [main, work/jbb/motis2]
+    branch: [main, work/jbb/woodpecker]
     path:
       - 'feeds/*'
       - 'src/*'
@@ -23,7 +23,7 @@ steps:
         from_secret: github_issues_token
     commands:
       - git submodule update --init --checkout --remote
-#      - ./ci/fetch-feeds.py timer
+      - ./ci/fetch-feeds.py timer
   import:
     image: ghcr.io/public-transport/transitous/import:latest
     pull: true
@@ -32,15 +32,15 @@ steps:
       - rm out/data -rf
       - ./src/generate-attribution.py
       - ./src/generate-motis-config.py import
-      - cd out && motis import -c config.yml > motis-import.log && rm motis-import.log && cd ..
+      - cd out && motis import -c config.ini > motis-import.log && rm motis-import.log && cd ..
       - src/generate-motis-config.py full
-  # push:
-  #   image: ghcr.io/public-transport/transitous/import:latest
-  #   environment:
-  #     RSYNC_PRIVATE_KEY:
-  #       from_secret: RSYNC_PRIVATE_KEY
-  #   commands:
-  #     - echo "$${RSYNC_PRIVATE_KEY}" > deploy_key
-  #     - chmod 600 ./deploy_key
-  #     - "rsync -avz --progress --delete -e 'ssh -i ./deploy_key -p 22 -o StrictHostKeyChecking=no' out/ rsync@vm-motis.spline.de:"
-  #     - rm deploy_key
+  push:
+    image: ghcr.io/public-transport/transitous/import:latest
+    environment:
+      RSYNC_PRIVATE_KEY:
+        from_secret: RSYNC_PRIVATE_KEY
+    commands:
+      - echo "$${RSYNC_PRIVATE_KEY}" > deploy_key
+      - chmod 600 ./deploy_key
+      - "rsync -avz --progress --delete -e 'ssh -i ./deploy_key -p 22 -o StrictHostKeyChecking=no' out/ rsync@vm-motis.spline.de:"
+      - rm deploy_key
