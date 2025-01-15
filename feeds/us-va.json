@@ -39,7 +39,8 @@
         {
             "name": "blacksburgtransit",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-dnwg-blacksburgtransit"
+            "transitland-atlas-id": "f-dnwg-blacksburgtransit",
+            "proxy": true
         },
         {
             "name": "blackstone",
@@ -131,7 +132,8 @@
         {
             "name": "loudoun-county",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-loudouncounty~va~us"
+            "transitland-atlas-id": "f-loudouncounty~va~us",
+            "proxy": true
         },
         {
             "name": "districtthree",
