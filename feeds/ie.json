@@ -12,7 +12,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "url": "https://www.transportforireland.ie/transitData/Data/GTFS_All.zip"
+            "url": "https://www.transportforireland.ie/transitData/Data/GTFS_All.zip",
+            "fix": true
         }
     ]
 }
