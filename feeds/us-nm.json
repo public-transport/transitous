@@ -9,7 +9,8 @@
         {
             "name": "abq",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-9whp-abqride"
+            "transitland-atlas-id": "f-9whp-abqride",
+            "proxy": true
         },
         {
             "name": "abq",
