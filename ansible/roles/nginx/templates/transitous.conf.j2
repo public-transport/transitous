@@ -52,7 +52,7 @@ server {
     }
 
     # Proxy and cache tiles
-    location /tiles {
+    location /tiles/ {
         proxy_pass http://crunchy:8080/tiles/;
 
         proxy_cache            motis;
