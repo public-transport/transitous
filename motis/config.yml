@@ -8,10 +8,10 @@ server:
   web_folder: ""
 
 street_routing: true
-osr_footpath: true
+osr_footpath: false
 elevators: false
 geocoding: true
-reverse_geocoding: true
+reverse_geocoding: false
 
 osm: planet-latest.osm.pbf
 
