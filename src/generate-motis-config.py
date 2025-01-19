@@ -38,10 +38,6 @@ if __name__ == "__main__":
         )
 
         if flavour == "import":
-            config["street_routing"] = False
-            config["osr_footpath"] = False
-            config["geocoding"] = True
-            config["reverse_geocoding"] = True
             config.pop("tiles")
 
         config["timetable"].yaml_set_comment_before_after_key(
