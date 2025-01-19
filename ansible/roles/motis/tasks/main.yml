@@ -6,10 +6,15 @@
   user:
     name: motis
 
+- name: Create MOTIS directory
+  file:
+    path: /opt/motis/
+    state: directory
+
 - name: Unpack MOTIS
   unarchive:
-    src: https://github.com/jbruechert/motis/releases/download/v0.12.17.1/motis-linux-amd64.tar.bz2
-    dest: /opt/
+    src: https://github.com/public-transport/transitous/releases/download/motis-v2.0.10/motis-v2.0.10.tar.bz2
+    dest: /opt/motis/
     remote_src: yes
 
 - name: Create MOTIS runtime directory

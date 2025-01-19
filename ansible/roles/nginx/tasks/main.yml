@@ -2,14 +2,22 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
+- name: Create motis directory
+  file:
+    path: /opt/motis/
+    state: directory
+
+- name: Unpack MOTIS (frontend)
+  unarchive:
+    src: https://github.com/public-transport/transitous/releases/download/motis-v2.0.10/motis-v2.0.10.tar.bz2
+    dest: /opt/motis/
+    remote_src: yes
+
 - name: Install nginx
   apt:
-    name: nginx
-
-- name: Make sure nginx is running
-  systemd:
-    name: nginx.service
-    state: started
+    name:
+     - nginx
+     - certbot
 
 - name: Create nginx cache directory
   file:
@@ -41,3 +49,16 @@
   systemd:
     name: nginx.service
     state: reloaded
+
+# For now, initial certificate generation is not handled, run `certbot certonly --noninteractive --agree-tos --standalone --email "root@vm-motis-proxy.spline.de" --domains api.transitous.org --dry-run`
+# `certbot certonly --noninteractive --agree-tos --webroot --email "root@vm-motis-proxy.spline.de" --domains api.transitous.org -w /var/www/html --force-renewal` once nginx is running
+- name: Enable certbot auto-renewal
+  systemd:
+    name: certbot.timer
+    state: started
+    enabled: true
+
+- name: Make sure nginx is running
+  systemd:
+    name: nginx.service
+    state: started

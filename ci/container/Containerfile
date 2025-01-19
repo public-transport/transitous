@@ -7,13 +7,14 @@ RUN GOPROXY=direct GOBIN=/usr/local/bin/ go install github.com/public-transport/
 
 FROM docker.io/debian:bookworm-slim
 
-ARG MOTIS_VERSION=v0.12.17.1
+ARG MOTIS_VERSION=v2.0.10
 
 RUN apt-get update -y && \
-    apt-get install -y --no-install-recommends git python3-requests python3-jinja2 python3-pycountry wget bzip2 rsync openssh-client && \
+    apt-get install -y --no-install-recommends git python3-requests python3-pycountry wget bzip2 rsync openssh-client python3-ruamel.yaml && \
     apt-get clean -y && \
     rm -rf /var/lib/apt/lists/* 
 
 COPY --from=build /usr/local/bin/gtfsclean /usr/local/bin/gtfsclean
-RUN wget -qO - https://github.com/jbruechert/motis/releases/download/${MOTIS_VERSION}/motis-linux-amd64.tar.bz2 | tar -C /opt/ -jx
+RUN mkdir -p /opt/motis/ && \
+    wget -qO - https://github.com/motis-project/motis/releases/download/${MOTIS_VERSION}/motis-linux-amd64.tar.bz2 | tar -C /opt/motis/ -jx
 ENV PATH=/opt/motis:$PATH
