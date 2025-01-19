@@ -43,7 +43,6 @@ if __name__ == "__main__":
             config["geocoding"] = True
             config["reverse_geocoding"] = True
             config.pop("tiles")
-            config.pop("osm")
 
         config["timetable"].yaml_set_comment_before_after_key(
             "datasets", before="Modified by generate-motis-config.py"

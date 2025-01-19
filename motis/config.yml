@@ -13,7 +13,7 @@ elevators: false
 geocoding: true
 reverse_geocoding: true
 
-osm: planet-latest.osm
+osm: planet-latest.osm.pbf
 
 tiles:
   profile: /opt/motis/tiles-profiles/full.lua
