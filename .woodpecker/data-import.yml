@@ -23,7 +23,7 @@ steps:
         from_secret: github_issues_token
     commands:
       - git submodule update --init --checkout --remote
-      - ./ci/fetch-feeds.py timer
+#      - ./ci/fetch-feeds.py timer
   import:
     image: ghcr.io/public-transport/transitous/import:latest
     pull: true
