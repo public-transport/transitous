@@ -7,8 +7,8 @@ server:
   port: 8080
   web_folder: ""
 
-street_routing: true
-osr_footpath: true
+street_routing: false
+osr_footpath: false
 elevators: false
 geocoding: true
 reverse_geocoding: true
