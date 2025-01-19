@@ -42,5 +42,6 @@ steps:
     commands:
       - echo "$${RSYNC_PRIVATE_KEY}" > deploy_key
       - chmod 600 ./deploy_key
-      - "rsync -avz --progress --delete -e 'ssh -i ./deploy_key -p 22 -o StrictHostKeyChecking=no' out/ rsync@vm-motis.spline.de:"
+      - "rsync -avz --progress --delete -e 'ssh -i ./deploy_key -p 2222 -o StrictHostKeyChecking=no' out/data/*.bin rsync@crunchy.spline.de:data/"
+      - "rsync -avz --progress --delete -e 'ssh -i ./deploy_key -p 2222 -o StrictHostKeyChecking=no' out/config.yml rsync@crunchy.spline.de:data/"
       - rm deploy_key
