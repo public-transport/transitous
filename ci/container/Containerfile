@@ -7,7 +7,7 @@ RUN GOPROXY=direct GOBIN=/usr/local/bin/ go install github.com/public-transport/
 
 FROM docker.io/debian:bookworm-slim
 
-ARG MOTIS_VERSION=v2.0.10
+ARG MOTIS_VERSION=v2.0.12
 
 RUN apt-get update -y && \
     apt-get install -y --no-install-recommends git python3-requests python3-pycountry wget bzip2 rsync openssh-client python3-ruamel.yaml && \
