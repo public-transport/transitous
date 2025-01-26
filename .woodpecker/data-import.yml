@@ -23,7 +23,7 @@ steps:
         from_secret: github_issues_token
     commands:
       - git submodule update --init --checkout --remote
-#      - ./ci/fetch-feeds.py timer
+      - ./ci/fetch-feeds.py timer
   import:
     image: ghcr.io/public-transport/transitous/import:latest
     pull: true
@@ -31,6 +31,9 @@ steps:
       - motis --version
       - ./src/generate-attribution.py
       - ./src/generate-motis-config.py import
+      # Remove files that we want to regenerate
+      - rm data/meta/{adr_extend.json,tt.json,matches.json,osr_footpath.json} data/shape*
+      # Start import
       - cd out && motis import -c config.yml > motis-import.log && rm motis-import.log && cd ..
       - src/generate-motis-config.py full
   push:
@@ -41,6 +44,6 @@ steps:
     commands:
       - echo "$${RSYNC_PRIVATE_KEY}" > deploy_key
       - chmod 600 ./deploy_key
-      - "rsync -avz --progress -e 'ssh -i ./deploy_key -p 2222 -o StrictHostKeyChecking=no' out/data/*.bin out/data/adr rsync@crunchy.spline.de:data/"
+      - "rsync -avz --progress -e 'ssh -i ./deploy_key -p 2222 -o StrictHostKeyChecking=no' out/meta out/data/*.bin out/data/adr rsync@crunchy.spline.de:data/"
       - "rsync -avz --progress -e 'ssh -i ./deploy_key -p 2222 -o StrictHostKeyChecking=no' out/config.yml rsync@crunchy.spline.de:data/"
       - rm deploy_key
