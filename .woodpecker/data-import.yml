@@ -30,20 +30,11 @@ steps:
     commands:
       - motis --version
       - ./src/generate-attribution.py
+      - touch .import-running
       - ./src/generate-motis-config.py import
       # Remove files that we want to regenerate
       - bash -c "rm -f out/data/meta/{adr_extend.json,tt.json,matches.json,osr_footpath.json} out/data/shape*"
       # Start import
       - cd out && motis import -c config.yml > motis-import.log && rm motis-import.log && cd ..
       - src/generate-motis-config.py full
-  push:
-    image: ghcr.io/public-transport/transitous/import:latest
-    environment:
-      RSYNC_PRIVATE_KEY:
-        from_secret: RSYNC_PRIVATE_KEY
-    commands:
-      - echo "$${RSYNC_PRIVATE_KEY}" > deploy_key
-      - chmod 600 ./deploy_key
-      - "rsync -avz --progress -e 'ssh -i ./deploy_key -p 2222 -o StrictHostKeyChecking=no' out/meta out/data/*.bin out/data/adr rsync@crunchy.spline.de:data/"
-      - "rsync -avz --progress -e 'ssh -i ./deploy_key -p 2222 -o StrictHostKeyChecking=no' out/config.yml rsync@crunchy.spline.de:data/"
-      - rm deploy_key
+      - rm .import-running

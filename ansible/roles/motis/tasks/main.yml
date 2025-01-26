@@ -36,3 +36,33 @@
     state: started
     masked: false
     daemon_reload: true
+
+- name: Install motis-update-feeds script
+  copy:
+    src: motis-update-feeds.sh
+    dest: /usr/local/bin/motis-update-feeds
+    mode: '0755'
+
+- name: Install motis-update-feeds
+  copy:
+    src: "{{ item }}"
+    dest: /etc/systemd/system/
+    mode: '644'
+  with_items:
+    - motis-update-feeds.service
+    - motis-update-feeds.timer
+
+- name: Enable motis-update-feeds service
+  systemd:
+    name: motis-update-feeds.service
+    enabled: true
+    masked: false
+    daemon_reload: true
+
+- name: Enable motis-update-feeds timer
+  systemd:
+    name: motis-update-feeds.timer
+    enabled: true
+    masked: false
+    daemon_reload: true
+    state: started
