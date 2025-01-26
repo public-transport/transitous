@@ -32,7 +32,7 @@ steps:
       - ./src/generate-attribution.py
       - ./src/generate-motis-config.py import
       # Remove files that we want to regenerate
-      - rm out/data/meta/{adr_extend.json,tt.json,matches.json,osr_footpath.json} out/data/shape*
+      - bash -c "rm -f out/data/meta/{adr_extend.json,tt.json,matches.json,osr_footpath.json} out/data/shape*"
       # Start import
       - cd out && motis import -c config.yml > motis-import.log && rm motis-import.log && cd ..
       - src/generate-motis-config.py full
