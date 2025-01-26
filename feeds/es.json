@@ -463,6 +463,8 @@
             "type": "http",
             "url": "https://nap.transportes.gob.es/api/Fichero/download/1097",
             "fix": true,
+            "skip": true,
+            "skip-reason": "Frequencies are unrealistically small (7 seconds), creating a number of trips that MOTIS can't possibly handle any more",
             "http-options": {
                 "fetch-interval-days": 1,
                 "headers": {
