@@ -6,6 +6,23 @@
   apt:
     name: docker.io
 
+- name: Create limited slice for docker
+  copy:
+    src: docker_limit.slice
+    dest: /etc/systemd/system/docker_limit.slice
+
+- name: Enable limited docker slice
+  systemd:
+    name: docker_limit.slice
+    enabled: true
+    state: started
+    daemon_reload: true
+
+- name: Create docker daemon.json
+  copy:
+    src: daemon.json
+    dest: /etc/docker/daemon.json
+
 - name: Enable docker service
   systemd:
     name: docker
@@ -18,7 +35,6 @@
     src: https://github.com/woodpecker-ci/woodpecker/releases/download/v3.0.0/woodpecker-agent_linux_amd64.tar.gz
     remote_src: true
     dest: /usr/local/bin/
-
 
 - name: Create woodpecker-agent user
   user:

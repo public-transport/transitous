@@ -1,0 +1,19 @@
+# SPDX-FileCopyrightText: 2025 Jonah Brüchert <jbb@kaidan.im>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+[Unit]
+Description=Slice that limits docker resources
+Before=slices.target
+
+[Slice]
+CPUAccounting=true
+CPUQuota=4000%
+AllowedCPUs=40-79
+
+MemoryAccounting=true
+MemoryLimit=100G
+
+IOAccounting=true
+IOReadBandwidthMax=
+IOWriteBandwidthMax=

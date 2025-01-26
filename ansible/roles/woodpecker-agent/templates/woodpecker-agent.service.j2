@@ -7,7 +7,7 @@ Description=Woodpecker CI Agent
 After=network.target
 
 [Service]
-Environment="WOODPECKER_SERVER=localhost:9000"
+Environment="WOODPECKER_SERVER=vm-motis-import.spline.de:9000"
 Environment="WOODPECKER_AGENT_SECRET={{ transitous_woodpecker_agent_secret }}"
 Environment="WOODPECKER_MAX_WORKFLOWS=1"
 Environment="WOODPECKER_BACKEND_DOCKER_VOLUMES=/var/cache/transitous/downloads/:/woodpecker/src/github.com/public-transport/transitous/downloads/,/var/cache/transitous/out/:/woodpecker/src/github.com/public-transport/transitous/out/"
