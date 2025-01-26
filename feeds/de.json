@@ -54,6 +54,9 @@
             "name": "VBN",
             "type": "http",
             "url": "https://www.connect-info.net/opendata/gtfs/connect-nds-lowlevel/eyqasqtsse",
+            "http-options": {
+                "fetch-interval-days": 1
+            },
             "license": {
                 "spdx-identifier": "CC-BY-SA-4.0"
             }
