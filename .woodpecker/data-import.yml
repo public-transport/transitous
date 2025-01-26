@@ -26,6 +26,9 @@ steps:
       - ./ci/fetch-feeds.py timer
   import:
     image: ghcr.io/public-transport/transitous/import:latest
+    when:
+      - event: cron
+        cron: daily-import
     pull: true
     commands:
       - motis --version
