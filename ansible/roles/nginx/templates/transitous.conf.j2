@@ -5,6 +5,9 @@
 # Limit for routing requests
 limit_req_zone $binary_remote_addr zone=api_plan:10m rate=20r/m;
 
+# Limit for geocoding
+limit_req_zone $binary_remote_addr zone=api_geocode:10m rate=200r/m;
+
 # General limit
 limit_req_zone $binary_remote_addr zone=api:10m rate=42r/s;
 
@@ -65,7 +68,18 @@ server {
     location /api/v1/plan {
         proxy_pass http://crunchy:8080/api/v1/plan/;
 
-        limit_req zone=api_plan;
+        limit_req zone=api_plan burst=10;
+
+        proxy_connect_timeout       60;
+        proxy_send_timeout          60;
+        proxy_read_timeout          120;
+        send_timeout                60;
+    }
+
+    location /api/v1/geocode {
+        proxy_pass http://crunchy:8080/api/v1/geocode/;
+
+        limit_req zone=api_geocode burst=10;
 
         proxy_connect_timeout       60;
         proxy_send_timeout          60;
