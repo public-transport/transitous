@@ -15,7 +15,9 @@ if [ -f /var/cache/transitous/out/.import-running ]; then
     exit 0
 fi
 
-rsync -a --progress -r /var/cache/transitous/out /var/lib/motis/
+cp -r -u --reflink=auto /var/cache/transitous/out/data /var/lib/motis/
+cp -r -u --reflink=auto /var/cache/transitous/out/config.yml /var/lib/motis/data/config.yml
+chown -R motis:motis /var/lib/motis/data/
 
 echo "Restarting MOTIS…"
 systemctl --no-ask-password restart motis.service
