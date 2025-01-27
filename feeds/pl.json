@@ -124,6 +124,16 @@
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u3k4-miejskieprzedsiębiorstwokomunikacyjnespzoowpoznaniu~kórni",
             "fix": true
+        },
+        {
+            "name": "Szczecin",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u36r-zditmszczecin"
+        },
+        {
+            "name": "Szczecin",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u36r-zditmszczecin~rt"
         }
     ]
 }
