@@ -3,59 +3,239 @@
         {
             "name": "Marcus Lundblad",
             "github": "mlundblad"
+        },
+        {
+            "name": "Adam C",
+            "github": "cheeseandcereal"
         }
     ],
     "sources": [
         {
-             "name": "Metro-Transit",
-             "type": "transitland-atlas",
-             "transitland-atlas-id": "f-c23-metrokingcounty"
+            "name": "Metro-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-c23-metrokingcounty"
         },
         {
-             "name": "Sound-Transit",
-             "type": "transitland-atlas",
-             "transitland-atlas-id": "f-c23-soundtransit"
+            "name": "Metro-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-kingcountymetro~rt"
         },
         {
-             "name": "Pierce-Transit",
-             "type": "transitland-atlas",
-             "transitland-atlas-id": "f-c22-piercetransit~soundtransit",
-             "fix": true
+            "name": "Sound-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-c23-soundtransit"
         },
         {
-             "name": "Seattle-Childrens-Hospital-Shuttle",
-             "type": "transitland-atlas",
-             "transitland-atlas-id": "f-c23p1-seattlechildrenshospitalshuttle"
+            "name": "Sound-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-soundtransit~rt"
         },
         {
-             "name": "Everett-Transit",
-             "type": "transitland-atlas",
-             "transitland-atlas-id": "f-c290-everetttransit"
+            "name": "Pierce-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-c22-piercetransit~soundtransit",
+            "fix": true
         },
         {
-             "name": "Kitsap-Transit",
-             "type": "transitland-atlas",
-             "transitland-atlas-id": "f-c22y-kitsaptransit"
+            "name": "Pierce-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-piercetransit~rt"
         },
         {
-             "name": "Washington-State-Ferries",
-             "type": "transitland-atlas",
-             "transitland-atlas-id": "f-c28-washingtonstateferries"
+            "name": "Seattle-Childrens-Hospital-Shuttle",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-c23p1-seattlechildrenshospitalshuttle"
         },
         {
-             "name": "Appleline-Goldline-Dungenessline-Grapeline",
-             "type": "transitland-atlas",
-             "transitland-atlas-id": "f-c2-appleline~goldline~dungenessline~grapeline"
+            "name": "Everett-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-c290-everetttransit"
         },
         {
-             "name": "TheVictoriaClipper",
-             "type": "transitland-atlas",
-             "transitland-atlas-id": "f-c28-thevictoriaclipper"
+            "name": "Everett-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-everetttransit~rt"
         },
         {
-             "name": "Microsoft-Shuttles",
-             "type": "transitland-atlas",
-             "transitland-atlas-id": "f-c23n-microsoftshuttles"
+            "name": "Kitsap-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-c22y-kitsaptransit"
+        },
+        {
+            "name": "Washington-State-Ferries",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-c28-washingtonstateferries"
+        },
+        {
+            "name": "Washington-State-Ferries",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-wsf~rt"
+        },
+        {
+            "name": "Appleline-Goldline-Dungenessline-Grapeline",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-c2-appleline~goldline~dungenessline~grapeline"
+        },
+        {
+            "name": "TheVictoriaClipper",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-c28-thevictoriaclipper"
+        },
+        {
+            "name": "Microsoft-Shuttles",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-c23n-microsoftshuttles"
+        },
+        {
+            "name": "Community-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-c29-communitytransit"
+        },
+        {
+            "name": "Community-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-c29-communitytransit~rt"
+        },
+        {
+            "name": "Ben-Franklin-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-c25p-benfranklintransit"
+        },
+        {
+            "name": "Ben-Franklin-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-c25p-benfranklintransit~rt"
+        },
+        {
+            "name": "Clallam-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-c28-clallamtransitsystem"
+        },
+        {
+            "name": "Grant-Transit-Authority",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-granttransit~wa~us"
+        },
+        {
+            "name": "Intercity-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-c22e-intercitytransit"
+        },
+        {
+            "name": "Intercity-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-intercitytransit~rt"
+        },
+        {
+            "name": "Island-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-c28-islandtransit"
+        },
+        {
+            "name": "Jefferson-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-c28-jeffersontransitauthority"
+        },
+        {
+            "name": "Link-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-c26-linktransit~wa~us"
+        },
+        {
+            "name": "Link-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-c26-linktransit~wa~us~rt"
+        },
+        {
+            "name": "Mason-Transit-Authority",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-c22-mason~wa~us"
+        },
+        {
+            "name": "Pacific-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-c0r-pacifictransit"
+        },
+        {
+            "name": "RiverCities-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-c20w-rivercitiestransit~wa~us"
+        },
+        {
+            "name": "Skagit-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-skagit~wa~us"
+        },
+        {
+            "name": "Skagit-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-skagit~wa~us~rt"
+        },
+        {
+            "name": "Spokane-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-c2kx-spokanetransitauthority"
+        },
+        {
+            "name": "Spokane-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-spokanetransitauthority~rt"
+        },
+        {
+            "name": "Valley-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-c25y-valleytransit"
+        },
+        {
+            "name": "Valley-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-c25y-valleytransit~rt"
+        },
+        {
+            "name": "Whatcom-Transporation-Authority",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-c28-whatcomtransportationauthority"
+        },
+        {
+            "name": "Whatcom-Transporation-Authority",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-whatcomtransportationauthority~rt"
+        },
+        {
+            "name": "Pullman-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-pullman~transit~wa~us",
+            "fix": true
+        },
+        {
+            "name": "Pullman-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-pullman~transit~wa~us~rt"
+        },
+        {
+            "name": "Selah-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-c263-selah~wa~us"
+        },
+        {
+            "name": "Union-Gap-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-c262f-uniongaptransit"
+        },
+        {
+            "name": "Yakima-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-c26-yakimatransit"
+        },
+        {
+            "name": "Grays-Harbor-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-c22-graysharbortransit"
+        },
+        {
+            "name": "Asotin-County-PTBA",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-asotincounty~wa~us"
         }
     ]
 }
