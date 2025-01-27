@@ -16,7 +16,7 @@ if [ -f /var/cache/transitous/out/.import-running ]; then
 fi
 
 cp -r -u --reflink=auto /var/cache/transitous/out/data /var/lib/motis/
-cp -r -u --reflink=auto /var/cache/transitous/out/config.yml /var/lib/motis/data/config.yml
+cp --reflink=auto /var/cache/transitous/out/config.yml /var/lib/motis/data/config.yml
 chown -R motis:motis /var/lib/motis/data/
 
 echo "Restarting MOTIS…"
