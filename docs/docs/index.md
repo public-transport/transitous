@@ -215,15 +215,17 @@ Enter the container:
 podman run -it -p 8080:8080 -v $PWD:/transitous:Z --userns=keep-id -w /transitous transitous
 ```
 
-Now inside the container, you can download and post-process all the feeds. This may take a while.
+Now inside the container, you can download and post-process the feeds you want.
 
 ```bash
-./ci/fetch-feeds.py timer
+./src/fetch.py feeds/<region>.json
 ```
+
+If you want to download all of them instead, you can use `mkdir -p out && cd out && wget --mirror -l 1 --no-parent --no-directories --accept zip https://routing.spline.de/gtfs/` to download the postprocessed files from the Transitous server, or `./ci/fetch-feeds.py timer` to process them yourself. However, importing all feeds will take about half an hour even on powerful hardware.
 
 The `out/` directory should now contain a number of zip files.
 
-In addition to those, you also need a background map. Importing all of europe would take too long,
+In addition to those, you also need a background map. Importing the entire planet would take too long,
 so for now, use a smaller region.
 You can find working map pbf downloads at [Geofabrik](https://download.geofabrik.de/).
 You can click on the region names to find downloads for smaller subregions.
@@ -232,7 +234,6 @@ Then download the chosen region:
 
 ```bash
 wget https://download.geofabrik.de/europe/germany/berlin-latest.osm.pbf -P out
-wget https://osmdata.openstreetmap.de/download/land-polygons-complete-4326.zip -P out
 ```
 
 In order to start motis, we need a config file listing all the feeds we want to use.
@@ -243,14 +244,17 @@ You can generate one using our script:
 ```
 
 The generated config file still needs a small adjustment.
-Edit the line in `out/config.ini` that starts with `paths=osm` to point to your map.
+Edit the line in `out/config.yml` that starts with `osm:` to point to your map, and remove the `coastline` option in `tiles`.
 
-You can then go to the `out` directory, and start motis:
+If you did not download all feeds, you also need to remove every feed that you did not download.
+Thanks to the region code prefix, the part you want to keep should be easy to find.
+
+You can then go to the `out` directory, import everything and start motis:
 
 ```bash
 cd out
-motis -c config.ini --server.host 0.0.0.0 --server.static_path /opt/motis/web
+motis import
+motis server
 ```
 
-The first start will take a while, as it imports all the maps and feeds.
 Once it's done, the motis web interface should be reachable on [localhost:8080](http://localhost:8080).
