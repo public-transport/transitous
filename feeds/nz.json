@@ -65,6 +65,11 @@
             "name": "Baybus",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-boprc~nz"
+        },
+        {
+            "name": "Horizons-Regional-Council",
+            "type": "http",
+            "url": "https://www.horizons.govt.nz/HRC/media/Data/files/tranzit/HRC_GTFS_Production.zip"
         }
     ]
 }
