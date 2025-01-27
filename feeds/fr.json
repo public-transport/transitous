@@ -1243,7 +1243,7 @@
         {
             "name": "export-quotidien-au-format-gtfs-du-reseau-de-transport-lignes-d-azur",
             "type": "http",
-            "url": "http://opendata.nicecotedazur.org/data/storage/f/gtfs1737850501/GTFSExport.zip",
+            "url": "http://opendata.nicecotedazur.org/data/storage/f/gtfs1737936901/GTFSExport.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/export-quotidien-au-format-gtfs-du-reseau-de-transport-lignes-d-azur"
@@ -3561,16 +3561,7 @@
             "spec": "gtfs-rt"
         },
         {
-            "name": "reseau-de-transport-transcove-de-la-communaute-dagglomeration-ventoux-comtat-venaissin--82306",
-            "type": "http",
-            "url": "https://www.datasud.fr/fr/dataset/datasets/2268/resource/5497/download/",
-            "fix": true,
-            "license": {
-                "url": "https://transport.data.gouv.fr/datasets/reseau-de-transport-transcove-de-la-communaute-dagglomeration-ventoux-comtat-venaissin"
-            }
-        },
-        {
-            "name": "reseau-de-transport-transcove-de-la-communaute-dagglomeration-ventoux-comtat-venaissin--82728",
+            "name": "reseau-de-transport-transcove-de-la-communaute-dagglomeration-ventoux-comtat-venaissin",
             "type": "http",
             "url": "https://www.datasud.fr/fr/dataset/datasets/2268/resource/5566/download/",
             "fix": true,
@@ -4804,6 +4795,15 @@
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/saonibus-horaires-theoriques-et-temps-reel-du-reseau-de-transport-urbain-de-la-cc-dsv"
             }
+        },
+        {
+            "name": "saonibus-horaires-theoriques-et-temps-reel-du-reseau-de-transport-urbain-de-la-cc-dsv",
+            "type": "url",
+            "url": "https://api.mlt4.cityway.fr/dataflow/horaire-tr/download?provider=CCDSV&dataFormat=GTFS-RT&dataProfil=OPENDATA",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/saonibus-horaires-theoriques-et-temps-reel-du-reseau-de-transport-urbain-de-la-cc-dsv"
+            },
+            "spec": "gtfs-rt"
         },
         {
             "name": "reseau-urbain-le-vib",

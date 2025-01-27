@@ -102,7 +102,9 @@ if __name__ == "__main__":
         # Very invalid calendar_dates.txt
         "81648", "81649",
         # Remove old unavailable feed
-        "81906"
+        "81906",
+        # Unavailable
+        "82306"
     ]
 
     # Map for each dataset slug, if needed, the selected GTFS-RT id to the corresponding GTFS id
