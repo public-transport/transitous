@@ -246,15 +246,6 @@ if __name__ == "__main__":
                 )
                 continue
 
-    # This is an aggregated and improved feed that we want to keep
-    out.append(
-        {
-            "name": "Brittany",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-gbwc-mobibreizh",
-            "fix": True,
-        }
-    )
 
     with open("feeds/fr.json", "r") as f:
         region = json.load(f)
