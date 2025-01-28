@@ -69,6 +69,15 @@
             "license": {
                 "spdx-identifier": "CC-BY-SA-4.0"
             }
+        },
+        {
+            "name": "AVV-Aachen",
+            "type": "http",
+            "url": "https://opendata.avv.de/current_GTFS/AVV_GTFS_Masten_ohne_SPNV_GlobaleID_oFremd.zip",
+            "license": {
+                "spdx-identifier": "ODbL-1.0",
+                "url": "https://opendata.avv.de/current_GTFS/lizenz_und_readme.txt"
+            }
         }
     ]
 }
