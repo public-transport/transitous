@@ -7,6 +7,10 @@
         {
             "name": "Wojciech Kulesza",
             "github": "wkulesza"
+        },
+        {
+            "name": "Grzegorz M",
+            "github": "grzesjam"
         }
     ],
     "sources": [
@@ -134,6 +138,26 @@
             "name": "Szczecin",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u36r-zditmszczecin~rt"
+        },
+        {
+            "name": "TransportGZM",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://github.com/TransportGZM-GTFS-mirror/TransportGZM-GTFS-normal/releases/latest/download/TransportGZM-GTFS.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0",
+                "url": "https://spdx.org/licenses/CC-BY-4.0.html"
+            }
+        },
+        {
+            "name": "TransportGZM",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://gtfsrt.transportgzm.pl:5443/gtfsrt/gzm/tripUpdates",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0",
+                "url": "https://spdx.org/licenses/CC-BY-4.0.html"
+            }
         }
     ]
 }
