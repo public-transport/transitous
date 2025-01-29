@@ -29,7 +29,8 @@
         {
             "name": "WVU-PRT",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-west~virginia~university"
+            "transitland-atlas-id": "f-west~virginia~university",
+            "url-override": "https://prt.wvu.edu/files/d/fcc4abeb-9e23-477b-b648-30623cb8ad80/gtfs-3.zip"
         }
     ]
 }
