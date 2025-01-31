@@ -129,6 +129,14 @@
             "proxy": true
         },
         {
+            "name": "Piemonte-Treni-Regionali",
+            "type": "http",
+            "url": "https://api.smartdatanet.it/api/ServizioProgrammatoDelTrasportoPubblicoRegionePiemonteTreniRegionali_5188/attachment/5187/1/GTFS_RAIL_IT_PIE.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            },
+        },
+        {
             "name": "Puglia-Bari",
             "type": "http",
             "url": "http://www.amtabservizio.it/gtfs/google_transit.zip",
