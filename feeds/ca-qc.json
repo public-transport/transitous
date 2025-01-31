@@ -13,7 +13,8 @@
         {
             "name": "STM",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-f25d-socitdetransportdemontral"
+            "transitland-atlas-id": "f-f25d-socitdetransportdemontral",
+            "proxy": true
         },
         {
             "name": "STM",
