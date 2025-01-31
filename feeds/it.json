@@ -75,7 +75,7 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "url": "https://usbshare.agenziatpl.it/index.php/s/6QmAWaKnWNfD3JP/download/2024-12-19_Movibus.zip"
+            "url": "https://usbshare.agenziatpl.it/index.php/s/awfA3t8jy3D46dM/download/2025-01-17_Movibus.zip"
         },
         {
             "name": "Lombardia-NET",
@@ -134,7 +134,8 @@
             "url": "https://api.smartdatanet.it/api/ServizioProgrammatoDelTrasportoPubblicoRegionePiemonteTreniRegionali_5188/attachment/5187/1/GTFS_RAIL_IT_PIE.zip",
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
-            }
+            },
+            "proxy": true
         },
         {
             "name": "Puglia-Bari",
