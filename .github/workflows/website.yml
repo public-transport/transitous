@@ -30,7 +30,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: 0.136.5
+      HUGO_VERSION: 0.143.0
     steps:
       - name: Install Hugo CLI
         run: |
