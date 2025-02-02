@@ -63,7 +63,7 @@ jobs:
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
         run: |
-          wget https://routing.spline.de/gtfs/license.json -O website/data/license.json
+          wget https://api.transitous.org/gtfs/license.json -O website/data/license.json
           cd website && npm run release
 
       - name: Upload artifact

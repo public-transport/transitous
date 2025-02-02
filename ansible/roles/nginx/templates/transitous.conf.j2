@@ -101,6 +101,6 @@ server {
 
     # Source files
     location /gtfs/ {
-        return 301 https://routing-import.spline.de$request_uri;
+        proxy_pass http://crunchy:80/;
     }
 }

@@ -11,3 +11,4 @@
   hosts: crunchy
   roles:
     - woodpecker-agent
+    - gtfs-server

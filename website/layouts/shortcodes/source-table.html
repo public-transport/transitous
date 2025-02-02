@@ -82,7 +82,7 @@ summary h2 {
   {{ end }}
 
   <a class="btn btn-outline-secondary" href="{{ $source.source }}">Original File</a>
-  <a class="btn btn-outline-secondary" href="https://routing.spline.de/gtfs/{{ $source.filename }}">Processed File</a>
+  <a class="btn btn-outline-secondary" href="https://api.transitous.org/gtfs/{{ $source.filename }}">Processed File</a>
 
   {{ if or $source.rt_source }}
     <p class="mt-3 fs-6">

@@ -1,0 +1,29 @@
+# SPDX-FileCopyrightText: 2025 Jonah Brüchert <jbb@kaidan.im>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+- name: Install nginx
+  apt:
+    name:
+      - nginx
+
+- name: Install nginx site
+  copy:
+    src: gtfs.conf
+    dest: /etc/nginx/sites-available/
+
+- name: Disable default site configuration
+  file:
+    path: /etc/nginx/sites-enabled/default
+    state: absent
+
+- name: Enable nginx sites
+  file:
+    src: "/etc/nginx/sites-available/gtfs.conf"
+    dest: "/etc/nginx/sites-enabled/gtfs.conf"
+    state: link
+
+- name: Reload nginx
+  systemd:
+    name: nginx.service
+    state: reloaded
