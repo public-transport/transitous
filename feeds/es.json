@@ -460,17 +460,8 @@
         },
         {
             "name": "Autobús-urbano-de-Madrid",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1097",
-            "fix": true,
-            "skip": true,
-            "skip-reason": "Frequencies are unrealistically small (7 seconds), creating a number of trips that MOTIS can't possibly handle any more",
-            "http-options": {
-                "fetch-interval-days": 1,
-                "headers": {
-                    "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
-                }
-            }
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-ezjm-empresamunicipaldetransportes"
         },
         {
             "name": "Autobús-urbano-de-Madrid-(CRTM)",
