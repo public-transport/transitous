@@ -151,7 +151,7 @@
             "name": "Elkgrove",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-9qcd-etranelkgrove",
-            "fix": true
+            "url-override": "https://iportal.sacrt.com/gtfs/eg/google_transit.zip"
         },
         {
             "name": "Elkgrove",
