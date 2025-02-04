@@ -19,4 +19,4 @@ theme = "ananke"
 [menus]
   [[menus.main]]
     name = "Status"
-    url = "https://uptime.ghsq.de/status/transitous"
+    url = "https://spline-status.de/status/transitous"
