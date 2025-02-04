@@ -49,6 +49,11 @@ server {
 
     charset UTF-8;
 
+    # For certbot
+    location ^~ /.well-known/acme-challenge/ {
+        root /var/www/html/;
+    }
+
     # MOTIS Web Interface
     location / {
         root /opt/motis/ui/;
