@@ -36,12 +36,10 @@ summary h2 {
   {{ if or $source.license_url $source.spdx_license_identifier }}
     under
     {{ if $source.license_url }}
-    <a href="{{ .license_url }}">
+    <a href="{{ .license_url }}">these conditions</a>
     {{ else }}
-    <a href="https://spdx.org/licenses/{{ .spdx_license_identifier }}.html">
+    <a href="https://spdx.org/licenses/{{ .spdx_license_identifier }}.html">{{ .spdx_license_identifier }}</a>
     {{ end }}
-
-    these conditions</a>
   {{ end }}
 
   for the following operators:
@@ -90,11 +88,10 @@ summary h2 {
     {{- if or $source.rt_license_url $source.rt_spdx_license_identifier }}
       under
       {{ if $source.rt_license_url }}
-      <a href="{{ .rt_license_url }}">
+      <a href="{{ .rt_license_url }}">these conditions</a>
       {{ else }}
-      <a href="https://spdx.org/licenses/{{ .rt_spdx_license_identifier }}.html">
+      <a href="https://spdx.org/licenses/{{ .rt_spdx_license_identifier }}.html">{{ .rt_spdx_license_identifier }}</a>
       {{ end }}
-      these conditions</a>
     {{- end }}.
     </p>
   {{ end }}
