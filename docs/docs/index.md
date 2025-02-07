@@ -130,7 +130,7 @@ You also need to have [gtfsclean](https://github.com/public-transport/gtfsclean)
 We provide a static build for linux so you don't need to build your own.
 
 ```
-wget -P ~/.local/bin https://github.com/public-transport/gtfsclean/releases/download/snapshot-3/gtfsclean
+wget -P ~/.local/bin https://github.com/public-transport/gtfsclean/releases/download/snapshot-4/gtfsclean
 chmod +x ~/.local/bin/gtfsclean
 ```
 
