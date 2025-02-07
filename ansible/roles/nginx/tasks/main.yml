@@ -29,6 +29,11 @@
     src: nginx.conf
     dest: /etc/nginx/nginx.conf
 
+- name: Install robots.txt
+  copy:
+    src: robots.txt
+    dest: /var/www/html/robots.txt
+
 - name: Install site config
   template:
     src: "transitous.conf.j2"

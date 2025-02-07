@@ -108,4 +108,8 @@ server {
     location /gtfs/ {
         proxy_pass http://crunchy:80/;
     }
+
+    location /robots.txt {
+        alias /var/www/html/robots.txt;
+    }
 }
