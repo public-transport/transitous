@@ -12,7 +12,8 @@
             "transitland-atlas-id": "f-transjakarta~id",
             "http-options": {
                 "ignore-tls-errors": true
-            }
+            },
+            "fix": true
         }
     ]
 }
