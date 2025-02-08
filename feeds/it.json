@@ -303,21 +303,13 @@
         },
         {
             "name": "Veneto-Venezia-Bus",
-            "type": "http",
-            "url": "https://actv.avmspa.it/sites/default/files/attachments/opendata/automobilistico/actv_aut.zip",
-            "license": {
-                "spdx-identifier": "CC-BY-3.0",
-                "url": "https://dati.venezia.it/?q=licenza/cc"
-            }
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u20-actvspa"
         },
         {
             "name": "Veneto-Venezia-Ferries",
-            "type": "http",
-            "url": "https://actv.avmspa.it/sites/default/files/attachments/opendata/navigazione/actv_nav.zip",
-            "license": {
-                "spdx-identifier": "CC-BY-3.0",
-                "url": "https://dati.venezia.it/?q=licenza/cc"
-            }
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u20f-actvspa"
         }
     ]
 }
