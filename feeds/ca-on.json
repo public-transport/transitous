@@ -42,7 +42,8 @@
         {
             "name": "Burlington-Transit",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-dpxq-burlingtontransit"
+            "transitland-atlas-id": "f-dpxq-burlingtontransit",
+            "proxy": true
         },
         {
             "name": "Burlington-Transit",
@@ -247,7 +248,8 @@
         {
             "name": "Quinte-Transit",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-quinte~transit~ca"
+            "transitland-atlas-id": "f-quinte~transit~ca",
+            "proxy": true
         },
         {
             "name": "Railway-City-Transit",
