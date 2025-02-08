@@ -279,14 +279,329 @@
             }
         },
         {
-            "name": "Toscana-Trenitalia",
+            "name": "Toscana-Amitour",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-sp-trenitaliaspa"
+            "transitland-atlas-id": "f-spx-amitour"
+        },
+        {
+            "name": "Toscana-Autolinee-LineeRegionali",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-s-lineeregionali"
+        },
+        {
+            "name": "Toscana-Autolinee-Poggibonsi",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-spx-serviziareapoggibonsi"
+        },
+        {
+            "name": "Toscana-Autolinee-ServiziSostitutiviFerrovie",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-s-servizisostitutiviferro"
+        },
+        {
+            "name": "Toscana-GEST",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-s-gest"
+        },
+        {
+            "name": "Toscana-TFT",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-sr-tft"
         },
         {
             "name": "Toscana-Toremar",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-spx-toremartoscanaregionalemarittimaspa"
+        },
+        {
+            "name": "Toscana-Trenitalia",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-sp-trenitaliaspa"
+        },
+        {
+            "name": "Toscana-Valdarno",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-sr-urbanointercomunalevaldarnoaretino"
+        },
+        {
+            "name": "Toscana-Arezzo-Extraurbano",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-s-extraurbanoarezzo"
+        },
+        {
+            "name": "Toscana-Arezzo-Extraurbano-Casentino-EMG",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-sr-emgextraurbanounionecomunidelcasentino"
+        },
+        {
+            "name": "Toscana-Arezzo-Extraurbano-CivitellaValChiana-EMG",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-sr8-emgextraurbanocivitellainvaldichiana"
+        },
+        {
+            "name": "Toscana-Arezzo-Urbano",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-sr8-urbanoarezzo"
+        },
+        {
+            "name": "Toscana-Grosseto-Extraurbano",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-s-extraurbanogrosseto"
+        },
+        {
+            "name": "Toscana-Grosseto-Urbano",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-spxg-urbanogrosseto"
+        },
+        {
+            "name": "Toscana-Grosseto-Urbano-Follonica",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-spxs-urbanofollonica"
+        },
+        {
+            "name": "Toscana-Firenze-Extraurbano",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-s-extraurbanofirenze"
+        },
+        {
+            "name": "Toscana-Firenze-Extraurbano-AT",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-srb-atnonscolastico"
+        },
+        {
+            "name": "Toscana-Firenze-Extraurbano-AT-Scolatico",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-s-atscolastico"
+        },
+        {
+            "name": "Toscana-Firenze-Extraurbano-Colbus",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-s-colbusnonscolastico"
+        },
+        {
+            "name": "Toscana-Firenze-Extraurbano-Colbus-Scolatico",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-s-colbusscolastico"
+        },
+        {
+            "name": "Toscana-Firenze-Extraurbano-Debole",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-sp-deboleextraurbanocev"
+        },
+        {
+            "name": "Toscana-Firenze-Extraurbano-Empoli",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-sp-extraurbanoempolesevaldelsa"
+        },
+        {
+            "name": "Toscana-Firenze-Urbano",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-s-urbanoareametropolitanafiorentina"
+        },
+        {
+            "name": "Toscana-Firenze-Urbano-Certaldo",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-spxz-urbanocertaldo"
+        },
+        {
+            "name": "Toscana-Firenze-Urbano-Empoli",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-spz-urbanoempoli"
+        },
+        {
+            "name": "Toscana-Firenze-Urbano-Volterra-EMG",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-spxw-emgurbanovolterra"
+        },
+        {
+            "name": "Toscana-Livorno-Extraurbano",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-sp-extraurbanolivorno"
+        },
+        {
+            "name": "Toscana-Livorno-Extraurbano-Debole",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-sp-deboleextraurbanolivorno"
+        },
+        {
+            "name": "Toscana-Livorno-Urbano",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-sp-urbanolivorno"
+        },
+        {
+            "name": "Toscana-Livorno-Urbano-Cecina",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-spx-urbanocecina"
+        },
+        {
+            "name": "Toscana-Livorno-Urbano-Piombino",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-spx-urbanopiombino"
+        },
+        {
+            "name": "Toscana-Livorno-Urbano-Portoferraio",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-spx7-urbanoportoferraio"
+        },
+        {
+            "name": "Toscana-Livorno-Urbano-RosignanoMarittimo",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-spx-urbanorosignanomarittimo"
+        },
+        {
+            "name": "Toscana-Lucca-Extraurbano",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-spz-extraurbanolucca"
+        },
+        {
+            "name": "Toscana-Lucca-Extraurbano-EMG",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-spz-emgextraurbanolucca"
+        },
+        {
+            "name": "Toscana-Lucca-Urbano",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-spz-urbanolucca"
+        },
+        {
+            "name": "Toscana-Lucca-Urbano-Viareggio",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-spz3-urbanoviareggio"
+        },
+        {
+            "name": "Toscana-MassaCarrara-Extraurbano",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-sp-extraurbanomassacarrara"
+        },
+        {
+            "name": "Toscana-MassaCarrara-Extraurbano-EMG",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-sp-emgextraurbanomassacarrara"
+        },
+        {
+            "name": "Toscana-MassaCarrara-Urbano",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-spz4-urbanomassaecarrara"
+        },
+        {
+            "name": "Toscana-MassaCarrara-Urbano-Carrara",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-spz4-urbanocarrara"
+        },
+        {
+            "name": "Toscana-MassaCarrara-Urbano-Massa",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-spz-urbanomassa"
+        },
+        {
+            "name": "Toscana-Pisa-Extraurbano",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-sp-extraurbanopisa"
+        },
+        {
+            "name": "Toscana-Pisa-Extraurbano-EMG",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-sp-emgextraurbanopisa"
+        },
+        {
+            "name": "Toscana-Pisa-Urbano",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-sp-urbanopisa"
+        },
+        {
+            "name": "Toscana-Pisa-Urbano-Debole",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-spz-deboleurbanopisa"
+        },
+        {
+            "name": "Toscana-Pisa-Urbano-Pontedera-EMG",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-spz8-emgurbanopontedera"
+        },
+        {
+            "name": "Toscana-Pisa-Urbano-SanMiniato-EMG",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-spz8-emgurbanosanminiato"
+        },
+        {
+            "name": "Toscana-Pistoia-Extraurbano",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-spz-extraurbanopistoia"
+        },
+        {
+            "name": "Toscana-Pistoia-Extraurbano-Debole",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-spz-deboleextraurbanopistoia"
+        },
+        {
+            "name": "Toscana-Pistoia-Urbano",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-spz-urbanopistoia"
+        },
+        {
+            "name": "Toscana-Pistoia-Urbano-MontecatiniTerme",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-spz9-urbanomontecatiniterme"
+        },
+        {
+            "name": "Toscana-Pistoia-Urbano-Pescia",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-spz9-urbanopescia"
+        },
+        {
+            "name": "Toscana-Prato-Extraurbano",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-spz-extraurbanoprato"
+        },
+        {
+            "name": "Toscana-Prato-Extraurbano-Debole",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-spz-deboleextraurbanoprato"
+        },
+        {
+            "name": "Toscana-Prato-Urbano",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-spzc-urbanoprato"
+        },
+        {
+            "name": "Toscana-Siena-Extraurbano",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-s-extraurbanosiena"
+        },
+        {
+            "name": "Toscana-Siena-Extraurbano-EMG",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-sr8-emgextraurbanosiena"
+        },
+        {
+            "name": "Toscana-Siena-Urbano",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-sr8n-urbanosiena"
+        },
+        {
+            "name": "Toscana-Siena-Urbano-ChiancianoTerme",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-sr8k-urbanochiancianoterme"
+        },
+        {
+            "name": "Toscana-Siena-Urbano-Chiusi",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-sr8-urbanochiusi"
+        },
+        {
+            "name": "Toscana-Siena-Urbano-ColleValDElsa",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-spx-urbanocollevaldelsa"
+        },
+        {
+            "name": "Toscana-Siena-Urbano-Montepulciano",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-sr8m-urbanomontepulciano"
+        },
+        {
+            "name": "Toscana-Siena-Urbano-SanGimignano",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-spx-urbanosangimignano"
         },
         {
             "name": "Trentino-Extraurbano",
