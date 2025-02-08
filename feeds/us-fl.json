@@ -41,15 +41,12 @@
         {
             "name": "tri-rail",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-dhx-tri~rail",
-            "skip": true,
-            "skip-reason": "Getting 404 error"
+            "transitland-atlas-id": "f-dhx-tri~rail"
         },
         {
             "name": "tri-rail",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-dhx-tri~rail~rt",
-            "skip": true
+            "transitland-atlas-id": "f-dhx-tri~rail~rt"
         },
         {
             "name": "sunrail",
