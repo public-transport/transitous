@@ -53,6 +53,21 @@
             "name": "Funchal",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-etgc-hf~urbano~hf~interurbano"
+        },
+        {
+            "name": "Leira-Mobilis",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-ez1-mobilis"
+        },
+        {
+            "name": "CIMRL-Leira",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-ez-cimrl"
+        },
+        {
+            "name": "Meio-MedioTejo",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-e-cimmt"
         }
     ]
 }
