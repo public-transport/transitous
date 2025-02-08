@@ -139,12 +139,7 @@
     {
       "name": "NassauInterCountyExpress",
       "type": "transitland-atlas",
-      "transitland-atlas-id": "f-dr5x-wwwnicebuscom",
-      "http-options": {
-        "ignore-tls-errors": true
-      },
-      "skip": true,
-      "skip-reason": "Getting [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate"
+      "transitland-atlas-id": "f-dr5x-wwwnicebuscom"
     },
     {
       "name": "LongBeach",
