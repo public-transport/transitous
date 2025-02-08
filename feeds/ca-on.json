@@ -42,16 +42,12 @@
         {
             "name": "Burlington-Transit",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-dpxq-burlingtontransit",
-            "skip": true,
-            "skip-reason": "Server is unavailable"
+            "transitland-atlas-id": "f-dpxq-burlingtontransit"
         },
         {
             "name": "Burlington-Transit",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-burt~rt",
-            "skip": true,
-            "skip-reason": "Server is unavailable"
+            "transitland-atlas-id": "f-burt~rt"
         },
         {
             "name": "Chatham-Kent-Transit",
@@ -123,9 +119,7 @@
         {
             "name": "Hamilton-Street-Railway",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-dpxj-hamiltonstreetrailway",
-            "skip": true,
-            "skip-reason": "Server is unavailable"
+            "transitland-atlas-id": "f-dpxj-hamiltonstreetrailway"
         },
         {
             "name": "Kingston-Transit",
@@ -150,16 +144,12 @@
         {
             "name": "London-Transit",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-dpwh-londontransit",
-            "skip": true,
-            "skip-reason": "Server is unavailable"
+            "transitland-atlas-id": "f-dpwh-londontransit"
         },
         {
             "name": "London-Transit",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-dpwh-londontransit~rt",
-            "skip": true,
-            "skip-reason": "Server is unavailable"
+            "transitland-atlas-id": "f-dpwh-londontransit~rt"
         },
         {
             "name": "Middlesex-County-Connect",
@@ -257,9 +247,7 @@
         {
             "name": "Quinte-Transit",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-quinte~transit~ca",
-            "skip": true,
-            "skip-reason": "Internal server error"
+            "transitland-atlas-id": "f-quinte~transit~ca"
         },
         {
             "name": "Railway-City-Transit",
@@ -364,16 +352,12 @@
         {
             "name": "York-Region-Transit",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-dpz-yorkregiontransit",
-            "skip": true,
-            "skip-reason": "Broken TLS setup"
+            "transitland-atlas-id": "f-dpz-yorkregiontransit"
         },
         {
             "name": "York-Region-Transit",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-yrt~rt",
-            "skip": true,
-            "skip-reason": "Broken TLS setup"
+            "transitland-atlas-id": "f-yrt~rt"
         }
     ]
 }
