@@ -20,20 +20,17 @@
         {
             "name": "Emilia-Romagna-TPER-Bologna",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-srb-tperspa~bologna",
-            "proxy": true
+            "transitland-atlas-id": "f-srb-tperspa~bologna"
         },
         {
             "name": "Emilia-Romagna-TPER-Ferrara",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-srb-tperspa~ferrara",
-            "proxy": true
+            "transitland-atlas-id": "f-srb-tperspa~ferrara"
         },
         {
             "name": "Emilia-Romagna-TPER-BLQ-Airport",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-srbj1-tperspa~blq~aeroporto",
-            "proxy": true
+            "transitland-atlas-id": "f-srbj1-tperspa~blq~aeroporto"
         },
         {
             "name": "Lazio-Rome",
