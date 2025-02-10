@@ -110,7 +110,6 @@
             "name": "Piemonte-Bus",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u0j-piemonte~autobus",
-            "proxy": true,
             "fix": true
         },
         {
@@ -122,16 +121,7 @@
         {
             "name": "Piemonte-Trenitalia",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u0j-trenitalia",
-            "proxy": true
-        },
-        {
-            "name": "Piemonte-Treni-Regionali",
-            "type": "http",
-            "url": "https://api.smartdatanet.it/api/ServizioProgrammatoDelTrasportoPubblicoRegionePiemonteTreniRegionali_5188/attachment/5187/1/GTFS_RAIL_IT_PIE.zip",
-            "license": {
-                "spdx-identifier": "CC-BY-4.0"
-            }
+            "transitland-atlas-id": "f-u0j-trenitalia"
         },
         {
             "name": "Puglia-Bari",
