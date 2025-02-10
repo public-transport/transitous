@@ -238,7 +238,7 @@ class Fetcher:
                    "--fix-zip",
                    "--check-null-coords",
                    "--empty-agency-url-repl", "https://transitous.org",
-                   "--remove-red-routes", "--remove-red-services", "--remove-red-stops",
+                   "--remove-red-services",
                    "--output", str(temp_file)]
         if source.fix:
             command.append("--fix")
