@@ -9,8 +9,7 @@
         {
             "name": "Campania-ANM",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-s-anm~it",
-            "proxy": true
+            "transitland-atlas-id": "f-s-anm~it"
         },
         {
             "name": "Campania-EAV",
