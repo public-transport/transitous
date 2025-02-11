@@ -9,7 +9,10 @@
         {
             "name": "Campania-ANM",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-s-anm~it"
+            "transitland-atlas-id": "f-s-anm~it",
+            "http-options": {
+                "fetch-interval-days": 1
+            }
         },
         {
             "name": "Campania-EAV",
