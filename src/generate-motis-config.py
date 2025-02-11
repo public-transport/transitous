@@ -20,6 +20,7 @@ if __name__ == "__main__":
         sys.exit(1)
 
     flavour = sys.argv[1]
+    feed = sys.argv[2] if len(sys.argv) > 2 else ""
 
     feed_dir = Path("feeds/")
 
@@ -45,7 +46,12 @@ if __name__ == "__main__":
         )
         config["timetable"]["datasets"] = {}
 
-        for feed in sorted(feed_dir.glob("*.json")):
+        if feed == "":
+            glob = "*.json"
+        else:
+            glob = f"{feed}.json"
+
+        for feed in sorted(feed_dir.glob(glob)):
             with open(feed, "r") as f:
                 parsed = json.load(f)
                 region = metadata.Region(parsed)
