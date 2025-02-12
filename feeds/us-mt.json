@@ -7,38 +7,38 @@
     ],
     "sources": [
         {
-            "name": "Billings MET Transit",
+            "name": "Billings-MET-Transit",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-billings~mt~us",
             "fix": true
         },
         {
-            "name": "Butte-Silver Bow",
+            "name": "Butte-Silver-Bow",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-butte-silver-bow",
             "fix": true
         },
         {
-            "name": "Capital Transit",
+            "name": "Capital-Transit",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-dpeg-capitaltransit",
             "fix": true
         },
         {
-            "name": "Mountain Line",
+            "name": "Mountain-Line",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-mountain-line",
             "fix": true
 
         },
         {
-            "name": "National Park Service",
+            "name": "National-Park-Service",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-glacier-national-park",
             "fix": true
         },
         {
-            "name": "Park County Transit",
+            "name": "Park-County-Transit",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-park~county~mt~us",
             "fix": true
@@ -50,7 +50,7 @@
             "fix": true
         },
         {
-            "name": "UDASH - University of Montana",
+            "name": "UDASH-University-of-Montana",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-c2qft-udash~mt~us",
             "fix": true
