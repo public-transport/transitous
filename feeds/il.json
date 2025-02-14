@@ -9,7 +9,8 @@
         {
             "name": "busofash",
             "type": "http",
-            "url": "https://transitous.yotam.net/busofash.zip"
+            "url": "https://opendatasource.tel-aviv.gov.il/opendata_ducaments/gtfs.zip",
+            "url-override": "https://transitous.yotam.net/busofash.zip"
         },
         {
             "name": "busofash",
