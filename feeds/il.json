@@ -9,7 +9,7 @@
         {
             "name": "busofash",
             "type": "http",
-            "url": "https://opendatasource.tel-aviv.gov.il/opendata_ducaments/gtfs.zip"
+            "url": "https://transitous.yotam.net/busofash.zip"
         },
         {
             "name": "busofash",
@@ -28,22 +28,16 @@
             "url": "https://gtfs.mot.gov.il/gtfsfiles/israel-public-transportation.zip",
             "http-options": {
                 "headers": {
-                    "user-agent": "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+                    "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.1 Safari/605.1.15"
                 },
                 "ignore-tls-errors": true
             },
-            "fix": true,
-            "skip": true
+            "fix": true
         },
         {
             "name": "Sababus",
             "type": "http",
-            "url": "https://yotam.net/transport/gtfs/sababus.zip",
-            "http-options": {
-                "headers": {
-                    "authorization": "il_4X5R7tClJAK1"
-                }
-            },
+            "url": "https://transitous.yotam.net/sababus.zip",
             "fix": true
         }
     ]
