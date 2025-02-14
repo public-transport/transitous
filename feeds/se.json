@@ -8,8 +8,8 @@
     "sources": [
         {
             "name": "Trafiklab",
-            "type": "http",
-            "url": "https://s3.transitpdf.com/files/uran/improved-gtfs-sverige.zip"
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u-se"
         }
     ]
 }
