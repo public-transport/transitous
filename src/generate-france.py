@@ -118,7 +118,7 @@ if __name__ == "__main__":
             "81806": "81461",
         },
         "versions-des-horaires-theoriques-des-lignes-de-bus-et-de-metro-du-reseau-star-au-format-gtfs": {
-            "82161": "82666",
+            "82161": "82774",
         },
         "horaires-theoriques-et-en-temps-reel-des-bus-et-autocars-circulant-sur-le-reseau-cap-cotentin": {
             "79830": "79831"
@@ -248,6 +248,14 @@ if __name__ == "__main__":
                 )
                 continue
 
+    # TCL(Lyon) official feed not available without API key
+    out.append(
+        {
+            "name": "lyon-tcl",
+            "type": "http",
+            "url": "https://gtech-transit-prod.apigee.net/v1/google/gtfs/odbl/lyon_tcl.zip?apikey=BasyG6OFZXgXnzWdQLTwJFGcGmeOs204&secret=gNo6F5PhQpsGRBCK"
+        }
+    )
 
     with open("feeds/fr.json", "r") as f:
         region = json.load(f)
