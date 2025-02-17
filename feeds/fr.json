@@ -50,6 +50,7 @@
             "type": "http",
             "url": "https://static.data.gouv.fr/resources/navettes-aeroport-paris-beauvais-aerobus/20250212-102506/offre-113-20250212102416z.zip",
             "fix": true,
+            "skip": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/navettes-aeroport-paris-beauvais-aerobus"
             }
@@ -59,6 +60,7 @@
             "type": "http",
             "url": "https://static.data.gouv.fr/resources/navettes-aeroport-paris-beauvais-aerobus/20250212-102458/offre-112-20250212102413z.zip",
             "fix": true,
+            "skip": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/navettes-aeroport-paris-beauvais-aerobus"
             }
@@ -68,6 +70,7 @@
             "type": "http",
             "url": "https://static.data.gouv.fr/resources/navettes-aeroport-paris-beauvais-aerobus/20250212-102446/offre-111-20250212102409z.zip",
             "fix": true,
+            "skip": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/navettes-aeroport-paris-beauvais-aerobus"
             }
@@ -77,6 +80,7 @@
             "type": "http",
             "url": "https://static.data.gouv.fr/resources/navettes-aeroport-paris-beauvais-aerobus/20250212-102426/offre-110-20250212102404z.zip",
             "fix": true,
+            "skip": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/navettes-aeroport-paris-beauvais-aerobus"
             }

@@ -47,6 +47,7 @@ if __name__ == "__main__":
         "gtfs-transport-horaires-des-lignes-de-la-communaute-de-communes-corse-du-sud-a-berlina",  # Temporary removal, 404 error
         "gtfs-transport-horaires-des-lignes-de-la-communaute-dile-rousse-balagne-a-balanina",  # Temporary removal, 404 error
         "horaires-theoriques-et-temps-reel-du-reseau-hobus-de-honfleur-gtfs-gtfs-rt",  # Skip outdated and unavailable feed
+        "navettes-aeroport-paris-beauvais-aerobus",  # Not GTFS format
     ]
 
     # List of individual resource ids (located in datasets) we want to remove
