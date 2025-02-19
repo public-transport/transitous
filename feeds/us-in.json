@@ -59,7 +59,8 @@
         {
             "name": "Northern-Indiana-Commuter-Transportation-District",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-northern~indiana~commuter~transportation~district"
+            "transitland-atlas-id": "f-northern~indiana~commuter~transportation~district",
+	    "fix": true
         },
         {
             "name": "Terre-Haute-Transit",
