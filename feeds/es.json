@@ -18,7 +18,6 @@
             "name": "AECFA-slots",
             "type": "http",
             "url": "https://nap.transportes.gob.es/api/Fichero/download/1096",
-            "fix": true,
             "http-options": {
                 "fetch-interval-days": 1,
                 "headers": {
