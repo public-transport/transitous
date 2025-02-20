@@ -66,9 +66,20 @@ The main attribute of a region is `sources`. It contains a list of feeds that sh
 
 ### Static feeds (timetable)
 
-Each source can either be of `type` `transitland-atlas` or `http`.
-A transitland-atlas source is a feed from [Transitland](https://www.transit.land/feeds), identified by its Onestop ID.
+Each source can either be of `type` `mobility-database`, `transitland-atlas` or `http`.
+Feeds from the [Mobility Database](https://mobilitydatabase.org/) can be referenced by the number in the URL on the website.
+Feeds from [Transitland](https://www.transit.land/feeds) (a different database of feeds), can be referenced by their Onestop ID.
 
+Mobility Database:
+```json
+{
+    "name": "<name to be used for the output filename, should not contain spaces>",
+    "type": "mobility-database",
+    "mdb-id": <number>
+}
+```
+
+Transitland:
 ```json
 {
     "name": "<name to be used for the output filename, should not contain spaces>",
@@ -77,7 +88,7 @@ A transitland-atlas source is a feed from [Transitland](https://www.transit.land
 }
 ```
 
-If the feed is not known in Transitland, a http source can be used instead.
+If the feed is not part of any existing database, a http source can be used instead.
 
 ```json
 {
