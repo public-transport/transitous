@@ -99,6 +99,20 @@ class TransitlandSource(Source):
             self.options = HttpOptions(parsed["http-options"])
 
 
+class MobilityDatabaseSource(Source):
+    mdb_id: Optional[int] = None
+    options: HttpOptions = HttpOptions()
+    url_override: Optional[str] = None
+
+    def __init__(self, parsed: dict):
+        super().__init__(parsed)
+        self.mdb_id = parsed["mdb-id"]
+        self.url_override = parsed.get("url-override", None)
+
+        if "http-options" in parsed:
+            self.options = HttpOptions(parsed["http-options"])
+
+
 class HttpSource(Source):
     url: str = ""
     options: HttpOptions = HttpOptions()
@@ -130,6 +144,8 @@ def sourceFromJson(parsed: dict) -> Source:
     match parsed["type"]:
         case "transitland-atlas":
             return TransitlandSource(parsed)
+        case "mobility-database":
+            return MobilityDatabaseSource(parsed)
         case "http":
             return HttpSource(parsed)
         case "url":

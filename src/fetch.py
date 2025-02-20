@@ -15,6 +15,7 @@ from requests.adapters import HTTPAdapter, Retry
 import email.utils
 import requests
 import transitland
+import mobilitydatabase
 import json
 import sys
 import os
@@ -88,6 +89,7 @@ class Fetcher:
     def __init__(self):
         self.transitland_atlas = transitland.Atlas.load(
             Path("transitland-atlas/"))
+        self.mobility_database = None
 
     # Returns whether something was downloaded
     def fetch_source(self, dest_path: Path, source: Source) -> bool:
@@ -97,6 +99,16 @@ class Fetcher:
             case TransitlandSource():
                 http_source = self.transitland_atlas.source_by_id(source)
                 if not http_source:
+                    eprint("Error: Could not resolve", source.transitland_atlas_id)
+                    sys.exit(1)
+
+                return self.fetch_source(dest_path, http_source)
+            case MobilityDatabaseSource():
+                if not self.mobility_database:
+                    self.mobility_database = mobilitydatabase.Database.load()
+                http_source = self.mobility_database.source_by_id(source)
+                if not http_source:
+                    eprint("Error: Could not resolve", source.mdb_id)
                     sys.exit(1)
 
                 return self.fetch_source(dest_path, http_source)

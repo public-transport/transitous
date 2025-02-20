@@ -8,11 +8,8 @@
     "sources": [
         {
             "name": "transport-for-ireland",
-            "type": "http",
-            "license": {
-                "spdx-identifier": "CC-BY-4.0"
-            },
-            "url": "https://www.transportforireland.ie/transitData/Data/GTFS_All.zip",
+            "type": "mobility-database",
+            "mdb-id": 2364,
             "fix": true
         }
     ]
