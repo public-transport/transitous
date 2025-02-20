@@ -24,7 +24,7 @@ class Atlas:
 
         return atlas
 
-    def source_by_id(self, source: TransitlandSource) -> Union[Source, None]:
+    def source_by_id(self, source: TransitlandSource) -> Optional[Source]:
         result: Optional[Source] = None
         feed = self.by_id[source.transitland_atlas_id]
         if "static_current" in feed["urls"]:
