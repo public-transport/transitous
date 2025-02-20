@@ -21,8 +21,8 @@
         },
         {
             "name": "Carris",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-carris~pt"
+            "type": "mobility-database",
+            "mdb-id": 1032
         },
         {
             "name": "Metro-Lisboa",
