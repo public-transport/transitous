@@ -54,10 +54,10 @@ def get_feed_timezone(zip_file: ZipFile) -> Optional[str]:
     return None
 
 
-def check_feed_timeframe_valid(zip_content: bytes) -> bool:
+def check_feed_timeframe_valid(zip_content: bytes) -> (bool, str):
     with ZipFile(file=io.BytesIO(zip_content)) as z:
         if "feed_info.txt" not in z.namelist():
-            return True
+            return True, "No feed_info.txt, assuming feed is valid"
 
         tz = get_feed_timezone(z)
         assert tz
@@ -68,19 +68,23 @@ def check_feed_timeframe_valid(zip_content: bytes) -> bool:
                 feedinforeader = csv.DictReader(at, delimiter=",",
                                                 quotechar='"')
                 for row in feedinforeader:
-                    if "feed_start_date" not in row \
-                            or not row["feed_start_date"]:
-                        return True
-
-                    start_date = \
-                        datetime.strptime(row["feed_start_date"], "%Y%m%d") \
-                        .replace(tzinfo=feed_timezone)
-
                     today = datetime.now(tz=feed_timezone)
-                    if start_date > today:
-                        return False
+                    
+                    if "feed_start_date" in row and row["feed_start_date"]:
+                        start_date = \
+                            datetime.strptime(row["feed_start_date"], "%Y%m%d") \
+                            .replace(tzinfo=feed_timezone)
+                        if start_date > today:
+                            return False, "Feed is not yet valid"
+                    
+                    if "feed_end_date" in row and row["feed_end_date"]:
+                        end_date = \
+                            datetime.strptime(row["feed_end_date"], "%Y%m%d") \
+                            .replace(tzinfo=feed_timezone)
+                        if end_date < today:
+                            return False, "Feed has expired"
 
-    return True
+    return True, "Feed is valid"
 
 
 class Fetcher:
@@ -216,10 +220,10 @@ class Fetcher:
 
                     if digest == new_digest:
                         return False
-
-                if not check_feed_timeframe_valid(content) \
-                        and dest_path.exists():
-                    print("Feed is not yet valid, using old version")
+                
+                is_valid, reason = check_feed_timeframe_valid(content)
+                if not is_valid and dest_path.exists():
+                    print(f"{reason}, using old version")
                     return False
 
                 with open(dest_path, "wb") as dest:
