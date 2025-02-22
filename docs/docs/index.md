@@ -159,7 +159,7 @@ There are all kinds of options that may be specified in a source:
 
 Option Name         | Description
 ------------------- | ------------------------------------------------------------------------------------------------------------------------------------
-`type`              | `http`, `transitland-atlas` or `url`. Url sources are not downloaded, but passed to MOTIS as URL. This is used for realtime feeds.
+`type`              | `http`, `mobility-database`, `transitland-atlas` or `url`. Url sources are not downloaded, but passed to MOTIS as URL. This is used for realtime feeds.
 `spec`              | `gtfs` or `gtfs-rt`. `gtfs-rt` may only be used when `type` is `url`.
 `fix`               | Fix / drop fields that are not correct.
 `skip`              | Don't download or use this feed.

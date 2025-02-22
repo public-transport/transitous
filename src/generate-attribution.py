@@ -180,14 +180,15 @@ if __name__ == "__main__":
         for source in region.sources:
             source_id = f"{region_code_lower}_{source.name}"
 
-            if type(source) is TransitlandSource:
-                source = transitland_atlas.source_by_id(source)
-                if not source:
-                    continue
-            if type(source) is MobilityDatabaseSource:
-                source = mobilitydb.source_by_id(source)
-                if not source:
-                    continue
+            match source:
+                case TransitlandSource():
+                    source = transitland_atlas.source_by_id(source)
+                    if not source:
+                        continue
+                case MobilityDatabaseSource():
+                    source = mobilitydb.source_by_id(source)
+                    if not source:
+                        continue
 
             if source.skip:
                 continue
