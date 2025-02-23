@@ -8,9 +8,10 @@ from pathlib import Path
 from datetime import datetime, timezone
 from utils import eprint
 from zipfile import ZipFile
-from typing import Optional, Any
+from typing import Optional, Any, Iterable
 from zoneinfo import ZoneInfo
 from requests.adapters import HTTPAdapter, Retry
+from enum import Enum
 
 import email.utils
 import requests
@@ -54,37 +55,89 @@ def get_feed_timezone(zip_file: ZipFile) -> Optional[str]:
     return None
 
 
-def check_feed_timeframe_valid(zip_content: bytes) -> (bool, str):
+class FeedValidity(Enum):
+    EXPIRED = 1
+    IN_FUTURE = 2
+    CURRENTLY_VALID = 3
+
+
+def parse_gtfs_date(date: str, feed_timezone: ZoneInfo) -> datetime:
+    return datetime.strptime(date, "%Y%m%d").replace(tzinfo=feed_timezone)
+
+
+def check_feed_already_valid(feed_info: Iterable[dict],
+                             feed_timezone: ZoneInfo) -> bool:
+    if not feed_info:
+        return True
+
+    today = datetime.now(tz=feed_timezone)
+    valid_entries = map(
+        lambda row: "feed_start_date" not in row or
+        not row["feed_start_date"] or
+        parse_gtfs_date(row["feed_start_date"], feed_timezone) <= today,
+        feed_info)
+    return any(valid_entries)
+
+
+def check_feed_not_expired(feed_info: Iterable[dict],
+                           calendar: Iterable[dict],
+                           calendar_dates: Iterable[dict],
+                           feed_timezone: ZoneInfo):
+    today = datetime.now(tz=feed_timezone)
+
+    def feed_info_not_expired():
+        valid_entries = map(
+            lambda row:
+                "feed_end_date" not in row or not row["feed_end_date"] or
+                parse_gtfs_date(row["feed_end_date"], feed_timezone) >= today,
+            feed_info)
+        return all(valid_entries)
+
+    def calendar_not_expired():
+        valid_entries = map(
+            lambda row:
+                parse_gtfs_date(row["end_date"], feed_timezone) >= today,
+            calendar)
+        return any(valid_entries)
+
+    def calendar_dates_not_expired():
+        valid_entries = map(
+            lambda row:
+                parse_gtfs_date(row["date"], feed_timezone) >= today,
+            calendar_dates)
+        return any(valid_entries)
+
+    return feed_info_not_expired() and \
+        (calendar_not_expired() or calendar_dates_not_expired())
+
+
+def check_feed_timeframe_valid(zip_content: bytes) -> FeedValidity:
     with ZipFile(file=io.BytesIO(zip_content)) as z:
-        if "feed_info.txt" not in z.namelist():
-            return True, "No feed_info.txt, assuming feed is valid"
+        def read_file(name: str) -> Iterable[dict]:
+            if name not in z.namelist():
+                return []
+
+            a = z.open(name, "r")
+            at = io.TextIOWrapper(a)
+            return csv.DictReader(at, delimiter=",",
+                                  quotechar='"')
+
+        feed_info = read_file("feed_info.txt")
+        calendar = read_file("calendar.txt")
+        calendar_dates = read_file("calendar_dates.txt")
 
         tz = get_feed_timezone(z)
         assert tz
         feed_timezone = ZoneInfo(tz)
 
-        with z.open("feed_info.txt", "r") as a:
-            with io.TextIOWrapper(a) as at:
-                feedinforeader = csv.DictReader(at, delimiter=",",
-                                                quotechar='"')
-                for row in feedinforeader:
-                    today = datetime.now(tz=feed_timezone)
-                    
-                    if "feed_start_date" in row and row["feed_start_date"]:
-                        start_date = \
-                            datetime.strptime(row["feed_start_date"], "%Y%m%d") \
-                            .replace(tzinfo=feed_timezone)
-                        if start_date > today:
-                            return False, "Feed is not yet valid"
-                    
-                    if "feed_end_date" in row and row["feed_end_date"]:
-                        end_date = \
-                            datetime.strptime(row["feed_end_date"], "%Y%m%d") \
-                            .replace(tzinfo=feed_timezone)
-                        if end_date < today:
-                            return False, "Feed has expired"
+        if not check_feed_already_valid(feed_info, feed_timezone):
+            return FeedValidity.IN_FUTURE
 
-    return True, "Feed is valid"
+        if not check_feed_not_expired(feed_info, calendar, calendar_dates,
+                                      feed_timezone):
+            return FeedValidity.EXPIRED
+
+        return FeedValidity.CURRENTLY_VALID
 
 
 class Fetcher:
@@ -220,11 +273,16 @@ class Fetcher:
 
                     if digest == new_digest:
                         return False
-                
-                is_valid, reason = check_feed_timeframe_valid(content)
-                if not is_valid and dest_path.exists():
-                    print(f"{reason}, using old version")
+
+                validity = check_feed_timeframe_valid(content)
+                if validity == FeedValidity.IN_FUTURE and dest_path.exists():
+                    eprint("Info: Feed not yet valid, using old version")
                     return False
+
+                if validity == FeedValidity.EXPIRED:
+                    eprint("Error: Feed is expired, please consider " +
+                           "removing or updating its source")
+                    sys.exit(1)
 
                 with open(dest_path, "wb") as dest:
                     dest.write(content)
