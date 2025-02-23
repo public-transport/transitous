@@ -62,7 +62,7 @@ class FeedValidity(Enum):
 
 
 def parse_gtfs_date(date: str, feed_timezone: ZoneInfo) -> datetime:
-    return datetime.strptime(date, "%Y%m%d").replace(tzinfo=feed_timezone)
+    return datetime.strptime(date.strip(), "%Y%m%d").replace(tzinfo=feed_timezone)
 
 
 def check_feed_already_valid(feed_info: Iterable[dict],
@@ -119,8 +119,9 @@ def check_feed_timeframe_valid(zip_content: bytes) -> FeedValidity:
 
             a = z.open(name, "r")
             at = io.TextIOWrapper(a)
+            header = map(lambda h: h.strip(), next(csv.reader(at)))
             return csv.DictReader(at, delimiter=",",
-                                  quotechar='"')
+                                  quotechar='"', fieldnames=header)
 
         feed_info = read_file("feed_info.txt")
         calendar = read_file("calendar.txt")
