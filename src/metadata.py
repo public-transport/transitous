@@ -100,7 +100,7 @@ class TransitlandSource(Source):
 
 
 class MobilityDatabaseSource(Source):
-    mdb_id: Optional[int] = None
+    mdb_id: int = -1
     options: HttpOptions = HttpOptions()
     url_override: Optional[str] = None
 

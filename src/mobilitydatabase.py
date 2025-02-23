@@ -12,7 +12,7 @@ import csv
 
 
 class Database:
-    by_id: Dict[str, dict]
+    by_id: Dict[int, dict]
 
     def __init__(self):
         self.by_id = {}
