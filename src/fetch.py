@@ -119,7 +119,7 @@ def check_feed_timeframe_valid(zip_content: bytes) -> FeedValidity:
 
             a = z.open(name, "r")
             at = io.TextIOWrapper(a)
-            header = map(lambda h: h.strip(), next(csv.reader(at)))
+            header = list(map(lambda h: h.strip(), next(csv.reader(at))))
             return csv.DictReader(at, delimiter=",",
                                   quotechar='"', fieldnames=header)
 
