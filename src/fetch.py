@@ -3,7 +3,8 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-from metadata import *
+from metadata import TransitlandSource, MobilityDatabaseSource, HttpSource, \
+    UrlSource, Source, Region
 from pathlib import Path
 from datetime import datetime, timezone
 from utils import eprint
@@ -62,7 +63,8 @@ class FeedValidity(Enum):
 
 
 def parse_gtfs_date(date: str, feed_timezone: ZoneInfo) -> datetime:
-    return datetime.strptime(date.strip(), "%Y%m%d").replace(tzinfo=feed_timezone)
+    return datetime.strptime(date.strip(), "%Y%m%d") \
+        .replace(tzinfo=feed_timezone)
 
 
 def check_feed_already_valid(feed_info: Iterable[dict],
