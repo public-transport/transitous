@@ -21,7 +21,8 @@
         {
             "name": "zet",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u25k-zagrebačkielektričnitramvaj"
+            "transitland-atlas-id": "f-u25k-zagrebačkielektričnitramvaj",
+            "fix": true
         },
         {
             "name": "zet",
@@ -38,7 +39,9 @@
             "name": "pulapromet",
             "type": "http",
             "url": "https://b2b.promet-info.hr/dc/b2b.gtfs.pulapromet",
-            "url-override": "https://jbb.ghsq.de/gtfs/hr-pulapromet.gtfs.zip"
+            "url-override": "https://jbb.ghsq.de/gtfs/hr-pulapromet.gtfs.zip",
+            "skip": true,
+            "skip-reason": "Feed is expired for 3 years at time of writing"
         },
         {
             "name": "osijekgpp",
@@ -66,7 +69,9 @@
         {
             "name": "sisak",
             "type": "http",
-            "url": "https://gitlab.com/vekejsn/gtfs-generators/-/jobs/artifacts/main/raw/ap_sisak_gtfs.zip?job=sisak"
+            "url": "https://gitlab.com/vekejsn/gtfs-generators/-/jobs/artifacts/main/raw/ap_sisak_gtfs.zip?job=sisak",
+            "skip": true,
+            "skip-reason": "Feed generator has been failing for a long time"
         },
         {
             "name": "dubrovnik-libertas",
