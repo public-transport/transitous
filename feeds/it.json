@@ -22,8 +22,7 @@
         {
             "name": "Emilia-Romagna-TPER-Bologna",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-srb-tperspa~bologna",
-            "url-override": "https://solweb.tper.it/web/tools/open-data/open-data-download.aspx?source=solweb.tper.it&filename=gommagtfsbo&version=20250220&format=zip"
+            "transitland-atlas-id": "f-srb-tperspa~bologna"
         },
         {
             "name": "Emilia-Romagna-TPER-Ferrara",
