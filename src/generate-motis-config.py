@@ -114,5 +114,11 @@ if __name__ == "__main__":
                             config["timetable"]["datasets"][name]["rt"] \
                                 .append(rt_feed)
 
+                        case "gbfs":
+                            if "gbfs" not in config.keys():
+                                config["gbfs"] = {"feeds": {source.name: {"url": source.url}}}
+                            else:
+                                config["gbfs"]["feeds"][source.name] = {"url": source.url}
+
         with open("out/config.yml", "w") as fo:
             yaml.dump(config, fo)
