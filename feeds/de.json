@@ -7,6 +7,10 @@
         {
             "name": "Robin Durner",
             "github": "traines-source"
+        },
+        {
+            "name": "Max Buchholz",
+            "github": "1Maxnet1"
         }
     ],
     "sources": [
@@ -78,6 +82,12 @@
                 "spdx-identifier": "ODbL-1.0",
                 "url": "https://opendata.avv.de/current_GTFS/lizenz_und_readme.txt"
             }
-        }
+        },
+        {
+            "name": "RegioRadStuttgart",
+            "spec": "gbfs",
+            "type": "gbfs-database",
+            "system-id": "regiorad_stuttgart"
+}
     ]
 }
