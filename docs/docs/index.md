@@ -127,6 +127,38 @@ This example applies the updates to the `lviv` feed:
 ]
 ```
 
+### Shared Mobility feeds
+
+GBFS feeds contains relatime information like vehicle availability and characteristics for shared Mobility (e.g. Bikesharing).
+Each source can either be of `type` `gbfs-database` or `http`.
+
+Feeds from [GBFS database](https://github.com/MobilityData/gbfs) can be referenced by their System ID.
+
+GBFS Database:
+```json
+{
+    "name": "<name to be used for the output filename, should not contain spaces>",
+    "type": "gbfs-database",
+    "system-id": "<system id>"
+}
+```
+
+If the feed is not part of the existing database, a http source can be used instead.
+
+```json
+{
+    "name": "<name to be used for the output filename>",
+    "type": "http",
+    "url": "https://<url of GBFS feed>",
+    "license": {
+        "spdx-identifier": "<license identifier from https://spdx.org/licenses/ if known>",
+        "url": "< url as source for the license if available >"
+    }
+}
+```
+
+In both cases, the name needs to be unique in the file.
+
 ### Testing
 
 Once you create a pull request, fetching your feed will automatically be tested.
