@@ -137,7 +137,8 @@ Feeds from [GBFS database](https://github.com/MobilityData/gbfs) can be referenc
 GBFS Database:
 ```json
 {
-    "name": "<name to be used for the output filename, should not contain spaces>",
+    "name": "<name of the feed>",
+    "spec": "gbfs",
     "type": "gbfs-database",
     "system-id": "<system id>"
 }
