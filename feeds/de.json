@@ -85,9 +85,8 @@
         },
         {
             "name": "RegioRadStuttgart",
-            "spec": "gbfs",
-            "type": "gbfs-database",
-            "system-id": "regiorad_stuttgart"
-}
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-regioradstuttgart~stuttgart~gbfs"
+        }
     ]
 }
