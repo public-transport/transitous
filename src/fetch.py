@@ -285,7 +285,7 @@ class Fetcher:
                 if validity == FeedValidity.EXPIRED:
                     eprint("Error: Feed is expired, please consider " +
                            "removing or updating its source")
-                    sys.exit(1)
+                    raise Exception("Feed is expired")
 
                 with open(dest_path, "wb") as dest:
                     dest.write(content)
