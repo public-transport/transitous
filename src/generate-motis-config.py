@@ -48,6 +48,9 @@ if __name__ == "__main__":
 
         if feed == "":
             glob = "*.json"
+        elif feed == "eu":
+            glob = ("{AL,AD,AT,BE,BA,BG,HR,CY,CZ,DK,EE,FI,FR,DE,GR,HU,IS,IE,XK,LV,LI,LT,LU,MT,MD,MC,NL,MK,PL,PT,RO,"
+                    "SM,RS,SK,SI,ES,SE,CH,TR,UA,UK,AX,FO,SJ}.json")
         else:
             glob = f"{feed}.json"
 
