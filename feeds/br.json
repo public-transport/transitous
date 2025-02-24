@@ -1,0 +1,29 @@
+{
+    "maintainers": [
+        {
+            "name": "Jonah Brüchert",
+            "github": "jbruechert"
+        }
+    ],
+    "sources": [
+        {
+            "name": "rio-de-janeiro",
+            "type": "http",
+            "url": "https://www.arcgis.com/sharing/rest/content/items/8ffe62ad3b2f42e49814bf941654ea6c/data",
+            "http-options": {
+                "fetch-interval-days": 2
+            },
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
+        },
+        {
+            "name": "rio-grande-do-sul",
+            "type": "http",
+            "url": "https://dadosabertos.poa.br/dataset/1fe9c2c1-9fbe-48ea-841b-61e30597ecd6/resource/b3bce61f-78ee-49eb-be57-6236d82bd5e0/download/arquivo-gtfs.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
+        }
+    ]
+}

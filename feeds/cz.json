@@ -1,0 +1,43 @@
+{
+    "maintainers": [
+        {
+            "name": "Marcus Lundblad",
+            "github": "mlundblad"
+        },
+        {
+            "name": "Jonah Brüchert",
+            "github": "jbruechert"
+        }
+    ],
+    "sources": [
+        {
+            "name": "CZPTT",
+            "type": "http",
+            "url": "https://data.jr.ggu.cz/results/latest/CZPTT_GTFS.zip",
+            "fix": true
+        },
+        {
+            "name": "PID",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u2f-pražskáintegrovanádoprava"
+        },
+        {
+            "name": "IDS-JMK",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u2e-idsjmk"
+        },
+        {
+            "name": "DPMLJ",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u348-dpmlj",
+            "skip": true,
+            "skip-reason": "Feed not available"
+        },
+        {
+            "name": "DPMO",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u2u6-dpmo",
+            "fix": true
+        }
+    ]
+}

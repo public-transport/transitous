@@ -1,0 +1,95 @@
+{
+    "maintainers": [
+        {
+            "name": "Altonss",
+            "github": "altonss"
+        }
+    ],
+    "sources": [
+        {
+            "name": "greenmtncn",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dre-greenmtncn~vt~us"
+        },
+        {
+            "name": "greenmtncn",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-greenmtncn~vt~rt"
+        },
+        {
+            "name": "gmt",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dru-chittendoncounty~vt~us"
+        },
+        {
+            "name": "gmt",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-chittendoncounty~rt"
+        },
+        {
+            "name": "lake-champlain-ferries",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-drgv-lctferries~vt~us"
+        },
+        {
+            "name": "thebus",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-drs-thebus~vt~us"
+        },
+        {
+            "name": "thebus",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-thebus~vt~rt"
+        },
+        {
+            "name": "rensselaer-county-yankee-trails",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-rensselaer~county~yankee~trails"
+        },
+        {
+            "name": "dvtamoover",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-drsh-dvtamoover~vt~us"
+        },
+        {
+            "name": "dvtamoover",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dvtamoover~vt~rt"
+        },
+        {
+            "name": "ruralcommunity",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dru-ruralcommunity~vt~us"
+        },
+        {
+            "name": "ruralcommunity",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-ruralcommunity~vt~rt"
+        },
+        {
+            "name": "tri-valley-transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dru-tri~valleytransit"
+        },
+        {
+            "name": "tri-valley-transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dru-tri~valleytransit~rt"
+        },
+        {
+            "name": "vt-translines",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dru-vttranslines~vt~us"
+        },
+        {
+            "name": "vt-translines",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dru-vttranslines~vt~us~rt"
+        },
+        {
+            "name": "vt-translines",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dru-vttranslines~vt~us~rt~alerts"
+        }
+    ]
+}

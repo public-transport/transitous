@@ -7,16 +7,21 @@
     ],
     "sources": [
         {
-            "name": "opentransportdataswiss",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u0-switzerland"
+            "name": "opentransportdataswiss25",
+            "type": "http",
+            "url": "https://data.opentransportdata.swiss/de/dataset/timetable-2025-gtfs2020/permalink",
+            "license": {
+                "url": "https://opentransportdata.swiss/de/terms-of-use/"
+            }
         },
         {
-            "name": "opentransportdataswiss",
+            "name": "opentransportdataswiss25",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://api.opentransportdata.swiss/gtfsrt2020",
-            "authorization": "57c5dbbbf1fe4d000100001833a821a9de3748e5876bfb6c1efe6973"
+            "url": "https://api.opentransportdata.swiss/la/gtfs-rt",
+            "headers": {
+                "authorization": "Bearer 57c5dbbbf1fe4d000100001833a821a9de3748e5876bfb6c1efe6973"
+            }
         }
     ]
 }

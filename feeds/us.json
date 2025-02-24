@@ -3,13 +3,51 @@
         {
             "name": "Marcus Lundblad",
             "github": "mlundblad"
+        },
+        {
+            "name": "Kyler Chin",
+            "github": "kylerchin"
         }
     ],
     "sources": [
         {
             "name": "Amtrak",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-9-amtrak~amtrakcalifornia~amtrakcharteredvehicle"
+            "transitland-atlas-id": "f-9-amtrak~amtrakcalifornia~amtrakcharteredvehicle",
+            "fix": true,
+            "drop-shapes": false
+        },
+        {
+            "name": "Amtrak",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://birch.catenarymaps.org/gtfs_rt?feed_id=f-amtrak~rt&feed_type=trip"
+        },
+        {
+            "name": "Brightline",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-brightline~trails"
+        },
+        {
+            "name": "Brightline",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-brightline~trails~rt"
+        },
+        {
+            "name": "flixbus",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9-flixbus",
+            "fix": true
+        },
+        {
+            "name": "Peter-Pan-Bus-Lines",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dr-peterpanbuslines"
+        },
+        {
+            "name": "Megabus",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-megabus~us"
         }
     ]
 }

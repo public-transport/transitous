@@ -13,11 +13,12 @@ SPDX-License-Identifier: AGPL-3.0-or-later
  * npm
 
 ```sh
+git submodule update --init --checkout
 npm install
 npm run start
 ```
 
-All hugo content fill be automatically rebuilt on the fly, but a restart is still needed to rebuild the purescript files.
+All hugo content will be automatically rebuilt on the fly, but a restart is still needed to rebuild the PureScript files.
 
 ## Release builds
 

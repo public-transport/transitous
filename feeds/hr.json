@@ -3,6 +3,10 @@
         {
             "name": "Volker Krause",
             "github": "vkrause"
+        },
+        {
+            "name": "Jonah Brüchert",
+            "github": "jbruechert"
         }
     ],
     "sources": [
@@ -13,6 +17,67 @@
             "license": {
                 "spdx-identifier": "CC0-1.0"
             }
+        },
+        {
+            "name": "zet",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u25k-zagrebačkielektričnitramvaj",
+            "fix": true
+        },
+        {
+            "name": "zet",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u25k-zagrebačkielektričnitramvaj~rt"
+        },
+        {
+            "name": "jl",
+            "type": "http",
+            "url": "https://b2b.promet-info.hr/dc/b2b.gtfs.jl",
+            "url-override": "https://jbb.ghsq.de/gtfs/hr-jl.gtfs.zip"
+        },
+        {
+            "name": "pulapromet",
+            "type": "http",
+            "url": "https://b2b.promet-info.hr/dc/b2b.gtfs.pulapromet",
+            "url-override": "https://jbb.ghsq.de/gtfs/hr-pulapromet.gtfs.zip",
+            "skip": true,
+            "skip-reason": "Feed is expired for 3 years at time of writing"
+        },
+        {
+            "name": "osijekgpp",
+            "type": "http",
+            "url": "https://b2b.promet-info.hr/dc/b2b.gtfs.osijekgpp",
+            "url-override": "https://jbb.ghsq.de/gtfs/hr-osijekgpp.gtfs.zip",
+            "fix": true
+        },
+        {
+            "name": "gradski-parking",
+            "type": "http",
+            "url": "https://www.gradski-parking.hr/upload/stranice/2022/08/2022-08-30/89/gtfs.zip"
+        },
+        {
+            "name": "split",
+            "type": "http",
+            "url": "https://gitlab.com/vekejsn/gtfs-generators/-/jobs/artifacts/main/raw/split_gtfs.zip?job=split"
+        },
+        {
+            "name": "rijeka",
+            "type": "http",
+            "url": "https://gitlab.com/vekejsn/gtfs-generators/-/jobs/artifacts/main/raw/autotrolej_gtfs.zip?job=rijeka",
+            "fix": true
+        },
+        {
+            "name": "sisak",
+            "type": "http",
+            "url": "https://gitlab.com/vekejsn/gtfs-generators/-/jobs/artifacts/main/raw/ap_sisak_gtfs.zip?job=sisak",
+            "skip": true,
+            "skip-reason": "Feed generator has been failing for a long time"
+        },
+        {
+            "name": "dubrovnik-libertas",
+            "type": "http",
+            "url": "https://gitlab.com/vekejsn/gtfs-generators/-/jobs/artifacts/main/raw/libertas_gtfs.zip?job=libertas",
+            "fix": true
         }
     ]
 }

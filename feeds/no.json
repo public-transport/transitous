@@ -10,7 +10,10 @@
             "name": "Entur",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u4-ruter~flybussen~stfoldkollektivtrafikk~hedmarktrafikk~oppla",
-            "fix": true
+            "fix": true,
+            "http-options": {
+                "fetch-interval-days": 1
+            }
         },
         {
             "name": "Entur",

@@ -1,0 +1,26 @@
+{
+    "maintainers": [
+        {
+            "name": "Jonah Brüchert",
+            "github": "jbruechert"
+        }
+    ],
+    "sources": [
+        {
+            "name": "great-britain",
+            "type": "http",
+            "url": "https://s3.transitpdf.com/files/uran/improved-gtfs-great-britain.zip",
+            "fix": true
+        },
+        {
+            "name": "bus-dft",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-bus~dft~gov~uk"
+        },
+        {
+            "name": "northern-ireland",
+            "type": "http",
+            "url": "https://s3.transitpdf.com/files/uran/improved-gtfs-northern-ireland.zip"
+        }
+    ]
+}

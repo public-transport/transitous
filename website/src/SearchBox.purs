@@ -8,75 +8,85 @@ module SearchBox where
 
 import Prelude
 
-import Elmish (Transition, Dispatch, ReactElement, (<|), (<?|))
-import Elmish.HTML.Events as E
-import Elmish.HTML.Styled as H
-import Elmish.Component (fork, forkMaybe)
-
+import Data.Argonaut.Decode (decodeJson, class DecodeJson)
+import Data.Argonaut.Decode.Error (JsonDecodeError)
+import Data.Argonaut.Decode.Parser (parseJson)
+import Data.Array (length, zip, (..), (!!), null, nubBy, reverse)
+import Data.DateTime (DateTime, diff)
 import Data.Either (Either(..))
-import Data.Array (length, zip, (..), (!!))
-import Data.Maybe (Maybe(..))
+import Data.Foldable (find)
+import Data.FormURLEncoded (fromArray, encode)
+import Data.Maybe (Maybe(..), fromMaybe)
+import Data.Time.Duration (Milliseconds(..))
 import Data.Tuple (Tuple(..))
+import Effect.Aff (Aff, delay)
 import Effect.Class (liftEffect)
 import Effect.Console (log)
-import Effect.Aff (Aff, delay)
-
-import Data.Argonaut.Decode (decodeJson)
-import Data.Argonaut.Decode.Parser (parseJson)
-import Data.Argonaut.Decode.Error (JsonDecodeError)
-import Data.Argonaut.Encode (toJsonString)
-
-import Fetch (Method(..), fetch)
-
 import Effect.Now (nowDateTime)
+import Elmish (Transition, Dispatch, ReactElement, (<|), (<?|))
+import Elmish.Component (fork, forkMaybe)
+import Elmish.HTML.Events as E
+import Elmish.HTML.Styled as H
+import Fetch (fetch)
 
-import Data.DateTime (DateTime, diff)
-import Data.Time.Duration (Milliseconds(..))
-
--- Requests
-type StationGuesserRequest = { input :: String, guess_count :: Int }
-type MotisRequest = { content_type :: String, content :: StationGuesserRequest, destination :: { type :: String, target :: String } }
-
-serializeMotisRequest :: MotisRequest -> String
-serializeMotisRequest = toJsonString
-
-guessRequest :: String -> String
-guessRequest text = serializeMotisRequest
-  { content_type: "StationGuesserRequest"
-  , destination:
-      { type: "Module"
-      , target: "/guesser"
-      }
-  , content:
-      { input: text
-      , guess_count: 10
-      }
+type Area = { name :: String, adminLevel :: Int }
+type Location =
+  { type :: String
+  , id :: String
+  , tokens :: Array (Array Int)
+  , name :: String
+  , lat :: Number
+  , lon :: Number
+  , areas :: Array Area
+  , level :: Maybe Int
+  , zip :: Maybe String
+  , score :: Number
   }
 
--- Response
-type Position = { lat :: Number, lng :: Number }
-type Station = { id :: String, name :: String, pos :: Position }
-type StationResponse = { content :: { guesses :: Array Station } }
+motisInstance :: String
+motisInstance = "https://api.transitous.org"
 
-parseMotisResponse :: String -> Either JsonDecodeError StationResponse
+getCity :: Array Area -> Maybe String
+getCity areas =
+  areas
+    # find (\r -> r.adminLevel <= 8)
+    # map (_.name)
+
+getCountry :: Array Area -> Maybe String
+getCountry areas =
+  areas
+    # find (\r -> r.adminLevel == 2)
+    # map (_.name)
+
+getRegion :: Location -> Maybe String
+getRegion address = do
+  let areas = reverse $ address.areas
+  city <- getCity areas
+  country <- getCountry areas
+  Just $ city <> ", " <> country
+
+uniqueLocations :: Array Location -> Array Location
+uniqueLocations = nubBy (\a b -> compare (a.name <> fromMaybe "" (getRegion a)) (b.name <> fromMaybe "" (getRegion b)))
+
+parseMotisResponse :: forall a. DecodeJson a => String -> Either JsonDecodeError a
 parseMotisResponse text = do
   decoded <- parseJson text
   decodeJson decoded
 
 data Message
   = SearchChanged String
-  | GotResults (Array Station)
+  | GotResults (Array Location)
   | ShowSuggestions Boolean
-  | Select Station
+  | Select Location
   | NewInput DateTime
   | StartGuessRequest String
   | SelectionUp
   | SelectionDown
 
 type State =
-  { entries :: Array Station
+  { entries :: Array Location
   , showSuggestions :: Boolean
-  , station :: Maybe Station
+  , station :: Maybe Location
   , query :: String
   , placeholderText :: String
   , lastRequestTime :: Maybe DateTime
@@ -86,14 +96,18 @@ type State =
 debounceDelay :: Milliseconds
 debounceDelay = Milliseconds 150.0
 
-requestGuesses :: String -> Aff (Array Station)
+logAff :: String -> Aff Unit
+logAff = log >>> liftEffect
+
+requestGuesses :: String -> Aff (Array Location)
 requestGuesses query = do
-  let requestUrl = "https://routing.spline.de/api/"
-  { status, statusText, text } <- fetch requestUrl
-    { method: POST
-    , headers: { "Content-Type": "application/json" }
-    , body: guessRequest query
-    }
+  { status, statusText, text } <- fetch
+    ( motisInstance <> "/api/v1/geocode?" <>
+        ( fromMaybe "" $ encode $ fromArray
+            [ Tuple "text" (Just query) ]
+        )
+    )
+    { headers: { "Accept": "application/json" } }
   responseBody <- text
 
   if status /= 200 then do
@@ -105,9 +119,7 @@ requestGuesses query = do
       Left err -> do
         logAff (show err)
         pure []
-      Right response -> pure (response.content.guesses)
-  where
-  logAff = log >>> liftEffect
+      Right response -> pure response
 
 requestGuessesDebounced :: State -> String -> Transition Message State
 requestGuessesDebounced state query =
@@ -117,7 +129,7 @@ requestGuessesDebounced state query =
         now <- liftEffect nowDateTime
         if diff now lastRequestTime > debounceDelay then do
           guesses <- requestGuesses query
-          pure $ Just (GotResults guesses)
+          pure $ Just (GotResults (uniqueLocations guesses))
         else pure Nothing
       pure state
     Nothing -> pure state
@@ -171,21 +183,36 @@ view state dispatch = H.div "mb-3"
             pure $ Select station
           _ -> Nothing
       , value: case state.station of
-          Just { name } -> name
+          Just guess -> guess.name
           Nothing -> state.query
       }
-  , if state.showSuggestions && (length state.entries) > 0 then H.ul "dropdown-menu show" $ suggestionEntries
-    else H.ul "dropdown-menu" $ suggestionEntries
+  , case state.showSuggestions && not (null state.entries) of
+      true -> H.ul "dropdown-menu show" suggestionEntries
+      false -> H.ul "dropdown-menu" suggestionEntries
   ]
   where
   suggestionEntries =
     map
-      ( \(Tuple i { name, id, pos }) ->
-          if i == state.currentlySelectedIndex then H.li_ "dropdown-item dropdown-item-active"
-            { onClick: dispatch <| Select { name, id, pos }, autoFocus: true }
-            name
-          else H.li_ "dropdown-item"
-            { onClick: dispatch <| Select { name, id, pos } }
-            name
+      ( \(Tuple i location) ->
+          if i == state.currentlySelectedIndex then H.li_ "dropdown-item dropdown-item-active cursor-shape-pointer"
+            { onClick: dispatch <| Select location, autoFocus: true }
+            [ H.i
+                case location.type of
+                  "STOP" -> "bi-train-front-fill"
+                  _ -> "bi-geo-alt-fill"
+                ""
+            , H.span "p-2" location.name
+            , H.span "text-secondary text-xs" (fromMaybe "" $ getRegion location)
+            ]
+          else H.li_ "dropdown-item cursor-shape-pointer"
+            { onClick: dispatch <| Select location }
+            [ H.i
+                case location.type of
+                  "STOP" -> "bi-train-front-fill"
+                  _ -> "bi-geo-alt-fill"
+                ""
+            , H.span "p-2" location.name
+            , H.span "text-secondary text-xs" (fromMaybe "" $ getRegion location)
+            ]
       )
       (zip (0 .. (length state.entries)) state.entries)

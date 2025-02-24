@@ -3,9 +3,23 @@
         {
             "name": "Volker Krause",
             "github": "vkrause"
+        },
+        {
+            "name": "Jonah Brüchert",
+            "github": "jbruechert"
         }
     ],
     "sources": [
+        {
+            "name": "matka",
+            "type": "http",
+            "url": "https://traffic.navici.com/tiedostot/gtfs.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0",
+                "url": "https://developer.matka.fi/pages/en/home.php"
+            },
+            "fix": true
+        },
         {
             "name": "digitraffic",
             "type": "http",
@@ -88,7 +102,8 @@
             "license": {
                 "spdx_identifier": "CC-BY-4.0",
                 "url": "https://opendata.waltti.fi/docs#gtfs-static-packages"
-            }
+            },
+            "fix": true
         },
         {
             "name": "232",
@@ -97,7 +112,8 @@
             "license": {
                 "spdx_identifier": "CC-BY-4.0",
                 "url": "https://opendata.waltti.fi/docs#gtfs-static-packages"
-            }
+            },
+            "fix": true
         },
         {
             "name": "237",
@@ -107,7 +123,8 @@
         {
             "name": "239",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-salo~fi"
+            "transitland-atlas-id": "f-salo~fi",
+            "fix": true
         },
         {
             "name": "249",
@@ -124,21 +141,19 @@
             "name": "tampere",
             "type": "http",
             "url": "https://data.itsfactory.fi/journeys/files/gtfs/latest/gtfs_tampere.zip",
-            "url-override": "https://jbb.ghsq.de/gtfs/fi-tampere.gtfs.zip",
-            "http-headers": {
-                "User-Agent": "Transitous GTFS Fetcher"
-            }
+            "url-override": "https://jbb.ghsq.de/gtfs/fi-tampere.gtfs.zip"
         },
         {
             "name": "turku",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u6x-turunlinja~autoilijainosakeyhtiö~savonlinjaoy~sl~autolinja"
+            "transitland-atlas-id": "f-u6x-turunlinja~autoilijainosakeyhtiö~savonlinjaoy~sl~autolinja",
+            "fix": true
         },
         {
             "name": "finferries",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u6xr-finferries~sundqvistinvestmentsoyab~nordiccoastline",
-            "url-override": "http://gtfs.lautta.net",
+            "url-override": "https://finap.finferries.fi/share/Reitit.zip",
             "fix": true
         }
     ]

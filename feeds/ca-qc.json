@@ -3,13 +3,18 @@
         {
             "name": "Marcus Lundblad",
             "github": "mlundblad"
+        },
+        {
+            "name": "wolfy1339",
+            "github": "wolfy1339"
         }
     ],
     "sources": [
         {
             "name": "STM",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-f25d-socitdetransportdemontral"
+            "transitland-atlas-id": "f-f25d-socitdetransportdemontral",
+            "proxy": true
         },
         {
             "name": "STM",
@@ -138,9 +143,42 @@
             "transitland-atlas-id": "f-f25u-exo~mrcdelassomption~rt"
         },
         {
-            "name": "Laval",
+            "name": "STS-Sherbrooke",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-f25e-societedetransportdelaval"
+            "transitland-atlas-id": "f-f2hf-sociétédetransportdesherbrooke"
+        },
+        {
+            "name": "STS-Sherbrooke",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-f2hf-sociétédetransportdesherbrooke~rt"
+        },
+        {
+            "name": "RTC",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-f2m6-rseaudetransportdelacapitalertc"
+        },
+        {
+            "name": "STLevis",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-societedetransportdelevis"
+        },
+        {
+            "name": "RTL",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-f25f-rseaudetransportdelongueuil"
+        },
+        {
+            "name": "STO",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-f244-sto",
+            "skip": true,
+            "skip-reason": "Connection to www.contenu.sto.ca timed out"
+        },
+        {
+            "name": "STTR",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-societe~de~transport~de~trois-rivieres",
+            "fix": true
         }
     ]
 }

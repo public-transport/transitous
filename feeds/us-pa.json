@@ -1,0 +1,331 @@
+{
+  "maintainers": [
+    {
+      "name": "Marcus Lundblad",
+      "github": "mlundblad"
+    },
+    {
+      "name": "Altonss",
+      "github": "altonss"
+    }
+  ],
+  "sources": [
+    {
+      "name": "SEPTA-Rail",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-dr4-septa~rail",
+      "fix": true
+    },
+    {
+      "name": "SEPTA-Rail",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-septa~rail~rt"
+    },
+    {
+      "name": "SEPTA-Bus",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-dr4-septa~bus",
+      "fix": true
+    },
+    {
+      "name": "SEPTA-Bus",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-septa~rt"
+    },
+    {
+      "name": "altoona",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-altoona~metro~transit"
+    },
+    {
+      "name": "altoona",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-altoona~metro~transit~rt"
+    },
+    {
+      "name": "north-central",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-area~transit~authority~north~central~pa"
+    },
+    {
+      "name": "north-central",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-area~transit~authority~north~central~pa~rt"
+    },
+    {
+      "name": "beaver",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-dpnz-bcta"
+    },
+    {
+      "name": "barta",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-barta~pa"
+    },
+    {
+      "name": "barta",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-barta~pa~rt"
+    },
+    {
+      "name": "butler",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-butler~transit~authority~pa"
+    },
+    {
+      "name": "butler",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-butler~transit~authority~pa~rt"
+    },
+    {
+      "name": "cambria",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-cambria~county~transit~authority"
+    },
+    {
+      "name": "cambria",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-cambria~county~transit~authority~rt"
+    },
+    {
+      "name": "CAT",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-capitalareatransit~pa"
+    },
+    {
+      "name": "CAT",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-capitalareatransit~pa~rt"
+    },
+    {
+      "name": "cata",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-dr28-wwwcatabuscom"
+    },
+    {
+      "name": "cata",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-dr28-wwwcatabuscom~rt"
+    },
+    {
+      "name": "lackawanna",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-county~of~lackawanna~transit"
+    },
+    {
+      "name": "lackawanna",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-county~of~lackawanna~transit~rt"
+    },
+    {
+      "name": "crawford",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-crawford~area~transportation~authority~pa"
+    },
+    {
+      "name": "crawford",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-crawford~area~transportation~authority~pa~rt"
+    },
+    {
+      "name": "BeST",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-endless~mountains~transportation~authority"
+    },
+    {
+      "name": "BeST",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-endless~mountains~transportation~authority~rt"
+    },
+    {
+      "name": "fayette",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-fayette~area~coordinated~transportation"
+    },
+    {
+      "name": "fayette",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-fayette~area~coordinated~transportation~rt"
+    },
+    {
+      "name": "freedom",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-freedom~transit~pa~us"
+    },
+    {
+      "name": "freedom",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-freedom~transit~pa~us~rt"
+    },
+    {
+      "name": "hazleton",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-hazleton~public~transit"
+    },
+    {
+      "name": "hazleton",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-hazleton~public~transit~rt"
+    },
+    {
+      "name": "IndiGO",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-indiana~county~transit~authority"
+    },
+    {
+      "name": "IndiGO",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-indiana~county~transit~authority~rt"
+    },
+    {
+      "name": "lebanon",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-lebanon~transit~pa~us"
+    },
+    {
+      "name": "lebanon",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-lebanon~transit~pa~us~rt"
+    },
+    {
+      "name": "lanta",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-dr4r-lanta"
+    },
+    {
+      "name": "lanta",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-dr4r-lanta~rt"
+    },
+    {
+      "name": "lower-anthracite",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-lower~anthracite~transit~system"
+    },
+    {
+      "name": "lower-anthracite",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-lower~anthracite~transit~system~rt"
+    },
+    {
+      "name": "luzerne",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-luzerne~county~transit~authority"
+    },
+    {
+      "name": "luzerne",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-luzerne~county~transit~authority~rt"
+    },
+    {
+      "name": "MMVTA",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-mid~mon~valley~transit~authority~pa"
+    },
+    {
+      "name": "MMVTA",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-mid~mon~valley~transit~authority~pa~rt"
+    },
+    {
+      "name": "NCATA",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-new~castle~area~transit~authority"
+    },
+    {
+      "name": "NCATA",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-new~castle~area~transit~authority~rt"
+    },
+    {
+      "name": "PRT",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-dppn-portauthorityofalleghenycounty"
+    },
+    {
+      "name": "PRT",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-dppn-portauthorityofalleghenycounty~bus~rt"
+    },
+    {
+      "name": "PRT",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-dppn-portauthorityofalleghenycounty~train~rt"
+    },
+    {
+      "name": "PATCO",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-dr4e-patco"
+    },
+    {
+      "name": "pottstown",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-pottstown~area~rapid~transit"
+    },
+    {
+      "name": "pottstown",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-pottstown~area~rapid~transit~rt"
+    },
+    {
+      "name": "rabbittransit",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-dr1-rabbittransit"
+    },
+    {
+      "name": "rabbittransit",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-dr1-rabbittransit~rt"
+    },
+    {
+      "name": "redrosetransit",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-rrta~pa"
+    },
+    {
+      "name": "redrosetransit",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-rrta~pa~rt"
+    },
+    {
+      "name": "river-valley",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-river~valley~transit~authority"
+    },
+    {
+      "name": "river-valley",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-river~valley~transit~authority~rt"
+    },
+    {
+      "name": "schuylkill",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-schuylkill~transportation~system"
+    },
+    {
+      "name": "schuylkill",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-schuylkill~transportation~system~rt"
+    },
+    {
+      "name": "shenango-valley",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-shenango~valley~shuttle~service~pa"
+    },
+    {
+      "name": "shenango-valley",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-shenango~valley~shuttle~service~pa~rt"
+    },
+    {
+      "name": "westmoreland",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-westmoreland~pa~us"
+    },
+    {
+      "name": "westmoreland",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-westmoreland~pa~us~rt"
+    }
+  ]
+}

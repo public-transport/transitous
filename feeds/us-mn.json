@@ -1,0 +1,20 @@
+{
+    "maintainers": [
+        {
+            "name": "Volker Krause",
+            "github": "vkrause"
+        }
+    ],
+    "sources": [
+        {
+            "name": "Minneapolis-St-Paul",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9zv-twin~cities~minnesota"
+        },
+        {
+            "name": "Minneapolis-St-Paul",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-twin~cities~minnesota~rt"
+        }
+    ]
+}

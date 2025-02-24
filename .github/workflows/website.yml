@@ -30,7 +30,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: 0.124.0
+      HUGO_VERSION: 0.143.0
     steps:
       - name: Install Hugo CLI
         run: |
@@ -54,15 +54,6 @@ jobs:
         with:
           python-version: 3.x
 
-      - name: Restore cached licenses.json
-        uses: actions/cache/restore@v4
-        with:
-          path: |
-            out/license.json
-          key: licenses-
-          restore-keys: |
-            licenses-
-
       - run: pip install mkdocs
       - run: mkdocs build --site-dir ../website/static/doc/ -f docs/mkdocs.yml
 
@@ -72,7 +63,7 @@ jobs:
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
         run: |
-          cp out/license.json website/data/
+          wget https://api.transitous.org/gtfs/license.json -O website/data/license.json
           cd website && npm run release
 
       - name: Upload artifact

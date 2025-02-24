@@ -1,0 +1,30 @@
+{
+    "maintainers": [
+        {
+            "name": "Altonss",
+            "github": "altonss"
+        }
+    ],
+    "sources": [
+        {
+            "name": "advance-transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-advancetransit~vt~us"
+        },
+        {
+            "name": "advance-transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-advancetransit~rt"
+        },
+        {
+            "name": "coast",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-cooperative~alliance~for~seacoast~transportation"
+        },
+        {
+            "name": "dartmouth",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dartmouth~vt~us"
+        }
+    ]
+}

@@ -9,7 +9,8 @@
         {
             "name": "Trimet",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-c20-trimet"
+            "transitland-atlas-id": "f-c20-trimet",
+            "fix": true
         },
         {
             "name": "Trimet",

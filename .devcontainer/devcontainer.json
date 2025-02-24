@@ -3,7 +3,7 @@
 {
 	"name": "Transitous",
 	"build": {
-		"dockerfile": "../ci/container/Containerfile",
+		"dockerfile": "../ci/container/Containerfile-devcontainer",
 		"context": "../ci/container/"
 	},
 

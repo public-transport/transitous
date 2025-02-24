@@ -1,26 +1,20 @@
 # SPDX-FileCopyrightText: 2024 Jonah Brüchert <jbb@kaidan.im>
 # SPDX-License-Identifier: CC0-1.0
 
+FROM docker.io/golang:1.22 as build
+RUN GOPROXY=direct GOBIN=/usr/local/bin/ go install github.com/public-transport/gtfsclean@latest
+
+
 FROM docker.io/debian:bookworm-slim
 
-ARG MOTIS_VERSION=v0.11.27
-ARG USERNAME=transitous
-ARG USER_UID=1000
-ARG USER_GID=$USER_UID
+ARG MOTIS_VERSION=v2.0.22
 
 RUN apt-get update -y && \
-    apt-get install -y --no-install-recommends git python3-requests python3-jinja2 golang wget bzip2 && \
+    apt-get install -y --no-install-recommends git python3-requests python3-pycountry wget bzip2 rsync openssh-client python3-ruamel.yaml && \
     apt-get clean -y && \
     rm -rf /var/lib/apt/lists/* 
 
-RUN wget -qO - https://github.com/motis-project/motis/releases/download/${MOTIS_VERSION}/motis-linux-amd64.tar.bz2 | tar -C /opt/ -jx
-RUN GOBIN=/usr/local/bin/ go install github.com/patrickbr/gtfstidy@25d4d6d1079a5926d9a558546bbe36d5b4cdb45f
+COPY --from=build /usr/local/bin/gtfsclean /usr/local/bin/gtfsclean
+RUN mkdir -p /opt/motis/ && \
+    wget -qO - https://github.com/motis-project/motis/releases/download/${MOTIS_VERSION}/motis-linux-amd64.tar.bz2 | tar -C /opt/motis/ -jx
 ENV PATH=/opt/motis:$PATH
-
-# Create the user / set user rights
-RUN groupadd --gid $USER_GID $USERNAME && \
-    useradd --uid $USER_UID --gid $USER_GID -m $USERNAME && \
-    mkdir /workspace && chown -R $USER_UID:$USER_GID /workspace && \
-    chown -R $USER_UID:$USER_GID /opt/motis
-
-USER ${USERNAME}

@@ -1,0 +1,43 @@
+# SPDX-FileCopyrightText: 2024 Jonah Brüchert <jbb@kaidan.im>
+# SPDX-License-Identifier: CC0-1.0
+
+when:
+  - event: push
+    branch: [main, work/jbb/woodpecker]
+    path:
+      - 'feeds/*'
+      - 'src/*'
+      - 'ci/*'
+      - 'ci/container/*'
+      - 'motis/*'
+      - '.woodpecker/*.yml'
+  - event: cron
+    cron: daily-import
+
+steps:
+  fetch:
+    image: ghcr.io/public-transport/transitous/import:latest
+    pull: true
+    environment:
+      GITHUB_TOKEN:
+        from_secret: github_issues_token
+    commands:
+      - git submodule update --init --checkout --remote
+      - ./ci/fetch-feeds.py timer
+  import:
+    image: ghcr.io/public-transport/transitous/import:latest
+    when:
+      - event: cron
+        cron: daily-import
+    pull: true
+    commands:
+      - motis --version
+      - ./src/generate-attribution.py
+      - touch out/.import-running
+      - ./src/generate-motis-config.py import
+      # Remove files that we want to regenerate
+      - bash -c "rm -f out/data/meta/{adr_extend.json,tt.json,matches.json,osr_footpath.json} out/data/shape*"
+      # Start import
+      - cd out && motis import -c config.yml > motis-import.log && rm motis-import.log && cd ..
+      - src/generate-motis-config.py full
+      - rm out/.import-running

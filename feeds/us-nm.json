@@ -1,0 +1,76 @@
+{
+    "maintainers": [
+        {
+            "name": "Altonss",
+            "github": "altonss"
+        }
+    ],
+    "sources": [
+        {
+            "name": "abq",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9whp-abqride",
+            "proxy": true
+        },
+        {
+            "name": "abq",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-abqride~rt"
+        },
+        {
+            "name": "abq",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-abqride~rt~alerts"
+        },
+        {
+            "name": "atomic-city",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-atomic~city~transit"
+        },
+        {
+            "name": "gallup-express",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-gallup~express"
+        },
+        {
+            "name": "bandalier-national-monument",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-bandalier~national~monument"
+        },
+        {
+            "name": "navajo-transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9w-navajotransitsystem"
+        },
+        {
+            "name": "ncrtd",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-ncrtd~nm"
+        },
+        {
+            "name": "ncrtd",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-ncrtd~nm~rt"
+        },
+        {
+            "name": "nm-dot-park-and-ride",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-nm~dot~park~and~ride~nm~us"
+        },
+        {
+            "name": "red-apple-transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9we1-redappletransit~nm~us"
+        },
+        {
+            "name": "las-cruces",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-las~cruces~road~runner"
+        },
+        {
+            "name": "santa-fe-trails",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-santa~fe~trails"
+        }
+    ]
+}

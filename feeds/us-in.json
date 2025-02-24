@@ -1,0 +1,76 @@
+{
+    "maintainers": [
+        {
+            "name": "Jonathan Jesse",
+            "github": "jjesse"
+        },
+        {
+	    "name": "John Scott",
+            "github": "jscott0"
+        }
+    ],
+    "sources": [
+        {
+            "name": "Bloomington-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dnfq-bloomingtontransit",
+            "fix": true
+        },
+        {
+            "name": "CityBus-of-Greater-Lafayette-Indiana",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dp4j-citybus"
+        },
+        {
+            "name": "Gary-Public-Transportation-Corporation",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-gary~public~transportation~in~us"
+        },
+        {
+            "name": "IndyGo",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dp4d-indygo"
+        },
+        {
+            "name": "IndyGo",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-indygo~rt"
+        },
+        {
+            "name": "Indiana-County-Transit-Authority",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-indiana~county~transit~authority",
+            "http-options": {
+                "fetch-interval-days": 1
+            }
+        },
+        {
+            "name": "Interurban-Trolley",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-macog",
+            "proxy": true
+        },
+        {
+            "name": "Muncie-Indiana-Transit-System",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dp5k-indiana~mits",
+            "proxy": true
+        },
+        {
+            "name": "Northern-Indiana-Commuter-Transportation-District",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-northern~indiana~commuter~transportation~district",
+	    "fix": true
+        },
+        {
+            "name": "Terre-Haute-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dp1b-terrehautetransit~in~us"
+        },
+        {
+            "name": "Valparaiso-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-valpotransit~chi~us"
+        }
+    ]
+}

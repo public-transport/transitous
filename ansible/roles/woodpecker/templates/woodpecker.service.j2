@@ -1,0 +1,28 @@
+# SPDX-FileCopyrightText: 2024 Jonah Brüchert <jbb@kaidan.im>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+[Unit]
+Description=Woodpecker CI Server
+After=network.target
+
+[Service]
+Environment="WOODPECKER_GITHUB=true"
+Environment="WOODPECKER_SERVER_ADDR=vm-motis-import.spline.de:8000"
+Environment="WOODPECKER_GITHUB_CLIENT={{ transitous_woodpecker_client_id }}"
+Environment="WOODPECKER_GITHUB_SECRET={{ transitous_woodpecker_client_secret }}"
+Environment="WOODPECKER_HOST=https://routing-import.spline.de"
+Environment="WOODPECKER_ADMIN=jbruechert"
+Environment="WOODPECKER_AGENT_SECRET={{ transitous_woodpecker_agent_secret }}"
+Environment="WOODPECKER_REPO_OWNERS=public-transport"
+Environment="WOODPECKER_DATABASE_DRIVER=postgres"
+Environment="WOODPECKER_DATABASE_DATASOURCE=postgres://motis_import:{{ transitous_woodpecker_postgres_password }}@vm-postgres.spline.de/motis_import"
+#Environment="WOODPECKER_ORGS=public-transport"
+User=woodpecker
+Group=nogroup
+Restart=always
+ExecStart=/usr/local/bin/woodpecker-server
+WorkingDirectory=/var/lib/woodpecker/
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,15 @@
+{
+    "maintainers": [
+        {
+            "name": "Jonah Brüchert",
+            "github": "jbruechert"
+        }
+    ],
+    "sources": [
+        {
+            "name": "zpcg",
+            "type": "http",
+            "url": "https://jbb.ghsq.de/gtfs/me-zpcg.gtfs.zip"
+        }
+    ]
+}

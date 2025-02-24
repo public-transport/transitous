@@ -1,0 +1,16 @@
+{
+    "maintainers": [
+        {
+            "name": "Altonss",
+            "github": "altonss"
+        }
+    ],
+    "sources": [
+        {
+            "name": "puerto-rico",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-de30-ati",
+            "url-override": "https://docs.pr.gov/files/ATI/DATOS_ABIERTOS/GTFS/PRITA_GTFS.zip"
+        }
+    ]
+}

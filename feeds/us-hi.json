@@ -1,0 +1,48 @@
+{
+    "maintainers": [
+        {
+            "name": "Marcus Lundblad",
+            "github": "mlundblad"
+        }
+    ],
+    "sources": [
+        {
+            "name": "Kauai",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-kauai",
+            "fix": true
+        },
+        {
+            "name": "Kauai",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-countyofkauai~transportationagency~rt"
+        },
+        {
+            "name": "TheBus",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-87z-thebus"
+        },
+        {
+            "name": "Maui",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-maui~county~transit",
+            "fix": true
+        },
+        {
+            "name": "Maui",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-maui~county~transit~rt"
+        },
+        {
+            "name": "Hele-On",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-hele~on~hi",
+            "fix": true
+        },
+        {
+            "name": "Hele-On",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-hele~on~hi~rt"
+        }
+    ]
+}

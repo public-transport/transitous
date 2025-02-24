@@ -1,0 +1,20 @@
+version = 1
+SPDX-PackageName = "Transitous"
+SPDX-PackageDownloadLocation = "https://github.com/public-transport/transitous/"
+
+[[annotations]]
+path = "feeds/**.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "none"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "website/data/license.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "none"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "ansible/roles/nginx/files/robots.txt"
+SPDX-FileCopyrightText = "none"
+SPDX-License-Identifier = "CC0-1.0"

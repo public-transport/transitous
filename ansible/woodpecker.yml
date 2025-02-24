@@ -1,0 +1,14 @@
+# SPDX-FileCopyrightText: 2024 Jonah Brüchert <jbb@kaidan.im>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+- name: Set up Woodpecker server
+  hosts: woodpecker
+  roles:
+    - woodpecker
+
+- name: Set up Woodpecker agent
+  hosts: crunchy
+  roles:
+    - woodpecker-agent
+    - gtfs-server

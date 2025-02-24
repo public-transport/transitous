@@ -1,0 +1,37 @@
+# SPDX-FileCopyrightText: 2024 Jonah Brüchert <jbb@kaidan.im>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+server:
+  host: 0.0.0.0
+  port: 8080
+  web_folder: "/opt/motis/ui/"  # Just for testing, not used on server
+
+street_routing: true
+osr_footpath: false
+elevators: false
+geocoding: true
+reverse_geocoding: true
+
+osm: planet-latest.osm.pbf
+
+tiles:
+  profile: /opt/motis/tiles-profiles/full.lua
+  coastline: land-polygons-complete-4326.zip
+
+timetable:
+  first_day: TODAY
+  num_days: 365
+  railviz: true
+  with_shapes: true
+  ignore_errors: true
+  adjust_footpaths: true
+  merge_dupes_intra_src: true
+  merge_dupes_inter_src: true
+  link_stop_distance: 100
+  update_interval: 60
+  http_timeout: 30
+  incremental_rt_update: false
+  max_footpath_length: 20
+# The datasets are filled in by ./src/generate-motis-config.py
+  datasets:

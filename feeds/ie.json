@@ -7,9 +7,10 @@
     ],
     "sources": [
         {
-            "name": "transit-for-ireland",
-            "type": "http",
-            "url": "https://gtfs.pro/files/uran/improved-gtfs-google-transit-combined.zip"
+            "name": "transport-for-ireland",
+            "type": "mobility-database",
+            "mdb-id": 2364,
+            "fix": true
         }
     ]
 }

@@ -3,9 +3,13 @@ SPDX-License-Identifier: CC0-1.0
 SPDX-FileCopyrightText: none
 -->
 
-# Transitous
+<p align="center">
+    <img src="website/static/images/logo-text-dark.svg" alt="Transitous" width="400"><br>
+</p>
 
-**Free and open public transport routing.**
+<p align="center">
+    <b>Free and open public transport routing.</b>
+</p>
 
 ## Goal
 
@@ -22,7 +26,9 @@ routing service that:
 
 ## Contact
 
-Matrix channel: [#opentransport:matrix.org](https://matrix.to/#/#opentransport:matrix.org) (for now)
+For general discussions about data availability: [#opentransport:matrix.org](https://matrix.to/#/#opentransport:matrix.org)
+
+For Transitous-specific technical topics: [#transitous:matrix.spline.de](https://matrix.to/#/#transitous:matrix.spline.de)
 
 ## Adding a region
 

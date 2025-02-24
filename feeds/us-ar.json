@@ -1,0 +1,16 @@
+{
+    "maintainers": [
+        {
+            "name": "Jonathan Jesse",
+            "github": "jjesse"
+        }
+    ],
+    "sources": [
+        {
+            "name": "Rock-Region-Metro",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9ynm-centralarkansastransitauthority",
+            "fix": true
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+{
+  "maintainers": [
+    {
+      "name": "Marcus Lundblad",
+      "github": "mlundblad"
+    }
+  ],
+  "sources": [
+    {
+      "name": "NJ-Transit-Bus",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-dr5-nj~transit~bus",
+      "fix": true
+    },
+    {
+      "name": "NJ-Transit-Rail",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-dr5-nj~transit~rail"
+    }
+  ]
+}

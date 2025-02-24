@@ -1,0 +1,15 @@
+{
+    "maintainers": [
+        {
+            "name": "Jonah Brüchert",
+            "github": "jbruechert"
+        }
+    ],
+    "sources": [
+        {
+            "name": "plovdiv",
+            "type": "http",
+            "url": "https://trakia.tech/gtfs/plovdiv.zip"
+        }
+    ]
+}

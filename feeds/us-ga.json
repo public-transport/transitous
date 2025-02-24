@@ -1,0 +1,20 @@
+{
+    "maintainers": [
+        {
+            "name": "Marcus Lundblad",
+            "github": "mlundblad"
+        }
+    ],
+    "sources": [
+        {
+            "name": "MARTA",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dnh-marta"
+        },
+        {
+            "name": "MARTA",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dnh-marta~rt"
+        }
+    ]
+}

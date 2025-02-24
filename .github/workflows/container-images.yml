@@ -1,0 +1,28 @@
+# SPDX-FileCopyrightText: 2024 Jonah Brüchert <jbb@kaidan.im>
+# SPDX-License-Identifier: CC0-1.0
+
+name: Build and publish CI container images
+
+on:
+  push:
+    paths:
+      - "ci/container/Containerfile"
+    branches:
+      - "main"
+  workflow_dispatch:
+
+
+jobs:
+  publish-container:
+    runs-on: ubuntu-latest
+    permissions:
+      packages: write
+    steps:
+    - name: Check out code
+      uses: actions/checkout@v4
+    - name: Build images
+      run: docker build -t ghcr.io/public-transport/transitous/import:latest . -f ci/container/Containerfile
+    - name: Log into ghcr.io
+      run: docker login --username ${{ github.actor }} --password ${{ secrets.GITHUB_TOKEN }} ghcr.io
+    - name: Push images
+      run: docker push ghcr.io/public-transport/transitous/import:latest

@@ -6,12 +6,17 @@ baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'Transitous'
 theme = "ananke"
-sectionPagesMenu = 'main'
 
 [params]
   custom_css = ["bootstrap.min.css", "bootstrap-icons.min.css", "custom.css"]
+  favicon = "images/logo.svg"
 
 [[params.ananke_socials]]
   name = "github"
   url = "https://github.com/public-transport/transitous"
   label = "Transitous on GitHub"
+
+[menus]
+  [[menus.main]]
+    name = "Status"
+    url = "https://spline-status.de/status/transitous"

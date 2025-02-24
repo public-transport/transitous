@@ -15,6 +15,17 @@
             "name": "Metro-stlouis",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-saintlouis~rt"
+        },
+        {
+            "name": "KCATA",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9yu-kcata",
+            "fix": true
+        },
+        {
+            "name": "KCATA",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-kcata~rt"
         }
     ]
 }

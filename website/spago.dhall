@@ -25,6 +25,7 @@ Need help? See the following resources:
   , "elmish"
   , "elmish-html"
   , "fetch"
+  , "foldable-traversable"
   , "form-urlencoded"
   , "maybe"
   , "now"

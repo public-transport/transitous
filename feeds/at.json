@@ -3,15 +3,132 @@
         {
             "name": "Volker Krause",
             "github": "vkrause"
+        },
+        {
+            "name": "Marcus Lundblad",
+            "github": "mlundblad"
+        },
+        {
+            "name": "Jonah Brüchert",
+            "github": "jbruechert"
         }
     ],
     "sources": [
         {
-            "name": "oebb",
+            "name": "Linz-AG-2025",
             "type": "http",
-            "url": "https://static.oebb.at/open-data/soll-fahrplan-gtfs/GTFS_OP_2024_obb.zip",
+            "url": "https://data.mobilitaetsverbuende.at/api/public/v1/data-sets/69/2025/file",
             "license": {
-                "spdx-identifier": "CC-BY-4.0"
+                "url": "https://mobilitaetsverbuende.atlassian.net/wiki/spaces/DBP/pages/185237505/Terms+of+Use"
+            },
+            "fix": true,
+            "function": "mvo_keycloak_token",
+            "http-options": {
+                "fetch-interval-days": 2
+            }
+        },
+        {
+            "name": "Railway-Current-Reference-Data-2025",
+            "type": "http",
+            "url": "https://data.mobilitaetsverbuende.at/api/public/v1/data-sets/66/2025/file",
+            "license": {
+                "url": "https://mobilitaetsverbuende.atlassian.net/wiki/spaces/DBP/pages/185237505/Terms+of+Use"
+            },
+            "fix": true,
+            "function": "mvo_keycloak_token",
+            "http-options": {
+                "fetch-interval-days": 2
+            }
+        },
+        {
+            "name": "PTA-Vorarlberg-2025",
+            "type": "http",
+            "url": "https://data.mobilitaetsverbuende.at/api/public/v1/data-sets/58/2025/file",
+            "license": {
+                "url": "https://mobilitaetsverbuende.atlassian.net/wiki/spaces/DBP/pages/185237505/Terms+of+Use"
+            },
+            "fix": true,
+            "function": "mvo_keycloak_token",
+            "http-options": {
+                "fetch-interval-days": 2
+            }
+        },
+        {
+            "name": "PTA-Tyrol-2025",
+            "type": "http",
+            "url": "https://data.mobilitaetsverbuende.at/api/public/v1/data-sets/57/2025/file",
+            "license": {
+                "url": "https://mobilitaetsverbuende.atlassian.net/wiki/spaces/DBP/pages/185237505/Terms+of+Use"
+            },
+            "fix": true,
+            "function": "mvo_keycloak_token",
+            "http-options": {
+                "fetch-interval-days": 2
+            }
+        },
+        {
+            "name": "PTA-Upper-Austria-2025",
+            "type": "http",
+            "url": "https://data.mobilitaetsverbuende.at/api/public/v1/data-sets/56/2025/file",
+            "license": {
+                "url": "https://mobilitaetsverbuende.atlassian.net/wiki/spaces/DBP/pages/185237505/Terms+of+Use"
+            },
+            "fix": true,
+            "function": "mvo_keycloak_token",
+            "http-options": {
+                "fetch-interval-days": 2
+            }
+        },
+        {
+            "name": "PTA-Carinthia-2025",
+            "type": "http",
+            "url": "https://data.mobilitaetsverbuende.at/api/public/v1/data-sets/55/2025/file",
+            "license": {
+                "url": "https://mobilitaetsverbuende.atlassian.net/wiki/spaces/DBP/pages/185237505/Terms+of+Use"
+            },
+            "fix": true,
+            "function": "mvo_keycloak_token",
+            "http-options": {
+                "fetch-interval-days": 2
+            }
+        },
+        {
+            "name": "PTA-Salzburg-2025",
+            "type": "http",
+            "url": "https://data.mobilitaetsverbuende.at/api/public/v1/data-sets/54/2025/file",
+            "license": {
+                "url": "https://mobilitaetsverbuende.atlassian.net/wiki/spaces/DBP/pages/185237505/Terms+of+Use"
+            },
+            "fix": true,
+            "function": "mvo_keycloak_token",
+            "http-options": {
+                "fetch-interval-days": 2
+            }
+        },
+        {
+            "name": "PTA-Styria-2025",
+            "type": "http",
+            "url": "https://data.mobilitaetsverbuende.at/api/public/v1/data-sets/53/2025/file",
+            "license": {
+                "url": "https://mobilitaetsverbuende.atlassian.net/wiki/spaces/DBP/pages/185237505/Terms+of+Use"
+            },
+            "fix": true,
+            "function": "mvo_keycloak_token",
+            "http-options": {
+                "fetch-interval-days": 2
+            }
+        },
+        {
+            "name": "PTA-Eastern-Region-2025",
+            "type": "http",
+            "url": "https://data.mobilitaetsverbuende.at/api/public/v1/data-sets/52/2025/file",
+            "license": {
+                "url": "https://mobilitaetsverbuende.atlassian.net/wiki/spaces/DBP/pages/185237505/Terms+of+Use"
+            },
+            "fix": true,
+            "function": "mvo_keycloak_token",
+            "http-options": {
+                "fetch-interval-days": 2
             }
         }
     ]

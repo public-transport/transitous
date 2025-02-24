@@ -1,0 +1,15 @@
+{
+    "maintainers": [
+        {
+            "name": "Marcus Lundblad",
+            "github": "mlundblad"
+        }
+    ],
+    "sources": [
+        {
+            "name": "SNCTF",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-sn-tunis~banlieues"
+        }
+    ]
+}

@@ -3,6 +3,14 @@
         {
             "name": "Jonah Brüchert",
             "github": "jbruechert"
+        },
+        {
+            "name": "Wojciech Kulesza",
+            "github": "wkulesza"
+        },
+        {
+            "name": "Grzegorz M",
+            "github": "grzesjam"
         }
     ],
     "sources": [
@@ -14,7 +22,8 @@
         {
             "name": "PolRegio",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-pol~regio~pl"
+            "transitland-atlas-id": "f-pol~regio~pl",
+            "fix": true
         },
         {
             "name": "Rzeszów",
@@ -34,17 +43,17 @@
         {
             "name": "Koleje-Dolnośląskie",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u3h-koleje~dolnoslaskie"
+            "transitland-atlas-id": "f-u3h-koleje~dolnoslaskie",
+            "http-options": {
+                "headers": {
+                    "Authorization": "Basic a2Q6QmFld29uZ29od3VnM0Fv"
+                }
+            }
         },
         {
             "name": "Bydgoszcz",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u3ky-bydgoszcz"
-        },
-        {
-            "name": "Włocławek",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u3me-wloclawek"
         },
         {
             "name": "Toruń",
@@ -54,7 +63,8 @@
         {
             "name": "Kielce",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u3n9-kielce"
+            "transitland-atlas-id": "f-u3n9-kielce",
+            "fix": true
         },
         {
             "name": "Radom",
@@ -82,9 +92,21 @@
             "transitland-atlas-id": "f-u3sy-wejherowo"
         },
         {
-            "name": "Trójmiasto-(Gdańsk,-Gdynia,-Sopot)-combined",
+            "name": "Gdańsk",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u3t-gdansk~gdynia"
+            "transitland-atlas-id": "f-ztm~gdansk",
+            "fix": true
+        },
+        {
+            "name": "Gdańsk",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u3tm-ztm~gdansk~rt"
+        },
+        {
+            "name": "Gdynia",
+            "type": "http",
+            "url": "http://api.zdiz.gdynia.pl/pt/gtfs.zip",
+            "fix": true
         },
         {
             "name": "Giżycko",
@@ -95,6 +117,47 @@
             "name": "Lublin",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u905-lublin"
+        },
+        {
+            "name": "Elbląg",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u3tu-elblag"
+        },
+        {
+            "name": "Poznań",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u3k4-miejskieprzedsiębiorstwokomunikacyjnespzoowpoznaniu~kórni",
+            "fix": true
+        },
+        {
+            "name": "Szczecin",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u36r-zditmszczecin"
+        },
+        {
+            "name": "Szczecin",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u36r-zditmszczecin~rt"
+        },
+        {
+            "name": "TransportGZM",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://github.com/TransportGZM-GTFS-mirror/TransportGZM-GTFS-normal/releases/latest/download/TransportGZM-GTFS.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0",
+                "url": "https://spdx.org/licenses/CC-BY-4.0.html"
+            }
+        },
+        {
+            "name": "TransportGZM",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://gtfsrt.transportgzm.pl:5443/gtfsrt/gzm/tripUpdates",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0",
+                "url": "https://spdx.org/licenses/CC-BY-4.0.html"
+            }
         },
         {
             "name": "Gorzów Wielkopolski",

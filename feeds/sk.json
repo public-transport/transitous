@@ -3,6 +3,10 @@
         {
             "name": "Volker Krause",
             "github": "vkrause"
+        },
+        {
+            "name": "Marcus Lundblad",
+            "github": "mlundblad"
         }
     ],
     "sources": [
@@ -12,6 +16,12 @@
             "transitland-atlas-id": "f-eo0-zssk",
             "url": "https://www.zsr.sk/files/pre-cestujucich/cestovny-poriadok/gtfs/gtfs.zip",
             "url-override": "https://jbb.ghsq.de/gtfs/zssk.gtfs.zip"
+        },
+        {
+            "name": "Bratislava",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u2s1vm0ergtc~bratislava",
+            "url-override": "https://www.arcgis.com/sharing/rest/content/items/aba12fd2cbac4843bc7406151bc66106/data"
         }
     ]
 }

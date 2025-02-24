@@ -10,19 +10,54 @@
             "name": "mav",
             "type": "http",
             "url": "https://www.mavcsoport.hu/gtfs/gtfsMavMenetrend.zip",
-            "http-headers": {
-                "Authorization": "Basic YXJvbmt2aEBnbWFpbC5jb206M09jOHpNRFc3c3RCQ2ljVg=="
-            }
+            "http-options": {
+                "headers": {
+                    "Authorization": "Basic YXJvbmt2aEBnbWFpbC5jb206M09jOHpNRFc3c3RCQ2ljVg=="
+                }
+            },
+            "drop-shapes": true
         },
         {
             "name": "volanbusz",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-volanbusz~hu"
+            "transitland-atlas-id": "f-volanbusz~hu",
+            "fix": true
         },
         {
             "name": "bkk",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u2m-bkk"
+        },
+        {
+            "name": "mvk",
+            "type": "http",
+            "url": "https://gtfsapi.mvkzrt.hu/gtfs/gtfs.zip"
+        },
+        {
+            "name": "szkt",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u2nr-dakkzrt~szkt"
+        },
+        {
+            "name": "v-busz",
+            "type": "http",
+            "url": "https://gtfs.menetbrand.com/download/veszprem"
+        },
+        {
+            "name": "tukebusz",
+            "type": "http",
+            "url": "http://mobilitas.biokom.hu/gtfs"
+        },
+        {
+            "name": "blaguss-agora",
+            "type": "http",
+            "url": "https://szombathely.utas.hu/api/static/v1/gtfs-google/gtfs-google.zip"
+        },
+        {
+            "name": "paksbusz",
+            "type": "http",
+            "url": "https://utazastervezo.paksbusz.hu/api/static/v1/gtfs-google/gtfs-google.zip"
         }
+        
     ]
 }

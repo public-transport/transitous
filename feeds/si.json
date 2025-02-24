@@ -10,7 +10,16 @@
             "name": "nap",
             "url": "https://b2b.nap.si/data/b2b.gtfs",
             "url-override": "https://jbb.ghsq.de/gtfs/nap-si.gtfs.zip",
-            "type": "http"
+            "type": "http",
+            "fix": true
+        },
+        {
+            "name": "lpp",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u24q-ljubljanskipotniškipromet",
+            "http-options": {
+                "fetch-interval-days": 2
+            }
         }
     ]
 }

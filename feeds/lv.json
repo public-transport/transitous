@@ -2,39 +2,21 @@
     "maintainers": [
         {
             "name": "Jonah Brüchert",
-            "github": "jbbgameich"
+            "github": "jbruechert"
         }
     ],
     "sources": [
         {
-            "name": "pv",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-pv~lv"
+            "name": "pieturas",
+            "type": "http",
+            "url": "https://gsvalbe.id.lv/pieturas/dati/latvia.zip",
+            "fix": true
         },
         {
-            "name": "rigas-satiksme",
-            "type": "http",
-            "url": "https://gtfs.pro/files/uran/improved-gtfs-satiksme.zip",
-            "license": {
-                "spdx-identifier": "CC0-1.0"
-            }
-        },
-        {
-            "name": "rigas-saraksti",
-            "type": "http",
-            "url": "https://gtfs.pro/files/uran/improved-gtfs-saraksti.zip",
-            "license": {
-                "spdx-identifier": "CC0-1.0"
-            }
-        },
-        {
-            "name": "valsts-sia-autotransporta",
-            "type": "http",
-            "url": "https://www.atd.lv/sites/default/files/GTFS/gtfs-latvia-lv.zip",
-            "fix": true,
-            "license": {
-                "spdx-identifier": "CC0-1.0"
-            }
+            "name": "pieturas",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://gsvalbe.id.lv/pieturas/dati/gtfs-rt.pb"
         }
     ]
 }

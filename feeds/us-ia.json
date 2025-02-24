@@ -1,0 +1,28 @@
+{
+    "maintainers": [
+        {
+            "name": "Jonathan Jesse",
+            "github": "jjesse"
+        }
+    ],
+    "sources": [
+        {
+            "name": "Iowa-City-Transit-System",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-iowa~city~transit",
+            "fix": true
+        },
+        {
+            "name": "Coralville-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9zqv-coralvilletransitsystem~ia~us",
+            "fix": true
+        },
+        {
+            "name": "CAMBUS",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9zqvh-cambus~ia~us",
+            "fix": true
+        }
+    ]
+}

@@ -2,20 +2,31 @@
     "maintainers": [
         {
             "name": "Jonah Brüchert",
-            "github": "jonahb"
+            "github": "jbruechert"
+        },
+        {
+            "name": "Nicolas Derive",
+            "github": "kalon33"
         }
     ],
     "sources": [
         {
             "name": "flixbus",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u-flixbus",
-            "fix": true
+            "transitland-atlas-id": "f-u-flixbus"
         },
         {
             "name": "blablacar-bus",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u0-ouibus"
+            "transitland-atlas-id": "f-u0-ouibus",
+            "fix": true
+        },
+        {
+            "name": "eurostar",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-eurostar",
+            "skip": true,
+            "skip-reason": "Use up to date feed generated in fr.json"
         }
     ]
 }

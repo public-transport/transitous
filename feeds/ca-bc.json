@@ -9,7 +9,8 @@
         {
             "name": "BC-Ferries",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-c0-bcferries~bc~ca"
+            "transitland-atlas-id": "f-c0-bcferries~bc~ca",
+            "fix": "true"
         },
         {
             "name": "Black-Ball-Ferry-Line",
@@ -72,7 +73,7 @@
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-bctransit~east~kootenay~region"
         },
-         {
+        {
             "name": "East-Kootenay-Transit",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-bctransit~east~kootenay~region~rt"
@@ -200,7 +201,8 @@
         {
             "name": "TransLink",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-c28-nstranslinkca"
+            "transitland-atlas-id": "f-c28-nstranslinkca",
+            "fix": true
         },
         {
             "name": "TransLink",

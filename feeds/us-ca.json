@@ -1,0 +1,207 @@
+{
+    "maintainers": [
+        {
+            "name": "Marcus Lundblad",
+            "github": "mlundblad"
+        }
+    ],
+    "sources": [
+        {
+            "name": "SFMTA",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9q8y-sfmta",
+            "url-override": "http://api.511.org/transit/datafeeds?operator_id=SF&api_key=7fa322f6-dd5f-495c-a05b-026dcb1ba472"
+        },
+        {
+            "name": "Capitolcorridor",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9qc-capitolcorridor",
+            "fix": true,
+            "proxy": true
+        },
+        {
+            "name": "SF-bayarea",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-sf~bay~area~rg",
+            "url-override": "http://api.511.org/transit/datafeeds?operator_id=RG&api_key=7fa322f6-dd5f-495c-a05b-026dcb1ba472",
+            "fix": true
+        },
+        {
+            "name": "SF-bayarea",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.511.org/Transit/TripUpdates?api_key=7fa322f6-dd5f-495c-a05b-026dcb1ba472&agency=RG"
+        },
+        {
+            "name": "Goldengatetransit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9qb-goldengatetransit",
+            "fix": true
+        },
+        {
+            "name": "Caltrain",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9q9-caltrain"
+        },
+        {
+            "name": "Samtrans",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9q8-samtrans"
+        },
+        {
+            "name": "Santa-Cruz-Metro",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9q9-scmtdcom",
+            "proxy": true,
+            "skip": true,
+            "skip-reason": "Generates 404"
+        },
+        {
+            "name": "Santa-Cruz-Metro",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9q9-scmtdcom~rt",
+            "skip": true,
+            "skip-reason": "Generates 404"
+        },
+        {
+            "name": "Sacramento-Regional-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9qce-sacramentoregionaltransit",
+            "proxy": true
+        },
+        {
+            "name": "Sacramento-Regional-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9qce-sacramentoregionaltransit~rt",
+            "proxy": true
+        },
+        {
+            "name": "Metro-LosAngeles",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9q5-metro~losangeles",
+            "fix": true
+        },
+        {
+            "name": "Metro-LosAngeles",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-metro~losangeles~alerts"
+        },
+        {
+            "name": "Metro-LosAngeles-Rail",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9q5-metro~losangeles~rail"
+        },
+        {
+            "name": "Antelope-Valley-Transit-Authority",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-antelope~valley~transit~authority"
+        },
+        {
+            "name": "Antelope-Valley-Transit-Authority",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-antelope~valley~transit~authority~rt"
+        },
+        {
+            "name": "Glendale-Beeline",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9q5f-glendalebeeline",
+            "skip": true,
+            "skip-reason": "403 error code when downloading, no documentation from agency on fix, supposedly requires compression on download which isnt supported yet"
+        },
+        {
+            "name": "Burbank-Bus",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9q5f7-burbankbus",
+            "fix": true
+        },
+        {
+            "name": "Burbank-Bus",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-burbankbus~rt",
+            "fix": true
+        },
+        {
+            "name": "Santa-Clarita-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-santa~clarita"
+        },
+        {
+            "name": "Santa-Clarita-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-santa~clarita~rt"
+        },
+        {
+            "name": "Metrolink",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9qh-metrolinktrains"
+        },
+        {
+            "name": "Catalina-Express",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-catalina~express",
+            "fix": true
+        },
+        {
+            "name": "LA-County",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-la~county",
+            "fix": true
+        },
+        {
+            "name": "Elkgrove",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9qcd-etranelkgrove",
+            "url-override": "https://iportal.sacrt.com/gtfs/eg/google_transit.zip"
+        },
+        {
+            "name": "Elkgrove",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9qcd-etranelkgrove~rt"
+        },
+        {
+            "name": "SDMTS",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9mu-mts"
+        },
+        {
+            "name": "SDMTS",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-mts~rt~onebusaway"
+        },
+        {
+            "name": "Monterey-Salinas-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9q9-monterey~salinastransit",
+            "proxy": true
+        },
+        {
+            "name": "Monterey-Salinas-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-mst~rt",
+            "proxy": true
+        },
+        {
+            "name": "Roseville-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9qcs-rosevilletransit",
+            "proxy": true
+        },
+        {
+            "name": "Roseville-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-rosevilletransit~rt",
+            "proxy": true
+        },
+        {
+            "name": "Southcounty-Transitlink",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-southcountytransitlink~ca~us",
+            "proxy": true
+        },
+        {
+            "name": "Sage-Stage",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9r-sagestage"
+        }
+    ]
+}

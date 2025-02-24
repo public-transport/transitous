@@ -1,0 +1,46 @@
+{
+    "maintainers": [
+        {
+            "name": "Altonss",
+            "github": "altonss"
+        }
+    ],
+    "sources": [
+        {
+            "name": "bus-kuantan",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-rapid~bus~kuantan"
+        },
+        {
+            "name": "bus-penang",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-rapid~bus~penang"
+        },
+        {
+            "name": "bus-kl",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-rapid~bus~kl"
+        },
+        {
+            "name": "rail-kl",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-rapid~rail~kl"
+        },
+        {
+            "name": "bus-mrt-feeder",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-rapid~bus~mrt~feeder"
+        },
+        {
+            "name": "ktmb",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-ktmb",
+            "fix" : true
+        },
+        {
+            "name": "ktmb",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-ktmb~rt"
+        }
+    ]
+}

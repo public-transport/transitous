@@ -9,7 +9,8 @@
         {
             "name": "sncb",
             "type": "http",
-            "url": "https://sncb-opendata.hafas.de/gtfs/static/c21ac6758dd25af84cca5b707f3cb3de"
+            "url": "https://sncb-opendata.hafas.de/gtfs/static/c21ac6758dd25af84cca5b707f3cb3de",
+            "fix": true
         },
         {
             "name": "sncb",
@@ -20,12 +21,13 @@
         {
             "name": "stib",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u151-stib"
+            "transitland-atlas-id": "f-u151-stib",
+            "fix": true
         },
         {
             "name": "delijn",
             "type": "http",
-            "url": "https://data.gtfs.be/delijn/gtfs/be-delijn-gtfs.zip",
+            "url": "https://gtfs.irail.be/de-lijn/de_lijn-gtfs.zip",
             "fix": true
         },
         {
@@ -36,7 +38,13 @@
         {
             "name": "tec",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u0g-tec"
+            "transitland-atlas-id": "f-u0g-tec",
+            "fix": true
+        },
+        {
+            "name": "tec",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u0g-tec~rt"
         }
     ]
 }

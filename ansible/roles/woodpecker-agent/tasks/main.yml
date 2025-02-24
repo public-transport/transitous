@@ -1,0 +1,67 @@
+# SPDX-FileCopyrightText: 2024 Jonah Brüchert <jbb@kaidan.im>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+- name: Install docker
+  apt:
+    name: docker.io
+
+- name: Create limited slice for docker
+  copy:
+    src: docker_limit.slice
+    dest: /etc/systemd/system/docker_limit.slice
+
+- name: Enable limited docker slice
+  systemd:
+    name: docker_limit.slice
+    enabled: true
+    state: started
+    daemon_reload: true
+
+- name: Create docker daemon.json
+  copy:
+    src: daemon.json
+    dest: /etc/docker/daemon.json
+
+- name: Enable docker service
+  systemd:
+    name: docker
+    enabled: true
+    state: started
+    masked: false
+
+- name: Install woodpecker-agent
+  unarchive:
+    src: https://github.com/woodpecker-ci/woodpecker/releases/download/v3.0.1/woodpecker-agent_linux_amd64.tar.gz
+    remote_src: true
+    dest: /usr/local/bin/
+
+- name: Create woodpecker-agent user
+  user:
+    name: woodpecker-agent
+    comment: Woodpecker CI user
+    groups: docker
+
+- name: Set up woodpecker agent systemd service
+  template:
+    dest: /etc/systemd/system/woodpecker-agent.service
+    src: woodpecker-agent.service.j2
+    owner: root
+    group: root
+    mode: '0644'
+
+- name: Create cache directory
+  file:
+    path: "{{ item }}"
+    state: directory
+  with_items:
+    - /var/cache/transitous/downloads/
+    - /var/cache/transitous/out/
+
+- name: Enable woodpecker service
+  systemd:
+    name: woodpecker-agent.service
+    enabled: true
+    state: started
+    masked: false
+    daemon_reload: true
