@@ -54,6 +54,13 @@ class Atlas:
             result.spec = "gtfs-rt"
             result.skip = source.skip
             result.skip_reason = source.skip_reason
+        elif "gbfs_auto_discovery" in feed["urls"]:
+            result = UrlSource()
+            result.name = source.name
+            result.url = feed["urls"]["gbfs_auto_discovery"]
+            result.spec = "gbfs"
+            result.skip = source.skip
+            result.skip_reason = source.skip_reason
         else:
             print("Warning: Found Transitland source that we can't handle:", source.transitland_atlas_id)
             sys.stdout.flush()

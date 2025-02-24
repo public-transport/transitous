@@ -142,30 +142,12 @@ class UrlSource(Source):
                 self.headers = parsed["headers"]
 
 
-class GBFSDatabaseSource(Source):
-    system_id: str = ""
-    options: HttpOptions = HttpOptions()
-    url_override: Optional[str] = None
-    proxy: bool = False
-
-    def __init__(self, parsed: dict):
-        super().__init__(parsed)
-        self.system_id = parsed["system-id"]
-        self.url_override = parsed.get("url-override", None)
-        self.proxy = parsed.get("proxy", False)
-
-        if "http-options" in parsed:
-            self.options = HttpOptions(parsed["http-options"])
-
-
 def sourceFromJson(parsed: dict) -> Source:
     match parsed["type"]:
         case "transitland-atlas":
             return TransitlandSource(parsed)
         case "mobility-database":
             return MobilityDatabaseSource(parsed)
-        case "gbfs-database":
-            return GBFSDatabaseSource(parsed)
         case "http":
             return HttpSource(parsed)
         case "url":
