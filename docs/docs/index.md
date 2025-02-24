@@ -19,7 +19,7 @@ Free and open public transport routing.
 
 A community-run provider-neutral international public transport routing service.
 
-Using openly available GTFS/GTFS-RT/etc. feeds and FOSS routing engine we want to operate a
+Using openly available GTFS/GTFS-RT/GBFS/etc. feeds and FOSS routing engine we want to operate a
 routing service that:
 
 * focuses on the interest of the user rather than the public transport operators
