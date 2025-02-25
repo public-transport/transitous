@@ -129,7 +129,7 @@ This example applies the updates to the `lviv` feed:
 
 ### Shared Mobility feeds
 
-GBFS feeds contains relatime information like vehicle availability and characteristics for shared Mobility (e.g. Bikesharing).
+GBFS feeds contains realtime information like vehicle availability and characteristics for shared Mobility (e.g. Bikesharing).
 Each source can only be of `type` `transitland-atlas`.
 
 Feeds from [Transitland](https://www.transit.land/feeds) can be referenced by their Onestop ID.
