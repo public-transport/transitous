@@ -82,7 +82,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "url": "https://usbshare.agenziatpl.it/index.php/s/a3SZsLKCQLxzEzr/download/2025-02-07_NET.zip"
+            "url": "https://usbshare.agenziatpl.it/index.php/s/a3SZsLKCQLxzEzr/download/2025-02-07_NET.zip",
+            "skip": true,
+            "skip-reason": "Expired feed"
         },
         {
             "name": "Lombardia-STAR",
