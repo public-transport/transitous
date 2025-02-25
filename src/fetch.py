@@ -9,7 +9,7 @@ from pathlib import Path
 from datetime import datetime, timezone
 from utils import eprint
 from zipfile import ZipFile
-from typing import Optional, Any, Iterable
+from typing import Optional, Any, Iterable, IO
 from zoneinfo import ZoneInfo
 from requests.adapters import HTTPAdapter, Retry
 from enum import Enum
@@ -43,15 +43,20 @@ def validate_source_name(name: str):
         sys.exit(1)
 
 
+def parse_gtfs_csv(f: IO) -> csv.DictReader:
+    header = list(map(lambda h: h.strip(), next(csv.reader(f))))
+    return csv.DictReader(f, delimiter=",",
+                          quotechar='"', fieldnames=header)
+
+
 def get_feed_timezone(zip_file: ZipFile) -> Optional[str]:
     with zip_file.open("agency.txt", "r") as a:
         with io.TextIOWrapper(a) as at:
-            feedinforeader = csv.DictReader(at, delimiter=",",
-                                            quotechar='"')
+            feedinforeader = parse_gtfs_csv(at)
             for row in feedinforeader:
                 if "agency_timezone" in row \
                         and row["agency_timezone"]:
-                    return row["agency_timezone"]
+                    return row["agency_timezone"].strip()
 
     return None
 
@@ -121,9 +126,7 @@ def check_feed_timeframe_valid(zip_content: bytes) -> FeedValidity:
 
             a = z.open(name, "r")
             at = io.TextIOWrapper(a)
-            header = list(map(lambda h: h.strip(), next(csv.reader(at))))
-            return csv.DictReader(at, delimiter=",",
-                                  quotechar='"', fieldnames=header)
+            return parse_gtfs_csv(at)
 
         feed_info = read_file("feed_info.txt")
         calendar = read_file("calendar.txt")
