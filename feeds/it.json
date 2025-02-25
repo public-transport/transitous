@@ -22,8 +22,7 @@
         {
             "name": "Emilia-Romagna-TPER-Bologna",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-srb-tperspa~bologna",
-            "url-override": "https://solweb.tper.it/web/tools/open-data/open-data-download.aspx?source=solweb.tper.it&filename=gommagtfsbo&version=20250220&format=zip"
+            "transitland-atlas-id": "f-srb-tperspa~bologna"
         },
         {
             "name": "Emilia-Romagna-TPER-Ferrara",
@@ -83,7 +82,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "url": "https://usbshare.agenziatpl.it/index.php/s/cSswJyLgEGsYp7p/download/2024-12-16_NET.zip"
+            "url": "https://usbshare.agenziatpl.it/index.php/s/a3SZsLKCQLxzEzr/download/2025-02-07_NET.zip",
+            "skip": true,
+            "skip-reason": "Expired feed"
         },
         {
             "name": "Lombardia-STAR",
@@ -91,7 +92,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "url": "https://usbshare.agenziatpl.it/index.php/s/7PrFyAHRrqnxKFj/download/2024-02-14_PMT.zip"
+            "url": "https://usbshare.agenziatpl.it/index.php/s/7PrFyAHRrqnxKFj/download/2024-02-14_PMT.zip",
+            "skip": true,
+            "skip-reason": "Expired feed"
         },
         {
             "name": "Lombardia-STAV",
@@ -224,30 +227,6 @@
             }
         },
         {
-            "name": "Sardegna-Ferries-Sardinia-Ferries",
-            "type": "http",
-            "url": "https://www.sardegnamobilita.it/opendata/R_SARDEGTRASP_00028_1_dati_sardinia_ferries.zip",
-            "license": {
-                "spdx-identifier": "CC-BY-4.0"
-            }
-        },
-        {
-            "name": "Sardegna-Ferries-Tirrenia",
-            "type": "http",
-            "url": "https://www.sardegnamobilita.it/opendata/R_SARDEGTRASP_00026_1_GTFS_dati_tirrenia.zip",
-            "license": {
-                "spdx-identifier": "CC-BY-4.0"
-            }
-        },
-        {
-            "name": "Sardegna-Planes-Alghero-Airport",
-            "type": "http",
-            "url": "https://www.sardegnamobilita.it/opendata/R_SARDEGTRASP_00024_3_GTFS_timetable_winter_it.zip",
-            "license": {
-                "spdx-identifier": "CC-BY-4.0"
-            }
-        },
-        {
             "name": "Sardegna-Planes-Cagliari-Airport",
             "type": "http",
             "url": "https://www.sardegnamobilita.it/opendata/R_SARDEGTRASP_00030_10_cagliari_timetable.zip",
@@ -270,11 +249,6 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             }
-        },
-        {
-            "name": "Toscana-Amitour",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-spx-amitour"
         },
         {
             "name": "Toscana-Autolinee-LineeRegionali",
@@ -357,32 +331,40 @@
             "transitland-atlas-id": "f-s-extraurbanofirenze"
         },
         {
-            "name": "Toscana-Firenze-Extraurbano-AT",
+            "name": "Toscana-AT",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-srb-atnonscolastico"
+            "transitland-atlas-id": "f-srb-atnonscolastico",
+            "skip": true,
+            "skip-reason": "Expired feed"
         },
         {
-            "name": "Toscana-Firenze-Extraurbano-AT-Scolatico",
+            "name": "Toscana-AT-Scolatico",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-s-atscolastico"
+            "transitland-atlas-id": "f-s-atscolastico",
+            "skip": true,
+            "skip-reason": "Expired feed"
         },
         {
-            "name": "Toscana-Firenze-Extraurbano-Colbus",
+            "name": "Toscana-Colbus",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-s-colbusnonscolastico"
+            "transitland-atlas-id": "f-s-colbusnonscolastico",
+            "skip": true,
+            "skip-reason": "Expired feed"
         },
         {
-            "name": "Toscana-Firenze-Extraurbano-Colbus-Scolatico",
+            "name": "Toscana-Colbus-Scolatico",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-s-colbusscolastico"
+            "transitland-atlas-id": "f-s-colbusscolastico",
+            "skip": true,
+            "skip-reason": "Expired feed"
         },
         {
-            "name": "Toscana-Firenze-Extraurbano-Debole",
+            "name": "Toscana-Extraurbano-Debole",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-sp-deboleextraurbanocev"
         },
         {
-            "name": "Toscana-Firenze-Extraurbano-Empoli",
+            "name": "Toscana-Extraurbano-Empoli",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-sp-extraurbanoempolesevaldelsa"
         },
@@ -392,17 +374,17 @@
             "transitland-atlas-id": "f-s-urbanoareametropolitanafiorentina"
         },
         {
-            "name": "Toscana-Firenze-Urbano-Certaldo",
+            "name": "Toscana-Urbano-Certaldo",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-spxz-urbanocertaldo"
         },
         {
-            "name": "Toscana-Firenze-Urbano-Empoli",
+            "name": "Toscana-Urbano-Empoli",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-spz-urbanoempoli"
         },
         {
-            "name": "Toscana-Firenze-Urbano-Volterra-EMG",
+            "name": "Toscana-Urbano-Volterra-EMG",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-spxw-emgurbanovolterra"
         },
