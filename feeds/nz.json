@@ -68,12 +68,8 @@
         },
         {
             "name": "Horizons-Regional-Council",
-            "type": "http",
-            "url": "https://www.horizons.govt.nz/HRC/media/Data/files/tranzit/HRC_GTFS_Production.zip",
-            "license": {
-                "spdx-identifier": "CC-BY-4.0",
-                "url": "https://creativecommons.org/licenses/by/4.0/"
-            }
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-rck-horizons~regional~council"
         }
     ]
 }
