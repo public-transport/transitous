@@ -103,11 +103,13 @@ class MobilityDatabaseSource(Source):
     mdb_id: int = -1
     options: HttpOptions = HttpOptions()
     url_override: Optional[str] = None
+    use_origin: bool = False
 
     def __init__(self, parsed: dict):
         super().__init__(parsed)
         self.mdb_id = parsed["mdb-id"]
         self.url_override = parsed.get("url-override", None)
+        self.use_origin = parsed.get("use-origin", False)
 
         if "http-options" in parsed:
             self.options = HttpOptions(parsed["http-options"])

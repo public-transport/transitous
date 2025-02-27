@@ -43,6 +43,55 @@
             "name": "brasov",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-ratbv~ro"
+        },
+        {
+            "name": "Cluj-Napoca",
+            "type": "mobility-database",
+            "mdb-id": 2121
+        },
+        {
+            "name": "Transbus-Buzău",
+            "type": "mobility-database",
+            "use-origin": true,
+            "mdb-id": 2106
+        },
+        {
+            "name": "Transbus-Buzău",
+            "type": "mobility-database",
+            "mdb-id": 2112
+        },
+        {
+            "name": "Consiliul-Judetean-Vrancea",
+            "type": "mobility-database",
+            "use-origin": true,
+            "mdb-id": 1984
+        },
+        {
+            "name": "Târgoviște",
+            "type": "mobility-database",
+            "use-origin": true,
+            "mdb-id": 2107
+        },
+        {
+            "name": "Sinaia",
+            "type": "mobility-database",
+            "mdb-id": 2114
+        },
+        {
+            "name": "Craiova",
+            "type": "mobility-database",
+            "mdb-id": 2115
+        },
+        {
+            "name": "Ploiești",
+            "type": "mobility-database",
+            "use-origin": true,
+            "mdb-id": 2108
+        },
+        {
+            "name": "Zalău",
+            "type": "mobility-database",
+            "mdb-id": 2102
         }
     ]
 }
