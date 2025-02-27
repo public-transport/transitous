@@ -21,6 +21,11 @@ with open(sys.argv[1], "r") as f:
 			source["http-options"] = source["options"]
 			source.pop("options", None)
 
+		if "proxy" in source:
+			source.pop("proxy", None)
+		if "use-origin" in source:
+			source.pop("use-origin", None)
+
 with open(sys.argv[1], "w") as out:
 	json.dump(region, out, indent=4, ensure_ascii=False)
 	out.write("\n")
