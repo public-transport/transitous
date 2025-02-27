@@ -50,6 +50,9 @@ def parse_gtfs_csv(f: IO) -> csv.DictReader:
 
 
 def get_feed_timezone(zip_file: ZipFile) -> Optional[str]:
+    if "agency.txt" not in zip_file.namelist():
+        return None
+
     with zip_file.open("agency.txt", "r") as a:
         with io.TextIOWrapper(a) as at:
             feedinforeader = parse_gtfs_csv(at)
@@ -133,7 +136,12 @@ def check_feed_timeframe_valid(zip_content: bytes) -> FeedValidity:
         calendar_dates = read_file("calendar_dates.txt")
 
         tz = get_feed_timezone(z)
-        assert tz
+
+        # Don't hard-fail on feeds which have files in a subdirectory,
+        # gtfsclean might be able to still handle it
+        if not tz:
+            return FeedValidity.CURRENTLY_VALID
+
         feed_timezone = ZoneInfo(tz)
 
         if not check_feed_already_valid(feed_info, feed_timezone):
