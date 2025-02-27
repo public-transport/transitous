@@ -55,10 +55,8 @@ class Database:
             case "gtfs":
                 result = HttpSource()
                 result.name = source.name
-                if source.use_origin:
-                    result.url = feed["urls.direct_download"]
-                else:
-                    result.url = feed["urls.latest"]
+                result.url = feed["urls.direct_download"]
+                result.cache_url = feed["urls.latest"]
                 result.options = source.options
                 result.spec = "gtfs"
                 result.fix = source.fix
