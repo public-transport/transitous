@@ -47,6 +47,7 @@ if __name__ == "__main__":
             "datasets", before="Modified by generate-motis-config.py"
         )
         config["timetable"]["datasets"] = {}
+        config["gbfs"]["feeds"] = {}
 
         if feed == "":
             glob = "*.json"
@@ -114,11 +115,9 @@ if __name__ == "__main__":
                             config["timetable"]["datasets"][name]["rt"] \
                                 .append(rt_feed)
 
-                        case "gbfs":
-                            if "gbfs" not in config.keys():
-                                config["gbfs"] = {"feeds": {source.name: {"url": source.url}}}
-                            else:
-                                config["gbfs"]["feeds"][source.name] = {"url": source.url}
+                        case "gbfs" if isinstance(source, metadata.UrlSource):
+                            name = f"{region_name}-{source.name}"
+                            config["gbfs"]["feeds"][name] = {"url": source.url}
 
         with open("out/config.yml", "w") as fo:
             yaml.dump(config, fo)

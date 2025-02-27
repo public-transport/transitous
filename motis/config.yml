@@ -35,3 +35,6 @@ timetable:
   max_footpath_length: 20
 # The datasets are filled in by ./src/generate-motis-config.py
   datasets:
+
+gbfs:
+  feeds:
