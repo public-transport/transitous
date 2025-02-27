@@ -7,6 +7,7 @@ import json
 import metadata
 import sys
 import transitland
+import mobilitydatabase
 
 from ruamel.yaml import YAML
 from typing import Any
@@ -25,6 +26,7 @@ if __name__ == "__main__":
     feed_dir = Path("feeds/")
 
     atlas = transitland.Atlas.load(Path("transitland-atlas/"))
+    mdb = mobilitydatabase.Database.load()
 
     gtfs_feeds: list[dict] = []
     gtfsrt_feeds: list[dict] = []
@@ -65,11 +67,18 @@ if __name__ == "__main__":
                     if source.skip:
                         continue
 
+                    resolved_source = None
                     match source:
                         case metadata.TransitlandSource():
-                            source = atlas.source_by_id(source)
-                            if not source:
-                                continue
+                            resolved_source = atlas.source_by_id(source)
+                        case metadata.MobilityDatabaseSource():
+                            resolved_source = mdb.source_by_id(source)
+
+                    # Database specific error already emitted
+                    if not resolved_source:
+                        continue
+
+                    source = resolved_source
 
                     match source.spec:
                         case "gtfs":
