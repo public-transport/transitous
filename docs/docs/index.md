@@ -19,7 +19,7 @@ Free and open public transport routing.
 
 A community-run provider-neutral international public transport routing service.
 
-Using openly available GTFS/GTFS-RT/etc. feeds and FOSS routing engine we want to operate a
+Using openly available GTFS/GTFS-RT/GBFS/etc. feeds and FOSS routing engine we want to operate a
 routing service that:
 
 * focuses on the interest of the user rather than the public transport operators
@@ -126,6 +126,24 @@ This example applies the updates to the `lviv` feed:
     }
 ]
 ```
+
+### Shared Mobility feeds
+
+GBFS feeds contains realtime information like vehicle availability and characteristics for shared Mobility (e.g. Bikesharing).
+Each source can only be of `type` `transitland-atlas`.
+
+Feeds from [Transitland](https://www.transit.land/feeds) can be referenced by their Onestop ID.
+
+GBFS Database:
+```json
+{
+    "name": "<name of the feed>",
+    "type": "transitland-atlas",
+    "transitland-atlas-id": "<onestop id>"
+}
+```
+
+The name needs to be unique in the file.
 
 ### Testing
 
