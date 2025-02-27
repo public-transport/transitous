@@ -13,7 +13,7 @@
         {
             "name": "matka",
             "type": "http",
-            "url": "https://traffic.navici.com/tiedostot/gtfs.zip",
+            "url": "http://traffic.navici.com/tiedostot/gtfs.zip",
             "license": {
                 "spdx-identifier": "CC-BY-4.0",
                 "url": "https://developer.matka.fi/pages/en/home.php"
