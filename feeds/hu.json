@@ -58,6 +58,5 @@
             "type": "http",
             "url": "https://utazastervezo.paksbusz.hu/api/static/v1/gtfs-google/gtfs-google.zip"
         }
-        
     ]
 }

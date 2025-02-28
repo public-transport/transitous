@@ -5,7 +5,7 @@
             "github": "jjesse"
         },
         {
-	    "name": "John Scott",
+            "name": "John Scott",
             "github": "jscott0"
         }
     ],
@@ -47,20 +47,18 @@
         {
             "name": "Interurban-Trolley",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-macog",
-            "proxy": true
+            "transitland-atlas-id": "f-macog"
         },
         {
             "name": "Muncie-Indiana-Transit-System",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-dp5k-indiana~mits",
-            "proxy": true
+            "transitland-atlas-id": "f-dp5k-indiana~mits"
         },
         {
             "name": "Northern-Indiana-Commuter-Transportation-District",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-northern~indiana~commuter~transportation~district",
-	    "fix": true
+            "fix": true
         },
         {
             "name": "Terre-Haute-Transit",
