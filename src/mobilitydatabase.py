@@ -25,6 +25,10 @@ class Database:
         if not path.exists():
             eprint("Caching Mobility Database export at `mobilitydatabase.csv`…")
             resp = requests.get("https://storage.googleapis.com/storage/v1/b/mdb-csv/o/sources.csv?alt=media")
+
+            if resp.status_code != 200:
+                raise Exception("Failed to download Mobility Database export")
+
             with open(path, "w") as f:
                 f.write(resp.text)
 
