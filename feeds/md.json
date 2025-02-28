@@ -1,0 +1,20 @@
+{
+    "maintainers": [
+        {
+            "name": "Jonah Brüchert",
+            "github": "jbruechert"
+        }
+    ],
+    "sources": [
+        {
+            "name": "Chișinău",
+            "type": "mobility-database",
+            "mdb-id": 2341
+        },
+        {
+            "name": "Chișinău",
+            "type": "mobility-database",
+            "mdb-id": 2343
+        }
+    ]
+}
