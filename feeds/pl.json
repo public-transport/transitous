@@ -158,6 +158,11 @@
                 "spdx-identifier": "CC-BY-4.0",
                 "url": "https://spdx.org/licenses/CC-BY-4.0.html"
             }
+        },
+        {
+            "name": "Gorzów Wielkopolski",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u36g-gorzow~wielkopolski"
         }
     ]
 }
