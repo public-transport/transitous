@@ -45,14 +45,12 @@
         {
             "name": "green-bay",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-green~bay~wi~us",
-            "proxy": true
+            "transitland-atlas-id": "f-green~bay~wi~us"
         },
         {
             "name": "green-bay",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-green~bay~wi~us~rt",
-            "proxy": true
+            "transitland-atlas-id": "f-green~bay~wi~us~rt"
         },
         {
             "name": "janesville-jts",

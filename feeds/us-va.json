@@ -76,8 +76,7 @@
         {
             "name": "Fairfax-CUE-Bus",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-dqcj1-fairfaxcue",
-            "proxy": true
+            "transitland-atlas-id": "f-dqcj1-fairfaxcue"
         },
         {
             "name": "farmville",
@@ -133,8 +132,7 @@
         {
             "name": "loudoun-county",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-loudouncounty~va~us",
-            "proxy": true
+            "transitland-atlas-id": "f-loudouncounty~va~us"
         },
         {
             "name": "districtthree",

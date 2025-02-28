@@ -10,7 +10,7 @@
             "name": "lviv",
             "type": "http",
             "url": "https://track.ua-gis.com/gtfs/lviv/static.zip",
-	    "fix": true
+            "fix": true
         },
         {
             "name": "lviv",

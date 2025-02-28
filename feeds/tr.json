@@ -7,9 +7,9 @@
     ],
     "sources": [
         {
-           "name": "izmir-eshot",
-           "type": "transitland-atlas",
-           "transitland-atlas-id": "f-eshot~tr"
+            "name": "izmir-eshot",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-eshot~tr"
         },
         {
             "name": "izmir-metro",
