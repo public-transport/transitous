@@ -71,6 +71,7 @@ class HttpOptions:
     ignore_tls_errors: bool = False
 
     def __init__(self, parsed: Optional[dict] = None):
+        self.headers = {}
         if parsed:
             if "fetch-interval-days" in parsed:
                 self.fetch_interval_days = \
