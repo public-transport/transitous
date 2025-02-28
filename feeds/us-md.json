@@ -1,102 +1,102 @@
 {
-  "maintainers": [
-    {
-      "name": "Marcus Lundblad",
-      "github": "mlundblad"
-    }
-  ],
-  "sources": [
-    {
-      "name": "MTA-marc",
-      "type": "transitland-atlas",
-      "transitland-atlas-id": "f-dq-mtamaryland~marc"
-    },
-    {
-      "name": "MTA-marc",
-      "type": "transitland-atlas",
-      "transitland-atlas-id": "f-mtamaryland~marc~train~rt"
-    },
-    {
-      "name": "MTA-raillink",
-      "type": "transitland-atlas",
-      "transitland-atlas-id": "f-dq-mtamaryland~raillink"
-    },
-    {
-      "name": "MTA-raillink",
-      "type": "transitland-atlas",
-      "transitland-atlas-id": "f-dq-mtamaryland~raillink~rt"
-    },
-    {
-      "name": "MTA-commuterbus",
-      "type": "transitland-atlas",
-      "transitland-atlas-id": "f-dq-mtamaryland~commuterbus"
-    },
-    {
-      "name": "MTA-commuterbus",
-      "type": "transitland-atlas",
-      "transitland-atlas-id": "f-dq-mtamaryland~commuterbus~rt"
-    },
-    {
-      "name": "MTA-subwaylink",
-      "type": "transitland-atlas",
-      "transitland-atlas-id": "f-dq-mtamaryland~subwaylink"
-    },
-    {
-      "name": "MTA-subwaylink",
-      "type": "transitland-atlas",
-      "transitland-atlas-id": "f-dq-mtamaryland~subwaylink~rt"
-    },
-    {
-      "name": "MTA-bus",
-      "type": "transitland-atlas",
-      "transitland-atlas-id": "f-dq-mtamaryland~bus",
-      "fix": true
-    },
-    {
-      "name": "MTA-bus",
-      "type": "transitland-atlas",
-      "transitland-atlas-id": "f-dq-mtamaryland~bus~rt"
-    },
-    {
-      "name": "RTA",
-      "type": "transitland-atlas",
-      "transitland-atlas-id": "f-dqcq-regionaltransportationagencyofcentralmaryland"
-    },
-    {
-      "name": "RTA",
-      "type": "transitland-atlas",
-      "transitland-atlas-id": "f-dqcq-regionaltransportationagencyofcentralmaryland~rt"
-    },
-    {
-      "name": "EPTA",
-      "type": "transitland-atlas",
-      "transitland-atlas-id": "f-epta~wv"
-    },
-    {
-      "name": "TransIt",
-      "type": "transitland-atlas",
-      "transitland-atlas-id": "f-dr0b-transitservicesoffrederickcounty",
-      "fix": true,
-      "skip": true,
-      "skip-reason": "Connection timed out"
-    },
-    {
-      "name": "TransIt",
-      "type": "transitland-atlas",
-      "transitland-atlas-id": "f-dr0b-transitservicesoffrederickcounty~rt",
-      "skip": true,
-      "skip-reason": "Connection timed out"
-    },
-    {
-      "name": "RideOn",
-      "type": "transitland-atlas",
-      "transitland-atlas-id": "f-dqcn-montgomerycountymdrideon"
-    },
-    {
-      "name": "CTS",
-      "type": "transitland-atlas",
-      "transitland-atlas-id": "f-dr10-carrolltransitsystem~carrollareatransitsystemcats",
-      "fix": true
-    }
-  ]
+    "maintainers": [
+        {
+            "name": "Marcus Lundblad",
+            "github": "mlundblad"
+        }
+    ],
+    "sources": [
+        {
+            "name": "MTA-marc",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dq-mtamaryland~marc"
+        },
+        {
+            "name": "MTA-marc",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-mtamaryland~marc~train~rt"
+        },
+        {
+            "name": "MTA-raillink",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dq-mtamaryland~raillink"
+        },
+        {
+            "name": "MTA-raillink",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dq-mtamaryland~raillink~rt"
+        },
+        {
+            "name": "MTA-commuterbus",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dq-mtamaryland~commuterbus"
+        },
+        {
+            "name": "MTA-commuterbus",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dq-mtamaryland~commuterbus~rt"
+        },
+        {
+            "name": "MTA-subwaylink",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dq-mtamaryland~subwaylink"
+        },
+        {
+            "name": "MTA-subwaylink",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dq-mtamaryland~subwaylink~rt"
+        },
+        {
+            "name": "MTA-bus",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dq-mtamaryland~bus",
+            "fix": true
+        },
+        {
+            "name": "MTA-bus",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dq-mtamaryland~bus~rt"
+        },
+        {
+            "name": "RTA",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dqcq-regionaltransportationagencyofcentralmaryland"
+        },
+        {
+            "name": "RTA",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dqcq-regionaltransportationagencyofcentralmaryland~rt"
+        },
+        {
+            "name": "EPTA",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-epta~wv"
+        },
+        {
+            "name": "TransIt",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dr0b-transitservicesoffrederickcounty",
+            "fix": true,
+            "skip": true,
+            "skip-reason": "Connection timed out"
+        },
+        {
+            "name": "TransIt",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dr0b-transitservicesoffrederickcounty~rt",
+            "skip": true,
+            "skip-reason": "Connection timed out"
+        },
+        {
+            "name": "RideOn",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dqcn-montgomerycountymdrideon"
+        },
+        {
+            "name": "CTS",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dr10-carrolltransitsystem~carrollareatransitsystemcats",
+            "fix": true
+        }
+    ]
 }

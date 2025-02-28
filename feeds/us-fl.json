@@ -10,7 +10,6 @@
             "name": "miami-dade",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-dhw-miamidadetransit",
-            "proxy": true,
             "fix": true
         },
         {
