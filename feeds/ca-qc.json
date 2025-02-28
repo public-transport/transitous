@@ -179,6 +179,11 @@
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-societe~de~transport~de~trois-rivieres",
             "fix": true
+        },
+        {
+            "name": "Bixi-Montreal",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-bixi~montréal~montreal~gbfs"
         }
     ]
 }
