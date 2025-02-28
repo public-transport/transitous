@@ -68,18 +68,17 @@ if __name__ == "__main__":
                     if source.skip:
                         continue
 
-                    resolved_source = None
                     match source:
                         case metadata.TransitlandSource():
                             resolved_source = atlas.source_by_id(source)
+                            if not resolved_source:
+                                continue
+                            source = resolved_source
                         case metadata.MobilityDatabaseSource():
                             resolved_source = mdb.source_by_id(source)
-
-                    # Database specific error already emitted
-                    if not resolved_source:
-                        continue
-
-                    source = resolved_source
+                            if not resolved_source:
+                                continue
+                            source = resolved_source
 
                     match source.spec:
                         case "gtfs":
