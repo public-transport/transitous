@@ -93,11 +93,6 @@
       "transitland-atlas-id": "f-dqcn-montgomerycountymdrideon"
     },
     {
-      "name": "RideOn",
-      "type": "transitland-atlas",
-      "transitland-atlas-id": "f-dqcn-montgomerycountymdrideon~rt"
-    },
-    {
       "name": "CTS",
       "type": "transitland-atlas",
       "transitland-atlas-id": "f-dr10-carrolltransitsystem~carrollareatransitsystemcats",
