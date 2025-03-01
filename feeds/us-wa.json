@@ -74,7 +74,9 @@
         {
             "name": "Appleline-Goldline-Dungenessline-Grapeline",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-c2-appleline~goldline~dungenessline~grapeline"
+            "transitland-atlas-id": "f-c2-appleline~goldline~dungenessline~grapeline",
+            "skip": true,
+            "skip-reason": "This feed is currently broken"
         },
         {
             "name": "TheVictoriaClipper",
