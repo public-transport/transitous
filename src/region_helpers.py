@@ -7,7 +7,8 @@
 # add some dynamic information to the metadata, such as short-lived tokens.
 #
 
-from metadata import *
+from metadata import HttpSource
+from datetime import datetime
 
 import requests
 
@@ -23,4 +24,14 @@ def mvo_keycloak_token(source: HttpSource) -> HttpSource:
 
     source.options.headers["Authorization"] = f"Bearer {token}"
 
+    return source
+
+
+def data_public_lu_latest_resource(
+        source: HttpSource) -> HttpSource:
+    api = requests.get(source.url).json()
+    res = sorted(api["resources"],
+                 key=lambda res: datetime.fromisoformat(res["last_modified"]),
+                 reverse=True)
+    source.url = res[0]["latest"]
     return source
