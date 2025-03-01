@@ -9,6 +9,7 @@ from utils import eprint
 import sys
 import requests
 import csv
+import os
 
 
 class Database:
@@ -29,8 +30,11 @@ class Database:
             if resp.status_code != 200:
                 raise Exception("Failed to download Mobility Database export")
 
-            with open(path, "w") as f:
+            tmppath = ".tmp-" + str(os.getpid()) + "-" + str(path)
+
+            with open(tmppath, "w") as f:
                 f.write(resp.text)
+                os.rename(tmppath, path)
 
         with open(path) as f:
             for row in csv.DictReader(f, delimiter=",", quotechar="\""):
