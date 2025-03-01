@@ -22,6 +22,12 @@
             "transitland-atlas-id": "f-u2f-pražskáintegrovanádoprava"
         },
         {
+            "name": "PID",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.golemio.cz/v2/vehiclepositions/gtfsrt/trip_updates.pb"
+        },
+        {
             "name": "IDS-JMK",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u2e-idsjmk"
