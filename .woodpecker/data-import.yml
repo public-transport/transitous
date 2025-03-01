@@ -24,6 +24,8 @@ steps:
     commands:
       - git submodule update --init --checkout --remote
       - ./ci/fetch-feeds.py timer
+      - ./src/garbage-collect.py
+      - ./src/generate-attribution.py
   import:
     image: ghcr.io/public-transport/transitous/import:latest
     when:
@@ -32,7 +34,6 @@ steps:
     pull: true
     commands:
       - motis --version
-      - ./src/generate-attribution.py
       - touch out/.import-running
       - ./src/generate-motis-config.py import
       # Remove files that we want to regenerate

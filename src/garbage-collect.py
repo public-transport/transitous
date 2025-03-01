@@ -8,7 +8,7 @@ import sys
 import time
 import os
 
-from metadata import *
+from metadata import Region
 from pathlib import Path
 
 
