@@ -44,6 +44,11 @@
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u2u6-dpmo",
             "fix": true
+        },
+        {
+            "name": "Bean-Shuttle",
+            "type": "mobility-database",
+            "mdb-id": 2036
         }
     ]
 }
