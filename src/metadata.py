@@ -87,7 +87,6 @@ class HttpOptions:
 class TransitlandSource(Source):
     transitland_atlas_id: str = ""
     options: HttpOptions = HttpOptions()
-    url_override: Optional[str] = None
 
     def __init__(self, parsed: dict):
         super().__init__(parsed)
@@ -101,7 +100,6 @@ class TransitlandSource(Source):
 class MobilityDatabaseSource(Source):
     mdb_id: int = -1
     options: HttpOptions = HttpOptions()
-    url_override: Optional[str] = None
 
     def __init__(self, parsed: dict):
         super().__init__(parsed)
