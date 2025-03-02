@@ -162,7 +162,8 @@
         {
             "name": "Koleje-Małopolskie",
             "type": "mobility-database",
-            "mdb-id": 1908
+            "mdb-id": 1908,
+            "use-origin": true
         },
         {
             "name": "ZTP-Kraków",
