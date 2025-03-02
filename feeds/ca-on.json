@@ -55,8 +55,7 @@
         {
             "name": "Chatham-Kent-Transit",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-chatham~kent~on~ca",
-            "proxy": true
+            "transitland-atlas-id": "f-chatham~kent~on~ca"
         },
         {
             "name": "Cornwall-Transit",
@@ -111,8 +110,7 @@
         {
             "name": "Guelph-Transit",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-dpwz-guelphtransit",
-            "proxy": true
+            "transitland-atlas-id": "f-dpwz-guelphtransit"
         },
         {
             "name": "Guelph-Transit",
@@ -178,8 +176,7 @@
         {
             "name": "MiWay",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-dpz2-miway",
-            "proxy": true
+            "transitland-atlas-id": "f-dpz2-miway"
         },
         {
             "name": "MiWay",

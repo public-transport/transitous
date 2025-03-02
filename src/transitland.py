@@ -31,6 +31,8 @@ class Atlas:
             result = HttpSource()
             result.name = source.name
             result.url = feed["urls"]["static_current"]
+            result.cache_url = "https://gtfsproxy.fwan.it/" + \
+                source.transitland_atlas_id
             result.options = source.options
             result.spec = "gtfs"
             result.fix = source.fix
@@ -42,10 +44,6 @@ class Atlas:
 
             if source.url_override:
                 result.url_override = source.url_override
-
-            if source.proxy:
-                result.url_override = "https://gtfsproxy.fwan.it/" + \
-                    source.transitland_atlas_id
 
         elif "realtime_trip_updates" in feed["urls"]:
             result = UrlSource()
