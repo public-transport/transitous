@@ -87,14 +87,11 @@ class HttpOptions:
 class TransitlandSource(Source):
     transitland_atlas_id: str = ""
     options: HttpOptions = HttpOptions()
-    url_override: Optional[str] = None
-    proxy: bool = False
 
     def __init__(self, parsed: dict):
         super().__init__(parsed)
         self.transitland_atlas_id = parsed["transitland-atlas-id"]
         self.url_override = parsed.get("url-override", None)
-        self.proxy = parsed.get("proxy", False)
 
         if "http-options" in parsed:
             self.options = HttpOptions(parsed["http-options"])
@@ -103,14 +100,11 @@ class TransitlandSource(Source):
 class MobilityDatabaseSource(Source):
     mdb_id: int = -1
     options: HttpOptions = HttpOptions()
-    url_override: Optional[str] = None
-    use_origin: bool = False
 
     def __init__(self, parsed: dict):
         super().__init__(parsed)
         self.mdb_id = parsed["mdb-id"]
         self.url_override = parsed.get("url-override", None)
-        self.use_origin = parsed.get("use-origin", False)
 
         if "http-options" in parsed:
             self.options = HttpOptions(parsed["http-options"])
@@ -120,6 +114,7 @@ class HttpSource(Source):
     url: str = ""
     options: HttpOptions = HttpOptions()
     url_override: Optional[str] = None
+    cache_url: Optional[str] = None
 
     def __init__(self, parsed: Optional[dict] = None):
         if parsed:
