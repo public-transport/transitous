@@ -77,7 +77,7 @@
             "transitland-atlas-id": "f-u3q-warszawski~transport~publiczny"
         },
         {
-            "name": "Warszawa-Alerts",
+            "name": "Warszawa",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u3q-warszawski~transport~publiczny~rt~alerts"
         },
@@ -158,6 +158,27 @@
                 "spdx-identifier": "CC-BY-4.0",
                 "url": "https://spdx.org/licenses/CC-BY-4.0.html"
             }
+        },
+        {
+            "name": "Koleje-Małopolskie",
+            "type": "mobility-database",
+            "mdb-id": 1908
+        },
+        {
+            "name": "ZTP-Kraków",
+            "type": "mobility-database",
+            "mdb-id": 1270
+        },
+        {
+            "name": "ZTP-Kraków",
+            "type": "mobility-database",
+            "mdb-id": 2339
+        },
+        {
+            "name": "MZK-Ełk",
+            "type": "mobility-database",
+            "mdb-id": 2086,
+            "fix": true
         }
     ]
 }
