@@ -224,7 +224,7 @@ This is useful for passing in things like headers with API keys.
 ## Overview of the import pipeline
 Every time new data is added to transitous, the data import pipeline ensures that the data can indeed be imported.
 This image gives an overview of the steps executed in the data pipeline:
-<img src="data-pipeline.png" alt="diagram visualizing the data import pipeline">
+<img src="pipeline.svg" alt="diagram visualizing the data import pipeline">
 
 
 ## Running a transitous instance locally
