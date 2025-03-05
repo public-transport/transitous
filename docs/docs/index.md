@@ -221,6 +221,12 @@ This is useful for passing in things like headers with API keys.
 }
 ```
 
+## Overview of the import pipeline
+The following pipeline runs on a daily basis to import new GTFS feed data.
+This image gives an overview of the steps executed in the data pipeline:
+<img src="pipeline.svg" alt="diagram visualizing the data import pipeline">
+
+
 ## Running a transitous instance locally
 
 Running a local instance of the transitous setup can be useful for debugging.
@@ -287,3 +293,5 @@ motis server
 ```
 
 Once it's done, the motis web interface should be reachable on [localhost:8080](http://localhost:8080).
+
+
