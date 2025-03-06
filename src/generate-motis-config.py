@@ -21,7 +21,7 @@ if __name__ == "__main__":
         sys.exit(1)
 
     flavour = sys.argv[1]
-    feed = sys.argv[2] if len(sys.argv) > 2 else ""
+    selector = sys.argv[2] if len(sys.argv) > 2 else ""
 
     feed_dir = Path("feeds/")
 
@@ -49,12 +49,18 @@ if __name__ == "__main__":
         config["timetable"]["datasets"] = {}
         config["gbfs"]["feeds"] = {}
 
-        if feed == "":
+        european_iso_codes = ['al', 'ad', 'at', 'be', 'ba', 'bg', 'hr', 'cy', 'cz', 'dk', 'ee', 'fi', 'fr', 'de', 'gr',
+                              'hu', 'is', 'ie', 'xk', 'lv', 'li', 'lt', 'lu', 'mt', 'md', 'mc', 'nl', 'mk', 'pl', 'pt',
+                              'ro', 'sm', 'rs', 'sk', 'si', 'es', 'se', 'ch', 'tr', 'ua', 'uk', 'ax', 'fo', 'sj', 'eu']
+
+        if selector == "" or "europe":
             glob = "*.json"
         else:
-            glob = f"{feed}.json"
+            glob = f"{selector}.json"
 
         for feed in sorted(feed_dir.glob(glob)):
+            if selector == "europe" and Path(feed).stem not in european_iso_codes:
+                continue
             with open(feed, "r") as f:
                 parsed = json.load(f)
                 region = metadata.Region(parsed)
