@@ -20,12 +20,15 @@ SPDX-License-Identifier: AGPL-3.0-or-later
     <div class="bg-black-60">
       {{ partial "site-navigation.html" . }}
       <div class="text-center pv6 ph3 ph4-ns">
+
         <div class="container" style="max-width: 900px">
           <div class="row reverse-column-if-small">
-            <div class="alert alert-danger" style="margin-bottom: 50px" role="alert">
-              Transitous is currently unavailable due to an ongoing power outage.
-              See <a href="https://spline-status.de/status/transitous">our status page</a> and the <a href="https://www.fu-berlin.de/en/sites/stromausfall/index.html">website of the Freie Universität Berlin</a> for updates.
+            <div style="width: 350px; float: none; margin: 0 auto;">
+              <div id="searchbox" class="card" style="margin-bottom: 50px"></div>
+              <script src="/index.js"></script>
+              <script>window.Main.main()</script>
             </div>
+
             <div class="col">
               {{ if not .Params.omit_header_text }}
                 <div class="f2 f1-l fw2 white-90 mb0 lh-title" style="margin-top: 40px">
