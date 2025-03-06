@@ -12,7 +12,7 @@ import mobilitydatabase
 from ruamel.yaml import YAML
 from typing import Any
 from pathlib import Path
-from utils import eprint
+from utils import eprint, european_iso_codes
 
 
 if __name__ == "__main__":
@@ -49,9 +49,7 @@ if __name__ == "__main__":
         config["timetable"]["datasets"] = {}
         config["gbfs"]["feeds"] = {}
 
-        european_iso_codes = ['al', 'ad', 'at', 'be', 'ba', 'bg', 'hr', 'cy', 'cz', 'dk', 'ee', 'fi', 'fr', 'de', 'gr',
-                              'hu', 'is', 'ie', 'xk', 'lv', 'li', 'lt', 'lu', 'mt', 'md', 'mc', 'nl', 'mk', 'pl', 'pt',
-                              'ro', 'sm', 'rs', 'sk', 'si', 'es', 'se', 'ch', 'tr', 'ua', 'uk', 'ax', 'fo', 'sj', 'eu']
+
 
         if selector == "" or "europe":
             glob = "*.json"
