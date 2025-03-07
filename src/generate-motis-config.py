@@ -117,6 +117,8 @@ if __name__ == "__main__":
                         case "gbfs" if isinstance(source, metadata.UrlSource):
                             name = f"{region_name}-{source.name}"
                             config["gbfs"]["feeds"][name] = {"url": source.url}
+                            if source.headers:
+                                config["gbfs"]["feeds"][name]["headers"] = source.headers
 
         with open("out/config.yml", "w") as fo:
             yaml.dump(config, fo)
