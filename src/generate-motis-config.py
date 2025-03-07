@@ -12,7 +12,7 @@ import mobilitydatabase
 from ruamel.yaml import YAML
 from typing import Any
 from pathlib import Path
-from utils import eprint
+from utils import eprint, european_iso_codes
 
 
 if __name__ == "__main__":
@@ -21,7 +21,7 @@ if __name__ == "__main__":
         sys.exit(1)
 
     flavour = sys.argv[1]
-    feed = sys.argv[2] if len(sys.argv) > 2 else ""
+    selector = sys.argv[2] if len(sys.argv) > 2 else ""
 
     feed_dir = Path("feeds/")
 
@@ -49,12 +49,16 @@ if __name__ == "__main__":
         config["timetable"]["datasets"] = {}
         config["gbfs"]["feeds"] = {}
 
-        if feed == "":
+
+
+        if selector == "" or "europe":
             glob = "*.json"
         else:
-            glob = f"{feed}.json"
+            glob = f"{selector}.json"
 
         for feed in sorted(feed_dir.glob(glob)):
+            if selector == "europe" and Path(feed).stem not in european_iso_codes:
+                continue
             with open(feed, "r") as f:
                 parsed = json.load(f)
                 region = metadata.Region(parsed)
