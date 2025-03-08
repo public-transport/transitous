@@ -19,6 +19,8 @@
             "type": "http",
             "url": "https://nap.transportes.gob.es/api/Fichero/download/1096",
             "fix": true,
+            "skip": true,
+            "skip-reason": "Not correct GTFS, too bad for automatic fixing",
             "http-options": {
                 "fetch-interval-days": 1,
                 "headers": {
@@ -223,6 +225,8 @@
             "type": "http",
             "url": "https://nap.transportes.gob.es/api/Fichero/download/1582",
             "fix": true,
+            "skip": true,
+            "skip-reason": "expired",
             "http-options": {
                 "fetch-interval-days": 1,
                 "headers": {
