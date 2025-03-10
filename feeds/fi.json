@@ -11,12 +11,12 @@
     ],
     "sources": [
         {
-            "name": "matka",
+            "name": "fintraffic",
             "type": "http",
-            "url": "http://traffic.navici.com/tiedostot/gtfs.zip",
+            "url": "https://mobility.mobility-database.fintraffic.fi/static/finland_gtfs.zip",
             "license": {
                 "spdx-identifier": "CC-BY-4.0",
-                "url": "https://developer.matka.fi/pages/en/home.php"
+                "url": "https://www.fintraffic.fi/fi/digitaalisetpalvelut/fintrafficin-datapalvelut/liikkumisen-tietopalvelut/joukkoliikenteen-tietopalvelut/koontipalvelu"
             },
             "fix": true
         },
