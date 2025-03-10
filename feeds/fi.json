@@ -18,7 +18,8 @@
                 "spdx-identifier": "CC-BY-4.0",
                 "url": "https://www.fintraffic.fi/fi/digitaalisetpalvelut/fintrafficin-datapalvelut/liikkumisen-tietopalvelut/joukkoliikenteen-tietopalvelut/koontipalvelu"
             },
-            "fix": true
+            "fix": true,
+            "drop-agency-names": ["FlixBus-eu", "FlixTrain-eu"]
         },
         {
             "name": "digitraffic",
