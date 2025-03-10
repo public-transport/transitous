@@ -19,7 +19,7 @@
                 "url": "https://www.fintraffic.fi/fi/digitaalisetpalvelut/fintrafficin-datapalvelut/liikkumisen-tietopalvelut/joukkoliikenteen-tietopalvelut/koontipalvelu"
             },
             "fix": true,
-            "drop-agency-names": ["FlixBus-eu", "FlixTrain-eu"]
+            "drop-agency-names": ["FlixBus-eu", "FlixTrain-eu", "VR", "Pohjois-Suomen Rautatieharrastajat ry", "Sinisten vaunujen ystävät ry"]
         },
         {
             "name": "digitraffic",
