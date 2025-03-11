@@ -1,7 +1,7 @@
 # SPDX-FileCopyrightText: 2024 Jonah Brüchert <jbb@kaidan.im>
 # SPDX-License-Identifier: CC0-1.0
 
-name: Verfy new data can be imported
+name: Verify new data can be imported
 
 on:
   pull_request:
@@ -18,6 +18,13 @@ jobs:
       run: git fetch --unshallow && git fetch --all && git submodule update --init --checkout --remote
     - name: Build docker images
       run: docker build -t transitous . -f ci/container/Containerfile
+    - name: regenerate austria and france
+      run: |
+        docker run -v $PWD:/transitous -w /transitous transitous src/generate-austria.py
+        docker run -v $PWD:/transitous -w /transitous transitous src/generate-france.py
+        if [[ -n $(git status --porcelain) ]]; then
+              gh pr create -B work/transitous_bot/regenerate-feedsRegenerate -H main --title 'Update French or Austria feeds' --body 'Created by Github action' 
+        fi
     - name: Verify that new feeds can be downloaded and parsed
       run: |
         find . -type d -exec chmod 777 {} \;
