@@ -121,37 +121,34 @@ def check_feed_not_expired(feed_info: Iterable[dict],
         (calendar_not_expired() or calendar_dates_not_expired())
 
 
-def check_feed_timeframe_valid(zip_content: bytes) -> FeedValidity:
-    with ZipFile(file=io.BytesIO(zip_content)) as z:
-        def read_file(name: str) -> Iterable[dict]:
-            if name not in z.namelist():
-                return []
+def check_feed_timeframe_valid(zip_file: ZipFile) -> FeedValidity:
+    def read_file(name: str) -> Iterable[dict]:
+        if name not in zip_file.namelist():
+            return []
 
-            a = z.open(name, "r")
-            at = io.TextIOWrapper(a)
-            return parse_gtfs_csv(at)
+        a = zip_file.open(name, "r")
+        at = io.TextIOWrapper(a)
+        return parse_gtfs_csv(at)
 
-        feed_info = read_file("feed_info.txt")
-        calendar = read_file("calendar.txt")
-        calendar_dates = read_file("calendar_dates.txt")
+    feed_info = read_file("feed_info.txt")
+    calendar = read_file("calendar.txt")
+    calendar_dates = read_file("calendar_dates.txt")
 
-        tz = get_feed_timezone(z)
+    tz = get_feed_timezone(zip_file)
 
-        # Don't hard-fail on feeds which have files in a subdirectory,
-        # gtfsclean might be able to still handle it
-        if not tz:
-            return FeedValidity.CURRENTLY_VALID
+    if not tz:
+        raise Exception("Could not check validity, because the time zone could not be detected")
 
-        feed_timezone = ZoneInfo(tz)
+    feed_timezone = ZoneInfo(tz)
 
-        if not check_feed_already_valid(feed_info, feed_timezone):
-            return FeedValidity.IN_FUTURE
+    if not check_feed_already_valid(feed_info, feed_timezone):
+        return FeedValidity.IN_FUTURE
 
-        if not check_feed_not_expired(feed_info, calendar, calendar_dates,
-                                      feed_timezone):
-            return FeedValidity.EXPIRED
+    if not check_feed_not_expired(feed_info, calendar, calendar_dates,
+                                  feed_timezone):
+        return FeedValidity.EXPIRED
 
-        return FeedValidity.CURRENTLY_VALID
+    return FeedValidity.CURRENTLY_VALID
 
 
 class Fetcher:
@@ -288,16 +285,6 @@ class Fetcher:
                     if digest == new_digest:
                         return False
 
-                validity = check_feed_timeframe_valid(content)
-                if validity == FeedValidity.IN_FUTURE and dest_path.exists():
-                    eprint("Info: Feed not yet valid, using old version")
-                    return False
-
-                if validity == FeedValidity.EXPIRED:
-                    eprint("Error: Feed is expired, please consider " +
-                           "removing or updating its source")
-                    raise Exception("Feed is expired")
-
                 with open(dest_path, "wb") as dest:
                     dest.write(content)
 
@@ -340,6 +327,19 @@ class Fetcher:
                 command.append(agency)
 
         subprocess.check_call(command)
+
+        with ZipFile(file=open(temp_file, "rb")) as z:
+            validity = check_feed_timeframe_valid(z)
+            if validity == FeedValidity.IN_FUTURE and output_path.exists():
+                eprint("Info: Feed not yet valid, using old version")
+                os.remove(temp_file)
+                os.remove(input_path)  # to force checking again
+                return
+
+            if validity == FeedValidity.EXPIRED:
+                eprint("Error: Feed is expired, please consider " +
+                       "removing or updating its source")
+                raise Exception("Feed is expired")
 
         os.rename(temp_file, output_path)
 
@@ -412,7 +412,6 @@ class Fetcher:
             except Exception as e:
                 eprint(f"Error: Could not postprocess {region_name}-{source.name}: {e}")
                 errors += 1
-                continue
 
             print()
             sys.stdout.flush()
