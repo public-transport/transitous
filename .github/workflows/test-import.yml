@@ -25,6 +25,8 @@ jobs:
         if [[ -n $(git status --porcelain) ]]; then
               gh pr create -B work/transitous_bot/regenerate-feedsRegenerate -H main --title 'Update French or Austria feeds' --body 'Created by Github action' 
         fi
+      env:
+        GH_TOKEN: ${{ github.token }}
     - name: Verify that new feeds can be downloaded and parsed
       run: |
         find . -type d -exec chmod 777 {} \;
