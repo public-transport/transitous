@@ -23,6 +23,9 @@ jobs:
         docker run -v $PWD:/transitous -w /transitous transitous src/generate-austria.py
         docker run -v $PWD:/transitous -w /transitous transitous src/generate-france.py
         if [[ -n $(git status --porcelain) ]]; then
+              git checkout -B work/transitous-bot/regenerate-feeds
+              git add feeds/fr.json feeds/at.json
+              git commit -m "Update generated feeds"
               gh pr create -B work/transitous_bot/regenerate-feedsRegenerate -H main --title 'Update French or Austria feeds' --body 'Created by Github action' 
         fi
       env:
