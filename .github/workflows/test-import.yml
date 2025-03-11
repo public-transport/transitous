@@ -29,7 +29,7 @@ jobs:
               git add feeds/fr.json feeds/at.json
               git commit -m "Update generated feeds"
               git push --set-upstream origin work/transitous-bot/regenerate-feeds
-              gh pr create -B work/transitous-bot/regenerate-feedsRegenerate -H main --title 'Update French or Austria feeds' --body 'Created by Github action' 
+              gh pr create -B work/transitous-bot/regenerate-feeds -H main --title 'Update French or Austria feeds' --body 'Created by Github action' 
         fi
       env:
         GH_TOKEN: ${{ github.token }}
