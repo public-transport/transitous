@@ -45,67 +45,6 @@
             "name": "229",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-ued-oulunjoukkoliikenne"
-        },
-        {
-            "name": "231",
-            "type": "http",
-            "url": "https://tvv.fra1.digitaloceanspaces.com/231.zip",
-            "license": {
-                "spdx_identifier": "CC-BY-4.0",
-                "url": "https://opendata.waltti.fi/docs#gtfs-static-packages"
-            },
-            "fix": true
-        },
-        {
-            "name": "232",
-            "type": "http",
-            "url": "https://tvv.fra1.digitaloceanspaces.com/232.zip",
-            "license": {
-                "spdx_identifier": "CC-BY-4.0",
-                "url": "https://opendata.waltti.fi/docs#gtfs-static-packages"
-            },
-            "fix": true
-        },
-        {
-            "name": "237",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-rovaniemi~fi"
-        },
-        {
-            "name": "239",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-salo~fi",
-            "fix": true
-        },
-        {
-            "name": "249",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-vaasa~fi",
-            "fix": true
-        },
-        {
-            "name": "hsl",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-ud9-helsinginseudunliikenne"
-        },
-        {
-            "name": "tampere",
-            "type": "http",
-            "url": "https://data.itsfactory.fi/journeys/files/gtfs/latest/gtfs_tampere.zip",
-            "url-override": "https://jbb.ghsq.de/gtfs/fi-tampere.gtfs.zip"
-        },
-        {
-            "name": "turku",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u6x-turunlinja~autoilijainosakeyhtiö~savonlinjaoy~sl~autolinja",
-            "fix": true
-        },
-        {
-            "name": "finferries",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u6xr-finferries~sundqvistinvestmentsoyab~nordiccoastline",
-            "url-override": "https://finap.finferries.fi/share/Reitit.zip",
-            "fix": true
         }
     ]
 }
