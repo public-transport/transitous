@@ -22,7 +22,9 @@ jobs:
       run: |
         docker run -v $PWD:/transitous -w /transitous transitous src/generate-austria.py
         docker run -v $PWD:/transitous -w /transitous transitous src/generate-france.py
-        if [[ -n $(git status --porcelain) ]]; then
+        if [[ -n $(git diff --exit-code feeds ) ]]; then
+              git config user.name "Transitous-Bot"
+              git config user.email "bot@transitous.org"
               git checkout -B work/transitous-bot/regenerate-feeds
               git add feeds/fr.json feeds/at.json
               git commit -m "Update generated feeds"
