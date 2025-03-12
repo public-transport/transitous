@@ -187,6 +187,7 @@ Option Name         | Description
 `http-options`      | Dictionary of HTTP-related options
 `drop-shapes`       | Remove route shapes, use if the shapes are mostly wrong
 `drop-agency-names` | Removes a list of agencies. Can be used to avoid duplicates if the agency provides its own feed.
+`url-override`      | Use a different url instead of the one in Transitland / Mobility Database, or use a custom mirror. For more details, see the section on caches.
 
 #### License Options
 
@@ -226,6 +227,15 @@ The following pipeline runs on a daily basis to import new GTFS feed data.
 This image gives an overview of the steps executed in the data pipeline:
 <img src="pipeline.svg" alt="diagram visualizing the data import pipeline">
 
+## Caches
+
+Due to varying uptime of the feed publishers' servers, feeds that are part of a database like Transitland or the Mobility Database are cached.
+
+The fetching precedence is as follows:
+
+1. If set, the url in `url-override` is tried first
+2. The `url` is tried.
+3. In case of a feed from a database, a cache is used. The cache url depends on the database.
 
 ## Running a transitous instance locally
 

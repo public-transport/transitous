@@ -16,8 +16,7 @@
             "name": "Capitolcorridor",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-9qc-capitolcorridor",
-            "fix": true,
-            "proxy": true
+            "fix": true
         },
         {
             "name": "SF-bayarea",
@@ -52,7 +51,6 @@
             "name": "Santa-Cruz-Metro",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-9q9-scmtdcom",
-            "proxy": true,
             "skip": true,
             "skip-reason": "Generates 404"
         },
@@ -66,14 +64,12 @@
         {
             "name": "Sacramento-Regional-Transit",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-9qce-sacramentoregionaltransit",
-            "proxy": true
+            "transitland-atlas-id": "f-9qce-sacramentoregionaltransit"
         },
         {
             "name": "Sacramento-Regional-Transit",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-9qce-sacramentoregionaltransit~rt",
-            "proxy": true
+            "transitland-atlas-id": "f-9qce-sacramentoregionaltransit~rt"
         },
         {
             "name": "Metro-LosAngeles",
@@ -171,32 +167,27 @@
         {
             "name": "Monterey-Salinas-Transit",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-9q9-monterey~salinastransit",
-            "proxy": true
+            "transitland-atlas-id": "f-9q9-monterey~salinastransit"
         },
         {
             "name": "Monterey-Salinas-Transit",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-mst~rt",
-            "proxy": true
+            "transitland-atlas-id": "f-mst~rt"
         },
         {
             "name": "Roseville-Transit",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-9qcs-rosevilletransit",
-            "proxy": true
+            "transitland-atlas-id": "f-9qcs-rosevilletransit"
         },
         {
             "name": "Roseville-Transit",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-rosevilletransit~rt",
-            "proxy": true
+            "transitland-atlas-id": "f-rosevilletransit~rt"
         },
         {
             "name": "Southcounty-Transitlink",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-southcountytransitlink~ca~us",
-            "proxy": true
+            "transitland-atlas-id": "f-southcountytransitlink~ca~us"
         },
         {
             "name": "Sage-Stage",

@@ -1,20 +1,20 @@
 {
-  "maintainers": [
-    {
-      "name": "Marcus Lundblad",
-      "github": "mlundblad"
-    }
-  ],
-  "sources": [
-    {
-      "name": "DART-First-State",
-      "type": "transitland-atlas",
-      "transitland-atlas-id": "f-dr4-dartfirststate"
-    },
-    {
-      "name": "DART-First-State",
-      "type": "transitland-atlas",
-      "transitland-atlas-id": "f-dr4-dartfirststatewood~rt"
-    }
-  ]
+    "maintainers": [
+        {
+            "name": "Marcus Lundblad",
+            "github": "mlundblad"
+        }
+    ],
+    "sources": [
+        {
+            "name": "DART-First-State",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dr4-dartfirststate"
+        },
+        {
+            "name": "DART-First-State",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dr4-dartfirststatewood~rt"
+        }
+    ]
 }

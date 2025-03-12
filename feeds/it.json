@@ -65,7 +65,6 @@
             "name": "Lombardia-ATM",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u0nd-comunedimilano",
-            "proxy": true,
             "fix": true
         },
         {
@@ -121,8 +120,7 @@
         {
             "name": "Piemonte-Gruppo-Torinese-Trasporti",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u0j-torino",
-            "proxy": true
+            "transitland-atlas-id": "f-u0j-torino"
         },
         {
             "name": "Piemonte-Trenitalia",
@@ -581,14 +579,12 @@
         {
             "name": "Trentino-Extraurbano",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u0p-trentinotrasportieserciziospa",
-            "proxy": true
+            "transitland-atlas-id": "f-u0p-trentinotrasportieserciziospa"
         },
         {
             "name": "Trentino-Urbano",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u0pv-ttesercizio",
-            "proxy": true,
             "fix": true
         },
         {

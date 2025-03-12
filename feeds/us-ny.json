@@ -1,180 +1,180 @@
 {
-  "maintainers": [
-    {
-      "name": "David Rhoads",
-      "github": "kd2flz"
-    },
-    {
-      "name": "Marcus Lundblad",
-      "github": "mlundblad"
-    }
-  ],
-  "sources": [
-    {
-      "name": "CDTA",
-      "type": "transitland-atlas",
-      "transitland-atlas-id": "f-dre-cdta",
-      "fix": true
-    },
-    {
-      "name": "UCAT",
-      "type": "transitland-atlas",
-      "transitland-atlas-id": "f-dr7-ulstercountyareatransit"
-    },
-    {
-      "name": "TransitOrange",
-      "type": "transitland-atlas",
-      "transitland-atlas-id": "f-transit~orange~ny~us"
-    },
-    {
-      "name": "LIRR",
-      "type": "transitland-atlas",
-      "transitland-atlas-id": "f-dr5-mtanyclirr"
-    },
-    {
-      "name": "LIRR",
-      "type": "transitland-atlas",
-      "transitland-atlas-id": "f-mta~nyc~rt~lirr"
-    },
-    {
-      "name": "MTA-NYCSubway",
-      "type": "transitland-atlas",
-      "transitland-atlas-id": "f-dr5r-nyctsubway"
-    },
-    {
-      "name": "MTA-NYCSubway",
-      "type": "transitland-atlas",
-      "transitland-atlas-id": "f-mta~nyc~rt~subway~1~2~3~4~5~6~7"
-    },
-    {
-      "name": "MTA-NYCSubway",
-      "type": "transitland-atlas",
-      "transitland-atlas-id": "f-mta~nyc~rt~subway~a~c~e"
-    },
-    {
-      "name": "MTA-NYCSubway",
-      "type": "transitland-atlas",
-      "transitland-atlas-id": "f-mta~nyc~rt~subway~b~d~f~m"
-    },
-    {
-      "name": "MTA-NYCSubway",
-      "type": "transitland-atlas",
-      "transitland-atlas-id": "f-mta~nyc~rt~subway~g"
-    },
-    {
-      "name": "MTA-NYCSubway",
-      "type": "transitland-atlas",
-      "transitland-atlas-id": "f-mta~nyc~rt~subway~j~z"
-    },
-    {
-      "name": "MTA-NYCSubway",
-      "type": "transitland-atlas",
-      "transitland-atlas-id": "f-mta~nyc~rt~subway~l"
-    },
-    {
-      "name": "MTA-NYCSubway",
-      "type": "transitland-atlas",
-      "transitland-atlas-id": "f-mta~nyc~rt~subway~n~q~r~w"
-    },
-    {
-      "name": "MTA-NYCSubway",
-      "type": "transitland-atlas",
-      "transitland-atlas-id": "f-mta~nyc~rt~subway~sir"
-    },
-    {
-      "name": "MTA-BusManhattan",
-      "type": "transitland-atlas",
-      "transitland-atlas-id": "f-dr5r-mtanyctbusmanhattan"
-    },
-    {
-      "name": "MTA-BusQueens",
-      "type": "transitland-atlas",
-      "transitland-atlas-id": "f-dr5x-mtanyctbusqueens"
-    },
-    {
-      "name": "MTA-BusStatenIsland",
-      "type": "transitland-atlas",
-      "transitland-atlas-id": "f-dr5r-mtanyctbusstatenisland"
-    },
-    {
-      "name": "MTA-BusBrooklyn",
-      "type": "transitland-atlas",
-      "transitland-atlas-id": "f-dr5r-mtanyctbusbrooklyn"
-    },
-    {
-      "name": "MTA-BusBronx",
-      "type": "transitland-atlas",
-      "transitland-atlas-id": "f-dr72-mtanyctbusbronx"
-    },
-    {
-      "name": "MTA-BusCompany",
-      "type": "transitland-atlas",
-      "transitland-atlas-id": "f-dr5r-mtabc"
-    },
-    {
-      "name": "PATH",
-      "type": "transitland-atlas",
-      "transitland-atlas-id": "f-dr5r-path~nj~us"
-    },
-    {
-      "name": "MetroNorth",
-      "type": "transitland-atlas",
-      "transitland-atlas-id": "f-dr7-mtanyc~metro~north"
-    },
-    {
-      "name": "MetroNorth",
-      "type": "transitland-atlas",
-      "transitland-atlas-id": "f-mta~nyc~rt~mnr"
-    },
-    {
-      "name": "SuffolkCountyTransit",
-      "type": "transitland-atlas",
-      "transitland-atlas-id": "f-drk-ny~suffolkcountytransit"
-    },
-    {
-      "name": "SuffolkCountyTransit",
-      "type": "transitland-atlas",
-      "transitland-atlas-id": "f-drk-ny~suffolkcountytransit~rt"
-    },
-    {
-      "name": "NassauInterCountyExpress",
-      "type": "transitland-atlas",
-      "transitland-atlas-id": "f-dr5x-wwwnicebuscom"
-    },
-    {
-      "name": "LongBeach",
-      "type": "transitland-atlas",
-      "transitland-atlas-id": "f-clbt~nassau~ny~us"
-    },
-    {
-      "name": "GlenCove",
-      "type": "transitland-atlas",
-      "transitland-atlas-id": "f-glen~cove~ny"
-    },
-    {
-      "name": "Seastreak",
-      "type": "transitland-atlas",
-      "transitland-atlas-id": "f-drk-seastreak"
-    },
-    {
-      "name": "NY-Waterway",
-      "type": "transitland-atlas",
-      "transitland-atlas-id": "f-dr7-nywaterway"
-    },
-    {
-      "name": "NYC-Ferry",
-      "type": "transitland-atlas",
-      "transitland-atlas-id": "f-dr5r-nycferry"
-    },
-    {
-      "name": "NewYorkCityDOT",
-      "type": "transitland-atlas",
-      "transitland-atlas-id": "f-dr5r7-nycdotsiferry"
-    },
-    {
-      "name": "NationalParkService",
-      "type": "transitland-atlas",
-      "transitland-atlas-id": "f-statue~of~liberty~ferries"
-    }
-  ]
+    "maintainers": [
+        {
+            "name": "David Rhoads",
+            "github": "kd2flz"
+        },
+        {
+            "name": "Marcus Lundblad",
+            "github": "mlundblad"
+        }
+    ],
+    "sources": [
+        {
+            "name": "CDTA",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dre-cdta",
+            "fix": true
+        },
+        {
+            "name": "UCAT",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dr7-ulstercountyareatransit"
+        },
+        {
+            "name": "TransitOrange",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-transit~orange~ny~us"
+        },
+        {
+            "name": "LIRR",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dr5-mtanyclirr"
+        },
+        {
+            "name": "LIRR",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-mta~nyc~rt~lirr"
+        },
+        {
+            "name": "MTA-NYCSubway",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dr5r-nyctsubway"
+        },
+        {
+            "name": "MTA-NYCSubway",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-mta~nyc~rt~subway~1~2~3~4~5~6~7"
+        },
+        {
+            "name": "MTA-NYCSubway",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-mta~nyc~rt~subway~a~c~e"
+        },
+        {
+            "name": "MTA-NYCSubway",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-mta~nyc~rt~subway~b~d~f~m"
+        },
+        {
+            "name": "MTA-NYCSubway",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-mta~nyc~rt~subway~g"
+        },
+        {
+            "name": "MTA-NYCSubway",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-mta~nyc~rt~subway~j~z"
+        },
+        {
+            "name": "MTA-NYCSubway",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-mta~nyc~rt~subway~l"
+        },
+        {
+            "name": "MTA-NYCSubway",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-mta~nyc~rt~subway~n~q~r~w"
+        },
+        {
+            "name": "MTA-NYCSubway",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-mta~nyc~rt~subway~sir"
+        },
+        {
+            "name": "MTA-BusManhattan",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dr5r-mtanyctbusmanhattan"
+        },
+        {
+            "name": "MTA-BusQueens",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dr5x-mtanyctbusqueens"
+        },
+        {
+            "name": "MTA-BusStatenIsland",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dr5r-mtanyctbusstatenisland"
+        },
+        {
+            "name": "MTA-BusBrooklyn",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dr5r-mtanyctbusbrooklyn"
+        },
+        {
+            "name": "MTA-BusBronx",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dr72-mtanyctbusbronx"
+        },
+        {
+            "name": "MTA-BusCompany",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dr5r-mtabc"
+        },
+        {
+            "name": "PATH",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dr5r-path~nj~us"
+        },
+        {
+            "name": "MetroNorth",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dr7-mtanyc~metro~north"
+        },
+        {
+            "name": "MetroNorth",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-mta~nyc~rt~mnr"
+        },
+        {
+            "name": "SuffolkCountyTransit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-drk-ny~suffolkcountytransit"
+        },
+        {
+            "name": "SuffolkCountyTransit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-drk-ny~suffolkcountytransit~rt"
+        },
+        {
+            "name": "NassauInterCountyExpress",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dr5x-wwwnicebuscom"
+        },
+        {
+            "name": "LongBeach",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-clbt~nassau~ny~us"
+        },
+        {
+            "name": "GlenCove",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-glen~cove~ny"
+        },
+        {
+            "name": "Seastreak",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-drk-seastreak"
+        },
+        {
+            "name": "NY-Waterway",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dr7-nywaterway"
+        },
+        {
+            "name": "NYC-Ferry",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dr5r-nycferry"
+        },
+        {
+            "name": "NewYorkCityDOT",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dr5r7-nycdotsiferry"
+        },
+        {
+            "name": "NationalParkService",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-statue~of~liberty~ferries"
+        }
+    ]
 }

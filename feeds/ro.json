@@ -52,7 +52,6 @@
         {
             "name": "Transbus-Buzău",
             "type": "mobility-database",
-            "use-origin": true,
             "mdb-id": 2106
         },
         {
@@ -63,13 +62,11 @@
         {
             "name": "Consiliul-Judetean-Vrancea",
             "type": "mobility-database",
-            "use-origin": true,
             "mdb-id": 1984
         },
         {
             "name": "Târgoviște",
             "type": "mobility-database",
-            "use-origin": true,
             "mdb-id": 2107
         },
         {
@@ -85,7 +82,6 @@
         {
             "name": "Ploiești",
             "type": "mobility-database",
-            "use-origin": true,
             "mdb-id": 2108
         },
         {
