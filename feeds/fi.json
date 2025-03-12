@@ -45,6 +45,11 @@
             "name": "229",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-ued-oulunjoukkoliikenne"
+        },
+        {
+           "name": "hsl",
+           "type": "transitland-atlas",
+           "transitland-atlas-id": "f-ud9-helsinginseudunliikenne"
         }
     ]
 }
