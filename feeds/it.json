@@ -97,11 +97,8 @@
         },
         {
             "name": "Lombardia-STAV",
-            "type": "http",
-            "license": {
-                "spdx-identifier": "CC-BY-4.0"
-            },
-            "url": "https://usbshare.agenziatpl.it/index.php/s/iatj28LwryrSxAC/download/2025-01-30_STAV.zip"
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-stav~spa"
         },
         {
             "name": "Lombardia-Trenord",
