@@ -11,14 +11,15 @@
     ],
     "sources": [
         {
-            "name": "matka",
+            "name": "fintraffic",
             "type": "http",
-            "url": "http://traffic.navici.com/tiedostot/gtfs.zip",
+            "url": "https://mobility.mobility-database.fintraffic.fi/static/finland_gtfs.zip",
             "license": {
                 "spdx-identifier": "CC-BY-4.0",
-                "url": "https://developer.matka.fi/pages/en/home.php"
+                "url": "https://www.fintraffic.fi/fi/digitaalisetpalvelut/fintrafficin-datapalvelut/liikkumisen-tietopalvelut/joukkoliikenteen-tietopalvelut/koontipalvelu"
             },
-            "fix": true
+            "fix": true,
+            "drop-agency-names": ["FlixBus-eu", "FlixTrain-eu", "VR", "Pohjois-Suomen Rautatieharrastajat ry", "Sinisten vaunujen ystävät ry"]
         },
         {
             "name": "digitraffic",
@@ -41,120 +42,14 @@
             }
         },
         {
-            "name": "203",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-udc-lehdonliikenneoy~hämebusoy~pekolanliikenneoy~mikkolanliike"
-        },
-        {
-            "name": "207",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-ueh-savo~karjalanlinjaoy~linja~karjalaoy~ely~pohjolanturistiau"
-        },
-        {
-            "name": "209",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-ue4-jyväskylänliikenneoy~koivurantaoy~tilausajotmennÄÄnbussill"
-        },
-        {
-            "name": "211",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-ue7-savo~karjalanlinjaoy~oypohjolanliikenneab~liikennemheikura"
-        },
-        {
-            "name": "217",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-udg-oypohjolanliikenneab~etelä~suomenlinjaliikenneoy~jyrkiläoy"
-        },
-        {
-            "name": "219",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-kouvola~fi"
-        },
-        {
-            "name": "221",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-ue5-linja~karjalaoy~oypohjolanliikenneab~kuopionliikenneoy~jää"
-        },
-        {
-            "name": "223",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-udf-r~kioski~koivistonautooy~lehtimäenliikenneoy~järvisenliike"
-        },
-        {
-            "name": "225",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-ud-autolinjatoy~erantanenoy~kuljetusmikkonenky~tilausliikenneh"
-        },
-        {
-            "name": "227",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-mikkeli~fi"
-        },
-        {
             "name": "229",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-ued-oulunjoukkoliikenne"
         },
         {
-            "name": "231",
-            "type": "http",
-            "url": "https://tvv.fra1.digitaloceanspaces.com/231.zip",
-            "license": {
-                "spdx_identifier": "CC-BY-4.0",
-                "url": "https://opendata.waltti.fi/docs#gtfs-static-packages"
-            },
-            "fix": true
-        },
-        {
-            "name": "232",
-            "type": "http",
-            "url": "https://tvv.fra1.digitaloceanspaces.com/232.zip",
-            "license": {
-                "spdx_identifier": "CC-BY-4.0",
-                "url": "https://opendata.waltti.fi/docs#gtfs-static-packages"
-            },
-            "fix": true
-        },
-        {
-            "name": "237",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-rovaniemi~fi"
-        },
-        {
-            "name": "239",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-salo~fi",
-            "fix": true
-        },
-        {
-            "name": "249",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-vaasa~fi",
-            "fix": true
-        },
-        {
-            "name": "hsl",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-ud9-helsinginseudunliikenne"
-        },
-        {
-            "name": "tampere",
-            "type": "http",
-            "url": "https://data.itsfactory.fi/journeys/files/gtfs/latest/gtfs_tampere.zip",
-            "url-override": "https://jbb.ghsq.de/gtfs/fi-tampere.gtfs.zip"
-        },
-        {
-            "name": "turku",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u6x-turunlinja~autoilijainosakeyhtiö~savonlinjaoy~sl~autolinja",
-            "fix": true
-        },
-        {
-            "name": "finferries",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u6xr-finferries~sundqvistinvestmentsoyab~nordiccoastline",
-            "url-override": "https://finap.finferries.fi/share/Reitit.zip",
-            "fix": true
+           "name": "hsl",
+           "type": "transitland-atlas",
+           "transitland-atlas-id": "f-ud9-helsinginseudunliikenne"
         }
     ]
 }
