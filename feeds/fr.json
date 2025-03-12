@@ -1227,9 +1227,9 @@
             }
         },
         {
-            "name": "gtfs-tadao--82726",
+            "name": "gtfs-tadao--82859",
             "type": "http",
-            "url": "https://static.data.gouv.fr/resources/gtfs-tadao/20250116-080301/gtfs.zip",
+            "url": "https://static.data.gouv.fr/resources/gtfs-tadao/20250310-095329/gtfs-janvier2025.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/gtfs-tadao"
@@ -1283,7 +1283,7 @@
         {
             "name": "export-quotidien-au-format-gtfs-du-reseau-de-transport-lignes-d-azur",
             "type": "http",
-            "url": "http://opendata.nicecotedazur.org/data/storage/f/gtfs1741652101/GTFSExport.zip",
+            "url": "http://opendata.nicecotedazur.org/data/storage/f/gtfs1741738501/GTFSExport.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/export-quotidien-au-format-gtfs-du-reseau-de-transport-lignes-d-azur"
@@ -1389,18 +1389,18 @@
             "spec": "gtfs-rt"
         },
         {
-            "name": "versions-des-horaires-theoriques-des-lignes-de-bus-et-de-metro-du-reseau-star-au-format-gtfs--82838",
+            "name": "versions-des-horaires-theoriques-des-lignes-de-bus-et-de-metro-du-reseau-star-au-format-gtfs--82864",
             "type": "http",
-            "url": "https://eu.ftp.opendatasoft.com/star/gtfs/GTFS_1_20250304_20250316_20250304135255.zip",
+            "url": "https://eu.ftp.opendatasoft.com/star/gtfs/GTFS_1_20250311_20250316_20250311110000.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/versions-des-horaires-theoriques-des-lignes-de-bus-et-de-metro-du-reseau-star-au-format-gtfs"
             }
         },
         {
-            "name": "versions-des-horaires-theoriques-des-lignes-de-bus-et-de-metro-du-reseau-star-au-format-gtfs--82839",
+            "name": "versions-des-horaires-theoriques-des-lignes-de-bus-et-de-metro-du-reseau-star-au-format-gtfs--82865",
             "type": "http",
-            "url": "https://eu.ftp.opendatasoft.com/star/gtfs/GTFS_2_20250317_20250404_20250304135336.zip",
+            "url": "https://eu.ftp.opendatasoft.com/star/gtfs/GTFS_2_20250317_20250418_20250311154718.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/versions-des-horaires-theoriques-des-lignes-de-bus-et-de-metro-du-reseau-star-au-format-gtfs"
@@ -1660,15 +1660,6 @@
             }
         },
         {
-            "name": "fr-200052264-t0014-0000-1",
-            "type": "url",
-            "url": "https://proxy.transport.data.gouv.fr/resource/fluo-solea-muhlouse-gtfs-rt-trip-update",
-            "license": {
-                "url": "https://transport.data.gouv.fr/datasets/fr-200052264-t0014-0000-1"
-            },
-            "spec": "gtfs-rt"
-        },
-        {
             "name": "offre-de-transport-solea-et-tram-train-en-format-gtfs-1",
             "type": "http",
             "url": "https://eu.ftp.opendatasoft.com/mulhouse/TRANSPORT_GTFS/SOLEA.GTFS_current.zip",
@@ -1906,7 +1897,7 @@
         {
             "name": "gtfs-du-reseau-des-transports-bus-et-tramway-setram-circulant-sur-le-territoire-le-mans-metropole",
             "type": "http",
-            "url": "https://static.data.gouv.fr/resources/gtfs-du-reseau-des-transports-bus-et-tramway-setram-circulant-sur-le-territoire-le-mans-metropole/20250306-110158/gtfs-setram-lmm.zip",
+            "url": "https://static.data.gouv.fr/resources/gtfs-du-reseau-des-transports-bus-et-tramway-setram-circulant-sur-le-territoire-le-mans-metropole/20250311-154723/gtfs-setram-lmm.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/gtfs-du-reseau-des-transports-bus-et-tramway-setram-circulant-sur-le-territoire-le-mans-metropole"
@@ -2060,7 +2051,7 @@
         {
             "name": "arrets-circuits-et-horaires-du-reseau-optymo-de-belfort",
             "type": "http",
-            "url": "https://static.data.gouv.fr/resources/arrets-circuits-et-horaires-du-reseau-optymo-de-belfort/20241216-144525/gtfs.zip",
+            "url": "https://static.data.gouv.fr/resources/arrets-circuits-et-horaires-du-reseau-optymo-de-belfort/20250311-133655/gtfs.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/arrets-circuits-et-horaires-du-reseau-optymo-de-belfort"
@@ -2398,15 +2389,6 @@
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/agglobus-offre-theorique-mobilite-reseau-urbain-de-bourges"
             }
-        },
-        {
-            "name": "agglobus-offre-theorique-mobilite-reseau-urbain-de-bourges",
-            "type": "url",
-            "url": "https://data.centrevaldeloire.fr/api/explore/v2.1/catalog/datasets/agglobus-offre-theorique-mobilite-reseau-urbain-de-bourges/files/9b6551fc2897c3d8669770e215a836c7",
-            "license": {
-                "url": "https://transport.data.gouv.fr/datasets/agglobus-offre-theorique-mobilite-reseau-urbain-de-bourges"
-            },
-            "spec": "gtfs-rt"
         },
         {
             "name": "fr-200052264-t0009-0000-1",
