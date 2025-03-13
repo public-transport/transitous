@@ -17,7 +17,11 @@
             "name": "administration-des-transports-publics",
             "type": "http",
             "url": "https://data.public.lu/api/1/datasets/horaires-et-arrets-des-transport-publics-gtfs/",
-            "function": "data_public_lu_latest_resource"
+            "function": "data_public_lu_latest_resource",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0",
+                "url": "https://data.public.lu/fr/datasets/horaires-et-arrets-des-transport-publics-gtfs/"
+            }
         }
     ]
 }
