@@ -49,6 +49,13 @@
             "name": "Bean-Shuttle",
             "type": "mobility-database",
             "mdb-id": 2036
+        },
+        {
+            "name": "PMDP",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-plzen",
+            "fix": true,
+            "fix-csv-quotes": true
         }
     ]
 }
