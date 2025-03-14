@@ -21,11 +21,16 @@ def strip_quotes(field: str):
 def parse_fuzzy_csv(csv: str) -> list[list[str]]:
     rows = []
 
+    # skip BOM
+    if csv.startswith("\ufeff"):
+        csv = csv[len("\ufeff"):]
+
     # Split lines and fields
     for line in csv.splitlines():
         start = 0
         current_field_start = 0
         fields = []
+
         while True:
             fieldsep = line.find(",", start)
             if fieldsep == -1:
@@ -42,7 +47,6 @@ def parse_fuzzy_csv(csv: str) -> list[list[str]]:
                 current_field_start = fieldsep + 1
                 start = fieldsep + 1
             else:
-                current_field_start = start
                 start = fieldsep + 1
 
     # Unescape
