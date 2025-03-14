@@ -41,6 +41,7 @@ class Atlas:
             result.drop_too_fast_trips = source.drop_too_fast_trips
             result.function = source.function
             result.drop_shapes = source.drop_shapes
+            result.fix_csv_quotes = source.fix_csv_quotes
 
             if source.url_override:
                 result.url_override = source.url_override
