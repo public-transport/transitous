@@ -217,7 +217,7 @@ if __name__ == "__main__":
                                 )
                         else:
                             print(
-                                f"{dataset['slug']} has skipped {resource["title"]} GTFS-RT feed because not selected!",
+                                f"{dataset['slug']} has skipped {resource['title']} GTFS-RT feed because not selected!",
                                 file=sys.stderr,
                             )
                             continue
