@@ -108,6 +108,7 @@
                 "fetch-interval-days": 2
             }
         },
+
         {
             "name": "Piemonte-Bus",
             "type": "transitland-atlas",
@@ -244,6 +245,11 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             }
+        },
+        {
+            "name": "Sardegna-Trenitalia-1",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-spn-trenitalia"
         },
         {
             "name": "Toscana-Autolinee-LineeRegionali",
