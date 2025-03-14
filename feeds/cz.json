@@ -53,7 +53,9 @@
         {
             "name": "PMDP",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-plzen"
+            "transitland-atlas-id": "f-plzen",
+            "fix": true,
+            "fix-csv-quotes": true
         }
     ]
 }
