@@ -8,8 +8,7 @@ steps:
   build-release-amd64:
     image: docker.io/alpine
     commands:
-      - export GITHUB_ACTIONS=1
-      - export MOTIS_TAG=v2.0.22
+      - export MOTIS_TAG=v2.0.34
       - apk add musl-dev cmake ninja gcc g++ git npm linux-headers
       - git clone https://github.com/motis-project/motis -b $MOTIS_TAG motis-src
       - mkdir -p motis-src/build
