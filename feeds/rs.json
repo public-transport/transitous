@@ -14,28 +14,38 @@
         {
             "name": "Subotica",
             "type": "http",
-            "url": "https://data.gov.rs/sr/datasets/r/c1b7db4b-cd0c-49c6-bfa1-a08dab70a446"
+            "url": "https://data.gov.rs/sr/datasets/r/c1b7db4b-cd0c-49c6-bfa1-a08dab70a446",
+            "skip": true,
+            "skip-reason": "Currently expired for multiple years"
         },
         {
             "name": "Beograd",
             "type": "http",
-            "url": "https://data.gov.rs/sr/datasets/r/729be9a1-7ed9-453d-9a3d-68fa30f07529"
+            "url": "https://data.gov.rs/sr/datasets/r/729be9a1-7ed9-453d-9a3d-68fa30f07529",
+            "skip": true,
+            "skip-reason": "Currently expired for multiple years"
         },
         {
             "name": "Uzice",
             "type": "http",
-            "url": "https://data.gov.rs/sr/datasets/r/b9c72d16-6c2c-46f8-8490-78a6ceefb8d8"
+            "url": "https://data.gov.rs/sr/datasets/r/b9c72d16-6c2c-46f8-8490-78a6ceefb8d8",
+            "skip": true,
+            "skip-reason": "Currently expired for multiple years"
         },
         {
             "name": "Niš",
             "type": "http",
             "url": "https://data.gov.rs/sr/datasets/r/b8fdbafe-10af-4b1a-a647-5f50e1dd33fb",
-            "fix": true
+            "fix": true,
+            "skip": true,
+            "skip-reason": "Currently expired for multiple years"
         },
         {
             "name": "Kragujevac",
             "type": "http",
-            "url": "https://data.gov.rs/sr/datasets/r/015f6bd4-1428-4ed8-b41e-c73d0885c79d"
+            "url": "https://data.gov.rs/sr/datasets/r/015f6bd4-1428-4ed8-b41e-c73d0885c79d",
+            "skip": true,
+            "skip-reason": "Currently expired for multiple years"
         }
     ]
 }
