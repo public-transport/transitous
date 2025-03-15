@@ -53,7 +53,10 @@
         {
             "name": "PMDP",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-plzen"
+            "transitland-atlas-id": "f-plzen",
+            "http-options": {
+                "fetch-interval-days": 1
+            }
         }
     ]
 }
