@@ -211,6 +211,7 @@ Option Name                 | Description
 --------------------------- | -----------------------------------------------------------------------------------------------------------------------------
 `copy-trip-names-matching`  | Regular expression specifying which values from `trip_short_name` should be displayed to the user.
 `keep-route-names-matching` | Regular expression specifying which values from `route_short_name` should not be replaced even though the regular expression on `trip_short_name` matches.
+`move-headsigns-matching`   | Regular expression specifying which values from `trip_headsign` should be moved to `route_short_name`. Mostly useful for SNCF.
 
 ```json
 {
