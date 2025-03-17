@@ -8,10 +8,9 @@ from metadata import TransitlandSource, MobilityDatabaseSource, HttpSource, \
 from pathlib import Path
 from datetime import datetime, timezone
 from utils import eprint
-from zipfile import ZipFile, BadZipFile
+from zipfile import ZipFile
 from typing import Optional, Any, Iterable, IO
 from zoneinfo import ZoneInfo
-from requests.adapters import HTTPAdapter, Retry
 from enum import Enum
 
 import email.utils
@@ -354,6 +353,16 @@ class Fetcher:
             for agency in source.drop_agency_names:
                 command.append("--drop-agency-names")
                 command.append(agency)
+        if source.display_name_options:
+            if source.display_name_options.copy_trip_names_matching:
+                command.append("--copy-trip-names-matching")
+                command.append(source.display_name_options.copy_trip_names_matching)
+            if source.display_name_options.keep_route_names_matching:
+                command.append("--keep-route-names-matching")
+                command.append(source.display_name_options.keep_route_names_matching)
+            if source.display_name_options.move_headsigns_matching:
+                command.append("--move-headsigns-matching")
+                command.append(source.display_name_options.move_headsigns_matching)
 
         subprocess.check_call(command)
 

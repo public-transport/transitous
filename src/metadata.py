@@ -22,6 +22,24 @@ class License:
     url: Optional[str] = None
 
 
+class DisplayNameOptions:
+    copy_trip_names_matching: Optional[str] = None
+    keep_route_names_matching: Optional[str] = None
+    move_headsigns_matching: Optional[str] = None
+
+    def __init__(self, parsed: Optional[dict] = None):
+        if parsed:
+            if "copy-trip-names-matching" in parsed:
+                self.copy_trip_names_matching = \
+                    parsed["copy-trip-names-matching"]
+            if "keep-route-names-matching" in parsed:
+                self.keep_route_names_matching = \
+                    parsed["keep-route-names-matching"]
+            if "move-headsigns-matching" in parsed:
+                self.move_headsigns_matching = \
+                    parsed["move-headsigns-matching"]
+
+
 class Source:
     name: str
     fix: bool = False
@@ -34,6 +52,7 @@ class Source:
     drop_too_fast_trips: bool = True
     drop_shapes: bool = False
     drop_agency_names: List[str] = []
+    display_name_options: Optional[DisplayNameOptions] = None
 
     def __init__(self, parsed: Optional[dict] = None):
         self.license = License()
@@ -63,6 +82,9 @@ class Source:
                 self.drop_shapes = parsed["drop-shapes"]
             if "drop-agency-names" in parsed:
                 self.drop_agency_names = parsed["drop-agency-names"]
+            if "display-name-options" in parsed:
+                self.display_name_options = \
+                    DisplayNameOptions(parsed["display-name-options"])
 
 
 class HttpOptions:
@@ -86,6 +108,7 @@ class HttpOptions:
 
 class TransitlandSource(Source):
     transitland_atlas_id: str = ""
+    url_override: Optional[str] = None
     options: HttpOptions = HttpOptions()
 
     def __init__(self, parsed: dict):
@@ -99,6 +122,7 @@ class TransitlandSource(Source):
 
 class MobilityDatabaseSource(Source):
     mdb_id: int = -1
+    url_override: Optional[str] = None
     options: HttpOptions = HttpOptions()
 
     def __init__(self, parsed: dict):

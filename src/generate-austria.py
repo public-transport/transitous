@@ -24,32 +24,30 @@ def remove_duplicate_dashes(text: str) -> str:
     return "".join(out)
 
 
-def add_feed(sources: list[dict], year: int):
+def add_feed(year: int) -> dict:
     url = f"https://data.mobilitaetsverbuende.at/api/public/v1/data-sets/{set_id}/{year}/file"
-    sources.append(
-        {
-            "name": remove_duplicate_dashes(
-                data_set["nameEn"]
-                .replace("Timetable Data", "")
-                .replace("(GTFS)", "")
-                .strip()
-                .replace(" ", "-")) + "-" + str(year),
-            "type": "http",
-            "url": url,
-            "license": {"url": data_set["termsOfUseUrlEn"]},
-            "fix": True,
-            "function": "mvo_keycloak_token",
-            "http-options": {
-                "fetch-interval-days": 2
-            }
+    return {
+        "name": remove_duplicate_dashes(
+            data_set["nameEn"]
+            .replace("Timetable Data", "")
+            .replace("(GTFS)", "")
+            .strip()
+            .replace(" ", "-")) + "-" + str(year),
+        "type": "http",
+        "url": url,
+        "license": {"url": data_set["termsOfUseUrlEn"]},
+        "fix": True,
+        "function": "mvo_keycloak_token",
+        "http-options": {
+            "fetch-interval-days": 2
         }
-    )
+    }
 
 
 if __name__ == "__main__":
     ignore = [
         "70",  # Same data but outdated
-        "72"  # contains multiple zip files, not what we need
+        "72",  # contains multiple zip files, not what we need
     ]
 
     data_sets = requests.get(
@@ -67,7 +65,14 @@ if __name__ == "__main__":
             continue
 
         for year in TIMETABLE_YEARS:
-            add_feed(sources, year)
+            source = add_feed(year)
+            if set_id == "66":  # ÖBB
+                source["display-name-options"] = {}
+                source["display-name-options"]["copy-trip-names-matching"] = \
+                    r"((IC)|(ECB)|(EC)|(RJ)|(RJX)|(D)|(NJ)|(EN)|(CJX)|(ICE)|(IR)|(REX)|(R)|(ER)|(ATB)) \d+"
+                source["display-name-options"]["keep-route-names-matching"] = \
+                    r"((RE)|(RB)) \d+"
+            sources.append(source)
 
     region = {}
 
