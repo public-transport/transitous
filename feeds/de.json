@@ -97,6 +97,36 @@
             "name": "RegioRadStuttgart",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-regioradstuttgart~stuttgart~gbfs"
+        },
+        {
+            "name": "CallaBike",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-call~a~bike~germany~gbfs"
+        },
+        {
+            "name": "KVV.nextbike",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-kvv~nextbike~germany~gbfs"
+        },
+        {
+            "name": "FreloFreiburg",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-frelo~freiburg~gbfs"
+        },
+        {
+            "name": "SAPWalldorf",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-sap~walldorf~gbfs"
+        },
+                {
+            "name": "EinfachMobil",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-einfachmobil~ortenaukreis~gbfs"
+        },
+        {
+            "name": "VRNnextbike",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-vrnnextbike~rhine~neckar~gbfs"
         }
     ]
 }
