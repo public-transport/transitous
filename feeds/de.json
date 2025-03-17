@@ -94,6 +94,11 @@
             }
         },
         {
+            "name": "RegioRadStuttgart",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-regioradstuttgart~stuttgart~gbfs"
+        },
+        {
             "name": "CallaBike",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-call~a~bike~germany~gbfs"
