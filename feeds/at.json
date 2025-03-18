@@ -38,6 +38,10 @@
             "function": "mvo_keycloak_token",
             "http-options": {
                 "fetch-interval-days": 2
+            },
+            "display-name-options": {
+                "copy-trip-names-matching": "((IC)|(ECB)|(EC)|(RJ)|(RJX)|(D)|(NJ)|(EN)|(CJX)|(ICE)|(IR)|(REX)|(R)|(ER)|(ATB)) \\d+",
+                "keep-route-names-matching": "((RE)|(RB)) \\d+"
             }
         },
         {

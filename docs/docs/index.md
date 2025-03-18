@@ -175,19 +175,20 @@ Then you can fetch individual regions using
 
 There are all kinds of options that may be specified in a source:
 
-Option Name         | Description
-------------------- | ------------------------------------------------------------------------------------------------------------------------------------
-`type`              | `http`, `mobility-database`, `transitland-atlas` or `url`. Url sources are not downloaded, but passed to MOTIS as URL. This is used for realtime feeds.
-`spec`              | `gtfs` or `gtfs-rt`. `gtfs-rt` may only be used when `type` is `url`.
-`fix`               | Fix / drop fields that are not correct.
-`skip`              | Don't download or use this feed.
-`skip-reason`       | Reason for why this feed can't be used right now.
-`fix-csv-quotes`    | Try to fix GTFS files in which fields are improperly quoted. A symptom of this is if stop names start containing CSV.
-`license`           | Dictionary of license-related options
-`http-options`      | Dictionary of HTTP-related options
-`drop-shapes`       | Remove route shapes, use if the shapes are mostly wrong
-`drop-agency-names` | Removes a list of agencies. Can be used to avoid duplicates if the agency provides its own feed.
-`url-override`      | Use a different url instead of the one in Transitland / Mobility Database, or use a custom mirror. For more details, see the section on caches.
+Option Name            | Description
+---------------------- | ------------------------------------------------------------------------------------------------------------------------------------
+`type`                 | `http`, `mobility-database`, `transitland-atlas` or `url`. Url sources are not downloaded, but passed to MOTIS as URL. This is used for realtime feeds.
+`spec`                 | `gtfs` or `gtfs-rt`. `gtfs-rt` may only be used when `type` is `url`.
+`fix`                  | Fix / drop fields that are not correct.
+`skip`                 | Don't download or use this feed.
+`skip-reason`          | Reason for why this feed can't be used right now.
+`fix-csv-quotes`       | Try to fix GTFS files in which fields are improperly quoted. A symptom of this is if stop names start containing CSV.
+`license`              | Dictionary of license-related options
+`http-options`         | Dictionary of HTTP-related options
+`drop-shapes`          | Remove route shapes, use if the shapes are mostly wrong
+`drop-agency-names`    | Removes a list of agencies. Can be used to avoid duplicates if the agency provides its own feed.
+`url-override`         | Use a different url instead of the one in Transitland / Mobility Database, or use a custom mirror. For more details, see the section on caches.
+`display-name-options` | Specify which strings identifying a vehicle should be displayed to the user
 
 #### License Options
 
@@ -203,6 +204,25 @@ Option Name           | Description
 `headers`             | Dictionary of custom HTTP headers to send when checking for updates / downloading.
 `ignore-tls-errors`   | Ignore expired / invalid TLS certificate
 `fetch-interval-days` | Fetch this feed at most every `n` days. Useful if a server doesn't send `Last-Modified`, or to comply with terms of service.
+
+#### Display Name Options
+
+Option Name                 | Description
+--------------------------- | -----------------------------------------------------------------------------------------------------------------------------
+`copy-trip-names-matching`  | Regular expression specifying which values from `trip_short_name` should be displayed to the user.
+`keep-route-names-matching` | Regular expression specifying which values from `route_short_name` should not be replaced even though the regular expression on `trip_short_name` matches.
+
+```json
+{
+    "name": "OEBB",
+    "type": "http",
+    "url": "https://data.mobilitaetsverbuende.at/api/public/v1/data-sets/66/2025/file",
+    "display-name-options": {
+        "copy-trip-names-matching": "((IC)|(ECB)|(EC)|(RJ)|(RJX)|(D)|(NJ)|(EN)|(CJX)|(ICE)|(IR)|(REX)|(R)|(ER)|(ATB)) \\d+",
+        "keep-route-names-matching": "((RE)|(RB)) \\d+"
+    }
+}
+```
 
 ### Common Patterns
 
