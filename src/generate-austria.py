@@ -69,9 +69,9 @@ if __name__ == "__main__":
             if set_id == "66":  # ÖBB
                 source["display-name-options"] = {}
                 source["display-name-options"]["copy-trip-names-matching"] = \
-                    r"((IC)|(ECB)|(EC)|(RJ)|(RJX)|(D)|(NJ)|(EN)|(CJX)|(ICE)|(IR)|(REX)|(R)|(ER)|(ATB)) \d+"
+                    r"((IC)|(ECB)|(EC)|(RJ)|(RJX)|(D)|(NJ)|(EN)|(CJX)|(ICE)|(IR)|(REX)|(R)|(ER)|(ATB)|(WB)) \d+"
                 source["display-name-options"]["keep-route-names-matching"] = \
-                    r"((RE)|(RB)) \d+"
+                    r"((RE)|(RB)|S) ?\d+"
             sources.append(source)
 
     region = {}
