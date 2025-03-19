@@ -239,11 +239,8 @@
         },
         {
             "name": "Sardegna-Trenitalia",
-            "type": "http",
-            "url": "https://www.sardegnamobilita.it/opendata/R_SARDEGTRASP_00008_1_dati_trenitalia.zip",
-            "license": {
-                "spdx-identifier": "CC-BY-4.0"
-            }
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-spn-trenitalia"
         },
         {
             "name": "Toscana-Autolinee-LineeRegionali",
