@@ -152,7 +152,8 @@
         {
             "name": "dqch-prtc",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-dqch-prtc"
+            "transitland-atlas-id": "f-dqch-prtc",
+            "fix": true
         },
         {
             "name": "pulaski",
