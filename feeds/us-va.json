@@ -152,7 +152,8 @@
         {
             "name": "dqch-prtc",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-dqch-prtc"
+            "transitland-atlas-id": "f-dqch-prtc",
+            "fix": true
         },
         {
             "name": "pulaski",
@@ -178,7 +179,9 @@
         {
             "name": "university-virginia",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-university~of~virginia"
+            "transitland-atlas-id": "f-university~of~virginia",
+            "skip": true,
+            "skip-reason": "Feed is expired"
         },
         {
             "name": "roanoke",
