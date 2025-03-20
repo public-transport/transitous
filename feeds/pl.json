@@ -121,7 +121,9 @@
         {
             "name": "Elbląg",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u3tu-elblag"
+            "transitland-atlas-id": "f-u3tu-elblag",
+            "skip": true,
+            "skip-reason": "Feed unavailable"
         },
         {
             "name": "Poznań",
