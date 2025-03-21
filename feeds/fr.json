@@ -3200,7 +3200,7 @@
         {
             "name": "reseau-urbain-caux-seine-mobilite-rezobus",
             "type": "url",
-            "url": "https://pysae.com/api/v2/groups/caux-seine-agglo/gtfs-rt",
+            "url": "https://app.pysae.com/api/v2/groups/caux-seine-agglo/gtfs-rt",
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/reseau-urbain-caux-seine-mobilite-rezobus"
             },
@@ -3481,7 +3481,6 @@
             "type": "http",
             "url": "https://static.data.gouv.fr/resources/reseau-de-bus-urbain-horizon/20241230-084719/gtfs-20241216-135829.zip",
             "fix": true,
-            "skip": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/reseau-de-bus-urbain-horizon"
             }
@@ -3491,7 +3490,6 @@
             "type": "http",
             "url": "https://data.chateauroux-metropole.fr/api/v2/catalog/datasets/reseau-de-bus-urbain_horizon/alternative_exports/gtfs_20241216_135829_zip",
             "fix": true,
-            "skip": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/reseau-de-bus-urbain-horizon"
             }
@@ -4413,6 +4411,7 @@
             "type": "http",
             "url": "https://static.data.gouv.fr/resources/offre-de-transport-de-la-c-a-beaune-cote-sud-gtfs/20250306-075830/cb-urbain-gtfs-20250306.zip",
             "fix": true,
+            "skip": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/offre-de-transport-de-la-c-a-beaune-cote-sud-gtfs"
             }
@@ -4422,6 +4421,7 @@
             "type": "http",
             "url": "https://static.data.gouv.fr/resources/offre-de-transport-de-la-c-a-beaune-cote-sud-gtfs/20250321-114848/coteetbus-20250306.zip",
             "fix": true,
+            "skip": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/offre-de-transport-de-la-c-a-beaune-cote-sud-gtfs"
             }
