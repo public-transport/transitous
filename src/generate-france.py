@@ -52,8 +52,6 @@ if __name__ == "__main__":
 
     # List of individual resource ids (located in datasets) we want to remove
     remove_resources = [
-        # "Lien vers le GTFS du r\u00e9seau urbain de Parthenay (PYBUS)",  # Duplicate data
-        "82619",
         # "GTFS SANPROVENCE Ulysse (Navette Mille Sabords inclus) ",  # Duplicate data
         "39591",
         # "GTFS CG13 Cartreize",  # Duplicate data
@@ -119,10 +117,13 @@ if __name__ == "__main__":
             "81806": "81461",
         },
         "versions-des-horaires-theoriques-des-lignes-de-bus-et-de-metro-du-reseau-star-au-format-gtfs": {
-            "82161": "82774",
+            "82161": "82877",
         },
         "horaires-theoriques-et-en-temps-reel-des-bus-et-autocars-circulant-sur-le-reseau-cap-cotentin": {
             "79830": "79831"
+        },
+        "gtfs-move-vendome": {
+            "80381": "82832"
         },
     }
 
@@ -202,7 +203,7 @@ if __name__ == "__main__":
             if not resources:
                 continue
             matches = gtfs_rt_select.get(dataset["slug"])
-            # We can only continue if their is a unique GTFS file, or a if there is a `gtfs_rt_select` entry for this dataset
+            # We can only continue if their is a unique GTFS file, or if there is a `gtfs_rt_select` entry for this dataset
             if matches or unique_GTFS:
                 for resource in resources:
                     if matches:
