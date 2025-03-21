@@ -20,7 +20,6 @@ if __name__ == "__main__":
         "horaires-theoriques-du-reseau-libellule-sytral-de-la-communaute-dagglomeration-de-villefranche-beaujolais-saone",  # requires authentication
         "horaires-theoriques-du-reseau-transports-en-commun-lyonnais",
         "description-de-loffre-tad-tao-gtfs-flex-orleans-metropole",
-        "reseau-de-bus-urbain-horizon",  # 404 not found
         "horaires-theoriques-et-temps-reel-de-la-navette-du-pont-de-saint-nazaire-gtfs-gtfs-rt",
         "horaires-theoriques-de-la-navette-velo-du-pont-de-saint-nazaire-gtfs",  # no agency.txt
         "horaires-theoriques-et-temps-reel-des-navettes-de-la-ligne-bagneres-la-mongie-gtfs-gtfs-rt",  # 404 not found
@@ -35,8 +34,6 @@ if __name__ == "__main__":
         "arrets-horaires-et-parcours-theoriques-gtfs-du-reseau-routier-regional-de-transport-scolaire-62-pas-de-calais",  # agency.txt
         "arrets-horaires-et-parcours-theoriques-gtfs-du-reseau-routier-regional-de-transport-interurbain-62-pas-de-calais",  # agency.txt
         "naolib-arrets-horaires-et-circuits",  # Incomplete read
-        "offre-transport-du-reseau-txik-txak-nord-ex-chronoplus-gtfs",  # 404
-        "horaires-theoriques-et-temps-reel-lignes-scolaires-sankeo-perpignan-gtfs-gtfs-rt",  # 404
         "reseau-de-transport-en-commun-transagglo-de-dlva",  # Resource not available
         "donnees-theoriques-et-temps-reel-du-reseau-corolis-urbain-communaute-dagglomeration-du-beauvaisis",  # agency.txt
         "donnees-theoriques-et-temps-reel-du-reseau-tic-interurbain-communaute-dagglomeration-de-la-region-de-compiegne-et-de-la-basse-automne",  # agency.txt
@@ -48,12 +45,11 @@ if __name__ == "__main__":
         "gtfs-transport-horaires-des-lignes-de-la-communaute-dile-rousse-balagne-a-balanina",  # Temporary removal, 404 error
         "horaires-theoriques-et-temps-reel-du-reseau-hobus-de-honfleur-gtfs-gtfs-rt",  # Skip outdated and unavailable feed
         "navettes-aeroport-paris-beauvais-aerobus",  # Not GTFS format
+        "offre-de-transport-de-la-c-a-beaune-cote-sud-gtfs" # Missing and broken data
     ]
 
     # List of individual resource ids (located in datasets) we want to remove
     remove_resources = [
-        # "Lien vers le GTFS du r\u00e9seau urbain de Parthenay (PYBUS)",  # Duplicate data
-        "82619",
         # "GTFS SANPROVENCE Ulysse (Navette Mille Sabords inclus) ",  # Duplicate data
         "39591",
         # "GTFS CG13 Cartreize",  # Duplicate data
@@ -119,10 +115,13 @@ if __name__ == "__main__":
             "81806": "81461",
         },
         "versions-des-horaires-theoriques-des-lignes-de-bus-et-de-metro-du-reseau-star-au-format-gtfs": {
-            "82161": "82774",
+            "82161": "82877",
         },
         "horaires-theoriques-et-en-temps-reel-des-bus-et-autocars-circulant-sur-le-reseau-cap-cotentin": {
             "79830": "79831"
+        },
+        "gtfs-move-vendome": {
+            "80381": "82832"
         },
     }
 
@@ -202,7 +201,7 @@ if __name__ == "__main__":
             if not resources:
                 continue
             matches = gtfs_rt_select.get(dataset["slug"])
-            # We can only continue if their is a unique GTFS file, or a if there is a `gtfs_rt_select` entry for this dataset
+            # We can only continue if their is a unique GTFS file, or if there is a `gtfs_rt_select` entry for this dataset
             if matches or unique_GTFS:
                 for resource in resources:
                     if matches:
