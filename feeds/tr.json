@@ -9,7 +9,9 @@
         {
             "name": "izmir-eshot",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-eshot~tr"
+            "transitland-atlas-id": "f-eshot~tr",
+            "skip": true,
+            "skip-reason": "Expired feed"
         },
         {
             "name": "izmir-metro",
@@ -20,12 +22,16 @@
             "name": "izmir-izban",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-izmir~rail",
-            "fix": true
+            "fix": true,
+            "skip": true,
+            "skip-reason": "Expired feed"
         },
         {
             "name": "izmir-tram",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-izmir~tram"
+            "transitland-atlas-id": "f-izmir~tram",
+            "skip": true,
+            "skip-reason": "Expired feed"
         },
         {
             "name": "istanbul-ibb",
