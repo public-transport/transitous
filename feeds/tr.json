@@ -9,7 +9,9 @@
         {
             "name": "izmir-eshot",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-eshot~tr"
+            "transitland-atlas-id": "f-eshot~tr",
+            "skip": true,
+            "skip-reason": "Expired feed"
         },
         {
             "name": "izmir-metro",
@@ -20,12 +22,16 @@
             "name": "izmir-izban",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-izmir~rail",
-            "fix": true
+            "fix": true,
+            "skip": true,
+            "skip-reason": "Expired feed"
         },
         {
             "name": "izmir-tram",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-izmir~tram"
+            "transitland-atlas-id": "f-izmir~tram",
+            "skip": true,
+            "skip-reason": "Expired feed"
         },
         {
             "name": "istanbul-ibb",
@@ -64,6 +70,15 @@
             "type": "http",
             "url": "https://dl.dropboxusercontent.com/scl/fi/3wsws4ukgdi3uio68cvu4/antalya.zip?rlkey=nafdcydx4pvbuz908luhk6i9x",
             "drop-too-fast-trips": false
+        },
+        {
+            "name": "gaziantep",
+            "type": "http",
+            "url": "https://opendata.gaziantep.bel.tr/dataset/904c16cc-3d30-4b55-9862-efdfa5ee75ff/resource/ef2713e6-5707-4002-b662-dfb1a2dc6c2b/download/attached_gtfs.zip",
+            "fix": true,
+            "http-options": {
+                "ignore-tls-errors": true
+            }
         }
     ]
 }
