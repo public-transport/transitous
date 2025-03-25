@@ -174,7 +174,7 @@ def sourceFromJson(parsed: dict) -> Source:
             return UrlSource(parsed)
 
     eprint("Error: Unknown value for type:", parsed["type"])
-    eprint("Allowed values: transitland-atlas, http, url")
+    eprint("Allowed values: transitland-atlas, mobility-database, http, url")
     sys.exit(1)
 
 
