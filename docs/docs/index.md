@@ -109,6 +109,8 @@ If the feed contains invalid entries, you can try to add the `"fix": true` attri
 
 GTFS-RT feeds contain updates for a GTFS feed.
 In order to know which feed to apply the updates to, their name must match the name of the static timetable.
+Each source can either be of `type` `mobility-database`, `transitland-atlas` or `url`.
+In the case of the `url` type, the field `spec` needs to be set to `gtfs-rt`.
 
 This example applies the updates to the `lviv` feed:
 ```
@@ -130,16 +132,27 @@ This example applies the updates to the `lviv` feed:
 ### Shared Mobility feeds
 
 GBFS feeds contains realtime information like vehicle availability and characteristics for shared Mobility (e.g. Bikesharing).
-Each source can only be of `type` `transitland-atlas`.
+Each source can be of `type` `transitland-atlas` or `url`.
+In the case of the `url` type, the field `spec` needs to be set to `gbfs`.
 
 Feeds from [Transitland](https://www.transit.land/feeds) can be referenced by their Onestop ID.
 
-GBFS Database:
+Transitland:
 ```json
 {
     "name": "<name of the feed>",
     "type": "transitland-atlas",
     "transitland-atlas-id": "<onestop id>"
+}
+```
+
+Url:
+```json
+{
+    "name": "<name of the feed>",
+    "type": "url",
+    "url": "https://<url of GBFS feed>",
+    "spec": "gbfs"
 }
 ```
 

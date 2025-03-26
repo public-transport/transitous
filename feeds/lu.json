@@ -22,6 +22,12 @@
                 "spdx-identifier": "CC-BY-4.0",
                 "url": "https://data.public.lu/fr/datasets/horaires-et-arrets-des-transport-publics-gtfs/"
             }
+        },
+        {
+            "name": "velOH",
+            "type": "url",
+            "url": "https://api.cyclocity.fr/contracts/luxembourg/gbfs/v3/gbfs.json",
+            "spec": "gbfs"
         }
     ]
 }
