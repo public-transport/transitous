@@ -106,7 +106,7 @@
         {
             "name": "KVV.nextbike",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-kvv~nextbike~germany~gbfs"
+            "transitland-atlas-id": "f-kvv~nextbike~karlsruhe~gbfs"
         },
         {
             "name": "FreloFreiburg",
