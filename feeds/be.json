@@ -45,6 +45,11 @@
             "name": "tec",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u0g-tec~rt"
+        },
+        {
+            "name": "villo-brussels",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-villo~brussels~gbfs"
         }
     ]
 }
