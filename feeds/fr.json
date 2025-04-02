@@ -219,6 +219,51 @@
             }
         },
         {
+            "name": "tier-dott-gbfs-casgbs",
+            "type": "url",
+            "url": "https://gbfs.api.ridedott.com/public/v2/casgbs/gbfs.json",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/tier-dott-gbfs-casgbs"
+            }
+        },
+        {
+            "name": "tier-dott-gbfs-gpseo",
+            "type": "url",
+            "url": "https://gbfs.api.ridedott.com/public/v2/gpseo/gbfs.json",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/tier-dott-gbfs-gpseo"
+            }
+        },
+        {
+            "name": "tier-dott-gbfs-paris",
+            "type": "url",
+            "url": "https://gbfs.api.ridedott.com/public/v2/paris/gbfs.json",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/tier-dott-gbfs-paris"
+            }
+        },
+        {
+            "name": "velib-velos-et-bornes-disponibilite-temps-reel",
+            "type": "url",
+            "url": "https://velib-metropole-opendata.smovengo.cloud/opendata/Velib_Metropole/gbfs.json",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/velib-velos-et-bornes-disponibilite-temps-reel"
+            }
+        },
+        {
+            "name": "paris-sud-velos-a-assistance-electrique-en-libre-service",
+            "type": "url",
+            "url": "https://gateway.prod.zoov.io/gbfs/2.2/saclay/en/gbfs.json?key=NGFlMjU3MDUtNDk5My00MTM4LTk1ZjctNmNlNDM1MWQ0NjE1",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/paris-sud-velos-a-assistance-electrique-en-libre-service"
+            }
+        },
+        {
             "name": "agregat-oura",
             "type": "http",
             "url": "https://mobi-iti-ara.okina.fr/static/mobiiti_technique/DAT_AURA_GTFS_ExportAOM.zip",
@@ -960,7 +1005,7 @@
         {
             "name": "base-de-donnees-multimodale-des-reseaux-de-transport-public-normands",
             "type": "http",
-            "url": "https://static.data.gouv.fr/resources/base-de-donnees-multimodale-des-reseaux-de-transport-public-normands/20250312-135644/pt-th-offer-atoumod-gtfs-20250312-661-opendata.zip",
+            "url": "https://static.data.gouv.fr/resources/base-de-donnees-multimodale-des-reseaux-de-transport-public-normands/20250331-134521/pt-th-offer-atoumod-gtfs-20250331-644-opendata.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/base-de-donnees-multimodale-des-reseaux-de-transport-public-normands"
@@ -1082,12 +1127,39 @@
             }
         },
         {
+            "name": "gbfs-paris",
+            "type": "url",
+            "url": "https://data.lime.bike/api/partners/v2/gbfs/paris/gbfs.json",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/gbfs-paris"
+            }
+        },
+        {
+            "name": "paris-velos-a-assistance-electrique",
+            "type": "url",
+            "url": "https://gbfs.getapony.com/v1/paris/fr/gbfs.json",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/paris-velos-a-assistance-electrique"
+            }
+        },
+        {
             "name": "reseaux-de-transports-en-commun-de-la-metropole-daix-marseille-provence-et-des-bouches-du-rhone",
             "type": "http",
             "url": "https://app.mecatran.com/utw/ws/gtfsfeed/static/mamp?apiKey=60327e505a214c77303f52206f11483069257343",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/reseaux-de-transports-en-commun-de-la-metropole-daix-marseille-provence-et-des-bouches-du-rhone"
+            }
+        },
+        {
+            "name": "velos-a-assistance-electrique-en-libre-service-levelo-sur-marseille",
+            "type": "url",
+            "url": "https://api.omega.fifteen.eu/gbfs/2.2/marseille/en/gbfs.json?&key=MjE0ZDNmMGEtNGFkZS00M2FlLWFmMWItZGNhOTZhMWQyYzM2",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/velos-a-assistance-electrique-en-libre-service-levelo-sur-marseille"
             }
         },
         {
@@ -1141,6 +1213,42 @@
             }
         },
         {
+            "name": "tier-dott-gbfs-lyon",
+            "type": "url",
+            "url": "https://gbfs.api.ridedott.com/public/v2/lyon/gbfs.json",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/tier-dott-gbfs-lyon"
+            }
+        },
+        {
+            "name": "tier-dott-gbfs-ol-vallee",
+            "type": "url",
+            "url": "https://gbfs.api.ridedott.com/public/v2/ol-vallee/gbfs.json",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/tier-dott-gbfs-ol-vallee"
+            }
+        },
+        {
+            "name": "stations-velov-de-la-metropole-de-lyon-disponibilites-temps-reel",
+            "type": "url",
+            "url": "https://download.data.grandlyon.com/files/rdata/jcd_jcdecaux.jcdvelov/gbfs.json",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/stations-velov-de-la-metropole-de-lyon-disponibilites-temps-reel"
+            }
+        },
+        {
+            "name": "vehicules-en-autopartage-leoandgo-dans-la-metropole-de-lyon-disponibilites-temps-reel",
+            "type": "url",
+            "url": "https://download.data.grandlyon.com/files/rdata/lag_leoandgo.disponibilite/gbfs.json",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/vehicules-en-autopartage-leoandgo-dans-la-metropole-de-lyon-disponibilites-temps-reel"
+            }
+        },
+        {
             "name": "localisation-des-arrets-ilevia-bus-metro-et-tram-gtfs-pictogrammes-du-reseau-ilevia-2",
             "type": "http",
             "url": "https://media.ilevia.fr/opendata/gtfs.zip",
@@ -1159,12 +1267,39 @@
             "spec": "gtfs-rt"
         },
         {
+            "name": "vlille-disponibilite-en-temps-reel-3",
+            "type": "url",
+            "url": "https://media.ilevia.fr/opendata/gbfs.json",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/vlille-disponibilite-en-temps-reel-3"
+            }
+        },
+        {
             "name": "tisseo-offre-de-transport-gtfs",
             "type": "http",
             "url": "https://data.toulouse-metropole.fr/explore/dataset/tisseo-gtfs/files/fc1dda89077cf37e4f7521760e0ef4e9/download/",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/tisseo-offre-de-transport-gtfs"
+            }
+        },
+        {
+            "name": "trottinettes-bird-marseille",
+            "type": "url",
+            "url": "https://mds.bird.co/gbfs/v2/public/marseille/gbfs.json",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/trottinettes-bird-marseille"
+            }
+        },
+        {
+            "name": "voi-gbfs-et-netex-marseille",
+            "type": "url",
+            "url": "https://api.voiapp.io/gbfs/fr/6bb6b5dc-1cda-4da7-9216-d3023a0bc54a/v2/66/gbfs.json",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/voi-gbfs-et-netex-marseille"
             }
         },
         {
@@ -1204,6 +1339,24 @@
             "spec": "gtfs-rt"
         },
         {
+            "name": "tier-dott-gbfs-bordeaux",
+            "type": "url",
+            "url": "https://gbfs.api.ridedott.com/public/v2/bordeaux/gbfs.json",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/tier-dott-gbfs-bordeaux"
+            }
+        },
+        {
+            "name": "station-le-velo-en-temps-reel",
+            "type": "url",
+            "url": "https://bdx.mecatran.com/utw/ws/gbfs/bordeaux/v3/gbfs.json?apiKey=opendata-bordeaux-metropole-flux-gtfs-rt",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/station-le-velo-en-temps-reel"
+            }
+        },
+        {
             "name": "naolib-arrets-horaires-et-circuits",
             "type": "http",
             "url": "https://data.nantesmetropole.fr/explore/dataset/244400404_tan-arrets-horaires-circuits/files/16a1a0af5946619af621baa4ad9ee662/download/",
@@ -1211,6 +1364,15 @@
             "skip": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/naolib-arrets-horaires-et-circuits"
+            }
+        },
+        {
+            "name": "offre-et-temps-reel-du-service-velos-en-libre-service-naolib-de-nantes-metropole-au-format-gbfs",
+            "type": "url",
+            "url": "https://api.cyclocity.fr/contracts/nantes/gbfs/gbfs.json",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/offre-et-temps-reel-du-service-velos-en-libre-service-naolib-de-nantes-metropole-au-format-gbfs"
             }
         },
         {
@@ -1277,9 +1439,27 @@
             }
         },
         {
+            "name": "tier-dott-gbfs-grenoble",
+            "type": "url",
+            "url": "https://gbfs.api.ridedott.com/public/v2/grenoble/gbfs.json",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/tier-dott-gbfs-grenoble"
+            }
+        },
+        {
+            "name": "grenoble-velos-a-assistance-electrique-en-libre-service",
+            "type": "url",
+            "url": "https://gbfs.getapony.com/v1/grenoble/fr/gbfs.json",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/grenoble-velos-a-assistance-electrique-en-libre-service"
+            }
+        },
+        {
             "name": "export-quotidien-au-format-gtfs-du-reseau-de-transport-lignes-d-azur",
             "type": "http",
-            "url": "http://opendata.nicecotedazur.org/data/storage/f/gtfs1742516101/GTFSExport.zip",
+            "url": "http://opendata.nicecotedazur.org/data/storage/f/gtfs1743549301/GTFSExport.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/export-quotidien-au-format-gtfs-du-reseau-de-transport-lignes-d-azur"
@@ -1292,6 +1472,15 @@
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/donnees-theoriques-gtfs-et-temps-reel-siri-lite-du-reseau-cts"
+            }
+        },
+        {
+            "name": "stations-en-libre-service-velhop-flux-en-temps-reel",
+            "type": "url",
+            "url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ae/gbfs.json",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/stations-en-libre-service-velhop-flux-en-temps-reel"
             }
         },
         {
@@ -1358,6 +1547,15 @@
             "spec": "gtfs-rt"
         },
         {
+            "name": "donnees-statiques-et-temps-reel-du-service-de-vls-lovelo-metropole-rouen-normandie",
+            "type": "url",
+            "url": "https://gbfs.urbansharing.com/lovelolibreservice.fr/gbfs.json",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/donnees-statiques-et-temps-reel-du-service-de-vls-lovelo-metropole-rouen-normandie"
+            }
+        },
+        {
             "name": "offre-de-transport-de-montpellier-mediterranee-metropole-tam-gtfs",
             "type": "http",
             "url": "https://data.montpellier3m.fr/sites/default/files/ressources/TAM_MMM_GTFS.zip",
@@ -1385,25 +1583,34 @@
             "spec": "gtfs-rt"
         },
         {
-            "name": "versions-des-horaires-theoriques-des-lignes-de-bus-et-de-metro-du-reseau-star-au-format-gtfs--82877",
+            "name": "disponibilite-en-temps-reel-des-velos-en-libre-service-velomagg-de-montpellier",
+            "type": "url",
+            "url": "https://montpellier-fr.fifteen.site/gbfs/gbfs.json",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/disponibilite-en-temps-reel-des-velos-en-libre-service-velomagg-de-montpellier"
+            }
+        },
+        {
+            "name": "versions-des-horaires-theoriques-des-lignes-de-bus-et-de-metro-du-reseau-star-au-format-gtfs--82945",
             "type": "http",
-            "url": "https://eu.ftp.opendatasoft.com/star/gtfs/GTFS_1_20250318_20250418_20250318140629.zip",
+            "url": "https://eu.ftp.opendatasoft.com/star/gtfs/GTFS_1_20250401_20250418_20250401050507.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/versions-des-horaires-theoriques-des-lignes-de-bus-et-de-metro-du-reseau-star-au-format-gtfs"
             }
         },
         {
-            "name": "versions-des-horaires-theoriques-des-lignes-de-bus-et-de-metro-du-reseau-star-au-format-gtfs--82878",
+            "name": "versions-des-horaires-theoriques-des-lignes-de-bus-et-de-metro-du-reseau-star-au-format-gtfs--82946",
             "type": "http",
-            "url": "https://eu.ftp.opendatasoft.com/star/gtfs/GTFS_2_20250419_20250428_20250318150643.zip",
+            "url": "https://eu.ftp.opendatasoft.com/star/gtfs/GTFS_2_20250419_20250513_20250401052618.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/versions-des-horaires-theoriques-des-lignes-de-bus-et-de-metro-du-reseau-star-au-format-gtfs"
             }
         },
         {
-            "name": "versions-des-horaires-theoriques-des-lignes-de-bus-et-de-metro-du-reseau-star-au-format-gtfs--82877",
+            "name": "versions-des-horaires-theoriques-des-lignes-de-bus-et-de-metro-du-reseau-star-au-format-gtfs--82945",
             "type": "url",
             "url": "https://proxy.transport.data.gouv.fr/resource/star-rennes-integration-gtfs-rt-trip-update",
             "license": {
@@ -1428,6 +1635,15 @@
                 "url": "https://transport.data.gouv.fr/datasets/horaires-theoriques-au-format-gtfs-et-horaires-temps-reel-au-format-gtfs-rt-du-reseau-car-jaune-a-la-reunion"
             },
             "spec": "gtfs-rt"
+        },
+        {
+            "name": "velos-en-libre-service-1",
+            "type": "url",
+            "url": "https://data.metropolegrenoble.fr/sites/default/files/dataset/2023/08/10/75c1054c-e602-445c-9852-0fc7abddf592/velos_gbfs.json",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/velos-en-libre-service-1"
+            }
         },
         {
             "name": "reseau-de-transport-urbain-de-la-metropole-toulon-provence-mediterranee",
@@ -1466,6 +1682,24 @@
             }
         },
         {
+            "name": "flux-temps-reel-velivert",
+            "type": "url",
+            "url": "https://api.saint-etienne-metropole.fr/velivert/api/gbfs/gbfs.json",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/flux-temps-reel-velivert"
+            }
+        },
+        {
+            "name": "velos-a-assistance-electrique-en-libre-service-pointe-a-pitre-la-guadeloupe-karuvelo",
+            "type": "url",
+            "url": "https://api.gbfs.ecovelo.mobi/karu/gbfs.json",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/velos-a-assistance-electrique-en-libre-service-pointe-a-pitre-la-guadeloupe-karuvelo"
+            }
+        },
+        {
             "name": "horaires-du-reseau-transvilles-au-format-gtfs",
             "type": "http",
             "url": "https://static.data.gouv.fr/resources/horaires-du-reseau-transvilles-au-format-gtfs/20250210-151800/google-transit-10-02-au-31-08-25.zip",
@@ -1475,9 +1709,18 @@
             }
         },
         {
+            "name": "velos-en-libre-service-du-reseau-transvilles-au-format-gbfs",
+            "type": "url",
+            "url": "https://stables.donkey.bike/api/public/gbfs/2/donkey_valenciennes/gbfs",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/velos-en-libre-service-du-reseau-transvilles-au-format-gbfs"
+            }
+        },
+        {
             "name": "gtfs-transport-horaires-chemins-de-fer-corse-1",
             "type": "http",
-            "url": "https://static.data.gouv.fr/resources/gtfs-transport-horaires-chemins-de-fer-corse-1/20250114-180701/chemins-de-fer-de-la-corse-horaires.zip",
+            "url": "https://static.data.gouv.fr/resources/gtfs-transport-horaires-chemins-de-fer-corse-1/20250325-095147/chemins-de-fer-de-la-corse-horaires.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/gtfs-transport-horaires-chemins-de-fer-corse-1"
@@ -1592,6 +1835,15 @@
             "spec": "gtfs-rt"
         },
         {
+            "name": "vehicules-en-libre-service-autopartage-citiz",
+            "type": "url",
+            "url": "https://backend.citiz.fr/public/provider/7/gbfs/v3.0/gbfs.json",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/vehicules-en-libre-service-autopartage-citiz"
+            }
+        },
+        {
             "name": "angers-loire-metropole-reseau-irigo-gtfs-gtfs-rt-siri",
             "type": "http",
             "url": "https://chouette.enroute.mobi/api/v1/datas/Irigo/gtfs.zip",
@@ -1626,6 +1878,15 @@
                 "url": "https://transport.data.gouv.fr/datasets/syndicat-mixte-des-transports-en-commun-de-lagglomeration-clermontoise-smtc-ac-reseau-t2c-gtfs-gtfs-rt"
             },
             "spec": "gtfs-rt"
+        },
+        {
+            "name": "etat-des-stations-de-velos-en-libre-service-c-velo-gbfs-du-syndicat-mixte-des-transports-en-commun-de-lagglomeration-clermontoise-smtc-ac-1",
+            "type": "url",
+            "url": "https://clermontferrand.publicbikesystem.net/customer/gbfs/v2/",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/etat-des-stations-de-velos-en-libre-service-c-velo-gbfs-du-syndicat-mixte-des-transports-en-commun-de-lagglomeration-clermontoise-smtc-ac-1"
+            }
         },
         {
             "name": "gtfs-et-gtfs-rt-reseau-tao-orleans-metropole-1",
@@ -1674,6 +1935,15 @@
             }
         },
         {
+            "name": "stations-velocite-jcdecaux-au-standard-gbfs-sur-mulhouse",
+            "type": "url",
+            "url": "https://api.cyclocity.fr/contracts/mulhouse/gbfs/gbfs.json",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/stations-velocite-jcdecaux-au-standard-gbfs-sur-mulhouse"
+            }
+        },
+        {
             "name": "reseau-de-transport-en-commun-lia-gtfs-siri",
             "type": "http",
             "url": "https://static.data.gouv.fr/resources/reseau-de-transport-en-commun-lia-gtfs-siri/20250310-103446/lia-2025-03-10-06-29.zip",
@@ -1681,6 +1951,15 @@
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/reseau-de-transport-en-commun-lia-gtfs-siri"
             }
+        },
+        {
+            "name": "reseau-de-transport-en-commun-lia-gtfs-siri",
+            "type": "url",
+            "url": "https://gtfs.bus-tracker.fr/gtfs-rt/lia/trip-updates",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/reseau-de-transport-en-commun-lia-gtfs-siri"
+            },
+            "spec": "gtfs-rt"
         },
         {
             "name": "caen-la-mer-reseau-twisto-gtfs-siri",
@@ -1693,7 +1972,25 @@
             }
         },
         {
-            "name": "gtfs-sankeo",
+            "name": "gtfs-sankeo--82900",
+            "type": "http",
+            "url": "https://eur.mecatran.com/utw/ws/gtfsfeed/static/perpignan?apiKey=612f606b5e3b0a3e6e1f441a2c4a050f6a345b55",
+            "fix": true,
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/gtfs-sankeo"
+            }
+        },
+        {
+            "name": "gtfs-sankeo--82902",
+            "type": "http",
+            "url": "https://static.data.gouv.fr/resources/gtfs-sankeo/20241209-122638/gtfs-sankeo-ls.zip",
+            "fix": true,
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/gtfs-sankeo"
+            }
+        },
+        {
+            "name": "gtfs-sankeo--82903",
             "type": "http",
             "url": "https://static.data.gouv.fr/resources/gtfs-sankeo/20250318-094439/gtfs-sankeo.zip",
             "fix": true,
@@ -1702,9 +1999,18 @@
             }
         },
         {
-            "name": "gtfs-sankeo",
+            "name": "gtfs-sankeo--82902",
             "type": "url",
             "url": "https://zenbus.net/gtfs/rt/poll.proto?src=true&dataset=sankeo-scolaire",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/gtfs-sankeo"
+            },
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "gtfs-sankeo--82900",
+            "type": "url",
+            "url": "https://eur.mecatran.com/utw/ws/gtfsfeed/realtime/perpignan?apiKey=612f606b5e3b0a3e6e1f441a2c4a050f6a345b55",
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/gtfs-sankeo"
             },
@@ -1729,9 +2035,36 @@
             }
         },
         {
+            "name": "stations-velostanlib",
+            "type": "url",
+            "url": "https://api.cyclocity.fr/contracts/nancy/gbfs/gbfs.json",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/stations-velostanlib"
+            }
+        },
+        {
+            "name": "trottinettes-bird-bordeaux",
+            "type": "url",
+            "url": "https://mds.bird.co/gbfs/v2/public/bordeaux/gbfs.json",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/trottinettes-bird-bordeaux"
+            }
+        },
+        {
+            "name": "bordeaux-velos-et-trottinettes-en-libre-service",
+            "type": "url",
+            "url": "https://gbfs.getapony.com/v1/bordeaux/fr/gbfs.json",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/bordeaux-velos-et-trottinettes-en-libre-service"
+            }
+        },
+        {
             "name": "offre-de-transport-du-reseau-tango-de-nimes-metropole-gtfs-gtfs-rt",
             "type": "http",
-            "url": "https://static.data.gouv.fr/resources/offre-de-transport-du-reseau-tango-de-nimes-metropole-gtfs-gtfs-rt/20250224-070605/gtfs-production.zip",
+            "url": "https://static.data.gouv.fr/resources/offre-de-transport-du-reseau-tango-de-nimes-metropole-gtfs-gtfs-rt/20250331-080920/gtfs-production.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/offre-de-transport-du-reseau-tango-de-nimes-metropole-gtfs-gtfs-rt"
@@ -1765,6 +2098,15 @@
             "spec": "gtfs-rt"
         },
         {
+            "name": "voi-gbfs-saint-quentin-en-yvelines",
+            "type": "url",
+            "url": "https://api.voiapp.io/gbfs/fr/6bb6b5dc-1cda-4da7-9216-d3023a0bc54a/v2/355/gbfs.json",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/voi-gbfs-saint-quentin-en-yvelines"
+            }
+        },
+        {
             "name": "fichiers-gtfs-eurometropole-de-metz",
             "type": "http",
             "url": "https://data.lemet.fr/documents/LEMET-gtfs.zip",
@@ -1781,6 +2123,24 @@
                 "url": "https://transport.data.gouv.fr/datasets/fichiers-gtfs-eurometropole-de-metz"
             },
             "spec": "gtfs-rt"
+        },
+        {
+            "name": "tier-dott-gbfs-siemu",
+            "type": "url",
+            "url": "https://gbfs.api.ridedott.com/public/v2/siemu/gbfs.json",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/tier-dott-gbfs-siemu"
+            }
+        },
+        {
+            "name": "velo-en-libre-service-du-star-au-standard-gbfs",
+            "type": "url",
+            "url": "https://eu.ftp.opendatasoft.com/star/gbfs/gbfs.json",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/velo-en-libre-service-du-star-au-standard-gbfs"
+            }
         },
         {
             "name": "eveole-douai-reseau-bus-du-syndicat-mixte-des-transports-du-douaisis-smtd",
@@ -1810,6 +2170,15 @@
             "spec": "gtfs-rt"
         },
         {
+            "name": "velo-a-assistance-electrique-en-libre-service-velozef-en-temps-reel",
+            "type": "url",
+            "url": "https://gbfs.partners.fifteen.eu/gbfs/2.2/brest/en/gbfs.json",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/velo-a-assistance-electrique-en-libre-service-velozef-en-temps-reel"
+            }
+        },
+        {
             "name": "horaire-du-reseau-citalis",
             "type": "http",
             "url": "https://static.data.gouv.fr/resources/horaire-du-reseau-citalis/20250318-122311/gtfs-citalis-bus.zip",
@@ -1830,7 +2199,7 @@
         {
             "name": "offre-de-transports-sibra-a-annecy-gtfs",
             "type": "http",
-            "url": "https://static.data.gouv.fr/resources/offre-de-transports-sibra-a-annecy-gtfs/20250207-143508/gtfs-sibra.zip",
+            "url": "https://static.data.gouv.fr/resources/offre-de-transports-sibra-a-annecy-gtfs/20250401-132711/gtfs-sibra.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/offre-de-transports-sibra-a-annecy-gtfs"
@@ -1911,7 +2280,7 @@
         {
             "name": "gtfs-du-reseau-des-transports-bus-et-tramway-setram-circulant-sur-le-territoire-le-mans-metropole",
             "type": "http",
-            "url": "https://static.data.gouv.fr/resources/gtfs-du-reseau-des-transports-bus-et-tramway-setram-circulant-sur-le-territoire-le-mans-metropole/20250319-224025/gtfs-setram-lmm.zip",
+            "url": "https://static.data.gouv.fr/resources/gtfs-du-reseau-des-transports-bus-et-tramway-setram-circulant-sur-le-territoire-le-mans-metropole/20250331-115457/gtfs-setram-lmm.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/gtfs-du-reseau-des-transports-bus-et-tramway-setram-circulant-sur-le-territoire-le-mans-metropole"
@@ -1954,6 +2323,15 @@
             }
         },
         {
+            "name": "velos-a-assistance-electrique-en-libre-service-cap-cotentin",
+            "type": "url",
+            "url": "https://api.gbfs.ecovelo.mobi/capcotentin/gbfs.json",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/velos-a-assistance-electrique-en-libre-service-cap-cotentin"
+            }
+        },
+        {
             "name": "fichier-des-donnees-theoriques-du-reseau-scolaris-au-format-gtfs",
             "type": "http",
             "url": "https://data.idelis.fr/api/explore/v2.1/catalog/datasets/fichier-des-donnees-theoriques-du-reseau-scolaris-au-format-gtfs/files/b2d11deac94e5271d88cef3ece50b3ac",
@@ -1982,9 +2360,18 @@
             }
         },
         {
+            "name": "velos-a-assistance-electrique-en-libre-service-saint-pierre-la-reunion-civis-altervelo",
+            "type": "url",
+            "url": "https://api.gbfs.ecovelo.mobi/altervelo/gbfs.json",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/velos-a-assistance-electrique-en-libre-service-saint-pierre-la-reunion-civis-altervelo"
+            }
+        },
+        {
             "name": "ametis",
             "type": "http",
-            "url": "https://static.data.gouv.fr/resources/ametis/20250120-103255/sae-du-01-01-2025-au-04-07-2025.zip",
+            "url": "https://static.data.gouv.fr/resources/ametis/20250331-092531/sae-du-21-03-2025-au-04-07-2025.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/ametis"
@@ -1998,6 +2385,15 @@
                 "url": "https://transport.data.gouv.fr/datasets/ametis"
             },
             "spec": "gtfs-rt"
+        },
+        {
+            "name": "velo-en-libre-service-de-la-ville-damiens",
+            "type": "url",
+            "url": "https://api.cyclocity.fr/contracts/amiens/gbfs/gbfs.json",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/velo-en-libre-service-de-la-ville-damiens"
+            }
         },
         {
             "name": "mobilite-offre-de-transport-du-reseau-bus-gtfs-gtfs-rt",
@@ -2029,7 +2425,7 @@
         {
             "name": "reseau-urbain-kiceo",
             "type": "http",
-            "url": "https://static.data.gouv.fr/resources/reseau-urbain-kiceo/20250321-095749/gtfs-20250321-102536-kiceo.zip",
+            "url": "https://static.data.gouv.fr/resources/reseau-urbain-kiceo/20250331-153005/gtfs-20250331-165111-kiceo.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/reseau-urbain-kiceo"
@@ -2063,12 +2459,30 @@
             "spec": "gtfs-rt"
         },
         {
+            "name": "optymo-auto-en-libre-service",
+            "type": "url",
+            "url": "https://data.optymo.fr/als/gbfs.json",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/optymo-auto-en-libre-service"
+            }
+        },
+        {
             "name": "arrets-circuits-et-horaires-du-reseau-optymo-de-belfort",
             "type": "http",
             "url": "https://static.data.gouv.fr/resources/arrets-circuits-et-horaires-du-reseau-optymo-de-belfort/20250311-133655/gtfs.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/arrets-circuits-et-horaires-du-reseau-optymo-de-belfort"
+            }
+        },
+        {
+            "name": "voi-gbfs-et-netex-le-havre-et-octeville-sur-mer",
+            "type": "url",
+            "url": "https://api.voiapp.io/gbfs/fr/6bb6b5dc-1cda-4da7-9216-d3023a0bc54a/v2/336/gbfs.json",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/voi-gbfs-et-netex-le-havre-et-octeville-sur-mer"
             }
         },
         {
@@ -2090,9 +2504,18 @@
             }
         },
         {
+            "name": "donnees-velopop-temps-reel-sur-lagglomeration-du-grand-avignon-velos-electriques-en-libre-service",
+            "type": "url",
+            "url": "https://gbfs.partners.fifteen.eu/gbfs/avignon/gbfs.json",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/donnees-velopop-temps-reel-sur-lagglomeration-du-grand-avignon-velos-electriques-en-libre-service"
+            }
+        },
+        {
             "name": "horaires-theoriques-et-temps-reel-gtfs-gtfs-rt-du-reseau-palmbus-cannes-pays-de-lerins",
             "type": "http",
-            "url": "https://static.data.gouv.fr/resources/horaires-theoriques-et-temps-reel-gtfs-gtfs-rt-du-reseau-palmbus-cannes-pays-de-lerins/20250319-094107/palmbus-cannes-fr.zip",
+            "url": "https://static.data.gouv.fr/resources/horaires-theoriques-et-temps-reel-gtfs-gtfs-rt-du-reseau-palmbus-cannes-pays-de-lerins/20250329-085425/palmbus-cannes-fr.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/horaires-theoriques-et-temps-reel-gtfs-gtfs-rt-du-reseau-palmbus-cannes-pays-de-lerins"
@@ -2106,6 +2529,15 @@
                 "url": "https://transport.data.gouv.fr/datasets/horaires-theoriques-et-temps-reel-gtfs-gtfs-rt-du-reseau-palmbus-cannes-pays-de-lerins"
             },
             "spec": "gtfs-rt"
+        },
+        {
+            "name": "angers-trottinettes-velos-et-vae-en-libre-service",
+            "type": "url",
+            "url": "https://gbfs.getapony.com/v1/angers/fr/gbfs.json",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/angers-trottinettes-velos-et-vae-en-libre-service"
+            }
         },
         {
             "name": "reseau-taneo-1",
@@ -2123,6 +2555,15 @@
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/gtfs-du-reseau-de-transports-publics-de-saint-brieuc-armor-agglomeration"
+            }
+        },
+        {
+            "name": "location-de-velos-velobaie",
+            "type": "url",
+            "url": "https://gateway.prod.partners-fs37hd8.zoov.site/gbfs/2.2/saintbrieuc/en/gbfs.json?key=YmE1ZDVlNDYtMGIwNy00MGEyLWIxZWYtNGEwOGQ4NTYxNTYz",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/location-de-velos-velobaie"
             }
         },
         {
@@ -2191,7 +2632,7 @@
         {
             "name": "evolity-horaires-theoriques-de-transport-public",
             "type": "http",
-            "url": "https://static.data.gouv.fr/resources/evolity-horaires-theoriques-de-transport-public/20250310-071258/evolity-10-03-2025-au-14-07-2025.zip",
+            "url": "https://static.data.gouv.fr/resources/evolity-horaires-theoriques-de-transport-public/20250324-130121/evolity-21-03-2025-au-14-07-2025.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/evolity-horaires-theoriques-de-transport-public"
@@ -2236,7 +2677,7 @@
         {
             "name": "filibus-urbain",
             "type": "http",
-            "url": "https://static.data.gouv.fr/resources/filibus-urbain/20240729-125753/chartres.zip",
+            "url": "https://static.data.gouv.fr/resources/filibus-urbain/20250401-151135/chartres-ete25.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/filibus-urbain"
@@ -2281,7 +2722,7 @@
         {
             "name": "arrets-horaires-et-parcours-theoriques-du-reseau-de-transports-beemob-beziers-mediterranee",
             "type": "http",
-            "url": "https://static.data.gouv.fr/resources/arrets-horaires-et-parcours-theoriques-du-reseau-de-transports-beemob-beziers-mediterranee/20250224-170524/beziers-2025-pvssco-export-gtfs.zip",
+            "url": "https://static.data.gouv.fr/resources/arrets-horaires-et-parcours-theoriques-du-reseau-de-transports-beemob-beziers-mediterranee/20250327-075111/gtfs-25-03-2025-05-00.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/arrets-horaires-et-parcours-theoriques-du-reseau-de-transports-beemob-beziers-mediterranee"
@@ -2308,7 +2749,7 @@
         {
             "name": "transurbain-evreux-portes-de-normandie",
             "type": "http",
-            "url": "https://static.data.gouv.fr/resources/transurbain-evreux-portes-de-normandie/20241107-121332/pt-th-offer-transurbain-gtfs-20241107-647-opendata.zip",
+            "url": "https://static.data.gouv.fr/resources/transurbain-evreux-portes-de-normandie/20250331-132033/pt-th-offer-transurbain-gtfs-20250331-619-opendata.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/transurbain-evreux-portes-de-normandie"
@@ -2333,6 +2774,15 @@
             }
         },
         {
+            "name": "stations-velos-en-libre-service-tanlib-flux-en-temps-reel",
+            "type": "url",
+            "url": "https://api.gbfs.ecovelo.mobi/tanlib/gbfs.json",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/stations-velos-en-libre-service-tanlib-flux-en-temps-reel"
+            }
+        },
+        {
             "name": "gtfs-3",
             "type": "http",
             "url": "https://static.data.gouv.fr/resources/gtfs-3/20241125-093438/gtfs-20241024-172839.zip",
@@ -2349,6 +2799,15 @@
                 "url": "https://transport.data.gouv.fr/datasets/gtfs-3"
             },
             "spec": "gtfs-rt"
+        },
+        {
+            "name": "vls-tlp-mobilites",
+            "type": "url",
+            "url": "https://api.gbfs.ecovelo.mobi/tlpmobilites/gbfs.json",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/vls-tlp-mobilites"
+            }
         },
         {
             "name": "reseau-bus-sete-agglopole-mobilite",
@@ -2369,12 +2828,30 @@
             "spec": "gtfs-rt"
         },
         {
+            "name": "besancon-velos-en-libre-service",
+            "type": "url",
+            "url": "https://api.cyclocity.fr/contracts/besancon/gbfs/gbfs.json",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/besancon-velos-en-libre-service"
+            }
+        },
+        {
             "name": "reseau-rtca",
             "type": "http",
             "url": "https://static.data.gouv.fr/resources/reseau-rtca/20250130-162650/gtfs.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/reseau-rtca"
+            }
+        },
+        {
+            "name": "cyclolibre-les-velos-electriques-en-libre-service-par-carcassonne",
+            "type": "url",
+            "url": "https://api.gbfs.ecovelo.mobi/cyclolibre/gbfs.json",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/cyclolibre-les-velos-electriques-en-libre-service-par-carcassonne"
             }
         },
         {
@@ -2414,6 +2891,15 @@
             }
         },
         {
+            "name": "vls-vilvolt-agglomeration-depinal",
+            "type": "url",
+            "url": "https://gbfs.partners.fifteen.eu/gbfs/epinal/gbfs.json",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/vls-vilvolt-agglomeration-depinal"
+            }
+        },
+        {
             "name": "horaires-theoriques-du-reseau-zoom-le-grand-chalon",
             "type": "http",
             "url": "https://static.data.gouv.fr/resources/horaires-theoriques-du-reseau-zoom-le-grand-chalon/20241224-111818/gtfs-20241223-163822-stac.zip",
@@ -2429,6 +2915,15 @@
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/arrets-horaires-et-parcours-theoriques-des-reseaux-naq-bri-nva-m-1"
+            }
+        },
+        {
+            "name": "vls-ca-bassin-de-brive-velibeo",
+            "type": "url",
+            "url": "https://mobi-iti-nam.okina.fr/api-proxy/api/gbfs/1.0/gbfs/velibeo_ecovelo/gbfs",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/vls-ca-bassin-de-brive-velibeo"
             }
         },
         {
@@ -2504,6 +2999,15 @@
             }
         },
         {
+            "name": "tier-dott-gbfs-bourgoin-jallieu",
+            "type": "url",
+            "url": "https://gbfs.api.ridedott.com/public/v2/bourgoin-jallieu/gbfs.json",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/tier-dott-gbfs-bourgoin-jallieu"
+            }
+        },
+        {
             "name": "navettes-de-loire-forez-agglomeration",
             "type": "http",
             "url": "https://static.data.gouv.fr/resources/navettes-de-loire-forez-agglomeration/20240917-095003/navettes-urbaines-lfa.zip",
@@ -2574,6 +3078,15 @@
                 "url": "https://transport.data.gouv.fr/datasets/horaires-theoriques-reseau-choletbus"
             },
             "spec": "gtfs-rt"
+        },
+        {
+            "name": "choletbus-2-roues-vaels",
+            "type": "url",
+            "url": "https://api.gbfs.ecovelo.mobi/choletbus/gbfs.json",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/choletbus-2-roues-vaels"
+            }
         },
         {
             "name": "donnees-theoriques-et-temps-reel-du-reseau-corolis-interurbain-communaute-dagglomeration-du-beauvaisis",
@@ -2670,6 +3183,15 @@
             }
         },
         {
+            "name": "vls-ca-grand-perigueux-perivelo",
+            "type": "url",
+            "url": "https://mobi-iti-nam.okina.fr/api-proxy/api/gbfs/1.0/gbfs/perivelo_ecovelo/gbfs",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/vls-ca-grand-perigueux-perivelo"
+            }
+        },
+        {
             "name": "star-horaires-theoriques-et-temps-reel-du-reseau-de-transport-urbain-de-roannais-agglomeration",
             "type": "http",
             "url": "https://exs.mlt4.cityway.fr/gtfs.aspx?operatorCode=ROANNE&key=OPENDATA",
@@ -2733,6 +3255,15 @@
             }
         },
         {
+            "name": "fr-200052264-t0008-0000-1",
+            "type": "http",
+            "url": "https://www.datagrandest.fr/metadata/fluo-grand-est/FR-200052264-T0008-0000/fluo-grand-est-haguenau-gtfs.zip",
+            "fix": true,
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/fr-200052264-t0008-0000-1"
+            }
+        },
+        {
             "name": "horaires-theoriques-et-temps-reel-du-reseau-ritmo-haguenau-gtfs-gtfs-rt",
             "type": "http",
             "url": "https://zenbus.net/gtfs/static/download.zip?dataset=haguenau",
@@ -2751,21 +3282,21 @@
             "spec": "gtfs-rt"
         },
         {
-            "name": "fr-200052264-t0008-0000-1",
-            "type": "http",
-            "url": "https://www.datagrandest.fr/metadata/fluo-grand-est/FR-200052264-T0008-0000/fluo-grand-est-haguenau-gtfs.zip",
-            "fix": true,
-            "license": {
-                "url": "https://transport.data.gouv.fr/datasets/fr-200052264-t0008-0000-1"
-            }
-        },
-        {
             "name": "agglopolys-offre-theorique-mobilite-reseau-urbain-azalys-de-blois",
             "type": "http",
             "url": "https://data.centrevaldeloire.fr/api/explore/v2.1/catalog/datasets/agglopolys-offre-theorique-mobilite-reseau-urbain-blois/files/af673e7cbb43033c60c117ddf5f4ecaa",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/agglopolys-offre-theorique-mobilite-reseau-urbain-azalys-de-blois"
+            }
+        },
+        {
+            "name": "velos-a-assistance-electrique-en-libre-service-saumur-ogalo-cyclette",
+            "type": "url",
+            "url": "https://api.gbfs.ecovelo.mobi/ogalo/gbfs.json",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/velos-a-assistance-electrique-en-libre-service-saumur-ogalo-cyclette"
             }
         },
         {
@@ -2784,6 +3315,24 @@
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/reseau-de-transport-impulsyon-a-la-roche-sur-yon"
+            }
+        },
+        {
+            "name": "stations-trottinette-en-libre-service-de-la-roche-sur-yon",
+            "type": "url",
+            "url": "https://gbfs.getapony.com/v1/la_roche_sur_yon/fr/gbfs.json",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/stations-trottinette-en-libre-service-de-la-roche-sur-yon"
+            }
+        },
+        {
+            "name": "stations-velo-en-libre-service-vls-de-la-roche-sur-yon",
+            "type": "url",
+            "url": "https://api.gbfs.ecovelo.mobi/impulsyon/gbfs.json",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/stations-velo-en-libre-service-vls-de-la-roche-sur-yon"
             }
         },
         {
@@ -2859,6 +3408,15 @@
             }
         },
         {
+            "name": "gbfs-tempo-velo",
+            "type": "url",
+            "url": "https://api.gbfs.ecovelo.mobi/tempovelo/gbfs.json",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/gbfs-tempo-velo"
+            }
+        },
+        {
             "name": "thonon-agglomeration-donnees-gtfs",
             "type": "http",
             "url": "https://static.data.gouv.fr/resources/thonon-agglomeration-donnees-gtfs/20241010-063850/2024.10.07.16-gtfs-start-2024-09-01-2025-04-30.zip",
@@ -2895,6 +3453,15 @@
             }
         },
         {
+            "name": "vls-ca-du-libournais-calivelo",
+            "type": "url",
+            "url": "https://api.gbfs.ecovelo.mobi/calivelo/gbfs.json",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/vls-ca-du-libournais-calivelo"
+            }
+        },
+        {
             "name": "reseau-lva",
             "type": "http",
             "url": "https://s3.eu-west-1.amazonaws.com/files.orchestra.ratpdev.com/networks/vienne-mobi/exports/medias.zip",
@@ -2911,6 +3478,15 @@
                 "url": "https://transport.data.gouv.fr/datasets/reseau-lva"
             },
             "spec": "gtfs-rt"
+        },
+        {
+            "name": "vls-aqta-auray-quiberon-terre-atlantique",
+            "type": "url",
+            "url": "https://gbfs.partners.fifteen.eu/gbfs/auray-quiberon/gbfs.json",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/vls-aqta-auray-quiberon-terre-atlantique"
+            }
         },
         {
             "name": "information-sur-les-transports-en-commun",
@@ -2978,21 +3554,21 @@
             "spec": "gtfs-rt"
         },
         {
+            "name": "donnees-gtfs-du-reseau-de-transport-public-cara-bus",
+            "type": "http",
+            "url": "https://data.agglo-royan.fr/dataset/9b761974-a195-4e33-91b7-ecee3b368016/resource/d4915904-ebd0-43cf-9b35-fbfc04ce91fd/download/gtfs_20250320_171245_tdra.zip",
+            "fix": true,
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/donnees-gtfs-du-reseau-de-transport-public-cara-bus"
+            }
+        },
+        {
             "name": "arrets-horaires-et-parcours-theoriques-des-reseaux-naq-car-nva-m-1",
             "type": "http",
             "url": "https://www.pigma.org/public/opendata/nouvelle_aquitaine_mobilites/publication/ca_royan_atlantique-aggregated-gtfs.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/arrets-horaires-et-parcours-theoriques-des-reseaux-naq-car-nva-m-1"
-            }
-        },
-        {
-            "name": "donnees-gtfs-du-reseau-de-transport-public-cara-bus",
-            "type": "http",
-            "url": "https://data.agglo-royan.fr/dataset/9b761974-a195-4e33-91b7-ecee3b368016/resource/d4915904-ebd0-43cf-9b35-fbfc04ce91fd/download/gtfs_20240820_170804_tdra.zip",
-            "fix": true,
-            "license": {
-                "url": "https://transport.data.gouv.fr/datasets/donnees-gtfs-du-reseau-de-transport-public-cara-bus"
             }
         },
         {
@@ -3020,6 +3596,15 @@
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/mobivie-reseau-urbain-vichy-communaute"
+            }
+        },
+        {
+            "name": "velos-en-libre-service-vivelo",
+            "type": "url",
+            "url": "https://gbfs.partners.fifteen.eu/gbfs/vichy/gbfs.json",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/velos-en-libre-service-vivelo"
             }
         },
         {
@@ -3389,7 +3974,7 @@
         {
             "name": "astrobus-lisieux-normandie",
             "type": "http",
-            "url": "https://static.data.gouv.fr/resources/astrobus-lisieux-normandie/20250103-083009/pt-th-offer-astrobus-gtfs-20241224-562-opendata-1-.zip",
+            "url": "https://static.data.gouv.fr/resources/astrobus-lisieux-normandie/20250324-105552/pt-th-offer-astrobus-gtfs-20250319-540-opendata.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/astrobus-lisieux-normandie"
@@ -3812,6 +4397,15 @@
             }
         },
         {
+            "name": "giverny-vernon-gare-sncf",
+            "type": "url",
+            "url": "https://proxy.transport.data.gouv.fr/resource/giverny-vernon-gtfs-rt",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/giverny-vernon-gare-sncf"
+            },
+            "spec": "gtfs-rt"
+        },
+        {
             "name": "sngo-vernon-les-andelys-seine-normandie-agglo",
             "type": "http",
             "url": "https://static.data.gouv.fr/resources/sngo-vernon-les-andelys-seine-normandie-agglo/20241226-134226/pt-th-offer-sngo-gtfs-20241219-337-opendata.zip",
@@ -3841,7 +4435,7 @@
         {
             "name": "transports-urbains-st-cyr-s-mer",
             "type": "http",
-            "url": "https://static.data.gouv.fr/resources/transports-urbains-st-cyr-s-mer/20240118-110542/sud-sainte-baume-janvier2024-st-cyr.zip",
+            "url": "https://static.data.gouv.fr/resources/transports-urbains-st-cyr-s-mer/20250401-095332/sud-sainte-baume-janvier2025-st-cyr.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/transports-urbains-st-cyr-s-mer"
@@ -3963,6 +4557,15 @@
                 "url": "https://transport.data.gouv.fr/datasets/golfe-de-saint-tropez-donnees-mobilite-tc-navette-reguliere-saint-tropez"
             },
             "spec": "gtfs-rt"
+        },
+        {
+            "name": "velos-a-assistance-electrique-en-libre-service-sables-dolonne-les-petites-reines",
+            "type": "url",
+            "url": "https://api.gbfs.ecovelo.mobi/petitesreines/gbfs.json",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/velos-a-assistance-electrique-en-libre-service-sables-dolonne-les-petites-reines"
+            }
         },
         {
             "name": "gtfs-reseau-fablio-lignes-regulieres",
@@ -4246,7 +4849,7 @@
         {
             "name": "offre-de-transports-urbain-du-reseau-amelys-gtfs",
             "type": "http",
-            "url": "https://static.data.gouv.fr/resources/offre-de-transports-urbain-du-reseau-amelys-gtfs/20250227-113127/gtfs-26-02-2025-au-06-04-2025.zip",
+            "url": "https://static.data.gouv.fr/resources/offre-de-transports-urbain-du-reseau-amelys-gtfs/20250331-100231/gtfs-maj-avril-2025.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/offre-de-transports-urbain-du-reseau-amelys-gtfs"
@@ -4299,6 +4902,15 @@
             }
         },
         {
+            "name": "liste-api-ecovelo-pour-stations-velyceo-electriques-sur-saint-nazaire-agglo",
+            "type": "url",
+            "url": "https://api.gbfs.ecovelo.mobi/velyceo/gbfs.json",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/liste-api-ecovelo-pour-stations-velyceo-electriques-sur-saint-nazaire-agglo"
+            }
+        },
+        {
             "name": "transport-urbain",
             "type": "http",
             "url": "https://static.data.gouv.fr/resources/transport-urbain/20240821-150857/tu-v1.9-01092024-30062025.zip",
@@ -4326,30 +4938,30 @@
             }
         },
         {
-            "name": "gtfs-reseau-scolaire-coqueligo-septembre-a-novembre-2024",
+            "name": "gtfs-reseau-transport-urbain-coqueligo--82905",
             "type": "http",
-            "url": "https://static.data.gouv.fr/resources/gtfs-reseau-scolaire-coqueligo-septembre-a-novembre-2024/20240905-130447/coqueligo-coqueligo-scolaire-v7-gtfs-2024-09-03-10-09-07.zip",
+            "url": "https://static.data.gouv.fr/resources/gtfs-reseau-transport-urbain-coqueligo/20250326-140706/coqueligo-coqueligo-scolaire-v9-3-gtfs-2025-03-26-15-02-00.zip",
             "fix": true,
             "license": {
-                "url": "https://transport.data.gouv.fr/datasets/gtfs-reseau-scolaire-coqueligo-septembre-a-novembre-2024"
+                "url": "https://transport.data.gouv.fr/datasets/gtfs-reseau-transport-urbain-coqueligo"
             }
         },
         {
-            "name": "gtfs-reseau-urbain-coqueligo-septembre-a-novembre-2024",
+            "name": "gtfs-reseau-transport-urbain-coqueligo--82906",
             "type": "http",
-            "url": "https://static.data.gouv.fr/resources/gtfs-reseau-urbain-coqueligo-septembre-a-novembre-2024/20240905-125710/coqueligo-coqueligo-urbain-v5-6-gtfs-2024-09-03-10-07-46.zip",
+            "url": "https://static.data.gouv.fr/resources/gtfs-reseau-transport-urbain-coqueligo/20250326-140518/coqueligo-coqueligo-urbain-v5-12-gtfs-2025-03-26-15-01-38.zip",
             "fix": true,
             "license": {
-                "url": "https://transport.data.gouv.fr/datasets/gtfs-reseau-urbain-coqueligo-septembre-a-novembre-2024"
+                "url": "https://transport.data.gouv.fr/datasets/gtfs-reseau-transport-urbain-coqueligo"
             }
         },
         {
-            "name": "coqueligo-tad",
+            "name": "gtfs-transports-a-la-demande-tad-coqueligo",
             "type": "http",
-            "url": "https://static.data.gouv.fr/resources/coqueligo-tad/20230901-143121/coqueligo-coqueligo-tad-gtfs-2023-09-01-16-26-38.zip",
+            "url": "https://static.data.gouv.fr/resources/gtfs-transports-a-la-demande-tad-coqueligo/20250326-140933/coqueligo-coqueligo-tad-v3-gtfs-2025-03-26-15-08-21.zip",
             "fix": true,
             "license": {
-                "url": "https://transport.data.gouv.fr/datasets/coqueligo-tad"
+                "url": "https://transport.data.gouv.fr/datasets/gtfs-transports-a-la-demande-tad-coqueligo"
             }
         },
         {
@@ -4371,12 +4983,30 @@
             "spec": "gtfs-rt"
         },
         {
+            "name": "ti-velo-1",
+            "type": "url",
+            "url": "https://gbfs.partners.fifteen.eu/gbfs/2.2/landerneau/en/gbfs.json",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/ti-velo-1"
+            }
+        },
+        {
             "name": "cosibus-coutances-mer-et-bocage",
             "type": "http",
             "url": "https://static.data.gouv.fr/resources/cosibus-coutances-mer-et-bocage/20241008-145255/pt-th-offer-cosibus-gtfs-20241008-874-opendata.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/cosibus-coutances-mer-et-bocage"
+            }
+        },
+        {
+            "name": "trottinettes-laval",
+            "type": "url",
+            "url": "https://mds.bird.co/gbfs/v2/public/laval/gbfs.json",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/trottinettes-laval"
             }
         },
         {
@@ -4407,21 +5037,10 @@
             "spec": "gtfs-rt"
         },
         {
-            "name": "offre-de-transport-de-la-c-a-beaune-cote-sud-gtfs--82659",
+            "name": "offre-de-transport-de-la-c-a-beaune-cote-sud-gtfs",
             "type": "http",
-            "url": "https://static.data.gouv.fr/resources/offre-de-transport-de-la-c-a-beaune-cote-sud-gtfs/20250306-075830/cb-urbain-gtfs-20250306.zip",
+            "url": "https://static.data.gouv.fr/resources/offre-de-transport-de-la-c-a-beaune-cote-sud-gtfs/20250324-115939/coteetbus-20250324.zip",
             "fix": true,
-            "skip": true,
-            "license": {
-                "url": "https://transport.data.gouv.fr/datasets/offre-de-transport-de-la-c-a-beaune-cote-sud-gtfs"
-            }
-        },
-        {
-            "name": "offre-de-transport-de-la-c-a-beaune-cote-sud-gtfs--82660",
-            "type": "http",
-            "url": "https://static.data.gouv.fr/resources/offre-de-transport-de-la-c-a-beaune-cote-sud-gtfs/20250321-114848/coteetbus-20250306.zip",
-            "fix": true,
-            "skip": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/offre-de-transport-de-la-c-a-beaune-cote-sud-gtfs"
             }
@@ -4634,9 +5253,18 @@
             }
         },
         {
+            "name": "optymo-velo-en-libre-service",
+            "type": "url",
+            "url": "https://data.optymo.fr/vls/gbfs.json",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/optymo-velo-en-libre-service"
+            }
+        },
+        {
             "name": "donnees-du-reseau-alterneo",
             "type": "http",
-            "url": "https://static.data.gouv.fr/resources/donnees-du-reseau-alterneo/20250313-050828/gtfs-cineo-20250313-20261231.zip",
+            "url": "https://static.data.gouv.fr/resources/donnees-du-reseau-alterneo/20250328-054051/gtfs-cineo-20250328-20260328.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/donnees-du-reseau-alterneo"
@@ -4679,6 +5307,15 @@
             }
         },
         {
+            "name": "trottinettes-bird-chalons-en-champagne",
+            "type": "url",
+            "url": "https://mds.bird.co/gbfs/v2/public/chalonsenchampagne/gbfs.json",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/trottinettes-bird-chalons-en-champagne"
+            }
+        },
+        {
             "name": "donnees-gtfs-du-reseau-de-transports-public-du-grand-cahors",
             "type": "http",
             "url": "https://static.data.gouv.fr/resources/donnees-gtfs-du-reseau-de-transports-public-du-grand-cahors/20240904-142139/gtfs-2024-2025.zip",
@@ -4708,10 +5345,28 @@
         {
             "name": "donnees-du-reseau-evad-1",
             "type": "http",
-            "url": "https://static.data.gouv.fr/resources/donnees-du-reseau-evad-1/20241216-142501/evad-du-15122024-au-30032025.zip",
+            "url": "https://static.data.gouv.fr/resources/donnees-du-reseau-evad-1/20250401-135845/evad-1702-au-0405.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/donnees-du-reseau-evad-1"
+            }
+        },
+        {
+            "name": "trottinettes-castres",
+            "type": "url",
+            "url": "https://mds.bird.co/gbfs/v2/public/castres/gbfs.json",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/trottinettes-castres"
+            }
+        },
+        {
+            "name": "velos-a-assistance-electrique-en-libre-service-laon-velocite",
+            "type": "url",
+            "url": "https://api.gbfs.ecovelo.mobi/velocite/gbfs.json",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/velos-a-assistance-electrique-en-libre-service-laon-velocite"
             }
         },
         {
@@ -4775,6 +5430,15 @@
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/saonibus-horaires-theoriques-et-temps-reel-du-reseau-de-transport-urbain-de-la-cc-dsv"
+            }
+        },
+        {
+            "name": "trottinettes-draguignan",
+            "type": "url",
+            "url": "https://mds.bird.co/gbfs/v2/public/draguignan/gbfs.json",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/trottinettes-draguignan"
             }
         },
         {
@@ -4892,6 +5556,15 @@
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/offre-de-transport-du-reseau-elsa-petr-selestat-alsace-centrale"
+            }
+        },
+        {
+            "name": "trottinettes-montlucon",
+            "type": "url",
+            "url": "https://mds.bird.co/gbfs/v2/public/montlucon/gbfs.json",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/trottinettes-montlucon"
             }
         },
         {
@@ -5039,6 +5712,24 @@
             }
         },
         {
+            "name": "fr-200052264-t0054-0000-1",
+            "type": "http",
+            "url": "https://www.datagrandest.fr/metadata/fluo-grand-est/FR-200052264-T0054-0000/fluo-grand-est-selverm-gtfs.zip",
+            "fix": true,
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/fr-200052264-t0054-0000-1"
+            }
+        },
+        {
+            "name": "fr-200052264-t0054-0000-1",
+            "type": "url",
+            "url": "https://proxy.transport.data.gouv.fr/resource/fluo-sel-et-vermois-gtfs-rt-trip-update",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/fr-200052264-t0054-0000-1"
+            },
+            "spec": "gtfs-rt"
+        },
+        {
             "name": "horaires-theoriques-et-temps-reel-de-la-navette-de-sel-et-vermois-gtfs-gtfs-rt",
             "type": "http",
             "url": "https://zenbus.net/gtfs/static/download.zip?dataset=sel-et-vermois",
@@ -5072,6 +5763,15 @@
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/ville-damboise-offre-theorique-mobilite-reseau-urbain"
+            }
+        },
+        {
+            "name": "trottinettes-dieppe",
+            "type": "url",
+            "url": "https://mds.bird.co/gbfs/v2/public/dieppe/gbfs.json",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/trottinettes-dieppe"
             }
         },
         {
@@ -5126,6 +5826,15 @@
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/vikibus-yvetot-normandie"
+            }
+        },
+        {
+            "name": "trottinettes-vichy",
+            "type": "url",
+            "url": "https://mds.bird.co/gbfs/v2/public/vichy/gbfs.json",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/trottinettes-vichy"
             }
         },
         {
@@ -5210,6 +5919,24 @@
             }
         },
         {
+            "name": "trottinettes-herouville-saint-clair",
+            "type": "url",
+            "url": "https://mds.bird.co/gbfs/v2/public/herouvillesaintclair/gbfs.json",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/trottinettes-herouville-saint-clair"
+            }
+        },
+        {
+            "name": "trottinettes-millau",
+            "type": "url",
+            "url": "https://mds.bird.co/gbfs/v2/public/millau/gbfs.json",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/trottinettes-millau"
+            }
+        },
+        {
             "name": "lignes-maritimes-de-corse-du-sud-de-la-collectivite-de-corse",
             "type": "http",
             "url": "https://static.data.gouv.fr/resources/lignes-maritimes-de-corse-du-sud-de-la-collectivite-de-corse/20241001-080142/lignes-maritimes-de-corse-du-sud-de-la-collectivite-de-corse.zip",
@@ -5245,6 +5972,15 @@
                 "url": "https://transport.data.gouv.fr/datasets/reseau-a-citadina-porto-vecchio-horaires-theoriques-et-temps-reel"
             },
             "spec": "gtfs-rt"
+        },
+        {
+            "name": "trottinettes-sarreguemines",
+            "type": "url",
+            "url": "https://mds.bird.co/gbfs/v2/public/sarreguemines/gbfs.json",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/trottinettes-sarreguemines"
+            }
         },
         {
             "name": "donnees-de-transport-en-commun-reseau-altigo-communaute-de-communes-du-brianconnais-format-gtfs",
@@ -5373,6 +6109,15 @@
             }
         },
         {
+            "name": "donnees-theoriques-du-reseau-hopla-communaute-de-communes-de-la-plaine-destrees",
+            "type": "url",
+            "url": "https://api.oisemob.cityway.fr/dataflow/horaire-tc-tr/download?provider=HOPLA&dataFormat=gtfs-rt",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/donnees-theoriques-du-reseau-hopla-communaute-de-communes-de-la-plaine-destrees"
+            },
+            "spec": "gtfs-rt"
+        },
+        {
             "name": "horaires-theoriques-et-temps-reel-des-navettes-de-la-ligne-bagneres-la-mongie-gtfs-gtfs-rt",
             "type": "http",
             "url": "https://zenbus.net/gtfs/static/download.zip?dataset=bigorre-mongie",
@@ -5498,7 +6243,7 @@
         {
             "name": "gtfs-reseau-chamonix-mobilite",
             "type": "http",
-            "url": "https://static.data.gouv.fr/resources/gtfs-reseau-chamonix-mobilite/20250103-143233/gtfs-oura-v20241216.zip",
+            "url": "https://static.data.gouv.fr/resources/gtfs-reseau-chamonix-mobilite/20250331-155557/fichiers-dexports-pour-intersaison-printemps-2025-du-22-04-au-15-06-2025.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/gtfs-reseau-chamonix-mobilite"
@@ -5529,6 +6274,15 @@
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/fr-200052264-t0030-0000-1"
+            }
+        },
+        {
+            "name": "velos-a-assistance-electrique-en-libre-service-a-la-bresse-gerardmer-ibis",
+            "type": "url",
+            "url": "https://api.gbfs.v3.0.ecovelo.mobi/labresse/gbfs.json",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/velos-a-assistance-electrique-en-libre-service-a-la-bresse-gerardmer-ibis"
             }
         },
         {
@@ -5580,6 +6334,15 @@
             }
         },
         {
+            "name": "velos-a-assistance-electrique-en-libre-service-argeles-sur-mer-velo-daqui-1",
+            "type": "url",
+            "url": "https://api.gbfs.ecovelo.mobi/velodaqui/gbfs.json",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/velos-a-assistance-electrique-en-libre-service-argeles-sur-mer-velo-daqui-1"
+            }
+        },
+        {
             "name": "gtfs-pybus-le-reseau-urbain-de-parthenay",
             "type": "http",
             "url": "https://pysae.com/api/v2/groups/parthenay/gtfs/675464600aa7a35621cdd070",
@@ -5616,6 +6379,15 @@
             }
         },
         {
+            "name": "trottinettes-ouistreham",
+            "type": "url",
+            "url": "https://mds.bird.co/gbfs/v2/public/ouistreham/gbfs.json",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/trottinettes-ouistreham"
+            }
+        },
+        {
             "name": "reseau-de-transports-collectifs-de-la-ccgq",
             "type": "http",
             "url": "https://static.data.gouv.fr/resources/reseau-de-transports-collectifs-de-la-ccgq/20250220-120844/gtfs.zip",
@@ -5631,6 +6403,15 @@
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/gtfs-noirmoutier-gratibus-ete"
+            }
+        },
+        {
+            "name": "velos-a-assistance-electrique-en-libre-service-des-ports-de-piriac-sur-mer-et-de-la-turballe",
+            "type": "url",
+            "url": "https://api.gbfs.ecovelo.mobi/rhoule/gbfs.json",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/velos-a-assistance-electrique-en-libre-service-des-ports-de-piriac-sur-mer-et-de-la-turballe"
             }
         },
         {
@@ -5658,6 +6439,24 @@
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/skibus-courchevel-hiver"
+            }
+        },
+        {
+            "name": "trottinettes-epron",
+            "type": "url",
+            "url": "https://mds.bird.co/gbfs/v2/public/epron/gbfs.json",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/trottinettes-epron"
+            }
+        },
+        {
+            "name": "velos-a-assistance-electrique-en-libre-service-vernou-en-sologne-vernou-velo",
+            "type": "url",
+            "url": "https://api.gbfs.ecovelo.mobi/vernouvelo/gbfs.json",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/velos-a-assistance-electrique-en-libre-service-vernou-en-sologne-vernou-velo"
             }
         },
         {
