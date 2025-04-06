@@ -3,6 +3,10 @@
         {
             "name": "Marcus Lundblad",
             "github": "mlundblad"
+        },
+        {
+            "name": "Kyler Chin",
+            "github": "kylerchin"
         }
     ],
     "sources": [
@@ -190,7 +194,8 @@
         {
             "name": "OC-Bus",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-9mu-orangecountytransportationauthority"
+            "transitland-atlas-id": "f-9mu-orangecountytransportationauthority",
+             "url-override": "https://github.com/catenarytransit/agency-gtfs-mirror/raw/refs/heads/main/octa_gtfs.zip"
         }
     ]
 }
