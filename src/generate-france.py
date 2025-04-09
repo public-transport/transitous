@@ -11,6 +11,7 @@ import sys
 if __name__ == "__main__":
     datasets = requests.get("https://transport.data.gouv.fr/api/datasets").json()
 
+    # List of datasets to skip
     skip = [
         "blablacar-bus-horaires-theoriques-et-temps-reel-du-reseau-europeen",  # Already in eu.json
         "flixbus-horaires-theoriques-du-reseau-europeen-1",  # Already in eu.json
@@ -43,9 +44,13 @@ if __name__ == "__main__":
         "reseau-de-transport-interurbain-mobigo-en-bourgogne-franche-comte",  # Temporary removal, resource not available
         "gtfs-transport-horaires-des-lignes-de-la-communaute-de-communes-corse-du-sud-a-berlina",  # Temporary removal, 404 error
         "gtfs-transport-horaires-des-lignes-de-la-communaute-dile-rousse-balagne-a-balanina",  # Temporary removal, 404 error
-        "horaires-theoriques-et-temps-reel-du-reseau-hobus-de-honfleur-gtfs-gtfs-rt",  # Skip outdated and unavailable feed
         "navettes-aeroport-paris-beauvais-aerobus",  # Not GTFS format
-        "offre-de-transport-de-la-c-a-beaune-cote-sud-gtfs" # Missing and broken data
+    ]
+
+    # List of datasets to remove
+    remove = [
+        "tier-dott-gbfs-france", # Duplicate dataset (use local ones)
+        "tier-dott-gbfs-saint-quentin-en-yvelines", # Deprecated dataset
     ]
 
     # List of individual resource ids (located in datasets) we want to remove
@@ -101,7 +106,13 @@ if __name__ == "__main__":
         # Remove old unavailable feed
         "81906",
         # Unavailable
-        "82306"
+        "82306",
+        # Remove invalid duplicates
+        "80484", "80485",
+        # Remove duplicate
+        "82695",
+        # Remove invalid duplicates
+        "63612", "63613", "63614",
     ]
 
     # Map for each dataset slug, if needed, the selected GTFS-RT id to the corresponding GTFS id
@@ -115,13 +126,17 @@ if __name__ == "__main__":
             "81806": "81461",
         },
         "versions-des-horaires-theoriques-des-lignes-de-bus-et-de-metro-du-reseau-star-au-format-gtfs": {
-            "82161": "82877",
+            "82161": "82945",
         },
         "horaires-theoriques-et-en-temps-reel-des-bus-et-autocars-circulant-sur-le-reseau-cap-cotentin": {
             "79830": "79831"
         },
         "gtfs-move-vendome": {
             "80381": "82832"
+        },
+        "gtfs-sankeo": {
+            "82901": "82900",
+            "82273": "82902"
         },
     }
 
@@ -134,7 +149,56 @@ if __name__ == "__main__":
                 dataset["resources"],
             )
         )
-        if gtfs:
+        gbfs = list(
+            filter(
+                lambda r: "format" in r
+                and (r["format"] == "gbfs"),
+                dataset["resources"],
+            )
+        )
+        if gbfs and (dataset["slug"] not in remove):
+            # Exclude resources with "community_resource_publishers" field
+            gbfs_resources = [
+                r for r in gbfs if not r.get("community_resource_publisher")
+            ]
+
+            # Remove resources with title in remove_title
+            gbfs_resources = [
+                r for r in gbfs_resources if str(r.get("id")) not in remove_resources
+            ]
+
+            # Sort resources by the id field
+            gbfs_resources.sort(key=lambda r: str(r.get("id", "")))
+
+            if not gbfs_resources:
+                print(f"{dataset['slug']} has no official GBFS data, or resources are removed.", file=sys.stderr)
+                continue
+
+            # Add all GBFS resources
+            for resource in gbfs_resources:
+                source_name = (
+                    dataset["slug"]
+                    if len(gbfs_resources) == 1
+                    else dataset["slug"]
+                    + "--"
+                    + str(resource["id"])
+                    .replace(" ", "-")
+                    .replace("_", "-")
+                    .replace("/", "-")
+                )
+                source = {
+                    "name": source_name,
+                    "type": "url",
+                    "url": resource["original_url"],
+                    "spec": "gbfs",
+                }
+                if dataset["slug"] in skip:
+                    source["skip"] = True
+                if "page_url" in dataset:
+                    source["license"] = {}
+                    source["license"]["url"] = dataset["page_url"]
+                out.append(source)
+        if gtfs and (dataset["slug"] not in remove):
             resources = list(
                 filter(lambda r: "format" in r and r["format"] == "GTFS", gtfs)
             )
