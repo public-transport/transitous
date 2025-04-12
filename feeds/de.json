@@ -31,7 +31,8 @@
                 "Braunschweiger Verkehrs-GmbH",
                 "Kraftverkehrsgesellschaft mbH Braunschweig",
                 "SWO Mobil GmbH",
-                "FlixBus-de"
+                "FlixBus-de",
+                "U-Bahn München"
             ],
             "http-options": {
                 "fetch-interval-days": 2
@@ -118,7 +119,7 @@
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-sap~walldorf~gbfs"
         },
-                {
+        {
             "name": "EinfachMobil",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-einfachmobil~ortenaukreis~gbfs"
@@ -127,6 +128,11 @@
             "name": "VRNnextbike",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-vrnnextbike~rhine~neckar~gbfs"
+        },
+        {
+            "name": "Münchner Verkehrsgesellschaft (MVG)",
+            "type": "mobility-database",
+            "mdb-id": 2333
         }
     ]
 }
