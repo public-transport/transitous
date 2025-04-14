@@ -41,6 +41,11 @@
             "fix": true
         },
         {
+            "name": "Lazio-Rome",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-sr-atac~romatpl~trenitalia~rt"
+        },
+        {
             "name": "Lazio-Cotral",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-cotral~lazio~italia",
