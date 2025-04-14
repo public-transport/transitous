@@ -45,7 +45,8 @@ if __name__ == "__main__":
         "gtfs-transport-horaires-des-lignes-de-la-communaute-dile-rousse-balagne-a-balanina",  # Temporary removal, 404 error
         "horaires-theoriques-et-temps-reel-du-reseau-hobus-de-honfleur-gtfs-gtfs-rt",  # Skip outdated and unavailable feed
         "navettes-aeroport-paris-beauvais-aerobus",  # Not GTFS format
-        "offre-de-transport-de-la-c-a-beaune-cote-sud-gtfs" # Missing and broken data
+        "offre-de-transport-de-la-c-a-beaune-cote-sud-gtfs", # Missing and broken data
+        "gtfs-move-vendome"  # very low availability rate
     ]
 
     # List of individual resource ids (located in datasets) we want to remove

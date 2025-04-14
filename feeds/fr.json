@@ -4671,7 +4671,7 @@
             "name": "transports-urbains-bandol-sanary-s-mer",
             "type": "http",
             "url": "https://www.data.gouv.fr/fr/datasets/r/358ab51c-78e8-45a4-ae5a-a05722af6c09",
-            "url-override": "https://static.data.gouv.fr/resources/transports-urbains-bandol-sanary-s-mer/20240118-110453/gtfs-20240109-140140-tdv-bandol-sanary-janv24.zip",
+            "url-override": "https://static.data.gouv.fr/resources/transports-urbains-bandol-sanary-s-mer/20250414-071645/gtfs-cassb-bandol-sanary-2025.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/transports-urbains-bandol-sanary-s-mer",
@@ -5008,12 +5008,14 @@
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/gtfs-move-vendome",
                 "spdx-identifier": "etalab-2.0"
-            }
+            },
+            "skip": true
         },
         {
             "name": "gtfs-move-vendome",
             "type": "url",
             "url": "https://pysae.com/api/v2/groups/vendome/gtfs-rt",
+            "skip": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/gtfs-move-vendome",
                 "spdx-identifier": "etalab-2.0"
