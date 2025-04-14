@@ -9,12 +9,16 @@
         {
             "name": "oman-mwasalat",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-mwasalat"
+            "transitland-atlas-id": "f-mwasalat",
+            "skip": true,
+            "skip-reason": "Broken, link now gives a 404"
         },
         {
             "name": "oman-mwasalat",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-mwasalat~rt"
+            "transitland-atlas-id": "f-mwasalat~rt",
+            "skip": true,
+            "skip-reason": "Broken, link now gives a 404"
         }
     ]
 }

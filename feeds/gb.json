@@ -15,7 +15,8 @@
         {
             "name": "bus-dft",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-bus~dft~gov~uk"
+            "transitland-atlas-id": "f-bus~dft~gov~uk",
+            "fix": true
         },
         {
             "name": "northern-ireland",

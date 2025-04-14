@@ -3,6 +3,10 @@
         {
             "name": "Marcus Lundblad",
             "github": "mlundblad"
+        },
+        {
+            "name": "Kyler Chin",
+            "github": "kylerchin"
         }
     ],
     "sources": [
@@ -50,9 +54,7 @@
         {
             "name": "Santa-Cruz-Metro",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-9q9-scmtdcom",
-            "skip": true,
-            "skip-reason": "Generates 404"
+            "transitland-atlas-id": "f-9q9-scmtdcom"
         },
         {
             "name": "Santa-Cruz-Metro",
@@ -188,6 +190,12 @@
             "name": "Sage-Stage",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-9r-sagestage"
+        },
+        {
+            "name": "OC-Bus",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9mu-orangecountytransportationauthority",
+             "url-override": "https://github.com/catenarytransit/agency-gtfs-mirror/raw/refs/heads/main/octa_gtfs.zip"
         }
     ]
 }

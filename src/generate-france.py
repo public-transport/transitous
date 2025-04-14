@@ -45,9 +45,11 @@ if __name__ == "__main__":
         "gtfs-transport-horaires-des-lignes-de-la-communaute-de-communes-corse-du-sud-a-berlina",  # Temporary removal, 404 error
         "gtfs-transport-horaires-des-lignes-de-la-communaute-dile-rousse-balagne-a-balanina",  # Temporary removal, 404 error
         "navettes-aeroport-paris-beauvais-aerobus",  # Not GTFS format
+        "offre-de-transport-de-la-c-a-beaune-cote-sud-gtfs", # Missing and broken data
+        "gtfs-move-vendome"  # very low availability rate
     ]
 
-    # List of datasets to remove
+        # List of datasets to remove
     remove = [
         "tier-dott-gbfs-france", # Duplicate dataset (use local ones)
         "tier-dott-gbfs-saint-quentin-en-yvelines", # Deprecated dataset
@@ -126,13 +128,17 @@ if __name__ == "__main__":
             "81806": "81461",
         },
         "versions-des-horaires-theoriques-des-lignes-de-bus-et-de-metro-du-reseau-star-au-format-gtfs": {
-            "82161": "82945",
+            "82161": "82951",
         },
         "horaires-theoriques-et-en-temps-reel-des-bus-et-autocars-circulant-sur-le-reseau-cap-cotentin": {
             "79830": "79831"
         },
         "gtfs-move-vendome": {
             "80381": "82832"
+        },
+        "gtfs-sankeo": {
+            "82901": "82900",
+            "82273": "82902"
         },
         "gtfs-sankeo": {
             "82901": "82900",
@@ -239,14 +245,19 @@ if __name__ == "__main__":
                 source = {
                     "name": source_name,
                     "type": "http",
-                    "url": resource["original_url"],
+                    "url": resource["url"],
+                    "url-override": resource["original_url"],
                     "fix": True,
+                    "license": {},
                 }
                 if dataset["slug"] in skip:
                     source["skip"] = True
                 if "page_url" in dataset:
-                    source["license"] = {}
                     source["license"]["url"] = dataset["page_url"]
+                if dataset["licence"] == "odc-odbl":
+                    source["license"]["spdx-identifier"] = "ODbL-1.0"
+                if dataset["licence"] in ["lov2", "fr-lo"]:
+                    source["license"]["spdx-identifier"] = "etalab-2.0"
                 out.append(source)
 
             def cond(r) -> bool:
@@ -296,8 +307,13 @@ if __name__ == "__main__":
                         source["url"] = resource["original_url"]
                         if dataset["slug"] in skip:
                             source["skip"] = True
+                        source["license"] = {}
                         if "page_url" in dataset:
-                            source["license"] = {"url": dataset["page_url"]}
+                            source["license"]["url"] = dataset["page_url"]
+                        if dataset["licence"] == "odc-odbl":
+                            source["license"]["spdx-identifier"] = "ODbL-1.0"
+                        if dataset["licence"] in ["lov2", "fr-lo"]:
+                            source["license"]["spdx-identifier"] = "etalab-2.0"
                         source["spec"] = "gtfs-rt"
                         out.append(source)
                     else:

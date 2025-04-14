@@ -74,7 +74,8 @@
         {
             "name": "Warszawa",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u3q-warszawski~transport~publiczny"
+            "transitland-atlas-id": "f-u3q-warszawski~transport~publiczny",
+            "fix": true
         },
         {
             "name": "Warszawa",
