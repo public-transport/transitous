@@ -75,7 +75,10 @@
             "name": "gaziantep",
             "type": "http",
             "url": "https://acikveri.gaziantep.bel.tr/dataset/12d26c98-edc5-4be3-8988-c753764b84f4/resource/b3254aa0-359e-4b7c-87a3-d5d56ad27353/download/attached_gtfs.zip",
-            "fix": true
+            "fix": true,
+            "http-options": {
+                "ignore-tls-errors": true
+            }
         }
     ]
 }
