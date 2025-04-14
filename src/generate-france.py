@@ -197,12 +197,16 @@ if __name__ == "__main__":
                     "type": "url",
                     "url": resource["original_url"],
                     "spec": "gbfs",
+                    "license": {},
                 }
                 if dataset["slug"] in skip:
                     source["skip"] = True
                 if "page_url" in dataset:
-                    source["license"] = {}
                     source["license"]["url"] = dataset["page_url"]
+                if dataset["licence"] == "odc-odbl":
+                    source["license"]["spdx-identifier"] = "ODbL-1.0"
+                if dataset["licence"] in ["lov2", "fr-lo"]:
+                    source["license"]["spdx-identifier"] = "etalab-2.0"
                 out.append(source)
         if gtfs and (dataset["slug"] not in remove):
             resources = list(
