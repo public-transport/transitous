@@ -179,7 +179,8 @@ if __name__ == "__main__":
                 source = {
                     "name": source_name,
                     "type": "http",
-                    "url": resource["original_url"],
+                    "url": resource["url"],
+                    "url-override": resource["original_url"],
                     "fix": True,
                     "license": {},
                 }
