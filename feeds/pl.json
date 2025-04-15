@@ -163,6 +163,11 @@
             }
         },
         {
+            "name": "PKP-SKM",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u3t-skm~trojmiasto"
+        },
+        {
             "name": "Koleje-Małopolskie",
             "type": "mobility-database",
             "mdb-id": 1908,
