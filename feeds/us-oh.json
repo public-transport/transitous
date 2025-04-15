@@ -31,7 +31,9 @@
             "name": "Miller-Transportation",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-miller~transportation~in~ky",
-            "fix": true
+            "fix": true,
+            "skip": true,
+            "skip-reason": "Broken feed, 'time zone could not be detected'"
         },
         {
             "name": "Stark-Area-Regional-Transit-Authority",
