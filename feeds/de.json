@@ -94,6 +94,15 @@
             }
         },
         {
+            "name": "VGN-Nürn­berg",
+            "type": "http",
+            "url": "https://www.vgn.de/opendata/GTFS.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-3.0-DE",
+                "url": "https://www.vgn.de/web-entwickler/open-data/nutzungsbedingungen/"
+            }
+        },
+        {
             "name": "RegioRadStuttgart",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-regioradstuttgart~stuttgart~gbfs"
