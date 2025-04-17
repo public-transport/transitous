@@ -94,6 +94,15 @@
             }
         },
         {
+            "name": "MVV-Regionalbus",
+            "type": "http",
+            "url": "https://www.mvv-muenchen.de/fileadmin/mediapool/02-Fahrplanauskunft/03-Downloads/openData/mvv_gtfs.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-SA-4.0",
+                "url": "https://creativecommons.org/licenses/by/4.0/"
+            }
+        },
+        {
             "name": "RegioRadStuttgart",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-regioradstuttgart~stuttgart~gbfs"
