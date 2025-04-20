@@ -205,6 +205,16 @@
             "type": "mobility-database",
             "mdb-id": 2086,
             "fix": true
+        },
+        {
+            "name": "Koleje-Śląskie",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u2v-koleje~slaskie"
+        },
+        {
+            "name": "Łódzka-Kolej-Aglomeracyjna",
+            "type":"transitland-atlas",
+            "transitland-atlas-id": "f-u3j-lodzka~kolej~aglomeracyjna"
         }
     ]
 }
