@@ -83,6 +83,23 @@
             "transitland-atlas-id": "f-u3q-warszawski~transport~publiczny~rt~alerts"
         },
         {
+            "name": "Warszawa",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u3q-warszawski~transport~publiczny~rt~positions",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "Warszawska-Kolej-Dojazdowa",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u3qb-warszawskakolejdojazdowa"
+        },
+        {
+            "name": "Warszawska-Kolej-Dojazdowa",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u3qb-warszawskakolejdojazdowa~rt",
+            "spec":"gtfs-rt"
+        },
+        {
             "name": "Łomża",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u3rw-lomza"
