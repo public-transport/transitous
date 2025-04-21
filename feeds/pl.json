@@ -105,8 +105,8 @@
         },
         {
             "name": "Gdynia",
-            "type": "http",
-            "url": "http://api.zdiz.gdynia.pl/pt/gtfs.zip",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-ztm~gdynia"
             "fix": true
         },
         {
