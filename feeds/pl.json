@@ -83,6 +83,23 @@
             "transitland-atlas-id": "f-u3q-warszawski~transport~publiczny~rt~alerts"
         },
         {
+            "name": "Warszawa",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u3q-warszawski~transport~publiczny~rt~positions",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "Warszawska-Kolej-Dojazdowa",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u3qb-warszawskakolejdojazdowa"
+        },
+        {
+            "name": "Warszawska-Kolej-Dojazdowa",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u3qb-warszawskakolejdojazdowa~rt",
+            "spec":"gtfs-rt"
+        },
+        {
             "name": "Łomża",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u3rw-lomza"
@@ -188,6 +205,18 @@
             "type": "mobility-database",
             "mdb-id": 2086,
             "fix": true
+        },
+        {
+            "name": "Koleje-Śląskie",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u2v-koleje~slaskie",
+            "url-override": "https://koleje-ks.pl/gtfs/2024-2025.zip"
+        },
+        {
+            "name": "Łódzka-Kolej-Aglomeracyjna",
+            "type":"transitland-atlas",
+            "transitland-atlas-id": "f-u3j-lodzka~kolej~aglomeracyjna",
+            "url-override": "https://kolej-lka.pl/pliki/pn0e6eg45qcl4hd5/gtfs-2024-2025/zip/"
         }
     ]
 }
