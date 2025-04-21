@@ -106,7 +106,7 @@
         {
             "name": "Gdynia",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-ztm~gdynia"
+            "transitland-atlas-id": "f-ztm~gdynia",
             "fix": true
         },
         {
