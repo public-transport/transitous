@@ -209,14 +209,17 @@
         {
             "name": "Koleje-Śląskie",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u2v-koleje~slaskie",
-            "url-override": "https://koleje-ks.pl/gtfs/2024-2025.zip"
+            "transitland-atlas-id": "f-u2v-koleje~slaskie"
         },
         {
             "name": "Łódzka-Kolej-Aglomeracyjna",
             "type":"transitland-atlas",
-            "transitland-atlas-id": "f-u3j-lodzka~kolej~aglomeracyjna",
-            "url-override": "https://kolej-lka.pl/pliki/pn0e6eg45qcl4hd5/gtfs-2024-2025/zip/"
+            "transitland-atlas-id": "f-u3j-lodzka~kolej~aglomeracyjna"
+        },
+        {
+            "name": "Koleje-Wielkopolskie",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u3k-koleje~wielkopolskie"
         }
     ]
 }
