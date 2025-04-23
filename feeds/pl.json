@@ -117,7 +117,7 @@
             "name": "Warszawska-Kolej-Dojazdowa",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u3qb-warszawskakolejdojazdowa~rt",
-            "spec":"gtfs-rt"
+            "spec": "gtfs-rt"
         },
         {
             "name": "Łomża",
@@ -207,23 +207,22 @@
         {
             "name": "Koleje-Małopolskie",
             "type": "mobility-database",
-            "mdb-id": 1908,
-            "use-origin": true
+            "mdb-id": "mdb-1908"
         },
         {
             "name": "ZTP-Kraków",
             "type": "mobility-database",
-            "mdb-id": 1270
+            "mdb-id": "mdb-1270"
         },
         {
             "name": "ZTP-Kraków",
             "type": "mobility-database",
-            "mdb-id": 2339
+            "mdb-id": "mdb-2339"
         },
         {
             "name": "MZK-Ełk",
             "type": "mobility-database",
-            "mdb-id": 2086,
+            "mdb-id": "mdb-2086",
             "fix": true
         },
         {
@@ -233,7 +232,7 @@
         },
         {
             "name": "Łódzka-Kolej-Aglomeracyjna",
-            "type":"transitland-atlas",
+            "type": "transitland-atlas",
             "transitland-atlas-id": "f-u3j-lodzka~kolej~aglomeracyjna"
         },
         {

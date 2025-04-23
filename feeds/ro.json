@@ -47,47 +47,47 @@
         {
             "name": "Cluj-Napoca",
             "type": "mobility-database",
-            "mdb-id": 2121
+            "mdb-id": "mdb-2121"
         },
         {
             "name": "Transbus-Buzău",
             "type": "mobility-database",
-            "mdb-id": 2106
+            "mdb-id": "mdb-2106"
         },
         {
             "name": "Transbus-Buzău",
             "type": "mobility-database",
-            "mdb-id": 2112
+            "mdb-id": "mdb-2112"
         },
         {
             "name": "Consiliul-Judetean-Vrancea",
             "type": "mobility-database",
-            "mdb-id": 1984
+            "mdb-id": "mdb-1984"
         },
         {
             "name": "Târgoviște",
             "type": "mobility-database",
-            "mdb-id": 2107
+            "mdb-id": "mdb-2107"
         },
         {
             "name": "Sinaia",
             "type": "mobility-database",
-            "mdb-id": 2114
+            "mdb-id": "mdb-2114"
         },
         {
             "name": "Craiova",
             "type": "mobility-database",
-            "mdb-id": 2115
+            "mdb-id": "mdb-2115"
         },
         {
             "name": "Ploiești",
             "type": "mobility-database",
-            "mdb-id": 2108
+            "mdb-id": "mdb-2108"
         },
         {
             "name": "Zalău",
             "type": "mobility-database",
-            "mdb-id": 2102
+            "mdb-id": "mdb-2102"
         }
     ]
 }

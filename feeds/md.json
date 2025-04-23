@@ -9,12 +9,12 @@
         {
             "name": "Chișinău",
             "type": "mobility-database",
-            "mdb-id": 2341
+            "mdb-id": "mdb-2341"
         },
         {
             "name": "Chișinău",
             "type": "mobility-database",
-            "mdb-id": 2343
+            "mdb-id": "mdb-2343"
         }
     ]
 }

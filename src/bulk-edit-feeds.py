@@ -26,6 +26,10 @@ with open(sys.argv[1], "r") as f:
 		if "use-origin" in source:
 			source.pop("use-origin", None)
 
+		if source["type"] == "mobility-database":
+			if type(source["mdb-id"]) == int:
+				source["mdb-id"] = f"mdb-{source["mdb-id"]}"
+
 with open(sys.argv[1], "w") as out:
 	json.dump(region, out, indent=4, ensure_ascii=False)
 	out.write("\n")

@@ -44,7 +44,7 @@ class Database:
 
     def source_by_id(self, source: MobilityDatabaseSource) -> Optional[Source]:
         result: Optional[Source] = None
-        feed = self.by_id.get(f"mdb-{source.mdb_id}")
+        feed = self.by_id.get(source.mdb_id)
 
         if not feed:
             eprint(f"Warning: Did not find requested id {source.mdb_id} in Mobility Database.")
