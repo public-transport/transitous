@@ -15,9 +15,14 @@ if [ -f /var/cache/transitous/out/.import-running ]; then
     exit 0
 fi
 
+cd /var/lib/motis
+touch /var/lib/motis/import-running
+wget --mirror -l 1 --no-parent --no-directories --accept gtfs.zip --accept config.yml -e robots=off https://api.transitous.org/gtfs/
+/opt/motis/motis import -c /var/lib/motis/config.yml > /var/lib/motis/motis-import.log
 cp -r -u --reflink=auto /var/cache/transitous/out/data /var/lib/motis/
 cp --reflink=auto /var/cache/transitous/out/config.yml /var/lib/motis/data/config.yml
 chown -R motis:motis /var/lib/motis/data/
+rm /var/lib/motis/import-running
 
 echo "Restarting MOTIS…"
 systemctl --no-ask-password restart motis.service
