@@ -6,20 +6,9 @@
 echo "Copying new files…"
 
 # Exit if empty
-if [ -z "$(ls -A /var/cache/transitous/out)" ]; then
-    exit 0
-fi
-
-if [ -f /var/cache/transitous/out/.import-running ]; then
-    echo "Import has not finished, exiting"
-    exit 0
-fi
-
 cd /var/lib/motis
-touch /var/lib/motis/import-running
 wget --mirror -l 1 --no-parent --no-directories --accept gtfs.zip --accept config.yml -e robots=off https://api.transitous.org/gtfs/
 /opt/motis/motis import -c /var/lib/motis/config.yml > /var/lib/motis/motis-import.log
-rm /var/lib/motis/import-running
 
 echo "Restarting MOTIS…"
 systemctl --no-ask-password restart motis.service
