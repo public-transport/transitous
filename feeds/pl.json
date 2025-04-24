@@ -20,6 +20,26 @@
             "transitland-atlas-id": "f-pkp~intercity~pl"
         },
         {
+            "name": "PKP-Intercity-Germany",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-germany~long~distance~rail",
+            "drop-agency-names": [
+                "DB Fernverkehr (Codesharing)",
+                "HZZP",
+                "DB Fernverkehr AG",
+                "ZSSK",
+                "ÖBB",
+                "Ceske Drahy",
+                "MAV",
+                "Nederlandse Spoorwegen",
+                "Trenitalia",
+                "SBB",
+                "Dänische Staatsbahnen",
+                "SNCF",
+                "SÜWEX"
+            ]
+        },
+        {
             "name": "PolRegio",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-pol~regio~pl",
@@ -97,7 +117,7 @@
             "name": "Warszawska-Kolej-Dojazdowa",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u3qb-warszawskakolejdojazdowa~rt",
-            "spec":"gtfs-rt"
+            "spec": "gtfs-rt"
         },
         {
             "name": "Łomża",
@@ -187,36 +207,38 @@
         {
             "name": "Koleje-Małopolskie",
             "type": "mobility-database",
-            "mdb-id": 1908,
-            "use-origin": true
+            "mdb-id": "mdb-1908"
         },
         {
             "name": "ZTP-Kraków",
             "type": "mobility-database",
-            "mdb-id": 1270
+            "mdb-id": "mdb-1270"
         },
         {
             "name": "ZTP-Kraków",
             "type": "mobility-database",
-            "mdb-id": 2339
+            "mdb-id": "mdb-2339"
         },
         {
             "name": "MZK-Ełk",
             "type": "mobility-database",
-            "mdb-id": 2086,
+            "mdb-id": "mdb-2086",
             "fix": true
         },
         {
             "name": "Koleje-Śląskie",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u2v-koleje~slaskie",
-            "url-override": "https://koleje-ks.pl/gtfs/2024-2025.zip"
+            "transitland-atlas-id": "f-u2v-koleje~slaskie"
         },
         {
             "name": "Łódzka-Kolej-Aglomeracyjna",
-            "type":"transitland-atlas",
-            "transitland-atlas-id": "f-u3j-lodzka~kolej~aglomeracyjna",
-            "url-override": "https://kolej-lka.pl/pliki/pn0e6eg45qcl4hd5/gtfs-2024-2025/zip/"
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u3j-lodzka~kolej~aglomeracyjna"
+        },
+        {
+            "name": "Koleje-Wielkopolskie",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u3k-koleje~wielkopolskie"
         }
     ]
 }

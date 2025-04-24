@@ -19,7 +19,13 @@
                 "url": "https://www.fintraffic.fi/fi/digitaalisetpalvelut/fintrafficin-datapalvelut/liikkumisen-tietopalvelut/joukkoliikenteen-tietopalvelut/koontipalvelu"
             },
             "fix": true,
-            "drop-agency-names": ["FlixBus-eu", "FlixTrain-eu", "VR", "Pohjois-Suomen Rautatieharrastajat ry", "Sinisten vaunujen ystävät ry"]
+            "drop-agency-names": [
+                "FlixBus-eu",
+                "FlixTrain-eu",
+                "VR",
+                "Pohjois-Suomen Rautatieharrastajat ry",
+                "Sinisten vaunujen ystävät ry"
+            ]
         },
         {
             "name": "digitraffic",
@@ -47,9 +53,9 @@
             "transitland-atlas-id": "f-ued-oulunjoukkoliikenne"
         },
         {
-           "name": "hsl",
-           "type": "transitland-atlas",
-           "transitland-atlas-id": "f-ud9-helsinginseudunliikenne"
+            "name": "hsl",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-ud9-helsinginseudunliikenne"
         }
     ]
 }

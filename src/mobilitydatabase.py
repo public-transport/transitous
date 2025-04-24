@@ -13,7 +13,7 @@ import os
 
 
 class Database:
-    by_id: Dict[int, dict]
+    by_id: Dict[str, dict]
 
     def __init__(self):
         self.by_id = {}
@@ -25,7 +25,7 @@ class Database:
         path = Path("mobilitydatabase.csv")
         if not path.exists():
             eprint("Caching Mobility Database export at `mobilitydatabase.csv`…")
-            resp = requests.get("https://storage.googleapis.com/storage/v1/b/mdb-csv/o/sources.csv?alt=media")
+            resp = requests.get("https://files.mobilitydatabase.org/feeds_v2.csv")
 
             if resp.status_code != 200:
                 raise Exception("Failed to download Mobility Database export")
@@ -38,7 +38,7 @@ class Database:
 
         with open(path) as f:
             for row in csv.DictReader(f, delimiter=",", quotechar="\""):
-                db.by_id[int(row["mdb_source_id"])] = row
+                db.by_id[row["id"]] = row
 
         return db
 
@@ -71,16 +71,16 @@ class Database:
                 if source.url_override:
                     result.url_override = source.url_override
 
-            case "gtfs-rt":
+            case "gtfs_rt":
                 result = UrlSource()
                 result.name = source.name
                 result.url = feed["urls.direct_download"]
                 result.spec = "gtfs-rt"
                 result.skip = source.skip
                 result.skip_reason = source.skip_reason
-            case _:
+            case data_type:
                 eprint("Warning: Found MDB source that we can't handle:",
-                       source.mdb_id)
+                       source.mdb_id, "of type", data_type)
                 return None
 
         if "license" in feed:

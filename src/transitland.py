@@ -43,6 +43,7 @@ class Atlas:
             result.drop_shapes = source.drop_shapes
             result.fix_csv_quotes = source.fix_csv_quotes
             result.display_name_options = source.display_name_options
+            result.drop_agency_names = source.drop_agency_names
 
             if source.url_override:
                 result.url_override = source.url_override
