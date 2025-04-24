@@ -1,0 +1,70 @@
+# SPDX-FileCopyrightText: 2024 Jonah Brüchert <jbb@kaidan.im>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+- name: Create MOTIS user
+  user:
+    name: motis
+
+- name: Create MOTIS directory
+  file:
+    path: /opt/motis/
+    state: directory
+
+- name: Unpack MOTIS
+  unarchive:
+    src: https://github.com/public-transport/transitous/releases/download/latest/motis.tar.bz2
+    dest: /opt/motis/
+    remote_src: yes
+
+- name: Create MOTIS runtime directory
+  file:
+    path: /var/lib/motis
+    owner: motis
+    group: motis
+    state: directory
+
+- name: Copy MOTIS systemd service
+  copy:
+    src: motis.service
+    dest: /etc/systemd/system/motis.service
+
+- name: Install motis-update-feeds script
+  copy:
+    src: motis-update-feeds.sh
+    dest: /usr/local/bin/motis-update-feeds
+    mode: '0755'
+
+- name: Install motis-update-feeds
+  copy:
+    src: "{{ item }}"
+    dest: /etc/systemd/system/
+    mode: '644'
+  with_items:
+    - motis-update-feeds.service
+    - motis-update-feeds.timer
+
+- name: Reload systemd-daemon once
+  systemd:
+    daemon_reload: true
+
+- name: Enable motis systemd service
+  systemd:
+    name: motis.service
+    enabled: true
+    state: restarted
+    masked: false
+
+- name: Enable motis-update-feeds service
+  systemd:
+    name: motis-update-feeds.service
+    enabled: true
+    state: restarted
+    masked: false
+
+- name: Enable motis-update-feeds timer
+  systemd:
+    name: motis-update-feeds.timer
+    enabled: true
+    state: restarted
+    masked: false
