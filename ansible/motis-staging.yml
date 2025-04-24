@@ -5,5 +5,4 @@
 - name: Set up MOTIS-staging instances
   hosts: motis-staging
   roles:
-#    - rsync-push
     - motis-staging
