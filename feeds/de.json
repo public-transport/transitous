@@ -114,6 +114,11 @@
             "transitland-atlas-id": "f-frelo~freiburg~gbfs"
         },
         {
+            "name": "LastenVeloFreiburg",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-lastenvelo~freiburg~gbfs"
+        },
+        {
             "name": "SAPWalldorf",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-sap~walldorf~gbfs"
@@ -127,6 +132,46 @@
             "name": "VRNnextbike",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-vrnnextbike~rhine~neckar~gbfs"
+        },
+        {
+            "name": "Deer",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-deer~germany~gbfs"
+        },
+        {
+            "name": "StadtmobilStuttgart",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-stadtmobil~stuttgart~gbfs"
+        },
+        {
+            "name": "StadtmobilKarlsruhe",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-stadtmobil~karlsruhe~gbfs"
+        },
+        {
+            "name": "StadtmobilRheinNeckar",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-stadtmobil~rhein~neckar~gbfs"
+        },
+        {
+            "name": "NaturenergieSharing",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-naturenergie~sharing~south~baden~gbfs"
+        },
+        {
+            "name": "TeilAutoNeckar-Alb",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-teilauto~neckar~alb~gbfs"
+        },
+        {
+            "name": "TeilAutoBiberach",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-teilauto~biberach~gbfs"
+        },
+        {
+            "name": "TeilAutoSchwäbischHall",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-teilauto~schwäbisch~hall~gbfs"
         }
     ]
 }
