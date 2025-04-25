@@ -53,8 +53,8 @@
         },
         {
             "name": "Liguria-Genova",
-            "type": "http",
-            "url": "https://www.amt.genova.it/amt/GTFS/GTFS_AMT_GENOVA.zip",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-spyk-amtgenova",
             "fix": true
         },
         {
@@ -86,9 +86,7 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "url": "https://usbshare.agenziatpl.it/index.php/s/a3SZsLKCQLxzEzr/download/2025-02-07_NET.zip",
-            "skip": true,
-            "skip-reason": "Expired feed"
+            "url": "https://usbshare.agenziatpl.it/index.php/s/kyBmp9PzNxLFgfd/download/2025-03-07_NET.zip"
         },
         {
             "name": "Lombardia-STAR",
@@ -171,20 +169,14 @@
         },
         {
             "name": "Sardegna-Contributate",
-            "type": "http",
-            "url": "https://www.sardegnamobilita.it/opendata/R_SARDEGTRASP_00007_1_dati_privati.zip",
-            "license": {
-                "spdx-identifier": "CC-BY-4.0"
-            },
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-spn-asara~atzeni~murgiaautolinee~baireautolinee~autolineedelgo",
             "fix": true
         },
         {
             "name": "Sardegna-ARST",
-            "type": "http",
-            "url": "https://www.arstspa.info/arst-cagliari-it.zip",
-            "license": {
-                "spdx-identifier": "CC-BY-4.0"
-            }
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-s-arstspa~trasportiregionalidellasardegna"
         },
         {
             "name": "Sardegna-ASPO-Olbia",
