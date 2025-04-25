@@ -5,10 +5,10 @@ when:
   - event: tag
 
 steps:
-  build-release-amd64:
+  build-release-skylake-avx512:
     image: docker.io/alpine
     commands:
-      - export MOTIS_TAG=v2.0.53
+      - export MOTIS_TAG=v2.0.55
       - apk add musl-dev cmake ninja gcc g++ git npm linux-headers
       - git clone https://github.com/motis-project/motis -b $MOTIS_TAG motis-src
       - mkdir -p motis-src/build
@@ -20,7 +20,23 @@ steps:
       - mv motis-src/build/motis motis-out/motis
       - mv motis-src/ui/build motis-out/ui
       - cp -r motis-src/deps/tiles/profile motis-out/tiles-profiles
-      - tar -C ./motis-out -cjf motis-$MOTIS_TAG.tar.bz2 ./motis ./tiles-profiles ./ui
+      - tar -C ./motis-out -cjf motis-release-skylake-avx512.tar.bz2 ./motis ./tiles-profiles ./ui
+      - rm motis-src/build -rf
+
+  build-staging-haswell:
+    image: docker.io/alpine
+    commands:
+      - apk add musl-dev cmake ninja gcc g++ git npm linux-headers
+      - mkdir -p motis-src/build
+      - export flags="-static -O3 -fno-omit-frame-pointer -DNDEBUG"
+      - export target_flags="-march=haswell"
+      - cmake -DCMAKE_BUILD_TYPE=None -DMOTIS_MIMALLOC=ON -DCMAKE_CXX_FLAGS="$flags" -DCMAKE_C_FLAGS="$flags" -DMOTIS_TARGET_FLAGS="$target_flags" -GNinja -DNO_BUILDCACHE=ON -Bmotis-src/build -Smotis-src
+      - ninja -C motis-src/build motis motis-test motis-web-ui
+      - mkdir -p motis-out
+      - mv motis-src/build/motis motis-out/motis
+      - mv motis-src/ui/build motis-out/ui
+      - cp -r motis-src/deps/tiles/profile motis-out/tiles-profiles
+      - tar -C ./motis-out -cjf motis-staging-haswell.tar.bz2 ./motis ./tiles-profiles ./ui
 
   upload:
     image: docker.io/woodpeckerci/plugin-release
