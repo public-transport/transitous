@@ -239,6 +239,16 @@
             "name": "Koleje-Wielkopolskie",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u3k-koleje~wielkopolskie"
+        },
+        {
+            "name": "MPK-Wrocław",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u3h4-mpkautobusy~mpktramwaje~dla~sevibussiechnice~dlawiszniama"
+        },
+        {
+            "name": "MPK-Łódź",
+            "type": "mobility-database",
+            "mdb-id": "tld-6079"
         }
     ]
 }
