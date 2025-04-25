@@ -5,10 +5,13 @@
 
 echo "Copying new files…"
 
-# Exit if empty
 cd /var/lib/motis
-wget --mirror -l 1 --no-parent --no-directories --accept gtfs.zip --accept config.yml -e robots=off https://api.transitous.org/gtfs/
-/opt/motis/motis import -c /var/lib/motis/config.yml > /var/lib/motis/motis-import.log
+chown -R motis:motis /var/lib/motis/
+sudo -u motis wget --mirror -l 1 --no-parent --no-directories --accept gtfs.zip --accept config.yml -e robots=off https://api.transitous.org/gtfs/ || true
+sudo -u motis sed -i 's/planet-latest.osm.pbf/liechtenstein-latest.osm.pbf/g' /var/lib/motis/config.yml
+sudo -u motis sed -i '/coastline:/d' /var/lib/motis/config.yml
+sudo -u motis /opt/motis/motis import -c /var/lib/motis/config.yml > /var/lib/motis/motis-import.log
+chown -R motis:motis /var/lib/motis/data/
 
 echo "Restarting MOTIS…"
 systemctl --no-ask-password restart motis.service
