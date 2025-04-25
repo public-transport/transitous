@@ -21,23 +21,11 @@
         },
         {
             "name": "PKP-Intercity-Germany",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-germany~long~distance~rail",
-            "drop-agency-names": [
-                "DB Fernverkehr (Codesharing)",
-                "HZZP",
-                "DB Fernverkehr AG",
-                "ZSSK",
-                "ÖBB",
-                "Ceske Drahy",
-                "MAV",
-                "Nederlandse Spoorwegen",
-                "Trenitalia",
-                "SBB",
-                "Dänische Staatsbahnen",
-                "SNCF",
-                "SÜWEX"
-            ]
+            "type": "http",
+            "url": "https://kasmar00.github.io/gtfs-pkp-de/latest.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
         },
         {
             "name": "PolRegio",
