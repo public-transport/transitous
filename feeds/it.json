@@ -59,12 +59,9 @@
         },
         {
             "name": "Lombardia-AirPullman",
-            "type": "http",
-            "fix": true,
-            "license": {
-                "spdx-identifier": "CC-BY-4.0"
-            },
-            "url": "https://usbshare.agenziatpl.it/index.php/s/NCX252ombsxjzzz/download/2025-01-03_Airpullman.zip"
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-airpullman~spa",
+            "fix": true
         },
         {
             "name": "Lombardia-ATM",
@@ -74,19 +71,13 @@
         },
         {
             "name": "Lombardia-Movibus",
-            "type": "http",
-            "license": {
-                "spdx-identifier": "CC-BY-4.0"
-            },
-            "url": "https://usbshare.agenziatpl.it/index.php/s/awfA3t8jy3D46dM/download/2025-01-17_Movibus.zip"
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-movibus~srl"
         },
         {
             "name": "Lombardia-NET",
-            "type": "http",
-            "license": {
-                "spdx-identifier": "CC-BY-4.0"
-            },
-            "url": "https://usbshare.agenziatpl.it/index.php/s/kyBmp9PzNxLFgfd/download/2025-03-07_NET.zip"
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-net~nord~est~trasporti"
         },
         {
             "name": "Lombardia-STAR",
