@@ -37,7 +37,12 @@
 - name: Install site config
   template:
     src: "transitous.conf.j2"
-    dest: "/etc/nginx/sites-available/transitous.conf"
+    dest: "/etc/nginx/sites-available/{{ item.vhost }}"
+  with_items:
+    - vhost: api.transitous.org
+      backend: http://crunchy:8080
+    - vhost: staging.api.transitous.org
+      backend: http://vm-motis:8080
 
 - name: Disable default site configuration
   file:
@@ -46,9 +51,14 @@
 
 - name: Enable nginx sites
   file:
-    src: "/etc/nginx/sites-available/transitous.conf"
-    dest: "/etc/nginx/sites-enabled/transitous.conf"
+    src: "/etc/nginx/sites-available/{{ item.vhost }}"
+    dest: "/etc/nginx/sites-enabled/{{ item.vhost }}"
     state: link
+  with_items:
+    - vhost: api.transitous.org
+      backend: http://crunchy:8080
+    - vhost: staging.api.transitous.org
+      backend: http://vm-motis:8080
 
 - name: Reload nginx
   systemd:
