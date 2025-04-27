@@ -50,6 +50,12 @@
             "mdb-id": "mdb-2121"
         },
         {
+            "name": "Cluj-Napoca",
+            "type": "http",
+            "spec": "gtfs-rt",
+            "mdb-id": "https://cluj-rt-feed.gtfs.ro/tripUpdates"
+        },
+        {
             "name": "Transbus-Buzău",
             "type": "mobility-database",
             "mdb-id": "mdb-2106"
@@ -88,6 +94,17 @@
             "name": "Zalău",
             "type": "mobility-database",
             "mdb-id": "mdb-2102"
+        },
+        {
+            "name": "Iași",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2116"
+        },
+        {
+            "name": "Iași",
+            "type": "mobility-database",
+            "spec": "gtfs-rt",
+            "mdb-id": "mdb-2117"
         }
     ]
 }
