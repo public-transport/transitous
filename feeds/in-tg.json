@@ -1,0 +1,15 @@
+{
+    "maintainers": [
+        {
+            "name": "P. Radha Krishna",
+            "github": "Neo2308"
+        }
+    ],
+    "sources": [
+        {
+            "name": "Hyderabad-Metro-Rail",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2457"
+        }
+    ]
+}
