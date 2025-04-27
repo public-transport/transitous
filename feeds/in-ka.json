@@ -1,0 +1,15 @@
+{
+    "maintainers": [
+        {
+            "name": "P. Radha Krishna",
+            "github": "Neo2308"
+        }
+    ],
+    "sources": [
+        {
+            "name": "BMTC",
+            "type": "http",
+            "url": "https://github.com/Vonter/bmtc-gtfs/raw/refs/heads/main/gtfs/bmtc.zip"
+        }
+    ]
+}
