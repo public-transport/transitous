@@ -19,6 +19,12 @@ motis:
           38316362353534633137313732383231313366616635666161316537643732663564383666363839
           63363534313561313533
 
+motis-staging:
+  hosts:
+    spline-vm-motis:
+      ansible_user: root
+      ansible_host: vm-motis.spline.de
+
 reverse-proxy:
   hosts:
     spline-vm-motis-proxy:
