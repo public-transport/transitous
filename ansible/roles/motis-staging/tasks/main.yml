@@ -59,13 +59,6 @@
     state: restarted
     masked: false
 
-- name: Enable motis-update-feeds service
-  systemd:
-    name: motis-update-feeds.service
-    enabled: true
-    state: restarted
-    masked: false
-
 - name: Enable motis-update-feeds timer
   systemd:
     name: motis-update-feeds.timer
