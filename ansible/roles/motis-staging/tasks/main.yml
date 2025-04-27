@@ -24,14 +24,22 @@
     group: motis
     state: directory
 
+- name: Install sudo
+  apt:
+    name: sudo
+
 - name: Copy MOTIS systemd service
   copy:
     src: motis.service
     dest: /etc/systemd/system/motis.service
 
-- name: Install sudo
-  apt:
-    name: sudo
+- name: Enable motis systemd service
+  systemd:
+    name: motis.service
+    enabled: true
+    state: started
+    masked: false
+    daemon_reload: true
 
 - name: Install motis-update-feeds script
   copy:
@@ -48,20 +56,10 @@
     - motis-update-feeds.service
     - motis-update-feeds.timer
 
-- name: Reload systemd-daemon once
-  systemd:
-    daemon_reload: true
-
-- name: Enable motis systemd service
-  systemd:
-    name: motis.service
-    enabled: true
-    state: restarted
-    masked: false
-
 - name: Enable motis-update-feeds timer
   systemd:
     name: motis-update-feeds.timer
     enabled: true
-    state: restarted
     masked: false
+    daemon_reload: true
+    state: started
