@@ -210,13 +210,13 @@
         {
             "name": "MZK-Ełk",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u3xf-elk"
+            "transitland-atlas-id": "f-u3xf-elk",
+            "fix": true
         },
         {
             "name": "MZK-Ełk",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u3xf-elk~rt",
-            "fix": true
+            "transitland-atlas-id": "f-u3xf-elk~rt"
         },
         {
             "name": "Koleje-Śląskie",
