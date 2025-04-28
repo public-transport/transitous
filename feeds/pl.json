@@ -203,7 +203,12 @@
         {
             "name": "ZTP-Kraków",
             "type": "mobility-database",
-            "mdb-id": "mdb-2339"
+            "mdb-id": "mdb-1326"
+        },
+        {
+            "name": "ZTP-Kraków",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2598"
         },
         {
             "name": "MZK-Ełk",
