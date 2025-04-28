@@ -146,10 +146,8 @@
         },
         {
             "name": "Elbląg",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u3tu-elblag",
-            "skip": true,
-            "skip-reason": "Feed unavailable"
+            "type": "mobility-database",
+            "mdb-id": "mdb-2597"
         },
         {
             "name": "Poznań",
