@@ -13,7 +13,7 @@
 
 - name: Unpack MOTIS
   unarchive:
-    src: https://github.com/public-transport/transitous/releases/download/motis-v2.0.34/motis-v2.0.34.tar.bz2
+    src: https://github.com/public-transport/transitous/releases/download/motis-v2.0.57/motis-staging-haswell.tar.bz2
     dest: /opt/motis/
     remote_src: yes
 
@@ -23,6 +23,10 @@
     owner: motis
     group: motis
     state: directory
+
+- name: Install sudo
+  apt:
+    name: sudo
 
 - name: Copy MOTIS systemd service
   copy:
