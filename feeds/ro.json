@@ -57,7 +57,7 @@
             "name": "Cluj-Napoca",
             "type": "url",
             "spec": "gtfs-rt",
-            "mdb-id": "https://cluj-rt-feed.gtfs.ro/tripUpdates"
+            "url": "https://cluj-rt-feed.gtfs.ro/tripUpdates"
         },
         {
             "name": "Transbus-Buzău",
