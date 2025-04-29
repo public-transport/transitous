@@ -55,7 +55,7 @@
         },
         {
             "name": "Cluj-Napoca",
-            "type": "http",
+            "type": "url",
             "spec": "gtfs-rt",
             "mdb-id": "https://cluj-rt-feed.gtfs.ro/tripUpdates"
         },
