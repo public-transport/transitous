@@ -134,6 +134,27 @@
             "transitland-atlas-id": "f-vrnnextbike~rhine~neckar~gbfs"
         },
         {
+            "name": "meinRad",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-meinrad~mainz~gbfs"
+        },
+        {
+            "name": "LimeFrankfurt",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-lime~frankfurt~gbfs"
+        },
+        {
+            "name": "NetxbikeFrankfurt",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-nextbike~frankfurt~gbfs"
+        },
+        {
+            "name": "DottFrankfurt",
+            "type": "url",
+            "url": "https://gbfs.api.ridedott.com/public/v2/frankfurt/gbfs.json",
+            "spec": "gbfs"
+        },
+        {
             "name": "Deer",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-deer~germany~gbfs"
