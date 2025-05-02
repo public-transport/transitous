@@ -209,9 +209,14 @@
         },
         {
             "name": "MZK-Ełk",
-            "type": "mobility-database",
-            "mdb-id": "mdb-2086",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u3xf-elk",
             "fix": true
+        },
+        {
+            "name": "MZK-Ełk",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u3xf-elk~rt"
         },
         {
             "name": "Koleje-Śląskie",
@@ -222,6 +227,14 @@
             "name": "Łódzka-Kolej-Aglomeracyjna",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u3j-lodzka~kolej~aglomeracyjna"
+        },
+        {
+            "name": "PKS-Kalisz",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2461",
+            "skip": true,
+            "skip-reason": "Outdated feed",
+            "fix": true
         },
         {
             "name": "Koleje-Wielkopolskie",
@@ -238,6 +251,11 @@
             "type": "mobility-database",
             "mdb-id": "tld-6079",
             "fix": true
+        },
+        {
+            "name": "Białystok",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-bialostocka~komunikacja~miejska"
         }
     ]
 }
