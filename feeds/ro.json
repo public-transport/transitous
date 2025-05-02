@@ -24,8 +24,8 @@
         },
         {
             "name": "Brasov",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-ratbv~ro"
+            "type": "mobility-database",
+            "mdb-id": "mdb-2143"
         },
         {
             "name": "Bucuresti-Ilfov",
@@ -102,8 +102,8 @@
         },
         {
             "name": "Tursib",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u81ht8-tursib~ro"
+            "type": "mobility-database",
+            "mdb-id": "mdb-2099"
         },
         {
             "name": "Târgoviște",
