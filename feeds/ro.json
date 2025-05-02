@@ -36,7 +36,7 @@
             "name": "Bucuresti-Ilfov",
             "type": "mobility-database",
             "spec": "gtfs-rt",
-            "url": "mdb-2103"
+            "mdb-id": "mdb-2103"
         },
         {
             "name": "Cluj-Napoca",
