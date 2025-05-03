@@ -13,7 +13,8 @@
         {
             "name": "flixbus",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u-flixbus"
+            "transitland-atlas-id": "f-u-flixbus",
+            "fix": true
         },
         {
             "name": "blablacar-bus",
