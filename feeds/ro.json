@@ -45,9 +45,9 @@
         },
         {
             "name": "Cluj-Napoca",
-            "type": "url",
+            "type": "mobility-database",
             "spec": "gtfs-rt",
-            "url": "https://cluj-rt-feed.gtfs.ro/tripUpdates"
+            "mdb-id": "mdb-2612"
         },
         {
             "name": "Consiliul-Judetean-Vrancea",
