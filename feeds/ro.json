@@ -3,6 +3,10 @@
         {
             "name": "Jonah Brüchert",
             "github": "jbruechert"
+        },
+        {
+            "name": "Florea Costin Mario",
+            "github": "FloreaCostinMario"
         }
     ],
     "sources": [
@@ -19,35 +23,72 @@
             "fix": true
         },
         {
-            "name": "bucuresti",
-            "type": "http",
-            "url": "https://gtfs.tpbi.ro/regional/BUCHAREST-REGION.zip"
+            "name": "Brasov",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2143"
         },
         {
-            "name": "bucuresti",
-            "type": "url",
+            "name": "Bucuresti-Ilfov",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2098"
+        },
+        {
+            "name": "Bucuresti-Ilfov",
+            "type": "mobility-database",
             "spec": "gtfs-rt",
-            "url": "https://gtfs.tpbi.ro/api/gtfs-rt/tripUpdates"
-        },
-        {
-            "name": "tursib",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u81ht8-tursib~ro"
-        },
-        {
-            "name": "constanța",
-            "type": "http",
-            "url": "https://external.gtfs.ro/constanta/CONSTANTA.zip"
-        },
-        {
-            "name": "brasov",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-ratbv~ro"
+            "mdb-id": "mdb-2103"
         },
         {
             "name": "Cluj-Napoca",
             "type": "mobility-database",
             "mdb-id": "mdb-2121"
+        },
+        {
+            "name": "Cluj-Napoca",
+            "type": "mobility-database",
+            "spec": "gtfs-rt",
+            "mdb-id": "mdb-2612"
+        },
+        {
+            "name": "Consiliul-Judetean-Vrancea",
+            "type": "mobility-database",
+            "mdb-id": "mdb-1984"
+        },
+        {
+            "name": "Constanta",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2100"
+        },
+        {
+            "name": "Craiova",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2115"
+        },
+        {
+            "name": "Iași",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2116"
+        },
+        {
+            "name": "Iași",
+            "type": "mobility-database",
+            "spec": "gtfs-rt",
+            "mdb-id": "mdb-2117"
+        },
+        {
+            "name": "Oradea",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2101"
+        },
+        {
+            "name": "Ploiești",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2108"
+        },
+        {
+            "name": "Sinaia",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2114"
         },
         {
             "name": "Transbus-Buzău",
@@ -60,29 +101,14 @@
             "mdb-id": "mdb-2112"
         },
         {
-            "name": "Consiliul-Judetean-Vrancea",
+            "name": "Tursib",
             "type": "mobility-database",
-            "mdb-id": "mdb-1984"
+            "mdb-id": "mdb-2099"
         },
         {
             "name": "Târgoviște",
             "type": "mobility-database",
             "mdb-id": "mdb-2107"
-        },
-        {
-            "name": "Sinaia",
-            "type": "mobility-database",
-            "mdb-id": "mdb-2114"
-        },
-        {
-            "name": "Craiova",
-            "type": "mobility-database",
-            "mdb-id": "mdb-2115"
-        },
-        {
-            "name": "Ploiești",
-            "type": "mobility-database",
-            "mdb-id": "mdb-2108"
         },
         {
             "name": "Zalău",
