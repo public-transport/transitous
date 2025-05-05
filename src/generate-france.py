@@ -46,7 +46,8 @@ if __name__ == "__main__":
         "gtfs-transport-horaires-des-lignes-de-la-communaute-dile-rousse-balagne-a-balanina",  # Temporary removal, 404 error
         "navettes-aeroport-paris-beauvais-aerobus",  # Not GTFS format
         "offre-de-transport-de-la-c-a-beaune-cote-sud-gtfs", # Missing and broken data
-        "gtfs-move-vendome"  # very low availability rate
+        "gtfs-move-vendome",  # very low availability rate
+        "gtfs-static-et-real-time-transporteur-thalys" # Skip outdated Thalys data
     ]
 
         # List of datasets to remove
