@@ -126,7 +126,8 @@
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/gtfs-static-et-real-time-transporteur-thalys",
                 "spdx-identifier": "etalab-2.0"
-            }
+            },
+            "skip": true
         },
         {
             "name": "horaires-des-lignes-intercites-sncf",
