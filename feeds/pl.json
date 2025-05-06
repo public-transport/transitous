@@ -146,10 +146,11 @@
         },
         {
             "name": "Elbląg",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u3tu-elblag",
-            "skip": true,
-            "skip-reason": "Feed unavailable"
+            "type": "mobility-database",
+            "mdb-id": "mdb-2597",
+            "license": {
+            "spdx-identifier": "CC0-1.0"
+            }
         },
         {
             "name": "Poznań",
@@ -198,14 +199,25 @@
             "mdb-id": "mdb-1908"
         },
         {
-            "name": "ZTP-Kraków",
+            "name": "ZTP-Kraków-T",
             "type": "mobility-database",
             "mdb-id": "mdb-1270"
         },
         {
+            "name": "ZTP-Kraków-A",
+            "type": "mobility-database",
+            "mdb-id": "mdb-1326"
+        },
+        {
+            "name": "ZTP-Kraków-M",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2598"
+        },
+        {
             "name": "ZTP-Kraków",
             "type": "mobility-database",
-            "mdb-id": "mdb-2339"
+            "spec": "gtfs-rt",
+            "mdb-id": "mdb-2600"
         },
         {
             "name": "MZK-Ełk",
