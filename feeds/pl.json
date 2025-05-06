@@ -147,7 +147,8 @@
         {
             "name": "Elbląg",
             "type": "mobility-database",
-            "mdb-id": "mdb-2597"
+            "mdb-id": "mdb-2597",
+            "spdx_identifier": "CC0-1.0"
         },
         {
             "name": "Poznań",
@@ -196,19 +197,25 @@
             "mdb-id": "mdb-1908"
         },
         {
-            "name": "ZTP-Kraków",
+            "name": "ZTP-Kraków-T",
             "type": "mobility-database",
             "mdb-id": "mdb-1270"
         },
         {
-            "name": "ZTP-Kraków",
+            "name": "ZTP-Kraków-A",
             "type": "mobility-database",
             "mdb-id": "mdb-1326"
         },
         {
-            "name": "ZTP-Kraków",
+            "name": "ZTP-Kraków-M",
             "type": "mobility-database",
             "mdb-id": "mdb-2598"
+        },
+        {
+            "name": "ZTP-Kraków",
+            "type": "mobility-database",
+            "spec": "gtfs-rt",
+            "mdb-id": "mdb-2600"
         },
         {
             "name": "MZK-Ełk",
