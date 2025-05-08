@@ -208,6 +208,6 @@
             "name": "MovemixHalle",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-movemix~bike~halle~de~gbfs"
-        },
+        }
     ]
 }
