@@ -23,13 +23,6 @@
             "license": {
                 "spdx-identifier": "CC0-1.0"
             }
-        },
-        {
-            "name": "B-Bus",
-            "type": "mobility-database",
-            "mdb-id": "mdb-2385",
-            "skip": true,
-            "skip-reason": "Wrong country"
         }
     ]
 }
