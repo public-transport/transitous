@@ -21,7 +21,7 @@
             "spec": "gtfs-rt",
             "url": "https://gsvalbe.id.lv/pieturas/dati/gtfs-rt.pb"
             "license": {
-                "spdx_identifier": "CC0-1.0"
+                "spdx-identifier": "CC0-1.0"
             }
         },
         {
