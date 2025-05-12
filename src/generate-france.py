@@ -116,6 +116,8 @@ if __name__ == "__main__":
         "82695",
         # Remove invalid duplicates
         "63612", "63613", "63614",
+        # Unavailable
+        "83019"
     ]
 
     # Map for each dataset slug, if needed, the selected GTFS-RT id to the corresponding GTFS id

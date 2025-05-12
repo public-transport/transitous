@@ -24,54 +24,6 @@
     ],
     "sources": [
         {
-            "name": "navettes-aeroport-paris-beauvais-aerobus--82776",
-            "type": "http",
-            "url": "https://www.data.gouv.fr/fr/datasets/r/9f73952a-904e-4606-8723-8b98ddb79349",
-            "url-override": "https://static.data.gouv.fr/resources/navettes-aeroport-paris-beauvais-aerobus/20250212-102506/offre-113-20250212102416z.zip",
-            "fix": true,
-            "license": {
-                "url": "https://transport.data.gouv.fr/datasets/navettes-aeroport-paris-beauvais-aerobus",
-                "spdx-identifier": "ODbL-1.0"
-            },
-            "skip": true
-        },
-        {
-            "name": "navettes-aeroport-paris-beauvais-aerobus--82777",
-            "type": "http",
-            "url": "https://www.data.gouv.fr/fr/datasets/r/26375db0-13c5-4f9e-8628-0b36ce85a356",
-            "url-override": "https://static.data.gouv.fr/resources/navettes-aeroport-paris-beauvais-aerobus/20250212-102458/offre-112-20250212102413z.zip",
-            "fix": true,
-            "license": {
-                "url": "https://transport.data.gouv.fr/datasets/navettes-aeroport-paris-beauvais-aerobus",
-                "spdx-identifier": "ODbL-1.0"
-            },
-            "skip": true
-        },
-        {
-            "name": "navettes-aeroport-paris-beauvais-aerobus--82778",
-            "type": "http",
-            "url": "https://www.data.gouv.fr/fr/datasets/r/bb350d2f-1fe2-401e-914c-3d36fda52260",
-            "url-override": "https://static.data.gouv.fr/resources/navettes-aeroport-paris-beauvais-aerobus/20250212-102446/offre-111-20250212102409z.zip",
-            "fix": true,
-            "license": {
-                "url": "https://transport.data.gouv.fr/datasets/navettes-aeroport-paris-beauvais-aerobus",
-                "spdx-identifier": "ODbL-1.0"
-            },
-            "skip": true
-        },
-        {
-            "name": "navettes-aeroport-paris-beauvais-aerobus--82779",
-            "type": "http",
-            "url": "https://www.data.gouv.fr/fr/datasets/r/41ef84ec-ee2f-4172-ad28-3a3f906287c9",
-            "url-override": "https://static.data.gouv.fr/resources/navettes-aeroport-paris-beauvais-aerobus/20250212-102426/offre-110-20250212102404z.zip",
-            "fix": true,
-            "license": {
-                "url": "https://transport.data.gouv.fr/datasets/navettes-aeroport-paris-beauvais-aerobus",
-                "spdx-identifier": "ODbL-1.0"
-            },
-            "skip": true
-        },
-        {
             "name": "horaires-ave-espagne-france",
             "type": "http",
             "url": "https://www.data.gouv.fr/fr/datasets/r/eae0fa46-087a-4018-ada9-d8add124e635",
@@ -2705,7 +2657,7 @@
             "name": "gtfs-du-reseau-des-transports-bus-et-tramway-setram-circulant-sur-le-territoire-le-mans-metropole",
             "type": "http",
             "url": "https://www.data.gouv.fr/fr/datasets/r/5339d96c-6d20-4a01-939a-40f7b56d6cc1",
-            "url-override": "https://static.data.gouv.fr/resources/gtfs-du-reseau-des-transports-bus-et-tramway-setram-circulant-sur-le-territoire-le-mans-metropole/20250502-070128/gtfs-setram-lmm.zip",
+            "url-override": "https://static.data.gouv.fr/resources/gtfs-du-reseau-des-transports-bus-et-tramway-setram-circulant-sur-le-territoire-le-mans-metropole/20250507-153036/gtfs-setram-lmm.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/gtfs-du-reseau-des-transports-bus-et-tramway-setram-circulant-sur-le-territoire-le-mans-metropole",
@@ -3408,16 +3360,6 @@
                 "url": "https://transport.data.gouv.fr/datasets/agglobus-offre-theorique-mobilite-reseau-urbain-de-bourges",
                 "spdx-identifier": "ODbL-1.0"
             }
-        },
-        {
-            "name": "agglobus-offre-theorique-mobilite-reseau-urbain-de-bourges",
-            "type": "url",
-            "url": "https://data.centrevaldeloire.fr/api/explore/v2.1/catalog/datasets/agglobus-offre-theorique-mobilite-reseau-urbain-de-bourges/files/9b6551fc2897c3d8669770e215a836c7",
-            "license": {
-                "url": "https://transport.data.gouv.fr/datasets/agglobus-offre-theorique-mobilite-reseau-urbain-de-bourges",
-                "spdx-identifier": "ODbL-1.0"
-            },
-            "spec": "gtfs-rt"
         },
         {
             "name": "fr-200052264-t0009-0000-1",
@@ -4761,26 +4703,25 @@
             "spec": "gtfs-rt"
         },
         {
-            "name": "reseau-urbain-ville-de-vitre--79109",
+            "name": "donnees-transport-2024",
             "type": "http",
-            "url": "https://www.data.gouv.fr/fr/datasets/r/29ee8790-3297-4a8d-9099-49167adc964d",
-            "url-override": "https://static.data.gouv.fr/resources/reseau-urbain-ville-de-vitre/20240905-093612/16-gtfs-urbain-vitre-sept24-v02.zip",
+            "url": "https://www.data.gouv.fr/fr/datasets/r/3ba2db00-235a-4958-980e-5cdd20ce204e",
+            "url-override": "https://static.data.gouv.fr/resources/donnees-transport-2024/20250507-093748/cagr-gtfs-2025-01-14-08-30-58.zip",
             "fix": true,
             "license": {
-                "url": "https://transport.data.gouv.fr/datasets/reseau-urbain-ville-de-vitre",
+                "url": "https://transport.data.gouv.fr/datasets/donnees-transport-2024",
                 "spdx-identifier": "etalab-2.0"
             }
         },
         {
-            "name": "reseau-urbain-ville-de-vitre--83019",
-            "type": "http",
-            "url": "https://www.data.gouv.fr/fr/datasets/r/c7b620bf-e0c5-4f81-a34b-9c8d02c6e3a4",
-            "url-override": "https://static.data.gouv.fr/resources/reseau-urbain-ville-de-vitre/20250425-133101/20-gtfs-urbain-vitre-ete-2025.zip",
-            "fix": true,
+            "name": "donnees-transport-2024",
+            "type": "url",
+            "url": "http://cagr.2cloud.app/api/gtfsrt/2.0/tripupdates/CAGR-3920-8301-5738/bin",
             "license": {
-                "url": "https://transport.data.gouv.fr/datasets/reseau-urbain-ville-de-vitre",
+                "url": "https://transport.data.gouv.fr/datasets/donnees-transport-2024",
                 "spdx-identifier": "etalab-2.0"
-            }
+            },
+            "spec": "gtfs-rt"
         },
         {
             "name": "fr-200052264-t0016-0000-1",
@@ -6521,7 +6462,7 @@
             "name": "ecla-lons-agglo-mobilites",
             "type": "http",
             "url": "https://www.data.gouv.fr/fr/datasets/r/ec61df69-830c-4ca7-9d78-9a81c515e9de",
-            "url-override": "https://static.data.gouv.fr/resources/ecla-lons-agglo-mobilites/20241016-094016/gtfs-ecla-l1-l2-l3-l4-30-09-2024.zip",
+            "url-override": "https://static.data.gouv.fr/resources/ecla-lons-agglo-mobilites/20250507-095356/gtfs-ecla-l1-l2-l3-l4-07-05-2025.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/ecla-lons-agglo-mobilites",

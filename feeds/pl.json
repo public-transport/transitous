@@ -214,7 +214,7 @@
             "mdb-id": "mdb-2598"
         },
         {
-            "name": "ZTP-Kraków",
+            "name": "ZTP-Kraków-M",
             "type": "mobility-database",
             "spec": "gtfs-rt",
             "mdb-id": "mdb-2600"

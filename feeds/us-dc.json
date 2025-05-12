@@ -45,20 +45,6 @@
                     "api_key": "805c9dcd1a43482597e501957f5b1d31"
                 }
             }
-        },
-        {
-            "name": "DCCirculator",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-dqcjr-dccirculator",
-            "skip": true,
-            "skip-reason": "Broken, link now gives a 404"
-        },
-        {
-            "name": "DCCirculator",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-dqcjr-dccirculator~rt",
-            "skip": true,
-            "skip-reason": "Broken, link now gives a 404"
         }
     ]
 }
