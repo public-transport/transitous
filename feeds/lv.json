@@ -11,7 +11,7 @@
             "type": "http",
             "url": "https://gsvalbe.id.lv/pieturas/dati/latvia.zip",
             "license": {
-                "spdx_identifier": "CC0-1.0"
+                "spdx-identifier": "CC0-1.0"
             },
             "fix": true
         },
