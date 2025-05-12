@@ -10,6 +10,7 @@ theme = "ananke"
 [params]
   custom_css = ["bootstrap.min.css", "bootstrap-icons.min.css", "custom.css"]
   favicon = "images/logo.svg"
+  text_color = "#292e35"
 
 [[params.ananke_socials]]
   name = "github"
