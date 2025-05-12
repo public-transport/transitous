@@ -1,0 +1,21 @@
+<!--
+SPDX-FileCopyrightText: 2025 Jonah Brüchert <jbb@kaidan.im>
+
+SPDX-License-Identifier: AGPL-3.0-or-later
+-->
+
+<div class="card app-card" style="width: 100%;">
+  <a href="{{ .Get "website" }}">
+    <div class="card-body">
+        <h5 class="card-title">{{ .Get "name" }}</h5>
+
+        <div class="mb-2">
+        {{ range (split (.Get "tags") ",") }}
+            <span class="badge text-bg-primary">{{ . }}</span>
+        {{ end }}
+        </div>
+
+        <p class="card-text text-secondary">{{ .Get "description" }}</p>
+    </div>
+  </a>
+</div>
