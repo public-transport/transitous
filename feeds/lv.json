@@ -19,7 +19,7 @@
             "name": "pieturas",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://gsvalbe.id.lv/pieturas/dati/gtfs-rt.pb"
+            "url": "https://gsvalbe.id.lv/pieturas/dati/gtfs-rt.pb",
             "license": {
                 "spdx-identifier": "CC0-1.0"
             }
