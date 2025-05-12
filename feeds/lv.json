@@ -10,18 +10,19 @@
             "name": "pieturas",
             "type": "http",
             "url": "https://gsvalbe.id.lv/pieturas/dati/latvia.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            },
             "fix": true
         },
         {
             "name": "pieturas",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://gsvalbe.id.lv/pieturas/dati/gtfs-rt.pb"
-        },
-        {
-            "name": "B-Bus",
-            "type": "mobility-database",
-            "mdb-id": "mdb-2385"
+            "url": "https://gsvalbe.id.lv/pieturas/dati/gtfs-rt.pb",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
         }
     ]
 }
