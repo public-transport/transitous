@@ -171,11 +171,8 @@
         },
         {
             "name": "Sardegna-ASPO-Olbia",
-            "type": "http",
-            "url": "https://www.aspo.it/wp-content/uploads/open_data.zip",
-            "license": {
-                "spdx-identifier": "CC-BY-4.0"
-            }
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-spqb-aspoolbia"
         },
         {
             "name": "Sardegna-ATP-Nuoro",
