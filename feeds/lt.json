@@ -77,6 +77,11 @@
             "name": "traukiniai",
             "type": "http",
             "url": "https://stops.lt/traukiniai/traukiniai/gtfs.zip"
+        },
+        {
+            "name": "B-Bus",
+            "type": "http",
+            "url": "https://stops.lt/LVA/lva/gtfs.zip"
         }
     ]
 }
