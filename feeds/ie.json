@@ -7,21 +7,21 @@
     ],
     "sources": [
         {
-            "name": "transport-for-ireland",
+            "name": "transport-for-ireland-rt",
             "type": "http",
-            "url": "https://www.transportforireland.ie/transitData/Data/GTFS_All.zip",
+            "url": "https://www.transportforireland.ie/transitData/Data/GTFS_Realtime.zip",
             "license": {
                 "spdx-identifier": "CC-BY-SA-4.0"
             }
         },
         {
             "name": "transport-for-ireland",
-            "type": "url",
-            "spec": "gtfs-rt",
-            "url": "https://www.transportforireland.ie/transitData/Data/GTFS_Realtime.zip",
+            "type": "http",
+            "url": "https://www.transportforireland.ie/transitData/Data/GTFS_All.zip",
             "license": {
                 "spdx-identifier": "CC-BY-SA-4.0"
-            }
         }
+      }
+
     ]
 }
