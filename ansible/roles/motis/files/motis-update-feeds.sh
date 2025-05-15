@@ -27,6 +27,7 @@ cp -r -u --reflink=auto /var/cache/transitous/out/data /var/lib/motis/
 cp --reflink=auto /var/cache/transitous/out/config.yml /var/lib/motis/data/config.yml
 
 chown -R www-data:www-data /var/lib/motis/data/
+chmod -R u+r,g+r /var/lib/motis/data/
 
 echo "Restarting MOTIS…"
 systemctl --no-ask-password restart motis.service
