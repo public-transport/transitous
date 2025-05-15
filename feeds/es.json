@@ -250,6 +250,9 @@
             "name": "Autobús-interurbano-Comunidad-Valenciana",
             "type": "http",
             "url": "https://nap.transportes.gob.es/api/Fichero/download/1526",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            },
             "fix": true,
             "http-options": {
                 "fetch-interval-days": 1,
