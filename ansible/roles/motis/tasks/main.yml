@@ -5,6 +5,7 @@
 - name: Create MOTIS user
   user:
     name: motis
+    group: www-data
 
 - name: Create MOTIS directory
   file:
@@ -16,6 +17,11 @@
     src: https://github.com/public-transport/transitous/releases/download/motis-v2.0.34/motis-v2.0.34.tar.bz2
     dest: /opt/motis/
     remote_src: yes
+
+- name: Create directory for imported data
+  file:
+    path: /var/cache/transitous/out/
+    state: directory
 
 - name: Create MOTIS runtime directory
   file:
