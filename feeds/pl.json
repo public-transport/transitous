@@ -293,7 +293,7 @@
             "name": "Żyrardów",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://cdn.zbiorkom.live/gtfs/zyrardow.zip",
+            "url": "https://cdn.zbiorkom.live/gtfs/warsaw-zyrardow.zip",
             "license": {
                 "spdx-identifier": "MIT",
                 "url": "https://spdx.org/licenses/MIT.html"
@@ -303,7 +303,7 @@
             "name": "Sochaczew",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://cdn.zbiorkom.live/gtfs/sochaczew.zip",
+            "url": "https://cdn.zbiorkom.live/gtfs/warsaw-sochaczew.zip",
             "license": {
                 "spdx-identifier": "MIT",
                 "url": "https://spdx.org/licenses/MIT.html"
@@ -313,7 +313,7 @@
             "name": "Otwock",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://cdn.zbiorkom.live/gtfs/otwock.zip",
+            "url": "https://cdn.zbiorkom.live/gtfs/warsaw-otwock.zip",
             "license": {
                 "spdx-identifier": "MIT",
                 "url": "https://spdx.org/licenses/MIT.html"
