@@ -360,7 +360,7 @@
             "license": {
                 "spdx-identifier": "MIT",
                 "url": "https://spdx.org/licenses/MIT.html"
-            } 
+            },
             "fix": true
         },
         {
