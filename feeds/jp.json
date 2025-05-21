@@ -15,6 +15,14 @@
             "name": "hiroden",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-hiroden~jp"
+        },
+        {
+            "name": "tokyo-rail",
+            "type": "http",
+            "url": "https://mkuran.pl/gtfs/tokyo/rail.zip",
+            "license": {
+                "spdx-identifier": "MIT"
+            }
         }
     ]
 }
