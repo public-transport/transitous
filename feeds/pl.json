@@ -364,24 +364,10 @@
             "fix": true
         },
         {
-            "name": "Bielsko-Biała",
-            "type": "http",
-            "spec": "gtfs",
-            "url": "https://files.girlc.at/gtfs/bielsko_biala.zip",
-            "fix": true
-        },
-        {
             "name": "Dąbrówka",
             "type": "http",
             "spec": "gtfs",
             "url": "https://files.girlc.at/gtfs/dabrowka.zip",
-            "fix": true
-        },
-        {
-            "name": "Oświęcim",
-            "type": "http",
-            "spec": "gtfs",
-            "url": "https://files.girlc.at/gtfs/oswiecim.zip",
             "fix": true
         },
         {
