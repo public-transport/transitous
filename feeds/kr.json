@@ -1,0 +1,19 @@
+{
+    "maintainers": [
+      {
+        "name": "SungjunPark",
+        "github": "parkss404"
+      }
+    ],
+    "sources": [
+      {
+        "name": "korea",
+        "type": "http",
+        "url": "https://www.dropbox.com/scl/fi/l1rnl88xnegpmiuy44kmc/GTFS_DataSet.zip?rlkey=jub5anlfpsdoi9mgfy4qp7x9w&dl=1",
+        "license": {
+          "url": "https://www.ktdb.go.kr"
+        }
+      }
+    ]
+  }
+  
