@@ -22,7 +22,8 @@
             "url": "https://mkuran.pl/gtfs/tokyo/rail.zip",
             "license": {
                 "spdx-identifier": "MIT"
-            }
+            },
+            "fix": true
         }
     ]
 }
