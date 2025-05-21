@@ -278,7 +278,8 @@
             "license": {
                 "spdx-identifier": "MIT",
                 "url": "https://spdx.org/licenses/MIT.html"
-            }
+            },
+            "fix": true
         },
         {
             "name": "Turośń-Kościelna",
@@ -289,7 +290,8 @@
             "license": {
                 "spdx-identifier": "MIT",
                 "url": "https://spdx.org/licenses/MIT.html"
-            }
+            },
+            "fix": true
         },
         {
             "name": "Żyrardów",
@@ -300,7 +302,8 @@
             "license": {
                 "spdx-identifier": "MIT",
                 "url": "https://spdx.org/licenses/MIT.html"
-            }
+            },
+            "fix": true
         },
         {
             "name": "Sochaczew",
@@ -311,7 +314,8 @@
             "license": {
                 "spdx-identifier": "MIT",
                 "url": "https://spdx.org/licenses/MIT.html"
-            }
+            },
+            "fix": true
         },
         {
             "name": "Otwock",
@@ -322,7 +326,8 @@
             "license": {
                 "spdx-identifier": "MIT",
                 "url": "https://spdx.org/licenses/MIT.html"
-            }
+            },
+            "fix": true
         },
         {
             "name": "Opole",
@@ -333,7 +338,8 @@
             "license": {
                 "spdx-identifier": "MIT",
                 "url": "https://spdx.org/licenses/MIT.html"
-            }
+            },
+            "fix": true
         },
         {
             "name": "Jastrzębie-Zdrój",
@@ -343,7 +349,8 @@
             "license": {
                 "spdx-identifier": "MIT",
                 "url": "https://spdx.org/licenses/MIT.html"
-            }
+            },
+            "fix": true
         },
         {
             "name": "Kutno",
@@ -353,37 +360,43 @@
             "license": {
                 "spdx-identifier": "MIT",
                 "url": "https://spdx.org/licenses/MIT.html"
-            }
+            } 
+            "fix": true
         },
         {
             "name": "Bielsko-Biała",
             "type": "http",
             "spec": "gtfs",
             "url": "https://files.girlc.at/gtfs/bielsko_biala.zip",
+            "fix": true
         },
         {
             "name": "Dąbrówka",
             "type": "http",
             "spec": "gtfs",
             "url": "https://files.girlc.at/gtfs/dabrowka.zip",
+            "fix": true
         },
         {
             "name": "Oświęcim",
             "type": "http",
             "spec": "gtfs",
             "url": "https://files.girlc.at/gtfs/oswiecim.zip",
+            "fix": true
         },
         {
             "name": "Piecki",
             "type": "http",
             "spec": "gtfs",
             "url": "https://files.girlc.at/gtfs/piecki.zip",
+            "fix": true
         },
         {
             "name": "Powiat-Olsztyński",
             "type": "http",
             "spec": "gtfs",
             "url": "https://files.girlc.at/gtfs/powiat_olsztynski.zip",
+            "fix": true
         }
     ]
 }
