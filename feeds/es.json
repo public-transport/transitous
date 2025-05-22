@@ -122,7 +122,9 @@
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
-            }
+            },
+            "skip": true,
+            "skip-reason": "Broken file"
         },
         {
             "name": "Autobuses-Junta-de-Extremadura",
@@ -307,7 +309,9 @@
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
-            }
+            },
+            "skip": true,
+            "skip-reason": "Feed expired"
         },
         {
             "name": "Autobús-metropolitano-Barcelona",
@@ -403,7 +407,9 @@
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
-            }
+            },
+            "skip": true,
+            "skip-reason": "Feed expired"
         },
         {
             "name": "Autobús-urbano-de-Girona",
@@ -489,7 +495,9 @@
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
-            }
+            },
+            "skip": true,
+            "skip-reason": "Feed expired"
         },
         {
             "name": "Autobús-urbano-de-Málaga",
@@ -525,7 +533,9 @@
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
-            }
+            },
+            "skip": true,
+            "skip-reason": "Feed expired"
         },
         {
             "name": "Autobús-urbano-de-Palma-de-Mallorca",
@@ -1215,7 +1225,9 @@
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
-            }
+            },
+            "skip": true,
+            "skip-reason": "Broken file"
         },
         {
             "name": "Transporte-urbano-de-Zaragoza",
@@ -1311,7 +1323,9 @@
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
-            }
+            },
+            "skip": true,
+            "skip-reason": "Feed expired"
         },
         {
             "name": "VAC-231.-Madrid,-Piedrabuena-(Ciudad-Real)-y-Agudo-(Ciudad-Real)",
@@ -1323,7 +1337,9 @@
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
-            }
+            },
+            "skip": true,
+            "skip-reason": "Feed expired"
         },
         {
             "name": "VAC-232.-Madrid,-Málaga-y-Algeciras-(Cádiz)",
@@ -1335,7 +1351,9 @@
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
-            }
+            },
+            "skip": true,
+            "skip-reason": "Feed expired"
         },
         {
             "name": "VAC-245.-Huesca-Barcelona",
@@ -1347,7 +1365,9 @@
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
-            }
+            },
+            "skip": true,
+            "skip-reason": "Feed expired"
         },
         {
             "name": "Trasnportes-Insular-de-La-Palma-(TILP)",
