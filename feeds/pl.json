@@ -272,6 +272,13 @@
             "transitland-atlas-id": "f-bialostocka~komunikacja~miejska"
         },
         {
+            "name": "Wschód-Express",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://cdn.zbiorkom.live/gtfs/bialystok-wschod.zip",
+            "fix": true
+        },
+        {
             "name": "PKS-Nova-Supraśl",
             "type": "http",
             "spec": "gtfs",
