@@ -171,8 +171,7 @@
             "spec": "gtfs",
             "url": "https://github.com/TransportGZM-GTFS-mirror/TransportGZM-GTFS-normal/releases/latest/download/TransportGZM-GTFS.zip",
             "license": {
-                "spdx-identifier": "CC-BY-4.0",
-                "url": "https://spdx.org/licenses/CC-BY-4.0.html"
+                "spdx-identifier": "CC-BY-4.0"
             }
         },
         {
@@ -181,8 +180,7 @@
             "spec": "gtfs-rt",
             "url": "https://gtfsrt.transportgzm.pl:5443/gtfsrt/gzm/tripUpdates",
             "license": {
-                "spdx-identifier": "CC-BY-4.0",
-                "url": "https://spdx.org/licenses/CC-BY-4.0.html"
+                "spdx-identifier": "CC-BY-4.0"
             }
         },
         {
@@ -277,8 +275,7 @@
             "spec": "gtfs",
             "url": "https://cdn.zbiorkom.live/gtfs/bialystok-wschod.zip",
             "license": {
-                "spdx-identifier": "MIT",
-                "url": "https://spdx.org/licenses/MIT.html"
+                "spdx-identifier": "MIT"
             },
             "fix": true
         },
@@ -289,8 +286,7 @@
             "url": "https://cdn.zbiorkom.live/gtfs/bialystok-nova.zip",
             "url-override": "https://files.girlc.at/gtfs/pks_nova_suprasl.zip",
             "license": {
-                "spdx-identifier": "MIT",
-                "url": "https://spdx.org/licenses/MIT.html"
+                "spdx-identifier": "MIT"
             },
             "fix": true
         },
@@ -301,8 +297,7 @@
             "url": "https://cdn.zbiorkom.live/gtfs/bialystok-turosn.zip",
             "url-override": "https://files.girlc.at/gtfs/turosn_koscielna.zip",
             "license": {
-                "spdx-identifier": "MIT",
-                "url": "https://spdx.org/licenses/MIT.html"
+                "spdx-identifier": "MIT"
             },
             "fix": true
         },
@@ -313,8 +308,7 @@
             "url": "https://cdn.zbiorkom.live/gtfs/warsaw-zyrardow.zip",
             "url-override": "https://files.girlc.at/gtfs/zyrardow.zip",
             "license": {
-                "spdx-identifier": "MIT",
-                "url": "https://spdx.org/licenses/MIT.html"
+                "spdx-identifier": "MIT"
             },
             "fix": true
         },
@@ -325,8 +319,7 @@
             "url": "https://cdn.zbiorkom.live/gtfs/warsaw-sochaczew.zip",
             "url-override": "https://files.girlc.at/gtfs/sochaczew.zip",
             "license": {
-                "spdx-identifier": "MIT",
-                "url": "https://spdx.org/licenses/MIT.html"
+                "spdx-identifier": "MIT"
             },
             "fix": true
         },
@@ -337,8 +330,7 @@
             "url": "https://cdn.zbiorkom.live/gtfs/warsaw-otwock.zip",
             "url-override": "https://files.girlc.at/gtfs/otwock.zip",
             "license": {
-                "spdx-identifier": "MIT",
-                "url": "https://spdx.org/licenses/MIT.html"
+                "spdx-identifier": "MIT"
             },
             "fix": true
         },
@@ -349,8 +341,7 @@
             "url": "https://cdn.zbiorkom.live/gtfs/opole.zip",
             "url-override": "https://files.girlc.at/gtfs/opole.zip",
             "license": {
-                "spdx-identifier": "MIT",
-                "url": "https://spdx.org/licenses/MIT.html"
+                "spdx-identifier": "MIT"
             },
             "fix": true
         },
@@ -360,8 +351,7 @@
             "spec": "gtfs",
             "url": "https://cdn.zbiorkom.live/gtfs/rybnik-jastrzebie.zip",
             "license": {
-                "spdx-identifier": "MIT",
-                "url": "https://spdx.org/licenses/MIT.html"
+                "spdx-identifier": "MIT"
             },
             "fix": true
         },
@@ -371,8 +361,7 @@
             "spec": "gtfs",
             "url": "https://cdn.zbiorkom.live/gtfs/kutno.zip",
             "license": {
-                "spdx-identifier": "MIT",
-                "url": "https://spdx.org/licenses/MIT.html"
+                "spdx-identifier": "MIT"
             },
             "fix": true
         },
