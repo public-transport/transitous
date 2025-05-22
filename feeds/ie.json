@@ -20,7 +20,7 @@
             "url": "https://api.nationaltransport.ie/gtfsr/v2/TripUpdates",
             "http-options": {
                 "headers": {
-                    "ApiKey": "428a90e546aa482f9dfe75d7682ae8f1"
+                    "x-api-key": "428a90e546aa482f9dfe75d7682ae8f1"
                 }
             },
             "license": {
