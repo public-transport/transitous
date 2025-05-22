@@ -14,6 +14,9 @@
             "name": "Carris-Metropolitana",
             "type": "http",
             "url": "https://api.carrismetropolitana.pt/gtfs",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            },
             "fix": true,
             "http-options": {
                 "fetch-interval-days": 1

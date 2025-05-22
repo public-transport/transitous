@@ -147,10 +147,7 @@
         {
             "name": "Elbląg",
             "type": "mobility-database",
-            "mdb-id": "mdb-2597",
-            "license": {
-            "spdx-identifier": "CC0-1.0"
-            }
+            "mdb-id": "mdb-2597"
         },
         {
             "name": "Poznań",
@@ -195,8 +192,13 @@
         },
         {
             "name": "Koleje-Małopolskie",
-            "type": "mobility-database",
-            "mdb-id": "mdb-1908"
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-koleje~małopolskie"
+        },
+        {
+            "name": "Koleje-Małopolskie-ald",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u2y-koleje~małopolskie~ald"
         },
         {
             "name": "ZTP-Kraków-T",
