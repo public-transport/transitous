@@ -3,7 +3,7 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 from pathlib import Path
-from typing import Dict, Union, Optional
+from typing import Dict, Optional
 import json
 from metadata import UrlSource, HttpSource, Source, TransitlandSource, License
 import sys
