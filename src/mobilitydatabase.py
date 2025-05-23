@@ -6,7 +6,6 @@ from pathlib import Path
 from typing import Dict, Optional
 from metadata import UrlSource, HttpSource, Source, MobilityDatabaseSource, License
 from utils import eprint
-import sys
 import requests
 import csv
 import os
