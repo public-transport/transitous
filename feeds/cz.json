@@ -7,6 +7,10 @@
         {
             "name": "Jonah Brüchert",
             "github": "jbruechert"
+        },
+        {
+            "name": "Petr Novák",
+            "github": "hoermalmeister"
         }
     ],
     "sources": [
@@ -34,6 +38,12 @@
             "name": "IDS-JMK",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u2e-idsjmk"
+        },
+        {
+            "name": "IDS-JMK",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://content.idsjmk.cz/kestazeni/gtfsReal.dat"
         },
         {
             "name": "DPMLJ",
