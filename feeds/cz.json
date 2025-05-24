@@ -7,6 +7,10 @@
         {
             "name": "Jonah Brüchert",
             "github": "jbruechert"
+        },
+        {
+            "name": "Petr Novák",
+            "github": "hoermalmeister"
         }
     ],
     "sources": [
@@ -32,8 +36,17 @@
         },
         {
             "name": "IDS-JMK",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u2e-idsjmk"
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://content.idsjmk.cz/kestazeni/gtfsReal.dat"
+        },
+        {
+            "name": "IDS-JMK",
+            "type": "http",
+            "url": "https://www.arcgis.com/sharing/rest/content/items/379d2e9a7907460c8ca7fda1f3e84328/data"
+            "license": {
+            "spdx-identifier": "CC BY 4.0",
+            "url": "https://data.brno.cz/datasets/379d2e9a7907460c8ca7fda1f3e84328/about"
         },
         {
             "name": "DPMLJ",
