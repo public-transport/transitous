@@ -8,7 +8,7 @@ motis:
       ansible_user: root
       ansible_host: crunchy.spline.de
       motis_primary: true
-      motis_update_time: "5:00:00"
+      motis_update_time: "5:00:00" #Europe/Berlin
       transitous_rsync_public_key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIECSh3Ot5IbFfdZYrOstBJTzSva8VUh/rz2KikvIyokn github-actions"
       transitous_woodpecker_agent_secret: !vault |
           $ANSIBLE_VAULT;1.1;AES256
@@ -27,7 +27,7 @@ motis:
       ansible_become: true
       ansible_host: goldberg
       motis_no_cow: true
-      motis_update_time: "4:00:00" # UTC
+      motis_update_time: "5:00:00" # UTC
 
 motis-staging:
   hosts:
