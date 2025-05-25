@@ -7,6 +7,8 @@ motis:
     crunchy:
       ansible_user: root
       ansible_host: crunchy.spline.de
+      motis_primary: true
+      motis_update_time: "5:00:00"
       transitous_rsync_public_key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIECSh3Ot5IbFfdZYrOstBJTzSva8VUh/rz2KikvIyokn github-actions"
       transitous_woodpecker_agent_secret: !vault |
           $ANSIBLE_VAULT;1.1;AES256
@@ -18,6 +20,14 @@ motis:
           33306133373436623439623666626565656164343930336137306161343538613962616462613462
           38316362353534633137313732383231313366616635666161316537643732663564383666363839
           63363534313561313533
+
+    goldberg:
+      ansible_ssh_user: algolocal
+      ansible_sudo_user: root
+      ansible_become: true
+      ansible_host: goldberg
+      motis_no_cow: true
+      motis_update_time: "4:00:00" # UTC
 
 motis-staging:
   hosts:

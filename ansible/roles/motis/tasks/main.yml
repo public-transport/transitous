@@ -12,11 +12,11 @@
     path: /opt/motis/
     state: directory
 
-- name: Unpack MOTIS
-  unarchive:
-    src: https://github.com/public-transport/transitous/releases/download/motis-v2.0.34/motis-v2.0.34.tar.bz2
-    dest: /opt/motis/
-    remote_src: yes
+#- name: Unpack MOTIS
+#  unarchive:
+#    src: https://github.com/public-transport/transitous/releases/download/motis-v2.0.34/motis-v2.0.34.tar.bz2
+#    dest: /opt/motis/
+#    remote_src: yes
 
 - name: Create directory for imported data
   file:
@@ -27,7 +27,7 @@
   file:
     path: /var/lib/motis
     owner: motis
-    group: motis
+    group: www-data
     state: directory
 
 - name: Copy MOTIS systemd service
@@ -44,13 +44,13 @@
     daemon_reload: true
 
 - name: Install motis-update-feeds script
-  copy:
+  template:
     src: motis-update-feeds.sh
     dest: /usr/local/bin/motis-update-feeds
     mode: '0755'
 
 - name: Install motis-update-feeds
-  copy:
+  template:
     src: "{{ item }}"
     dest: /etc/systemd/system/
     mode: '644'
