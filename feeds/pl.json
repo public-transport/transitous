@@ -385,6 +385,15 @@
             "spec": "gtfs",
             "url": "https://files.girlc.at/gtfs/powiat_olsztynski.zip",
             "fix": true
+        },
+        {
+            "name": "Warsaw-Ferries",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://kasmar00.github.io/gtfs-warsaw-custom/feeds/warsaw-ferries/latest.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
         }
     ]
 }
