@@ -55,6 +55,13 @@ class Atlas:
             result.spec = "gtfs-rt"
             result.skip = source.skip
             result.skip_reason = source.skip_reason
+        elif "realtime_vehicle_positions" in feed["urls"]:
+            result = UrlSource()
+            result.name = source.name
+            result.url = feed["urls"]["realtime_vehicle_positions"]
+            result.spec = "gtfs-rt"
+            result.skip = source.skip
+            result.skip_reason = source.skip_reason
         elif "gbfs_auto_discovery" in feed["urls"]:
             result = UrlSource()
             result.name = source.name
