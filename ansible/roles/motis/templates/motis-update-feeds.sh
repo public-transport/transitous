@@ -5,14 +5,6 @@
 
 echo "Copying new files…"
 
-{% if not motis_primary %}
-
-cd /var/cache/transitous/out/
-sudo -u motis wget --mirror --no-parent -e robots=off https://api.transitous.org/gtfs/data/ || true
-
-{% endif %}
-
-
 # Exit if empty
 if [ -z "$(ls -A /var/cache/transitous/out)" ]; then
     exit 0
@@ -25,6 +17,7 @@ fi
 
 cp -r -u --reflink=auto /var/cache/transitous/out/data /var/lib/motis/
 cp --reflink=auto /var/cache/transitous/out/config.yml /var/lib/motis/data/config.yml
+
 chown -R motis:motis /var/lib/motis/data/
 
 echo "Restarting MOTIS…"
