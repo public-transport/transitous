@@ -317,17 +317,12 @@ if __name__ == "__main__":
                 )
                 continue
 
-    # TCL(Lyon) (+ Rhôneexpress) official feed not available without API key
+    # TCL(Lyon) official feed not available without API key
     out.append(
         {
             "name": "lyon-tcl",
             "type": "http",
             "url": "https://gtech-transit-prod.apigee.net/v1/google/gtfs/odbl/lyon_tcl.zip?apikey=BasyG6OFZXgXnzWdQLTwJFGcGmeOs204&secret=gNo6F5PhQpsGRBCK"
-        },
-        {
-            "name": "lyon-rhoneexpress",
-            "type": "http",
-            "url": "https://download.data.grandlyon.com/files/rdata/rx_rhonexpress.rxtheorique/GTFS_RX.ZIP?apikey=BasyG6OFZXgXnzWdQLTwJFGcGmeOs204&secret=gNo6F5PhQpsGRBCK"
         },
     )
     # official feeds without available zip files at data.gouv.fr for some reason
