@@ -48,6 +48,14 @@
     src: motis-update-feeds.sh
     dest: /usr/local/bin/motis-update-feeds
     mode: '0755'
+  when: motis_primary is defined and motis_primary
+
+- name: Install secondary motis-update-feeds script
+  template:
+    src: motis-update-feeds-secondary.sh
+    dest: /usr/local/bin/motis-update-feeds
+    mode: '0755'
+  when: motis_primary is not defined or not motis_primary
 
 - name: Install motis-update-feeds
   template:

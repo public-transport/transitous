@@ -5,6 +5,12 @@
 
 echo "Copying new files…"
 
+#cp -r -p /var/lib/motis/data /var/cache/transitous/out/data
+sudo -u motis cp -r -p /var/cache/transitous/out/osm/ /var/cache/transitous/out/data/ # TODO -l ?
+
+cd /var/cache/transitous/out/
+sudo -u motis wget -N -nH --cut-dirs=1 --exclude-directories=/gtfs/data/tiles/,/gtfs/data/osr/ --mirror --no-parent -e robots=off https://api.transitous.org/gtfs/data/ || true
+
 # Exit if empty
 if [ -z "$(ls -A /var/cache/transitous/out)" ]; then
     exit 0
@@ -15,7 +21,9 @@ if [ -f /var/cache/transitous/out/.import-running ]; then
     exit 0
 fi
 
-cp -r -u --reflink=auto /var/cache/transitous/out/data /var/lib/motis/
+rm -r /var/lib/motis/data/
+mv /var/cache/transitous/out/data /var/lib/motis/
+
 cp --reflink=auto /var/cache/transitous/out/config.yml /var/lib/motis/data/config.yml
 
 chown -R motis:www-data /var/lib/motis/data/
