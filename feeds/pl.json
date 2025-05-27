@@ -394,6 +394,15 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             }
+        },
+        {
+            "name": "Ząbki",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://kasmar00.github.io/gtfs-warsaw-custom/feeds/zabki/latest.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
         }
     ]
 }
