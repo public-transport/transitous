@@ -81,7 +81,7 @@ if __name__ == "__main__":
                             source = resolved_source
 
                     match source.spec:
-                        case "gtfs":
+                        case source.spec if source.spec in ["gtfs", "gtfs-flex"]:
                             schedule_file = \
                                 f"{region_name}_{source.name}.gtfs.zip"
                             name = f"{region_name}-{source.name}"
