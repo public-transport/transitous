@@ -9,7 +9,10 @@
         {
             "name": "zpcg",
             "type": "http",
-            "url": "https://jbb.ghsq.de/gtfs/me-zpcg.gtfs.zip"
+            "url": "https://jbb.ghsq.de/gtfs/me-zpcg.gtfs.zip",
+            "license": {
+                "spdx-identifier": "ODbL-1.0"
+            }
         }
     ]
 }
