@@ -146,8 +146,8 @@
         },
         {
             "name": "Elbląg",
-            "type": "mobility-database",
-            "mdb-id": "mdb-2597"
+            "type": "transitland-atlas",
+            "transitland-atlas-id":"f-u3tu-elblag"
         },
         {
             "name": "Poznań",
