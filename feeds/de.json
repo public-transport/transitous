@@ -15,6 +15,11 @@
     ],
     "sources": [
         {
+            "name": "MVG",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2333"
+        },
+        {
             "name": "DELFI",
             "type": "http",
             "url": "https://www.opendata-oepnv.de/ht/de/datensaetze/sharing?tx_vrrkit_view%5Bsharing%5D=eyJkYXRhc2V0IjoiZGV1dHNjaGxhbmR3ZWl0ZS1zb2xsZmFocnBsYW5kYXRlbi1ndGZzIn0",
