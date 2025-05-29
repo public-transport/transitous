@@ -260,9 +260,8 @@
         },
         {
             "name": "MPK-Łódź",
-            "type": "mobility-database",
-            "mdb-id": "tld-6079",
-            "fix": true
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u3jy-lodz"
         },
         {
             "name": "Białystok",
@@ -403,6 +402,11 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             }
+        },
+        {
+            "name": "Gorzów Wielkopolski",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u36g-gorzow~wielkopolski"
         }
     ]
 }
