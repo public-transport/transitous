@@ -253,7 +253,7 @@ class Fetcher:
 
     # Returns whether something was downloaded
     def fetch_source(self, dest_path: Path, source: Source) -> bool:
-        if source.spec != "gtfs":
+        if source.spec != "gtfs" and source.spec != "gtfs-flex":
             return False
         match source:
             case TransitlandSource():
@@ -337,34 +337,36 @@ class Fetcher:
         if source.fix_csv_quotes:
             subprocess.check_call(["./src/fix-csv-quotes.py", temp_file])
 
-        command = ["gtfsclean", str(temp_file),
-                   "--fix-zip",
-                   "--check-null-coords",
-                   "--empty-agency-url-repl", "https://transitous.org",
-                   "--remove-red-services",
-                   "--output", str(temp_file)]
-        if source.fix:
-            command.append("--fix")
-        if source.drop_too_fast_trips:
-            command.append("--drop-too-fast-trips")
-        if source.drop_shapes:
-            command.append("--drop-shapes")
-        if source.drop_agency_names:
-            for agency in source.drop_agency_names:
-                command.append("--drop-agency-names")
-                command.append(agency)
-        if source.display_name_options:
-            if source.display_name_options.copy_trip_names_matching:
-                command.append("--copy-trip-names-matching")
-                command.append(source.display_name_options.copy_trip_names_matching)
-            if source.display_name_options.keep_route_names_matching:
-                command.append("--keep-route-names-matching")
-                command.append(source.display_name_options.keep_route_names_matching)
-            if source.display_name_options.move_headsigns_matching:
-                command.append("--move-headsigns-matching")
-                command.append(source.display_name_options.move_headsigns_matching)
+        if source.spec != "gtfs-flex":
+            # gtfsclean can't handle GTFS-Flex data and would discard it entirely
+            command = ["gtfsclean", str(temp_file),
+                    "--fix-zip",
+                    "--check-null-coords",
+                    "--empty-agency-url-repl", "https://transitous.org",
+                    "--remove-red-services",
+                    "--output", str(temp_file)]
+            if source.fix:
+                command.append("--fix")
+            if source.drop_too_fast_trips:
+                command.append("--drop-too-fast-trips")
+            if source.drop_shapes:
+                command.append("--drop-shapes")
+            if source.drop_agency_names:
+                for agency in source.drop_agency_names:
+                    command.append("--drop-agency-names")
+                    command.append(agency)
+            if source.display_name_options:
+                if source.display_name_options.copy_trip_names_matching:
+                    command.append("--copy-trip-names-matching")
+                    command.append(source.display_name_options.copy_trip_names_matching)
+                if source.display_name_options.keep_route_names_matching:
+                    command.append("--keep-route-names-matching")
+                    command.append(source.display_name_options.keep_route_names_matching)
+                if source.display_name_options.move_headsigns_matching:
+                    command.append("--move-headsigns-matching")
+                    command.append(source.display_name_options.move_headsigns_matching)
 
-        subprocess.check_call(command)
+            subprocess.check_call(command)
 
         with ZipFile(file=open(temp_file, "rb")) as z:
             validity = check_feed_timeframe_valid(z)
@@ -420,7 +422,7 @@ class Fetcher:
             sys.stdout.flush()
 
             # Nothing to download for realtime feeds
-            if source.spec != "gtfs":
+            if source.spec != "gtfs" and source.spec != "gtfs-flex":
                 continue
 
             download_dir = Path("downloads/")
