@@ -403,6 +403,11 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             }
+        },
+        {
+            "name": "Gorzów Wielkopolski",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u36g-gorzow~wielkopolski"
         }
     ]
 }
