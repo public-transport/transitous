@@ -23,7 +23,16 @@ for source in region["sources"]:
             source["type"] = "mobility-database"
             source["mdb-id"] = mdb_id
             source.pop("url", None)
+    if source["type"] == "url":
+        mdb_id = url_to_id.get(source["url"])
+        if mdb_id:
+            source["type"] = "mobility-database"
+            source["mdb-id"] = mdb_id
+            source.pop("url", None)
+            source.pop("spec", None)
+
 
 print(region)
 with open(sys.argv[1], "w") as region_out:
     region_out.write(json.dumps(region, indent=4, ensure_ascii=False))
+    region_out.write("\n")
