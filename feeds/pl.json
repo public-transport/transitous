@@ -370,21 +370,31 @@
             "type": "http",
             "spec": "gtfs",
             "url": "https://files.girlc.at/gtfs/dabrowka.zip",
-            "fix": true
+            "fix": true,
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
         },
         {
             "name": "Piecki",
             "type": "http",
             "spec": "gtfs",
             "url": "https://files.girlc.at/gtfs/piecki.zip",
-            "fix": true
+            "fix": true,
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+
         },
         {
             "name": "Powiat-Olsztyński",
             "type": "http",
             "spec": "gtfs",
             "url": "https://files.girlc.at/gtfs/powiat_olsztynski.zip",
-            "fix": true
+            "fix": true,
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
         },
         {
             "name": "Warsaw-Ferries",
