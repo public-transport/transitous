@@ -8,21 +8,19 @@
     "sources": [
         {
             "name": "transport-for-ireland",
-            "type": "http",
-            "url": "https://www.transportforireland.ie/transitData/Data/GTFS_All.zip",
+            "type": "mobility-database",
             "license": {
                 "spdx-identifier": "CC-BY-SA-4.0"
-            }
+            },
+            "mdb-id": "mdb-2364"
         },
         {
             "name": "transport-for-ireland",
             "type": "url",
             "spec": "gtfs-rt",
             "url": "https://api.nationaltransport.ie/gtfsr/v2/TripUpdates",
-            "http-options": {
-                "headers": {
-                    "x-api-key": "428a90e546aa482f9dfe75d7682ae8f1"
-                }
+            "headers": {
+                "x-api-key": "428a90e546aa482f9dfe75d7682ae8f1"
             },
             "license": {
                 "spdx-identifier": "CC-BY-SA-4.0"
