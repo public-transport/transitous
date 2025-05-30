@@ -81,8 +81,9 @@ class Atlas:
             sys.stdout.flush()
             return None
 
+        result.license = License()
+
         if "license" in feed:
-            result.license = License()
             if "spdx_identifier" in feed["license"]:
                 result.license.spdx_identifier = feed["license"]["spdx_identifier"]
             if "url" in feed["license"]:
