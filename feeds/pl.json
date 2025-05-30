@@ -447,6 +447,13 @@
             "license": {
                 "spdx-identifier": "CC0-1.0"
             }
+        },
+        {
+            "name": "Kombus-Kórnik",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://kbadmin.vot.pl/gtfs/kombus.zip",
+            "fix": true
         }
     ]
 }
