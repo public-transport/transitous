@@ -260,8 +260,12 @@
         },
         {
             "name": "MPK-Łódź",
-            "type": "mobility-database",
-            "mdb-id": "tld-6079",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://cdn.zbiorkom.live/gtfs/lodz.zip",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
             "fix": true
         },
         {
@@ -275,7 +279,7 @@
             "spec": "gtfs",
             "url": "https://cdn.zbiorkom.live/gtfs/bialystok-wschod.zip",
             "license": {
-                "spdx-identifier": "MIT"
+                "spdx-identifier": "CC0-1.0"
             },
             "fix": true
         },
@@ -286,7 +290,7 @@
             "url": "https://cdn.zbiorkom.live/gtfs/bialystok-nova.zip",
             "url-override": "https://files.girlc.at/gtfs/pks_nova_suprasl.zip",
             "license": {
-                "spdx-identifier": "MIT"
+                "spdx-identifier": "CC0-1.0"
             },
             "fix": true
         },
@@ -297,7 +301,7 @@
             "url": "https://cdn.zbiorkom.live/gtfs/bialystok-turosn.zip",
             "url-override": "https://files.girlc.at/gtfs/turosn_koscielna.zip",
             "license": {
-                "spdx-identifier": "MIT"
+                "spdx-identifier": "CC0-1.0"
             },
             "fix": true
         },
@@ -308,7 +312,7 @@
             "url": "https://cdn.zbiorkom.live/gtfs/warsaw-zyrardow.zip",
             "url-override": "https://files.girlc.at/gtfs/zyrardow.zip",
             "license": {
-                "spdx-identifier": "MIT"
+                "spdx-identifier": "CC0-1.0"
             },
             "fix": true
         },
@@ -319,7 +323,7 @@
             "url": "https://cdn.zbiorkom.live/gtfs/warsaw-sochaczew.zip",
             "url-override": "https://files.girlc.at/gtfs/sochaczew.zip",
             "license": {
-                "spdx-identifier": "MIT"
+                "spdx-identifier": "CC0-1.0"
             },
             "fix": true
         },
@@ -330,7 +334,7 @@
             "url": "https://cdn.zbiorkom.live/gtfs/warsaw-otwock.zip",
             "url-override": "https://files.girlc.at/gtfs/otwock.zip",
             "license": {
-                "spdx-identifier": "MIT"
+                "spdx-identifier": "CC0-1.0"
             },
             "fix": true
         },
@@ -341,7 +345,7 @@
             "url": "https://cdn.zbiorkom.live/gtfs/opole.zip",
             "url-override": "https://files.girlc.at/gtfs/opole.zip",
             "license": {
-                "spdx-identifier": "MIT"
+                "spdx-identifier": "CC0-1.0"
             },
             "fix": true
         },
@@ -413,6 +417,43 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             }
+        },
+        {
+            "name": "PKS-Poznań",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "http://pksonline.pl/download/pkspoznan.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            },
+            "fix": true
+        },
+        {
+            "name": "Oświęcim",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://files.girlc.at/gtfs/oswiecim.zip",
+            "fix": true,
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "Bielsko-Biała",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://files.girlc.at/gtfs/bielsko_biala.zip",
+            "fix": true,
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "Kombus-Kórnik",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://kbadmin.vot.pl/gtfs/kombus.zip",
+            "fix": true
         }
     ]
 }
