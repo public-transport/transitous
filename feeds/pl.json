@@ -343,6 +343,7 @@
             "type": "http",
             "spec": "gtfs",
             "url": "https://cdn.zbiorkom.live/gtfs/opole.zip",
+            "url-override": "https://files.girlc.at/gtfs/opole.zip",
             "license": {
                 "spdx-identifier": "CC0-1.0"
             },
