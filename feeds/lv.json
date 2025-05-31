@@ -8,12 +8,12 @@
     "sources": [
         {
             "name": "pieturas",
-            "type": "http",
-            "url": "https://gsvalbe.id.lv/pieturas/dati/latvia.zip",
+            "type": "mobility-database",
             "license": {
                 "spdx-identifier": "CC0-1.0"
             },
-            "fix": true
+            "fix": true,
+            "mdb-id": "mdb-2337"
         },
         {
             "name": "pieturas",

@@ -34,12 +34,11 @@ def filter_duplicates(elems):
 def http_source_attribution(source: HttpSource) -> Optional[dict]:
     attribution: dict = {}
 
-    if source.license:
-        if source.license.spdx_identifier:
-            attribution["spdx_license_identifier"] = \
-                source.license.spdx_identifier
-        if source.license.url:
-            attribution["license_url"] = source.license.url
+    if source.license.spdx_identifier:
+        attribution["spdx_license_identifier"] = \
+            source.license.spdx_identifier
+    if source.license.url:
+        attribution["license_url"] = source.license.url
 
     attribution["operators"] = []
     attribution["source"] = source.url
