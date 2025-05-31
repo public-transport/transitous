@@ -23,6 +23,12 @@
             "type": "url",
             "spec": "gtfs-rt",
             "url": "https://gtfs.ovapi.nl/nl/tripUpdates.pb"
+        },
+        {
+            "name": "ovapi",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://gtfs.ovapi.nl/nl/alerts.pb"
         }
     ]
 }

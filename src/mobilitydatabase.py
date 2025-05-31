@@ -82,8 +82,15 @@ class Database:
                        source.mdb_id, "of type", data_type)
                 return None
 
+        result.license = License()
+
         if "license" in feed:
-            result.license = License()
             result.license.url = feed["license"]
+
+        # Allow to override these as mobility database does not have spdx-identifiers (yet)
+        if source.license.spdx_identifier:
+            result.license.spdx_identifier = source.license.spdx_identifier
+        if source.license.url:
+            result.license.url = source.license.url
 
         return result

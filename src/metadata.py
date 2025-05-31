@@ -43,7 +43,7 @@ class DisplayNameOptions:
 class Source:
     name: str
     fix: bool = False
-    license: Optional[License] = None
+    license: License
     spec: str = "gtfs"
     fix_csv_quotes: bool = False
     skip: bool = False

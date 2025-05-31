@@ -31,6 +31,15 @@
             "headers": {
                 "authorization": "Bearer eyJvcmciOiI2NDA2NTFhNTIyZmEwNTAwMDEyOWJiZTEiLCJpZCI6IjFmZjIzNTNmMDNiNTQyMzk4ZDdhN2M2NzMyNzczYTFmIiwiaCI6Im11cm11cjEyOCJ9"
             }
+        },
+        {
+            "name": "opentransportdataswiss-flex",
+            "type": "http",
+            "spec": "gtfs-flex",
+            "url": "https://data.opentransportdata.swiss/en/dataset/gtfsflex/permalink",
+            "license": {
+                "url": "https://opentransportdata.swiss/de/terms-of-use/"
+            }
         }
     ]
 }
