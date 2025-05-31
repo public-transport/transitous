@@ -112,8 +112,9 @@
         },
         {
             "name": "Weekendbus",
-            "type": "http",
-            "url": "https://gtfs.menetbrand.com/download/weekendbus"
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u2mw-weekendbus",
+            "fix": true
         }
     ]
 }
