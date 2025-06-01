@@ -344,6 +344,7 @@ class Fetcher:
                     "--check-null-coords",
                     "--empty-agency-url-repl", "https://transitous.org",
                     "--remove-red-services",
+                    "--keep-additional-fields",
                     "--output", str(temp_file)]
             if source.fix:
                 command.append("--fix")
