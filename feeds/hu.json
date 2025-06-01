@@ -33,11 +33,8 @@
         },
         {
             "name": "mvk",
-            "type": "http",
-            "url": "https://gtfsapi.mvkzrt.hu/gtfs/gtfs.zip",
-            "license": {
-                "spdx-identifier": "CC-BY-NC-ND-4.0"
-            }
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u2wc-mvkzrt"
         },
         {
             "name": "szkt",
@@ -54,24 +51,19 @@
         },
         {
             "name": "tukebusz",
-            "type": "http",
-            "url": "http://mobilitas.biokom.hu/gtfs",
-            "license": {
-                "spdx-identifier": "CC0-1.0"
-            }
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u2hy-biokomnonprofitkft"
         },
         {
             "name": "blaguss-agora",
-            "type": "http",
-            "url": "https://szombathely.utas.hu/api/static/v1/gtfs-google/gtfs-google.zip",
-            "license": {
-                "spdx-identifier": "CC0-1.0"
-            }
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-blasguss~szombathely"
         },
         {
             "name": "paksbusz",
             "type": "http",
             "url": "https://utazastervezo.paksbusz.hu/api/static/v1/gtfs-google/gtfs-google.zip",
+            "url-override": "https://gtfs.menetbrand.com/download/paks",
             "license": {
                 "spdx-identifier": "CC0-1.0"
             }
