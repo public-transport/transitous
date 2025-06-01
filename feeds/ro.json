@@ -41,13 +41,19 @@
         {
             "name": "Cluj-Napoca",
             "type": "mobility-database",
-            "mdb-id": "mdb-2121"
+            "mdb-id": "mdb-2121",
+            "license": {
+                "spdx-identifier": "CC-BY-SA-4.0"
+            }
         },
         {
             "name": "Cluj-Napoca",
             "type": "mobility-database",
             "spec": "gtfs-rt",
-            "mdb-id": "mdb-2612"
+            "mdb-id": "mdb-2612",
+            "license": {
+                "spdx-identifier": "CC-BY-SA-4.0"
+            }
         },
         {
             "name": "Consiliul-Judetean-Vrancea",
@@ -67,13 +73,19 @@
         {
             "name": "Iași",
             "type": "mobility-database",
-            "mdb-id": "mdb-2116"
+            "mdb-id": "mdb-2116",
+            "license": {
+                "spdx-identifier": "CC-BY-SA-4.0"
+            }
         },
         {
             "name": "Iași",
             "type": "mobility-database",
             "spec": "gtfs-rt",
-            "mdb-id": "mdb-2117"
+            "mdb-id": "mdb-2117",
+            "license": {
+                "spdx-identifier": "CC-BY-SA-4.0"
+            }
         },
         {
             "name": "Oradea",
