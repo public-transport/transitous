@@ -27,7 +27,7 @@
             "type": "mobility-database",
             "mdb-id": "mdb-2143",
             "license": {
-            "spdx-identifier": "ODbL-1.0"
+                "spdx-identifier": "ODbL-1.0"
             }
         },
         {
@@ -35,7 +35,7 @@
             "type": "mobility-database",
             "mdb-id": "mdb-2098",
             "license": {
-            "spdx-identifier": "CC0-1.0"
+                "spdx-identifier": "CC0-1.0"
             }
         },
         {
@@ -44,7 +44,7 @@
             "spec": "gtfs-rt",
             "mdb-id": "mdb-2103",
             "license": {
-            "spdx-identifier": "CC0-1.0"
+                "spdx-identifier": "CC0-1.0"
             }
         },
         {
@@ -69,7 +69,7 @@
             "type": "mobility-database",
             "mdb-id": "mdb-1984",
             "license": {
-            "spdx-identifier": "CC0-1.0"
+                "spdx-identifier": "CC0-1.0"
             }
         },
         {
