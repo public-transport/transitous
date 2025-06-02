@@ -9,12 +9,18 @@
         {
             "name": "Chișinău",
             "type": "mobility-database",
-            "mdb-id": "mdb-2341"
+            "mdb-id": "mdb-2341",
+            "license": {
+                "spdx-identifier": "CC-BY-SA-4.0"
+            }
         },
         {
             "name": "Chișinău",
             "type": "mobility-database",
-            "mdb-id": "mdb-2343"
+            "mdb-id": "mdb-2343",
+            "license": {
+                "spdx-identifier": "CC-BY-SA-4.0"
+            }
         }
     ]
 }

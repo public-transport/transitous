@@ -25,34 +25,52 @@
         {
             "name": "Brasov",
             "type": "mobility-database",
-            "mdb-id": "mdb-2143"
+            "mdb-id": "mdb-2143",
+            "license": {
+                "spdx-identifier": "ODbL-1.0"
+            }
         },
         {
             "name": "Bucuresti-Ilfov",
             "type": "mobility-database",
-            "mdb-id": "mdb-2098"
+            "mdb-id": "mdb-2098",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
         },
         {
             "name": "Bucuresti-Ilfov",
             "type": "mobility-database",
             "spec": "gtfs-rt",
-            "mdb-id": "mdb-2103"
+            "mdb-id": "mdb-2103",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
         },
         {
             "name": "Cluj-Napoca",
             "type": "mobility-database",
-            "mdb-id": "mdb-2121"
+            "mdb-id": "mdb-2121",
+            "license": {
+                "spdx-identifier": "CC-BY-SA-4.0"
+            }
         },
         {
             "name": "Cluj-Napoca",
             "type": "mobility-database",
             "spec": "gtfs-rt",
-            "mdb-id": "mdb-2612"
+            "mdb-id": "mdb-2612",
+            "license": {
+                "spdx-identifier": "CC-BY-SA-4.0"
+            }
         },
         {
             "name": "Consiliul-Judetean-Vrancea",
             "type": "mobility-database",
-            "mdb-id": "mdb-1984"
+            "mdb-id": "mdb-1984",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
         },
         {
             "name": "Constanta",
@@ -67,13 +85,19 @@
         {
             "name": "Iași",
             "type": "mobility-database",
-            "mdb-id": "mdb-2116"
+            "mdb-id": "mdb-2116",
+            "license": {
+                "spdx-identifier": "CC-BY-SA-4.0"
+            }
         },
         {
             "name": "Iași",
             "type": "mobility-database",
             "spec": "gtfs-rt",
-            "mdb-id": "mdb-2117"
+            "mdb-id": "mdb-2117",
+            "license": {
+                "spdx-identifier": "CC-BY-SA-4.0"
+            }
         },
         {
             "name": "Oradea",
@@ -103,7 +127,10 @@
         {
             "name": "Tursib",
             "type": "mobility-database",
-            "mdb-id": "mdb-2099"
+            "mdb-id": "mdb-2099",
+            "license": {
+                "spdx-identifier": "CC-BY-SA-4.0"
+            }
         },
         {
             "name": "Târgoviște",
