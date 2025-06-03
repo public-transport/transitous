@@ -232,7 +232,8 @@
         {
             "name": "OCTranspo",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-f24-octranspo"
+            "transitland-atlas-id": "f-f24-octranspo",
+            "fix": true
         },
         {
             "name": "OCTranspo",
