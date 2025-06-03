@@ -454,6 +454,166 @@
             "spec": "gtfs",
             "url": "https://kbadmin.vot.pl/gtfs/kombus.zip",
             "fix": true
+        },
+        {
+            "name": "Biker-Białystok",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-biker~białystok~poland~gbfs"
+        },
+        {
+            "name": "Chełmski-Rower",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-chełmski~rower~gbfs"
+        },
+        {
+            "name": "CRM-Ciechanów",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-ciechanowski~rower~miejski~poland~ciechanów~gbfs"
+        },
+        {
+            "name": "CRM-Częstochowa",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-częstochowski~rower~miejski~poland~częstochowa~gbfs"
+        },
+        {
+            "name": "GRM-Grodzisk",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-grm~grodzisk~poland~mazowiecki~gbfs"
+        },
+        {
+            "name": "Jaskółka-Jastrzębie-Zdrój",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-jaskółka~jastrzębie~zdrój~gbfs"
+        },
+        {
+            "name": "OKBike-Kędzierzyn-Koźle",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-ok~bike~poland~kędzierzyn~koźle~gbfs"
+        },
+        {
+            "name": "KRM-Konin",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-koniński~rower~miejski~poland~konin~gbfs"
+        },
+        {
+            "name": "KRM-Koszalin",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-koszaliński~rower~miejski~poland~koszalin~gbfs"
+        },
+        {
+            "name": "KRM-Kołobrzeg",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-kołobrzeski~rower~miejski~poland~kołobrzeg~gbfs"
+        },
+        {
+            "name": "ŁRP-Łódź",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-łódzki~rower~publiczny~łódź~pl~gbfs"
+        },
+        {
+            "name": "Łoker-Łomża",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-łoker~łomża~gbfs"
+        },
+        {
+            "name": "Koło-Marek",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-koło~marek~poland~markach~gbfs"
+        },
+        {
+            "name": "Metrorower",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-metrorower~tychy~pl~gbfs"
+        },
+        {
+            "name": "Mevo",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-mevo~gdansk~gbfs"
+        },
+        {
+            "name": "RM-Ostrów-Wielkopolski",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-rower~miejski~w~ostrowie~wielkopolskim~poland~ostrów~wielkopolski~gbfs"
+        },
+        {
+            "name": "ORM-Otwock",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-otwocki~rower~miejski~poland~otwock~gbfs"
+        },
+        {
+            "name": "PRM-Piaseczno",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-piaseczyński~rower~miejski~poland~piaseczno~gbfs"
+        },
+        {
+            "name": "SRG-Pielgrzymka",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-system~roweru~gminnego~poland~pielgrzymka~gbfs"
+        },
+        {
+            "name": "SRG-Pielgrzymka",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-system~roweru~gminnego~poland~pielgrzymka~gbfs"
+        },
+        {
+            "name": "PRM-Pobiedziska",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-pobiedziski~rower~gminny~poland~pobiedziska~gbfs"
+        },
+        {
+            "name": "PRM-Pruszków",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-pruszkowski~rower~miejski~poland~pruszków~gbfs"
+        },
+        {
+            "name": "SRM-Pszczyna",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-system~rowerów~miejskich~w~pszczynie~poland~pszczyna~gbfs"
+        },
+        {
+            "name": "RP-Sokołów-Podlaski",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-rower~powiatowy~sokołów~podlaski~gbfs"
+        },
+        {
+            "name": "RM-Szamotuły",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-rower~miejski~szamotuły~poland~(rms)~gbfs"
+        },
+        {
+            "name": "Veturilo-Warszawa",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-veturilo~poland~gbfs"
+        },
+        {
+            "name": "WRM-Wolsztyn",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-wolsztyński~rower~miejski~wolsztyn~gbfs"
+        },
+        {
+            "name": "WRM-Wrocław",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-wrm~nextbike~poland~wrocław~gbfs"
+        },
+        {
+            "name": "TRM-Tarnów",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-tarnowski~rower~miejski~poland~tarnów~gbfs"
+        },
+        {
+            "name": "TRM-Tychowo",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-tychowski~rower~miejski~poland~tychowo~pl~gbfs"
+        },
+        {
+            "name": "ZRM-Zielona-Góra",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-zielonogórski~rower~miejski~poland~zielona~góra~gbfs"
+        },
+        {
+            "name": "ŻRM-Żyrardów",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-żyrardowski~rower~miejski~poland~żyrardów~gbfs"
         }
     ]
 }
