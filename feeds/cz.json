@@ -24,6 +24,15 @@
             "fix": true
         },
         {
+            "name": "JDF",
+            "type": "http",
+            "url": "https://owncloud.cesnet.cz/index.php/s/IMvVXZIHOuORDrB/download",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            },
+            "fix": true
+        },
+        {
             "name": "PID",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u2f-pražskáintegrovanádoprava"
