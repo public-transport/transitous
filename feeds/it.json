@@ -7,6 +7,15 @@
     ],
     "sources": [
         {
+            "name": "Calabria-CORE",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2668",
+            "fix": true,
+            "license": {
+                "url":"https://www.dati.gov.it/content/italian-open-data-license-v20"
+            }
+        },
+        {
             "name": "Campania-ANM",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-s-anm~it",
