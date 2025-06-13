@@ -47,7 +47,27 @@ if __name__ == "__main__":
         "navettes-aeroport-paris-beauvais-aerobus",  # Not GTFS format
         "offre-de-transport-de-la-c-a-beaune-cote-sud-gtfs", # Missing and broken data
         "gtfs-move-vendome",  # very low availability rate
-        "gtfs-static-et-real-time-transporteur-thalys" # Skip outdated Thalys data
+        "gtfs-static-et-real-time-transporteur-thalys", # Skip outdated Thalys data
+        "colibri-horaires-theoriques-et-temps-reel-du-reseau-de-transport-urbain-de-la-ccmp", # no zip
+        "tico-bus-horaires-theoriques-du-reseau-de-transport-urbain-tico--80383", # dns error
+        "reseau-de-bus-urbain-horizon--82670", # dns error
+        "localisation-des-arrets-ilevia-bus-metro-et-tram-gtfs-pictogrammes-du-reseau-ilevia-2", # 403
+        "skibus-courchevel-hiver", # expired
+        "biscabus", #expired ff
+        "navettes-val-disere",
+        "navettes-tignes",
+        "navettes-bourg-saint-maurice",
+        "navettes-stations-hiver-2024-2025-reseau-vai",
+        "navette-chorges-chanteloube-ete-2024-reseau-vai",
+        "golfe-de-saint-tropez-donnees-mobilite-tc-navette-estivale-ramatuelle",
+        "golfe-de-saint-tropez-donnees-mobilite-tc-navette-estivale-grimaud",
+        "golfe-de-saint-tropez-donnees-mobilite-tc-ligne-le-rayol-canadel-sur-mer",
+        "golfe-de-saint-tropez-donnees-mobilite-tc-cavalaire-sur-mer-hiver",
+        "golfe-de-saint-tropez-donnees-mobilite-tc-cavalaire-ete",
+        "gtfs-3--81997",
+        "navettes-estivales-arzibus-2",
+        "desserte-des-stations-de-ski-iseroises-transaltitude-38",
+        "meribus-hiver"
     ]
 
         # List of datasets to remove
@@ -268,7 +288,7 @@ if __name__ == "__main__":
                     "format" in r
                     and r["format"] == "gtfs-rt"
                     and "features" in r
-                    and "trip_updates" in r["features"]
+                    and ("trip_updates" in r["features"] or "service_alerts" in r["features"])
                 )
 
             def contains_name(out, name_to_check):
