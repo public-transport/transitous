@@ -183,6 +183,11 @@
             "name": "Bixi-Montreal",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-bixi~montréal~montreal~gbfs"
+        },
+        {
+            "name": "aVelo",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-àvélo~ville~de~québec~gbfs"
         }
     ]
 }
