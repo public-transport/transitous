@@ -53,7 +53,8 @@
         {
             "name": "gradski-parking",
             "type": "http",
-            "url": "https://www.gradski-parking.hr/upload/stranice/2022/08/2022-08-30/89/gtfs.zip"
+            "url": "https://www.gradski-parking.hr/upload/stranice/2022/08/2022-08-30/89/gtfs.zip",
+            "fix": true
         },
         {
             "name": "split",
