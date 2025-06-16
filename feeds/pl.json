@@ -146,8 +146,8 @@
         },
         {
             "name": "Elbląg",
-            "type": "mobility-database",
-            "mdb-id": "mdb-2597"
+            "type": "transitland-atlas",
+            "transitland-atlas-id":"f-u3tu-elblag"
         },
         {
             "name": "Poznań",
@@ -260,13 +260,8 @@
         },
         {
             "name": "MPK-Łódź",
-            "type": "http",
-            "spec": "gtfs",
-            "url": "https://cdn.zbiorkom.live/gtfs/lodz.zip",
-            "license": {
-                "spdx-identifier": "MIT"
-            },
-            "fix": true
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u3jy-lodz"
         },
         {
             "name": "Białystok",
@@ -417,6 +412,11 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             }
+        },
+        {
+            "name": "Gorzów-Wielkopolski",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u36g-gorzow~wielkopolski"
         },
         {
             "name": "PKS-Poznań",
