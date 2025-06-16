@@ -1,6 +1,14 @@
 # SPDX-FileCopyrightText: 2024 Jonah Brüchert <jbb@kaidan.im>
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
+#
+
+
+upstream backend_{{ item.name }} {
+  {% for backend_server in item.backend %}
+    server {{ backend_server }};
+  {% endfor %}
+}
 
 server {
     listen 80;
@@ -52,7 +60,7 @@ server {
 
     # Proxy and cache tiles
     location /tiles/ {
-        proxy_pass {{ item.backend }}/tiles/;
+        proxy_pass http://backend_{{ item.name }}/tiles/;
 
         proxy_pass_header Server;
 
@@ -64,7 +72,7 @@ server {
 
     # Rate limit plan API
     location ~ ^/api/(v1|v2|v3|experimental)/(plan|one-to-all) {
-        proxy_pass {{ item.backend }}$request_uri;
+        proxy_pass http://backend_{{ item.name }}/$request_uri;
 
         limit_req zone=api_plan burst=10;
 
@@ -78,7 +86,7 @@ server {
 
     # Routes that are basically free for us don't need a rate limit
     location ~ ^/api/(v1|v2|v3|experimental)/(geocode|stoptimes|map/stops|trip) {
-        proxy_pass {{ item.backend }}$request_uri;
+        proxy_pass http://backend_{{ item.name }}/$request_uri;
 
         limit_req zone=api_harmless burst=10;
 
@@ -92,7 +100,7 @@ server {
 
     # MOTIS
     location /api/ {
-        proxy_pass {{ item.backend }}/api/;
+        proxy_pass http://backend_{{ item.name }}/api/;
 
         limit_req zone=api burst=10;
 
