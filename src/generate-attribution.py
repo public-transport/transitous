@@ -16,7 +16,10 @@ from zipfile import ZipFile
 from typing import Optional
 
 
-REGIONS = {"EU": "European Union"}
+REGIONS = {
+    "EU": "European Union",
+    "XK":  "Kosovo"
+}
 
 
 def filter_duplicates(elems):
