@@ -242,7 +242,6 @@
             "type": "url",
             "spec": "gtfs-rt",
             "url": "https://jbb.ghsq.de/gtfs/octranspo/TripUpdates",
-
         },
         {
             "name": "PCConnect",
