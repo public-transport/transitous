@@ -235,11 +235,9 @@
         },
         {
             "name": "OCTranspo",
-            "type": "http",
-            "url": "https://oct-gtfs-emasagcnfmcgeham.z01.azurefd.net/public-access/GTFSExport.zip",
-            "http-options": {
-                "fetch-interval-days": 1
-            },
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-f24-octranspo",
+            "fix": true
         },
         {
             "name": "OCTranspo",
