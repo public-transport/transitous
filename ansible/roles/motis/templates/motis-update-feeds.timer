@@ -7,7 +7,7 @@ Description=Update MOTIS Feeds
 
 [Timer]
 Unit=motis-update-feeds.service
-OnCalendar=*-*-* 5:00:00
+OnCalendar=*-*-* {{ motis_update_time }}
 
 [Install]
 WantedBy=timers.target

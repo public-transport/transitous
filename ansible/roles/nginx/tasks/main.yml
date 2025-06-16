@@ -40,9 +40,15 @@
     dest: "/etc/nginx/sites-available/{{ item.vhost }}"
   with_items:
     - vhost: api.transitous.org
-      backend: http://crunchy:8080
+      name: prod
+      backend:
+        - crunchy:8080
+        - transitous.motis-project.de:443
     - vhost: staging.api.transitous.org
-      backend: http://vm-motis:8080
+      name: staging
+      name: staging
+      backend:
+        - vm-motis:8080
 
 - name: Disable default site configuration
   file:
@@ -56,9 +62,7 @@
     state: link
   with_items:
     - vhost: api.transitous.org
-      backend: http://crunchy:8080
     - vhost: staging.api.transitous.org
-      backend: http://vm-motis:8080
 
 - name: Reload nginx
   systemd:
