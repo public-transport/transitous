@@ -21,10 +21,11 @@ if [ -f /var/cache/transitous/out/.import-running ]; then
     exit 0
 fi
 
-rm -r /var/lib/motis/data/
+rm -r /var/lib/motis/data.bak/ || true
+mv /var/lib/motis/data/ /var/lib/motis/data.bak/
 mv /var/cache/transitous/out/data /var/lib/motis/
 
-cp --reflink=auto /var/cache/transitous/out/config.yml /var/lib/motis/data/config.yml
+#cp --reflink=auto /var/cache/transitous/out/config.yml /var/lib/motis/data/config.yml
 
 chown -R motis:www-data /var/lib/motis/data/
 chmod -R u+r,g+r /var/lib/motis/data/
