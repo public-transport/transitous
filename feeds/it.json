@@ -237,6 +237,14 @@
             "transitland-atlas-id": "f-spn-trenitalia"
         },
         {
+            "name": "Sicilia-Catania-AMTS",
+            "type": "http",
+            "url": "https://www.amts.ct.it/GTFS/AMTCT.zip",
+            "license": {
+                "url":"https://www.dati.gov.it/content/italian-open-data-license-v20"
+            }
+        },
+        {
             "name": "Toscana-Autolinee-LineeRegionali",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-s-lineeregionali"
