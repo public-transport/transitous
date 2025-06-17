@@ -9,7 +9,7 @@ steps:
     image: docker.io/alpine
     commands:
       - export MOTIS_TAG=v2.0.84
-      - apk add musl-dev cmake ninja gcc g++ git npm linux-headers
+      - apk add musl-dev cmake ninja gcc g++ git pnpm linux-headers
       - git clone https://github.com/motis-project/motis -b $MOTIS_TAG motis-src
       - mkdir -p motis-src/build
       - export flags="-static -O3 -fomit-frame-pointer -flto -DNDEBUG"
@@ -26,7 +26,7 @@ steps:
   build-staging-haswell:
     image: docker.io/alpine
     commands:
-      - apk add musl-dev cmake ninja gcc g++ git npm linux-headers
+      - apk add musl-dev cmake ninja gcc g++ git pnpm linux-headers
       - mkdir -p motis-src/build
       - export flags="-static -O3 -fno-omit-frame-pointer -DNDEBUG"
       - export target_flags="-march=haswell"
