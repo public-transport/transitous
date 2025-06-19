@@ -76,25 +76,39 @@
         },
         {
             "name": "Radom",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u3ph-radom"
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://cdn.zbiorkom.live/gtfs/radom.zip",
+            "license": {
+                "spdx-identifier": "MIT"
+            }
+        },
+        {
+            "name": "Radom",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://cdn.zbiorkom.live/gtfs-rt/radom.pb",
+            "license": {
+                "spdx-identifier": "MIT"
+            }
         },
         {
             "name": "Warszawa",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u3q-warszawski~transport~publiczny",
-            "fix": true
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://cdn.zbiorkom.live/gtfs/warsaw.zip",
+            "license": {
+                "spdx-identifier": "MIT"
+            }
         },
         {
             "name": "Warszawa",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u3q-warszawski~transport~publiczny~rt~alerts"
-        },
-        {
-            "name": "Warszawa",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u3q-warszawski~transport~publiczny~rt~positions",
-            "spec": "gtfs-rt"
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://cdn.zbiorkom.live/gtfs-rt/warsaw.pb",
+            "license": {
+                "spdx-identifier": "MIT"
+            }
         },
         {
             "name": "Warszawska-Kolej-Dojazdowa",
@@ -146,8 +160,21 @@
         },
         {
             "name": "Elbląg",
-            "type": "transitland-atlas",
-            "transitland-atlas-id":"f-u3tu-elblag"
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://cdn.zbiorkom.live/gtfs/elblag.zip",
+            "license": {
+                "spdx-identifier": "MIT"
+            }
+        },
+        {
+            "name": "Elbląg",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://cdn.zbiorkom.live/gtfs-rt/elblag.pb",
+            "license": {
+                "spdx-identifier": "MIT"
+            }
         },
         {
             "name": "Poznań",
@@ -259,9 +286,22 @@
             "transitland-atlas-id": "f-u3h4-mpkautobusy~mpktramwaje~dla~sevibussiechnice~dlawiszniama"
         },
         {
-            "name": "MPK-Łódź",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u3jy-lodz"
+            "name": "Łódź",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://cdn.zbiorkom.live/gtfs/lodz.zip",
+            "license": {
+                "spdx-identifier": "MIT"
+            }
+        },
+        {
+            "name": "Łódź",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://cdn.zbiorkom.live/gtfs-rt/lodz.pb",
+            "license": {
+                "spdx-identifier": "MIT"
+            }
         },
         {
             "name": "Białystok",
@@ -361,8 +401,16 @@
             "url": "https://cdn.zbiorkom.live/gtfs/kutno.zip",
             "license": {
                 "spdx-identifier": "MIT"
-            },
-            "fix": true
+            }
+        },
+        {
+            "name": "Kutno",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://cdn.zbiorkom.live/gtfs-rt/kutno.pb",
+            "license": {
+                "spdx-identifier": "MIT"
+            }
         },
         {
             "name": "Dąbrówka",
@@ -383,7 +431,6 @@
             "license": {
                 "spdx-identifier": "CC0-1.0"
             }
-
         },
         {
             "name": "Powiat-Olsztyński",
