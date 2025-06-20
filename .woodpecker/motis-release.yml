@@ -8,7 +8,7 @@ steps:
   build-release-skylake-avx512:
     image: docker.io/alpine
     commands:
-      - export MOTIS_TAG=v2.0.87
+      - export MOTIS_TAG=v2.0.88
       - apk add musl-dev cmake ninja gcc g++ git pnpm linux-headers
       - git clone https://github.com/motis-project/motis -b $MOTIS_TAG motis-src
       - mkdir -p motis-src/build
