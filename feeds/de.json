@@ -41,10 +41,10 @@
             "name": "DELFI",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://stc.traines.eu/mirror/german-delfi-gtfs-rt/latest.gtfs-rt.pbf",
+            "url": "http://ipv4.stc.traines.eu/mirror/german-delfi-gtfs-rt/latest.gtfs-rt.pbf",
             "license": {
                 "spdx-identifier": "CC-BY-SA-4.0",
-                "url": "https://mobilithek.info/offers/755009281410899968"
+                "url": "https://mobilithek.info/offers/858688352316981248"
             }
         },
         {
