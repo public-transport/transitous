@@ -3,6 +3,10 @@
         {
             "name": "Jonah Brüchert",
             "github": "jbruechert"
+        },
+        {
+            "name": "Petr Novák",
+            "github": "hoermalmeister"
         }
     ],
     "sources": [
@@ -23,6 +27,11 @@
             "license": {
                 "spdx-identifier": "CC0-1.0"
             }
+        },
+        {
+            "name": "vivi",
+            "type": "http",
+            "url": "https://www.vivi.lv/uploads/GTFS.zip"
         }
     ]
 }
