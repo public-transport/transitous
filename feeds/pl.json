@@ -183,6 +183,11 @@
             "fix": true
         },
         {
+            "name": "Poznań",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u3k4-poznan~rt"
+        },
+        {
             "name": "Szczecin",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u36r-zditmszczecin"
