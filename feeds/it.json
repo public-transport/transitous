@@ -168,6 +168,15 @@
             "fix": true
         },
         {
+            "name": "Puglia-Taranto",
+            "type": "http",
+            "url": "https://www.kymamobilita.it/wp-content/uploads/2022/12/google_transit.zip",
+            "license": {
+                "spdx-identifier": "IODL-2.0"
+            },
+            "fix": true
+        },
+        {
             "name": "Sardegna-Contributate",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-spn-asara~atzeni~murgiaautolinee~baireautolinee~autolineedelgo",
