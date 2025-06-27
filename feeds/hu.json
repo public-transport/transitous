@@ -32,6 +32,12 @@
             "transitland-atlas-id": "f-u2m-bkk"
         },
         {
+            "name": "bkk",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/bkk/TripUpdates"
+        },
+        {
             "name": "mvk",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u2wc-mvkzrt"
