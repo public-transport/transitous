@@ -196,20 +196,21 @@ def download_http_source(
     while urls_to_try:
         name, url = urls_to_try.pop(0)
         try:
-            # Fetch last modification time from the server
-            server_headers = \
-                session.head(url, headers=headers,
-                             allow_redirects=True,
-                             **request_options).headers
+            if not source.options.method:
+                # Fetch last modification time from the server
+                server_headers = \
+                    session.head(url, headers=headers,
+                                allow_redirects=True,
+                                **request_options).headers
 
-            # If server version is older, return
-            last_modified_server = None
-            if "last-modified" in server_headers:
-                last_modified_server = email.utils.parsedate_to_datetime(
-                    server_headers["last-modified"])
+                # If server version is older, return
+                last_modified_server = None
+                if "last-modified" in server_headers:
+                    last_modified_server = email.utils.parsedate_to_datetime(
+                        server_headers["last-modified"])
 
-                if last_modified and last_modified_server <= last_modified:
-                    return None
+                    if last_modified and last_modified_server <= last_modified:
+                        return None
 
             # Tell the server not to send data if it is older
             # than what we have
@@ -217,8 +218,8 @@ def download_http_source(
                 headers["if-modified-since"] = last_modified \
                     .strftime("%a, %d %b %Y %X %Z")
 
-            response = session.get(url, headers=headers,
-                                   **request_options)
+            req = requests.Request(source.options.method or "GET", url, data=source.options.request_body, headers=headers).prepare()
+            response = session.send(req, **request_options)
 
             # If the file was not modified, return
             if response.status_code == 304:
