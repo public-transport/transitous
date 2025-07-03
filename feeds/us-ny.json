@@ -174,7 +174,8 @@
         {
             "name": "NationalParkService",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-statue~of~liberty~ferries"
+            "transitland-atlas-id": "f-statue~of~liberty~ferries",
+            "drop-shapes": true
         }
     ]
 }
