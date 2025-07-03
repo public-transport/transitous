@@ -466,6 +466,15 @@
             }
         },
         {
+            "name": "Mińsk-Mazowiecki",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://kasmar00.github.io/gtfs-warsaw-custom/feeds/minsk-maz/latest.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
+        },
+        {
             "name": "Gorzów-Wielkopolski",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u36g-gorzow~wielkopolski"
