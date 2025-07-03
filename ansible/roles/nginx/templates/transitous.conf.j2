@@ -50,11 +50,13 @@ server {
         root /opt/motis/ui/;
     }
 
+    proxy_ssl_server_name on;
+    proxy_pass_header Server;
+
     # Proxy and cache tiles
     location /tiles/ {
         proxy_pass {{ item.backend }}/tiles/;
 
-        proxy_pass_header Server;
 
         proxy_cache            motis;
         proxy_cache_valid      200 302 404 5d;
@@ -68,8 +70,6 @@ server {
 
         limit_req zone=api_plan burst=10;
 
-        proxy_pass_header Server;
-
         proxy_connect_timeout       60;
         proxy_send_timeout          60;
         proxy_read_timeout          120;
@@ -81,8 +81,6 @@ server {
         proxy_pass {{ item.backend }}$request_uri;
 
         limit_req zone=api_harmless burst=10;
-
-        proxy_pass_header Server;
 
         proxy_connect_timeout       60;
         proxy_send_timeout          60;
@@ -96,8 +94,6 @@ server {
 
         limit_req zone=api burst=10;
 
-        proxy_pass_header Server;
-
         proxy_connect_timeout       60;
         proxy_send_timeout          60;
         proxy_read_timeout          60;
@@ -106,7 +102,7 @@ server {
 
     # Source files
     location /gtfs/ {
-        proxy_pass http://crunchy:80/;
+        proxy_pass http://10.11.1.1:80/;
     }
 
     location /robots.txt {
