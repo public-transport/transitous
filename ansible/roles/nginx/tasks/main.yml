@@ -30,6 +30,11 @@
     src: nginx.conf
     dest: /etc/nginx/nginx.conf
 
+- name: Install nginx logrotate config
+  copy:
+    src: logrotate-nginx
+    dest: /etc/logrotate.d/nginx
+
 - name: Install robots.txt
   copy:
     src: robots.txt
