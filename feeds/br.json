@@ -24,6 +24,14 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             }
+        },
+        {
+            "name": "sao-paulo",
+            "type": "http",
+            "url": "http://www.sptrans.com.br/umbraco/Surface/PerfilDesenvolvedor/BaixarGTFS",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
         }
     ]
 }
