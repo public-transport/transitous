@@ -32,7 +32,7 @@
         {
             "name": "sao-paulo",
             "type": "mobility-database",
-            "mdb-id": "mdb-8"
+            "mdb-id": "mdb-8",
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             }
