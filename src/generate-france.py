@@ -344,7 +344,19 @@ out.append(
                 "url": "https://data.paysdelaloire.fr/explore/dataset/arrets-horaires-et-circuit-de-la-lignes-yeu-continent-gtfs/information/",
                 "spdx-identifier": "etalab-2.0"
             }
-        }
+        },
+    {
+            "name": "naolib-arrets-horaires-et-circuits-fix",
+            "type": "http",
+            "url": "https://www.data.gouv.fr/fr/datasets/r/d2155136-23ba-449c-b98c-f756144c8d9a",
+            "url-override": "https://data.nantesmetropole.fr/api/explore/v2.1/catalog/datasets/244400404_transports_commun_naolib_nantes_metropole_gtfs/files/0cc0469a72de54ee045cb66d1a21de9e",
+            "fix": true,
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/naolib-arrets-horaires-et-circuits",
+                "spdx-identifier": "ODbL-1.0"
+            },
+            "skip": true
+        },
 )
 
     
