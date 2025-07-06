@@ -354,8 +354,7 @@ out.append(
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/naolib-arrets-horaires-et-circuits",
                 "spdx-identifier": "ODbL-1.0"
-            },
-            "skip": true
+            }
         },
 )
 
