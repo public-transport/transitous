@@ -31,8 +31,8 @@
         },
         {
             "name": "sao-paulo",
-            "type": "http",
-            "url": "http://www.sptrans.com.br/umbraco/Surface/PerfilDesenvolvedor/BaixarGTFS",
+            "type": "mobility-database",
+            "mdb-id": "mdb-8"
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             }
