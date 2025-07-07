@@ -156,8 +156,7 @@
         {
             "name": "Seastreak",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-drk-seastreak",
-            "drop-shapes": true
+            "transitland-atlas-id": "f-drk-seastreak"
         },
         {
             "name": "NY-Waterway",
