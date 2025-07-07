@@ -35,7 +35,7 @@
             "type": "http",
             "url": "https://www.metrolisboa.pt/google_transit/googleTransit.zip"
             "license": {
-                "spdx-identifier": "CC0"
+                "spdx-identifier": "CC0-1.0"
             },
         },
         {
