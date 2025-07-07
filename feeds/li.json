@@ -1,0 +1,16 @@
+{
+    "maintainers": [
+        {
+            "name": "Petr Novak",
+            "github": "hoermalmeister"
+        }
+    ],
+    "sources": [
+        {
+            "name": "malbun-bergbahnen",
+            "type": "http",
+            "url": "https://owncloud.cesnet.cz/index.php/s/iRii13my04yiIrU/download"
+            }
+        }
+      ]
+}
