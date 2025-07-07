@@ -46,9 +46,17 @@
     dest: "/etc/nginx/sites-available/{{ item.vhost }}"
   with_items:
     - vhost: api.transitous.org
-      backend: http://10.11.1.1:8080
+      backends:
+        - address: 10.11.1.1:8080
+          options: "" # nginx backend options
+        - address: 10.11.1.2:8080
+          options: "backup"
     - vhost: staging.api.transitous.org
-      backend: http://10.11.1.2:8080
+      backends:
+        - address: 10.11.1.2:8080
+          options: ""
+        - address: 10.11.1.1:8080
+          options: "backup"
 
 - name: Disable default site configuration
   file:
