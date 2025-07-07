@@ -12,6 +12,7 @@ from zipfile import ZipFile
 from typing import Optional, Any, Iterable, IO
 from zoneinfo import ZoneInfo
 from enum import Enum
+from license_expression import get_spdx_licensing, Licensing, ExpressionError
 
 import email.utils
 import requests
@@ -39,6 +40,14 @@ def validate_source_name(name: str):
 
     if "/" in name:
         eprint(f"Error: Feed names must not contain slashes, found {name}.")
+        sys.exit(1)
+
+
+def validate_spdx_identifier(licensing: Licensing, spdx_identifier: str):
+    try:
+        licensing.validate_license_keys(licensing.parse(spdx_identifier))
+    except ExpressionError as e:
+        eprint(f"Error: {e}")
         sys.exit(1)
 
 
@@ -246,11 +255,13 @@ def download_http_source(
 
 class Fetcher:
     transitland_atlas: transitland.Atlas
+    licensing: Licensing
 
     def __init__(self):
         self.transitland_atlas = transitland.Atlas.load(
             Path("transitland-atlas/"))
         self.mobility_database = None
+        self.licensing = get_spdx_licensing()
 
     # Returns whether something was downloaded
     def fetch_source(self, dest_path: Path, source: Source) -> bool:
@@ -385,7 +396,7 @@ class Fetcher:
 
         os.rename(temp_file, output_path)
 
-    def fetch(self, metadata: Path):
+    def fetch(self, metadata: Path) -> int:
         region = Region(json.load(open(metadata, "r")))
         metadata_filename = metadata.name
         region_name = metadata_filename[:metadata_filename.rfind('.')]
@@ -406,16 +417,9 @@ class Fetcher:
                 else:
                     print("Skipping " + source.name)
                 continue
-            # Resolve transitland sources to http / url sources
-            match source:
-                case TransitlandSource():
-                    http_source = self.transitland_atlas.source_by_id(source)
 
-                    # Transitland source type that we cannot handle
-                    if not http_source:
-                        continue
-
-                    source = http_source
+            if source.license.spdx_identifier:
+                validate_spdx_identifier(self.licensing, source.license.spdx_identifier)
 
             validate_source_name(source.name)
             download_name = f"{region_name}_{source.name}"
