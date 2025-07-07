@@ -7,6 +7,10 @@
         {
             "name": "Jonah Brüchert",
             "github": "jbruechert"
+        },
+        {
+            "name": "Petr Novák",
+            "github": "hoermalmeister"
         }
     ],
     "sources": [
@@ -85,6 +89,11 @@
             "name": "rapska-plovidba",
             "type": "http",
             "url": "https://owncloud.cesnet.cz/index.php/s/iXWzNC4zKGD8sa8/download"
+        },
+        {
+            "name": "rapska-vozidba",
+            "type": "http",
+            "url": "https://owncloud.cesnet.cz/index.php/s/UudJhpom7fgur2X/download"
         }
     ]
 }
