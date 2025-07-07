@@ -24,7 +24,9 @@
         {
             "name": "TransitOrange",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-transit~orange~ny~us"
+            "transitland-atlas-id": "f-transit~orange~ny~us",
+            "skip": true,
+            "skip-reason": "Feed expired"
         },
         {
             "name": "LIRR",
