@@ -16,7 +16,7 @@ RUN apt-get update -y && \
     apt-get clean -y && \
     rm -rf /var/lib/apt/lists/*
 RUN rm /usr/lib/python3.*/EXTERNALLY-MANAGED && \
-    pip3 install requests ruamel.yaml pycountry
+    pip3 install requests ruamel.yaml pycountry beautifulsoup4 lxml license-expression
 
 RUN mkdir -p /opt/motis/ && \
     wget -qO - https://github.com/motis-project/motis/releases/download/${MOTIS_VERSION}/motis-linux-amd64.tar.bz2 | tar -C /opt/motis/ -jx
