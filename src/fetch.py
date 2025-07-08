@@ -263,10 +263,7 @@ class Fetcher:
         self.mobility_database = None
         self.licensing = get_spdx_licensing()
 
-    # Returns whether something was downloaded
-    def fetch_source(self, dest_path: Path, source: Source) -> bool:
-        if source.spec != "gtfs" and source.spec != "gtfs-flex":
-            return False
+    def resolve_database_sources(self, source: Source) -> Source:
         match source:
             case TransitlandSource():
                 http_source = self.transitland_atlas.source_by_id(source)
@@ -274,7 +271,7 @@ class Fetcher:
                     eprint("Error: Could not resolve", source.transitland_atlas_id)
                     sys.exit(1)
 
-                return self.fetch_source(dest_path, http_source)
+                return http_source
             case MobilityDatabaseSource():
                 if not self.mobility_database:
                     self.mobility_database = mobilitydatabase.Database.load()
@@ -283,7 +280,17 @@ class Fetcher:
                     eprint("Error: Could not resolve", source.mdb_id)
                     sys.exit(1)
 
-                return self.fetch_source(dest_path, http_source)
+                return http_source
+            case _:
+                return source
+
+
+    # Returns whether something was downloaded
+    def fetch_source(self, dest_path: Path, source: Source) -> bool:
+        if source.spec != "gtfs" and source.spec != "gtfs-flex" and source.spec != "gbfs":
+            return False
+
+        match source:
             case HttpSource():
                 response = download_http_source(dest_path, source)
 
@@ -418,14 +425,18 @@ class Fetcher:
                     print("Skipping " + source.name)
                 continue
 
+
             if source.license.spdx_identifier:
                 validate_spdx_identifier(self.licensing, source.license.spdx_identifier)
 
             validate_source_name(source.name)
             download_name = f"{region_name}_{source.name}"
 
+
             print(f"Fetching {region_name}-{source.name}…")
             sys.stdout.flush()
+
+            source = self.resolve_database_sources(source)
 
             # Nothing to download for realtime feeds
             if source.spec != "gtfs" and source.spec != "gtfs-flex":
