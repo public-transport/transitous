@@ -68,19 +68,21 @@ def http_source_attribution(source: HttpSource) -> Optional[dict]:
             with z.open("feed_info.txt", "r") as i:
                 with io.TextIOWrapper(i) as it:
                     inforeader = csv.DictReader(it, delimiter=",", quotechar='"')
+
                     publisher = next(inforeader)
-                    attribution["publisher"] = {}
-                    attribution["publisher"]["name"] = publisher["feed_publisher_name"]
-                    attribution["publisher"]["url"] = publisher["feed_publisher_url"]
+                    if "feed_publisher_name" in publisher and "feed_publisher_url" in publisher:
+                        attribution["publisher"] = {}
+                        attribution["publisher"]["name"] = publisher["feed_publisher_name"]
+                        attribution["publisher"]["url"] = publisher["feed_publisher_url"]
 
-                    contact = {
-                            "type": "publisher",
-                            "name": publisher["feed_publisher_name"],
-                            "email": publisher.get("feed_contact_email"),
-                            "url": publisher.get("feed_contact_url")
-                    }
+                        contact = {
+                                "type": "publisher",
+                                "name": publisher["feed_publisher_name"],
+                                "email": publisher.get("feed_contact_email"),
+                                "url": publisher.get("feed_contact_url")
+                        }
 
-                    contacts.append(contact)
+                        contacts.append(contact)
 
         with z.open("agency.txt", "r") as a:
             with io.TextIOWrapper(a) as at:
