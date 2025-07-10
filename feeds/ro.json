@@ -101,14 +101,12 @@
         {
             "name": "Dej-Velo-City",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-dej~velo~city~gbfs",
-            "fix": true
+            "transitland-atlas-id": "f-dej~velo~city~gbfs"        
         },
         {
             "name": "Hunedoara-public-bike-system",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-hunedoara~gbfs",
-            "fix": true
+            "transitland-atlas-id": "f-hunedoara~gbfs"
         },
         {
             "name": "Iași",
@@ -130,8 +128,7 @@
         {
             "name": "Moinesti-public-bike-system",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-moinesti~gbfs",
-            "fix": true
+            "transitland-atlas-id": "f-moinesti~gbfs"
         },
         {
             "name": "Oradea",
@@ -146,15 +143,13 @@
         {
             "name": "Sântana-Velo",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-velo~sântana~gbfs",
-            "fix": true
+            "transitland-atlas-id": "f-velo~sântana~gbfs"
         },
         {
             "name": "Sibiu-BikeCity",
             "type": "url",
             "url": "https://sibiu.publicbikesystem.net/customer/gbfs/v2/gbfs.json",
-            "spec": "gbfs",
-            "fix": true
+            "spec": "gbfs"
         },
         {
             "name": "Sinaia",
@@ -209,8 +204,7 @@
             "name": "Târgu-Mures-public-bike-system",
             "type": "url",
             "url": "https://targumures.publicbikesystem.net/customer/gbfs/v2/gbfs.json",
-            "spec": "gbfs",
-            "fix": true
+            "spec": "gbfs"
         },
         {
             "name": "Zalău",
