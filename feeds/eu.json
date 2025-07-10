@@ -28,6 +28,14 @@
             "transitland-atlas-id": "f-eurostar",
             "skip": true,
             "skip-reason": "Use up to date feed generated in fr.json"
+        },
+        {
+            "name": "optimaexpress",
+            "type": "http",
+            "url": "https://jonaes.github.io/gtfs/optima_gtfs.zip",
+            "license": {
+            "spdx-identifier": "CC0-1.0",
+            }
         }
     ]
 }
