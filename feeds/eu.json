@@ -34,7 +34,7 @@
             "type": "http",
             "url": "https://github.com/jonaes/gtfs/raw/refs/heads/main/output/optima_gtfs.zip",
             "license": {
-            "spdx-identifier": "CC0-1.0",
+                "spdx-identifier": "CC0-1.0"
             }
         }
     ]
