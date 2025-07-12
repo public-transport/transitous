@@ -14,7 +14,9 @@
         {
             "name": "AT",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-auckland~transport~rt"
+            "transitland-atlas-id": "f-auckland~transport~rt",
+            "skip": true,
+            "skip-reason": "api-key is missing"
         },
         {
             "name": "Metlink",
@@ -25,11 +27,7 @@
             "name": "Metlink",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-metlink~nz~rt",
-            "http-options": {
-                "headers": {
-                    "x-api-key": "7fVCKRUoiwazDBLw4O0n95ABkNfkhn4o5hppHrdR"
-                }
-            }
+            "api-key": "7fVCKRUoiwazDBLw4O0n95ABkNfkhn4o5hppHrdR"
         },
         {
             "name": "Otago-Regional-Council",
@@ -40,21 +38,13 @@
             "name": "Metro-Christchurch",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-rb6b-metrochristchurch",
-            "http-options": {
-                "headers": {
-                    "Ocp-Apim-Subscription-Key": "920de6bcafdb445699a7ba92dd5cc005"
-                }
-            }
+            "api-key": "920de6bcafdb445699a7ba92dd5cc005"
         },
         {
             "name": "Metro-Christchurch",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-rb6b-metrochristchurch~rt",
-            "http-options": {
-                "headers": {
-                    "Ocp-Apim-Subscription-Key": "920de6bcafdb445699a7ba92dd5cc005"
-                }
-            }
+            "api-key": "920de6bcafdb445699a7ba92dd5cc005"
         },
         {
             "name": "BUSIT",

@@ -14,7 +14,9 @@
         {
             "name": "greenmtncn",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-greenmtncn~vt~rt"
+            "transitland-atlas-id": "f-greenmtncn~vt~rt",
+            "skip": true,
+            "skip-reason": "api-key is missing"
         },
         {
             "name": "gmt",
@@ -24,7 +26,9 @@
         {
             "name": "gmt",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-chittendoncounty~rt"
+            "transitland-atlas-id": "f-chittendoncounty~rt",
+            "skip": true,
+            "skip-reason": "api-key is missing"
         },
         {
             "name": "lake-champlain-ferries",
@@ -39,7 +43,9 @@
         {
             "name": "thebus",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-thebus~vt~rt"
+            "transitland-atlas-id": "f-thebus~vt~rt",
+            "skip": true,
+            "skip-reason": "api-key is missing"
         },
         {
             "name": "rensselaer-county-yankee-trails",
@@ -54,7 +60,9 @@
         {
             "name": "dvtamoover",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-dvtamoover~vt~rt"
+            "transitland-atlas-id": "f-dvtamoover~vt~rt",
+            "skip": true,
+            "skip-reason": "api-key is missing"
         },
         {
             "name": "ruralcommunity",
@@ -64,7 +72,9 @@
         {
             "name": "ruralcommunity",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-ruralcommunity~vt~rt"
+            "transitland-atlas-id": "f-ruralcommunity~vt~rt",
+            "skip": true,
+            "skip-reason": "api-key is missing"
         },
         {
             "name": "tri-valley-transit",
@@ -74,7 +84,9 @@
         {
             "name": "tri-valley-transit",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-dru-tri~valleytransit~rt"
+            "transitland-atlas-id": "f-dru-tri~valleytransit~rt",
+            "skip": true,
+            "skip-reason": "api-key is missing"
         },
         {
             "name": "vt-translines",
@@ -84,12 +96,16 @@
         {
             "name": "vt-translines",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-dru-vttranslines~vt~us~rt"
+            "transitland-atlas-id": "f-dru-vttranslines~vt~us~rt",
+            "skip": true,
+            "skip-reason": "api-key is missing"
         },
         {
             "name": "vt-translines",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-dru-vttranslines~vt~us~rt~alerts"
+            "transitland-atlas-id": "f-dru-vttranslines~vt~us~rt~alerts",
+            "skip": true,
+            "skip-reason": "api-key is missing"
         }
     ]
 }

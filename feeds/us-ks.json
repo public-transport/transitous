@@ -39,7 +39,9 @@
         {
             "name": "Flint-Hills",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-ata~bus~ks~rt"
+            "transitland-atlas-id": "f-ata~bus~ks~rt",
+            "skip": true,
+            "skip-reason": "api-key is missing"
         },
         {
             "name": "Salina-CityGo",

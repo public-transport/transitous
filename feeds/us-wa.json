@@ -18,7 +18,9 @@
         {
             "name": "Metro-Transit",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-kingcountymetro~rt"
+            "transitland-atlas-id": "f-kingcountymetro~rt",
+            "skip": true,
+            "skip-reason": "api-key must be set in query params (url-override?)"
         },
         {
             "name": "Sound-Transit",
@@ -28,7 +30,9 @@
         {
             "name": "Sound-Transit",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-soundtransit~rt"
+            "transitland-atlas-id": "f-soundtransit~rt",
+            "skip": true,
+            "skip-reason": "api-key must be set in query params (url-override?)"
         },
         {
             "name": "Pierce-Transit",
@@ -39,7 +43,9 @@
         {
             "name": "Pierce-Transit",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-piercetransit~rt"
+            "transitland-atlas-id": "f-piercetransit~rt",
+            "skip": true,
+            "skip-reason": "api-key must be set in query params (url-override?)"
         },
         {
             "name": "Seattle-Childrens-Hospital-Shuttle",
@@ -54,7 +60,9 @@
         {
             "name": "Everett-Transit",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-everetttransit~rt"
+            "transitland-atlas-id": "f-everetttransit~rt",
+            "skip": true,
+            "skip-reason": "api-key must be set in query params (url-override?)"
         },
         {
             "name": "Kitsap-Transit",
@@ -69,7 +77,9 @@
         {
             "name": "Washington-State-Ferries",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-wsf~rt"
+            "transitland-atlas-id": "f-wsf~rt",
+            "skip": true,
+            "skip-reason": "api-key must be set in query params (url-override?)"
         },
         {
             "name": "Appleline-Goldline-Dungenessline-Grapeline",

@@ -134,7 +134,9 @@
         {
             "name": "SuffolkCountyTransit",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-drk-ny~suffolkcountytransit~rt"
+            "transitland-atlas-id": "f-drk-ny~suffolkcountytransit~rt",
+            "skip": true,
+            "skip-reason": "api-key is missing"
         },
         {
             "name": "NassauInterCountyExpress",

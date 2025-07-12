@@ -1,7 +1,6 @@
 # SPDX-FileCopyrightText: 2023 Jonah Brüchert <jbb@kaidan.im>
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
-
 from typing import List, Optional
 from utils import eprint
 
@@ -89,7 +88,7 @@ class Source:
 
 class HttpOptions:
     fetch_interval_days: Optional[int] = None
-    headers: dict[str, str] = {}
+    headers: dict[str, str] = None
     ignore_tls_errors: bool = False
     method: Optional[str] = None
     request_body: Optional[str] = None
@@ -114,7 +113,7 @@ class TransitlandSource(Source):
     transitland_atlas_id: str = ""
     url_override: Optional[str] = None
     api_key: Optional[str] = None
-    options: HttpOptions = HttpOptions()
+    options: HttpOptions = None
 
     def __init__(self, parsed: dict):
         super().__init__(parsed)
@@ -124,12 +123,14 @@ class TransitlandSource(Source):
 
         if "http-options" in parsed:
             self.options = HttpOptions(parsed["http-options"])
+        else:
+            self.options = HttpOptions()
 
 
 class MobilityDatabaseSource(Source):
     mdb_id: str = ""
     url_override: Optional[str] = None
-    options: HttpOptions = HttpOptions()
+    options: HttpOptions = None
 
     def __init__(self, parsed: dict):
         super().__init__(parsed)
@@ -138,11 +139,13 @@ class MobilityDatabaseSource(Source):
 
         if "http-options" in parsed:
             self.options = HttpOptions(parsed["http-options"])
+        else:
+            self.options = HttpOptions()
 
 
 class HttpSource(Source):
     url: str = ""
-    options: HttpOptions = HttpOptions()
+    options: HttpOptions = None
     url_override: Optional[str] = None
     cache_url: Optional[str] = None
 
@@ -154,6 +157,14 @@ class HttpSource(Source):
 
             if "http-options" in parsed:
                 self.options = HttpOptions(parsed["http-options"])
+            else:
+                self.options = HttpOptions()
+
+    def set_header(self, key, value):
+        self.options.headers[key] = value
+
+    def set_url_override(self, url_override):
+        self.url_override = url_override
 
 
 class UrlSource(Source):
@@ -166,6 +177,14 @@ class UrlSource(Source):
             self.url = parsed["url"]
             if "headers" in parsed:
                 self.headers = parsed["headers"]
+
+    def set_header(self, key, value):
+        if self.headers is None:
+            self.headers = {}
+        self.headers[key] = value
+
+    def set_url_override(self, url_override):
+        self.url = url_override
 
 
 def sourceFromJson(parsed: dict) -> Source:
