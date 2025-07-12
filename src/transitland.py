@@ -117,7 +117,7 @@ class Atlas:
                     result.set_url_override(source.url_override)
 
                 case _:
-                    msg = f"Warning: Transitland source has unknown authorization type {feed["authorization"]["type"]}"
+                    msg = f"Warning: Transitland source has unknown authorization type {feed['authorization']['type']}"
                     print(f"{msg}: {source.transitland_atlas_id}", flush=True)
                     return None
 
