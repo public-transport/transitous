@@ -3,13 +3,6 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 #
 
-
-upstream backend_{{ item.name }} {
-  {% for backend_server in item.backend %}
-    server {{ backend_server }};
-  {% endfor %}
-}
-
 server {
     listen 80;
     server_name {{ item.vhost }};
