@@ -15,7 +15,6 @@ TimeoutStartSec=300
 User=motis
 WorkingDirectory=/var/lib/motis
 LimitNOFILE=30000
-LimitCORE=infinity
 
 [Install]
 WantedBy=multi-user.target

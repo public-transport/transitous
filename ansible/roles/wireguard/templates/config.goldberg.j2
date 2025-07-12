@@ -1,0 +1,13 @@
+# SPDX-FileCopyrightText: 2025 Jonah Brüchert <jbb@kaidan.im>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+[Interface]
+PrivateKey = {{ transitous_wireguard_privkey }}
+Address = 10.11.1.3/32
+
+[Peer]
+PublicKey = ii8jNgqP51mkWmBl4qvRqL72HhBQDCRobztpMexpOBw=
+AllowedIPs = 10.11.0.1/16
+Endpoint = 4.transitous-proxy.ghsq.de:55107
+PersistentKeepalive = 60

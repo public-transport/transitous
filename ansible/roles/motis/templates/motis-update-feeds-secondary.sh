@@ -10,6 +10,7 @@ sudo -u motis cp -r -p /var/cache/transitous/out/osm/ /var/cache/transitous/out/
 
 cd /var/cache/transitous/out/
 sudo -u motis wget -N -nH --cut-dirs=1 --exclude-directories=/gtfs/data/tiles/,/gtfs/data/osr/ --mirror --no-parent -e robots=off https://api.transitous.org/gtfs/data/ || true
+sudo -u motis wget -N -e robots=off https://api.transitous.org/gtfs/config.yml || true
 
 # Exit if empty
 if [ -z "$(ls -A /var/cache/transitous/out)" ]; then
@@ -25,7 +26,7 @@ rm -r /var/lib/motis/data.bak/ || true
 mv /var/lib/motis/data/ /var/lib/motis/data.bak/
 mv /var/cache/transitous/out/data /var/lib/motis/
 
-#cp --reflink=auto /var/cache/transitous/out/config.yml /var/lib/motis/data/config.yml
+cp --reflink=auto /var/cache/transitous/out/config.yml /var/lib/motis/data/config.yml
 
 chown -R motis:www-data /var/lib/motis/data/
 chmod -R u+r,g+r /var/lib/motis/data/
