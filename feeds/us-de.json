@@ -14,7 +14,9 @@
         {
             "name": "DART-First-State",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-dr4-dartfirststatewood~rt"
+            "transitland-atlas-id": "f-dr4-dartfirststatewood~rt",
+            "skip": true,
+            "skip-reason": "api-key is missing"
         }
     ]
 }

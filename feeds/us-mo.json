@@ -25,7 +25,9 @@
         {
             "name": "KCATA",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-kcata~rt"
+            "transitland-atlas-id": "f-kcata~rt",
+            "skip": true,
+            "skip-reason": "api-key is missing"
         }
     ]
 }

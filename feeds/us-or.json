@@ -15,7 +15,9 @@
         {
             "name": "Trimet",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-trimet~rt"
+            "transitland-atlas-id": "f-trimet~rt",
+            "skip": true,
+            "skip-reason": "api-key must be set in query params (url-override?)"
         }
     ]
 }

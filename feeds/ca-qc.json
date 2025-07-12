@@ -28,7 +28,9 @@
         {
             "name": "Exo-reseaudetransportmetropolitain",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-exo~reseaudetransportmetropolitain~rt"
+            "transitland-atlas-id": "f-exo~reseaudetransportmetropolitain~rt",
+            "skip": true,
+            "skip-reason": "api-key is missing"
         },
         {
             "name": "Exo-varannes",
@@ -38,7 +40,9 @@
         {
             "name": "Exo-varannes",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-f25-exo~citsorel~varennes~rt"
+            "transitland-atlas-id": "f-f25-exo~citsorel~varennes~rt",
+            "skip": true,
+            "skip-reason": "api-key is missing"
         },
         {
             "name": "Exo-citsud",
@@ -49,7 +53,9 @@
         {
             "name": "Exo-citsud",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-f253-exo~citsud~ouest~rt"
+            "transitland-atlas-id": "f-f253-exo~citsud~ouest~rt",
+            "skip": true,
+            "skip-reason": "api-key is missing"
         },
         {
             "name": "Exo-citlapresquîle",
@@ -59,7 +65,9 @@
         {
             "name": "Exo-citlapresquîle",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-f256-exo~citlapresquîle~rt"
+            "transitland-atlas-id": "f-f256-exo~citlapresquîle~rt",
+            "skip": true,
+            "skip-reason": "api-key is missing"
         },
         {
             "name": "Exo-citlaurentides",
@@ -69,7 +77,9 @@
         {
             "name": "Exo-citlaurentides",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-f257-exo~citlaurentides~rt"
+            "transitland-atlas-id": "f-f257-exo~citlaurentides~rt",
+            "skip": true,
+            "skip-reason": "api-key is missing"
         },
         {
             "name": "Exo-citduhaut-saint-laurent",
@@ -79,7 +89,9 @@
         {
             "name": "Exo-citduhaut-saint-laurent",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-f259-exo~citduhaut~saint~laurent~rt"
+            "transitland-atlas-id": "f-f259-exo~citduhaut~saint~laurent~rt",
+            "skip": true,
+            "skip-reason": "api-key is missing"
         },
         {
             "name": "Exo-richelain-roussillon",
@@ -89,7 +101,9 @@
         {
             "name": "Exo-richelain-roussillon",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-f25d-exo~richelain~roussillon~rt"
+            "transitland-atlas-id": "f-f25d-exo~richelain~roussillon~rt",
+            "skip": true,
+            "skip-reason": "api-key is missing"
         },
         {
             "name": "Exo-citchambly-richelieu-carignan",
@@ -99,7 +113,9 @@
         {
             "name": "Exo-citchambly-richelieu-carignan",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-f25f-exo~citchambly~richelieu~carignan~rt"
+            "transitland-atlas-id": "f-f25f-exo~citchambly~richelieu~carignan~rt",
+            "skip": true,
+            "skip-reason": "api-key is missing"
         },
         {
             "name": "Exo-citvallée-du-richelieu",
@@ -109,7 +125,9 @@
         {
             "name": "Exo-citvallée-du-richelieu",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-f25g-exo~citvallée~du~richelieu~rt"
+            "transitland-atlas-id": "f-f25g-exo~citvallée~du~richelieu~rt",
+            "skip": true,
+            "skip-reason": "api-key is missing"
         },
         {
             "name": "Exo-omitsainte-julie",
@@ -119,7 +137,9 @@
         {
             "name": "Exo-omitsainte-julie",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-f25g-exo~omitsainte~julie~rt"
+            "transitland-atlas-id": "f-f25g-exo~omitsainte~julie~rt",
+            "skip": true,
+            "skip-reason": "api-key is missing"
         },
         {
             "name": "Exo-mrclesmoulinsurbis",
@@ -129,7 +149,9 @@
         {
             "name": "Exo-mrclesmoulinsurbis",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-f25s-exo~mrclesmoulinsurbis~rt"
+            "transitland-atlas-id": "f-f25s-exo~mrclesmoulinsurbis~rt",
+            "skip": true,
+            "skip-reason": "api-key is missing"
         },
         {
             "name": "Exo-mrcdelassomption",
@@ -139,7 +161,9 @@
         {
             "name": "Exo-mrcdelassomption",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-f25u-exo~mrcdelassomption~rt"
+            "transitland-atlas-id": "f-f25u-exo~mrcdelassomption~rt",
+            "skip": true,
+            "skip-reason": "api-key is missing"
         },
         {
             "name": "STS-Sherbrooke",
