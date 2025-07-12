@@ -27,6 +27,12 @@ class Atlas:
     def source_by_id(self, source: TransitlandSource) -> Optional[Source]:
         result: Optional[Source] = None
         feed = self.by_id[source.transitland_atlas_id]
+
+        if "authorization" in feed and source.api_key is None:
+            print("Warning: Transitland source requires authorization, but no api-key is set: ", source.transitland_atlas_id)
+            sys.stdout.flush()
+            return None
+
         if "static_current" in feed["urls"]:
             result = HttpSource()
             result.name = source.name
