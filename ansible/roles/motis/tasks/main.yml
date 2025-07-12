@@ -2,13 +2,23 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
+- name: Create MOTIS group
+  group:
+    name: motis
+
 - name: Create MOTIS user
   user:
     name: motis
+    group: motis
 
 - name: Create MOTIS directory
   file:
     path: /opt/motis/
+    state: directory
+
+- name: Create directory for imported data
+  file:
+    path: /var/cache/transitous/out/
     state: directory
 
 - name: Unpack MOTIS
@@ -38,13 +48,21 @@
     daemon_reload: true
 
 - name: Install motis-update-feeds script
-  copy:
+  template:
     src: motis-update-feeds.sh
     dest: /usr/local/bin/motis-update-feeds
     mode: '0755'
+  when: motis_primary is defined and motis_primary
+
+- name: Install secondary motis-update-feeds script
+  template:
+    src: motis-update-feeds-secondary.sh
+    dest: /usr/local/bin/motis-update-feeds
+    mode: '0755'
+  when: motis_primary is not defined or not motis_primary
 
 - name: Install motis-update-feeds
-  copy:
+  template:
     src: "{{ item }}"
     dest: /etc/systemd/system/
     mode: '644'
