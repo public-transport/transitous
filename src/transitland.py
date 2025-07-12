@@ -3,10 +3,11 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 from pathlib import Path
-from typing import Dict, Optional
+from typing import Dict, Optional, Union
 import json
 from metadata import UrlSource, HttpSource, Source, TransitlandSource, License
 import sys
+
 
 
 class Atlas:
@@ -24,9 +25,10 @@ class Atlas:
 
         return atlas
 
-    def source_by_id(self, source: TransitlandSource) -> Optional[Source]:
-        result: Optional[Source] = None
+    def source_by_id(self, source: TransitlandSource) -> Optional[Union[UrlSource, HttpSource]]:
+        result: Optional[Union[UrlSource, HttpSource]] = None
         feed = self.by_id[source.transitland_atlas_id]
+
         if "static_current" in feed["urls"]:
             result = HttpSource()
             result.name = source.name
@@ -80,6 +82,45 @@ class Atlas:
             print("Warning: Found Transitland source that we can't handle:", source.transitland_atlas_id)
             sys.stdout.flush()
             return None
+
+        if "authorization" in feed:
+
+            match feed["authorization"]["type"]:
+
+                case "header":
+                    if source.api_key is None:
+                        msg = "Warning: Transitland source has authorization=header, but no api-key is set"
+                        print(f"{msg}: {source.transitland_atlas_id}", flush=True)
+                        return None
+                    result.set_header(feed["authorization"]["param_name"], source.api_key)
+
+                case "basic_auth":
+                    if source.api_key is None:
+                        msg = "Warning: Transitland source has authorization=basic_auth, but no api-key is set"
+                        print(f"{msg}: {source.transitland_atlas_id}", flush=True)
+                        return None
+                    result.set_header("Authorization", f"Basic: {source.api_key}")
+
+                case "query_param":
+                    if source.url_override is None:
+                        msg = "Warning: Transitland source has authorization=query_param, but no url-override is set"
+                        print(f"{msg}: {source.transitland_atlas_id}", flush=True)
+                        return None
+                    # todo implement direct support for query params instead of going misusing url-override
+                    result.set_url_override(source.url_override)
+
+                case "replace_url":
+                    if source.url_override is None:
+                        msg = "Warning: Transitland source has authorization=replace_url, but no url-override is set"
+                        print(f"{msg}: {source.transitland_atlas_id}", flush=True)
+                        return None
+                    result.set_url_override(source.url_override)
+
+                case _:
+                    msg = f"Warning: Transitland source has unknown authorization type {feed['authorization']['type']}"
+                    print(f"{msg}: {source.transitland_atlas_id}", flush=True)
+                    return None
+
 
         result.license = License()
 

@@ -24,7 +24,9 @@
         {
             "name": "MTA-raillink",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-dq-mtamaryland~raillink~rt"
+            "transitland-atlas-id": "f-dq-mtamaryland~raillink~rt",
+            "skip": true,
+            "skip-reason": "api-key is missing"
         },
         {
             "name": "MTA-commuterbus",
@@ -34,7 +36,9 @@
         {
             "name": "MTA-commuterbus",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-dq-mtamaryland~commuterbus~rt"
+            "transitland-atlas-id": "f-dq-mtamaryland~commuterbus~rt",
+            "skip": true,
+            "skip-reason": "api-key is missing"
         },
         {
             "name": "MTA-subwaylink",
@@ -44,7 +48,9 @@
         {
             "name": "MTA-subwaylink",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-dq-mtamaryland~subwaylink~rt"
+            "transitland-atlas-id": "f-dq-mtamaryland~subwaylink~rt",
+            "skip": true,
+            "skip-reason": "api-key is missing"
         },
         {
             "name": "MTA-bus",
@@ -55,7 +61,9 @@
         {
             "name": "MTA-bus",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-dq-mtamaryland~bus~rt"
+            "transitland-atlas-id": "f-dq-mtamaryland~bus~rt",
+            "skip": true,
+            "skip-reason": "api-key is missing"
         },
         {
             "name": "RTA",
@@ -65,7 +73,9 @@
         {
             "name": "RTA",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-dqcq-regionaltransportationagencyofcentralmaryland~rt"
+            "transitland-atlas-id": "f-dqcq-regionaltransportationagencyofcentralmaryland~rt",
+            "skip": true,
+            "skip-reason": "api-key is missing"
         },
         {
             "name": "EPTA",

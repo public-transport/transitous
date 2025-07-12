@@ -49,7 +49,9 @@
         {
             "name": "Samtrans",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-9q8-samtrans"
+            "transitland-atlas-id": "f-9q8-samtrans",
+            "skip": true,
+            "skip-reason": "api-key must be set in query params (url-override?)"
         },
         {
             "name": "Santa-Cruz-Metro",
@@ -159,7 +161,9 @@
         {
             "name": "SDMTS",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-mts~rt~onebusaway"
+            "transitland-atlas-id": "f-mts~rt~onebusaway",
+            "skip": true,
+            "skip-reason": "api-key must be set in query params (url-override?)"
         },
         {
             "name": "Monterey-Salinas-Transit",

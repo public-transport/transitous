@@ -44,7 +44,9 @@
         {
             "name": "tec",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u0g-tec~rt"
+            "transitland-atlas-id": "f-u0g-tec~rt",
+            "skip": true,
+            "skip-reason": "api-key is missing"
         },
         {
             "name": "villo-brussels",

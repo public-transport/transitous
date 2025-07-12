@@ -14,12 +14,16 @@
         {
             "name": "lasvegasloop",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-lasvegasloop~nv~us~rt"
+            "transitland-atlas-id": "f-lasvegasloop~nv~us~rt",
+            "skip": true,
+            "skip-reason": "api-key is missing"
         },
         {
             "name": "lasvegasloop",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-lasvegasloop~nv~us~rt~alerts"
+            "transitland-atlas-id": "f-lasvegasloop~nv~us~rt~alerts",
+            "skip": true,
+            "skip-reason": "api-key is missing"
         },
         {
             "name": "North-Lake-Tahoe",
@@ -39,12 +43,16 @@
         {
             "name": "las-vegas-rtc",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-rtcsnv~rt"
+            "transitland-atlas-id": "f-rtcsnv~rt",
+            "skip": true,
+            "skip-reason": "api-key is missing"
         },
         {
             "name": "las-vegas-rtc",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-rtcsnv~rt~alerts"
+            "transitland-atlas-id": "f-rtcsnv~rt~alerts",
+            "skip": true,
+            "skip-reason": "api-key is missing"
         },
         {
             "name": "tahoe",
@@ -54,12 +62,16 @@
         {
             "name": "tahoe",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-tahoe~ca~rt"
+            "transitland-atlas-id": "f-tahoe~ca~rt",
+            "skip": true,
+            "skip-reason": "api-key is missing"
         },
         {
             "name": "tahoe",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-tahoe~ca~rt~alerts"
+            "transitland-atlas-id": "f-tahoe~ca~rt~alerts",
+            "skip": true,
+            "skip-reason": "api-key is missing"
         }
     ]
 }
