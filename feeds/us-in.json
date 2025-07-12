@@ -34,7 +34,9 @@
         {
             "name": "IndyGo",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-indygo~rt"
+            "transitland-atlas-id": "f-indygo~rt",
+            "skip": true,
+            "skip-reason": "api-key is missing"
         },
         {
             "name": "Indiana-County-Transit-Authority",

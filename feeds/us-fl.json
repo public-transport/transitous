@@ -15,12 +15,16 @@
         {
             "name": "miami-dade",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-miamidadetransit~rt"
+            "transitland-atlas-id": "f-miamidadetransit~rt",
+            "skip": true,
+            "skip-reason": "api-key is missing"
         },
         {
             "name": "miami-dade",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-miamidadetransit~rt~alerts"
+            "transitland-atlas-id": "f-miamidadetransit~rt~alerts",
+            "skip": true,
+            "skip-reason": "api-key is missing"
         },
         {
             "name": "miami-beach",
@@ -30,12 +34,16 @@
         {
             "name": "miami-beach",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-miamibeach~rt"
+            "transitland-atlas-id": "f-miamibeach~rt",
+            "skip": true,
+            "skip-reason": "api-key is missing"
         },
         {
             "name": "miami-beach",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-miamibeach~rt~alerts"
+            "transitland-atlas-id": "f-miamibeach~rt~alerts",
+            "skip": true,
+            "skip-reason": "api-key is missing"
         },
         {
             "name": "tri-rail",

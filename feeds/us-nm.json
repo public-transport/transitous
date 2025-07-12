@@ -14,12 +14,16 @@
         {
             "name": "abq",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-abqride~rt"
+            "transitland-atlas-id": "f-abqride~rt",
+            "skip": true,
+            "skip-reason": "api-key is missing"
         },
         {
             "name": "abq",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-abqride~rt~alerts"
+            "transitland-atlas-id": "f-abqride~rt~alerts",
+            "skip": true,
+            "skip-reason": "api-key is missing"
         },
         {
             "name": "atomic-city",
