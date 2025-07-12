@@ -10,6 +10,9 @@
             "name": "Dubai-RTA",
             "type": "http",
             "url": "https://www.gitlab.com/Lach-anonym/dubai-gtfs/-/jobs/artifacts/main/raw/gtfs.zip?job=download-republish-gtfs",
+            "license": {
+                "url": "https://www.dubaipulse.gov.ae/docs/DDE%20_%20DRAFT_Open_Data%20Licence_LONG_Form_English%203.pdf"
+            },
             "fix": true
         }
     ]
