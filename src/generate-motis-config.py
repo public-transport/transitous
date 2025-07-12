@@ -75,12 +75,14 @@ if __name__ == "__main__":
                         case metadata.TransitlandSource():
                             resolved_source = atlas.source_by_id(source)
                             if not resolved_source:
-                                continue
+                                eprint("Error: Could not resolve", source.transitland_atlas_id)
+                                sys.exit(1)
                             source = resolved_source
                         case metadata.MobilityDatabaseSource():
                             resolved_source = mdb.source_by_id(source)
                             if not resolved_source:
-                                continue
+                                eprint("Error: Could not resolve", source.mdb_id)
+                                sys.exit(1)
                             source = resolved_source
 
                     match source.spec:
