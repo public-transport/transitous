@@ -9,6 +9,7 @@ from metadata import UrlSource, HttpSource, Source, TransitlandSource, License
 import sys
 
 
+
 class Atlas:
     by_id: Dict[str, dict]
 
@@ -28,10 +29,20 @@ class Atlas:
         result: Optional[Source] = None
         feed = self.by_id[source.transitland_atlas_id]
 
-        if "authorization" in feed and source.api_key is None:
-            print("Warning: Transitland source requires authorization, but no api-key is set: ", source.transitland_atlas_id)
-            sys.stdout.flush()
-            return None
+        authorization_header = None
+        if "authorization" in feed:
+
+            if source.api_key is None:
+                print("Warning: Transitland source requires authorization, but no api-key is set: ", source.transitland_atlas_id)
+                sys.stdout.flush()
+                return None
+
+            if feed["authorization"]["type"] != "header" or "param_name" not in feed["authorization"]:
+                print("Warning: Transitland authorization configuration unexpected/invalid: ", source.transitland_atlas_id)
+                sys.stdout.flush()
+                return None
+
+            authorization_header = {feed["authorization"]["param_name"]: source.api_key}
 
         if "static_current" in feed["urls"]:
             result = HttpSource()
@@ -54,6 +65,9 @@ class Atlas:
             if source.url_override:
                 result.url_override = source.url_override
 
+            if authorization_header:
+                result.options.headers.update(authorization_header)
+
         elif "realtime_trip_updates" in feed["urls"]:
             result = UrlSource()
             result.name = source.name
@@ -61,6 +75,8 @@ class Atlas:
             result.spec = "gtfs-rt"
             result.skip = source.skip
             result.skip_reason = source.skip_reason
+            if authorization_header:
+                result.headers = authorization_header
         elif "realtime_vehicle_positions" in feed["urls"]:
             result = UrlSource()
             result.name = source.name
@@ -68,6 +84,8 @@ class Atlas:
             result.spec = "gtfs-rt"
             result.skip = source.skip
             result.skip_reason = source.skip_reason
+            if authorization_header:
+                result.headers = authorization_header
         elif "realtime_alerts" in feed["urls"]:
             result = UrlSource()
             result.name = source.name
@@ -75,6 +93,8 @@ class Atlas:
             result.spec = "gtfs-rt"
             result.skip = source.skip
             result.skip_reason = source.skip_reason
+            if authorization_header:
+                result.headers = authorization_header
         elif "gbfs_auto_discovery" in feed["urls"]:
             result = UrlSource()
             result.name = source.name
@@ -82,6 +102,8 @@ class Atlas:
             result.spec = "gbfs"
             result.skip = source.skip
             result.skip_reason = source.skip_reason
+            if authorization_header:
+                result.headers = authorization_header
         else:
             print("Warning: Found Transitland source that we can't handle:", source.transitland_atlas_id)
             sys.stdout.flush()
