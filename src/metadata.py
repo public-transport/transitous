@@ -113,12 +113,14 @@ class HttpOptions:
 class TransitlandSource(Source):
     transitland_atlas_id: str = ""
     url_override: Optional[str] = None
+    api_key: Optional[str] = None
     options: HttpOptions = HttpOptions()
 
     def __init__(self, parsed: dict):
         super().__init__(parsed)
         self.transitland_atlas_id = parsed["transitland-atlas-id"]
         self.url_override = parsed.get("url-override", None)
+        self.api_key = parsed.get("api-key", None)
 
         if "http-options" in parsed:
             self.options = HttpOptions(parsed["http-options"])
