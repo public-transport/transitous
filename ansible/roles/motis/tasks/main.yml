@@ -2,10 +2,14 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
+- name: Create MOTIS group
+  group:
+    name: motis
+
 - name: Create MOTIS user
   user:
     name: motis
-    group: www-data
+    group: motis
 
 - name: Create MOTIS directory
   file:
@@ -27,7 +31,7 @@
   file:
     path: /var/lib/motis
     owner: motis
-    group: www-data
+    group: motis
     state: directory
 
 - name: Copy MOTIS systemd service
