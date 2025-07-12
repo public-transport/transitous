@@ -23,36 +23,70 @@
             "fix": true
         },
         {
+            "name": "Alba-Iulia-Velocity",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-alba~iulia~velocity~gbfs",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
             "name": "Brasov",
             "type": "mobility-database",
-            "mdb-id": "mdb-2143"
+            "mdb-id": "mdb-2143",
+            "license": {
+                "spdx-identifier": "ODbL-1.0"
+            }
         },
         {
             "name": "Bucuresti-Ilfov",
             "type": "mobility-database",
-            "mdb-id": "mdb-2098"
+            "mdb-id": "mdb-2098",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
         },
         {
             "name": "Bucuresti-Ilfov",
             "type": "mobility-database",
             "spec": "gtfs-rt",
-            "mdb-id": "mdb-2103"
+            "mdb-id": "mdb-2103",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "Slobozia-Bike-City",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-buzau~velocity~gbfs",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
         },
         {
             "name": "Cluj-Napoca",
             "type": "mobility-database",
-            "mdb-id": "mdb-2121"
+            "mdb-id": "mdb-2121",
+            "license": {
+                "spdx-identifier": "CC-BY-SA-4.0"
+            }
         },
         {
             "name": "Cluj-Napoca",
             "type": "mobility-database",
             "spec": "gtfs-rt",
-            "mdb-id": "mdb-2612"
+            "mdb-id": "mdb-2612",
+            "license": {
+                "spdx-identifier": "CC-BY-SA-4.0"
+            }
         },
         {
             "name": "Consiliul-Judetean-Vrancea",
             "type": "mobility-database",
-            "mdb-id": "mdb-1984"
+            "mdb-id": "mdb-1984",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
         },
         {
             "name": "Constanta",
@@ -65,15 +99,36 @@
             "mdb-id": "mdb-2115"
         },
         {
+            "name": "Dej-Velo-City",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dej~velo~city~gbfs"        
+        },
+        {
+            "name": "Hunedoara-public-bike-system",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-hunedoara~gbfs"
+        },
+        {
             "name": "Iași",
             "type": "mobility-database",
-            "mdb-id": "mdb-2116"
+            "mdb-id": "mdb-2116",
+            "license": {
+                "spdx-identifier": "CC-BY-SA-4.0"
+            }
         },
         {
             "name": "Iași",
             "type": "mobility-database",
             "spec": "gtfs-rt",
-            "mdb-id": "mdb-2117"
+            "mdb-id": "mdb-2117",
+            "license": {
+                "spdx-identifier": "CC-BY-SA-4.0"
+            }
+        },
+        {
+            "name": "Moinesti-public-bike-system",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-moinesti~gbfs"
         },
         {
             "name": "Oradea",
@@ -86,9 +141,41 @@
             "mdb-id": "mdb-2108"
         },
         {
+            "name": "Sântana-Velo",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-velo~sântana~gbfs"
+        },
+        {
+            "name": "Sibiu-BikeCity",
+            "type": "url",
+            "url": "https://sibiu.publicbikesystem.net/customer/gbfs/v2/gbfs.json",
+            "spec": "gbfs"
+        },
+        {
             "name": "Sinaia",
             "type": "mobility-database",
             "mdb-id": "mdb-2114"
+        },
+        {
+            "name": "Slatina-Velo-City",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-slatina~velo~city~ro~gbfs",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "Slobozia-Bike-City",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-slobozia~bike~city~gbfs"
+        },
+        {
+            "name": "Topoloveni-Bike",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-topoloveni~bike~gbfs",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
         },
         {
             "name": "Transbus-Buzău",
@@ -103,12 +190,21 @@
         {
             "name": "Tursib",
             "type": "mobility-database",
-            "mdb-id": "mdb-2099"
+            "mdb-id": "mdb-2099",
+            "license": {
+                "spdx-identifier": "CC-BY-SA-4.0"
+            }
         },
         {
             "name": "Târgoviște",
             "type": "mobility-database",
             "mdb-id": "mdb-2107"
+        },
+        {
+            "name": "Târgu-Mures-public-bike-system",
+            "type": "url",
+            "url": "https://targumures.publicbikesystem.net/customer/gbfs/v2/gbfs.json",
+            "spec": "gbfs"
         },
         {
             "name": "Zalău",

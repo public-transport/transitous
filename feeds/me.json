@@ -8,8 +8,11 @@
     "sources": [
         {
             "name": "zpcg",
-            "type": "http",
-            "url": "https://jbb.ghsq.de/gtfs/me-zpcg.gtfs.zip"
+            "type": "mobility-database",
+            "license": {
+                "spdx-identifier": "ODbL-1.0"
+            },
+            "mdb-id": "mdb-2377"
         }
     ]
 }

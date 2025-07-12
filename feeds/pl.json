@@ -76,25 +76,39 @@
         },
         {
             "name": "Radom",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u3ph-radom"
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://cdn.zbiorkom.live/gtfs/radom.zip",
+            "license": {
+                "spdx-identifier": "MIT"
+            }
+        },
+        {
+            "name": "Radom",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://cdn.zbiorkom.live/gtfs-rt/radom.pb",
+            "license": {
+                "spdx-identifier": "MIT"
+            }
         },
         {
             "name": "Warszawa",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u3q-warszawski~transport~publiczny",
-            "fix": true
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://cdn.zbiorkom.live/gtfs/warsaw.zip",
+            "license": {
+                "spdx-identifier": "MIT"
+            }
         },
         {
             "name": "Warszawa",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u3q-warszawski~transport~publiczny~rt~alerts"
-        },
-        {
-            "name": "Warszawa",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u3q-warszawski~transport~publiczny~rt~positions",
-            "spec": "gtfs-rt"
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://cdn.zbiorkom.live/gtfs-rt/warsaw.pb",
+            "license": {
+                "spdx-identifier": "MIT"
+            }
         },
         {
             "name": "Warszawska-Kolej-Dojazdowa",
@@ -146,10 +160,20 @@
         },
         {
             "name": "Elbląg",
-            "type": "mobility-database",
-            "mdb-id": "mdb-2597",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://cdn.zbiorkom.live/gtfs/elblag.zip",
             "license": {
-            "spdx-identifier": "CC0-1.0"
+                "spdx-identifier": "MIT"
+            }
+        },
+        {
+            "name": "Elbląg",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://cdn.zbiorkom.live/gtfs-rt/elblag.pb",
+            "license": {
+                "spdx-identifier": "MIT"
             }
         },
         {
@@ -157,6 +181,11 @@
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u3k4-miejskieprzedsiębiorstwokomunikacyjnespzoowpoznaniu~kórni",
             "fix": true
+        },
+        {
+            "name": "Poznań",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u3k4-poznan~rt"
         },
         {
             "name": "Szczecin",
@@ -174,8 +203,7 @@
             "spec": "gtfs",
             "url": "https://github.com/TransportGZM-GTFS-mirror/TransportGZM-GTFS-normal/releases/latest/download/TransportGZM-GTFS.zip",
             "license": {
-                "spdx-identifier": "CC-BY-4.0",
-                "url": "https://spdx.org/licenses/CC-BY-4.0.html"
+                "spdx-identifier": "CC-BY-4.0"
             }
         },
         {
@@ -184,8 +212,7 @@
             "spec": "gtfs-rt",
             "url": "https://gtfsrt.transportgzm.pl:5443/gtfsrt/gzm/tripUpdates",
             "license": {
-                "spdx-identifier": "CC-BY-4.0",
-                "url": "https://spdx.org/licenses/CC-BY-4.0.html"
+                "spdx-identifier": "CC-BY-4.0"
             }
         },
         {
@@ -195,8 +222,13 @@
         },
         {
             "name": "Koleje-Małopolskie",
-            "type": "mobility-database",
-            "mdb-id": "mdb-1908"
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-koleje~małopolskie"
+        },
+        {
+            "name": "Koleje-Małopolskie-ald",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u2y-koleje~małopolskie~ald"
         },
         {
             "name": "ZTP-Kraków-T",
@@ -259,15 +291,390 @@
             "transitland-atlas-id": "f-u3h4-mpkautobusy~mpktramwaje~dla~sevibussiechnice~dlawiszniama"
         },
         {
-            "name": "MPK-Łódź",
-            "type": "mobility-database",
-            "mdb-id": "tld-6079",
-            "fix": true
+            "name": "Łódź",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://cdn.zbiorkom.live/gtfs/lodz.zip",
+            "license": {
+                "spdx-identifier": "MIT"
+            }
+        },
+        {
+            "name": "Łódź",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://cdn.zbiorkom.live/gtfs-rt/lodz.pb",
+            "license": {
+                "spdx-identifier": "MIT"
+            }
         },
         {
             "name": "Białystok",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-bialostocka~komunikacja~miejska"
+        },
+        {
+            "name": "Wschód-Express",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://cdn.zbiorkom.live/gtfs/bialystok-wschod.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            },
+            "fix": true
+        },
+        {
+            "name": "PKS-Nova-Supraśl",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://cdn.zbiorkom.live/gtfs/bialystok-nova.zip",
+            "url-override": "https://files.girlc.at/gtfs/pks_nova_suprasl.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            },
+            "fix": true
+        },
+        {
+            "name": "Turośń-Kościelna",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://cdn.zbiorkom.live/gtfs/bialystok-turosn.zip",
+            "url-override": "https://files.girlc.at/gtfs/turosn_koscielna.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            },
+            "fix": true
+        },
+        {
+            "name": "Żyrardów",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://cdn.zbiorkom.live/gtfs/warsaw-zyrardow.zip",
+            "url-override": "https://files.girlc.at/gtfs/zyrardow.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            },
+            "fix": true
+        },
+        {
+            "name": "Sochaczew",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://cdn.zbiorkom.live/gtfs/warsaw-sochaczew.zip",
+            "url-override": "https://files.girlc.at/gtfs/sochaczew.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            },
+            "fix": true
+        },
+        {
+            "name": "Otwock",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://cdn.zbiorkom.live/gtfs/warsaw-otwock.zip",
+            "url-override": "https://files.girlc.at/gtfs/otwock.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            },
+            "fix": true
+        },
+        {
+            "name": "Opole",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://cdn.zbiorkom.live/gtfs/opole.zip",
+            "url-override": "https://files.girlc.at/gtfs/opole.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            },
+            "fix": true
+        },
+        {
+            "name": "Jastrzębie-Zdrój",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://cdn.zbiorkom.live/gtfs/rybnik-jastrzebie.zip",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "fix": true
+        },
+        {
+            "name": "Kutno",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://cdn.zbiorkom.live/gtfs/kutno.zip",
+            "license": {
+                "spdx-identifier": "MIT"
+            }
+        },
+        {
+            "name": "Kutno",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://cdn.zbiorkom.live/gtfs-rt/kutno.pb",
+            "license": {
+                "spdx-identifier": "MIT"
+            }
+        },
+        {
+            "name": "Dąbrówka",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://files.girlc.at/gtfs/dabrowka.zip",
+            "fix": true,
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "Piecki",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://files.girlc.at/gtfs/piecki.zip",
+            "fix": true,
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "Powiat-Olsztyński",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://files.girlc.at/gtfs/powiat_olsztynski.zip",
+            "fix": true,
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "Warsaw-Ferries",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://kasmar00.github.io/gtfs-warsaw-custom/feeds/warsaw-ferries/latest.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
+        },
+        {
+            "name": "Ząbki",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://kasmar00.github.io/gtfs-warsaw-custom/feeds/zabki/latest.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
+        },
+        {
+            "name": "Mińsk-Mazowiecki",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://kasmar00.github.io/gtfs-warsaw-custom/feeds/minsk-maz/latest.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
+        },
+        {
+            "name": "Gorzów-Wielkopolski",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u36g-gorzow~wielkopolski"
+        },
+        {
+            "name": "PKS-Poznań",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "http://pksonline.pl/download/pkspoznan.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            },
+            "fix": true
+        },
+        {
+            "name": "Oświęcim",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://files.girlc.at/gtfs/oswiecim.zip",
+            "fix": true,
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "Bielsko-Biała",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://files.girlc.at/gtfs/bielsko_biala.zip",
+            "fix": true,
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "Kombus-Kórnik",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://kbadmin.vot.pl/gtfs/kombus.zip",
+            "fix": true
+        },
+        {
+            "name": "Biker-Białystok",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-biker~białystok~poland~gbfs"
+        },
+        {
+            "name": "Chełmski-Rower",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-chełmski~rower~gbfs"
+        },
+        {
+            "name": "CRM-Ciechanów",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-ciechanowski~rower~miejski~poland~ciechanów~gbfs"
+        },
+        {
+            "name": "CRM-Częstochowa",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-częstochowski~rower~miejski~poland~częstochowa~gbfs"
+        },
+        {
+            "name": "GRM-Grodzisk",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-grm~grodzisk~poland~mazowiecki~gbfs"
+        },
+        {
+            "name": "Jaskółka-Jastrzębie-Zdrój",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-jaskółka~jastrzębie~zdrój~gbfs"
+        },
+        {
+            "name": "OKBike-Kędzierzyn-Koźle",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-ok~bike~poland~kędzierzyn~koźle~gbfs"
+        },
+        {
+            "name": "KRM-Konin",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-koniński~rower~miejski~poland~konin~gbfs"
+        },
+        {
+            "name": "KRM-Koszalin",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-koszaliński~rower~miejski~poland~koszalin~gbfs"
+        },
+        {
+            "name": "KRM-Kołobrzeg",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-kołobrzeski~rower~miejski~poland~kołobrzeg~gbfs"
+        },
+        {
+            "name": "ŁRP-Łódź",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-łódzki~rower~publiczny~łódź~pl~gbfs"
+        },
+        {
+            "name": "Łoker-Łomża",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-łoker~łomża~gbfs"
+        },
+        {
+            "name": "Koło-Marek",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-koło~marek~poland~markach~gbfs"
+        },
+        {
+            "name": "Metrorower",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-metrorower~tychy~pl~gbfs"
+        },
+        {
+            "name": "Mevo",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-mevo~gdansk~gbfs"
+        },
+        {
+            "name": "RM-Ostrów-Wielkopolski",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-rower~miejski~w~ostrowie~wielkopolskim~poland~ostrów~wielkopolski~gbfs"
+        },
+        {
+            "name": "ORM-Otwock",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-otwocki~rower~miejski~poland~otwock~gbfs"
+        },
+        {
+            "name": "PRM-Piaseczno",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-piaseczyński~rower~miejski~poland~piaseczno~gbfs"
+        },
+        {
+            "name": "SRG-Pielgrzymka",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-system~roweru~gminnego~poland~pielgrzymka~gbfs"
+        },
+        {
+            "name": "SRG-Pielgrzymka",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-system~roweru~gminnego~poland~pielgrzymka~gbfs"
+        },
+        {
+            "name": "PRM-Pobiedziska",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-pobiedziski~rower~gminny~poland~pobiedziska~gbfs"
+        },
+        {
+            "name": "PRM-Pruszków",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-pruszkowski~rower~miejski~poland~pruszków~gbfs"
+        },
+        {
+            "name": "SRM-Pszczyna",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-system~rowerów~miejskich~w~pszczynie~poland~pszczyna~gbfs"
+        },
+        {
+            "name": "RP-Sokołów-Podlaski",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-rower~powiatowy~sokołów~podlaski~gbfs"
+        },
+        {
+            "name": "RM-Szamotuły",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-rower~miejski~szamotuły~poland~(rms)~gbfs"
+        },
+        {
+            "name": "Veturilo-Warszawa",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-veturilo~poland~gbfs"
+        },
+        {
+            "name": "WRM-Wolsztyn",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-wolsztyński~rower~miejski~wolsztyn~gbfs"
+        },
+        {
+            "name": "WRM-Wrocław",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-wrm~nextbike~poland~wrocław~gbfs"
+        },
+        {
+            "name": "TRM-Tarnów",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-tarnowski~rower~miejski~poland~tarnów~gbfs"
+        },
+        {
+            "name": "TRM-Tychowo",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-tychowski~rower~miejski~poland~tychowo~pl~gbfs"
+        },
+        {
+            "name": "ZRM-Zielona-Góra",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-zielonogórski~rower~miejski~poland~zielona~góra~gbfs"
+        },
+        {
+            "name": "ŻRM-Żyrardów",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-żyrardowski~rower~miejski~poland~żyrardów~gbfs"
         }
     ]
 }

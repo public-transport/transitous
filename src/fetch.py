@@ -12,6 +12,7 @@ from zipfile import ZipFile
 from typing import Optional, Any, Iterable, IO
 from zoneinfo import ZoneInfo
 from enum import Enum
+from license_expression import get_spdx_licensing, Licensing, ExpressionError
 
 import email.utils
 import requests
@@ -39,6 +40,14 @@ def validate_source_name(name: str):
 
     if "/" in name:
         eprint(f"Error: Feed names must not contain slashes, found {name}.")
+        sys.exit(1)
+
+
+def validate_spdx_identifier(licensing: Licensing, spdx_identifier: str):
+    try:
+        licensing.validate_license_keys(licensing.parse(spdx_identifier))
+    except ExpressionError as e:
+        eprint(f"Error: {e}")
         sys.exit(1)
 
 
@@ -196,20 +205,21 @@ def download_http_source(
     while urls_to_try:
         name, url = urls_to_try.pop(0)
         try:
-            # Fetch last modification time from the server
-            server_headers = \
-                session.head(url, headers=headers,
-                             allow_redirects=True,
-                             **request_options).headers
+            if not source.options.method:
+                # Fetch last modification time from the server
+                server_headers = \
+                    session.head(url, headers=headers,
+                                allow_redirects=True,
+                                **request_options).headers
 
-            # If server version is older, return
-            last_modified_server = None
-            if "last-modified" in server_headers:
-                last_modified_server = email.utils.parsedate_to_datetime(
-                    server_headers["last-modified"])
+                # If server version is older, return
+                last_modified_server = None
+                if "last-modified" in server_headers:
+                    last_modified_server = email.utils.parsedate_to_datetime(
+                        server_headers["last-modified"])
 
-                if last_modified and last_modified_server <= last_modified:
-                    return None
+                    if last_modified and last_modified_server <= last_modified:
+                        return None
 
             # Tell the server not to send data if it is older
             # than what we have
@@ -217,8 +227,8 @@ def download_http_source(
                 headers["if-modified-since"] = last_modified \
                     .strftime("%a, %d %b %Y %X %Z")
 
-            response = session.get(url, headers=headers,
-                                   **request_options)
+            req = requests.Request(source.options.method or "GET", url, data=source.options.request_body, headers=headers).prepare()
+            response = session.send(req, **request_options)
 
             # If the file was not modified, return
             if response.status_code == 304:
@@ -245,16 +255,15 @@ def download_http_source(
 
 class Fetcher:
     transitland_atlas: transitland.Atlas
+    licensing: Licensing
 
     def __init__(self):
         self.transitland_atlas = transitland.Atlas.load(
             Path("transitland-atlas/"))
         self.mobility_database = None
+        self.licensing = get_spdx_licensing()
 
-    # Returns whether something was downloaded
-    def fetch_source(self, dest_path: Path, source: Source) -> bool:
-        if source.spec != "gtfs":
-            return False
+    def resolve_database_sources(self, source: Source) -> Source:
         match source:
             case TransitlandSource():
                 http_source = self.transitland_atlas.source_by_id(source)
@@ -262,7 +271,7 @@ class Fetcher:
                     eprint("Error: Could not resolve", source.transitland_atlas_id)
                     sys.exit(1)
 
-                return self.fetch_source(dest_path, http_source)
+                return http_source
             case MobilityDatabaseSource():
                 if not self.mobility_database:
                     self.mobility_database = mobilitydatabase.Database.load()
@@ -271,7 +280,17 @@ class Fetcher:
                     eprint("Error: Could not resolve", source.mdb_id)
                     sys.exit(1)
 
-                return self.fetch_source(dest_path, http_source)
+                return http_source
+            case _:
+                return source
+
+
+    # Returns whether something was downloaded
+    def fetch_source(self, dest_path: Path, source: Source) -> bool:
+        if source.spec != "gtfs" and source.spec != "gtfs-flex" and source.spec != "gbfs":
+            return False
+
+        match source:
             case HttpSource():
                 response = download_http_source(dest_path, source)
 
@@ -337,34 +356,37 @@ class Fetcher:
         if source.fix_csv_quotes:
             subprocess.check_call(["./src/fix-csv-quotes.py", temp_file])
 
-        command = ["gtfsclean", str(temp_file),
-                   "--fix-zip",
-                   "--check-null-coords",
-                   "--empty-agency-url-repl", "https://transitous.org",
-                   "--remove-red-services",
-                   "--output", str(temp_file)]
-        if source.fix:
-            command.append("--fix")
-        if source.drop_too_fast_trips:
-            command.append("--drop-too-fast-trips")
-        if source.drop_shapes:
-            command.append("--drop-shapes")
-        if source.drop_agency_names:
-            for agency in source.drop_agency_names:
-                command.append("--drop-agency-names")
-                command.append(agency)
-        if source.display_name_options:
-            if source.display_name_options.copy_trip_names_matching:
-                command.append("--copy-trip-names-matching")
-                command.append(source.display_name_options.copy_trip_names_matching)
-            if source.display_name_options.keep_route_names_matching:
-                command.append("--keep-route-names-matching")
-                command.append(source.display_name_options.keep_route_names_matching)
-            if source.display_name_options.move_headsigns_matching:
-                command.append("--move-headsigns-matching")
-                command.append(source.display_name_options.move_headsigns_matching)
+        if source.spec != "gtfs-flex":
+            # gtfsclean can't handle GTFS-Flex data and would discard it entirely
+            command = ["gtfsclean", str(temp_file),
+                    "--fix-zip",
+                    "--check-null-coords",
+                    "--empty-agency-url-repl", "https://transitous.org",
+                    "--remove-red-services",
+                    "--keep-additional-fields",
+                    "--output", str(temp_file)]
+            if source.fix:
+                command.append("--fix")
+            if source.drop_too_fast_trips:
+                command.append("--drop-too-fast-trips")
+            if source.drop_shapes:
+                command.append("--drop-shapes")
+            if source.drop_agency_names:
+                for agency in source.drop_agency_names:
+                    command.append("--drop-agency-names")
+                    command.append(agency)
+            if source.display_name_options:
+                if source.display_name_options.copy_trip_names_matching:
+                    command.append("--copy-trip-names-matching")
+                    command.append(source.display_name_options.copy_trip_names_matching)
+                if source.display_name_options.keep_route_names_matching:
+                    command.append("--keep-route-names-matching")
+                    command.append(source.display_name_options.keep_route_names_matching)
+                if source.display_name_options.move_headsigns_matching:
+                    command.append("--move-headsigns-matching")
+                    command.append(source.display_name_options.move_headsigns_matching)
 
-        subprocess.check_call(command)
+            subprocess.check_call(command)
 
         with ZipFile(file=open(temp_file, "rb")) as z:
             validity = check_feed_timeframe_valid(z)
@@ -381,7 +403,7 @@ class Fetcher:
 
         os.rename(temp_file, output_path)
 
-    def fetch(self, metadata: Path):
+    def fetch(self, metadata: Path) -> int:
         region = Region(json.load(open(metadata, "r")))
         metadata_filename = metadata.name
         region_name = metadata_filename[:metadata_filename.rfind('.')]
@@ -402,25 +424,22 @@ class Fetcher:
                 else:
                     print("Skipping " + source.name)
                 continue
-            # Resolve transitland sources to http / url sources
-            match source:
-                case TransitlandSource():
-                    http_source = self.transitland_atlas.source_by_id(source)
 
-                    # Transitland source type that we cannot handle
-                    if not http_source:
-                        continue
 
-                    source = http_source
+            if source.license.spdx_identifier:
+                validate_spdx_identifier(self.licensing, source.license.spdx_identifier)
 
             validate_source_name(source.name)
             download_name = f"{region_name}_{source.name}"
 
+
             print(f"Fetching {region_name}-{source.name}…")
             sys.stdout.flush()
 
+            source = self.resolve_database_sources(source)
+
             # Nothing to download for realtime feeds
-            if source.spec != "gtfs":
+            if source.spec != "gtfs" and source.spec != "gtfs-flex":
                 continue
 
             download_dir = Path("downloads/")

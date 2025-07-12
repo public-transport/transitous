@@ -22,6 +22,12 @@ server {
     return 301 https://$host$request_uri;
 }
 
+upstream {{ item.vhost }}-backend {
+{% for backend in item.backends %}
+    server {{ backend.address }} {{ backend.options }};
+{% endfor %}
+}
+
 server {
     listen 443 http2 ssl;
     listen [::]:443 http2 ssl;
@@ -58,11 +64,13 @@ server {
         root /opt/motis/ui/;
     }
 
+    proxy_ssl_server_name on;
+    proxy_pass_header Server;
+
     # Proxy and cache tiles
     location /tiles/ {
-        proxy_pass http://backend_{{ item.name }}/tiles/;
+        proxy_pass http://{{ item.vhost }}-backend/tiles/;
 
-        proxy_pass_header Server;
 
         proxy_cache            motis;
         proxy_cache_valid      200 302 404 5d;
@@ -72,11 +80,9 @@ server {
 
     # Rate limit plan API
     location ~ ^/api/(v1|v2|v3|experimental)/(plan|one-to-all) {
-        proxy_pass http://backend_{{ item.name }}/$request_uri;
+        proxy_pass http://{{ item.vhost }}-backend$request_uri;
 
         limit_req zone=api_plan burst=10;
-
-        proxy_pass_header Server;
 
         proxy_connect_timeout       60;
         proxy_send_timeout          60;
@@ -86,11 +92,9 @@ server {
 
     # Routes that are basically free for us don't need a rate limit
     location ~ ^/api/(v1|v2|v3|experimental)/(geocode|stoptimes|map/stops|trip) {
-        proxy_pass http://backend_{{ item.name }}/$request_uri;
+        proxy_pass http://{{ item.vhost }}-backend$request_uri;
 
         limit_req zone=api_harmless burst=10;
-
-        proxy_pass_header Server;
 
         proxy_connect_timeout       60;
         proxy_send_timeout          60;
@@ -100,11 +104,9 @@ server {
 
     # MOTIS
     location /api/ {
-        proxy_pass http://backend_{{ item.name }}/api/;
+        proxy_pass http://{{ item.vhost }}-backend/api/;
 
         limit_req zone=api burst=10;
-
-        proxy_pass_header Server;
 
         proxy_connect_timeout       60;
         proxy_send_timeout          60;
@@ -114,7 +116,7 @@ server {
 
     # Source files
     location /gtfs/ {
-        proxy_pass http://crunchy:80/;
+        proxy_pass http://10.11.1.1:80/;
     }
 
     location /robots.txt {

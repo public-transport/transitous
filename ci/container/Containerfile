@@ -7,12 +7,14 @@ RUN GOPROXY=direct GOBIN=/usr/local/bin/ go install github.com/public-transport/
 
 FROM docker.io/debian:bookworm-slim
 
-ARG MOTIS_VERSION=v2.0.34
+ARG MOTIS_VERSION=v2.0.91
 
 RUN apt-get update -y && \
-    apt-get install -y --no-install-recommends git python3-requests python3-pycountry wget bzip2 rsync openssh-client python3-ruamel.yaml && \
+    apt-get install -y --no-install-recommends git python3-pip wget bzip2 rsync openssh-client && \
     apt-get clean -y && \
     rm -rf /var/lib/apt/lists/* 
+RUN rm /usr/lib/python3.*/EXTERNALLY-MANAGED && \
+    pip3 install requests ruamel.yaml pycountry beautifulsoup4 lxml license-expression
 
 COPY --from=build /usr/local/bin/gtfsclean /usr/local/bin/gtfsclean
 RUN mkdir -p /opt/motis/ && \

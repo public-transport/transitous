@@ -22,6 +22,33 @@
             "headers": {
                 "authorization": "Bearer 57c5dbbbf1fe4d000100001833a821a9de3748e5876bfb6c1efe6973"
             }
+        },
+        {
+            "name": "opentransportdataswiss25",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.opentransportdata.swiss/la/gtfs-sa",
+            "headers": {
+                "authorization": "Bearer eyJvcmciOiI2NDA2NTFhNTIyZmEwNTAwMDEyOWJiZTEiLCJpZCI6IjFmZjIzNTNmMDNiNTQyMzk4ZDdhN2M2NzMyNzczYTFmIiwiaCI6Im11cm11cjEyOCJ9"
+            }
+        },
+        {
+            "name": "opentransportdataswiss-flex",
+            "type": "http",
+            "spec": "gtfs-flex",
+            "url": "https://data.opentransportdata.swiss/en/dataset/gtfsflex/permalink",
+            "license": {
+                "url": "https://opentransportdata.swiss/de/terms-of-use/"
+            }
+        },
+        {
+            "name": "sharedmobility-ch",
+            "type": "url",
+            "url": "https://sharedmobility.ch/v2/gbfs",
+            "spec": "gbfs",
+            "headers": {
+                "authorization": "public-transport-backends@kde.org"
+            }
         }
     ]
 }

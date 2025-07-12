@@ -3,7 +3,7 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 from pathlib import Path
-from typing import Dict, Union, Optional
+from typing import Dict, Optional
 import json
 from metadata import UrlSource, HttpSource, Source, TransitlandSource, License
 import sys
@@ -55,6 +55,20 @@ class Atlas:
             result.spec = "gtfs-rt"
             result.skip = source.skip
             result.skip_reason = source.skip_reason
+        elif "realtime_vehicle_positions" in feed["urls"]:
+            result = UrlSource()
+            result.name = source.name
+            result.url = feed["urls"]["realtime_vehicle_positions"]
+            result.spec = "gtfs-rt"
+            result.skip = source.skip
+            result.skip_reason = source.skip_reason
+        elif "realtime_alerts" in feed["urls"]:
+            result = UrlSource()
+            result.name = source.name
+            result.url = feed["urls"]["realtime_alerts"]
+            result.spec = "gtfs-rt"
+            result.skip = source.skip
+            result.skip_reason = source.skip_reason
         elif "gbfs_auto_discovery" in feed["urls"]:
             result = UrlSource()
             result.name = source.name
@@ -67,8 +81,9 @@ class Atlas:
             sys.stdout.flush()
             return None
 
+        result.license = License()
+
         if "license" in feed:
-            result.license = License()
             if "spdx_identifier" in feed["license"]:
                 result.license.spdx_identifier = feed["license"]["spdx_identifier"]
             if "url" in feed["license"]:

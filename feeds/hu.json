@@ -15,6 +15,9 @@
                     "Authorization": "Basic YXJvbmt2aEBnbWFpbC5jb206M09jOHpNRFc3c3RCQ2ljVg=="
                 }
             },
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            },
             "drop-shapes": true
         },
         {
@@ -29,9 +32,15 @@
             "transitland-atlas-id": "f-u2m-bkk"
         },
         {
+            "name": "bkk",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/bkk/TripUpdates"
+        },
+        {
             "name": "mvk",
-            "type": "http",
-            "url": "https://gtfsapi.mvkzrt.hu/gtfs/gtfs.zip"
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u2wc-mvkzrt"
         },
         {
             "name": "szkt",
@@ -41,22 +50,71 @@
         {
             "name": "v-busz",
             "type": "http",
-            "url": "https://gtfs.menetbrand.com/download/veszprem"
+            "url": "https://gtfs.menetbrand.com/download/veszprem",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
         },
         {
             "name": "tukebusz",
-            "type": "http",
-            "url": "http://mobilitas.biokom.hu/gtfs"
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u2hy-biokomnonprofitkft"
         },
         {
             "name": "blaguss-agora",
-            "type": "http",
-            "url": "https://szombathely.utas.hu/api/static/v1/gtfs-google/gtfs-google.zip"
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-blasguss~szombathely"
         },
         {
             "name": "paksbusz",
             "type": "http",
-            "url": "https://utazastervezo.paksbusz.hu/api/static/v1/gtfs-google/gtfs-google.zip"
+            "url": "https://utazastervezo.paksbusz.hu/api/static/v1/gtfs-google/gtfs-google.zip",
+            "fix": "true",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            },
+            "skip": true,
+            "skip-reason": "Feed is expired"
+        },
+        {
+            "name": "kaposvár",
+            "type": "http",
+            "url": "https://www.kaposbusz.hu/static/files/Menetrend%20t%C3%A9rk%C3%A9pek/kaposvar(1).zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "dombóvár",
+            "type": "http",
+            "url": "https://dombovar.ptke.hu/gtfs",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "Hódmezővásárhely",
+            "type": "http",
+            "url": "https://www.hvszzrt.hu/data/source/hodmezovasarhelyi-hu_gtfs.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "Tatabánya",
+            "type": "http",
+            "url": "https://gtfs.menetbrand.com/download/tatabanya"
+        },
+        {
+            "name": "Várpalota",
+            "type": "http",
+            "url": "https://gtfs.menetbrand.com/download/varpalota"
+        },
+        {
+            "name": "Weekendbus",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u2mw-weekendbus",
+            "fix": true
         }
     ]
 }

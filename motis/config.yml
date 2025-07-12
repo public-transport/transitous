@@ -39,3 +39,12 @@ timetable:
 
 gbfs:
   feeds:
+
+limits:
+  stoptimes_max_results: 16384
+  plan_max_results: 256
+  plan_max_search_window_minutes: 5760
+  stops_max_results: 2048
+  onetoall_max_results: 524288
+  onetoall_max_travel_minutes: 2880
+  routing_max_timeout_seconds: 90

@@ -43,7 +43,7 @@ class DisplayNameOptions:
 class Source:
     name: str
     fix: bool = False
-    license: Optional[License] = None
+    license: License
     spec: str = "gtfs"
     fix_csv_quotes: bool = False
     skip: bool = False
@@ -91,6 +91,8 @@ class HttpOptions:
     fetch_interval_days: Optional[int] = None
     headers: dict[str, str] = {}
     ignore_tls_errors: bool = False
+    method: Optional[str] = None
+    request_body: Optional[str] = None
 
     def __init__(self, parsed: Optional[dict] = None):
         self.headers = {}
@@ -104,6 +106,8 @@ class HttpOptions:
             if "headers" in parsed:
                 for key in parsed["headers"]:
                     self.headers[key] = parsed["headers"][key]
+            self.method = parsed.get("method")
+            self.request_body = parsed.get("request-body")
 
 
 class TransitlandSource(Source):

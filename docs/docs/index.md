@@ -129,6 +129,23 @@ This example applies the updates to the `lviv` feed:
 ]
 ```
 
+### On-demand feeds
+
+GTFS-Flex feeds can be added in the same way as regular GTFS feeds, just the `spec` field has to be set to `gtfs-flex`.
+
+Example:
+```json
+{
+    "name": "opentransportdataswiss-flex",
+    "type": "http",
+    "spec": "gtfs-flex",
+    "url": "https://data.opentransportdata.swiss/en/dataset/gtfsflex/permalink",
+    "license": {
+        "url": "https://opentransportdata.swiss/de/terms-of-use/"
+    }
+}
+```
+
 ### Shared Mobility feeds
 
 GBFS feeds contains realtime information like vehicle availability and characteristics for shared Mobility (e.g. Bikesharing).

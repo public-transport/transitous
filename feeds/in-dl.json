@@ -1,0 +1,36 @@
+{
+    "maintainers": [
+        {
+            "name": "Yashraj",
+            "github": "disaster2life"
+        }
+    ],
+    "sources": [
+        {
+            "name": "Delhi-Transport-Corporation",
+            "type": "http",
+            "url": "https://otd.delhi.gov.in/data/static/",
+            "http-options": {
+                "method": "POST",
+                "headers": {
+                    "Content-Type": "application/x-www-form-urlencoded"
+                }
+            },
+            "function": "delhi_gov_in_csrf",
+            "skip": true,
+            "skip-reason": "Currently expired, waiting for an e-mail reply"
+        },
+        {
+            "name": "DMRC",
+            "type": "http",
+            "url": "https://otd.delhi.gov.in/data/staticDMRC/",
+            "http-options": {
+                "method": "POST",
+                "headers": {
+                    "Content-Type": "application/x-www-form-urlencoded"
+                }
+            },
+            "function": "delhi_gov_in_csrf"
+        }
+    ]
+}

@@ -2,7 +2,8 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-- name: Set up MOTIS servers
+- name: Set up reverse proxy servers
   hosts: reverse-proxy
   roles:
+    - wireguard
     - nginx

@@ -1,0 +1,15 @@
+{
+    "maintainers": [
+        {
+            "name": "Petr Novák",
+            "github": "hoermalmeister"
+        }
+    ],
+    "sources": [
+        {
+            "name": "Trainkos",
+            "type": "http",
+            "url": "https://owncloud.cesnet.cz/index.php/s/VmdhITswp9CxVfZ/download"
+        }
+    ]
+}

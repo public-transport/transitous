@@ -1,0 +1,20 @@
+{
+    "maintainers": [
+        {
+            "name": "Petr Novak",
+            "github": "hoermalmeister"
+        }
+    ],
+    "sources": [
+        {
+            "name": "horaires-reseau-urbain-compagnie-des-autobus-de-monaco",
+            "type": "http",
+            "url": "https://www.data.gouv.fr/fr/datasets/r/89d50803-cf15-424c-a857-96828bb3ce38",
+            "fix": true,
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/horaires-reseau-au-4-novembre-2024-fichier-gtfs",
+                "spdx-identifier": "etalab-2.0"
+            }
+        }
+      ]
+}

@@ -16,7 +16,10 @@ from zipfile import ZipFile
 from typing import Optional
 
 
-REGIONS = {"EU": "European Union"}
+REGIONS = {
+    "EU": "European Union",
+    "XK":  "Kosovo"
+}
 
 
 def filter_duplicates(elems):
@@ -34,12 +37,11 @@ def filter_duplicates(elems):
 def http_source_attribution(source: HttpSource) -> Optional[dict]:
     attribution: dict = {}
 
-    if source.license:
-        if source.license.spdx_identifier:
-            attribution["spdx_license_identifier"] = \
-                source.license.spdx_identifier
-        if source.license.url:
-            attribution["license_url"] = source.license.url
+    if source.license.spdx_identifier:
+        attribution["spdx_license_identifier"] = \
+            source.license.spdx_identifier
+    if source.license.url:
+        attribution["license_url"] = source.license.url
 
     attribution["operators"] = []
     attribution["source"] = source.url
@@ -66,19 +68,21 @@ def http_source_attribution(source: HttpSource) -> Optional[dict]:
             with z.open("feed_info.txt", "r") as i:
                 with io.TextIOWrapper(i) as it:
                     inforeader = csv.DictReader(it, delimiter=",", quotechar='"')
+
                     publisher = next(inforeader)
-                    attribution["publisher"] = {}
-                    attribution["publisher"]["name"] = publisher["feed_publisher_name"]
-                    attribution["publisher"]["url"] = publisher["feed_publisher_url"]
+                    if "feed_publisher_name" in publisher and "feed_publisher_url" in publisher:
+                        attribution["publisher"] = {}
+                        attribution["publisher"]["name"] = publisher["feed_publisher_name"]
+                        attribution["publisher"]["url"] = publisher["feed_publisher_url"]
 
-                    contact = {
-                            "type": "publisher",
-                            "name": publisher["feed_publisher_name"],
-                            "email": publisher.get("feed_contact_email"),
-                            "url": publisher.get("feed_contact_url")
-                    }
+                        contact = {
+                                "type": "publisher",
+                                "name": publisher["feed_publisher_name"],
+                                "email": publisher.get("feed_contact_email"),
+                                "url": publisher.get("feed_contact_url")
+                        }
 
-                    contacts.append(contact)
+                        contacts.append(contact)
 
         with z.open("agency.txt", "r") as a:
             with io.TextIOWrapper(a) as at:
