@@ -29,8 +29,8 @@ toMotisWebUrl :: Location -> Location -> String
 toMotisWebUrl start destination = motisInstance <> "?" <> urlQuery
   where
   urlQuery = fromMaybe "" $ encode $ fromArray
-    [ Tuple "from" (Just (getIdentifier start))
-    , Tuple "to" (Just (getIdentifier destination))
+    [ Tuple "fromPlace" (Just (getIdentifier start))
+    , Tuple "toPlace" (Just (getIdentifier destination))
     , Tuple "fromName" (Just start.name)
     , Tuple "toName" (Just destination.name)
     ]
