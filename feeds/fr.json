@@ -1035,7 +1035,8 @@
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/horaires-des-bacs-de-loire-en-loire-atlantique-gtfs",
                 "spdx-identifier": "etalab-2.0"
-            }
+            },
+            "skip": true
         },
         {
             "name": "arrets-horaires-et-circuits-des-lignes-de-transports-aleop-1",
@@ -2187,7 +2188,8 @@
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/gtfs-transport-horaires-chemins-de-fer-corse-1",
                 "spdx-identifier": "etalab-2.0"
-            }
+            },
+            "skip": true
         },
         {
             "name": "gtfs-transport-via-strada-les-cars-corse-du-sud",
@@ -4073,17 +4075,8 @@
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/donnees-theoriques-et-temps-reel-du-reseau-corolis-interurbain-communaute-dagglomeration-du-beauvaisis",
                 "spdx-identifier": "etalab-2.0"
-            }
-        },
-        {
-            "name": "donnees-theoriques-et-temps-reel-du-reseau-corolis-interurbain-communaute-dagglomeration-du-beauvaisis",
-            "type": "url",
-            "url": "https://api.oisemob.cityway.fr/dataflow/horaire-tc-tr/download?provider=COROLIS_INT&dataFormat=gtfs-rt",
-            "license": {
-                "url": "https://transport.data.gouv.fr/datasets/donnees-theoriques-et-temps-reel-du-reseau-corolis-interurbain-communaute-dagglomeration-du-beauvaisis",
-                "spdx-identifier": "etalab-2.0"
             },
-            "spec": "gtfs-rt"
+            "skip": true
         },
         {
             "name": "donnees-theoriques-et-temps-reel-du-reseau-corolis-urbain-communaute-dagglomeration-du-beauvaisis",
@@ -4094,17 +4087,8 @@
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/donnees-theoriques-et-temps-reel-du-reseau-corolis-urbain-communaute-dagglomeration-du-beauvaisis",
                 "spdx-identifier": "etalab-2.0"
-            }
-        },
-        {
-            "name": "donnees-theoriques-et-temps-reel-du-reseau-corolis-urbain-communaute-dagglomeration-du-beauvaisis",
-            "type": "url",
-            "url": "https://api.oisemob.cityway.fr/dataflow/horaire-tc-tr/download?provider=COROLIS_URB&dataFormat=gtfs-rt",
-            "license": {
-                "url": "https://transport.data.gouv.fr/datasets/donnees-theoriques-et-temps-reel-du-reseau-corolis-urbain-communaute-dagglomeration-du-beauvaisis",
-                "spdx-identifier": "etalab-2.0"
             },
-            "spec": "gtfs-rt"
+            "skip": true
         },
         {
             "name": "hop-bus-le-reseau-100-gratuit-du-coeur-de-flandre",
@@ -4644,17 +4628,8 @@
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/donnees-theoriques-et-temps-reel-du-reseau-axo-communaute-dagglomeration-creil-sud-oise",
                 "spdx-identifier": "etalab-2.0"
-            }
-        },
-        {
-            "name": "donnees-theoriques-et-temps-reel-du-reseau-axo-communaute-dagglomeration-creil-sud-oise",
-            "type": "url",
-            "url": "https://api.oisemob.cityway.fr/dataflow/horaire-tc-tr/download?provider=AXO&dataFormat=gtfs-rt",
-            "license": {
-                "url": "https://transport.data.gouv.fr/datasets/donnees-theoriques-et-temps-reel-du-reseau-axo-communaute-dagglomeration-creil-sud-oise",
-                "spdx-identifier": "etalab-2.0"
             },
-            "spec": "gtfs-rt"
+            "skip": true
         },
         {
             "name": "donnees-gtfs-du-reseau-de-transport-public-cara-bus",
@@ -4740,17 +4715,8 @@
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/donnees-theoriques-et-temps-reel-du-reseau-tic-interurbain-communaute-dagglomeration-de-la-region-de-compiegne-et-de-la-basse-automne",
                 "spdx-identifier": "etalab-2.0"
-            }
-        },
-        {
-            "name": "donnees-theoriques-et-temps-reel-du-reseau-tic-interurbain-communaute-dagglomeration-de-la-region-de-compiegne-et-de-la-basse-automne",
-            "type": "url",
-            "url": "https://api.oisemob.cityway.fr/dataflow/horaire-tc-tr/download?provider=TIC_INT&dataFormat=gtfs-rt",
-            "license": {
-                "url": "https://transport.data.gouv.fr/datasets/donnees-theoriques-et-temps-reel-du-reseau-tic-interurbain-communaute-dagglomeration-de-la-region-de-compiegne-et-de-la-basse-automne",
-                "spdx-identifier": "etalab-2.0"
             },
-            "spec": "gtfs-rt"
+            "skip": true
         },
         {
             "name": "donnees-theoriques-et-temps-reel-du-reseau-tic-urbain-communaute-dagglomeration-de-la-region-de-compiegne-et-de-la-basse-automne",
@@ -4761,17 +4727,8 @@
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/donnees-theoriques-et-temps-reel-du-reseau-tic-urbain-communaute-dagglomeration-de-la-region-de-compiegne-et-de-la-basse-automne",
                 "spdx-identifier": "etalab-2.0"
-            }
-        },
-        {
-            "name": "donnees-theoriques-et-temps-reel-du-reseau-tic-urbain-communaute-dagglomeration-de-la-region-de-compiegne-et-de-la-basse-automne",
-            "type": "url",
-            "url": "https://api.oisemob.cityway.fr/dataflow/horaire-tc-tr/download?provider=TIC_URB&dataFormat=gtfs-rt",
-            "license": {
-                "url": "https://transport.data.gouv.fr/datasets/donnees-theoriques-et-temps-reel-du-reseau-tic-urbain-communaute-dagglomeration-de-la-region-de-compiegne-et-de-la-basse-automne",
-                "spdx-identifier": "etalab-2.0"
             },
-            "spec": "gtfs-rt"
+            "skip": true
         },
         {
             "name": "donnees-theoriques-du-reseau-de-transport-a-la-demande-allotic-communaute-dagglomeration-de-la-region-de-compiegne-et-de-la-basse-automne",
@@ -4782,7 +4739,8 @@
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/donnees-theoriques-du-reseau-de-transport-a-la-demande-allotic-communaute-dagglomeration-de-la-region-de-compiegne-et-de-la-basse-automne",
                 "spdx-identifier": "etalab-2.0"
-            }
+            },
+            "skip": true
         },
         {
             "name": "bus-pastel-saint-quentin",
@@ -5833,17 +5791,8 @@
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/donnees-theoriques-et-temps-reel-du-reseau-mobi-communaute-de-communes-du-pays-de-valois",
                 "spdx-identifier": "etalab-2.0"
-            }
-        },
-        {
-            "name": "donnees-theoriques-et-temps-reel-du-reseau-mobi-communaute-de-communes-du-pays-de-valois",
-            "type": "url",
-            "url": "https://api.oisemob.cityway.fr/dataflow/horaire-tc-tr/download?provider=CYPRE&dataFormat=gtfs-rt",
-            "license": {
-                "url": "https://transport.data.gouv.fr/datasets/donnees-theoriques-et-temps-reel-du-reseau-mobi-communaute-de-communes-du-pays-de-valois",
-                "spdx-identifier": "etalab-2.0"
             },
-            "spec": "gtfs-rt"
+            "skip": true
         },
         {
             "name": "golfe-de-saint-tropez-donnees-mobilite-tc-cavalaire-ete",
@@ -6145,7 +6094,8 @@
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/donnees-theoriques-et-temps-reel-du-reseau-pass-thelle-bus-communaute-de-communes-thelloise",
                 "spdx-identifier": "etalab-2.0"
-            }
+            },
+            "skip": true
         },
         {
             "name": "reseau-couralin-grand-dax-1",
@@ -6573,27 +6523,8 @@
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/donnees-theoriques-et-temps-reel-du-reseau-sablons-bus-communaute-de-communes-des-sablons",
                 "spdx-identifier": "etalab-2.0"
-            }
-        },
-        {
-            "name": "donnees-theoriques-et-temps-reel-du-reseau-sablons-bus-communaute-de-communes-des-sablons",
-            "type": "url",
-            "url": "https://api.oisemob.cityway.fr/dataflow/horaire-tc-tr/download?provider=SABLONS&dataFormat=gtfs-rt",
-            "license": {
-                "url": "https://transport.data.gouv.fr/datasets/donnees-theoriques-et-temps-reel-du-reseau-sablons-bus-communaute-de-communes-des-sablons",
-                "spdx-identifier": "etalab-2.0"
             },
-            "spec": "gtfs-rt"
-        },
-        {
-            "name": "donnees-theoriques-et-temps-reel-du-reseau-sablons-bus-communaute-de-communes-des-sablons",
-            "type": "url",
-            "url": "https://api.oisemob.cityway.fr/dataflow/vehicule-tc-tr/download?provider=SABLONS&dataFormat=gtfs-rt",
-            "license": {
-                "url": "https://transport.data.gouv.fr/datasets/donnees-theoriques-et-temps-reel-du-reseau-sablons-bus-communaute-de-communes-des-sablons",
-                "spdx-identifier": "etalab-2.0"
-            },
-            "spec": "gtfs-rt"
+            "skip": true
         },
         {
             "name": "neva-granville-terre-et-mer",
@@ -6796,17 +6727,8 @@
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/donnees-theoriques-et-temps-reel-du-reseau-airemob-communaute-de-communes-de-laire-cantilienne",
                 "spdx-identifier": "etalab-2.0"
-            }
-        },
-        {
-            "name": "donnees-theoriques-et-temps-reel-du-reseau-airemob-communaute-de-communes-de-laire-cantilienne",
-            "type": "url",
-            "url": "https://api.oisemob.cityway.fr/dataflow/horaire-tc-tr/download?provider=CCAC&dataFormat=gtfs-rt",
-            "license": {
-                "url": "https://transport.data.gouv.fr/datasets/donnees-theoriques-et-temps-reel-du-reseau-airemob-communaute-de-communes-de-laire-cantilienne",
-                "spdx-identifier": "etalab-2.0"
             },
-            "spec": "gtfs-rt"
+            "skip": true
         },
         {
             "name": "reseau-urbain-interurbain-et-scolaire-de-la-communaute-dagglomeration-privas-centre-ardeche--79272",
@@ -6997,17 +6919,8 @@
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/donnees-theoriques-et-temps-reel-du-reseau-tohm-communaute-de-communes-des-pays-doise-et-dhalatte",
                 "spdx-identifier": "etalab-2.0"
-            }
-        },
-        {
-            "name": "donnees-theoriques-et-temps-reel-du-reseau-tohm-communaute-de-communes-des-pays-doise-et-dhalatte",
-            "type": "url",
-            "url": "https://api.oisemob.cityway.fr/dataflow/horaire-tc-tr/download?provider=TOHM&dataFormat=gtfs-rt",
-            "license": {
-                "url": "https://transport.data.gouv.fr/datasets/donnees-theoriques-et-temps-reel-du-reseau-tohm-communaute-de-communes-des-pays-doise-et-dhalatte",
-                "spdx-identifier": "etalab-2.0"
             },
-            "spec": "gtfs-rt"
+            "skip": true
         },
         {
             "name": "fr-200052264-t0022-0000-1",
@@ -7178,17 +7091,8 @@
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/donnees-theoriques-et-temps-reel-du-reseau-libbus-communaute-de-communes-du-pays-noyonnais",
                 "spdx-identifier": "etalab-2.0"
-            }
-        },
-        {
-            "name": "donnees-theoriques-et-temps-reel-du-reseau-libbus-communaute-de-communes-du-pays-noyonnais",
-            "type": "url",
-            "url": "https://api.oisemob.cityway.fr/dataflow/horaire-tc-tr/download?provider=LIBBUS&dataFormat=gtfs-rt",
-            "license": {
-                "url": "https://transport.data.gouv.fr/datasets/donnees-theoriques-et-temps-reel-du-reseau-libbus-communaute-de-communes-du-pays-noyonnais",
-                "spdx-identifier": "etalab-2.0"
             },
-            "spec": "gtfs-rt"
+            "skip": true
         },
         {
             "name": "ecla-lons-agglo-mobilites",
@@ -7497,17 +7401,8 @@
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/donnees-theoriques-et-temps-reel-du-reseau-le-bus-communaute-de-communes-du-clermontois",
                 "spdx-identifier": "etalab-2.0"
-            }
-        },
-        {
-            "name": "donnees-theoriques-et-temps-reel-du-reseau-le-bus-communaute-de-communes-du-clermontois",
-            "type": "url",
-            "url": "https://api.oisemob.cityway.fr/dataflow/horaire-tc-tr/download?provider=LEBUS&dataFormat=gtfs-rt",
-            "license": {
-                "url": "https://transport.data.gouv.fr/datasets/donnees-theoriques-et-temps-reel-du-reseau-le-bus-communaute-de-communes-du-clermontois",
-                "spdx-identifier": "etalab-2.0"
             },
-            "spec": "gtfs-rt"
+            "skip": true
         },
         {
             "name": "hobus-honfleur",
@@ -7956,27 +7851,8 @@
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/donnees-theoriques-du-reseau-hopla-communaute-de-communes-de-la-plaine-destrees",
                 "spdx-identifier": "etalab-2.0"
-            }
-        },
-        {
-            "name": "donnees-theoriques-du-reseau-hopla-communaute-de-communes-de-la-plaine-destrees",
-            "type": "url",
-            "url": "https://api.oisemob.cityway.fr/dataflow/horaire-tc-tr/download?provider=HOPLA&dataFormat=gtfs-rt",
-            "license": {
-                "url": "https://transport.data.gouv.fr/datasets/donnees-theoriques-du-reseau-hopla-communaute-de-communes-de-la-plaine-destrees",
-                "spdx-identifier": "etalab-2.0"
             },
-            "spec": "gtfs-rt"
-        },
-        {
-            "name": "donnees-theoriques-du-reseau-hopla-communaute-de-communes-de-la-plaine-destrees",
-            "type": "url",
-            "url": "https://api.oisemob.cityway.fr/dataflow/vehicule-tc-tr/download?provider=HOPLA&dataFormat=gtfs-rt",
-            "license": {
-                "url": "https://transport.data.gouv.fr/datasets/donnees-theoriques-du-reseau-hopla-communaute-de-communes-de-la-plaine-destrees",
-                "spdx-identifier": "etalab-2.0"
-            },
-            "spec": "gtfs-rt"
+            "skip": true
         },
         {
             "name": "horaires-theoriques-et-temps-reel-des-navettes-de-la-ligne-bagneres-la-mongie-gtfs-gtfs-rt",

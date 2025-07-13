@@ -29,9 +29,25 @@ if __name__ == "__main__":
         "caen-la-mer-reseau-twisto-gtfs-siri", # 404, incompatible
         "reseau-de-bus-urbain-horizon", # name or service not known
         "gtfs-et-gtfs-rt-reseau-orizo-grand-avignon", # name or service not known
+        "donnees-theoriques-et-temps-reel-du-reseau-corolis-interurbain-communaute-dagglomeration-du-beauvaisis", # ssl error ? 
+        "donnees-theoriques-et-temps-reel-du-reseau-corolis-urbain-communaute-dagglomeration-du-beauvaisis", # ssl error ?
+        "donnees-theoriques-et-temps-reel-du-reseau-axo-communaute-dagglomeration-creil-sud-oise", # ssl error ?
+        "donnees-theoriques-et-temps-reel-du-reseau-tic-interurbain-communaute-dagglomeration-de-la-region-de-compiegne-et-de-la-basse-automne", # ssl error ?
+        "donnees-theoriques-et-temps-reel-du-reseau-tic-urbain-communaute-dagglomeration-de-la-region-de-compiegne-et-de-la-basse-automne", # ssl error ?
+        "donnees-theoriques-du-reseau-de-transport-a-la-demande-allotic-communaute-dagglomeration-de-la-region-de-compiegne-et-de-la-basse-automne", # ssl error ?
+        "donnees-theoriques-et-temps-reel-du-reseau-mobi-communaute-de-communes-du-pays-de-valois", # ssl error ?
+        "donnees-theoriques-et-temps-reel-du-reseau-pass-thelle-bus-communaute-de-communes-thelloise", # ssl error ?
+        "donnees-theoriques-et-temps-reel-du-reseau-sablons-bus-communaute-de-communes-des-sablons", # ssl error ?
+        "donnees-theoriques-et-temps-reel-du-reseau-airemob-communaute-de-communes-de-laire-cantilienne", # ssl error ?
+        "donnees-theoriques-et-temps-reel-du-reseau-tohm-communaute-de-communes-des-pays-doise-et-dhalatte", # ssl error ?
+        "donnees-theoriques-et-temps-reel-du-reseau-libbus-communaute-de-communes-du-pays-noyonnais", # ssl error ?
+        "donnees-theoriques-et-temps-reel-du-reseau-le-bus-communaute-de-communes-du-clermontois", # ssl error ?
+        "donnees-theoriques-du-reseau-hopla-communaute-de-communes-de-la-plaine-destrees", # ssl error?
+        "horaires-des-bacs-de-loire-en-loire-atlantique-gtfs", # gtfsclean error
+        "gtfs-transport-horaires-chemins-de-fer-corse-1" # gtfsclean error
     ]
 
-        # List of datasets to remove
+    # List of datasets to remove
     remove = [
         "tier-dott-gbfs-france", # Duplicate dataset (use local ones)
         "tier-dott-gbfs-saint-quentin-en-yvelines", # Deprecated dataset
