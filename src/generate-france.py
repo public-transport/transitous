@@ -6,6 +6,7 @@
 import requests
 import json
 import sys
+from datetime import datetime
 
 
 if __name__ == "__main__":
@@ -15,25 +16,19 @@ if __name__ == "__main__":
     skip = [
         "blablacar-bus-horaires-theoriques-et-temps-reel-du-reseau-europeen",  # Already in eu.json
         "flixbus-horaires-theoriques-du-reseau-europeen-1",  # Already in eu.json
-        "arrets-horaires-et-parcours-theoriques-du-reseau-routier-regional-de-transport-scolaire-et-interurbain-60-oise",  # broken
         "horaires-theoriques-des-cars-du-rhone",  # requires authentication
         "horaires-theoriques-des-lignes-scolaires-du-reseau-transports-en-commun-lyonnais",  # requires authentication
         "horaires-theoriques-du-reseau-libellule-sytral-de-la-communaute-dagglomeration-de-villefranche-beaujolais-saone",  # requires authentication
-        "horaires-theoriques-du-reseau-transports-en-commun-lyonnais",
-        "horaires-theoriques-de-la-navette-velo-du-pont-de-saint-nazaire-gtfs",  # doesn't exist (?)
-        "horaires-theoriques-et-temps-reel-des-navettes-de-la-ligne-bagneres-la-mongie-gtfs-gtfs-rt",  # feed expired (check again in winter?)
+        "horaires-theoriques-de-la-navette-velo-du-pont-de-saint-nazaire-gtfs",  # Could not check validity, because the time zone could not be detected
         "arrets-horaires-et-parcours-theoriques-des-bus-du-reseau-des-transports-publics-envibus",  # timeout
         "horaires-theoriques-du-service-rhonexpress-de-la-metropole-de-lyon-et-du-departement-du-rhone",  # 401 not authorized
-        "donnees-theoriques-et-temps-reel-du-reseau-corolis-interurbain-communaute-dagglomeration-du-beauvaisis",  # Confuses MOTIS
-        "donnees-theoriques-et-temps-reel-du-reseau-axo-communaute-dagglomeration-creil-sud-oise",  # Confuses MOTIS
-        "naolib-arrets-horaires-et-circuits",  # Incomplete read
-        "reseau-de-transport-en-commun-transagglo-de-dlva",  # Resource not available
-        "arrets-horaires-et-circuit-de-la-lignes-yeu-continent-gtfs",  # no zip file
-        "caen-la-mer-reseau-twisto-gtfs-siri",  # no zip file
-        "navettes-aeroport-paris-beauvais-aerobus",  # Not GTFS format
-        "offre-de-transport-de-la-c-a-beaune-cote-sud-gtfs", # Missing and broken data
-        "gtfs-move-vendome",  # very low availability rate
-        "gtfs-static-et-real-time-transporteur-thalys" # Skip outdated Thalys data
+        "gtfs-static-et-real-time-transporteur-thalys", # Skip outdated Thalys data
+        "horaires-theoriques-et-temps-reel-des-navettes-de-la-station-de-tignes-gtfs-gtfs-rt", # 500
+        "tico-bus-horaires-theoriques-du-reseau-de-transport-urbain-tico", # name or service not known
+        "description-de-loffre-tad-tao-gtfs-flex-orleans-metropole", #expired
+        "caen-la-mer-reseau-twisto-gtfs-siri", # 404, incompatible
+        "reseau-de-bus-urbain-horizon", # name or service not known
+        "gtfs-et-gtfs-rt-reseau-orizo-grand-avignon", # name or service not known
     ]
 
         # List of datasets to remove
@@ -108,16 +103,10 @@ if __name__ == "__main__":
 
     # Map for each dataset slug, if needed, the selected GTFS-RT id to the corresponding GTFS id
     gtfs_rt_select = {
-        "moca-communaute-de-communes-caux-austreberthe": {
-            "82630": "82309",
-        },
         "breizhgo-car": {
             "81804": "81463",
             "81805": "81466",
             "81806": "81461",
-        },
-        "versions-des-horaires-theoriques-des-lignes-de-bus-et-de-metro-du-reseau-star-au-format-gtfs": {
-            "82161": "82951",
         },
         "horaires-theoriques-et-en-temps-reel-des-bus-et-autocars-circulant-sur-le-reseau-cap-cotentin": {
             "79830": "79831"
@@ -241,6 +230,10 @@ if __name__ == "__main__":
                 }
                 if dataset["slug"] in skip:
                     source["skip"] = True
+                expired = "metadata" in resource and "end_date" and "end_date" in resource["metadata"] and resource["metadata"]["end_date"] is not None and datetime.strptime(resource["metadata"]["end_date"], '%Y-%m-%d') < datetime.now()
+                if expired:
+                    print("Feed expired according to metadata, setting to skip=True:", resource["metadata"]["end_date"], feed_name)
+                    source["skip"] = True
                 if "page_url" in dataset:
                     source["license"]["url"] = dataset["page_url"]
                 if dataset["licence"] == "odc-odbl":
@@ -254,11 +247,11 @@ if __name__ == "__main__":
                     "format" in r
                     and r["format"] == "gtfs-rt"
                     and "features" in r
-                    and "trip_updates" in r["features"]
+                    and ("trip_updates" in r["features"] or "service_alerts" in r["features"] or len(r["features"]) == 0)
                 )
 
             def contains_name(out, name_to_check):
-                return any(entry.get("name") == name_to_check for entry in out)
+                return any(entry.get("name") == name_to_check and not entry.get("skip") for entry in out)
 
             resources = list(filter(cond, gtfs))
             resources.sort(key=lambda r: str(r.get("id", "")))
@@ -326,7 +319,7 @@ if __name__ == "__main__":
         },
     )
     # official feeds without available zip files at data.gouv.fr for some reason
-out.append(
+    out.append(
         {
             "name": "caen-la-mer-reseau-twisto-gtfs-siri",
             "type": "http",
@@ -335,28 +328,8 @@ out.append(
                 "url": "https://data.twisto.fr/explore/dataset/fichier-gtfs-du-reseau-twisto/information/",
                 "spdx-identifier": "ODbL-1.0"
             }
-        },
-    {
-            "name": "arrets-horaires-et-circuit-de-la-lignes-yeu-continent-gtfs",
-            "type": "http",
-            "url": "https://app.mecatran.com/utw/ws/gtfsfeed/static/pdlYeuContinent?apiKey=2c715462180f36483d5f24340c706b627f2f2361",
-            "license": {
-                "url": "https://data.paysdelaloire.fr/explore/dataset/arrets-horaires-et-circuit-de-la-lignes-yeu-continent-gtfs/information/",
-                "spdx-identifier": "etalab-2.0"
-            }
-        },
-    {
-            "name": "naolib-arrets-horaires-et-circuits-fix",
-            "type": "http",
-            "url": "https://www.data.gouv.fr/fr/datasets/r/d2155136-23ba-449c-b98c-f756144c8d9a",
-            "url-override": "https://data.nantesmetropole.fr/api/explore/v2.1/catalog/datasets/244400404_transports_commun_naolib_nantes_metropole_gtfs/files/0cc0469a72de54ee045cb66d1a21de9e",
-            "fix": true,
-            "license": {
-                "url": "https://transport.data.gouv.fr/datasets/naolib-arrets-horaires-et-circuits",
-                "spdx-identifier": "ODbL-1.0"
-            }
-        },
-)
+        }
+    )
 
     
     with open("feeds/fr.json", "r") as f:
