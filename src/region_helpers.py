@@ -35,3 +35,13 @@ def data_public_lu_latest_resource(
                  reverse=True)
     source.url = res[0]["latest"]
     return source
+
+
+def delhi_gov_in_csrf(source: HttpSource) -> HttpSource:
+    from bs4 import BeautifulSoup
+    html = requests.get(source.url).text
+    element = BeautifulSoup(html, "lxml").find(attrs = {"name": "csrfmiddlewaretoken"})
+    csrftoken = element["value"]
+    source.options.headers["Cookie"] = f"csrftoken={csrftoken}"
+    source.options.request_body = f"csrfmiddlewaretoken={csrftoken}"
+    return source

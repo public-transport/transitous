@@ -7,6 +7,10 @@
         {
             "name": "Matthew Exon",
             "github": "mexon"
+        },
+        {
+            "name": "David Wales",
+            "github": "daviewales"
         }
     ],
     "sources": [
@@ -149,6 +153,12 @@
             "type": "mobility-database",
             "spec": "gtfs-rt",
             "mdb-id": "mdb-1774"
+        },
+        {
+            "name": "Transport-for-New-South-Wales",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2449",
+            "fix": true
         }
     ]
 }

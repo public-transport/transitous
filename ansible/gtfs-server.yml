@@ -2,8 +2,7 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-- name: Set up reverse proxy servers
-  hosts: reverse-proxy
+- name: Set up gtfs server
+  hosts: goldberg
   roles:
-    - wireguard
-    - nginx
+    - gtfs-server

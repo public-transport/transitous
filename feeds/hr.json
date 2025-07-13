@@ -7,6 +7,10 @@
         {
             "name": "Jonah Brüchert",
             "github": "jbruechert"
+        },
+        {
+            "name": "Petr Novák",
+            "github": "hoermalmeister"
         }
     ],
     "sources": [
@@ -53,7 +57,8 @@
         {
             "name": "gradski-parking",
             "type": "http",
-            "url": "https://www.gradski-parking.hr/upload/stranice/2022/08/2022-08-30/89/gtfs.zip"
+            "url": "https://www.gradski-parking.hr/upload/stranice/2022/08/2022-08-30/89/gtfs.zip",
+            "fix": true
         },
         {
             "name": "split",
@@ -79,6 +84,16 @@
             "type": "http",
             "url": "https://gitlab.com/vekejsn/gtfs-generators/-/jobs/artifacts/main/raw/libertas_gtfs.zip?job=libertas",
             "fix": true
+        },
+        {
+            "name": "rapska-plovidba",
+            "type": "http",
+            "url": "https://owncloud.cesnet.cz/index.php/s/iXWzNC4zKGD8sa8/download"
+        },
+        {
+            "name": "rapska-vozidba",
+            "type": "http",
+            "url": "https://owncloud.cesnet.cz/index.php/s/UudJhpom7fgur2X/download"
         }
     ]
 }

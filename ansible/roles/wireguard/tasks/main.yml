@@ -1,0 +1,20 @@
+# SPDX-FileCopyrightText: 2025 Jonah Brüchert <jbb@kaidan.im>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+- name: Install wireguard-tools
+  apt:
+    name: wireguard-tools
+    install_recommends: false
+
+- name: Apply config
+  template:
+    src: 'config.{{ ansible_host }}.j2'
+    dest: /etc/wireguard/wg0.conf
+
+- name: Enable systemd unit
+  systemd:
+    name: wg-quick@wg0
+    state: started
+    daemon_reload: yes
+    enabled: yes

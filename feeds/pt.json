@@ -25,12 +25,18 @@
         {
             "name": "Carris",
             "type": "mobility-database",
-            "mdb-id": "mdb-1032"
+            "mdb-id": "mdb-1032",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
         },
         {
             "name": "Metro-Lisboa",
             "type": "http",
-            "url": "https://www.metrolisboa.pt/google_transit/googleTransit.zip"
+            "url": "https://www.metrolisboa.pt/google_transit/googleTransit.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
         },
         {
             "name": "Cascais-Próxima",

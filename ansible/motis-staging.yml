@@ -5,4 +5,5 @@
 - name: Set up MOTIS-staging instances
   hosts: motis-staging
   roles:
+    - wireguard
     - motis-staging

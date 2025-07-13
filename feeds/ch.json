@@ -40,6 +40,15 @@
             "license": {
                 "url": "https://opentransportdata.swiss/de/terms-of-use/"
             }
+        },
+        {
+            "name": "sharedmobility-ch",
+            "type": "url",
+            "url": "https://sharedmobility.ch/v2/gbfs",
+            "spec": "gbfs",
+            "headers": {
+                "authorization": "public-transport-backends@kde.org"
+            }
         }
     ]
 }
