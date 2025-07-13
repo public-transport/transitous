@@ -4,10 +4,6 @@
             "name": "Gordon Leung",
             "github": "pi-cla"
         },
-        { 
-            "name": "Brock", 
-            "github": "brockt" 
-        }
     ],
     "sources": [
         {
@@ -96,12 +92,7 @@
             "name": "Metrobus-Transit",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-fb6q-metrobus"
-        },
-        { 
-            "name":  "Moose-Jaw-Transit", 
-            "type": "transitland-atlas", 
-            "transitland-atlas-id": "f-moosejaw~sk~ca" 
-        },
+        }, 
         {
             "name": "Prince-Albert-Transit",
             "type": "transitland-atlas",
