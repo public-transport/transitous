@@ -461,7 +461,7 @@ class Fetcher:
                 continue
 
             # Something new was downloaded or the data was previously not processed
-            print(f"Postprocessing {region_name}-{source.name} with gtfstidy…")
+            print(f"Postprocessing {region_name}-{source.name} with gtfsclean…")
             sys.stdout.flush()
 
             try:
