@@ -50,6 +50,11 @@
             "name": "villo-brussels",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-villo~brussels~gbfs"
+        },
+        {
+            "name": "blue-bike",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-blue~bike~antwerp~gbfs"
         }
     ]
 }
