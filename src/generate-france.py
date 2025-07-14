@@ -42,9 +42,7 @@ if __name__ == "__main__":
         "donnees-theoriques-et-temps-reel-du-reseau-tohm-communaute-de-communes-des-pays-doise-et-dhalatte", # ssl error ?
         "donnees-theoriques-et-temps-reel-du-reseau-libbus-communaute-de-communes-du-pays-noyonnais", # ssl error ?
         "donnees-theoriques-et-temps-reel-du-reseau-le-bus-communaute-de-communes-du-clermontois", # ssl error ?
-        "donnees-theoriques-du-reseau-hopla-communaute-de-communes-de-la-plaine-destrees", # ssl error?
-        "horaires-des-bacs-de-loire-en-loire-atlantique-gtfs", # gtfsclean error
-        "gtfs-transport-horaires-chemins-de-fer-corse-1" # gtfsclean error
+        "donnees-theoriques-du-reseau-hopla-communaute-de-communes-de-la-plaine-destrees" # ssl error?
     ]
 
     # List of datasets to remove
@@ -119,6 +117,10 @@ if __name__ == "__main__":
 
     # Map for each dataset slug, if needed, the selected GTFS-RT id to the corresponding GTFS id
     gtfs_rt_select = {
+         "versions-des-horaires-theoriques-des-lignes-de-bus-et-de-metro-du-reseau-star-au-format-gtfs": {
+            "82161": "83264",
+            "82162": "83264"
+        },
         "breizhgo-car": {
             "81804": "81463",
             "81805": "81466",
@@ -133,6 +135,10 @@ if __name__ == "__main__":
         "gtfs-sankeo": {
             "82901": "82900",
             "82273": "82902"
+        },
+        "moca-communaute-de-communes-caux-austreberthe": {
+            "82633": "82309",
+            "82631": "82309",
         },
     }
 

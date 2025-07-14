@@ -1035,8 +1035,7 @@
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/horaires-des-bacs-de-loire-en-loire-atlantique-gtfs",
                 "spdx-identifier": "etalab-2.0"
-            },
-            "skip": true
+            }
         },
         {
             "name": "arrets-horaires-et-circuits-des-lignes-de-transports-aleop-1",
@@ -2033,6 +2032,26 @@
             }
         },
         {
+            "name": "versions-des-horaires-theoriques-des-lignes-de-bus-et-de-metro-du-reseau-star-au-format-gtfs--83264",
+            "type": "url",
+            "url": "https://proxy.transport.data.gouv.fr/resource/star-rennes-integration-gtfs-rt-trip-update",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/versions-des-horaires-theoriques-des-lignes-de-bus-et-de-metro-du-reseau-star-au-format-gtfs",
+                "spdx-identifier": "ODbL-1.0"
+            },
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "versions-des-horaires-theoriques-des-lignes-de-bus-et-de-metro-du-reseau-star-au-format-gtfs--83264",
+            "type": "url",
+            "url": "https://proxy.transport.data.gouv.fr/resource/star-rennes-integration-gtfs-rt-alerts",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/versions-des-horaires-theoriques-des-lignes-de-bus-et-de-metro-du-reseau-star-au-format-gtfs",
+                "spdx-identifier": "ODbL-1.0"
+            },
+            "spec": "gtfs-rt"
+        },
+        {
             "name": "horaires-theoriques-au-format-gtfs-et-horaires-temps-reel-au-format-gtfs-rt-du-reseau-car-jaune-a-la-reunion",
             "type": "http",
             "url": "https://www.data.gouv.fr/fr/datasets/r/de02d1be-c33a-4e84-be12-64c800a1a153",
@@ -2188,8 +2207,7 @@
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/gtfs-transport-horaires-chemins-de-fer-corse-1",
                 "spdx-identifier": "etalab-2.0"
-            },
-            "skip": true
+            }
         },
         {
             "name": "gtfs-transport-via-strada-les-cars-corse-du-sud",
@@ -3125,7 +3143,7 @@
         {
             "name": "mobilite-offre-de-transport-du-reseau-bus-gtfs-gtfs-rt",
             "type": "http",
-            "url": "https://www.data.gouv.fr/fr/datasets/r/f5495c54-a939-42db-8aae-5c11e29503c3",
+            "url": "https://www.data.gouv.fr/fr/datasets/r/d7132325-ae91-473d-9744-a031581e67a6",
             "url-override": "https://data.grandpoitiers.fr/data-fair/api/v1/datasets/2gwvlq16siyb7d9m3rqt1pb1/metadata-attachments/gtfs.zip",
             "fix": true,
             "license": {
@@ -7501,16 +7519,6 @@
                 "url": "https://transport.data.gouv.fr/datasets/moca-communaute-de-communes-caux-austreberthe",
                 "spdx-identifier": "etalab-2.0"
             }
-        },
-        {
-            "name": "moca-communaute-de-communes-caux-austreberthe",
-            "type": "url",
-            "url": "https://proxy.transport.data.gouv.fr/resource/moca-caux-austreberthe-gtfs-rt",
-            "license": {
-                "url": "https://transport.data.gouv.fr/datasets/moca-communaute-de-communes-caux-austreberthe",
-                "spdx-identifier": "etalab-2.0"
-            },
-            "spec": "gtfs-rt"
         },
         {
             "name": "moca-communaute-de-communes-caux-austreberthe",
