@@ -13,6 +13,11 @@ theme = "ananke"
   text_color = "#292e35"
 
 [[params.ananke_socials]]
+  name = "mastodon"
+  url = "https://en.osm.town/@transitous"
+  label = "Transitous on Mastodon"
+  rel = "me"
+[[params.ananke_socials]]
   name = "github"
   url = "https://github.com/public-transport/transitous"
   label = "Transitous on GitHub"
