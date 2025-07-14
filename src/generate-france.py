@@ -22,33 +22,21 @@ if __name__ == "__main__":
         "horaires-theoriques-de-la-navette-velo-du-pont-de-saint-nazaire-gtfs",  # Could not check validity, because the time zone could not be detected
         "arrets-horaires-et-parcours-theoriques-des-bus-du-reseau-des-transports-publics-envibus",  # timeout
         "horaires-theoriques-du-service-rhonexpress-de-la-metropole-de-lyon-et-du-departement-du-rhone",  # 401 not authorized
-        "gtfs-static-et-real-time-transporteur-thalys", # Skip outdated Thalys data
         "horaires-theoriques-et-temps-reel-des-navettes-de-la-station-de-tignes-gtfs-gtfs-rt", # 500
         "tico-bus-horaires-theoriques-du-reseau-de-transport-urbain-tico", # name or service not known
         "description-de-loffre-tad-tao-gtfs-flex-orleans-metropole", #expired
         "caen-la-mer-reseau-twisto-gtfs-siri", # 404, incompatible
         "reseau-de-bus-urbain-horizon", # name or service not known
         "gtfs-et-gtfs-rt-reseau-orizo-grand-avignon", # name or service not known
-        "donnees-theoriques-et-temps-reel-du-reseau-corolis-interurbain-communaute-dagglomeration-du-beauvaisis", # ssl error ? 
-        "donnees-theoriques-et-temps-reel-du-reseau-corolis-urbain-communaute-dagglomeration-du-beauvaisis", # ssl error ?
-        "donnees-theoriques-et-temps-reel-du-reseau-axo-communaute-dagglomeration-creil-sud-oise", # ssl error ?
-        "donnees-theoriques-et-temps-reel-du-reseau-tic-interurbain-communaute-dagglomeration-de-la-region-de-compiegne-et-de-la-basse-automne", # ssl error ?
-        "donnees-theoriques-et-temps-reel-du-reseau-tic-urbain-communaute-dagglomeration-de-la-region-de-compiegne-et-de-la-basse-automne", # ssl error ?
-        "donnees-theoriques-du-reseau-de-transport-a-la-demande-allotic-communaute-dagglomeration-de-la-region-de-compiegne-et-de-la-basse-automne", # ssl error ?
-        "donnees-theoriques-et-temps-reel-du-reseau-mobi-communaute-de-communes-du-pays-de-valois", # ssl error ?
-        "donnees-theoriques-et-temps-reel-du-reseau-pass-thelle-bus-communaute-de-communes-thelloise", # ssl error ?
-        "donnees-theoriques-et-temps-reel-du-reseau-sablons-bus-communaute-de-communes-des-sablons", # ssl error ?
-        "donnees-theoriques-et-temps-reel-du-reseau-airemob-communaute-de-communes-de-laire-cantilienne", # ssl error ?
-        "donnees-theoriques-et-temps-reel-du-reseau-tohm-communaute-de-communes-des-pays-doise-et-dhalatte", # ssl error ?
-        "donnees-theoriques-et-temps-reel-du-reseau-libbus-communaute-de-communes-du-pays-noyonnais", # ssl error ?
-        "donnees-theoriques-et-temps-reel-du-reseau-le-bus-communaute-de-communes-du-clermontois", # ssl error ?
-        "donnees-theoriques-du-reseau-hopla-communaute-de-communes-de-la-plaine-destrees" # ssl error?
     ]
 
     # List of datasets to remove
     remove = [
         "tier-dott-gbfs-france", # Duplicate dataset (use local ones)
         "tier-dott-gbfs-saint-quentin-en-yvelines", # Deprecated dataset
+        "horaires-des-tgv", # replaced by horaires-sncf
+        "horaires-des-lignes-intercites-sncf", # replaced by horaires-sncf
+        "horaires-des-lignes-ter-sncf" # replaced by horaires-sncf
     ]
 
     # List of individual resource ids (located in datasets) we want to remove
@@ -112,14 +100,16 @@ if __name__ == "__main__":
         # Remove invalid duplicates
         "63612", "63613", "63614",
         # Unavailable
-        "83019"
+        "83019",
+        # old/duplicate data
+        "81899", "83193", "82168"
     ]
 
     # Map for each dataset slug, if needed, the selected GTFS-RT id to the corresponding GTFS id
     gtfs_rt_select = {
          "versions-des-horaires-theoriques-des-lignes-de-bus-et-de-metro-du-reseau-star-au-format-gtfs": {
-            "82161": "83264",
-            "82162": "83264"
+            "82161": "83263",
+            "82162": "83263"
         },
         "breizhgo-car": {
             "81804": "81463",
