@@ -6,6 +6,7 @@
 import requests
 import json
 import sys
+from datetime import datetime
 
 
 if __name__ == "__main__":
@@ -15,45 +16,27 @@ if __name__ == "__main__":
     skip = [
         "blablacar-bus-horaires-theoriques-et-temps-reel-du-reseau-europeen",  # Already in eu.json
         "flixbus-horaires-theoriques-du-reseau-europeen-1",  # Already in eu.json
-        "arrets-horaires-et-parcours-theoriques-du-reseau-routier-regional-de-transport-scolaire-et-interurbain-60-oise",  # broken
         "horaires-theoriques-des-cars-du-rhone",  # requires authentication
         "horaires-theoriques-des-lignes-scolaires-du-reseau-transports-en-commun-lyonnais",  # requires authentication
         "horaires-theoriques-du-reseau-libellule-sytral-de-la-communaute-dagglomeration-de-villefranche-beaujolais-saone",  # requires authentication
-        "horaires-theoriques-du-reseau-transports-en-commun-lyonnais",
-        "description-de-loffre-tad-tao-gtfs-flex-orleans-metropole",
-        "horaires-theoriques-et-temps-reel-de-la-navette-du-pont-de-saint-nazaire-gtfs-gtfs-rt",
-        "horaires-theoriques-de-la-navette-velo-du-pont-de-saint-nazaire-gtfs",  # no agency.txt
-        "horaires-theoriques-et-temps-reel-des-navettes-de-la-ligne-bagneres-la-mongie-gtfs-gtfs-rt",  # 404 not found
-        "horaires-theoriques-et-temps-reel-des-navettes-de-la-station-de-tignes-gtfs-gtfs-rt",
-        "horaires-theoriques-et-temps-reel-des-navettes-de-val-disere-gtfs-gtfs-rt",  # 404 not found
-        "horaires-theoriques-et-temps-reel-des-navettes-hivernales-de-lalpe-dhuez-gtfs-gtfs-rt",  # 404 not found
+        "horaires-theoriques-de-la-navette-velo-du-pont-de-saint-nazaire-gtfs",  # Could not check validity, because the time zone could not be detected
         "arrets-horaires-et-parcours-theoriques-des-bus-du-reseau-des-transports-publics-envibus",  # timeout
         "horaires-theoriques-du-service-rhonexpress-de-la-metropole-de-lyon-et-du-departement-du-rhone",  # 401 not authorized
-        "3cm-horaires-theoriques-du-reseau-de-transport-urbain-solutions-transport-3cm",  # Confuses MOTIS and doesn't contain any trips
-        "donnees-theoriques-et-temps-reel-du-reseau-corolis-interurbain-communaute-dagglomeration-du-beauvaisis",  # Confuses MOTIS
-        "donnees-theoriques-et-temps-reel-du-reseau-axo-communaute-dagglomeration-creil-sud-oise",  # Confuses MOTIS
-        "arrets-horaires-et-parcours-theoriques-gtfs-du-reseau-routier-regional-de-transport-scolaire-62-pas-de-calais",  # agency.txt
-        "arrets-horaires-et-parcours-theoriques-gtfs-du-reseau-routier-regional-de-transport-interurbain-62-pas-de-calais",  # agency.txt
-        "naolib-arrets-horaires-et-circuits",  # Incomplete read
-        "reseau-de-transport-en-commun-transagglo-de-dlva",  # Resource not available
-        "donnees-theoriques-et-temps-reel-du-reseau-corolis-urbain-communaute-dagglomeration-du-beauvaisis",  # agency.txt
-        "donnees-theoriques-et-temps-reel-du-reseau-tic-interurbain-communaute-dagglomeration-de-la-region-de-compiegne-et-de-la-basse-automne",  # agency.txt
-        "donnees-theoriques-et-temps-reel-du-reseau-tic-urbain-communaute-dagglomeration-de-la-region-de-compiegne-et-de-la-basse-automne",  # agency.txt
-        "arrets-horaires-et-circuit-de-la-lignes-yeu-continent-gtfs",  # agency.txt
-        "caen-la-mer-reseau-twisto-gtfs-siri",  # Temporary removal, 401 error
-        "reseau-de-transport-interurbain-mobigo-en-bourgogne-franche-comte",  # Temporary removal, resource not available
-        "gtfs-transport-horaires-des-lignes-de-la-communaute-de-communes-corse-du-sud-a-berlina",  # Temporary removal, 404 error
-        "gtfs-transport-horaires-des-lignes-de-la-communaute-dile-rousse-balagne-a-balanina",  # Temporary removal, 404 error
-        "navettes-aeroport-paris-beauvais-aerobus",  # Not GTFS format
-        "offre-de-transport-de-la-c-a-beaune-cote-sud-gtfs", # Missing and broken data
-        "gtfs-move-vendome",  # very low availability rate
-        "gtfs-static-et-real-time-transporteur-thalys" # Skip outdated Thalys data
+        "horaires-theoriques-et-temps-reel-des-navettes-de-la-station-de-tignes-gtfs-gtfs-rt", # 500
+        "tico-bus-horaires-theoriques-du-reseau-de-transport-urbain-tico", # name or service not known
+        "description-de-loffre-tad-tao-gtfs-flex-orleans-metropole", #expired
+        "caen-la-mer-reseau-twisto-gtfs-siri", # 404, incompatible
+        "reseau-de-bus-urbain-horizon", # name or service not known
+        "gtfs-et-gtfs-rt-reseau-orizo-grand-avignon", # name or service not known
     ]
 
-        # List of datasets to remove
+    # List of datasets to remove
     remove = [
         "tier-dott-gbfs-france", # Duplicate dataset (use local ones)
         "tier-dott-gbfs-saint-quentin-en-yvelines", # Deprecated dataset
+        "horaires-des-tgv", # replaced by horaires-sncf
+        "horaires-des-lignes-intercites-sncf", # replaced by horaires-sncf
+        "horaires-des-lignes-ter-sncf" # replaced by horaires-sncf
     ]
 
     # List of individual resource ids (located in datasets) we want to remove
@@ -117,21 +100,21 @@ if __name__ == "__main__":
         # Remove invalid duplicates
         "63612", "63613", "63614",
         # Unavailable
-        "83019"
+        "83019",
+        # old/duplicate data
+        "81899", "83193", "82168"
     ]
 
     # Map for each dataset slug, if needed, the selected GTFS-RT id to the corresponding GTFS id
     gtfs_rt_select = {
-        "moca-communaute-de-communes-caux-austreberthe": {
-            "82630": "82309",
+         "versions-des-horaires-theoriques-des-lignes-de-bus-et-de-metro-du-reseau-star-au-format-gtfs": {
+            "82161": "83263",
+            "82162": "83263"
         },
         "breizhgo-car": {
             "81804": "81463",
             "81805": "81466",
             "81806": "81461",
-        },
-        "versions-des-horaires-theoriques-des-lignes-de-bus-et-de-metro-du-reseau-star-au-format-gtfs": {
-            "82161": "82951",
         },
         "horaires-theoriques-et-en-temps-reel-des-bus-et-autocars-circulant-sur-le-reseau-cap-cotentin": {
             "79830": "79831"
@@ -142,6 +125,10 @@ if __name__ == "__main__":
         "gtfs-sankeo": {
             "82901": "82900",
             "82273": "82902"
+        },
+        "moca-communaute-de-communes-caux-austreberthe": {
+            "82633": "82309",
+            "82631": "82309",
         },
     }
 
@@ -255,6 +242,10 @@ if __name__ == "__main__":
                 }
                 if dataset["slug"] in skip:
                     source["skip"] = True
+                expired = "metadata" in resource and "end_date" and "end_date" in resource["metadata"] and resource["metadata"]["end_date"] is not None and datetime.strptime(resource["metadata"]["end_date"], '%Y-%m-%d') < datetime.now()
+                if expired:
+                    print("Feed expired according to metadata, setting to skip=True:", resource["metadata"]["end_date"], feed_name)
+                    source["skip"] = True
                 if "page_url" in dataset:
                     source["license"]["url"] = dataset["page_url"]
                 if dataset["licence"] == "odc-odbl":
@@ -268,11 +259,11 @@ if __name__ == "__main__":
                     "format" in r
                     and r["format"] == "gtfs-rt"
                     and "features" in r
-                    and "trip_updates" in r["features"]
+                    and ("trip_updates" in r["features"] or "service_alerts" in r["features"] or len(r["features"]) == 0)
                 )
 
             def contains_name(out, name_to_check):
-                return any(entry.get("name") == name_to_check for entry in out)
+                return any(entry.get("name") == name_to_check and not entry.get("skip") for entry in out)
 
             resources = list(filter(cond, gtfs))
             resources.sort(key=lambda r: str(r.get("id", "")))
@@ -337,9 +328,22 @@ if __name__ == "__main__":
             "name": "lyon-tcl",
             "type": "http",
             "url": "https://gtech-transit-prod.apigee.net/v1/google/gtfs/odbl/lyon_tcl.zip?apikey=BasyG6OFZXgXnzWdQLTwJFGcGmeOs204&secret=gNo6F5PhQpsGRBCK"
+        },
+    )
+    # official feeds without available zip files at data.gouv.fr for some reason
+    out.append(
+        {
+            "name": "caen-la-mer-reseau-twisto-gtfs-siri",
+            "type": "http",
+            "url": "https://data.twisto.fr/api/explore/v2.1/catalog/datasets/fichier-gtfs-du-reseau-twisto/alternative_exports/gtfs_twisto_zip/",
+            "license": {
+                "url": "https://data.twisto.fr/explore/dataset/fichier-gtfs-du-reseau-twisto/information/",
+                "spdx-identifier": "ODbL-1.0"
+            }
         }
     )
 
+    
     with open("feeds/fr.json", "r") as f:
         region = json.load(f)
 
