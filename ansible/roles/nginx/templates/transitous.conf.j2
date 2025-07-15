@@ -85,7 +85,7 @@ server {
 
     # Routes that are basically free for us don't need a rate limit
     location ~ ^/api/(v1|v2|v3|experimental)/(geocode|stoptimes|map/stops|trip) {
-        proxy_pass http://{{ item.vhost }}-backend$request_uri;
+        proxy_pass http://{{ item.vhost }}-backend$uri?$args;
 
         limit_req zone=api_harmless burst=10;
 
