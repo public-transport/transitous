@@ -30,7 +30,7 @@ For general discussions about data availability: [#opentransport:matrix.org](htt
 
 For Transitous-specific technical topics: [#transitous:matrix.spline.de](https://matrix.to/#/#transitous:matrix.spline.de)
 
-Also, follow <a href="https://en.osm.town/@transitous" rel="me">Transitous on Mastodon</a>.
+Also, follow <a href="https://en.osm.town/@transitous" rel="me" rel="nofollow">Transitous on Mastodon</a>.
 
 ## Adding a region
 
