@@ -14,6 +14,7 @@ from zoneinfo import ZoneInfo
 from enum import Enum
 from license_expression import get_spdx_licensing, Licensing, ExpressionError
 
+import argparse
 import email.utils
 import requests
 import transitland
@@ -477,10 +478,13 @@ class Fetcher:
 
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description='Transitous GTFS feed fetcher and post-processor.')
+    parser.add_argument('metadata_file', metavar='metadata-file', type=str, help='Region metadata file to fetch feeds from')
+    arguments = parser.parse_args()
+
     fetcher = Fetcher()
 
-    metadata_file = sys.argv[1]
-    errors = fetcher.fetch(Path(metadata_file))
+    errors = fetcher.fetch(Path(arguments.metadata_file))
     if errors > 0:
         eprint(f"Error: {errors} errors occurred during fetching.")
         sys.exit(1)
