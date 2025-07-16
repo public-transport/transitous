@@ -16,6 +16,11 @@
             "name": "lviv",
             "type": "mobility-database",
             "mdb-id": "mdb-2375"
+        },
+        {
+            "name": "ukrzaliznytsya",
+            "type": "http",
+            "url": "https://jbb.ghsq.de/gtfs/ua-ukrzaliznytsya.gtfs.zip"
         }
     ]
 }
