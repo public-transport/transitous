@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
+import argparse
 import json
 import metadata
 import sys
@@ -16,12 +17,13 @@ from utils import eprint
 
 
 if __name__ == "__main__":
-    if len(sys.argv) < 2:
-        print("First argument must be one of import, full")
-        sys.exit(1)
+    parser = argparse.ArgumentParser(description='Transitous MOTIS configuration generator.')
+    parser.add_argument('mode', type=str, help='Operation mode', choices=['full', 'import'])
+    parser.add_argument('region', type=str, help='Only generate configuration for the given region (leave empty for all regions)', nargs="?")
+    arguments = parser.parse_args()
 
-    flavour = sys.argv[1]
-    feed = sys.argv[2] if len(sys.argv) > 2 else ""
+    flavour = arguments.mode
+    feed = arguments.region if arguments.region else ""
 
     feed_dir = Path("feeds/")
 
