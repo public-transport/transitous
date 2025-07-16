@@ -25,6 +25,12 @@
             "url": "https://stops.lt/vilnius/trip_updates.pb"
         },
         {
+            "name": "vilnius",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://www.stops.lt/vilnius/service_alerts.pb"
+        },
+        {
             "name": "kaunas",
             "type": "http",
             "url": "https://stops.lt/kaunas/kaunas/gtfs.zip"
@@ -51,6 +57,12 @@
             "type": "url",
             "spec": "gtfs-rt",
             "url": "https://stops.lt/klaipeda/trip_updates.pb"
+        },
+        {
+            "name": "klaipeda",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://stops.lt/klaipeda/service_alerts.pb"
         },
         {
             "name": "druskininkai",
