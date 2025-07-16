@@ -14,7 +14,7 @@
             "name": "zssk",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-eo0-zssk",
-            "url-override": "https://jbb.ghsq.de/gtfs/zssk.gtfs.zip",
+            "url-override": "https://jbb.ghsq.de/gtfs/sk-zssk.gtfs.zip",
             "display-name-options": {
                 "copy-trip-names-matching": "((EC|Os|Zr|Ex|REX|RJX|IC|RRR|R|EN|NJ)) +\\d+ +.*"
             }
