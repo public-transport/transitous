@@ -96,6 +96,11 @@
             "name": "B-Bus",
             "type": "mobility-database",
             "mdb-id": "mdb-2385"
+        },
+        {
+            "name": "LTG-Link",
+            "type": "http",
+            "url": "https://jbb.ghsq.de/gtfs/lt-ltglink.gtfs.zip"
         }
     ]
 }
