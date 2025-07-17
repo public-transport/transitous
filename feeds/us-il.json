@@ -7,6 +7,10 @@
         {
             "name": "Kurt Kremitzki",
             "github": "kkremitzki"
+        },
+        {
+            "name": "Ethan C",
+            "github": "ethanc8"
         }
     ],
     "sources": [
@@ -21,6 +25,11 @@
             "http-options": {
                 "fetch-interval-days": 1
             }
+        },
+        {
+            "name": "Pace",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2347"
         },
         {
             "name": "SMTD",
