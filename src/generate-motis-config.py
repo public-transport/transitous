@@ -19,11 +19,10 @@ from utils import eprint
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Transitous MOTIS configuration generator.')
     parser.add_argument('mode', type=str, help='Operation mode', choices=['full', 'import'])
-    parser.add_argument('region', type=str, help='Only generate configuration for the given region (leave empty for all regions)', nargs="?")
+    parser.add_argument('regions', type=str, help='Only generate configuration for the given region(s) (leave empty for all regions, globs are supported)', nargs="*")
     arguments = parser.parse_args()
 
     flavour = arguments.mode
-    feed = arguments.region if arguments.region else ""
 
     feed_dir = Path("feeds/")
 
@@ -51,12 +50,14 @@ if __name__ == "__main__":
         config["timetable"]["datasets"] = {}
         config["gbfs"]["feeds"] = {}
 
-        if feed == "":
-            glob = "*.json"
+        feeds = []
+        if len(arguments.regions) == 0:
+            feeds = feed_dir.glob("*.json")
         else:
-            glob = f"{feed}.json"
+            for region in arguments.regions:
+                feeds += feed_dir.glob(f"{region}.json")
 
-        for feed in sorted(feed_dir.glob(glob)):
+        for feed in sorted(feeds):
             with open(feed, "r") as f:
                 parsed = json.load(f)
                 region = metadata.Region(parsed)
