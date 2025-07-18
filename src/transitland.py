@@ -101,29 +101,31 @@ class Atlas:
         if "authorization" in feed:
             match feed["authorization"]["type"]:
                 case "header":
-                    if source.api_key is None:
+                    if not source.api_key and not source.url_override:
                         msg = "Warning: Transitland source has authorization=header, but no api-key is set"
                         print(f"{msg}: {source.transitland_atlas_id}", flush=True)
                         return None
                     header_name = feed["authorization"]["param_name"]
 
-                    match result:
-                        case HttpSource():
-                            result.options.headers[header_name] = source.api_key
-                        case UrlSource():
-                            result.headers[header_name] = source.api_key
+                    if not source.url_override and source.api_key:
+                        match result:
+                            case HttpSource():
+                                result.options.headers[header_name] = source.api_key
+                            case UrlSource():
+                                result.headers[header_name] = source.api_key
 
                 case "basic_auth":
-                    if source.api_key is None:
+                    if not source.api_key and not source.url_override:
                         msg = "Warning: Transitland source has authorization=basic_auth, but no api-key is set"
                         print(f"{msg}: {source.transitland_atlas_id}", flush=True)
                         return None
 
-                    match result:
-                        case HttpSource():
-                            result.options.headers["Authorization"] = f"Basic: {source.api_key}"
-                        case UrlSource():
-                            result.headers["Authorization"] =  f"Basic: {source.api_key}"
+                    if not source.url_override and source.api_key:
+                        match result:
+                            case HttpSource():
+                                result.options.headers["Authorization"] = f"Basic: {source.api_key}"
+                            case UrlSource():
+                                result.headers["Authorization"] =  f"Basic: {source.api_key}"
 
                 case "query_param":
                     if source.url_override is None:
