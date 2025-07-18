@@ -17,7 +17,7 @@
         {
             "name": "hz",
             "type": "http",
-            "url": "http://www.hzpp.hr/Media/Default/GTFS/GTFS_files.zip",
+            "url": "https://www.hzpp.hr/api/v1/repository/download/852f76d2-8df3-4957-b30b-dc4b88b1caca",
             "license": {
                 "spdx-identifier": "CC0-1.0"
             }
