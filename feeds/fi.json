@@ -35,7 +35,12 @@
                 "spdx-identifier": "CC-BY-4.0",
                 "url": "https://www.digitraffic.fi/en/railway-traffic/"
             },
-            "fix": true
+            "fix": true,
+            "http-options": {
+                "headers": {
+                    "accept-encoding": "gzip"
+                }
+            }
         },
         {
             "name": "digitraffic",
