@@ -35,10 +35,10 @@ steps:
     commands:
       - motis --version
       - touch out/.import-running
-      - ./src/generate-motis-config.py import
+      - ./src/generate-motis-config.py --import-only
       # Remove files that we want to regenerate
       - bash -c "rm -f out/data/meta/{adr_extend.json,tt.json,matches.json,osr_footpath.json} out/data/shape*"
       # Start import
       - cd out && motis import -c config.yml > motis-import.log && rm motis-import.log && cd ..
-      - src/generate-motis-config.py full
+      - src/generate-motis-config.py
       - rm out/.import-running

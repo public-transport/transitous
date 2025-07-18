@@ -336,7 +336,7 @@ In order to start motis, we need a config file listing all the feeds we want to 
 You can generate one using our script:
 
 ```bash
-./src/generate-motis-config.py full
+./src/generate-motis-config.py
 ```
 
 The generated config file still needs a small adjustment.
