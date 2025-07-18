@@ -88,7 +88,7 @@ class Source:
 
 class HttpOptions:
     fetch_interval_days: Optional[int] = None
-    headers: dict[str, str] = None
+    headers: dict[str, str]
     ignore_tls_errors: bool = False
     method: Optional[str] = None
     request_body: Optional[str] = None
@@ -113,7 +113,7 @@ class TransitlandSource(Source):
     transitland_atlas_id: str = ""
     url_override: Optional[str] = None
     api_key: Optional[str] = None
-    options: HttpOptions = None
+    options: HttpOptions
 
     def __init__(self, parsed: dict):
         super().__init__(parsed)
@@ -130,7 +130,7 @@ class TransitlandSource(Source):
 class MobilityDatabaseSource(Source):
     mdb_id: str = ""
     url_override: Optional[str] = None
-    options: HttpOptions = None
+    options: HttpOptions
 
     def __init__(self, parsed: dict):
         super().__init__(parsed)
@@ -145,11 +145,12 @@ class MobilityDatabaseSource(Source):
 
 class HttpSource(Source):
     url: str = ""
-    options: HttpOptions = None
+    options: HttpOptions
     url_override: Optional[str] = None
     cache_url: Optional[str] = None
 
     def __init__(self, parsed: Optional[dict] = None):
+
         if parsed:
             super().__init__(parsed)
             self.url = parsed["url"]
@@ -160,31 +161,19 @@ class HttpSource(Source):
             else:
                 self.options = HttpOptions()
 
-    def set_header(self, key, value):
-        self.options.headers[key] = value
-
-    def set_url_override(self, url_override):
-        self.url_override = url_override
-
 
 class UrlSource(Source):
     url: str = ""
-    headers: Optional[dict[str, str]] = None
+    headers: dict[str, str]
 
     def __init__(self, parsed: Optional[dict] = None):
+        self.headers = {}
+
         if parsed:
             super().__init__(parsed)
             self.url = parsed["url"]
             if "headers" in parsed:
                 self.headers = parsed["headers"]
-
-    def set_header(self, key, value):
-        if self.headers is None:
-            self.headers = {}
-        self.headers[key] = value
-
-    def set_url_override(self, url_override):
-        self.url = url_override
 
 
 def sourceFromJson(parsed: dict) -> Source:

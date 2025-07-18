@@ -57,6 +57,10 @@ class Atlas:
             result.spec = "gtfs-rt"
             result.skip = source.skip
             result.skip_reason = source.skip_reason
+
+            if source.url_override:
+                result.url = source.url_override
+
         elif "realtime_vehicle_positions" in feed["urls"]:
             result = UrlSource()
             result.name = source.name
@@ -64,6 +68,10 @@ class Atlas:
             result.spec = "gtfs-rt"
             result.skip = source.skip
             result.skip_reason = source.skip_reason
+
+            if source.url_override:
+                result.url = source.url_override
+
         elif "realtime_alerts" in feed["urls"]:
             result = UrlSource()
             result.name = source.name
@@ -71,6 +79,10 @@ class Atlas:
             result.spec = "gtfs-rt"
             result.skip = source.skip
             result.skip_reason = source.skip_reason
+
+            if source.url_override:
+                result.url = source.url_override
+
         elif "gbfs_auto_discovery" in feed["urls"]:
             result = UrlSource()
             result.name = source.name
@@ -78,44 +90,53 @@ class Atlas:
             result.spec = "gbfs"
             result.skip = source.skip
             result.skip_reason = source.skip_reason
+
+            if source.url_override:
+                result.url = source.url_override
         else:
             print("Warning: Found Transitland source that we can't handle:", source.transitland_atlas_id)
             sys.stdout.flush()
             return None
 
         if "authorization" in feed:
-
             match feed["authorization"]["type"]:
-
                 case "header":
                     if source.api_key is None:
                         msg = "Warning: Transitland source has authorization=header, but no api-key is set"
                         print(f"{msg}: {source.transitland_atlas_id}", flush=True)
                         return None
-                    result.set_header(feed["authorization"]["param_name"], source.api_key)
+                    header_name = feed["authorization"]["param_name"]
+
+                    match result:
+                        case HttpSource():
+                            result.options.headers[header_name] = source.api_key
+                        case UrlSource():
+                            result.headers[header_name] = source.api_key
 
                 case "basic_auth":
                     if source.api_key is None:
                         msg = "Warning: Transitland source has authorization=basic_auth, but no api-key is set"
                         print(f"{msg}: {source.transitland_atlas_id}", flush=True)
                         return None
-                    result.set_header("Authorization", f"Basic: {source.api_key}")
+
+                    match result:
+                        case HttpSource():
+                            result.options.headers["Authorization"] = f"Basic: {source.api_key}"
+                        case UrlSource():
+                            result.headers["Authorization"] =  f"Basic: {source.api_key}"
 
                 case "query_param":
                     if source.url_override is None:
                         msg = "Warning: Transitland source has authorization=query_param, but no url-override is set"
                         print(f"{msg}: {source.transitland_atlas_id}", flush=True)
                         return None
-                    # todo implement direct support for query params instead of going misusing url-override
-                    result.set_url_override(source.url_override)
+                        # TODO add support for building URLs from api-key
 
                 case "replace_url":
                     if source.url_override is None:
                         msg = "Warning: Transitland source has authorization=replace_url, but no url-override is set"
                         print(f"{msg}: {source.transitland_atlas_id}", flush=True)
                         return None
-                    result.set_url_override(source.url_override)
-
                 case _:
                     msg = f"Warning: Transitland source has unknown authorization type {feed['authorization']['type']}"
                     print(f"{msg}: {source.transitland_atlas_id}", flush=True)
