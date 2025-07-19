@@ -12,7 +12,46 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 -->
 
 The API provided by Transitous can be used for free, but we recommend that you let us know if you use it, so your use case can be considered in future decisions.
-You can do that by <a href="https://github.com/public-transport/transitous/blob/main/website/content/_index.html#L30">adding your app to our website</a> and/or letting us know in our <a href="https://matrix.to/#/%23transitous:matrix.spline.de">Matrix channel</a>.
+You can do that by <a href="https://github.com/public-transport/transitous/blob/b2d184b51cb4cf20fb48d0b76420ba57f4d3fce0/website/content/_index.html#L30">adding your app to our website</a> and/or letting us know in our <a href="https://matrix.to/#/%23transitous:matrix.spline.de">Matrix channel</a>.
+
+<h2>Usage Policy</h2>
+
+<p>Transitous is provided by a community of volunteers to fulfill the needs of Free and Open Source applications and other non-profit activities.
+We provide the service on a best-effort basis and reserve the right to stop providing it to any consumer at any time.</p>
+
+<h3>Resource Usage</h3>
+
+<p>Our hosting resources are limited.
+Please contact us before doing any potentially resource-intensive operations, such as many requests (also from different users) or primarily difficult to calculate requests (such as routing, isochrones).
+Generally, if your requests take long, they are difficult to calculate.</p>
+
+<p>We'll try to find ways to accommodate your use. Should we hit the limits of what we can handle with our current resources,
+there's also the option to <a href="/doc/#running-a-transitous-instance-locally">self-host your own instance of Transitous</a>.</p>
+
+<p>There is no need to scrape data using the API, you may download our entire source dataset <a href="https://github.com/public-transport/transitous/wiki/Using-Transitous-data">here</a>.
+
+<h3>API Usage</h3>
+
+<p>If you want to use the API for your free and open-source application, please:<p>
+
+<ul>
+<li>Contact us <a href="https://matrix.to/#/%23transitous:matrix.spline.de">in our Matrix Channel</a> to make sure we can handle your
+expected resource usage and so we are aware of your usecases. This also allows us to contact you in case we want to coordinate breaking changes.</li>
+<li>Make sure your send HTTP <code>User-Agent</code> or <code>X-Client-Identification</code> headers with every request, at least containing the following information:</li>
+<ul>
+    <li>Name of the application</li>
+    <li>Version of the client implementation</li>
+    <li>A way of contact (e-mail address or website URL)</li>
+</ul>
+<li>You may <a href="https://github.com/public-transport/transitous/blob/b2d184b51cb4cf20fb48d0b76420ba57f4d3fce0/website/content/_index.html#L30">add your application to the Transitous website</a></li>
+</ul>
+
+<h3>Commercial Use</h3>
+
+<p>Transitous is not intended for commercial or for-profit purposes. If you are not sure whether your use qualifies, please contact us.
+We will make a decision on a case-by-case basis.
+<!--For commercial use, see the <a href="/suppliers/">list of companies providing consulting and MOTIS hosting<a/>. TODO uncomment as soon as that list is no longer empty -->
+</p>
 
 <h2>MOTIS 2 API</h2>
 
