@@ -184,6 +184,9 @@ if __name__ == "__main__":
         for source in region.sources:
             source_id = f"{region_code_lower}_{source.name}"
 
+            if source.skip:
+                continue
+
             match source:
                 case TransitlandSource():
                     source = transitland_atlas.source_by_id(source)
@@ -193,9 +196,6 @@ if __name__ == "__main__":
                     source = mobilitydb.source_by_id(source)
                     if not source:
                         continue
-
-            if source.skip:
-                continue
 
             match source:
                 case UrlSource() if source.spec == "gtfs-rt":
