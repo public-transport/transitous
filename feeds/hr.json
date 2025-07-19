@@ -94,6 +94,31 @@
             "name": "rapska-vozidba",
             "type": "http",
             "url": "https://owncloud.cesnet.cz/index.php/s/UudJhpom7fgur2X/download"
+        },
+        {
+            "name": "crikvenica",
+            "type": "http",
+            "url": "https://owncloud.cesnet.cz/index.php/s/UsB5SB51KZnjwM8/download"
+        },
+        {
+            "name": "opatija",
+            "type": "http",
+            "url": "https://owncloud.cesnet.cz/index.php/s/docWLlTJeomKemk/download"
+        },
+        {
+            "name": "porec",
+            "type": "http",
+            "url": "https://owncloud.cesnet.cz/index.php/s/D3OAxN1BkRSt20T/download"
+        },
+        {
+            "name": "sveta-nedelja",
+            "type": "http",
+            "url": "https://owncloud.cesnet.cz/index.php/s/qWqrNkMjCUIDlSv/download"
+        },
+        {
+            "name": "vela-luka",
+            "type": "http",
+            "url": "https://owncloud.cesnet.cz/index.php/s/Y5Xf2hAiP5z7q6U/download"
         }
     ]
 }
