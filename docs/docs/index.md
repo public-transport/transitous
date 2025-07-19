@@ -34,6 +34,76 @@ For general discussions about data availability: [#opentransport:matrix.org](htt
 
 For Transitous-specific technical topics: [#transitous:matrix.spline.de](https://matrix.to/#/#transitous:matrix.spline.de)
 
+## Used data
+
+### Static timetables
+
+The backbone of public transport routing is static [GTFS](https://gtfs.org) schedule data,
+that's the bare minimum for Transitous to work in a region.
+GTFS feeds are essentially ZIP files containing a set of CSV tables, making them relatively
+easy to inspect, although especially nationwide aggregated feeds can get rather large.
+
+GTFS feeds ideally contain data for several months into the future, but can nevertheless receive
+regular updates. Transitous checks for updates daily, so for this to work we also need
+a stable URL for them.
+
+For finding GTFS data, there's a few places worth looking at:
+
+* The public transport operators themselves, they might just publish data on their website.
+* Regional or national open data portals, especially in countries with regulation requiring public transport data to be published.
+In the EU, those are called "National Access Point" (NAP).
+* GTFS feed registries such as [Mobility Database](https://mobilitydatabase.org/) and [Transitland](https://www.transit.land/).
+* Google Maps having public transport data in a region is a strong indicator whether GTFS feeds even exist,
+as they use those as well.
+
+### Realtime data
+
+For properly dealing with delay, disruptions and all kinds of other unplanned
+and short-notice service changes Transitous also uses [GTFS Realtime (RT)](https://gtfs.org/documentation/realtime/reference/) feeds.
+Those are polled once a minute for updates.
+
+GTFS-RT feeds come in three different flavors:
+
+* Trip updates, that is realtime schedule changes like delays, cancellations, etc.
+* Service alerts, that is textual descriptions of disruptions beyond a specific connection, such as upcoming construction work.
+* Vehicle positions, that is geographic coordinates of the current position of trains or busses.
+
+Transitous can handle the first two so far.
+
+Note that GTFS-RT feeds typically only work in combination with a matching static GTFS feed. So e.g. combining a smaller realtime feed
+of a single operator with a nationwide aggregated static feed will usually not work out of the box.
+
+### Shared mobility data
+
+Transitous doesn't just handle scheduled public transport though, but also vehicle sharing, which
+can be particularly interesting for the first and last mile of a trip.
+
+The data for this is provided by [GBFS](https://github.com/MobilityData/gbfs) feeds. This includes information about the type of vehicles (bikes,
+cargo bikes, kickscooters, mopeds, cars, etc) and their method of propulsion (human powered, electric, etc),
+where to pick them up and where to return them (same location as pickup, designated docks of the provider, free floating
+within a specific area, etc) and most importantly where vehicles are currently available.
+
+### On-demand services
+
+Somewhere between scheduled transport and shared mobility are on-demand services. That is, services that require
+some form or booking beforehand and might be anything from an on-demand bus that still follows a somewhat fixed
+route with pre-defined stops to something closer to a taxi with a more flexible route that picks up or drops
+off passengers anywhere in a given area.
+
+These services are often used in times and/or areas with fewer demand, thus making them often the only mobility
+option then/there. That makes it all the more important to have those covered as well.
+
+Modeling on-demand services is challenging, given the variety on how those services work and their inherently very dynamic nature.
+There's the relatively new [GTFS-Flex](https://gtfs.org/community/extensions/flex/) extension covering this. GTFS-Flex data might
+be included in static GTFS data or provided separately.
+
+### OSM
+
+A crucial dataset for all road-based and in-building routing is [OpenStreetMap](https://openstreetmap.org). While that
+is generally very comprehensive and up-to-date, there's one aspect that might need fixes, the floor level
+separation. That's not visible in most OSM-based maps and thus is easy to miss while mapping. For Transitous this is
+particularly important for in-building routing in train stations.
+
 ## Adding a region
 
 Transitous data sources are divided by region, so they can be continuously tested and verified by locals.
