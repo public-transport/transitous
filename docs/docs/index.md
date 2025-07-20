@@ -40,8 +40,6 @@ For Transitous-specific technical topics: [#transitous:matrix.spline.de](https:/
 
 The backbone of public transport routing is static [GTFS](https://gtfs.org) schedule data,
 that's the bare minimum for Transitous to work in a region.
-GTFS feeds are essentially ZIP files containing a set of CSV tables, making them relatively
-easy to inspect, although especially nationwide aggregated feeds can get rather large.
 
 GTFS feeds ideally contain data for several months into the future, but can nevertheless receive
 regular updates. Transitous checks for updates daily, so for this to work we also need
@@ -342,6 +340,60 @@ This is useful for passing in things like headers with API keys.
     }
 }
 ```
+
+## Diagnostics
+
+There's a number of built-in and external tools available to inspect data sets and to check whether they
+have been loaded correctly by Transitous.
+
+### Static timetables
+
+GTFS feeds are essentially ZIP files containing a set of CSV tables, making them relatively
+easy to inspect e.g. with a spreadsheet application or text editor, although especially
+nationwide aggregated feeds can get rather large.
+
+Transitous might modify GTFS data as part of its import pipeline, you'll find the processed
+feeds [here](https://api.transitous.org/gtfs/).
+
+The [Transitous map view](https://api.transitous.org/) shows a colored markers for each (estimated)
+current position of a public transport vehicle.
+
+### Realtime data
+
+GTFS-RT feeds use [Protocol Buffers](https://en.wikipedia.org/wiki/Protocol_Buffers), looking at their content
+thus needs specialized tools.
+
+``` bash
+curl https://the.feed.url | protoc gtfs-realtime.proto --decode=transit_realtime.FeedMessage | less
+```
+
+The Protocol Buffers schema file needed for this can be downloaded [here](https://gtfs.org/documentation/realtime/gtfs-realtime.proto).
+
+To see the realtime coverage available in Transitous, you can toggle the color coding of vehicles
+on [its map view](https://api.transitous.org/) in the upper right corner. A green/yellow/red gradient shows the amount
+of delay for the corresponding trip, while gray vehicles have no realtime information.
+
+### Shared mobility data
+
+GBFS consists of an entry point in form of a small JSON manifest that contains links to further JSON files with the actual information,
+generally split up by how often certain aspects are expected to change.
+
+Transitous currently has no built-in way to visualize availabe sharing vehicles.
+
+### On-demand services
+
+GTFS-Flex is an extension of GTFS static timetable data and as such is also a ZIP file containing CSV tables.
+Additionally, it can also contain GeoJSON files defining regions that can be viewed e.g. with QGIS.
+
+Tansitous' [map view in debug mode](https://api.transitous.org/?debug) does show GTFS-Flex zones when zooming in
+far enough.
+
+### OSM
+
+When zoomed in enough the [map view of Transitous](https://api.transitous.org/) will offer you a floor level selector at the lower right.
+That can give you a first indication if elements are misplaced (showing up on the wrong level) or not assigned to a floor level
+at all (showing up on all levels). For reviewing smaller elements [indoor=](https://indoorequal.org) can also be useful,
+and for fixing things [JOSM](https://josm.openstreetmap.de/) has a built-in level selector on the top left.
 
 ## Overview of the import pipeline
 The following pipeline runs on a daily basis to import new GTFS feed data.
