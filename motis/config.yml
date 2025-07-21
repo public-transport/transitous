@@ -33,7 +33,8 @@ timetable:
   update_interval: 60
   http_timeout: 30
   incremental_rt_update: false
-  max_footpath_length: 20
+  max_footpath_length: 12
+  extend_missing_footpaths: true
 # The datasets are filled in by ./src/generate-motis-config.py
   datasets:
 
