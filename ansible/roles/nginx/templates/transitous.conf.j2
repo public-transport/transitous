@@ -69,6 +69,7 @@ server {
         proxy_cache_valid      200 302 404 5d;
         proxy_cache_use_stale  error timeout invalid_header updating
                                 http_500 http_502 http_503 http_504;
+        add_header Cache-Control "public, max-age=360000";
     }
 
     # Rate limit plan API

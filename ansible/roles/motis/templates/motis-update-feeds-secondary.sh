@@ -5,12 +5,14 @@
 
 echo "Copying new files…"
 
-#cp -r -p /var/lib/motis/data /var/cache/transitous/out/data
-sudo -u motis cp -r -p /var/cache/transitous/out/osm/ /var/cache/transitous/out/data/ # TODO -l ?
 
 cd /var/cache/transitous/out/
-sudo -u motis wget -N -nH --cut-dirs=1 --exclude-directories=/gtfs/data/tiles/,/gtfs/data/osr/ --mirror --no-parent -e robots=off https://api.transitous.org/gtfs/data/ || true
-sudo -u motis wget -N -e robots=off https://api.transitous.org/gtfs/config.yml || true
+sudo -u motis wget --limit-rate=30m --mirror -l 1 --no-parent --no-directories --accept gtfs.zip --accept config.yml -e robots=off https://api.transitous.org/gtfs/ || true
+#sudo -u motis wget --limit-rate=30m --mirror -l 1 --no-parent --no-directories --accept gtfs.zip -e robots=off https://api.transitous.org/gtfs/ || true
+
+sudo -u motis cp -r -p --reflink=auto /var/cache/transitous/out/osm/ /var/cache/transitous/out/data/
+sudo -u motis /opt/motis/motis import -c /var/cache/transitous/out/config.yml > /var/cache/transitous/motis-import.log 2>&1
+chown -R motis:motis /var/cache/transitous/out/data/
 
 # Exit if empty
 if [ -z "$(ls -A /var/cache/transitous/out)" ]; then
@@ -21,15 +23,15 @@ if [ -f /var/cache/transitous/out/.import-running ]; then
     echo "Import has not finished, exiting"
     exit 0
 fi
+echo "Import done."
 
 rm -r /var/lib/motis/data.bak/ || true
 mv /var/lib/motis/data/ /var/lib/motis/data.bak/
-mv /var/cache/transitous/out/data /var/lib/motis/
 
+cp -r -u --reflink=auto /var/cache/transitous/out/data /var/lib/motis/
 cp --reflink=auto /var/cache/transitous/out/config.yml /var/lib/motis/data/config.yml
 
-chown -R motis:www-data /var/lib/motis/data/
-chmod -R u+r,g+r /var/lib/motis/data/
+chown -R motis:motis /var/lib/motis/data/
 
 echo "Restarting MOTIS…"
 systemctl --no-ask-password restart motis.service
