@@ -7,7 +7,8 @@ echo "Copying new files…"
 
 
 cd /var/cache/transitous/out/
-sudo -u motis wget --limit-rate=30m --mirror -l 1 --no-parent --no-directories --accept gtfs.zip --accept config.yml -e robots=off https://api.transitous.org/gtfs/ || true
+rm .import-running || true
+sudo -u motis wget --limit-rate=30m --mirror -l 1 --no-parent --no-directories --accept gtfs.zip --accept config.yml --accept .import-running -e robots=off https://api.transitous.org/gtfs/ || true
 #sudo -u motis wget --limit-rate=30m --mirror -l 1 --no-parent --no-directories --accept gtfs.zip -e robots=off https://api.transitous.org/gtfs/ || true
 
 sudo -u motis cp -r -p --reflink=auto /var/cache/transitous/out/osm/ /var/cache/transitous/out/data/
@@ -23,6 +24,11 @@ if [ -f /var/cache/transitous/out/.import-running ]; then
     echo "Import has not finished, exiting"
     exit 0
 fi
+
+if ! grep -q tiles /var/cache/transitous/out/config.yml; then
+    exit 0
+fi
+
 echo "Import done."
 
 rm -r /var/lib/motis/data.bak/ || true
