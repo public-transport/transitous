@@ -24,6 +24,11 @@ if [ -f /var/cache/transitous/out/.import-running ]; then
     echo "Import has not finished, exiting"
     exit 0
 fi
+
+if ! grep -q tiles /var/cache/transitous/out/config.yml; then
+    exit 0
+fi
+
 echo "Import done."
 
 rm -r /var/lib/motis/data.bak/ || true
