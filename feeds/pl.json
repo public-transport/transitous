@@ -490,6 +490,12 @@
             "fix": true
         },
         {
+            "name": "PKS-Poznań",
+            "type": "http",
+            "spec": "gtfs-rt",
+            "url": "https://pksonline.pl:8443/oba-api/api/gtfs_realtime/trip-updates-for-agency/1211.pb?key=WEB&removeAgencyIds=true"
+        },
+        {
             "name": "Oświęcim",
             "type": "http",
             "spec": "gtfs",
@@ -515,6 +521,28 @@
             "spec": "gtfs",
             "url": "https://kbadmin.vot.pl/gtfs/kombus.zip",
             "fix": true
+        },
+        {
+            "name": "Kombus-Kórnik",
+            "type": "http",
+            "spec": "gtfs-rt",
+            "url": "https://obakombusapi.iplaner.pl/api/gtfs_realtime/trip-updates-for-agency/200.pb?key=web&removeAgencyIds=true"
+        },
+        {
+            "name": "Kombus-Środa-Wielkopolska",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://kasmar00.github.io/gtfs-sroda-wlkp/latest.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            },
+            "fix": true
+        },
+        {
+            "name": "Kombus-Środa-Wielkopolska",
+            "type": "http",
+            "spec": "gtfs-rt",
+            "url": "https://obasrodaapi.iplaner.pl/api/gtfs_realtime/trip-updates-for-agency/333.pb?key=web&removeAgencyIds=true"
         },
         {
             "name": "Biker-Białystok",
