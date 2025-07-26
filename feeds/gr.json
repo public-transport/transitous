@@ -1,0 +1,30 @@
+{
+    "maintainers": [
+        {
+            "name": "Lach Anonym",
+            "github": "Lach-anonym"
+        }
+    ],
+    "sources": [
+        {
+            "name": "Athens-Bus",
+            "type": "http",
+            "url": "https://www.gitlab.com/Lach-anonym/athens-gtfs/-/jobs/artifacts/main/raw/gtfs-bus.zip?job=download-republish-gtfs",
+            "license": {
+                "spdx-identifier": "CC-BY-SA-4.0"
+            },
+            "fix": true,
+            "extend-calendar": true
+        },
+        {
+            "name": "Athens-Rail",
+            "type": "http",
+            "url": "https://www.gitlab.com/Lach-anonym/athens-gtfs/-/jobs/artifacts/main/raw/gtfs-rail.zip?job=download-republish-gtfs",
+            "license": {
+                "spdx_identifier": "CC-BY-SA-4.0"
+            },
+            "fix": true,
+            "extend-calendar": true
+        }
+    ]
+}
