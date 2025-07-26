@@ -13,5 +13,6 @@
 /.psa*
 /.spago
 /static/index.js
+/static/doc
 /public
 /resources
