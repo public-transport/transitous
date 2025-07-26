@@ -52,6 +52,7 @@ class Source:
     drop_shapes: bool = False
     drop_agency_names: List[str] = []
     display_name_options: Optional[DisplayNameOptions] = None
+    extend_calendar = False
 
     def __init__(self, parsed: Optional[dict] = None):
         self.license = License()
@@ -84,6 +85,8 @@ class Source:
             if "display-name-options" in parsed:
                 self.display_name_options = \
                     DisplayNameOptions(parsed["display-name-options"])
+            if "extend-calendar" in parsed:
+                self.extend_calendar = bool(parsed["extend-calendar"])
 
 
 class HttpOptions:
