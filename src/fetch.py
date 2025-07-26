@@ -398,9 +398,12 @@ class Fetcher:
                 return
 
             if validity == FeedValidity.EXPIRED:
-                eprint("Error: Feed is expired, please consider " +
+                if source.extend_calendar:
+                    eprint("Warning: Feed is expired, the calendar will be extended beyond the specified end date")
+                else:
+                    eprint("Error: Feed is expired, please consider " +
                        "removing or updating its source")
-                raise Exception("Feed is expired")
+                    raise Exception("Feed is expired")
 
         os.rename(temp_file, output_path)
 

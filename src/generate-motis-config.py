@@ -94,7 +94,10 @@ if __name__ == "__main__":
                                 f"{region_name}_{source.name}.gtfs.zip"
                             name = f"{region_name}-{source.name}"
                             config["timetable"]["datasets"][name] = \
-                                {"path": schedule_file}
+                                {
+                                    "path": schedule_file,
+                                    "extend_calendar": source.extend_calendar
+                                }
 
                         case "gtfs-rt" if isinstance(source, metadata.UrlSource):
                             name = f"{region_name}-{source.name}"
