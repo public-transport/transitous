@@ -195,6 +195,15 @@ def sourceFromJson(parsed: dict) -> Source:
     sys.exit(1)
 
 
+def inherit_options_from_db_source(source: Source) -> HttpSource:
+    from copy import deepcopy
+    from typing import cast
+
+    result = cast(HttpSource, deepcopy(source))
+    result.__class__ = HttpSource
+    return result
+
+
 class Region:
     maintainers: List[Maintainer] = []
     sources: List[Source] = []

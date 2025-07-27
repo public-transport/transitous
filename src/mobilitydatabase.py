@@ -4,7 +4,7 @@
 
 from pathlib import Path
 from typing import Dict, Optional
-from metadata import UrlSource, HttpSource, Source, MobilityDatabaseSource, License
+from metadata import UrlSource, HttpSource, Source, MobilityDatabaseSource, License, inherit_options_from_db_source
 from utils import eprint
 import requests
 import csv
