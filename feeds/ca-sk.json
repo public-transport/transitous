@@ -9,7 +9,8 @@
     {
       "name": "Moose-Jaw-Transit",
       "type": "transitland-atlas",
-      "transitland-atlas-id": "f-moosejaw~sk~ca"
+      "transitland-atlas-id": "f-moosejaw~sk~ca",
+      "extend-calendar": true
     }
   ]
 }
