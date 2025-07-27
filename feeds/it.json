@@ -174,7 +174,8 @@
             "license": {
                 "spdx-identifier": "IODL-2.0"
             },
-            "fix": true
+            "fix": true,
+            "extend-calendar": true
         },
         {
             "name": "Sardegna-Contributate",
