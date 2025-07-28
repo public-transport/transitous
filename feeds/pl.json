@@ -487,7 +487,7 @@
         },
         {
             "name": "PKS-Poznań",
-            "type": "http",
+            "type": "url",
             "spec": "gtfs-rt",
             "url": "https://pksonline.pl:8443/oba-api/api/gtfs_realtime/trip-updates-for-agency/1211.pb?key=WEB&removeAgencyIds=true"
         },
@@ -520,7 +520,7 @@
         },
         {
             "name": "Kombus-Kórnik",
-            "type": "http",
+            "type": "url",
             "spec": "gtfs-rt",
             "url": "https://obakombusapi.iplaner.pl/api/gtfs_realtime/trip-updates-for-agency/200.pb?key=web&removeAgencyIds=true"
         },
@@ -536,7 +536,7 @@
         },
         {
             "name": "Kombus-Środa-Wielkopolska",
-            "type": "http",
+            "type": "url",
             "spec": "gtfs-rt",
             "url": "https://obasrodaapi.iplaner.pl/api/gtfs_realtime/trip-updates-for-agency/333.pb?key=web&removeAgencyIds=true"
         },
