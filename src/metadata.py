@@ -51,6 +51,7 @@ class Source:
     drop_too_fast_trips: bool = True
     drop_shapes: bool = False
     drop_agency_names: List[str] = []
+    keep_agency_names: List[str] = []
     display_name_options: Optional[DisplayNameOptions] = None
 
     def __init__(self, parsed: Optional[dict] = None):
@@ -81,6 +82,8 @@ class Source:
                 self.drop_shapes = parsed["drop-shapes"]
             if "drop-agency-names" in parsed:
                 self.drop_agency_names = parsed["drop-agency-names"]
+            if "keep-agency-names" in parsed:
+                self.keep_agency_names = parsed["keep-agency-names"]
             if "display-name-options" in parsed:
                 self.display_name_options = \
                     DisplayNameOptions(parsed["display-name-options"])
