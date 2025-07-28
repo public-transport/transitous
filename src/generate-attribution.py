@@ -215,7 +215,7 @@ if __name__ == "__main__":
                     else:
                         attributions[source_id] |= attribution
                 case HttpSource():
-                    http_attribution = http_source_attribution(source, region_data)
+                    http_attribution = http_source_attribution(source, region_data.copy())
                     if not http_attribution:
                         continue
 
