@@ -16,10 +16,12 @@ from zipfile import ZipFile
 from typing import Optional
 
 
-REGIONS = {
+# extensions/overrides for ISO 3166-1/2 codes
+COUNTRIES = {
     "EU": "European Union",
     "XK":  "Kosovo"
 }
+SUBDIVISIONS = {}
 
 
 def filter_duplicates(elems):
@@ -34,8 +36,8 @@ def filter_duplicates(elems):
     return out
 
 
-def http_source_attribution(source: HttpSource) -> Optional[dict]:
-    attribution: dict = {}
+def http_source_attribution(source: HttpSource, region_data: dict) -> Optional[dict]:
+    attribution = region_data
 
     if source.license.spdx_identifier:
         attribution["spdx_license_identifier"] = \
@@ -132,9 +134,6 @@ def http_source_attribution(source: HttpSource) -> Optional[dict]:
     ):
         attribution["human_name"] = attribution["operators"][0]
 
-    attribution["region_code"] = region_code
-    attribution["region_name"] = region_name
-
     return attribution
 
 
@@ -153,6 +152,26 @@ def rt_attribution(source: UrlSource) -> dict:
     return attribution
 
 
+def get_region_data(code: str) -> dict:
+    code = code.upper()
+    region_data = {}
+    if len(code) == 2:
+        country = pycountry.countries.get(alpha_2=code)
+        region_data["country_code"] = code
+        region_data["country_name"] = country.name if country else COUNTRIES[code]
+    else:
+        region_data = get_region_data(code[:2])
+        subdivision = pycountry.subdivisions.get(code=code)
+        region_data["subdivision_code"] = code
+        region_data["subdivision_name"] = subdivision.name if subdivision else SUBDIVISIONS[code]
+
+    # TODO backward compatibility for not yet adapted consumer code, remove eventually
+    region_data["region_code"] = region_data.get("subdivision_code", region_data["country_code"])
+    region_data["region_name"] = region_data.get("subdivision_name", region_data["country_name"])
+
+    return region_data
+
+
 if __name__ == "__main__":
     feed_dir = Path("feeds/")
 
@@ -168,17 +187,7 @@ if __name__ == "__main__":
 
         metadata_filename = feed.name
         region_code_lower = metadata_filename[: metadata_filename.rfind(".")]
-        region_code = region_code_lower.upper()
-        region_name = ""
-        subdivision = pycountry.subdivisions.get(code=region_code)
-        if not subdivision:
-            country = pycountry.countries.get(alpha_2=region_code)
-            if country:
-                region_name = country.name
-            else:
-                region_name = REGIONS[region_code]
-        else:
-            region_name = subdivision.name
+        region_data = get_region_data(region_code_lower)
 
         region = Region(parsed)
         for source in region.sources:
@@ -206,7 +215,7 @@ if __name__ == "__main__":
                     else:
                         attributions[source_id] |= attribution
                 case HttpSource():
-                    http_attribution = http_source_attribution(source)
+                    http_attribution = http_source_attribution(source, region_data)
                     if not http_attribution:
                         continue
 
