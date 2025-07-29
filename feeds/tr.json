@@ -51,7 +51,7 @@
         {
             "name": "konya",
             "type": "http",
-            "url": "https://acikveri.konya.bel.tr/tr/dataset/c2e034e6-e015-49c6-8eec-6e2f7de9c105/resource/5742b7bd-3cbf-4784-bee1-f949fc0ca118/download/gtfs_07_2024.zip"
+            "url": "https://s3.transitpdf.com/files/uran/improved-gtfs-konya.zip"
         },
         {
             "name": "kocaeli",
