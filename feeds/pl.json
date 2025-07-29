@@ -444,6 +444,16 @@
             }
         },
         {
+            "name": "Olsztyn",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://cdn.zbiorkom.live/gtfs/olsztyn.zip",
+            "fix": true,
+            "license": {
+                "spdx-identifier": "MIT"
+            }
+        },
+        {
             "name": "Warsaw-Ferries",
             "type": "http",
             "spec": "gtfs",
@@ -472,8 +482,13 @@
         },
         {
             "name": "Gorzów-Wielkopolski",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u36g-gorzow~wielkopolski"
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://bip.mzk-gorzow.com.pl/gtfs.html",
+            "function": "data_mzk_gorzow_latest_resource",
+            "license": {
+                "spdx_identifier": "CC0-1.0"
+            }
         },
         {
             "name": "PKS-Poznań",
