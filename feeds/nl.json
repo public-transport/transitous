@@ -18,8 +18,7 @@
             "license": {
                 "spdx-identifier": "CC0 1.0 Universal",
                 "url": "https://gtfs.openov.nl/LICENSE.TXT"
-            },
-        
+            }
         },
         {
             "name": "OpenOV",
@@ -59,6 +58,6 @@
             "type": "url",
             "spec": "gtfs-rt",
             "url": "https://gtfs.ovapi.nl/nl/trainUpdates.pb"
-        },
+        }
     ]
 }
