@@ -23,6 +23,11 @@
             "fix": true
         },
         {
+            "name": "GOVCbus",
+            "type": "http",
+            "url": "https://s3.transitpdf.com/files/uran/improved-gtfs-govcbus.zip"
+        },
+        {
             "name": "SF-bayarea",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-sf~bay~area~rg",
