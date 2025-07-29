@@ -396,6 +396,16 @@
             "fix": true
         },
         {
+            "name": "Rybnik",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://cdn.zbiorkom.live/gtfs/rybnik.zip",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "fix": true
+        },
+        {
             "name": "Kutno",
             "type": "http",
             "spec": "gtfs",
@@ -438,6 +448,26 @@
             "type": "http",
             "spec": "gtfs",
             "url": "https://files.girlc.at/gtfs/powiat_olsztynski.zip",
+            "fix": true,
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "Skarżysko-Kamienna",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://files.girlc.at/gtfs/skarzysko_kamienna.zip",
+            "fix": true,
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "Gmina-Oleśnica",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://files.girlc.at/gtfs/olesnica.zip",
             "fix": true,
             "license": {
                 "spdx-identifier": "CC0-1.0"
