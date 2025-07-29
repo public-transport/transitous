@@ -23,6 +23,12 @@
             "fix": true
         },
         {
+            "name": "GOVCbus",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9q5-govcbus",
+            "fix": true
+        },
+        {
             "name": "SF-bayarea",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-sf~bay~area~rg",
