@@ -173,7 +173,7 @@ def get_region_data(code: str) -> dict:
 
 
 def attribute_sort_key(attr):
-    return (attr[1].get("country_name", ""), attr[1].get("subdivision_name", ""), attr[1].get("human_name", ""), attr[1].get("filename", ""))
+    return (attr[1].get("country_name", ""), attr[1].get("subdivision_name", ""), attr[1].get("human_name", "").lower(), attr[1].get("filename", "").lower())
 
 
 if __name__ == "__main__":
