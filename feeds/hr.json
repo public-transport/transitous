@@ -119,6 +119,12 @@
             "name": "vela-luka",
             "type": "http",
             "url": "https://owncloud.cesnet.cz/index.php/s/Y5Xf2hAiP5z7q6U/download"
+        },
+        {
+            "name": "autotrolej",
+            "type": "http",
+            "url": "https://b2b.promet-info.hr/dc/b2b.gtfs.at",
+            "url-override": "https://jbb.ghsq.de/gtfs/hr-at.gtfs.zip"
         }
     ]
 }
