@@ -172,6 +172,10 @@ def get_region_data(code: str) -> dict:
     return region_data
 
 
+def attribute_sort_key(attr):
+    return (attr[1].get("country_name", ""), attr[1].get("subdivision_name", ""), attr[1].get("human_name", ""), attr[1].get("filename", ""))
+
+
 if __name__ == "__main__":
     feed_dir = Path("feeds/")
 
@@ -227,7 +231,7 @@ if __name__ == "__main__":
 
     with open("out/license.json", "w") as outfile:
         json.dump(
-            [item for id, item in sorted(attributions.items())],
+            [item for id, item in sorted(attributions.items(), key=attribute_sort_key)],
             outfile,
             indent=4,
             ensure_ascii=False,
