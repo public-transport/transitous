@@ -16,7 +16,7 @@ summary h3 {
 </style>
 
 {{ $lastCountry := "_initial_" }}
-{{ $lastSubdivision := "_initial_" }}
+{{ $lastSubdivision := "" }}
 {{ range $index, $source := $.Site.Data.license }}
   {{ $country := .country_name }}
   {{ $subdivision := .subdivision_name }}
@@ -24,9 +24,9 @@ summary h3 {
   <!--If new region, open a new <details> section -->
   {{ if ne $country $lastCountry }}
     <!-- If it's not the first <details> section, first close the previous one -->
-    {{ if ne $lastSubdivision "_initial_" }}
+    {{ if $lastSubdivision }}
       </details>
-      {{ $lastSubdivision = "_initial_" }}
+      {{ $lastSubdivision = "" }}
     {{ end }}
     {{ if ne $lastCountry "_initial_" }}
       </details>
@@ -36,7 +36,7 @@ summary h3 {
   {{ end }}
 
   {{ if ne $subdivision $lastSubdivision }}
-    {{ if ne $lastSubdivision "_initial_" }}
+    {{ if $lastSubdivision }}
       </details>
     {{ end }}
     {{ if $subdivision }}
