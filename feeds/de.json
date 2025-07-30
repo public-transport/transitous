@@ -48,6 +48,16 @@
             }
         },
         {
+            "name": "DELFI",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://dl.dropboxusercontent.com/scl/fi/vehh1l65e96lp19ikwe24/feed.pb?rlkey=rx8fy4kayygdmgfh65e2ofr22&st=6vzo5zb0",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0",
+                "url": "data:text/plain;charset=utf-8;base64,R1RGUyBTb2xsZmFocnBsYW5kYXRlbiBDQy1CWS1TQSBERUxGSSBodHRwczovL3d3dy5vcGVuZGF0YS1vZXBudi5kZS9odC9kZS9vcmdhbmlzYXRpb24vZGVsZmkvc3RhcnRzZWl0ZT90eF92cnJraXRfdmlldyU1QmRhdGFzZXRfbmFtZSU1RD1kZXV0c2NobGFuZHdlaXRlLXNvbGxmYWhycGxhbmRhdGVuLWd0ZnMmdHhfdnJya2l0X3ZpZXclNUJhY3Rpb24lNUQ9ZGV0YWlscyZ0eF92cnJraXRfdmlldyU1QmNvbnRyb2xsZXIlNUQ9Vmlldw0KREIgSGFsdGVzdGVsbGVuZGF0ZW4gREIgSW5mcmFHTywgQ3JlYXRpdmUgQ29tbW9ucyBBdHRyaWJ1dGlvbiA0LjAgSW50ZXJuYXRpb25hbCAoQ0MgQlkgNC4wKSwgaHR0cHM6Ly9kZXZlbG9wZXJzLmRldXRzY2hlYmFobi5jb20vZGItYXBpLW1hcmtldHBsYWNlL2FwaXMvcHJvZHVjdC9yaXMtc3RhdGlvbnMgdW5kIE9wZW5TdHJlZXRNYXAgQ29udHJpYnV0b3JzIChodHRwczovL3d3dy5vcGVuc3RyZWV0bWFwLm9yZy9jb3B5cmlnaHQpDQpEQiBGYWhycGxhbmRhdGVuIERCIEluZnJhR08sIENyZWF0aXZlIENvbW1vbnMgQXR0cmlidXRpb24gNC4wIEludGVybmF0aW9uYWwgKENDIEJZIDQuMCk="
+            }
+        },
+        {
             "name": "VBB",
             "type": "http",
             "url": "https://www.vbb.de/vbbgtfs",
