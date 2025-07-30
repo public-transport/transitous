@@ -111,9 +111,9 @@ class Atlas:
                     if not source.url_override and source.api_key:
                         match result:
                             case HttpSource():
-                                result.options.headers["Authorization"] = f"Basic: {source.api_key}"
+                                result.options.headers["Authorization"] = f"Basic {source.api_key}"
                             case UrlSource():
-                                result.headers["Authorization"] =  f"Basic: {source.api_key}"
+                                result.headers["Authorization"] =  f"Basic {source.api_key}"
 
                 case "query_param":
                     if source.url_override is None:
