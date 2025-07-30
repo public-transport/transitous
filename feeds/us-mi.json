@@ -40,12 +40,16 @@
         {
             "name": "qline",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-qline~mi~rt"
+            "transitland-atlas-id": "f-qline~mi~rt",
+            "skip": true,
+            "skip-reason": "api-key is missing"
         },
         {
             "name": "qline",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-qline~mi~rt~alerts"
+            "transitland-atlas-id": "f-qline~mi~rt~alerts",
+            "skip": true,
+            "skip-reason": "api-key is missing"
         },
         {
             "name": "smart",
@@ -55,12 +59,16 @@
         {
             "name": "smart",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-smart~mi~rt"
+            "transitland-atlas-id": "f-smart~mi~rt",
+            "skip": true,
+            "skip-reason": "api-key is missing"
         },
         {
             "name": "smart",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-smart~mi~rt~alerts"
+            "transitland-atlas-id": "f-smart~mi~rt~alerts",
+            "skip": true,
+            "skip-reason": "api-key is missing"
         },
         {
             "name": "DPM",

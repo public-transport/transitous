@@ -9,12 +9,13 @@
 
 - name: Unpack MOTIS (frontend)
   unarchive:
-    src: https://github.com/public-transport/transitous/releases/download/motis-v2.0.34/motis-v2.0.34.tar.bz2
+    src: https://github.com/public-transport/transitous/releases/download/motis-v2.1.0/motis-staging-haswell.tar.bz2
     dest: /opt/motis/
     remote_src: yes
 
 - name: Install nginx
   apt:
+    update_cache: true
     name:
      - nginx
      - certbot
@@ -29,6 +30,11 @@
     src: nginx.conf
     dest: /etc/nginx/nginx.conf
 
+- name: Install nginx logrotate config
+  copy:
+    src: logrotate-nginx
+    dest: /etc/logrotate.d/nginx
+
 - name: Install robots.txt
   copy:
     src: robots.txt
@@ -40,9 +46,17 @@
     dest: "/etc/nginx/sites-available/{{ item.vhost }}"
   with_items:
     - vhost: api.transitous.org
-      backend: http://crunchy:8080
+      backends:
+        - address: 10.11.1.1:8080
+          options: "backup" # nginx backend options
+        - address: 10.11.1.3:8080
+          options: ""
     - vhost: staging.api.transitous.org
-      backend: http://vm-motis:8080
+      backends:
+        - address: 10.11.1.2:8080
+          options: ""
+        - address: 10.11.1.1:8080
+          options: "backup"
 
 - name: Disable default site configuration
   file:
@@ -56,9 +70,7 @@
     state: link
   with_items:
     - vhost: api.transitous.org
-      backend: http://crunchy:8080
     - vhost: staging.api.transitous.org
-      backend: http://vm-motis:8080
 
 - name: Reload nginx
   systemd:

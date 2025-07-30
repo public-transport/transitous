@@ -194,22 +194,18 @@ view state dispatch = H.div "mb-3"
   suggestionEntries =
     map
       ( \(Tuple i location) ->
-          if i == state.currentlySelectedIndex then H.li_ "dropdown-item dropdown-item-active cursor-shape-pointer"
+          H.li_
+            ( case i == state.currentlySelectedIndex of
+                true -> "dropdown-item cursor-shape-pointer dropdown-item-active"
+                false -> "dropdown-item cursor-shape-pointer"
+            )
             { onClick: dispatch <| Select location, autoFocus: true }
             [ H.i
-                case location.type of
-                  "STOP" -> "bi-train-front-fill"
-                  _ -> "bi-geo-alt-fill"
-                ""
-            , H.span "p-2" location.name
-            , H.span "text-secondary text-xs" (fromMaybe "" $ getRegion location)
-            ]
-          else H.li_ "dropdown-item cursor-shape-pointer"
-            { onClick: dispatch <| Select location }
-            [ H.i
-                case location.type of
-                  "STOP" -> "bi-train-front-fill"
-                  _ -> "bi-geo-alt-fill"
+                ( case location.type of
+                    "STOP" -> "bi-train-front-fill"
+                    "ADDRESS" -> "bi-house-fill"
+                    _ -> "bi-geo-alt-fill"
+                )
                 ""
             , H.span "p-2" location.name
             , H.span "text-secondary text-xs" (fromMaybe "" $ getRegion location)

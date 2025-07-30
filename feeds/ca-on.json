@@ -3,6 +3,10 @@
         {
             "name": "Marcus Lundblad",
             "github": "mlundblad"
+        },
+        {
+            "name": "Clinton Ignatov (OC Transpo)",
+            "github": "clintonthegeek"
         }
     ],
     "sources": [
@@ -232,12 +236,14 @@
         {
             "name": "OCTranspo",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-f24-octranspo"
+            "transitland-atlas-id": "f-f24-octranspo",
+            "fix": true
         },
         {
             "name": "OCTranspo",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-f24-octranspo~rt"
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/octranspo/TripUpdates"
         },
         {
             "name": "PCConnect",

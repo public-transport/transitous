@@ -1,0 +1,15 @@
+{
+    "maintainers": [
+        {
+            "name": "Petr Novak",
+            "github": "hoermalmeister"
+        }
+    ],
+    "sources": [
+        {
+            "name": "zr-north-macedonia",
+            "type": "http",
+            "url": "https://owncloud.cesnet.cz/index.php/s/v3QvHCm2JtOnF6e/download"
+        }
+      ]
+}

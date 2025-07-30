@@ -19,7 +19,9 @@
         {
             "name": "houston-metro",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-metropolitantransitauthorityofharriscounty~rt"
+            "transitland-atlas-id": "f-metropolitantransitauthorityofharriscounty~rt",
+            "skip": true,
+            "skip-reason": "api-key is missing"
         },
         {
             "name": "capital-metro",
@@ -35,7 +37,10 @@
         {
             "name": "capital-metro",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-capitalmetro~rt~alerts"
+            "transitland-atlas-id": "f-capitalmetro~rt~alerts",
+            "skip": true,
+            "skip-reason": "api-key is missing"
+
         },
         {
             "name": "via-san-antonio",
@@ -61,12 +66,16 @@
         {
             "name": "lubbock",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-lubbock~tx~us~rt"
+            "transitland-atlas-id": "f-lubbock~tx~us~rt",
+            "skip": true,
+            "skip-reason": "api-key is missing"
         },
         {
             "name": "lubbock",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-lubbock~tx~us~rt~alerts"
+            "transitland-atlas-id": "f-lubbock~tx~us~rt~alerts",
+            "skip": true,
+            "skip-reason": "api-key is missing"
         },
         {
             "name": "abilene",
@@ -97,12 +106,15 @@
         {
             "name": "denton",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-dentoncountytransportationauthority~rt"
+            "transitland-atlas-id": "f-dentoncountytransportationauthority~rt",
+            "skip": true,
+            "skip-reason": "api-key is missing"
         },
         {
             "name": "fortworth-TA",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-9vff-fortworthtransportationauthority"
+            "transitland-atlas-id": "f-9vff-fortworthtransportationauthority",
+            "fix": true
         },
         {
             "name": "sun-metro",

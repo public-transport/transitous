@@ -18,6 +18,12 @@
             "transitland-atlas-id": "f-intercity~buses~cy"
         },
         {
+            "name": "Intercity",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "http://20.19.98.194:8328/Api/api/gtfs-realtime"
+        },
+        {
             "name": "LPT",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-lpt~cy"

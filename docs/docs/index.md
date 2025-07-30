@@ -34,6 +34,74 @@ For general discussions about data availability: [#opentransport:matrix.org](htt
 
 For Transitous-specific technical topics: [#transitous:matrix.spline.de](https://matrix.to/#/#transitous:matrix.spline.de)
 
+## Used data
+
+### Static timetables
+
+The backbone of public transport routing is static [GTFS](https://gtfs.org) schedule data,
+that's the bare minimum for Transitous to work in a region.
+
+GTFS feeds ideally contain data for several months into the future, but can nevertheless receive
+regular updates. Transitous checks for updates daily, so for this to work we also need
+a stable URL for them.
+
+For finding GTFS data, there's a few places worth looking at:
+
+* The public transport operators themselves, they might just publish data on their website.
+* Regional or national open data portals, especially in countries with regulation requiring public transport data to be published.
+In the EU, those are called "National Access Point" (NAP).
+* GTFS feed registries such as [Mobility Database](https://mobilitydatabase.org/) and [Transitland](https://www.transit.land/).
+* Google Maps having public transport data in a region is a strong indicator whether GTFS feeds even exist,
+as they use those as well.
+
+### Realtime data
+
+For properly dealing with delay, disruptions and all kinds of other unplanned
+and short-notice service changes Transitous also uses [GTFS Realtime (RT)](https://gtfs.org/documentation/realtime/reference/) feeds.
+Those are polled once a minute for updates.
+
+GTFS-RT feeds come in three different flavors:
+
+* Trip updates, that is realtime schedule changes like delays, cancellations, etc.
+* Service alerts, that is textual descriptions of disruptions beyond a specific connection, such as upcoming construction work.
+* Vehicle positions, that is geographic coordinates of the current position of trains or busses.
+
+Transitous can handle the first two so far.
+
+Note that GTFS-RT feeds typically only work in combination with a matching static GTFS feed. So e.g. combining a smaller realtime feed
+of a single operator with a nationwide aggregated static feed will usually not work out of the box.
+
+### Shared mobility data
+
+Transitous doesn't just handle scheduled public transport though, but also vehicle sharing, which
+can be particularly interesting for the first and last mile of a trip.
+
+The data for this is provided by [GBFS](https://github.com/MobilityData/gbfs) feeds. This includes information about the type of vehicles (bikes,
+cargo bikes, kickscooters, mopeds, cars, etc) and their method of propulsion (human powered, electric, etc),
+where to pick them up and where to return them (same location as pickup, designated docks of the provider, free floating
+within a specific area, etc) and most importantly where vehicles are currently available.
+
+### On-demand services
+
+Somewhere between scheduled transport and shared mobility are on-demand services. That is, services that require
+some form or booking beforehand and might be anything from an on-demand bus that still follows a somewhat fixed
+route with pre-defined stops to something closer to a taxi with a more flexible route that picks up or drops
+off passengers anywhere in a given area.
+
+These services are often used in times and/or areas with fewer demand, thus making them often the only mobility
+option then/there. That makes it all the more important to have those covered as well.
+
+Modeling on-demand services is challenging, given the variety on how those services work and their inherently very dynamic nature.
+There's the relatively new [GTFS-Flex](https://gtfs.org/community/extensions/flex/) extension covering this. GTFS-Flex data might
+be included in static GTFS data or provided separately.
+
+### OSM
+
+A crucial dataset for all road-based and in-building routing is [OpenStreetMap](https://openstreetmap.org). While that
+is generally very comprehensive and up-to-date, there's one aspect that might need fixes, the floor level
+separation. That's not visible in most OSM-based maps and thus is easy to miss while mapping. For Transitous this is
+particularly important for in-building routing in train stations.
+
 ## Adding a region
 
 Transitous data sources are divided by region, so they can be continuously tested and verified by locals.
@@ -129,6 +197,23 @@ This example applies the updates to the `lviv` feed:
 ]
 ```
 
+### On-demand feeds
+
+GTFS-Flex feeds can be added in the same way as regular GTFS feeds, just the `spec` field has to be set to `gtfs-flex`.
+
+Example:
+```json
+{
+    "name": "opentransportdataswiss-flex",
+    "type": "http",
+    "spec": "gtfs-flex",
+    "url": "https://data.opentransportdata.swiss/en/dataset/gtfsflex/permalink",
+    "license": {
+        "url": "https://opentransportdata.swiss/de/terms-of-use/"
+    }
+}
+```
+
 ### Shared Mobility feeds
 
 GBFS feeds contains realtime information like vehicle availability and characteristics for shared Mobility (e.g. Bikesharing).
@@ -172,7 +257,7 @@ You also need to have [gtfsclean](https://github.com/public-transport/gtfsclean)
 We provide a static build for linux so you don't need to build your own.
 
 ```
-wget -P ~/.local/bin https://github.com/public-transport/gtfsclean/releases/download/snapshot-4/gtfsclean
+wget -P ~/.local/bin https://github.com/public-transport/gtfsclean/releases/latest/download/gtfsclean
 chmod +x ~/.local/bin/gtfsclean
 ```
 
@@ -256,6 +341,60 @@ This is useful for passing in things like headers with API keys.
 }
 ```
 
+## Diagnostics
+
+There's a number of built-in and external tools available to inspect data sets and to check whether they
+have been loaded correctly by Transitous.
+
+### Static timetables
+
+GTFS feeds are essentially ZIP files containing a set of CSV tables, making them relatively
+easy to inspect e.g. with a spreadsheet application or text editor, although especially
+nationwide aggregated feeds can get rather large.
+
+Transitous might modify GTFS data as part of its import pipeline, you'll find the processed
+feeds [here](https://api.transitous.org/gtfs/).
+
+The [Transitous map view](https://api.transitous.org/) shows a colored markers for each (estimated)
+current position of a public transport vehicle.
+
+### Realtime data
+
+GTFS-RT feeds use [Protocol Buffers](https://en.wikipedia.org/wiki/Protocol_Buffers), looking at their content
+thus needs specialized tools.
+
+``` bash
+curl https://the.feed.url | protoc gtfs-realtime.proto --decode=transit_realtime.FeedMessage | less
+```
+
+The Protocol Buffers schema file needed for this can be downloaded [here](https://gtfs.org/documentation/realtime/gtfs-realtime.proto).
+
+To see the realtime coverage available in Transitous, you can toggle the color coding of vehicles
+on [its map view](https://api.transitous.org/) in the upper right corner. A green/yellow/red gradient shows the amount
+of delay for the corresponding trip, while gray vehicles have no realtime information.
+
+### Shared mobility data
+
+GBFS consists of an entry point in form of a small JSON manifest that contains links to further JSON files with the actual information,
+generally split up by how often certain aspects are expected to change.
+
+Transitous currently has no built-in way to visualize availabe sharing vehicles.
+
+### On-demand services
+
+GTFS-Flex is an extension of GTFS static timetable data and as such is also a ZIP file containing CSV tables.
+Additionally, it can also contain GeoJSON files defining regions that can be viewed e.g. with QGIS.
+
+Tansitous' [map view in debug mode](https://api.transitous.org/?debug) does show GTFS-Flex zones when zooming in
+far enough.
+
+### OSM
+
+When zoomed in enough the [map view of Transitous](https://api.transitous.org/) will offer you a floor level selector at the lower right.
+That can give you a first indication if elements are misplaced (showing up on the wrong level) or not assigned to a floor level
+at all (showing up on all levels). For reviewing smaller elements [indoor=](https://indoorequal.org) can also be useful,
+and for fixing things [JOSM](https://josm.openstreetmap.de/) has a built-in level selector on the top left.
+
 ## Overview of the import pipeline
 The following pipeline runs on a daily basis to import new GTFS feed data.
 This image gives an overview of the steps executed in the data pipeline:
@@ -319,7 +458,7 @@ In order to start motis, we need a config file listing all the feeds we want to 
 You can generate one using our script:
 
 ```bash
-./src/generate-motis-config.py full
+./src/generate-motis-config.py
 ```
 
 The generated config file still needs a small adjustment.

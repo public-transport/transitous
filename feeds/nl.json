@@ -3,26 +3,61 @@
         {
             "name": "Jonah Brüchert",
             "github": "jbruechert"
+        },
+        {
+            "name": "Sander van Hoogdalem",
+            "github": "sandervhoogdalem"
         }
     ],
     "sources": [
         {
+            "name": "OpenOV",
+            "type": "http",
+            "url" : "https://gtfs.openov.nl/gtfs-rt/gtfs-openov-nl.zip",
+            "fix": true,
+            "license": {
+                "spdx-identifier": "CC0-1.0",
+                "url": "https://gtfs.openov.nl/LICENSE.TXT"
+            }
+        },
+        {
+            "name": "OpenOV",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://gtfs.openov.nl/gtfs-rt/trainUpdates.pb"
+        },
+        {
+            "name": "OpenOV",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://gtfs.openov.nl/gtfs-rt/tripUpdates.pb"
+        },
+        {
+            "name": "OpenOV",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://gtfs.openov.nl/gtfs-rt/alerts.pb"
+        },
+        {
+            "name": "OpenOV",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://gtfs.openov.nl/gtfs-rt/vehiclePositions.pb"
+        },
+        {
             "name": "ovapi",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u-nl",
-            "fix": true
+            "fix": true,
+            "keep-agency-names": [
+                "Eu Sleeper"
+            ]
         },
         {
             "name": "ovapi",
             "type": "url",
             "spec": "gtfs-rt",
             "url": "https://gtfs.ovapi.nl/nl/trainUpdates.pb"
-        },
-        {
-            "name": "ovapi",
-            "type": "url",
-            "spec": "gtfs-rt",
-            "url": "https://gtfs.ovapi.nl/nl/tripUpdates.pb"
         }
     ]
 }

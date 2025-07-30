@@ -1,0 +1,20 @@
+{
+    "maintainers": [
+        {
+            "name": "Dimitar",
+            "github": "Dimitar5555"
+        }
+    ],
+    "sources": [
+        {
+            "name": "sofia",
+            "type": "http",
+            "url": "https://github.com/Dimitar5555/sofiatraffic-gtfs/raw/refs/heads/master/result.zip"
+        },
+        {
+            "name": "bdz",
+            "type": "http",
+            "url": "https://jbb.ghsq.de/gtfs/bg-bdz.gtfs.zip"
+        }
+    ]
+}

@@ -7,6 +7,15 @@
     ],
     "sources": [
         {
+            "name": "Calabria-CORE",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2668",
+            "fix": true,
+            "license": {
+                "url":"https://www.dati.gov.it/content/italian-open-data-license-v20"
+            }
+        },
+        {
             "name": "Campania-ANM",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-s-anm~it",
@@ -53,18 +62,15 @@
         },
         {
             "name": "Liguria-Genova",
-            "type": "http",
-            "url": "https://www.amt.genova.it/amt/GTFS/GTFS_AMT_GENOVA.zip",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-spyk-amtgenova",
             "fix": true
         },
         {
             "name": "Lombardia-AirPullman",
-            "type": "http",
-            "fix": true,
-            "license": {
-                "spdx-identifier": "CC-BY-4.0"
-            },
-            "url": "https://usbshare.agenziatpl.it/index.php/s/NCX252ombsxjzzz/download/2025-01-03_Airpullman.zip"
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-airpullman~spa",
+            "fix": true
         },
         {
             "name": "Lombardia-ATM",
@@ -74,21 +80,13 @@
         },
         {
             "name": "Lombardia-Movibus",
-            "type": "http",
-            "license": {
-                "spdx-identifier": "CC-BY-4.0"
-            },
-            "url": "https://usbshare.agenziatpl.it/index.php/s/awfA3t8jy3D46dM/download/2025-01-17_Movibus.zip"
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-movibus~srl"
         },
         {
             "name": "Lombardia-NET",
-            "type": "http",
-            "license": {
-                "spdx-identifier": "CC-BY-4.0"
-            },
-            "url": "https://usbshare.agenziatpl.it/index.php/s/a3SZsLKCQLxzEzr/download/2025-02-07_NET.zip",
-            "skip": true,
-            "skip-reason": "Expired feed"
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-net~nord~est~trasporti"
         },
         {
             "name": "Lombardia-STAR",
@@ -139,7 +137,7 @@
             "fix": true
         },
         {
-            "name": "Ferrovie-del-Nord-Barese",
+            "name": "Puglia-Ferrotramviaria",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-sr7f-ferrotramviariaspa~ferroviedelnordbarese"
         },
@@ -171,28 +169,19 @@
         },
         {
             "name": "Sardegna-Contributate",
-            "type": "http",
-            "url": "https://www.sardegnamobilita.it/opendata/R_SARDEGTRASP_00007_1_dati_privati.zip",
-            "license": {
-                "spdx-identifier": "CC-BY-4.0"
-            },
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-spn-asara~atzeni~murgiaautolinee~baireautolinee~autolineedelgo",
             "fix": true
         },
         {
             "name": "Sardegna-ARST",
-            "type": "http",
-            "url": "https://www.arstspa.info/arst-cagliari-it.zip",
-            "license": {
-                "spdx-identifier": "CC-BY-4.0"
-            }
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-s-arstspa~trasportiregionalidellasardegna"
         },
         {
             "name": "Sardegna-ASPO-Olbia",
-            "type": "http",
-            "url": "https://www.aspo.it/wp-content/uploads/open_data.zip",
-            "license": {
-                "spdx-identifier": "CC-BY-4.0"
-            }
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-spqb-aspoolbia"
         },
         {
             "name": "Sardegna-ATP-Nuoro",
@@ -246,6 +235,22 @@
             "name": "Sardegna-Trenitalia",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-spn-trenitalia"
+        },
+        {
+            "name": "Sicilia-Catania-AMTS",
+            "type": "http",
+            "url": "https://www.amts.ct.it/GTFS/AMTCT.zip",
+            "license": {
+                "url":"https://www.dati.gov.it/content/italian-open-data-license-v20"
+            }
+        },
+        {
+            "name": "Sicilia-Palermo-AMAT",
+            "type": "http",
+            "url": "https://opendata.comune.palermo.it/js/server/uploads/dataset/gtfs/amat_gtfs.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
         },
         {
             "name": "Toscana-Autolinee-LineeRegionali",

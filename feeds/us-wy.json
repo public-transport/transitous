@@ -14,12 +14,16 @@
         {
             "name": "sheridan",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-goose~creek~transit~rt"
+            "transitland-atlas-id": "f-goose~creek~transit~rt",
+            "skip": true,
+            "skip-reason": "api-key is missing"
         },
         {
             "name": "sheridan",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-goose~creek~transit~rt~alerts"
+            "transitland-atlas-id": "f-goose~creek~transit~rt~alerts",
+            "skip": true,
+            "skip-reason": "api-key is missing"
         }
     ]
 }

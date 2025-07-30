@@ -15,15 +15,12 @@
             "name": "Subotica",
             "type": "http",
             "url": "https://data.gov.rs/sr/datasets/r/c1b7db4b-cd0c-49c6-bfa1-a08dab70a446",
-            "skip": true,
-            "skip-reason": "Currently expired for multiple years"
+            "extend-calendar": true
         },
         {
             "name": "Beograd",
             "type": "http",
-            "url": "https://data.gov.rs/sr/datasets/r/729be9a1-7ed9-453d-9a3d-68fa30f07529",
-            "skip": true,
-            "skip-reason": "Currently expired for multiple years"
+            "url": "https://data.gov.rs/sr/datasets/r/729be9a1-7ed9-453d-9a3d-68fa30f07529"
         },
         {
             "name": "Uzice",

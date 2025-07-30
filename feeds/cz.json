@@ -7,6 +7,10 @@
         {
             "name": "Jonah Brüchert",
             "github": "jbruechert"
+        },
+        {
+            "name": "Petr Novák",
+            "github": "hoermalmeister"
         }
     ],
     "sources": [
@@ -36,6 +40,12 @@
             "transitland-atlas-id": "f-u2e-idsjmk"
         },
         {
+            "name": "IDS-JMK",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://content.idsjmk.cz/kestazeni/gtfsReal.dat"
+        },
+        {
             "name": "DPMLJ",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u348-dpmlj",
@@ -60,6 +70,11 @@
             "http-options": {
                 "fetch-interval-days": 1
             }
+        },
+        {
+            "name": "IDZK",
+            "type": "http",
+            "url": "https://dataportal-files.bileto.net/id-zk-all.zip"
         }
     ]
 }

@@ -7,6 +7,16 @@
     ],
     "sources": [
         {
+            "name": "mountainline",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-mountain~line~az"
+        },
+        {
+            "name": "suntran",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9t9-suntran"
+        },
+        {
             "name": "valleymetro",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-9tb-valleymetro"

@@ -14,8 +14,8 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 # Scope
 
 The privacy policy applies to these services:
-* the web interface and APIs at routing.spline.de
 * the web interface and APIs at api.transitous.org
+* the web interface and APIs at staging.api.transitous.org
 * the routing widget embedded in the website at transitous.org
 
 ## Stored data

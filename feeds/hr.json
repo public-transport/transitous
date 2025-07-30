@@ -7,13 +7,17 @@
         {
             "name": "Jonah Brüchert",
             "github": "jbruechert"
+        },
+        {
+            "name": "Petr Novák",
+            "github": "hoermalmeister"
         }
     ],
     "sources": [
         {
             "name": "hz",
             "type": "http",
-            "url": "http://www.hzpp.hr/Media/Default/GTFS/GTFS_files.zip",
+            "url": "https://www.hzpp.hr/api/v1/repository/download/852f76d2-8df3-4957-b30b-dc4b88b1caca",
             "license": {
                 "spdx-identifier": "CC0-1.0"
             }
@@ -53,7 +57,8 @@
         {
             "name": "gradski-parking",
             "type": "http",
-            "url": "https://www.gradski-parking.hr/upload/stranice/2022/08/2022-08-30/89/gtfs.zip"
+            "url": "https://www.gradski-parking.hr/upload/stranice/2022/08/2022-08-30/89/gtfs.zip",
+            "fix": true
         },
         {
             "name": "split",
@@ -64,20 +69,56 @@
             "name": "rijeka",
             "type": "http",
             "url": "https://gitlab.com/vekejsn/gtfs-generators/-/jobs/artifacts/main/raw/autotrolej_gtfs.zip?job=rijeka",
-            "fix": true
+            "fix": true,
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
         },
         {
             "name": "sisak",
             "type": "http",
-            "url": "https://gitlab.com/vekejsn/gtfs-generators/-/jobs/artifacts/main/raw/ap_sisak_gtfs.zip?job=sisak",
-            "skip": true,
-            "skip-reason": "Feed generator has been failing for a long time"
+            "url": "https://gitlab.com/vekejsn/gtfs-generators/-/jobs/artifacts/main/raw/ap_sisak_gtfs.zip?job=sisak"
         },
         {
             "name": "dubrovnik-libertas",
             "type": "http",
             "url": "https://gitlab.com/vekejsn/gtfs-generators/-/jobs/artifacts/main/raw/libertas_gtfs.zip?job=libertas",
             "fix": true
+        },
+        {
+            "name": "rapska-plovidba",
+            "type": "http",
+            "url": "https://owncloud.cesnet.cz/index.php/s/iXWzNC4zKGD8sa8/download"
+        },
+        {
+            "name": "rapska-vozidba",
+            "type": "http",
+            "url": "https://owncloud.cesnet.cz/index.php/s/UudJhpom7fgur2X/download"
+        },
+        {
+            "name": "crikvenica",
+            "type": "http",
+            "url": "https://owncloud.cesnet.cz/index.php/s/UsB5SB51KZnjwM8/download"
+        },
+        {
+            "name": "opatija",
+            "type": "http",
+            "url": "https://owncloud.cesnet.cz/index.php/s/docWLlTJeomKemk/download"
+        },
+        {
+            "name": "porec",
+            "type": "http",
+            "url": "https://owncloud.cesnet.cz/index.php/s/D3OAxN1BkRSt20T/download"
+        },
+        {
+            "name": "sveta-nedelja",
+            "type": "http",
+            "url": "https://owncloud.cesnet.cz/index.php/s/qWqrNkMjCUIDlSv/download"
+        },
+        {
+            "name": "vela-luka",
+            "type": "http",
+            "url": "https://owncloud.cesnet.cz/index.php/s/Y5Xf2hAiP5z7q6U/download"
         }
     ]
 }

@@ -13,7 +13,8 @@
         {
             "name": "flixbus",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u-flixbus"
+            "transitland-atlas-id": "f-u-flixbus",
+            "fix": true
         },
         {
             "name": "blablacar-bus",
@@ -27,6 +28,14 @@
             "transitland-atlas-id": "f-eurostar",
             "skip": true,
             "skip-reason": "Use up to date feed generated in fr.json"
+        },
+        {
+            "name": "optimaexpress",
+            "type": "http",
+            "url": "https://github.com/jonaes/gtfs/raw/refs/heads/main/output/optima_gtfs.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
         }
     ]
 }

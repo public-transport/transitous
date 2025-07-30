@@ -1,7 +1,6 @@
 # SPDX-FileCopyrightText: 2023 Jonah Brüchert <jbb@kaidan.im>
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
-
 from typing import List, Optional
 from utils import eprint
 
@@ -43,7 +42,7 @@ class DisplayNameOptions:
 class Source:
     name: str
     fix: bool = False
-    license: Optional[License] = None
+    license: License
     spec: str = "gtfs"
     fix_csv_quotes: bool = False
     skip: bool = False
@@ -52,7 +51,9 @@ class Source:
     drop_too_fast_trips: bool = True
     drop_shapes: bool = False
     drop_agency_names: List[str] = []
+    keep_agency_names: List[str] = []
     display_name_options: Optional[DisplayNameOptions] = None
+    extend_calendar = False
 
     def __init__(self, parsed: Optional[dict] = None):
         self.license = License()
@@ -82,15 +83,21 @@ class Source:
                 self.drop_shapes = parsed["drop-shapes"]
             if "drop-agency-names" in parsed:
                 self.drop_agency_names = parsed["drop-agency-names"]
+            if "keep-agency-names" in parsed:
+                self.keep_agency_names = parsed["keep-agency-names"]
             if "display-name-options" in parsed:
                 self.display_name_options = \
                     DisplayNameOptions(parsed["display-name-options"])
+            if "extend-calendar" in parsed:
+                self.extend_calendar = bool(parsed["extend-calendar"])
 
 
 class HttpOptions:
     fetch_interval_days: Optional[int] = None
-    headers: dict[str, str] = {}
+    headers: dict[str, str]
     ignore_tls_errors: bool = False
+    method: Optional[str] = None
+    request_body: Optional[str] = None
 
     def __init__(self, parsed: Optional[dict] = None):
         self.headers = {}
@@ -104,26 +111,32 @@ class HttpOptions:
             if "headers" in parsed:
                 for key in parsed["headers"]:
                     self.headers[key] = parsed["headers"][key]
+            self.method = parsed.get("method")
+            self.request_body = parsed.get("request-body")
 
 
 class TransitlandSource(Source):
     transitland_atlas_id: str = ""
     url_override: Optional[str] = None
-    options: HttpOptions = HttpOptions()
+    api_key: Optional[str] = None
+    options: HttpOptions
 
     def __init__(self, parsed: dict):
         super().__init__(parsed)
         self.transitland_atlas_id = parsed["transitland-atlas-id"]
         self.url_override = parsed.get("url-override", None)
+        self.api_key = parsed.get("api-key", None)
 
         if "http-options" in parsed:
             self.options = HttpOptions(parsed["http-options"])
+        else:
+            self.options = HttpOptions()
 
 
 class MobilityDatabaseSource(Source):
     mdb_id: str = ""
     url_override: Optional[str] = None
-    options: HttpOptions = HttpOptions()
+    options: HttpOptions
 
     def __init__(self, parsed: dict):
         super().__init__(parsed)
@@ -132,15 +145,18 @@ class MobilityDatabaseSource(Source):
 
         if "http-options" in parsed:
             self.options = HttpOptions(parsed["http-options"])
+        else:
+            self.options = HttpOptions()
 
 
 class HttpSource(Source):
     url: str = ""
-    options: HttpOptions = HttpOptions()
+    options: HttpOptions
     url_override: Optional[str] = None
     cache_url: Optional[str] = None
 
     def __init__(self, parsed: Optional[dict] = None):
+
         if parsed:
             super().__init__(parsed)
             self.url = parsed["url"]
@@ -148,13 +164,17 @@ class HttpSource(Source):
 
             if "http-options" in parsed:
                 self.options = HttpOptions(parsed["http-options"])
+            else:
+                self.options = HttpOptions()
 
 
 class UrlSource(Source):
     url: str = ""
-    headers: Optional[dict[str, str]] = None
+    headers: dict[str, str]
 
     def __init__(self, parsed: Optional[dict] = None):
+        self.headers = {}
+
         if parsed:
             super().__init__(parsed)
             self.url = parsed["url"]
@@ -176,6 +196,15 @@ def sourceFromJson(parsed: dict) -> Source:
     eprint("Error: Unknown value for type:", parsed["type"])
     eprint("Allowed values: transitland-atlas, mobility-database, http, url")
     sys.exit(1)
+
+
+def inherit_options_from_db_source(source: Source) -> HttpSource:
+    from copy import deepcopy
+    from typing import cast
+
+    result = cast(HttpSource, deepcopy(source))
+    result.__class__ = HttpSource
+    return result
 
 
 class Region:

@@ -18,6 +18,23 @@ You can do that by <a href="https://github.com/public-transport/transitous/blob/
 
 <p>Transitous provides the MOTIS 2 API. It is the first stable and versioned MOTIS API, and is incompatible with previous development versions of the API.</p>
 
-<p>Our API endpoint is located at <code>https://api.transitous.org/api/v1/</code>.</p>
+<p>Our API endpoint is located at <code>https://api.transitous.org/api/</code>.</p>
 
 <a class="btn btn-primary text-black" href="https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/motis-project/motis/refs/heads/master/openapi.yaml">API Documentation</a>
+
+<h2>Client Libraries</h2>
+<div class="mt-4 app-card-row">
+{{< library-card name="KPublicTransport" description="A library for accessing realtime public transport data and for performing public transport journey queries." website="https://invent.kde.org/libraries/kpublictransport" tags="C++,Qt,LGPL" >}}
+{{< library-card name="motis-client" description="Pre-generated JS client for MOTIS based on the OpenAPI definition" tags="JS,TS"  website="https://www.npmjs.com/package/@motis-project/motis-client">}}
+{{< library-card name="motis-fptf-client" description="Exposing the MOTIS API as a Friendly Public Transport Format API" tags="JS"  website="https://www.npmjs.com/package/@motis-project/motis-fptf-client">}}
+{{< library-card name="Travel::Status::MOTIS" description="Interface to MOTIS routing services " tags="Perl"  website="https://finalrewind.org/projects/Travel-Status-MOTIS/">}}
+</div>
+
+<h2>Staging API</h2>
+
+<p>MOTIS releases are tested with our data before deploying them to the main API endpoint.</p>
+
+<p>You can test the almost-latest MOTIS release on <code>https://staging.api.transitous.org/api/</code>.</p>
+
+<p>Please note that full planet-wide OpenStreetMap data is not available there. The web interface is currently shared between stable and the staging instance, and does not represent the featureset available in the MOTIS version.</p>
+

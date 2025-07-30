@@ -7,6 +7,10 @@
         {
             "name": "Matthew Exon",
             "github": "mexon"
+        },
+        {
+            "name": "David Wales",
+            "github": "daviewales"
         }
     ],
     "sources": [
@@ -132,6 +136,29 @@
             "name": "Translink-WHT",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-rk3s-qconnect~whitsundaytransit"
+        },
+        {
+            "name": "Adelaide-Metro",
+            "type": "mobility-database",
+            "mdb-id": "mdb-660"
+        },
+        {
+            "name": "Adelaide-Metro",
+            "type": "mobility-database",
+            "spec": "gtfs-rt",
+            "mdb-id": "mdb-1773"
+        },
+        {
+            "name": "Adelaide-Metro",
+            "type": "mobility-database",
+            "spec": "gtfs-rt",
+            "mdb-id": "mdb-1774"
+        },
+        {
+            "name": "Transport-for-New-South-Wales",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2449",
+            "fix": true
         }
     ]
 }

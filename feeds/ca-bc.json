@@ -206,7 +206,9 @@
         {
             "name": "TransLink",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-translink~rt"
+            "transitland-atlas-id": "f-translink~rt",
+            "skip": true,
+            "skip-reason": "api-key is missing"
         },
         {
             "name": "Victoria-Transit",

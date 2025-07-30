@@ -44,12 +44,19 @@
         {
             "name": "tec",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u0g-tec~rt"
+            "transitland-atlas-id": "f-u0g-tec~rt",
+            "skip": true,
+            "skip-reason": "api-key is missing"
         },
         {
             "name": "villo-brussels",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-villo~brussels~gbfs"
+        },
+        {
+            "name": "blue-bike",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-blue~bike~antwerp~gbfs"
         }
     ]
 }
