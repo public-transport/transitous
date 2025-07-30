@@ -469,6 +469,8 @@
             "spec": "gtfs",
             "url": "https://files.girlc.at/gtfs/olesnica.zip",
             "fix": true,
+            "skip": true,
+            "skip-reason": "Expired",
             "license": {
                 "spdx-identifier": "CC0-1.0"
             }
