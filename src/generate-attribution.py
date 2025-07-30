@@ -21,7 +21,7 @@ COUNTRIES = {
     "EU": "European Union",
     "XK":  "Kosovo"
 }
-SUBDIVISIONS = {}
+SUBDIVISIONS: dict[str, str] = {}
 
 
 def filter_duplicates(elems):
@@ -137,19 +137,15 @@ def http_source_attribution(source: HttpSource, region_data: dict) -> Optional[d
     return attribution
 
 
-def rt_attribution(source: UrlSource) -> dict:
-    attribution = {}
-    if source.license:
-        if source.license.spdx_identifier:
-            attribution[
-                "rt_spdx_license_identifier"
-            ] = source.license.spdx_identifier
-        if source.license.url:
-            attribution["rt_license_url"] = \
-                source.license.url
-    attribution["rt_source"] = source.url
+def add_rt_attribution(attribution: dict, source: UrlSource) -> None:
+    if not "rt" in attribution:
+        attribution["rt"] = []
 
-    return attribution
+    attribution["rt"].append({
+            "source": source.url,
+            "spdx_license_identifier": source.license.spdx_identifier,
+            "license_url": source.license.url
+    })
 
 
 def get_region_data(code: str) -> dict:
@@ -212,12 +208,11 @@ if __name__ == "__main__":
 
             match source:
                 case UrlSource() if source.spec == "gtfs-rt":
-                    attribution = rt_attribution(source)
-
                     if source_id not in attributions:
-                        attributions[source_id] = attribution
+                        print(f"Warning: Stray gtfs-rt source for {source_id} without a (locally available) static timetable")
+                        continue
                     else:
-                        attributions[source_id] |= attribution
+                        add_rt_attribution(attributions[source_id], source)
                 case HttpSource():
                     http_attribution = http_source_attribution(source, region_data.copy())
                     if not http_attribution:
