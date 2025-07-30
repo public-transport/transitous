@@ -102,12 +102,12 @@ summary h3 {
     {{ range $rt_source := $source.rt }}
     <p class="mt-3 fs-6">
     Realtime data sourced from <a href="{{ $rt_source.source }}">{{ (urls.Parse $rt_source.source).Host }}</a>
-    {{- if or $source.rt_license_url $source.rt_spdx_license_identifier }}
+    {{- if or $rt_source.license_url $rt_source.spdx_license_identifier }}
       is used under
-      {{ if $source.rt_license_url }}
+      {{ if $rt_source.license_url }}
       <a href="{{ $rt_source.license_url }}">these conditions</a>
       {{ else }}
-      <a href="https://spdx.org/licenses/{{ $rt_source.spdx_license_identifier }}.html">{{ .rt_spdx_license_identifier }}</a>
+      <a href="https://spdx.org/licenses/{{ $rt_source.spdx_license_identifier }}.html">{{ $rt_source.spdx_license_identifier }}</a>
       {{ end }}
     {{- end }}.
     </p>
