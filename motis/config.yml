@@ -9,12 +9,8 @@ server:
   data_attribution_link: https://transitous.org/sources/
 
 street_routing: true
-osr_footpath: true
-elevators:
-  url: https://apis.deutschebahn.com/db-api-marketplace/apis/fasta/v2/facilities
-  headers:
-    DB-Client-ID: b5d28136ffedb73474cc7c97536554df
-    DB-Api-Key: ef27b9ad8149cddb6b5e8ebb559ce245
+osr_footpath: false
+elevators: false
 geocoding: true
 reverse_geocoding: true
 
