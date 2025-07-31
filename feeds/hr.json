@@ -125,6 +125,11 @@
             "type": "http",
             "url": "https://b2b.promet-info.hr/dc/b2b.gtfs.at",
             "url-override": "https://jbb.ghsq.de/gtfs/hr-at.gtfs.zip"
+        },
+        {
+            "name": "zadar",
+            "type": "http",
+            "url": "https://gitlab.com/vekejsn/gtfs-generators/-/jobs/artifacts/main/raw/zadar_gtfs.zip?job=zadar"
         }
     ]
 }
