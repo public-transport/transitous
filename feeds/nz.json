@@ -15,8 +15,12 @@
             "name": "AT",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-auckland~transport~rt",
-            "skip": true,
-            "skip-reason": "api-key is missing"
+            "api-key": "5a8bd844b5c941a188a17d6ed968c070",
+            "http-options": {
+                "headers": {
+                    "Accept": "application/x-protobuf"
+                }
+            }
         },
         {
             "name": "Metlink",
