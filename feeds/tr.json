@@ -16,7 +16,9 @@
         {
             "name": "izmir-metro",
             "type": "http",
-            "url": "https://dl.dropboxusercontent.com/scl/fi/4pq6whnox4yzunrql6xdh/izmir-metro.zip?rlkey=cy6i0qbjq4hod0d5yh4i5efmi"
+            "url": "https://dl.dropboxusercontent.com/scl/fi/4pq6whnox4yzunrql6xdh/izmir-metro.zip?rlkey=cy6i0qbjq4hod0d5yh4i5efmi",
+            "skip": true,
+            "skip-reason": "Expired feed"
         },
         {
             "name": "izmir-izban",
@@ -69,7 +71,7 @@
             "name": "antalya",
             "type": "http",
             "url": "https://dl.dropboxusercontent.com/scl/fi/3wsws4ukgdi3uio68cvu4/antalya.zip?rlkey=nafdcydx4pvbuz908luhk6i9x",
-            "drop-too-fast-trips": false,
+            "drop-too-fast-trips": true,
             "fix": true
         },
         {
