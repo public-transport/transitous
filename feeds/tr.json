@@ -69,7 +69,8 @@
             "name": "antalya",
             "type": "http",
             "url": "https://dl.dropboxusercontent.com/scl/fi/3wsws4ukgdi3uio68cvu4/antalya.zip?rlkey=nafdcydx4pvbuz908luhk6i9x",
-            "drop-too-fast-trips": false
+            "drop-too-fast-trips": false,
+            "fix": true
         },
         {
             "name": "gaziantep",
