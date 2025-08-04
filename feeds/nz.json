@@ -3,6 +3,10 @@
         {
             "name": "Thomas Dickson",
             "github": "Hoverth"
+        },
+        {
+            "name": "applecuckoo",
+            "github": "applecuckoo"
         }
     ],
     "sources": [
@@ -13,12 +17,12 @@
         },
         {
             "name": "AT",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-auckland~transport~rt",
-            "api-key": "5a8bd844b5c941a188a17d6ed968c070",
+            "type": "url",
+            "url": "https://api.at.govt.nz/realtime/legacy",
             "http-options": {
                 "headers": {
-                    "Accept": "application/x-protobuf"
+                    "Accept": "application/x-protobuf",
+                    "Ocp-Apim-Subscription-Key": "5a8bd844b5c941a188a17d6ed968c070"
                 }
             }
         },
@@ -29,9 +33,36 @@
         },
         {
             "name": "Metlink",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-metlink~nz~rt",
-            "api-key": "7fVCKRUoiwazDBLw4O0n95ABkNfkhn4o5hppHrdR"
+            "type": "url",
+            "url": "https://api.opendata.metlink.org.nz/v1/gtfs-rt/servicealerts",
+            "http-options": {
+                "headers": {
+                    "Accept": "application/x-protobuf",
+                    "x-api-key": "7fVCKRUoiwazDBLw4O0n95ABkNfkhn4o5hppHrdR"
+                }
+            }
+        },
+        {
+            "name": "Metlink",
+            "type": "url",
+            "url": "https://api.opendata.metlink.org.nz/v1/gtfs-rt/tripupdates",
+            "http-options": {
+                "headers": {
+                    "Accept": "application/x-protobuf",
+                    "x-api-key": "7fVCKRUoiwazDBLw4O0n95ABkNfkhn4o5hppHrdR"
+                }
+            }
+        },
+        {
+            "name": "Metlink",
+            "type": "url",
+            "url": "https://api.opendata.metlink.org.nz/v1/gtfs-rt/vehiclepositions",
+            "http-options": {
+                "headers": {
+                    "Accept": "application/x-protobuf",
+                    "x-api-key": "7fVCKRUoiwazDBLw4O0n95ABkNfkhn4o5hppHrdR"
+                }
+            }
         },
         {
             "name": "Otago-Regional-Council",
