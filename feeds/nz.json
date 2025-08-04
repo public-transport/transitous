@@ -17,6 +17,7 @@
         },
         {
             "name": "AT",
+            "spec": "gtfs-rt",
             "type": "url",
             "url": "https://api.at.govt.nz/realtime/legacy",
             "http-options": {
@@ -33,6 +34,7 @@
         },
         {
             "name": "Metlink",
+            "spec": "gtfs-rt",
             "type": "url",
             "url": "https://api.opendata.metlink.org.nz/v1/gtfs-rt/servicealerts",
             "http-options": {
@@ -44,6 +46,7 @@
         },
         {
             "name": "Metlink",
+            "spec": "gtfs-rt",
             "type": "url",
             "url": "https://api.opendata.metlink.org.nz/v1/gtfs-rt/tripupdates",
             "http-options": {
@@ -55,6 +58,7 @@
         },
         {
             "name": "Metlink",
+            "spec": "gtfs-rt",
             "type": "url",
             "url": "https://api.opendata.metlink.org.nz/v1/gtfs-rt/vehiclepositions",
             "http-options": {
