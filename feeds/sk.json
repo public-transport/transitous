@@ -7,6 +7,10 @@
         {
             "name": "Marcus Lundblad",
             "github": "mlundblad"
+        },
+        {
+            "name": "Jozef Steinhübl",
+            "github": "xhyrom"
         }
     ],
     "sources": [
@@ -24,6 +28,11 @@
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u2s1vm0ergtc~bratislava",
             "url-override": "https://www.arcgis.com/sharing/rest/content/items/aba12fd2cbac4843bc7406151bc66106/data"
+        },
+        {
+            "name": "sadlc",
+            "type": "http",
+            "url": "https://transiq.xhyrom.dev/gtfs/sk/sadlc.zip"
         }
     ]
 }
