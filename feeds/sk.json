@@ -32,7 +32,7 @@
         {
             "name": "sadza",
             "type": "http",
-            "url": "https://transiq.xhyrom.dev/gtfs/sk/sadza.zip"
+            "url": "https://gtfs.transdata.sk/SADZA/gtfs.zip"
         }
     ]
 }
