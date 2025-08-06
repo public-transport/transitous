@@ -32,7 +32,7 @@
         {
             "name": "sadlc",
             "type": "http",
-            "url": "https://transiq.xhyrom.dev/gtfs/sk/sadlc.zip"
+            "url": "https://gtfs.transdata.sk/SADLC/gtfs.zip"
         }
     ]
 }
