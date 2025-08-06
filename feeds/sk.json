@@ -32,7 +32,7 @@
         {
             "name": "sadpd",
             "type": "http",
-            "url": "https://transiq.xhyrom.dev/gtfs/sk/sadpd.zip"
+            "url": "https://gtfs.transdata.sk/SADPD/gtfs.zip"
         }
     ]
 }
