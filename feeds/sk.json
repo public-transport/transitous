@@ -30,6 +30,12 @@
             "url-override": "https://www.arcgis.com/sharing/rest/content/items/aba12fd2cbac4843bc7406151bc66106/data"
         },
         {
+            "name": "sadza",
+            "type": "http",
+            "fix": true,
+            "url": "https://gtfs.transdata.sk/SADZA/gtfs.zip"
+        },
+        {
             "name": "sadpd",
             "type": "http",
             "fix": true,
