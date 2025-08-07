@@ -98,45 +98,48 @@ if __name__ == "__main__":
                     if source.skip:
                         continue
 
+                    resolved_sources = []
                     match source:
                         case metadata.TransitlandSource():
-                            resolved_source = atlas.source_by_id(source)
-                            if not resolved_source:
+                            resolved_sources = atlas.sources_by_id(source)
+                            if not resolved_sources:
                                 eprint("Error: Could not resolve", source.transitland_atlas_id)
                                 sys.exit(1)
-                            source = resolved_source
                         case metadata.MobilityDatabaseSource():
                             resolved_source = mdb.source_by_id(source)
                             if not resolved_source:
                                 eprint("Error: Could not resolve", source.mdb_id)
                                 sys.exit(1)
-                            source = resolved_source
+                            resolved_sources = [resolved_source]
+                        case _:
+                            resolved_sources = [source]
 
-                    match source.spec:
-                        case source.spec if source.spec in ["gtfs", "gtfs-flex"]:
-                            schedule_file = \
-                                f"{region_name}_{source.name}.gtfs.zip"
-                            name = f"{region_name}-{source.name}"
-                            if (not arguments.skip_missing_files) or check_file_exist_in_out_folder(schedule_file):
-                                config["timetable"]["datasets"][name] = \
-                                    {
-                                        "path": schedule_file,
-                                        "extend_calendar": source.extend_calendar
-                                    }
-                                if source.default_timezone is not None:
-                                    config["timetable"]["datasets"][name]["default_timezone"] = source.default_timezone
-                                if source.script is not None:
-                                    if not os.path.exists(os.path.join(script_dir, source.script)):
-                                        eprint(f"Error: Import script {source.script} for {name} could not be found.")
-                                        sys.exit(1)
-                                    config["timetable"]["datasets"][name]["script"] = f"scripts/{source.script}"
-                            else:
-                                print("Warning: Skipping " + name + " as " + schedule_file + " is missing.")
-                                ignored_feeds.add(name)
+                    for source in resolved_sources:
+                        match source.spec:
+                            case source.spec if source.spec in ["gtfs", "gtfs-flex"]:
+                                schedule_file = \
+                                    f"{region_name}_{source.name}.gtfs.zip"
+                                name = f"{region_name}-{source.name}"
+                                if (not arguments.skip_missing_files) or check_file_exist_in_out_folder(schedule_file):
+                                    config["timetable"]["datasets"][name] = \
+                                        {
+                                            "path": schedule_file,
+                                            "extend_calendar": source.extend_calendar
+                                        }
+                                    if source.default_timezone is not None:
+                                        config["timetable"]["datasets"][name]["default_timezone"] = source.default_timezone
 
-                        case "gtfs-rt" if isinstance(source, metadata.UrlSource):
-                            name = f"{region_name}-{source.name}"
-                            if name not in ignored_feeds:
+                                    if source.script is not None:
+                                        if not os.path.exists(os.path.join(script_dir, source.script)):
+                                            eprint(f"Error: Import script {source.script} for {name} could not be found.")
+                                            sys.exit(1)
+                                        config["timetable"]["datasets"][name]["script"] = f"scripts/{source.script}"
+                                else:
+                                    print("Warning: Skipping " + name + " as " + schedule_file + " is missing.")
+                                    ignored_feeds.add(name)
+
+                            case "gtfs-rt" if isinstance(source, metadata.UrlSource):
+                                name = f"{region_name}-{source.name}"
                                 if name not in config["timetable"]["datasets"]:
                                     eprint(
                                         "Error: The name of a realtime (gtfs-rt) "
@@ -161,11 +164,11 @@ if __name__ == "__main__":
                                 config["timetable"]["datasets"][name]["rt"] \
                                     .append(rt_feed)
 
-                        case "gbfs" if isinstance(source, metadata.UrlSource):
-                            name = f"{region_name}-{source.name}"
-                            config["gbfs"]["feeds"][name] = {"url": source.url}
-                            if source.headers:
-                                config["gbfs"]["feeds"][name]["headers"] = source.headers
+                            case "gbfs" if isinstance(source, metadata.UrlSource):
+                                name = f"{region_name}-{source.name}"
+                                config["gbfs"]["feeds"][name] = {"url": source.url}
+                                if source.headers:
+                                    config["gbfs"]["feeds"][name]["headers"] = source.headers
 
         with open("out/config.yml", "w") as fo:
             yaml.dump(config, fo)
