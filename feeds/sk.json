@@ -36,6 +36,12 @@
             "url": "https://gtfs.transdata.sk/SADZA/gtfs.zip",
         },
         {
+            "name": "sadpd",
+            "type": "http",
+            "fix": true,
+            "url": "https://gtfs.transdata.sk/SADPD/gtfs.zip"
+        },
+        {
             "name": "sadlc",
             "type": "http",
             "fix": true,
