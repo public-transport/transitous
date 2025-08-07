@@ -30,6 +30,12 @@
             "url-override": "https://www.arcgis.com/sharing/rest/content/items/aba12fd2cbac4843bc7406151bc66106/data"
         },
         {
+            "name": "idsbk-regional-buses",
+            "type": "http",
+            "fix": true,
+            "url": "https://transiq.xhyrom.dev/gtfs/sk/ids-bk_regional.zip"
+        },
+        {
             "name": "sadza",
             "type": "http",
             "fix": true,
