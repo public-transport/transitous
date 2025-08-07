@@ -116,6 +116,8 @@ if __name__ == "__main__":
                                     "path": schedule_file,
                                     "extend_calendar": source.extend_calendar
                                 }
+                            if source.default_timezone is not None:
+                                config["timetable"]["datasets"][name]["default_timezone"] = source.default_timezone
 
                         case "gtfs-rt" if isinstance(source, metadata.UrlSource):
                             name = f"{region_name}-{source.name}"
