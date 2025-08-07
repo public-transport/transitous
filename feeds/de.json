@@ -35,7 +35,8 @@
             ],
             "http-options": {
                 "fetch-interval-days": 2
-            }
+            },
+            "default-timezone": "Europe/Berlin"
         },
         {
             "name": "DELFI",
