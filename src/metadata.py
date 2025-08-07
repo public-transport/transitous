@@ -54,6 +54,7 @@ class Source:
     keep_agency_names: List[str] = []
     display_name_options: Optional[DisplayNameOptions] = None
     extend_calendar = False
+    default_timezone: Optional[str] = None
 
     def __init__(self, parsed: Optional[dict] = None):
         self.license = License()
@@ -90,6 +91,8 @@ class Source:
                     DisplayNameOptions(parsed["display-name-options"])
             if "extend-calendar" in parsed:
                 self.extend_calendar = bool(parsed["extend-calendar"])
+            if "default-timezone" in parsed:
+                self.default_timezone = parsed["default-timezone"]
 
 
 class HttpOptions:

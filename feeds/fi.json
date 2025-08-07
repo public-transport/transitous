@@ -25,7 +25,8 @@
                 "VR",
                 "Pohjois-Suomen Rautatieharrastajat ry",
                 "Sinisten vaunujen ystävät ry"
-            ]
+            ],
+            "default-timezone": "Europe/Helsinki"
         },
         {
             "name": "digitraffic",

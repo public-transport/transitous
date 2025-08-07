@@ -32,7 +32,26 @@
         {
             "name": "idsbk-regional-buses",
             "type": "http",
+            "fix": true,
             "url": "https://transiq.xhyrom.dev/gtfs/sk/ids-bk_regional.zip"
+        },
+        {
+            "name": "sadza",
+            "type": "http",
+            "fix": true,
+            "url": "https://gtfs.transdata.sk/SADZA/gtfs.zip"
+        },
+        {
+            "name": "sadpd",
+            "type": "http",
+            "fix": true,
+            "url": "https://gtfs.transdata.sk/SADPD/gtfs.zip"
+        },
+        {
+            "name": "sadlc",
+            "type": "http",
+            "fix": true,
+            "url": "https://gtfs.transdata.sk/SADLC/gtfs.zip"
         }
     ]
 }
