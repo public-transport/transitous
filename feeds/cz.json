@@ -72,6 +72,12 @@
             }
         },
         {
+            "name": "PMDP",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://owncloud.cesnet.cz/index.php/s/TYYiOIsaNWFLseQ/download"
+        },
+        {
             "name": "IDZK",
             "type": "http",
             "url": "https://dataportal-files.bileto.net/id-zk-all.zip"
