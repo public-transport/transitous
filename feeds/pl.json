@@ -386,6 +386,16 @@
             "fix": true
         },
         {
+            "name": "Arriva",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://cdn.zbiorkom.live/gtfs/pkp-ar.zip",
+            "url-override": "https://files.girlc.at/gtfs/arriva.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
             "name": "Jastrzębie-Zdrój",
             "type": "http",
             "spec": "gtfs",
