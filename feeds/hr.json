@@ -18,6 +18,7 @@
             "name": "hz",
             "type": "http",
             "url": "https://www.hzpp.hr/api/v1/repository/download/852f76d2-8df3-4957-b30b-dc4b88b1caca",
+            "url-override": "https://gitlab.com/vekejsn/gtfs-generators/-/jobs/artifacts/main/raw/hzpp_gtfs.zip?job=hzpp",
             "license": {
                 "spdx-identifier": "CC0-1.0"
             }
@@ -43,9 +44,7 @@
             "name": "pulapromet",
             "type": "http",
             "url": "https://b2b.promet-info.hr/dc/b2b.gtfs.pulapromet",
-            "url-override": "https://jbb.ghsq.de/gtfs/hr-pulapromet.gtfs.zip",
-            "skip": true,
-            "skip-reason": "Feed is expired for 3 years at time of writing"
+            "url-override": "https://gitlab.com/vekejsn/gtfs-generators/-/jobs/artifacts/main/raw/pulapromet_gtfs.zip?job=pula"
         },
         {
             "name": "osijekgpp",
@@ -130,6 +129,17 @@
             "name": "zadar",
             "type": "http",
             "url": "https://gitlab.com/vekejsn/gtfs-generators/-/jobs/artifacts/main/raw/zadar_gtfs.zip?job=zadar"
+        },
+        {
+            "name": "zadar",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://owncloud.cesnet.cz/index.php/s/hoLRLvxxORnoPOw/download"
+        },
+        {
+            "name": "karlovac",
+            "type": "http",
+            "url": "https://gitlab.com/vekejsn/gtfs-generators/-/jobs/artifacts/main/raw/karlovac_gtfs.zip?job=karlovac"
         }
     ]
 }
