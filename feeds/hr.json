@@ -44,7 +44,7 @@
             "name": "pulapromet",
             "type": "http",
             "url": "https://b2b.promet-info.hr/dc/b2b.gtfs.pulapromet",
-            "url-override": "https://owncloud.cesnet.cz/index.php/s/wyo5NnS3YpnCGPY"
+            "url-override": "https://owncloud.cesnet.cz/index.php/s/wyo5NnS3YpnCGPY/download"
         },
         {
             "name": "osijekgpp",
