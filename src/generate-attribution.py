@@ -196,33 +196,38 @@ if __name__ == "__main__":
             if source.skip:
                 continue
 
+            resolved_sources = []
             match source:
                 case TransitlandSource():
-                    source = transitland_atlas.source_by_id(source)
-                    if not source:
+                    resolved_sources = transitland_atlas.sources_by_id(source)
+                    if not resolved_sources:
                         continue
                 case MobilityDatabaseSource():
-                    source = mobilitydb.source_by_id(source)
-                    if not source:
+                    resolved_source = mobilitydb.source_by_id(source)
+                    if not resolved_source:
                         continue
+                    resolved_sources = [resolved_source]
+                case _:
+                    resolved_sources = [source]
 
-            match source:
-                case UrlSource() if source.spec == "gtfs-rt":
-                    if source_id not in attributions:
-                        print(f"Warning: Stray gtfs-rt source for {source_id} without a (locally available) static timetable")
-                        continue
-                    else:
-                        add_rt_attribution(attributions[source_id], source)
-                case HttpSource():
-                    http_attribution = http_source_attribution(source, region_data.copy())
-                    if not http_attribution:
-                        continue
+            for source in resolved_sources:
+                match source:
+                    case UrlSource() if source.spec == "gtfs-rt":
+                        if source_id not in attributions:
+                            print(f"Warning: Stray gtfs-rt source for {source_id} without a (locally available) static timetable")
+                            continue
+                        else:
+                            add_rt_attribution(attributions[source_id], source)
+                    case HttpSource():
+                        http_attribution = http_source_attribution(source, region_data.copy())
+                        if not http_attribution:
+                            continue
 
-                    if source_id not in attributions:
-                        attributions[source_id] = http_attribution
-                    else:
-                        print("Warning: Found duplicate source name:", source_id)
-                        attributions[source_id] |= http_attribution
+                        if source_id not in attributions:
+                            attributions[source_id] = http_attribution
+                        else:
+                            print("Warning: Found duplicate source name:", source_id)
+                            attributions[source_id] |= http_attribution
 
     with open("out/license.json", "w") as outfile:
         json.dump(
