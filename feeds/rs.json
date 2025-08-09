@@ -9,7 +9,8 @@
         {
             "name": "Srbijavoz",
             "type": "http",
-            "url": "https://gitlab.com/vekejsn/gtfs-generators/-/jobs/artifacts/main/raw/srbijavoz_gtfs.zip?job=srbijavoz"
+            "url": "https://gitlab.com/vekejsn/gtfs-generators/-/jobs/artifacts/main/raw/srbijavoz_gtfs.zip?job=srbijavoz",
+            "fix": true
         },
         {
             "name": "Srbijavoz",
