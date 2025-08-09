@@ -74,7 +74,7 @@
         {
             "name": "maribor",
             "type": "http",
-            "url": "https://gitlab.com/api/v4/projects/derp-si%2Fgtfs-generators/packages/generic/marprom_official/latest/marprom_gtfs.zip",
+            "url": "https://gitlab.com/api/v4/projects/derp-si%2Fgtfs-generators/packages/generic/marprom_official/latest/marprom_gtfs.zip"
         },
         {
             "name": "maribor",
@@ -85,7 +85,7 @@
         {
             "name": "celje",
             "type": "http",
-            "url": "https://gitlab.com/api/v4/projects/derp-si%2Fgtfs-generators/packages/generic/CELEBUS/latest/celje.zip",
+            "url": "https://gitlab.com/api/v4/projects/derp-si%2Fgtfs-generators/packages/generic/CELEBUS/latest/celje.zip"
         },
         {
             "name": "celje",

@@ -146,7 +146,7 @@
         {
             "name": "zadar",
             "type": "http",
-            "url": "https://gitlab.com/vekejsn/gtfs-generators/-/jobs/artifacts/main/raw/zadar_gtfs.zip?job=zadar",
+            "url": "https://gitlab.com/vekejsn/gtfs-generators/-/jobs/artifacts/main/raw/zadar_gtfs.zip?job=zadar"
         },
         {
             "name": "zadar",
