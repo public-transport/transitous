@@ -164,6 +164,6 @@
             "name": "Public-Transit-Victoria-(PTV)",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-r1-ptv",
-        },
+        }
     ]
 }
