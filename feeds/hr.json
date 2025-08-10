@@ -24,6 +24,12 @@
             }
         },
         {
+            "name": "hz",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "http://rt.gtfs.baguette.pirnet.si/gtfs-rt/HZPP/trip_updates.pb"
+        },
+        {
             "name": "zet",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u25k-zagrebačkielektričnitramvaj",
@@ -65,6 +71,12 @@
             "url": "https://gitlab.com/vekejsn/gtfs-generators/-/jobs/artifacts/main/raw/split_gtfs.zip?job=split"
         },
         {
+            "name": "split",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "http://rt.gtfs.baguette.pirnet.si/gtfs-rt/prometSplit/trip_updates.pb"
+        },
+        {
             "name": "rijeka",
             "type": "http",
             "url": "https://gitlab.com/vekejsn/gtfs-generators/-/jobs/artifacts/main/raw/autotrolej_gtfs.zip?job=rijeka",
@@ -77,6 +89,12 @@
             "name": "sisak",
             "type": "http",
             "url": "https://gitlab.com/vekejsn/gtfs-generators/-/jobs/artifacts/main/raw/ap_sisak_gtfs.zip?job=sisak"
+        },
+        {
+            "name": "sisak",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "http://rt.gtfs.baguette.pirnet.si/gtfs-rt/apSisak/trip_updates.pb"
         },
         {
             "name": "dubrovnik-libertas",
@@ -134,12 +152,13 @@
             "name": "zadar",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://owncloud.cesnet.cz/index.php/s/hoLRLvxxORnoPOw/download"
+            "url": "https://rt.gtfs.baguette.pirnet.si/gtfs-rt/liburnijaZadar/trip_updates.pb"
         },
         {
             "name": "karlovac",
             "type": "http",
-            "url": "https://gitlab.com/vekejsn/gtfs-generators/-/jobs/artifacts/main/raw/karlovac_gtfs.zip?job=karlovac"
+            "url": "https://gitlab.com/vekejsn/gtfs-generators/-/jobs/artifacts/main/raw/karlovac_gtfs.zip?job=karlovac",
+            "fix": true
         }
     ]
 }
