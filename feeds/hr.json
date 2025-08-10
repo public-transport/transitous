@@ -152,7 +152,7 @@
             "name": "zadar",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://owncloud.cesnet.cz/index.php/s/hoLRLvxxORnoPOw/download"
+            "url": "https://rt.gtfs.baguette.pirnet.si/gtfs-rt/liburnijaZadar/trip_updates.pb"
         },
         {
             "name": "karlovac",
