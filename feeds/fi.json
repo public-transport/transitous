@@ -67,7 +67,7 @@
             "name": "hsl",
             "spec": "gtfs-rt",
             "type": "url",
-            "url": "https://realtime.hsl.fi/realtime/service-alerts/v2/hsl"
+            "url": "https://realtime.hsl.fi/realtime/trip-updates/v2/hsl"
         }
     ]
 }
