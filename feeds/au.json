@@ -161,9 +161,42 @@
             "fix": true
         },
         {
-            "name": "Public-Transit-Victoria-(PTV)",
+            "name": "V-Line",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-r1-ptv"
+        },
+        {
+            "name": "PTV-Metro",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-r1r-ptv"
+        },
+        {
+            "name": "PTV-Metro-rt",
+            "spec": "gtfs-rt",
+            "type": "http",
+            "url": "https://api.opendata.transport.vic.gov/opendata/public-transport/gtfs/realtime/v1/metro"
+        },
+        {
+            "name": "yarra-trams",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-r1r0-ptv"
+        },
+        {
+            "name": "yarra-trams-rt",
+            "spec": "gtfs-rt",
+            "type": "http",
+            "url": "https://api.opendata.transport.vic.gov/opendata/public-transport/gtfs/realtime/v1/tram"
+        },
+        {
+            "name": "melbourne-buses",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-r1r-ptv~4"
+        },
+        {
+            "name": "melbourne-buses-rt",
+            "spec": "gtfs-rt",
+            "type": "http",
+            "url": "https://api.opendata.transport.vic.gov/opendata/public-transport/gtfs/realtime/v1/bus"
         }
     ]
 }
