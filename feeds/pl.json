@@ -598,6 +598,16 @@
             "url": "https://obasrodaapi.iplaner.pl/api/gtfs_realtime/trip-updates-for-agency/333.pb?key=web&removeAgencyIds=true"
         },
         {
+            "name": "Słupsk",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://zimslupsk.pl/otwarte-dane.html",
+            "function": "data_slupsk_latest_resource",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
             "name": "Biker-Białystok",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-biker~białystok~poland~gbfs"
