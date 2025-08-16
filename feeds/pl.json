@@ -599,6 +599,14 @@
             "url": "https://obasrodaapi.iplaner.pl/api/gtfs_realtime/trip-updates-for-agency/333.pb?key=web&removeAgencyIds=true"
         },
         {
+            "name": "Słupsk",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://zimslupsk.pl/otwarte-dane.html",
+            "function": "data_slupsk_latest_resource",
+            "fix": true
+        },
+        {
             "name": "Ełk",
             "type": "http",
             "spec": "gtfs",
