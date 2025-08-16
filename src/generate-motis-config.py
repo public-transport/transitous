@@ -33,6 +33,7 @@ if __name__ == "__main__":
     arguments = parser.parse_args()
 
     feed_dir = Path("feeds/")
+    script_dir = Path("scripts/")
 
     atlas = transitland.Atlas.load(Path("transitland-atlas/"))
     mdb = mobilitydatabase.Database.load()
@@ -118,6 +119,8 @@ if __name__ == "__main__":
                                 }
                             if source.default_timezone is not None:
                                 config["timetable"]["datasets"][name]["default_timezone"] = source.default_timezone
+                            if os.path.exists(os.path.join(script_dir, f"{name}.lua")):
+                                config["timetable"]["datasets"][name]["script"] = f"{script_dir}/{name}.lua"
 
                         case "gtfs-rt" if isinstance(source, metadata.UrlSource):
                             name = f"{region_name}-{source.name}"
@@ -153,3 +156,7 @@ if __name__ == "__main__":
 
         with open("out/config.yml", "w") as fo:
             yaml.dump(config, fo)
+
+    # copy scripts
+    shutil.rmtree("out/scripts", ignore_errors=True)
+    shutil.copytree(script_dir, "out/scripts")
