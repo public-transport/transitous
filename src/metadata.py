@@ -55,6 +55,7 @@ class Source:
     display_name_options: Optional[DisplayNameOptions] = None
     extend_calendar = False
     default_timezone: Optional[str] = None
+    script: Optional[str] = None
 
     def __init__(self, parsed: Optional[dict] = None):
         self.license = License()
@@ -93,6 +94,8 @@ class Source:
                 self.extend_calendar = bool(parsed["extend-calendar"])
             if "default-timezone" in parsed:
                 self.default_timezone = parsed["default-timezone"]
+            if "script" in parsed:
+                self.script = parsed["script"]
 
 
 class HttpOptions:
