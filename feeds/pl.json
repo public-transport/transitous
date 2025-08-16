@@ -603,6 +603,7 @@
             "spec": "gtfs",
             "url": "https://zimslupsk.pl/otwarte-dane.html",
             "function": "data_slupsk_latest_resource",
+            "fix": true,
             "license": {
                 "spdx-identifier": "CC0-1.0"
             }
