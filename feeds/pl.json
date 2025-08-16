@@ -603,6 +603,7 @@
             "type": "http",
             "spec": "gtfs",
             "url": "https://files.girlc.at/gtfs/elk.zip",
+            "fix": true,
             "license":{
                 "spdx-identifier": "CC0-1.0"
             }
