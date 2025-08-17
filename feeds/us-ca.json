@@ -206,6 +206,11 @@
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-9mu-orangecountytransportationauthority",
             "url-override": "https://github.com/catenarytransit/agency-gtfs-mirror/raw/refs/heads/main/octa_gtfs.zip"
+        },
+        {
+            "name": "long-beach-avalon-transit",
+            "type": "http",
+            "url": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-avalon-transit-gtfs-12.zip?alt=media"
         }
     ]
 }
