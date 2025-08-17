@@ -36,6 +36,11 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             }
+        },
+        {
+            "name": "belo-horizonte",
+            "type": "http",
+            "url": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/br-minas-gerais-empresa-de-transportes-e-transito-de-belo-horizonte-bhtrans-gtfs-9.zip?alt=media"
         }
     ]
 }
