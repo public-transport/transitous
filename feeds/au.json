@@ -174,7 +174,7 @@
             "name": "PTV-Metro-rt",
             "spec": "gtfs-rt",
             "type": "http",
-            "url": "https://api.opendata.transport.vic.gov/opendata/public-transport/gtfs/realtime/v1/metro"
+            "url": "https://api.opendata.transport.vic.gov.au/opendata/public-transport/gtfs/realtime/v1/metro"
         },
         {
             "name": "yarra-trams",
@@ -185,7 +185,7 @@
             "name": "yarra-trams-rt",
             "spec": "gtfs-rt",
             "type": "http",
-            "url": "https://api.opendata.transport.vic.gov/opendata/public-transport/gtfs/realtime/v1/tram"
+            "url": "https://api.opendata.transport.vic.gov.au/opendata/public-transport/gtfs/realtime/v1/tram"
         },
         {
             "name": "melbourne-buses",
@@ -196,7 +196,7 @@
             "name": "melbourne-buses-rt",
             "spec": "gtfs-rt",
             "type": "http",
-            "url": "https://api.opendata.transport.vic.gov/opendata/public-transport/gtfs/realtime/v1/bus"
+            "url": "https://api.opendata.transport.vic.gov.au/opendata/public-transport/gtfs/realtime/v1/bus"
         }
     ]
 }
