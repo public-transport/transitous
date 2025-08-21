@@ -314,6 +314,7 @@
             "type": "http",
             "spec": "gtfs",
             "url": "https://cdn.zbiorkom.live/gtfs/bialystok-wschod.zip",
+            "url-override": "https://files.girlc.at/gtfs/wschod_express.zip",
             "license": {
                 "spdx-identifier": "CC0-1.0"
             },
@@ -596,6 +597,42 @@
             "type": "url",
             "spec": "gtfs-rt",
             "url": "https://obasrodaapi.iplaner.pl/api/gtfs_realtime/trip-updates-for-agency/333.pb?key=web&removeAgencyIds=true"
+        },
+        {
+            "name": "Słupsk",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://zimslupsk.pl/otwarte-dane.html",
+            "function": "data_slupsk_latest_resource",
+            "fix": true
+        },
+        {
+            "name": "Ełk",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://files.girlc.at/gtfs/elk.zip",
+            "fix": true,
+            "license":{
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "Morąg",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://files.girlc.at/gtfs/morag.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "Orneta",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://files.girlc.at/gtfs/orneta.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
         },
         {
             "name": "Biker-Białystok",
