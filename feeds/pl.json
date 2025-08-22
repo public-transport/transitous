@@ -117,12 +117,13 @@
         },
         {
             "name": "SKM-Warszawa",
-            "type":"http",
+            "type": "http",
             "spec": "gtfs",
             "url": "https://cdn.zbiorkom.live/gtfs/pkp-skmw.zip",
             "license": {
                 "spdx-identifier": "MIT"
-            }
+            },
+            "fix": true
         },
         {
             "name": "Warszawska-Kolej-Dojazdowa",
@@ -630,7 +631,7 @@
             "spec": "gtfs",
             "url": "https://files.girlc.at/gtfs/elk.zip",
             "fix": true,
-            "license":{
+            "license": {
                 "spdx-identifier": "CC0-1.0"
             }
         },
