@@ -270,10 +270,35 @@
         },
         {
             "name": "PKS-Kalisz",
-            "type": "mobility-database",
-            "mdb-id": "mdb-2461",
-            "skip": true,
-            "skip-reason": "Outdated feed",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://pks.kalisz.pl/GTFS/",
+            "function": "data_slupsk_latest_resource",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            },
+            "fix": true
+        },
+        {
+            "name": "KLA-Kalisz",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "rj.sdip.kalisz.pl/?download=gtfs_kla",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "Kalisz-LocalBuses",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "rj.sdip.kalisz.pl/?download=gtfs_przewoznicy",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            },
+            "drop-agency-names": [
+                "PKS w Kaliszu Sp. z o.o."
+            ],
             "fix": true
         },
         {
@@ -604,6 +629,9 @@
             "spec": "gtfs",
             "url": "https://zimslupsk.pl/otwarte-dane.html",
             "function": "data_slupsk_latest_resource",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            },
             "fix": true
         },
         {
