@@ -635,6 +635,16 @@
             }
         },
         {
+            "name": "Legnica",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://cdn.zbiorkom.live/gtfs/legnica.zip",
+            "fix": true,
+            "license": {
+                "spdx-identifier": "MIT"
+            }
+        },
+        {
             "name": "Biker-Białystok",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-biker~białystok~poland~gbfs"
