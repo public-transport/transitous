@@ -283,7 +283,7 @@
             "name": "KLA-Kalisz",
             "type": "http",
             "spec": "gtfs",
-            "url": "rj.sdip.kalisz.pl/?download=gtfs_kla",
+            "url": "http://rj.sdip.kalisz.pl/?download=gtfs_kla",
             "license": {
                 "spdx-identifier": "CC0-1.0"
             }
@@ -292,7 +292,7 @@
             "name": "Kalisz-LocalBuses",
             "type": "http",
             "spec": "gtfs",
-            "url": "rj.sdip.kalisz.pl/?download=gtfs_przewoznicy",
+            "url": "http://rj.sdip.kalisz.pl/?download=gtfs_przewoznicy",
             "license": {
                 "spdx-identifier": "CC0-1.0"
             },
