@@ -122,8 +122,7 @@
             "url": "https://cdn.zbiorkom.live/gtfs/pkp-skmw.zip",
             "license": {
                 "spdx-identifier": "MIT"
-            },
-            "fix": true
+            }
         },
         {
             "name": "Warszawska-Kolej-Dojazdowa",
@@ -233,7 +232,8 @@
         {
             "name": "PKP-SKM",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u3t-skm~trojmiasto"
+            "transitland-atlas-id": "f-u3t-skm~trojmiasto",
+            "fix": true
         },
         {
             "name": "Koleje-Małopolskie",
