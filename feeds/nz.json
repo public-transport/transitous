@@ -19,11 +19,7 @@
             "name": "AT",
             "spec": "gtfs-rt",
             "type": "url",
-            "url": "https://api.at.govt.nz/realtime/legacy",
-            "headers": {
-                "Accept": "application/x-protobuf",
-                "Ocp-Apim-Subscription-Key": "5a8bd844b5c941a188a17d6ed968c070"
-            }
+            "url": "https://jbb.ghsq.de/gtfs/at/legacy"
         },
         {
             "name": "Metlink",
