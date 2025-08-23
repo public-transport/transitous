@@ -15,6 +15,7 @@
         {
             "name": "Srbijavoz",
             "type": "url",
+            "spec": "gtfs-rt",
             "url": "http://rt.gtfs.baguette.pirnet.si/gtfs-rt/Srbijavoz_ghl/trip_updates.pb"
         },
         {
