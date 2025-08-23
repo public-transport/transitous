@@ -119,6 +119,11 @@
             "name": "SAD-Zvolen",
             "type": "http",
             "url": "https://transiq.xhyrom.dev/gtfs/sk/sad-zvolen-as.zip"
+        },
+        {
+            "name": "Slovak-Lines-Express",
+            "type": "http",
+            "url": "https://transiq.xhyrom.dev/gtfs/sk/slovak-lines-express-as.zip"
         }
     ]
 }
