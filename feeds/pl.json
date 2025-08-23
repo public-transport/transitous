@@ -20,6 +20,15 @@
             "transitland-atlas-id": "f-pkp~intercity~pl"
         },
         {
+            "name": "PKP-Intercity",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://gtfs.kasznia.net/rt/pkpic.pb",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
+        },
+        {
             "name": "PKP-Intercity-Germany",
             "type": "http",
             "url": "https://kasmar00.github.io/gtfs-pkp-de/latest.zip",
@@ -102,6 +111,15 @@
             "type": "url",
             "spec": "gtfs-rt",
             "url": "https://cdn.zbiorkom.live/gtfs-rt/warsaw.pb",
+            "license": {
+                "spdx-identifier": "MIT"
+            }
+        },
+        {
+            "name": "SKM-Warszawa",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://cdn.zbiorkom.live/gtfs/pkp-skmw.zip",
             "license": {
                 "spdx-identifier": "MIT"
             }
@@ -214,7 +232,8 @@
         {
             "name": "PKP-SKM",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u3t-skm~trojmiasto"
+            "transitland-atlas-id": "f-u3t-skm~trojmiasto",
+            "fix": true
         },
         {
             "name": "Koleje-Małopolskie",
@@ -612,7 +631,7 @@
             "spec": "gtfs",
             "url": "https://files.girlc.at/gtfs/elk.zip",
             "fix": true,
-            "license":{
+            "license": {
                 "spdx-identifier": "CC0-1.0"
             }
         },
@@ -649,6 +668,15 @@
             "type": "url",
             "spec": "gtfs-rt",
             "url": "https://cdn.zbiorkom.live/gtfs-rt/legnica.pb",
+            "license": {
+                "spdx-identifier": "MIT"
+            }
+        },
+        {
+            "name": "Grodziskie-Przewozy-Autobusowe",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://cdn.zbiorkom.live/gtfs/warsaw-gpa.zip",
             "license": {
                 "spdx-identifier": "MIT"
             }
