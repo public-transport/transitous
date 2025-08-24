@@ -287,6 +287,7 @@ Option Name            | Description
 `drop-agency-names`    | Removes a list of agencies. Can be used to avoid duplicates if the agency provides its own feed.
 `url-override`         | Use a different url instead of the one in Transitland / Mobility Database, or use a custom mirror. For more details, see the section on caches.
 `display-name-options` | Specify which strings identifying a vehicle should be displayed to the user
+`script`               | A Lua script applied by MOTIS to GTFS data during import, see [the MOTIS documentation](https://github.com/motis-project/motis/blob/master/docs/scripting.md) for details.
 
 #### License Options
 
