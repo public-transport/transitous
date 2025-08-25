@@ -9,14 +9,20 @@
         {
             "name": "great-britain",
             "type": "http",
-            "url": "https://s3.transitpdf.com/files/uran/improved-gtfs-great-britain.zip",
-            "fix": true
+            "url": "https://beta.aubin.app/gtfs/great_britain_gtfs.zip",
+            "fix": true,
+            "license": {
+                "url": "https://transitous.org/sources-great-britain"
+            }
         },
         {
-            "name": "bus-dft",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-bus~dft~gov~uk",
-            "fix": true
+            "name": "great-britain",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://realtime.aubin.app/great_britain_gtfsrt.binpb",
+            "license": {
+                "url": "https://transitous.org/sources-great-britain"
+            }
         },
         {
             "name": "northern-ireland",
