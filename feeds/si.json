@@ -32,6 +32,12 @@
             }
         },
         {
+            "name": "lpp",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://rt.gtfs.derp.si/sources/lpp/all"
+        },
+        {
             "name": "jesenice",
             "type": "http",
             "url": "https://b2b.nap.si/data/b2b.gtfs.jesenice",
