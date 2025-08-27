@@ -21,6 +21,41 @@
             "type": "url",
             "url": "https://jbb.ghsq.de/gtfs/at/legacy"
         },
+                {
+            "name": "Flamingo",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-flamingo~auckland~gbfs"
+        },
+        {
+            "name": "Flamingo",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-flamingo~dunedin~gbfs"
+        },
+        {
+            "name": "Flamingo",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-flamingo~palmerston~north~gbfs"
+        },
+        {
+            "name": "Flamingo",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-flamingo~porirua~gbfs"
+        },
+        {
+            "name": "Flamingo",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-flamingo~waimakariri~district~gbfs"
+        },
+        {
+            "name": "Flamingo",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-flamingo~wellington~gbfs"
+        },
+        {
+            "name": "Flamingo",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-flamingo~tauranga~gbfs"
+        },
         {
             "name": "Metlink",
             "type": "transitland-atlas",
