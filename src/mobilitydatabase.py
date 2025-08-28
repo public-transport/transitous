@@ -52,24 +52,10 @@ class Database:
 
         match feed["data_type"]:
             case "gtfs":
-                result = HttpSource()
-                result.name = source.name
+                result = inherit_options_from_db_source(source)
                 result.url = feed["urls.direct_download"]
                 result.cache_url = feed["urls.latest"]
-                result.options = source.options
                 result.spec = "gtfs"
-                result.fix = source.fix
-                result.skip = source.skip
-                result.skip_reason = source.skip_reason
-                result.drop_too_fast_trips = source.drop_too_fast_trips
-                result.function = source.function
-                result.drop_shapes = source.drop_shapes
-                result.fix_csv_quotes = source.fix_csv_quotes
-                result.display_name_options = source.display_name_options
-
-                if source.url_override:
-                    result.url_override = source.url_override
-
             case "gtfs_rt":
                 result = UrlSource()
                 result.name = source.name

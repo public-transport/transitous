@@ -35,10 +35,6 @@ class Atlas:
             result.cache_url = "https://gtfsproxy.fwan.it/" + \
                 source.transitland_atlas_id
             result.spec = "gtfs"
-
-            if source.url_override:
-                result.url_override = source.url_override
-
         elif "realtime_trip_updates" in feed["urls"]:
             result = UrlSource()
             result.name = source.name
