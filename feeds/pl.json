@@ -169,8 +169,21 @@
         },
         {
             "name": "Lublin",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u905-lublin"
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://cdn.zbiorkom.live/gtfs/lublin.zip",
+            "license": {
+                "spdx-identifier": "MIT"
+            }
+        },
+        {
+            "name": "Lublin",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://cdn.zbiorkom.live/gtfs-rt/lublin.pb",
+            "license": {
+                "spdx-identifier": "MIT"
+            }
         },
         {
             "name": "Elbląg",
@@ -677,6 +690,15 @@
             "type": "http",
             "spec": "gtfs",
             "url": "https://cdn.zbiorkom.live/gtfs/warsaw-gpa.zip",
+            "license": {
+                "spdx-identifier": "MIT"
+            }
+        },
+        {
+            "name": "Grodziskie-Przewozy-Autobusowe",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://cdn.zbiorkom.live/gtfs-rt/warsaw-gpa.pb",
             "license": {
                 "spdx-identifier": "MIT"
             }
