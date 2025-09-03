@@ -216,7 +216,7 @@
         },
         {
             "name": "Transport-Canberra",
-            "type": "http",
+            "type": "url",
             "spec": "gtfs-rt",
             "url": "https://transport.api.act.gov.au/gtfs/data/gtfs/v2/vehicle-positions-mywayplus.pb",
             "skip": true,
@@ -224,19 +224,19 @@
         },
         {
             "name": "Transport-Canberra",
-            "type": "http",
+            "type": "url",
             "spec": "gtfs-rt",
             "url": "https://transport.api.act.gov.au/gtfs/data/gtfs/v2/trip-updates.pb",
             "skip": true,
-            "skip-reason": "api key missing"
+            "skip-reason": "api-key is missing"
         },
         {
             "name": "Transport-Canberra",
-            "type": "http",
+            "type": "url",
             "spec": "gtfs-rt",
             "url": "https://transport.api.act.gov.au/gtfs/data/gtfs/v2/service-alerts.pb",
             "skip": true,
-            "skip-reason": "api key missing"
+            "skip-reason": "api-key is missing"
         }
     ]
 }
