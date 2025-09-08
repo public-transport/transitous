@@ -83,6 +83,11 @@
             "url": "https://dataportal-files.bileto.net/id-zk-all.zip"
         },
         {
+            "name": "JDF-merged",
+            "type": "http",
+            "url": "https://github.com/KoblizekXD/gtfs-processor/raw/refs/heads/gtfs/files/latest.zip"
+        },
+        {
             "name": "IDZK",
             "type": "url",
             "spec": "gtfs-rt",
