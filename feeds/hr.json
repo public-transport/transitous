@@ -18,9 +18,16 @@
             "name": "hz",
             "type": "http",
             "url": "https://www.hzpp.hr/api/v1/repository/download/852f76d2-8df3-4957-b30b-dc4b88b1caca",
+            "url-override": "https://gitlab.com/vekejsn/gtfs-generators/-/jobs/artifacts/main/raw/hzpp_gtfs.zip?job=hzpp",
             "license": {
                 "spdx-identifier": "CC0-1.0"
             }
+        },
+        {
+            "name": "hz",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "http://rt.gtfs.baguette.pirnet.si/gtfs-rt/HZPP/trip_updates.pb"
         },
         {
             "name": "zet",
@@ -43,9 +50,7 @@
             "name": "pulapromet",
             "type": "http",
             "url": "https://b2b.promet-info.hr/dc/b2b.gtfs.pulapromet",
-            "url-override": "https://jbb.ghsq.de/gtfs/hr-pulapromet.gtfs.zip",
-            "skip": true,
-            "skip-reason": "Feed is expired for 3 years at time of writing"
+            "url-override": "https://owncloud.cesnet.cz/index.php/s/wyo5NnS3YpnCGPY/download"
         },
         {
             "name": "osijekgpp",
@@ -61,9 +66,21 @@
             "fix": true
         },
         {
+            "name": "gradski-parking",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://rt-misc.ojpp-http.pirnet.si/sibenik/trip-updates.pb"
+        },
+        {
             "name": "split",
             "type": "http",
             "url": "https://gitlab.com/vekejsn/gtfs-generators/-/jobs/artifacts/main/raw/split_gtfs.zip?job=split"
+        },
+        {
+            "name": "split",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "http://rt.gtfs.baguette.pirnet.si/gtfs-rt/prometSplit/trip_updates.pb"
         },
         {
             "name": "rijeka",
@@ -75,9 +92,21 @@
             }
         },
         {
+            "name": "rijeka",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://rt-misc.ojpp-http.pirnet.si/autotrolej/trip-updates.pb"
+        },
+        {
             "name": "sisak",
             "type": "http",
             "url": "https://gitlab.com/vekejsn/gtfs-generators/-/jobs/artifacts/main/raw/ap_sisak_gtfs.zip?job=sisak"
+        },
+        {
+            "name": "sisak",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "http://rt.gtfs.baguette.pirnet.si/gtfs-rt/apSisak/trip_updates.pb"
         },
         {
             "name": "dubrovnik-libertas",
@@ -121,15 +150,21 @@
             "url": "https://owncloud.cesnet.cz/index.php/s/Y5Xf2hAiP5z7q6U/download"
         },
         {
-            "name": "autotrolej",
-            "type": "http",
-            "url": "https://b2b.promet-info.hr/dc/b2b.gtfs.at",
-            "url-override": "https://jbb.ghsq.de/gtfs/hr-at.gtfs.zip"
-        },
-        {
             "name": "zadar",
             "type": "http",
             "url": "https://gitlab.com/vekejsn/gtfs-generators/-/jobs/artifacts/main/raw/zadar_gtfs.zip?job=zadar"
+        },
+        {
+            "name": "zadar",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://rt.gtfs.baguette.pirnet.si/gtfs-rt/liburnijaZadar/trip_updates.pb"
+        },
+        {
+            "name": "karlovac",
+            "type": "http",
+            "url": "https://gitlab.com/vekejsn/gtfs-generators/-/jobs/artifacts/main/raw/karlovac_gtfs.zip?job=karlovac",
+            "fix": true
         }
     ]
 }

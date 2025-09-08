@@ -15,6 +15,12 @@
             "name": "bdz",
             "type": "http",
             "url": "https://jbb.ghsq.de/gtfs/bg-bdz.gtfs.zip"
+        },
+        {
+            "name": "bdz",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://rt.gtfs.baguette.pirnet.si/gtfs-rt/bdz/trip_updates.pb"
         }
     ]
 }

@@ -20,6 +20,15 @@
             "transitland-atlas-id": "f-pkp~intercity~pl"
         },
         {
+            "name": "PKP-Intercity",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://gtfs.kasznia.net/rt/pkpic.pb",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
+        },
+        {
             "name": "PKP-Intercity-Germany",
             "type": "http",
             "url": "https://kasmar00.github.io/gtfs-pkp-de/latest.zip",
@@ -107,6 +116,15 @@
             }
         },
         {
+            "name": "SKM-Warszawa",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://cdn.zbiorkom.live/gtfs/pkp-skmw.zip",
+            "license": {
+                "spdx-identifier": "MIT"
+            }
+        },
+        {
             "name": "Warszawska-Kolej-Dojazdowa",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u3qb-warszawskakolejdojazdowa"
@@ -151,8 +169,21 @@
         },
         {
             "name": "Lublin",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u905-lublin"
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://cdn.zbiorkom.live/gtfs/lublin.zip",
+            "license": {
+                "spdx-identifier": "MIT"
+            }
+        },
+        {
+            "name": "Lublin",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://cdn.zbiorkom.live/gtfs-rt/lublin.pb",
+            "license": {
+                "spdx-identifier": "MIT"
+            }
         },
         {
             "name": "Elbląg",
@@ -214,7 +245,8 @@
         {
             "name": "PKP-SKM",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u3t-skm~trojmiasto"
+            "transitland-atlas-id": "f-u3t-skm~trojmiasto",
+            "fix": true
         },
         {
             "name": "Koleje-Małopolskie",
@@ -314,6 +346,7 @@
             "type": "http",
             "spec": "gtfs",
             "url": "https://cdn.zbiorkom.live/gtfs/bialystok-wschod.zip",
+            "url-override": "https://files.girlc.at/gtfs/wschod_express.zip",
             "license": {
                 "spdx-identifier": "CC0-1.0"
             },
@@ -384,6 +417,16 @@
                 "spdx-identifier": "CC0-1.0"
             },
             "fix": true
+        },
+        {
+            "name": "Arriva",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://cdn.zbiorkom.live/gtfs/pkp-ar.zip",
+            "url-override": "https://files.girlc.at/gtfs/arriva.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
         },
         {
             "name": "Jastrzębie-Zdrój",
@@ -586,6 +629,79 @@
             "type": "url",
             "spec": "gtfs-rt",
             "url": "https://obasrodaapi.iplaner.pl/api/gtfs_realtime/trip-updates-for-agency/333.pb?key=web&removeAgencyIds=true"
+        },
+        {
+            "name": "Słupsk",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://zimslupsk.pl/otwarte-dane.html",
+            "function": "data_slupsk_latest_resource",
+            "fix": true
+        },
+        {
+            "name": "Ełk",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://files.girlc.at/gtfs/elk.zip",
+            "fix": true,
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "Morąg",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://files.girlc.at/gtfs/morag.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "Orneta",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://files.girlc.at/gtfs/orneta.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "Legnica",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://cdn.zbiorkom.live/gtfs/legnica.zip",
+            "fix": true,
+            "license": {
+                "spdx-identifier": "MIT"
+            }
+        },
+        {
+            "name": "Legnica",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://cdn.zbiorkom.live/gtfs-rt/legnica.pb",
+            "license": {
+                "spdx-identifier": "MIT"
+            }
+        },
+        {
+            "name": "Grodziskie-Przewozy-Autobusowe",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://cdn.zbiorkom.live/gtfs/warsaw-gpa.zip",
+            "license": {
+                "spdx-identifier": "MIT"
+            }
+        },
+        {
+            "name": "Grodziskie-Przewozy-Autobusowe",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://cdn.zbiorkom.live/gtfs-rt/warsaw-gpa.pb",
+            "license": {
+                "spdx-identifier": "MIT"
+            }
         },
         {
             "name": "Biker-Białystok",

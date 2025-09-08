@@ -10,12 +10,18 @@
             "name": "nap",
             "type": "http",
             "url": "https://b2b.nap.si/data/b2b.gtfs",
-            "url-override": "https://jbb.ghsq.de/gtfs/si-nap.gtfs.zip",
+            "url-override": "https://gitlab.com/api/v4/projects/derp-si%2Fgtfs-generators/packages/generic/IJPP/latest/ijpp_gtfs.zip",
             "fix": true,
             "license": {
                 "spdx-identifier": "CC-BY-SA-4.0",
                 "url": "https://nap.si/en/datasets_details?id=6fc3966a-5e3f-cf10-1df3-70d3af14d03d"
             }
+        },
+        {
+            "name": "nap",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://rt.gtfs.derp.si/sources/ijpp/trip_updates"
         },
         {
             "name": "lpp",
@@ -24,6 +30,12 @@
             "http-options": {
                 "fetch-interval-days": 2
             }
+        },
+        {
+            "name": "lpp",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://rt.gtfs.derp.si/sources/lpp/all"
         },
         {
             "name": "jesenice",
@@ -64,6 +76,28 @@
                 "spdx-identifier": "CC-BY-SA-4.0",
                 "url": "https://nap.si/en/datasets_details?id=7110f4c4-3581-4b91-a826-6843ee4d7201"
             }
+        },
+        {
+            "name": "maribor",
+            "type": "http",
+            "url": "https://gitlab.com/api/v4/projects/derp-si%2Fgtfs-generators/packages/generic/marprom_official/latest/marprom_gtfs.zip"
+        },
+        {
+            "name": "maribor",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://rt.gtfs.derp.si/sources/marprom/trip_updates"
+        },
+        {
+            "name": "celje",
+            "type": "http",
+            "url": "https://gitlab.com/api/v4/projects/derp-si%2Fgtfs-generators/packages/generic/CELEBUS/latest/celje.zip"
+        },
+        {
+            "name": "celje",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://rt.gtfs.derp.si/sources/celje/trip_updates"
         }
     ]
 }

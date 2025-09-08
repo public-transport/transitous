@@ -9,7 +9,14 @@
         {
             "name": "Srbijavoz",
             "type": "http",
-            "url": "https://jbb.ghsq.de/gtfs/rs-srbijavoz.gtfs.zip"
+            "url": "https://gitlab.com/vekejsn/gtfs-generators/-/jobs/artifacts/main/raw/srbijavoz_merged.zip?job=srbijavoz_merge",
+            "fix": true
+        },
+        {
+            "name": "Srbijavoz",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "http://rt.gtfs.baguette.pirnet.si/gtfs-rt/Srbijavoz_ghl/trip_updates.pb"
         },
         {
             "name": "Subotica",

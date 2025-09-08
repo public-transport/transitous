@@ -24,6 +24,12 @@
             "fix": true
         },
         {
+            "name": "CZPTT",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://owncloud.cesnet.cz/index.php/s/DQdSPwh0bJjtEWq/download"
+        },
+        {
             "name": "PID",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u2f-pražskáintegrovanádoprava"
@@ -80,6 +86,12 @@
             "name": "JDF-merged",
             "type": "http",
             "url": "https://github.com/KoblizekXD/gtfs-processor/raw/refs/heads/gtfs/files/latest.zip"
+        },
+        {
+            "name": "IDZK",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://owncloud.cesnet.cz/index.php/s/249lP7QKA8CR2PY/download"
         }
     ]
 }
