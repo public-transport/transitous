@@ -123,7 +123,8 @@
         {
             "name": "LTG-Link",
             "type": "mobility-database",
-            "mdb-id": "mdb-2991"
+            "mdb-id": "mdb-2991",
+            "enable-crowd-sourced-realtime": true
         },
         {
             "name": "kautra",
