@@ -18,8 +18,7 @@
             "name": "flixbus",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u-flixbus",
-            "fix": true,
-            "script": "eu-flixbus.lua"
+            "fix": true
         },
         {
             "name": "flixbus",
