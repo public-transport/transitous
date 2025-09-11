@@ -704,6 +704,18 @@
             }
         },
         {
+            "name": "RegioJet",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://gtfs.kasznia.net/static/regio-jet.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            },
+            "display-name-options": {
+                "copy-trip-names-matching": "^RJ.*"
+            }
+        },
+        {
             "name": "Biker-Białystok",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-biker~białystok~poland~gbfs"
