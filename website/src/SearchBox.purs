@@ -66,7 +66,7 @@ getRegion address = do
   Just $ city <> ", " <> country
 
 uniqueLocations :: Array Location -> Array Location
-uniqueLocations = nubBy (\a b -> compare (a.name <> fromMaybe "" (getRegion a)) (b.name <> fromMaybe "" (getRegion b)))
+uniqueLocations = nubBy (\a b -> compare (a.type <> a.name <> fromMaybe "" (getRegion a)) (b.type <> b.name <> fromMaybe "" (getRegion b)))
 
 parseMotisResponse :: forall a. DecodeJson a => String -> Either JsonDecodeError a
 parseMotisResponse text = do
