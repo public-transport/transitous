@@ -776,11 +776,6 @@
             "transitland-atlas-id": "f-łoker~łomża~gbfs"
         },
         {
-            "name": "Koło-Marek",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-koło~marek~poland~markach~gbfs"
-        },
-        {
             "name": "Metrorower",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-metrorower~tychy~pl~gbfs"
@@ -806,16 +801,6 @@
             "transitland-atlas-id": "f-piaseczyński~rower~miejski~poland~piaseczno~gbfs"
         },
         {
-            "name": "SRG-Pielgrzymka",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-system~roweru~gminnego~poland~pielgrzymka~gbfs"
-        },
-        {
-            "name": "SRG-Pielgrzymka",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-system~roweru~gminnego~poland~pielgrzymka~gbfs"
-        },
-        {
             "name": "PRM-Pobiedziska",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-pobiedziski~rower~gminny~poland~pobiedziska~gbfs"
@@ -834,11 +819,6 @@
             "name": "RP-Sokołów-Podlaski",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-rower~powiatowy~sokołów~podlaski~gbfs"
-        },
-        {
-            "name": "RM-Szamotuły",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-rower~miejski~szamotuły~poland~(rms)~gbfs"
         },
         {
             "name": "Veturilo-Warszawa",
