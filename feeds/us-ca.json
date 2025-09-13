@@ -145,8 +145,7 @@
         {
             "name": "LA-County",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-la~county",
-            "fix": true
+            "transitland-atlas-id": "f-9q5-dpwlacounty~ca~us"
         },
         {
             "name": "Elkgrove",
