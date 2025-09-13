@@ -1,0 +1,15 @@
+{
+  "maintainers": [
+    {
+      "name": "Cleo Menezes Jr.",
+      "github": "CleoMenezesJr"
+    }
+  ],
+  "sources": [
+    {
+      "name": "gran-valparaiso",
+      "type": "transitland-atlas",
+      "transitland-atlas-id": "f-66jh-vinabussa~trolebuseschilesa~busesdelgranvalparaisosa~topt"
+    }
+  ]
+}
