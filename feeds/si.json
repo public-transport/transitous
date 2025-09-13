@@ -80,7 +80,8 @@
         {
             "name": "maribor",
             "type": "http",
-            "url": "https://gitlab.com/api/v4/projects/derp-si%2Fgtfs-generators/packages/generic/marprom_official/latest/marprom_gtfs.zip"
+            "url": "https://gitlab.com/api/v4/projects/derp-si%2Fgtfs-generators/packages/generic/marprom_official/latest/marprom_gtfs.zip",
+            "fix": true
         },
         {
             "name": "maribor",
