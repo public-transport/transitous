@@ -30,7 +30,7 @@
         {
             "name": "digitraffic",
             "type": "http",
-            "url": "https://rata.digitraffic.fi/api/v1/trains/gtfs-all.zip",
+            "url": "https://rata.digitraffic.fi/api/v1/trains/gtfs-passenger-stops.zip",
             "license": {
                 "spdx-identifier": "CC-BY-4.0",
                 "url": "https://www.digitraffic.fi/en/railway-traffic/"
