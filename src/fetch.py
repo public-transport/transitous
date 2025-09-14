@@ -379,7 +379,6 @@ class Fetcher:
                 for agency in source.keep_agency_names:
                     command.append("--keep-agency-names")
                     command.append(agency)
-                command.append("--delete-orphans")
             if source.display_name_options:
                 if source.display_name_options.copy_trip_names_matching:
                     command.append("--copy-trip-names-matching")
