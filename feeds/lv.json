@@ -13,7 +13,11 @@
                 "spdx-identifier": "CC0-1.0"
             },
             "fix": true,
-            "mdb-id": "mdb-2337"
+            "mdb-id": "mdb-2337",
+            "display-name-options": {
+                "copy-trip-names-matching": "\\d+",
+                "keep-route-names-matching": "\\d+"
+            }
         },
         {
             "name": "pieturas",
