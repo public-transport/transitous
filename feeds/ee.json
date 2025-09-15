@@ -208,7 +208,7 @@
             "type": "url",
             "spec": "gtfs-rt",
             "url": "https://jbb.ghsq.de/gtfs/elron/VehiclePositions",
-            "derive-vehicle-positions": true
+            "derive-trip-updates": true
         },
         {
             "name": "tslaevad",

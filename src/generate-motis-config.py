@@ -51,17 +51,24 @@ if __name__ == "__main__":
     atlas = transitland.Atlas.load(Path("transitland-atlas/"))
     mdb = mobilitydatabase.Database.load()
 
+    # TODO backward compatibility, remove this in a few months
+    while "full" in arguments.regions:
+        print("Ignoring legacy option 'full', this is the default now.")
+        arguments.regions.remove("full")
+
     feeds = []
     regions: list[tuple[str, metadata.Region]] = []
     if len(arguments.regions) == 0:
-        feeds = feed_dir.glob("*.json")
+        feeds = list(feed_dir.glob("*.json"))
     else:
         for region in arguments.regions:
-            feeds += feed_dir.glob(f"{region}.json")
+            feeds += list(feed_dir.glob(f"{region}.json"))
 
     for feed in sorted(feeds):
-        region_name = feed.name[: feed.name.rfind(".")]
+        region_name = feed.name[:feed.name.rfind(".")]
         regions.append((region_name, metadata.Region(json.load(open(feed, "r")))))
+
+    ignored_feeds = set() # for feeds ignored due to missing file
 
     with open("configs/motis/config.yml") as f:
         yaml = YAML(typ="rt")
@@ -89,15 +96,6 @@ if __name__ == "__main__":
         config["timetable"]["datasets"] = {}
         config["gbfs"]["feeds"] = {}
         config["gbfs"]["proxy"] = FEED_PROXY
-
-        for (region_name, region) in regions:
-            for source in region.sources:
-                schedule_name = f"{region_name}-{source.name}"
-
-                if source.skip:
-                    continue
-
-        ignored_feeds = set() # for feeds ignored due to missing file
 
         for feed in sorted(feeds):
             with open(feed, "r") as f:
@@ -194,8 +192,8 @@ if __name__ == "__main__":
 
                                 if source.derive_trip_updates:
                                     config["timetable"]["datasets"][name]["rt"].append({
-                                        url: f"https://crowdsourcing.transitous.org/gtfsrt/{name}/trip-updates.pb",
-                                        protocol: "gtfsrt"
+                                        "url": f"https://crowdsourcing.transitous.org/gtfsrt/{name}/trip-updates.pb",
+                                        "protocol": "gtfsrt"
                                     })
 
                             case "gbfs" if isinstance(source, metadata.UrlSource):
@@ -245,11 +243,19 @@ if __name__ == "__main__":
 
         for (region_name, region) in regions:
             for source in region.sources:
-                if source.enable_crowd_sourced_realtime:  # This can be extended for vehicle-positions feeds later on
+                if source.enable_crowd_sourced_realtime:
                     config["feeds"][f"{region_name}-{source.name}"] = {
                         "gtfs_url": f"../{region_name}_{source.name}.gtfs.zip",
                         "gtfsrt_url": f"http://localhost:5001/gtfsrt/{region_name}-{source.name}/vehicle-positions.pb"
                     }
+
+                match source:
+                    case metadata.UrlSource():
+                        if source.derive_trip_updates:
+                            config["feeds"][f"{region_name}-{source.name}"] = {
+                                "gtfs_url": f"../{region_name}_{source.name}.gtfs.zip",
+                                "gtfsrt_url": source.url
+                            }
 
         if not os.path.exists("out/delay-tracker/"):
             os.makedirs("out/delay-tracker/")
