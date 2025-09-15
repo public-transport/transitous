@@ -1,0 +1,93 @@
+# SPDX-FileCopyrightText: 2025 Jonah Brüchert <jbb@kaidan.im>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+#
+
+proxy_cache_path /var/cache/nginx/gtfsrt/ max_size=1g keys_zone=gtfsrt:20m;
+
+server {
+    listen 80;
+    server_name {{ vhost }};
+
+    # For certbot
+    location ^~ /.well-known/acme-challenge/ {
+        root /var/www/html/;
+    }
+
+    return 301 https://$host$request_uri;
+}
+
+server {
+    listen 443 http2 ssl;
+    listen [::]:443 http2 ssl;
+
+    # Override TLS settings from included file
+    ssl_protocols TLSv1.2 TLSv1.3;
+
+    ssl_ecdh_curve X25519:prime256v1:secp384r1;
+    ssl_ciphers ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:DHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES256-GCM-SHA384:DHE-RSA-CHACHA20-POLY1305;
+    ssl_prefer_server_ciphers off;
+
+    # see also ssl_session_ticket_key alternative to stateful session cache
+    ssl_session_timeout 1d;
+    ssl_session_cache shared:MozSSL:10m;  # about 40000 sessions
+
+    # OCSP stapling
+    ssl_stapling on;
+    ssl_stapling_verify on;
+
+    server_name {{ vhost }};
+
+    ssl_certificate /etc/letsencrypt/live/api.transitous.org/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/api.transitous.org/privkey.pem;
+
+    charset UTF-8;
+
+    # For certbot
+    location ^~ /.well-known/acme-challenge/ {
+        root /var/www/html/;
+    }
+
+    location ~ ^/gtfsrt/(?<feed_name>[^/]+)/trip-updates.pb {
+        proxy_pass http://10.11.1.1:5002/$feed_name/trip-updates.pb;
+        proxy_buffering on;
+        proxy_cache gtfsrt;
+        proxy_cache_revalidate off;
+        proxy_cache_valid 200 304 5s;
+        proxy_cache_lock on;
+    }
+
+    location ~ ^/gtfsrt/(?<feed_name>[^/]+)/vehicle-positions.pb {
+        proxy_pass http://10.11.1.1:5001/gtfsrt/$feed_name/vehicle-positions.pb;
+        proxy_buffering on;
+        proxy_cache gtfsrt;
+        proxy_cache_revalidate off;
+        proxy_cache_valid 200 304 5s;
+        proxy_cache_lock on;
+    }
+
+    location /api/v1/submit {
+        proxy_pass http://10.11.1.1:5001/api/v1/submit;
+    }
+
+    location / {
+        add_header Content-Type text/html;
+        return 200 '
+<h2>work in progress...</h2>
+<h3>Supported endpoints</h3>
+<p>
+<code>POST /api/v1/submit</code><br />
+
+Example body:<br />
+<code>
+{"position": {"lat": 43.58199, "lon": 19.52472}, "motis_trip_id": "20250722_20:10_zpcg_237", "timestamp": 12345}
+</code>
+</p>
+<p>
+<code>GET /gtfsrt/{feed}/trip-updates.pb</code>
+</p>
+<p>
+<code>GET /gtfsrt/{feed}/vehicle-positions.pb</code>
+</p>';
+    }
+}
