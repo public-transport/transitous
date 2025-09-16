@@ -716,6 +716,33 @@
             }
         },
         {
+            "name": "Suchowola",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://files.girlc.at/gtfs/suchowola.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "Nowy-Dwór-Mazowiecki",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://files.girlc.at/gtfs/nowy_dwor_mazowiecki.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "Ciechanów",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://files.girlc.at/gtfs/ciechanow.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
             "name": "Biker-Białystok",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-biker~białystok~poland~gbfs"
