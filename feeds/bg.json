@@ -14,6 +14,7 @@
             "name": "sofia",
             "type": "http",
             "url": "https://gtfs.sofiatraffic.bg/api/v1/static",
+            "fix": true,
             "license": {
                 "spdx-identifier": "CC-BY-4.0",
                 "url": "https://www.sofia.bg/web/guest/transport-data"
