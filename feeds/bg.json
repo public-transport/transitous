@@ -3,13 +3,51 @@
         {
             "name": "Dimitar",
             "github": "Dimitar5555"
+        },
+        {
+            "name": "Petko",
+            "github": "ignisf"
         }
     ],
     "sources": [
         {
             "name": "sofia",
             "type": "http",
-            "url": "https://github.com/Dimitar5555/sofiatraffic-gtfs/raw/refs/heads/master/result.zip"
+            "url": "https://gtfs.sofiatraffic.bg/api/v1/static",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0",
+                "url": "https://www.sofia.bg/web/guest/transport-data"
+            }
+        },
+        {
+            "name": "sofia",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://gtfs.sofiatraffic.bg/api/v1/vehicle-positions",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0",
+                "url": "https://www.sofia.bg/web/guest/transport-data"
+            }
+        },
+        {
+            "name": "sofia",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://gtfs.sofiatraffic.bg/api/v1/alerts",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0",
+                "url": "https://www.sofia.bg/web/guest/transport-data"
+            }
+        },
+        {
+            "name": "sofia",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://gtfs.sofiatraffic.bg/api/v1/trip-updates",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0",
+                "url": "https://www.sofia.bg/web/guest/transport-data"
+            }
         },
         {
             "name": "bdz",
