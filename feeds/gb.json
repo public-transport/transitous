@@ -3,6 +3,10 @@
         {
             "name": "Jonah Brüchert",
             "github": "jbruechert"
+        },
+        {
+            "name": "Nedžad Beus",
+            "github": "vekejsn"
         }
     ],
     "sources": [
@@ -28,6 +32,17 @@
             "name": "northern-ireland",
             "type": "http",
             "url": "https://s3.transitpdf.com/files/uran/improved-gtfs-northern-ireland.zip"
+        },
+        {
+            "name": "flixbus",
+            "type": "http",
+            "url": "http://gtfs.gis.flix.tech/gtfs_generic_gb.zip"
+        },
+        {
+            "name": "flixbus",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://rt.flix.baguette.pirnet.si/rt.pb"
         }
     ]
 }
