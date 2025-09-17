@@ -82,6 +82,17 @@
             "http-options": {
                 "ignore-tls-errors": true
             }
+        },
+        {
+            "name": "flixbus",
+            "type": "http",
+            "url": "http://gtfs.gis.flix.tech/gtfs_generic_turkey.zip"
+        },
+        {
+            "name": "flixbus",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://rt.flix.baguette.pirnet.si/rt.pb"
         }
     ]
 }

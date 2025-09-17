@@ -7,6 +7,10 @@
         {
             "name": "Heus Sueh",
             "github": "Heus-Sueh"
+        },
+        {
+            "name": "Nedžad Beus",
+            "github": "vekejsn"
         }
     ],
     "sources": [
@@ -36,6 +40,17 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             }
+        },
+        {
+            "name": "flixbus",
+            "type": "http",
+            "url": "http://gtfs.gis.flix.tech/gtfs_generic_brazil.zip"
+        },
+        {
+            "name": "flixbus",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://rt.flix.baguette.pirnet.si/rt.pb"
         }
     ]
 }
