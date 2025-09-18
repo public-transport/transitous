@@ -19,11 +19,42 @@
             "name": "AT",
             "spec": "gtfs-rt",
             "type": "url",
-            "url": "https://api.at.govt.nz/realtime/legacy",
-            "headers": {
-                "Accept": "application/x-protobuf",
-                "Ocp-Apim-Subscription-Key": "5a8bd844b5c941a188a17d6ed968c070"
-            }
+            "url": "https://jbb.ghsq.de/gtfs/at/legacy"
+        },
+                {
+            "name": "Flamingo-Auckland",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-flamingo~auckland~gbfs"
+        },
+        {
+            "name": "Flamingo-Dunedin",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-flamingo~dunedin~gbfs"
+        },
+        {
+            "name": "Flamingo-Palmerston-North",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-flamingo~palmerston~north~gbfs"
+        },
+        {
+            "name": "Flamingo-Porirua",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-flamingo~porirua~gbfs"
+        },
+        {
+            "name": "Flamingo-Waimakariri",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-flamingo~waimakariri~district~gbfs"
+        },
+        {
+            "name": "Flamingo-Wellington",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-flamingo~wellington~gbfs"
+        },
+        {
+            "name": "Flamingo-Tauranga",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-flamingo~tauranga~gbfs"
         },
         {
             "name": "Metlink",
@@ -37,7 +68,7 @@
             "url": "https://api.opendata.metlink.org.nz/v1/gtfs-rt/servicealerts",
             "headers": {
                 "Accept": "application/x-protobuf",
-                "x-api-key": "7fVCKRUoiwazDBLw4O0n95ABkNfkhn4o5hppHrdR"
+                "x-api-key": "17mgElKK4t16dD0dOVxGZGrmjsvKHW8aqFPTC1vd"
             }
         },
         {
@@ -47,7 +78,7 @@
             "url": "https://api.opendata.metlink.org.nz/v1/gtfs-rt/tripupdates",
             "headers": {
                 "Accept": "application/x-protobuf",
-                "x-api-key": "7fVCKRUoiwazDBLw4O0n95ABkNfkhn4o5hppHrdR"
+                "x-api-key": "17mgElKK4t16dD0dOVxGZGrmjsvKHW8aqFPTC1vd"
             }
         },
         {
@@ -57,7 +88,7 @@
             "url": "https://api.opendata.metlink.org.nz/v1/gtfs-rt/vehiclepositions",
             "headers": {
                 "Accept": "application/x-protobuf",
-                "x-api-key": "7fVCKRUoiwazDBLw4O0n95ABkNfkhn4o5hppHrdR"
+                "x-api-key": "17mgElKK4t16dD0dOVxGZGrmjsvKHW8aqFPTC1vd"
             }
         },
         {
@@ -69,7 +100,8 @@
             "name": "Metro-Christchurch",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-rb6b-metrochristchurch",
-            "api-key": "920de6bcafdb445699a7ba92dd5cc005"
+            "api-key": "920de6bcafdb445699a7ba92dd5cc005",
+            "fix": true
         },
         {
             "name": "Metro-Christchurch",

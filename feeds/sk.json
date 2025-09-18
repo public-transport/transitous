@@ -36,22 +36,94 @@
             "url": "https://transiq.xhyrom.dev/gtfs/sk/ids-bk_regional.zip"
         },
         {
-            "name": "sadza",
+            "name": "A-Express",
             "type": "http",
-            "fix": true,
-            "url": "https://gtfs.transdata.sk/SADZA/gtfs.zip"
+            "url": "https://transiq.xhyrom.dev/gtfs/sk/a-express-sro.zip"
         },
         {
-            "name": "sadpd",
+            "name": "ARRIVA-Liorbus",
             "type": "http",
-            "fix": true,
-            "url": "https://gtfs.transdata.sk/SADPD/gtfs.zip"
+            "url": "https://transiq.xhyrom.dev/gtfs/sk/arriva-liorbus-as.zip"
         },
         {
-            "name": "sadlc",
+            "name": "ARRIVA-Michalovce",
             "type": "http",
-            "fix": true,
-            "url": "https://gtfs.transdata.sk/SADLC/gtfs.zip"
+            "url": "https://transiq.xhyrom.dev/gtfs/sk/arriva-michalovce-as.zip"
+        },
+        {
+            "name": "ARRIVA-Nitra",
+            "type": "http",
+            "url": "https://transiq.xhyrom.dev/gtfs/sk/arriva-nitra-as.zip"
+        },
+        {
+            "name": "ARRIVA-Nove-zamky",
+            "type": "http",
+            "url": "https://transiq.xhyrom.dev/gtfs/sk/arriva-nove-zamky-as.zip"
+        },
+        {
+            "name": "ARRIVA-Trnava",
+            "type": "http",
+            "url": "https://transiq.xhyrom.dev/gtfs/sk/arriva-trnava-as.zip"
+        },
+        {
+            "name": "DAKA",
+            "type": "http",
+            "url": "https://transiq.xhyrom.dev/gtfs/sk/cestovna-kancelaria-daka.zip"
+        },
+        {
+            "name": "Regiojet",
+            "type": "http",
+            "url": "https://transiq.xhyrom.dev/gtfs/sk/regiojet-as.zip"
+        },
+        {
+            "name": "SAD-Dunajska-streda",
+            "type": "http",
+            "url": "https://transiq.xhyrom.dev/gtfs/sk/sad-dunajska-streda-as.zip"
+        },
+        {
+            "name": "SAD-Humenne",
+            "type": "http",
+            "url": "https://transiq.xhyrom.dev/gtfs/sk/sad-humenne-as.zip"
+        },
+        {
+            "name": "SAD-Lucenec",
+            "type": "http",
+            "url": "https://transiq.xhyrom.dev/gtfs/sk/sad-lucenec-as.zip"
+        },
+        {
+            "name": "SAD-Poprad",
+            "type": "http",
+            "url": "https://transiq.xhyrom.dev/gtfs/sk/sad-poprad-as.zip"
+        },
+        {
+            "name": "SAD-Presov",
+            "type": "http",
+            "url": "https://transiq.xhyrom.dev/gtfs/sk/sad-presov-sk.zip"
+        },
+        {
+            "name": "SAD-Prievidza",
+            "type": "http",
+            "url": "https://transiq.xhyrom.dev/gtfs/sk/sad-prievidza-as.zip"
+        },
+        {
+            "name": "SAD-Trencin",
+            "type": "http",
+            "url": "https://transiq.xhyrom.dev/gtfs/sk/sad-trencin-as.zip"
+        },
+        {
+            "name": "SAD-Zilina",
+            "type": "http",
+            "url": "https://transiq.xhyrom.dev/gtfs/sk/sad-zilina-as.zip"
+        },
+        {
+            "name": "SAD-Zvolen",
+            "type": "http",
+            "url": "https://transiq.xhyrom.dev/gtfs/sk/sad-zvolen-as.zip"
+        },
+        {
+            "name": "Slovak-Lines-Express",
+            "type": "http",
+            "url": "https://transiq.xhyrom.dev/gtfs/sk/slovak-lines-express-as.zip"
         }
     ]
 }

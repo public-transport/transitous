@@ -32,13 +32,9 @@ class Atlas:
         if "static_current" in feed["urls"]:
             result = inherit_options_from_db_source(source)
             result.url = feed["urls"]["static_current"]
-            result.cache_url = "https://gtfsproxy.fwan.it/" + \
+            result.cache_url = "https://gtfsproxy.fale.io/" + \
                 source.transitland_atlas_id
             result.spec = "gtfs"
-
-            if source.url_override:
-                result.url_override = source.url_override
-
         elif "realtime_trip_updates" in feed["urls"]:
             result = UrlSource()
             result.name = source.name

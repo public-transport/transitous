@@ -3,6 +3,10 @@
         {
             "name": "Jonah Brüchert",
             "github": "jbruechert"
+        },
+        {
+            "name": "Nedžad Beus",
+            "github": "vekejsn"
         }
     ],
     "sources": [
@@ -30,6 +34,12 @@
             "http-options": {
                 "fetch-interval-days": 2
             }
+        },
+        {
+            "name": "lpp",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://rt.gtfs.derp.si/sources/lpp/all"
         },
         {
             "name": "jesenice",
@@ -74,7 +84,8 @@
         {
             "name": "maribor",
             "type": "http",
-            "url": "https://gitlab.com/api/v4/projects/derp-si%2Fgtfs-generators/packages/generic/marprom_official/latest/marprom_gtfs.zip"
+            "url": "https://gitlab.com/api/v4/projects/derp-si%2Fgtfs-generators/packages/generic/marprom_official/latest/marprom_gtfs.zip",
+            "fix": true
         },
         {
             "name": "maribor",

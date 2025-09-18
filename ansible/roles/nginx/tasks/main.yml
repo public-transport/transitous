@@ -9,7 +9,7 @@
 
 - name: Unpack MOTIS (frontend)
   unarchive:
-    src: https://github.com/public-transport/transitous/releases/download/motis-v2.1.0/motis-staging-haswell.tar.bz2
+    src: https://github.com/public-transport/transitous/releases/download/motis-v2.3.3/motis-staging-haswell.tar.bz2
     dest: /opt/motis/
     remote_src: yes
 

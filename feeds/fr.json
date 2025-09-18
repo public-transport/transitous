@@ -920,6 +920,7 @@
             "url": "https://www.data.gouv.fr/fr/datasets/r/916752e4-5daa-48bd-8bc1-4dd8d64f1d4a",
             "url-override": "https://donnees.paysdelaloire.fr/data/pdl.zip",
             "fix": true,
+            "keep-additional-fields": false,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/arrets-horaires-et-circuits-des-lignes-de-transports-aleop-1",
                 "spdx-identifier": "etalab-2.0"

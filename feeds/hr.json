@@ -11,6 +11,10 @@
         {
             "name": "Petr Novák",
             "github": "hoermalmeister"
+        },
+        {
+            "name": "Nedžad Beus",
+            "github": "vekejsn"
         }
     ],
     "sources": [
@@ -66,6 +70,12 @@
             "fix": true
         },
         {
+            "name": "gradski-parking",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://rt-misc.ojpp-http.pirnet.si/sibenik/trip-updates.pb"
+        },
+        {
             "name": "split",
             "type": "http",
             "url": "https://gitlab.com/vekejsn/gtfs-generators/-/jobs/artifacts/main/raw/split_gtfs.zip?job=split"
@@ -84,6 +94,12 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             }
+        },
+        {
+            "name": "rijeka",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://rt-misc.ojpp-http.pirnet.si/autotrolej/trip-updates.pb"
         },
         {
             "name": "sisak",
@@ -136,12 +152,6 @@
             "name": "vela-luka",
             "type": "http",
             "url": "https://owncloud.cesnet.cz/index.php/s/Y5Xf2hAiP5z7q6U/download"
-        },
-        {
-            "name": "autotrolej",
-            "type": "http",
-            "url": "https://b2b.promet-info.hr/dc/b2b.gtfs.at",
-            "url-override": "https://jbb.ghsq.de/gtfs/hr-at.gtfs.zip"
         },
         {
             "name": "zadar",

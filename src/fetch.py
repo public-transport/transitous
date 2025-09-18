@@ -364,7 +364,6 @@ class Fetcher:
                     "--check-null-coords",
                     "--empty-agency-url-repl", "https://transitous.org",
                     "--remove-red-services",
-                    "--keep-additional-fields",
                     "--output", str(temp_file)]
             if source.fix:
                 command.append("--fix")
@@ -391,6 +390,8 @@ class Fetcher:
                 if source.display_name_options.move_headsigns_matching:
                     command.append("--move-headsigns-matching")
                     command.append(source.display_name_options.move_headsigns_matching)
+            if source.keep_additional_fields:
+                command.append("--keep-additional-fields")
 
             subprocess.check_call(command)
 
