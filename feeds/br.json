@@ -18,7 +18,7 @@
             "name": "rio-de-janeiro",
             "type": "http",
             "url": "https://www.arcgis.com/sharing/rest/content/items/8ffe62ad3b2f42e49814bf941654ea6c/data",
-            "flix": true,
+            "fix": true,
             "http-options": {
                 "fetch-interval-days": 2
             },
