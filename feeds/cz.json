@@ -65,11 +65,6 @@
             "fix": true
         },
         {
-            "name": "Bean-Shuttle",
-            "type": "mobility-database",
-            "mdb-id": "mdb-2036"
-        },
-        {
             "name": "PMDP",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-plzen",
@@ -85,7 +80,10 @@
         {
             "name": "JDF-merged",
             "type": "http",
-            "url": "https://github.com/KoblizekXD/gtfs-processor/raw/refs/heads/gtfs/files/latest.zip"
+            "url": "https://github.com/KoblizekXD/gtfs-processor/raw/refs/heads/gtfs/files/latest.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
         },
         {
             "name": "IDZK",
