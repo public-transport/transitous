@@ -44,8 +44,20 @@
         },
         {
             "name": "Rzeszów",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u2zs-rzeszow"
+            "type": "http",
+            "url": "https://www.mpkrzeszow.pl/gtfs/latest.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "Rzeszów",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://www.mpkrzeszow.pl/gtfs/rt/gtfsrt.pb",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
         },
         {
             "name": "Koleje-Mazowieckie",
