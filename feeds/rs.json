@@ -54,6 +54,17 @@
             "url": "https://data.gov.rs/sr/datasets/r/015f6bd4-1428-4ed8-b41e-c73d0885c79d",
             "skip": true,
             "skip-reason": "Currently expired for multiple years"
+        },
+        {
+            "name": "Novisad",
+            "type": "http",
+            "url": "https://gitlab.com/vekejsn/gtfs-generators/-/jobs/artifacts/main/raw/novi_sad_gtfs.zip?job=novi_sad"
+        },
+        {
+            "name": "Novisad",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://rt.buslogic.baguette.pirnet.si/jgsp_ns/rt.pb"
         }
     ]
 }
