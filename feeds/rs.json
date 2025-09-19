@@ -58,7 +58,8 @@
         {
             "name": "Novisad",
             "type": "http",
-            "url": "https://gitlab.com/vekejsn/gtfs-generators/-/jobs/artifacts/main/raw/novi_sad_gtfs.zip?job=novi_sad"
+            "url": "https://gitlab.com/vekejsn/gtfs-generators/-/jobs/artifacts/main/raw/novi_sad_gtfs.zip?job=novi_sad",
+            "fix": true
         },
         {
             "name": "Novisad",
