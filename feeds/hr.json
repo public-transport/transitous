@@ -104,7 +104,8 @@
         {
             "name": "sisak",
             "type": "http",
-            "url": "https://gitlab.com/vekejsn/gtfs-generators/-/jobs/artifacts/main/raw/ap_sisak_gtfs.zip?job=sisak"
+            "url": "https://gitlab.com/vekejsn/gtfs-generators/-/jobs/artifacts/main/raw/ap_sisak_gtfs.zip?job=sisak",
+            "fix": true
         },
         {
             "name": "sisak",
