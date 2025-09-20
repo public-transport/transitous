@@ -9,7 +9,10 @@
         {
             "name": "Trafiklab",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u-se"
+            "transitland-atlas-id": "f-u-se",
+            "drop-agency-names": [
+                "Flixbus"
+            ]
         }
     ]
 }
