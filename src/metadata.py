@@ -56,6 +56,7 @@ class Source:
     extend_calendar = False
     default_timezone: Optional[str] = None
     keep_additional_fields = True
+    enable_crowd_sourced_realtime = False
 
     def __init__(self, parsed: Optional[dict] = None):
         self.license = License()
@@ -96,6 +97,8 @@ class Source:
                 self.default_timezone = parsed["default-timezone"]
             if "keep-additional-fields" in parsed:
                 self.keep_additional_fields = bool(parsed["keep-additional-fields"])
+            if "enable-crowd-sourced-realtime" in parsed:
+                self.enable_crowd_sourced_realtime = bool(parsed["enable-crowd-sourced-realtime"])
 
 
 class HttpOptions:

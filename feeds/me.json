@@ -12,7 +12,8 @@
             "license": {
                 "spdx-identifier": "ODbL-1.0"
             },
-            "mdb-id": "mdb-2377"
+            "mdb-id": "mdb-2377",
+            "enable-crowd-sourced-realtime": true
         }
     ]
 }

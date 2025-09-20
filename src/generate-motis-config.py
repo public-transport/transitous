@@ -5,6 +5,7 @@
 
 import argparse
 import json
+import toml
 import metadata
 import os
 import shutil
@@ -37,10 +38,19 @@ if __name__ == "__main__":
     atlas = transitland.Atlas.load(Path("transitland-atlas/"))
     mdb = mobilitydatabase.Database.load()
 
-    gtfs_feeds: list[dict] = []
-    gtfsrt_feeds: list[dict] = []
+    feeds = []
+    regions: list[tuple[str, metadata.Region]] = []
+    if len(arguments.regions) == 0:
+        feeds = feed_dir.glob("*.json")
+    else:
+        for region in arguments.regions:
+            feeds += feed_dir.glob(f"{region}.json")
 
-    with open("motis/config.yml") as f:
+    for feed in sorted(feeds):
+        region_name = feed.name[: feed.name.rfind(".")]
+        regions.append((region_name, metadata.Region(json.load(open(feed, "r")))))
+
+    with open("configs/motis/config.yml") as f:
         yaml = YAML(typ="rt")
 
         config = yaml.load(f)
@@ -66,90 +76,110 @@ if __name__ == "__main__":
         config["timetable"]["datasets"] = {}
         config["gbfs"]["feeds"] = {}
 
-        # TODO backward compatibility, remove this in a few months
-        while "full" in arguments.regions:
-            print("Ignoring legacy option 'full', this is the default now.")
-            arguments.regions.remove("full")
+        for (region_name, region) in regions:
+            for source in region.sources:
+                schedule_name = f"{region_name}-{source.name}"
 
-        feeds = []
-        if len(arguments.regions) == 0:
-            feeds = feed_dir.glob("*.json")
-        else:
-            for region in arguments.regions:
-                feeds += feed_dir.glob(f"{region}.json")
+                if source.skip:
+                    continue
 
-        for feed in sorted(feeds):
-            with open(feed, "r") as f:
-                parsed = json.load(f)
-                region = metadata.Region(parsed)
+                match source:
+                    case metadata.TransitlandSource():
+                        resolved_source = atlas.source_by_id(source)
+                        if not resolved_source:
+                            eprint("Error: Could not resolve", source.transitland_atlas_id)
+                            sys.exit(1)
+                        source = resolved_source
+                    case metadata.MobilityDatabaseSource():
+                        resolved_source = mdb.source_by_id(source)
+                        if not resolved_source:
+                            eprint("Error: Could not resolve", source.mdb_id)
+                            sys.exit(1)
+                        source = resolved_source
 
-                metadata_filename = feed.name
-                region_name = metadata_filename[: metadata_filename.rfind(".")]
+                match source.spec:
+                    case source.spec if source.spec in ["gtfs", "gtfs-flex"]:
+                        schedule_file = \
+                            f"{region_name}_{source.name}.gtfs.zip"
+                        name = f"{region_name}-{source.name}"
+                        config["timetable"]["datasets"][name] = \
+                            {
+                                "path": schedule_file,
+                                "extend_calendar": source.extend_calendar
+                            }
+                        if source.default_timezone is not None:
+                            config["timetable"]["datasets"][name]["default_timezone"] = source.default_timezone
 
-                for source in region.sources:
-                    schedule_name = f"{region_name}-{source.name}"
-
-                    if source.skip:
-                        continue
-
-                    match source:
-                        case metadata.TransitlandSource():
-                            resolved_source = atlas.source_by_id(source)
-                            if not resolved_source:
-                                eprint("Error: Could not resolve", source.transitland_atlas_id)
-                                sys.exit(1)
-                            source = resolved_source
-                        case metadata.MobilityDatabaseSource():
-                            resolved_source = mdb.source_by_id(source)
-                            if not resolved_source:
-                                eprint("Error: Could not resolve", source.mdb_id)
-                                sys.exit(1)
-                            source = resolved_source
-
-                    match source.spec:
-                        case source.spec if source.spec in ["gtfs", "gtfs-flex"]:
-                            schedule_file = \
-                                f"{region_name}_{source.name}.gtfs.zip"
-                            name = f"{region_name}-{source.name}"
-                            config["timetable"]["datasets"][name] = \
-                                {
-                                    "path": schedule_file,
-                                    "extend_calendar": source.extend_calendar
-                                }
-                            if source.default_timezone is not None:
-                                config["timetable"]["datasets"][name]["default_timezone"] = source.default_timezone
-
-                        case "gtfs-rt" if isinstance(source, metadata.UrlSource):
-                            name = f"{region_name}-{source.name}"
-                            if name not in config["timetable"]["datasets"]:
-                                eprint(
-                                    "Error: The name of a realtime (gtfs-rt) "
-                                    + "feed needs to match the name of its "
-                                    + "static base feed defined before the "
-                                    + "realtime feed. Found nothing "
-                                    + "belonging to",
-                                    source.name,
-                                )
-                                sys.exit(1)
-
+                        if source.enable_crowd_sourced_realtime:
                             if "rt" not in config["timetable"]["datasets"][name]:
                                 config["timetable"]["datasets"][name]["rt"] = []
 
-                            rt_feed: dict[str, Any] = {
-                                "url": source.url
-                            }
+                            config["timetable"]["datasets"][name]["rt"].append({"url": f"http://localhost:5002/{name}/trip-updates.pb" })
 
-                            if source.headers:
-                                rt_feed["headers"] = source.headers
+                    case "gtfs-rt" if isinstance(source, metadata.UrlSource):
+                        name = f"{region_name}-{source.name}"
+                        if name not in config["timetable"]["datasets"]:
+                            eprint(
+                                "Error: The name of a realtime (gtfs-rt) "
+                                + "feed needs to match the name of its "
+                                + "static base feed defined before the "
+                                + "realtime feed. Found nothing "
+                                + "belonging to",
+                                source.name,
+                            )
+                            sys.exit(1)
 
-                            config["timetable"]["datasets"][name]["rt"] \
-                                .append(rt_feed)
+                        if "rt" not in config["timetable"]["datasets"][name]:
+                            config["timetable"]["datasets"][name]["rt"] = []
 
-                        case "gbfs" if isinstance(source, metadata.UrlSource):
-                            name = f"{region_name}-{source.name}"
-                            config["gbfs"]["feeds"][name] = {"url": source.url}
-                            if source.headers:
-                                config["gbfs"]["feeds"][name]["headers"] = source.headers
+                        rt_feed: dict[str, Any] = {
+                            "url": source.url
+                        }
+
+                        if source.headers:
+                            rt_feed["headers"] = source.headers
+
+                        config["timetable"]["datasets"][name]["rt"] \
+                            .append(rt_feed)
+
+                    case "gbfs" if isinstance(source, metadata.UrlSource):
+                        name = f"{region_name}-{source.name}"
+                        config["gbfs"]["feeds"][name] = {"url": source.url}
+                        if source.headers:
+                            config["gbfs"]["feeds"][name]["headers"] = source.headers
 
         with open("out/config.yml", "w") as fo:
             yaml.dump(config, fo)
+
+    with open("configs/gps-collector/config.toml", "r") as f:
+        config = toml.load(f)
+        config["feeds"] = {}
+
+        for (region_name, region) in regions:
+            for source in region.sources:
+                if source.enable_crowd_sourced_realtime:
+                    config["feeds"][f"{region_name}-{source.name}"] = {}
+
+        if not os.path.exists("out/gps-collector/"):
+            os.makedirs("out/gps-collector/")
+
+        with open("out/gps-collector/config.toml", "w") as fo:
+            toml.dump(config, fo)
+
+    with open("configs/delay-tracker/config.toml", "r") as f:
+        config = toml.load(f)
+        config["feeds"] = {}
+
+        for (region_name, region) in regions:
+            for source in region.sources:
+                if source.enable_crowd_sourced_realtime:  # This can be extended for vehicle-positions feeds later on
+                    config["feeds"][f"{region_name}-{source.name}"] = {
+                        "gtfs_url": f"../{region_name}_{source.name}.gtfs.zip",
+                        "gtfsrt_url": f"http://localhost:5001/gtfsrt/{region_name}-{source.name}/vehicle-positions.pb"
+                    }
+
+        if not os.path.exists("out/delay-tracker/"):
+            os.makedirs("out/delay-tracker/")
+
+        with open("out/delay-tracker/config.toml", "w") as fo:
+            toml.dump(config, fo)

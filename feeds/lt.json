@@ -100,7 +100,8 @@
         {
             "name": "LTG-Link",
             "type": "http",
-            "url": "https://jbb.ghsq.de/gtfs/lt-ltglink.gtfs.zip"
+            "url": "https://jbb.ghsq.de/gtfs/lt-ltglink.gtfs.zip",
+            "enable-crowd-sourced-realtime": true
         }
     ]
 }

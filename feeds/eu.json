@@ -18,7 +18,8 @@
             "name": "flixbus",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u-flixbus",
-            "fix": true
+            "fix": true,
+            "enable-crowd-sourced-realtime": true
         },
         {
             "name": "flixbus",
