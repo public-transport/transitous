@@ -55,6 +55,7 @@ class Source:
     display_name_options: Optional[DisplayNameOptions] = None
     extend_calendar = False
     default_timezone: Optional[str] = None
+    script: Optional[str] = None
     keep_additional_fields = True
 
     def __init__(self, parsed: Optional[dict] = None):
@@ -94,6 +95,8 @@ class Source:
                 self.extend_calendar = bool(parsed["extend-calendar"])
             if "default-timezone" in parsed:
                 self.default_timezone = parsed["default-timezone"]
+            if "script" in parsed:
+                self.script = parsed["script"]
             if "keep-additional-fields" in parsed:
                 self.keep_additional_fields = bool(parsed["keep-additional-fields"])
 
