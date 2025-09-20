@@ -12,15 +12,20 @@
     "sources": [
         {
             "name": "Metro-Transit",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-c23-metrokingcounty"
+            "type": "mobility-database",
+            "mdb-id": "mdb-1330"
         },
         {
             "name": "Metro-Transit",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-kingcountymetro~rt",
-            "skip": true,
-            "skip-reason": "api-key must be set in query params (url-override?)"
+            "type": "mobility-database",
+            "spec": "gtfs-rt",
+            "mdb-id": "mdb-1540"
+        },
+        {
+            "name": "Metro-Transit",
+            "type": "mobility-database",
+            "spec": "gtfs-rt",
+            "mdb-id": "mdb-1541"
         },
         {
             "name": "Sound-Transit",
