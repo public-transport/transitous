@@ -17,7 +17,10 @@
             "fix": true,
             "license": {
                 "url": "https://transitous.org/sources-great-britain"
-            }
+            },
+            "drop-agency-names": [
+                "FlixBus"
+            ]
         },
         {
             "name": "great-britain",
