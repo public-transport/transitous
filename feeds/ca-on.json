@@ -59,7 +59,8 @@
         {
             "name": "Chatham-Kent-Transit",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-chatham~kent~on~ca"
+            "transitland-atlas-id": "f-chatham~kent~on~ca",
+            "fix": true
         },
         {
             "name": "Cornwall-Transit",
