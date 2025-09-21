@@ -53,11 +53,6 @@
             "skip-reason": "api-key must be set in query params (url-override?)"
         },
         {
-            "name": "Seattle-Childrens-Hospital-Shuttle",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-c23p1-seattlechildrenshospitalshuttle"
-        },
-        {
             "name": "Everett-Transit",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-c290-everetttransit"
