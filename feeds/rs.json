@@ -66,6 +66,26 @@
             "type": "url",
             "spec": "gtfs-rt",
             "url": "https://rt.buslogic.baguette.pirnet.si/jgsp_ns/rt.pb"
+        },
+        {
+            "name": "Litas",
+            "type": "http",
+            "url": "https://gitlab.com/vekejsn/gtfs-generators/-/jobs/artifacts/main/raw/litas_gtfs.zip?job=litas_rs"
+        },
+        {
+            "name": "Pantransport",
+            "type": "http",
+            "url": "https://gitlab.com/vekejsn/gtfs-generators/-/jobs/artifacts/main/raw/pancevo_gtfs.zip?job=pancevo"
+        },
+        {
+            "name": "Autoprevoz_Cacak",
+            "type": "http",
+            "url": "https://gitlab.com/vekejsn/gtfs-generators/-/jobs/artifacts/main/raw/apcacak_gtfs.zip?job=cacak"
+        },
+        {
+            "name": "Kavim_Jedinstvo_Vranje",
+            "type": "http",
+            "url": "https://gitlab.com/vekejsn/gtfs-generators/-/jobs/artifacts/main/raw/kjvranje_gtfs.zip?job=vranje"
         }
     ]
 }
