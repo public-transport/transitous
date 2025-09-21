@@ -78,12 +78,12 @@
             "url": "https://gitlab.com/vekejsn/gtfs-generators/-/jobs/artifacts/main/raw/pancevo_gtfs.zip?job=pancevo"
         },
         {
-            "name": "Autoprevoz_Cacak",
+            "name": "Autoprevoz-Cacak",
             "type": "http",
             "url": "https://gitlab.com/vekejsn/gtfs-generators/-/jobs/artifacts/main/raw/apcacak_gtfs.zip?job=cacak"
         },
         {
-            "name": "Kavim_Jedinstvo_Vranje",
+            "name": "Kavim-Jedinstvo-Vranje",
             "type": "http",
             "url": "https://gitlab.com/vekejsn/gtfs-generators/-/jobs/artifacts/main/raw/kjvranje_gtfs.zip?job=vranje"
         }
