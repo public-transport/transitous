@@ -75,7 +75,8 @@
         {
             "name": "Pantransport",
             "type": "http",
-            "url": "https://gitlab.com/vekejsn/gtfs-generators/-/jobs/artifacts/main/raw/pancevo_gtfs.zip?job=pancevo"
+            "url": "https://gitlab.com/vekejsn/gtfs-generators/-/jobs/artifacts/main/raw/pancevo_gtfs.zip?job=pancevo",
+            "drop-too-fast-trips": false
         },
         {
             "name": "Autoprevoz-Cacak",
