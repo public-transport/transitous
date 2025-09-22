@@ -20,9 +20,14 @@
      - nginx
      - certbot
 
-- name: Create nginx cache directory
+- name: Create nginx motis cache directory
   file:
-    path: /var/cache/nginx
+    path: /var/cache/nginx/motis/
+    state: directory
+
+- name: Create nginx gtfsrt cache directory
+  file:
+    path: /var/cache/nginx/gtfsrt
     state: directory
 
 - name: Install nginx config
@@ -58,6 +63,13 @@
         - address: 10.11.1.1:8080
           options: "backup"
 
+- name: Install site config
+  template:
+    src: "crowd-sourced-realtime.conf.j2"
+    dest: "/etc/nginx/sites-available/{{ vhost }}"
+  vars:
+    vhost: "crowdsourcing.transitous.org"
+
 - name: Disable default site configuration
   file:
     path: /etc/nginx/sites-enabled/default
@@ -71,6 +83,7 @@
   with_items:
     - vhost: api.transitous.org
     - vhost: staging.api.transitous.org
+    - vhost: crowdsourcing.transitous.org
 
 - name: Reload nginx
   systemd:
