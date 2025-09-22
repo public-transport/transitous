@@ -47,7 +47,7 @@
             "type": "http",
             "url": "https://www.mpkrzeszow.pl/gtfs/latest.zip",
             "license": {
-                "spdx-identifier": "CC0-1.0"
+                "spdx-identifier": "CC-BY-4.0"
             }
         },
         {
@@ -56,7 +56,7 @@
             "spec": "gtfs-rt",
             "url": "https://www.mpkrzeszow.pl/gtfs/rt/gtfsrt.pb",
             "license": {
-                "spdx-identifier": "CC0-1.0"
+                "spdx-identifier": "CC-BY-4.0"
             }
         },
         {
