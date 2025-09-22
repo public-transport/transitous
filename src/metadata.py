@@ -56,6 +56,7 @@ class Source:
     extend_calendar = False
     default_timezone: Optional[str] = None
     keep_additional_fields = True
+    script: Optional[str] = None
 
     def __init__(self, parsed: Optional[dict] = None):
         self.license = License()
@@ -96,6 +97,8 @@ class Source:
                 self.default_timezone = parsed["default-timezone"]
             if "keep-additional-fields" in parsed:
                 self.keep_additional_fields = bool(parsed["keep-additional-fields"])
+            if "script" in parsed:
+                self.script = parsed["script"]
 
 
 class HttpOptions:
