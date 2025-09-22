@@ -1,3 +1,6 @@
+-- SPDX-FileCopyrightText: Felix Gündling <felixguendling@gmail.com>
+-- SPDX-License-Identifier: AGPL-3.0-or-later
+
 function is_number(str)
   return not (str == "" or str:find("%D"))
 end
