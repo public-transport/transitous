@@ -9,18 +9,6 @@ function remove_leading_zeros(str)
   return string.format("%d", tonumber(str))
 end
 
-function process_location(location)
-  if location:get_name() then
-    local name = location:get_name()
-    local suffix = " (Berlin)"
-    if #name > #suffix and name:sub(-#suffix) == suffix then
-      -- Remove suffic " (Berlin)" for VBB stops
-      -- "Berlin" will be added by the geocoder as admin area
-      location:set_name(name:sub(1, #name - #suffix))
-    end
-  end
-end
-
 function process_trip(trip)
   if trip:get_route():get_agency():get_name() == 'DB Fernverkehr AG' and is_number(trip:get_short_name()) then
     -- Format trip_short_name=`00123` to train number 123
