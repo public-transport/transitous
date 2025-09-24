@@ -23,6 +23,12 @@
             "fix": true
         },
         {
+            "name": "railway",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://rt.gtfs.baguette.pirnet.si/gtfs-rt/cfr-ro/trip_updates.pb"
+        },
+        {
             "name": "Alba-Iulia-Velocity",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-alba~iulia~velocity~gbfs",
