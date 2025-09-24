@@ -49,6 +49,12 @@
             "transitland-atlas-id": "f-eyc-cp"
         },
         {
+            "name": "Comboios-de-Portugal(CP)",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://rt.gtfs.baguette.pirnet.si/gtfs-rt/cp/trip_updates.pb"
+        },
+        {
             "name": "Fergatus",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-eyce-fertagus"

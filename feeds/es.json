@@ -328,6 +328,12 @@
             }
         },
         {
+            "name": "Autobús-metropolitano-Barcelona",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://www.ambmobilitat.cat/transit/trips-updates/trips.bin"
+        },
+        {
             "name": "Autobusos-de-Lleida",
             "type": "http",
             "url": "https://nap.transportes.gob.es/api/Fichero/download/1579",
