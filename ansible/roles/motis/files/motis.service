@@ -14,7 +14,7 @@ RestartSec=15
 TimeoutStartSec=300
 User=motis
 WorkingDirectory=/var/lib/motis
-LimitNOFILE=30000
+LimitNOFILE=65536
 
 [Install]
 WantedBy=multi-user.target
