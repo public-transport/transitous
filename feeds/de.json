@@ -35,7 +35,8 @@
             ],
             "http-options": {
                 "fetch-interval-days": 2
-            }
+            },
+            "script": "de-DELFI.lua"
         },
         {
             "name": "DELFI",
@@ -45,8 +46,7 @@
             "license": {
                 "spdx-identifier": "CC-BY-SA-4.0",
                 "url": "https://germany.motis-project.org/LICENSE.txt"
-            },
-            "script": "de-DELFI.lua"
+            }
         },
         {
             "name": "DELFI",
