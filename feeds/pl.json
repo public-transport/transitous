@@ -43,6 +43,15 @@
             "fix": true
         },
         {
+            "name": "PolRegio",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://gtfs.kasznia.net/rt/polregio.pb",
+            "license":{
+                "spdx-identifier":"CC-BY-4.0"
+            }
+        },
+        {
             "name": "Rzeszów",
             "type": "http",
             "url": "https://www.mpkrzeszow.pl/gtfs/latest.zip",
@@ -65,6 +74,15 @@
             "transitland-atlas-id": "f-u3-kolejemazowieckie"
         },
         {
+            "name": "Koleje-Mazowieckie",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://gtfs.kasznia.net/rt/km.pb",
+            "license":{
+                "spdx-identifier":"CC-BY-4.0"
+            }
+        },
+        {
             "name": "Świnoujście",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u3d4-swinoujscie"
@@ -74,6 +92,15 @@
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u3h-koleje~dolnoslaskie",
             "api-key": "a2Q6QmFld29uZ29od3VnM0Fv"
+        },
+        {
+            "name": "Koleje-Dolnośląskie",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://gtfs.kasznia.net/rt/kd.pb",
+            "license":{
+                "spdx-identifier":"CC-BY-4.0"
+            }
         },
         {
             "name": "Bydgoszcz",
@@ -134,6 +161,15 @@
             "url": "https://cdn.zbiorkom.live/gtfs/pkp-skmw.zip",
             "license": {
                 "spdx-identifier": "MIT"
+            }
+        },
+        {
+            "name": "SKM-Warszawa",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://gtfs.kasznia.net/rt/skm-waw.pb",
+            "license":{
+                "spdx-identifier":"CC-BY-4.0"
             }
         },
         {
@@ -261,9 +297,27 @@
             "fix": true
         },
         {
+            "name": "PKP-SKM",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://gtfs.kasznia.net/rt/skmt.pb",
+            "license":{
+                "spdx-identifier":"CC-BY-4.0"
+            }
+        },
+        {
             "name": "Koleje-Małopolskie",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-koleje~małopolskie"
+        },
+        {
+            "name": "Koleje-Małopolskie",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://gtfs.kasznia.net/rt/kml.pb",
+            "license":{
+                "spdx-identifier":"CC-BY-4.0"
+            }
         },
         {
             "name": "Koleje-Małopolskie-ald",
@@ -308,9 +362,27 @@
             "transitland-atlas-id": "f-u2v-koleje~slaskie"
         },
         {
+            "name": "Koleje-Śląskie",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://gtfs.kasznia.net/rt/ks.pb",
+            "license":{
+                "spdx-identifier":"CC-BY-4.0"
+            }
+        },
+        {
             "name": "Łódzka-Kolej-Aglomeracyjna",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u3j-lodzka~kolej~aglomeracyjna"
+        },
+        {
+            "name": "Łódzka-Kolej-Aglomeracyjna",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://gtfs.kasznia.net/rt/lka.pb",
+            "license":{
+                "spdx-identifier":"CC-BY-4.0"
+            }
         },
         {
             "name": "PKS-Kalisz",
@@ -324,6 +396,15 @@
             "name": "Koleje-Wielkopolskie",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u3k-koleje~wielkopolskie"
+        },
+        {
+            "name": "Koleje-Wielkopolskie",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://gtfs.kasznia.net/rt/kw.pb",
+            "license":{
+                "spdx-identifier":"CC-BY-4.0"
+            }
         },
         {
             "name": "MPK-Wrocław",
@@ -438,6 +519,15 @@
             "url-override": "https://files.girlc.at/gtfs/arriva.zip",
             "license": {
                 "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "Arriva",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://gtfs.kasznia.net/rt/arriva.pb",
+            "license":{
+                "spdx-identifier":"CC-BY-4.0"
             }
         },
         {
@@ -725,6 +815,15 @@
             },
             "display-name-options": {
                 "copy-trip-names-matching": "^RJ.*"
+            }
+        },
+        {
+            "name": "RegioJet",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://gtfs.kasznia.net/rt/regio-jet.pb",
+            "license":{
+                "spdx-identifier":"CC-BY-4.0"
             }
         },
         {
