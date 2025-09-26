@@ -73,7 +73,7 @@
         {
             "name": "Koleje-Mazowieckie",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u3-kolejemazowieckie"
+            "transitland-atlas-id": "f-u3-kolejemazowieckie",
             "script": "pl-Koleje-Mazowieckie.lua"
         },
         {
