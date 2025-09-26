@@ -26,7 +26,8 @@
             "url": "https://gtfs.kasznia.net/rt/pkpic.pb",
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
-            }
+            },
+            "script": "pl-PKP-Intercity.lua"
         },
         {
             "name": "PKP-Intercity-Germany",
@@ -40,7 +41,8 @@
             "name": "PolRegio",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-pol~regio~pl",
-            "fix": true
+            "fix": true,
+            "script": "pl-PolRegio.lua"
         },
         {
             "name": "PolRegio",
@@ -72,6 +74,7 @@
             "name": "Koleje-Mazowieckie",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u3-kolejemazowieckie"
+            "script": "pl-Koleje-Mazowieckie.lua"
         },
         {
             "name": "Koleje-Mazowieckie",
@@ -161,7 +164,8 @@
             "url": "https://cdn.zbiorkom.live/gtfs/pkp-skmw.zip",
             "license": {
                 "spdx-identifier": "MIT"
-            }
+            },
+            "script": "pl-SKM-Warszawa.lua"
         },
         {
             "name": "SKM-Warszawa",
@@ -294,7 +298,8 @@
             "name": "PKP-SKM",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u3t-skm~trojmiasto",
-            "fix": true
+            "fix": true,
+            "script": "pl-PKP-SKM.lua"
         },
         {
             "name": "PKP-SKM",
@@ -815,7 +820,8 @@
             },
             "display-name-options": {
                 "copy-trip-names-matching": "^RJ.*"
-            }
+            },
+            "script": "pl-RegioJet.lua"
         },
         {
             "name": "RegioJet",
