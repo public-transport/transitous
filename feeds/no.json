@@ -13,7 +13,10 @@
             "fix": true,
             "http-options": {
                 "fetch-interval-days": 1
-            }
+            },
+            "drop-agency-names": [
+                "FlixBus"
+            ]
         },
         {
             "name": "Entur",
