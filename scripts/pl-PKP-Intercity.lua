@@ -1,3 +1,6 @@
+-- SPDX-FileCopyrightText: Transitous Contributors
+-- SPDX-License-Identifier: AGPL-3.0-or-later
+
 function process_route(route)
   if string.find(route:get_short_name(), "ZKA") then
     route:set_route_type(714) -- rail replacement bus
