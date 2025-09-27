@@ -14,8 +14,8 @@ IOAccounting=true
 MemoryHigh=80G
 MemoryMax=90G
 CPUWeight=20
-CPUQuota=400%
+CPUQuota=1000%
 IOWeight=20
 
 [Install]
-WantedBy=multi-user.target
+#WantedBy=multi-user.target

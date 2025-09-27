@@ -8,10 +8,10 @@ echo "Copying new files…"
 
 cd /var/cache/transitous/out/
 rm .import-running || true
-sudo -u motis wget --limit-rate=30m --mirror -l 1 --no-parent --no-directories --accept gtfs.zip --accept config.yml --accept .import-running -e robots=off https://api.transitous.org/gtfs/ || true
+sudo -u motis wget --limit-rate=30m --mirror -l 2 --no-parent --cut-dirs=1 --no-host-directories --include-directories=gtfs,gtfs/scripts --accept gtfs.zip --accept .lua --accept config.yml --accept .import-running -e robots=off https://api.transitous.org/gtfs/ || true
 #sudo -u motis wget --limit-rate=30m --mirror -l 1 --no-parent --no-directories --accept gtfs.zip -e robots=off https://api.transitous.org/gtfs/ || true
 
-sudo -u motis cp -r -p --reflink=auto /var/cache/transitous/out/osm/ /var/cache/transitous/out/data/
+sudo -u motis cp -r -p --reflink=auto /var/cache/transitous/out/osm/ /var/cache/transitous/out/data/ # TODO overwrite
 sudo -u motis /opt/motis/motis import -c /var/cache/transitous/out/config.yml > /var/cache/transitous/motis-import.log 2>&1
 chown -R motis:motis /var/cache/transitous/out/data/
 
