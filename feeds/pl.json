@@ -431,8 +431,12 @@
         },
         {
             "name": "Białystok",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-bialostocka~komunikacja~miejska"
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://files.girlc.at/gtfs/bialystok.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
         },
         {
             "name": "Wschód-Express",
@@ -896,6 +900,52 @@
             "url": "https://cdn.zbiorkom.live/gtfs/pksnova.zip",
             "license": {
                 "spdx-identifier": "MIT"
+            }
+        },
+        {
+            "name": "Piła",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://files.girlc.at/gtfs/pila.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "Powiat-Olecki",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://files.girlc.at/gtfs/powiat_olecki.zip",
+            "fix": true,
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "Tribus",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://files.girlc.at/gtfs/tribus.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "PKS-Opoczno",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://files.girlc.at/gtfs/pks_opoczno.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "Opoczno",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://files.girlc.at/gtfs/opoczno.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
             }
         },
         {
