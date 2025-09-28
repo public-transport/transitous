@@ -17,12 +17,12 @@
         {
             "name": "Sarajevo-MSKS",
             "type": "http",
-            "url": "https://gitlab.com/vekejsn/gtfs-generators/-/jobs/artifacts/main/raw/sarajevo_gtfs.zip?job=sarajevo"
+            "url": "https://gitlab.com/api/v4/projects/vekejsn%2Fgtfs-generators/packages/generic/sarajevo-gtfs/latest/sarajevo_gtfs.zip"
         },
         {
             "name": "Centrotrans",
             "type": "http",
-            "url": "https://gitlab.com/vekejsn/gtfs-generators/-/jobs/artifacts/main/raw/centrotrans_gtfs.zip?job=centrotrans",
+            "url": "https://gitlab.com/api/v4/projects/vekejsn%2Fgtfs-generators/packages/generic/centrotrans-gtfs/latest/centrotrans_gtfs.zip",
             "fix": true
         },
         {
@@ -33,7 +33,7 @@
         {
             "name": "Mostar",
             "type": "http",
-            "url": "https://gitlab.com/vekejsn/gtfs-generators/-/jobs/artifacts/main/raw/mobus_gtfs.zip?job=mostar",
+            "url": "https://gitlab.com/api/v4/projects/vekejsn%2Fgtfs-generators/packages/generic/mostar-gtfs/latest/mobus_gtfs.zip",
             "fix": true
         }
     ]

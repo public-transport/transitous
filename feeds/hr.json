@@ -22,7 +22,7 @@
             "name": "hz",
             "type": "http",
             "url": "https://www.hzpp.hr/api/v1/repository/download/852f76d2-8df3-4957-b30b-dc4b88b1caca",
-            "url-override": "https://gitlab.com/vekejsn/gtfs-generators/-/jobs/artifacts/main/raw/hzpp_gtfs.zip?job=hzpp",
+            "url-override": "https://gitlab.com/api/v4/projects/vekejsn%2Fgtfs-generators/packages/generic/hzpp-gtfs/latest/hzpp_gtfs.zip",
             "license": {
                 "spdx-identifier": "CC0-1.0"
             }
@@ -78,7 +78,7 @@
         {
             "name": "split",
             "type": "http",
-            "url": "https://gitlab.com/vekejsn/gtfs-generators/-/jobs/artifacts/main/raw/split_gtfs.zip?job=split"
+            "url": "https://gitlab.com/api/v4/projects/vekejsn%2Fgtfs-generators/packages/generic/split-gtfs/latest/split_gtfs.zip"
         },
         {
             "name": "split",
@@ -89,7 +89,7 @@
         {
             "name": "rijeka",
             "type": "http",
-            "url": "https://gitlab.com/vekejsn/gtfs-generators/-/jobs/artifacts/main/raw/autotrolej_gtfs.zip?job=rijeka",
+            "url": "https://gitlab.com/api/v4/projects/vekejsn%2Fgtfs-generators/packages/generic/rijeka-gtfs/latest/autotrolej_gtfs.zip",
             "fix": true,
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
@@ -104,7 +104,7 @@
         {
             "name": "sisak",
             "type": "http",
-            "url": "https://gitlab.com/vekejsn/gtfs-generators/-/jobs/artifacts/main/raw/ap_sisak_gtfs.zip?job=sisak",
+            "url": "https://gitlab.com/api/v4/projects/vekejsn%2Fgtfs-generators/packages/generic/sisak-gtfs/latest/ap_sisak_gtfs.zip",
             "fix": true
         },
         {
@@ -116,7 +116,7 @@
         {
             "name": "dubrovnik-libertas",
             "type": "http",
-            "url": "https://gitlab.com/vekejsn/gtfs-generators/-/jobs/artifacts/main/raw/libertas_gtfs.zip?job=libertas",
+            "url": "https://gitlab.com/api/v4/projects/vekejsn%2Fgtfs-generators/packages/generic/libertas-gtfs/latest/libertas_gtfs.zip",
             "fix": true
         },
         {
@@ -157,7 +157,7 @@
         {
             "name": "zadar",
             "type": "http",
-            "url": "https://gitlab.com/vekejsn/gtfs-generators/-/jobs/artifacts/main/raw/zadar_gtfs.zip?job=zadar"
+            "url": "https://gitlab.com/api/v4/projects/vekejsn%2Fgtfs-generators/packages/generic/zadar-gtfs/latest/zadar_gtfs.zip"
         },
         {
             "name": "zadar",
@@ -168,7 +168,7 @@
         {
             "name": "karlovac",
             "type": "http",
-            "url": "https://gitlab.com/vekejsn/gtfs-generators/-/jobs/artifacts/main/raw/karlovac_gtfs.zip?job=karlovac",
+            "url": "https://gitlab.com/api/v4/projects/vekejsn%2Fgtfs-generators/packages/generic/karlovac-gtfs/latest/karlovac_gtfs.zip",
             "fix": true
         }
     ]
