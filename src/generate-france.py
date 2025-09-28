@@ -30,6 +30,11 @@ if __name__ == "__main__":
         "gtfs-et-gtfs-rt-reseau-orizo-grand-avignon", # name or service not known
     ]
 
+    # Map of datasets to MOTIS Lua scripts to apply to them
+    scripts = {
+        "eurostar-gtfs-plan-de-transport-et-temps-reel": "fr-eurostar.lua"
+    }
+
     # List of datasets to remove
     remove = [
         "tier-dott-gbfs-france", # Duplicate dataset (use local ones)
@@ -252,6 +257,8 @@ if __name__ == "__main__":
                     source["license"]["spdx-identifier"] = "ODbL-1.0"
                 if dataset["licence"] in ["lov2", "fr-lo"]:
                     source["license"]["spdx-identifier"] = "etalab-2.0"
+                if dataset["slug"] in scripts:
+                    source["script"] = scripts[dataset["slug"]]
                 out.append(source)
 
             def cond(r) -> bool:
