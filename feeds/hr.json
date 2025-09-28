@@ -54,7 +54,7 @@
             "name": "pulapromet",
             "type": "http",
             "url": "https://b2b.promet-info.hr/dc/b2b.gtfs.pulapromet",
-            "url-override": "https://owncloud.cesnet.cz/index.php/s/wyo5NnS3YpnCGPY/download"
+            "url-override": "https://gitlab.com/api/v4/projects/vekejsn%2Fgtfs-generators/packages/generic/pula-gtfs/latest/pulapromet_gtfs.zip"
         },
         {
             "name": "osijekgpp",
