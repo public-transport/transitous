@@ -13,7 +13,7 @@
         {
             "name": "Srbijavoz",
             "type": "http",
-            "url": "https://gitlab.com/vekejsn/gtfs-generators/-/jobs/artifacts/main/raw/srbijavoz_merged.zip?job=srbijavoz_merge",
+            "url": "https://gitlab.com/api/v4/projects/vekejsn%2Fgtfs-generators/packages/generic/srbijavoz-merged-gtfs/latest/srbijavoz_merged.zip",
             "fix": true
         },
         {
@@ -58,7 +58,7 @@
         {
             "name": "Novisad",
             "type": "http",
-            "url": "https://gitlab.com/vekejsn/gtfs-generators/-/jobs/artifacts/main/raw/novi_sad_gtfs.zip?job=novi_sad",
+            "url": "https://gitlab.com/api/v4/projects/vekejsn%2Fgtfs-generators/packages/generic/novi_sad-gtfs/latest/novi_sad_gtfs.zip",
             "fix": true
         },
         {
@@ -70,25 +70,31 @@
         {
             "name": "Litas",
             "type": "http",
-            "url": "https://gitlab.com/vekejsn/gtfs-generators/-/jobs/artifacts/main/raw/litas_gtfs.zip?job=litas_rs",
+            "url": "https://gitlab.com/api/v4/projects/vekejsn%2Fgtfs-generators/packages/generic/litas_rs-gtfs/latest/litas_gtfs.zip",
             "drop-too-fast-trips": false
         },
         {
             "name": "Pantransport",
             "type": "http",
-            "url": "https://gitlab.com/vekejsn/gtfs-generators/-/jobs/artifacts/main/raw/pancevo_gtfs.zip?job=pancevo",
+            "url": "https://gitlab.com/api/v4/projects/vekejsn%2Fgtfs-generators/packages/generic/pancevo-gtfs/latest/pancevo_gtfs.zip",
             "drop-too-fast-trips": false
         },
         {
             "name": "Autoprevoz-Cacak",
             "type": "http",
-            "url": "https://gitlab.com/vekejsn/gtfs-generators/-/jobs/artifacts/main/raw/apcacak_gtfs.zip?job=cacak",
+            "url": "https://gitlab.com/api/v4/projects/vekejsn%2Fgtfs-generators/packages/generic/cacak-gtfs/latest/apcacak_gtfs.zip",
             "drop-too-fast-trips": false
         },
         {
             "name": "Kavim-Jedinstvo-Vranje",
             "type": "http",
-            "url": "https://gitlab.com/vekejsn/gtfs-generators/-/jobs/artifacts/main/raw/kjvranje_gtfs.zip?job=vranje",
+            "url": "https://gitlab.com/api/v4/projects/vekejsn%2Fgtfs-generators/packages/generic/vranje-gtfs/latest/kjvranje_gtfs.zip",
+            "drop-too-fast-trips": false
+        },
+        {
+            "name": "KGBus-Kragujevac",
+            "type": "http",
+            "url": "https://gitlab.com/api/v4/projects/vekejsn%2Fgtfs-generators/packages/generic/kragujevac-gtfs/latest/kragujevac_gtfs.zip",
             "drop-too-fast-trips": false
         }
     ]
