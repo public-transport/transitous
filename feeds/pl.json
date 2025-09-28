@@ -442,8 +442,7 @@
             "name": "Wschód-Express",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://cdn.zbiorkom.live/gtfs/bialystok-wschod.zip",
-            "url-override": "https://files.girlc.at/gtfs/wschod_express.zip",
+            "url": "https://files.girlc.at/gtfs/wschod_express.zip",
             "license": {
                 "spdx-identifier": "CC0-1.0"
             },
@@ -453,8 +452,7 @@
             "name": "PKS-Nova-Supraśl",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://cdn.zbiorkom.live/gtfs/bialystok-nova.zip",
-            "url-override": "https://files.girlc.at/gtfs/pks_nova_suprasl.zip",
+            "url": "https://files.girlc.at/gtfs/pks_nova_suprasl.zip",
             "license": {
                 "spdx-identifier": "CC0-1.0"
             },
@@ -464,8 +462,7 @@
             "name": "Turośń-Kościelna",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://cdn.zbiorkom.live/gtfs/bialystok-turosn.zip",
-            "url-override": "https://files.girlc.at/gtfs/turosn_koscielna.zip",
+            "url": "https://files.girlc.at/gtfs/turosn_koscielna.zip",
             "license": {
                 "spdx-identifier": "CC0-1.0"
             },
@@ -475,8 +472,7 @@
             "name": "Żyrardów",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://cdn.zbiorkom.live/gtfs/warsaw-zyrardow.zip",
-            "url-override": "https://files.girlc.at/gtfs/zyrardow.zip",
+            "url": "https://files.girlc.at/gtfs/zyrardow.zip",
             "license": {
                 "spdx-identifier": "CC0-1.0"
             },
@@ -486,8 +482,7 @@
             "name": "Sochaczew",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://cdn.zbiorkom.live/gtfs/warsaw-sochaczew.zip",
-            "url-override": "https://files.girlc.at/gtfs/sochaczew.zip",
+            "url": "https://files.girlc.at/gtfs/sochaczew.zip",
             "license": {
                 "spdx-identifier": "CC0-1.0"
             },
@@ -497,8 +492,7 @@
             "name": "Otwock",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://cdn.zbiorkom.live/gtfs/warsaw-otwock.zip",
-            "url-override": "https://files.girlc.at/gtfs/otwock.zip",
+            "url": "https://files.girlc.at/gtfs/otwock.zip",
             "license": {
                 "spdx-identifier": "CC0-1.0"
             },
@@ -508,8 +502,7 @@
             "name": "Opole",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://cdn.zbiorkom.live/gtfs/opole.zip",
-            "url-override": "https://files.girlc.at/gtfs/opole.zip",
+            "url": "https://files.girlc.at/gtfs/opole.zip",
             "license": {
                 "spdx-identifier": "CC0-1.0"
             },
@@ -519,8 +512,7 @@
             "name": "Arriva",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://cdn.zbiorkom.live/gtfs/pkp-ar.zip",
-            "url-override": "https://files.girlc.at/gtfs/arriva.zip",
+            "url": "https://files.girlc.at/gtfs/arriva.zip",
             "license": {
                 "spdx-identifier": "CC0-1.0"
             }
