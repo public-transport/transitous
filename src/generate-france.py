@@ -28,7 +28,20 @@ if __name__ == "__main__":
         "caen-la-mer-reseau-twisto-gtfs-siri", # 404, incompatible
         "reseau-de-bus-urbain-horizon", # name or service not known
         "gtfs-et-gtfs-rt-reseau-orizo-grand-avignon", # name or service not known
+        "arrets-horaires-et-circuits-des-lignes-de-transports-aleop-1", # not a valid zip file
+        "offre-de-transport-du-reseau-fluo-grand-est-moselle-57",
+        "agglopolys-offre-theorique-mobilite-reseau-urbain-azalys-de-blois",
+        "navettes-bourg-saint-maurice",
+        "horaires-theoriques-et-en-temps-reel-de-la-navette-velo-du-pont-de-saint-nazaire-gtfs-gtfs-rt-2023", # unknown timezone
+        "horaires-theoriques-et-temps-reel-des-navettes-hivernales-de-lalpe-dhuez-gtfs-gtfs-rt",
+        "reseau-de-transports-collectifs-de-la-ccgq", # expired
+        "reseau-de-transport-interurbain-mobigo-en-bourgogne-franche-comte", # connection timeout
     ]
+
+    # Map of datasets to MOTIS Lua scripts to apply to them
+    scripts = {
+        "eurostar-gtfs-plan-de-transport-et-temps-reel": "fr-eurostar.lua"
+    }
 
     # List of datasets to remove
     remove = [
@@ -252,6 +265,8 @@ if __name__ == "__main__":
                     source["license"]["spdx-identifier"] = "ODbL-1.0"
                 if dataset["licence"] in ["lov2", "fr-lo"]:
                     source["license"]["spdx-identifier"] = "etalab-2.0"
+                if dataset["slug"] in scripts:
+                    source["script"] = scripts[dataset["slug"]]
                 out.append(source)
 
             def cond(r) -> bool:
