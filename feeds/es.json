@@ -702,6 +702,24 @@
             }
         },
         {
+            "name": "Cercanías-Renfe",
+            "type": "http",
+            "spec": "gtfs-rt",
+            "url": "https://gtfsrt.renfe.com/trip_updates.pb"
+        },
+        {
+            "name": "Cercanías-Renfe",
+            "type": "http",
+            "spec": "gtfs-rt",
+            "url": "https://gtfsrt.renfe.com/alerts.pb"
+        },
+        {
+            "name": "Cercanías-Renfe",
+            "type": "http",
+            "spec": "gtfs-rt",
+            "url": "https://gtfsrt.renfe.com/vehicle_positions.pb"
+        },
+        {
             "name": "Donostiabus-(Dbus)",
             "type": "http",
             "url": "https://nap.transportes.gob.es/api/Fichero/download/1196",
