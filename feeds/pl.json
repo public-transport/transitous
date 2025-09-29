@@ -330,9 +330,21 @@
             "mdb-id": "mdb-1270"
         },
         {
+            "name": "ZTP-Kraków-T",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://gtfs.ztp.krakow.pl/TripUpdates_T.pb"
+        },
+        {
             "name": "ZTP-Kraków-A",
             "type": "mobility-database",
             "mdb-id": "mdb-1326"
+        },
+        {
+            "name": "ZTP-Kraków-A",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://gtfs.ztp.krakow.pl/TripUpdates_A.pb"
         },
         {
             "name": "ZTP-Kraków-M",
@@ -341,9 +353,9 @@
         },
         {
             "name": "ZTP-Kraków-M",
-            "type": "mobility-database",
+            "type": "url",
             "spec": "gtfs-rt",
-            "mdb-id": "mdb-2600"
+            "url": "https://gtfs.ztp.krakow.pl/TripUpdates_M.pb"
         },
         {
             "name": "MZK-Ełk",
