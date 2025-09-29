@@ -12,8 +12,7 @@
             "mdb-id": "mdb-2668",
             "fix": true,
             "license": {
-                "url":"https://www.dati.gov.it/content/italian-open-data-license-v20",
-                "spdx-identifier": "LicenseRef-IODL-2.0"
+                "url":"https://www.dati.gov.it/content/italian-open-data-license-v20"
             }
         },
         {
