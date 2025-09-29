@@ -13,7 +13,7 @@
             "fix": true,
             "license": {
                 "url":"https://www.dati.gov.it/content/italian-open-data-license-v20",
-                "spdx-identifier": "IODL-2.0"
+                "spdx-identifier": "LicenseRef-IODL-2.0"
             }
         },
         {
