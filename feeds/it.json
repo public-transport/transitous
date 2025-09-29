@@ -84,8 +84,7 @@
             "type": "mobility-database",
             "mdb-id": "mdb-1059",
             "license": {
-                "url":"https://www.dati.gov.it/content/italian-open-data-license-v20",
-                "spdx-identifier": "IODL-2.0"
+                "url":"https://www.dati.gov.it/content/italian-open-data-license-v20"
             }
         },
         {
