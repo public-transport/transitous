@@ -27,7 +27,9 @@
             "name": "CZPTT",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://owncloud.cesnet.cz/index.php/s/DQdSPwh0bJjtEWq/download"
+            "url": "https://owncloud.cesnet.cz/index.php/s/DQdSPwh0bJjtEWq/download",
+            "skip": true,
+            "skip-reason": "Feed does not return proper delays"
         },
         {
             "name": "PID",
