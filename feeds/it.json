@@ -68,14 +68,6 @@
             "fix": true
         },
         {
-            "name": "Liguria-Riviera",
-            "type": "http",
-            "url": "https://srvcarto.regione.liguria.it/dtuff/download_statico/opendata/trasporti/GTFS/GTFS-IT-ITC3-RT-20241001-20241231-pf-fares.zip",
-            "license": {
-                "spdx-identifier": "CC-BY-4.0"
-            },
-            "extend-calendar": true
-        {
             "name": "Lombardia-AirPullman",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-airpullman~spa",
