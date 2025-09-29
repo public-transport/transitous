@@ -68,6 +68,14 @@
             "fix": true
         },
         {
+            "name": "Liguria-Riviera",
+            "type": "http",
+            "url": "https://srvcarto.regione.liguria.it/dtuff/download_statico/opendata/trasporti/GTFS/GTFS-IT-ITC3-RT-20241001-20241231-pf-fares.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            },
+            "extend-calendar": true
+        {
             "name": "Lombardia-AirPullman",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-airpullman~spa",
@@ -80,7 +88,7 @@
             "fix": true
         },
         {
-            "name": "Lombardia-AutolineeVaresine",
+            "name": "Lombardia-Autolinee-Varesine",
             "type": "mobility-database",
             "mdb-id": "mdb-1059",
             "license": {
@@ -104,7 +112,7 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "url": "https://usbshare.agenziatpl.it/index.php/s/7PrFyAHRrqnxKFj/download/2024-02-14_PMT.zip",
+            "url": "htps://usbshare.agenziatpl.it/index.php/s/7PrFyAHRrqnxKFj/download/2024-02-14_PMT.zip",
             "skip": true,
             "skip-reason": "Expired feed"
         },
