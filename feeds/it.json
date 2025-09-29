@@ -112,7 +112,7 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "url": "htps://usbshare.agenziatpl.it/index.php/s/7PrFyAHRrqnxKFj/download/2024-02-14_PMT.zip",
+            "url": "https://usbshare.agenziatpl.it/index.php/s/7PrFyAHRrqnxKFj/download/2024-02-14_PMT.zip",
             "skip": true,
             "skip-reason": "Expired feed"
         },
