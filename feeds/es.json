@@ -703,19 +703,19 @@
         },
         {
             "name": "Cercanías-Renfe",
-            "type": "http",
+            "type": "url",
             "spec": "gtfs-rt",
             "url": "https://gtfsrt.renfe.com/trip_updates.pb"
         },
         {
             "name": "Cercanías-Renfe",
-            "type": "http",
+            "type": "url",
             "spec": "gtfs-rt",
             "url": "https://gtfsrt.renfe.com/alerts.pb"
         },
         {
             "name": "Cercanías-Renfe",
-            "type": "http",
+            "type": "url",
             "spec": "gtfs-rt",
             "url": "https://gtfsrt.renfe.com/vehicle_positions.pb"
         },
@@ -769,7 +769,7 @@
         },
         {
             "name": "Ferrocarriles-de-la-Generalitat-de-Cataluña",
-            "type": "http",
+            "type": "url",
             "url": "https://dadesobertes.fgc.cat/explore/dataset/trip-updates-gtfs_realtime/files/735985017f62fd33b2fe46e31ce53829/download/",
             "spec": "gtfs-rt"
         },
