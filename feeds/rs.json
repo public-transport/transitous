@@ -70,7 +70,7 @@
         {
             "name": "Litas",
             "type": "http",
-            "url": "https://gitlab.com/api/v4/projects/vekejsn%2Fgtfs-generators/packages/generic/litas_rs-gtfs/latest/litas_gtfs.zip",
+            "url": "https://gitlab.com/api/v4/projects/vekejsn%2Fgtfs-generators/packages/generic/litas_rs-gtfs/latest/litas_gtfs.zip"
         },
         {
             "name": "Pantransport",
@@ -81,7 +81,7 @@
         {
             "name": "Autoprevoz-Cacak",
             "type": "http",
-            "url": "https://gitlab.com/api/v4/projects/vekejsn%2Fgtfs-generators/packages/generic/cacak-gtfs/latest/apcacak_gtfs.zip",
+            "url": "https://gitlab.com/api/v4/projects/vekejsn%2Fgtfs-generators/packages/generic/cacak-gtfs/latest/apcacak_gtfs.zip"
         },
         {
             "name": "Kavim-Jedinstvo-Vranje",
@@ -92,7 +92,7 @@
         {
             "name": "KGBus-Kragujevac",
             "type": "http",
-            "url": "https://gitlab.com/api/v4/projects/vekejsn%2Fgtfs-generators/packages/generic/kragujevac-gtfs/latest/kragujevac_gtfs.zip",
+            "url": "https://gitlab.com/api/v4/projects/vekejsn%2Fgtfs-generators/packages/generic/kragujevac-gtfs/latest/kragujevac_gtfs.zip"
         }
     ]
 }
