@@ -7,6 +7,10 @@
         {
             "name": "Marcus Lundblad",
             "github": "mlundblad"
+        },
+        {
+            "name": "Patrick Steil",
+            "github": "SteilDev"
         }
     ],
     "sources": [
@@ -139,6 +143,15 @@
             "name": "Lagos-Aonda",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-ey9-aonda"
+        },
+        {
+            "name": "Metro-Porto",
+            "type": "http",
+            "url": "https://github.com/SteilDev/metro-porto-gtfs-latest/raw/refs/heads/main/gtfs_metroporto_latest.zip",
+            "license": {
+            "spdx-identifier": "CC0-1.0",
+                "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+              }
         }
     ]
 }
