@@ -24,7 +24,8 @@
             "license": {
                 "spdx_identifier": "CC-BY-4.0"
             },
-            "fix": true
+            "fix": true,
+            "script": "au-vic-Transport-Victoria-metro-trains.lua"
         },
         {
             "name": "Transport-Victoria-metro-trains",

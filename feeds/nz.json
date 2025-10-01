@@ -13,7 +13,8 @@
         {
             "name": "AT",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-rck-gowest~sealinkgroup~atairporter~atmetro~thepartybuscompany"
+            "transitland-atlas-id": "f-rck-gowest~sealinkgroup~atairporter~atmetro~thepartybuscompany",
+            "script": "nz-AT.lua"
         },
         {
             "name": "AT",
@@ -21,7 +22,7 @@
             "type": "url",
             "url": "https://jbb.ghsq.de/gtfs/at/legacy"
         },
-                {
+        {
             "name": "Flamingo-Auckland",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-flamingo~auckland~gbfs"
@@ -59,7 +60,8 @@
         {
             "name": "Metlink",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-rbs-gowellington~tranzitcoachlines~paraparaumutaxisltd~kapitic"
+            "transitland-atlas-id": "f-rbs-gowellington~tranzitcoachlines~paraparaumutaxisltd~kapitic",
+            "script": "nz-Metlink.lua"
         },
         {
             "name": "Metlink",
