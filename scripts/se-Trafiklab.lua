@@ -82,7 +82,7 @@ local route_id_route_type_map = {
 
 function process_route(route)
   local route_type_map = agency_route_type_map[route:get_agency():get_name()]
-  local route_id_map = route_id_short_name_map[route:get_route_id()]
+  local route_id_map = route_id_short_name_color_map[route:get_route_id()]
   local route_type = route_id_route_type_map[route:get_route_id()]
 
   if route_type_map then
