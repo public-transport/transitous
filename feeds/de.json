@@ -31,7 +31,8 @@
                 "Braunschweiger Verkehrs-GmbH",
                 "Kraftverkehrsgesellschaft mbH Braunschweig",
                 "SWO Mobil GmbH",
-                "FlixBus-de"
+                "FlixBus-de",
+                "EUROSTAR"
             ],
             "http-options": {
                 "fetch-interval-days": 2
