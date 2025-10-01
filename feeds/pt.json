@@ -147,11 +147,11 @@
         {
             "name": "Metro-Porto",
             "type": "http",
-            "url": "https://github.com/SteilDev/metro-porto-gtfs-latest/raw/refs/heads/main/gtfs_metroporto_latest.zip",
+            "url": "https://www.metrodoporto.pt/pages/337",
+            "function": "data_metroporto_latest_resource",
             "license": {
-            "spdx-identifier": "CC0-1.0",
-                "url": "https://creativecommons.org/publicdomain/zero/1.0/"
-              }
+                "spdx-identifier": "CC0-1.0"
+            }
         }
     ]
 }
