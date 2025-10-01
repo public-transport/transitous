@@ -91,3 +91,32 @@ def data_tasmania_latest_resource(source: HttpSource) -> HttpSource:
     source.url = soup.find("a", href=lambda x: x and x.endswith(".zip"))["href"]
 
     return source
+
+def data_metroporto_latest_resource(source: HttpSource) -> HttpSource:
+    from bs4 import BeautifulSoup
+    from urllib.parse import urljoin
+
+    headers = {
+        "user-agent": (
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+            "AppleWebKit/537.36 (KHTML, like Gecko) "
+            "Chrome/138.0.0.0 Safari/537.36"
+        )
+    }
+
+    html = requests.get(source.url, headers=headers).text
+    soup = BeautifulSoup(html, "html.parser")
+
+    li = soup.find("li", class_=lambda c: c and "last zip" in c)
+    if li is None:
+        raise ValueError("Could not find the latest GTFS link on Metro do Porto page")
+
+    a_tag = li.find("a")
+    if a_tag is None or "href" not in a_tag.attrs:
+        raise ValueError("No <a> tag with href found inside the <li>")
+
+    gtfs_url = urljoin(source.url, a_tag["href"])
+
+    source.url = gtfs_url
+    return source
+
