@@ -1009,11 +1009,6 @@
             "transitland-atlas-id": "f-mevo~gdansk~gbfs"
         },
         {
-            "name": "PRM-Pobiedziska",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-pobiedziski~rower~gminny~poland~pobiedziska~gbfs"
-        },
-        {
             "name": "PRM-Pruszków",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-pruszkowski~rower~miejski~poland~pruszków~gbfs"
