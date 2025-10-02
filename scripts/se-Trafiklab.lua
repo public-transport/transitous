@@ -82,8 +82,8 @@ local route_id_route_type_map = {
 
 function process_route(route)
   local route_type_map = agency_route_type_map[route:get_agency():get_name()]
-  local route_id_map = route_id_short_name_color_map[route:get_route_id()]
-  local route_type = route_id_route_type_map[route:get_route_id()]
+  local route_id_map = route_id_short_name_color_map[route:get_id()]
+  local route_type = route_id_route_type_map[route:get_id()]
 
   if route_type_map then
     local m = route_type_map[route:get_route_type()]
@@ -96,17 +96,17 @@ function process_route(route)
 
   if route_id_map then
     local short_name = route_id_map[1]
-    local route_color = route_id_map[2]
-    local route_text_color = route_id_map[3]
+    local color = route_id_map[2]
+    local text_color = route_id_map[3]
 
     if short_name then
-      route:set_route_short_name(short_name)
+      route:set_short_name(short_name)
     end
-    if route_color then
-      route:set_route_color(route_color)
+    if color then
+      route:set_color(color)
     end
-    if route_text_color then
-      route:set_route_text_color(route_text_color)
+    if text_color then
+      route:set_text_color(text_color)
     end
   end
 
