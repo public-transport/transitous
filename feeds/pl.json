@@ -1009,16 +1009,6 @@
             "transitland-atlas-id": "f-mevo~gdansk~gbfs"
         },
         {
-            "name": "RP-Sokołów-Podlaski",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-rower~powiatowy~sokołów~podlaski~gbfs"
-        },
-        {
-            "name": "Veturilo-Warszawa",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-veturilo~poland~gbfs"
-        },
-        {
             "name": "WRM-Wolsztyn",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-wolsztyński~rower~miejski~wolsztyn~gbfs"
@@ -1027,26 +1017,6 @@
             "name": "WRM-Wrocław",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-wrm~nextbike~poland~wrocław~gbfs"
-        },
-        {
-            "name": "TRM-Tarnów",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-tarnowski~rower~miejski~poland~tarnów~gbfs"
-        },
-        {
-            "name": "TRM-Tychowo",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-tychowski~rower~miejski~poland~tychowo~pl~gbfs"
-        },
-        {
-            "name": "ZRM-Zielona-Góra",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-zielonogórski~rower~miejski~poland~zielona~góra~gbfs"
-        },
-        {
-            "name": "ŻRM-Żyrardów",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-żyrardowski~rower~miejski~poland~żyrardów~gbfs"
         }
     ]
 }
