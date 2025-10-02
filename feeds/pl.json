@@ -979,11 +979,6 @@
             "transitland-atlas-id": "f-jaskółka~jastrzębie~zdrój~gbfs"
         },
         {
-            "name": "OKBike-Kędzierzyn-Koźle",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-ok~bike~poland~kędzierzyn~koźle~gbfs"
-        },
-        {
             "name": "KRM-Konin",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-koniński~rower~miejski~poland~konin~gbfs"
