@@ -959,11 +959,6 @@
             }
         },
         {
-            "name": "Biker-Białystok",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-biker~białystok~poland~gbfs"
-        },
-        {
             "name": "Chełmski-Rower",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-chełmski~rower~gbfs"
