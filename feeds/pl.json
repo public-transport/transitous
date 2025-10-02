@@ -17,7 +17,8 @@
         {
             "name": "PKP-Intercity",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-pkp~intercity~pl"
+            "transitland-atlas-id": "f-pkp~intercity~pl",
+            "script": "pl-PKP-Intercity.lua"
         },
         {
             "name": "PKP-Intercity",
@@ -26,8 +27,7 @@
             "url": "https://gtfs.kasznia.net/rt/pkpic.pb",
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
-            },
-            "script": "pl-PKP-Intercity.lua"
+            }
         },
         {
             "name": "PKP-Intercity-Germany",
