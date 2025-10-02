@@ -1009,11 +1009,6 @@
             "transitland-atlas-id": "f-mevo~gdansk~gbfs"
         },
         {
-            "name": "PRM-Pruszków",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-pruszkowski~rower~miejski~poland~pruszków~gbfs"
-        },
-        {
             "name": "SRM-Pszczyna",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-system~rowerów~miejskich~w~pszczynie~poland~pszczyna~gbfs"
