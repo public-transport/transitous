@@ -1009,11 +1009,6 @@
             "transitland-atlas-id": "f-mevo~gdansk~gbfs"
         },
         {
-            "name": "SRM-Pszczyna",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-system~rowerów~miejskich~w~pszczynie~poland~pszczyna~gbfs"
-        },
-        {
             "name": "RP-Sokołów-Podlaski",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-rower~powiatowy~sokołów~podlaski~gbfs"
