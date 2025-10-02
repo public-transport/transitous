@@ -146,11 +146,6 @@
             "transitland-atlas-id": "f-vrnnextbike~rhine~neckar~gbfs"
         },
         {
-            "name": "meinRad",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-meinrad~mainz~gbfs"
-        },
-        {
             "name": "LimeFrankfurt",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-lime~frankfurt~gbfs"
