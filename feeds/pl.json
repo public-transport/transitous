@@ -964,11 +964,6 @@
             "transitland-atlas-id": "f-chełmski~rower~gbfs"
         },
         {
-            "name": "CRM-Ciechanów",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-ciechanowski~rower~miejski~poland~ciechanów~gbfs"
-        },
-        {
             "name": "CRM-Częstochowa",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-częstochowski~rower~miejski~poland~częstochowa~gbfs"
