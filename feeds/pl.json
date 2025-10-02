@@ -989,11 +989,6 @@
             "transitland-atlas-id": "f-koszaliński~rower~miejski~poland~koszalin~gbfs"
         },
         {
-            "name": "KRM-Kołobrzeg",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-kołobrzeski~rower~miejski~poland~kołobrzeg~gbfs"
-        },
-        {
             "name": "ŁRP-Łódź",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-łódzki~rower~publiczny~łódź~pl~gbfs"
