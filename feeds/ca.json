@@ -155,7 +155,8 @@
         {
             "name": "Wood-Buffalo-Transit",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-regional~municipality~of~wood~buffalo"
+            "transitland-atlas-id": "f-regional~municipality~of~wood~buffalo",
+            "fix": true
         },
         {
             "name": "Wood-Buffalo-Transit",

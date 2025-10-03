@@ -7,6 +7,10 @@
         {
             "name": "Nicolas Derive",
             "github": "kalon33"
+        },
+        {
+            "name": "Nedžad Beus",
+            "github": "vekejsn"
         }
     ],
     "sources": [
@@ -14,12 +18,20 @@
             "name": "flixbus",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u-flixbus",
-            "fix": true
+            "fix": true,
+            "script": "eu-flixbus.lua"
+        },
+        {
+            "name": "flixbus",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://rt.flix.baguette.pirnet.si/rt.pb"
         },
         {
             "name": "blablacar-bus",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u0-ouibus",
+            "url-override": "https://www.data.gouv.fr/api/1/datasets/r/fd54f81f-4389-4e73-be75-491133d011c3",
             "fix": true
         },
         {

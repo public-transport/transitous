@@ -79,6 +79,14 @@
             "fix": true
         },
         {
+            "name": "Lombardia-Autolinee-Varesine",
+            "type": "mobility-database",
+            "mdb-id": "mdb-1059",
+            "license": {
+                "url":"https://www.dati.gov.it/content/italian-open-data-license-v20"
+            }
+        },
+        {
             "name": "Lombardia-Movibus",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-movibus~srl"

@@ -25,13 +25,12 @@
                 "VR",
                 "Pohjois-Suomen Rautatieharrastajat ry",
                 "Sinisten vaunujen ystävät ry"
-            ],
-            "default-timezone": "Europe/Helsinki"
+            ]
         },
         {
             "name": "digitraffic",
             "type": "http",
-            "url": "https://rata.digitraffic.fi/api/v1/trains/gtfs-all.zip",
+            "url": "https://rata.digitraffic.fi/api/v1/trains/gtfs-passenger-stops.zip",
             "license": {
                 "spdx-identifier": "CC-BY-4.0",
                 "url": "https://www.digitraffic.fi/en/railway-traffic/"
@@ -67,7 +66,19 @@
             "name": "hsl",
             "spec": "gtfs-rt",
             "type": "url",
+            "url": "https://realtime.hsl.fi/realtime/trip-updates/v2/hsl"
+        },
+        {
+            "name": "hsl",
+            "spec": "gtfs-rt",
+            "type": "url",
             "url": "https://realtime.hsl.fi/realtime/service-alerts/v2/hsl"
+        },
+        {
+            "name": "hsl",
+            "spec": "gtfs-rt",
+            "type": "url",
+            "url": "https://realtime.hsl.fi/realtime/vehicle-positions/v2/hsl"
         }
     ]
 }

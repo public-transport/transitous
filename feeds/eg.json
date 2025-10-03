@@ -1,0 +1,28 @@
+{
+    "maintainers": [
+        {
+            "name": "Patrick Steil",
+            "github": "SteilDev"
+        }
+    ],
+    "sources": [
+        {
+            "name": "CairoPublicRoadTransport",
+            "type": "http",
+            "url": "https://data.transportforcairo.com/documents/88/link",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0",
+                "url": "https://data.transportforcairo.com/catalogue/#/document/88"
+            }
+        },
+        {
+            "name": "CairoMetro",
+            "type": "http",
+            "url": "https://data.transportforcairo.com/documents/87/link",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0",
+                "url": "https://data.transportforcairo.com/catalogue/#/document/87"
+            }
+        }
+    ]
+}

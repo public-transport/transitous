@@ -7,6 +7,10 @@
         {
             "name": "Marcus Lundblad",
             "github": "mlundblad"
+        },
+        {
+            "name": "Patrick Steil",
+            "github": "SteilDev"
         }
     ],
     "sources": [
@@ -47,6 +51,12 @@
             "name": "Comboios-de-Portugal(CP)",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-eyc-cp"
+        },
+        {
+            "name": "Comboios-de-Portugal(CP)",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://rt.gtfs.baguette.pirnet.si/gtfs-rt/cp/trip_updates.pb"
         },
         {
             "name": "Fergatus",
@@ -133,6 +143,15 @@
             "name": "Lagos-Aonda",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-ey9-aonda"
+        },
+        {
+            "name": "Metro-Porto",
+            "type": "http",
+            "url": "https://www.metrodoporto.pt/pages/337",
+            "function": "data_metroporto_latest_resource",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
         }
     ]
 }

@@ -13,6 +13,12 @@
             "fix": true
         },
         {
+            "name": "EMEL",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "http://20.19.98.194:8328/Api/api/gtfs-realtime/6"
+        },
+        {
             "name": "Intercity",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-intercity~buses~cy"
@@ -21,7 +27,7 @@
             "name": "Intercity",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "http://20.19.98.194:8328/Api/api/gtfs-realtime"
+            "url": "http://20.19.98.194:8328/Api/api/gtfs-realtime/5"
         },
         {
             "name": "LPT",
@@ -29,9 +35,21 @@
             "transitland-atlas-id": "f-lpt~cy"
         },
         {
+            "name": "LPT",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "http://20.19.98.194:8328/Api/api/gtfs-realtime/10"
+        },
+        {
             "name": "NPT",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-npt~cy"
+        },
+        {
+            "name": "NPT",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "http://20.19.98.194:8328/Api/api/gtfs-realtime/9"
         },
         {
             "name": "OSEA-Famagusta",
@@ -39,9 +57,32 @@
             "transitland-atlas-id": "f-osea~famagusta~cy"
         },
         {
+            "name": "OSEA-Famagusta",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "http://20.19.98.194:8328/Api/api/gtfs-realtime/4"
+        },
+        {
             "name": "Osypa-Pafos",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-osypa~pafos~cy"
+        },
+        {
+            "name": "Osypa-Pafos",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "http://20.19.98.194:8328/Api/api/gtfs-realtime/2"
+        },
+        {
+            "name": "Pame-Express",
+            "type": "http",
+            "url": "https://motionbuscard.org.cy/opendata/downloadfile?file=GTFS%5C11_google_transit.zip&rel=True"
+        },
+        {
+            "name": "Pame-Express",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "http://20.19.98.194:8328/Api/api/gtfs-realtime/11"
         }
     ]
 }

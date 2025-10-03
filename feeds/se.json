@@ -3,13 +3,21 @@
         {
             "name": "Mathis Brüchert",
             "github": "mbruchert"
+        },
+        {
+            "name": "Marcus Lundblad",
+            "github": "mlundblad"
         }
     ],
     "sources": [
         {
             "name": "Trafiklab",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u-se"
+            "transitland-atlas-id": "f-u-se",
+            "drop-agency-names": [
+                "Flixbus"
+            ],
+            "script": "se-Trafiklab.lua"
         }
     ]
 }

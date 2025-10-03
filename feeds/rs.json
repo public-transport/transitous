@@ -3,13 +3,24 @@
         {
             "name": "Jonah Brüchert",
             "github": "jbruechert"
+        },
+        {
+            "name": "Nedžad Beus",
+            "github": "vekejsn"
         }
     ],
     "sources": [
         {
             "name": "Srbijavoz",
             "type": "http",
-            "url": "https://jbb.ghsq.de/gtfs/rs-srbijavoz.gtfs.zip"
+            "url": "https://gitlab.com/api/v4/projects/vekejsn%2Fgtfs-generators/packages/generic/srbijavoz-merged-gtfs/latest/srbijavoz_merged.zip",
+            "fix": true
+        },
+        {
+            "name": "Srbijavoz",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "http://rt.gtfs.baguette.pirnet.si/gtfs-rt/Srbijavoz_ghl/trip_updates.pb"
         },
         {
             "name": "Subotica",
@@ -43,6 +54,45 @@
             "url": "https://data.gov.rs/sr/datasets/r/015f6bd4-1428-4ed8-b41e-c73d0885c79d",
             "skip": true,
             "skip-reason": "Currently expired for multiple years"
+        },
+        {
+            "name": "Novisad",
+            "type": "http",
+            "url": "https://gitlab.com/api/v4/projects/vekejsn%2Fgtfs-generators/packages/generic/novi_sad-gtfs/latest/novi_sad_gtfs.zip",
+            "fix": true
+        },
+        {
+            "name": "Novisad",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://rt.buslogic.baguette.pirnet.si/jgsp_ns/rt.pb"
+        },
+        {
+            "name": "Litas",
+            "type": "http",
+            "url": "https://gitlab.com/api/v4/projects/vekejsn%2Fgtfs-generators/packages/generic/litas_rs-gtfs/latest/litas_gtfs.zip"
+        },
+        {
+            "name": "Pantransport",
+            "type": "http",
+            "url": "https://gitlab.com/api/v4/projects/vekejsn%2Fgtfs-generators/packages/generic/pancevo-gtfs/latest/pancevo_gtfs.zip",
+            "drop-too-fast-trips": false
+        },
+        {
+            "name": "Autoprevoz-Cacak",
+            "type": "http",
+            "url": "https://gitlab.com/api/v4/projects/vekejsn%2Fgtfs-generators/packages/generic/cacak-gtfs/latest/apcacak_gtfs.zip"
+        },
+        {
+            "name": "Kavim-Jedinstvo-Vranje",
+            "type": "http",
+            "url": "https://gitlab.com/api/v4/projects/vekejsn%2Fgtfs-generators/packages/generic/vranje-gtfs/latest/kjvranje_gtfs.zip",
+            "drop-too-fast-trips": false
+        },
+        {
+            "name": "KGBus-Kragujevac",
+            "type": "http",
+            "url": "https://gitlab.com/api/v4/projects/vekejsn%2Fgtfs-generators/packages/generic/kragujevac-gtfs/latest/kragujevac_gtfs.zip"
         }
     ]
 }
