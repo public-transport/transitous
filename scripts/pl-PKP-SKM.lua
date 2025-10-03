@@ -4,7 +4,7 @@
 require "scripts.motis"
 
 function process_route(route)
-	route:set_clasz(METRO)
+	route:set_clasz(SUBURBAN)
 end
 
 function process_trip(trip)
