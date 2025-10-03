@@ -1,16 +1,18 @@
 -- SPDX-FileCopyrightText: Marcus Lundblad <ml@dfupdate.se>
 -- SPDX-License-Identifier: AGPL-3.0-or-later
 
+require "scripts.motis"
+
 -- map input route type to MOTIS clasz/output route type
 local agency_route_type_map = {
   ["DVVJ"] = {
-    [102] = { 2, 107 } -- map DVVJ from long distance rail to tourist rail
+    [102] = { LONG_DISTANCE, 107 } -- map DVVJ from long distance rail to tourist rail
   },
   ["Lennakatten"] = {
-    [102] = { 2, 107 } -- map Lennakatten from long distance rail to tourist rail
+    [102] = { LONG_DISTANCE, 107 } -- map Lennakatten from long distance rail to tourist rail
   },
   ["TJF Smalspåret"] = {
-    [102] = { 2, 107 } -- map TJF from long distance rail to tourist rail
+    [102] = { LONG_DISTANCE, 107 } -- map TJF from long distance rail to tourist rail
   }
 }
 
