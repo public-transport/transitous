@@ -112,7 +112,8 @@
         {
             "name": "Roam-Transit",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-c3j-757"
+            "transitland-atlas-id": "f-c3j-757",
+            "fix": true
         },
         {
             "name": "Saint-John-Transit",
