@@ -42,7 +42,8 @@
             "display-name-options": {
                 "copy-trip-names-matching": "((IC)|(ECB)|(EC)|(RJ)|(RJX)|(D)|(NJ)|(EN)|(CJX)|(ICE)|(IR)|(REX)|(R)|(ER)|(ATB)|(WB)) \\d+",
                 "keep-route-names-matching": "((RE)|(RB)|S) ?\\d+"
-            }
+            },
+            "script": "at.lua"
         },
         {
             "name": "PTA-Vorarlberg-2025",
@@ -81,7 +82,8 @@
             "function": "mvo_keycloak_token",
             "http-options": {
                 "fetch-interval-days": 2
-            }
+            },
+            "script": "at.lua"
         },
         {
             "name": "PTA-Carinthia-2025",
@@ -107,7 +109,8 @@
             "function": "mvo_keycloak_token",
             "http-options": {
                 "fetch-interval-days": 2
-            }
+            },
+            "script": "at.lua"
         },
         {
             "name": "PTA-Styria-2025",
@@ -120,7 +123,8 @@
             "function": "mvo_keycloak_token",
             "http-options": {
                 "fetch-interval-days": 2
-            }
+            },
+            "script": "at.lua"
         },
         {
             "name": "PTA-Eastern-Region-2025",

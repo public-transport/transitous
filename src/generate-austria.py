@@ -49,6 +49,12 @@ if __name__ == "__main__":
         "70",  # Same data but outdated
         "72",  # contains multiple zip files, not what we need
     ]
+    scripts = {
+        "53": "at.lua", # Styria
+        "54": "at.lua", # Salzbug
+        "56": "at.lua", # Upper Austria
+        "66": "at.lua", # ÖBB
+    }
 
     data_sets = requests.get(
         "https://data.mobilitaetsverbuende.at/api/public/v1/data-sets?tagIds=20&tagFilterModeInclusive=false"
@@ -72,6 +78,8 @@ if __name__ == "__main__":
                     r"((IC)|(ECB)|(EC)|(RJ)|(RJX)|(D)|(NJ)|(EN)|(CJX)|(ICE)|(IR)|(REX)|(R)|(ER)|(ATB)|(WB)) \d+"
                 source["display-name-options"]["keep-route-names-matching"] = \
                     r"((RE)|(RB)|S) ?\d+"
+            if set_id in scripts:
+                source["script"] = scripts[set_id]
             sources.append(source)
 
     region = {}
