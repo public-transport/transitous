@@ -121,8 +121,9 @@ if __name__ == "__main__":
     # Map for each dataset slug, if needed, the selected GTFS-RT id to the corresponding GTFS id
     gtfs_rt_select = {
          "versions-des-horaires-theoriques-des-lignes-de-bus-et-de-metro-du-reseau-star-au-format-gtfs": {
-            "82161": "83263",
-            "82162": "83263"
+            "82161": "83281",
+            "82162": "83281",
+            "82163": "83281"
         },
         "breizhgo-car": {
             "81804": "81463",
@@ -338,7 +339,7 @@ if __name__ == "__main__":
                 continue
 
     # TCL(Lyon) unofficial feed + suburban buses
-    out.append(
+    out.extend([
         {
             "name": "lyon-tcl",
             "type": "http",
@@ -390,7 +391,7 @@ if __name__ == "__main__":
             },
             "spec": "gtfs-rt"
         },
-    )
+    ])
     # official feeds without available zip files at data.gouv.fr for some reason
     out.append(
         {
