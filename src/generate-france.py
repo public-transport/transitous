@@ -337,12 +337,58 @@ if __name__ == "__main__":
                 )
                 continue
 
-    # TCL(Lyon) official feed not available without API key
+    # TCL(Lyon) unofficial feed + suburban buses
     out.append(
         {
             "name": "lyon-tcl",
             "type": "http",
-            "url": "https://gtech-transit-prod.apigee.net/v1/google/gtfs/odbl/lyon_tcl.zip?apikey=BasyG6OFZXgXnzWdQLTwJFGcGmeOs204&secret=gNo6F5PhQpsGRBCK"
+            "url": "https://gtfs.bus-tracker.fr/tcl.zip",
+            "license": {
+                "spdx-identifier": "ODbL-1.0"
+            }
+        },
+        {
+            "name": "lyon-tcl",
+            "type": "url",
+            "url": "https://gtfs.bus-tracker.fr/gtfs-rt/tcl",
+            "license": {
+                "spdx-identifier": "ODbL-1.0"
+            },
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "transports-faure-28bi",
+            "type": "http",
+            "url": "https://pysae.com/api/v2/groups/transports-faure-28bi/gtfs/pub",
+            "license": {
+                "spdx-identifier": "ODbL-1.0"
+            }
+        },
+        {
+            "name": "transports-faure-28bi",
+            "type": "url",
+            "url": "https://pysae.com/api/v2/groups/transports-faure-28bi/gtfs-rt",
+            "license": {
+                "spdx-identifier": "ODbL-1.0"
+            },
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "cars-faure-tcl",
+            "type": "http",
+            "url": "https://pysae.com/api/v2/groups/cars-faure-tcl/gtfs/pub",
+            "license": {
+                "spdx-identifier": "ODbL-1.0"
+            }
+        },
+        {
+            "name": "cars-faure-tcl",
+            "type": "url",
+            "url": "https://pysae.com/api/v2/groups/cars-faure-tcl/gtfs-rt",
+            "license": {
+                "spdx-identifier": "ODbL-1.0"
+            },
+            "spec": "gtfs-rt"
         },
     )
     # official feeds without available zip files at data.gouv.fr for some reason
