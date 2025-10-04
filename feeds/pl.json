@@ -224,6 +224,7 @@
             "type": "http",
             "spec": "gtfs",
             "url": "https://cdn.zbiorkom.live/gtfs/lublin.zip",
+            "fix": true,
             "license": {
                 "spdx-identifier": "MIT"
             }
