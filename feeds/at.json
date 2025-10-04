@@ -38,6 +38,7 @@
             "http-options": {
                 "fetch-interval-days": 2
             },
+            "script": "at.lua",
             "spec": "gtfs-flex"
         },
         {
@@ -64,6 +65,7 @@
             "http-options": {
                 "fetch-interval-days": 2
             },
+            "script": "at.lua",
             "spec": "gtfs-flex"
         },
         {
@@ -90,6 +92,7 @@
             "http-options": {
                 "fetch-interval-days": 2
             },
+            "script": "at.lua",
             "spec": "gtfs-flex"
         },
         {
@@ -124,90 +127,9 @@
             "script": "at.lua"
         },
         {
-            "name": "PTA-Vorarlberg-2025",
-            "type": "http",
-            "url": "https://data.mobilitaetsverbuende.at/api/public/v1/data-sets/58/2025/file",
-            "license": {
-                "url": "https://mobilitaetsverbuende.atlassian.net/wiki/spaces/DBP/pages/185237505/Terms+of+Use"
-            },
-            "fix": true,
-            "function": "mvo_keycloak_token",
-            "http-options": {
-                "fetch-interval-days": 2
-            }
-        },
-        {
             "name": "PTA-Tyrol-2025",
             "type": "http",
             "url": "https://data.mobilitaetsverbuende.at/api/public/v1/data-sets/57/2025/file",
-            "license": {
-                "url": "https://mobilitaetsverbuende.atlassian.net/wiki/spaces/DBP/pages/185237505/Terms+of+Use"
-            },
-            "fix": true,
-            "function": "mvo_keycloak_token",
-            "http-options": {
-                "fetch-interval-days": 2
-            }
-        },
-        {
-            "name": "PTA-Upper-Austria-2025",
-            "type": "http",
-            "url": "https://data.mobilitaetsverbuende.at/api/public/v1/data-sets/56/2025/file",
-            "license": {
-                "url": "https://mobilitaetsverbuende.atlassian.net/wiki/spaces/DBP/pages/185237505/Terms+of+Use"
-            },
-            "fix": true,
-            "function": "mvo_keycloak_token",
-            "http-options": {
-                "fetch-interval-days": 2
-            },
-            "script": "at.lua"
-        },
-        {
-            "name": "PTA-Carinthia-2025",
-            "type": "http",
-            "url": "https://data.mobilitaetsverbuende.at/api/public/v1/data-sets/55/2025/file",
-            "license": {
-                "url": "https://mobilitaetsverbuende.atlassian.net/wiki/spaces/DBP/pages/185237505/Terms+of+Use"
-            },
-            "fix": true,
-            "function": "mvo_keycloak_token",
-            "http-options": {
-                "fetch-interval-days": 2
-            }
-        },
-        {
-            "name": "PTA-Salzburg-2025",
-            "type": "http",
-            "url": "https://data.mobilitaetsverbuende.at/api/public/v1/data-sets/54/2025/file",
-            "license": {
-                "url": "https://mobilitaetsverbuende.atlassian.net/wiki/spaces/DBP/pages/185237505/Terms+of+Use"
-            },
-            "fix": true,
-            "function": "mvo_keycloak_token",
-            "http-options": {
-                "fetch-interval-days": 2
-            },
-            "script": "at.lua"
-        },
-        {
-            "name": "PTA-Styria-2025",
-            "type": "http",
-            "url": "https://data.mobilitaetsverbuende.at/api/public/v1/data-sets/53/2025/file",
-            "license": {
-                "url": "https://mobilitaetsverbuende.atlassian.net/wiki/spaces/DBP/pages/185237505/Terms+of+Use"
-            },
-            "fix": true,
-            "function": "mvo_keycloak_token",
-            "http-options": {
-                "fetch-interval-days": 2
-            },
-            "script": "at.lua"
-        },
-        {
-            "name": "PTA-Eastern-Region-2025",
-            "type": "http",
-            "url": "https://data.mobilitaetsverbuende.at/api/public/v1/data-sets/52/2025/file",
             "license": {
                 "url": "https://mobilitaetsverbuende.atlassian.net/wiki/spaces/DBP/pages/185237505/Terms+of+Use"
             },

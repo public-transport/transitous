@@ -50,9 +50,9 @@ if __name__ == "__main__":
         "72",  # contains multiple zip files, not what we need
     ]
     scripts = {
-        "53": "at.lua", # Styria
-        "54": "at.lua", # Salzbug
-        "56": "at.lua", # Upper Austria
+        "79": "at.lua", # Styria
+        "73": "at.lua", # Salzbug
+        "77": "at.lua", # Upper Austria
         "66": "at.lua", # ÖBB
     }
 
@@ -62,9 +62,15 @@ if __name__ == "__main__":
 
     sources: list[dict] = []
 
+    # Flex feeds are supersets of their non-Flex counterparts
+    flex_feeds = {}
+    for data_set in data_sets:
+        if "Flex" in data_set["nameEn"]:
+            flex_feeds[data_set["nameEn"].replace(" Flex", "")] = True
+
     for data_set in data_sets:
         set_id = data_set["id"]
-        if set_id in ignore:
+        if set_id in ignore or data_set["nameEn"] in flex_feeds:
             continue
 
         for year in TIMETABLE_YEARS:
