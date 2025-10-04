@@ -67,9 +67,6 @@ if __name__ == "__main__":
         if set_id in ignore:
             continue
 
-        if "Flex" in data_set["nameEn"]:
-            continue
-
         for year in TIMETABLE_YEARS:
             source = add_feed(year)
             if set_id == "66":  # ÖBB
@@ -80,6 +77,9 @@ if __name__ == "__main__":
                     r"((RE)|(RB)|S) ?\d+"
             if set_id in scripts:
                 source["script"] = scripts[set_id]
+            if "Flex" in data_set["nameEn"]:
+                source["spec"] = "gtfs-flex"
+                del source["fix"]
             sources.append(source)
 
     region = {}
