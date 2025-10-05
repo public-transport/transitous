@@ -651,6 +651,20 @@
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
+            },
+                "license": {
+                "spdx-identifier": "CC-BY-4.0",
+                "url": "https://data.ctb.eus/en/dataset/horario-lineas-bilbobus"
+                }
+        },
+        {
+            "name": "Bilbobus",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://ctb-gtfs-rt.s3.eu-south-2.amazonaws.com/bilbobus-vehicle-positions.pb",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0",
+                "url": "https://data.ctb.eus/en/dataset/autobuses-bilbobus"
             }
         },
         {
@@ -663,6 +677,56 @@
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
+            },
+            "license": {
+                "spdx-identifier": "CC-BY-4.0",
+                "url": "https://data.ctb.eus/en/dataset/horarios-lineas-bizkaibus"
+                    }
+        },
+        {
+            "name": "Bizkaibus",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://baliabideak.bizkaia.eus/Bizkaibus/GTFSRealTime/FeedTripUpdates.pb",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0",
+                "url": "https://data.ctb.eus/en/dataset/bizkaibus-viajes-alertas-retrasos-online"
+            }
+        },
+        {
+            "name": "EtxebarriBus",
+            "type": "http",
+            "url": "https://ctb-gtfs.s3.eu-south-2.amazonaws.com/etxebarribus.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0",
+                "url": "https://data.ctb.eus/en/dataset/etxebarribus"
+            }
+        },
+        {
+            "name": "KBus Barakaldo",
+            "type": "http",
+            "url": "https://ctb-gtfs.s3.eu-south-2.amazonaws.com/kbus.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0",
+                "url": "https://data.ctb.eus/en/dataset/kbus"
+            }
+        },
+        {
+            "name": "Sopelbus",
+            "type": "http",
+            "url": "https://ctb-gtfs.s3.eu-south-2.amazonaws.com/sopelbus.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0",
+                "url": "https://data.ctb.eus/en/dataset/horarios-sopelbus"
+            }
+        },
+        {
+            "name": "Puente Colgante Bizkaia",
+            "type": "http",
+            "url": "https://ctb-gtfs.s3.eu-south-2.amazonaws.com/puentebizkaia.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0",
+                "url": "https://data.ctb.eus/en/dataset/horarios-puente-colgante"
             }
         },
         {
@@ -699,25 +763,41 @@
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
+            },
+            "license": {
+                "spdx-identifier": "CC-BY-4.0",
+                "url": "https://data.renfe.com/dataset/horarios-cercanias"
             }
         },
         {
             "name": "Cercanías-Renfe",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://gtfsrt.renfe.com/trip_updates.pb"
+            "url": "https://gtfsrt.renfe.com/trip_updates.pb",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0",
+                "url": "https://data.renfe.com/dataset/horarios-viaje-cercanias"
+            }
         },
         {
             "name": "Cercanías-Renfe",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://gtfsrt.renfe.com/alerts.pb"
+            "url": "https://gtfsrt.renfe.com/alerts.pb",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0",
+                "url": "https://data.renfe.com/dataset/incidencias-avisos"
+            }
         },
         {
             "name": "Cercanías-Renfe",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://gtfsrt.renfe.com/vehicle_positions.pb"
+            "url": "https://gtfsrt.renfe.com/vehicle_positions.pb",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0",
+                "url": "https://data.renfe.com/dataset/ubicacion-vehiculos"
+            }
         },
         {
             "name": "Donostiabus-(Dbus)",
@@ -753,6 +833,10 @@
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
+            },
+            "license": {
+                "spdx-identifier": "CC-BY-4.0",
+                "url": "https://data.ctb.eus/en/dataset/horarios-servicios-euskotren"
             }
         },
         {
@@ -765,13 +849,21 @@
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
-            }
+            },
+            "license": {
+                "spdx-identifier": "CC-BY-4.0", 
+                "url": "https://dadesobertes.fgc.cat/explore/dataset/gtfs_zip/"
+                }
         },
         {
             "name": "Ferrocarriles-de-la-Generalitat-de-Cataluña",
             "type": "url",
             "url": "https://dadesobertes.fgc.cat/explore/dataset/trip-updates-gtfs_realtime/files/735985017f62fd33b2fe46e31ce53829/download/",
-            "spec": "gtfs-rt"
+            "spec": "gtfs-rt",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0", 
+                "url": "https://dadesobertes.fgc.cat/explore/dataset/trip-updates-gtfs_realtime/"
+                }
         },
         {
             "name": "Ferry-Baleària",
@@ -807,6 +899,10 @@
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
+            },
+            "license": {
+                "spdx-identifier": "CC-BY-4.0",
+                "url": "https://data.renfe.com/dataset/horario-feve"
             }
         },
         {
@@ -819,6 +915,19 @@
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
+            },
+            "license": {
+                "spdx-identifier": "CC-BY-4.0",
+                "url": "https://data.ctb.eus/en/dataset/horarios-funicular-artxanda"
+            }
+        },
+        {
+            "name": "LeioaBus",
+            "type": "http",
+            "url": "https://ctb-gtfs.s3.eu-south-2.amazonaws.com/lejoanbusa.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0",
+                "url": "https://data.ctb.eus/en/dataset/horarios-lejoanbusa"
             }
         },
         {
@@ -1002,6 +1111,33 @@
             }
         },
         {
+            "name": "La-Union",
+            "type": "http",
+            "url": "https://ctb-gtfs.s3.eu-south-2.amazonaws.com/launion.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0",
+                "url": "https://data.ctb.eus/en/dataset/horarios-la-union-bilbao-vitoria-por-autopista"
+            }
+        },
+        {
+            "name": "Bermibusa",
+            "type": "http",
+            "url": "https://ctb-gtfs.s3.eu-south-2.amazonaws.com/bermibusa.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0",
+                "url": "https://data.ctb.eus/en/dataset/horario-bermibusa"
+            }
+        },
+        {
+            "name": "ErandioBus",
+            "type": "http",
+            "url": "https://ctb-gtfs.s3.eu-south-2.amazonaws.com/erandiobusa.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0",
+                "url": "https://data.ctb.eus/en/dataset/horarios-erandiobus"
+            }
+        },      
+        {
             "name": "Metro-Bilbao",
             "type": "http",
             "url": "https://nap.transportes.gob.es/api/Fichero/download/1267",
@@ -1011,6 +1147,40 @@
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
+            },
+            "license": {
+                "spdx-identifier": "CC-BY-4.0",
+                "url": "https://data.ctb.eus/en/dataset/horario-metro-bilbao"
+            }
+        },
+        {
+            "name": "Metro-Bilbao",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://ctb-gtfs-rt.s3.eu-south-2.amazonaws.com/metro-bilbao-trip-updates.pb",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0",
+                "url": "https://data.ctb.eus/en/dataset/metro-bilbao-online"
+            }
+        },
+        {
+            "name": "Metro-Bilbao",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://ctb-gtfs-rt.s3.eu-south-2.amazonaws.com/metro-bilbao-service-alerts.pb",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0",
+                "url": "https://data.ctb.eus/en/dataset/metro-bilbao-online"
+            }
+        },
+        {
+            "name": "Metro-Bilbao",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://ctb-gtfs-rt.s3.eu-south-2.amazonaws.com/metro-bilbao-vehicle-positions.pb",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0",
+                "url": "https://data.ctb.eus/en/dataset/metro-bilbao-online"
             }
         },
         {
@@ -1131,6 +1301,20 @@
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
+            },
+            "license": {
+                "spdx-identifier": "CC-BY-4.0",
+                "url": "https://data.renfe.com/dataset/horarios-de-alta-velocidad-larga-distancia-y-media-distancia"
+            }
+        },
+        {
+            "name": "RENFE---Media,-Larga-Distancia-y-AVE",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://gtfsrt.renfe.com/trip_updates_LD.pb",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0",
+                "url": "https://data.renfe.com/dataset/horarios-viaje-alta-velocidad-larga-media-distancia"
             }
         },
         {
