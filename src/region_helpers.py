@@ -120,3 +120,53 @@ def data_metroporto_latest_resource(source: HttpSource) -> HttpSource:
     source.url = gtfs_url
     return source
 
+def chile_dtp_downloader(source: HttpSource) -> HttpSource:
+    import re
+    from bs4 import BeautifulSoup
+    from urllib.parse import urljoin
+
+    """
+    Fetches the current GTFS feed link from the DTPM Chile website.
+
+    Steps:
+    1. Downloads the GTFS vigente page.
+    2. Looks for links that match the pattern: GTFS_YYYYMMDD*.zip
+       - If found, picks the feed with the most recent date.
+    3. If no date-based links are found, falls back to collecting all
+       GTFS .zip links and returns the lexicographically largest one.
+    4. Returns None if no GTFS links are found at all.
+    """
+    response = requests.get(source.url)
+    response.raise_for_status()
+
+    soup = BeautifulSoup(response.text, "html.parser")
+
+    pattern = re.compile(r"GTFS_(\d{8})[^/]*\.zip")
+
+    dated_feeds = []
+    all_gtfs_feeds = []
+
+    for a in soup.find_all("a", href=True):
+        href = a["href"]
+        if "gtfs" in href.lower() and href.lower().endswith(".zip"):
+            full_url = urljoin(source.url, href)
+            all_gtfs_feeds.append(full_url)
+
+            match = pattern.search(href)
+            if match:
+                date_str = match.group(1)
+                dated_feeds.append((int(date_str), full_url))
+
+    # Case 1: Found valid date-based feeds → choose latest
+    if dated_feeds:
+        dated_feeds.sort(key=lambda x: x[0], reverse=True)
+        source.url = dated_feeds[0][1]
+        return source
+
+    # Case 2: Fallback → lexicographically largest GTFS link
+    if not all_gtfs_feeds:
+        raise ValueError("No GTFS files found!")
+
+    source.url = max(all_gtfs_feeds)
+    return source
+
