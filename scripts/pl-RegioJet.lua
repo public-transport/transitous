@@ -4,7 +4,7 @@
 require "scripts.motis"
 
 function process_route(route)
-    if route:get_id() == "WEB/11755" then
+    if string.find(route:get_id(), "WEB/11755") then
         route:set_clasz(NIGHT_RAIL)
     else
         route:set_clasz(LONG_DISTANCE)
