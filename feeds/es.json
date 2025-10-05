@@ -148,6 +148,10 @@
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
+            },
+            "license": {
+                "spdx-identifier": "CC-BY-4.0",
+                "url": "https://data.ctb.eus/en/dataset/horarios-la-union-bilbao-vitoria-por-autopista"
             }
         },
         {
@@ -1113,15 +1117,6 @@
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
-            }
-        },
-        {
-            "name": "La-Union",
-            "type": "http",
-            "url": "https://ctb-gtfs.s3.eu-south-2.amazonaws.com/launion.zip",
-            "license": {
-                "spdx-identifier": "CC-BY-4.0",
-                "url": "https://data.ctb.eus/en/dataset/horarios-la-union-bilbao-vitoria-por-autopista"
             }
         },
         {
