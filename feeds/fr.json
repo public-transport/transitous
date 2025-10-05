@@ -293,8 +293,8 @@
         {
             "name": "zou",
             "type": "http",
-            "url": "https://www.data.gouv.fr/api/1/datasets/r/642be8a3-695c-46dc-8d67-8e61e2a33d2b",
-            "url-override": "https://static.data.gouv.fr/resources/zou/20250729-072556/gtfs-zou-072025.zip",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/764d6d5b-d04e-4aa7-94b7-f8b2274d2964",
+            "url-override": "https://www.data.gouv.fr/fr/datasets/r/30782be6-90aa-40bb-940a-cb881a95ad26",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/zou",
@@ -342,8 +342,27 @@
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/arrets-horaires-et-circuits-des-lignes-de-transports-aleop-1",
                 "spdx-identifier": "etalab-2.0"
+            }
+        },
+        {
+            "name": "arrets-horaires-et-circuits-des-lignes-de-transports-aleop-1",
+            "type": "url",
+            "url": "https://proxy.transport.data.gouv.fr/resource/aleop-pdl-gtfs-rt-alerts",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/arrets-horaires-et-circuits-des-lignes-de-transports-aleop-1",
+                "spdx-identifier": "etalab-2.0"
             },
-            "skip": true
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "arrets-horaires-et-circuits-des-lignes-de-transports-aleop-1",
+            "type": "url",
+            "url": "https://proxy.transport.data.gouv.fr/resource/aleop-pdl-gtfs-rt-trip-update",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/arrets-horaires-et-circuits-des-lignes-de-transports-aleop-1",
+                "spdx-identifier": "etalab-2.0"
+            },
+            "spec": "gtfs-rt"
         },
         {
             "name": "base-de-donnees-multimodale-transports-publics-en-bretagne-korrigo-gtfs",
@@ -933,13 +952,13 @@
             }
         },
         {
-            "name": "tisseo-offre-de-transport-gtfs",
+            "name": "tisseo-reseau-transport-urbain-toulousain",
             "type": "http",
             "url": "https://www.data.gouv.fr/api/1/datasets/r/64318177-f5b5-4144-a6be-2d0f22d26c77",
             "url-override": "https://data.toulouse-metropole.fr/explore/dataset/tisseo-gtfs/files/fc1dda89077cf37e4f7521760e0ef4e9/download/",
             "fix": true,
             "license": {
-                "url": "https://transport.data.gouv.fr/datasets/tisseo-offre-de-transport-gtfs",
+                "url": "https://transport.data.gouv.fr/datasets/tisseo-reseau-transport-urbain-toulousain",
                 "spdx-identifier": "ODbL-1.0"
             }
         },
@@ -2144,8 +2163,7 @@
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/description-de-loffre-tad-tao-gtfs-flex-orleans-metropole",
                 "spdx-identifier": "etalab-2.0"
-            },
-            "skip": true
+            }
         },
         {
             "name": "gtfs-sankeo--82900",
@@ -2208,16 +2226,6 @@
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/offre-de-transport-solea-et-tram-train-en-format-gtfs-1",
-                "spdx-identifier": "etalab-2.0"
-            }
-        },
-        {
-            "name": "stations-de-velo-en-libre-service-velocite-sur-mulhouse-flux-gbfs",
-            "type": "url",
-            "url": "https://data.mulhouse-alsace.fr/api/explore/v2.1/catalog/datasets/m2a_stationsvelocite_gbfs/exports/json",
-            "spec": "gbfs",
-            "license": {
-                "url": "https://transport.data.gouv.fr/datasets/stations-de-velo-en-libre-service-velocite-sur-mulhouse-flux-gbfs",
                 "spdx-identifier": "etalab-2.0"
             }
         },
@@ -3902,7 +3910,7 @@
             }
         },
         {
-            "name": "agglopolys-offre-theorique-mobilite-reseau-urbain-azalys-de-blois--83424",
+            "name": "agglopolys-offre-theorique-mobilite-reseau-urbain-azalys-de-blois",
             "type": "http",
             "url": "https://www.data.gouv.fr/api/1/datasets/r/d3cb0797-d112-4296-a38f-7ea97c2c0288",
             "url-override": "https://data.centrevaldeloire.fr/api/explore/v2.1/catalog/datasets/agglopolys-offre-theorique-mobilite-reseau-urbain-blois/files/af673e7cbb43033c60c117ddf5f4ecaa",
@@ -3910,32 +3918,17 @@
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/agglopolys-offre-theorique-mobilite-reseau-urbain-azalys-de-blois",
                 "spdx-identifier": "ODbL-1.0"
-            },
-            "skip": true
+            }
         },
         {
-            "name": "agglopolys-offre-theorique-mobilite-reseau-urbain-azalys-de-blois--83425",
-            "type": "http",
-            "url": "https://www.data.gouv.fr/api/1/datasets/r/d3cb0797-d112-4296-a38f-7ea97c2c0288",
-            "url-override": "https://data.centrevaldeloire.fr/api/explore/v2.1/catalog/datasets/agglopolys-offre-theorique-mobilite-reseau-urbain-blois/files/fcc2c95e43ac6ff578a4c57a12d6f5b2",
-            "fix": true,
+            "name": "agglopolys-offre-theorique-mobilite-reseau-urbain-azalys-de-blois",
+            "type": "url",
+            "url": "https://app.mecatran.com/utw/ws/gtfsfeed/realtime/blois?apiKey=7a0d1031460836674e76041e7a78011813347f04",
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/agglopolys-offre-theorique-mobilite-reseau-urbain-azalys-de-blois",
                 "spdx-identifier": "ODbL-1.0"
             },
-            "skip": true
-        },
-        {
-            "name": "agglopolys-offre-theorique-mobilite-reseau-urbain-azalys-de-blois--83426",
-            "type": "http",
-            "url": "https://www.data.gouv.fr/api/1/datasets/r/d3cb0797-d112-4296-a38f-7ea97c2c0288",
-            "url-override": "https://data.centrevaldeloire.fr/api/explore/v2.1/catalog/datasets/agglopolys-offre-theorique-mobilite-reseau-urbain-blois/files/ae5217c013eb36e63ee2360c8dad9c28",
-            "fix": true,
-            "license": {
-                "url": "https://transport.data.gouv.fr/datasets/agglopolys-offre-theorique-mobilite-reseau-urbain-azalys-de-blois",
-                "spdx-identifier": "ODbL-1.0"
-            },
-            "skip": true
+            "spec": "gtfs-rt"
         },
         {
             "name": "transports-en-commun-audomarois-1",
@@ -5081,6 +5074,17 @@
             "skip": true
         },
         {
+            "name": "offre-de-transport-du-reseau-trema-gtfs--83442",
+            "type": "http",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/5bd6333f-b45c-4bd3-93d5-6adda7800eff",
+            "url-override": "https://static.data.gouv.fr/resources/offre-de-transport-du-reseau-trema-gtfs/20251002-140613/trema-gtfs-2025-10-02.zip",
+            "fix": true,
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/offre-de-transport-du-reseau-trema-gtfs",
+                "spdx-identifier": "ODbL-1.0"
+            }
+        },
+        {
             "name": "offre-de-transport-du-reseau-libellus-gtfs",
             "type": "http",
             "url": "https://www.data.gouv.fr/api/1/datasets/r/70c9f936-129e-41f4-940a-8e6f272535d1",
@@ -5331,6 +5335,18 @@
             "type": "http",
             "url": "https://www.data.gouv.fr/api/1/datasets/r/4707c4ec-21d7-4a8a-8531-e84ac54d396a",
             "url-override": "https://data.chateauroux-metropole.fr/api/v2/catalog/datasets/reseau-de-bus-urbain_horizon/alternative_exports/gtfs_20250925_zip",
+            "fix": true,
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/reseau-de-bus-urbain-horizon",
+                "spdx-identifier": "etalab-2.0"
+            },
+            "skip": true
+        },
+        {
+            "name": "reseau-de-bus-urbain-horizon--83445",
+            "type": "http",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/006828d3-e583-4ce7-9226-4b3a59ac2d28",
+            "url-override": "https://data.chateauroux-metropole.fr/api/v2/catalog/datasets/reseau-de-bus-urbain_horizon/alternative_exports/gtfs_20251001_zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/reseau-de-bus-urbain-horizon",
@@ -5644,7 +5660,7 @@
             "name": "offre-de-transports-urbain-du-reseau-amelys-gtfs",
             "type": "http",
             "url": "https://www.data.gouv.fr/api/1/datasets/r/39240e80-d3f4-4702-ba93-520fae414649",
-            "url-override": "https://static.data.gouv.fr/resources/offre-de-transports-urbain-du-reseau-amelys-gtfs/20250910-122354/gtfs-04-09-2025-au-12-10-2025.zip",
+            "url-override": "https://static.data.gouv.fr/resources/offre-de-transports-urbain-du-reseau-amelys-gtfs/20251005-100711/gtfs-du-02.10-au-02.11.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/offre-de-transports-urbain-du-reseau-amelys-gtfs",

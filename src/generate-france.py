@@ -6,7 +6,7 @@
 import requests
 import json
 import sys
-from datetime import datetime
+from datetime import datetime, timedelta
 
 
 if __name__ == "__main__":
@@ -24,13 +24,10 @@ if __name__ == "__main__":
         "horaires-theoriques-du-service-rhonexpress-de-la-metropole-de-lyon-et-du-departement-du-rhone",  # 401 not authorized
         "horaires-theoriques-et-temps-reel-des-navettes-de-la-station-de-tignes-gtfs-gtfs-rt", # 500
         "tico-bus-horaires-theoriques-du-reseau-de-transport-urbain-tico", # name or service not known
-        "description-de-loffre-tad-tao-gtfs-flex-orleans-metropole", #expired
         "caen-la-mer-reseau-twisto-gtfs-siri", # 404, incompatible
         "reseau-de-bus-urbain-horizon", # name or service not known
         "gtfs-et-gtfs-rt-reseau-orizo-grand-avignon", # name or service not known
-        "arrets-horaires-et-circuits-des-lignes-de-transports-aleop-1", # not a valid zip file
         "offre-de-transport-du-reseau-fluo-grand-est-moselle-57",
-        "agglopolys-offre-theorique-mobilite-reseau-urbain-azalys-de-blois",
         "navettes-bourg-saint-maurice",
         "horaires-theoriques-et-en-temps-reel-de-la-navette-velo-du-pont-de-saint-nazaire-gtfs-gtfs-rt-2023", # unknown timezone
         "horaires-theoriques-et-temps-reel-des-navettes-hivernales-de-lalpe-dhuez-gtfs-gtfs-rt",
@@ -115,7 +112,9 @@ if __name__ == "__main__":
         # Unavailable
         "83019",
         # old/duplicate data
-        "81899", "83193", "82168"
+        "81899", "83193", "82168",
+        # Azalys, Blois : empty GTFS files
+        "83425", "83426"
     ]
 
     # Map for each dataset slug, if needed, the selected GTFS-RT id to the corresponding GTFS id
@@ -256,7 +255,7 @@ if __name__ == "__main__":
                 }
                 if dataset["slug"] in skip:
                     source["skip"] = True
-                expired = "metadata" in resource and "end_date" and "end_date" in resource["metadata"] and resource["metadata"]["end_date"] is not None and datetime.strptime(resource["metadata"]["end_date"], '%Y-%m-%d') < datetime.now()
+                expired = "metadata" in resource and "end_date" and "end_date" in resource["metadata"] and resource["metadata"]["end_date"] is not None and datetime.strptime(resource["metadata"]["end_date"], '%Y-%m-%d') < (datetime.now()-timedelta(days=3))
                 if expired:
                     print("Feed expired according to metadata, setting to skip=True:", resource["metadata"]["end_date"], feed_name)
                     source["skip"] = True
