@@ -379,7 +379,12 @@
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
+            },          
+            "license": {
+                "spdx-identifier": "CC-BY-3.0",
+                "url": "https://opendata.caceres.es/dataset/autobuses-caceres"
             }
+            
         },
         {
             "name": "Autobús-urbano-de-Castellón-de-la-Plana",
