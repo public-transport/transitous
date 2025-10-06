@@ -114,7 +114,8 @@
         {
             "name": "BUSIT",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-busit~nz"
+            "transitland-atlas-id": "f-busit~nz",
+            "script": "nz-BUSIT.lua"
         },
         {
             "name": "Baybus",
