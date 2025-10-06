@@ -53,10 +53,10 @@
             "name": "DELFI",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://dl.dropboxusercontent.com/scl/fi/vehh1l65e96lp19ikwe24/feed.pb?rlkey=rx8fy4kayygdmgfh65e2ofr22&st=6vzo5zb0",
+            "url": "http://2a00-12d8-700e-0-9a12-3eb4-e927-3d9a.has-a.name/feed/feed.pb",
             "license": {
                 "spdx-identifier": "CC-BY-4.0",
-                "url": "https://dl.dropboxusercontent.com/scl/fi/2yudkj01fmas26v2lcxg1/LICENSE.txt?rlkey=0yaq83rsb7qti3zjskja1g48m"
+                "url": "http://[2a00:12d8:700e:0:9a12:3eb4:e927:3d9a]/feed/LICENSE.txt"
             }
         },
         {
