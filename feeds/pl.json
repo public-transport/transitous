@@ -831,9 +831,6 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "display-name-options": {
-                "copy-trip-names-matching": "^RJ.*"
-            },
             "script": "pl-RegioJet.lua"
         },
         {
