@@ -17,6 +17,30 @@
             "fix": true
         },
         {
+            "name": "Transport-Victoria-regional-trains",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.opendata.transport.vic.gov.au/opendata/public-transport/gtfs/realtime/v1/vline/vehicle-positions",
+            "license": {
+                "spdx_identifier": "CC-BY-4.0"
+            },
+            "headers": {
+                "KeyId": "ffb807b0-9a50-4123-b4d7-ce762f81d84b"
+            }
+        },
+        {
+            "name": "Transport-Victoria-regional-trains",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.opendata.transport.vic.gov.au/opendata/public-transport/gtfs/realtime/v1/vline/trip-updates",
+            "license": {
+                "spdx_identifier": "CC-BY-4.0"
+            },
+            "headers": {
+                "KeyId": "ffb807b0-9a50-4123-b4d7-ce762f81d84b"
+            }
+        },
+        {
             "name": "Transport-Victoria-metro-trains",
             "type": "http",
             "spec": "gtfs",
