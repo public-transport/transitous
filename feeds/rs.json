@@ -34,6 +34,23 @@
             "url": "https://data.gov.rs/sr/datasets/r/729be9a1-7ed9-453d-9a3d-68fa30f07529"
         },
         {
+            "name": "Beograd-Prigrad",
+            "type": "http",
+            "url": "https://data.gov.rs/sr/datasets/r/60f82229-16c7-4939-961b-2c24873d3e06"
+        },
+        {
+            "name": "Beograd",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://rt.buslogic.baguette.pirnet.si/beograd/rt.pb"
+        },
+        {
+            "name": "Beograd-Prigrad",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://rt.buslogic.baguette.pirnet.si/beograd/rt.pb"
+        },
+        {
             "name": "Uzice",
             "type": "http",
             "url": "https://data.gov.rs/sr/datasets/r/b9c72d16-6c2c-46f8-8490-78a6ceefb8d8",
@@ -93,6 +110,17 @@
             "name": "KGBus-Kragujevac",
             "type": "http",
             "url": "https://gitlab.com/api/v4/projects/vekejsn%2Fgtfs-generators/packages/generic/kragujevac-gtfs/latest/kragujevac_gtfs.zip"
+        },
+        {
+            "name": "Nis",
+            "type": "http",
+            "url": "https://gitlab.com/api/v4/projects/vekejsn%2Fgtfs-generators/packages/generic/nis-gtfs/latest/nis_gtfs.zip"
+        },
+        {
+            "name": "Nis",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://rt.buslogic.baguette.pirnet.si/nis/rt.pb"
         }
     ]
 }
