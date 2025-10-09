@@ -1,0 +1,27 @@
+{
+    "maintainers": [
+        {
+            "name": "applecuckoo",
+            "github": "applecuckoo"
+        }
+    ],
+    "sources": [
+        {
+            "name": "Adelaide-Metro",
+            "type": "mobility-database",
+            "mdb-id": "mdb-660"
+        },
+        {
+            "name": "Adelaide-Metro",
+            "type": "mobility-database",
+            "spec": "gtfs-rt",
+            "mdb-id": "mdb-1773"
+        },
+        {
+            "name": "Adelaide-Metro",
+            "type": "mobility-database",
+            "spec": "gtfs-rt",
+            "mdb-id": "mdb-1774"
+        }
+    ]
+}

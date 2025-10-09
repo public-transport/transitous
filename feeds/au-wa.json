@@ -1,0 +1,16 @@
+{
+    "maintainers": [
+        {
+            "name": "Matthew Exon",
+            "github": "mexon"
+        }
+    ],
+    "sources": [
+        {
+            "name": "Transperth",
+            "type": "mobility-database",
+            "mdb-id": "mdb-1086",
+            "fix": true
+        }
+    ]
+}

@@ -1,0 +1,30 @@
+{
+    "maintainers": [
+        {
+            "name": "applecuckoo",
+            "github": "applecuckoo"
+        }
+    ],
+    "sources": [
+        {
+            "name": "Northern-Territories-Department-of-Logistics-and-Infrastructure-Darwin",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://dli.nt.gov.au/data-feeds/bus-gtfs/google-transit-darwin.zip",
+            "license": {
+                "spdx_identifier": "CC-BY-4.0"
+            },
+            "fix": true
+        },
+        {
+            "name": "Northern-Territories-Department-of-Logistics-and-Infrastructure-Alice-Springs",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://dipl.nt.gov.au/data-feeds/bus-gtfs/gtfs-alice-new.zip",
+            "license": {
+                "spdx_identifier": "CC-BY-4.0"
+            },
+            "fix": true
+        }
+    ]
+}

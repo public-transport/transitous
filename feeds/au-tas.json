@@ -1,0 +1,21 @@
+{
+    "maintainers": [
+        {
+            "name": "applecuckoo",
+            "github": "applecuckoo"
+        }
+    ],
+    "sources": [
+        {
+            "name": "Tasmanian-Department-of-State-Growth",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://www.transport.tas.gov.au/public_transport/gtfs-data",
+            "function": "data_tasmania_latest_resource",
+            "license": {
+                "spdx_identifier": "CC-BY-4.0"
+            },
+            "fix": true
+        }
+    ]
+}
