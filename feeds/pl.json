@@ -327,8 +327,12 @@
         },
         {
             "name": "Koleje-Małopolskie-ald",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u2y-koleje~małopolskie~ald"
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://files.girlc.at/gtfs/malopolskie_linie_dowozowe.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
         },
         {
             "name": "ZTP-Kraków-T",
@@ -908,9 +912,9 @@
             "name": "PKS-Nova",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://cdn.zbiorkom.live/gtfs/pksnova.zip",
+            "url": "https://files.girlc.at/gtfs/pks_nova.zip",
             "license": {
-                "spdx-identifier": "MIT"
+                "spdx-identifier": "CC0-1.0"
             }
         },
         {
@@ -955,6 +959,51 @@
             "type": "http",
             "spec": "gtfs",
             "url": "https://files.girlc.at/gtfs/opoczno.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "Świecie",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://files.girlc.at/gtfs/swiecie.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "Powiat-Świecki",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://files.girlc.at/gtfs/powiat_swiecki.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "Komunikacja-Beskidzka",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://files.girlc.at/gtfs/komunikacja_beskidzka.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "Bielsk-Podlaski",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://files.girlc.at/gtfs/bielsk_podlaski.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "Augustów",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://files.girlc.at/gtfs/augustow.zip",
             "license": {
                 "spdx-identifier": "CC0-1.0"
             }
