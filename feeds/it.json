@@ -466,7 +466,9 @@
         {
             "name": "Toscana-MassaCarrara-Urbano",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-spz4-urbanomassaecarrara"
+            "transitland-atlas-id": "f-spz4-urbanomassaecarrara",
+            "skip": true,
+            "skip-reason": "Bad Zip File"
         },
         {
             "name": "Toscana-MassaCarrara-Urbano-Carrara",
