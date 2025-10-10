@@ -74,6 +74,10 @@
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
+            },
+            "license": {
+                "spdx-identifier": "CC-BY-4.0",
+                "url": "https://eivissa.tib.org/web/cie/cataleg-dades"
             }
         },
         {
@@ -86,6 +90,10 @@
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
+            },
+            "license": {
+                "spdx-identifier": "CC-BY-4.0",
+                "url": "https://menorca.tib.org/web/cime/cataleg-dades"
             }
         },
         {
@@ -303,6 +311,10 @@
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
+            },
+            "license": {
+                "spdx-identifier": "CC-BY-4.0",
+                "url": "https://datos.tenerife.es/en/datos/conjuntos-de-datos/informacion-sobre-el-sistema-de-transporte-de-metropolitano-de-tenerife-tranvia?return=aHR0cHM6Ly9kYXRvcy50ZW5lcmlmZS5lcy9lbi9kYXRvcy9jb25qdW50b3MtZGUtZGF0b3M="
             }
         },
         {
@@ -1265,6 +1277,10 @@
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
+            },
+            "license": {
+                "spdx-identifier": "CC-BY-4.0",
+                "url": "https://datos.tenerife.es/en/datos/conjuntos-de-datos/informacion-sobre-el-sistema-de-transporte-de-metropolitano-de-tenerife-tranvia?return=aHR0cHM6Ly9kYXRvcy50ZW5lcmlmZS5lcy9lbi9kYXRvcy9jb25qdW50b3MtZGUtZGF0b3M="
             }
         },
         {
@@ -1399,6 +1415,10 @@
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
+            },
+            "license": {
+                "spdx-identifier": "CC-BY-4.0",
+                "url": "https://www.tib.org/ca/sobre-ctm/portal-de-transparencia/dades-obertes"
             }
         },
         {
