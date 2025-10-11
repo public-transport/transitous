@@ -10,3 +10,7 @@ function process_route(route)
         route:set_clasz(LONG_DISTANCE)
     end
 end
+
+function process_trip(trip)
+  trip:set_display_name(trip:get_short_name())
+end
