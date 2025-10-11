@@ -313,8 +313,12 @@
         },
         {
             "name": "Koleje-Małopolskie",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-koleje~małopolskie"
+            "type": "http",
+            "spec":"gtfs",
+            "url": "https://gtfs.kasznia.net/static/sanitized/kml.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
         },
         {
             "name": "Koleje-Małopolskie",
