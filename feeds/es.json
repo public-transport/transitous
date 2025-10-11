@@ -724,7 +724,7 @@
             }
         },
         {
-            "name": "KBus Barakaldo",
+            "name": "KBus_Barakaldo",
             "type": "http",
             "url": "https://ctb-gtfs.s3.eu-south-2.amazonaws.com/kbus.zip",
             "license": {
