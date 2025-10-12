@@ -20,7 +20,8 @@
         {
             "name": "Indian-Railways",
             "type": "http",
-            "url": "https://github.com/Neo2308/indianrailways-gtfs/raw/refs/heads/main/gtfs/gtfs.zip"
+            "url": "https://github.com/Neo2308/indianrailways-gtfs/raw/refs/heads/main/gtfs/gtfs.zip",
+            "fix": "true"
         }
     ]
 }
