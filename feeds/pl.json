@@ -313,8 +313,12 @@
         },
         {
             "name": "Koleje-Małopolskie",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-koleje~małopolskie"
+            "type": "http",
+            "spec":"gtfs",
+            "url": "https://gtfs.kasznia.net/static/sanitized/kml.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
         },
         {
             "name": "Koleje-Małopolskie",
@@ -721,14 +725,14 @@
             "name": "Kombus-Kórnik",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://kbadmin.vot.pl/gtfs/kombus.zip",
+            "url": "https://kombus.pl/gtfs/kombus.zip",
             "fix": true
         },
         {
             "name": "Kombus-Kórnik",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://obakombusapi.iplaner.pl/api/gtfs_realtime/trip-updates-for-agency/200.pb?key=web&removeAgencyIds=true"
+            "url": "http://kombus.pl/gtfs/tripUpdates"
         },
         {
             "name": "Kombus-Środa-Wielkopolska",
@@ -827,9 +831,6 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "display-name-options": {
-                "copy-trip-names-matching": "^RJ.*"
-            },
             "script": "pl-RegioJet.lua"
         },
         {
@@ -908,9 +909,9 @@
             "name": "PKS-Nova",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://cdn.zbiorkom.live/gtfs/pksnova.zip",
+            "url": "https://files.girlc.at/gtfs/pks_nova.zip",
             "license": {
-                "spdx-identifier": "MIT"
+                "spdx-identifier": "CC0-1.0"
             }
         },
         {
@@ -955,6 +956,79 @@
             "type": "http",
             "spec": "gtfs",
             "url": "https://files.girlc.at/gtfs/opoczno.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "Świecie",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://files.girlc.at/gtfs/swiecie.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "Powiat-Świecki",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://files.girlc.at/gtfs/powiat_swiecki.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "Komunikacja-Beskidzka",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://files.girlc.at/gtfs/komunikacja_beskidzka.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "Bielsk-Podlaski",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://files.girlc.at/gtfs/bielsk_podlaski.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "Augustów",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://files.girlc.at/gtfs/augustow.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "Polbus",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://files.girlc.at/gtfs/polbus.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "Tczew",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://files.girlc.at/gtfs/tczew.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "Plusbus",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://files.girlc.at/gtfs/plusbus.zip",
+            "fix": true,
             "license": {
                 "spdx-identifier": "CC0-1.0"
             }
