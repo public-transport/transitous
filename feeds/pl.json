@@ -725,14 +725,14 @@
             "name": "Kombus-Kórnik",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://kbadmin.vot.pl/gtfs/kombus.zip",
+            "url": "https://kombus.pl/gtfs/kombus.zip",
             "fix": true
         },
         {
             "name": "Kombus-Kórnik",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://obakombusapi.iplaner.pl/api/gtfs_realtime/trip-updates-for-agency/200.pb?key=web&removeAgencyIds=true"
+            "url": "http://kombus.pl/gtfs/tripUpdates"
         },
         {
             "name": "Kombus-Środa-Wielkopolska",
