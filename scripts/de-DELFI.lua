@@ -44,4 +44,9 @@ function process_trip(trip)
   if trip:get_route():get_route_type() == 106 and is_number(trip:get_short_name()) then
     trip:set_display_name(trip:get_route():get_short_name() .. ' (' .. remove_leading_zeros(trip:get_short_name()) .. ')')
   end
+  
+  -- Fix MVV Tram line 12 (was set to bus)
+  if trip:get_route():get_agency():get_name() == 'Straßenbahn München' and trip:get_short_name() == '12' and trip:get_route_type() == 3 then
+    trip:set_route_type(0)
+  end
 end
