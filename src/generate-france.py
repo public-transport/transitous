@@ -16,23 +16,12 @@ if __name__ == "__main__":
     skip = [
         "blablacar-bus-horaires-theoriques-et-temps-reel-du-reseau-europeen",  # Already in eu.json
         "flixbus-horaires-theoriques-du-reseau-europeen-1",  # Already in eu.json
-        "horaires-theoriques-des-cars-du-rhone",  # requires authentication
-        "horaires-theoriques-des-lignes-scolaires-du-reseau-transports-en-commun-lyonnais",  # requires authentication
-        "horaires-theoriques-du-reseau-libellule-sytral-de-la-communaute-dagglomeration-de-villefranche-beaujolais-saone",  # requires authentication
-        "horaires-theoriques-de-la-navette-velo-du-pont-de-saint-nazaire-gtfs",  # Could not check validity, because the time zone could not be detected
-        "arrets-horaires-et-parcours-theoriques-des-bus-du-reseau-des-transports-publics-envibus",  # timeout
-        "horaires-theoriques-du-service-rhonexpress-de-la-metropole-de-lyon-et-du-departement-du-rhone",  # 401 not authorized
-        "horaires-theoriques-et-temps-reel-des-navettes-de-la-station-de-tignes-gtfs-gtfs-rt", # 500
-        "tico-bus-horaires-theoriques-du-reseau-de-transport-urbain-tico", # name or service not known
-        "caen-la-mer-reseau-twisto-gtfs-siri", # 404, incompatible
-        "reseau-de-bus-urbain-horizon", # name or service not known
-        "gtfs-et-gtfs-rt-reseau-orizo-grand-avignon", # name or service not known
-        "offre-de-transport-du-reseau-fluo-grand-est-moselle-57",
-        "navettes-bourg-saint-maurice",
+        "gtfs-au-11-aout-2025",  # Already in mc.json
+        "horaires-theoriques-du-reseau-transports-en-commun-lyonnais",  # requires authentication
+        "caen-la-mer-reseau-twisto-gtfs-siri", # Empty feed, manual replacement (cf. end of this file)
+        "navettes-bourg-saint-maurice", # Empty feed
         "horaires-theoriques-et-en-temps-reel-de-la-navette-velo-du-pont-de-saint-nazaire-gtfs-gtfs-rt-2023", # unknown timezone
-        "horaires-theoriques-et-temps-reel-des-navettes-hivernales-de-lalpe-dhuez-gtfs-gtfs-rt",
-        "reseau-de-transports-collectifs-de-la-ccgq", # expired
-        "reseau-de-transport-interurbain-mobigo-en-bourgogne-franche-comte", # connection timeout
+        "horaires-theoriques-et-temps-reel-des-navettes-hivernales-de-lalpe-dhuez-gtfs-gtfs-rt", # Empty feed
     ]
 
     # Map of datasets to MOTIS Lua scripts to apply to them
@@ -99,20 +88,14 @@ if __name__ == "__main__":
         "81652",
         # Very invalid calendar_dates.txt
         "81648", "81649",
-        # Remove old unavailable feed
-        "81906",
-        # Unavailable
-        "82306",
         # Remove invalid duplicates
         "80484", "80485",
         # Remove duplicate
         "82695",
         # Remove invalid duplicates
         "63612", "63613", "63614",
-        # Unavailable
-        "83019",
         # old/duplicate data
-        "81899", "83193", "82168",
+        "81899", "83193",
         # Azalys, Blois : empty GTFS files
         "83425", "83426"
     ]
