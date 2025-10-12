@@ -9,10 +9,10 @@
         {
             "name": "horaires-reseau-urbain-compagnie-des-autobus-de-monaco",
             "type": "http",
-            "url": "https://www.data.gouv.fr/fr/datasets/r/89d50803-cf15-424c-a857-96828bb3ce38",
+            "url": "https://www.data.gouv.fr/fr/datasets/r/30421536-6405-4437-a7b3-498f24c05ab5",
             "fix": true,
             "license": {
-                "url": "https://transport.data.gouv.fr/datasets/horaires-reseau-au-4-novembre-2024-fichier-gtfs",
+                "url": "https://transport.data.gouv.fr/datasets/gtfs-au-11-aout-2025",
                 "spdx-identifier": "etalab-2.0"
             }
         }
