@@ -459,14 +459,11 @@ In order to start motis, we need a config file listing all the feeds we want to 
 You can generate one using our script:
 
 ```bash
-./src/generate-motis-config.py
+./src/generate-motis-config.py --skip-missing-files
 ```
 
 The generated config file still needs a small adjustment.
 Edit the line in `out/config.yml` that starts with `osm:` to point to your map, and remove the `coastline` option in `tiles`.
-
-If you did not download all feeds, you also need to remove every feed that you did not download.
-Thanks to the region code prefix, the part you want to keep should be easy to find.
 
 You can then go to the `out` directory, import everything and start motis:
 
