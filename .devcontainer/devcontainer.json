@@ -7,10 +7,6 @@
 		"context": "../ci/container/"
 	},
 
-	"runArgs": [
-		"--userns=keep-id:uid=1000,gid=1000"
-	   ],
-
 	// Configure tool-specific properties.
 	"customizations": {
 		// Configure properties specific to VS Code.
