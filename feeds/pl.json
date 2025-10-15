@@ -16,9 +16,12 @@
     "sources": [
         {
             "name": "PKP-Intercity",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-pkp~intercity~pl",
-            "script": "pl-PKP-Intercity.lua"
+            "type": "http",
+            "url": "https://gtfs.kasznia.net/static/pkp-ic.zip",
+            "script": "pl-PKP-Intercity.lua",
+            "license":{
+                "spdx-identifier":"CC-BY-4.0"
+            }
         },
         {
             "name": "PKP-Intercity",
