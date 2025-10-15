@@ -87,9 +87,33 @@
             "transitland-atlas-id": "f-dr5r-mtanyctbusmanhattan"
         },
         {
+            "name": "MTA-BusManhattan",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://gtfsrt.prod.obanyc.com/tripUpdates?key=e6a24daf-8207-4e14-8795-b612ea66878f"
+        },
+        {
+            "name": "MTA-BusManhattan",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://gtfsrt.prod.obanyc.com/alerts?key=e6a24daf-8207-4e14-8795-b612ea66878f"
+        },
+        {
             "name": "MTA-BusQueens",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-dr5x-mtanyctbusqueens"
+        },
+        {
+            "name": "MTA-BusQueens",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://gtfsrt.prod.obanyc.com/tripUpdates?key=e6a24daf-8207-4e14-8795-b612ea66878f"
+        },
+        {
+            "name": "MTA-BusQueens",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://gtfsrt.prod.obanyc.com/alerts?key=e6a24daf-8207-4e14-8795-b612ea66878f"
         },
         {
             "name": "MTA-BusStatenIsland",
@@ -97,9 +121,33 @@
             "transitland-atlas-id": "f-dr5r-mtanyctbusstatenisland"
         },
         {
+            "name": "MTA-BusStatenIsland",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://gtfsrt.prod.obanyc.com/tripUpdates?key=e6a24daf-8207-4e14-8795-b612ea66878f"
+        },
+        {
+            "name": "MTA-BusStatenIsland",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://gtfsrt.prod.obanyc.com/alerts?key=e6a24daf-8207-4e14-8795-b612ea66878f"
+        },
+        {
             "name": "MTA-BusBrooklyn",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-dr5r-mtanyctbusbrooklyn"
+        },
+        {
+            "name": "MTA-BusBrooklyn",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://gtfsrt.prod.obanyc.com/tripUpdates?key=e6a24daf-8207-4e14-8795-b612ea66878f"
+        },
+        {
+            "name": "MTA-BusBrooklyn",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://gtfsrt.prod.obanyc.com/alerts?key=e6a24daf-8207-4e14-8795-b612ea66878f"
         },
         {
             "name": "MTA-BusBronx",
@@ -107,9 +155,33 @@
             "transitland-atlas-id": "f-dr72-mtanyctbusbronx"
         },
         {
+            "name": "MTA-BusBronx",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://gtfsrt.prod.obanyc.com/tripUpdates?key=e6a24daf-8207-4e14-8795-b612ea66878f"
+        },
+        {
+            "name": "MTA-BusBronx",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://gtfsrt.prod.obanyc.com/alerts?key=e6a24daf-8207-4e14-8795-b612ea66878f"
+        },
+        {
             "name": "MTA-BusCompany",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-dr5r-mtabc"
+        },
+        {
+            "name": "MTA-BusCompany",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://gtfsrt.prod.obanyc.com/tripUpdates?key=e6a24daf-8207-4e14-8795-b612ea66878f"
+        },
+        {
+            "name": "MTA-BusCompany",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://gtfsrt.prod.obanyc.com/alerts?key=e6a24daf-8207-4e14-8795-b612ea66878f"
         },
         {
             "name": "PATH",
