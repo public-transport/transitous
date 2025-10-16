@@ -45,3 +45,9 @@ function process_trip(trip)
     trip:set_display_name(trip:get_route():get_short_name() .. ' (' .. remove_leading_zeros(trip:get_short_name()) .. ')')
   end
 end
+
+function process_agency(agency)
+  if agency:get_url() == "https://www.delfi.de" then
+    agency:set_url("")
+  end
+end
