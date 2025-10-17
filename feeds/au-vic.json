@@ -10,7 +10,7 @@
             "name": "Transport-Victoria-regional-trains",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://opendata.transport.vic.gov.au/dataset/3f4e292e-7f8a-4ffe-831f-1953be0fe448/resource/e4966d78-dc64-4a1d-a751-2470c9eaf034/download/gtfs.zip#1/google_transit.zip",
+            "url": "https://gitlab.com/applecuckoo/gtfs-fixes/-/jobs/artifacts/main/raw/vic-gtfs.zip?job=victoria-mirror#1/google_transit.zip",
             "license": {
                 "spdx_identifier": "CC-BY-4.0"
             },
@@ -44,7 +44,7 @@
             "name": "Transport-Victoria-metro-trains",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://opendata.transport.vic.gov.au/dataset/3f4e292e-7f8a-4ffe-831f-1953be0fe448/resource/e4966d78-dc64-4a1d-a751-2470c9eaf034/download/gtfs.zip#2/google_transit.zip",
+            "url": "https://gitlab.com/applecuckoo/gtfs-fixes/-/jobs/artifacts/main/raw/vic-gtfs.zip?job=victoria-mirror#2/google_transit.zip",
             "license": {
                 "spdx_identifier": "CC-BY-4.0"
             },
@@ -91,7 +91,7 @@
             "name": "Transport-Victoria-metro-trams",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://opendata.transport.vic.gov.au/dataset/3f4e292e-7f8a-4ffe-831f-1953be0fe448/resource/e4966d78-dc64-4a1d-a751-2470c9eaf034/download/gtfs.zip#3/google_transit.zip",
+            "url": "https://gitlab.com/applecuckoo/gtfs-fixes/-/jobs/artifacts/main/raw/vic-gtfs.zip?job=victoria-mirror#3/google_transit.zip",
             "license": {
                 "spdx_identifier": "CC-BY-4.0"
             },
@@ -137,7 +137,7 @@
             "name": "Transport-Victoria-metro-buses",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://opendata.transport.vic.gov.au/dataset/3f4e292e-7f8a-4ffe-831f-1953be0fe448/resource/e4966d78-dc64-4a1d-a751-2470c9eaf034/download/gtfs.zip#4/google_transit.zip",
+            "url": "https://gitlab.com/applecuckoo/gtfs-fixes/-/jobs/artifacts/main/raw/vic-gtfs.zip?job=victoria-mirror#4/google_transit.zip",
             "license": {
                 "spdx_identifier": "CC-BY-4.0"
             },
@@ -159,7 +159,7 @@
             "name": "Transport-Victoria-regional-coaches",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://opendata.transport.vic.gov.au/dataset/3f4e292e-7f8a-4ffe-831f-1953be0fe448/resource/e4966d78-dc64-4a1d-a751-2470c9eaf034/download/gtfs.zip#5/google_transit.zip",
+            "url": "https://gitlab.com/applecuckoo/gtfs-fixes/-/jobs/artifacts/main/raw/vic-gtfs.zip?job=victoria-mirror#5/google_transit.zip",
             "license": {
                 "spdx_identifier": "CC-BY-4.0"
             },
@@ -169,7 +169,7 @@
             "name": "Transport-Victoria-regional-buses",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://opendata.transport.vic.gov.au/dataset/3f4e292e-7f8a-4ffe-831f-1953be0fe448/resource/e4966d78-dc64-4a1d-a751-2470c9eaf034/download/gtfs.zip#6/google_transit.zip",
+            "url": "https://gitlab.com/applecuckoo/gtfs-fixes/-/jobs/artifacts/main/raw/vic-gtfs.zip?job=victoria-mirror#6/google_transit.zip",
             "license": {
                 "spdx_identifier": "CC-BY-4.0"
             },
@@ -179,7 +179,7 @@
             "name": "Transport-Victoria-interstate",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://opendata.transport.vic.gov.au/dataset/3f4e292e-7f8a-4ffe-831f-1953be0fe448/resource/e4966d78-dc64-4a1d-a751-2470c9eaf034/download/gtfs.zip#10/google_transit.zip",
+            "url": "https://gitlab.com/applecuckoo/gtfs-fixes/-/jobs/artifacts/main/raw/vic-gtfs.zip?job=victoria-mirror#10/google_transit.zip",
             "license": {
                 "spdx_identifier": "CC-BY-4.0"
             },
@@ -189,7 +189,7 @@
             "name": "Transport-Victoria-skybus",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://opendata.transport.vic.gov.au/dataset/3f4e292e-7f8a-4ffe-831f-1953be0fe448/resource/e4966d78-dc64-4a1d-a751-2470c9eaf034/download/gtfs.zip#11/google_transit.zip",
+            "url": "https://gitlab.com/applecuckoo/gtfs-fixes/-/jobs/artifacts/main/raw/vic-gtfs.zip?job=victoria-mirror#11/google_transit.zip",
             "license": {
                 "spdx_identifier": "CC-BY-4.0"
             },
