@@ -25,10 +25,13 @@ def find_motis_asset(asset_name: str):
     asset_path = os.path.abspath(os.path.join(motis_path, "..", asset_name))
     return asset_path if os.path.exists(asset_path) else None
 
+def check_file_exist_in_out_folder(file_name: str):
+    return os.path.isfile(os.path.join("out", file_name))
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Transitous MOTIS configuration generator.')
     parser.add_argument('--import-only', action='store_true', help='Generate configuration for importing only.')
+    parser.add_argument('--skip-missing-files', action='store_true', help='Do not generate entry for missing GTFS files')
     parser.add_argument('regions', type=str, help='Only generate configuration for the given region(s) (leave empty for all regions, globs are supported)', nargs="*")
     arguments = parser.parse_args()
 
@@ -79,6 +82,8 @@ if __name__ == "__main__":
             for region in arguments.regions:
                 feeds += feed_dir.glob(f"{region}.json")
 
+        ignored_feeds = set() # for feeds ignored due to missing file
+
         for feed in sorted(feeds):
             with open(feed, "r") as f:
                 parsed = json.load(f)
@@ -112,44 +117,49 @@ if __name__ == "__main__":
                             schedule_file = \
                                 f"{region_name}_{source.name}.gtfs.zip"
                             name = f"{region_name}-{source.name}"
-                            config["timetable"]["datasets"][name] = \
-                                {
-                                    "path": schedule_file,
-                                    "extend_calendar": source.extend_calendar
-                                }
-                            if source.default_timezone is not None:
-                                config["timetable"]["datasets"][name]["default_timezone"] = source.default_timezone
-                            if source.script is not None:
-                                if not os.path.exists(os.path.join(script_dir, source.script)):
-                                    eprint(f"Error: Import script {source.script} for {name} could not be found.")
-                                    sys.exit(1)
-                                config["timetable"]["datasets"][name]["script"] = f"scripts/{source.script}"
+                            if (not arguments.skip_missing_files) or check_file_exist_in_out_folder(schedule_file):
+                                config["timetable"]["datasets"][name] = \
+                                    {
+                                        "path": schedule_file,
+                                        "extend_calendar": source.extend_calendar
+                                    }
+                                if source.default_timezone is not None:
+                                    config["timetable"]["datasets"][name]["default_timezone"] = source.default_timezone
+                                if source.script is not None:
+                                    if not os.path.exists(os.path.join(script_dir, source.script)):
+                                        eprint(f"Error: Import script {source.script} for {name} could not be found.")
+                                        sys.exit(1)
+                                    config["timetable"]["datasets"][name]["script"] = f"scripts/{source.script}"
+                            else:
+                                print("Warning: Skipping " + name + " as " + schedule_file + " is missing.")
+                                ignored_feeds.add(name)
 
                         case "gtfs-rt" if isinstance(source, metadata.UrlSource):
                             name = f"{region_name}-{source.name}"
-                            if name not in config["timetable"]["datasets"]:
-                                eprint(
-                                    "Error: The name of a realtime (gtfs-rt) "
-                                    + "feed needs to match the name of its "
-                                    + "static base feed defined before the "
-                                    + "realtime feed. Found nothing "
-                                    + "belonging to",
-                                    source.name,
-                                )
-                                sys.exit(1)
+                            if name not in ignored_feeds:
+                                if name not in config["timetable"]["datasets"]:
+                                    eprint(
+                                        "Error: The name of a realtime (gtfs-rt) "
+                                        + "feed needs to match the name of its "
+                                        + "static base feed defined before the "
+                                        + "realtime feed. Found nothing "
+                                        + "belonging to",
+                                        source.name,
+                                    )
+                                    sys.exit(1)
 
-                            if "rt" not in config["timetable"]["datasets"][name]:
-                                config["timetable"]["datasets"][name]["rt"] = []
+                                if "rt" not in config["timetable"]["datasets"][name]:
+                                    config["timetable"]["datasets"][name]["rt"] = []
 
-                            rt_feed: dict[str, Any] = {
-                                "url": source.url
-                            }
+                                rt_feed: dict[str, Any] = {
+                                    "url": source.url
+                                }
 
-                            if source.headers:
-                                rt_feed["headers"] = source.headers
+                                if source.headers:
+                                    rt_feed["headers"] = source.headers
 
-                            config["timetable"]["datasets"][name]["rt"] \
-                                .append(rt_feed)
+                                config["timetable"]["datasets"][name]["rt"] \
+                                    .append(rt_feed)
 
                         case "gbfs" if isinstance(source, metadata.UrlSource):
                             name = f"{region_name}-{source.name}"
