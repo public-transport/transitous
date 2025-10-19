@@ -76,7 +76,8 @@
         {
             "name": "kaposvár",
             "type": "http",
-            "url": "https://www.kaposbusz.hu/static/files/Menetrend%20t%C3%A9rk%C3%A9pek/kaposvar(1).zip",
+            "url": "https://www.kaposbusz.hu/letoltheto-menetrend",
+            "function": "data_kaposvar_latest_resource",
             "license": {
                 "spdx-identifier": "CC0-1.0"
             }
