@@ -69,12 +69,9 @@
             "name": "paksbusz",
             "type": "http",
             "url": "https://utazastervezo.paksbusz.hu/api/static/v1/gtfs-google/gtfs-google.zip",
-            "fix": "true",
             "license": {
                 "spdx-identifier": "CC0-1.0"
-            },
-            "skip": true,
-            "skip-reason": "Feed is expired"
+            }
         },
         {
             "name": "kaposvár",
