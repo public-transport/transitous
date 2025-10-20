@@ -82,6 +82,7 @@ def data_slupsk_latest_resource(source: HttpSource) -> HttpSource:
 
     return source
 
+
 def data_tasmania_latest_resource(source: HttpSource) -> HttpSource:
     from bs4 import BeautifulSoup
     
@@ -91,6 +92,28 @@ def data_tasmania_latest_resource(source: HttpSource) -> HttpSource:
     source.url = soup.find("a", href=lambda x: x and x.endswith(".zip"))["href"]
 
     return source
+
+
+def data_kaposvar_latest_resource(source: HttpSource) -> HttpSource:
+    import re
+    from bs4 import BeautifulSoup
+    from urllib.parse import quote, urlsplit
+
+    split_source_url = urlsplit(source.url)
+
+    page_html = requests.get(source.url).text
+    page_html_parsed = BeautifulSoup(page_html, "lxml")
+
+    contains_word_gtfs = re.compile(r".*GTFS.*", re.IGNORECASE)
+    url_path_tag = page_html_parsed.find("a", string=contains_word_gtfs)
+    assert url_path_tag
+
+    url_path = url_path_tag["href"]
+    url_path_safe = quote(url_path)
+
+    source.url = f"{split_source_url.scheme}://{split_source_url.netloc}{url_path_safe}"
+    return source
+
 
 def data_metroporto_latest_resource(source: HttpSource) -> HttpSource:
     from bs4 import BeautifulSoup
@@ -119,6 +142,7 @@ def data_metroporto_latest_resource(source: HttpSource) -> HttpSource:
 
     source.url = gtfs_url
     return source
+
 
 def chile_dtp_downloader(source: HttpSource) -> HttpSource:
     import re
@@ -169,4 +193,3 @@ def chile_dtp_downloader(source: HttpSource) -> HttpSource:
 
     source.url = max(all_gtfs_feeds)
     return source
-
