@@ -267,12 +267,12 @@ class Fetcher:
     def resolve_database_sources(self, source: Source) -> Source:
         match source:
             case TransitlandSource():
-                http_source = self.transitland_atlas.source_by_id(source)
+                http_source = self.transitland_atlas.sources_by_id(source)
                 if not http_source:
                     eprint("Error: Could not resolve", source.transitland_atlas_id)
                     sys.exit(1)
 
-                return http_source
+                return http_source[0]  # multi-source feeds only occur for GTFS-RT, which we don't handle here
             case MobilityDatabaseSource():
                 if not self.mobility_database:
                     self.mobility_database = mobilitydatabase.Database.load()
