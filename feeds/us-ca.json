@@ -230,7 +230,7 @@
         {
             "name": "SMRT",
             "type": "http",
-            "url": "https://www.modeshift.app/api/v1/df7541b2-ba8b-483e-b767-9de5043a54f7/transport/gtfs/gtfs.zip"
+            "url": "https://www.modeshift.app/api/v1/df7541b2-ba8b-483e-b767-9de5043a54f7/transport/gtfs/gtfs.zip",
             "fix": true
         },
         {
