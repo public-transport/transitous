@@ -326,6 +326,57 @@
             "name": "westmoreland",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-westmoreland~pa~us~rt"
-        }
+        },
+        {
+            "name": "SCTA-Lancaster",
+            "type": "http",
+            "url": "https://www.modeshift.app/api/v1/158c6245-8d68-41f6-94ca-d4e2915987c6/transport/gtfs/gtfs.zip"
+        },
+        {
+            "name": "SCTA-Lancaster",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://www.modeshift.app/api/v1/158c6245-8d68-41f6-94ca-d4e2915987c6/transport/gtfsrt/tripupdates.pb"
+        },
+        {
+            "name": "SCTA-Lancaster",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://www.modeshift.app/api/v1/158c6245-8d68-41f6-94ca-d4e2915987c6/transport/gtfsrt/alerts.pb"
+        },
+        {
+            "name": "SCTA-BARTA",
+            "type": "http",
+            "url": "https://www.modeshift.app/api/v1/9b59e837-415a-4b08-b019-9fcd7d585322/transport/gtfs/gtfs.zip"
+        },
+        {
+            "name": "SCTA-BARTA",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://www.modeshift.app/api/v1/9b59e837-415a-4b08-b019-9fcd7d585322/transport/gtfsrt/tripupdates.pb"
+        },
+        {
+            "name": "SCTA-BARTA",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://www.modeshift.app/api/v1/9b59e837-415a-4b08-b019-9fcd7d585322/transport/gtfsrt/alerts.pb"
+        },
+        {
+            "name": "SCTA-RRTA",
+            "type": "http",
+            "url": "https://www.modeshift.app/api/v1/988f8cb5-0768-4799-a1f9-5828ddd0614f/transport/gtfs/gtfs.zip"
+        },
+        {
+            "name": "SCTA-RRTA",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://www.modeshift.app/api/v1/988f8cb5-0768-4799-a1f9-5828ddd0614f/transport/gtfsrt/tripupdates.pb"
+        },
+        {
+            "name": "SCTA-RRTA",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://www.modeshift.app/api/v1/988f8cb5-0768-4799-a1f9-5828ddd0614f/transport/gtfsrt/alerts.pb"
+        },
     ]
 }
