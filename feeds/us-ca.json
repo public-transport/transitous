@@ -211,18 +211,18 @@
             "url-override": "https://github.com/catenarytransit/agency-gtfs-mirror/raw/refs/heads/main/octa_gtfs.zip"
         },
         {
-            "name": "Marin_Airporter",
+            "name": "Marin-Airporter",
             "type": "http",
             "url": "https://www.modeshift.app/api/v1/650b2f0d-9530-491a-a270-7581cec1d45f/transport/gtfs/gtfs.zip"
         },
         {
-            "name": "Marin_Airporter",
+            "name": "Marin-Airporter",
             "type": "url",
             "spec": "gtfs-rt",
             "url": "https://www.modeshift.app/api/v1/650b2f0d-9530-491a-a270-7581cec1d45f/transport/gtfsrt/tripupdates.pb"
         },
         {
-            "name": "Marin_Airporter",
+            "name": "Marin-Airporter",
             "type": "url",
             "spec": "gtfs-rt",
             "url": "https://www.modeshift.app/api/v1/650b2f0d-9530-491a-a270-7581cec1d45f/transport/gtfsrt/alerts.pb"
