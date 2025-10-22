@@ -658,7 +658,9 @@
             "url": "https://kasmar00.github.io/gtfs-warsaw-custom/feeds/warsaw-ferries/latest.zip",
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
-            }
+            },
+            "skip": true,
+            "skip-reason": "Outdated feed"
         },
         {
             "name": "Ząbki",
@@ -676,7 +678,9 @@
             "url": "https://kasmar00.github.io/gtfs-warsaw-custom/feeds/minsk-maz/latest.zip",
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
-            }
+            },
+            "skip": true,
+            "skip-reason": "Outdated feed"
         },
         {
             "name": "Gorzów-Wielkopolski",
@@ -850,6 +854,7 @@
             "type": "http",
             "spec": "gtfs",
             "url": "https://files.girlc.at/gtfs/suchowola.zip",
+            "fix": true,
             "license": {
                 "spdx-identifier": "CC0-1.0"
             }
@@ -1041,6 +1046,7 @@
             "type": "http",
             "spec": "gtfs",
             "url": "https://files.girlc.at/gtfs/jeziorany.zip",
+            "fix": true,
             "license": {
                 "spdx-identifier": "CC0-1.0"
             }
