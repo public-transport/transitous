@@ -73,6 +73,23 @@
             "name": "NCSU-Wolfline",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-dq259-ncsu~wolfline~nc~us~rt"
+        },
+        {
+            "name": "TRT",
+            "type": "http",
+            "url": "https://www.modeshift.app/api/v1/7f67c860-f17a-4319-8978-449368c22105/transport/gtfs/gtfs.zip"
+        },
+        {
+            "name": "TRT",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://www.modeshift.app/api/v1/7f67c860-f17a-4319-8978-449368c22105/transport/gtfsrt/tripupdates.pb"
+        },
+        {
+            "name": "TRT",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://www.modeshift.app/api/v1/7f67c860-f17a-4319-8978-449368c22105/transport/gtfsrt/alerts.pb"
         }
     ]
 }

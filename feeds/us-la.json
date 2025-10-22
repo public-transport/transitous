@@ -1,0 +1,28 @@
+{
+    "maintainers": [
+        {
+            "name": "Nedžad Beus",
+            "github": "vekejsn"
+        }
+    ],
+    "sources": [
+        {
+            "name": "MTS",
+            "type": "http",
+            "url": "https://www.modeshift.app/api/v1/82597f38-de86-4760-a4d6-81b3b8aafcca/transport/gtfs/gtfs.zip",
+            "fix": true
+        },
+        {
+            "name": "MTS",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://www.modeshift.app/api/v1/82597f38-de86-4760-a4d6-81b3b8aafcca/transport/gtfsrt/tripupdates.pb"
+        },
+        {
+            "name": "MTS",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://www.modeshift.app/api/v1/82597f38-de86-4760-a4d6-81b3b8aafcca/transport/gtfsrt/alerts.pb"
+        }
+    ]
+}

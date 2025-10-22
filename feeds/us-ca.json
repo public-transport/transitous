@@ -7,6 +7,10 @@
         {
             "name": "Kyler Chin",
             "github": "kylerchin"
+        },
+        {
+            "name": "Nedžad Beus",
+            "github": "vekejsn"
         }
     ],
     "sources": [
@@ -205,6 +209,41 @@
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-9mu-orangecountytransportationauthority",
             "url-override": "https://github.com/catenarytransit/agency-gtfs-mirror/raw/refs/heads/main/octa_gtfs.zip"
+        },
+        {
+            "name": "Marin-Airporter",
+            "type": "http",
+            "url": "https://www.modeshift.app/api/v1/650b2f0d-9530-491a-a270-7581cec1d45f/transport/gtfs/gtfs.zip"
+        },
+        {
+            "name": "Marin-Airporter",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://www.modeshift.app/api/v1/650b2f0d-9530-491a-a270-7581cec1d45f/transport/gtfsrt/tripupdates.pb"
+        },
+        {
+            "name": "Marin-Airporter",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://www.modeshift.app/api/v1/650b2f0d-9530-491a-a270-7581cec1d45f/transport/gtfsrt/alerts.pb"
+        },
+        {
+            "name": "SMRT",
+            "type": "http",
+            "url": "https://www.modeshift.app/api/v1/df7541b2-ba8b-483e-b767-9de5043a54f7/transport/gtfs/gtfs.zip",
+            "fix": true
+        },
+        {
+            "name": "SMRT",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://www.modeshift.app/api/v1/df7541b2-ba8b-483e-b767-9de5043a54f7/transport/gtfsrt/tripupdates.pb"
+        },
+        {
+            "name": "SMRT",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://www.modeshift.app/api/v1/df7541b2-ba8b-483e-b767-9de5043a54f7/transport/gtfsrt/alerts.pb"
         }
     ]
 }
