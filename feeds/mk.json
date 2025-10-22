@@ -18,7 +18,8 @@
         {
             "name": "jsp",
             "type": "http",
-            "url": "https://www.modeshift.app/api/v1/9814b106-2afe-47c8-919b-bdec6a5e521e/transport/gtfs/gtfs.zip"
+            "url": "https://www.modeshift.app/api/v1/9814b106-2afe-47c8-919b-bdec6a5e521e/transport/gtfs/gtfs.zip",
+            "fix": true
         },
         {
             "name": "jsp",
