@@ -57,6 +57,12 @@
             "url-override": "https://gitlab.com/api/v4/projects/vekejsn%2Fgtfs-generators/packages/generic/pula-gtfs/latest/pulapromet_gtfs.zip"
         },
         {
+            "name": "pulapromet",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://rt-misc.ojpp-http.pirnet.si/pulapromet/trip-updates.pb"
+        },
+        {
             "name": "osijekgpp",
             "type": "http",
             "url": "https://b2b.promet-info.hr/dc/b2b.gtfs.osijekgpp",
