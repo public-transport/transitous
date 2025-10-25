@@ -272,7 +272,7 @@
             "name": "PKS-Kalisz",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://pks.kalisz.pl/wp-content/uploads/2024/10/PKS_20240927.zip",
+            "url": "https://pks.kalisz.pl/wp-content/uploads/2025/07/PKS-20250528.zip",
             "license": {
                 "spdx-identifier": "CC0-1.0"
             }
@@ -284,7 +284,8 @@
             "url": "https://gtfs.kasznia.net/static/kalisz.zip",
             "license": {
                 "spdx-identifier": "CC0-1.0"
-            }
+            },
+            "fix": true
         },
         {
             "name": "Kalisz-LocalBuses",
@@ -296,7 +297,8 @@
             },
             "drop-agency-names": [
                 "PKS w Kaliszu Sp. z o.o."
-            ]
+            ],
+            "fix": true
         },
         {
             "name": "Koleje-Wielkopolskie",
