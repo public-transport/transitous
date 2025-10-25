@@ -134,7 +134,7 @@
             }
         },
         {
-            "name": "Transport-Victoria-metro-buses",
+            "name": "Transport-Victoria-myki-buses",
             "type": "http",
             "spec": "gtfs",
             "url": "https://gitlab.com/applecuckoo/gtfs-fixes/-/jobs/artifacts/main/raw/vic-gtfs.zip?job=victoria-mirror#4/google_transit.zip",
@@ -144,7 +144,19 @@
             "fix": true
         },
         {
-            "name": "Transport-Victoria-metro-buses",
+            "name": "Transport-Victoria-myki-buses",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.opendata.transport.vic.gov.au/opendata/public-transport/gtfs/realtime/v1/bus/vehicle-positions",
+            "license": {
+                "spdx_identifier": "CC-BY-4.0"
+            },
+            "headers": {
+                "KeyId": "ffb807b0-9a50-4123-b4d7-ce762f81d84b"
+            }
+        },
+        {
+            "name": "Transport-Victoria-myki-buses",
             "type": "url",
             "spec": "gtfs-rt",
             "url": "https://api.opendata.transport.vic.gov.au/opendata/public-transport/gtfs/realtime/v1/bus/trip-updates",
