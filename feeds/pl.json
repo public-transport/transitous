@@ -411,10 +411,34 @@
         },
         {
             "name": "PKS-Kalisz",
-            "type": "mobility-database",
-            "mdb-id": "mdb-2461",
-            "skip": true,
-            "skip-reason": "Outdated feed",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://pks.kalisz.pl/wp-content/uploads/2025/07/PKS-20250528.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "KLA-Kalisz",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://gtfs.kasznia.net/static/kalisz.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            },
+            "fix": true
+        },
+        {
+            "name": "Kalisz-LocalBuses",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://gtfs.kasznia.net/static/kalisz-others.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            },
+            "drop-agency-names": [
+                "PKS w Kaliszu Sp. z o.o."
+            ],
             "fix": true
         },
         {
@@ -763,6 +787,9 @@
             "spec": "gtfs",
             "url": "https://zimslupsk.pl/otwarte-dane.html",
             "function": "data_slupsk_latest_resource",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            },
             "fix": true
         },
         {
