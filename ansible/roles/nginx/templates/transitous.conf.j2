@@ -74,7 +74,7 @@ server {
     }
 
     # Rate limit plan API
-    location ~ ^/api/(v1|v2|v3|v4|experimental)/(plan|one-to-all) {
+    location ~ ^/api/(v1|v2|v3|v4|v5|v6|experimental)/(plan|one-to-all) {
         proxy_pass http://{{ item.vhost }}-backend$uri?$args;
 
         limit_req zone=api_plan burst=10;
@@ -86,7 +86,7 @@ server {
     }
 
     # Routes that are basically free for us don't need a rate limit
-    location ~ ^/api/(v1|v2|v3|v4|experimental)/(geocode|stoptimes|map/stops|trip) {
+    location ~ ^/api/(v1|v2|v3|v4|v5|v6|experimental)/(geocode|stoptimes|map/stops|trip) {
         proxy_pass http://{{ item.vhost }}-backend$uri?$args;
 
         limit_req zone=api_harmless burst=10;
