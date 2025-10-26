@@ -1,0 +1,76 @@
+# SPDX-FileCopyrightText: 2024 Jonah Brüchert <jbb@kaidan.im>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+#
+
+proxy_cache_path /var/cache/nginx/feed-proxy max_size=10g keys_zone=feed-proxy:1m inactive=1h;
+
+
+server {
+    listen 80;
+    server_name {{ feed_proxy_host }};
+
+    # For certbot
+    location ^~ /.well-known/acme-challenge/ {
+        root /var/www/html/;
+    }
+
+    return 301 https://$host$request_uri;
+}
+
+server {
+    listen 443 http2 ssl;
+    listen [::]:443 http2 ssl;
+
+    # Override TLS settings from included file
+    ssl_protocols TLSv1.2 TLSv1.3;
+
+    ssl_ecdh_curve X25519:prime256v1:secp384r1;
+    ssl_ciphers ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:DHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES256-GCM-SHA384:DHE-RSA-CHACHA20-POLY1305;
+    ssl_prefer_server_ciphers off;
+
+    # see also ssl_session_ticket_key alternative to stateful session cache
+    ssl_session_timeout 1d;
+    ssl_session_cache shared:MozSSL:10m;  # about 40000 sessions
+
+    # OCSP stapling
+    ssl_stapling on;
+    ssl_stapling_verify on;
+
+    server_name {{ feed_proxy_host }};
+
+    ssl_certificate /etc/letsencrypt/live/{{feed_proxy_host}}/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/{{feed_proxy_host}}/privkey.pem;
+
+    charset UTF-8;
+
+    # For certbot
+    location ^~ /.well-known/acme-challenge/ {
+        root /var/www/html/;
+    }
+
+    proxy_ssl_server_name on;
+    proxy_pass_header Server;
+    proxy_set_header User-Agent {{ feed_proxy_host }};
+
+    proxy_cache            feed-proxy;
+    proxy_cache_valid      200 302 40s;
+    proxy_cache_valid      404 1s;
+    proxy_cache_use_stale  error timeout invalid_header updating
+                            http_500 http_502 http_503 http_504;
+
+    limit_req zone=api burst=10;
+
+    {% for item in feed_vars | dict2items %}   
+        location /feed/{{item.key}} {
+            proxy_pass {{ item.value.url }};
+
+            {% if "headers" in item.value -%}
+                {% for header in item.value.headers | dict2items -%}
+                    proxy_set_header {{ header.key }} "{{ header.value }}";
+                {% endfor %}
+            {% endif %}
+            
+        }
+    {% endfor %}
+}
