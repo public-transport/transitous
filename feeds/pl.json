@@ -702,9 +702,7 @@
             "url": "https://kasmar00.github.io/gtfs-warsaw-custom/feeds/minsk-maz/latest.zip",
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
-            },
-            "skip": true,
-            "skip-reason": "Outdated feed"
+            }
         },
         {
             "name": "Gorzów-Wielkopolski",
