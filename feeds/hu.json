@@ -113,6 +113,16 @@
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u2mw-weekendbus",
             "fix": true
+        },
+        {
+            "name": "Kecskemét",
+            "type": "http",
+            "url": "https://timetable.keko.hu/Kecskemet_GTFS.zip",
+            "http-options": {
+                "headers": {
+                    "Authorization": "Basic Z3lvbmd5b3NpbWF0ZTFAZ21haWwuY29tOkh4NG1MTUY1ZTl2Q0pjUm0="
+                }
+            }
         }
     ]
 }
