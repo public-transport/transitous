@@ -25,6 +25,8 @@
             "http-options": {
                 "fetch-interval-days": 2
             },
+            "managed-by-script": true,
+            "x-mvo-id": "80-2025",
             "spec": "gtfs-flex"
         },
         {
@@ -38,6 +40,8 @@
             "http-options": {
                 "fetch-interval-days": 2
             },
+            "managed-by-script": true,
+            "x-mvo-id": "80-2026",
             "spec": "gtfs-flex"
         },
         {
@@ -51,8 +55,10 @@
             "http-options": {
                 "fetch-interval-days": 2
             },
-            "script": "at.lua",
-            "spec": "gtfs-flex"
+            "managed-by-script": true,
+            "x-mvo-id": "79-2025",
+            "spec": "gtfs-flex",
+            "script": "at.lua"
         },
         {
             "name": "PTA-Styria-Flex-2026",
@@ -65,8 +71,10 @@
             "http-options": {
                 "fetch-interval-days": 2
             },
-            "script": "at.lua",
-            "spec": "gtfs-flex"
+            "managed-by-script": true,
+            "x-mvo-id": "79-2026",
+            "spec": "gtfs-flex",
+            "script": "at.lua"
         },
         {
             "name": "PTA-Carinthia-Flex-2025",
@@ -79,6 +87,8 @@
             "http-options": {
                 "fetch-interval-days": 2
             },
+            "managed-by-script": true,
+            "x-mvo-id": "78-2025",
             "spec": "gtfs-flex"
         },
         {
@@ -92,6 +102,8 @@
             "http-options": {
                 "fetch-interval-days": 2
             },
+            "managed-by-script": true,
+            "x-mvo-id": "78-2026",
             "spec": "gtfs-flex"
         },
         {
@@ -105,8 +117,10 @@
             "http-options": {
                 "fetch-interval-days": 2
             },
-            "script": "at.lua",
-            "spec": "gtfs-flex"
+            "managed-by-script": true,
+            "x-mvo-id": "77-2025",
+            "spec": "gtfs-flex",
+            "script": "at.lua"
         },
         {
             "name": "PTA-Upper-Austria-Flex-2026",
@@ -119,8 +133,10 @@
             "http-options": {
                 "fetch-interval-days": 2
             },
-            "script": "at.lua",
-            "spec": "gtfs-flex"
+            "managed-by-script": true,
+            "x-mvo-id": "77-2026",
+            "spec": "gtfs-flex",
+            "script": "at.lua"
         },
         {
             "name": "PTA-Vorarlberg-Flex-2025",
@@ -133,6 +149,8 @@
             "http-options": {
                 "fetch-interval-days": 2
             },
+            "managed-by-script": true,
+            "x-mvo-id": "75-2025",
             "spec": "gtfs-flex"
         },
         {
@@ -146,6 +164,8 @@
             "http-options": {
                 "fetch-interval-days": 2
             },
+            "managed-by-script": true,
+            "x-mvo-id": "75-2026",
             "spec": "gtfs-flex"
         },
         {
@@ -159,8 +179,10 @@
             "http-options": {
                 "fetch-interval-days": 2
             },
-            "script": "at.lua",
-            "spec": "gtfs-flex"
+            "managed-by-script": true,
+            "x-mvo-id": "73-2025",
+            "spec": "gtfs-flex",
+            "script": "at.lua"
         },
         {
             "name": "PTA-Salzburg-Flex-2026",
@@ -173,8 +195,10 @@
             "http-options": {
                 "fetch-interval-days": 2
             },
-            "script": "at.lua",
-            "spec": "gtfs-flex"
+            "managed-by-script": true,
+            "x-mvo-id": "73-2026",
+            "spec": "gtfs-flex",
+            "script": "at.lua"
         },
         {
             "name": "Linz-AG-2025",
@@ -187,7 +211,9 @@
             "function": "mvo_keycloak_token",
             "http-options": {
                 "fetch-interval-days": 2
-            }
+            },
+            "managed-by-script": true,
+            "x-mvo-id": "69-2025"
         },
         {
             "name": "Linz-AG-2026",
@@ -200,7 +226,9 @@
             "function": "mvo_keycloak_token",
             "http-options": {
                 "fetch-interval-days": 2
-            }
+            },
+            "managed-by-script": true,
+            "x-mvo-id": "69-2026"
         },
         {
             "name": "Railway-Current-Reference-Data-2025",
@@ -214,6 +242,8 @@
             "http-options": {
                 "fetch-interval-days": 2
             },
+            "managed-by-script": true,
+            "x-mvo-id": "66-2025",
             "display-name-options": {
                 "copy-trip-names-matching": "((IC)|(ECB)|(EC)|(RJ)|(RJX)|(D)|(NJ)|(EN)|(CJX)|(ICE)|(IR)|(REX)|(R)|(ER)|(ATB)|(WB)) \\d+",
                 "keep-route-names-matching": "((RE)|(RB)|S) ?\\d+"
@@ -232,6 +262,8 @@
             "http-options": {
                 "fetch-interval-days": 2
             },
+            "managed-by-script": true,
+            "x-mvo-id": "66-2026",
             "display-name-options": {
                 "copy-trip-names-matching": "((IC)|(ECB)|(EC)|(RJ)|(RJX)|(D)|(NJ)|(EN)|(CJX)|(ICE)|(IR)|(REX)|(R)|(ER)|(ATB)|(WB)) \\d+",
                 "keep-route-names-matching": "((RE)|(RB)|S) ?\\d+"
@@ -249,7 +281,9 @@
             "function": "mvo_keycloak_token",
             "http-options": {
                 "fetch-interval-days": 2
-            }
+            },
+            "managed-by-script": true,
+            "x-mvo-id": "57-2025"
         },
         {
             "name": "PTA-Tyrol-2026",
@@ -262,7 +296,9 @@
             "function": "mvo_keycloak_token",
             "http-options": {
                 "fetch-interval-days": 2
-            }
+            },
+            "managed-by-script": true,
+            "x-mvo-id": "57-2026"
         }
     ]
 }
