@@ -287,7 +287,8 @@
             "url": "https://github.com/TransportGZM-GTFS-mirror/TransportGZM-GTFS-normal/releases/latest/download/TransportGZM-GTFS.zip",
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
-            }
+            },
+            "fix": true
         },
         {
             "name": "TransportGZM",
@@ -362,7 +363,8 @@
         {
             "name": "ZTP-Kraków-M",
             "type": "mobility-database",
-            "mdb-id": "mdb-2598"
+            "mdb-id": "mdb-2598",
+            "fix": true
         },
         {
             "name": "ZTP-Kraków-M",
@@ -712,7 +714,8 @@
             "function": "data_mzk_gorzow_latest_resource",
             "license": {
                 "spdx_identifier": "CC0-1.0"
-            }
+            },
+            "extend-calendar": true
         },
         {
             "name": "PKS-Poznań",
@@ -1054,7 +1057,8 @@
             "url": "https://files.girlc.at/gtfs/tczew.zip",
             "license": {
                 "spdx-identifier": "CC0-1.0"
-            }
+            },
+            "fix": true
         },
         {
             "name": "Plusbus",
