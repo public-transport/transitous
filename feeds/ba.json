@@ -26,6 +26,12 @@
             "fix": true
         },
         {
+            "name": "Centrotrans",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://rt-misc.ojpp-http.pirnet.si/centrotrans/trip-updates.pb"
+        },
+        {
             "name": "ZFBiH",
             "type": "http",
             "url": "https://owncloud.cesnet.cz/index.php/s/yWJhi9wjUIc3IC2/download"
