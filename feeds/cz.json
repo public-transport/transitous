@@ -44,12 +44,24 @@
             "name": "PID",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://api.golemio.cz/v2/vehiclepositions/gtfsrt/trip_updates.pb"
+            "url": "https://api.golemio.cz/v2/vehiclepositions/gtfsrt/pid_feed.pb"
+        },
+        {
+            "name": "PID",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.golemio.cz/v2/vehiclepositions/gtfsrt/alerts.pb"
         },
         {
             "name": "IDS-JMK",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u2e-idsjmk"
+        },
+        {
+            "name": "IDS-JMK",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://content.idsjmk.cz/kestazeni/gtfsReal.dat"
         },
         {
             "name": "IDS-JMK",
