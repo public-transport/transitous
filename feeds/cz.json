@@ -11,6 +11,10 @@
         {
             "name": "Petr Novák",
             "github": "hoermalmeister"
+        },
+        {
+            "name": "Nedžad Beus",
+            "github": "vekejsn"
         }
     ],
     "sources": [
@@ -40,7 +44,13 @@
             "name": "PID",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://api.golemio.cz/v2/vehiclepositions/gtfsrt/trip_updates.pb"
+            "url": "https://api.golemio.cz/v2/vehiclepositions/gtfsrt/pid_feed.pb"
+        },
+        {
+            "name": "PID",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.golemio.cz/v2/vehiclepositions/gtfsrt/alerts.pb"
         },
         {
             "name": "IDS-JMK",
@@ -52,6 +62,12 @@
             "type": "url",
             "spec": "gtfs-rt",
             "url": "https://content.idsjmk.cz/kestazeni/gtfsReal.dat"
+        },
+        {
+            "name": "IDS-JMK",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://rt.gtfs.baguette.pirnet.si/gtfs-rt/idsjmk/trip_updates.pb"
         },
         {
             "name": "DPMLJ",
