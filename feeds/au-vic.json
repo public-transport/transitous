@@ -101,7 +101,7 @@
             "name": "Transport-Victoria-metro-trams",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://api.opendata.transport.vic.gov.au/opendata/public-transport/gtfs/realtime/v1/trams/service-alerts",
+            "url": "https://api.opendata.transport.vic.gov.au/opendata/public-transport/gtfs/realtime/v1/tram/service-alerts",
             "license": {
                 "spdx_identifier": "CC-BY-4.0"
             },
