@@ -97,6 +97,15 @@
             }
         },
         {
+            "name": "VRN",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "http://www.vrn.de/service/entwickler/gtfs-realtime",
+            "license": {
+                "spdx-identifier": "DL-BY-DE-2.0"
+            }   
+        },
+        {
             "name": "AVV-Aachen",
             "type": "http",
             "url": "https://opendata.avv.de/current_GTFS/AVV_GTFS_Masten_ohne_SPNV_GlobaleID_oFremd.zip",
