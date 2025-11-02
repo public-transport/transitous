@@ -1117,6 +1117,24 @@
             }
         },
         {
+            "name": "Leszno",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://cdn.zbiorkom.live/gtfs/leszno.zip",
+            "license": {
+                "spdx-identifier": "MIT"
+            }
+        },
+        {
+            "name": "Leszno",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://cdn.zbiorkom.live/gtfs-rt/leszno.pb",
+            "license": {
+                "spdx-identifier": "MIT"
+            }
+        },
+        {
             "name": "Chełmski-Rower",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-chełmski~rower~gbfs"
