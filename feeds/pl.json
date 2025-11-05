@@ -125,6 +125,15 @@
             "fix": true
         },
         {
+            "name": "Kielce",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://cdn.zbiorkom.live/gtfs-rt/kielce.pb",
+            "license": {
+                "spdx-identifier": "MIT"
+            }
+        },
+        {
             "name": "Radom",
             "type": "http",
             "spec": "gtfs",
@@ -713,9 +722,18 @@
             "url": "https://bip.mzk-gorzow.com.pl/gtfs.html",
             "function": "data_mzk_gorzow_latest_resource",
             "license": {
-                "spdx_identifier": "CC0-1.0"
+                "spdx-identifier": "CC0-1.0"
             },
             "extend-calendar": true
+        },
+        {
+            "name": "Gorzów-Wielkopolski",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://cdn.zbiorkom.live/gtfs-rt/gorzow.pb",
+            "license":{
+                "spdx-identifier": "MIT"
+            }
         },
         {
             "name": "PKS-Poznań",
