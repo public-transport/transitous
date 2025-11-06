@@ -120,9 +120,11 @@
         },
         {
             "name": "Kielce",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u3n9-kielce",
-            "fix": true
+            "type": "http",
+            "url": "https://cdn.zbiorkom.live/gtfs/kielce.zip",
+            "license":{
+                "spdx-identifier": "MIT"
+            }
         },
         {
             "name": "Kielce",
@@ -719,12 +721,10 @@
             "name": "Gorzów-Wielkopolski",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://bip.mzk-gorzow.com.pl/gtfs.html",
-            "function": "data_mzk_gorzow_latest_resource",
+            "url": "https://cdn.zbiorkom.live/gtfs/gorzow.zip",
             "license": {
-                "spdx-identifier": "CC0-1.0"
-            },
-            "extend-calendar": true
+                "spdx-identifier": "MIT"
+            }
         },
         {
             "name": "Gorzów-Wielkopolski",
@@ -1166,6 +1166,16 @@
             "type": "http",
             "spec": "gtfs",
             "url": "https://files.girlc.at/gtfs/zywiec.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "Zielona-Góra",
+            "type": "http",
+            "spec":"gtfs",
+            "url": "https://www.mzk.zgora.pl/dla-deweloperow",
+            "function": "data_zielona_gora_latest_resource",
             "license": {
                 "spdx-identifier": "CC0-1.0"
             }
