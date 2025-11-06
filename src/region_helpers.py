@@ -46,6 +46,7 @@ def delhi_gov_in_csrf(source: HttpSource) -> HttpSource:
     source.options.request_body = f"csrfmiddlewaretoken={csrftoken}"
     return source
 
+
 def data_zielona_gora_latest_resource(source: HttpSource) -> HttpSource:
     from bs4 import BeautifulSoup
 
