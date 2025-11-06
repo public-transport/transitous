@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: 2025 Traines <git@traines.eu>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
 listen {
   port    = 4040
   address = "10.11.0.1"
