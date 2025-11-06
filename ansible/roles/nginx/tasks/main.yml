@@ -89,3 +89,18 @@
   systemd:
     name: nginx.service
     state: started
+
+- name: Install nginx log exporter config
+  copy:
+    src: prometheus-nginxlog-exporter.hcl
+    dest: /etc/prometheus-nginxlog-exporter.hcl
+
+- name: Install nginx log exporter
+  apt:
+    deb: https://github.com/martin-helmich/prometheus-nginxlog-exporter/releases/download/v1.11.0/prometheus-nginxlog-exporter_1.11.0_linux_arm64.deb
+
+- name: Make sure nginx log exporter is running
+  systemd:
+    name: prometheus-nginxlog-exporter
+    state: started
+    enabled: true
