@@ -280,6 +280,12 @@
             "transitland-atlas-id": "f-u3k4-poznan~rt"
         },
         {
+            "name": "Poznań",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://bimba.apiote.xyz/gtfs-rt/pl-poznan_alerts.pb"
+        },
+        {
             "name": "Szczecin",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u36r-zditmszczecin"
