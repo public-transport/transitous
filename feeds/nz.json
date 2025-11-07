@@ -126,6 +126,16 @@
             "name": "Horizons-Regional-Council",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-rck-horizons~regional~council"
+        },
+        {
+            "name": "Taranaki-Regional-Council",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-trc~nz"
+        },
+        {
+            "name": "eBus",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-nsn~nz"
         }
     ]
 }
