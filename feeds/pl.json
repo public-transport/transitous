@@ -124,7 +124,8 @@
             "url": "https://cdn.zbiorkom.live/gtfs/kielce.zip",
             "license":{
                 "spdx-identifier": "MIT"
-            }
+            },
+            "fix": true
         },
         {
             "name": "Kielce",
@@ -457,7 +458,8 @@
         {
             "name": "Koleje-Wielkopolskie",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u3k-koleje~wielkopolskie"
+            "transitland-atlas-id": "f-u3k-koleje~wielkopolskie",
+            "script": "pl-Koleje-Wielkopolskie.lua"
         },
         {
             "name": "Koleje-Wielkopolskie",
