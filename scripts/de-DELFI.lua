@@ -1,6 +1,8 @@
 -- SPDX-FileCopyrightText: Felix Gündling <felixguendling@gmail.com>
 -- SPDX-License-Identifier: AGPL-3.0-or-later
 
+local colors = require 'scripts.de-delfi-colors'
+
 function is_number(str)
   return not (str == "" or str:find("%D"))
 end
@@ -50,4 +52,16 @@ function process_agency(agency)
   if agency:get_url() == "https://www.delfi.de" then
     agency:set_url("")
   end
+end
+
+function process_route(route)
+    local agency_name = route:get_agency():get_name()
+    local route_name = route:get_short_name()
+	local original_route_color = route:get_color()
+	local original_route_text_color = route:get_text_color()
+    if (original_route_color == 0 or original_route_text_color == 0) and colors[agency_name] and colors[agency_name][route_name] then
+        local colors = colors[agency_name][route_name]
+        route:set_color(colors.color)
+        route:set_text_color(colors.text_color)
+    end
 end
