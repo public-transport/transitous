@@ -11,6 +11,10 @@
         {
             "name": "Grzegorz M",
             "github": "grzesjam"
+        },
+        {
+            "name": "Alexander Dubis",
+            "github": "gtfscc"
         }
     ],
     "sources": [
@@ -1186,6 +1190,15 @@
             "function": "data_zielona_gora_latest_resource",
             "license": {
                 "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "Zakroczym",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://raw.githubusercontent.com/gtfscc/zakroczym/main/gtfs.zip",
+            "license": {
+                "spdx-identifier": "MIT"
             }
         },
         {
