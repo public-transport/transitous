@@ -80,6 +80,7 @@ def parse_colors(csv_text: str) -> Dict[str, Dict[str, Dict[str, Any]]]:
     for row in reader:
         agency = (row.get(key_agency) or "").strip()
         line_name = (row.get(key_line) or "").strip()
+        line_name = line_name.replace(" ", "")
         background = normalize_hex(row.get(key_bg) or "")
         text = normalize_hex(row.get(key_text) or "")
         border = normalize_hex(row.get(key_border) or "")
