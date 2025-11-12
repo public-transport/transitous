@@ -1207,16 +1207,6 @@
             "transitland-atlas-id": "f-chełmski~rower~gbfs"
         },
         {
-            "name": "CRM-Częstochowa",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-częstochowski~rower~miejski~poland~częstochowa~gbfs"
-        },
-        {
-            "name": "GRM-Grodzisk",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-grm~grodzisk~poland~mazowiecki~gbfs"
-        },
-        {
             "name": "Jaskółka-Jastrzębie-Zdrój",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-jaskółka~jastrzębie~zdrój~gbfs"
@@ -1235,11 +1225,6 @@
             "name": "ŁRP-Łódź",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-łódzki~rower~publiczny~łódź~pl~gbfs"
-        },
-        {
-            "name": "Łoker-Łomża",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-łoker~łomża~gbfs"
         },
         {
             "name": "Metrorower",
