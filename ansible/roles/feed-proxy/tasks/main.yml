@@ -1,0 +1,80 @@
+# SPDX-FileCopyrightText: 2025 Traines <git@traines.eu>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+
+#
+#- name: Install nginx
+#  apt:
+#    update_cache: true
+#    name:
+#     - nginx
+#
+#- name: Create nginx cache directory
+#  file:
+#    path: /var/cache/nginx
+#    state: directory
+#
+#- name: Install nginx config
+#  copy:
+#    src: nginx.conf
+#    dest: /etc/nginx/nginx.conf
+#
+#- name: Install nginx logrotate config
+#  copy:
+#    src: logrotate-nginx
+#    dest: /etc/logrotate.d/nginx
+#
+#- name: Install robots.txt
+#  copy:
+#    src: robots.txt
+#    dest: /var/www/html/robots.txt
+#
+
+- name: Generate feed proxy vars
+  command: python3 src/generate-motis-config.py --feed-proxy
+  args:
+    chdir: "{{playbook_dir}}/../"
+
+- name: Include feed proxy vars
+  ansible.builtin.include_vars:
+    file: /tmp/feed-proxy-vars.yml
+    name: feed_vars
+
+- name: Include encrypted feed proxy vars
+  ansible.builtin.include_vars:
+    file: feed-secrets.yml
+    name: feed_vars
+    hash_behaviour: merge
+
+- name: Install proxy config
+  template:
+    src: "feed-proxy.conf.j2"
+    dest: "/tmp/transitous-feed-proxy.conf"
+
+#- name: Install proxy config
+#  template:
+#    src: "feed-proxy.conf.j2"
+#    dest: "/etc/nginx/sites-available/transitous-feed-proxy.conf"
+#
+#- name: Disable default site configuration
+#  file:
+#    path: /etc/nginx/sites-enabled/default
+#    state: absent
+#
+#- name: Enable nginx sites
+#  file:
+#    src: "/etc/nginx/sites-available/transitous-feed-proxy.conf"
+#    dest: "/etc/nginx/sites-enabled/transitous-feed-proxy.conf"
+#    state: link
+#
+#- name: Reload nginx
+#  systemd:
+#    name: nginx.service
+#    state: reloaded
+#
+#- name: Make sure nginx is running
+#  systemd:
+#    name: nginx.service
+#    state: started
+#
