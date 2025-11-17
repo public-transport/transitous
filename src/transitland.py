@@ -25,8 +25,11 @@ class Atlas:
 
         return atlas
 
-    def source_by_id(self, source: TransitlandSource) -> Optional[Union[UrlSource, HttpSource]]:
-        result: Optional[Union[UrlSource, HttpSource]] = None
+    def sources_by_id(self, source: TransitlandSource) -> Optional[list[Union[UrlSource, HttpSource]]]:
+        results: list[Union[UrlSource, HttpSource]] = []
+        if not source.transitland_atlas_id in self.by_id:
+            return None
+
         feed = self.by_id[source.transitland_atlas_id]
 
         if "static_current" in feed["urls"]:
@@ -35,7 +38,10 @@ class Atlas:
             result.cache_url = "https://gtfsproxy.fale.io/" + \
                 source.transitland_atlas_id
             result.spec = "gtfs"
-        elif "realtime_trip_updates" in feed["urls"]:
+
+            results.append(result)
+
+        if "realtime_trip_updates" in feed["urls"]:
             result = UrlSource()
             result.name = source.name
             result.url = feed["urls"]["realtime_trip_updates"]
@@ -46,7 +52,9 @@ class Atlas:
             if source.url_override:
                 result.url = source.url_override
 
-        elif "realtime_vehicle_positions" in feed["urls"]:
+            results.append(result)
+
+        if "realtime_vehicle_positions" in feed["urls"]:
             result = UrlSource()
             result.name = source.name
             result.url = feed["urls"]["realtime_vehicle_positions"]
@@ -57,7 +65,9 @@ class Atlas:
             if source.url_override:
                 result.url = source.url_override
 
-        elif "realtime_alerts" in feed["urls"]:
+            results.append(result)
+
+        if "realtime_alerts" in feed["urls"]:
             result = UrlSource()
             result.name = source.name
             result.url = feed["urls"]["realtime_alerts"]
@@ -68,7 +78,9 @@ class Atlas:
             if source.url_override:
                 result.url = source.url_override
 
-        elif "gbfs_auto_discovery" in feed["urls"]:
+            results.append(result)
+
+        if "gbfs_auto_discovery" in feed["urls"]:
             result = UrlSource()
             result.name = source.name
             result.url = feed["urls"]["gbfs_auto_discovery"]
@@ -78,7 +90,10 @@ class Atlas:
 
             if source.url_override:
                 result.url = source.url_override
-        else:
+
+            results.append(result)
+
+        if len(results) == 0:
             eprint("Warning: Found Transitland source that we can't handle:", source.transitland_atlas_id)
             return None
 
@@ -92,11 +107,12 @@ class Atlas:
                     header_name = feed["authorization"]["param_name"]
 
                     if not source.url_override and source.api_key:
-                        match result:
-                            case HttpSource():
-                                result.options.headers[header_name] = source.api_key
-                            case UrlSource():
-                                result.headers[header_name] = source.api_key
+                        for result in results:
+                            match result:
+                                case HttpSource():
+                                    result.options.headers[header_name] = source.api_key
+                                case UrlSource():
+                                    result.headers[header_name] = source.api_key
 
                 case "basic_auth":
                     if not source.api_key and not source.url_override:
@@ -105,11 +121,12 @@ class Atlas:
                         return None
 
                     if not source.url_override and source.api_key:
-                        match result:
-                            case HttpSource():
-                                result.options.headers["Authorization"] = f"Basic {source.api_key}"
-                            case UrlSource():
-                                result.headers["Authorization"] =  f"Basic {source.api_key}"
+                        for result in results:
+                            match result:
+                                case HttpSource():
+                                    result.options.headers["Authorization"] = f"Basic {source.api_key}"
+                                case UrlSource():
+                                    result.headers["Authorization"] =  f"Basic {source.api_key}"
 
                 case "query_param":
                     if source.url_override is None:
@@ -129,12 +146,13 @@ class Atlas:
                     return None
 
 
-        result.license = License()
+        for result in results:
+            result.license = License()
 
-        if "license" in feed:
-            if "spdx_identifier" in feed["license"]:
-                result.license.spdx_identifier = feed["license"]["spdx_identifier"]
-            if "url" in feed["license"]:
-                result.license.url = feed["license"]["url"]
+            if "license" in feed:
+                if "spdx_identifier" in feed["license"]:
+                    result.license.spdx_identifier = feed["license"]["spdx_identifier"]
+                if "url" in feed["license"]:
+                    result.license.url = feed["license"]["url"]
 
-        return result
+        return results
