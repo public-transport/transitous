@@ -527,7 +527,8 @@
             "url": "https://cdn.zbiorkom.live/gtfs-rt/lodz.pb",
             "license": {
                 "spdx-identifier": "MIT"
-            }
+            },
+            "fix": true
         },
         {
             "name": "Białystok",
