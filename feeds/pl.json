@@ -646,7 +646,7 @@
             "fix": true
         },
         {
-            "name": "Rybnik",
+            "name": "Jastrzębie-Zdrój",
             "type": "url",
             "spec": "gtfs-rt",
             "url": "https://cdn.zbiorkom.live/gtfs-rt/rybnik-jastrzebie.pb",
