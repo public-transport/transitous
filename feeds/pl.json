@@ -94,8 +94,12 @@
         },
         {
             "name": "Świnoujście",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u3d4-swinoujscie"
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://files.girlc.at/gtfs/swinoujscie.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
         },
         {
             "name": "Koleje-Dolnośląskie",
@@ -421,16 +425,38 @@
         },
         {
             "name": "Łódzka-Kolej-Aglomeracyjna",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u3j-lodzka~kolej~aglomeracyjna"
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://gtfs.kasznia.net/static/sanitized/lka_train.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
         },
         {
             "name": "Łódzka-Kolej-Aglomeracyjna",
             "type": "url",
             "spec": "gtfs-rt",
             "url": "https://gtfs.kasznia.net/rt/lka.pb",
-            "license":{
-                "spdx-identifier":"CC-BY-4.0"
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
+        },
+        {
+            "name": "Łódzka-Kolej-Aglomeracyjna-bus",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://gtfs.kasznia.net/static/sanitized/lka_bus.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
+        },
+        {
+            "name": "Łódzka-Kolej-Aglomeracyjna-bus",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://cdn.zbiorkom.live/gtfs-rt/lodz-lka.pb",
+            "license": {
+                "spdx-identifier": "MIT"
             }
         },
         {
@@ -501,7 +527,8 @@
             "url": "https://cdn.zbiorkom.live/gtfs-rt/lodz.pb",
             "license": {
                 "spdx-identifier": "MIT"
-            }
+            },
+            "fix": true
         },
         {
             "name": "Białystok",
@@ -563,6 +590,15 @@
             "fix": true
         },
         {
+            "name": "Sochaczew",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://cdn.zbiorkom.live/gtfs-rt/warsaw-sochaczew.pb",
+            "license": {
+                "spdx-identifier": "MIT"
+            }
+        },
+        {
             "name": "Otwock",
             "type": "http",
             "spec": "gtfs",
@@ -611,6 +647,15 @@
             "fix": true
         },
         {
+            "name": "Jastrzębie-Zdrój",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://cdn.zbiorkom.live/gtfs-rt/rybnik-jastrzebie.pb",
+            "license": {
+                "spdx-identifier": "MIT"
+            }
+        },
+        {
             "name": "Rybnik",
             "type": "http",
             "spec": "gtfs",
@@ -619,6 +664,15 @@
                 "spdx-identifier": "MIT"
             },
             "fix": true
+        },
+        {
+            "name": "Rybnik",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://cdn.zbiorkom.live/gtfs-rt/rybnik.pb",
+            "license": {
+                "spdx-identifier": "MIT"
+            }
         },
         {
             "name": "Kutno",
@@ -727,6 +781,15 @@
             "url": "https://kasmar00.github.io/gtfs-warsaw-custom/feeds/minsk-maz/latest.zip",
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
+            }
+        },
+        {
+            "name": "Mińsk-Mazowiecki",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://cdn.zbiorkom.live/gtfs-rt/warsaw-minsk.pb",
+            "license": {
+                "spdx-identifier": "MIT"
             }
         },
         {
@@ -1138,6 +1201,15 @@
             }
         },
         {
+            "name": "Radzymin",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://cdn.zbiorkom.live/gtfs-rt/warsaw-radzymin.pb",
+            "license": {
+                "spdx-identifier": "MIT"
+            }
+        },
+        {
             "name": "Łomianki",
             "type": "http",
             "spec": "gtfs",
@@ -1197,6 +1269,24 @@
             "type": "http",
             "spec": "gtfs",
             "url": "https://raw.githubusercontent.com/gtfscc/zakroczym/main/gtfs.zip",
+            "license": {
+                "spdx-identifier": "MIT"
+            }
+        },
+        {
+            "name": "Pruszków",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://cdn.zbiorkom.live/gtfs/warsaw-pruszkow.zip",
+            "license": {
+                "spdx-identifier": "MIT"
+            }
+        },
+        {
+            "name": "Pruszków",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://cdn.zbiorkom.live/gtfs-rt/warsaw-pruszkow.pb",
             "license": {
                 "spdx-identifier": "MIT"
             }
