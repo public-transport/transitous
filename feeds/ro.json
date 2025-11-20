@@ -216,6 +216,11 @@
             "name": "Zalău",
             "type": "mobility-database",
             "mdb-id": "mdb-2102"
+        },
+        {
+            "name": "Timișoara",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2868"
         }
     ]
 }
