@@ -32,6 +32,7 @@
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u0-ouibus",
             "url-override": "https://www.data.gouv.fr/api/1/datasets/r/fd54f81f-4389-4e73-be75-491133d011c3",
+            "script": "eu-blablacar-bus.lua",
             "fix": true
         },
         {
