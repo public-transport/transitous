@@ -37,7 +37,8 @@ if __name__ == "__main__":
 
     # Map of datasets to MOTIS Lua scripts to apply to them
     scripts = {
-        "eurostar-gtfs-plan-de-transport-et-temps-reel": "fr-eurostar.lua"
+        "eurostar-gtfs-plan-de-transport-et-temps-reel": "fr-eurostar.lua",
+        "arrets-itineraires-et-horaires-theoriques-des-reseaux-de-transport-des-membres-de-jvmalin": "fr-jvmalin.lua"
     }
 
     # List of datasets to remove
