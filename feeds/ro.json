@@ -15,12 +15,11 @@
             "type": "http",
             "url": "https://jbb.ghsq.de/gtfs/ro-railway.gtfs.zip",
             "license": {
-                "url": "https://github.com/vasile/data.gov.ro-gtfs-exporter"
+                "url": "https://data.gov.ro/base/images/logoinst/OGL-ROU-1.0.pdf"
             },
             "http-options": {
                 "fetch-interval-days": 7
-            },
-            "fix": true
+            }
         },
         {
             "name": "railway",
@@ -107,7 +106,7 @@
         {
             "name": "Dej-Velo-City",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-dej~velo~city~gbfs"        
+            "transitland-atlas-id": "f-dej~velo~city~gbfs"
         },
         {
             "name": "Hunedoara-public-bike-system",
