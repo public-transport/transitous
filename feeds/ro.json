@@ -19,8 +19,7 @@
             },
             "http-options": {
                 "fetch-interval-days": 7
-            },
-            "fix": true
+            }
         },
         {
             "name": "railway",
