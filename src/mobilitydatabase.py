@@ -41,6 +41,13 @@ class Database:
 
         return db
 
+    def redirect_by_id(self, mdb_id: str) -> Optional[str]:
+        row = self.by_id.get(mdb_id)
+        if not row:
+            return None
+
+        return row.get("redirect.id")
+
     def source_by_id(self, source: MobilityDatabaseSource) -> Optional[Source]:
         result: Optional[Source] = None
         feed = self.by_id.get(source.mdb_id)
