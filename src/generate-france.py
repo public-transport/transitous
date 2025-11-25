@@ -197,6 +197,8 @@ if __name__ == "__main__":
                     "url": resource["original_url"],
                     "spec": "gbfs",
                     "license": {},
+                    "x-data-gov-fr-res-id": resource["id"],
+                    "managed-by-script": True
                 }
                 if dataset["slug"] in skip:
                     source["skip"] = True
@@ -252,6 +254,8 @@ if __name__ == "__main__":
                     "url-override": resource["original_url"],
                     "fix": True,
                     "license": {},
+                    "x-data-gov-fr-res-id": resource["id"],
+                    "managed-by-script": True
                 }
                 if dataset["slug"] in skip:
                     source["skip"] = True
@@ -324,6 +328,8 @@ if __name__ == "__main__":
                         if dataset["licence"] in ["lov2", "fr-lo"]:
                             source["license"]["spdx-identifier"] = "etalab-2.0"
                         source["spec"] = "gtfs-rt"
+                        source["x-data-gov-fr-res-id"] = resource["id"]
+                        source["managed-by-script"] = True
                         out.append(source)
                     else:
                         print(
