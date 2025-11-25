@@ -153,6 +153,24 @@
             }
         },
         {
+            "name": "reseau-urbain-et-interurbain-dile-de-france-mobilites",
+            "type": "url",
+            "url": "http://gtfsidfm.clarifygdps.com/gtfs-rt-trips-idfm",
+            "license": {
+                "url": "https://github.com/Jouca/IDFM_GTFS-RT/blob/main/LICENSE"
+            },
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "reseau-urbain-et-interurbain-dile-de-france-mobilites",
+            "type": "url",
+            "url": "http://gtfsidfm.clarifygdps.com/gtfs-rt-alerts-idfm",
+            "license": {
+                "url": "https://github.com/Jouca/IDFM_GTFS-RT/blob/main/LICENSE"
+            },
+            "spec": "gtfs-rt"
+        },
+        {
             "name": "horaires-des-lignes-transilien-1",
             "type": "http",
             "url": "https://www.data.gouv.fr/api/1/datasets/r/ec23d4d9-2347-4f96-9674-163d628d6729",
