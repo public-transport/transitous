@@ -3,6 +3,10 @@
         {
             "github": "heckenfolker",
             "name": "Heckenfolker"
+        },
+        {
+            "github": "jbruechert",
+            "name": "Jonah Brüchert"
         }
     ],
     "sources": [
@@ -26,6 +30,11 @@
             "license": {
                 "spdx-identifier": "CC-BY-SA-4.0"
             }
+        },
+        {
+            "name": "ferries-cablecars-flights",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-gc-donegalcoastalcruises~arranmorecar~passengerferryservice~ar"
         }
     ]
 }
