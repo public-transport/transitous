@@ -609,6 +609,15 @@
             "fix": true
         },
         {
+            "name": "Otwock",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://cdn.zbiorkom.live/gtfs-rt/warsaw-otwock.pb",
+            "license": {
+                "spdx-identifier": "MIT"
+            }
+        },
+        {
             "name": "Opole",
             "type": "http",
             "spec": "gtfs",
@@ -1216,6 +1225,15 @@
             "url": "https://files.girlc.at/gtfs/lomianki.zip",
             "license": {
                 "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "Łomianki",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://cdn.zbiorkom.live/gtfs-rt/warsaw-lomianki.pb",
+            "license": {
+                "spdx-identifier": "MIT"
             }
         },
         {
