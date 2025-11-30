@@ -174,6 +174,7 @@ view state dispatch = H.div "mb-3"
   [ H.input_ "form-control mb-2"
       { onChange: dispatch <| E.inputText >>> SearchChanged
       , onFocus: dispatch <| ShowSuggestions true
+      , onBlur: dispatch <| ShowSuggestions false
       , placeholder: state.placeholderText
       , onKeyUp: dispatch <?| \(E.KeyboardEvent event) -> case event.key of
           "ArrowUp" -> Just SelectionUp
