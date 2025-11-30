@@ -164,7 +164,7 @@ if __name__ == "__main__":
                                     config["timetable"]["datasets"][name]["rt"] = []
 
                                 rt_feed: dict[str, Any] = {
-                                    "url": source.url if use_original_url else FEED_PROXY+name+"-"+str(len(config["timetable"]["datasets"][name]["rt"]))
+                                    "url": source.url if use_original_url else FEED_PROXY + name + "-" + str(len(config["timetable"]["datasets"][name]["rt"]))
                                 }
 
                                 if source.headers and use_original_url:
@@ -175,7 +175,7 @@ if __name__ == "__main__":
 
                             case "gbfs" if isinstance(source, metadata.UrlSource):
                                 name = f"{region_name}-{source.name}"
-                                config["gbfs"]["feeds"][name] = {"url": source.url if use_original_url else FEED_PROXY+name}
+                                config["gbfs"]["feeds"][name] = {"url": source.url if use_original_url else FEED_PROXY + name}
                                 if source.headers and use_original_url:
                                     config["gbfs"]["feeds"][name]["headers"] = source.headers
 
@@ -186,7 +186,7 @@ if __name__ == "__main__":
                     if not "rt" in config["timetable"]["datasets"][key]:
                         continue
                     for i, rt_feed in enumerate(config["timetable"]["datasets"][key]["rt"]):
-                        feed_vars[key+'-'+str(i)] = rt_feed
+                        feed_vars[key + '-' + str(i)] = rt_feed
                 for key in config["gbfs"]["feeds"]:
                     feed_vars[key] = config["gbfs"]["feeds"][key]
                 yaml.dump(feed_vars, fo)    
