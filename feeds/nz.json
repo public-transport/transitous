@@ -28,6 +28,12 @@
             "transitland-atlas-id": "f-flamingo~auckland~gbfs"
         },
         {
+            "name": "Flamingo-Christchurch",
+            "type": "url",
+            "spec": "gbfs",
+            "url": "https://data.rideflamingo.com/gbfs/3/christchurch/gbfs.json"
+        },
+        {
             "name": "Flamingo-Dunedin",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-flamingo~dunedin~gbfs"
@@ -126,6 +132,26 @@
             "name": "Horizons-Regional-Council",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-rck-horizons~regional~council"
+        },
+        {
+            "name": "Taranaki-Regional-Council",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-trc~nz"
+        },
+        {
+            "name": "eBus",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-nsn~nz"
+        },
+        {
+            "name": "goBay",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://data.trilliumtransit.com/gtfs/hbrc-nz/hbrc-nz.zip",
+            "license": {
+                "spdx_identifier": "CC-BY-4.0",
+                "url": "https://www.gobay.co.nz/general-transit-feed-specification/"
+            }
         }
     ]
 }

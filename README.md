@@ -4,7 +4,11 @@ SPDX-FileCopyrightText: none
 -->
 
 <p align="center">
-    <img src="website/static/images/logo-text-dark.svg" alt="Transitous" width="400"><br>
+    <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="website/static/images/logo-text.svg" width="400">
+        <source media="(prefers-color-scheme: light)" srcset="website/static/images/logo-text-dark.svg" width="400">
+        <img src="website/static/images/logo-text-dark.svg" alt="Transitous" width="400"><br>
+    </picture>
 </p>
 
 <p align="center">

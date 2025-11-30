@@ -26,7 +26,7 @@ def remove_duplicate_dashes(text: str) -> str:
 
 def add_feed(year: int) -> dict:
     url = f"https://data.mobilitaetsverbuende.at/api/public/v1/data-sets/{set_id}/{year}/file"
-    return {
+    source = {
         "name": remove_duplicate_dashes(
             data_set["nameEn"]
             .replace("Timetable Data", "")
@@ -40,8 +40,15 @@ def add_feed(year: int) -> dict:
         "function": "mvo_keycloak_token",
         "http-options": {
             "fetch-interval-days": 2
-        }
+        },
+        "managed-by-script": True,
+        "x-mvo-id": f"{set_id}-{year}"
     }
+    if "Flex" in data_set["nameEn"]:
+        source["spec"] = "gtfs-flex"
+        del source["fix"]
+
+    return source
 
 
 if __name__ == "__main__":
@@ -49,18 +56,15 @@ if __name__ == "__main__":
         "70",  # Same data but outdated
         "72",  # contains multiple zip files, not what we need
     ]
-    scripts = {
-        "79": "at.lua", # Styria
-        "73": "at.lua", # Salzbug
-        "77": "at.lua", # Upper Austria
-        "66": "at.lua", # ÖBB
-    }
 
     data_sets = requests.get(
         "https://data.mobilitaetsverbuende.at/api/public/v1/data-sets?tagIds=20&tagFilterModeInclusive=false"
     ).json()
 
-    sources: list[dict] = []
+    with open("feeds/at.json", "r") as f:
+        region = json.load(f)
+
+    sources: list[dict] = region["sources"]
 
     # Flex feeds are supersets of their non-Flex counterparts
     flex_feeds = {}
@@ -74,24 +78,16 @@ if __name__ == "__main__":
             continue
 
         for year in TIMETABLE_YEARS:
-            source = add_feed(year)
-            if set_id == "66":  # ÖBB
-                source["display-name-options"] = {}
-                source["display-name-options"]["copy-trip-names-matching"] = \
-                    r"((IC)|(ECB)|(EC)|(RJ)|(RJX)|(D)|(NJ)|(EN)|(CJX)|(ICE)|(IR)|(REX)|(R)|(ER)|(ATB)|(WB)) \d+"
-                source["display-name-options"]["keep-route-names-matching"] = \
-                    r"((RE)|(RB)|S) ?\d+"
-            if set_id in scripts:
-                source["script"] = scripts[set_id]
-            if "Flex" in data_set["nameEn"]:
-                source["spec"] = "gtfs-flex"
-                del source["fix"]
-            sources.append(source)
+            existed = False
+            for source in sources:
+                if source["x-mvo-id"] == f"{set_id}-{year}":
+                    source["url"] = f"https://data.mobilitaetsverbuende.at/api/public/v1/data-sets/{set_id}/{year}/file"
+                    source["license"]: {"url": data_set["termsOfUseUrlEn"]}
+                    existed = True
 
-    region = {}
-
-    with open("feeds/at.json", "r") as f:
-        region = json.load(f)
+            if not existed:
+                source = add_feed(year)
+                sources.append(source)
 
     region["sources"] = sources
 

@@ -3,6 +3,10 @@
         {
             "name": "Marcus Lundblad",
             "github": "mlundblad"
+        },
+        {
+            "name": "Juliette Bernheisel",
+            "github": "juliettebernheisel"
         }
     ],
     "sources": [
@@ -39,6 +43,17 @@
             "name": "Stark-Area-Regional-Transit-Authority",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-stark~area~regional~transit~authority"
+        },
+        {
+            "name": "Southwest-Ohio-Regional-Transit-Authority",
+            "type": "mobility-database",
+            "mdb-id": "mdb-366"
+        },
+        {
+            "name": "Southwest-Ohio-Regional-Transit-Authority",
+            "spec": "gtfs-rt",
+            "type": "url",
+            "url": "https://tmgtfsprd.sorttrpcloud.com/TMGTFSRealTimeWebService/tripupdate/tripupdates.pb"
         }
     ]
 }

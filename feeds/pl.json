@@ -11,6 +11,10 @@
         {
             "name": "Grzegorz M",
             "github": "grzesjam"
+        },
+        {
+            "name": "Alexander Dubis",
+            "github": "gtfscc"
         }
     ],
     "sources": [
@@ -90,8 +94,12 @@
         },
         {
             "name": "Świnoujście",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u3d4-swinoujscie"
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://files.girlc.at/gtfs/swinoujscie.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
         },
         {
             "name": "Koleje-Dolnośląskie",
@@ -120,9 +128,21 @@
         },
         {
             "name": "Kielce",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u3n9-kielce",
+            "type": "http",
+            "url": "https://cdn.zbiorkom.live/gtfs/kielce.zip",
+            "license":{
+                "spdx-identifier": "MIT"
+            },
             "fix": true
+        },
+        {
+            "name": "Kielce",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://cdn.zbiorkom.live/gtfs-rt/kielce.pb",
+            "license": {
+                "spdx-identifier": "MIT"
+            }
         },
         {
             "name": "Radom",
@@ -271,6 +291,12 @@
             "transitland-atlas-id": "f-u3k4-poznan~rt"
         },
         {
+            "name": "Poznań",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://bimba.apiote.xyz/gtfs-rt/pl-poznan_alerts.pb"
+        },
+        {
             "name": "Szczecin",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u36r-zditmszczecin"
@@ -287,7 +313,8 @@
             "url": "https://github.com/TransportGZM-GTFS-mirror/TransportGZM-GTFS-normal/releases/latest/download/TransportGZM-GTFS.zip",
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
-            }
+            },
+            "fix": true
         },
         {
             "name": "TransportGZM",
@@ -362,7 +389,8 @@
         {
             "name": "ZTP-Kraków-M",
             "type": "mobility-database",
-            "mdb-id": "mdb-2598"
+            "mdb-id": "mdb-2598",
+            "fix": true
         },
         {
             "name": "ZTP-Kraków-M",
@@ -397,16 +425,38 @@
         },
         {
             "name": "Łódzka-Kolej-Aglomeracyjna",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u3j-lodzka~kolej~aglomeracyjna"
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://gtfs.kasznia.net/static/sanitized/lka_train.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
         },
         {
             "name": "Łódzka-Kolej-Aglomeracyjna",
             "type": "url",
             "spec": "gtfs-rt",
             "url": "https://gtfs.kasznia.net/rt/lka.pb",
-            "license":{
-                "spdx-identifier":"CC-BY-4.0"
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
+        },
+        {
+            "name": "Łódzka-Kolej-Aglomeracyjna-bus",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://gtfs.kasznia.net/static/sanitized/lka_bus.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
+        },
+        {
+            "name": "Łódzka-Kolej-Aglomeracyjna-bus",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://cdn.zbiorkom.live/gtfs-rt/lodz-lka.pb",
+            "license": {
+                "spdx-identifier": "MIT"
             }
         },
         {
@@ -444,7 +494,8 @@
         {
             "name": "Koleje-Wielkopolskie",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u3k-koleje~wielkopolskie"
+            "transitland-atlas-id": "f-u3k-koleje~wielkopolskie",
+            "script": "pl-Koleje-Wielkopolskie.lua"
         },
         {
             "name": "Koleje-Wielkopolskie",
@@ -476,7 +527,8 @@
             "url": "https://cdn.zbiorkom.live/gtfs-rt/lodz.pb",
             "license": {
                 "spdx-identifier": "MIT"
-            }
+            },
+            "fix": true
         },
         {
             "name": "Białystok",
@@ -538,6 +590,15 @@
             "fix": true
         },
         {
+            "name": "Sochaczew",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://cdn.zbiorkom.live/gtfs-rt/warsaw-sochaczew.pb",
+            "license": {
+                "spdx-identifier": "MIT"
+            }
+        },
+        {
             "name": "Otwock",
             "type": "http",
             "spec": "gtfs",
@@ -546,6 +607,15 @@
                 "spdx-identifier": "CC0-1.0"
             },
             "fix": true
+        },
+        {
+            "name": "Otwock",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://cdn.zbiorkom.live/gtfs-rt/warsaw-otwock.pb",
+            "license": {
+                "spdx-identifier": "MIT"
+            }
         },
         {
             "name": "Opole",
@@ -586,6 +656,15 @@
             "fix": true
         },
         {
+            "name": "Jastrzębie-Zdrój",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://cdn.zbiorkom.live/gtfs-rt/rybnik-jastrzebie.pb",
+            "license": {
+                "spdx-identifier": "MIT"
+            }
+        },
+        {
             "name": "Rybnik",
             "type": "http",
             "spec": "gtfs",
@@ -594,6 +673,15 @@
                 "spdx-identifier": "MIT"
             },
             "fix": true
+        },
+        {
+            "name": "Rybnik",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://cdn.zbiorkom.live/gtfs-rt/rybnik.pb",
+            "license": {
+                "spdx-identifier": "MIT"
+            }
         },
         {
             "name": "Kutno",
@@ -702,18 +790,33 @@
             "url": "https://kasmar00.github.io/gtfs-warsaw-custom/feeds/minsk-maz/latest.zip",
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
-            },
-            "skip": true,
-            "skip-reason": "Outdated feed"
+            }
+        },
+        {
+            "name": "Mińsk-Mazowiecki",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://cdn.zbiorkom.live/gtfs-rt/warsaw-minsk.pb",
+            "license": {
+                "spdx-identifier": "MIT"
+            }
         },
         {
             "name": "Gorzów-Wielkopolski",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://bip.mzk-gorzow.com.pl/gtfs.html",
-            "function": "data_mzk_gorzow_latest_resource",
+            "url": "https://cdn.zbiorkom.live/gtfs/gorzow.zip",
             "license": {
-                "spdx_identifier": "CC0-1.0"
+                "spdx-identifier": "MIT"
+            }
+        },
+        {
+            "name": "Gorzów-Wielkopolski",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://cdn.zbiorkom.live/gtfs-rt/gorzow.pb",
+            "license":{
+                "spdx-identifier": "MIT"
             }
         },
         {
@@ -1056,7 +1159,8 @@
             "url": "https://files.girlc.at/gtfs/tczew.zip",
             "license": {
                 "spdx-identifier": "CC0-1.0"
-            }
+            },
+            "fix": true
         },
         {
             "name": "Plusbus",
@@ -1097,19 +1201,118 @@
             }
         },
         {
+            "name": "Radzymin",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://files.girlc.at/gtfs/radzymin.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "Radzymin",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://cdn.zbiorkom.live/gtfs-rt/warsaw-radzymin.pb",
+            "license": {
+                "spdx-identifier": "MIT"
+            }
+        },
+        {
+            "name": "Łomianki",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://files.girlc.at/gtfs/lomianki.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "Łomianki",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://cdn.zbiorkom.live/gtfs-rt/warsaw-lomianki.pb",
+            "license": {
+                "spdx-identifier": "MIT"
+            }
+        },
+        {
+            "name": "Leszno",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://cdn.zbiorkom.live/gtfs/leszno.zip",
+            "license": {
+                "spdx-identifier": "MIT"
+            }
+        },
+        {
+            "name": "Leszno",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://cdn.zbiorkom.live/gtfs-rt/leszno.pb",
+            "license": {
+                "spdx-identifier": "MIT"
+            }
+        },
+        {
+            "name": "Płońsk",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://files.girlc.at/gtfs/plonsk.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "Żywiec",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://files.girlc.at/gtfs/zywiec.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "Zielona-Góra",
+            "type": "http",
+            "spec":"gtfs",
+            "url": "https://www.mzk.zgora.pl/dla-deweloperow",
+            "function": "data_zielona_gora_latest_resource",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "Zakroczym",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://raw.githubusercontent.com/gtfscc/zakroczym/main/gtfs.zip",
+            "license": {
+                "spdx-identifier": "MIT"
+            }
+        },
+        {
+            "name": "Pruszków",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://cdn.zbiorkom.live/gtfs/warsaw-pruszkow.zip",
+            "license": {
+                "spdx-identifier": "MIT"
+            }
+        },
+        {
+            "name": "Pruszków",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://cdn.zbiorkom.live/gtfs-rt/warsaw-pruszkow.pb",
+            "license": {
+                "spdx-identifier": "MIT"
+            }
+        },
+        {
             "name": "Chełmski-Rower",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-chełmski~rower~gbfs"
-        },
-        {
-            "name": "CRM-Częstochowa",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-częstochowski~rower~miejski~poland~częstochowa~gbfs"
-        },
-        {
-            "name": "GRM-Grodzisk",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-grm~grodzisk~poland~mazowiecki~gbfs"
         },
         {
             "name": "Jaskółka-Jastrzębie-Zdrój",
@@ -1130,11 +1333,6 @@
             "name": "ŁRP-Łódź",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-łódzki~rower~publiczny~łódź~pl~gbfs"
-        },
-        {
-            "name": "Łoker-Łomża",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-łoker~łomża~gbfs"
         },
         {
             "name": "Metrorower",
