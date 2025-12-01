@@ -33,14 +33,10 @@ type Area = { name :: String, adminLevel :: Int }
 type Location =
   { type :: String
   , id :: String
-  , tokens :: Array (Array Int)
   , name :: String
   , lat :: Number
   , lon :: Number
   , areas :: Array Area
-  , level :: Maybe Int
-  , zip :: Maybe String
-  , score :: Number
   }
 
 motisInstance :: String
@@ -150,12 +146,12 @@ onSearchChanged state query = do
 
   pure state { query = query, station = Nothing }
 
-init :: String -> Transition Message State
-init placeholderText = pure
+init :: String -> Maybe Location -> Transition Message State
+init placeholderText initialEntry = pure
   { entries: []
   , showSuggestions: false
   , suggestionsHaveFocus: false
-  , station: Nothing
+  , station: initialEntry
   , query: ""
   , placeholderText: placeholderText
   , lastRequestTime: Nothing

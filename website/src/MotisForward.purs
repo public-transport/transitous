@@ -20,10 +20,10 @@ formatCoordinates { lat, lon } = show lat <> "," <> show lon
 
 getIdentifier :: Location -> String
 getIdentifier loc = case loc.type of
-                              "ADDRESS" -> formatCoordinates loc
-                              "PLACE" -> formatCoordinates loc
-                              "STOP" -> loc.id
-                              _ -> formatCoordinates loc
+  "ADDRESS" -> formatCoordinates loc
+  "PLACE" -> formatCoordinates loc
+  "STOP" -> loc.id
+  _ -> formatCoordinates loc
 
 toMotisWebUrl :: Location -> Location -> String
 toMotisWebUrl start destination = motisInstance <> "?" <> urlQuery

@@ -4,7 +4,7 @@ SPDX-FileCopyrightText: 2024 Jonah Brüchert <jbb@kaidan.im>
 SPDX-License-Identifier: AGPL-3.0-or-later
 -}
 
-module Main where
+module Main (main, location, noLocation) where
 
 import Prelude (Unit, pure, ($), (<<<), bind)
 
@@ -14,7 +14,7 @@ import Elmish.Boot (defaultMain)
 
 import Effect (Effect)
 import Data.Bifunctor
-import Data.Maybe (fromMaybe)
+import Data.Maybe (fromMaybe, Maybe(..))
 
 import SearchBox as SearchBox
 import MotisForward (toMotisWebUrl)
@@ -28,10 +28,10 @@ type State =
   , arrivalBox :: SearchBox.State
   }
 
-init :: Transition Message State
-init = do
-  departureState <- lmap DepartureMsg $ SearchBox.init "Start"
-  arrivalState <- lmap ArrivalMsg $ SearchBox.init "Destination"
+init :: Maybe SearchBox.Location -> Maybe SearchBox.Location -> Transition Message State
+init from to = do
+  departureState <- lmap DepartureMsg $ SearchBox.init "Start" from
+  arrivalState <- lmap ArrivalMsg $ SearchBox.init "Destination" to
   pure { departureBox: departureState, arrivalBox: arrivalState }
 
 update :: State -> Message -> Transition Message State
@@ -53,5 +53,11 @@ view state dispatch = H.div "text-end card-body p-4"
       "Search"
   ]
 
-main :: Effect Unit
-main = defaultMain { def: { init, view, update }, elementId: "searchbox" }
+location :: SearchBox.Location -> Maybe SearchBox.Location
+location = Just
+
+noLocation :: Maybe SearchBox.Location
+noLocation = Nothing
+
+main :: String -> Maybe SearchBox.Location -> Maybe SearchBox.Location -> Effect Unit
+main elementId from to = defaultMain { def: { init: (init from to), view, update }, elementId: elementId }
