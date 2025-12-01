@@ -38,6 +38,7 @@
   copy:
     src: motis.service
     dest: /etc/systemd/system/motis.service
+  when: motis_primary is defined and motis_primary
 
 - name: Enable motis systemd service
   systemd:
@@ -46,6 +47,7 @@
     state: started
     masked: false
     daemon_reload: true
+  when: motis_primary is defined and motis_primary
 
 - name: Install motis-update-feeds script
   template:
@@ -61,14 +63,18 @@
     mode: '0755'
   when: motis_primary is not defined or not motis_primary
 
-- name: Install motis-update-feeds
+- name: Install motis-update-feeds service
   template:
-    src: "{{ item }}"
+    src: "motis-update-feeds.service"
     dest: /etc/systemd/system/
     mode: '644'
-  with_items:
-    - motis-update-feeds.service
-    - motis-update-feeds.timer
+
+- name: Install motis-update-feeds timer
+  template:
+    src: "motis-update-feeds.timer"
+    dest: /etc/systemd/system/
+    mode: '644'
+  when: motis_update_time is defined
 
 - name: Enable motis-update-feeds timer
   systemd:
@@ -77,3 +83,4 @@
     masked: false
     daemon_reload: true
     state: started
+  when: motis_update_time is defined

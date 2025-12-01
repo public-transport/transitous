@@ -33,8 +33,7 @@ motis:
       ansible_sudo_user: root
       ansible_become: true
       ansible_host: goldberg
-      motis_no_cow: true
-      motis_update_time: "5:00:00" # UTC
+      motis_primary: true
       transitous_wireguard_privkey: !vault |
         $ANSIBLE_VAULT;1.1;AES256
         38333436323261306163653632366132343634363565313837363933653839313437366363623761
@@ -43,6 +42,15 @@ motis:
         3332323339666533390a643062326534323736303031333334636166633530623764353230343734
         30646364666564663136393830333261643531623431663336396230366531333931393865353865
         6438343961643563326437373631623236376331323666366530
+
+    tamassia:
+      ansible_ssh_user: algolocal
+      ansible_sudo_user: root
+      ansible_become: true
+      ansible_host: tamassia
+      motis_primary: false
+      motis_update_time: "5:00:00" # UTC
+      motis_target_machine: algolocal@goldberg
 
 
 motis-staging:
