@@ -82,10 +82,12 @@ data Message
   | StartGuessRequest String
   | SelectionUp
   | SelectionDown
+  | SuggestionsHaveFocus Boolean
 
 type State =
   { entries :: Array Location
   , showSuggestions :: Boolean
+  , suggestionsHaveFocus :: Boolean
   , station :: Maybe Location
   , query :: String
   , placeholderText :: String
@@ -152,6 +154,7 @@ init :: String -> Transition Message State
 init placeholderText = pure
   { entries: []
   , showSuggestions: false
+  , suggestionsHaveFocus: false
   , station: Nothing
   , query: ""
   , placeholderText: placeholderText
@@ -168,13 +171,16 @@ update state (NewInput time) = pure state { lastRequestTime = Just time }
 update state (StartGuessRequest query) = requestGuessesDebounced state query
 update state SelectionUp = pure state { currentlySelectedIndex = (state.currentlySelectedIndex - 1) `mod` (length state.entries) }
 update state SelectionDown = pure state { currentlySelectedIndex = (state.currentlySelectedIndex + 1) `mod` (length state.entries) }
+update state (SuggestionsHaveFocus focus) = pure state { suggestionsHaveFocus = focus }
 
 view :: State -> Dispatch Message -> ReactElement
 view state dispatch = H.div "mb-3"
   [ H.input_ "form-control mb-2"
       { onChange: dispatch <| E.inputText >>> SearchChanged
       , onFocus: dispatch <| ShowSuggestions true
-      , onBlur: dispatch <| ShowSuggestions false
+      , onBlur: dispatch <?| case state.suggestionsHaveFocus of
+          true -> Nothing
+          false -> Just (ShowSuggestions false)
       , placeholder: state.placeholderText
       , onKeyUp: dispatch <?| \(E.KeyboardEvent event) -> case event.key of
           "ArrowUp" -> Just SelectionUp
@@ -200,7 +206,11 @@ view state dispatch = H.div "mb-3"
                 true -> "dropdown-item cursor-shape-pointer dropdown-item-active"
                 false -> "dropdown-item cursor-shape-pointer"
             )
-            { onClick: dispatch <| Select location, autoFocus: true }
+            { onClick: dispatch <| Select location
+            , autoFocus: true
+            , onMouseEnter: dispatch <| (SuggestionsHaveFocus true)
+            , onMouseLeave: dispatch <| (SuggestionsHaveFocus false)
+            }
             [ H.i
                 ( case location.type of
                     "STOP" -> "bi-train-front-fill"
