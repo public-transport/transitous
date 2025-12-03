@@ -15,8 +15,7 @@ import sys
 import requests
 from typing import Dict, Any
 
-## URL = "https://raw.githubusercontent.com/Traewelling/line-colors/refs/heads/main/line-colors.csv"
-URL = "https://raw.githubusercontent.com/luna-cant-code/line-colors/refs/heads/feed-transition/line-colors-VBN.csv"
+URL = "https://raw.githubusercontent.com/Traewelling/line-colors/refs/heads/main/line-colors-VBN.csv"
 OUTPUT = "scripts/de-VBN-colors.lua"
 
 HEX_RE = re.compile(r"^[0-9A-Fa-f]{3}([0-9A-Fa-f]{3})?$")
@@ -67,8 +66,8 @@ def parse_colors(csv_text: str) -> Dict[str, Dict[str, Dict[str, Any]]]:
 
     # Identify header keys we need (tolerate leading/trailing whitespace)
     header = reader.fieldnames or []
-    key_agency = _find_key(header, 'delfiAgencyName') or _find_key(header, ' delfiAgencyName')
-##    key_agency = _find_key(header, 'GTFSAgencyName') or _find_key(header, ' GTFSAgencyName')
+##    key_agency = _find_key(header, 'delfiAgencyName') or _find_key(header, ' delfiAgencyName') // left for transition purposes
+    key_agency = _find_key(header, 'GTFSAgencyName') or _find_key(header, ' GTFSAgencyName')
     key_line = _find_key(header, 'lineName')
     key_bg = _find_key(header, 'backgroundColor')
     key_text = _find_key(header, 'textColor')
