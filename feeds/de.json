@@ -33,7 +33,7 @@
                 "SWO Mobil GmbH",
                 "FlixBus-de",
                 "EUROSTAR",
-                "Bremer Straßenbahn AG",
+                "Bremer Straßenbahn AG"
             ],
             "http-options": {
                 "fetch-interval-days": 2
