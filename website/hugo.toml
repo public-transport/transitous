@@ -2,27 +2,42 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'Transitous'
+# Basic site configuration
+baseURL = 'https://example.org/'  # Base URL for the site, used for absolute links
+languageCode = 'en-us'             # Primary language code for the site
+title = 'Transitous'               # Site title, displayed in the browser tab
+
+# Theme used to generate the site (Ananke is a minimalist Hugo theme)
 theme = "ananke"
 
+# Custom parameters for the Ananke theme
 [params]
-  custom_css = ["bootstrap.min.css", "bootstrap-icons.min.css", "custom.css"]
-  favicon = "images/logo.svg"
-  text_color = "#292e35"
+# List of custom CSS files to load
+# bootstrap.min.css: CSS framework for responsive design
+# custom.css: Override file for custom styles
+custom_css = ["bootstrap.min.css", "bootstrap-icons.min.css", "custom.css"]
+
+# Path to the site's favicon
+favicon = "images/logo.svg"
+
+# Primary text color
+text_color = "#292e35"
+
+# Social media links (used in the footer or social section of the theme)
+[[params.ananke_socials]]
+name = "mastodon"                 # Name of the social network
+url = "https://en.osm.town/@transitous"  # Profile URL
+label = "Transitous on Mastodon"  # Alternative text for the link
+rel = "me"                       # HTML attribute for identity verification
 
 [[params.ananke_socials]]
-  name = "mastodon"
-  url = "https://en.osm.town/@transitous"
-  label = "Transitous on Mastodon"
-  rel = "me"
-[[params.ananke_socials]]
-  name = "github"
-  url = "https://github.com/public-transport/transitous"
-  label = "Transitous on GitHub"
+name = "github"
+url = "https://github.com/public-transport/transitous"
+label = "Transitous on GitHub"
+rel = "me"
 
+# Main menu of the site (links displayed in the navigation bar)
 [menus]
-  [[menus.main]]
-    name = "Status"
-    url = "https://spline-status.de/status/transitous"
+[[menus.main]]
+name = "Status"                 # Link text
+url = "https://spline-status.de/status/transitous"  # URL to the status page
