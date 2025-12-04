@@ -8,12 +8,14 @@
 import sys
 
 # Import already written scripts as modules
+import generate_colors
 import generate_colors_CH
 import generate_colors_VBN
 
 # Telling Python to do these sequentially.
 def main():
-    generate_colors_CH.main() 
+    generate_colors.main()
+    generate_colors_CH.main()
     generate_colors_VBN.main()
 
 # Don't know what that does, but it makes it work.

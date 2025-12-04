@@ -15,7 +15,6 @@ import sys
 import requests
 from typing import Dict, Any
 
-#URL = "https://raw.githubusercontent.com/Traewelling/line-colors/refs/heads/main/line-colors-CH.csv"
 URL = "https://raw.githubusercontent.com/luna-cant-code/line-colors/refs/heads/feed-transition/line-colors-CH.csv"
 OUTPUT = "scripts/ch-opentransport-colors.lua"
 
