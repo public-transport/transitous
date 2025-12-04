@@ -323,7 +323,7 @@ def main():
     VBN()
     SBB()
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     VBN()
     SBB()
     sys.exit(main())
