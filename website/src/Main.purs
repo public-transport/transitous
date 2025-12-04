@@ -44,13 +44,16 @@ view :: State -> Dispatch Message -> ReactElement
 view state dispatch = H.div "text-end card-body p-4"
   [ SearchBox.view state.departureBox (dispatch <<< DepartureMsg)
   , SearchBox.view state.arrivalBox (dispatch <<< ArrivalMsg)
-  , H.a_ "btn btn-primary mt-2"
-      { href: fromMaybe "" do
-          start <- state.departureBox.station
-          destination <- state.arrivalBox.station
-          pure $ toMotisWebUrl start destination
-      }
-      "Search"
+  , if state.departureBox.station == Nothing || state.arrivalBox.station == Nothing
+    then H.div "text-danger mt-2" [ H.text "Veuillez sélectionner une gare de départ et d'arrivée." ]
+    else
+      H.a_ "btn btn-primary mt-2"
+        { href: fromMaybe "" do
+            start <- state.departureBox.station
+            destination <- state.arrivalBox.station
+            pure $ toMotisWebUrl start destination
+        }
+        "Search"
   ]
 
 main :: Effect Unit
