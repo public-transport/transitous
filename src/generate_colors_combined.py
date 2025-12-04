@@ -319,11 +319,10 @@ def SBB():
 
         return 0
 
-def main():
-    VBN()
-    SBB()
-
+#def main():
+#    VBN()
+#    SBB()
 if __name__ == '__main__':
     VBN()
     SBB()
-    sys.exit(main())
+    sys.exit(())
