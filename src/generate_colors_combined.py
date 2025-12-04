@@ -326,4 +326,4 @@ def main():
 if __name__ == '__main__':
     VBN()
     SBB()
-#    sys.exit(main())
+    sys.exit(main())
