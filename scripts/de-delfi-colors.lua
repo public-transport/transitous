@@ -36,6 +36,16 @@ local colors = {
         ["SE"] = { color = 0xffffff, text_color = 0x000000 },
         ["SFEX"] = { color = 0x00a76d, text_color = 0xffffff },
     },
+    ["Appenzeller Bahnen"] = {
+        ["S15"] = { color = 0x845534, text_color = 0xffffff },
+        ["S20"] = { color = 0xb6522b, text_color = 0xffffff },
+        ["S21"] = { color = 0x00908c, text_color = 0xffffff },
+        ["S22"] = { color = 0xb80e80, text_color = 0xffffff },
+        ["S23"] = { color = 0xc99115, text_color = 0xffffff },
+        ["S24"] = { color = 0x3aaa35, text_color = 0xffffff },
+        ["S25"] = { color = 0x72a8db, text_color = 0xffffff },
+        ["S26"] = { color = 0xb85f5c, text_color = 0xffffff },
+    },
     ["Arnold Engelhardt GmbH"] = {
         ["X76"] = { color = 0xe7007a, text_color = 0xffffff },
     },
@@ -51,6 +61,9 @@ local colors = {
         ["81"] = { color = 0xf088b6, text_color = 0x000000 },
         ["82"] = { color = 0x13a538, text_color = 0xffffff },
         ["83"] = { color = 0x0094d2, text_color = 0xffffff },
+    },
+    ["Automobildienst Appenzeller Bahnen"] = {
+        ["841"] = { color = 0x000000, text_color = 0xffffff },
     },
     ["BLS AG (bls)"] = {
         ["IR17"] = { color = 0x2d4c95, text_color = 0xffffff },
@@ -1169,7 +1182,7 @@ local colors = {
         ["X45"] = { color = 0x00aaad, text_color = 0xffffff },
     },
     ["Funiculaire Neuchâtel-Université - Neuchâtel-Gare"] = {
-        ["110"] = { color = 0x7dcdbe, text_color = 0xffffff },
+        ["110"] = { color = 0x7dcdbe, text_color = 0x000000 },
     },
     ["GBN-moBiel-Stadtbahn"] = {
         ["1"] = { color = 0x009fe0, text_color = 0xffffff },
