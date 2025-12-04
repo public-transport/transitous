@@ -15,7 +15,7 @@ import sys
 import requests
 from typing import Dict, Any
 
-URL = "https://raw.githubusercontent.com/Traewelling/line-colors/refs/heads/main/line-colors-VBN.csv"
+URL = "https://raw.githubusercontent.com/luna-cant-code/line-colors/refs/heads/feed-transition/line-colors-VBN.csv"
 OUTPUT = "scripts/de-VBN-colors.lua"
 
 HEX_RE = re.compile(r"^[0-9A-Fa-f]{3}([0-9A-Fa-f]{3})?$")
