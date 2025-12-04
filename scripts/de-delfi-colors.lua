@@ -36,16 +36,6 @@ local colors = {
         ["SE"] = { color = 0xffffff, text_color = 0x000000 },
         ["SFEX"] = { color = 0x00a76d, text_color = 0xffffff },
     },
-    ["Appenzeller Bahnen"] = {
-        ["S15"] = { color = 0x845534, text_color = 0xffffff },
-        ["S20"] = { color = 0xb6522b, text_color = 0xffffff },
-        ["S21"] = { color = 0x00908c, text_color = 0xffffff },
-        ["S22"] = { color = 0xb80e80, text_color = 0xffffff },
-        ["S23"] = { color = 0xc99115, text_color = 0xffffff },
-        ["S24"] = { color = 0x3aaa35, text_color = 0xffffff },
-        ["S25"] = { color = 0x72a8db, text_color = 0xffffff },
-        ["S26"] = { color = 0xb85f5c, text_color = 0xffffff },
-    },
     ["Arnold Engelhardt GmbH"] = {
         ["X76"] = { color = 0xe7007a, text_color = 0xffffff },
     },
