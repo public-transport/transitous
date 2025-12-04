@@ -32,7 +32,9 @@
                 "Kraftverkehrsgesellschaft mbH Braunschweig",
                 "SWO Mobil GmbH",
                 "FlixBus-de",
-                "EUROSTAR"
+                "EUROSTAR",
+                "Bremer Straßenbahn AG",
+                "Verkehrsgemeinschaft Osnabrück"
             ],
             "http-options": {
                 "fetch-interval-days": 2
