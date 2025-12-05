@@ -2869,7 +2869,7 @@ local colors = {
     ["Schwebebahn"] = {
         ["60"] = { color = 0x578bc1, text_color = 0xffffff },
     },
-        ["Schwerin Bus"] = {
+    ["Schwerin Bus"] = {
         ["1"] = { color = 0xe5007d, text_color = 0xffffff },
         ["10"] = { color = 0x008bd2, text_color = 0xffffff },
         ["11"] = { color = 0x52a6b2, text_color = 0xffffff },
@@ -3144,6 +3144,17 @@ local colors = {
         ["U7"] = { color = 0xf19e2d, text_color = 0xffffff },
         ["U8"] = { color = 0xca7fbe, text_color = 0xffffff },
         ["U9"] = { color = 0xffd939, text_color = 0x2c2e35 },
+    },
+    ["Stadtwirtschaft Weimar GmbH"] = {
+        ["1"] = { color = 0xd42987, text_color = 0xffffff },
+        ["2"] = { color = 0x5e111a, text_color = 0xffffff },
+        ["3"] = { color = 0x00aba9, text_color = 0xffffff },
+        ["4"] = { color = 0x009641, text_color = 0xffffff },
+        ["5"] = { color = 0x5bc5f2, text_color = 0xffffff },
+        ["6"] = { color = 0xfec917, text_color = 0x000000 },
+        ["7"] = { color = 0xba80b6, text_color = 0xffffff },
+        ["8"] = { color = 0x4b3f92, text_color = 0xffffff },
+        ["9"] = { color = 0x1086c5, text_color = 0xffffff },
     },
     ["Straßenbahn"] = {
         ["1"] = { color = 0xe5007d, text_color = 0xffffff },
