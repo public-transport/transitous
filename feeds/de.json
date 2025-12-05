@@ -212,6 +212,18 @@
             "name": "NextbikeLeipzig",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-nextbike~leipzig~gbfs"
+        },
+        {
+            "name": "NextbikeBerlin",
+            "type": "url",
+            "url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_bn/gbfs.json",
+            "spec": "gbfs"
+        },
+        {
+            "name": "DottBerlin",
+            "type": "url",
+            "url": "https://gbfs.api.ridedott.com/public/v2/berlin/gbfs.json",
+            "spec": "gbfs"
         }
     ]
 }
