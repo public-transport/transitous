@@ -16,6 +16,10 @@ namespace "rp" {
 
   relabel "host" {
     from         = "host"
+    whitelist = [
+      "api.transitous.org",
+      "staging.api.transitous.org"
+    ]
   }
 
   relabel "upstream" {
@@ -24,9 +28,36 @@ namespace "rp" {
 
   relabel "uri" {
     from         = "uri"
+    match "^/api/(v[0-9]{1,2})/(geocode|reverse-geocode|stoptimes|map/stops|map/initial|map/trips|map/levels|rentals|trip|plan|one-to-all|one-to-many|debug).*" {
+      replacement = "/api/$1/$2"
+    }
+
+    match "^/gtfs.*" {
+      replacement = "/gtfs"
+    }
+
+    match "^/tiles.*" {
+      replacement = "/tiles"
+    }
+
+     match "^/_app.*" {
+      replacement = "/_app"
+    }
+
+    match "^/.*" {
+      replacement = "other"
+    }
   }
 
   relabel "user_agent" {
     from         = "http_user_agent"
+
+    match "^([A-Za-z0-9]{2}).*" {
+      replacement = "$1*"
+    }
+
+    match "^.*" {
+      replacement = "other"
+    }
   }
 }

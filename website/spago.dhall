@@ -12,7 +12,7 @@ Need help? See the following resources:
 - Spago documentation: https://github.com/purescript/spago
 - Dhall language tour: https://docs.dhall-lang.org/tutorials/Language-Tour.html
 -}
-{ name = "my-project"
+{ name = "transitous-widget"
 , dependencies =
   [ "aff"
   , "argonaut-codecs"
@@ -27,6 +27,7 @@ Need help? See the following resources:
   , "fetch"
   , "foldable-traversable"
   , "form-urlencoded"
+  , "formatters"
   , "maybe"
   , "now"
   , "prelude"
