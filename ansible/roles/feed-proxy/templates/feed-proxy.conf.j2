@@ -14,7 +14,29 @@ server {
 
     include ../conf.d/feed-proxy-http-default;
 
-    return 301 https://$host$request_uri;
+    proxy_pass_header Server;
+    proxy_set_header User-Agent {{ feed_proxy_host }};
+    add_header X-Cache $upstream_cache_status;
+
+    proxy_cache            feed-proxy;
+    proxy_cache_valid      200 302 40s;
+    proxy_cache_valid      404 10s;
+    proxy_cache_use_stale  error timeout invalid_header updating
+                            http_500 http_502 http_503 http_504 http_429;
+
+    limit_req zone=feed-proxy burst=5000;
+
+    {% for item in feed_vars | dict2items %}   
+        location /feed/{{item.key}} {
+            proxy_pass {{ item.value.url }};
+
+            {% if "headers" in item.value %}
+                {% for header in item.value.headers | dict2items -%}
+                    proxy_set_header {{ header.key }} "{{ header.value }}";
+                {% endfor %}
+            {% endif %}            
+        }
+    {% endfor %}
 }
 
 server {
@@ -26,8 +48,10 @@ server {
     include ../conf.d/feed-proxy-https-default;
 
     proxy_ssl_server_name on;
+    
     proxy_pass_header Server;
     proxy_set_header User-Agent {{ feed_proxy_host }};
+    add_header X-Cache $upstream_cache_status;
 
     proxy_cache            feed-proxy;
     proxy_cache_valid      200 302 40s;
@@ -60,7 +84,25 @@ server {
 
     include ../conf.d/feed-proxy-http-default;
 
-    return 301 https://$host$request_uri;
+    proxy_pass_header Server;
+    proxy_set_header User-Agent {{ feed_proxy_host }};
+    add_header X-Cache $upstream_cache_status;
+
+    proxy_cache            feed-proxy;
+    proxy_cache_valid      200 302 80s;
+    proxy_cache_valid      404 10s;
+    proxy_cache_use_stale  error timeout invalid_header updating
+                            http_500 http_502 http_503 http_504 http_429;
+
+    limit_req zone=feed-proxy burst=5000;
+
+    proxy_pass {{ item.value.url | urlsplit("scheme") }}://{{ item.value.url | urlsplit("hostname") }};
+
+    {% if "headers" in item.value -%}
+        {% for header in item.value.headers | dict2items -%}
+            proxy_set_header {{ header.key }} "{{ header.value }}";
+        {% endfor %}
+    {% endif %}   
 }
 
 server {
@@ -72,8 +114,10 @@ server {
     include ../conf.d/feed-proxy-https-default;
 
     proxy_ssl_server_name on;
+
     proxy_pass_header Server;
     proxy_set_header User-Agent {{ feed_proxy_host }};
+    add_header X-Cache $upstream_cache_status;
 
     proxy_cache            feed-proxy;
     proxy_cache_valid      200 302 80s;
