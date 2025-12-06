@@ -3,7 +3,7 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 
-#
+
 #- name: Install nginx
 #  apt:
 #    update_cache: true
@@ -47,16 +47,26 @@
     name: feed_vars
     hash_behaviour: merge
 
-- name: Install proxy config
+- name: Install proxy config tmp
   template:
     src: "feed-proxy.conf.j2"
-    dest: "/tmp/transitous-feed-proxy.conf"
+    dest: "/tmp/feed-proxy-transitous.conf"
 
 #- name: Install proxy config
 #  template:
 #    src: "feed-proxy.conf.j2"
-#    dest: "/etc/nginx/sites-available/transitous-feed-proxy.conf"
+#    dest: "{{ feed_proxy_conf_dir }}feed-proxy-transitous.conf"
+
+#- name: Install proxy http default config
+#  template:
+#    src: "feed-proxy-http-default.conf.j2"
+#    dest: "{{ feed_proxy_conf_dir }}feed-proxy-http-default.conf"
 #
+#- name: Install proxy https default config
+#  template:
+#    src: "feed-proxy-https-default.conf.j2"
+#    dest: "{{ feed_proxy_conf_dir }}feed-proxy-https-default.conf"
+
 #- name: Disable default site configuration
 #  file:
 #    path: /etc/nginx/sites-enabled/default
