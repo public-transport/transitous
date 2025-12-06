@@ -47172,12 +47172,12 @@
         "spdx_license_identifier": "CC0-1.0",
         "license_url": "https://napportal.kozut.hu/en/#/informations/toc/",
         "operators": [
-            "BKK",
+            "BKK Zrt.",
             "MÁV Személyszállítási Zrt. - HÉV"
         ],
         "source": "https://go.bkk.hu/api/static/v1/public-gtfs/budapest_gtfs.zip",
         "filename": "hu_bkk.gtfs.zip",
-        "human_name": "Bkk",
+        "human_name": "BKK",
         "publisher": {
             "name": "BKK Zrt.",
             "url": "https://www.bkk.hu"
@@ -47200,20 +47200,20 @@
         "spdx_license_identifier": "CC0-1.0",
         "license_url": "https://napportal.kozut.hu/en/#/informations/toc/",
         "operators": [
-            "Blaguss Agora Hungary Kft."
+            "BLAGUSS AGORA HUNGARY Kft."
         ],
         "source": "https://szombathely.utas.hu/api/static/v1/gtfs-google/gtfs-google.zip",
         "filename": "hu_blaguss-agora.gtfs.zip",
-        "human_name": "Blaguss Agora Hungary Kft.",
+        "human_name": "Blaguss Agora",
         "publisher": {
-            "name": "Blaguss",
+            "name": "BLAGUSS AGORA HUNGARY Kft.",
             "url": "https://blaguss-szombathely.hu/"
         },
         "contacts": [
             {
                 "type": "agency",
                 "agency_id": "szombathely",
-                "name": "Blaguss Agora Hungary Kft.",
+                "name": "BLAGUSS AGORA HUNGARY Kft.",
                 "email": "info@blaguss-szombathely.hu"
             }
         ]
@@ -47225,15 +47225,14 @@
         "region_name": "Hungary",
         "spdx_license_identifier": "CC0-1.0",
         "operators": [
-            "GYSEV",
-            "Gyermekvasút",
-            "MÁV"
+            "MÁV Személyszállítási Zrt. - MÁV",
+            "GYSEV Zrt."
         ],
         "source": "https://www.mavcsoport.hu/gtfs/gtfsMavMenetrend.zip",
         "filename": "hu_mav.gtfs.zip",
-        "human_name": "Mav",
+        "human_name": "MÁV",
         "publisher": {
-            "name": "MÁV",
+            "name": "MÁV Zrt.",
             "url": "https://www.mavcsoport.hu/"
         },
         "contacts": []
@@ -47244,13 +47243,13 @@
         "region_code": "HU",
         "region_name": "Hungary",
         "operators": [
-            "MVK Zrt. (Miskolc)"
+            "MVK Zrt."
         ],
         "source": "http://gtfs.cdata.hu/mvkzrt.zip",
         "filename": "hu_mvk.gtfs.zip",
-        "human_name": "MVK Zrt. (Miskolc)",
+        "human_name": "MVK",
         "publisher": {
-            "name": "cdata",
+            "name": "CData-Térképtár Kft.",
             "url": "http://cdata.hu"
         },
         "contacts": []
@@ -47263,13 +47262,13 @@
         "spdx_license_identifier": "CC0-1.0",
         "license_url": "https://napportal.kozut.hu/en/#/informations/toc/",
         "operators": [
-            "Volánbusz Zrt.",
-            "SZKT",
-            "MÁV-START"
+            "MÁV Személyszállítási Zrt. - MÁV",
+            "MÁV Személyszállítási Zrt. - Volánbusz",
+            "Szegedi Közlekedési Kft."
         ],
         "source": "http://szegedimenetrend.hu/google_transit.zip",
         "filename": "hu_szkt.gtfs.zip",
-        "human_name": "Szkt",
+        "human_name": "SZKT",
         "contacts": []
     },
     {
@@ -47284,7 +47283,7 @@
         ],
         "source": "http://mobilitas.biokom.hu/gtfs",
         "filename": "hu_tukebusz.gtfs.zip",
-        "human_name": "Tüke Busz Zrt.",
+        "human_name": "Tüke Busz",
         "contacts": [
             {
                 "type": "agency",
@@ -47305,9 +47304,9 @@
         ],
         "source": "https://gtfs.menetbrand.com/download/veszprem",
         "filename": "hu_v-busz.gtfs.zip",
-        "human_name": "V-Busz Kft.",
+        "human_name": "V-Busz",
         "publisher": {
-            "name": "VBUSZ",
+            "name": "V-Busz Kft.",
             "url": "https://www.vbusz.hu/"
         },
         "contacts": [
@@ -47328,72 +47327,72 @@
         "license_url": "https://napportal.kozut.hu/en/#/informations/toc/",
         "operators": [
             "MÁV Személyszállítási Zrt. - Helyközi busz",
+            "MÁV Személyszállítási Zrt. - Ajka",
+            "MÁV Személyszállítási Zrt. - Baja",
+            "MÁV Személyszállítási Zrt. - Balassagyarmat",
+            "MÁV Személyszállítási Zrt. - Balatonfüred",
             "MÁV Személyszállítási Zrt. - Balatonfűzfő",
             "MÁV Személyszállítási Zrt. - Balmazújváros",
+            "MÁV Személyszállítási Zrt. - Bátaszék",
+            "MÁV Személyszállítási Zrt. - Bátonyterenye",
+            "MÁV Személyszállítási Zrt. - Békés",
+            "MÁV Személyszállítási Zrt. - Békéscsaba",
+            "MÁV Személyszállítási Zrt. - Bonyhád",
+            "MÁV Személyszállítási Zrt. - Csongrád",
+            "MÁV Személyszállítási Zrt. - Csurgó",
             "MÁV Személyszállítási Zrt. - Dunaújváros",
-            "MÁV Személyszállítási Zrt. - Baja",
+            "MÁV Személyszállítási Zrt. - Eger",
+            "MÁV Személyszállítási Zrt. - Ercsi",
+            "MÁV Személyszállítási Zrt. - Érd",
+            "MÁV Személyszállítási Zrt. - Esztergom",
+            "MÁV Személyszállítási Zrt. - Fonyód",
+            "MÁV Személyszállítási Zrt. - Gödöllő",
+            "MÁV Személyszállítási Zrt. - Gyöngyös",
+            "MÁV Személyszállítási Zrt. - Győr",
+            "MÁV Személyszállítási Zrt. - Gyula",
+            "MÁV Személyszállítási Zrt. - Hajdúszoboszló",
+            "MÁV Személyszállítási Zrt. - Jászberény",
+            "MÁV Személyszállítási Zrt. - Karcag",
+            "MÁV Személyszállítási Zrt. - Kazincbarcika",
+            "MÁV Személyszállítási Zrt. - Keszthely",
+            "MÁV Személyszállítási Zrt. - Komárom",
+            "MÁV Személyszállítási Zrt. - Komló",
+            "MÁV Személyszállítási Zrt. - Körmend",
+            "MÁV Személyszállítási Zrt. - Lenti",
+            "MÁV Személyszállítási Zrt. - Makó",
+            "MÁV Személyszállítási Zrt. - Mezőberény",
             "MÁV Személyszállítási Zrt. - Mezőtúr",
+            "MÁV Személyszállítási Zrt. - Mohács",
             "MÁV Személyszállítási Zrt. - Mórahalom",
             "MÁV Személyszállítási Zrt. - Mosonmagyaróvár",
-            "MÁV Személyszállítási Zrt. - Karcag",
-            "MÁV Személyszállítási Zrt. - Gyula",
-            "MÁV Személyszállítási Zrt. - Csongrád",
-            "MÁV Személyszállítási Zrt. - Hajdúszoboszló",
-            "MÁV Személyszállítási Zrt. - Gyöngyös",
-            "MÁV Személyszállítási Zrt. - Komárom",
-            "MÁV Személyszállítási Zrt. - Siklós",
-            "MÁV Személyszállítási Zrt. - Bonyhád",
-            "MÁV Személyszállítási Zrt. - Ajka",
-            "MÁV Személyszállítási Zrt. - Kazincbarcika",
-            "MÁV Személyszállítási Zrt. - Makó",
-            "MÁV Személyszállítási Zrt. - Sopron",
-            "MÁV Személyszállítási Zrt. - Bátaszék",
-            "MÁV Személyszállítási Zrt. - Békés",
-            "MÁV Személyszállítási Zrt. - Lenti",
-            "MÁV Személyszállítási Zrt. - Körmend",
-            "MÁV Személyszállítási Zrt. - Balassagyarmat",
-            "MÁV Személyszállítási Zrt. - Szentes",
-            "MÁV Személyszállítási Zrt. - Ózd",
-            "MÁV Személyszállítási Zrt. - Fonyód",
-            "MÁV Személyszállítási Zrt. - Székesfehérvár",
-            "MÁV Személyszállítási Zrt. - Békéscsaba",
-            "MÁV Személyszállítási Zrt. - Újszász",
-            "MÁV Személyszállítási Zrt. - Nyíregyháza",
-            "MÁV Személyszállítási Zrt. - Siófok",
             "MÁV Személyszállítási Zrt. - Nagyatád",
-            "MÁV Személyszállítási Zrt. - Jászberény",
-            "MÁV Személyszállítási Zrt. - Keszthely",
-            "MÁV Személyszállítási Zrt. - Mezőberény",
-            "MÁV Személyszállítási Zrt. - Tata",
-            "MÁV Személyszállítási Zrt. - Eger",
-            "MÁV Személyszállítási Zrt. - Balatonfüred",
-            "MÁV Személyszállítási Zrt. - Csurgó",
-            "MÁV Személyszállítási Zrt. - Szekszárd",
+            "MÁV Személyszállítási Zrt. - Nagykanizsa",
+            "MÁV Személyszállítási Zrt. - Nyíregyháza",
             "MÁV Személyszállítási Zrt. - Orosháza",
-            "MÁV Személyszállítási Zrt. - Ercsi",
-            "MÁV Személyszállítási Zrt. - Mohács",
-            "MÁV Személyszállítási Zrt. - Vác",
-            "MÁV Személyszállítási Zrt. - Esztergom",
-            "MÁV Személyszállítási Zrt. - Győr",
+            "MÁV Személyszállítási Zrt. - Oroszlány",
+            "MÁV Személyszállítási Zrt. - Ózd",
+            "MÁV Személyszállítási Zrt. - Pápa",
             "MÁV Személyszállítási Zrt. - Salgótarján",
-            "MÁV Személyszállítási Zrt. - Komló",
+            "MÁV Személyszállítási Zrt. - Siklós",
+            "MÁV Személyszállítási Zrt. - Siófok",
+            "MÁV Személyszállítási Zrt. - Sopron",
+            "MÁV Személyszállítási Zrt. - Székesfehérvár",
+            "MÁV Személyszállítási Zrt. - Szekszárd",
+            "MÁV Személyszállítási Zrt. - Szentes",
             "MÁV Személyszállítási Zrt. - Szigetvár",
             "MÁV Személyszállítási Zrt. - Szolnok",
-            "MÁV Személyszállítási Zrt. - Tiszaújváros",
+            "MÁV Személyszállítási Zrt. - Tata",
             "MÁV Személyszállítási Zrt. - Tiszafüred",
-            "MÁV Személyszállítási Zrt. - Oroszlány",
-            "MÁV Személyszállítási Zrt. - Nagykanizsa",
-            "MÁV Személyszállítási Zrt. - Érd",
-            "MÁV Személyszállítási Zrt. - Pápa",
-            "MÁV Személyszállítási Zrt. - Zalaegerszeg",
-            "MÁV Személyszállítási Zrt. - Gödöllő",
-            "MÁV Személyszállítási Zrt. - Bátonyterenye"
+            "MÁV Személyszállítási Zrt. - Tiszaújváros",
+            "MÁV Személyszállítási Zrt. - Újszász",
+            "MÁV Személyszállítási Zrt. - Vác",
+            "MÁV Személyszállítási Zrt. - Zalaegerszeg"
         ],
         "source": "https://gtfs.kti.hu/public-gtfs/volanbusz_gtfs.zip",
         "filename": "hu_volanbusz.gtfs.zip",
-        "human_name": "Volanbusz",
+        "human_name": "Volánbusz",
         "publisher": {
-            "name": "KTI Magyar Közlekedéstudományi és Logisztikai Intézet - realCity ITS Kft.,https://www.kti.hu",
+            "name": "Közlekedéstudományi Intézet",
             "url": "https://www.kti.hu"
         },
         "contacts": []
