@@ -1,0 +1,140 @@
+# SPDX-FileCopyrightText: 2025 Traines <git@traines.eu>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+#
+
+proxy_cache_path /var/cache/nginx/feed-proxy max_size=10g keys_zone=feed-proxy:1m inactive=1h;
+
+limit_req_zone $binary_remote_addr zone=feed-proxy:10m rate=2000r/m;
+limit_req_status 429;
+
+server {
+    listen 80;
+    server_name {{ feed_proxy_host }};
+
+    include ../conf.d/feed-proxy-http-default;
+
+    proxy_pass_header Server;
+    proxy_set_header User-Agent {{ feed_proxy_host }};
+    add_header X-Cache $upstream_cache_status;
+
+    proxy_cache            feed-proxy;
+    proxy_cache_valid      200 302 40s;
+    proxy_cache_valid      404 10s;
+    proxy_cache_use_stale  error timeout invalid_header updating
+                            http_500 http_502 http_503 http_504 http_429;
+
+    limit_req zone=feed-proxy burst=5000;
+
+    {% for item in feed_vars | dict2items %}   
+        location /feed/{{item.key}} {
+            proxy_pass {{ item.value.url }};
+
+            {% if "headers" in item.value %}
+                {% for header in item.value.headers | dict2items -%}
+                    proxy_set_header {{ header.key }} "{{ header.value }}";
+                {% endfor %}
+            {% endif %}            
+        }
+    {% endfor %}
+}
+
+server {
+    listen 443 http2 ssl;
+    listen [::]:443 http2 ssl;
+
+    server_name {{ feed_proxy_host }};
+
+    include ../conf.d/feed-proxy-https-default;
+
+    proxy_ssl_server_name on;
+    
+    proxy_pass_header Server;
+    proxy_set_header User-Agent {{ feed_proxy_host }};
+    add_header X-Cache $upstream_cache_status;
+
+    proxy_cache            feed-proxy;
+    proxy_cache_valid      200 302 40s;
+    proxy_cache_valid      404 10s;
+    proxy_cache_use_stale  error timeout invalid_header updating
+                            http_500 http_502 http_503 http_504 http_429;
+
+    limit_req zone=feed-proxy burst=5000;
+
+    {% for item in feed_vars | dict2items %}   
+        location /feed/{{item.key}} {
+            proxy_pass {{ item.value.url }};
+
+            {% if "headers" in item.value %}
+                {% for header in item.value.headers | dict2items -%}
+                    proxy_set_header {{ header.key }} "{{ header.value }}";
+                {% endfor %}
+            {% endif %}            
+        }
+    {% endfor %}
+}
+
+
+{% for item in feed_vars | dict2items -%}   
+{% if "gbfs" in item.value -%}
+
+server {
+    listen 80;
+    server_name {{ item.value.url | urlsplit("hostname") }};
+
+    include ../conf.d/feed-proxy-http-default;
+
+    proxy_pass_header Server;
+    proxy_set_header User-Agent {{ feed_proxy_host }};
+    add_header X-Cache $upstream_cache_status;
+
+    proxy_cache            feed-proxy;
+    proxy_cache_valid      200 302 80s;
+    proxy_cache_valid      404 10s;
+    proxy_cache_use_stale  error timeout invalid_header updating
+                            http_500 http_502 http_503 http_504 http_429;
+
+    limit_req zone=feed-proxy burst=5000;
+
+    proxy_pass {{ item.value.url | urlsplit("scheme") }}://{{ item.value.url | urlsplit("hostname") }};
+
+    {% if "headers" in item.value -%}
+        {% for header in item.value.headers | dict2items -%}
+            proxy_set_header {{ header.key }} "{{ header.value }}";
+        {% endfor %}
+    {% endif %}   
+}
+
+server {
+    listen 443 http2 ssl;
+    listen [::]:443 http2 ssl;
+
+    server_name {{ item.value.url | urlsplit("hostname") }};
+
+    include ../conf.d/feed-proxy-https-default;
+
+    proxy_ssl_server_name on;
+
+    proxy_pass_header Server;
+    proxy_set_header User-Agent {{ feed_proxy_host }};
+    add_header X-Cache $upstream_cache_status;
+
+    proxy_cache            feed-proxy;
+    proxy_cache_valid      200 302 80s;
+    proxy_cache_valid      404 10s;
+    proxy_cache_use_stale  error timeout invalid_header updating
+                            http_500 http_502 http_503 http_504 http_429;
+
+    limit_req zone=feed-proxy burst=5000;
+
+    proxy_pass {{ item.value.url | urlsplit("scheme") }}://{{ item.value.url | urlsplit("hostname") }};
+
+    {% if "headers" in item.value -%}
+        {% for header in item.value.headers | dict2items -%}
+            proxy_set_header {{ header.key }} "{{ header.value }}";
+        {% endfor %}
+    {% endif %}            
+}
+
+{% endif %}
+{% endfor %}
