@@ -47,6 +47,15 @@ server {
 
     charset UTF-8;
 
+    error_page 403 /error403.html;
+    location = /error403.html {
+        root /var/www/html/;
+        allow all;
+    }
+
+    # IP-addresses that have ignored usage policy, should be blocked and shown an according message
+    # deny <ip-address>
+
     # For certbot
     location ^~ /.well-known/acme-challenge/ {
         root /var/www/html/;
