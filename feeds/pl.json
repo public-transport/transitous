@@ -1344,7 +1344,7 @@
             }
         },
         {
-            "name": "Aleksandrów-Łódzki",
+            "name": "Częstochowa",
             "type": "http",
             "spec": "gtfs",
             "url": "https://cdn.zbiorkom.live/gtfs/czestochowa.zip",
