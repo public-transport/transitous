@@ -1317,7 +1317,7 @@
             }
         },
         {
-            "name": "Ciechnice",
+            "name": "Siechnice",
             "type": "http",
             "spec": "gtfs",
             "url": "https://files.girlc.at/gtfs/siechnice.zip",
