@@ -23,6 +23,17 @@
             "url": "https://jbb.ghsq.de/gtfs/ua-ukrzaliznytsya.gtfs.zip"
         },
         {
+            "name": "stryi",
+            "type": "http",
+            "url": "https://track.ua-gis.com/gtfs/stryi/static.zip",
+            "fix": true
+        },
+        {
+            "name": "uzhhorod",
+            "type": "http",
+            "url": "https://track.ua-gis.com/gtfs/uzhhorod/static.zip"
+        },
+        {
             "name": "nextbike",
             "type": "url",
             "spec": "gbfs",
