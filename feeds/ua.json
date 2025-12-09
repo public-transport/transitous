@@ -44,7 +44,7 @@
                 }
             },
             "license": {
-                "url": "https://gw.x24.digital/api/od/gtfs/p/metadata",
+                "url": "https://omr.gov.ua/ua/city/departments/dtks/open-data/",
                 "spdx-identifier": "CC-BY-4.0"
             }
         },
@@ -52,6 +52,24 @@
             "name": "odesa",
             "type": "url",
             "url": "https://gw.x24.digital/api/od-all/gtfs/v1/download/gtfs-rt-vehicles-pr.pb",
+            "headers": {
+                "ApiKey": "a8c6d35e-f2c1-4f72-b902-831fa9215009"
+            }
+        },
+        {
+            "name": "bucha",
+            "type": "http",
+            "url": "https://gw.x24.digital/api/bu/gtfs/v1/download/static",
+            "http-options": {
+                "headers": {
+                    "ApiKey": "a8c6d35e-f2c1-4f72-b902-831fa9215009"
+                }
+            }
+        },
+        {
+            "name": "bucha",
+            "type": "url",
+            "url": "https://gw.x24.digital/api/bu/gtfs/v1/download/gtfs-rt-vehicles-pr.pb",
             "headers": {
                 "ApiKey": "a8c6d35e-f2c1-4f72-b902-831fa9215009"
             }
