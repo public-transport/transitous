@@ -77,6 +77,14 @@
             }
         },
         {
+            "name": "kyiv",
+            "type": "http",
+            "url": "https://jbb.ghsq.de/gtfs/ua-kyiv.gtfs.zip",
+            "license": {
+                "url": "https://data.gov.ua/dataset/96128887-4f36-4c19-a96e-5d4765fade16"
+            }
+        },
+        {
             "name": "nextbike",
             "type": "url",
             "spec": "gbfs",
