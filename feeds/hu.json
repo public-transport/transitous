@@ -93,7 +93,8 @@
         {
             "name": "Hódmezővásárhely",
             "type": "http",
-            "url": "https://www.hvszzrt.hu/data/source/hodmezovasarhelyi-hu_gtfs.zip",
+            "url": "https://www.hvszzrt.hu/helyikozlekedes-98",
+            "function": "data_hodmezovasarhely_latest_resource",
             "license": {
                 "spdx-identifier": "CC0-1.0"
             }
