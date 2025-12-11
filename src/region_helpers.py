@@ -112,6 +112,22 @@ def data_kaposvar_latest_resource(source: HttpSource) -> HttpSource:
     return source
 
 
+def data_hodmezovasarhely_latest_resource(source: HttpSource) -> HttpSource:
+    import re
+    from bs4 import BeautifulSoup
+
+    page_html = requests.get(source.url).text
+    page_html_parsed = BeautifulSoup(page_html, "lxml")
+
+    contains_word_gtfs = re.compile(r".*GTFS.*", re.IGNORECASE)
+    url_paragraph_label = page_html_parsed.find("span", string=contains_word_gtfs)
+    assert url_paragraph_label
+
+    url_paragraph = url_paragraph_label.parent.parent
+    source.url = url_paragraph["href"]
+    return source
+
+
 def data_metroporto_latest_resource(source: HttpSource) -> HttpSource:
     from bs4 import BeautifulSoup
     from urllib.parse import urljoin
