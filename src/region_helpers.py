@@ -124,7 +124,8 @@ def data_hodmezovasarhely_latest_resource(source: HttpSource) -> HttpSource:
     assert url_paragraph_label
 
     url_paragraph = url_paragraph_label.parent.parent
-    return url_paragraph["href"]
+    source.url = return url_paragraph["href"]
+    return source
 
 
 def data_metroporto_latest_resource(source: HttpSource) -> HttpSource:
