@@ -7,15 +7,6 @@
     ],
     "sources": [
         {
-            "name": "opentransportdataswiss25",
-            "type": "http",
-            "url": "https://data.opentransportdata.swiss/de/dataset/timetable-2025-gtfs2020/permalink",
-            "license": {
-                "url": "https://opentransportdata.swiss/de/terms-of-use/"
-            },
-            "script": "ch-opentransportdataswiss.lua"
-        },
-        {
             "name": "opentransportdataswiss26",
             "type": "http",
             "url": "https://data.opentransportdata.swiss/de/dataset/timetable-2026-gtfs2020/permalink",
@@ -25,7 +16,7 @@
             "script": "ch-opentransportdataswiss.lua"
         },
         {
-            "name": "opentransportdataswiss25",
+            "name": "opentransportdataswiss26",
             "type": "url",
             "spec": "gtfs-rt",
             "url": "https://api.opentransportdata.swiss/la/gtfs-rt",
@@ -34,7 +25,7 @@
             }
         },
         {
-            "name": "opentransportdataswiss25",
+            "name": "opentransportdataswiss26",
             "type": "url",
             "spec": "gtfs-rt",
             "url": "https://api.opentransportdata.swiss/la/gtfs-sa",

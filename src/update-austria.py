@@ -6,7 +6,7 @@
 import requests
 import json
 
-TIMETABLE_YEARS = [2025, 2026]
+TIMETABLE_YEARS = [2026]
 
 
 def remove_duplicate_dashes(text: str) -> str:
@@ -72,15 +72,18 @@ if __name__ == "__main__":
         if "Flex" in data_set["nameEn"]:
             flex_feeds[data_set["nameEn"].replace(" Flex", "")] = True
 
+    current_data_set_ids = []
     for data_set in data_sets:
         set_id = data_set["id"]
         if set_id in ignore or data_set["nameEn"] in flex_feeds:
             continue
 
         for year in TIMETABLE_YEARS:
+            mvo_id =  f"{set_id}-{year}"
+            current_data_set_ids.append(mvo_id)
             existed = False
             for source in sources:
-                if source["x-mvo-id"] == f"{set_id}-{year}":
+                if "x-mvo-id" in source and source["x-mvo-id"] == mvo_id:
                     source["url"] = f"https://data.mobilitaetsverbuende.at/api/public/v1/data-sets/{set_id}/{year}/file"
                     source["license"]: {"url": data_set["termsOfUseUrlEn"]}
                     existed = True
@@ -88,6 +91,9 @@ if __name__ == "__main__":
             if not existed:
                 source = add_feed(year)
                 sources.append(source)
+
+    # Remove sources that no longer exist
+    sources = list(filter(lambda source: "x-mvo-id" in source and source["x-mvo-id"] in current_data_set_ids, sources))
 
     region["sources"] = sources
 
