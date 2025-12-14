@@ -16,9 +16,6 @@
             "url": "https://jbb.ghsq.de/gtfs/ro-railway.gtfs.zip",
             "license": {
                 "url": "https://data.gov.ro/base/images/logoinst/OGL-ROU-1.0.pdf"
-            },
-            "http-options": {
-                "fetch-interval-days": 7
             }
         },
         {
