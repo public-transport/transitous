@@ -24,6 +24,24 @@
                 "spdx-identifier": "MIT"
             },
             "fix": true
+        },
+        {
+            "name": "tokyo-rail",
+            "spec": "gtfs-rt",
+            "type": "http",
+            "url": "https://mkuran.pl/gtfs/tokyo/rail_alerts.pb",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
+        },
+        {
+            "name": "tokyo-rail",
+            "spec": "gtfs-rt",
+            "type": "http",
+            "url": "https://mkuran.pl/gtfs/tokyo/rail_positions.pb",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
         }
     ]
 }
