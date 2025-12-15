@@ -36,6 +36,18 @@ For Transitous-specific technical topics: [#transitous:matrix.spline.de](https:/
 
 Also, follow <a href="https://en.osm.town/@transitous" rel="me">Transitous on Mastodon</a>.
 
-## Adding a region
+## Configuring Transitous
 
-Find the documentation on the [Project Website](https://transitous.org/doc/#adding-a-region).
+Transitous is configured using *regions*. A region tells Transitous which public-transport data feeds belong to a certain area (for example a country or city).
+
+At a high level:
+
+- Each region is defined by a **JSON file** in the `feeds/` directory.
+- The file name usually follows the ISO country or subdivision code (for example `DE.json` for Germany).
+- A region file normally contains:
+  - a list of **maintainers** for that region’s data. 
+  - a list of **sources** (GTFS, real-time feeds, etc.) that should be fetched for the region.
+
+This configuration is what Transitous uses to know where to download data from and which areas it can route in.
+
+For detailed examples of region files and all supported source types, see the documentation on the  [Project Website](https://transitous.org/doc/#adding-a-region).
