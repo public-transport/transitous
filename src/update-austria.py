@@ -6,8 +6,6 @@
 import requests
 import json
 
-TIMETABLE_YEARS = [2026]
-
 
 def remove_duplicate_dashes(text: str) -> str:
     out = []
@@ -78,7 +76,8 @@ if __name__ == "__main__":
         if set_id in ignore or data_set["nameEn"] in flex_feeds:
             continue
 
-        for year in TIMETABLE_YEARS:
+        for version in data_set["latestVersions"]:
+            year = version["year"]
             mvo_id =  f"{set_id}-{year}"
             current_data_set_ids.append(mvo_id)
             existed = False
