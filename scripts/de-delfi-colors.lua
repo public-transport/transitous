@@ -3954,8 +3954,10 @@ local colors = {
         ["RE4"] = { color = 0x2eb273, text_color = 0xffffff },
     },
     ["nph-Linienbündel 01"] = {
+        ["448"] = { color = 0x878787, text_color = 0xffffff },
         ["R41"] = { color = 0xed2927, text_color = 0xffffff },
         ["R45"] = { color = 0xed2927, text_color = 0xffffff },
+        ["R46"] = { color = 0xed2927, text_color = 0xffffff },
         ["S40"] = { color = 0x0089cf, text_color = 0xffffff },
     },
     ["nph-Linienbündel 02"] = {
@@ -3965,9 +3967,19 @@ local colors = {
         ["R50"] = { color = 0xed2927, text_color = 0xffffff },
         ["R51"] = { color = 0xed2927, text_color = 0xffffff },
     },
+    ["nph-Linienbündel 03"] = {
+        ["525"] = { color = 0x36b64b, text_color = 0xffffff },
+        ["552"] = { color = 0x36b64b, text_color = 0xffffff },
+        ["553"] = { color = 0x878787, text_color = 0xffffff },
+        ["554"] = { color = 0x36b64b, text_color = 0xffffff },
+        ["555"] = { color = 0x36b64b, text_color = 0xffffff },
+        ["570"] = { color = 0x36b64b, text_color = 0xffffff },
+        ["585"] = { color = 0x36b64b, text_color = 0xffffff },
+        ["588"] = { color = 0x878787, text_color = 0xffffff },
+    },
     ["nph-Linienbündel 06"] = {
         ["411"] = { color = 0x36b64b, text_color = 0xffffff },
-        ["470"] = { color = 0x36b64b, text_color = 0xffffff },
+        ["470"] = { color = 0x878787, text_color = 0xffffff },
         ["471"] = { color = 0x36b64b, text_color = 0xffffff },
         ["R10"] = { color = 0xed2927, text_color = 0xffffff },
         ["R11"] = { color = 0xed2927, text_color = 0xffffff },
@@ -3982,14 +3994,30 @@ local colors = {
         ["R81"] = { color = 0xed2927, text_color = 0xffffff },
         ["S85"] = { color = 0x0089cf, text_color = 0xffffff },
     },
+    ["nph-Linienbündel 09"] = {
+        ["R76"] = { color = 0xed2927, text_color = 0xffffff },
+    },
     ["nph-Linienbündel 10"] = {
-        ["432"] = { color = 0x36b64b, text_color = 0xffffff },
+        ["432"] = { color = 0x878787, text_color = 0xffffff },
+        ["577"] = { color = 0x36b64b, text_color = 0xffffff },
+        ["R54"] = { color = 0xed2927, text_color = 0xffffff },
         ["S30"] = { color = 0x0089cf, text_color = 0xffffff },
     },
     ["nph-Linienbündel 12"] = {
+        ["490"] = { color = 0x878787, text_color = 0xffffff },
+        ["491"] = { color = 0x878787, text_color = 0xffffff },
+        ["492"] = { color = 0x878787, text_color = 0xffffff },
+        ["493"] = { color = 0x878787, text_color = 0xffffff },
+        ["494"] = { color = 0x878787, text_color = 0xffffff },
         ["R61"] = { color = 0xed2927, text_color = 0xffffff },
         ["S60"] = { color = 0x0089cf, text_color = 0xffffff },
         ["S90"] = { color = 0x0089cf, text_color = 0xffffff },
+        ["Sk1"] = { color = 0x36b64b, text_color = 0xffffff },
+        ["Sk2"] = { color = 0x36b64b, text_color = 0xffffff },
+        ["Sk3"] = { color = 0x36b64b, text_color = 0xffffff },
+    },
+    ["nph-Linienbündel 13"] = {
+        ["431"] = { color = 0x36b64b, text_color = 0xffffff },
     },
     ["nph-NachtExpress"] = {
         ["NE11"] = { color = 0xfdc300, text_color = 0x000000 },
