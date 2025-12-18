@@ -85,6 +85,7 @@
             "drop-agency-names": [
                 "DB Fernverkehr (Codesharing)"
             ],
+            "script": "de-VBN.lua",
             "http-options": {
                 "fetch-interval-days": 1
             },
