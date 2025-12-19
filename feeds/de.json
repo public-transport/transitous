@@ -82,6 +82,9 @@
             "name": "VBN",
             "type": "http",
             "url": "https://www.connect-info.net/opendata/gtfs/connect-nds-lowlevel/eyqasqtsse",
+            "drop-agency-names": [
+                "DB Fernverkehr (Codesharing)"
+            ],
             "http-options": {
                 "fetch-interval-days": 1
             },

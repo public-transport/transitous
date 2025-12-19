@@ -56,6 +56,7 @@
             "http-options": {
                 "fetch-interval-days": 2
             },
+            "default-timezone": "Europe/Vienna",
             "managed-by-script": true,
             "x-mvo-id": "78-2026",
             "spec": "gtfs-flex"
