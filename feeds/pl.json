@@ -1293,7 +1293,16 @@
             "name": "Zakroczym",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://raw.githubusercontent.com/gtfscc/zakroczym/main/gtfs.zip",
+            "url": "https://feed.gtfs.cc/zakroczym/gtfs.zip",
+            "license": {
+                "spdx-identifier": "MIT"
+            }
+        },
+        {
+            "name": "Czosnów",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://feed.gtfs.cc/czosnow/gtfs.zip",
             "license": {
                 "spdx-identifier": "MIT"
             }
