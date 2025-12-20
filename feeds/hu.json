@@ -50,7 +50,7 @@
         {
             "name": "v-busz",
             "type": "http",
-            "url": "https://gtfs.menetbrand.com/download/veszprem",
+            "url": "https://vbusz.hu/gtfs",
             "license": {
                 "spdx-identifier": "CC0-1.0"
             }
