@@ -88,6 +88,7 @@
             "http-options": {
                 "fetch-interval-days": 1
             },
+            "script": "de-VBN.lua",
             "license": {
                 "spdx-identifier": "CC-BY-SA-4.0"
             }

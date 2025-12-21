@@ -1,0 +1,73 @@
+-- SPDX-FileCopyrightText: Felix Gündling <felixguendling@gmail.com>
+-- SPDX-License-Identifier: AGPL-3.0-or-later
+
+local colors = require 'scripts.de-VBN-colors'
+
+function is_number(str)
+  return not (str == "" or str:find("%D"))
+end
+
+function remove_leading_zeros(str)
+  return string.format("%d", tonumber(str))
+end
+
+-- routes from international operators that need their display names fixed
+-- { source route type, route name }
+
+-- i reckon, the intl_name_map thing could be deleted, couldn't see that in VBN data
+--local intl_name_map = {
+--    { 102, "EC" },
+--    { 102, "IC" },
+--    { 101, "ICE" },
+--    { 102, "NJ" },
+--    { 101, "RJ" },
+--    { 102, "RJX" },
+--    { 101, "THA" },
+--}
+
+--not sure about that but i don't think leaving it uncommented breaks anything
+
+function process_trip(trip)
+  if trip:get_route():get_agency():get_name() == 'DB Fernverkehr AG' and is_number(trip:get_short_name()) then
+    -- Format trip_short_name=`00123` to train number 123
+    if trip:get_route():get_route_type() == 101 then
+      trip:set_short_name('ICE ' .. remove_leading_zeros(trip:get_short_name()))
+      trip:set_display_name(trip:get_short_name())
+    elseif trip:get_route():get_route_type() == 102 then
+      trip:set_short_name('IC ' .. remove_leading_zeros(trip:get_short_name()))
+      trip:set_display_name(trip:get_short_name())
+    end
+  else
+    -- international operators without line names in the route short name
+    for _,m in ipairs(intl_name_map) do
+      if trip:get_route():get_route_type() == m[1] and trip:get_route():get_short_name() == m[2] then
+        trip:set_short_name(trip:get_route():get_short_name() .. ' ' .. remove_leading_zeros(trip:get_short_name()))
+        trip:set_display_name(trip:get_short_name())
+      end
+    end
+  end
+
+  if trip:get_route():get_route_type() == 106 and is_number(trip:get_short_name()) then
+    trip:set_display_name(trip:get_route():get_short_name() .. ' (' .. remove_leading_zeros(trip:get_short_name()) .. ')')
+  end
+end
+
+function process_agency(agency)
+  if agency:get_url() == "https://www.delfi.de" then
+    agency:set_url("")
+  end
+end
+
+function process_route(route)
+    local agency_name = route:get_agency():get_name()
+    local route_name = route:get_short_name()
+	-- remove spaces from route name for matching
+	route_name = route_name:gsub("%s+", "")
+	local original_route_color = route:get_color()
+	local original_route_text_color = route:get_text_color()
+    if (original_route_color == 0 or original_route_text_color == 0) and colors[agency_name] and colors[agency_name][route_name] then
+        local colors = colors[agency_name][route_name]
+        route:set_color(colors.color)
+        route:set_text_color(colors.text_color)
+    end
+end
