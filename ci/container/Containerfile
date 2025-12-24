@@ -14,7 +14,7 @@ RUN apt-get update -y && \
     apt-get clean -y && \
     rm -rf /var/lib/apt/lists/* 
 RUN rm /usr/lib/python3.*/EXTERNALLY-MANAGED && \
-    pip3 install requests ruamel.yaml pycountry beautifulsoup4 lxml license-expression
+    pip3 install requests ruamel.yaml pycountry beautifulsoup4 lxml license-expression tzdata
 
 COPY --from=build /usr/local/bin/gtfsclean /usr/local/bin/gtfsclean
 RUN mkdir -p /opt/motis/ && \
