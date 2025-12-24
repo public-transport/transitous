@@ -9,7 +9,10 @@
         {
             "name": "th-namtang",
             "type": "mobility-database",
-            "mdb-id": "mdb-1831"
+            "mdb-id": "mdb-1831",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
         }
     ]
 }
