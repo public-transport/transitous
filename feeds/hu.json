@@ -32,6 +32,11 @@
             "transitland-atlas-id": "f-u2m-bkk"
         },
         {
+            "name": "bkk-funicular",
+            "type": "http",
+            "url": "https://gy-mate.hu/gtfs/gtfs_hu_funicular.zip"
+        },
+        {
             "name": "bkk",
             "type": "url",
             "spec": "gtfs-rt",
