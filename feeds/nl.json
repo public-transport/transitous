@@ -15,6 +15,7 @@
             "type": "http",
             "url" : "https://gtfs.openov.nl/gtfs-rt/gtfs-openov-nl.zip",
             "fix": true,
+            "script": "nl-eurostar.lua",
             "license": {
                 "spdx-identifier": "CC0-1.0",
                 "url": "https://gtfs.openov.nl/LICENSE.TXT"
