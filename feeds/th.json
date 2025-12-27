@@ -12,7 +12,8 @@
             "mdb-id": "mdb-1831",
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
-            }
+            },
+            "script": "th-namtang.lua"
         }
     ]
 }
