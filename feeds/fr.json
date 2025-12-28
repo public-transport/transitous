@@ -68,7 +68,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 82386,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "blablacar-bus-horaires-theoriques-et-temps-reel-du-reseau-europeen",
@@ -96,6 +97,7 @@
             },
             "x-data-gov-fr-res-id": 82199,
             "managed-by-script": true,
+            "skip": false,
             "script": "fr-eurostar.lua"
         },
         {
@@ -135,7 +137,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 81653,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "horaires-des-trains-trenitalia-france",
@@ -160,7 +163,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 83582,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "horaires-sncf--83675",
@@ -173,7 +177,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 83675,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "tier-dott-gbfs-france--82747",
@@ -305,7 +310,8 @@
                 "url": "https://transport.data.gouv.fr/datasets/reseau-urbain-et-interurbain-dile-de-france-mobilites"
             },
             "x-data-gov-fr-res-id": 80921,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "horaires-des-lignes-transilien-1",
@@ -318,7 +324,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 67595,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "velib-velos-et-bornes-disponibilite-temps-reel",
@@ -343,7 +350,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 78904,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "citiz-autopartage-auvergne-rhone-alpes",
@@ -368,7 +376,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 83112,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "arrets-horaires-et-parcours-theoriques-des-reseaux-nva-mobilite-agreges-1",
@@ -381,7 +390,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 82321,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "reseau-lio-occitanie",
@@ -394,7 +404,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 81026,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "horaires-theoriques-de-loffre-du-reseau-ferre-regional-de-transport",
@@ -406,7 +417,8 @@
                 "url": "https://transport.data.gouv.fr/datasets/horaires-theoriques-de-loffre-du-reseau-ferre-regional-de-transport"
             },
             "x-data-gov-fr-res-id": 83620,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "agregat-des-reseaux-urbains-et-interurbains-en-region-grand-est",
@@ -419,7 +431,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 83634,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "offre-du-reseau-de-transport-interurbain-fluo-grand-est",
@@ -432,7 +445,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 83635,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "vls-velo-fluo-grand-est",
@@ -457,7 +471,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 82137,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "lignes-des-reseaux-transport-zou-provence-alpes-cote-d-azur-proximite-3-3",
@@ -482,7 +497,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 82285,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "lignes-des-reseaux-transport-zou-provence-alpes-cote-d-azur-express-3-3",
@@ -507,7 +523,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 82136,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "horaires-theoriques-des-trains-regionaux-zou-en-provence-alpes-cote-d-azur",
@@ -520,7 +537,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 83647,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "zou",
@@ -533,7 +551,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 83448,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "zou",
@@ -558,7 +577,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 79818,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "arrets-horaires-et-circuits-des-lignes-de-transports-aleop-1",
@@ -571,7 +591,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 80721,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "arrets-horaires-et-circuits-des-lignes-de-transports-aleop-1",
@@ -608,7 +629,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 81559,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "breizhgo-car--81461",
@@ -621,7 +643,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 81461,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "breizhgo-car--81462",
@@ -634,7 +657,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 81462,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "breizhgo-car--81463",
@@ -647,7 +671,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 81463,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "breizhgo-car--81464",
@@ -660,7 +685,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 81464,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "breizhgo-car--83728",
@@ -673,7 +699,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 83728,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "breizhgo-car--83729",
@@ -686,7 +713,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 83729,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "breizhgo-car--81463",
@@ -723,7 +751,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 81474,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "base-de-donnees-multimodale-des-reseaux-de-transport-public-normands",
@@ -736,7 +765,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 81942,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "base-de-donnees-multimodale-des-reseaux-de-transport-public-normands",
@@ -761,7 +791,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 82317,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "reseau-de-transport-interurbain-mobigo-en-bourgogne-franche-comte--11081",
@@ -871,7 +902,8 @@
                 "url": "https://transport.data.gouv.fr/datasets/arrets-horaires-et-parcours-theoriques-gtfs-du-reseau-routier-regional-de-transport-scolaire-et-interurbain-59-nord"
             },
             "x-data-gov-fr-res-id": 81828,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "arrets-horaires-et-parcours-theoriques-gtfs-du-reseau-routier-regional-de-transport-scolaire-et-interurbain-59-nord--81829",
@@ -883,7 +915,8 @@
                 "url": "https://transport.data.gouv.fr/datasets/arrets-horaires-et-parcours-theoriques-gtfs-du-reseau-routier-regional-de-transport-scolaire-et-interurbain-59-nord"
             },
             "x-data-gov-fr-res-id": 81829,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "arrets-horaires-et-parcours-theoriques-gtfs-du-reseau-routier-regional-de-transport-scolaire-et-interurbain-59-nord--81830",
@@ -895,7 +928,8 @@
                 "url": "https://transport.data.gouv.fr/datasets/arrets-horaires-et-parcours-theoriques-gtfs-du-reseau-routier-regional-de-transport-scolaire-et-interurbain-59-nord"
             },
             "x-data-gov-fr-res-id": 81830,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "arrets-horaires-et-parcours-theoriques-gtfs-du-reseau-routier-regional-de-transport-scolaire-et-interurbain-59-nord--81832",
@@ -907,7 +941,8 @@
                 "url": "https://transport.data.gouv.fr/datasets/arrets-horaires-et-parcours-theoriques-gtfs-du-reseau-routier-regional-de-transport-scolaire-et-interurbain-59-nord"
             },
             "x-data-gov-fr-res-id": 81832,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "arrets-itineraires-et-horaires-theoriques-des-reseaux-de-transport-des-membres-de-jvmalin",
@@ -920,7 +955,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 83521,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "remi-offre-theorique-mobilite-reseau-interurbain-regional",
@@ -933,7 +969,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 83530,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "voi-velos-paris",
@@ -970,7 +1007,203 @@
             "managed-by-script": true
         },
         {
-            "name": "reseaux-de-transports-en-commun-de-la-metropole-daix-marseille-provence-et-des-bouches-du-rhone",
+            "name": "reseaux-de-transports-en-commun-de-la-metropole-daix-marseille-provence-et-des-bouches-du-rhone--39589",
+            "type": "http",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/7eef6ec9-9ebb-44f2-becb-2efc522522d6",
+            "url-override": "https://app.mecatran.com/utw/ws/gtfsfeed/static/mamp-rtm?apiKey=16421b08630a7d065c6d250051780f484b673659",
+            "fix": true,
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/reseaux-de-transports-en-commun-de-la-metropole-daix-marseille-provence-et-des-bouches-du-rhone",
+                "spdx-identifier": "etalab-2.0"
+            },
+            "x-data-gov-fr-res-id": 39589,
+            "managed-by-script": true,
+            "skip": false
+        },
+        {
+            "name": "reseaux-de-transports-en-commun-de-la-metropole-daix-marseille-provence-et-des-bouches-du-rhone--39591",
+            "type": "http",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/e8a86701-6359-45de-bee5-95e648ec04e3",
+            "url-override": "https://app.mecatran.com/utw/ws/gtfsfeed/static/mamp-uly?apiKey=0940631b6473164b4a1c136a2828324e6f3f3c08",
+            "fix": true,
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/reseaux-de-transports-en-commun-de-la-metropole-daix-marseille-provence-et-des-bouches-du-rhone",
+                "spdx-identifier": "etalab-2.0"
+            },
+            "x-data-gov-fr-res-id": 39591,
+            "managed-by-script": true,
+            "skip": false
+        },
+        {
+            "name": "reseaux-de-transports-en-commun-de-la-metropole-daix-marseille-provence-et-des-bouches-du-rhone--39592",
+            "type": "http",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/3fc0ab9d-e7a3-4728-ac2b-be55d927e757",
+            "url-override": "https://app.mecatran.com/utw/ws/gtfsfeed/static/mamp-lib?apiKey=14276f6a093c2c53370b48001f75646f2b2c3969",
+            "fix": true,
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/reseaux-de-transports-en-commun-de-la-metropole-daix-marseille-provence-et-des-bouches-du-rhone",
+                "spdx-identifier": "etalab-2.0"
+            },
+            "x-data-gov-fr-res-id": 39592,
+            "managed-by-script": true,
+            "skip": false
+        },
+        {
+            "name": "reseaux-de-transports-en-commun-de-la-metropole-daix-marseille-provence-et-des-bouches-du-rhone--39593",
+            "type": "http",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/42b6ba26-f817-455b-8ba2-fa30c100fff4",
+            "url-override": "https://app.mecatran.com/utw/ws/gtfsfeed/static/mamp-col?apiKey=776d384907333d300f1b0077344506394e09501d",
+            "fix": true,
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/reseaux-de-transports-en-commun-de-la-metropole-daix-marseille-provence-et-des-bouches-du-rhone",
+                "spdx-identifier": "etalab-2.0"
+            },
+            "x-data-gov-fr-res-id": 39593,
+            "managed-by-script": true,
+            "skip": false
+        },
+        {
+            "name": "reseaux-de-transports-en-commun-de-la-metropole-daix-marseille-provence-et-des-bouches-du-rhone--39594",
+            "type": "http",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/d61403a1-7694-4a04-a229-044a43aff5c7",
+            "url-override": "https://app.mecatran.com/utw/ws/gtfsfeed/static/mamp-cig?apiKey=0262073f524e2f1e1a2f4f254c6b01790b2b2b39",
+            "fix": true,
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/reseaux-de-transports-en-commun-de-la-metropole-daix-marseille-provence-et-des-bouches-du-rhone",
+                "spdx-identifier": "etalab-2.0"
+            },
+            "x-data-gov-fr-res-id": 39594,
+            "managed-by-script": true,
+            "skip": false
+        },
+        {
+            "name": "reseaux-de-transports-en-commun-de-la-metropole-daix-marseille-provence-et-des-bouches-du-rhone--39595",
+            "type": "http",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/2bbfc260-c908-4242-9796-c30cb36511ea",
+            "url-override": "https://app.mecatran.com/utw/ws/gtfsfeed/static/mamp-mrc?apiKey=70560f77767d05157479657b597a6544026b4b75",
+            "fix": true,
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/reseaux-de-transports-en-commun-de-la-metropole-daix-marseille-provence-et-des-bouches-du-rhone",
+                "spdx-identifier": "etalab-2.0"
+            },
+            "x-data-gov-fr-res-id": 39595,
+            "managed-by-script": true,
+            "skip": false
+        },
+        {
+            "name": "reseaux-de-transports-en-commun-de-la-metropole-daix-marseille-provence-et-des-bouches-du-rhone--39596",
+            "type": "http",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/05c200aa-798d-4660-bae7-3bf77e551c4c",
+            "url-override": "https://app.mecatran.com/utw/ws/gtfsfeed/static/mamp-ctb?apiKey=686525656f2c3228054e6a7c3e38330037076207",
+            "fix": true,
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/reseaux-de-transports-en-commun-de-la-metropole-daix-marseille-provence-et-des-bouches-du-rhone",
+                "spdx-identifier": "etalab-2.0"
+            },
+            "x-data-gov-fr-res-id": 39596,
+            "managed-by-script": true,
+            "skip": false
+        },
+        {
+            "name": "reseaux-de-transports-en-commun-de-la-metropole-daix-marseille-provence-et-des-bouches-du-rhone--39597",
+            "type": "http",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/c671fcc9-fe50-4bee-bed0-78e6443c1010",
+            "url-override": "https://app.mecatran.com/utw/ws/gtfsfeed/static/mamp-bde?apiKey=2b7a3b3b084c750566663c2e09726b19171f275c",
+            "fix": true,
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/reseaux-de-transports-en-commun-de-la-metropole-daix-marseille-provence-et-des-bouches-du-rhone",
+                "spdx-identifier": "etalab-2.0"
+            },
+            "x-data-gov-fr-res-id": 39597,
+            "managed-by-script": true,
+            "skip": false
+        },
+        {
+            "name": "reseaux-de-transports-en-commun-de-la-metropole-daix-marseille-provence-et-des-bouches-du-rhone--39598",
+            "type": "http",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/cde22673-d7e4-4cbd-837f-3c8bd9fb2f9b",
+            "url-override": "https://app.mecatran.com/utw/ws/gtfsfeed/static/mamp-aub?apiKey=5d154e7479302217113b0146044950783f2e7f72",
+            "fix": true,
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/reseaux-de-transports-en-commun-de-la-metropole-daix-marseille-provence-et-des-bouches-du-rhone",
+                "spdx-identifier": "etalab-2.0"
+            },
+            "x-data-gov-fr-res-id": 39598,
+            "managed-by-script": true,
+            "skip": false
+        },
+        {
+            "name": "reseaux-de-transports-en-commun-de-la-metropole-daix-marseille-provence-et-des-bouches-du-rhone--39599",
+            "type": "http",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/2316529b-3075-4013-8b85-46777fefd56e",
+            "url-override": "https://app.mecatran.com/utw/ws/gtfsfeed/static/mamp-fri?apiKey=0d5075674700466047752b2c591d300a1452601d",
+            "fix": true,
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/reseaux-de-transports-en-commun-de-la-metropole-daix-marseille-provence-et-des-bouches-du-rhone",
+                "spdx-identifier": "etalab-2.0"
+            },
+            "x-data-gov-fr-res-id": 39599,
+            "managed-by-script": true,
+            "skip": false
+        },
+        {
+            "name": "reseaux-de-transports-en-commun-de-la-metropole-daix-marseille-provence-et-des-bouches-du-rhone--39601",
+            "type": "http",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/ab931edc-0bc1-4c66-960a-dc546b46df03",
+            "url-override": "https://app.mecatran.com/utw/ws/gtfsfeed/static/mamp-pam?apiKey=596e694f3330142c525b7d6b123a5b055f744058",
+            "fix": true,
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/reseaux-de-transports-en-commun-de-la-metropole-daix-marseille-provence-et-des-bouches-du-rhone",
+                "spdx-identifier": "etalab-2.0"
+            },
+            "x-data-gov-fr-res-id": 39601,
+            "managed-by-script": true,
+            "skip": false
+        },
+        {
+            "name": "reseaux-de-transports-en-commun-de-la-metropole-daix-marseille-provence-et-des-bouches-du-rhone--39602",
+            "type": "http",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/10e025a1-9048-4c19-925a-466b2a79232f",
+            "url-override": "https://app.mecatran.com/utw/ws/gtfsfeed/static/mamp-c13?apiKey=3675433c4f196f4d3c6b62316e130536196f0336",
+            "fix": true,
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/reseaux-de-transports-en-commun-de-la-metropole-daix-marseille-provence-et-des-bouches-du-rhone",
+                "spdx-identifier": "etalab-2.0"
+            },
+            "x-data-gov-fr-res-id": 39602,
+            "managed-by-script": true,
+            "skip": false
+        },
+        {
+            "name": "reseaux-de-transports-en-commun-de-la-metropole-daix-marseille-provence-et-des-bouches-du-rhone--39603",
+            "type": "http",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/9b44cd04-63b5-46e7-a1f8-d5c1c9151d5a",
+            "url-override": "https://app.mecatran.com/utw/ws/gtfsfeed/static/mamp-aix?apiKey=020c7c326b6c5e750b168064336e344c61213521",
+            "fix": true,
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/reseaux-de-transports-en-commun-de-la-metropole-daix-marseille-provence-et-des-bouches-du-rhone",
+                "spdx-identifier": "etalab-2.0"
+            },
+            "x-data-gov-fr-res-id": 39603,
+            "managed-by-script": true,
+            "skip": false
+        },
+        {
+            "name": "reseaux-de-transports-en-commun-de-la-metropole-daix-marseille-provence-et-des-bouches-du-rhone--80736",
+            "type": "http",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/304e9bce-2f14-417f-a02e-3b3827de8d5f",
+            "url-override": "https://app.mecatran.com/utw/ws/gtfsfeed/static/mamp-cio?apiKey=2b37114236244f1e115f6542331d243617772448",
+            "fix": true,
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/reseaux-de-transports-en-commun-de-la-metropole-daix-marseille-provence-et-des-bouches-du-rhone",
+                "spdx-identifier": "etalab-2.0"
+            },
+            "x-data-gov-fr-res-id": 80736,
+            "managed-by-script": true,
+            "skip": false
+        },
+        {
+            "name": "reseaux-de-transports-en-commun-de-la-metropole-daix-marseille-provence-et-des-bouches-du-rhone--81969",
             "type": "http",
             "url": "https://www.data.gouv.fr/api/1/datasets/r/0d9a808a-9a9b-4fa1-b04f-339bbf2cfeb1",
             "url-override": "https://app.mecatran.com/utw/ws/gtfsfeed/static/mamp?apiKey=60327e505a214c77303f52206f11483069257343",
@@ -980,7 +1213,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 81969,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "velos-a-assistance-electrique-en-libre-service-levelo-sur-marseille",
@@ -1018,7 +1252,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 82338,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "arrets-horaires-et-parcours-theoriques-des-reseaux-naq-bac-nva-m",
@@ -1031,7 +1266,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 82382,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "arrets-horaires-et-parcours-theoriques-gtfs-du-reseau-routier-regional-de-transport-interurbain-62-pas-de-calais-1",
@@ -1043,7 +1279,8 @@
                 "url": "https://transport.data.gouv.fr/datasets/arrets-horaires-et-parcours-theoriques-gtfs-du-reseau-routier-regional-de-transport-interurbain-62-pas-de-calais-1"
             },
             "x-data-gov-fr-res-id": 82169,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "arrets-horaires-et-parcours-theoriques-gtfs-du-reseau-routier-regional-de-transport-scolaire-62-pas-de-calais",
@@ -1055,7 +1292,8 @@
                 "url": "https://transport.data.gouv.fr/datasets/arrets-horaires-et-parcours-theoriques-gtfs-du-reseau-routier-regional-de-transport-scolaire-62-pas-de-calais"
             },
             "x-data-gov-fr-res-id": 81833,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "horaires-des-bacs-de-loire-en-loire-atlantique-gtfs--83674",
@@ -1068,7 +1306,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 83674,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "horaires-des-bacs-de-loire-en-loire-atlantique-gtfs--83727",
@@ -1081,7 +1320,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 83727,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "offre-et-disponibilite-temps-reel-du-service-citiz-en-autopartage-metropole-de-lyon",
@@ -1141,7 +1381,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 82729,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "reseau-cars-region-isere-38",
@@ -1154,7 +1395,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 40287,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "reseau-cars-region-isere-38",
@@ -1191,7 +1433,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 82308,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "flibco-lille-airport-gtfs",
@@ -1204,7 +1447,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 83405,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "ilevia-localisation-des-arrets-bus-metro-et-tram-gtfs",
@@ -1217,7 +1461,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 81995,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "ilevia-localisation-des-arrets-bus-metro-et-tram-gtfs",
@@ -1254,7 +1499,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 80417,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "tisseo-reseau-transport-urbain-toulousain",
@@ -1267,7 +1513,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 81678,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "tisseo-reseau-transport-urbain-toulousain",
@@ -1292,7 +1539,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 81486,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "offre-de-transport-du-reseau-fluo-grand-est-moselle-57",
@@ -1331,7 +1579,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 82872,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "citiz-autopartage-occitanie",
@@ -1367,7 +1616,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 80934,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "horaires-theoriques-au-format-gtfs-et-horaires-temps-reel-au-format-gtfs-rt-du-reseau-car-jaune-a-la-reunion",
@@ -1392,7 +1642,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 83024,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "offres-de-services-bus-tram-et-scolaire-au-format-gtfs-netex-gtfs-rt-siri-lite",
@@ -1452,7 +1703,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 80964,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "velotoulouse-velo-en-libre-service-au-standard-gbfs",
@@ -1476,7 +1728,8 @@
                 "url": "https://transport.data.gouv.fr/datasets/arrets-horaires-et-parcours-theoriques-du-reseau-routier-regional-de-transport-scolaire-et-interurbain-60-oise-1"
             },
             "x-data-gov-fr-res-id": 81820,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "arrets-horaires-et-parcours-theoriques-du-reseau-routier-regional-de-transport-scolaire-et-interurbain-60-oise-1--81821",
@@ -1488,7 +1741,8 @@
                 "url": "https://transport.data.gouv.fr/datasets/arrets-horaires-et-parcours-theoriques-du-reseau-routier-regional-de-transport-scolaire-et-interurbain-60-oise-1"
             },
             "x-data-gov-fr-res-id": 81821,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "arrets-horaires-et-parcours-theoriques-du-reseau-routier-regional-de-transport-scolaire-et-interurbain-60-oise-1--81822",
@@ -1500,7 +1754,8 @@
                 "url": "https://transport.data.gouv.fr/datasets/arrets-horaires-et-parcours-theoriques-du-reseau-routier-regional-de-transport-scolaire-et-interurbain-60-oise-1"
             },
             "x-data-gov-fr-res-id": 81822,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "arrets-horaires-et-parcours-theoriques-du-reseau-routier-regional-de-transport-scolaire-et-interurbain-60-oise-1--81823",
@@ -1512,7 +1767,8 @@
                 "url": "https://transport.data.gouv.fr/datasets/arrets-horaires-et-parcours-theoriques-du-reseau-routier-regional-de-transport-scolaire-et-interurbain-60-oise-1"
             },
             "x-data-gov-fr-res-id": 81823,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "citiz-autopartage-hauts-de-france",
@@ -1537,7 +1793,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 83114,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "offre-de-transport-du-reseau-fluo-grand-est-haut-rhin-68",
@@ -1550,7 +1807,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 80419,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "offre-de-transport-du-reseau-fluo-grand-est-haut-rhin-68",
@@ -1587,7 +1845,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 80423,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "arrets-horaires-et-parcours-theoriques-des-reseaux-naq-pat-nva-m-1",
@@ -1600,7 +1859,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 82346,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "citiz-autopartage-nantes",
@@ -1625,7 +1885,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 83251,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "offre-et-temps-reel-du-service-velos-en-libre-service-naolib-de-nantes-metropole-au-format-gbfs",
@@ -1650,7 +1911,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 83113,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "reseau-interurbain-cars-region-puy-de-dome-63",
@@ -1663,7 +1925,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 38888,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "arrets-horaires-et-parcours-theoriques-des-reseaux-naq-cma-nva-m-1",
@@ -1676,7 +1939,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 82326,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "horaires-theoriques-des-lignes-m-covoit-ligne-plus",
@@ -1689,7 +1953,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 81617,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "transports-a-la-demande-en-pays-de-la-loire-gtfs-flex-aleop",
@@ -1728,7 +1993,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 83178,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "donnees-statiques-et-dynamiques-du-reseau-de-transport-lignes-dazur",
@@ -1752,7 +2018,8 @@
                 "url": "https://transport.data.gouv.fr/datasets/arrets-horaires-et-parcours-theoriques-gtfs-du-reseau-routier-regional-de-transport-interurbain-80-somme"
             },
             "x-data-gov-fr-res-id": 82277,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "arrets-horaires-et-parcours-theoriques-gtfs-du-reseau-routier-regional-de-transport-scolaire-80-somme",
@@ -1764,7 +2031,8 @@
                 "url": "https://transport.data.gouv.fr/datasets/arrets-horaires-et-parcours-theoriques-gtfs-du-reseau-routier-regional-de-transport-scolaire-80-somme"
             },
             "x-data-gov-fr-res-id": 81826,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "offre-de-transport-du-reseau-fluo-grand-est-marne-51",
@@ -1777,7 +2045,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 80421,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "arrets-horaires-et-parcours-theoriques-gtfs-du-reseau-routier-regional-de-transport-interurbain-02-aisne",
@@ -1789,7 +2058,8 @@
                 "url": "https://transport.data.gouv.fr/datasets/arrets-horaires-et-parcours-theoriques-gtfs-du-reseau-routier-regional-de-transport-interurbain-02-aisne"
             },
             "x-data-gov-fr-res-id": 82170,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "arrets-horaires-et-parcours-theoriques-gtfs-du-reseau-routier-regional-de-transport-scolaire-02-aisne",
@@ -1801,7 +2071,8 @@
                 "url": "https://transport.data.gouv.fr/datasets/arrets-horaires-et-parcours-theoriques-gtfs-du-reseau-routier-regional-de-transport-scolaire-02-aisne"
             },
             "x-data-gov-fr-res-id": 82276,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "reseau-interurbain-et-scolaire-cars-region-drome-26",
@@ -1814,7 +2085,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 80960,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "donnees-theoriques-gtfs-et-temps-reel-siri-lite-du-reseau-cts",
@@ -1827,7 +2099,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 79220,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "stations-en-libre-service-velhop-flux-gbfs",
@@ -1852,7 +2125,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 62323,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "offre-de-transport-tam-en-temps-reel-gtfs-rt-urbain-et-suburbain--81754",
@@ -1865,7 +2139,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 81754,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "offre-de-transport-tam-en-temps-reel-gtfs-rt-urbain-et-suburbain--83773",
@@ -1878,7 +2153,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 83773,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "disponibilite-en-temps-reel-des-velos-en-libre-service-velomagg-de-montpellier",
@@ -1903,7 +2179,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 64973,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "donnees-statiques-et-temps-reel-du-reseau-astuce-metropole-rouen-normandie",
@@ -2012,7 +2289,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 83281,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "versions-des-horaires-theoriques-des-lignes-de-bus-et-de-metro-du-reseau-star-au-format-gtfs--83282",
@@ -2025,7 +2303,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 83282,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "versions-des-horaires-theoriques-des-lignes-de-bus-et-de-metro-du-reseau-star-au-format-gtfs--83281",
@@ -2062,7 +2341,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 79560,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "reseau-de-transport-urbain-de-la-metropole-toulon-provence-mediterranee",
@@ -2099,7 +2379,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 83459,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "reseau-interurbain-cars-region-savoie-73",
@@ -2112,7 +2393,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 81244,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "arrets-horaires-et-parcours-theoriques-des-reseaux-naq-vie-nva-m-1",
@@ -2125,7 +2407,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 82332,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "tier-dott-gbfs-gpseo",
@@ -2149,7 +2432,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 82342,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "arrets-horaires-et-parcours-theoriques-des-reseaux-naq-dor-nva-m-1",
@@ -2162,7 +2446,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 82336,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "horaires-des-traversees-brittany-ferries",
@@ -2175,7 +2460,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 83427,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "horaires-du-reseau-stas",
@@ -2188,7 +2474,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 81023,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "horaires-du-reseau-stas",
@@ -2215,7 +2502,43 @@
             "managed-by-script": true
         },
         {
-            "name": "paris-sud-velos-a-assistance-electrique-en-libre-service",
+            "name": "paris-sud-velos-a-assistance-electrique-en-libre-service--63612",
+            "type": "url",
+            "url": "https://gateway.prod.zoov.io/gbfs/2.2/saclay/en/station_information.json?key=NGFlMjU3MDUtNDk5My00MTM4LTk1ZjctNmNlNDM1MWQ0NjE1",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/paris-sud-velos-a-assistance-electrique-en-libre-service",
+                "spdx-identifier": "ODbL-1.0"
+            },
+            "x-data-gov-fr-res-id": 63612,
+            "managed-by-script": true
+        },
+        {
+            "name": "paris-sud-velos-a-assistance-electrique-en-libre-service--63613",
+            "type": "url",
+            "url": "https://gateway.prod.zoov.io/gbfs/2.2/saclay/en/station_status.json?key=NGFlMjU3MDUtNDk5My00MTM4LTk1ZjctNmNlNDM1MWQ0NjE1",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/paris-sud-velos-a-assistance-electrique-en-libre-service",
+                "spdx-identifier": "ODbL-1.0"
+            },
+            "x-data-gov-fr-res-id": 63613,
+            "managed-by-script": true
+        },
+        {
+            "name": "paris-sud-velos-a-assistance-electrique-en-libre-service--63614",
+            "type": "url",
+            "url": "https://gateway.prod.zoov.io/gbfs/2.2/saclay/en/free_bike_status.json?key=NGFlMjU3MDUtNDk5My00MTM4LTk1ZjctNmNlNDM1MWQ0NjE1",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/paris-sud-velos-a-assistance-electrique-en-libre-service",
+                "spdx-identifier": "ODbL-1.0"
+            },
+            "x-data-gov-fr-res-id": 63614,
+            "managed-by-script": true
+        },
+        {
+            "name": "paris-sud-velos-a-assistance-electrique-en-libre-service--63615",
             "type": "url",
             "url": "https://gateway.prod.zoov.io/gbfs/2.2/saclay/en/gbfs.json?key=NGFlMjU3MDUtNDk5My00MTM4LTk1ZjctNmNlNDM1MWQ0NjE1",
             "spec": "gbfs",
@@ -2237,7 +2560,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 82334,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "arrets-horaires-et-parcours-theoriques-des-reseaux-naq-hvi-nva-m-1",
@@ -2250,7 +2574,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 82340,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "gtfs-du-reseau-maritime-de-martinique",
@@ -2263,7 +2588,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 82139,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "gtfs-du-transport-scolaire-en-martinique",
@@ -2276,7 +2602,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 82289,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "offre-de-transport-du-reseau-fluo-grand-est-vosges-88",
@@ -2289,7 +2616,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 80429,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "fr-200052264-t0039-0000-1",
@@ -2302,7 +2630,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 80431,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "offre-transport-du-reseau-txik-txak",
@@ -2315,7 +2644,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 80701,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "offre-transport-du-reseau-txik-txak",
@@ -2352,7 +2682,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 82442,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "arrets-horaires-et-parcours-theoriques-des-reseaux-naq-cha-nva-m-1",
@@ -2365,7 +2696,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 82324,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "gtfs-transport-horaires-chemins-de-fer-corse-1",
@@ -2392,7 +2724,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 81996,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "programme-des-rotations-corsica-linea",
@@ -2405,7 +2738,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 83510,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "horaires-theoriques-et-temps-reel-du-reseau-bordeaux-navettes-aeroport-30-direct-gtfs-gtfs-rt",
@@ -2418,7 +2752,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 10230,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "horaires-theoriques-et-temps-reel-du-reseau-bordeaux-navettes-aeroport-30-direct-gtfs-gtfs-rt",
@@ -2454,7 +2789,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 38889,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "reseau-interurbain-cars-region-ardeche-07",
@@ -2467,7 +2803,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 80961,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "arrets-horaires-et-parcours-theoriques-des-reseaux-naq-lga-nva-m-1",
@@ -2480,7 +2817,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 82344,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "citiz-autopartage-pays-basque-aupa",
@@ -2505,7 +2843,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 14826,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "horaires-theoriques-et-temps-reel-des-navettes-paris-saclay-gtfs-gtfs-rt",
@@ -2530,7 +2869,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 43186,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "horaires-theoriques-et-temps-reel-du-reseau-gpso-gtfs-gtfs-rt",
@@ -2567,7 +2907,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 80415,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "vehicules-en-libre-service-autopartage-citiz",
@@ -2592,7 +2933,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 80036,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "angers-loire-metropole-reseau-irigo-gtfs-gtfs-rt-siri",
@@ -2629,7 +2971,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 80459,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "offre-de-transport-du-reseau-temob-syndicat-mixte-des-transports-urbains-thionville-fensch",
@@ -2654,7 +2997,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 80694,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "fil-bleu-syndicat-des-mobilites-gtfs-gtfs-rt",
@@ -2691,7 +3035,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 80594,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "offre-de-transport-du-reseau-grand-reims-mobilites-communaute-urbaine-du-grand-reims",
@@ -2728,7 +3073,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 83465,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "syndicat-mixte-des-transports-en-commun-de-lagglomeration-clermontoise-smtc-ac-reseau-t2c-gtfs-gtfs-rt--83771",
@@ -2741,7 +3087,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 83771,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "etat-des-stations-de-velos-en-libre-service-c-velo-gbfs-du-syndicat-mixte-des-transports-en-commun-de-lagglomeration-clermontoise-smtc-ac-1",
@@ -2766,7 +3113,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 83751,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "gtfs-netex-et-gtfs-rt-reseau-tao-orleans-metropole",
@@ -2791,7 +3139,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 81413,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "gtfs-sankeo--82900",
@@ -2804,7 +3153,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 82900,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "gtfs-sankeo--83734",
@@ -2817,7 +3167,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 83734,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "gtfs-sankeo--83735",
@@ -2830,7 +3181,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 83735,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "gtfs-sankeo--82900",
@@ -2854,7 +3206,8 @@
                 "url": "https://transport.data.gouv.fr/datasets/caen-la-mer-reseau-twisto-gtfs-siri-2"
             },
             "x-data-gov-fr-res-id": 83513,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "fr-200052264-t0014-0000-1",
@@ -2867,7 +3220,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 80787,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "fr-200052264-t0014-0000-1",
@@ -2904,7 +3258,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 80492,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "stations-de-velo-en-libre-service-velocite-sur-mulhouse-flux-gbfs",
@@ -2929,7 +3284,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 80413,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "reseau-de-transport-en-commun-lia-gtfs-siri",
@@ -2942,7 +3298,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 80254,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "reseau-de-transport-en-commun-lia-gtfs-siri",
@@ -2978,7 +3335,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 82911,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "offre-de-transport-du-reseau-tango-de-nimes-metropole-gtfs-gtfs-rt",
@@ -3039,7 +3397,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 80742,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "gtfs-diviamobilites",
@@ -3064,7 +3423,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 83710,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "fr-200052264-t0034-0000-1",
@@ -3089,7 +3449,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 81346,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "stations-velostanlib",
@@ -3114,7 +3475,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 83643,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "arrets-horaires-et-parcours-theoriques-des-reseaux-naq-cor-nva-m-1",
@@ -3127,7 +3489,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 82328,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "tier-dott-gbfs-saint-quentin-en-yvelines",
@@ -3174,7 +3537,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 80725,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "fichiers-gtfs-eurometropole-de-metz",
@@ -3234,7 +3598,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 38881,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "ce-jeu-de-donnees-contient-la-liste-des-arrets-des-horaires-et-des-parcours-theoriques-du-reseau-de-transport-urbain-et-interurbain-de-vrm",
@@ -3247,7 +3612,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 82148,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "ce-jeu-de-donnees-contient-la-liste-des-arrets-des-horaires-et-des-parcours-theoriques-du-reseau-de-transport-urbain-et-interurbain-de-vrm",
@@ -3296,7 +3662,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 81116,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "horaire-du-reseau-citalis",
@@ -3309,7 +3676,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 82879,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "citalis-telepherique-papang",
@@ -3322,7 +3690,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 82880,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "horaires-theoriques-et-temps-reel-des-bus-et-tramways-circulant-sur-le-territoire-de-brest-metropole",
@@ -3335,7 +3704,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 43286,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "horaires-theoriques-et-temps-reel-des-bus-et-tramways-circulant-sur-le-territoire-de-brest-metropole",
@@ -3384,7 +3754,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 80100,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "stations-velonecy-60-min-gbfs",
@@ -3409,7 +3780,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 79601,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "gtfs-du-reseau-des-transports-bus-et-tramway-setram-circulant-sur-le-territoire-le-mans-metropole",
@@ -3446,7 +3818,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 80611,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "horaires-theoriques-du-reseau-izilo-format-gtfs-de-lorient-agglomeration",
@@ -3483,7 +3856,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 82348,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "gtfs-et-siri-du-reseau-ginko-besancon-lignes-urbaines-et-periurbaines",
@@ -3496,7 +3870,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 80590,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "reseau-orizo-grand-avignon--83330",
@@ -3509,7 +3884,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 83330,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "reseau-orizo-grand-avignon--9279",
@@ -3560,7 +3936,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 83389,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "mobilite-offre-de-transport-du-reseau-bus-gtfs-gtfs-rt",
@@ -3585,7 +3962,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 82683,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "velos-en-libre-service-du-reseau-transvilles-au-format-gbfs",
@@ -3610,7 +3988,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 82994,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "arrets-horaires-et-parcours-theoriques-des-bus-du-reseau-des-transports-publics-envibus",
@@ -3637,7 +4016,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 80676,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "donnees-du-reseau-alterneo",
@@ -3664,7 +4044,21 @@
             "managed-by-script": true
         },
         {
-            "name": "ametis",
+            "name": "ametis--80223",
+            "type": "http",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/571e3014-066d-4bd6-9f73-fb8065c928c6",
+            "url-override": "https://static.data.gouv.fr/resources/ametis/20251201-143438/open-data-du-30-11-2025-au-30-05-2026.zip",
+            "fix": true,
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/ametis",
+                "spdx-identifier": "etalab-2.0"
+            },
+            "x-data-gov-fr-res-id": 80223,
+            "managed-by-script": true,
+            "skip": false
+        },
+        {
+            "name": "ametis--80705",
             "type": "http",
             "url": "https://www.data.gouv.fr/api/1/datasets/r/5bc8b7dc-0d4e-48e7-b2ec-eccfe3702c19",
             "url-override": "https://static.data.gouv.fr/resources/ametis/20251006-100451/sae-du-06-10-2025-au-03-07-2026.zip",
@@ -3674,31 +4068,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 80705,
-            "managed-by-script": true
-        },
-        {
-            "name": "ametis",
-            "type": "url",
-            "url": "https://proxy.transport.data.gouv.fr/resource/ametis-amiens-gtfs-rt-trip-update",
-            "license": {
-                "url": "https://transport.data.gouv.fr/datasets/ametis",
-                "spdx-identifier": "etalab-2.0"
-            },
-            "spec": "gtfs-rt",
-            "x-data-gov-fr-res-id": 80708,
-            "managed-by-script": true
-        },
-        {
-            "name": "ametis",
-            "type": "url",
-            "url": "https://proxy.transport.data.gouv.fr/resource/ametis-amiens-gtfs-rt-alerts",
-            "license": {
-                "url": "https://transport.data.gouv.fr/datasets/ametis",
-                "spdx-identifier": "etalab-2.0"
-            },
-            "spec": "gtfs-rt",
-            "x-data-gov-fr-res-id": 80709,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "velo-en-libre-service-de-la-ville-damiens",
@@ -3723,7 +4094,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 82780,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "offre-de-transport-du-reseau-fluo-grand-est-meuse-55",
@@ -3736,7 +4108,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 80425,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "citiz-autopartage-la-rochelle",
@@ -3761,7 +4134,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 82350,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "arrets-horaires-et-parcours-theoriques-des-reseaux-naq-lro-nva-m-1",
@@ -3786,7 +4160,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 83739,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "horaires-theoriques-et-en-temps-reel-des-bus-et-autocars-circulant-sur-le-reseau-cap-cotentin",
@@ -3799,7 +4174,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 79831,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "horaires-theoriques-et-en-temps-reel-des-bus-et-autocars-circulant-sur-le-reseau-cap-cotentin",
@@ -3836,7 +4212,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 82553,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "reseau-urbain-kiceo",
@@ -3851,7 +4228,7 @@
             "managed-by-script": true
         },
         {
-            "name": "donnees-tcat-troyes-champagne-metropole-1",
+            "name": "donnees-tcat-troyes-champagne-metropole-1--79747",
             "type": "http",
             "url": "https://transport.data.gouv.fr/resources/79747/download",
             "url-override": "https://static.data.gouv.fr/resources/donnees-tcat-troyes-champagne-metropole-1/20251022-100154/gtfs.zip",
@@ -3861,31 +4238,22 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 79747,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
-            "name": "donnees-tcat-troyes-champagne-metropole-1",
-            "type": "url",
-            "url": "http://94.143.218.42:13485/ProfilGtfsRt2_0RSProducer-TCAT/Alert.pb",
+            "name": "donnees-tcat-troyes-champagne-metropole-1--79847",
+            "type": "http",
+            "url": "https://transport.data.gouv.fr/resources/79847/download",
+            "url-override": "https://static.data.gouv.fr/resources/donnees-tcat-troyes-champagne-metropole-1/20251223-141509/gtfs-navineo.zip",
+            "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/donnees-tcat-troyes-champagne-metropole-1",
                 "spdx-identifier": "ODbL-1.0"
             },
-            "spec": "gtfs-rt",
-            "x-data-gov-fr-res-id": 81542,
-            "managed-by-script": true
-        },
-        {
-            "name": "donnees-tcat-troyes-champagne-metropole-1",
-            "type": "url",
-            "url": "http://94.143.218.42:13485/ProfilGtfsRt2_0RSProducer-TCAT/TripUpdate.pb",
-            "license": {
-                "url": "https://transport.data.gouv.fr/datasets/donnees-tcat-troyes-champagne-metropole-1",
-                "spdx-identifier": "ODbL-1.0"
-            },
-            "spec": "gtfs-rt",
-            "x-data-gov-fr-res-id": 81544,
-            "managed-by-script": true
+            "x-data-gov-fr-res-id": 79847,
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "voi-gbfs-et-netex-le-havre-et-octeville-sur-mer",
@@ -3909,7 +4277,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 81989,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "fichier-des-donnees-theoriques-du-reseau-scolaris-au-format-gtfs",
@@ -3922,7 +4291,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 83631,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "fichier-des-donnees-theoriques-du-reseau-idelis-au-format-gtfs",
@@ -3935,7 +4305,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 83632,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "idecycle-velos-en-libre-service-au-standard-gbfs",
@@ -3960,7 +4331,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 82727,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "gtfs-transport-via-strada-les-cars-corse-du-sud",
@@ -3973,7 +4345,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 83200,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "gtfs-transport-via-strada-les-cars-corse-du-sud",
@@ -3998,7 +4371,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 82305,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "gtfs-transport-horaires-des-lignes-de-la-communaute-de-communes-corse-du-sud-a-berlina",
@@ -4011,7 +4385,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 82995,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "angers-trottinettes-velos-et-vae-en-libre-service",
@@ -4035,7 +4410,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 81618,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "voi-trottinettes-et-velos-aire-grenobloise",
@@ -4059,7 +4435,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 79420,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "horaires-theoriques-et-temps-reel-gtfs-gtfs-rt-du-reseau-palmbus-cannes-pays-de-lerins",
@@ -4096,10 +4473,35 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 67655,
+            "managed-by-script": true,
+            "skip": false
+        },
+        {
+            "name": "location-de-velos-velobaie--80484",
+            "type": "url",
+            "url": "https://gateway.prod.partners-fs37hd8.zoov.site/gbfs/2.2/saintbrieuc/en/station_status.json?key=YmE1ZDVlNDYtMGIwNy00MGEyLWIxZWYtNGEwOGQ4NTYxNTYz",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/location-de-velos-velobaie",
+                "spdx-identifier": "ODbL-1.0"
+            },
+            "x-data-gov-fr-res-id": 80484,
             "managed-by-script": true
         },
         {
-            "name": "location-de-velos-velobaie",
+            "name": "location-de-velos-velobaie--80485",
+            "type": "url",
+            "url": "https://gateway.prod.partners-fs37hd8.zoov.site/gbfs/2.2/saintbrieuc/en/station_information.json?key=YmE1ZDVlNDYtMGIwNy00MGEyLWIxZWYtNGEwOGQ4NTYxNTYz",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/location-de-velos-velobaie",
+                "spdx-identifier": "ODbL-1.0"
+            },
+            "x-data-gov-fr-res-id": 80485,
+            "managed-by-script": true
+        },
+        {
+            "name": "location-de-velos-velobaie--80486",
             "type": "url",
             "url": "https://gateway.prod.partners-fs37hd8.zoov.site/gbfs/2.2/saintbrieuc/en/gbfs.json?key=YmE1ZDVlNDYtMGIwNy00MGEyLWIxZWYtNGEwOGQ4NTYxNTYz",
             "spec": "gbfs",
@@ -4121,7 +4523,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 81705,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "agence-agglobus--83304",
@@ -4134,7 +4537,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 83304,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "agence-agglobus--83760",
@@ -4147,7 +4551,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 83760,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "gtfs-urbain-de-la-zone-centre",
@@ -4160,7 +4565,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 79898,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "horaires-theoriques-des-lignes-urbaines-et-interurbaines-sur-le-reseau-alesy-gtfs",
@@ -4173,7 +4579,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 75062,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "horaires-theoriques-des-lignes-urbaines-et-interurbaines-sur-le-reseau-alesy-gtfs",
@@ -4198,7 +4605,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 79544,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "reseau-interurbain-cars-region-cantal-15",
@@ -4211,7 +4619,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 81245,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "horaires-theoriques-et-temps-reel-reseau-mobius",
@@ -4224,7 +4633,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 82093,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "horaires-theoriques-et-temps-reel-reseau-mobius",
@@ -4249,7 +4659,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 82272,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "arrets-et-horaires-theoriques-bus-temps-reel",
@@ -4286,7 +4697,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 81944,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "filibus-urbain",
@@ -4299,7 +4711,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 80587,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "rubis-horaires-theoriques-du-reseau-de-transport-urbain-de-grand-bourg-agglomeration",
@@ -4312,7 +4725,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 80147,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "reseau-urbain-illygo",
@@ -4325,7 +4739,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 80586,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "reseau-urbain-illygo",
@@ -4350,7 +4765,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 81183,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "referentiel-topologique-reseau-carsud",
@@ -4375,7 +4791,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 82661,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "offre-de-transport-communaute-dagglomeration-le-grand-narbonne",
@@ -4412,7 +4829,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 83368,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "horaires-theoriques-et-temps-reel-du-reseau-de-transports-beemob-beziers-mediterranee",
@@ -4437,7 +4855,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 82693,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "liste-api-ecovelo-pour-stations-velyceo-electriques-sur-saint-nazaire-agglo",
@@ -4462,7 +4881,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 81575,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "reseau-bus-sete-agglopole-mobilite",
@@ -4499,7 +4919,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 81253,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "gtfs-3",
@@ -4512,7 +4933,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 83134,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "gtfs-3",
@@ -4549,7 +4971,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 82352,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "stations-velos-en-libre-service-tanlib-flux-en-temps-reel",
@@ -4574,7 +4997,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 82294,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "fr-200052264-t0002-0000-1",
@@ -4587,7 +5011,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 80451,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "fr-200052264-t0002-0000-1",
@@ -4624,7 +5049,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 83529,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "arrets-horaires-et-parcours-theoriques-des-reseaux-naq-cre-nva-m-1",
@@ -4637,7 +5063,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 82330,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "gtfs-urbain-de-la-zone-sud",
@@ -4650,7 +5077,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 79897,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "offre-de-transport-du-reseau-de-laval-agglomeration-gtfs",
@@ -4663,7 +5091,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 81018,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "reseau-rtca",
@@ -4676,7 +5105,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 81876,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "cyclolibre-les-velos-electriques-en-libre-service-par-carcassonne",
@@ -4701,7 +5131,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 80479,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "tedbus-horaires-des-lignes-reseau",
@@ -4714,7 +5145,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 81907,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "tedbus-horaires-des-lignes-reseau",
@@ -4739,7 +5171,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 82664,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "horaires-theoriques-et-temps-reel-du-reseau-de-transport-marineo",
@@ -4752,7 +5185,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 51449,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "horaires-theoriques-et-temps-reel-du-reseau-de-transport-marineo",
@@ -4777,7 +5211,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 80613,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "transurbain-evreux-portes-de-normandie",
@@ -4814,7 +5249,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 83519,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "agglobus-offre-theorique-mobilite-reseau-urbain-de-bourges",
@@ -4851,7 +5287,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 52937,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "reseau-ruban",
@@ -4876,7 +5313,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 80461,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "fr-200052264-t0009-0000-1",
@@ -4913,7 +5351,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 83372,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "arrets-horaires-et-parcours-theoriques-des-reseaux-naq-bri-nva-m-1",
@@ -4926,7 +5365,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 82355,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "vls-ca-bassin-de-brive-velibeo",
@@ -4951,7 +5391,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 83526,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "agglopolys-offre-theorique-mobilite-reseau-urbain-azalys-de-blois",
@@ -4976,7 +5417,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 82357,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "vls-ca-grand-perigueux-perivelo",
@@ -5015,7 +5457,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 79352,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "horaires-theoriques-reseau-choletbus",
@@ -5064,7 +5507,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 83308,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "horaires-theoriques-et-temps-reel-aux-formats-gtfs-et-gtfs-rt-du-reseau-sitac",
@@ -5089,7 +5533,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 81457,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "reseau-urbain-dinamo",
@@ -5102,10 +5547,11 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 79545,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
-            "name": "donnees-theoriques-et-temps-reel-du-reseau-corolis-interurbain-communaute-dagglomeration-du-beauvaisis",
+            "name": "donnees-theoriques-et-temps-reel-du-reseau-corolis-interurbain-communaute-dagglomeration-du-beauvaisis--81138",
             "type": "http",
             "url": "https://www.data.gouv.fr/api/1/datasets/r/191ae476-2ce8-48d7-bed2-b9cb93f63364",
             "url-override": "https://api.oisemob.cityway.fr/dataflow/offre-tc/download?provider=COROLIS_INT&dataFormat=GTFS&dataProfil=OPENDATA",
@@ -5115,19 +5561,22 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 81138,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
-            "name": "donnees-theoriques-et-temps-reel-du-reseau-corolis-interurbain-communaute-dagglomeration-du-beauvaisis",
-            "type": "url",
-            "url": "https://api.oisemob.cityway.fr/dataflow/horaire-tc-tr/download?provider=COROLIS_INT&dataFormat=gtfs-rt",
+            "name": "donnees-theoriques-et-temps-reel-du-reseau-corolis-interurbain-communaute-dagglomeration-du-beauvaisis--81650",
+            "type": "http",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/61277099-cde9-457c-919d-a1b7b20fe992",
+            "url-override": "https://api.oisemob.cityway.fr/dataflow/tad/download?provider=COROLIS_INT&dataFormat=gtfs",
+            "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/donnees-theoriques-et-temps-reel-du-reseau-corolis-interurbain-communaute-dagglomeration-du-beauvaisis",
                 "spdx-identifier": "etalab-2.0"
             },
-            "spec": "gtfs-rt",
-            "x-data-gov-fr-res-id": 81139,
-            "managed-by-script": true
+            "x-data-gov-fr-res-id": 81650,
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "donnees-theoriques-et-temps-reel-du-reseau-corolis-urbain-communaute-dagglomeration-du-beauvaisis",
@@ -5140,7 +5589,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 81074,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "donnees-theoriques-et-temps-reel-du-reseau-corolis-urbain-communaute-dagglomeration-du-beauvaisis",
@@ -5165,7 +5615,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 83429,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "horaires-theoriques-du-reseau-tougo",
@@ -5178,7 +5629,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 81794,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "semo-val-de-reuil-louviers-seine-eure-agglo",
@@ -5191,7 +5643,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 81338,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "semo-val-de-reuil-louviers-seine-eure-agglo",
@@ -5228,7 +5681,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 83408,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "horaires-theoriques-et-du-reseau-de-transports-qub-transports-urbains-de-quimper-bretagne-occidentale",
@@ -5265,7 +5719,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 83202,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "hop-bus-le-reseau-100-gratuit-du-coeur-de-flandre",
@@ -5290,7 +5745,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 79821,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "lignes-regulieres-de-transports-sillages-en-pays-de-grasse-urbain-et-scolaire--79822",
@@ -5303,7 +5759,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 79822,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "star-horaires-theoriques-et-temps-reel-du-reseau-de-transport-urbain-de-roannais-agglomeration",
@@ -5316,7 +5773,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 79861,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "star-horaires-theoriques-et-temps-reel-du-reseau-de-transport-urbain-de-roannais-agglomeration",
@@ -5341,7 +5799,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 81219,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "agen-gtfs-scolaire",
@@ -5366,7 +5825,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 80245,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "agen-gtfs-urbain",
@@ -5391,7 +5851,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 81220,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "gbfs-tempo-velo",
@@ -5428,7 +5889,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 79374,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "tilt-lannion-tregor-communaute",
@@ -5441,7 +5903,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 81770,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "tilt-lannion-tregor-communaute",
@@ -5466,7 +5929,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 80449,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "horaires-theoriques-et-temps-reel-du-reseau-ritmo-haguenau-gtfs-gtfs-rt",
@@ -5479,7 +5943,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 79014,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "horaires-theoriques-et-temps-reel-du-reseau-ritmo-haguenau-gtfs-gtfs-rt",
@@ -5516,7 +5981,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 79520,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "reseau-de-transport-impulsyon-a-la-roche-sur-yon",
@@ -5565,7 +6031,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 81416,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "horaires-theoriques-du-reseau-transport-du-pays-voironnais",
@@ -5578,7 +6045,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 83462,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "gtfs-urbain-de-la-zone-nord-cap-nord",
@@ -5591,7 +6059,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 80606,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "offre-de-transports-reseau-tac-annemasse-agglo",
@@ -5604,7 +6073,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 76779,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "offre-de-transports-reseau-tac-annemasse-agglo",
@@ -5641,7 +6111,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 82178,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "reseau-lva",
@@ -5654,7 +6125,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 52917,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "reseau-lva",
@@ -5691,10 +6163,11 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 82359,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
-            "name": "vls-ca-du-libournais-calivelo",
+            "name": "vls-ca-du-libournais-calivelo--82694",
             "type": "url",
             "url": "https://api.gbfs.ecovelo.mobi/calivelo/gbfs.json",
             "spec": "gbfs",
@@ -5703,6 +6176,18 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 82694,
+            "managed-by-script": true
+        },
+        {
+            "name": "vls-ca-du-libournais-calivelo--82695",
+            "type": "url",
+            "url": "https://mobi-iti-nam.okina.fr/api-proxy/api/gbfs/1.0/gbfs/calivelo_ecovelo/gbfs",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/vls-ca-du-libournais-calivelo",
+                "spdx-identifier": "ODbL-1.0"
+            },
+            "x-data-gov-fr-res-id": 82695,
             "managed-by-script": true
         },
         {
@@ -5730,7 +6215,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 8645,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "reseau-urbain-glazgo",
@@ -5743,7 +6229,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 83300,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "reseau-urbain-glazgo",
@@ -5780,10 +6267,11 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 82999,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
-            "name": "donnees-theoriques-et-temps-reel-du-reseau-axo-communaute-dagglomeration-creil-sud-oise",
+            "name": "donnees-theoriques-et-temps-reel-du-reseau-axo-communaute-dagglomeration-creil-sud-oise--81072",
             "type": "http",
             "url": "https://www.data.gouv.fr/api/1/datasets/r/0676f78f-66f9-4d37-a67e-0944ac5164e3",
             "url-override": "https://api.oisemob.cityway.fr/dataflow/offre-tc/download?provider=AXO&dataFormat=GTFS&dataProfil=OPENDATA",
@@ -5793,19 +6281,22 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 81072,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
-            "name": "donnees-theoriques-et-temps-reel-du-reseau-axo-communaute-dagglomeration-creil-sud-oise",
-            "type": "url",
-            "url": "https://api.oisemob.cityway.fr/dataflow/horaire-tc-tr/download?provider=AXO&dataFormat=gtfs-rt",
+            "name": "donnees-theoriques-et-temps-reel-du-reseau-axo-communaute-dagglomeration-creil-sud-oise--81645",
+            "type": "http",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/23f2f5ed-c21c-4e87-840b-22512fe7c5d7",
+            "url-override": "https://api.oisemob.cityway.fr/dataflow/tad/download?provider=AXO&dataFormat=gtfs",
+            "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/donnees-theoriques-et-temps-reel-du-reseau-axo-communaute-dagglomeration-creil-sud-oise",
                 "spdx-identifier": "etalab-2.0"
             },
-            "spec": "gtfs-rt",
-            "x-data-gov-fr-res-id": 81120,
-            "managed-by-script": true
+            "x-data-gov-fr-res-id": 81645,
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "reseau-urbain-mat",
@@ -5818,7 +6309,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 82555,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "donnees-gtfs-du-reseau-de-transport-public-cara-bus",
@@ -5831,7 +6323,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 79499,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "arrets-horaires-et-parcours-theoriques-des-reseaux-naq-car-nva-m-1",
@@ -5844,7 +6337,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 82361,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "velos-a-assistance-electrique-en-libre-service-saint-pierre-la-reunion-civis-altervelo",
@@ -5869,7 +6363,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 82662,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "donnees-statiques-et-temps-reels-reseau-envia",
@@ -5906,7 +6401,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 83310,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "mobivie-reseau-urbain-vichy-communaute",
@@ -5943,7 +6439,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 79687,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "offre-de-transports-du-grand-albigeois-gtfs--79728",
@@ -5956,7 +6453,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 79728,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "offre-de-transports-du-grand-albigeois-gtfs--81522",
@@ -5969,7 +6467,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 81522,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "fr-200052264-t0017-0000-1",
@@ -5982,7 +6481,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 80437,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "fr-200052264-t0017-0000-1",
@@ -6007,7 +6507,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 81146,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "donnees-theoriques-et-temps-reel-du-reseau-tic-interurbain-communaute-dagglomeration-de-la-region-de-compiegne-et-de-la-basse-automne",
@@ -6032,7 +6533,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 81066,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "donnees-theoriques-et-temps-reel-du-reseau-tic-urbain-communaute-dagglomeration-de-la-region-de-compiegne-et-de-la-basse-automne",
@@ -6057,7 +6559,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 81158,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "sngo-vernon-les-andelys-seine-normandie-agglo",
@@ -6070,7 +6573,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 80655,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "sngo-vernon-les-andelys-seine-normandie-agglo",
@@ -6095,7 +6599,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 82166,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "donnees-tac-reseau-de-transport-de-grand-chatellerault-2025",
@@ -6121,6 +6626,20 @@
             "managed-by-script": true
         },
         {
+            "name": "reseau-urbain-ville-de-vitre--83019",
+            "type": "http",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/c7b620bf-e0c5-4f81-a34b-9c8d02c6e3a4",
+            "url-override": "https://static.data.gouv.fr/resources/reseau-urbain-ville-de-vitre/20250425-133101/20-gtfs-urbain-vitre-ete-2025.zip",
+            "fix": true,
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/reseau-urbain-ville-de-vitre",
+                "spdx-identifier": "etalab-2.0"
+            },
+            "x-data-gov-fr-res-id": 83019,
+            "managed-by-script": true,
+            "skip": false
+        },
+        {
             "name": "reseau-urbain-ville-de-vitre--83276",
             "type": "http",
             "url": "https://www.data.gouv.fr/api/1/datasets/r/282974b2-bf13-41f2-a0bf-feb0682e594e",
@@ -6131,7 +6650,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 83276,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "reseau-urbain-ville-de-vitre--83280",
@@ -6144,7 +6664,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 83280,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "tam-horaires-theoriques-du-reseau-de-transport-urbain-sur-la-ville-damberieu-en-bugey",
@@ -6157,7 +6678,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 79865,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "gtfs-capbus",
@@ -6170,7 +6692,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 64163,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "gtfs-capbus",
@@ -6195,7 +6718,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 83750,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "transports-urbains-soissonnais-tus",
@@ -6208,7 +6732,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 82154,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "donnees-gtfs-reseau-tuc-communaute-dagglomeration-de-cambrai",
@@ -6221,7 +6746,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 80751,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "ctlb-donnees-theoriques-et-rt-aix-les-bains-lac-du-bourget",
@@ -6234,7 +6760,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 71223,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "ctlb-donnees-theoriques-et-rt-aix-les-bains-lac-du-bourget",
@@ -6271,7 +6798,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 83507,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "bus-pastel-saint-quentin",
@@ -6284,7 +6812,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 82704,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "offre-de-transport-du-reseau-libellus-gtfs",
@@ -6297,7 +6826,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 79508,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "fr-200052264-t0005-0000-1",
@@ -6310,7 +6840,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 80457,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "fr-200052264-t0005-0000-1",
@@ -6335,7 +6866,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 79667,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "reseau-urbain-caux-seine-mobilite-rezobus",
@@ -6360,7 +6892,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 83762,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "reseau-urbain-scolaire-lila-presquile",
@@ -6421,7 +6954,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 82196,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "fr-200052264-t0038-0000-1",
@@ -6434,7 +6968,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 80445,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "donnees-transport-2024",
@@ -6447,7 +6982,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 83042,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "donnees-transport-2024",
@@ -6472,7 +7008,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 80467,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "fr-200052264-t0007-0000-1",
@@ -6508,7 +7045,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 83511,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "offre-de-transport-ca-du-bocage-bressuirais-1",
@@ -6521,7 +7059,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 82363,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "reseau-urbain-scolaire-guingamp-paimpol-mobilite",
@@ -6534,7 +7073,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 72361,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "reseau-urbain-scolaire-guingamp-paimpol-mobilite",
@@ -6559,7 +7099,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 80453,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "fr-200052264-t0016-0000-1",
@@ -6596,7 +7137,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 82155,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "astrobus-lisieux-normandie",
@@ -6609,7 +7151,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 82140,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "astrobus-lisieux-normandie",
@@ -6648,7 +7191,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 79559,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "horaires-reseau-zest",
@@ -6673,7 +7217,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 82728,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "reseau-yego-macs",
@@ -6686,7 +7231,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 83416,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "le-37-horaires-theoriques-du-reseau-de-transport-urbain-de-la-communaute-de-communes-entre-bievre-et-rhone",
@@ -6699,7 +7245,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 83725,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "offre-de-transport-cobas",
@@ -6712,7 +7259,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 82319,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "reseau-urbain-distribus",
@@ -6725,7 +7273,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 79528,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "reseau-urbain-distribus",
@@ -6750,7 +7299,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 82365,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "horaires-montelibus-2025-2026",
@@ -6763,7 +7313,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 82545,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "horaires-montelibus-2025-2026",
@@ -6788,7 +7339,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 82547,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "horaires-rlv-mobilites",
@@ -6813,7 +7365,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 78934,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "reseau-de-transports-en-commun-de-la-communaute-dagglomeration-de-lauxerrois",
@@ -6850,7 +7403,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 81227,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "transport-scolaire-redon-agglomeration-format-gtfs",
@@ -6863,7 +7417,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 83126,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "reseau-urbain-de-redon-agglomeration",
@@ -6876,7 +7431,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 83512,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "lineotim-morlaix-communaute",
@@ -6889,7 +7445,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 82291,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "transports-urbains-bandol-sanary-s-mer",
@@ -6902,7 +7459,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 80363,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "reseau-ca2bm-a-compter-du-1er-juin-2025",
@@ -6915,7 +7473,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 83315,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "arrets-horaires-et-parcours-theoriques-des-reseaux-naq-roc-nva-m-1",
@@ -6928,7 +7487,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 82367,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "reseau-de-transport-en-commun-trans-agglo-de-dlva",
@@ -6941,7 +7501,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 83291,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "horaires-theoriques-du-reseau-tgl",
@@ -6954,7 +7515,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 83210,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "horaires-theoriques-du-reseau-tgl",
@@ -6979,7 +7541,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 83396,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "fr-200052264-t0001-0000-1",
@@ -6992,7 +7555,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 80469,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "offre-de-transports-urbain-du-reseau-amelys-gtfs",
@@ -7005,7 +7569,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 83326,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "via-bastia-1",
@@ -7022,7 +7587,7 @@
             "skip": true
         },
         {
-            "name": "donnees-theoriques-et-temps-reel-du-reseau-pass-thelle-bus-communaute-de-communes-thelloise",
+            "name": "donnees-theoriques-et-temps-reel-du-reseau-pass-thelle-bus-communaute-de-communes-thelloise--81068",
             "type": "http",
             "url": "https://www.data.gouv.fr/api/1/datasets/r/44f6333d-58ab-4e0c-965e-5349d6d1cdcd",
             "url-override": "https://api.oisemob.cityway.fr/dataflow/offre-tc/download?provider=PASSTHELLE&dataFormat=GTFS&dataProfil=OPENDATA",
@@ -7032,19 +7597,22 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 81068,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
-            "name": "donnees-theoriques-et-temps-reel-du-reseau-pass-thelle-bus-communaute-de-communes-thelloise",
-            "type": "url",
-            "url": "https://api.oisemob.cityway.fr/dataflow/horaire-tc-tr/download?provider=PASSTHELLE&dataFormat=gtfs-rt",
+            "name": "donnees-theoriques-et-temps-reel-du-reseau-pass-thelle-bus-communaute-de-communes-thelloise--81648",
+            "type": "http",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/2aeffed5-95e9-4587-a8f8-f52c32968566",
+            "url-override": "https://api.oisemob.cityway.fr/dataflow/tad/download?provider=PASSTHELLE&dataFormat=gtfs",
+            "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/donnees-theoriques-et-temps-reel-du-reseau-pass-thelle-bus-communaute-de-communes-thelloise",
                 "spdx-identifier": "etalab-2.0"
             },
-            "spec": "gtfs-rt",
-            "x-data-gov-fr-res-id": 81310,
-            "managed-by-script": true
+            "x-data-gov-fr-res-id": 81648,
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "offre-de-transport-ca-bergeracoise-1",
@@ -7057,7 +7625,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 82373,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "arrets-horaires-et-parcours-theoriques-des-reseaux-naq-vdg-nva-m-1",
@@ -7070,7 +7639,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 82370,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "horaires-theoriques-et-temps-reel-du-reseau-buss-saintes-gtfs-gtfs-rt",
@@ -7083,7 +7653,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 12601,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "horaires-theoriques-et-temps-reel-du-reseau-buss-saintes-gtfs-gtfs-rt",
@@ -7108,7 +7679,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 82375,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "horaires-du-reseau-de-bus-intercom-3",
@@ -7121,7 +7693,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 81898,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "horaires-theoriques-du-reseau-maelis-montlucon-communaute-gtfs",
@@ -7134,7 +7707,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 83369,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "uba-horaires-navettes-maritimes",
@@ -7147,7 +7721,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 83747,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "lignes-arrets-et-horaires-theorique-du-reseau-de-transport-gtfs-et-netex-les-sables-dolonne-agglomeration",
@@ -7160,7 +7735,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 81421,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "reseau-couralin-grand-dax-1",
@@ -7173,7 +7749,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 83418,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "tbk-offre-theorique-et-temps-reel-du-reseau-de-transports-du-pays-de-quimperle",
@@ -7186,7 +7763,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 80671,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "tbk-offre-theorique-et-temps-reel-du-reseau-de-transports-du-pays-de-quimperle",
@@ -7223,7 +7801,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 83020,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "cherpa-horaires-lignes-regulieres",
@@ -7236,7 +7815,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 81643,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "cherpa-horaires-lignes-regulieres",
@@ -7261,7 +7841,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 81175,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "reseau-urbain-surf",
@@ -7274,7 +7855,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 64280,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "reseau-urbain-surf",
@@ -7299,7 +7881,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 82377,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "fr-200052264-t0010-0000-1",
@@ -7312,7 +7895,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 80477,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "donnees-theoriques-et-temps-reel-du-reseau-mobi-communaute-de-communes-du-pays-de-valois",
@@ -7325,7 +7909,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 81058,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "donnees-theoriques-et-temps-reel-du-reseau-mobi-communaute-de-communes-du-pays-de-valois",
@@ -7350,7 +7935,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 83394,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "gtfs-reseau-cmonbus",
@@ -7375,7 +7961,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 81254,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "reseau-de-transport-du-grand-dole",
@@ -7400,7 +7987,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 80221,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "reseau-transport-urbain-de-bernay",
@@ -7413,7 +8001,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 81284,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "reseau-transport-urbain-de-bernay",
@@ -7438,7 +8027,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 81574,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "transport-urbain",
@@ -7451,7 +8041,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 82097,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "offre-de-transport-du-reseau-rivconnect-communaute-de-communes-rives-de-moselle",
@@ -7464,7 +8055,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 83277,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "offre-de-transport-du-reseau-rivconnect-communaute-de-communes-rives-de-moselle",
@@ -7489,7 +8081,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 82094,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "reseau-nemus",
@@ -7526,7 +8119,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 83265,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "donnees-theoriques-du-reseau-urbain-de-flers-agglo-au-format-gtfs",
@@ -7551,7 +8145,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 82832,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "gtfs-move-vendome",
@@ -7576,7 +8171,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 81476,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "fr-200052264-t0015-0000-1",
@@ -7589,7 +8185,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 82413,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "fr-200052264-t0015-0000-1",
@@ -7625,7 +8222,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 81547,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "horaires-theoriques-et-temps-reels-du-reseau-de-transports-lagglo-en-bus-communaute-dagglomeration-gap-tallard-durance",
@@ -7650,7 +8248,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 82660,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "offre-de-transport-de-la-c-a-beaune-cote-sud-gtfs",
@@ -7675,7 +8274,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 82904,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "ar-bus-landerneau-daoulas-transport",
@@ -7688,7 +8288,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 81459,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "ar-bus-landerneau-daoulas-transport",
@@ -7748,7 +8349,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 81791,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "elios-transports-urbains-du-grand-villeneuvois",
@@ -7761,7 +8363,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 82189,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "regie-des-transports-baag-gtfs",
@@ -7774,7 +8377,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 83757,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "cosibus-coutances-mer-et-bocage",
@@ -7787,7 +8391,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 82312,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "bird-trottinettes-en-libre-service-a-bastia-gbfs",
@@ -7811,7 +8416,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 81555,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "gtfs-periodes-scolaires",
@@ -7824,7 +8430,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 83578,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "fr-200052264-t0012-0000-1",
@@ -7837,7 +8444,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 80443,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "fr-200052264-t0012-0000-1",
@@ -7862,7 +8470,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 80680,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "deepmob-dieppe-maritime",
@@ -7887,7 +8496,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 83769,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "tiva-intercom-de-la-vire-au-noireau",
@@ -7900,7 +8510,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 82316,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "tiva-a-la-demande-service-de-transport-a-la-demande-intercom-de-la-vire-au-noireau-2025-2026",
@@ -7913,7 +8524,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 83770,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "reseau-urbain-pondibus",
@@ -7926,7 +8538,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 81179,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "reseau-urbain-pondibus",
@@ -7951,7 +8564,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 8201,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "horaires-theoriques-et-temps-reel-du-reseau-titus-rosny-sous-bois-gtfs-gtfs-rt",
@@ -7976,7 +8590,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 82874,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "le-taco-1",
@@ -8003,6 +8618,32 @@
             "managed-by-script": true
         },
         {
+            "name": "offre-transport-en-commun-du-reseau-transpor-gtfs",
+            "type": "http",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/bbbd5a29-2fbf-47ae-84fd-6d1ebb758eeb",
+            "url-override": "https://static.data.gouv.fr/resources/offre-transport-en-commun-du-reseau-transpor-gtfs/20250909-125709/transp-or-hiver-2025-2026-sans-tad-gtfs-2025-09-09-14-56-51.zip",
+            "fix": true,
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/offre-transport-en-commun-du-reseau-transpor-gtfs",
+                "spdx-identifier": "etalab-2.0"
+            },
+            "x-data-gov-fr-res-id": 82168,
+            "managed-by-script": true,
+            "skip": false
+        },
+        {
+            "name": "offre-transport-en-commun-du-reseau-transpor-gtfs",
+            "type": "url",
+            "url": "https://proxy.transport.data.gouv.fr/resource/transpor-gtfs-rt-trip-update",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/offre-transport-en-commun-du-reseau-transpor-gtfs",
+                "spdx-identifier": "etalab-2.0"
+            },
+            "spec": "gtfs-rt",
+            "x-data-gov-fr-res-id": 81926,
+            "managed-by-script": true
+        },
+        {
             "name": "neva-granville-terre-et-mer",
             "type": "http",
             "url": "https://transport.data.gouv.fr/resources/82721/download",
@@ -8013,7 +8654,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 82721,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "neva-granville-terre-et-mer",
@@ -8050,7 +8692,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 82715,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "fr-200052264-t0026-0000-1",
@@ -8063,7 +8706,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 80447,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "flux-gbfs-montenvelo",
@@ -8088,7 +8732,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 81042,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "donnees-theoriques-et-temps-reel-du-reseau-airemob-communaute-de-communes-de-laire-cantilienne",
@@ -8113,7 +8758,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 80463,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "fr-200052264-t0027-0000-1",
@@ -8138,7 +8784,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 79272,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "reseau-urbain-interurbain-et-scolaire-de-la-communaute-dagglomeration-privas-centre-ardeche--81342",
@@ -8151,7 +8798,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 81342,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "offre-de-transport-du-reseau-linggo-en-ville-petr-du-pays-de-langres",
@@ -8164,7 +8812,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 80403,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "fr-200052264-t0006-0000-1",
@@ -8177,7 +8826,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 80410,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "arrets-horaires-et-parcours-theoriques-des-reseaux-naq-tut-nva-m-1",
@@ -8190,7 +8840,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 82379,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "bird-trottinettes-en-libre-service-a-chalons-en-champagne-gbfs",
@@ -8214,7 +8865,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 80973,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "donnees-du-reseau-evad-1--83746",
@@ -8227,7 +8879,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 83746,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "donnees-gtfs-du-reseau-de-transports-public-du-grand-cahors",
@@ -8240,7 +8893,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 81432,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "horaires-theoriques-du-reseau-urbain-de-laon-tul-gtfs",
@@ -8253,7 +8907,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 80707,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "saonibus-horaires-theoriques-et-temps-reel-du-reseau-de-transport-urbain-de-la-cc-dsv",
@@ -8266,7 +8921,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 79859,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "saonibus-horaires-theoriques-et-temps-reel-du-reseau-de-transport-urbain-de-la-cc-dsv",
@@ -8291,7 +8947,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 81255,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "donnees-theoriques-et-temps-reel",
@@ -8327,7 +8984,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 83509,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "horaires-theoriques-et-temps-reel-du-reseau-luneo-gtfs-gtfs-rt",
@@ -8352,7 +9010,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 80465,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "fr-200052264-t0023-0000-1",
@@ -8377,7 +9036,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 80475,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "velos-a-assistance-electrique-en-libre-service-velomoove-bassin-de-pompey--83717",
@@ -8450,7 +9110,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 8119,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "horaires-theoriques-et-temps-reel-du-reseau-alliance-auch-gtfs-gtfs-rt",
@@ -8486,10 +9147,11 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 83756,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
-            "name": "donnees-theoriques-et-temps-reel-du-reseau-sablons-bus-communaute-de-communes-des-sablons",
+            "name": "donnees-theoriques-et-temps-reel-du-reseau-sablons-bus-communaute-de-communes-des-sablons--81070",
             "type": "http",
             "url": "https://www.data.gouv.fr/api/1/datasets/r/1364ed96-7246-4344-a04c-34bd06ef2b0c",
             "url-override": "https://api.oisemob.cityway.fr/dataflow/offre-tc/download?provider=SABLONS&dataFormat=GTFS&dataProfil=OPENDATA",
@@ -8499,31 +9161,22 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 81070,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
-            "name": "donnees-theoriques-et-temps-reel-du-reseau-sablons-bus-communaute-de-communes-des-sablons",
-            "type": "url",
-            "url": "https://api.oisemob.cityway.fr/dataflow/horaire-tc-tr/download?provider=SABLONS&dataFormat=gtfs-rt",
+            "name": "donnees-theoriques-et-temps-reel-du-reseau-sablons-bus-communaute-de-communes-des-sablons--81651",
+            "type": "http",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/daba957b-c833-46ad-9bc1-12f3347ac4d9",
+            "url-override": "https://api.oisemob.cityway.fr/dataflow/tad/download?provider=SABLONS&dataFormat=gtfs",
+            "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/donnees-theoriques-et-temps-reel-du-reseau-sablons-bus-communaute-de-communes-des-sablons",
                 "spdx-identifier": "etalab-2.0"
             },
-            "spec": "gtfs-rt",
-            "x-data-gov-fr-res-id": 81322,
-            "managed-by-script": true
-        },
-        {
-            "name": "donnees-theoriques-et-temps-reel-du-reseau-sablons-bus-communaute-de-communes-des-sablons",
-            "type": "url",
-            "url": "https://api.oisemob.cityway.fr/dataflow/vehicule-tc-tr/download?provider=SABLONS&dataFormat=gtfs-rt",
-            "license": {
-                "url": "https://transport.data.gouv.fr/datasets/donnees-theoriques-et-temps-reel-du-reseau-sablons-bus-communaute-de-communes-des-sablons",
-                "spdx-identifier": "etalab-2.0"
-            },
-            "spec": "gtfs-rt",
-            "x-data-gov-fr-res-id": 81324,
-            "managed-by-script": true
+            "x-data-gov-fr-res-id": 81651,
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "ficibus-fecamp-caux-littoral",
@@ -8536,7 +9189,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 82311,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "ficibus-fecamp-caux-littoral",
@@ -8561,7 +9215,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 82554,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "reseau-urbain-le-vib",
@@ -8588,7 +9243,7 @@
             "managed-by-script": true
         },
         {
-            "name": "donnees-theoriques-et-temps-reel-du-reseau-le-bus-communaute-de-communes-du-clermontois",
+            "name": "donnees-theoriques-et-temps-reel-du-reseau-le-bus-communaute-de-communes-du-clermontois--81056",
             "type": "http",
             "url": "https://www.data.gouv.fr/api/1/datasets/r/960fa36a-d183-4140-ae64-462d92a06eb8",
             "url-override": "https://api.oisemob.cityway.fr/dataflow/offre-tc/download?provider=LEBUS&dataFormat=GTFS&dataProfil=OPENDATA",
@@ -8598,19 +9253,22 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 81056,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
-            "name": "donnees-theoriques-et-temps-reel-du-reseau-le-bus-communaute-de-communes-du-clermontois",
-            "type": "url",
-            "url": "https://api.oisemob.cityway.fr/dataflow/horaire-tc-tr/download?provider=LEBUS&dataFormat=gtfs-rt",
+            "name": "donnees-theoriques-et-temps-reel-du-reseau-le-bus-communaute-de-communes-du-clermontois--81652",
+            "type": "http",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/ef552f35-b49b-43d5-8bbc-ad95efdc3d95",
+            "url-override": "https://api.oisemob.cityway.fr/dataflow/tad/download?provider=LEBUS&dataFormat=gtfs",
+            "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/donnees-theoriques-et-temps-reel-du-reseau-le-bus-communaute-de-communes-du-clermontois",
                 "spdx-identifier": "etalab-2.0"
             },
-            "spec": "gtfs-rt",
-            "x-data-gov-fr-res-id": 81298,
-            "managed-by-script": true
+            "x-data-gov-fr-res-id": 81652,
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "offre-de-transport-du-reseau-elsa-petr-selestat-alsace-centrale",
@@ -8623,7 +9281,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 80401,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "offre-de-transport-du-reseau-elsa-petr-selestat-alsace-centrale",
@@ -8659,7 +9318,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 83533,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "arrets-lignes-regulieres-reseau-de-transport-urbain-a-autun",
@@ -8672,7 +9332,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 83383,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "donnees-theoriques-et-temps-reel-du-reseau-tohm-communaute-de-communes-des-pays-doise-et-dhalatte",
@@ -8685,7 +9346,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 81034,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "donnees-theoriques-et-temps-reel-du-reseau-tohm-communaute-de-communes-des-pays-doise-et-dhalatte",
@@ -8710,7 +9372,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 82415,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "fr-200052264-t0003-0000-1",
@@ -8723,7 +9386,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 80441,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "fr-200052264-t0003-0000-1",
@@ -8748,7 +9412,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 82315,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "offre-de-transports-jybus-a-rumilly",
@@ -8761,7 +9426,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 80092,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "le-bus-pont-audemer-val-de-risle",
@@ -8774,7 +9440,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 82310,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "reseau-lagglo-bus-de-lagglo-foix-varilhes",
@@ -8787,7 +9454,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 25381,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "horaires-theoriques-du-reseau-moova-communaute-dagglomeration-de-vesoul-gtfs",
@@ -8800,7 +9468,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 81222,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "horaires-theoriques-du-reseau-moova-communaute-dagglomeration-de-vesoul-gtfs",
@@ -8825,7 +9494,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 81557,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "oloron-velo-en-libre-service",
@@ -8849,7 +9519,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 81054,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "donnees-theoriques-et-temps-reel-du-reseau-libbus-communaute-de-communes-du-pays-noyonnais",
@@ -8874,7 +9545,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 81539,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "reseau-urbain-brevibus",
@@ -8887,7 +9559,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 79151,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "reseau-urbain-brevibus",
@@ -8926,7 +9599,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 82313,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "tier-dott-gbfs-bourgoin-jallieu",
@@ -8950,7 +9624,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 82411,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "donnees-de-mobilite",
@@ -8963,7 +9638,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 82689,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "offre-de-transport-du-reseau-de-la-communaute-de-communes-des-pays-du-sel-et-du-vermois",
@@ -8976,7 +9652,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 82907,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "offre-de-transport-du-reseau-de-la-communaute-de-communes-des-pays-du-sel-et-du-vermois",
@@ -9001,7 +9678,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 79483,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "tad-arrens-marsous-lourdes",
@@ -9014,7 +9692,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 83155,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "reseau-urbain-reso",
@@ -9027,7 +9706,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 79537,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "reseau-urbain-reso",
@@ -9052,7 +9732,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 82388,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "pays-du-coquelicot-velo-en-libre-service",
@@ -9076,7 +9757,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 80772,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "fr-200052264-t0011-0000-1",
@@ -9101,7 +9783,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 82711,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "hobus-honfleur",
@@ -9138,7 +9821,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 81975,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "vikibus-yvetot-normandie",
@@ -9251,7 +9935,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 79810,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "colibri-horaires-theoriques-et-temps-reel-du-reseau-de-transport-urbain-de-la-ccmp",
@@ -9276,7 +9961,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 82309,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "moca-communaute-de-communes-caux-austreberthe",
@@ -9325,7 +10011,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 82150,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "reseau-cvlmobilite-plan-de-transport-theorique-ligne-a-format-gtfs",
@@ -9350,7 +10037,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 79814,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "reseau-a-citadina-porto-vecchio-horaires-theoriques-et-temps-reel",
@@ -9363,7 +10051,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 81252,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "reseau-a-citadina-porto-vecchio-horaires-theoriques-et-temps-reel",
@@ -9388,7 +10077,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 80439,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "fr-200052264-t0041-0000-1",
@@ -9413,7 +10103,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 81455,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "issoudun-offre-theorique-mobilite-reseau-urbain",
@@ -9426,7 +10117,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 83531,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "aravis-bus-hiver-2025-2026",
@@ -9439,7 +10131,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 83755,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "tudbus-douarnenez-communaute-transport",
@@ -9452,10 +10145,11 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 81927,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
-            "name": "donnees-theoriques-du-reseau-hopla-communaute-de-communes-de-la-plaine-destrees",
+            "name": "donnees-theoriques-du-reseau-hopla-communaute-de-communes-de-la-plaine-destrees--81519",
             "type": "http",
             "url": "https://www.data.gouv.fr/api/1/datasets/r/b892a9c7-eda3-4d95-a70b-89b2391e81b0",
             "url-override": "https://api.oisemob.cityway.fr/dataflow/offre-tc/download?provider=HOPLA&dataFormat=GTFS&dataProfil=OPENDATA",
@@ -9465,19 +10159,22 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 81519,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
-            "name": "donnees-theoriques-du-reseau-hopla-communaute-de-communes-de-la-plaine-destrees",
-            "type": "url",
-            "url": "https://api.oisemob.cityway.fr/dataflow/horaire-tc-tr/download?provider=HOPLA&dataFormat=gtfs-rt",
+            "name": "donnees-theoriques-du-reseau-hopla-communaute-de-communes-de-la-plaine-destrees--81649",
+            "type": "http",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/c6279e07-8e38-459a-b96a-96e4109d0816",
+            "url-override": "https://api.oisemob.cityway.fr/dataflow/tad/download?Provider=HOPLA&dataFormat=gtfs&dataProfil=OPENDATA",
+            "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/donnees-theoriques-du-reseau-hopla-communaute-de-communes-de-la-plaine-destrees",
                 "spdx-identifier": "etalab-2.0"
             },
-            "spec": "gtfs-rt",
-            "x-data-gov-fr-res-id": 81568,
-            "managed-by-script": true
+            "x-data-gov-fr-res-id": 81649,
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "estrees-saint-denis",
@@ -9501,7 +10198,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 11492,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "horaires-theoriques-et-temps-reel-du-reseau-respire-ile-de-re-gtfs-gtfs-rt",
@@ -9514,7 +10212,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 8597,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "horaires-theoriques-et-temps-reel-du-reseau-respire-ile-de-re-gtfs-gtfs-rt",
@@ -9539,7 +10238,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 83736,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "reseau-vai-embrun",
@@ -9552,7 +10252,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 83364,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "mobivals-horaires-theoriques-du-reseau-de-transport-urbain-de-valserhone",
@@ -9565,7 +10266,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 83633,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "reseau-urbain-la-navette-commune-de-gaillac",
@@ -9578,7 +10280,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 82583,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "vallee-vezere-velo-en-libre-service",
@@ -9602,7 +10305,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 83203,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "velos-a-assistance-electrique-en-libre-service-pointe-a-pitre-la-guadeloupe-karuvelo",
@@ -9627,7 +10331,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 83258,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "gtfs-reseau-chamonix-mobilite",
@@ -9640,7 +10345,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 82663,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "bacs-de-ecouflant-cantenay-epinard-et-pruille",
@@ -9653,7 +10359,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 83579,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "reseau-urbain-la-navette-commune-de-graulhet",
@@ -9666,7 +10373,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 82584,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "ville-damboise-offre-theorique-mobilite-reseau-urbain",
@@ -9679,7 +10387,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 83528,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "horaires-theoriques-et-temps-reel-du-reseau-maybus-mayenne-gtfs-gtfs-rt",
@@ -9692,7 +10401,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 12608,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "horaires-theoriques-et-temps-reel-du-reseau-maybus-mayenne-gtfs-gtfs-rt",
@@ -9731,7 +10441,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 8487,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "horaires-theoriques-et-temps-reel-du-reseau-transports-urbains-mendois-mende-gtfs-gtfs-rt",
@@ -9770,7 +10481,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 80498,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "fr-200052264-t0030-0000-1",
@@ -9783,7 +10495,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 80471,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "gtfs-transport-horaires-des-lignes-de-la-communaute-dile-rousse-balagne-a-balanina",
@@ -9796,7 +10509,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 82997,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "velos-a-assistance-electrique-en-libre-service-argeles-sur-mer-velo-daqui-1",
@@ -9821,7 +10535,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 34265,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "horaires-theoriques-et-temps-reel-du-reseau-oloron-sainte-marie-la-navette-gtfs-gtfs-rt",
@@ -9846,7 +10561,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 81478,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "breizhgo-bateaux--81479",
@@ -9859,7 +10575,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 81479,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "breizhgo-bateaux--81480",
@@ -9872,7 +10589,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 81480,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "breizhgo-bateaux--81481",
@@ -9885,7 +10603,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 81481,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "gtfs-pybus-le-reseau-urbain-de-parthenay",
@@ -9898,7 +10617,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 82619,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "gtfs-pybus-le-reseau-urbain-de-parthenay",
@@ -9937,7 +10657,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 11725,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "horaires-theoriques-du-reseau-figeac-le-bus-gtfs",
@@ -9984,7 +10705,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 79576,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "reseau-urbain-nosbus",
@@ -10023,7 +10745,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 79992,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "horaires-theoriques-et-temps-reel-du-reseau-sarlatbus-gtfs-gtfs-rt",
@@ -10048,7 +10771,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 14652,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "horaires-theoriques-et-temps-reel-des-navettes-de-la-ligne-bagneres-la-mongie-gtfs-gtfs-rt",
@@ -10155,7 +10879,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 83467,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "transports-en-commun-pays-des-ecrins",
@@ -10180,7 +10905,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 81549,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "porte-de-vassiviere-vls",
@@ -10204,7 +10930,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 82641,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "reseau-urbain-lislenbus-commune-de-lisle-sur-tarn",
@@ -10217,7 +10944,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 81535,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "golfe-de-saint-tropez-donnees-mobilite-tc-navette-estivale-grimaud",
@@ -10244,7 +10972,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 83642,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "golfe-de-saint-tropez-donnees-mobilite-tc-ligne-de-la-croix-valmer",
@@ -10271,7 +11000,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 81773,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "golfe-de-saint-tropez-donnees-mobilite-tc-navette-reguliere-saint-tropez",
@@ -10324,7 +11054,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 82746,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "transport-urbain-par-cable-hiver-2025-26",
@@ -10337,7 +11068,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 83744,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "navettes-tignes",
@@ -10350,7 +11082,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 83627,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "navettes-tignes",
@@ -10403,7 +11136,8 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 83629,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "navettes-val-disere",
@@ -10442,7 +11176,8 @@
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 12616,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": false
         },
         {
             "name": "horaires-theoriques-et-temps-reel-de-la-station-de-ski-valmorel-gtfs-gtfs-rt",

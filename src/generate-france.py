@@ -164,11 +164,6 @@ if __name__ == "__main__":
                 r for r in gbfs if not r.get("community_resource_publisher")
             ]
 
-            # Remove resources with title in remove_title
-            gbfs_resources = [
-                r for r in gbfs_resources if str(r.get("id")) not in remove_resources
-            ]
-
             # Sort resources by the id field
             gbfs_resources.sort(key=lambda r: str(r.get("id", "")))
 
@@ -199,6 +194,8 @@ if __name__ == "__main__":
                 }
                 if dataset["slug"] in skip:
                     source["skip"] = True
+                if resource.get("id") in remove_resources:
+                    source["skip"] = True
                 if "page_url" in dataset:
                     source["license"]["url"] = dataset["page_url"]
                 if dataset["licence"] == "odc-odbl":
@@ -213,11 +210,6 @@ if __name__ == "__main__":
             # Exclude resources with "community_resource_publishers" field
             resources = [
                 r for r in resources if not r.get("community_resource_publisher")
-            ]
-
-            # Remove resources with title in remove_title
-            resources = [
-                r for r in resources if str(r.get("id")) not in remove_resources
             ]
 
             # Sort resources by the id field
@@ -252,11 +244,12 @@ if __name__ == "__main__":
                     "fix": True,
                     "license": {},
                     "x-data-gov-fr-res-id": resource["id"],
-                    "managed-by-script": True
+                    "managed-by-script": True,
+                    "skip": resource.get("id") in remove_resources
                 }
                 if dataset["slug"] in skip:
                     source["skip"] = True
-                expired = "metadata" in resource and "end_date" and "end_date" in resource["metadata"] and resource["metadata"]["end_date"] is not None and datetime.strptime(resource["metadata"]["end_date"], '%Y-%m-%d') < (datetime.now()-timedelta(days=3))
+                expired = "metadata" in resource and "end_date" and "end_date" in resource["metadata"] and resource["metadata"]["end_date"] and datetime.strptime(resource["metadata"]["end_date"], '%Y-%m-%d') < (datetime.now()-timedelta(days=3))
                 if expired:
                     print("Feed expired according to metadata, setting to skip=True:", resource["metadata"]["end_date"], feed_name)
                     source["skip"] = True
@@ -268,6 +261,8 @@ if __name__ == "__main__":
                     source["license"]["spdx-identifier"] = "etalab-2.0"
                 if dataset["slug"] in scripts:
                     source["script"] = scripts[dataset["slug"]]
+                if resource.get("id") in remove_resources:
+                    source["skip"] = True
                 out.append(source)
 
             def cond(r) -> bool:
