@@ -176,6 +176,126 @@
             "managed-by-script": true
         },
         {
+            "name": "tier-dott-gbfs-france--82747",
+            "type": "url",
+            "url": "https://gbfs.api.ridedott.com/public/v2/countries/fr/gbfs.json",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/tier-dott-gbfs-france"
+            },
+            "x-data-gov-fr-res-id": 82747,
+            "managed-by-script": true,
+            "skip": true
+        },
+        {
+            "name": "tier-dott-gbfs-france--82748",
+            "type": "url",
+            "url": "https://gbfs.api.ridedott.com/public/v2/bourgoin-jallieu/gbfs.json",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/tier-dott-gbfs-france"
+            },
+            "x-data-gov-fr-res-id": 82748,
+            "managed-by-script": true,
+            "skip": true
+        },
+        {
+            "name": "tier-dott-gbfs-france--82749",
+            "type": "url",
+            "url": "https://gbfs.api.ridedott.com/public/v2/gpseo/gbfs.json",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/tier-dott-gbfs-france"
+            },
+            "x-data-gov-fr-res-id": 82749,
+            "managed-by-script": true,
+            "skip": true
+        },
+        {
+            "name": "tier-dott-gbfs-france--82750",
+            "type": "url",
+            "url": "https://gbfs.api.ridedott.com/public/v2/paris/gbfs.json",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/tier-dott-gbfs-france"
+            },
+            "x-data-gov-fr-res-id": 82750,
+            "managed-by-script": true,
+            "skip": true
+        },
+        {
+            "name": "tier-dott-gbfs-france--82751",
+            "type": "url",
+            "url": "https://gbfs.api.ridedott.com/public/v2/lyon/gbfs.json",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/tier-dott-gbfs-france"
+            },
+            "x-data-gov-fr-res-id": 82751,
+            "managed-by-script": true,
+            "skip": true
+        },
+        {
+            "name": "tier-dott-gbfs-france--82752",
+            "type": "url",
+            "url": "https://gbfs.api.ridedott.com/public/v2/saint-quentin-en-yvelines/gbfs.json",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/tier-dott-gbfs-france"
+            },
+            "x-data-gov-fr-res-id": 82752,
+            "managed-by-script": true,
+            "skip": true
+        },
+        {
+            "name": "tier-dott-gbfs-france--82753",
+            "type": "url",
+            "url": "https://gbfs.api.ridedott.com/public/v2/bordeaux/gbfs.json",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/tier-dott-gbfs-france"
+            },
+            "x-data-gov-fr-res-id": 82753,
+            "managed-by-script": true,
+            "skip": true
+        },
+        {
+            "name": "tier-dott-gbfs-france--82754",
+            "type": "url",
+            "url": "https://gbfs.api.ridedott.com/public/v2/ol-vallee/gbfs.json",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/tier-dott-gbfs-france"
+            },
+            "x-data-gov-fr-res-id": 82754,
+            "managed-by-script": true,
+            "skip": true
+        },
+        {
+            "name": "tier-dott-gbfs-france--82755",
+            "type": "url",
+            "url": "https://gbfs.api.ridedott.com/public/v2/casgbs/gbfs.json",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/tier-dott-gbfs-france"
+            },
+            "x-data-gov-fr-res-id": 82755,
+            "managed-by-script": true,
+            "skip": true
+        },
+        {
+            "name": "tier-dott-gbfs-france--82756",
+            "type": "url",
+            "url": "https://gbfs.api.ridedott.com/public/v2/grenoble/gbfs.json",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/tier-dott-gbfs-france"
+            },
+            "x-data-gov-fr-res-id": 82756,
+            "managed-by-script": true,
+            "skip": true
+        },
+        {
             "name": "reseau-urbain-et-interurbain-dile-de-france-mobilites",
             "type": "http",
             "url": "https://www.data.gouv.fr/api/1/datasets/r/413988ed-d340-467b-8be2-7b999fcd207a",
@@ -3008,6 +3128,18 @@
             },
             "x-data-gov-fr-res-id": 82328,
             "managed-by-script": true
+        },
+        {
+            "name": "tier-dott-gbfs-saint-quentin-en-yvelines",
+            "type": "url",
+            "url": "https://gbfs.api.ridedott.com/public/v2/saint-quentin-en-yvelines/gbfs.json",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/tier-dott-gbfs-saint-quentin-en-yvelines"
+            },
+            "x-data-gov-fr-res-id": 82762,
+            "managed-by-script": true,
+            "skip": true
         },
         {
             "name": "voi-gbfs-saint-quentin-en-yvelines",

@@ -33,21 +33,18 @@ if __name__ == "__main__":
         "horaires-theoriques-et-temps-reel-des-navettes-hivernales-de-lalpe-dhuez-gtfs-gtfs-rt",
         "reseau-de-transports-collectifs-de-la-ccgq", # expired
         "reseau-de-transport-interurbain-mobigo-en-bourgogne-franche-comte", # connection timeout
+        "tier-dott-gbfs-france", # Duplicate dataset (use local ones)
+        "tier-dott-gbfs-saint-quentin-en-yvelines", # Deprecated dataset
+        "horaires-des-tgv", # replaced by horaires-sncf
+        "horaires-des-lignes-intercites-sncf", # replaced by horaires-sncf
+        "horaires-des-lignes-ter-sncf" # replaced by horaires-sncf
+
     ]
 
     # Map of datasets to MOTIS Lua scripts to apply to them
     scripts = {
         "eurostar-gtfs-plan-de-transport-et-temps-reel": "fr-eurostar.lua"
     }
-
-    # List of datasets to remove
-    remove = [
-        "tier-dott-gbfs-france", # Duplicate dataset (use local ones)
-        "tier-dott-gbfs-saint-quentin-en-yvelines", # Deprecated dataset
-        "horaires-des-tgv", # replaced by horaires-sncf
-        "horaires-des-lignes-intercites-sncf", # replaced by horaires-sncf
-        "horaires-des-lignes-ter-sncf" # replaced by horaires-sncf
-    ]
 
     # List of individual resource ids (located in datasets) we want to remove
     remove_resources = [
@@ -161,7 +158,7 @@ if __name__ == "__main__":
                 dataset["resources"],
             )
         )
-        if gbfs and (dataset["slug"] not in remove):
+        if gbfs and dataset["slug"]:
             # Exclude resources with "community_resource_publishers" field
             gbfs_resources = [
                 r for r in gbfs if not r.get("community_resource_publisher")
@@ -209,7 +206,7 @@ if __name__ == "__main__":
                 if dataset["licence"] in ["lov2", "fr-lo"]:
                     source["license"]["spdx-identifier"] = "etalab-2.0"
                 out.append(source)
-        if gtfs and (dataset["slug"] not in remove):
+        if gtfs and dataset["slug"]:
             resources = list(
                 filter(lambda r: "format" in r and r["format"] == "GTFS", gtfs)
             )
