@@ -756,7 +756,7 @@
             "skip": false
         },
         {
-            "name": "breizhgo-car",
+            "name": "breizhgo-car--81463",
             "type": "url",
             "url": "https://www.korrigo.bzh/ftp/OPENDATA/gtfsrt/BREIZHGO_CAR_35.GtfsRt.pb",
             "license": {
@@ -777,7 +777,9 @@
             },
             "spec": "gtfs-rt",
             "x-data-gov-fr-res-id": 81806,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": true,
+            "skip-reason": "Needs to be renamed to match static feed"
         },
         {
             "name": "breizhgo-ter",
@@ -1356,7 +1358,8 @@
             },
             "x-data-gov-fr-res-id": 83674,
             "managed-by-script": true,
-            "skip": false
+            "skip": true,
+            "skip-reason": "404"
         },
         {
             "name": "horaires-des-bacs-de-loire-en-loire-atlantique-gtfs--83727",
@@ -2377,7 +2380,9 @@
             },
             "spec": "gtfs-rt",
             "x-data-gov-fr-res-id": 82161,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": true,
+            "skip-reason": "needs matching"
         },
         {
             "name": "versions-des-horaires-theoriques-des-lignes-de-bus-et-de-metro-du-reseau-star-au-format-gtfs",
@@ -2389,7 +2394,9 @@
             },
             "spec": "gtfs-rt",
             "x-data-gov-fr-res-id": 82162,
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": true,
+            "skip-reason": "needs matching"
         },
         {
             "name": "reseau-de-transport-urbain-de-la-metropole-toulon-provence-mediterranee",
@@ -2802,7 +2809,8 @@
             },
             "x-data-gov-fr-res-id": 83510,
             "managed-by-script": true,
-            "skip": false
+            "skip": true,
+            "skip-reason": "calendar_date.txt instead of calendar_dates.txt"
         },
         {
             "name": "horaires-theoriques-et-temps-reel-du-reseau-bordeaux-navettes-aeroport-30-direct-gtfs-gtfs-rt",
@@ -3152,7 +3160,8 @@
             },
             "x-data-gov-fr-res-id": 83771,
             "managed-by-script": true,
-            "skip": false
+            "skip": true,
+            "skip-reason": "404"
         },
         {
             "name": "etat-des-stations-de-velos-en-libre-service-c-velo-gbfs-du-syndicat-mixte-des-transports-en-commun-de-lagglomeration-clermontoise-smtc-ac-1",
@@ -3208,7 +3217,7 @@
             "skip-reason": "Feed is expired according to metadata"
         },
         {
-            "name": "gtfs-sankeo--82900",
+            "name": "gtfs-sankeo",
             "type": "http",
             "url": "https://www.data.gouv.fr/api/1/datasets/r/3047f942-98f0-4d4c-92cf-7c5de1fe233c",
             "url-override": "https://eur.mecatran.com/utw/ws/gtfsfeed/static/perpignan?apiKey=612f606b5e3b0a3e6e1f441a2c4a050f6a345b55",
@@ -5652,7 +5661,8 @@
             },
             "x-data-gov-fr-res-id": 81650,
             "managed-by-script": true,
-            "skip": false
+            "skip": true,
+            "skip-reason": "expired"
         },
         {
             "name": "donnees-theoriques-et-temps-reel-du-reseau-corolis-urbain-communaute-dagglomeration-du-beauvaisis",
@@ -6373,7 +6383,8 @@
             },
             "x-data-gov-fr-res-id": 81645,
             "managed-by-script": true,
-            "skip": false
+            "skip": true,
+            "skip-reason": "expired"
         },
         {
             "name": "reseau-urbain-mat",
@@ -6715,7 +6726,8 @@
             },
             "x-data-gov-fr-res-id": 83019,
             "managed-by-script": true,
-            "skip": false
+            "skip": true,
+            "skip-reason": "Missing agency.txt"
         },
         {
             "name": "reseau-urbain-ville-de-vitre--83276",
@@ -7692,7 +7704,8 @@
             },
             "x-data-gov-fr-res-id": 81648,
             "managed-by-script": true,
-            "skip": false
+            "skip": true,
+            "skip-reason": "expired"
         },
         {
             "name": "offre-de-transport-ca-bergeracoise-1",
@@ -9262,7 +9275,8 @@
             },
             "x-data-gov-fr-res-id": 81651,
             "managed-by-script": true,
-            "skip": false
+            "skip": true,
+            "skip-reason": "expired"
         },
         {
             "name": "ficibus-fecamp-caux-littoral",
@@ -9354,7 +9368,8 @@
             },
             "x-data-gov-fr-res-id": 81652,
             "managed-by-script": true,
-            "skip": false
+            "skip": true,
+            "skip-reason": "expired"
         },
         {
             "name": "offre-de-transport-du-reseau-elsa-petr-selestat-alsace-centrale",
@@ -10268,7 +10283,8 @@
             },
             "x-data-gov-fr-res-id": 81649,
             "managed-by-script": true,
-            "skip": false
+            "skip": true,
+            "skip-reason": "expired"
         },
         {
             "name": "estrees-saint-denis",
@@ -10456,7 +10472,8 @@
             },
             "x-data-gov-fr-res-id": 83579,
             "managed-by-script": true,
-            "skip": false
+            "skip": true,
+            "skip-reason": "Validity check fails"
         },
         {
             "name": "reseau-urbain-la-navette-commune-de-graulhet",
