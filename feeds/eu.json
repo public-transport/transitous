@@ -35,6 +35,16 @@
             "fix": true
         },
         {
+            "name": "blablacar-bus",
+            "type": "url",
+            "url": "https://open-data.bus.blablacar.com/api/siri-lite/estimated-timetable",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/blablacar-bus-horaires-theoriques-et-temps-reel-du-reseau-europeen",
+                "spdx-identifier": "ODbL-1.0"
+            },
+            "spec": "siri-json"
+        },
+        {
             "name": "eurostar",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-eurostar",
