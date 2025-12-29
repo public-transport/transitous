@@ -9,7 +9,10 @@
         {
             "name": "toeibus",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-toeibus~gtfs~jp"
+            "transitland-atlas-id": "f-toeibus~gtfs~jp",
+            "http-options": {
+                "fetch-interval-days": 1
+            }
         },
         {
             "name": "hiroden",
@@ -42,6 +45,2990 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             }
+        },
+        {
+            "name": "上松町公共交通",
+            "type": "mobility-database",
+            "mdb-id": "jbda-agematsutown-agematu"
+        },
+        {
+            "name": "みよし市さんさんバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-aichi-miyoshicity-sansanbus"
+        },
+        {
+            "name": "たこバスたこバスミニ",
+            "type": "mobility-database",
+            "mdb-id": "jbda-akashicity-tacobustacobusmini"
+        },
+        {
+            "name": "明知鉄道",
+            "type": "mobility-database",
+            "mdb-id": "jbda-aketetsu-akechirailway"
+        },
+        {
+            "name": "安芸市「元気バス」",
+            "type": "mobility-database",
+            "mdb-id": "jbda-akicity-GTFS-Akicity_Bus"
+        },
+        {
+            "name": "ていじゅうろう",
+            "type": "mobility-database",
+            "mdb-id": "jbda-akocity-teijuurou"
+        },
+        {
+            "name": "安堵町コミュニティバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-andotown-andocombus"
+        },
+        {
+            "name": "あんくるバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-anjocity-AnkuruBus"
+        },
+        {
+            "name": "安中市路線バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-annakacity-annakashi-rosenbus"
+        },
+        {
+            "name": "あおい交通",
+            "type": "mobility-database",
+            "mdb-id": "jbda-aoi-komaki-aoikotsu"
+        },
+        {
+            "name": "青木村営バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-aokivillage-aokisoneibus"
+        },
+        {
+            "name": "有田川町コミュニティバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-aridagawatown-aridagawatownbus"
+        },
+        {
+            "name": "芦屋町コミュニティバス-芦屋タウンバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-ashiyatown-AshiyaTownBus"
+        },
+        {
+            "name": "淡路ジェノバライン明石岩屋航路",
+            "type": "mobility-database",
+            "mdb-id": "jbda-awajicity-awaji-jenova-line-akashi-iwaya"
+        },
+        {
+            "name": "あわ神あわ姫バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-awajicity-awajinawahimebus"
+        },
+        {
+            "name": "ぐるっと・つーバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-busnet-tsu-guruttotsubus"
+        },
+        {
+            "name": "豊前市バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-buzencity-BuzenCityBus"
+        },
+        {
+            "name": "コミュニティバスえぼし号",
+            "type": "mobility-database",
+            "mdb-id": "jbda-chigasakicity-eboshigou"
+        },
+        {
+            "name": "羽犬塚駅周辺循環バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-chikugocity-HainuzukaStationAreaLoopBus"
+        },
+        {
+            "name": "築上町コミュニティバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-chikujotown-ChikujoTownCommunityBus"
+        },
+        {
+            "name": "路線バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-chikuma-bus-rosenbus"
+        },
+        {
+            "name": "知立市「ミニバス」（コミュニティバス）",
+            "type": "mobility-database",
+            "mdb-id": "jbda-chiryucity-communitybus"
+        },
+        {
+            "name": "知多市コミュニティバス「あいあいバス」",
+            "type": "mobility-database",
+            "mdb-id": "jbda-chitacity-chita-aiaibus"
+        },
+        {
+            "name": "知多市コミュニティバス「あいあいバス」",
+            "type": "mobility-database",
+            "mdb-id": "jbda-chitacity-chita-aiaibus-sa",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "知多市コミュニティバス「あいあいバス」",
+            "type": "mobility-database",
+            "mdb-id": "jbda-chitacity-chita-aiaibus-tu",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "知多市コミュニティバス「あいあいバス」",
+            "type": "mobility-database",
+            "mdb-id": "jbda-chitacity-chita-aiaibus-vp",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "富山地方鉄道バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-chitetsu-chitetsubus"
+        },
+        {
+            "name": "富山地方鉄道バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-chitetsu-chitetsubus-tu",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "富山地方鉄道バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-chitetsu-chitetsubus-vp",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "富山地方鉄道市内電車",
+            "type": "mobility-database",
+            "mdb-id": "jbda-chitetsu-chitetsushinaidensha"
+        },
+        {
+            "name": "富山地方鉄道市内電車",
+            "type": "mobility-database",
+            "mdb-id": "jbda-chitetsu-chitetsushinaidensha-tu",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "富山地方鉄道市内電車",
+            "type": "mobility-database",
+            "mdb-id": "jbda-chitetsu-chitetsushinaidensha-vp",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "中紀バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-chukibus-chukibus"
+        },
+        {
+            "name": "レイディアントシティ横濱",
+            "type": "mobility-database",
+            "mdb-id": "jbda-daishinto-Radiant-City"
+        },
+        {
+            "name": "太宰府市コミュニティバスまほろば号",
+            "type": "mobility-database",
+            "mdb-id": "jbda-dazaifucity-DazaifuCityCommunityBus"
+        },
+        {
+            "name": "恵那市自主運行バス（コミュニティバス）",
+            "type": "mobility-database",
+            "mdb-id": "jbda-enacity-communitybus"
+        },
+        {
+            "name": "川崎町ふれあいバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-fukuoka-kawasakitown-KawasakiTownFureaiBus"
+        },
+        {
+            "name": "コガバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-fukuoka-kogacity-KogaBus"
+        },
+        {
+            "name": "巡回バスふくひめ号福崎町・加西市連携コミュニティバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-fukusakitown-junkai-fukuhime-fukusakikasairenkei"
+        },
+        {
+            "name": "ふくつミニバス・ふくつ乗合タクシー",
+            "type": "mobility-database",
+            "mdb-id": "jbda-fukutsucity-minibus"
+        },
+        {
+            "name": "しおかぜライン",
+            "type": "mobility-database",
+            "mdb-id": "jbda-gan-wu-shiokazeline"
+        },
+        {
+            "name": "芸西村「おでかけバス」",
+            "type": "mobility-database",
+            "mdb-id": "jbda-geiseivillage-GTFS-Geiseivill_Bus"
+        },
+        {
+            "name": "山県市自主運行バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-gifu-yamagatacity-communitybus"
+        },
+        {
+            "name": "岐阜市コミュニティバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-gifucity-communitybus"
+        },
+        {
+            "name": "八幡バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-hachikanbus-hachimanbus"
+        },
+        {
+            "name": "白山市コミュニティバス「めぐーる」",
+            "type": "mobility-database",
+            "mdb-id": "jbda-hakusancity-hakusan_bus_meguru"
+        },
+        {
+            "name": "磐田市生活バス路線",
+            "type": "mobility-database",
+            "mdb-id": "jbda-hamabus-iwata_seikatsubus"
+        },
+        {
+            "name": "花巻市コミュニティバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-hanamakicity-hanamaki"
+        },
+        {
+            "name": "飯能市乗合ワゴン　原市場",
+            "type": "mobility-database",
+            "mdb-id": "jbda-hannocity-odekakemuma-haraichiba"
+        },
+        {
+            "name": "飯能市乗合ワゴン　南高麗",
+            "type": "mobility-database",
+            "mdb-id": "jbda-hannocity-odekakemuma-minamikoma"
+        },
+        {
+            "name": "飯能市乗合ワゴン　精明・加治",
+            "type": "mobility-database",
+            "mdb-id": "jbda-hannocity-odekakemuma-seimei-kaji"
+        },
+        {
+            "name": "階上町コミュニティバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-hashikamitown-hashikamibus"
+        },
+        {
+            "name": "羽島市コミュニティバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-hashimacity-HashimaCityCommunityBus"
+        },
+        {
+            "name": "早島町コミュニティバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-hayashimatown-hayashimatowncommunitybus"
+        },
+        {
+            "name": "くるくるバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-hekinancity-kurukuru-bus"
+        },
+        {
+            "name": "七宗町営バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-hichisotown-choeibus"
+        },
+        {
+            "name": "東みよし町営バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-higashimiyoshitown-higashimiyoshitownbus"
+        },
+        {
+            "name": "東根市営バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-higashinecity-HigashineCity"
+        },
+        {
+            "name": "東近江市ちょこっとバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-higashiomicity-higasiohmisicommunitybus"
+        },
+        {
+            "name": "東浦町運行バス　う・ら・ら",
+            "type": "mobility-database",
+            "mdb-id": "jbda-higashiuratown-communitybus"
+        },
+        {
+            "name": "家島コミュニティバス坊勢コミュニティバスコミュニティバス雪彦",
+            "type": "mobility-database",
+            "mdb-id": "jbda-himejicity-ieshima-boze-yukihiko"
+        },
+        {
+            "name": "ふれあいバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-hiradocity-fureaibus"
+        },
+        {
+            "name": "弘前市乗合タクシー（北星交通）",
+            "type": "mobility-database",
+            "mdb-id": "jbda-hirosakicity-hokusei-noriai"
+        },
+        {
+            "name": "久山町コミュニティバス-イコバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-hisayamatown-HisayamaIkoBus"
+        },
+        {
+            "name": "北振バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-hokushin-bus-hokushinbus"
+        },
+        {
+            "name": "井原あいあいバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-hokushin-bus-ibaraaiaibus"
+        },
+        {
+            "name": "コミュニティバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-hyogo-kamikawatown-communitybus"
+        },
+        {
+            "name": "らんらんバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-hyogo-ono-ranranbus"
+        },
+        {
+            "name": "揖斐川町ふれあいバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-ibigawatown-communitybus"
+        },
+        {
+            "name": "市川三郷町コミュニティバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-ichikawamisatotown-ichikawamisatobus"
+        },
+        {
+            "name": "コミュニティバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-ichikawatown-communitybus"
+        },
+        {
+            "name": "一関市市営バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-ichinosekicity-Ichinosekibus"
+        },
+        {
+            "name": "伊賀市行政バス・コミュニティバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-igacity-communitybus"
+        },
+        {
+            "name": "菜の花バス市街地循環線",
+            "type": "mobility-database",
+            "mdb-id": "jbda-iiyamacity-nanohanabus"
+        },
+        {
+            "name": "いまりんバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-imaricity-imarinbus"
+        },
+        {
+            "name": "きときとバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-imizucity-imizushi"
+        },
+        {
+            "name": "きときとバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-imizucity-imizushi-tu",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "きときとバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-imizucity-imizushi-vp",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "いなべ市福祉バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-inabecity-fukushibus"
+        },
+        {
+            "name": "ふれあいバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-inagawatown-fureaibus"
+        },
+        {
+            "name": "いの町営バス「本川地区」",
+            "type": "mobility-database",
+            "mdb-id": "jbda-inotown-GTFS-Inotown_HongawaArea"
+        },
+        {
+            "name": "いの町営バス「伊野循環線」",
+            "type": "mobility-database",
+            "mdb-id": "jbda-inotown-GTFS-Inotown_Loopbus"
+        },
+        {
+            "name": "伊勢市コミュニティバス「おかげバス」",
+            "type": "mobility-database",
+            "mdb-id": "jbda-isecity-communitybus"
+        },
+        {
+            "name": "伊勢市コミュニティバス「おかげバス」",
+            "type": "mobility-database",
+            "mdb-id": "jbda-isecity-communitybus-sa",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "伊勢市コミュニティバス「おかげバス」",
+            "type": "mobility-database",
+            "mdb-id": "jbda-isecity-communitybus-tu",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "伊勢市コミュニティバス「おかげバス」",
+            "type": "mobility-database",
+            "mdb-id": "jbda-isecity-communitybus-vp",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "伊勢市沼木地区自主運行バス「沼木バス」",
+            "type": "mobility-database",
+            "mdb-id": "jbda-isecity-numakibus"
+        },
+        {
+            "name": "伊勢鉄道",
+            "type": "mobility-database",
+            "mdb-id": "jbda-isetetu-iserailway"
+        },
+        {
+            "name": "糸魚川バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-itoigawabus-itoigawabus"
+        },
+        {
+            "name": "岩出市巡回バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-iwadecity-junkaibus"
+        },
+        {
+            "name": "上越市市営バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-joetsucity-joetsu"
+        },
+        {
+            "name": "JR津軽線代行バス（蟹田駅～三厩体育館）",
+            "type": "mobility-database",
+            "mdb-id": "jbda-jr-east-morioka-JR-east_tsugaruline"
+        },
+        {
+            "name": "わんタク定時便",
+            "type": "mobility-database",
+            "mdb-id": "jbda-jr-east-morioka-JReast_wandotaxi"
+        },
+        {
+            "name": "路線バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-jr-shikoku-bus-kochi-GTFS-JRbus_Otochi"
+        },
+        {
+            "name": "加越能バス（氷見市街地周遊バス）",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kaetsunou-kaetsunouhimi"
+        },
+        {
+            "name": "加越能バス（氷見市街地周遊バス）",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kaetsunou-kaetsunouhimi-tu",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "加越能バス（氷見市街地周遊バス）",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kaetsunou-kaetsunouhimi-vp",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "加越能バス（一般路線）",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kaetsunou-kaetsunouippan"
+        },
+        {
+            "name": "加越能バス（一般路線）",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kaetsunou-kaetsunouippan-tu",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "加越能バス（一般路線）",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kaetsunou-kaetsunouippan-vp",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "加越能バス（世界遺産バス）",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kaetsunou-kaetsunousekaiisan"
+        },
+        {
+            "name": "加越能バス（世界遺産バス）",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kaetsunou-kaetsunousekaiisan-tu",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "加越能バス（世界遺産バス）",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kaetsunou-kaetsunousekaiisan-vp",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "鏡野町営バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kagaminotown-kagaminotownbus"
+        },
+        {
+            "name": "鹿児島市コミュニティバス「あいばす」",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kagoshimacity-aibus",
+            "skip": true,
+            "skip-reason": "expired"
+        },
+        {
+            "name": "河北町営バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kahokutown-KahokuTown"
+        },
+        {
+            "name": "甲斐市民バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kaicity-kaicitybus"
+        },
+        {
+            "name": "海陽町営バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kaiyotown-kaiyotownbus"
+        },
+        {
+            "name": "桜木、居尻、倉真、東山、粟本線、市街地循環線南回り、市街地循環線北回り",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kakegawacity-kakegawa6"
+        },
+        {
+            "name": "掛川大須賀線",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kakegawacity-kakegawaosuka"
+        },
+        {
+            "name": "かこバスかこバスミニ",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kakogawacity-kakobuskakobusmini"
+        },
+        {
+            "name": "嘉麻市バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kamacity-KamaCityBus"
+        },
+        {
+            "name": "亀山市コミュニティバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kameyamacity-communitybus"
+        },
+        {
+            "name": "香美市営バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kamicity-GTFS-Kamicity_Bus"
+        },
+        {
+            "name": "香美市営バス-デマンド",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kamicity-GTFS-Kamicity_Demandbus"
+        },
+        {
+            "name": "愛のり号",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kamigoritown-ainorigo"
+        },
+        {
+            "name": "上市町営バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kamiichitown-kamiichi-tu",
+            "spec": "gtfs-rt",
+            "skip": true,
+            "skip-reason": "No static feed"
+        },
+        {
+            "name": "上市町営バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kamiichitown-kamiichi-vp",
+            "spec": "gtfs-rt",
+            "skip": true,
+            "skip-reason": "No static feed"
+        },
+        {
+            "name": "上勝町営バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kamikatsutown-kamikatsutownbus"
+        },
+        {
+            "name": "上山市営バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kaminoyamacity-KaminoyamaCity"
+        },
+        {
+            "name": "上士幌町コミュニティバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kamishihorotown-kamishihoro"
+        },
+        {
+            "name": "上士幌町自動運転バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kamishihorotown-kamishihoro-self-bus"
+        },
+        {
+            "name": "加茂市営バス-かもんバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kamocity-kamonbus"
+        },
+        {
+            "name": "苅田町コミュニティバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kandatown-KandaTownCommunityBus"
+        },
+        {
+            "name": "さつきバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kanicity-satsukibus"
+        },
+        {
+            "name": "観音寺市のりあいバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kanonjicity-kanonjishi-noriaibus"
+        },
+        {
+            "name": "刈谷市公共施設連絡バス「かりまる」",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kariyacity-communitybus"
+        },
+        {
+            "name": "KASAIねっぴー号はっぴーバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kasaicity-kasaineppihappybus"
+        },
+        {
+            "name": "宇仁ふれあいバスとみバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kasaicity-unifureaitomi"
+        },
+        {
+            "name": "笠松町公共施設巡回町民バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kasamatsutown-communitybus"
+        },
+        {
+            "name": "香取市循環バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-katoricity-katori-junkan"
+        },
+        {
+            "name": "さくら",
+            "type": "mobility-database",
+            "mdb-id": "jbda-katsushikacity-sakura"
+        },
+        {
+            "name": "川越町ふれあいバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kawagoetown-fureaibus",
+            "fix": true
+        },
+        {
+            "name": "京成バス千葉ウエスト　塩浜営業所（市川市コミュニティバス　南部ルート　わくわくバス含む）",
+            "type": "mobility-database",
+            "mdb-id": "jbda-keisei-transitbus-keiseitransitbus"
+        },
+        {
+            "name": "京成バス千葉ウエスト　塩浜営業所（市川市コミュニティバス　南部ルート　わくわくバス含む）",
+            "type": "mobility-database",
+            "mdb-id": "jbda-keisei-transitbus-keiseitransitbus-sa",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "京成バス千葉ウエスト　塩浜営業所（市川市コミュニティバス　南部ルート　わくわくバス含む）",
+            "type": "mobility-database",
+            "mdb-id": "jbda-keisei-transitbus-keiseitransitbus-tu",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "京成バス千葉ウエスト　塩浜営業所（市川市コミュニティバス　南部ルート　わくわくバス含む）",
+            "type": "mobility-database",
+            "mdb-id": "jbda-keisei-transitbus-keiseitransitbus-vp",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "路線バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-khkhokubu-kotsu-GTFS-Hokubutraffic_Localbus"
+        },
+        {
+            "name": "紀宝町民バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kihotown-chominbus"
+        },
+        {
+            "name": "君津市経由路線バス（IC運賃特殊２路線）",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kimitsucity-IC-SP_Local_buses_via_Kimitsu_City"
+        },
+        {
+            "name": "【このフィードは終了しました】【IC対応路線】君津市経由路線バス・君津市コミュニティバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kimitsucity-IC_Local_buses_via_Kimitsu_City_and_Kimitsu_City_Community_Bus"
+        },
+        {
+            "name": "君津市コミュニティバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kimitsucity-Kimitsu_City_Community_Bus"
+        },
+        {
+            "name": "君津市経由路線バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kimitsucity-Local_buses_via_Kimitsu_City"
+        },
+        {
+            "name": "紀の川市地域巡回バス・紀の川コミュニティバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kinokawacity-kinokawa_bus"
+        },
+        {
+            "name": "きそバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kisokoikirengo-kiso-bus"
+        },
+        {
+            "name": "木曽岬町自主運行バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kisosakitown-communitybus"
+        },
+        {
+            "name": "木曽町公共交通",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kisotown-kisotown"
+        },
+        {
+            "name": "北恵那交通",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kitaena-kitaena"
+        },
+        {
+            "name": "北川村営バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kitagawavillage-GTFS-Kitagawavill_Bus"
+        },
+        {
+            "name": "北島町福祉バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kitajimatown-kitajimatownfukushibus"
+        },
+        {
+            "name": "八幡東区枝光地区",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kitakyushucity-edamitsu"
+        },
+        {
+            "name": "小倉南区東谷地区",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kitakyushucity-higashitani"
+        },
+        {
+            "name": "小倉南区平尾台地区",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kitakyushucity-hiraodai"
+        },
+        {
+            "name": "八幡西区木屋瀬・楠橋・星ヶ丘地区",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kitakyushucity-koyanose-kusubashi-hoshigaoka"
+        },
+        {
+            "name": "八幡東区大蔵地区",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kitakyushucity-okura"
+        },
+        {
+            "name": "小倉南区合馬・道原地区",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kitakyushucity-oma-dobaru"
+        },
+        {
+            "name": "八幡東区田代・河内地区",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kitakyushucity-tashiro-kawachi"
+        },
+        {
+            "name": "門司区恒見・喜多久地区",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kitakyushucity-tsunemi-kitaku"
+        },
+        {
+            "name": "北名古屋市　市内循環バス「きたバス」",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kitanagoyacity-communitybus"
+        },
+        {
+            "name": "おでかけ北設（設楽町・東栄町・豊根村）",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kitashitara-odekakehokusetsu"
+        },
+        {
+            "name": "神戸市コミュニティバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kobecity-kobe-shiokaze"
+        },
+        {
+            "name": "空港連絡バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kochi-ekimae-kanko-GTFS-Ekimae_Airportbus"
+        },
+        {
+            "name": "高速バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kochi-ekimae-kanko-GTFS-Ekimae_Expressbus"
+        },
+        {
+            "name": "MY遊バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kochi-kanko-convention-GTFS-KVCA_MY-YUbus"
+        },
+        {
+            "name": "香南市営バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kochi-konancity-GTFS-Konancity_Bus"
+        },
+        {
+            "name": "路線バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kochi-koryo-kotsu-GTFS-Koryotraffic_Localbus"
+        },
+        {
+            "name": "高速バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kochi-seinan-kotsu-GTFS-Seinan_Expressbus"
+        },
+        {
+            "name": "まちなかぐるっと循環周遊バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kochi-seinan-kotsu-GTFS-Seinantraffic_Akamego"
+        },
+        {
+            "name": "路線バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kochi-seinan-kotsu-GTFS-Seinantraffic_Localbus"
+        },
+        {
+            "name": "四万十川バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kochi-seinan-kotsu-GTFS-Seinantraffic_Riverbus"
+        },
+        {
+            "name": "しまんと・あしずり号",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kochi-seinan-kotsu-GTFS-Seinantraffic_Shimaashi"
+        },
+        {
+            "name": "須崎市営バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kochi-suzakicity-GTFS-Susakicity_Bus"
+        },
+        {
+            "name": "須崎市営巡航船",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kochi-suzakicity-GTFS-Susakicity_Ferry"
+        },
+        {
+            "name": "路線バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kochi-tobu-kotsu-GTFS-Tobutraffic_Localbus"
+        },
+        {
+            "name": "津野町コミュニティバス「つのバス」",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kochi-tsunotown-GTFS-Tsunotown_Bus"
+        },
+        {
+            "name": "高知県営渡船",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kochi_pref-GTFS-Kochipref_Ferry"
+        },
+        {
+            "name": "高知県航空利用促進協議会「空港乗合タクシー」",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kochiap-GTFS-KochIAP_AirportShare"
+        },
+        {
+            "name": "甲賀市コミュニティバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kokacity-sinaicommunitybus"
+        },
+        {
+            "name": "市内循環線北コース",
+            "type": "mobility-database",
+            "mdb-id": "jbda-komatsucity-blue"
+        },
+        {
+            "name": "木場潟線",
+            "type": "mobility-database",
+            "mdb-id": "jbda-komatsucity-kibagatasen"
+        },
+        {
+            "name": "市内循環線南コース",
+            "type": "mobility-database",
+            "mdb-id": "jbda-komatsucity-orange"
+        },
+        {
+            "name": "菰野町「かもしか号」",
+            "type": "mobility-database",
+            "mdb-id": "jbda-komonotown-communitybus"
+        },
+        {
+            "name": "菰野町「かもしか号」",
+            "type": "mobility-database",
+            "mdb-id": "jbda-komonotown-communitybus-sa",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "菰野町「かもしか号」",
+            "type": "mobility-database",
+            "mdb-id": "jbda-komonotown-communitybus-tu",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "菰野町「かもしか号」",
+            "type": "mobility-database",
+            "mdb-id": "jbda-komonotown-communitybus-vp",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "小菅村営バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kosugevillage-kosugesoneibus"
+        },
+        {
+            "name": "神津島村営バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kozushimavillage-kozushimavillagebus"
+        },
+        {
+            "name": "熊本バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kuma-bus-kuma-bus"
+        },
+        {
+            "name": "熊本バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kuma-bus-kuma-bus-sa",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "熊本バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kuma-bus-kuma-bus-tu",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "熊本バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kuma-bus-kuma-bus-vp",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "熊谷市ゆうゆうバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kumagayacity-yuuyuubus"
+        },
+        {
+            "name": "熊谷市ゆうゆうバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kumagayacity-yuuyuubus-vp",
+            "spec": "gtfs-rt",
+            "url-override": "http://kumagaya.bus-go.com/GTFS-RT/encode_vehicle.php"
+        },
+        {
+            "name": "熊本市電",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kumamoto-shiden-kumamotoshiden"
+        },
+        {
+            "name": "熊本都市バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kumamoto-toshibus-kumamoto-toshibus"
+        },
+        {
+            "name": "熊本都市バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kumamoto-toshibus-kumamoto-toshibus-sa",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "熊本都市バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kumamoto-toshibus-kumamoto-toshibus-tu",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "熊本都市バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kumamoto-toshibus-kumamoto-toshibus-vp",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "熊本電鉄電車",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kumamotodentetsu-kumamotodentetsu"
+        },
+        {
+            "name": "熊本電鉄バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kumamotodentetsu-kumamotodentetsu-bus"
+        },
+        {
+            "name": "熊本電鉄バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kumamotodentetsu-kumamotodentetsu-bus-sa",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "熊本電鉄バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kumamotodentetsu-kumamotodentetsu-bus-tu",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "熊本電鉄バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kumamotodentetsu-kumamotodentetsu-bus-vp",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "熊野市バス、御浜町自主運行バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kumanocity-communitybus"
+        },
+        {
+            "name": "熊野市市街地周遊バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kumanocity-shuyubus"
+        },
+        {
+            "name": "熊野御坊南海バス-御坊エリア",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kumanogobobus-kumanogobobus_gobo"
+        },
+        {
+            "name": "熊野御坊南海バス-熊野エリア",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kumanogobobus-kumanogobobus_kumano"
+        },
+        {
+            "name": "石田・愛本",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kurobecity-ishida-aimoto"
+        },
+        {
+            "name": "石田・愛本",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kurobecity-ishida-aimoto-tu",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "石田・愛本",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kurobecity-ishida-aimoto-vp",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "新幹線生地線",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kurobecity-shinkansenikujisen"
+        },
+        {
+            "name": "新幹線生地線",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kurobecity-shinkansenikujisen-tu",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "新幹線生地線",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kurobecity-shinkansenikujisen-vp",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "路線バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kuroiwa-kanko-GTFS-Kuroiwakanko_Localbus"
+        },
+        {
+            "name": "軽井沢草津長野原草津口バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kusakarukotsu-kusakarubus"
+        },
+        {
+            "name": "草津市コミュニティバス　まめバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kusatsucity-kusatsusimamebus"
+        },
+        {
+            "name": "くしもと観光周遊バス　まぐトル号",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kushimoto-bus-kushimotokankoshuyu-wakayama-jp"
+        },
+        {
+            "name": "桑名市コミュニティバス「Ｋ－バス」",
+            "type": "mobility-database",
+            "mdb-id": "jbda-kuwanacity-communitybus"
+        },
+        {
+            "name": "真室川町営バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-mamurogawatown-MamurogawaTown"
+        },
+        {
+            "name": "真庭市コミュニティバス「まにわくん」",
+            "type": "mobility-database",
+            "mdb-id": "jbda-maniwacity-maniwakun"
+        },
+        {
+            "name": "万葉線",
+            "type": "mobility-database",
+            "mdb-id": "jbda-manyosen-manyosen"
+        },
+        {
+            "name": "万葉線",
+            "type": "mobility-database",
+            "mdb-id": "jbda-manyosen-manyosen-tu",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "万葉線",
+            "type": "mobility-database",
+            "mdb-id": "jbda-manyosen-manyosen-vp",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "益田市乗合タクシー",
+            "type": "mobility-database",
+            "mdb-id": "jbda-masudacity-noriai"
+        },
+        {
+            "name": "松戸市ゆめいろバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-matsudocity-matsudo"
+        },
+        {
+            "name": "松本駅・バスターミナル発着バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-matsumotocity-guruttomatsumotobus1"
+        },
+        {
+            "name": "地域連携バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-matsumotocity-guruttomatsumotobus2"
+        },
+        {
+            "name": "松阪市コミュニティ交通",
+            "type": "mobility-database",
+            "mdb-id": "jbda-matsusakacity-communitybus"
+        },
+        {
+            "name": "松茂町地域コミュニティバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-matsushigetown-matsushigetownbus"
+        },
+        {
+            "name": "壬生町コミュニティバス「みぶーぶ」",
+            "type": "mobility-database",
+            "mdb-id": "jbda-mibutown-mibubu"
+        },
+        {
+            "name": "中勢営業所",
+            "type": "mobility-database",
+            "mdb-id": "jbda-mie-kotsu-sancochusei"
+        },
+        {
+            "name": "伊賀営業所",
+            "type": "mobility-database",
+            "mdb-id": "jbda-mie-kotsu-sancoiga"
+        },
+        {
+            "name": "伊賀営業所",
+            "type": "mobility-database",
+            "mdb-id": "jbda-mie-kotsu-sancoiga-sa",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "伊賀営業所",
+            "type": "mobility-database",
+            "mdb-id": "jbda-mie-kotsu-sancoiga-tu",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "伊賀営業所",
+            "type": "mobility-database",
+            "mdb-id": "jbda-mie-kotsu-sancoiga-vp",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "南紀営業所",
+            "type": "mobility-database",
+            "mdb-id": "jbda-mie-kotsu-sancoinanki"
+        },
+        {
+            "name": "伊勢営業所",
+            "type": "mobility-database",
+            "mdb-id": "jbda-mie-kotsu-sancoise"
+        },
+        {
+            "name": "伊勢営業所",
+            "type": "mobility-database",
+            "mdb-id": "jbda-mie-kotsu-sancoise-sa",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "伊勢営業所",
+            "type": "mobility-database",
+            "mdb-id": "jbda-mie-kotsu-sancoise-tu",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "伊勢営業所",
+            "type": "mobility-database",
+            "mdb-id": "jbda-mie-kotsu-sancoise-vp",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "桑名営業所",
+            "type": "mobility-database",
+            "mdb-id": "jbda-mie-kotsu-sancokuwana"
+        },
+        {
+            "name": "桑名営業所",
+            "type": "mobility-database",
+            "mdb-id": "jbda-mie-kotsu-sancokuwana-sa",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "桑名営業所",
+            "type": "mobility-database",
+            "mdb-id": "jbda-mie-kotsu-sancokuwana-tu",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "桑名営業所",
+            "type": "mobility-database",
+            "mdb-id": "jbda-mie-kotsu-sancokuwana-vp",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "松阪営業所",
+            "type": "mobility-database",
+            "mdb-id": "jbda-mie-kotsu-sancomatsusaka"
+        },
+        {
+            "name": "松阪営業所",
+            "type": "mobility-database",
+            "mdb-id": "jbda-mie-kotsu-sancomatsusaka-sa",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "松阪営業所",
+            "type": "mobility-database",
+            "mdb-id": "jbda-mie-kotsu-sancomatsusaka-tu",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "松阪営業所",
+            "type": "mobility-database",
+            "mdb-id": "jbda-mie-kotsu-sancomatsusaka-vp",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "志摩営業所",
+            "type": "mobility-database",
+            "mdb-id": "jbda-mie-kotsu-sancoshima"
+        },
+        {
+            "name": "志摩営業所",
+            "type": "mobility-database",
+            "mdb-id": "jbda-mie-kotsu-sancoshima-sa",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "志摩営業所",
+            "type": "mobility-database",
+            "mdb-id": "jbda-mie-kotsu-sancoshima-tu",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "志摩営業所",
+            "type": "mobility-database",
+            "mdb-id": "jbda-mie-kotsu-sancoshima-vp",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "四日市営業所",
+            "type": "mobility-database",
+            "mdb-id": "jbda-mie-kotsu-sancoyokkaichi"
+        },
+        {
+            "name": "四日市営業所",
+            "type": "mobility-database",
+            "mdb-id": "jbda-mie-kotsu-sancoyokkaichi-sa",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "四日市営業所",
+            "type": "mobility-database",
+            "mdb-id": "jbda-mie-kotsu-sancoyokkaichi-tu",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "四日市営業所",
+            "type": "mobility-database",
+            "mdb-id": "jbda-mie-kotsu-sancoyokkaichi-vp",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "三原村「三原バス」",
+            "type": "mobility-database",
+            "mdb-id": "jbda-miharavillage-GTFS-Miharavill_Bus"
+        },
+        {
+            "name": "らん・らんバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-minamiawajicity-lanrunbus"
+        },
+        {
+            "name": "南知多町海っ子バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-minamichitatown-communitybus"
+        },
+        {
+            "name": "南伊勢町営バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-minamiisetown-choeibus"
+        },
+        {
+            "name": "【飯田市】L1市民バス循環線C2市民バス久堅線C3市民バス千代線C4市民バス三穂線C5市民バス大休線E2平岡線",
+            "type": "mobility-database",
+            "mdb-id": "jbda-minamishinshu-Minamishinshu-Iidacity-1"
+        },
+        {
+            "name": "S0南部公共バス阿南線S1南部公共バス温田線",
+            "type": "mobility-database",
+            "mdb-id": "jbda-minamishinshu-Minamishinshu-Nanbu-1"
+        },
+        {
+            "name": "【大鹿村】M1　大鹿線",
+            "type": "mobility-database",
+            "mdb-id": "jbda-minamishinshu-Minamishinshu-Ooshika-1"
+        },
+        {
+            "name": "【信南交通㈱】W0駒場線E0-阿島線E1遠山郷線",
+            "type": "mobility-database",
+            "mdb-id": "jbda-minamishinshu-Minamishinshu-Shinnan-1"
+        },
+        {
+            "name": "【阿智村】W2巡回バス伍和線W3巡回バス春日・智里線W4巡回バス浪合線W5巡回バス清内路線W6巡回バス智里東線",
+            "type": "mobility-database",
+            "mdb-id": "jbda-minamishinshu-Minamishinshu-achi-1"
+        },
+        {
+            "name": "【阿智村・根羽村・平谷村】W1　西部コミュニティバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-minamishinshu-Minamishinshu-seibu-1"
+        },
+        {
+            "name": "【高森町】K1-柿丸あったかバス山吹エリアK2柿丸あったかバス市田エリアK3おはようバス山吹回りK4おはようバス市田回り",
+            "type": "mobility-database",
+            "mdb-id": "jbda-minamishinshu-Minamishinshu-takamori-1"
+        },
+        {
+            "name": "【豊丘村】T3豊丘村村営バス堀越線T4豊丘村村営バス佐原線T5豊丘村村営バス福島線T6豊丘村村営バス壬生沢福島線T7豊丘村村営バス壬生沢線T2豊丘村村営バス滝川阿島北県道線",
+            "type": "mobility-database",
+            "mdb-id": "jbda-minamishinshu-Minamishinshu-toyooka-1"
+        },
+        {
+            "name": "古関甲斐岩間線",
+            "type": "mobility-database",
+            "mdb-id": "jbda-minobutown-furusekikaiiwamasen"
+        },
+        {
+            "name": "古関循環線",
+            "type": "mobility-database",
+            "mdb-id": "jbda-minobutown-furusekizyunkansen"
+        },
+        {
+            "name": "飯富本栖湖線",
+            "type": "mobility-database",
+            "mdb-id": "jbda-minobutown-iitomimotosukosen"
+        },
+        {
+            "name": "美濃加茂市コミュニティバス「あい愛バス」",
+            "type": "mobility-database",
+            "mdb-id": "jbda-minokamocity-communitybus"
+        },
+        {
+            "name": "御嵩町コミュニティバス「ふれあいバス」",
+            "type": "mobility-database",
+            "mdb-id": "jbda-mitaketown-communitybus"
+        },
+        {
+            "name": "三豊市コミュニティバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-mitoyocity-mitoyocommunitybus"
+        },
+        {
+            "name": "みやま市コミュニティバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-miyamacity-MiyamaCityCommunityBus"
+        },
+        {
+            "name": "瑞穂町コミュニティバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-mizuhotown-communitybus"
+        },
+        {
+            "name": "瑞浪市コミュニティバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-mizunamicity-communitybus"
+        },
+        {
+            "name": "最上川交通",
+            "type": "mobility-database",
+            "mdb-id": "jbda-mogamigawakotsu-MOGAMIGAWAKOTSU"
+        },
+        {
+            "name": "草津市、守山市、栗東市　くるっとバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-moriyamacity-kuruttobus"
+        },
+        {
+            "name": "本宮市コミュニティバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-motomiyacity-motomiyashibus"
+        },
+        {
+            "name": "本巣市営バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-motosucity-shieibus"
+        },
+        {
+            "name": "本山町コミュニティバス「さくらバス」",
+            "type": "mobility-database",
+            "mdb-id": "jbda-motoyamatown-GTFS-Motoyamatown_Bus"
+        },
+        {
+            "name": "宮若・宗像線",
+            "type": "mobility-database",
+            "mdb-id": "jbda-munakatacity-MiyawakaMunakataLine"
+        },
+        {
+            "name": "宗像市コミュニティバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-munakatacity-MunakataCityCommunityBus"
+        },
+        {
+            "name": "宗像市ふれあいバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-munakatacity-MunakataCityFureaiBus"
+        },
+        {
+            "name": "宗像市営渡船地島航路",
+            "type": "mobility-database",
+            "mdb-id": "jbda-munakatacity-MunakataCityJinoshimaFerry"
+        },
+        {
+            "name": "宗像市営渡船大島航路",
+            "type": "mobility-database",
+            "mdb-id": "jbda-munakatacity-MunakataCityOshimaFerry"
+        },
+        {
+            "name": "村山市営バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-murayamacity-MurayamaCity"
+        },
+        {
+            "name": "室戸市コミュニティバス「むろはぴ号」",
+            "type": "mobility-database",
+            "mdb-id": "jbda-murotocity-GTFS-Murotocity_Bus"
+        },
+        {
+            "name": "名張市コミュニティバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-nabaricity-communitybus"
+        },
+        {
+            "name": "長電バス長野営業所管内",
+            "type": "mobility-database",
+            "mdb-id": "jbda-nagadenbus-nagadenbus-nagano"
+        },
+        {
+            "name": "長浜市コミュニティバス　西浅井おでかけワゴン　",
+            "type": "mobility-database",
+            "mdb-id": "jbda-nagahamacity-nishiazaiodekakewagon",
+            "fix": true
+        },
+        {
+            "name": "永井バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-nagai-unyu-Nagaibus"
+        },
+        {
+            "name": "永井バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-nagai-unyu-Nagaibus-sa",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "永井バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-nagai-unyu-Nagaibus-tu",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "永井バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-nagai-unyu-Nagaibus-vp",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "長井市営バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-nagaicity-NagaiCity"
+        },
+        {
+            "name": "長久手市N-バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-nagakutecity-communitybus"
+        },
+        {
+            "name": "池田町営バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-nagano-ikedatown-IkedaTownBus"
+        },
+        {
+            "name": "川上村営バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-nagano-kawakamivillage-kawakamibus"
+        },
+        {
+            "name": "長野市営バス・乗合タクシー",
+            "type": "mobility-database",
+            "mdb-id": "jbda-naganocity-shiei_noriaibus"
+        },
+        {
+            "name": "流山ぐりーんバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-nagareyamacity-nagareyamagreenbus"
+        },
+        {
+            "name": "南木曽町地域バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-nagisotown-communitybus"
+        },
+        {
+            "name": "なぎバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-nagitown-nagibus"
+        },
+        {
+            "name": "中土佐町コミュニティバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-nakatosatown-GTFS-Nakatosatown_Bus"
+        },
+        {
+            "name": "豊前・中津線",
+            "type": "mobility-database",
+            "mdb-id": "jbda-nakatsucity-BuzenNakatsu"
+        },
+        {
+            "name": "東谷線",
+            "type": "mobility-database",
+            "mdb-id": "jbda-nakatsucity-Higashitani"
+        },
+        {
+            "name": "樋山路鎌城線",
+            "type": "mobility-database",
+            "mdb-id": "jbda-nakatsucity-HiyamajiKamagi"
+        },
+        {
+            "name": "川原口線",
+            "type": "mobility-database",
+            "mdb-id": "jbda-nakatsucity-Kawaraguchi"
+        },
+        {
+            "name": "城井線",
+            "type": "mobility-database",
+            "mdb-id": "jbda-nakatsucity-Kii"
+        },
+        {
+            "name": "三保線",
+            "type": "mobility-database",
+            "mdb-id": "jbda-nakatsucity-Miho"
+        },
+        {
+            "name": "西秣線",
+            "type": "mobility-database",
+            "mdb-id": "jbda-nakatsucity-Nishimakusa"
+        },
+        {
+            "name": "西谷線",
+            "type": "mobility-database",
+            "mdb-id": "jbda-nakatsucity-Nishitani"
+        },
+        {
+            "name": "大島伊福線",
+            "type": "mobility-database",
+            "mdb-id": "jbda-nakatsucity-OshimaIfuku"
+        },
+        {
+            "name": "大島台金吉線",
+            "type": "mobility-database",
+            "mdb-id": "jbda-nakatsucity-OshimadaiKanayoshi"
+        },
+        {
+            "name": "深耶馬東線",
+            "type": "mobility-database",
+            "mdb-id": "jbda-nakatsucity-ShinyabaHigashi"
+        },
+        {
+            "name": "深耶馬西線",
+            "type": "mobility-database",
+            "mdb-id": "jbda-nakatsucity-ShinyabaNishi"
+        },
+        {
+            "name": "津民線",
+            "type": "mobility-database",
+            "mdb-id": "jbda-nakatsucity-Tsutami"
+        },
+        {
+            "name": "上ノ川内柾木線",
+            "type": "mobility-database",
+            "mdb-id": "jbda-nakatsucity-UenokawauchiMasaki"
+        },
+        {
+            "name": "裏耶馬溪線",
+            "type": "mobility-database",
+            "mdb-id": "jbda-nakatsucity-UraYabakei"
+        },
+        {
+            "name": "屋形線",
+            "type": "mobility-database",
+            "mdb-id": "jbda-nakatsucity-Yakata"
+        },
+        {
+            "name": "山移北線",
+            "type": "mobility-database",
+            "mdb-id": "jbda-nakatsucity-YamautsuriKita"
+        },
+        {
+            "name": "山移南線",
+            "type": "mobility-database",
+            "mdb-id": "jbda-nakatsucity-YamautsuriMinami"
+        },
+        {
+            "name": "中津川市コミュニティバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-nakatsugawacity-communitybus"
+        },
+        {
+            "name": "中山町営バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-nakayamatown-NakayamaTown"
+        },
+        {
+            "name": "行方市営路線バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-namegatacity-bus-namegata-ibaraki-jp"
+        },
+        {
+            "name": "コミュニティバス「のるmycar」",
+            "type": "mobility-database",
+            "mdb-id": "jbda-namerikawacity-norumycar"
+        },
+        {
+            "name": "コミュニティバス「のるmycar」",
+            "type": "mobility-database",
+            "mdb-id": "jbda-namerikawacity-norumycar-tu",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "コミュニティバス「のるmycar」",
+            "type": "mobility-database",
+            "mdb-id": "jbda-namerikawacity-norumycar-vp",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "南国市「空港乗合タクシー」",
+            "type": "mobility-database",
+            "mdb-id": "jbda-nangokucity-GTFS-Nankokucity_AirportShare"
+        },
+        {
+            "name": "南国市コミュニティバス「NACOバス」",
+            "type": "mobility-database",
+            "mdb-id": "jbda-nangokucity-GTFS-Nankokucity_Bus"
+        },
+        {
+            "name": "南砺市営バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-nantocity-nanbus",
+            "fix": true
+        },
+        {
+            "name": "南砺市営バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-nantocity-nanbus-tu",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "南砺市営バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-nantocity-nanbus-vp",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "鳴門市地域バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-narutocity-narutocitychiikibus"
+        },
+        {
+            "name": "鳴門市営渡船",
+            "type": "mobility-database",
+            "mdb-id": "jbda-narutocity-narutocitytosen"
+        },
+        {
+            "name": "那須塩原市地域バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-nasushiobaracity-chiikibasu"
+        },
+        {
+            "name": "那須町町民バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-nasutown-nasutown"
+        },
+        {
+            "name": "根室交通株式会社",
+            "type": "mobility-database",
+            "mdb-id": "jbda-nemurokotsu-nemurobus"
+        },
+        {
+            "name": "新見市営バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-niimicity-niimishieibus"
+        },
+        {
+            "name": "日光市営バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-nikkocity-nikkocity"
+        },
+        {
+            "name": "二宮町コミュニティバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-ninomiyatown-Ninomiyatowncommunitybus"
+        },
+        {
+            "name": "韮崎市民バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-nirasakicity-shiminbus"
+        },
+        {
+            "name": "ぐるっと生瀬",
+            "type": "mobility-database",
+            "mdb-id": "jbda-nishinomiyacity-guruttonamaze"
+        },
+        {
+            "name": "名塩・生野高原ふれあいバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-nishinomiyacity-najio-ikunokogen"
+        },
+        {
+            "name": "さくらやまなみバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-nishinomiyacity-sakurayamanami"
+        },
+        {
+            "name": "名鉄東部交通バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-nishiocity-meitestu_tobu"
+        },
+        {
+            "name": "六万石くるりんバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-nishiocity-rokumangokukururinbus"
+        },
+        {
+            "name": "ループバスおりひめバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-nishiwakicity-loopbus-orihimebus"
+        },
+        {
+            "name": "くるりんばす（日進市巡回バス）",
+            "type": "mobility-database",
+            "mdb-id": "jbda-nisshincity-communitybus"
+        },
+        {
+            "name": "仁淀川町町民バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-niyodogawatown-GTFS-Niyodogawatown_Townsbus"
+        },
+        {
+            "name": "直方市コミュニティバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-nogatacity-NogataCityCommunityBus"
+        },
+        {
+            "name": "コミュニティバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-nonoichicity-communitybus"
+        },
+        {
+            "name": "濃飛バス（一般路線）",
+            "type": "mobility-database",
+            "mdb-id": "jbda-nouhibus-nouhibus"
+        },
+        {
+            "name": "飛騨高山周遊バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-nouhibus-takayama_shuyu"
+        },
+        {
+            "name": "のらんマイ・カー",
+            "type": "mobility-database",
+            "mdb-id": "jbda-nyuzentown-noranmaicar"
+        },
+        {
+            "name": "のらんマイ・カー",
+            "type": "mobility-database",
+            "mdb-id": "jbda-nyuzentown-noranmaicar-tu",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "のらんマイ・カー",
+            "type": "mobility-database",
+            "mdb-id": "jbda-nyuzentown-noranmaicar-vp",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "大台町営バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-odaitown-choeibus"
+        },
+        {
+            "name": "大江町営バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-oetown-Oetown"
+        },
+        {
+            "name": "名阪近鉄バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-ogakicity-meihankintetsubus"
+        },
+        {
+            "name": "大蔵村営バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-ohkuravillage-OhkuraVillage"
+        },
+        {
+            "name": "広域公共バス「あおぞら」",
+            "type": "mobility-database",
+            "mdb-id": "jbda-oizumitown-kouikikoukyoubasuaozora"
+        },
+        {
+            "name": "シルキーバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-okayacity-silkybus"
+        },
+        {
+            "name": "くわちゃんバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-okuwavillage-kuwachan-bus"
+        },
+        {
+            "name": "大町市民バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-omachicity-omachisiminbus"
+        },
+        {
+            "name": "近江八幡市　あかこんバス　",
+            "type": "mobility-database",
+            "mdb-id": "jbda-omihachimancity-akakonbus"
+        },
+        {
+            "name": "遠賀町コミュニティバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-ongatown-OngaTownCommunityBus"
+        },
+        {
+            "name": "奥州市コミュニティバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-oshucity-bus-oshucity-iwate-jp"
+        },
+        {
+            "name": "王滝村",
+            "type": "mobility-database",
+            "mdb-id": "jbda-otakivillage-otaki-village"
+        },
+        {
+            "name": "大田原市営バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-otawaracity-Ohtawaracitybus"
+        },
+        {
+            "name": "大利根交通バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-otonekotu-otonekotubus"
+        },
+        {
+            "name": "大月町「まちなか循環線」",
+            "type": "mobility-database",
+            "mdb-id": "jbda-otsukitown-GTFS-Otsukitown_Bus"
+        },
+        {
+            "name": "尾張旭市あさぴー号",
+            "type": "mobility-database",
+            "mdb-id": "jbda-owariasahicity-communitybus-sa",
+            "spec": "gtfs-rt",
+            "skip": true,
+            "skip-reason": "No static feed"
+        },
+        {
+            "name": "尾張旭市あさぴー号",
+            "type": "mobility-database",
+            "mdb-id": "jbda-owariasahicity-communitybus-tu",
+            "spec": "gtfs-rt",
+            "skip": true,
+            "skip-reason": "No static feed"
+        },
+        {
+            "name": "尾張旭市あさぴー号",
+            "type": "mobility-database",
+            "mdb-id": "jbda-owariasahicity-communitybus-vp",
+            "spec": "gtfs-rt",
+            "skip": true,
+            "skip-reason": "No static feed"
+        },
+        {
+            "name": "小矢部市営バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-oyabecity-oyabecitybus"
+        },
+        {
+            "name": "小矢部市営バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-oyabecity-oyabecitybus-tu",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "小矢部市営バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-oyabecity-oyabecitybus-vp",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "路線バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-reihoku-kanko-GTFS-Reihokukanko_Localbus"
+        },
+        {
+            "name": "南海りんかんバス橋本・林間田園都市エリア",
+            "type": "mobility-database",
+            "mdb-id": "jbda-rinkan-hashimoto-rinkandenentoshi"
+        },
+        {
+            "name": "南海りんかんバス高野山エリア",
+            "type": "mobility-database",
+            "mdb-id": "jbda-rinkan-koyasan"
+        },
+        {
+            "name": "栗東市　くりちゃんバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-rittocity-rittoukurichanbus"
+        },
+        {
+            "name": "龍ケ崎市コミュニティバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-ryugasakicity-Ryugasakishi-communitybus"
+        },
+        {
+            "name": "寒河江市営バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-sagaecity-SagaeCity"
+        },
+        {
+            "name": "酒田市営バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-sakatacity-SakataCity"
+        },
+        {
+            "name": "佐川町コミュニティバス「さかわぐるぐるバス」",
+            "type": "mobility-database",
+            "mdb-id": "jbda-sakawatown-GTFS-Sakawatown_Bus"
+        },
+        {
+            "name": "鮭川村営バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-sakegawavillage-SakegawaVillage"
+        },
+        {
+            "name": "寒川町コミュニティバス「もくせい号」東ルート",
+            "type": "mobility-database",
+            "mdb-id": "jbda-samukawatown-mokusei-go_eastroute"
+        },
+        {
+            "name": "寒川町コミュニティバス「もくせい号」倉見大村ルート",
+            "type": "mobility-database",
+            "mdb-id": "jbda-samukawatown-mokusei-go_kuramiomuraroute"
+        },
+        {
+            "name": "寒川町コミュニティバス「もくせい号」南ルート",
+            "type": "mobility-database",
+            "mdb-id": "jbda-samukawatown-mokusei-go_southroute"
+        },
+        {
+            "name": "三条市循環バスぐるっとさん",
+            "type": "mobility-database",
+            "mdb-id": "jbda-sanjocity-guruttosan"
+        },
+        {
+            "name": "産交バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-sankobus-sankobus"
+        },
+        {
+            "name": "産交バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-sankobus-sankobus-sa",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "産交バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-sankobus-sankobus-tu",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "産交バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-sankobus-sankobus-vp",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "コミュニティバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-sayotown-communitybus"
+        },
+        {
+            "name": "生活バスよっかいち",
+            "type": "mobility-database",
+            "mdb-id": "jbda-seikatsubus-yokkaichi-sbusyokkaichi"
+        },
+        {
+            "name": "西讃観光（高松空港リムジンバス）",
+            "type": "mobility-database",
+            "mdb-id": "jbda-seisan-kanko-seisankanko_limousine"
+        },
+        {
+            "name": "板取ふれあいバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-sekicity-itadorifureaibus"
+        },
+        {
+            "name": "船鉄バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-sentetsu-Sentetsubus"
+        },
+        {
+            "name": "瀬戸市コミュニティバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-setocity-setocitybus"
+        },
+        {
+            "name": "瀬戸内市営バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-setouchicity-setouchicitybus"
+        },
+        {
+            "name": "七ヶ浜町民バス「ぐるりんこ」",
+            "type": "mobility-database",
+            "mdb-id": "jbda-shichigahamatown-Gururinko"
+        },
+        {
+            "name": "日野町営バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-shiga-hinotown-choueibus"
+        },
+        {
+            "name": "湖南市コミバスめぐるくん",
+            "type": "mobility-database",
+            "mdb-id": "jbda-shiga-konancity-konansimegurukun"
+        },
+        {
+            "name": "あご湾定期船",
+            "type": "mobility-database",
+            "mdb-id": "jbda-shimacity-agowanteikisen"
+        },
+        {
+            "name": "島田市コミュニティバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-shimadacity-shimada_combus"
+        },
+        {
+            "name": "路線バス-フィーダー線",
+            "type": "mobility-database",
+            "mdb-id": "jbda-shimanto-kotsu-GTFS-Shimantotraffic_Feederbus"
+        },
+        {
+            "name": "路線バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-shimanto-kotsu-GTFS-Shimantotraffic_Localbus"
+        },
+        {
+            "name": "四万十市営バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-shimantocity-GTFS-Shimantocity_Bus"
+        },
+        {
+            "name": "四万十市デマンド交通",
+            "type": "mobility-database",
+            "mdb-id": "jbda-shimantocity-GTFS-Shimantocity_Demandbus"
+        },
+        {
+            "name": "四万十町コミュニティバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-shimantotown-GTFS-Shimantotown_Bus"
+        },
+        {
+            "name": "新宮町コミュニティバス-マリンクス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-shingutown-ShinguTownCommunityBus"
+        },
+        {
+            "name": "町営渡船しんぐう",
+            "type": "mobility-database",
+            "mdb-id": "jbda-shingutown-TownFerryShingu"
+        },
+        {
+            "name": "新常磐交通",
+            "type": "mobility-database",
+            "mdb-id": "jbda-shinjobankotsu-SHINJOBANKOTSU"
+        },
+        {
+            "name": "新庄市営バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-shinjocity-ShinjoCity"
+        },
+        {
+            "name": "Limon-Bus",
+            "type": "mobility-database",
+            "mdb-id": "jbda-shinkikanko-limonbus"
+        },
+        {
+            "name": "町民バス夢つばめ",
+            "type": "mobility-database",
+            "mdb-id": "jbda-shinonsentown-yumetsubame"
+        },
+        {
+            "name": "塩尻市地域振興バス「すてっぷくん」",
+            "type": "mobility-database",
+            "mdb-id": "jbda-shiojiricity-suteppukunn"
+        },
+        {
+            "name": "白鷹町営バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-shiratakatown-ShiratakaTown"
+        },
+        {
+            "name": "白鳥交通",
+            "type": "mobility-database",
+            "mdb-id": "jbda-shirotori-kotsu-shirotorikotsu"
+        },
+        {
+            "name": "しーたんバス（蔦沢線・大谷線）",
+            "type": "mobility-database",
+            "mdb-id": "jbda-shisocity-shitanbus"
+        },
+        {
+            "name": "葵区井川地区：井川地区自主運行バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-shizuokacity-ikawa"
+        },
+        {
+            "name": "葵区中心市街地：医療・福祉施設路線",
+            "type": "mobility-database",
+            "mdb-id": "jbda-shizuokacity-iryo-fukushi"
+        },
+        {
+            "name": "清水区小島地区：両河内線宍原系統",
+            "type": "mobility-database",
+            "mdb-id": "jbda-shizuokacity-ojima"
+        },
+        {
+            "name": "清水区両河内地区：両河内線但沼系統、大平系統、板井沢系統（ココバス）",
+            "type": "mobility-database",
+            "mdb-id": "jbda-shizuokacity-ryougouchi"
+        },
+        {
+            "name": "清水区由比地区：ゆいばす",
+            "type": "mobility-database",
+            "mdb-id": "jbda-shizuokacity-yui"
+        },
+        {
+            "name": "清水区由比・蒲原地区：由比・蒲原病院線",
+            "type": "mobility-database",
+            "mdb-id": "jbda-shizuokacity-yui-kanbara"
+        },
+        {
+            "name": "庄内交通",
+            "type": "mobility-database",
+            "mdb-id": "jbda-shonaikotsu-SHONAIKOTSU"
+        },
+        {
+            "name": "庄内町営バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-shonaitown-ShonaiTown"
+        },
+        {
+            "name": "勝央町ふれあいバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-shootown-shoochofureaibus"
+        },
+        {
+            "name": "添田町バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-soedatown-soedamachibus"
+        },
+        {
+            "name": "須恵町コミュニティバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-suetown-SueTownCommunityBus"
+        },
+        {
+            "name": "宿毛市営定期船航路「沖の島航路」",
+            "type": "mobility-database",
+            "mdb-id": "jbda-sukumocity-GTFS-Sukumocity_Ferry"
+        },
+        {
+            "name": "宿毛市コミュニティバス「はなちゃんバス」",
+            "type": "mobility-database",
+            "mdb-id": "jbda-sukumocity-GTFS-Sukumocity_Hanabus"
+        },
+        {
+            "name": "宿毛市「ゆるりんバス」",
+            "type": "mobility-database",
+            "mdb-id": "jbda-sukumocity-GTFS-Sukumocity_Yururinbus"
+        },
+        {
+            "name": "かりんちゃんバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-suwacity-karinchanbas"
+        },
+        {
+            "name": "すざか市民バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-suzakicity-suzakashiminbus",
+            "fix": true
+        },
+        {
+            "name": "田川市コミュニティバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-tagawacity-TagawaCityCommunityBus"
+        },
+        {
+            "name": "ききょうバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-tajimicity-kikyobus"
+        },
+        {
+            "name": "高岡市公営バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-takaokacity-koueibus"
+        },
+        {
+            "name": "高岡市公営バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-takaokacity-koueibus-tu",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "高岡市公営バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-takaokacity-koueibus-vp",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "ランランバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-takarazukacity-runrunbus"
+        },
+        {
+            "name": "じょうとんバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-takasagocity-jotonbus"
+        },
+        {
+            "name": "のらマイカー",
+            "type": "mobility-database",
+            "mdb-id": "jbda-takayamacity-noramaicar"
+        },
+        {
+            "name": "たかね号",
+            "type": "mobility-database",
+            "mdb-id": "jbda-takayamacity-takanego"
+        },
+        {
+            "name": "武豊町コミュニティバス「ゆめころん」",
+            "type": "mobility-database",
+            "mdb-id": "jbda-taketoyotown-communitybus"
+        },
+        {
+            "name": "株式会社タケヤ交通",
+            "type": "mobility-database",
+            "mdb-id": "jbda-takeyakoutu-takeyakotsu"
+        },
+        {
+            "name": "株式会社タケヤ交通",
+            "type": "mobility-database",
+            "mdb-id": "jbda-takeyakoutu-takeyakotsu-sa",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "株式会社タケヤ交通",
+            "type": "mobility-database",
+            "mdb-id": "jbda-takeyakoutu-takeyakotsu-tu",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "株式会社タケヤ交通",
+            "type": "mobility-database",
+            "mdb-id": "jbda-takeyakoutu-takeyakotsu-vp",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "多気町営バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-takitown-choeibus"
+        },
+        {
+            "name": "コミバスハートラン",
+            "type": "mobility-database",
+            "mdb-id": "jbda-tambasasayamacity-communitybusheartrun"
+        },
+        {
+            "name": "田野町コミュニティーバス「たのくるバス」",
+            "type": "mobility-database",
+            "mdb-id": "jbda-tanotown-GTFS-Tanotown_Bus"
+        },
+        {
+            "name": "立山町営バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-tateyamatown-tateyama"
+        },
+        {
+            "name": "立山町営バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-tateyamatown-tateyama-tu",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "立山町営バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-tateyamatown-tateyama-vp",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "コミュニティバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-tatsunocity-communitybus"
+        },
+        {
+            "name": "天童市営バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-tendocity-TendoCity"
+        },
+        {
+            "name": "鳥羽市　かもめバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-tobacity-communitybus"
+        },
+        {
+            "name": "鳥羽市営定期船",
+            "type": "mobility-database",
+            "mdb-id": "jbda-tobacity-teikisen"
+        },
+        {
+            "name": "那珂川町コミュニティバス（馬頭烏山線）",
+            "type": "mobility-database",
+            "mdb-id": "jbda-tochigi-nakagawatown-nakagawamaticommunitybus"
+        },
+        {
+            "name": "東北町町民バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-tohokutown-tohoku-town-bus"
+        },
+        {
+            "name": "東濃鉄道（東鉄バス）恵那営業所管内",
+            "type": "mobility-database",
+            "mdb-id": "jbda-tohtetsu-tohtetsu_ena"
+        },
+        {
+            "name": "東員町「オレンジバス」",
+            "type": "mobility-database",
+            "mdb-id": "jbda-tointown-communitybus"
+        },
+        {
+            "name": "東海市らんらんバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-tokaicity-tokai-ranranbus"
+        },
+        {
+            "name": "土岐市民バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-tokicity-communitybus"
+        },
+        {
+            "name": "コミュニティバスグルーン",
+            "type": "mobility-database",
+            "mdb-id": "jbda-tokonamecity-Gruun"
+        },
+        {
+            "name": "コミュニティバスグルーン",
+            "type": "mobility-database",
+            "mdb-id": "jbda-tokonamecity-Gruun-sa",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "コミュニティバスグルーン",
+            "type": "mobility-database",
+            "mdb-id": "jbda-tokonamecity-Gruun-tu",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "コミュニティバスグルーン",
+            "type": "mobility-database",
+            "mdb-id": "jbda-tokonamecity-Gruun-vp",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "徳島バス南部株式会社",
+            "type": "mobility-database",
+            "mdb-id": "jbda-tokubus-nanbu-tokushimabusnanbu"
+        },
+        {
+            "name": "徳島バス株式会社",
+            "type": "mobility-database",
+            "mdb-id": "jbda-tokubus-tokushimabus"
+        },
+        {
+            "name": "美波病院連絡バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-tokushima-minamitown-minabubyoinrenrakubus"
+        },
+        {
+            "name": "徳島市営バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-tokushima-shiei-tokushimacitybus"
+        },
+        {
+            "name": "上八万コミュニティバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-tokushimacity-kamihachimanbus"
+        },
+        {
+            "name": "応神ふれあいバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-tokushimacity-oujinfureaibus"
+        },
+        {
+            "name": "砺波市営バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-tonamicity-tonamishieibasu"
+        },
+        {
+            "name": "砺波市営バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-tonamicity-tonamishieibasu-tu",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "砺波市営バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-tonamicity-tonamishieibasu-vp",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "土佐市コミュニティバス「ドラゴンバス」",
+            "type": "mobility-database",
+            "mdb-id": "jbda-tosacity-GTFS-Tosacity_Bus"
+        },
+        {
+            "name": "空港連絡バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-tosaden-kotsu-GTFS-Tosadentraffic_Airportbus"
+        },
+        {
+            "name": "路線バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-tosaden-kotsu-GTFS-Tosadentraffic_Regularbus"
+        },
+        {
+            "name": "路面電車",
+            "type": "mobility-database",
+            "mdb-id": "jbda-tosaden-kotsu-GTFS-Tosadentraffic_Streetcar"
+        },
+        {
+            "name": "土佐清水市デマンド交通「おでかけ号」",
+            "type": "mobility-database",
+            "mdb-id": "jbda-tosashimizucity-GTFS-Tosashimizucity_Bus"
+        },
+        {
+            "name": "あさひまちバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-toyama-asahitown-asahimachibus"
+        },
+        {
+            "name": "あさひまちバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-toyama-asahitown-asahimachibus-tu",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "あさひまちバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-toyama-asahitown-asahimachibus-vp",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "婦中コミュニティバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-toyamacity-fuchucommunitybus"
+        },
+        {
+            "name": "婦中コミュニティバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-toyamacity-fuchucommunitybus-tu",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "婦中コミュニティバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-toyamacity-fuchucommunitybus-vp",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "堀川南地域コミュニティバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-toyamacity-horikawaminamicommunitybus"
+        },
+        {
+            "name": "堀川南地域コミュニティバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-toyamacity-horikawaminamicommunitybus-tu",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "堀川南地域コミュニティバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-toyamacity-horikawaminamicommunitybus-vp",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "上条コミバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-toyamacity-jojocommunitybus"
+        },
+        {
+            "name": "上条コミバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-toyamacity-jojocommunitybus-tu",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "上条コミバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-toyamacity-jojocommunitybus-vp",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "呉羽いきいきバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-toyamacity-kurehaikiikibus"
+        },
+        {
+            "name": "呉羽いきいきバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-toyamacity-kurehaikiikibus-tu",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "呉羽いきいきバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-toyamacity-kurehaikiikibus-vp",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "まいどはやバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-toyamacity-maidohayabus"
+        },
+        {
+            "name": "まいどはやバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-toyamacity-maidohayabus-tu",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "まいどはやバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-toyamacity-maidohayabus-vp",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "水橋ふれあいコミュニティバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-toyamacity-mizuhashifureaicommunitybus"
+        },
+        {
+            "name": "水橋ふれあいコミュニティバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-toyamacity-mizuhashifureaicommunitybus-tu",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "水橋ふれあいコミュニティバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-toyamacity-mizuhashifureaicommunitybus-vp",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "大山コミュニティバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-toyamacity-oyamacommunitybus"
+        },
+        {
+            "name": "大山コミュニティバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-toyamacity-oyamacommunitybus-tu",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "大山コミュニティバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-toyamacity-oyamacommunitybus-vp",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "山田コミュニティバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-toyamacity-yamadacommunitybus"
+        },
+        {
+            "name": "山田コミュニティバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-toyamacity-yamadacommunitybus-tu",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "山田コミュニティバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-toyamacity-yamadacommunitybus-vp",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "八尾コミュニティバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-toyamacity-yatsuocommunitybus"
+        },
+        {
+            "name": "八尾コミュニティバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-toyamacity-yatsuocommunitybus-tu",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "八尾コミュニティバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-toyamacity-yatsuocommunitybus-vp",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "豊明市ひまわりバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-toyoakecity-himawaribus"
+        },
+        {
+            "name": "コバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-toyookacity-kobus"
+        },
+        {
+            "name": "とよたおいでんバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-toyotacity-kikanbus"
+        },
+        {
+            "name": "とよやまタウンバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-toyoyamatown-communitybus"
+        },
+        {
+            "name": "戸沢村営バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-tozawavillage-tozawavillagebus"
+        },
+        {
+            "name": "津ベルライン・津エアポートライン",
+            "type": "mobility-database",
+            "mdb-id": "jbda-tsu-airportline-airportline"
+        },
+        {
+            "name": "燕市コミュニティバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-tsubamecity-tsubame_bus"
+        },
+        {
+            "name": "つちまるバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-tsuchiuracity-tsuchimarubus"
+        },
+        {
+            "name": "つちまるバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-tsuchiuracity-tsuchimarubus-sa",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "つちまるバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-tsuchiuracity-tsuchimarubus-tu",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "つちまるバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-tsuchiuracity-tsuchimarubus-vp",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "津市コミュニティバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-tsucity-communitybus"
+        },
+        {
+            "name": "つくばね号",
+            "type": "mobility-database",
+            "mdb-id": "jbda-tsukubacity-TSUKUBANEGO"
+        },
+        {
+            "name": "つくバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-tsukubacity-TSUKUBUS"
+        },
+        {
+            "name": "鶴岡市営バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-tsuruokacity-TsuruokaCity"
+        },
+        {
+            "name": "のるイコつやま",
+            "type": "mobility-database",
+            "mdb-id": "jbda-tsuyamacity-bus-tsuyamacity-okayama-jp"
+        },
+        {
+            "name": "上田市街地循環バス・オレンジバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-uedacity-uedashigaitizyunkanbus"
+        },
+        {
+            "name": "羽後交通（本荘地区）",
+            "type": "mobility-database",
+            "mdb-id": "jbda-ugokotsu-ugokotsu_honjo"
+        },
+        {
+            "name": "羽後交通（田沢湖地区）",
+            "type": "mobility-database",
+            "mdb-id": "jbda-ugokotsu-ugokotsu_tazawako"
+        },
+        {
+            "name": "魚津市民バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-uozucity-junkai-tu",
+            "spec": "gtfs-rt",
+            "skip": true,
+            "skip-reason": "no static feed"
+        },
+        {
+            "name": "魚津市民バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-uozucity-junkai-vp",
+            "spec": "gtfs-rt",
+            "skip": true,
+            "skip-reason": "no static feed"
+        },
+        {
+            "name": "おもてなし魚津直行便",
+            "type": "mobility-database",
+            "mdb-id": "jbda-uozucity-omotenashi"
+        },
+        {
+            "name": "おもてなし魚津直行便",
+            "type": "mobility-database",
+            "mdb-id": "jbda-uozucity-omotenashi-tu",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "おもてなし魚津直行便",
+            "type": "mobility-database",
+            "mdb-id": "jbda-uozucity-omotenashi-vp",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "和気町営バス「わけまろ号」",
+            "type": "mobility-database",
+            "mdb-id": "jbda-waketown-wakechoueibasu",
+            "use-gtfsclean": false
+        },
+        {
+            "name": "和光市内循環バス（わこば）",
+            "type": "mobility-database",
+            "mdb-id": "jbda-wakocity-Wako-City-junkanbus"
+        },
+        {
+            "name": "度会町営バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-wataraitown-choeibus"
+        },
+        {
+            "name": "中央部循環路線",
+            "type": "mobility-database",
+            "mdb-id": "jbda-yaitacity-chuuou-junkan"
+        },
+        {
+            "name": "朝日町営バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-yamagata-asahitown-AsahiTown"
+        },
+        {
+            "name": "金山町営バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-yamagata-kaneyamatown-KaneyamaTown"
+        },
+        {
+            "name": "山形市営バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-yamagata-yamagatacity-YamagataCity"
+        },
+        {
+            "name": "山形鉄道",
+            "type": "mobility-database",
+            "mdb-id": "jbda-yamagatatetsudo-flowerliner"
+        },
+        {
+            "name": "山交バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-yamakobus-YAMAKOBUS"
+        },
+        {
+            "name": "北杜市民バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-yamanashi-hokutocity-hokuto-bus"
+        },
+        {
+            "name": "南部町営バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-yamanashi-nanbutown-nanbucyoueibasu"
+        },
+        {
+            "name": "山辺町営バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-yamanobetown-YamanobeTown"
+        },
+        {
+            "name": "大和郡山市コミュニティバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-yamatokoriyamacity-kingyobus"
+        },
+        {
+            "name": "コミュニティバスきぼう号",
+            "type": "mobility-database",
+            "mdb-id": "jbda-yamatotakadacity-communitybuskibougou"
+        },
+        {
+            "name": "柳川市コミュニティバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-yanagawacity-YanagawaCityCommunityBus"
+        },
+        {
+            "name": "やんばる急行バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-yanbaru-expressbus-yanbaru-express-bus"
+        },
+        {
+            "name": "やんばる急行バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-yanbaru-expressbus-yanbaru-express-bus-vp",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "八百津町コミュニティバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-yaotsutown-communitybus"
+        },
+        {
+            "name": "YAOバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-yaotsutown-yaobus"
+        },
+        {
+            "name": "野洲市コミバスおのりやす",
+            "type": "mobility-database",
+            "mdb-id": "jbda-yasucity-onoriyasu"
+        },
+        {
+            "name": "安田町コミュニティバス「やすら号」",
+            "type": "mobility-database",
+            "mdb-id": "jbda-yasudatown-GTFS-Yasudatown_Bus"
+        },
+        {
+            "name": "四日市市自主運行バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-yokkaichicity-communitybus"
+        },
+        {
+            "name": "ハマちゃんバス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-yokosukacity-hamachanbus"
+        },
+        {
+            "name": "米沢市営バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-yonezawacity-Yonezawa"
+        },
+        {
+            "name": "吉野川市代替バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-yoshinogawacity-yoshinogawacitybus"
+        },
+        {
+            "name": "市内循環バス「ヨッピィ」",
+            "type": "mobility-database",
+            "mdb-id": "jbda-yotsukaidocity-yoppii"
+        },
+        {
+            "name": "結城市巡回バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-yukicity-junkaibus"
+        },
+        {
+            "name": "Donan-Bus",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2871"
         }
     ]
 }
