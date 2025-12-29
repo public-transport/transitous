@@ -615,6 +615,7 @@
                 "url": "https://transport.data.gouv.fr/datasets/arrets-horaires-et-circuits-des-lignes-de-transports-en-commun-en-pays-de-la-loire-gtfs-destineo-reseaux-aom-aleop-1",
                 "spdx-identifier": "ODbL-1.0"
             },
+            "drop-agency-names": ["Aéroport Nantes Atlantique"],
             "x-data-gov-fr-res-id": 79818,
             "managed-by-script": true,
             "skip": false
