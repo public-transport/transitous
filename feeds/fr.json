@@ -3976,7 +3976,8 @@
         },
         {
             "name": "reseau-orizo-grand-avignon--83330",
-            "type": "mobility-database",
+            "type": "http",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/68eddc46-b2f5-4396-a298-214c415f6984",
             "url-override": "https://static.data.gouv.fr/resources/reseau-orizo-grand-avignon/20251208-142709/gtfs-mri-08decembre-au15fevrier.zip",
             "fix": true,
             "license": {
@@ -3985,8 +3986,7 @@
             },
             "x-data-gov-fr-res-id": 83330,
             "managed-by-script": true,
-            "skip": false,
-            "mdb-id": "tdg-83330"
+            "skip": false
         },
         {
             "name": "reseau-orizo-grand-avignon--9279",
