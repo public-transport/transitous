@@ -11866,7 +11866,9 @@
             },
             "x-data-gov-fr-res-id": 83781,
             "managed-by-script": true,
-            "name": "agence-agglobus--83781"
+            "name": "agence-agglobus--83781",
+            "skip": true,
+            "skip-reason": "malformed agency.txt"
         },
         {
             "type": "url",
