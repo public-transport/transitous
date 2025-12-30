@@ -17,7 +17,8 @@
         {
             "name": "hiroden",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-hiroden~jp"
+            "transitland-atlas-id": "f-hiroden~jp",
+            "fix": true
         },
         {
             "name": "tokyo-rail",
@@ -2892,12 +2893,16 @@
             "name": "和気町営バス「わけまろ号」",
             "type": "mobility-database",
             "mdb-id": "jbda-waketown-wakechoueibasu",
-            "use-gtfsclean": false
+            "use-gtfsclean": false,
+            "skip": true,
+            "skip-reason": "expired"
         },
         {
             "name": "和光市内循環バス（わこば）",
             "type": "mobility-database",
-            "mdb-id": "jbda-wakocity-Wako-City-junkanbus"
+            "mdb-id": "jbda-wakocity-Wako-City-junkanbus",
+            "skip": true,
+            "skip-reason": "expired"
         },
         {
             "name": "度会町営バス",
