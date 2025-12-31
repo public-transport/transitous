@@ -697,12 +697,12 @@ local colors = {
         ["164"] = { color = 0xb17f4a, text_color = 0xffffff },
     },
     ["Bus8"] = {
-        ["Blauer DINGO"] = { color = 0x203b7c, text_color = 0xffffff },
-        ["Gelber DINGO"] = { color = 0xf3cb0f, text_color = 0x000000 },
-        ["Grüner DINGO"] = { color = 0x4f8437, text_color = 0xffffff },
-        ["Oranger DINGO"] = { color = 0xd45d2b, text_color = 0xffffff },
-        ["Roter DINGO"] = { color = 0xac2e37, text_color = 0xffffff },
-        ["Türkiser DINGO"] = { color = 0x80b0b3, text_color = 0xffffff },
+        ["BlauerDINGO"] = { color = 0x203b7c, text_color = 0xffffff },
+        ["GelberDINGO"] = { color = 0xf3cb0f, text_color = 0x000000 },
+        ["GrünerDINGO"] = { color = 0x4f8437, text_color = 0xffffff },
+        ["OrangerDINGO"] = { color = 0xd45d2b, text_color = 0xffffff },
+        ["RoterDINGO"] = { color = 0xac2e37, text_color = 0xffffff },
+        ["TürkiserDINGO"] = { color = 0x80b0b3, text_color = 0xffffff },
     },
     ["Busverkehr Nordschwarzwald GmbH"] = {
         ["113"] = { color = 0x4cb957, text_color = 0xffffff },
