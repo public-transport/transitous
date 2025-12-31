@@ -36,6 +36,15 @@ local colors = {
         ["SE"] = { color = 0xffffff, text_color = 0x000000 },
         ["SFEX"] = { color = 0x00a76d, text_color = 0xffffff },
     },
+    ["Anrufsammeltaxi1"] = {
+        ["70"] = { color = 0xa49892, text_color = 0xffffff },
+        ["71"] = { color = 0xa49892, text_color = 0xffffff },
+        ["72"] = { color = 0xa49892, text_color = 0xffffff },
+        ["73"] = { color = 0xa49892, text_color = 0xffffff },
+        ["74"] = { color = 0xa49892, text_color = 0xffffff },
+        ["76"] = { color = 0xb0675f, text_color = 0xffffff },
+        ["78"] = { color = 0xb0675f, text_color = 0xffffff },
+    },
     ["Arnold Engelhardt GmbH"] = {
         ["X76"] = { color = 0xe7007a, text_color = 0xffffff },
     },
@@ -688,12 +697,12 @@ local colors = {
         ["164"] = { color = 0xb17f4a, text_color = 0xffffff },
     },
     ["Bus8"] = {
-        ["BlauerDINGO"] = { color = 0x203b7c, text_color = 0xffffff },
-        ["GelberDINGO"] = { color = 0xf3cb0f, text_color = 0x000000 },
-        ["GrünerDINGO"] = { color = 0x4f8437, text_color = 0xffffff },
-        ["OrangerDINGO"] = { color = 0xd45d2b, text_color = 0xffffff },
-        ["RoterDINGO"] = { color = 0xac2e37, text_color = 0xffffff },
-        ["TürkiserDINGO"] = { color = 0x80b0b3, text_color = 0xffffff },
+        ["Blauer DINGO"] = { color = 0x203b7c, text_color = 0xffffff },
+        ["Gelber DINGO"] = { color = 0xf3cb0f, text_color = 0x000000 },
+        ["Grüner DINGO"] = { color = 0x4f8437, text_color = 0xffffff },
+        ["Oranger DINGO"] = { color = 0xd45d2b, text_color = 0xffffff },
+        ["Roter DINGO"] = { color = 0xac2e37, text_color = 0xffffff },
+        ["Türkiser DINGO"] = { color = 0x80b0b3, text_color = 0xffffff },
     },
     ["Busverkehr Nordschwarzwald GmbH"] = {
         ["113"] = { color = 0x4cb957, text_color = 0xffffff },
@@ -920,6 +929,7 @@ local colors = {
         ["S5"] = { color = 0x0c7bc1, text_color = 0xffffff },
         ["S6"] = { color = 0x95af33, text_color = 0xffffff },
         ["S7"] = { color = 0xd09eba, text_color = 0xffffff },
+        ["S8"] = { color = 0x2d2b29, text_color = 0xffcd01 },
     },
     ["DB Regio AG Mitte"] = {
         ["RB51"] = { color = 0x00805f, text_color = 0xffffff },
@@ -1271,6 +1281,9 @@ local colors = {
         ["901"] = { color = 0x009adf, text_color = 0xffffff },
         ["903"] = { color = 0x009adf, text_color = 0xffffff },
     },
+    ["Demmelmair"] = {
+        ["592"] = { color = 0xffdc00, text_color = 0x000000 },
+    },
     ["Dessauer Verkehrsgesellschaft"] = {
         ["1"] = { color = 0xf59c00, text_color = 0xffffff },
         ["10"] = { color = 0x2e76bb, text_color = 0xffffff },
@@ -1381,6 +1394,9 @@ local colors = {
         ["467"] = { color = 0xed1c24, text_color = 0xffffff },
         ["468"] = { color = 0xee2a7b, text_color = 0xffffff },
         ["469"] = { color = 0x009444, text_color = 0xffffff },
+    },
+    ["Egenberger"] = {
+        ["596"] = { color = 0xe9c16c, text_color = 0x000000 },
     },
     ["ESTW"] = {
         ["280"] = { color = 0x68709b, text_color = 0xffffff },
@@ -1738,6 +1754,18 @@ local colors = {
         ["80"] = { color = 0xffcc00, text_color = 0x000000 },
         ["91"] = { color = 0x996598, text_color = 0xffffff },
         ["92"] = { color = 0x996598, text_color = 0xffffff },
+    },
+    ["GVG 1 (Bündel Nr. 3)"] = {
+        ["27"] = { color = 0x70b682, text_color = 0xffffff },
+        ["51"] = { color = 0xef7c00, text_color = 0xffffff },
+        ["52"] = { color = 0xef7c00, text_color = 0xffffff },
+        ["54"] = { color = 0xef7c00, text_color = 0xffffff },
+        ["55"] = { color = 0xef7c00, text_color = 0xffffff },
+        ["56"] = { color = 0xa96754, text_color = 0xffffff },
+        ["57"] = { color = 0xa76cab, text_color = 0xffffff },
+        ["58"] = { color = 0xcfa8cf, text_color = 0x6f2082 },
+        ["59"] = { color = 0xb0c0e4, text_color = 0x004e9e },
+        ["95"] = { color = 0x95348b, text_color = 0xffffff },
     },
     ["HADAG-ZVU"] = {
         ["61"] = { color = 0x009bb6, text_color = 0xffffff },
@@ -2180,6 +2208,9 @@ local colors = {
         ["5"] = { color = 0xa69dc8, text_color = 0xffffff },
         ["7"] = { color = 0xf08d52, text_color = 0xffffff },
         ["9"] = { color = 0xf09086, text_color = 0xffffff },
+    },
+    ["Koenigsbrunn Stadtbus"] = {
+        ["798"] = { color = 0x004e9e, text_color = 0xffffff },
     },
     ["Leipziger Verkehrsbetriebe"] = {
         ["1"] = { color = 0x67b337, text_color = 0xffffff },
@@ -2663,6 +2694,32 @@ local colors = {
         ["P(Pirna)"] = { color = 0x5a9230, text_color = 0xffffff },
         ["Z(Pirna)"] = { color = 0xf6b12f, text_color = 0x000000 },
     },
+    ["OMNIBUS"] = {
+        ["21"] = { color = 0x4a8871, text_color = 0xffffff },
+        ["22"] = { color = 0xd27060, text_color = 0xffffff },
+        ["23"] = { color = 0xd5b098, text_color = 0xffffff },
+        ["24"] = { color = 0xb38d6b, text_color = 0xffffff },
+        ["25"] = { color = 0x9a6957, text_color = 0xffffff },
+        ["29"] = { color = 0x65679d, text_color = 0xffffff },
+        ["30"] = { color = 0x8a99c2, text_color = 0xffffff },
+        ["31"] = { color = 0xadcbb4, text_color = 0xffffff },
+        ["32"] = { color = 0x64a37e, text_color = 0xffffff },
+        ["33"] = { color = 0xa8c98b, text_color = 0xffffff },
+        ["35"] = { color = 0x4e82c1, text_color = 0xffffff },
+        ["36"] = { color = 0xb6c0e0, text_color = 0xffffff },
+        ["37"] = { color = 0xd6c178, text_color = 0xffffff },
+        ["38"] = { color = 0xb0675f, text_color = 0xffffff },
+        ["41"] = { color = 0xbb632b, text_color = 0xffffff },
+        ["42"] = { color = 0xc0784c, text_color = 0xffffff },
+        ["43"] = { color = 0xce924f, text_color = 0xffffff },
+        ["44"] = { color = 0xc7aacc, text_color = 0xffffff },
+        ["48"] = { color = 0xb4d5d3, text_color = 0xffffff },
+        ["90"] = { color = 0xc43024, text_color = 0xffffff },
+        ["91"] = { color = 0x3f67ad, text_color = 0xffffff },
+        ["92"] = { color = 0xd68134, text_color = 0xffffff },
+        ["93"] = { color = 0x9ebe43, text_color = 0xffffff },
+        ["94"] = { color = 0x6ab8e8, text_color = 0xffffff },
+    },
     ["Omnibus Dannenmann GmbH"] = {
         ["266"] = { color = 0x0994dc, text_color = 0xffffff },
         ["268"] = { color = 0xf47216, text_color = 0xffffff },
@@ -2947,6 +3004,10 @@ local colors = {
     },
     ["RAB"] = {
         ["350"] = { color = 0xec008c, text_color = 0xffffff },
+    },
+    ["RBA Dillingen"] = {
+        ["291"] = { color = 0xf18d6d, text_color = 0xffffff },
+        ["797"] = { color = 0xc3635c, text_color = 0xffffff },
     },
     ["REGIOBAHN"] = {
         ["RE47"] = { color = 0x66cdec, text_color = 0xffffff },
@@ -4434,6 +4495,13 @@ local colors = {
         ["3"] = { color = 0xf08481, text_color = 0xffffff },
         ["4"] = { color = 0xe5007d, text_color = 0xffffff },
     },
+    ["STRASSENBAHN"] = {
+        ["1"] = { color = 0xe2000e, text_color = 0xffffff },
+        ["2"] = { color = 0x0068b3, text_color = 0xffffff },
+        ["3"] = { color = 0xef7c00, text_color = 0xffffff },
+        ["4"] = { color = 0x941880, text_color = 0xffffff },
+        ["6"] = { color = 0x94c01b, text_color = 0xffffff },
+    },
     ["Straßenbahn München"] = {
         ["12"] = { color = 0x95348b, text_color = 0xffffff },
         ["14"] = { color = 0xe5007d, text_color = 0xffffff },
@@ -4462,6 +4530,9 @@ local colors = {
         ["042"] = { color = 0xfe8480, text_color = 0xffffff },
         ["043"] = { color = 0xd75ec0, text_color = 0xffffff },
         ["044"] = { color = 0xf95a01, text_color = 0xffffff },
+    },
+    ["Stauden 02 (ab j24)"] = {
+        ["694"] = { color = 0x6267a2, text_color = 0xffffff },
     },
     ["SÜWEX"] = {
         ["RE1"] = { color = 0xbe1b40, text_color = 0xffffff },
@@ -5284,6 +5355,9 @@ local colors = {
         ["RB36"] = { color = 0x90bf26, text_color = 0xffffff },
         ["RB37"] = { color = 0xffb200, text_color = 0xffffff },
         ["RB38"] = { color = 0xff6600, text_color = 0xffffff },
+    },
+    ["Wittelsbacher Land 01"] = {
+        ["395"] = { color = 0x008a70, text_color = 0xffffff },
     },
     ["wupsi GmbH"] = {
         ["201"] = { color = 0xfaad19, text_color = 0xffffff },
