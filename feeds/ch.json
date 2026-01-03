@@ -13,6 +13,14 @@
             "license": {
                 "url": "https://opentransportdata.swiss/de/terms-of-use/"
             },
+            "drop-agency-names": [
+                "DB Regio AG Baden-Württemberg",
+                "FPLAN VHB SBP",
+                "FPLAN BOD RAB OMP",
+                "Verkehrsverbund Vorarlberg",
+                "DistriBus",
+                "Südbadenbus"
+            ],
             "script": "ch-opentransportdataswiss.lua"
         },
         {
