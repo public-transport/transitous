@@ -34,7 +34,8 @@
                 "FlixBus-de",
                 "EUROSTAR",
                 "Bremer Straßenbahn AG",
-                "Verkehrsgemeinschaft Osnabrück"
+                "Verkehrsgemeinschaft Osnabrück",
+                "Stadtwerke Landshut"
             ],
             "http-options": {
                 "fetch-interval-days": 2
