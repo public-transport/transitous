@@ -13,8 +13,7 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "script": "th-namtang.lua",
-            "extend-calendar": true
+            "script": "th-namtang.lua"
         }
     ]
 }
