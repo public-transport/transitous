@@ -8,7 +8,7 @@ local route_type_map = {
 
     -- BTS Lines
     ["Sukhumvit"] = SUBURBAN,
-    ["Silon"] = SUBURBAN,
+    ["Silom"] = SUBURBAN,
     ["Gold"] = SUBURBAN,
 
     -- MRT Lines
