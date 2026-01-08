@@ -28,12 +28,6 @@
             "transitland-atlas-id": "f-flamingo~auckland~gbfs"
         },
         {
-            "name": "Flamingo-Christchurch",
-            "type": "url",
-            "spec": "gbfs",
-            "url": "https://data.rideflamingo.com/gbfs/3/christchurch/gbfs.json"
-        },
-        {
             "name": "Flamingo-Dunedin",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-flamingo~dunedin~gbfs"
@@ -152,6 +146,21 @@
                 "spdx_identifier": "CC-BY-4.0",
                 "url": "https://www.gobay.co.nz/general-transit-feed-specification/"
             }
-        }
+        },
+        {
+            "name": "JOLT-Hutt-Valley",
+            "type":"transitland-atlas",
+            "transitland-atlas-id": "f-jolt~hutt~valley~gbfs"
+        },
+        {
+            "name": "JOLT-New-Plymouth",
+            "type":"transitland-atlas",
+            "transitland-atlas-id": "f-jolt~new~plymouth~gbfs"
+        },
+        {
+            "name": "JOLT-Selwyn",
+            "type":"transitland-atlas",
+            "transitland-atlas-id": "f-jolt~selwyn~gbfs"
+        },
     ]
 }
