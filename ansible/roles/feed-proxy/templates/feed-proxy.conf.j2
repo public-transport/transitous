@@ -3,40 +3,65 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 #
 
-proxy_cache_path /var/cache/nginx/feed-proxy max_size=10g keys_zone=feed-proxy:1m inactive=1h;
+proxy_cache_path /var/cache/nginx/feed-proxy max_size=10g keys_zone=feed-proxy:10m inactive=1h;
 
-limit_req_zone $binary_remote_addr zone=feed-proxy:10m rate=2000r/m;
+limit_req_zone $binary_remote_addr zone=feed-proxy-quota:10m rate=2000r/m;
 limit_req_status 429;
+
+
+# crazy hack because nginx doesn't support escaping $
+geo $dollar {
+    default "$";
+}
 
 server {
     listen 80;
+    listen [::]:80;
     server_name {{ feed_proxy_host }};
 
-    include ../conf.d/feed-proxy-http-default;
+    include ./conf.d/feed-proxy-http-default;
 
     proxy_pass_header Server;
     proxy_set_header User-Agent {{ feed_proxy_host }};
     add_header X-Cache $upstream_cache_status;
 
     proxy_cache            feed-proxy;
-    proxy_cache_valid      200 302 40s;
+    proxy_cache_key   $uri;
+    proxy_ignore_headers Set-Cookie;
+    proxy_ignore_headers X-Accel-Expires;
+    proxy_ignore_headers Expires;
+    #proxy_ignore_headers Cache-Control;
+    proxy_intercept_errors on;
+    error_page 301 302 307 = @handle_redirects;
+    proxy_cache_valid      200 206 40s;
     proxy_cache_valid      404 10s;
     proxy_cache_use_stale  error timeout invalid_header updating
                             http_500 http_502 http_503 http_504 http_429;
 
-    limit_req zone=feed-proxy burst=5000;
+    limit_req zone=feed-proxy-quota burst=5000;
 
     {% for item in feed_vars | dict2items %}   
-        location /feed/{{item.key}} {
-            proxy_pass {{ item.value.url }};
+        location "/feed/{{item.key}}" {
+            set $feed_upstream "{{ item.value.url | replace('\\', '\\\\') | replace('"', '\\"') | replace('$', '$dollar') }}";
+            proxy_pass $feed_upstream; 
 
             {% if "headers" in item.value %}
                 {% for header in item.value.headers | dict2items -%}
-                    proxy_set_header {{ header.key }} "{{ header.value }}";
+                    proxy_set_header "{{ header.key }}" "{{ header.value | replace('\\', '\\\\') | replace('"', '\\"') | replace('$', '$dollar') }}";
                 {% endfor %}
             {% endif %}            
         }
     {% endfor %}
+
+    location @handle_redirects {
+       set $original_uri $uri;
+       set $orig_loc $upstream_http_location;
+
+       proxy_pass $orig_loc;
+       proxy_cache       feed-proxy;
+       proxy_cache_key $original_uri;
+       proxy_cache_valid 200 206 40s;
+    }
 }
 
 server {
@@ -45,7 +70,7 @@ server {
 
     server_name {{ feed_proxy_host }};
 
-    include ../conf.d/feed-proxy-https-default;
+    include ./conf.d/feed-proxy-https-default;
 
     proxy_ssl_server_name on;
     
@@ -54,24 +79,42 @@ server {
     add_header X-Cache $upstream_cache_status;
 
     proxy_cache            feed-proxy;
-    proxy_cache_valid      200 302 40s;
+    proxy_cache_key   $uri;
+    proxy_ignore_headers Set-Cookie;
+    proxy_ignore_headers X-Accel-Expires;
+    proxy_ignore_headers Expires;
+    #proxy_ignore_headers Cache-Control;
+    proxy_intercept_errors on;
+    error_page 301 302 307 = @handle_redirects;
+    proxy_cache_valid      200 206 40s;
     proxy_cache_valid      404 10s;
     proxy_cache_use_stale  error timeout invalid_header updating
                             http_500 http_502 http_503 http_504 http_429;
 
-    limit_req zone=feed-proxy burst=5000;
+    limit_req zone=feed-proxy-quota burst=5000;
 
     {% for item in feed_vars | dict2items %}   
-        location /feed/{{item.key}} {
-            proxy_pass {{ item.value.url }};
+        location "/feed/{{item.key}}" {
+            set $feed_upstream "{{ item.value.url | replace('\\', '\\\\') | replace('"', '\\"') | replace('$', '$dollar') }}";
+            proxy_pass $feed_upstream;  
 
             {% if "headers" in item.value %}
                 {% for header in item.value.headers | dict2items -%}
-                    proxy_set_header {{ header.key }} "{{ header.value }}";
+                    proxy_set_header "{{ header.key }}" "{{ header.value | replace('\\', '\\\\') | replace('"', '\\"') | replace('$', '$dollar') }}";
                 {% endfor %}
             {% endif %}            
         }
     {% endfor %}
+    
+    location @handle_redirects {
+       set $original_uri $uri;
+       set $orig_loc $upstream_http_location;
+
+       proxy_pass $orig_loc;
+       proxy_cache       feed-proxy;
+       proxy_cache_key $original_uri;
+       proxy_cache_valid 200 206 40s;
+    }
 }
 
 
@@ -80,9 +123,10 @@ server {
 
 server {
     listen 80;
-    server_name {{ item.value.url | urlsplit("hostname") }};
+    listen [::]:80;
+    server_name "{{ item.value.url | urlsplit('hostname') }}";
 
-    include ../conf.d/feed-proxy-http-default;
+    include ./conf.d/feed-proxy-http-default;
 
     proxy_pass_header Server;
     proxy_set_header User-Agent {{ feed_proxy_host }};
@@ -94,24 +138,27 @@ server {
     proxy_cache_use_stale  error timeout invalid_header updating
                             http_500 http_502 http_503 http_504 http_429;
 
-    limit_req zone=feed-proxy burst=5000;
+    limit_req zone=feed-proxy-quota burst=5000;
 
-    proxy_pass {{ item.value.url | urlsplit("scheme") }}://{{ item.value.url | urlsplit("hostname") }};
+    location / {
+        set $feed_upstream "{{ item.value.url | urlsplit('scheme') }}://{{ item.value.url | urlsplit('hostname') }}";
+        proxy_pass $feed_upstream;
 
-    {% if "headers" in item.value -%}
-        {% for header in item.value.headers | dict2items -%}
-            proxy_set_header {{ header.key }} "{{ header.value }}";
-        {% endfor %}
-    {% endif %}   
+        {% if "headers" in item.value -%}
+            {% for header in item.value.headers | dict2items -%}
+                proxy_set_header "{{ header.key }}" "{{ header.value | replace('\\', '\\\\') | replace('"', '\\"') | replace('$', '$dollar') }}";
+            {% endfor %}
+        {% endif %} 
+    }  
 }
 
 server {
     listen 443 http2 ssl;
     listen [::]:443 http2 ssl;
 
-    server_name {{ item.value.url | urlsplit("hostname") }};
+    server_name "{{ item.value.url | urlsplit('hostname') }}";
 
-    include ../conf.d/feed-proxy-https-default;
+    include ./conf.d/feed-proxy-https-default;
 
     proxy_ssl_server_name on;
 
@@ -125,15 +172,18 @@ server {
     proxy_cache_use_stale  error timeout invalid_header updating
                             http_500 http_502 http_503 http_504 http_429;
 
-    limit_req zone=feed-proxy burst=5000;
+    limit_req zone=feed-proxy-quota burst=5000;
 
-    proxy_pass {{ item.value.url | urlsplit("scheme") }}://{{ item.value.url | urlsplit("hostname") }};
+    location / {
+        set $feed_upstream "{{ item.value.url | urlsplit('scheme') }}://{{ item.value.url | urlsplit('hostname') }}";
+        proxy_pass $feed_upstream;        
 
-    {% if "headers" in item.value -%}
-        {% for header in item.value.headers | dict2items -%}
-            proxy_set_header {{ header.key }} "{{ header.value }}";
-        {% endfor %}
-    {% endif %}            
+        {% if "headers" in item.value -%}
+            {% for header in item.value.headers | dict2items -%}
+                proxy_set_header "{{ header.key }}" "{{ header.value | replace('\\', '\\\\') | replace('"', '\\"') | replace('$', '$dollar') }}";
+            {% endfor %}
+        {% endif %} 
+    }           
 }
 
 {% endif %}
