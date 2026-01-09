@@ -244,6 +244,16 @@
             "type": "url",
             "spec": "gtfs-rt",
             "url": "https://www.modeshift.app/api/v1/df7541b2-ba8b-483e-b767-9de5043a54f7/transport/gtfsrt/alerts.pb"
+        },
+        {
+            "name": "Foothill-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9qh1-foothilltransit"
+        },
+        {
+            "name": "Foothill-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-foothilltransit~rt"
         }
     ]
 }
