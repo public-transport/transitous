@@ -42,6 +42,7 @@ class DisplayNameOptions:
 class Source:
     name: str
     fix: bool = False
+    use_gtfsclean: bool = True
     license: License
     spec: str = "gtfs"
     fix_csv_quotes: bool = False
@@ -70,10 +71,14 @@ class Source:
             self.name = parsed["name"]
             if "fix" in parsed:
                 self.fix = bool(parsed["fix"])
+            if "use-gtfsclean" in parsed:
+                self.use_gtfsclean = bool(parsed["use-gtfsclean"])
             if "fix-csv-quotes" in parsed:
                 self.fix_csv_quotes = bool(parsed["fix-csv-quotes"])
             if "spec" in parsed:
                 self.spec = parsed["spec"]
+                if self.spec == "gtfs-flex":
+                    self.use_gtfsclean = False
             if "skip" in parsed:
                 self.skip = bool(parsed["skip"])
             if "skip-reason" in parsed:

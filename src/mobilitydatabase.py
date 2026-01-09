@@ -66,7 +66,10 @@ class Database:
             case "gtfs_rt":
                 result = UrlSource()
                 result.name = source.name
-                result.url = feed["urls.direct_download"]
+                if source.url_override:
+                    result.url = source.url_override
+                else:
+                    result.url = feed["urls.direct_download"]
                 result.spec = "gtfs-rt"
                 result.skip = source.skip
                 result.skip_reason = source.skip_reason

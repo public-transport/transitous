@@ -35,6 +35,11 @@
     src: logrotate-nginx
     dest: /etc/logrotate.d/nginx
 
+- name: Install 403 error page
+  copy:
+    src: error403.html
+    dest: /var/www/html/error403.html
+
 - name: Install robots.txt
   copy:
     src: robots.txt

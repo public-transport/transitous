@@ -34,7 +34,8 @@
                 "FlixBus-de",
                 "EUROSTAR",
                 "Bremer Straßenbahn AG",
-                "Verkehrsgemeinschaft Osnabrück"
+                "Verkehrsgemeinschaft Osnabrück",
+                "Stadtwerke Landshut"
             ],
             "http-options": {
                 "fetch-interval-days": 2
@@ -84,6 +85,10 @@
             "name": "VBN",
             "type": "http",
             "url": "https://www.connect-info.net/opendata/gtfs/connect-nds-lowlevel/eyqasqtsse",
+            "drop-agency-names": [
+                "DB Fernverkehr (Codesharing)"
+            ],
+            "script": "de-VBN.lua",
             "http-options": {
                 "fetch-interval-days": 1
             },
@@ -225,6 +230,12 @@
             "name": "DottBerlin",
             "type": "url",
             "url": "https://gbfs.api.ridedott.com/public/v2/berlin/gbfs.json",
+            "spec": "gbfs"
+        },
+        {
+            "name": "esel.ac",
+            "type": "url",
+            "url": "https://di.esel.ac/gbfs/gbfs.json",
             "spec": "gbfs"
         }
     ]

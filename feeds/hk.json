@@ -7,6 +7,10 @@
         {
             "name": "applecuckoo",
             "github": "applecuckoo"
+        },
+        {
+            "name": "Anson Chung",
+            "github": "anscg"
         }
     ],
     "sources": [

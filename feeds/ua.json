@@ -23,10 +23,177 @@
             "url": "https://jbb.ghsq.de/gtfs/ua-ukrzaliznytsya.gtfs.zip"
         },
         {
-            "name": "nextbike",
+            "name": "stryi",
+            "type": "http",
+            "url": "https://track.ua-gis.com/gtfs/stryi/static.zip",
+            "fix": true
+        },
+        {
+            "name": "uzhhorod",
+            "type": "http",
+            "url": "https://track.ua-gis.com/gtfs/uzhhorod/static.zip"
+        },
+        {
+            "name": "odesa",
+            "type": "http",
+            "url": "https://gw.x24.digital/api/od-all/gtfs/v1/download/static",
+            "fix": true,
+            "http-options": {
+                "headers": {
+                    "ApiKey": "a8c6d35e-f2c1-4f72-b902-831fa9215009"
+                }
+            },
+            "license": {
+                "url": "https://omr.gov.ua/ua/city/departments/dtks/open-data/",
+                "spdx-identifier": "CC-BY-4.0"
+            }
+        },
+        {
+            "name": "odesa",
             "type": "url",
-            "spec": "gbfs",
-            "url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_nu/gbfs.json"
+            "spec": "gtfs-rt",
+            "url": "https://gw.x24.digital/api/od-all/gtfs/v1/download/gtfs-rt-vehicles-pr.pb",
+            "headers": {
+                "ApiKey": "a8c6d35e-f2c1-4f72-b902-831fa9215009"
+            }
+        },
+        {
+            "name": "bucha",
+            "type": "http",
+            "url": "https://gw.x24.digital/api/bu/gtfs/v1/download/static",
+            "http-options": {
+                "headers": {
+                    "ApiKey": "a8c6d35e-f2c1-4f72-b902-831fa9215009"
+                }
+            }
+        },
+        {
+            "name": "bucha",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://gw.x24.digital/api/bu/gtfs/v1/download/gtfs-rt-vehicles-pr.pb",
+            "headers": {
+                "ApiKey": "a8c6d35e-f2c1-4f72-b902-831fa9215009"
+            }
+        },
+        {
+            "name": "kyiv",
+            "type": "http",
+            "url": "https://jbb.ghsq.de/gtfs/ua-kyiv.gtfs.zip",
+            "license": {
+                "url": "https://data.gov.ua/dataset/96128887-4f36-4c19-a96e-5d4765fade16"
+            }
+        },
+        {
+            "name": "ivano-frankivsk",
+            "type": "http",
+            "url": "https://city.dozor.tech/iv-frankivsk/gtfs/static.zip",
+            "fix": true,
+            "extend-calendar": true
+        },
+        {
+            "name": "ivano-frankivsk",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://city.dozor.tech/iv-frankivsk/gtfs/trip_updates"
+        },
+        {
+            "name": "rivne",
+            "type": "http",
+            "url": "https://city.dozor.tech/rivne/gtfs/static.zip",
+            "fix": true,
+            "extend-calendar": true,
+            "skip": true,
+            "skip-reason": "agency.txt entry missing"
+        },
+        {
+            "name": "rivne",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://city.dozor.tech/rivne/gtfs/trip_updates",
+            "skip": true,
+            "skip-reason": "static feed skipped"
+        },
+        {
+            "name": "khmelnyckyi",
+            "type": "http",
+            "url": "https://city.dozor.tech/ua/khmelnyckyi/gtfs/static.zip",
+            "fix": true,
+            "extend-calendar": true,
+            "skip": true,
+            "skip-reason": "agency.txt entry missing"
+        },
+        {
+            "name": "khmelnyckyi",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://city.dozor.tech/khmelnyckyi/gtfs/trip_updates",
+            "skip": true,
+            "skip-reason": "static feed skipped"
+        },
+        {
+            "name": "bila-cerkva",
+            "type": "http",
+            "url": "https://city.dozor.tech/bila-cerkva/gtfs/static.zip",
+            "fix": true,
+            "extend-calendar": true
+        },
+        {
+            "name": "bila-cerkva",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://city.dozor.tech/bila-cerkva/gtfs/trip_updates"
+        },
+        {
+            "name": "kamyanec",
+            "type": "http",
+            "url": "https://city.dozor.tech/kamyanec/gtfs/static.zip",
+            "fix": true,
+            "extend-calendar": true,
+            "skip": true,
+            "skip-reason": "agency.txt entry missing"
+        },
+        {
+            "name": "kamyanec",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://city.dozor.tech/kamyanec/gtfs/trip_updates",
+            "skip": true,
+            "skip-reason": "static feed skipped"
+        },
+        {
+            "name": "oleksandriya",
+            "type": "http",
+            "url": "https://city.dozor.tech/oleksandriya/gtfs/static.zip",
+            "fix": true,
+            "extend-calendar": true,
+            "skip": true,
+            "skip-reason": "agency.txt entry missing"
+        },
+        {
+            "name": "oleksandriya",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://city.dozor.tech/oleksandriya/gtfs/trip_updates",
+            "skip": true,
+            "skip-reason": "static feed skipped"
+        },
+        {
+            "name": "uzhhorod-extra",
+            "type": "http",
+            "url": "https://city.dozor.tech/uzhgorod/gtfs/static.zip",
+            "fix": true,
+            "extend-calendar": true,
+            "skip": true,
+            "skip-reason": "agency.txt entry missing"
+        },
+        {
+            "name": "uzhhorod-extra",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://city.dozor.tech/uzhgorod/gtfs/trip_updates",
+            "skip": true,
+            "skip-reason": "static feed skipped"
         }
     ]
 }

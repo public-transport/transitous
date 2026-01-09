@@ -357,7 +357,7 @@ class Fetcher:
         if source.fix_csv_quotes:
             subprocess.check_call(["./src/fix-csv-quotes.py", temp_file])
 
-        if source.spec != "gtfs-flex":
+        if source.use_gtfsclean:
             # gtfsclean can't handle GTFS-Flex data and would discard it entirely
             command = ["gtfsclean", str(temp_file),
                     "--fix-zip",

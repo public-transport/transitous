@@ -15,6 +15,10 @@
         {
             "name": "Alexander Dubis",
             "github": "gtfscc"
+        },
+        {
+            "name": "Marcin Kasznia",
+            "github": "kasmar00"
         }
     ],
     "sources": [
@@ -73,6 +77,14 @@
             "type": "url",
             "spec": "gtfs-rt",
             "url": "https://www.mpkrzeszow.pl/gtfs/rt/gtfsrt.pb",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
+        },
+        {
+            "name": "Jarosław",
+            "type": "http",
+            "url": "https://github.com/rozkladnik/gtfs-pwik-jaroslaw/releases/latest/download/gtfs.zip",
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             }
@@ -411,8 +423,11 @@
         },
         {
             "name": "Koleje-Śląskie",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u2v-koleje~slaskie"
+            "type": "http",
+            "url": "https://gtfs.kasznia.net/static/sanitized/ks.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
         },
         {
             "name": "Koleje-Śląskie",
@@ -493,8 +508,12 @@
         },
         {
             "name": "Koleje-Wielkopolskie",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u3k-koleje~wielkopolskie",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://gtfs.kasznia.net/static/sanitized/kw.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            },
             "script": "pl-Koleje-Wielkopolskie.lua"
         },
         {
@@ -518,7 +537,8 @@
             "url": "https://cdn.zbiorkom.live/gtfs/lodz.zip",
             "license": {
                 "spdx-identifier": "MIT"
-            }
+            },
+            "fix": true
         },
         {
             "name": "Łódź",
@@ -527,8 +547,7 @@
             "url": "https://cdn.zbiorkom.live/gtfs-rt/lodz.pb",
             "license": {
                 "spdx-identifier": "MIT"
-            },
-            "fix": true
+            }
         },
         {
             "name": "Białystok",
@@ -1270,7 +1289,8 @@
             "url": "https://files.girlc.at/gtfs/zywiec.zip",
             "license": {
                 "spdx-identifier": "CC0-1.0"
-            }
+            },
+            "fix": true
         },
         {
             "name": "Zielona-Góra",
@@ -1286,7 +1306,16 @@
             "name": "Zakroczym",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://raw.githubusercontent.com/gtfscc/zakroczym/main/gtfs.zip",
+            "url": "https://feed.gtfs.cc/zakroczym/gtfs.zip",
+            "license": {
+                "spdx-identifier": "MIT"
+            }
+        },
+        {
+            "name": "Czosnów",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://feed.gtfs.cc/czosnow/gtfs.zip",
             "license": {
                 "spdx-identifier": "MIT"
             }
@@ -1307,6 +1336,69 @@
             "url": "https://cdn.zbiorkom.live/gtfs-rt/warsaw-pruszkow.pb",
             "license": {
                 "spdx-identifier": "MIT"
+            }
+        },
+        {
+            "name": "Siechnice",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://files.girlc.at/gtfs/siechnice.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "Goleniów",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://files.girlc.at/gtfs/goleniow.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "Aleksandrów-Łódzki",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://files.girlc.at/gtfs/aleksandrow_lodzki.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "Częstochowa",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://cdn.zbiorkom.live/gtfs/czestochowa.zip",
+            "license": {
+                "spdx-identifier": "MIT"
+            }
+        },
+        {
+            "name": "Częstochowa",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://cdn.zbiorkom.live/gtfs-rt/czestochowa.pb",
+            "license": {
+                "spdx-identifier": "MIT"
+            }
+        },
+        {
+            "name": "Szczytno",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://files.girlc.at/gtfs/szczytno.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "Sulejówek",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://files.girlc.at/gtfs/sulejowek.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
             }
         },
         {

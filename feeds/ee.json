@@ -3,14 +3,142 @@
         {
             "name": "Ederson Mota Pereira",
             "github": "edrmp"
+        },
+        {
+            "name": "Jonah Brüchert",
+            "github": "jbruechert"
         }
     ],
     "sources": [
         {
-            "name": "peatus",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-ud-atkoliinidoü~aktsiaseltshansabussiliinid~kihnuveeteedas~väi",
-            "fix": true
+            "name": "viljandimaa",
+            "type": "http",
+            "url": "https://eu-gtfs.remix.com/viljandimaa.zip"
+        },
+        {
+            "name": "valgamaa",
+            "type": "http",
+            "url": "https://eu-gtfs.remix.com/valgamaa.zip"
+        },
+        {
+            "name": "jarvamaa",
+            "type": "http",
+            "url": "https://eu-gtfs.remix.com/jarvamaa.zip"
+        },
+        {
+            "name": "harjumaa",
+            "type": "http",
+            "url": "https://eu-gtfs.remix.com/harjumaa.zip"
+        },
+        {
+            "name": "laane-virumaa",
+            "type": "http",
+            "url": "https://eu-gtfs.remix.com/laane_virumaa.zip"
+        },
+        {
+            "name": "laanemaa",
+            "type": "http",
+            "url": "https://eu-gtfs.remix.com/laanemaa.zip"
+        },
+        {
+            "name": "raplamaa",
+            "type": "http",
+            "url": "https://eu-gtfs.remix.com/raplamaa.zip"
+        },
+        {
+            "name": "tartumaa",
+            "type": "http",
+            "url": "https://eu-gtfs.remix.com/tartumaa.zip"
+        },
+        {
+            "name": "tartu",
+            "type": "http",
+            "url": "https://eu-gtfs.remix.com/tartu.zip"
+        },
+        {
+            "name": "saaremaa",
+            "type": "http",
+            "url": "https://eu-gtfs.remix.com/saaremaa.zip"
+        },
+        {
+            "name": "jogevamaa",
+            "type": "http",
+            "url": "https://eu-gtfs.remix.com/jogevamaa.zip"
+        },
+        {
+            "name": "vorumaa",
+            "type": "http",
+            "url": "https://eu-gtfs.remix.com/vorumaa.zip"
+        },
+        {
+            "name": "polvamaa",
+            "type": "http",
+            "url": "https://eu-gtfs.remix.com/polvamaa.zip"
+        },
+        {
+            "name": "hiiumaa",
+            "type": "http",
+            "url": "https://eu-gtfs.remix.com/hiiumaa.zip"
+        },
+        {
+            "name": "rakvere",
+            "type": "http",
+            "url": "https://eu-gtfs.remix.com/rakvere.zip"
+        },
+        {
+            "name": "ida-viru",
+            "type": "http",
+            "url": "https://eu-gtfs.remix.com/ida_viru.zip"
+        },
+        {
+            "name": "parnumaa",
+            "type": "http",
+            "url": "https://eu-gtfs.remix.com/parnumaa.zip"
+        },
+        {
+            "name": "parnu",
+            "type": "http",
+            "url": "https://eu-gtfs.remix.com/parnu.zip"
+        },
+        {
+            "name": "narva",
+            "type": "http",
+            "url": "https://eu-gtfs.remix.com/narva.zip"
+        },
+        {
+            "name": "kohtla-jarve",
+            "type": "http",
+            "url": "https://eu-gtfs.remix.com/kohtla_jarve.zip"
+        },
+        {
+            "name": "tallinn",
+            "type": "http",
+            "url": "https://eu-gtfs.remix.com/tallinn.zip"
+        },
+        {
+            "name": "kaugliinid",
+            "type": "http",
+            "url": "https://eu-gtfs.remix.com/kaugliinid.zip"
+        },
+        {
+            "name": "kaugliinid-rahvusvaheline",
+            "type": "http",
+            "url": "https://eu-gtfs.remix.com/kaugliinid_rahvusvaheline.zip"
+        },
+        {
+            "name": "kohtla-jarve",
+            "type": "http",
+            "url": "https://eu-gtfs.remix.com/kohtla_jarve.zip"
+        },
+        {
+            "name": "elron",
+            "type": "http",
+            "url": "https://eu-gtfs.remix.com/elron.zip"
+        },
+        {
+            "name": "tslaevad",
+            "type": "http",
+            "url": "https://eu-gtfs.remix.com/tslaevad.zip"
         }
     ]
 }
