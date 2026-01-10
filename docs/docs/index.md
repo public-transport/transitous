@@ -274,7 +274,7 @@ There are all kinds of options that may be specified in a source:
 Option Name            | Description
 ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------
 `type`                 | `http`, `mobility-database`, `transitland-atlas` or `url`. Url sources are not downloaded, but passed to MOTIS as URL. This is used for realtime feeds.
-`spec`                 | `gtfs` or `gtfs-rt`. `gtfs-rt` may only be used when `type` is `url`.
+`spec`                 | `gtfs`, `gtfs-rt`, `gbfs`, `gtfs-flex` or `netex`. `gtfs-rt` and `netex` may only be used when `type` is `url`.
 `fix`                  | Fix / drop fields that are not correct.
 `skip`                 | Don't download or use this feed.
 `skip-reason`          | Reason for why this feed can't be used right now.
