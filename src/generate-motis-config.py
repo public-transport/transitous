@@ -116,9 +116,9 @@ if __name__ == "__main__":
 
                     for source in resolved_sources:
                         match source.spec:
-                            case source.spec if source.spec in ["gtfs", "gtfs-flex"]:
+                            case source.spec if source.spec in ["gtfs", "gtfs-flex", "netex"]:
                                 schedule_file = \
-                                    f"{region_name}_{source.name}.gtfs.zip"
+                                    f"{region_name}_{source.name}.{"netex" if source.spec == "netex" else "gtfs"}.zip"
                                 name = f"{region_name}-{source.name}"
                                 if (not arguments.skip_missing_files) or check_file_exist_in_out_folder(schedule_file):
                                     config["timetable"]["datasets"][name] = \
