@@ -288,7 +288,7 @@ class Fetcher:
 
     # Returns whether something was downloaded
     def fetch_source(self, dest_path: Path, source: Source) -> bool:
-        if source.spec != "gtfs" and source.spec != "gtfs-flex" and source.spec != "gbfs" and source.spec != "netex":
+        if source.spec != "gtfs" and source.spec != "gbfs" and source.spec != "netex":
             return False
 
         match source:
@@ -354,11 +354,10 @@ class Fetcher:
         temp_file = output_path.parent / f".tmp-{output_path.name}"
         shutil.copyfile(input_path, temp_file)
 
-        if source.fix_csv_quotes and (source.spec == "gtfs" or source.spec == "gtfs-flex"):
+        if source.fix_csv_quotes and source.spec == "gtfs":
             subprocess.check_call(["./src/fix-csv-quotes.py", temp_file])
 
-        if source.use_gtfsclean and (source.spec == "gtfs" or source.spec == "gtfs-flex"):
-            # gtfsclean can't handle GTFS-Flex data and would discard it entirely
+        if source.use_gtfsclean and source.spec == "gtfs":
             command = ["gtfsclean", str(temp_file),
                     "--fix-zip",
                     "--check-null-coords",
@@ -394,7 +393,7 @@ class Fetcher:
 
             subprocess.check_call(command)
 
-        if source.spec == "gtfs" or source.spec == "gtfs-flex":
+        if source.spec == "gtfs":
             with ZipFile(file=open(temp_file, "rb")) as z:
                 validity = check_feed_timeframe_valid(z)
                 if validity == FeedValidity.IN_FUTURE and output_path.exists():
@@ -440,7 +439,7 @@ class Fetcher:
                 validate_spdx_identifier(self.licensing, source.license.spdx_identifier)
 
             validate_source_name(source.name)
-            download_name = f"{region_name}_{source.name}.{"netex" if source.spec == "netex" else "gtfs"}.zip"
+            download_name = f"{region_name}_{source.name}.{source.spec}.zip"
 
 
             print(f"Fetching {region_name}-{source.name}…")
@@ -449,7 +448,7 @@ class Fetcher:
             source = self.resolve_database_sources(source)
 
             # Nothing to download for realtime feeds
-            if source.spec != "gtfs" and source.spec != "gtfs-flex" and source.spec != "netex":
+            if source.spec != "gtfs" and source.spec != "netex":
                 continue
 
             download_dir = Path("downloads/")
