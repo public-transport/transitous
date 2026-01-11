@@ -27,7 +27,7 @@
             },
             "managed-by-script": true,
             "x-mvo-id": "80-2026",
-            "spec": "gtfs-flex"
+            "use-gtfsclean": false
         },
         {
             "name": "PTA-Styria-Flex-2026",
@@ -42,8 +42,8 @@
             },
             "managed-by-script": true,
             "x-mvo-id": "79-2026",
-            "spec": "gtfs-flex",
-            "script": "at.lua"
+            "script": "at.lua",
+            "use-gtfsclean": false
         },
         {
             "name": "PTA-Carinthia-Flex-2026",
@@ -59,7 +59,7 @@
             "default-timezone": "Europe/Vienna",
             "managed-by-script": true,
             "x-mvo-id": "78-2026",
-            "spec": "gtfs-flex"
+            "use-gtfsclean": false
         },
         {
             "name": "PTA-Upper-Austria-Flex-2026",
@@ -74,7 +74,7 @@
             },
             "managed-by-script": true,
             "x-mvo-id": "77-2026",
-            "spec": "gtfs-flex",
+            "use-gtfsclean": false,
             "script": "at.lua"
         },
         {
@@ -90,7 +90,7 @@
             },
             "managed-by-script": true,
             "x-mvo-id": "75-2026",
-            "spec": "gtfs-flex"
+            "use-gtfsclean": false
         },
         {
             "name": "PTA-Salzburg-Flex-2026",
@@ -105,8 +105,8 @@
             },
             "managed-by-script": true,
             "x-mvo-id": "73-2026",
-            "spec": "gtfs-flex",
-            "script": "at.lua"
+            "script": "at.lua",
+            "use-gtfsclean": false
         },
         {
             "name": "Linz-AG-2026",

@@ -22,11 +22,11 @@
         {
             "name": "Transport-for-New-South-Wales-flex",
             "type": "http",
-            "spec": "gtfs-flex",
             "url": "https://opendata.transport.nsw.gov.au/data/dataset/a5ecd906-ce73-484c-8cea-fa6fecfe368e/resource/e25092cc-67a1-469c-b57a-20793c259486/download/ondemand_gtfsflex.zip",
             "license": {
                 "spdx_identifier": "CC-BY-4.0"
-            }
+            },
+            "use-gtfsclean": false
         },
         {
             "name": "Transport-for-New-South-Wales-metro",
