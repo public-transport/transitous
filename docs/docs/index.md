@@ -197,18 +197,20 @@ This example applies the updates to the `lviv` feed:
 
 ### On-demand feeds
 
-GTFS-Flex feeds can be added in the same way as regular GTFS feeds, just the `spec` field has to be set to `gtfs-flex`.
+GTFS-Flex feeds can be added in the same way as regular GTFS feeds. However, the `gtfsclean` tool
+used for pre-processing cannot handle GTFS-Flex at this point and would thus drop all on-demand services.
+It therefore needs to be disabled on all GTFS-Flex feeds using the `use-gtfsclean` option:
 
 Example:
 ```json
 {
     "name": "opentransportdataswiss-flex",
     "type": "http",
-    "spec": "gtfs-flex",
     "url": "https://data.opentransportdata.swiss/en/dataset/gtfsflex/permalink",
     "license": {
         "url": "https://opentransportdata.swiss/de/terms-of-use/"
-    }
+    },
+    "use-gtfsclean": false
 }
 ```
 
@@ -274,7 +276,7 @@ There are all kinds of options that may be specified in a source:
 Option Name            | Description
 ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------
 `type`                 | `http`, `mobility-database`, `transitland-atlas` or `url`. Url sources are not downloaded, but passed to MOTIS as URL. This is used for realtime feeds.
-`spec`                 | `gtfs`, `gtfs-rt`, `gbfs`, `gtfs-flex` or `netex`. `gtfs-rt` and `netex` may only be used when `type` is `url`.
+`spec`                 | `gtfs`, `gtfs-rt`, `gbfs` or `netex`. `gtfs-rt` and `netex` may only be used when `type` is `url`.
 `fix`                  | Fix / drop fields that are not correct.
 `skip`                 | Don't download or use this feed.
 `skip-reason`          | Reason for why this feed can't be used right now.
@@ -286,6 +288,7 @@ Option Name            | Description
 `url-override`         | Use a different url instead of the one in Transitland / Mobility Database, or use a custom mirror. For more details, see the section on caches.
 `display-name-options` | Specify which strings identifying a vehicle should be displayed to the user
 `script`               | A Lua script applied by MOTIS to GTFS data during import, see [the MOTIS documentation](https://github.com/motis-project/motis/blob/master/docs/scripting.md) for details.
+`use-gtfsclean`        | Preprocess GTFS feeds with `gtfsclean`, default is `true`.
 
 #### License Options
 
