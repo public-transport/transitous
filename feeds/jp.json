@@ -1416,7 +1416,7 @@
             "mdb-id": "jbda-minamiisetown-choeibus"
         },
         {
-            "name": "【飯田市】L1市民バス循環線C2市民バス久堅線C3市民バス千代線C4市民バス三穂線C5市民バス大休線E2平岡線",
+            "name": "-【飯田市】L1市民バス循環線C2市民バス久堅線C3市民バス千代線C4市民バス三穂線C5市民バス大休",
             "type": "mobility-database",
             "mdb-id": "jbda-minamishinshu-Minamishinshu-Iidacity-1"
         },
@@ -1436,7 +1436,7 @@
             "mdb-id": "jbda-minamishinshu-Minamishinshu-Shinnan-1"
         },
         {
-            "name": "【阿智村】W2巡回バス伍和線W3巡回バス春日・智里線W4巡回バス浪合線W5巡回バス清内路線W6巡回バス智里東線",
+            "name": "【阿智村】W2巡回バス伍和線W3巡回バス春日・智里線W4巡回バス浪合線W5巡回バス清内路線W6巡回バ",
             "type": "mobility-database",
             "mdb-id": "jbda-minamishinshu-Minamishinshu-achi-1"
         },
@@ -1446,12 +1446,12 @@
             "mdb-id": "jbda-minamishinshu-Minamishinshu-seibu-1"
         },
         {
-            "name": "【高森町】K1-柿丸あったかバス山吹エリアK2柿丸あったかバス市田エリアK3おはようバス山吹回りK4おはようバス市田回り",
+            "name": "【高森町】K1-柿丸あったかバス山吹エリアK2柿丸あったかバス市田エリアK3おはようバス山吹回りK4",
             "type": "mobility-database",
             "mdb-id": "jbda-minamishinshu-Minamishinshu-takamori-1"
         },
         {
-            "name": "【豊丘村】T3豊丘村村営バス堀越線T4豊丘村村営バス佐原線T5豊丘村村営バス福島線T6豊丘村村営バス壬生沢福島線T7豊丘村村営バス壬生沢線T2豊丘村村営バス滝川阿島北県道線",
+            "name": "【豊丘村】T3豊丘村村営バス堀越線T4豊丘村村営バス佐原線T5豊丘村村営バス福島線T6豊丘村村営バス",
             "type": "mobility-database",
             "mdb-id": "jbda-minamishinshu-Minamishinshu-toyooka-1"
         },
@@ -3034,6 +3034,11 @@
             "name": "Donan-Bus",
             "type": "mobility-database",
             "mdb-id": "mdb-2871"
+        },
+        {
+            "name": "龍神自動車",
+            "type": "mobility-database",
+            "mdb-id": "jbda-ryujinbus-ryujinbus"
         }
     ]
 }
