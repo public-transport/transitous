@@ -44,11 +44,11 @@
         {
             "name": "opentransportdataswiss-flex",
             "type": "http",
-            "spec": "gtfs-flex",
             "url": "https://data.opentransportdata.swiss/en/dataset/gtfsflex/permalink",
             "license": {
                 "url": "https://opentransportdata.swiss/de/terms-of-use/"
-            }
+            },
+            "use-gtfsclean": false
         },
         {
             "name": "sharedmobility-ch",
