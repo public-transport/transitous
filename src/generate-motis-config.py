@@ -16,8 +16,9 @@ from ruamel.yaml import YAML
 from typing import Any
 from pathlib import Path
 from utils import eprint
+from urllib.parse import quote
 
-FEED_PROXY="http://rt.triptix.tech"
+FEED_PROXY="https://rt.triptix.tech"
 
 def find_motis_asset(asset_name: str):
     motis_path = shutil.which("motis")
@@ -165,7 +166,7 @@ if __name__ == "__main__":
                                     config["timetable"]["datasets"][name]["rt"] = []
 
                                 rt_feed: dict[str, Any] = {
-                                    "url": source.url if use_original_url else FEED_PROXY + '/feed/' + name + "-" + str(len(config["timetable"]["datasets"][name]["rt"]))
+                                    "url": source.url if use_original_url else FEED_PROXY + '/feed/' + quote(name) + "-" + str(len(config["timetable"]["datasets"][name]["rt"]))
                                 }
 
                                 if source.headers and use_original_url:
@@ -176,7 +177,7 @@ if __name__ == "__main__":
 
                             case "gbfs" if isinstance(source, metadata.UrlSource):
                                 name = f"{region_name}-{source.name}"
-                                config["gbfs"]["feeds"][name] = {"url": source.url if use_original_url else FEED_PROXY + '/feed/' + name}
+                                config["gbfs"]["feeds"][name] = {"url": source.url if use_original_url else FEED_PROXY + '/feed/' + quote(name)}
                                 if source.headers and use_original_url:
                                     config["gbfs"]["feeds"][name]["headers"] = source.headers
 
