@@ -1,10 +1,9 @@
-#!/bin/bash -e
+#!/bin/bash -xe
 # SPDX-FileCopyrightText: 2024 Jonah Brüchert <jbb@kaidan.im>
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 echo "Copying new files…"
-
 
 cd /var/cache/transitous/out/
 
@@ -35,11 +34,13 @@ sudo -u motis sed -i 's#street_routing: true#street_routing:\n  elevation_data_d
 sudo -u motis /opt/motis/motis import -c /var/cache/transitous/out/config.yml > /var/cache/transitous/motis-import.log 2>&1
 chown -R motis:motis /var/cache/transitous/out/data/
 
+# %sudo ALL=NOPASSWD: /bin/systemctl --no-ask-password start motis-update-feeds.service
+# %sudo ALL=NOPASSWD: /bin/systemctl --no-ask-password stop motis.service
+
 echo "Import done."
 echo "Transferring..."
-rsync --bwlimit=50000 -a /var/cache/transitous/out/data/ {{ motis_target_machine }}:/var/cache/transitous/out/data.tmp/
+rsync --bwlimit=50000 -a --whole-file --stats /var/cache/transitous/out/data/ {{ motis_target_machine }}:/var/cache/transitous/out/data/
 rsync --bwlimit=50000 -a /var/cache/transitous/out/config.yml {{ motis_target_machine }}:/var/cache/transitous/out/config.yml
-ssh {{ motis_target_machine }} "rm -r /var/cache/transitous/out/data.bak/ || true && mv /var/cache/transitous/out/data/ /var/cache/transitous/out/data.bak/ && cp -pr /var/cache/transitous/out/data.tmp/ /var/cache/transitous/out/data/"
 
 echo "Restarting MOTIS…"
 ssh {{ motis_target_machine }} sudo /bin/systemctl --no-ask-password start motis-update-feeds.service

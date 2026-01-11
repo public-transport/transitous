@@ -33,6 +33,7 @@ motis:
       ansible_sudo_user: root
       ansible_become: true
       ansible_host: goldberg
+      no_cow: true
       motis_primary: true
       transitous_wireguard_privkey: !vault |
         $ANSIBLE_VAULT;1.1;AES256
@@ -48,6 +49,7 @@ motis:
       ansible_sudo_user: root
       ansible_become: true
       ansible_host: tamassia
+      no_cow: true
       motis_primary: false
       motis_update_time: "5:00:00" # UTC
       motis_target_machine: algolocal@goldberg
