@@ -17,7 +17,7 @@ from typing import Any
 from pathlib import Path
 from utils import eprint
 
-FEED_PROXY="http://localhost:80"
+FEED_PROXY="http://rt.triptix.tech"
 
 def find_motis_asset(asset_name: str):
     motis_path = shutil.which("motis")

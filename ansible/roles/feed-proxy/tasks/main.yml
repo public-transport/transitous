@@ -47,25 +47,27 @@
     name: feed_vars
     hash_behaviour: merge
 
-- name: Install proxy config tmp
-  template:
-    src: "feed-proxy.conf.j2"
-    dest: "/tmp/feed-proxy-transitous.conf"
-
-#- name: Install proxy config
+#- name: Install proxy config tmp
 #  template:
 #    src: "feed-proxy.conf.j2"
-#    dest: "{{ feed_proxy_conf_dir }}feed-proxy-transitous.conf"
+#    dest: "/tmp/feed-proxy-transitous.conf"
 
-#- name: Install proxy http default config
-#  template:
-#    src: "feed-proxy-http-default.conf.j2"
-#    dest: "{{ feed_proxy_conf_dir }}feed-proxy-http-default.conf"
-#
-#- name: Install proxy https default config
-#  template:
-#    src: "feed-proxy-https-default.conf.j2"
-#    dest: "{{ feed_proxy_conf_dir }}feed-proxy-https-default.conf"
+- name: Install proxy config
+  template:
+    src: "feed-proxy.conf.j2"
+    dest: "{{ feed_proxy_conf_dir }}feed-proxy-transitous.conf"
+
+- name: Install proxy http default config
+  template:
+    src: "feed-proxy-http-default.j2"
+    dest: "{{ feed_proxy_conf_dir }}feed-proxy-http-default"
+    force: no
+
+- name: Install proxy https default config
+  template:
+    src: "feed-proxy-https-default.j2"
+    dest: "{{ feed_proxy_conf_dir }}feed-proxy-https-default"
+    force: no
 
 #- name: Disable default site configuration
 #  file:
