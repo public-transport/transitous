@@ -21,12 +21,15 @@ server {
 
     include ./conf.d/feed-proxy-http-default;
 
+    proxy_ssl_server_name on;
+
     proxy_pass_header Server;
     proxy_set_header User-Agent {{ feed_proxy_host }};
     add_header X-Cache $upstream_cache_status;
 
     proxy_cache            feed-proxy;
-    proxy_cache_key   $uri;
+    proxy_cache_key   "$proxy_host$request_uri";
+    proxy_buffering on;
     proxy_ignore_headers Set-Cookie;
     proxy_ignore_headers X-Accel-Expires;
     proxy_ignore_headers Expires;
@@ -54,7 +57,7 @@ server {
     {% endfor %}
 
     location @handle_redirects {
-       set $original_uri $uri;
+       set $original_uri "$proxy_host$request_uri";
        set $orig_loc $upstream_http_location;
 
        proxy_pass $orig_loc;
@@ -79,7 +82,8 @@ server {
     add_header X-Cache $upstream_cache_status;
 
     proxy_cache            feed-proxy;
-    proxy_cache_key   $uri;
+    proxy_cache_key   "$proxy_host$request_uri";
+    proxy_buffering on;
     proxy_ignore_headers Set-Cookie;
     proxy_ignore_headers X-Accel-Expires;
     proxy_ignore_headers Expires;
@@ -107,7 +111,7 @@ server {
     {% endfor %}
     
     location @handle_redirects {
-       set $original_uri $uri;
+       set $original_uri "$proxy_host$request_uri";
        set $orig_loc $upstream_http_location;
 
        proxy_pass $orig_loc;
@@ -128,11 +132,18 @@ server {
 
     include ./conf.d/feed-proxy-http-default;
 
+    proxy_ssl_server_name on;
+
     proxy_pass_header Server;
     proxy_set_header User-Agent {{ feed_proxy_host }};
     add_header X-Cache $upstream_cache_status;
 
     proxy_cache            feed-proxy;
+    proxy_buffering on;
+    proxy_ignore_headers Set-Cookie;
+    proxy_ignore_headers X-Accel-Expires;
+    proxy_ignore_headers Expires;
+    proxy_ignore_headers Cache-Control;
     proxy_cache_valid      200 302 80s;
     proxy_cache_valid      404 10s;
     proxy_cache_use_stale  error timeout invalid_header updating
@@ -167,6 +178,11 @@ server {
     add_header X-Cache $upstream_cache_status;
 
     proxy_cache            feed-proxy;
+    proxy_buffering on;
+    proxy_ignore_headers Set-Cookie;
+    proxy_ignore_headers X-Accel-Expires;
+    proxy_ignore_headers Expires;
+    proxy_ignore_headers Cache-Control;
     proxy_cache_valid      200 302 80s;
     proxy_cache_valid      404 10s;
     proxy_cache_use_stale  error timeout invalid_header updating
