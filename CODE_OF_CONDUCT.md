@@ -43,6 +43,7 @@ Instances of abusive, harassing, or otherwise unacceptable behavior may be repor
   - [@vkrause](https://github.com/vkrause) vkrause@kde.org
   - [@jbruechert](https://github.com/jbruechert) jbb@kaidan.im
   - [@felixguendling](https://github.com/felixguendling) felixguendling@gmail.com
+
 All complaints will be reviewed and investigated promptly and fairly.
 
 All community leaders are obligated to respect the privacy and security of the reporter of any incident.
