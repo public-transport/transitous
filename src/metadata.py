@@ -185,6 +185,7 @@ class HttpSource(Source):
 class UrlSource(Source):
     url: str = ""
     headers: dict[str, str]
+    use_feed_proxy: bool = True
 
     def __init__(self, parsed: Optional[dict] = None):
         self.headers = {}
@@ -194,6 +195,9 @@ class UrlSource(Source):
             self.url = parsed["url"]
             if "headers" in parsed:
                 self.headers = parsed["headers"]
+            if "use-feed-proxy" in parsed:
+                self.use_feed_proxy = \
+                    bool(parsed["use-feed-proxy"])
 
 
 def sourceFromJson(parsed: dict) -> Source:
