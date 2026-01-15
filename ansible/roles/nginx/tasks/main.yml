@@ -9,9 +9,23 @@
 
 - name: Unpack MOTIS (frontend)
   unarchive:
-    src: https://github.com/motis-project/motis/releases/download/v2.6.2/motis-linux-amd64.tar.bz2
+    src: https://github.com/motis-project/motis/releases/download/v2.7.0/motis-linux-amd64.tar.bz2
     dest: /opt/motis/
     remote_src: yes
+
+- name: Increase nproc for nginx workers
+  pam_limits:
+    domain: www-data
+    limit_type: hard
+    limit_item: nproc
+    value: '5000'
+
+- name: Increase nofile for nginx workers
+  pam_limits:
+    domain: www-data
+    limit_type: hard
+    limit_item: nofile
+    value: '5000'
 
 - name: Install nginx
   apt:
