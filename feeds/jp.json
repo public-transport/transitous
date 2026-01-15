@@ -3039,6 +3039,11 @@
             "name": "龍神自動車",
             "type": "mobility-database",
             "mdb-id": "jbda-ryujinbus-ryujinbus"
+        },
+        {
+            "name": "南陽市営バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-nanyocity-NanyoCity"
         }
     ]
 }
