@@ -5554,18 +5554,6 @@
             "managed-by-script": true
         },
         {
-            "name": "horaires-theoriques-et-temps-reel-aux-formats-gtfs-et-gtfs-rt-du-reseau-sitac",
-            "type": "url",
-            "url": "https://zenbus.net/gtfs/rt/poll.proto?dataset=sitac-calais-rt",
-            "license": {
-                "url": "https://transport.data.gouv.fr/datasets/horaires-theoriques-et-temps-reel-aux-formats-gtfs-et-gtfs-rt-du-reseau-sitac",
-                "spdx-identifier": "etalab-2.0"
-            },
-            "spec": "gtfs-rt",
-            "x-data-gov-fr-res-id": 82278,
-            "managed-by-script": true
-        },
-        {
             "name": "transports-en-commun-audomarois-1",
             "type": "http",
             "url": "https://www.data.gouv.fr/api/1/datasets/r/584491f9-0ace-4ee2-a49e-23caedb6f3f1",
@@ -12070,6 +12058,18 @@
             "x-data-gov-fr-res-id": 83807,
             "managed-by-script": true,
             "name": "horaires-theoriques-et-temps-reel-aux-formats-gtfs-et-gtfs-rt-du-reseau-sitac"
+        },
+        {
+            "name": "horaires-theoriques-et-temps-reel-aux-formats-gtfs-et-gtfs-rt-du-reseau-sitac",
+            "type": "url",
+            "url": "https://zenbus.net/gtfs/rt/poll.proto?dataset=sitac-calais-rt",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/horaires-theoriques-et-temps-reel-aux-formats-gtfs-et-gtfs-rt-du-reseau-sitac",
+                "spdx-identifier": "etalab-2.0"
+            },
+            "spec": "gtfs-rt",
+            "x-data-gov-fr-res-id": 82278,
+            "managed-by-script": true
         },
         {
             "type": "url",
