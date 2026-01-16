@@ -72,7 +72,7 @@ if __name__ == "__main__":
                 )
                 source = {
                     "type": "url",
-                    "url": resource["original_url"],
+                    "url": resource["url"],
                     "spec": "gbfs",
                     "license": {},
                     "x-data-gov-fr-res-id": resource["id"],
@@ -126,7 +126,6 @@ if __name__ == "__main__":
                 source = {
                     "type": "http",
                     "url": resource["url"],
-                    "url-override": resource["original_url"],
                     "fix": True,
                     "license": {},
                     "x-data-gov-fr-res-id": resource["id"],
