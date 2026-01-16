@@ -1228,7 +1228,8 @@
             },
             "x-data-gov-fr-res-id": 81969,
             "managed-by-script": true,
-            "skip": false
+            "skip": true,
+            "skip-reason": "Bad aggregation of other feeds. Duplicates TGV Lines in Marseille, with wrong stop names"
         },
         {
             "name": "velos-a-assistance-electrique-en-libre-service-levelo-sur-marseille",
