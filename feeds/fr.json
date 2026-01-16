@@ -2111,15 +2111,16 @@
             "url": "https://www.data.gouv.fr/api/1/datasets/r/2ef043c8-3b10-4d87-af5f-65fead127407",
             "fix": true,
             "license": {
-                "url": "https://transport.data.gouv.fr/datasets/offre-de-transport-de-montpellier-mediterranee-metropole-tam-gtfs",
+                "url": "offre-de-transport-de-montpellier-mediterranee-metropole-tam-gtfs",
                 "spdx-identifier": "ODbL-1.0"
             },
             "x-data-gov-fr-res-id": 62323,
             "managed-by-script": true,
-            "skip": false
+            "skip": true,
+            "skip-reason": "Deprecated, contains duplicated data"
         },
         {
-            "name": "offre-de-transport-tam-en-temps-reel-gtfs-rt-urbain-et-suburbain--81754",
+            "name": "offre-de-transport-tam-urbain",
             "type": "http",
             "url": "https://www.data.gouv.fr/api/1/datasets/r/350c3f75-226e-4570-960a-dec2144926b6",
             "fix": true,
@@ -2132,7 +2133,7 @@
             "skip": false
         },
         {
-            "name": "offre-de-transport-tam-en-temps-reel-gtfs-rt-urbain-et-suburbain--83773",
+            "name": "offre-de-transport-tam-suburbain",
             "type": "http",
             "url": "https://www.data.gouv.fr/api/1/datasets/r/c9d1350c-8f13-4761-b603-ecb12ad10b5b",
             "fix": true,
@@ -10781,7 +10782,7 @@
             "skip-reason": "Needs to be renamed to match the corresponding static feed"
         },
         {
-            "name": "offre-de-transport-tam-en-temps-reel-gtfs-rt-urbain-et-suburbain",
+            "name": "offre-de-transport-tam-urbain",
             "type": "url",
             "url": "https://www.data.gouv.fr/api/1/datasets/r/8d83572e-0b49-4dba-9691-c25aec6b5b5b",
             "license": {
@@ -10790,12 +10791,10 @@
             },
             "spec": "gtfs-rt",
             "x-data-gov-fr-res-id": 81756,
-            "managed-by-script": true,
-            "skip": true,
-            "skip-reason": "Needs to be renamed to match the corresponding static feed"
+            "managed-by-script": true
         },
         {
-            "name": "offre-de-transport-tam-en-temps-reel-gtfs-rt-urbain-et-suburbain",
+            "name": "offre-de-transport-tam-urbain",
             "type": "url",
             "url": "https://www.data.gouv.fr/api/1/datasets/r/297e8061-5435-409a-aa94-4170f215ef69",
             "license": {
@@ -10804,9 +10803,7 @@
             },
             "spec": "gtfs-rt",
             "x-data-gov-fr-res-id": 81757,
-            "managed-by-script": true,
-            "skip": true,
-            "skip-reason": "Needs to be renamed to match the corresponding static feed"
+            "managed-by-script": true
         },
         {
             "name": "syndicat-mixte-des-transports-en-commun-de-lagglomeration-clermontoise-smtc-ac-reseau-t2c-gtfs-gtfs-rt",
@@ -11173,6 +11170,7 @@
             "skip-reason": "Needs to be renamed to match the corresponding static feed"
         },
         {
+            "name": "offre-de-transport-tam-suburbain",
             "type": "url",
             "url": "https://www.data.gouv.fr/api/1/datasets/r/5b1a9be1-2fed-4233-b2e6-7d26e7acd85e",
             "license": {
@@ -11181,12 +11179,10 @@
             },
             "spec": "gtfs-rt",
             "x-data-gov-fr-res-id": 83778,
-            "managed-by-script": true,
-            "name": "offre-de-transport-tam-en-temps-reel-gtfs-rt-urbain-et-suburbain--83773",
-            "skip": true,
-            "skip-reason": "Needs to be renamed to match the corresponding static feed"
+            "managed-by-script": true
         },
         {
+            "name": "offre-de-transport-tam-suburbain",
             "type": "url",
             "url": "https://www.data.gouv.fr/api/1/datasets/r/4f7aa71d-a7e5-4c03-8074-03a233304266",
             "license": {
@@ -11195,10 +11191,7 @@
             },
             "spec": "gtfs-rt",
             "x-data-gov-fr-res-id": 83779,
-            "managed-by-script": true,
-            "name": "offre-de-transport-tam-en-temps-reel-gtfs-rt-urbain-et-suburbain--83773",
-            "skip": true,
-            "skip-reason": "Needs to be renamed to match the corresponding static feed"
+            "managed-by-script": true
         },
         {
             "type": "http",
