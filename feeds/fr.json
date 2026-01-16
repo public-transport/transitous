@@ -827,7 +827,7 @@
             "name": "base-de-donnees-multimodale-des-reseaux-de-transport-public-normands",
             "type": "http",
             "url": "https://transport.data.gouv.fr/resources/81942/download",
-            "url-override": "https://static.data.gouv.fr/resources/base-de-donnees-multimodale-des-reseaux-de-transport-public-normands/20260105-163045/pt-th-offer-atoumod-gtfs-20260105-334-opendata.zip",
+            "url-override": "https://static.data.gouv.fr/resources/base-de-donnees-multimodale-des-reseaux-de-transport-public-normands/20260116-145329/pt-th-offer-atoumod-gtfs-20260115-657-opendata.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/base-de-donnees-multimodale-des-reseaux-de-transport-public-normands",
@@ -4642,7 +4642,7 @@
             "name": "horaires-theoriques-des-lignes-urbaines-et-interurbaines-sur-le-reseau-alesy-gtfs",
             "type": "http",
             "url": "https://www.data.gouv.fr/api/1/datasets/r/b9a0f32e-4386-454c-8759-b82653fa861e",
-            "url-override": "https://static.data.gouv.fr/resources/horaires-theoriques-des-lignes-urbaines-et-interurbaines-sur-le-reseau-alesy-gtfs/20251222-103514/gtfs-is-20260105.zip",
+            "url-override": "https://static.data.gouv.fr/resources/horaires-theoriques-des-lignes-urbaines-et-interurbaines-sur-le-reseau-alesy-gtfs/20260116-092222/gtfs-is-20260119.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/horaires-theoriques-des-lignes-urbaines-et-interurbaines-sur-le-reseau-alesy-gtfs",
@@ -5552,20 +5552,6 @@
             },
             "x-data-gov-fr-res-id": 82876,
             "managed-by-script": true
-        },
-        {
-            "name": "horaires-theoriques-et-temps-reel-aux-formats-gtfs-et-gtfs-rt-du-reseau-sitac",
-            "type": "http",
-            "url": "https://www.data.gouv.fr/api/1/datasets/r/fd7655bc-bfe7-4c13-ba57-2ce9f9282416",
-            "url-override": "https://static.data.gouv.fr/resources/horaires-theoriques-et-temps-reel-aux-formats-gtfs-et-gtfs-rt-du-reseau-sitac/20260113-165432/calais-sitac-offre-hiver-2025-2026-v8.zip",
-            "fix": true,
-            "license": {
-                "url": "https://transport.data.gouv.fr/datasets/horaires-theoriques-et-temps-reel-aux-formats-gtfs-et-gtfs-rt-du-reseau-sitac",
-                "spdx-identifier": "etalab-2.0"
-            },
-            "x-data-gov-fr-res-id": 83308,
-            "managed-by-script": true,
-            "skip": false
         },
         {
             "name": "horaires-theoriques-et-temps-reel-aux-formats-gtfs-et-gtfs-rt-du-reseau-sitac",
@@ -6521,7 +6507,7 @@
             "name": "offre-de-transports-du-grand-albigeois-gtfs--81522",
             "type": "http",
             "url": "https://www.data.gouv.fr/api/1/datasets/r/79bc8313-3499-4bb3-a809-a8d80b44000a",
-            "url-override": "https://static.data.gouv.fr/resources/offre-de-transports-du-grand-albigeois-gtfs/20250908-142244/libea-reseau-periurbain.zip",
+            "url-override": "https://static.data.gouv.fr/resources/offre-de-transports-du-grand-albigeois-gtfs/20260116-151326/libea-reseau-periurbain.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/offre-de-transports-du-grand-albigeois-gtfs",
@@ -9797,7 +9783,7 @@
             "name": "vikibus-yvetot-normandie",
             "type": "http",
             "url": "https://transport.data.gouv.fr/resources/81975/download",
-            "url-override": "https://static.data.gouv.fr/resources/vikibus-yvetot-normandie/20250602-115437/pt-th-offer-vikibus-gtfs-20250527-683-opendata.zip",
+            "url-override": "https://static.data.gouv.fr/resources/vikibus-yvetot-normandie/20260116-123130/pt-th-offer-vikibus-gtfs-20260113-317-opendata.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/vikibus-yvetot-normandie",
@@ -9940,7 +9926,7 @@
             "name": "moca-communaute-de-communes-caux-austreberthe",
             "type": "http",
             "url": "https://transport.data.gouv.fr/resources/82309/download",
-            "url-override": "https://static.data.gouv.fr/resources/moca-communaute-de-communes-caux-austreberthe/20251217-074335/pt-th-offer-moca-gtfs-20251104-373-opendata.zip",
+            "url-override": "https://static.data.gouv.fr/resources/moca-communaute-de-communes-caux-austreberthe/20260116-123703/pt-th-offer-moca-gtfs-20260107-303-opendata.zip",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/moca-communaute-de-communes-caux-austreberthe",
@@ -12071,6 +12057,33 @@
             "x-data-gov-fr-res-id": 83787,
             "managed-by-script": true,
             "name": "skibus-vallee-des-belleville"
+        },
+        {
+            "type": "http",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/5dcdb39b-aee3-4a0f-a9a9-be225f5a8b78",
+            "url-override": "https://zenbus.net/gtfs/static/download.zip?dataset=sitac-calais-rt",
+            "fix": true,
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/horaires-theoriques-et-temps-reel-aux-formats-gtfs-et-gtfs-rt-du-reseau-sitac",
+                "spdx-identifier": "etalab-2.0"
+            },
+            "x-data-gov-fr-res-id": 83807,
+            "managed-by-script": true,
+            "name": "horaires-theoriques-et-temps-reel-aux-formats-gtfs-et-gtfs-rt-du-reseau-sitac"
+        },
+        {
+            "type": "url",
+            "url": "https://app.pysae.com/api/v4/groups/caux-seine-agglo/gtfs-rt",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/reseau-urbain-caux-seine-mobilite-rezobus",
+                "spdx-identifier": "ODbL-1.0"
+            },
+            "spec": "gtfs-rt",
+            "x-data-gov-fr-res-id": 67153,
+            "managed-by-script": true,
+            "name": "reseau-urbain-caux-seine-mobilite-rezobus",
+            "skip": true,
+            "skip-reason": "Needs to be renamed to match the corresponding static feed"
         }
     ]
 }
