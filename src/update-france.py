@@ -76,6 +76,7 @@ if __name__ == "__main__":
                     "spec": "gbfs",
                     "license": {},
                     "x-data-gov-fr-res-id": resource["id"],
+                    "x-data-gov-fr-res-title": resource["title"],
                     "managed-by-script": True
                 }
                 if "page_url" in dataset:
@@ -106,9 +107,7 @@ if __name__ == "__main__":
                 continue
 
             # Check if multiple GTFS feeds are present
-            unique_GTFS = True
-            if len(resources) > 1:
-                unique_GTFS = False
+            unique_GTFS = len(resources) == 1
 
             # Add all GTFS resources
             for resource in resources:
@@ -129,6 +128,7 @@ if __name__ == "__main__":
                     "fix": True,
                     "license": {},
                     "x-data-gov-fr-res-id": resource["id"],
+                    "x-data-gov-fr-res-title": resource["title"],
                     "managed-by-script": True,
                 }
 
@@ -170,7 +170,8 @@ if __name__ == "__main__":
                 # Check if there is a corresponding GTFS feed with the same name!
                 source = {
                     "type": "url",
-                    "url": resource["original_url"],
+                    "url": resource["url"],
+                    "x-data-gov-fr-res-title": resource["title"],
                     "license": {},
                 }
                 if "page_url" in dataset:
