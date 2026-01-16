@@ -15,7 +15,14 @@
         {
             "name": "lviv",
             "type": "mobility-database",
-            "mdb-id": "mdb-2375"
+            "mdb-id": "mdb-2375",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "lviv",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2376",
+            "spec": "gtfs-rt"
         },
         {
             "name": "ukrzaliznytsya",
@@ -24,14 +31,14 @@
         },
         {
             "name": "stryi",
-            "type": "http",
-            "url": "https://track.ua-gis.com/gtfs/stryi/static.zip",
-            "fix": true
+            "type": "mobility-database",
+            "fix": true,
+            "mdb-id": "mdb-2932"
         },
         {
             "name": "uzhhorod",
-            "type": "http",
-            "url": "https://track.ua-gis.com/gtfs/uzhhorod/static.zip"
+            "type": "mobility-database",
+            "mdb-id": "mdb-2931"
         },
         {
             "name": "odesa",
