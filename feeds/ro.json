@@ -58,6 +58,18 @@
             }
         },
         {
+            "name": "Bucuresti-Ilfov",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2104",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "Bucuresti-Ilfov",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2105",
+            "spec": "gtfs-rt"
+        },
+        {
             "name": "Slobozia-Bike-City",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-buzau~velocity~gbfs",
@@ -81,6 +93,18 @@
             "license": {
                 "spdx-identifier": "CC-BY-SA-4.0"
             }
+        },
+        {
+            "name": "Cluj-Napoca",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2613",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "Cluj-Napoca",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2614",
+            "spec": "gtfs-rt"
         },
         {
             "name": "Consiliul-Judetean-Vrancea",
@@ -126,6 +150,12 @@
             "license": {
                 "spdx-identifier": "CC-BY-SA-4.0"
             }
+        },
+        {
+            "name": "Iași",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2118",
+            "spec": "gtfs-rt"
         },
         {
             "name": "Moinesti-public-bike-system",
@@ -187,7 +217,14 @@
         {
             "name": "Transbus-Buzău",
             "type": "mobility-database",
-            "mdb-id": "mdb-2112"
+            "mdb-id": "mdb-2112",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "Transbus-Buzău",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2113",
+            "spec": "gtfs-rt"
         },
         {
             "name": "Tursib",
@@ -217,6 +254,13 @@
             "name": "Timișoara",
             "type": "mobility-database",
             "mdb-id": "mdb-2868"
+        },
+        {
+            "name": "data.gov.ro-gtfs-exporter",
+            "type": "mobility-database",
+            "mdb-id": "mdb-1104",
+            "skip": true,
+            "skip-reason": "different conversion for the same source data of ro-railway"
         }
     ]
 }
