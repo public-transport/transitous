@@ -153,12 +153,13 @@ if __name__ == "__main__":
                 return (
                     "format" in r
                     and r["format"] == "gtfs-rt"
-                    and "features" in r
-                    and ("trip_updates" in r["features"] or "service_alerts" in r["features"] or len(r["features"]) == 0)
+                    and ("features" not in r
+                         or not r["features"]
+                         or ("trip_updates" in r["features"] or "service_alerts" in r["features"]))
                 )
 
-            def find_static_feed(out, dataset_id) -> dict | None:
-                return next((entry for entry in out if entry.get("x-data-gov-fr-dataset-id") == dataset_id), None)
+            def find_static_feed(sources, dataset_id) -> int | None:
+                return next((index for (index, entry) in enumerate(sources) if entry.get("x-data-gov-fr-dataset-id") == dataset_id), None)
 
             resources = list(filter(cond, gtfs))
             resources.sort(key=lambda r: str(r.get("id", "")))
@@ -168,7 +169,6 @@ if __name__ == "__main__":
             for resource in resources:
                 # We can only continue if their is a unique GTFS file, or if there is a `gtfs_rt_select` entry for this dataset
                 feed_name = dataset["slug"]
-
                 # Check if there is a corresponding GTFS feed with the same name!
                 source = {
                     "type": "url",
@@ -194,11 +194,15 @@ if __name__ == "__main__":
                     }
                     new.update(source)
 
-                    static = find_static_feed(region["sources"], dataset["id"])
-                    if static:
-                        if static.get("skip", False):
+                    index = find_static_feed(region["sources"], dataset["id"])
+                    if index:
+                        # Name needs to match static feed
+                        new["name"] = region["sources"][index]["name"]
+
+                        if region["sources"][index].get("skip", False):
                             new["skip"] = True
                             new["skip-reason"] = "static feed is skipped"
+                        region["sources"].insert(index + 1, new)
                     else:
                         print(
                             f"Warning: {feed_name} GTFS-RT needs to match the name of its static GTFS feed! This needs manual editing to work",
@@ -206,11 +210,12 @@ if __name__ == "__main__":
                         )
                         new["skip"] = True
                         new["skip-reason"] = "Needs to be renamed to match the corresponding static feed"
-
-                    region["sources"].append(new)
+                        region["sources"].append(new)
 
     # Remove no longer existing entries
     region["sources"] = list(filter(lambda feed: "x-data-gov-fr-res-id" not in feed or feed["x-data-gov-fr-res-id"] in currently_active_ids, region["sources"]))
+
+    region["sources"].sort(key=lambda source: source.get("x-data-gov-fr-dataset-id", ""))
 
     with open("feeds/fr.json", "w") as f:
         json.dump(region, f, indent=4, ensure_ascii=False)
