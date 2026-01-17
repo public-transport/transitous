@@ -44,6 +44,7 @@ regular updates. Transitous checks for updates daily, so for this to work we als
 a stable URL for them.
 
 There's two supported data formats currently:
+
 * [GTFS](https://gtfs.org): This is the most commonly available one and relatively easy to handle.
 * [NeTEx](https://transmodel-cen.eu/index.php/netex/): This is significantly more complex and might require
   software adjustments in order to use new feeds. It can contain details that cannot be modelled by
