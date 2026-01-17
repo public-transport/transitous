@@ -76,6 +76,7 @@ if __name__ == "__main__":
                     "spec": "gbfs",
                     "license": {},
                     "x-data-gov-fr-res-id": resource["id"],
+                    "x-data-gov-fr-dataset-id": dataset["id"],
                     "x-data-gov-fr-res-title": resource["title"],
                     "managed-by-script": True
                 }
@@ -128,6 +129,7 @@ if __name__ == "__main__":
                     "fix": True,
                     "license": {},
                     "x-data-gov-fr-res-id": resource["id"],
+                    "x-data-gov-fr-dataset-id": dataset["id"],
                     "x-data-gov-fr-res-title": resource["title"],
                     "managed-by-script": True,
                 }
@@ -155,8 +157,8 @@ if __name__ == "__main__":
                     and ("trip_updates" in r["features"] or "service_alerts" in r["features"] or len(r["features"]) == 0)
                 )
 
-            def contains_name(out, name_to_check):
-                return any(entry.get("name") == name_to_check and not entry.get("skip") for entry in out)
+            def find_static_feed(out, dataset_id) -> dict | None:
+                return next((entry for entry in out if entry.get("x-data-gov-fr-dataset-id") == dataset_id), None)
 
             resources = list(filter(cond, gtfs))
             resources.sort(key=lambda r: str(r.get("id", "")))
@@ -173,6 +175,10 @@ if __name__ == "__main__":
                     "url": resource["url"],
                     "x-data-gov-fr-res-title": resource["title"],
                     "license": {},
+                    "spec": "gtfs-rt",
+                    "x-data-gov-fr-res-id": resource["id"],
+                    "x-data-gov-fr-dataset-id": dataset["id"],
+                    "managed-by-script": True
                 }
                 if "page_url" in dataset:
                     source["license"]["url"] = dataset["page_url"]
@@ -180,24 +186,28 @@ if __name__ == "__main__":
                 if "licence" in dataset:
                     source["license"]["spdx-identifier"] = license_map.get(dataset["licence"])
 
-                source["spec"] = "gtfs-rt"
-                source["x-data-gov-fr-res-id"] = resource["id"]
-                source["managed-by-script"] = True
-
                 if resource["id"] in id_map:
                     id_map[resource["id"]].update(source)
                 else:
-                    if not contains_name(region["sources"], feed_name):
+                    new = {
+                        "name": feed_name
+                    }
+                    new.update(source)
+
+                    static = find_static_feed(region["sources"], dataset["id"])
+                    if static:
+                        if static.get("skip", False):
+                            new["skip"] = True
+                            new["skip-reason"] = "static feed is skipped"
+                    else:
                         print(
                             f"Warning: {feed_name} GTFS-RT needs to match the name of its static GTFS feed! This needs manual editing to work",
                             file=sys.stderr,
                         )
+                        new["skip"] = True
+                        new["skip-reason"] = "Needs to be renamed to match the corresponding static feed"
 
-                    source["name"] = source_name
-                    source["skip"] = True
-                    source["skip-reason"] = "Needs to be renamed to match the corresponding static feed"
-
-                    region["sources"].append(source)
+                    region["sources"].append(new)
 
     # Remove no longer existing entries
     region["sources"] = list(filter(lambda feed: "x-data-gov-fr-res-id" not in feed or feed["x-data-gov-fr-res-id"] in currently_active_ids, region["sources"]))
