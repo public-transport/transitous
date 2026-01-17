@@ -1259,20 +1259,6 @@
         },
         {
             "name": "reseau-de-transports-en-commun-de-la-communaute-dagglomeration-de-lauxerrois",
-            "type": "url",
-            "url": "https://www.data.gouv.fr/api/1/datasets/r/6d758a40-049b-413f-8207-c9ea0fef6dbf",
-            "x-data-gov-fr-res-title": "Extension GTFS-RT : Alertes de service",
-            "license": {
-                "url": "https://transport.data.gouv.fr/datasets/reseau-de-transports-en-commun-de-la-communaute-dagglomeration-de-lauxerrois",
-                "spdx-identifier": "etalab-2.0"
-            },
-            "spec": "gtfs-rt",
-            "x-data-gov-fr-res-id": 81267,
-            "x-data-gov-fr-dataset-id": "5bec4c588b4c4165a5e3d43d",
-            "managed-by-script": true
-        },
-        {
-            "name": "reseau-de-transports-en-commun-de-la-communaute-dagglomeration-de-lauxerrois",
             "type": "http",
             "url": "https://transport.data.gouv.fr/resources/78934/download",
             "fix": true,
@@ -1285,6 +1271,20 @@
             "skip": false,
             "x-data-gov-fr-res-title": "gtfs-mdma.zip",
             "x-data-gov-fr-dataset-id": "5bec4c588b4c4165a5e3d43d"
+        },
+        {
+            "name": "reseau-de-transports-en-commun-de-la-communaute-dagglomeration-de-lauxerrois",
+            "type": "url",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/6d758a40-049b-413f-8207-c9ea0fef6dbf",
+            "x-data-gov-fr-res-title": "Extension GTFS-RT : Alertes de service",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/reseau-de-transports-en-commun-de-la-communaute-dagglomeration-de-lauxerrois",
+                "spdx-identifier": "etalab-2.0"
+            },
+            "spec": "gtfs-rt",
+            "x-data-gov-fr-res-id": 81267,
+            "x-data-gov-fr-dataset-id": "5bec4c588b4c4165a5e3d43d",
+            "managed-by-script": true
         },
         {
             "name": "reseau-de-transports-en-commun-de-la-communaute-dagglomeration-de-lauxerrois",
