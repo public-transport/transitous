@@ -3947,34 +3947,6 @@
             "x-data-gov-fr-dataset-id": "6153ad37bdd43d6e72b0681a"
         },
         {
-            "name": "agence-agglobus",
-            "type": "url",
-            "url": "https://www.data.gouv.fr/api/1/datasets/r/04d16002-0d63-4ee2-ae09-b67f24a8f652",
-            "x-data-gov-fr-res-title": "GTFS RT 2",
-            "license": {
-                "url": "https://transport.data.gouv.fr/datasets/agence-agglobus",
-                "spdx-identifier": "etalab-2.0"
-            },
-            "spec": "gtfs-rt",
-            "x-data-gov-fr-res-id": 83387,
-            "x-data-gov-fr-dataset-id": "615c0b5448c0d2789eb0681b",
-            "managed-by-script": true
-        },
-        {
-            "name": "agence-agglobus",
-            "type": "url",
-            "url": "https://www.data.gouv.fr/api/1/datasets/r/16f3e3ea-8527-4a6a-a37e-2b7eb312da51",
-            "x-data-gov-fr-res-title": "GTFS RT",
-            "license": {
-                "url": "https://transport.data.gouv.fr/datasets/agence-agglobus",
-                "spdx-identifier": "etalab-2.0"
-            },
-            "spec": "gtfs-rt",
-            "x-data-gov-fr-res-id": 83386,
-            "x-data-gov-fr-dataset-id": "615c0b5448c0d2789eb0681b",
-            "managed-by-script": true
-        },
-        {
             "name": "agence-agglobus--81705",
             "type": "http",
             "url": "https://www.data.gouv.fr/api/1/datasets/r/9e9cea88-cdf9-4f3d-ae17-f30c9512d276",
@@ -4019,6 +3991,38 @@
             "skip-reason": "malformed agency.txt",
             "x-data-gov-fr-res-title": "GTFS SEMOP 2026",
             "x-data-gov-fr-dataset-id": "615c0b5448c0d2789eb0681b"
+        },
+        {
+            "name": "agence-agglobus",
+            "type": "url",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/16f3e3ea-8527-4a6a-a37e-2b7eb312da51",
+            "x-data-gov-fr-res-title": "GTFS RT",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/agence-agglobus",
+                "spdx-identifier": "etalab-2.0"
+            },
+            "spec": "gtfs-rt",
+            "x-data-gov-fr-res-id": 83386,
+            "x-data-gov-fr-dataset-id": "615c0b5448c0d2789eb0681b",
+            "managed-by-script": true,
+            "skip": true,
+            "skip-reason": "Not protobuf"
+        },
+        {
+            "name": "agence-agglobus",
+            "type": "url",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/04d16002-0d63-4ee2-ae09-b67f24a8f652",
+            "x-data-gov-fr-res-title": "GTFS RT 2",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/agence-agglobus",
+                "spdx-identifier": "etalab-2.0"
+            },
+            "spec": "gtfs-rt",
+            "x-data-gov-fr-res-id": 83387,
+            "x-data-gov-fr-dataset-id": "615c0b5448c0d2789eb0681b",
+            "managed-by-script": true,
+            "skip": true,
+            "skip-reason": "Not protobuf"
         },
         {
             "name": "gtfs-sankeo-regulieres",
@@ -7251,6 +7255,21 @@
         },
         {
             "name": "reseau-urbain-et-interurbain-dile-de-france-mobilites",
+            "type": "http",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/413988ed-d340-467b-8be2-7b999fcd207a",
+            "fix": true,
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/reseau-urbain-et-interurbain-dile-de-france-mobilites",
+                "spdx-identifier": null
+            },
+            "x-data-gov-fr-res-id": 80921,
+            "managed-by-script": true,
+            "skip": false,
+            "x-data-gov-fr-res-title": "Horaires au format GTFS",
+            "x-data-gov-fr-dataset-id": "6449c52caeceb71273a42dd3"
+        },
+        {
+            "name": "reseau-urbain-et-interurbain-dile-de-france-mobilites",
             "type": "url",
             "url": "http://gtfsidfm.clarifygdps.com/gtfs-rt-trips-idfm",
             "license": {
@@ -7271,21 +7290,6 @@
             },
             "spec": "gtfs-rt",
             "managed-by-script": false,
-            "x-data-gov-fr-dataset-id": "6449c52caeceb71273a42dd3"
-        },
-        {
-            "name": "reseau-urbain-et-interurbain-dile-de-france-mobilites",
-            "type": "http",
-            "url": "https://www.data.gouv.fr/api/1/datasets/r/413988ed-d340-467b-8be2-7b999fcd207a",
-            "fix": true,
-            "license": {
-                "url": "https://transport.data.gouv.fr/datasets/reseau-urbain-et-interurbain-dile-de-france-mobilites",
-                "spdx-identifier": null
-            },
-            "x-data-gov-fr-res-id": 80921,
-            "managed-by-script": true,
-            "skip": false,
-            "x-data-gov-fr-res-title": "Horaires au format GTFS",
             "x-data-gov-fr-dataset-id": "6449c52caeceb71273a42dd3"
         },
         {

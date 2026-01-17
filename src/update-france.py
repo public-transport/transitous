@@ -23,8 +23,17 @@ if __name__ == "__main__":
     license_map = {
         "odc-odbl": "ODbL-1.0",
         "lov2": "etalab-2.0",
-        "fr-lo": "etalab-2.0"
+        "fr-lo": "etalab-2.0",
+        "notspecified": None
     }
+
+    def get_spdx_identifier(license):
+        match = license in license_map
+        if match:
+            return license_map[license]
+        else:
+            print(f"Unknown license {license}.")
+            return None
 
     currently_active_ids = set()
     for dataset in datasets:
@@ -83,13 +92,14 @@ if __name__ == "__main__":
                 if "page_url" in dataset:
                     source["license"]["url"] = dataset["page_url"]
                 if "licence" in dataset:
-                    source["license"]["spdx-identifier"] = license_map.get(dataset["licence"])
+                    source["license"]["spdx-identifier"] = get_spdx_identifier(dataset["licence"])
 
                 if resource["id"] in id_map:
                     id_map[resource["id"]].update(source)
                 else:
-                    source["name"] = source_name
-                    region["sources"].append(source)
+                    new = {"name": source_name}
+                    new.update(source)
+                    region["sources"].append(new)
 
         if gtfs and dataset["slug"]:
             resources = list(
@@ -141,13 +151,16 @@ if __name__ == "__main__":
                 if "page_url" in dataset:
                     source["license"]["url"] = dataset["page_url"]
                 if "licence" in dataset:
-                    source["license"]["spdx-identifier"] = license_map.get(dataset["licence"])
+                    source["license"]["spdx-identifier"] = get_spdx_identifier(dataset["licence"])
 
                 if resource["id"] in id_map:
                     id_map[resource["id"]].update(source)
                 else:
-                    source["name"] = source_name
-                    region["sources"].append(source)
+                    new = {
+                        "name": source_name
+                    }
+                    new.update(source)
+                    region["sources"].append(new)
 
             def cond(r) -> bool:
                 return (
@@ -159,7 +172,14 @@ if __name__ == "__main__":
                 )
 
             def find_static_feed(sources, dataset_id) -> int | None:
-                return next((index for (index, entry) in enumerate(sources) if entry.get("x-data-gov-fr-dataset-id") == dataset_id), None)
+                candidates = [index for (index, entry) in enumerate(sources) if entry.get("x-data-gov-fr-dataset-id") == dataset_id and entry.get("type" == "http")]
+                if not candidates:
+                    return None
+                if len(candidates) > 1:
+                    return None
+                else:
+                    return candidates[0]
+
 
             resources = list(filter(cond, gtfs))
             resources.sort(key=lambda r: str(r.get("id", "")))
@@ -184,7 +204,7 @@ if __name__ == "__main__":
                     source["license"]["url"] = dataset["page_url"]
 
                 if "licence" in dataset:
-                    source["license"]["spdx-identifier"] = license_map.get(dataset["licence"])
+                    source["license"]["spdx-identifier"] = get_spdx_identifier(dataset["licence"])
 
                 if resource["id"] in id_map:
                     id_map[resource["id"]].update(source)
@@ -205,7 +225,7 @@ if __name__ == "__main__":
                         region["sources"].insert(index + 1, new)
                     else:
                         print(
-                            f"Warning: {feed_name} GTFS-RT needs to match the name of its static GTFS feed! This needs manual editing to work",
+                            f"Warning: Failed to find an unambigous static feed for GTFS-RT {feed_name}. Please manually edit fr.json to fix this.",
                             file=sys.stderr,
                         )
                         new["skip"] = True
