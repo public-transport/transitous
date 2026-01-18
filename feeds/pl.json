@@ -1321,6 +1321,33 @@
             }
         },
         {
+            "name": "Oborniki Śląskie",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://feed.gtfs.cc/oborniki-slaskie/gtfs.zip",
+            "license": {
+                "spdx-identifier": "MIT"
+            }
+        },
+        {
+            "name": "Biskupiec",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://feed.gtfs.cc/biskupiec/gtfs.zip",
+            "license": {
+                "spdx-identifier": "MIT"
+            }
+        },
+        {
+            "name": "Ornontowice",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://feed.gtfs.cc/ornontowice/gtfs.zip",
+            "license": {
+                "spdx-identifier": "MIT"
+            }
+        },
+        {
             "name": "Pruszków",
             "type": "http",
             "spec": "gtfs",
