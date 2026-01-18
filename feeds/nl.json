@@ -18,7 +18,8 @@
             "license": {
                 "spdx-identifier": "CC0-1.0",
                 "url": "https://gtfs.openov.nl/LICENSE.TXT"
-            }
+            },
+            "script": "nl-OpenOV.lua"
         },
         {
             "name": "OpenOV",
