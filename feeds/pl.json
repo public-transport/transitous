@@ -1321,7 +1321,7 @@
             }
         },
         {
-            "name": "Oborniki Śląskie",
+            "name": "Oborniki-Śląskie",
             "type": "http",
             "spec": "gtfs",
             "url": "https://feed.gtfs.cc/oborniki-slaskie/gtfs.zip",
