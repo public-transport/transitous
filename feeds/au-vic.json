@@ -12,7 +12,7 @@
             "spec": "gtfs",
             "url": "https://gitlab.com/applecuckoo/gtfs-fixes/-/jobs/artifacts/main/raw/vic-gtfs.zip?job=victoria-mirror#1/google_transit.zip",
             "license": {
-                "spdx_identifier": "CC-BY-4.0"
+                "spdx-identifier": "CC-BY-4.0"
             },
             "fix": true
         },
@@ -22,7 +22,7 @@
             "spec": "gtfs-rt",
             "url": "https://api.opendata.transport.vic.gov.au/opendata/public-transport/gtfs/realtime/v1/vline/vehicle-positions",
             "license": {
-                "spdx_identifier": "CC-BY-4.0"
+                "spdx-identifier": "CC-BY-4.0"
             },
             "headers": {
                 "KeyId": "ffb807b0-9a50-4123-b4d7-ce762f81d84b"
@@ -34,7 +34,7 @@
             "spec": "gtfs-rt",
             "url": "https://api.opendata.transport.vic.gov.au/opendata/public-transport/gtfs/realtime/v1/vline/trip-updates",
             "license": {
-                "spdx_identifier": "CC-BY-4.0"
+                "spdx-identifier": "CC-BY-4.0"
             },
             "headers": {
                 "KeyId": "ffb807b0-9a50-4123-b4d7-ce762f81d84b"
@@ -46,7 +46,7 @@
             "spec": "gtfs",
             "url": "https://gitlab.com/applecuckoo/gtfs-fixes/-/jobs/artifacts/main/raw/vic-gtfs.zip?job=victoria-mirror#2/google_transit.zip",
             "license": {
-                "spdx_identifier": "CC-BY-4.0"
+                "spdx-identifier": "CC-BY-4.0"
             },
             "fix": true,
             "script": "au-vic-Transport-Victoria-metro-trains.lua"
@@ -57,7 +57,7 @@
             "spec": "gtfs-rt",
             "url": "https://api.opendata.transport.vic.gov.au/opendata/public-transport/gtfs/realtime/v1/metro/service-alerts",
             "license": {
-                "spdx_identifier": "CC-BY-4.0"
+                "spdx-identifier": "CC-BY-4.0"
             },
             "headers": {
                 "KeyId": "ffb807b0-9a50-4123-b4d7-ce762f81d84b"
@@ -69,7 +69,7 @@
             "spec": "gtfs-rt",
             "url": "https://api.opendata.transport.vic.gov.au/opendata/public-transport/gtfs/realtime/v1/metro/vehicle-positions",
             "license": {
-                "spdx_identifier": "CC-BY-4.0"
+                "spdx-identifier": "CC-BY-4.0"
             },
             "headers": {
                 "KeyId": "ffb807b0-9a50-4123-b4d7-ce762f81d84b"
@@ -81,7 +81,7 @@
             "spec": "gtfs-rt",
             "url": "https://api.opendata.transport.vic.gov.au/opendata/public-transport/gtfs/realtime/v1/metro/trip-updates",
             "license": {
-                "spdx_identifier": "CC-BY-4.0"
+                "spdx-identifier": "CC-BY-4.0"
             },
             "headers": {
                 "KeyId": "ffb807b0-9a50-4123-b4d7-ce762f81d84b"
@@ -93,7 +93,7 @@
             "spec": "gtfs",
             "url": "https://gitlab.com/applecuckoo/gtfs-fixes/-/jobs/artifacts/main/raw/vic-gtfs.zip?job=victoria-mirror#3/google_transit.zip",
             "license": {
-                "spdx_identifier": "CC-BY-4.0"
+                "spdx-identifier": "CC-BY-4.0"
             },
             "fix": true
         },
@@ -103,7 +103,7 @@
             "spec": "gtfs-rt",
             "url": "https://api.opendata.transport.vic.gov.au/opendata/public-transport/gtfs/realtime/v1/tram/service-alerts",
             "license": {
-                "spdx_identifier": "CC-BY-4.0"
+                "spdx-identifier": "CC-BY-4.0"
             },
             "headers": {
                 "KeyId": "ffb807b0-9a50-4123-b4d7-ce762f81d84b"
@@ -115,7 +115,7 @@
             "spec": "gtfs-rt",
             "url": "https://api.opendata.transport.vic.gov.au/opendata/public-transport/gtfs/realtime/v1/tram/vehicle-positions",
             "license": {
-                "spdx_identifier": "CC-BY-4.0"
+                "spdx-identifier": "CC-BY-4.0"
             },
             "headers": {
                 "KeyId": "ffb807b0-9a50-4123-b4d7-ce762f81d84b"
@@ -127,7 +127,7 @@
             "spec": "gtfs-rt",
             "url": "https://api.opendata.transport.vic.gov.au/opendata/public-transport/gtfs/realtime/v1/tram/trip-updates",
             "license": {
-                "spdx_identifier": "CC-BY-4.0"
+                "spdx-identifier": "CC-BY-4.0"
             },
             "headers": {
                 "KeyId": "ffb807b0-9a50-4123-b4d7-ce762f81d84b"
@@ -139,7 +139,7 @@
             "spec": "gtfs",
             "url": "https://gitlab.com/applecuckoo/gtfs-fixes/-/jobs/artifacts/main/raw/vic-gtfs.zip?job=victoria-mirror#4/google_transit.zip",
             "license": {
-                "spdx_identifier": "CC-BY-4.0"
+                "spdx-identifier": "CC-BY-4.0"
             },
             "fix": true
         },
@@ -149,7 +149,7 @@
             "spec": "gtfs-rt",
             "url": "https://api.opendata.transport.vic.gov.au/opendata/public-transport/gtfs/realtime/v1/bus/vehicle-positions",
             "license": {
-                "spdx_identifier": "CC-BY-4.0"
+                "spdx-identifier": "CC-BY-4.0"
             },
             "headers": {
                 "KeyId": "ffb807b0-9a50-4123-b4d7-ce762f81d84b"
@@ -161,7 +161,7 @@
             "spec": "gtfs-rt",
             "url": "https://api.opendata.transport.vic.gov.au/opendata/public-transport/gtfs/realtime/v1/bus/trip-updates",
             "license": {
-                "spdx_identifier": "CC-BY-4.0"
+                "spdx-identifier": "CC-BY-4.0"
             },
             "headers": {
                 "KeyId": "ffb807b0-9a50-4123-b4d7-ce762f81d84b"
@@ -173,7 +173,7 @@
             "spec": "gtfs",
             "url": "https://gitlab.com/applecuckoo/gtfs-fixes/-/jobs/artifacts/main/raw/vic-gtfs.zip?job=victoria-mirror#5/google_transit.zip",
             "license": {
-                "spdx_identifier": "CC-BY-4.0"
+                "spdx-identifier": "CC-BY-4.0"
             },
             "fix": true
         },
@@ -183,7 +183,7 @@
             "spec": "gtfs",
             "url": "https://gitlab.com/applecuckoo/gtfs-fixes/-/jobs/artifacts/main/raw/vic-gtfs.zip?job=victoria-mirror#6/google_transit.zip",
             "license": {
-                "spdx_identifier": "CC-BY-4.0"
+                "spdx-identifier": "CC-BY-4.0"
             },
             "fix": true
         },
@@ -193,7 +193,7 @@
             "spec": "gtfs",
             "url": "https://gitlab.com/applecuckoo/gtfs-fixes/-/jobs/artifacts/main/raw/vic-gtfs.zip?job=victoria-mirror#10/google_transit.zip",
             "license": {
-                "spdx_identifier": "CC-BY-4.0"
+                "spdx-identifier": "CC-BY-4.0"
             },
             "fix": true
         },
@@ -203,7 +203,7 @@
             "spec": "gtfs",
             "url": "https://gitlab.com/applecuckoo/gtfs-fixes/-/jobs/artifacts/main/raw/vic-gtfs.zip?job=victoria-mirror#11/google_transit.zip",
             "license": {
-                "spdx_identifier": "CC-BY-4.0"
+                "spdx-identifier": "CC-BY-4.0"
             },
             "fix": true
         }

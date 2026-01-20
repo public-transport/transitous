@@ -149,23 +149,23 @@
             "spec": "gtfs",
             "url": "https://data.trilliumtransit.com/gtfs/hbrc-nz/hbrc-nz.zip",
             "license": {
-                "spdx_identifier": "CC-BY-4.0",
+                "spdx-identifier": "CC-BY-4.0",
                 "url": "https://www.gobay.co.nz/general-transit-feed-specification/"
             }
         },
         {
             "name": "JOLT-Hutt-Valley",
-            "type":"transitland-atlas",
+            "type": "transitland-atlas",
             "transitland-atlas-id": "f-jolt~hutt~valley~gbfs"
         },
         {
             "name": "JOLT-New-Plymouth",
-            "type":"transitland-atlas",
+            "type": "transitland-atlas",
             "transitland-atlas-id": "f-jolt~new~plymouth~gbfs"
         },
         {
             "name": "JOLT-Selwyn",
-            "type":"transitland-atlas",
+            "type": "transitland-atlas",
             "transitland-atlas-id": "f-jolt~selwyn~gbfs"
         }
     ]
