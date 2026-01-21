@@ -766,8 +766,6 @@
             "spec": "gtfs",
             "url": "https://files.girlc.at/gtfs/olesnica.zip",
             "fix": true,
-            "skip": true,
-            "skip-reason": "Expired",
             "license": {
                 "spdx-identifier": "CC0-1.0"
             }
@@ -934,15 +932,6 @@
             }
         },
         {
-            "name": "Orneta",
-            "type": "http",
-            "spec": "gtfs",
-            "url": "https://files.girlc.at/gtfs/orneta.zip",
-            "license": {
-                "spdx-identifier": "CC0-1.0"
-            }
-        },
-        {
             "name": "Legnica",
             "type": "http",
             "spec": "gtfs",
@@ -996,16 +985,6 @@
             "url": "https://gtfs.kasznia.net/rt/regio-jet.pb",
             "license":{
                 "spdx-identifier":"CC-BY-4.0"
-            }
-        },
-        {
-            "name": "Suchowola",
-            "type": "http",
-            "spec": "gtfs",
-            "url": "https://files.girlc.at/gtfs/suchowola.zip",
-            "fix": true,
-            "license": {
-                "spdx-identifier": "CC0-1.0"
             }
         },
         {
