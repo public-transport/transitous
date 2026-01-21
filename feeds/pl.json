@@ -988,6 +988,16 @@
             }
         },
         {
+            "name": "Suchowola",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://files.girlc.at/gtfs/suchowola.zip",
+            "fix": true,
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
             "name": "Nowy-Dwór-Mazowiecki",
             "type": "http",
             "spec": "gtfs",
@@ -1416,6 +1426,34 @@
                 "spdx-identifier": "CC0-1.0"
             }
         },
+        {
+            "name": "Pleszew",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://files.girlc.at/gtfs/pleszew.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "Powiat-Miński",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://files.girlc.at/gtfs/suchowola.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "Kolej-Pleszewska",
+            "type": "http",
+            "spec":"gtfs",
+            "url": "https://github.com/pawlinski07/pawlinski-gtfs/raw/refs/heads/main/KolejPleszewska.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+
         {
             "name": "Chełmski-Rower",
             "type": "transitland-atlas",
