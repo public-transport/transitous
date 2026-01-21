@@ -1441,7 +1441,7 @@
             "spec":"gtfs",
             "url": "https://github.com/pawlinski07/pawlinski-gtfs/raw/refs/heads/main/KolejPleszewska.zip",
             "license": {
-                "spdx-identifier": "CC0-1.0"
+                "spdx-identifier": "CC-BY-4.0"
             }
         },
 
