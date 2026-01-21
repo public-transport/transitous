@@ -1436,15 +1436,6 @@
             }
         },
         {
-            "name": "Powiat-Miński",
-            "type": "http",
-            "spec": "gtfs",
-            "url": "https://files.girlc.at/gtfs/suchowola.zip",
-            "license": {
-                "spdx-identifier": "CC0-1.0"
-            }
-        },
-        {
             "name": "Kolej-Pleszewska",
             "type": "http",
             "spec":"gtfs",
