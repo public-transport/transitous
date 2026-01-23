@@ -201,7 +201,9 @@
             "name": "STTR",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-societe~de~transport~de~trois-rivieres",
-            "fix": true
+            "fix": true,
+            "skip": true,
+            "skip-reason": "Removed from transitland"
         },
         {
             "name": "Bixi-Montreal",
