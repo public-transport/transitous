@@ -549,6 +549,20 @@
             "x-data-gov-fr-dataset-id": "5af03701b595081c1880a8a4"
         },
         {
+            "name": "horaires-theoriques-du-reseau-tag",
+            "type": "url",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/70cbf333-18ff-4097-9ca1-644a02b20664",
+            "x-data-gov-fr-res-title": "Horaires temps réel du réseau Tag (pbf)",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/horaires-theoriques-du-reseau-tag",
+                "spdx-identifier": "ODbL-1.0"
+            },
+            "spec": "gtfs-rt",
+            "x-data-gov-fr-res-id": 83460,
+            "x-data-gov-fr-dataset-id": "5af03701b595081c1880a8a4",
+            "managed-by-script": true
+        },
+        {
             "name": "horaires-theoriques-et-temps-reel-du-reseau-de-transport-marineo",
             "type": "http",
             "url": "https://www.data.gouv.fr/api/1/datasets/r/579e4f5e-2916-4b95-90b8-f675943d0136",
@@ -3844,6 +3858,20 @@
             "x-data-gov-fr-dataset-id": "60e32505bdb603a010708d6c"
         },
         {
+            "name": "reseau-urbain-distribus",
+            "type": "url",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/b2bccdd8-ac63-4092-bed5-9431fb38bb5b",
+            "x-data-gov-fr-res-title": "Données en temps réel au format GTFS-RT (VehiclePosition)",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/reseau-urbain-distribus",
+                "spdx-identifier": "ODbL-1.0"
+            },
+            "spec": "gtfs-rt",
+            "x-data-gov-fr-res-id": 82596,
+            "x-data-gov-fr-dataset-id": "60e32505bdb603a010708d6c",
+            "managed-by-script": true
+        },
+        {
             "name": "reseau-urbain-reso",
             "type": "http",
             "url": "https://www.data.gouv.fr/api/1/datasets/r/2fc8108a-5b91-455a-8d10-1c938d360a9f",
@@ -4732,20 +4760,6 @@
             "x-data-gov-fr-dataset-id": "62bf8ab7cafeeffcada1f85d"
         },
         {
-            "type": "http",
-            "url": "https://www.data.gouv.fr/api/1/datasets/r/f9aa3acb-49d8-4a42-9951-1c31e39a3af8",
-            "fix": true,
-            "license": {
-                "url": "https://transport.data.gouv.fr/datasets/reseau-de-bus-urbain-horizon",
-                "spdx-identifier": "etalab-2.0"
-            },
-            "x-data-gov-fr-res-id": 83795,
-            "managed-by-script": true,
-            "name": "reseau-de-bus-urbain-horizon--83795",
-            "x-data-gov-fr-res-title": "GTFS 20260105.zip",
-            "x-data-gov-fr-dataset-id": "62bf8ab7cafeeffcada1f85d"
-        },
-        {
             "name": "colibri-horaires-theoriques-et-temps-reel-du-reseau-de-transport-urbain-de-la-ccmp",
             "type": "http",
             "url": "https://www.data.gouv.fr/api/1/datasets/r/dbd0bd0e-933a-4a21-8772-efdf41778e64",
@@ -5375,6 +5389,20 @@
             "x-data-gov-fr-dataset-id": "6346d17f9892afa936386d93"
         },
         {
+            "name": "gtfs-reseau-fablio-lignes-regulieres",
+            "type": "http",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/37ea6578-7f6d-4124-a150-3d450a529d69",
+            "fix": true,
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/gtfs-reseau-fablio-lignes-regulieres",
+                "spdx-identifier": "etalab-2.0"
+            },
+            "x-data-gov-fr-res-id": 83793,
+            "x-data-gov-fr-dataset-id": "634ff31de26a6d1a69f0752c",
+            "x-data-gov-fr-res-title": "GTFS 2026 -Fablio.zip",
+            "managed-by-script": true
+        },
+        {
             "name": "via-bastia-1",
             "type": "http",
             "url": "https://www.data.gouv.fr/api/1/datasets/r/f88dae7d-cf93-4a4b-aa82-9256d5f3cefc",
@@ -5797,7 +5825,7 @@
             "x-data-gov-fr-res-id": 80594,
             "managed-by-script": true,
             "skip": false,
-            "x-data-gov-fr-res-title": "fluo-grand-est-rei-gtfs.zip",
+            "x-data-gov-fr-res-title": "Horaires théoriques du réseau Grand Reims Mobilités (GTFS)",
             "x-data-gov-fr-dataset-id": "63b4c3d200fbf8e5ed9dde9a"
         },
         {
@@ -5885,7 +5913,7 @@
             "x-data-gov-fr-res-id": 80451,
             "managed-by-script": true,
             "skip": false,
-            "x-data-gov-fr-res-title": "fluo-grand-est-chm-gtfs.zip",
+            "x-data-gov-fr-res-title": "Horaires théoriques du réseau TAC (Ardenne Métropole) - GTFS",
             "x-data-gov-fr-dataset-id": "63b4c3d206d317f5caa80dcd"
         },
         {
@@ -5914,7 +5942,7 @@
             "x-data-gov-fr-res-id": 80479,
             "managed-by-script": true,
             "skip": false,
-            "x-data-gov-fr-res-title": "fluo-grand-est-cac-gtfs.zip",
+            "x-data-gov-fr-res-title": "Horaires théoriques du réseau TRACE (Colmar Agglomération) - GTFS",
             "x-data-gov-fr-dataset-id": "63b4c3d206d317f5caa80dce"
         },
         {
@@ -5944,7 +5972,7 @@
             "x-data-gov-fr-res-id": 82388,
             "managed-by-script": true,
             "skip": false,
-            "x-data-gov-fr-res-title": "fluo-grand-est-tmm-gtfs.zip",
+            "x-data-gov-fr-res-title": "Horaires théoriques du réseau T'MM (Moselle et Madon) - GTFS",
             "x-data-gov-fr-dataset-id": "63b4c3d22989785f7e9dde9c"
         },
         {
@@ -5959,7 +5987,7 @@
             "x-data-gov-fr-res-id": 80437,
             "managed-by-script": true,
             "skip": false,
-            "x-data-gov-fr-res-title": "fluo-grand-est-cc3f-gtfs.zip",
+            "x-data-gov-fr-res-title": "Horaires théoriques du réseau Distribus (Saint-Louis Agglomération) - GTFS",
             "x-data-gov-fr-dataset-id": "63b4c3d22989785f7e9dde9d"
         },
         {
@@ -5973,7 +6001,7 @@
             "spec": "gtfs-rt",
             "x-data-gov-fr-res-id": 80783,
             "managed-by-script": true,
-            "x-data-gov-fr-res-title": "Horaires temps réel des lignes du réseau DISTRIBUS",
+            "x-data-gov-fr-res-title": "Horaires temps réel des lignes du réseau Distribus",
             "x-data-gov-fr-dataset-id": "63b4c3d22989785f7e9dde9d"
         },
         {
@@ -6017,7 +6045,7 @@
             "x-data-gov-fr-res-id": 80447,
             "managed-by-script": true,
             "skip": false,
-            "x-data-gov-fr-res-title": "fluo-grand-est-isibus-gtfs.zip",
+            "x-data-gov-fr-res-title": "Horaires théoriques du réseau iSibus (Sarrebourg Moselle Sud) - GTFS",
             "x-data-gov-fr-dataset-id": "63b4c3d255130e7bb19dde9b"
         },
         {
@@ -6032,7 +6060,7 @@
             "x-data-gov-fr-res-id": 80772,
             "managed-by-script": true,
             "skip": false,
-            "x-data-gov-fr-res-title": "fluo-grand-est-tiv-gtfs.zip",
+            "x-data-gov-fr-res-title": "Horaires théoriques du réseau REZO (Grand Verdun) - GTFS",
             "x-data-gov-fr-dataset-id": "63b4c3d255130e7bb19dde9c"
         },
         {
@@ -6105,7 +6133,7 @@
             "x-data-gov-fr-res-id": 80471,
             "managed-by-script": true,
             "skip": false,
-            "x-data-gov-fr-res-title": "fluo-grand-est-smd-gtfs.zip",
+            "x-data-gov-fr-res-title": "Horaires théoriques du réseau TUM (Sainte-Ménehould) - GTFS",
             "x-data-gov-fr-dataset-id": "63b4c3d25a09dd67fc9dde9c"
         },
         {
@@ -6135,7 +6163,7 @@
             "x-data-gov-fr-res-id": 80403,
             "managed-by-script": true,
             "skip": false,
-            "x-data-gov-fr-res-title": "fluo-grand-est-lan-gtfs.zip",
+            "x-data-gov-fr-res-title": "Horaires théoriques du réseau Linggo En Ville (PETR du Pays de Langres) - GTFS",
             "x-data-gov-fr-dataset-id": "63b4c3d25c38a3ee979dde9b"
         },
         {
@@ -6179,7 +6207,7 @@
             "x-data-gov-fr-res-id": 80469,
             "managed-by-script": true,
             "skip": false,
-            "x-data-gov-fr-res-title": "fluo-grand-est-cabus-gtfs.zip",
+            "x-data-gov-fr-res-title": "Horaires théoriques du réseau Cabus (Sarreguemines Confluences) - GTFS",
             "x-data-gov-fr-dataset-id": "63b4c3d25e8da006139dde9a"
         },
         {
@@ -6194,7 +6222,7 @@
             "x-data-gov-fr-res-id": 80475,
             "managed-by-script": true,
             "skip": false,
-            "x-data-gov-fr-res-title": "fluo-grand-est-lesit-gtfs.zip",
+            "x-data-gov-fr-res-title": "Horaires théoriques du réseau LE SIT (Bassin de Pompey) - GTFS",
             "x-data-gov-fr-dataset-id": "63b4c3d25e8da006139dde9b"
         },
         {
@@ -6224,7 +6252,7 @@
             "x-data-gov-fr-res-id": 80477,
             "managed-by-script": true,
             "skip": false,
-            "x-data-gov-fr-res-title": "fluo-grand-est-sdz-gtfs.zip",
+            "x-data-gov-fr-res-title": "Horaires théoriques du réseau Ticéa (Saint-Dizier, Der et Blaise) - GTFS",
             "x-data-gov-fr-dataset-id": "63b4c3d274694a83b49dde9c"
         },
         {
@@ -6254,7 +6282,7 @@
             "x-data-gov-fr-res-id": 80465,
             "managed-by-script": true,
             "skip": false,
-            "x-data-gov-fr-res-title": "fluo-grand-est-lebus-gtfs.zip",
+            "x-data-gov-fr-res-title": "Horaires théoriques du réseau LE BUS (Bassin de Pont-A-Moussin) - GTFS",
             "x-data-gov-fr-dataset-id": "63b4c3d2998fd84635a80dca"
         },
         {
@@ -6341,7 +6369,7 @@
             "x-data-gov-fr-res-id": 80457,
             "managed-by-script": true,
             "skip": false,
-            "x-data-gov-fr-res-title": "fluo-grand-est-cec-gtfs.zip",
+            "x-data-gov-fr-res-title": "Horaires théoriques du réseau SITAC (CA de Chalons-en-Champagne) - GTFS",
             "x-data-gov-fr-dataset-id": "63b4c3d2d7857ab0c49dde9b"
         },
         {
@@ -6370,7 +6398,7 @@
             "x-data-gov-fr-res-id": 80449,
             "managed-by-script": true,
             "skip": false,
-            "x-data-gov-fr-res-title": "fluo-grand-est-haguenau-gtfs.zip",
+            "x-data-gov-fr-res-title": "Horaires théoriques du réseau Ritmo (CA de Haguenau) - GTFS",
             "x-data-gov-fr-dataset-id": "63b4c3d2d7857ab0c49dde9c"
         },
         {
@@ -6400,7 +6428,7 @@
             "x-data-gov-fr-res-id": 80787,
             "managed-by-script": true,
             "skip": false,
-            "x-data-gov-fr-res-title": "fluo-grand-est-sitram-gtfs.zip",
+            "x-data-gov-fr-res-title": "Horaires théoriques du réseau Soléa (Mulhouse Alsace Agglomération) - GTFS",
             "x-data-gov-fr-dataset-id": "63b4c3d300fbf8e5ed9dde9e"
         },
         {
@@ -8258,7 +8286,7 @@
             "x-data-gov-fr-res-id": 81463,
             "managed-by-script": true,
             "skip": false,
-            "x-data-gov-fr-res-title": "Breizhgo 35",
+            "x-data-gov-fr-res-title": "Breizhgo Car 35",
             "x-data-gov-fr-dataset-id": "658626a8a582bbf574c71b48"
         },
         {
@@ -8480,7 +8508,7 @@
             "x-data-gov-fr-res-id": 81486,
             "managed-by-script": true,
             "skip": false,
-            "x-data-gov-fr-res-title": "Breizhgo 35",
+            "x-data-gov-fr-res-title": "Breizhgo Car 35",
             "x-data-gov-fr-dataset-id": "658626aaa5597d726dc71b49"
         },
         {
@@ -12857,6 +12885,20 @@
             "x-data-gov-fr-dataset-id": "691ee3aaed6ff2d1e0057da2"
         },
         {
+            "name": "gtfs-les-2alpes-saison-hiver-2025-2026",
+            "type": "http",
+            "url": "https://transport.data.gouv.fr/resources/83810/download",
+            "fix": true,
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/gtfs-les-2alpes-saison-hiver-2025-2026",
+                "spdx-identifier": "etalab-2.0"
+            },
+            "x-data-gov-fr-res-id": 83810,
+            "x-data-gov-fr-dataset-id": "69206120a3b522554e1a204a",
+            "x-data-gov-fr-res-title": "GTFS.zip",
+            "managed-by-script": true
+        },
+        {
             "name": "estrees-saint-denis",
             "type": "url",
             "url": "https://www.data.gouv.fr/api/1/datasets/r/40084d35-c4f3-41ee-bc39-11366c658d15",
@@ -13311,6 +13353,34 @@
             "name": "velos-et-trottinettes-pony-poitiers",
             "x-data-gov-fr-res-title": "Vélos et trottinettes Pony Poitiers",
             "x-data-gov-fr-dataset-id": "696119fa95113369d7bf552a"
+        },
+        {
+            "name": "donnees-gbfs-service-vls-dauxerre",
+            "type": "url",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/3b7e36ca-a1e3-4fef-9f9f-b4cee20bdde8",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/donnees-gbfs-service-vls-dauxerre",
+                "spdx-identifier": "etalab-2.0"
+            },
+            "x-data-gov-fr-res-id": 83809,
+            "x-data-gov-fr-dataset-id": "6968aa0207ed90e2f66b734f",
+            "x-data-gov-fr-res-title": "Données GBFS – Service de vélos en libre-service de l’Auxerrois",
+            "managed-by-script": true
+        },
+        {
+            "name": "velos-pony-pays-basque",
+            "type": "url",
+            "url": "https://proxy.transport.data.gouv.fr/resource/pony-pays-basque-gbfs/gbfs.json",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/velos-pony-pays-basque",
+                "spdx-identifier": null
+            },
+            "x-data-gov-fr-res-id": 83808,
+            "x-data-gov-fr-dataset-id": "696a1d4c0094e88d1e1ceeea",
+            "x-data-gov-fr-res-title": "Vélos Pony Pays Basque",
+            "managed-by-script": true
         }
     ]
 }
