@@ -1,0 +1,15 @@
+{
+    "maintainers": [
+        {
+            "name": "Marcus Lundblad",
+            "github": "mlundblad"
+        }
+    ],
+    "sources": [
+        {
+            "name": "Nuup-Bussii",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2596"
+        }
+    ]
+}
