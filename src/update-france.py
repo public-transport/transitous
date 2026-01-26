@@ -172,7 +172,7 @@ if __name__ == "__main__":
                 )
 
             def find_static_feed(sources, dataset_id) -> int | None:
-                candidates = [index for (index, entry) in enumerate(sources) if entry.get("x-data-gov-fr-dataset-id") == dataset_id and entry.get("type" == "http")]
+                candidates = [index for (index, entry) in enumerate(sources) if entry.get("x-data-gov-fr-dataset-id") == dataset_id and entry.get("type")  == "http"]
                 if not candidates:
                     return None
                 if len(candidates) > 1:
@@ -215,7 +215,7 @@ if __name__ == "__main__":
                     new.update(source)
 
                     index = find_static_feed(region["sources"], dataset["id"])
-                    if index:
+                    if index is not None:
                         # Name needs to match static feed
                         new["name"] = region["sources"][index]["name"]
 

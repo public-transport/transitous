@@ -1289,6 +1289,20 @@
         {
             "name": "reseau-de-transports-en-commun-de-la-communaute-dagglomeration-de-lauxerrois",
             "type": "url",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/4116e44b-b0e9-4350-ba0a-3a17171b5633",
+            "x-data-gov-fr-res-title": "Extension GTFS-RT : Position des véhicules",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/reseau-de-transports-en-commun-de-la-communaute-dagglomeration-de-lauxerrois",
+                "spdx-identifier": "etalab-2.0"
+            },
+            "spec": "gtfs-rt",
+            "x-data-gov-fr-res-id": 65913,
+            "x-data-gov-fr-dataset-id": "5bec4c588b4c4165a5e3d43d",
+            "managed-by-script": true
+        },
+        {
+            "name": "reseau-de-transports-en-commun-de-la-communaute-dagglomeration-de-lauxerrois",
+            "type": "url",
             "url": "https://www.data.gouv.fr/api/1/datasets/r/6d758a40-049b-413f-8207-c9ea0fef6dbf",
             "x-data-gov-fr-res-title": "Extension GTFS-RT : Alertes de service",
             "license": {
@@ -5796,7 +5810,7 @@
             "x-data-gov-fr-res-id": 80459,
             "managed-by-script": true,
             "skip": false,
-            "x-data-gov-fr-res-title": "fluo-grand-est-citeline-gtfs.zip",
+            "x-data-gov-fr-res-title": "Horaires théoriques du réseau Temo'b (GTFS)",
             "x-data-gov-fr-dataset-id": "63b4c3d106d317f5caa80dca"
         },
         {
@@ -5951,13 +5965,13 @@
             "url": "https://transport.data.gouv.fr/resources/80410/download",
             "fix": true,
             "license": {
-                "url": "https://transport.data.gouv.fr/datasets/fr-200052264-t0006-0000-1",
+                "url": "https://transport.data.gouv.fr/datasets/offre-de-transport-du-reseau-cmonbus-communaute-dagglomeration-de-chaumont",
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 80410,
             "managed-by-script": true,
             "skip": false,
-            "x-data-gov-fr-res-title": "fluo-grand-est-cht-gtfs.zip",
+            "x-data-gov-fr-res-title": "Horaires théoriques du réseau Cmonbus (GTFS)",
             "x-data-gov-fr-dataset-id": "63b4c3d22989785f7e9dde9a"
         },
         {
@@ -6016,7 +6030,7 @@
             "x-data-gov-fr-res-id": 80467,
             "managed-by-script": true,
             "skip": false,
-            "x-data-gov-fr-res-title": "fluo-grand-est-forbus-gtfs.zip",
+            "x-data-gov-fr-res-title": "Horaires théoriques du réseau Forbus (GTFS)",
             "x-data-gov-fr-dataset-id": "63b4c3d255130e7bb19dde9a"
         },
         {
@@ -6089,7 +6103,7 @@
             "x-data-gov-fr-res-id": 82413,
             "managed-by-script": true,
             "skip": false,
-            "x-data-gov-fr-res-title": "fluo-grand-est-transavold-gtfs.zip",
+            "x-data-gov-fr-res-title": "Horaires théoriques du réseau Transavold (GTFS)",
             "x-data-gov-fr-dataset-id": "63b4c3d25a09dd67fc9dde9a"
         },
         {
@@ -8286,7 +8300,7 @@
             "x-data-gov-fr-res-id": 81463,
             "managed-by-script": true,
             "skip": false,
-            "x-data-gov-fr-res-title": "Breizhgo Car 35",
+            "x-data-gov-fr-res-title": "Breizhgo 35",
             "x-data-gov-fr-dataset-id": "658626a8a582bbf574c71b48"
         },
         {
@@ -8508,7 +8522,7 @@
             "x-data-gov-fr-res-id": 81486,
             "managed-by-script": true,
             "skip": false,
-            "x-data-gov-fr-res-title": "Breizhgo Car 35",
+            "x-data-gov-fr-res-title": "Breizhgo 35",
             "x-data-gov-fr-dataset-id": "658626aaa5597d726dc71b49"
         },
         {
