@@ -1489,6 +1489,30 @@
             "name": "WRM-Wrocław",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-wrm~nextbike~poland~wrocław~gbfs"
+        },
+        {
+            "name": "Iława",
+            "type": "http",
+            "spec":"gtfs",
+            "url": "https://api.odt.org.pl/static/media/public_transport_data/gtfs-ILAWA.zip",
+        },
+        {
+            "name": "Iława",
+            "type": "url",
+            "spec":"gtfs-rt",
+            "url": "https://ilawa.epasazer.pl:8446/ilsip/pass/moving_vehicles/1",
+        },
+        {
+            "name": "Bochnia",
+            "type": "http",
+            "spec":"gtfs",
+            "url": "https://api.odt.org.pl/static/media/public_transport_data/RPKBochnia.zip",
+        },
+        {
+            "name": "Wałbrzych",
+            "type": "http",
+            "spec":"gtfs",
+            "url": "https://api.odt.org.pl/static/media/public_transport_data/GTFS-SKA.zip",
         }
     ]
 }
