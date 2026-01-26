@@ -29,9 +29,7 @@
         {
             "name": "CFM",
             "type": "http",
-            "url": "https://owncloud.cesnet.cz/index.php/s/KtAhxFlRkmg7efV/download",
-            "skip": true,
-            "skip-reason": "expired"
+            "url": "https://owncloud.cesnet.cz/index.php/s/KtAhxFlRkmg7efV/download"
         },
         {
             "name": "Ungheni",
