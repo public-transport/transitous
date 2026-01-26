@@ -82,6 +82,23 @@
             }
         },
         {
+            "name": "PKS-Rzeszów",
+            "type": "http",
+            "url": "https://www.mpkrzeszow.pl/gtfs-pks/latest.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
+        },
+        {
+            "name": "PKS-Rzeszów",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://www.mpkrzeszow.pl/gtfs-pks/rt/gtfsrt.pb",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
+        },
+        {
             "name": "Jarosław",
             "type": "http",
             "url": "https://github.com/rozkladnik/gtfs-pwik-jaroslaw/releases/latest/download/gtfs.zip",
