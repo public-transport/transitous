@@ -1501,12 +1501,6 @@
             "fix": true
         },
         {
-            "name": "Iława",
-            "type": "url",
-            "spec":"gtfs-rt",
-            "url": "https://ilawa.epasazer.pl:8446/ilsip/pass/moving_vehicles/1"
-        },
-        {
             "name": "Bochnia",
             "type": "http",
             "spec":"gtfs",
