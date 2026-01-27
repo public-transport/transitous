@@ -11739,6 +11739,20 @@
             "x-data-gov-fr-dataset-id": "67daaa80d0f0a30eef26b90f"
         },
         {
+            "name": "gtfs-reseau-transport-urbain-coqueligo",
+            "type": "http",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/3bfed862-eba7-4480-9fd5-609b90f8a282",
+            "fix": true,
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/gtfs-reseau-transport-urbain-coqueligo",
+                "spdx-identifier": "etalab-2.0"
+            },
+            "x-data-gov-fr-res-id": 83716,
+            "x-data-gov-fr-dataset-id": "67e4099d504ada1f4862a391",
+            "x-data-gov-fr-res-title": "GTFS Nouveau réseau urbain CoqueliGO au 01_12_2025",
+            "managed-by-script": true
+        },
+        {
             "name": "gtfs-transports-a-la-demande-tad-coqueligo",
             "type": "http",
             "url": "https://www.data.gouv.fr/api/1/datasets/r/5e4b3c12-dd7d-4dcf-a761-41024867e56d",
@@ -12908,6 +12922,20 @@
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 83810,
+            "x-data-gov-fr-dataset-id": "69206120a3b522554e1a204a",
+            "x-data-gov-fr-res-title": "GTFS.zip",
+            "managed-by-script": true
+        },
+        {
+            "name": "gtfs-les-2alpes-saison-hiver-2025-2026--83813",
+            "type": "http",
+            "url": "https://transport.data.gouv.fr/resources/83813/download",
+            "fix": true,
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/gtfs-les-2alpes-saison-hiver-2025-2026",
+                "spdx-identifier": "etalab-2.0"
+            },
+            "x-data-gov-fr-res-id": 83813,
             "x-data-gov-fr-dataset-id": "69206120a3b522554e1a204a",
             "x-data-gov-fr-res-title": "GTFS.zip",
             "managed-by-script": true
