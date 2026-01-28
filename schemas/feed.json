@@ -1,0 +1,38 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://transitous.org/schema/feed.json",
+    "title": "Feed",
+    "description": "A feed file for a geographic area",
+    "type": "object",
+    "properties": {
+        "maintainers": {
+            "description": "Array of maintainers for a region",
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "description": "Name of a maintainer",
+                        "type": "string"
+                    },
+                    "github": {
+                        "description": "GitHub username of a maintainer",
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        "sources": {
+            "description": "Array of source feeds for a region",
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+                "type": "object"
+            }
+        }
+    },
+    "required": ["maintainers", "sources"]
+}
