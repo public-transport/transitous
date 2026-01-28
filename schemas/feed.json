@@ -21,7 +21,8 @@
                         "description": "GitHub username of a maintainer",
                         "type": "string"
                     }
-                }
+                },
+                "required": ["name", "github"]
             }
         },
         "sources": {
