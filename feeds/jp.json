@@ -2100,7 +2100,8 @@
         {
             "name": "産交バス",
             "type": "mobility-database",
-            "mdb-id": "jbda-sankobus-sankobus"
+            "mdb-id": "jbda-sankobus-sankobus",
+            "fix": true
         },
         {
             "name": "産交バス",
