@@ -1,6 +1,5 @@
 {
-    "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://transitous.org/schema/feed.json",
+    "$schema": "https://json-schema.org/draft-07/schema",
     "title": "Feed",
     "description": "A feed file for a geographic area",
     "type": "object",
@@ -31,7 +30,19 @@
             "minItems": 1,
             "uniqueItems": true,
             "items": {
-                "type": "object"
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "description": "Name of a feed",
+                        "type": "string"
+                    },
+                    "type": {
+                        "description": "The type of source used for this feed",
+                        "type": "string",
+                        "enum": ["url", "http", "mobility-database", "transitland-atlas"]
+                    }
+                },
+                "required": ["name", "type"]
             }
         }
     },
