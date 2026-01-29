@@ -2638,8 +2638,22 @@
             "x-data-gov-fr-res-id": 83530,
             "managed-by-script": true,
             "skip": false,
-            "x-data-gov-fr-res-title": "GTFS réseau interurbain REMI",
+            "x-data-gov-fr-res-title": "REMI GTFS",
             "x-data-gov-fr-dataset-id": "5e6193359ce2e7207cf4c8f5"
+        },
+        {
+            "name": "remi-offre-theorique-mobilite-reseau-interurbain-regional",
+            "type": "url",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/ddccec19-1f3d-4201-86a7-0d22b40a2d49",
+            "x-data-gov-fr-res-title": "REMI GTFS-RT SERVICE_ALERTS",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/remi-offre-theorique-mobilite-reseau-interurbain-regional",
+                "spdx-identifier": "ODbL-1.0"
+            },
+            "spec": "gtfs-rt",
+            "x-data-gov-fr-res-id": 83814,
+            "x-data-gov-fr-dataset-id": "5e6193359ce2e7207cf4c8f5",
+            "managed-by-script": true
         },
         {
             "name": "arrets-itineraires-et-horaires-theoriques-des-reseaux-de-transport-des-membres-de-jvmalin",
@@ -4385,7 +4399,7 @@
             "spec": "gbfs",
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/gbfs-paris",
-                "spdx-identifier": "ODbL-1.0"
+                "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 75720,
             "managed-by-script": true,
@@ -10212,7 +10226,7 @@
             "x-data-gov-fr-res-id": 83020,
             "managed-by-script": true,
             "skip": false,
-            "x-data-gov-fr-res-title": "urbain-cangt-v6-1-gtfs-2025-04-09-03-34-00.zip",
+            "x-data-gov-fr-res-title": "Urbain-CANGT-V7_v7-3_gtfs_2026-01-27.zip",
             "x-data-gov-fr-dataset-id": "66e0260f3a4a422bee0f8a33"
         },
         {
@@ -11432,7 +11446,7 @@
             "x-data-gov-fr-res-id": 82746,
             "managed-by-script": true,
             "skip": false,
-            "x-data-gov-fr-res-title": "gtfs-24-01-2025-courchevel.zip",
+            "x-data-gov-fr-res-title": "gtfs-27-01-2026-courchevel.zip",
             "x-data-gov-fr-dataset-id": "6793a20138660ccb8785df10"
         },
         {
@@ -13422,6 +13436,90 @@
             "x-data-gov-fr-res-id": 83808,
             "x-data-gov-fr-dataset-id": "696a1d4c0094e88d1e1ceeea",
             "x-data-gov-fr-res-title": "Vélos Pony Pays Basque",
+            "managed-by-script": true
+        },
+        {
+            "name": "gbfs-le-havre-2",
+            "type": "url",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/7fc93bd8-7aa8-4b4f-b97e-d70904aa71e8",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/gbfs-le-havre-2",
+                "spdx-identifier": "etalab-2.0"
+            },
+            "x-data-gov-fr-res-id": 83815,
+            "x-data-gov-fr-dataset-id": "69777ce6d66bfcc7600524c5",
+            "x-data-gov-fr-res-title": "GBFS Le Havre",
+            "managed-by-script": true
+        },
+        {
+            "name": "transport-a-la-demande-flexitus-1",
+            "type": "url",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/dcef6ab8-e6b2-4192-be54-6447b8b3e167",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/transport-a-la-demande-flexitus-1",
+                "spdx-identifier": "etalab-2.0"
+            },
+            "x-data-gov-fr-res-id": 83819,
+            "x-data-gov-fr-dataset-id": "69778e36410e185d9a8c873f",
+            "x-data-gov-fr-res-title": "CYCLOVIS",
+            "managed-by-script": true
+        },
+        {
+            "name": "transport-a-la-demande-flexitus-1",
+            "type": "http",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/6da4b5b4-bed6-424c-9c61-4d0ca951a679",
+            "fix": true,
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/transport-a-la-demande-flexitus-1",
+                "spdx-identifier": "etalab-2.0"
+            },
+            "x-data-gov-fr-res-id": 83820,
+            "x-data-gov-fr-dataset-id": "69778e36410e185d9a8c873f",
+            "x-data-gov-fr-res-title": "FLEXITUS_FLEXITUS-Version-V2_gtfs_2026-01-26_16-54-11.zip",
+            "managed-by-script": true
+        },
+        {
+            "name": "gbfs-marseille",
+            "type": "url",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/570eddad-4135-46ee-b69d-d8c3d8cb8ce3",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/gbfs-marseille",
+                "spdx-identifier": "etalab-2.0"
+            },
+            "x-data-gov-fr-res-id": 83818,
+            "x-data-gov-fr-dataset-id": "697a32257d70ec1afaec3037",
+            "x-data-gov-fr-res-title": "GBFS Marseille",
+            "managed-by-script": true
+        },
+        {
+            "name": "gbfs-lille",
+            "type": "url",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/67e8ad6d-9ad1-4e43-903f-5a60a4009d5a",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/gbfs-lille",
+                "spdx-identifier": "etalab-2.0"
+            },
+            "x-data-gov-fr-res-id": 83816,
+            "x-data-gov-fr-dataset-id": "697a38c71bc7b2ff233f8efa",
+            "x-data-gov-fr-res-title": "GBFS Lille",
+            "managed-by-script": true
+        },
+        {
+            "name": "gbfs-nice",
+            "type": "url",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/bab75d8d-c49c-4dcf-a3e0-702f43e1c004",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/gbfs-nice",
+                "spdx-identifier": "etalab-2.0"
+            },
+            "x-data-gov-fr-res-id": 83817,
+            "x-data-gov-fr-dataset-id": "697a39bc57a9a3f927a1a2cf",
+            "x-data-gov-fr-res-title": "GBFS Nice",
             "managed-by-script": true
         }
     ]
