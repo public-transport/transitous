@@ -13478,7 +13478,9 @@
             "x-data-gov-fr-res-id": 83820,
             "x-data-gov-fr-dataset-id": "69778e36410e185d9a8c873f",
             "x-data-gov-fr-res-title": "FLEXITUS_FLEXITUS-Version-V2_gtfs_2026-01-26_16-54-11.zip",
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": true,
+            "skip-reason": "routes.txt missing"
         },
         {
             "name": "gbfs-marseille",
