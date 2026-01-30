@@ -1589,9 +1589,10 @@
             },
             "x-data-gov-fr-res-id": 82911,
             "managed-by-script": true,
-            "skip": false,
+            "skip": true,
             "x-data-gov-fr-res-title": "gtfs-production.zip",
-            "x-data-gov-fr-dataset-id": "5c642379634f41657e9b5ea4"
+            "x-data-gov-fr-dataset-id": "5c642379634f41657e9b5ea4",
+            "skip-reason": "Feed is expired according to metadata"
         },
         {
             "name": "offre-de-transport-du-reseau-tango-de-nimes-metropole-gtfs-gtfs-rt",
@@ -11777,9 +11778,10 @@
             },
             "x-data-gov-fr-res-id": 82904,
             "managed-by-script": true,
-            "skip": false,
+            "skip": true,
             "x-data-gov-fr-res-title": "CoqueliGO_CoqueliGO-TAD-v3_gtfs_2025-03-26_15-08-21.zip",
-            "x-data-gov-fr-dataset-id": "67e40a9dcf1f7d85d15517b0"
+            "x-data-gov-fr-dataset-id": "67e40a9dcf1f7d85d15517b0",
+            "skip-reason": "Feed is expired according to metadata"
         },
         {
             "name": "vehicules-en-autopartage-1",
@@ -12569,7 +12571,7 @@
             "url": "https://www.data.gouv.fr/api/1/datasets/r/2f510784-2957-48e3-b01c-b0e4f9938da7",
             "fix": true,
             "license": {
-                "url": "https://transport.data.gouv.fr/datasets/gtfs-au-10-decembre-2025",
+                "url": "https://transport.data.gouv.fr/datasets/gtfs-au-29-janvier-2026",
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 83756,
@@ -13285,6 +13287,20 @@
             "x-data-gov-fr-dataset-id": "6943c818433a7943c9834b7b"
         },
         {
+            "name": "transport-scolaire-scoltus",
+            "type": "http",
+            "url": "https://transport.data.gouv.fr/resources/83821/download",
+            "fix": true,
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/transport-scolaire-scoltus",
+                "spdx-identifier": "etalab-2.0"
+            },
+            "x-data-gov-fr-res-id": 83821,
+            "x-data-gov-fr-dataset-id": "69450d57b6fed9f4694294da",
+            "x-data-gov-fr-res-title": "SCOL-TUS_SCOLTUS-V11_gtfs_2025-12-19_09-22-22.zip",
+            "managed-by-script": true
+        },
+        {
             "type": "url",
             "url": "https://proxy.transport.data.gouv.fr/resource/pony-beauvais-gbfs/gbfs.json",
             "spec": "gbfs",
@@ -13454,22 +13470,8 @@
         },
         {
             "name": "transport-a-la-demande-flexitus-1",
-            "type": "url",
-            "url": "https://www.data.gouv.fr/api/1/datasets/r/dcef6ab8-e6b2-4192-be54-6447b8b3e167",
-            "spec": "gbfs",
-            "license": {
-                "url": "https://transport.data.gouv.fr/datasets/transport-a-la-demande-flexitus-1",
-                "spdx-identifier": "etalab-2.0"
-            },
-            "x-data-gov-fr-res-id": 83819,
-            "x-data-gov-fr-dataset-id": "69778e36410e185d9a8c873f",
-            "x-data-gov-fr-res-title": "CYCLOVIS",
-            "managed-by-script": true
-        },
-        {
-            "name": "transport-a-la-demande-flexitus-1",
             "type": "http",
-            "url": "https://www.data.gouv.fr/api/1/datasets/r/6da4b5b4-bed6-424c-9c61-4d0ca951a679",
+            "url": "https://transport.data.gouv.fr/resources/83820/download",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/transport-a-la-demande-flexitus-1",
