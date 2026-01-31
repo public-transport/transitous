@@ -1152,17 +1152,14 @@
         {
             "name": "Metro-Bilbao",
             "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1267",
+            "url": "https://ctb-gtfs.s3.eu-south-2.amazonaws.com/metrobilbao.zip",
             "fix": true,
             "http-options": {
-                "fetch-interval-days": 1,
-                "headers": {
-                    "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
-                }
+                "fetch-interval-days": 1
             },
             "license": {
                 "spdx-identifier": "CC-BY-4.0",
-                "url": "https://data.ctb.eus/en/dataset/horario-metro-bilbao"
+                "url": "https://data.ctb.eus/en/pages/legal-notice"
             }
         },
         {
