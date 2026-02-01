@@ -1606,7 +1606,9 @@
             "x-data-gov-fr-res-id": 80730,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "GTFS-RT Mise à jour des Alertes",
-            "x-data-gov-fr-dataset-id": "5c642379634f41657e9b5ea4"
+            "x-data-gov-fr-dataset-id": "5c642379634f41657e9b5ea4",
+            "skip": true,
+            "skip-reason": "Feed is expired according to metadata"
         },
         {
             "name": "offre-de-transport-du-reseau-tango-de-nimes-metropole-gtfs-gtfs-rt",
@@ -1620,7 +1622,9 @@
             "x-data-gov-fr-res-id": 80731,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "GTFS-RT Mises à jour des trajets en temps réel",
-            "x-data-gov-fr-dataset-id": "5c642379634f41657e9b5ea4"
+            "x-data-gov-fr-dataset-id": "5c642379634f41657e9b5ea4",
+            "skip": true,
+            "skip-reason": "Feed is expired according to metadata"
         },
         {
             "name": "offre-de-transport-du-reseau-tango-de-nimes-metropole-gtfs-gtfs-rt",
@@ -1634,7 +1638,9 @@
             "x-data-gov-fr-res-id": 83382,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "GTFS-RT - Prochains passages en temps réel",
-            "x-data-gov-fr-dataset-id": "5c642379634f41657e9b5ea4"
+            "x-data-gov-fr-dataset-id": "5c642379634f41657e9b5ea4",
+            "skip": true,
+            "skip-reason": "Feed is expired according to metadata"
         },
         {
             "name": "horaires-theoriques-et-temps-reel-gtfs-gtfs-rt-du-reseau-palmbus-cannes-pays-de-lerins",
