@@ -13,127 +13,202 @@
         {
             "name": "viljandimaa",
             "type": "http",
-            "url": "https://eu-gtfs.remix.com/viljandimaa.zip"
+            "url": "https://eu-gtfs.remix.com/viljandimaa.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
         },
         {
             "name": "valgamaa",
             "type": "http",
-            "url": "https://eu-gtfs.remix.com/valgamaa.zip"
+            "url": "https://eu-gtfs.remix.com/valgamaa.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
         },
         {
             "name": "jarvamaa",
             "type": "http",
-            "url": "https://eu-gtfs.remix.com/jarvamaa.zip"
+            "url": "https://eu-gtfs.remix.com/jarvamaa.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
         },
         {
             "name": "harjumaa",
             "type": "http",
-            "url": "https://eu-gtfs.remix.com/harjumaa.zip"
+            "url": "https://eu-gtfs.remix.com/harjumaa.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
         },
         {
             "name": "laane-virumaa",
             "type": "http",
-            "url": "https://eu-gtfs.remix.com/laane_virumaa.zip"
+            "url": "https://eu-gtfs.remix.com/laane_virumaa.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
         },
         {
             "name": "laanemaa",
             "type": "http",
-            "url": "https://eu-gtfs.remix.com/laanemaa.zip"
+            "url": "https://eu-gtfs.remix.com/laanemaa.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
         },
         {
             "name": "raplamaa",
             "type": "http",
-            "url": "https://eu-gtfs.remix.com/raplamaa.zip"
+            "url": "https://eu-gtfs.remix.com/raplamaa.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
         },
         {
             "name": "tartumaa",
             "type": "http",
-            "url": "https://eu-gtfs.remix.com/tartumaa.zip"
+            "url": "https://eu-gtfs.remix.com/tartumaa.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
         },
         {
             "name": "tartu",
             "type": "http",
-            "url": "https://eu-gtfs.remix.com/tartu.zip"
+            "url": "https://eu-gtfs.remix.com/tartu.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
         },
         {
             "name": "saaremaa",
             "type": "http",
-            "url": "https://eu-gtfs.remix.com/saaremaa.zip"
+            "url": "https://eu-gtfs.remix.com/saaremaa.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
         },
         {
             "name": "jogevamaa",
             "type": "http",
-            "url": "https://eu-gtfs.remix.com/jogevamaa.zip"
+            "url": "https://eu-gtfs.remix.com/jogevamaa.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
         },
         {
             "name": "vorumaa",
             "type": "http",
-            "url": "https://eu-gtfs.remix.com/vorumaa.zip"
+            "url": "https://eu-gtfs.remix.com/vorumaa.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
         },
         {
             "name": "polvamaa",
             "type": "http",
-            "url": "https://eu-gtfs.remix.com/polvamaa.zip"
+            "url": "https://eu-gtfs.remix.com/polvamaa.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
         },
         {
             "name": "hiiumaa",
             "type": "http",
-            "url": "https://eu-gtfs.remix.com/hiiumaa.zip"
+            "url": "https://eu-gtfs.remix.com/hiiumaa.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
         },
         {
             "name": "rakvere",
             "type": "http",
-            "url": "https://eu-gtfs.remix.com/rakvere.zip"
+            "url": "https://eu-gtfs.remix.com/rakvere.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
         },
         {
             "name": "ida-viru",
             "type": "http",
-            "url": "https://eu-gtfs.remix.com/ida_viru.zip"
+            "url": "https://eu-gtfs.remix.com/ida_viru.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
         },
         {
             "name": "parnumaa",
             "type": "http",
-            "url": "https://eu-gtfs.remix.com/parnumaa.zip"
+            "url": "https://eu-gtfs.remix.com/parnumaa.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
         },
         {
             "name": "parnu",
             "type": "http",
-            "url": "https://eu-gtfs.remix.com/parnu.zip"
+            "url": "https://eu-gtfs.remix.com/parnu.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
         },
         {
             "name": "narva",
             "type": "http",
-            "url": "https://eu-gtfs.remix.com/narva.zip"
+            "url": "https://eu-gtfs.remix.com/narva.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
         },
         {
             "name": "kohtla-jarve",
             "type": "http",
-            "url": "https://eu-gtfs.remix.com/kohtla_jarve.zip"
+            "url": "https://eu-gtfs.remix.com/kohtla_jarve.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
         },
         {
             "name": "tallinn",
             "type": "http",
-            "url": "https://eu-gtfs.remix.com/tallinn.zip"
+            "url": "https://eu-gtfs.remix.com/tallinn.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
         },
         {
             "name": "kaugliinid",
             "type": "http",
-            "url": "https://eu-gtfs.remix.com/kaugliinid.zip"
+            "url": "https://eu-gtfs.remix.com/kaugliinid.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
         },
         {
             "name": "kaugliinid-rahvusvaheline",
             "type": "http",
-            "url": "https://eu-gtfs.remix.com/kaugliinid_rahvusvaheline.zip"
+            "url": "https://eu-gtfs.remix.com/kaugliinid_rahvusvaheline.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
         },
         {
             "name": "elron",
             "type": "http",
-            "url": "https://eu-gtfs.remix.com/elron.zip"
+            "url": "https://eu-gtfs.remix.com/elron.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
         },
         {
             "name": "tslaevad",
             "type": "http",
-            "url": "https://eu-gtfs.remix.com/tslaevad.zip"
+            "url": "https://eu-gtfs.remix.com/tslaevad.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
         }
     ]
 }
