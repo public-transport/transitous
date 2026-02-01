@@ -15,7 +15,7 @@
             "type": "http",
             "url": "https://eu-gtfs.remix.com/viljandimaa.zip",
             "license": {
-                "spdx-identifier": "CC-BY-4.0"
+                "spdx-identifier": "CC0-1.0"
             }
         },
         {
@@ -23,7 +23,7 @@
             "type": "http",
             "url": "https://eu-gtfs.remix.com/valgamaa.zip",
             "license": {
-                "spdx-identifier": "CC-BY-4.0"
+                "spdx-identifier": "CC0-1.0"
             }
         },
         {
@@ -31,7 +31,7 @@
             "type": "http",
             "url": "https://eu-gtfs.remix.com/jarvamaa.zip",
             "license": {
-                "spdx-identifier": "CC-BY-4.0"
+                "spdx-identifier": "CC0-1.0"
             }
         },
         {
@@ -39,7 +39,7 @@
             "type": "http",
             "url": "https://eu-gtfs.remix.com/harjumaa.zip",
             "license": {
-                "spdx-identifier": "CC-BY-4.0"
+                "spdx-identifier": "CC0-1.0"
             }
         },
         {
@@ -47,7 +47,7 @@
             "type": "http",
             "url": "https://eu-gtfs.remix.com/laane_virumaa.zip",
             "license": {
-                "spdx-identifier": "CC-BY-4.0"
+                "spdx-identifier": "CC0-1.0"
             }
         },
         {
@@ -55,7 +55,7 @@
             "type": "http",
             "url": "https://eu-gtfs.remix.com/laanemaa.zip",
             "license": {
-                "spdx-identifier": "CC-BY-4.0"
+                "spdx-identifier": "CC0-1.0"
             }
         },
         {
@@ -63,7 +63,7 @@
             "type": "http",
             "url": "https://eu-gtfs.remix.com/raplamaa.zip",
             "license": {
-                "spdx-identifier": "CC-BY-4.0"
+                "spdx-identifier": "CC0-1.0"
             }
         },
         {
@@ -71,7 +71,7 @@
             "type": "http",
             "url": "https://eu-gtfs.remix.com/tartumaa.zip",
             "license": {
-                "spdx-identifier": "CC-BY-4.0"
+                "spdx-identifier": "CC0-1.0"
             }
         },
         {
@@ -79,7 +79,7 @@
             "type": "http",
             "url": "https://eu-gtfs.remix.com/tartu.zip",
             "license": {
-                "spdx-identifier": "CC-BY-4.0"
+                "spdx-identifier": "CC0-1.0"
             }
         },
         {
@@ -87,7 +87,7 @@
             "type": "http",
             "url": "https://eu-gtfs.remix.com/saaremaa.zip",
             "license": {
-                "spdx-identifier": "CC-BY-4.0"
+                "spdx-identifier": "CC0-1.0"
             }
         },
         {
@@ -95,7 +95,7 @@
             "type": "http",
             "url": "https://eu-gtfs.remix.com/jogevamaa.zip",
             "license": {
-                "spdx-identifier": "CC-BY-4.0"
+                "spdx-identifier": "CC0-1.0"
             }
         },
         {
@@ -103,7 +103,7 @@
             "type": "http",
             "url": "https://eu-gtfs.remix.com/vorumaa.zip",
             "license": {
-                "spdx-identifier": "CC-BY-4.0"
+                "spdx-identifier": "CC0-1.0"
             }
         },
         {
@@ -111,7 +111,7 @@
             "type": "http",
             "url": "https://eu-gtfs.remix.com/polvamaa.zip",
             "license": {
-                "spdx-identifier": "CC-BY-4.0"
+                "spdx-identifier": "CC0-1.0"
             }
         },
         {
@@ -119,7 +119,7 @@
             "type": "http",
             "url": "https://eu-gtfs.remix.com/hiiumaa.zip",
             "license": {
-                "spdx-identifier": "CC-BY-4.0"
+                "spdx-identifier": "CC0-1.0"
             }
         },
         {
@@ -127,7 +127,7 @@
             "type": "http",
             "url": "https://eu-gtfs.remix.com/rakvere.zip",
             "license": {
-                "spdx-identifier": "CC-BY-4.0"
+                "spdx-identifier": "CC0-1.0"
             }
         },
         {
@@ -135,7 +135,7 @@
             "type": "http",
             "url": "https://eu-gtfs.remix.com/ida_viru.zip",
             "license": {
-                "spdx-identifier": "CC-BY-4.0"
+                "spdx-identifier": "CC0-1.0"
             }
         },
         {
@@ -143,7 +143,7 @@
             "type": "http",
             "url": "https://eu-gtfs.remix.com/parnumaa.zip",
             "license": {
-                "spdx-identifier": "CC-BY-4.0"
+                "spdx-identifier": "CC0-1.0"
             }
         },
         {
@@ -151,7 +151,7 @@
             "type": "http",
             "url": "https://eu-gtfs.remix.com/parnu.zip",
             "license": {
-                "spdx-identifier": "CC-BY-4.0"
+                "spdx-identifier": "CC0-1.0"
             }
         },
         {
@@ -159,7 +159,7 @@
             "type": "http",
             "url": "https://eu-gtfs.remix.com/narva.zip",
             "license": {
-                "spdx-identifier": "CC-BY-4.0"
+                "spdx-identifier": "CC0-1.0"
             }
         },
         {
@@ -167,7 +167,7 @@
             "type": "http",
             "url": "https://eu-gtfs.remix.com/kohtla_jarve.zip",
             "license": {
-                "spdx-identifier": "CC-BY-4.0"
+                "spdx-identifier": "CC0-1.0"
             }
         },
         {
@@ -175,7 +175,7 @@
             "type": "http",
             "url": "https://eu-gtfs.remix.com/tallinn.zip",
             "license": {
-                "spdx-identifier": "CC-BY-4.0"
+                "spdx-identifier": "CC0-1.0"
             }
         },
         {
@@ -183,7 +183,7 @@
             "type": "http",
             "url": "https://eu-gtfs.remix.com/kaugliinid.zip",
             "license": {
-                "spdx-identifier": "CC-BY-4.0"
+                "spdx-identifier": "CC0-1.0"
             }
         },
         {
@@ -191,7 +191,7 @@
             "type": "http",
             "url": "https://eu-gtfs.remix.com/kaugliinid_rahvusvaheline.zip",
             "license": {
-                "spdx-identifier": "CC-BY-4.0"
+                "spdx-identifier": "CC0-1.0"
             }
         },
         {
@@ -199,7 +199,7 @@
             "type": "http",
             "url": "https://eu-gtfs.remix.com/elron.zip",
             "license": {
-                "spdx-identifier": "CC-BY-4.0"
+                "spdx-identifier": "CC0-1.0"
             }
         },
         {
@@ -207,7 +207,7 @@
             "type": "http",
             "url": "https://eu-gtfs.remix.com/tslaevad.zip",
             "license": {
-                "spdx-identifier": "CC-BY-4.0"
+                "spdx-identifier": "CC0-1.0"
             }
         }
     ]
