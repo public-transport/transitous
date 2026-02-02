@@ -61,7 +61,7 @@
             "name": "IDS-JMK",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://content.idsjmk.cz/kestazeni/gtfsReal.dat"
+            "url": "https://owncloud.cesnet.cz/index.php/s/DkvuaInMj1JsfB2/download"
         },
         {
             "name": "IDS-JMK",
@@ -107,7 +107,7 @@
             "name": "IDZK",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://owncloud.cesnet.cz/index.php/s/249lP7QKA8CR2PY/download"
+            "url": "https://owncloud.cesnet.cz/index.php/s/pGLPGTx6ltA546E/download"
         }
     ]
 }
