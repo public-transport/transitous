@@ -495,7 +495,7 @@
             "name": "PKS-Kalisz",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://pks.kalisz.pl/wp-content/uploads/2025/07/PKS-20250528.zip",
+            "url": "https://gtfs.kasznia.net/static/kalisz-pks.zip",
             "license": {
                 "spdx-identifier": "CC0-1.0"
             }
