@@ -1506,6 +1506,35 @@
             "name": "WRM-Wrocław",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-wrm~nextbike~poland~wrocław~gbfs"
+        },
+        {
+            "name": "Iława",
+            "type": "http",
+            "spec":"gtfs",
+            "url": "https://api.odt.org.pl/static/media/public_transport_data/gtfs-ILAWA.zip",
+            "license":{
+                "spdx-identifier": "MIT"
+            },
+            "fix": true
+        },
+        {
+            "name": "Bochnia",
+            "type": "http",
+            "spec":"gtfs",
+            "url": "https://owncloud.cesnet.cz/index.php/s/iZamXZfQIydo965/download",
+            "license":{
+                "spdx-identifier": "MIT"
+            },
+            "fix": true
+        },
+        {
+            "name": "Wałbrzych",
+            "type": "http",
+            "spec":"gtfs",
+            "url": "https://api.odt.org.pl/static/media/public_transport_data/GTFS-SKA.zip",
+            "license":{
+                "spdx-identifier": "MIT"
+            }
         }
     ]
 }
