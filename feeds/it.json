@@ -610,6 +610,11 @@
             "name": "Veneto-Venezia-Ferries",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u20f-actvspa"
+        },
+        {
+            "name": "Viterbo-Cotral",
+            "type": "http",
+            "url": "https://travel.mob.cotralspa.it:4443/GTFS/GTFS_COTRAL.zip"
         }
     ]
 }
