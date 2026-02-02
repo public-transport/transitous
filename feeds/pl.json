@@ -1504,7 +1504,7 @@
             "name": "Bochnia",
             "type": "http",
             "spec":"gtfs",
-            "url": "https://api.odt.org.pl/static/media/public_transport_data/RPKBochnia.zip",
+            "url": "https://owncloud.cesnet.cz/index.php/s/iZamXZfQIydo965/download",
             "license":{
                 "spdx-identifier": "MIT"
             },
