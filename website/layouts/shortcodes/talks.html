@@ -1,0 +1,26 @@
+<!--
+SPDX-FileCopyrightText: 2025 Volker Krause <vkrause@kde.org>
+SPDX-License-Identifier: AGPL-3.0-or-later
+-->
+
+{{ $lastYear := "" }}
+
+{{ range $talk := $.Site.Data.talks }}
+    {{ $year := (strings.Substr $talk.time 0 4) }}
+    {{ if ne $year $lastYear }}
+        {{ if ne $lastYear "" }}
+            </ul>
+        {{ end }}
+        <h3>{{ $year }}</h3>
+        <ul>
+        {{ $lastYear = $year }}
+    {{ end }}
+    <li>
+        {{ if or (eq .language "en") (not .language) }}🇬🇧{{ end }}
+        {{ if eq .language "de" }}🇩🇪{{ end }}
+        <a target="_blank" href="{{ .link }}">{{ .title }} — {{ .eventName }}<i style="white-space: nowrap;" class="bi bi-box-arrow-right m-2"></i></a>
+    </li>
+{{ end }}
+{{ if ne $lastYear "" }}
+    </ul>
+{{ end }}
