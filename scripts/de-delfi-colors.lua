@@ -67,6 +67,11 @@ local colors = {
         ["RE9"] = { color = 0x006da7, text_color = 0xffffff },
         ["RE96"] = { color = 0xf9b000, text_color = 0xffffff },
     },
+    ["Astel SV-Zgorzelec"] = {
+        ["3"] = { color = 0xf48221, text_color = 0xffffff },
+        ["4"] = { color = 0x56aa47, text_color = 0xffffff },
+        ["5"] = { color = 0x006cb8, text_color = 0xffffff },
+    },
     ["BOGESTRA City-Express"] = {
         ["306"] = { color = 0xf0404c, text_color = 0xffffff },
         ["316"] = { color = 0xe08417, text_color = 0xffffff },
@@ -1019,7 +1024,7 @@ local colors = {
         ["RE34"] = { color = 0x8c467d, text_color = 0xffffff },
         ["RE41"] = { color = 0x5844a4, text_color = 0xffffff },
         ["RE42"] = { color = 0xd9bf13, text_color = 0xffffff },
-        ["RE49"] = { color = 0xc4836b, text_color = 0xffffff },
+        ["RE49"] = { color = 0xfdc210, text_color = 0x000000 },
         ["RE57"] = { color = 0x2e6da6, text_color = 0xffffff },
         ["RE8"] = { color = 0x006bbb, text_color = 0xffffff },
         ["RE9"] = { color = 0x401446, text_color = 0xffffff },
@@ -1033,8 +1038,8 @@ local colors = {
         ["S4"] = { color = 0xf5821f, text_color = 0xffffff },
         ["S5"] = { color = 0x80c342, text_color = 0xffffff },
         ["S6"] = { color = 0xe21d3c, text_color = 0xffffff },
-        ["S68"] = { color = 0x00bfe8, text_color = 0xffffff },
-        ["S8"] = { color = 0xb23815, text_color = 0xffffff },
+        ["S68"] = { color = 0xf69324, text_color = 0xffffff },
+        ["S8"] = { color = 0x397325, text_color = 0xffffff },
         ["S9"] = { color = 0xc6168d, text_color = 0xffffff },
     },
     ["DB Regio AG Nord"] = {
@@ -1125,6 +1130,7 @@ local colors = {
         ["RE57"] = { color = 0x992e00, text_color = 0xffffff },
         ["RE7"] = { color = 0x992e00, text_color = 0xffffff },
         ["S1"] = { color = 0x4f9551, text_color = 0xffffff },
+        ["S11"] = { color = 0x309f98, text_color = 0xffffff },
         ["S2"] = { color = 0xf58220, text_color = 0xffffff },
         ["S3"] = { color = 0x00b3ef, text_color = 0xffffff },
         ["S30"] = { color = 0xe1001e, text_color = 0xffffff },
@@ -1740,6 +1746,17 @@ local colors = {
         ["R27"] = { color = 0x2c3192, text_color = 0xffffff },
         ["T27"] = { color = 0x52a277, text_color = 0xffffff },
     },
+    ["Görlitzer Verkehrsbetriebe"] = {
+        ["1"] = { color = 0xec1f25, text_color = 0xffffff },
+        ["2"] = { color = 0x008346, text_color = 0xffffff },
+        ["A"] = { color = 0xed569f, text_color = 0xffffff },
+        ["B"] = { color = 0xfcb915, text_color = 0xffffff },
+        ["C"] = { color = 0xca8c67, text_color = 0xffffff },
+        ["D"] = { color = 0x882179, text_color = 0xffffff },
+        ["E"] = { color = 0x1ec4f4, text_color = 0xffffff },
+        ["F"] = { color = 0x6ebf45, text_color = 0xffffff },
+        ["N"] = { color = 0x00a0e4, text_color = 0xffffff },
+    },
     ["Göttinger Verkehrsbetriebe (GöVB)"] = {
         ["11"] = { color = 0xf49800, text_color = 0xffffff },
         ["12"] = { color = 0xf49800, text_color = 0xffffff },
@@ -2034,6 +2051,13 @@ local colors = {
         ["RT1"] = { color = 0xe30513, text_color = 0xffffff },
         ["RT4"] = { color = 0xe30513, text_color = 0xffffff },
         ["RT5"] = { color = 0xe30513, text_color = 0xffffff },
+    },
+    ["KVG-Bus"] = {
+        ["1"] = { color = 0xd41217, text_color = 0xffffff },
+        ["2"] = { color = 0x6eaa27, text_color = 0xffffff },
+        ["3"] = { color = 0x05498b, text_color = 0xffffff },
+        ["5"] = { color = 0xd41217, text_color = 0xffffff },
+        ["6"] = { color = 0x05498b, text_color = 0xffffff },
     },
     ["KVIPVH"] = {
         ["X66"] = { color = 0x6780bf, text_color = 0xffffff },
@@ -2903,12 +2927,14 @@ local colors = {
     },
     ["National Express"] = {
         ["RB48"] = { color = 0x7a7c80, text_color = 0xffffff },
+        ["RB48X"] = { color = 0x68ab44, text_color = 0xffffff },
         ["RE1"] = { color = 0xff2d16, text_color = 0xffffff },
         ["RE11"] = { color = 0x5accc2, text_color = 0xffffff },
         ["RE4"] = { color = 0xe88f24, text_color = 0xffffff },
         ["RE5"] = { color = 0x0182ba, text_color = 0xffffff },
         ["RE6"] = { color = 0x9e2a96, text_color = 0xffffff },
         ["RE7"] = { color = 0x052e69, text_color = 0xffffff },
+        ["RE7X"] = { color = 0xf69324, text_color = 0xffffff },
     },
     ["Nebenbahn Vaihingen-Enzweihingen"] = {
         ["RE4"] = { color = 0xa05a2c, text_color = 0xffffff },
@@ -2940,6 +2966,9 @@ local colors = {
     ["Norddeutsche Eisenbahn Gesellschaft"] = {
         ["RB65"] = { color = 0xdedd00, text_color = 0x000000 },
         ["RB66"] = { color = 0x798e0e, text_color = 0xffffff },
+    },
+    ["OBB-Beck"] = {
+        ["24"] = { color = 0xd41217, text_color = 0xffffff },
     },
     ["ODEG Ostdeutsche Eisenbahn GmbH"] = {
         ["RB10"] = { color = 0x5cb445, text_color = 0xffffff },
@@ -2999,6 +3028,9 @@ local colors = {
     ["Omnibus Dannenmann GmbH"] = {
         ["266"] = { color = 0x0994dc, text_color = 0xffffff },
         ["268"] = { color = 0xf47216, text_color = 0xffffff },
+    },
+    ["Omnibus Verkehr Oberlausitz"] = {
+        ["8"] = { color = 0xd41217, text_color = 0xffffff },
     },
     ["Omnibusbetrieb Winzenhöler GmbH + Co. KG"] = {
         ["X69"] = { color = 0xe7007a, text_color = 0xffffff },
@@ -3317,9 +3349,22 @@ local colors = {
         ["291"] = { color = 0xf18d6d, text_color = 0xffffff },
         ["797"] = { color = 0xc3635c, text_color = 0xffffff },
     },
+    ["RBO-Bus"] = {
+        ["11"] = { color = 0x05498b, text_color = 0xffffff },
+        ["12"] = { color = 0xef7c00, text_color = 0xffffff },
+        ["13"] = { color = 0x76b72a, text_color = 0xffffff },
+        ["14"] = { color = 0x00a3e5, text_color = 0xffffff },
+        ["15"] = { color = 0xd41116, text_color = 0xffffff },
+        ["16"] = { color = 0x792c86, text_color = 0xffffff },
+    },
+    ["RBO-Busverkehr"] = {
+        ["21"] = { color = 0xec1d35, text_color = 0xffffff },
+        ["22"] = { color = 0x00acdd, text_color = 0xffffff },
+        ["23"] = { color = 0x5a9230, text_color = 0xffffff },
+    },
     ["REGIOBAHN"] = {
         ["RE47"] = { color = 0x66cdec, text_color = 0xffffff },
-        ["S28"] = { color = 0x4a0b4d, text_color = 0xffffff },
+        ["S28"] = { color = 0x00a89c, text_color = 0xffffff },
     },
     ["RNV HD-MA-Weinheim (Strab)"] = {
         ["RNV1"] = { color = 0xf39b9a, text_color = 0xffffff },
@@ -3949,7 +3994,7 @@ local colors = {
         ["RE10"] = { color = 0xe66caf, text_color = 0xffffff },
         ["RE14"] = { color = 0x003328, text_color = 0xffffff },
         ["RE44"] = { color = 0x6294b0, text_color = 0xffffff },
-        ["S7"] = { color = 0x00afb5, text_color = 0xffffff },
+        ["S7"] = { color = 0xbc6b28, text_color = 0xffffff },
     },
     ["Rheinbahn Bus"] = {
         ["721"] = { color = 0xf1db68, text_color = 0x000000 },
@@ -4649,7 +4694,6 @@ local colors = {
         ["9"] = { color = 0x847258, text_color = 0xffffff },
     },
     ["Stadtbahn"] = {
-        ["20"] = { color = 0xffb530, text_color = 0x24629d },
         ["U1"] = { color = 0xd39d70, text_color = 0x000000 },
         ["U11"] = { color = 0x9b9c9f, text_color = 0xffffff },
         ["U12"] = { color = 0x80c6ea, text_color = 0x000000 },
@@ -5265,6 +5309,13 @@ local colors = {
         ["4"] = { color = 0xf033a3, text_color = 0xffffff },
         ["5"] = { color = 0x0994ce, text_color = 0xffffff },
     },
+    ["VGH Busverkehr"] = {
+        ["1"] = { color = 0xec1d35, text_color = 0xffffff },
+        ["2"] = { color = 0x5a9230, text_color = 0xffffff },
+        ["3"] = { color = 0x0073bd, text_color = 0xffffff },
+        ["4"] = { color = 0xf9aa1b, text_color = 0xffffff },
+        ["5"] = { color = 0x7bc243, text_color = 0xffffff },
+    },
     ["VHH Bus"] = {
         ["1"] = { color = 0xbcd25d, text_color = 0xffffff },
         ["15"] = { color = 0x4bbf9d, text_color = 0xffffff },
@@ -5728,6 +5779,7 @@ local colors = {
     },
     ["Zahnrad-/Seilbahn"] = {
         ["10"] = { color = 0xffb530, text_color = 0x24629d },
+        ["20"] = { color = 0xffb530, text_color = 0x24629d },
     },
     ["Zarth GmbH2"] = {
         ["401"] = { color = 0xffcf7b, text_color = 0xffffff },
@@ -5780,10 +5832,22 @@ local colors = {
         ["RE23"] = { color = 0x006666, text_color = 0xffffff },
         ["RE25"] = { color = 0x006666, text_color = 0xffffff },
     },
+    ["deu.mobil GmbH"] = {
+        ["RB17"] = { color = 0x59ac29, text_color = 0xffffff },
+        ["RB3"] = { color = 0xe00984, text_color = 0xffffff },
+        ["RB51"] = { color = 0xb98dc6, text_color = 0xffffff },
+        ["RE18"] = { color = 0x2b6e33, text_color = 0xffffff },
+        ["RE3"] = { color = 0xea1e26, text_color = 0xffffff },
+        ["RE50"] = { color = 0x4d1d74, text_color = 0xffffff },
+        ["S3"] = { color = 0x4a8e21, text_color = 0xffffff },
+    },
     ["erixx"] = {
         ["RB76"] = { color = 0xffdc00, text_color = 0x000000 },
         ["RB84"] = { color = 0xe4afd2, text_color = 0x000000 },
         ["RE83"] = { color = 0x2d53a0, text_color = 0xffffff },
+    },
+    ["go.on Gesellschaft für Bus- und Schienenverkehr mbH"] = {
+        ["RE22"] = { color = 0xf68617, text_color = 0xffffff },
     },
     ["metronom"] = {
         ["RB31"] = { color = 0x7f257b, text_color = 0xffffff },
