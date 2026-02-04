@@ -5,7 +5,7 @@
 
 proxy_cache_path /var/cache/nginx/feed-proxy max_size=10g keys_zone=feed-proxy:10m inactive=1h;
 
-limit_req_zone $binary_remote_addr zone=feed-proxy-quota:10m rate=3000r/m;
+limit_req_zone $binary_remote_addr zone=feed-proxy-quota:10m rate=10000r/m;
 limit_req_status 429;
 
 
@@ -26,6 +26,7 @@ server {
     proxy_pass_header Server;
     proxy_set_header User-Agent {{ feed_proxy_host }};
     add_header X-Cache $upstream_cache_status;
+    add_header Link '<https://transitous.org/sources/>; rel="license"';
 
     proxy_cache            feed-proxy;
     proxy_cache_key   "$proxy_host$request_uri";
@@ -34,14 +35,15 @@ server {
     proxy_ignore_headers X-Accel-Expires;
     proxy_ignore_headers Expires;
     proxy_ignore_headers Cache-Control;
+    proxy_http_version 1.1;
     proxy_intercept_errors on;
     error_page 301 302 307 = @handle_redirects;
     proxy_cache_valid      200 206 40s;
-    proxy_cache_valid      404 10s;
+    proxy_cache_valid      404 300s;
     proxy_cache_use_stale  error timeout invalid_header updating
                             http_500 http_502 http_503 http_504 http_429;
 
-    limit_req zone=feed-proxy-quota burst=5000 nodelay;
+    limit_req zone=feed-proxy-quota burst=10000 nodelay;
 
     {% for item in feed_vars | dict2items %}   
         location "/feed/{{item.key}}" {
@@ -58,9 +60,15 @@ server {
 
     location @handle_redirects {
        set $original_uri "$proxy_host$request_uri";
-       set $orig_loc $upstream_http_location;
-
-       proxy_pass $orig_loc;
+       set $original_host "$proxy_host";
+       set $orig_loc "$upstream_http_location";
+       if ($orig_loc ~* "://") {
+         proxy_pass $orig_loc;
+       }
+       # handle relative redirect
+       if ($orig_loc !~* "://") {
+         proxy_pass $scheme://$original_host$orig_loc;
+       }  
        proxy_cache       feed-proxy;
        proxy_cache_key $original_uri;
        proxy_cache_valid 200 206 40s;
@@ -80,6 +88,7 @@ server {
     proxy_pass_header Server;
     proxy_set_header User-Agent {{ feed_proxy_host }};
     add_header X-Cache $upstream_cache_status;
+    add_header Link '<https://transitous.org/sources/>; rel="license"';
 
     proxy_cache            feed-proxy;
     proxy_cache_key   "$proxy_host$request_uri";
@@ -88,14 +97,15 @@ server {
     proxy_ignore_headers X-Accel-Expires;
     proxy_ignore_headers Expires;
     proxy_ignore_headers Cache-Control;
+    proxy_http_version 1.1;
     proxy_intercept_errors on;
     error_page 301 302 307 = @handle_redirects;
     proxy_cache_valid      200 206 40s;
-    proxy_cache_valid      404 10s;
+    proxy_cache_valid      404 300s;
     proxy_cache_use_stale  error timeout invalid_header updating
                             http_500 http_502 http_503 http_504 http_429;
 
-    limit_req zone=feed-proxy-quota burst=5000 nodelay;
+    limit_req zone=feed-proxy-quota burst=10000 nodelay;
 
     {% for item in feed_vars | dict2items %}   
         location "/feed/{{item.key}}" {
@@ -112,9 +122,15 @@ server {
     
     location @handle_redirects {
        set $original_uri "$proxy_host$request_uri";
-       set $orig_loc $upstream_http_location;
-
-       proxy_pass $orig_loc;
+       set $original_host "$proxy_host";
+       set $orig_loc "$upstream_http_location";
+       if ($orig_loc ~* "://") {
+         proxy_pass $orig_loc;
+       }
+       # handle relative redirect
+       if ($orig_loc !~* "://") {
+         proxy_pass $scheme://$original_host$orig_loc;
+       }
        proxy_cache       feed-proxy;
        proxy_cache_key $original_uri;
        proxy_cache_valid 200 206 40s;
@@ -137,6 +153,7 @@ server {
     proxy_pass_header Server;
     proxy_set_header User-Agent {{ feed_proxy_host }};
     add_header X-Cache $upstream_cache_status;
+    add_header Link '<https://transitous.org/sources/>; rel="license"';
 
     proxy_cache            feed-proxy;
     proxy_buffering on;
@@ -144,12 +161,13 @@ server {
     proxy_ignore_headers X-Accel-Expires;
     proxy_ignore_headers Expires;
     proxy_ignore_headers Cache-Control;
+    proxy_http_version 1.1;
     proxy_cache_valid      200 302 80s;
-    proxy_cache_valid      404 10s;
+    proxy_cache_valid      404 300s;
     proxy_cache_use_stale  error timeout invalid_header updating
                             http_500 http_502 http_503 http_504 http_429;
 
-    limit_req zone=feed-proxy-quota burst=5000 nodelay;
+    limit_req zone=feed-proxy-quota burst=10000 nodelay;
 
     location / {
         set $feed_upstream "{{ item.value.url | urlsplit('scheme') }}://{{ item.value.url | urlsplit('hostname') }}";
@@ -176,6 +194,7 @@ server {
     proxy_pass_header Server;
     proxy_set_header User-Agent {{ feed_proxy_host }};
     add_header X-Cache $upstream_cache_status;
+    add_header Link '<https://transitous.org/sources/>; rel="license"';
 
     proxy_cache            feed-proxy;
     proxy_buffering on;
@@ -183,12 +202,13 @@ server {
     proxy_ignore_headers X-Accel-Expires;
     proxy_ignore_headers Expires;
     proxy_ignore_headers Cache-Control;
+    proxy_http_version 1.1;
     proxy_cache_valid      200 302 80s;
-    proxy_cache_valid      404 10s;
+    proxy_cache_valid      404 300s;
     proxy_cache_use_stale  error timeout invalid_header updating
                             http_500 http_502 http_503 http_504 http_429;
 
-    limit_req zone=feed-proxy-quota burst=5000 nodelay;
+    limit_req zone=feed-proxy-quota burst=10000 nodelay;
 
     location / {
         set $feed_upstream "{{ item.value.url | urlsplit('scheme') }}://{{ item.value.url | urlsplit('hostname') }}";
