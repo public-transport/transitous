@@ -50,7 +50,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-SA-4.0",
                 "url": "https://germany.motis-project.org/LICENSE.txt"
-            }
+            },
+            "use-feed-proxy": false
         },
         {
             "name": "DELFI",
@@ -60,7 +61,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0",
                 "url": "http://[2a00:12d8:700e:0:9a12:3eb4:e927:3d9a]/feed/LICENSE.txt"
-            }
+            },
+            "use-feed-proxy": false
         },
         {
             "name": "VBB",
