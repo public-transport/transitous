@@ -35,7 +35,8 @@
                 "EUROSTAR",
                 "Bremer Straßenbahn AG",
                 "Verkehrsgemeinschaft Osnabrück",
-                "Stadtwerke Landshut"
+                "Stadtwerke Landshut",
+                "PKP Intercity"
             ],
             "http-options": {
                 "fetch-interval-days": 2
