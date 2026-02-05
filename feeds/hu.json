@@ -115,12 +115,6 @@
             "url": "https://gtfs.menetbrand.com/download/varpalota"
         },
         {
-            "name": "Weekendbus",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u2mw-weekendbus",
-            "fix": true
-        },
-        {
             "name": "Kecskemét",
             "type": "http",
             "url": "https://timetable.keko.hu/Kecskemet_GTFS.zip",
