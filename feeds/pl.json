@@ -1517,7 +1517,9 @@
             "license":{
                 "spdx-identifier": "MIT"
             },
-            "fix": true
+            "fix": true,
+            "skip": true,
+            "skip-reason": "timetable data is wrong"
         },
         {
             "name": "Bochnia",
