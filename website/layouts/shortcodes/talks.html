@@ -7,6 +7,10 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 
 {{ range $talk := $.Site.Data.talks }}
     {{ $year := (strings.Substr $talk.time 0 4) }}
+    {{ $talkTime := time.AsTime $talk.time }}
+    {{ if lt (time.Now) $talkTime }}
+        {{ $year = "Upcoming" }}
+    {{ end }}
     {{ if ne $year $lastYear }}
         {{ if ne $lastYear "" }}
             </ul>
