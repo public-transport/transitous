@@ -7,6 +7,13 @@
     ],
     "sources": [
         {
+            "name": "trenitalia",
+            "type": "http",
+            "url": "https://public-transport.github.io/transitous-trenitalia-preprocessor/trenitalia-netex.zip",
+            "spec": "netex",
+            "script": "it-trenitalia.lua"
+        },
+        {
             "name": "Calabria-CORE",
             "type": "mobility-database",
             "mdb-id": "mdb-2668",
