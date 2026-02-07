@@ -412,6 +412,9 @@ class Fetcher:
 
         os.rename(temp_file, output_path)
 
+        ts = input_path.stat().st_mtime
+        os.utime(output_path, (ts, ts))
+
     def fetch(self, metadata: Path) -> int:
         region = Region(json.load(open(metadata, "r")))
         metadata_filename = metadata.name
@@ -466,7 +469,8 @@ class Fetcher:
                 continue
 
             # Nothing new was downloaded, and data is already processed
-            if not new_data and output_path.exists():
+            if not new_data and output_path.exists() \
+                    and download_path.stat().st_mtime <= output_path.stat().st_mtime:
                 continue
 
             # Something new was downloaded or the data was previously not processed
