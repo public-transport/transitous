@@ -14,31 +14,29 @@
         },
         {
             "name": "vilnius",
-            "type": "http",
-            "url": "https://stops.lt/vilnius/vilnius/gtfs.zip",
-            "fix": true
+            "type": "mobility-database",
+            "fix": true,
+            "mdb-id": "mdb-1044"
         },
         {
             "name": "vilnius",
-            "type": "url",
-            "spec": "gtfs-rt",
-            "url": "https://stops.lt/vilnius/trip_updates.pb"
+            "type": "mobility-database",
+            "mdb-id": "mdb-2382"
         },
         {
             "name": "vilnius",
-            "type": "url",
-            "spec": "gtfs-rt",
-            "url": "https://www.stops.lt/vilnius/service_alerts.pb"
+            "type": "mobility-database",
+            "mdb-id": "mdb-2384"
         },
         {
             "name": "kaunas",
-            "type": "http",
-            "url": "https://stops.lt/kaunas/kaunas/gtfs.zip"
+            "type": "mobility-database",
+            "mdb-id": "mdb-1041"
         },
         {
             "name": "panevezys",
-            "type": "http",
-            "url": "https://stops.lt/panevezys/panevezys/gtfs.zip"
+            "type": "mobility-database",
+            "mdb-id": "mdb-1043"
         },
         {
             "name": "panevezys",
@@ -48,9 +46,9 @@
         },
         {
             "name": "klaipeda",
-            "type": "http",
-            "url": "https://stops.lt/klaipeda/klaipeda/gtfs.zip",
-            "fix": true
+            "type": "mobility-database",
+            "fix": true,
+            "mdb-id": "mdb-1042"
         },
         {
             "name": "klaipeda",
@@ -66,18 +64,18 @@
         },
         {
             "name": "druskininkai",
-            "type": "http",
-            "url": "https://stops.lt/druskininkai/druskininkai/gtfs.zip"
+            "type": "mobility-database",
+            "mdb-id": "mdb-1040"
         },
         {
             "name": "alytus",
-            "type": "http",
-            "url": "https://stops.lt/alytus/alytus/gtfs.zip"
+            "type": "mobility-database",
+            "mdb-id": "mdb-1833"
         },
         {
             "name": "siauliai",
-            "type": "http",
-            "url": "https://stops.lt/siauliai/siauliai/gtfs.zip"
+            "type": "mobility-database",
+            "mdb-id": "mdb-1834"
         },
         {
             "name": "taurage",
@@ -99,8 +97,8 @@
         },
         {
             "name": "LTG-Link",
-            "type": "http",
-            "url": "https://jbb.ghsq.de/gtfs/lt-ltglink.gtfs.zip"
+            "type": "mobility-database",
+            "mdb-id": "mdb-2991"
         }
     ]
 }
