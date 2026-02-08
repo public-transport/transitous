@@ -82,6 +82,23 @@
             }
         },
         {
+            "name": "PKS-Rzeszów",
+            "type": "http",
+            "url": "https://www.mpkrzeszow.pl/gtfs-pks/latest.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
+        },
+        {
+            "name": "PKS-Rzeszów",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://www.mpkrzeszow.pl/gtfs-pks/rt/gtfsrt.pb",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
+        },
+        {
             "name": "Jarosław",
             "type": "http",
             "url": "https://github.com/rozkladnik/gtfs-pwik-jaroslaw/releases/latest/download/gtfs.zip",
@@ -132,6 +149,15 @@
             "name": "Bydgoszcz",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u3ky-bydgoszcz"
+        },
+        {
+            "name": "Bydgoszcz",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://next.zbiorkom.live/api6-open/bydgoszcz/gtfsRealtime/default/tripUpdates",
+            "license": {
+                "spdx-identifier": "MIT"
+            }
         },
         {
             "name": "Toruń",
@@ -478,7 +504,7 @@
             "name": "PKS-Kalisz",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://pks.kalisz.pl/wp-content/uploads/2025/07/PKS-20250528.zip",
+            "url": "https://gtfs.kasznia.net/static/kalisz-pks.zip",
             "license": {
                 "spdx-identifier": "CC0-1.0"
             }
@@ -766,8 +792,6 @@
             "spec": "gtfs",
             "url": "https://files.girlc.at/gtfs/olesnica.zip",
             "fix": true,
-            "skip": true,
-            "skip-reason": "Expired",
             "license": {
                 "spdx-identifier": "CC0-1.0"
             }
@@ -929,15 +953,6 @@
             "type": "http",
             "spec": "gtfs",
             "url": "https://files.girlc.at/gtfs/morag.zip",
-            "license": {
-                "spdx-identifier": "CC0-1.0"
-            }
-        },
-        {
-            "name": "Orneta",
-            "type": "http",
-            "spec": "gtfs",
-            "url": "https://files.girlc.at/gtfs/orneta.zip",
             "license": {
                 "spdx-identifier": "CC0-1.0"
             }
@@ -1321,6 +1336,33 @@
             }
         },
         {
+            "name": "Oborniki-Śląskie",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://feed.gtfs.cc/oborniki-slaskie/gtfs.zip",
+            "license": {
+                "spdx-identifier": "MIT"
+            }
+        },
+        {
+            "name": "Biskupiec",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://feed.gtfs.cc/biskupiec/gtfs.zip",
+            "license": {
+                "spdx-identifier": "MIT"
+            }
+        },
+        {
+            "name": "Ornontowice",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://feed.gtfs.cc/ornontowice/gtfs.zip",
+            "license": {
+                "spdx-identifier": "MIT"
+            }
+        },
+        {
             "name": "Pruszków",
             "type": "http",
             "spec": "gtfs",
@@ -1402,6 +1444,34 @@
             }
         },
         {
+            "name": "Powiat-Miński",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://files.girlc.at/gtfs/powiat_minski.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "Pleszew",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://files.girlc.at/gtfs/pleszew.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "Kolej-Pleszewska",
+            "type": "http",
+            "spec":"gtfs",
+            "url": "https://github.com/pawlinski07/pawlinski-gtfs/raw/refs/heads/main/KolejPleszewska.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
+        },
+
+        {
             "name": "Chełmski-Rower",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-chełmski~rower~gbfs"
@@ -1445,6 +1515,35 @@
             "name": "WRM-Wrocław",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-wrm~nextbike~poland~wrocław~gbfs"
+        },
+        {
+            "name": "Iława",
+            "type": "http",
+            "spec":"gtfs",
+            "url": "https://api.odt.org.pl/static/media/public_transport_data/gtfs-ILAWA.zip",
+            "license":{
+                "spdx-identifier": "MIT"
+            },
+            "fix": true
+        },
+        {
+            "name": "Bochnia",
+            "type": "http",
+            "spec":"gtfs",
+            "url": "https://owncloud.cesnet.cz/index.php/s/iZamXZfQIydo965/download",
+            "license":{
+                "spdx-identifier": "MIT"
+            },
+            "fix": true
+        },
+        {
+            "name": "Wałbrzych",
+            "type": "http",
+            "spec":"gtfs",
+            "url": "https://api.odt.org.pl/static/media/public_transport_data/GTFS-SKA.zip",
+            "license":{
+                "spdx-identifier": "MIT"
+            }
         }
     ]
 }

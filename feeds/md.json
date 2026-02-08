@@ -12,7 +12,9 @@
             "mdb-id": "mdb-2341",
             "license": {
                 "spdx-identifier": "CC-BY-SA-4.0"
-            }
+            },
+            "skip": true,
+            "skip-reason": "expired"
         },
         {
             "name": "Chișinău",
@@ -20,12 +22,22 @@
             "mdb-id": "mdb-2343",
             "license": {
                 "spdx-identifier": "CC-BY-SA-4.0"
-            }
+            },
+            "skip": true,
+            "skip-reason": "expired"
         },
         {
             "name": "CFM",
             "type": "http",
             "url": "https://owncloud.cesnet.cz/index.php/s/KtAhxFlRkmg7efV/download"
-        } 
+        },
+        {
+            "name": "Ungheni",
+            "type": "http",
+            "url": "https://github.com/UngheniTransport/gtfs/raw/main/ungheni_gtfs.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
+        }
     ]
 }

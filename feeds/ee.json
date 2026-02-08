@@ -126,11 +126,6 @@
             "url": "https://eu-gtfs.remix.com/kaugliinid_rahvusvaheline.zip"
         },
         {
-            "name": "kohtla-jarve",
-            "type": "http",
-            "url": "https://eu-gtfs.remix.com/kohtla_jarve.zip"
-        },
-        {
             "name": "elron",
             "type": "http",
             "url": "https://eu-gtfs.remix.com/elron.zip"

@@ -19,7 +19,7 @@ Free and open public transport routing.
 
 A community-run provider-neutral international public transport routing service.
 
-Using openly available GTFS/GTFS-RT/GBFS/etc. feeds and FOSS routing engine we want to operate a
+Using openly available transit data feeds and a FOSS routing engine we operate a
 routing service that:
 
 * focuses on the interest of the user rather than the public transport operators
@@ -36,14 +36,21 @@ Matrix channel: [#transitous:matrix.spline.de](https://matrix.to/#/#transitous:m
 
 ### Static timetables
 
-The backbone of public transport routing is static [GTFS](https://gtfs.org) schedule data,
+The backbone of public transport routing is static schedule data,
 that's the bare minimum for Transitous to work in a region.
 
-GTFS feeds ideally contain data for several months into the future, but can nevertheless receive
+Schedule data ideally contain information for several months into the future, but can nevertheless receive
 regular updates. Transitous checks for updates daily, so for this to work we also need
 a stable URL for them.
 
-For finding GTFS data, there's a few places worth looking at:
+There's two supported data formats currently:
+
+* [GTFS](https://gtfs.org): This is the most commonly available one and relatively easy to handle.
+* [NeTEx](https://transmodel-cen.eu/index.php/netex/): This is significantly more complex and might require
+  software adjustments in order to use new feeds. It can contain details that cannot be modelled by
+  GTFS though.
+
+For finding schedule data, there's a few places worth looking at:
 
 * The public transport operators themselves, they might just publish data on their website.
 * Regional or national open data portals, especially in countries with regulation requiring public transport data to be published.
@@ -66,7 +73,7 @@ GTFS-RT feeds come in three different flavors:
 
 Transitous can handle the first two so far.
 
-Note that GTFS-RT feeds typically only work in combination with a matching static GTFS feed. So e.g. combining a smaller realtime feed
+Note that realtime feeds typically only work in combination with a matching static schedule feed. So e.g. combining a smaller realtime feed
 of a single operator with a nationwide aggregated static feed will usually not work out of the box.
 
 ### Shared mobility data
@@ -197,18 +204,20 @@ This example applies the updates to the `lviv` feed:
 
 ### On-demand feeds
 
-GTFS-Flex feeds can be added in the same way as regular GTFS feeds, just the `spec` field has to be set to `gtfs-flex`.
+GTFS-Flex feeds can be added in the same way as regular GTFS feeds. However, the `gtfsclean` tool
+used for pre-processing cannot handle GTFS-Flex at this point and would thus drop all on-demand services.
+It therefore needs to be disabled on all GTFS-Flex feeds using the `use-gtfsclean` option:
 
 Example:
 ```json
 {
     "name": "opentransportdataswiss-flex",
     "type": "http",
-    "spec": "gtfs-flex",
     "url": "https://data.opentransportdata.swiss/en/dataset/gtfsflex/permalink",
     "license": {
         "url": "https://opentransportdata.swiss/de/terms-of-use/"
-    }
+    },
+    "use-gtfsclean": false
 }
 ```
 
@@ -274,7 +283,7 @@ There are all kinds of options that may be specified in a source:
 Option Name            | Description
 ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------
 `type`                 | `http`, `mobility-database`, `transitland-atlas` or `url`. Url sources are not downloaded, but passed to MOTIS as URL. This is used for realtime feeds.
-`spec`                 | `gtfs` or `gtfs-rt`. `gtfs-rt` may only be used when `type` is `url`.
+`spec`                 | `gtfs`, `gtfs-rt`, `gbfs` or `netex`. `gtfs-rt` and `netex` may only be used when `type` is `url`.
 `fix`                  | Fix / drop fields that are not correct.
 `skip`                 | Don't download or use this feed.
 `skip-reason`          | Reason for why this feed can't be used right now.
@@ -286,6 +295,7 @@ Option Name            | Description
 `url-override`         | Use a different url instead of the one in Transitland / Mobility Database, or use a custom mirror. For more details, see the section on caches.
 `display-name-options` | Specify which strings identifying a vehicle should be displayed to the user
 `script`               | A Lua script applied by MOTIS to GTFS data during import, see [the MOTIS documentation](https://github.com/motis-project/motis/blob/master/docs/scripting.md) for details.
+`use-gtfsclean`        | Preprocess GTFS feeds with `gtfsclean`, default is `true`.
 
 #### License Options
 
@@ -351,7 +361,9 @@ GTFS feeds are essentially ZIP files containing a set of CSV tables, making them
 easy to inspect e.g. with a spreadsheet application or text editor, although especially
 nationwide aggregated feeds can get rather large.
 
-Transitous might modify GTFS data as part of its import pipeline, you'll find the processed
+NeTEx feeds are also ZIP files, but containing very large and complex XML files instead.
+
+Transitous might modify feeds as part of its import pipeline, you'll find the processed
 feeds [here](https://api.transitous.org/gtfs/).
 
 The [Transitous map view](https://api.transitous.org/) shows a colored markers for each (estimated)

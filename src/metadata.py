@@ -77,8 +77,6 @@ class Source:
                 self.fix_csv_quotes = bool(parsed["fix-csv-quotes"])
             if "spec" in parsed:
                 self.spec = parsed["spec"]
-                if self.spec == "gtfs-flex":
-                    self.use_gtfsclean = False
             if "skip" in parsed:
                 self.skip = bool(parsed["skip"])
             if "skip-reason" in parsed:

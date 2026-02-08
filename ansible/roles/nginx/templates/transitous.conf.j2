@@ -73,6 +73,7 @@ server {
     location /tiles/ {
         proxy_pass http://{{ item.vhost }}-backend/tiles/;
 
+        limit_req zone=api_harmless burst=100 delay=50;
 
         proxy_cache            motis;
         proxy_cache_valid      200 302 1d;
@@ -86,7 +87,7 @@ server {
     location ~ ^/api/(v1|v2|v3|v4|v5|v6|experimental)/(plan|one-to-all) {
         proxy_pass http://{{ item.vhost }}-backend$uri?$args;
 
-        limit_req zone=api_plan burst=10;
+        limit_req zone=api_plan burst=20 delay=10;
 
         proxy_connect_timeout       2s;
         proxy_send_timeout          60;
@@ -95,10 +96,10 @@ server {
     }
 
     # Routes that are basically free for us don't need a rate limit
-    location ~ ^/api/(v1|v2|v3|v4|v5|v6|experimental)/(geocode|stoptimes|map/stops|trip) {
+    location ~ ^/api/(v1|v2|v3|v4|v5|v6|experimental)/(geocode|reverse-geocode|stoptimes|map/stops|map/levels|trip) {
         proxy_pass http://{{ item.vhost }}-backend$uri?$args;
 
-        limit_req zone=api_harmless burst=10;
+        limit_req zone=api_harmless burst=100 delay=10;
 
         proxy_connect_timeout       2s;
         proxy_send_timeout          60;
@@ -110,7 +111,7 @@ server {
     location /api/ {
         proxy_pass http://{{ item.vhost }}-backend/api/;
 
-        limit_req zone=api burst=10;
+        limit_req zone=api burst=40 delay=10;
 
         proxy_connect_timeout       2s;
         proxy_send_timeout          60;

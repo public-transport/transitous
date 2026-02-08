@@ -43,7 +43,7 @@ def add_feed(year: int) -> dict:
         "x-mvo-id": f"{set_id}-{year}"
     }
     if "Flex" in data_set["nameEn"]:
-        source["spec"] = "gtfs-flex"
+        source["use-gtfsclean"] = False
         del source["fix"]
 
     return source

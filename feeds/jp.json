@@ -58,11 +58,6 @@
             "mdb-id": "jbda-aichi-miyoshicity-sansanbus"
         },
         {
-            "name": "たこバスたこバスミニ",
-            "type": "mobility-database",
-            "mdb-id": "jbda-akashicity-tacobustacobusmini"
-        },
-        {
             "name": "明知鉄道",
             "type": "mobility-database",
             "mdb-id": "jbda-aketetsu-akechirailway"
@@ -88,7 +83,7 @@
             "mdb-id": "jbda-anjocity-AnkuruBus"
         },
         {
-            "name": "安中市路線バス",
+            "name": "annakacity-annakashi-rosenbus",
             "type": "mobility-database",
             "mdb-id": "jbda-annakacity-annakashi-rosenbus"
         },
@@ -148,7 +143,7 @@
             "mdb-id": "jbda-chikujotown-ChikujoTownCommunityBus"
         },
         {
-            "name": "路線バス",
+            "name": "chikuma-bus-rosenbus",
             "type": "mobility-database",
             "mdb-id": "jbda-chikuma-bus-rosenbus"
         },
@@ -385,7 +380,7 @@
             "mdb-id": "jbda-hokushin-bus-ibaraaiaibus"
         },
         {
-            "name": "コミュニティバス",
+            "name": "hyogo-kamikawatown-communitybus",
             "type": "mobility-database",
             "mdb-id": "jbda-hyogo-kamikawatown-communitybus"
         },
@@ -405,7 +400,7 @@
             "mdb-id": "jbda-ichikawamisatotown-ichikawamisatobus"
         },
         {
-            "name": "コミュニティバス",
+            "name": "ichikawatown-communitybus",
             "type": "mobility-database",
             "mdb-id": "jbda-ichikawatown-communitybus"
         },
@@ -452,7 +447,7 @@
             "mdb-id": "jbda-inabecity-fukushibus"
         },
         {
-            "name": "ふれあいバス",
+            "name": "inagawatown-fureaibus",
             "type": "mobility-database",
             "mdb-id": "jbda-inagawatown-fureaibus"
         },
@@ -525,7 +520,7 @@
             "mdb-id": "jbda-jr-east-morioka-JReast_wandotaxi"
         },
         {
-            "name": "路線バス",
+            "name": "jr-shikoku-bus-kochi-JRbus-Otochi",
             "type": "mobility-database",
             "mdb-id": "jbda-jr-shikoku-bus-kochi-GTFS-JRbus_Otochi"
         },
@@ -704,11 +699,6 @@
             "mdb-id": "jbda-kanonjicity-kanonjishi-noriaibus"
         },
         {
-            "name": "刈谷市公共施設連絡バス「かりまる」",
-            "type": "mobility-database",
-            "mdb-id": "jbda-kariyacity-communitybus"
-        },
-        {
             "name": "KASAIねっぴー号はっぴーバス",
             "type": "mobility-database",
             "mdb-id": "jbda-kasaicity-kasaineppihappybus"
@@ -763,7 +753,7 @@
             "spec": "gtfs-rt"
         },
         {
-            "name": "路線バス",
+            "name": "khkhokubu-kotsu-Hokubutraffic-Localbus",
             "type": "mobility-database",
             "mdb-id": "jbda-khkhokubu-kotsu-GTFS-Hokubutraffic_Localbus"
         },
@@ -883,7 +873,7 @@
             "mdb-id": "jbda-kobecity-kobe-shiokaze"
         },
         {
-            "name": "空港連絡バス",
+            "name": "kochi-ekimae-kanko-Ekimae-Airportbus",
             "type": "mobility-database",
             "mdb-id": "jbda-kochi-ekimae-kanko-GTFS-Ekimae_Airportbus"
         },
@@ -903,12 +893,12 @@
             "mdb-id": "jbda-kochi-konancity-GTFS-Konancity_Bus"
         },
         {
-            "name": "路線バス",
+            "name": "kochi-koryo-kotsu-Koryotraffic-Localbus",
             "type": "mobility-database",
             "mdb-id": "jbda-kochi-koryo-kotsu-GTFS-Koryotraffic_Localbus"
         },
         {
-            "name": "高速バス",
+            "name": "kochi-seinan-kotsu-GTFS-Seinan-Expressbus",
             "type": "mobility-database",
             "mdb-id": "jbda-kochi-seinan-kotsu-GTFS-Seinan_Expressbus"
         },
@@ -918,7 +908,7 @@
             "mdb-id": "jbda-kochi-seinan-kotsu-GTFS-Seinantraffic_Akamego"
         },
         {
-            "name": "路線バス",
+            "name": "kochi-seinan-kotsu-Seinantraffic-Localbus",
             "type": "mobility-database",
             "mdb-id": "jbda-kochi-seinan-kotsu-GTFS-Seinantraffic_Localbus"
         },
@@ -943,7 +933,7 @@
             "mdb-id": "jbda-kochi-suzakicity-GTFS-Susakicity_Ferry"
         },
         {
-            "name": "路線バス",
+            "name": "kochi-tobu-kotsu-Tobutraffic-Localbus",
             "type": "mobility-database",
             "mdb-id": "jbda-kochi-tobu-kotsu-GTFS-Tobutraffic_Localbus"
         },
@@ -1161,7 +1151,7 @@
             "spec": "gtfs-rt"
         },
         {
-            "name": "路線バス",
+            "name": "kuroiwa-kanko-Kuroiwakanko-Localbus",
             "type": "mobility-database",
             "mdb-id": "jbda-kuroiwa-kanko-GTFS-Kuroiwakanko_Localbus"
         },
@@ -1416,7 +1406,7 @@
             "mdb-id": "jbda-minamiisetown-choeibus"
         },
         {
-            "name": "【飯田市】L1市民バス循環線C2市民バス久堅線C3市民バス千代線C4市民バス三穂線C5市民バス大休線E2平岡線",
+            "name": "-【飯田市】L1市民バス循環線C2市民バス久堅線C3市民バス千代線C4市民バス三穂線C5市民バス大休",
             "type": "mobility-database",
             "mdb-id": "jbda-minamishinshu-Minamishinshu-Iidacity-1"
         },
@@ -1436,7 +1426,7 @@
             "mdb-id": "jbda-minamishinshu-Minamishinshu-Shinnan-1"
         },
         {
-            "name": "【阿智村】W2巡回バス伍和線W3巡回バス春日・智里線W4巡回バス浪合線W5巡回バス清内路線W6巡回バス智里東線",
+            "name": "【阿智村】W2巡回バス伍和線W3巡回バス春日・智里線W4巡回バス浪合線W5巡回バス清内路線W6巡回バ",
             "type": "mobility-database",
             "mdb-id": "jbda-minamishinshu-Minamishinshu-achi-1"
         },
@@ -1446,12 +1436,12 @@
             "mdb-id": "jbda-minamishinshu-Minamishinshu-seibu-1"
         },
         {
-            "name": "【高森町】K1-柿丸あったかバス山吹エリアK2柿丸あったかバス市田エリアK3おはようバス山吹回りK4おはようバス市田回り",
+            "name": "【高森町】K1-柿丸あったかバス山吹エリアK2柿丸あったかバス市田エリアK3おはようバス山吹回りK4",
             "type": "mobility-database",
             "mdb-id": "jbda-minamishinshu-Minamishinshu-takamori-1"
         },
         {
-            "name": "【豊丘村】T3豊丘村村営バス堀越線T4豊丘村村営バス佐原線T5豊丘村村営バス福島線T6豊丘村村営バス壬生沢福島線T7豊丘村村営バス壬生沢線T2豊丘村村営バス滝川阿島北県道線",
+            "name": "【豊丘村】T3豊丘村村営バス堀越線T4豊丘村村営バス佐原線T5豊丘村村営バス福島線T6豊丘村村営バス",
             "type": "mobility-database",
             "mdb-id": "jbda-minamishinshu-Minamishinshu-toyooka-1"
         },
@@ -1885,7 +1875,7 @@
             "mdb-id": "jbda-nogatacity-NogataCityCommunityBus"
         },
         {
-            "name": "コミュニティバス",
+            "name": "nonoichicity-communitybus",
             "type": "mobility-database",
             "mdb-id": "jbda-nonoichicity-communitybus"
         },
@@ -2033,7 +2023,7 @@
             "spec": "gtfs-rt"
         },
         {
-            "name": "路線バス",
+            "name": "reihoku-kanko-Reihokukanko-Localbus",
             "type": "mobility-database",
             "mdb-id": "jbda-reihoku-kanko-GTFS-Reihokukanko_Localbus"
         },
@@ -2100,7 +2090,8 @@
         {
             "name": "産交バス",
             "type": "mobility-database",
-            "mdb-id": "jbda-sankobus-sankobus"
+            "mdb-id": "jbda-sankobus-sankobus",
+            "fix": true
         },
         {
             "name": "産交バス",
@@ -2121,7 +2112,7 @@
             "spec": "gtfs-rt"
         },
         {
-            "name": "コミュニティバス",
+            "name": "sayotown-communitybus",
             "type": "mobility-database",
             "mdb-id": "jbda-sayotown-communitybus"
         },
@@ -2186,7 +2177,7 @@
             "mdb-id": "jbda-shimanto-kotsu-GTFS-Shimantotraffic_Feederbus"
         },
         {
-            "name": "路線バス",
+            "name": "shimanto-kotsu-Shimantotraffic-Localbus",
             "type": "mobility-database",
             "mdb-id": "jbda-shimanto-kotsu-GTFS-Shimantotraffic_Localbus"
         },
@@ -2444,7 +2435,7 @@
             "spec": "gtfs-rt"
         },
         {
-            "name": "コミュニティバス",
+            "name": "tatsunocity-communitybus",
             "type": "mobility-database",
             "mdb-id": "jbda-tatsunocity-communitybus"
         },
@@ -2569,12 +2560,12 @@
             "mdb-id": "jbda-tosacity-GTFS-Tosacity_Bus"
         },
         {
-            "name": "空港連絡バス",
+            "name": "tosaden-kotsu-Tosadentraffic-Airportbus",
             "type": "mobility-database",
             "mdb-id": "jbda-tosaden-kotsu-GTFS-Tosadentraffic_Airportbus"
         },
         {
-            "name": "路線バス",
+            "name": "tosaden-kotsu-Tosadentraffic-Regularbus",
             "type": "mobility-database",
             "mdb-id": "jbda-tosaden-kotsu-GTFS-Tosadentraffic_Regularbus"
         },
@@ -3034,6 +3025,16 @@
             "name": "Donan-Bus",
             "type": "mobility-database",
             "mdb-id": "mdb-2871"
+        },
+        {
+            "name": "龍神自動車",
+            "type": "mobility-database",
+            "mdb-id": "jbda-ryujinbus-ryujinbus"
+        },
+        {
+            "name": "南陽市営バス",
+            "type": "mobility-database",
+            "mdb-id": "jbda-nanyocity-NanyoCity"
         }
     ]
 }

@@ -50,8 +50,9 @@
             "transitland-atlas-id": "f-u-nl",
             "fix": true,
             "keep-agency-names": [
-                "Eu Sleeper"
-            ]
+                "European Sleeper"
+            ],
+            "script": "nl-ovapi.lua"
         },
         {
             "name": "ovapi",
