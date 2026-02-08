@@ -40,9 +40,7 @@
                 "headers": {
                     "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
                 }
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            }      
         },
         {
             "name": "Transport-for-New-South-Wales-metro",
@@ -52,11 +50,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {
-                "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            "headers": {},
+            "use-feed-proxy": true
         },
         {
             "name": "Transport-for-New-South-Wales-metro",
@@ -66,11 +61,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {
-                "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            "headers": {},
+            "use-feed-proxy": true
         },
         {
             "name": "Transport-for-New-South-Wales-sydney-trains",
@@ -88,9 +80,7 @@
             "script": "au-nsw-sydney-trains.lua",
             "drop-agency-names": [
                 "NSW Trains"
-            ],
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            ]      
         },
         {
             "name": "Transport-for-New-South-Wales-sydney-trains",
@@ -100,11 +90,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {
-                "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            "headers": {},
+            "use-feed-proxy": true
         },
         {
             "name": "Transport-for-New-South-Wales-sydney-trains",
@@ -114,11 +101,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {
-                "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            "headers": {},
+            "use-feed-proxy": true
         },
         {
             "name": "Transport-for-New-South-Wales-nsw-trains",
@@ -133,9 +117,7 @@
                 "headers": {
                     "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
                 }
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            }      
         },
         {
             "name": "Transport-for-New-South-Wales-nsw-trains",
@@ -145,11 +127,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {
-                "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            "headers": {},
+            "use-feed-proxy": true
         },
         {
             "name": "Transport-for-New-South-Wales-nsw-trains",
@@ -159,11 +138,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {
-                "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            "headers": {},
+            "use-feed-proxy": true
         },
         {
             "name": "Transport-for-New-South-Wales-sydney-ferries",
@@ -177,9 +153,7 @@
                 "headers": {
                     "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
                 }
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            }      
         },
         {
             "name": "Transport-for-New-South-Wales-sydney-ferries",
@@ -189,11 +163,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {
-                "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            "headers": {},
+            "use-feed-proxy": true
         },
         {
             "name": "Transport-for-New-South-Wales-sydney-ferries",
@@ -203,11 +174,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {
-                "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            "headers": {},
+            "use-feed-proxy": true
         },
         {
             "name": "Transport-for-New-South-Wales-mff",
@@ -221,9 +189,7 @@
                 "headers": {
                     "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
                 }
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            }      
         },
         {
             "name": "Transport-for-New-South-Wales-mff",
@@ -233,11 +199,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {
-                "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            "headers": {},
+            "use-feed-proxy": true
         },
         {
             "name": "Transport-for-New-South-Wales-mff",
@@ -247,11 +210,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {
-                "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            "headers": {},
+            "use-feed-proxy": true
         },
         {
             "name": "Transport-for-New-South-Wales-inner-west-lr",
@@ -265,9 +225,7 @@
                 "headers": {
                     "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
                 }
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            }      
         },
         {
             "name": "Transport-for-New-South-Wales-inner-west-lr",
@@ -277,11 +235,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {
-                "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            "headers": {},
+            "use-feed-proxy": true
         },
         {
             "name": "Transport-for-New-South-Wales-inner-west-lr",
@@ -291,11 +246,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {
-                "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            "headers": {},
+            "use-feed-proxy": true
         },
         {
             "name": "Transport-for-New-South-Wales-cbd-and-southeast-lr",
@@ -309,9 +261,7 @@
                 "headers": {
                     "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
                 }
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            }      
         },
         {
             "name": "Transport-for-New-South-Wales-cbd-and-southeast-lr",
@@ -321,11 +271,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {
-                "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            "headers": {},
+            "use-feed-proxy": true
         },
         {
             "name": "Transport-for-New-South-Wales-cbd-and-southeast-lr",
@@ -335,11 +282,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {
-                "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            "headers": {},
+            "use-feed-proxy": true
         },
         {
             "name": "Transport-for-New-South-Wales-parramatta-lr",
@@ -353,9 +297,7 @@
                 "headers": {
                     "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
                 }
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            }      
         },
         {
             "name": "Transport-for-New-South-Wales-parramatta-lr",
@@ -365,11 +307,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {
-                "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            "headers": {},
+            "use-feed-proxy": true
         },
         {
             "name": "Transport-for-New-South-Wales-parramatta-lr",
@@ -379,11 +318,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {
-                "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            "headers": {},
+            "use-feed-proxy": true
         },
         {
             "name": "Transport-for-New-South-Wales-newcastle-lr",
@@ -397,9 +333,7 @@
                 "headers": {
                     "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
                 }
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            }      
         },
         {
             "name": "Transport-for-New-South-Wales-newcastle-lr",
@@ -409,11 +343,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {
-                "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            "headers": {},
+            "use-feed-proxy": true
         },
         {
             "name": "Transport-for-New-South-Wales-newcastle-lr",
@@ -423,11 +354,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {
-                "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            "headers": {},
+            "use-feed-proxy": true
         },
         {
             "name": "Transport-for-New-South-Wales-OSMBSC001",
@@ -441,9 +369,7 @@
                 "headers": {
                     "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
                 }
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            }      
         },
         {
             "name": "Transport-for-New-South-Wales-OSMBSC001",
@@ -453,11 +379,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {
-                "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            "headers": {},
+            "use-feed-proxy": true
         },
         {
             "name": "Transport-for-New-South-Wales-OSMBSC001",
@@ -467,11 +390,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {
-                "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            "headers": {},
+            "use-feed-proxy": true
         },
         {
             "name": "Transport-for-New-South-Wales-OSMBSC002",
@@ -485,9 +405,7 @@
                 "headers": {
                     "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
                 }
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            }      
         },
         {
             "name": "Transport-for-New-South-Wales-OSMBSC002",
@@ -497,11 +415,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {
-                "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            "headers": {},
+            "use-feed-proxy": true
         },
         {
             "name": "Transport-for-New-South-Wales-OSMBSC002",
@@ -511,11 +426,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {
-                "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            "headers": {},
+            "use-feed-proxy": true
         },
         {
             "name": "Transport-for-New-South-Wales-OSMBSC003",
@@ -529,9 +441,7 @@
                 "headers": {
                     "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
                 }
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            }      
         },
         {
             "name": "Transport-for-New-South-Wales-OSMBSC003",
@@ -541,11 +451,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {
-                "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            "headers": {},
+            "use-feed-proxy": true
         },
         {
             "name": "Transport-for-New-South-Wales-OSMBSC003",
@@ -555,11 +462,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {
-                "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            "headers": {},
+            "use-feed-proxy": true
         },
         {
             "name": "Transport-for-New-South-Wales-OSMBSC004",
@@ -573,9 +477,7 @@
                 "headers": {
                     "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
                 }
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            }      
         },
         {
             "name": "Transport-for-New-South-Wales-OSMBSC004",
@@ -585,11 +487,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {
-                "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            "headers": {},
+            "use-feed-proxy": true
         },
         {
             "name": "Transport-for-New-South-Wales-OSMBSC004",
@@ -599,11 +498,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {
-                "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            "headers": {},
+            "use-feed-proxy": true
         },
         {
             "name": "Transport-for-New-South-Wales-OSMBSC008",
@@ -617,9 +513,7 @@
                 "headers": {
                     "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
                 }
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            }      
         },
         {
             "name": "Transport-for-New-South-Wales-OSMBSC008",
@@ -629,11 +523,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {
-                "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            "headers": {},
+            "use-feed-proxy": true
         },
         {
             "name": "Transport-for-New-South-Wales-OSMBSC008",
@@ -643,11 +534,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {
-                "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            "headers": {},
+            "use-feed-proxy": true
         },
         {
             "name": "Transport-for-New-South-Wales-OSMBSC009",
@@ -661,9 +549,7 @@
                 "headers": {
                     "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
                 }
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            }      
         },
         {
             "name": "Transport-for-New-South-Wales-OSMBSC009",
@@ -673,11 +559,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {
-                "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            "headers": {},
+            "use-feed-proxy": true
         },
         {
             "name": "Transport-for-New-South-Wales-OSMBSC009",
@@ -687,11 +570,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {
-                "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            "headers": {},
+            "use-feed-proxy": true
         },
         {
             "name": "Transport-for-New-South-Wales-OSMBSC010",
@@ -705,9 +585,7 @@
                 "headers": {
                     "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
                 }
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            }      
         },
         {
             "name": "Transport-for-New-South-Wales-OSMBSC010",
@@ -717,11 +595,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {
-                "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            "headers": {},
+            "use-feed-proxy": true
         },
         {
             "name": "Transport-for-New-South-Wales-OSMBSC010",
@@ -731,11 +606,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {
-                "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            "headers": {},
+            "use-feed-proxy": true
         },
         {
             "name": "Transport-for-New-South-Wales-OSMBSC011",
@@ -749,9 +621,7 @@
                 "headers": {
                     "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
                 }
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            }      
         },
         {
             "name": "Transport-for-New-South-Wales-OSMBSC011",
@@ -761,11 +631,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {
-                "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            "headers": {},
+            "use-feed-proxy": true
         },
         {
             "name": "Transport-for-New-South-Wales-OSMBSC011",
@@ -775,11 +642,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {
-                "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            "headers": {},
+            "use-feed-proxy": true
         },
         {
             "name": "Transport-for-New-South-Wales-OSMBSC012",
@@ -793,9 +657,7 @@
                 "headers": {
                     "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
                 }
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            }      
         },
         {
             "name": "Transport-for-New-South-Wales-OSMBSC012",
@@ -805,11 +667,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {
-                "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            "headers": {},
+            "use-feed-proxy": true
         },
         {
             "name": "Transport-for-New-South-Wales-OSMBSC012",
@@ -819,11 +678,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {
-                "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            "headers": {},
+            "use-feed-proxy": true
         },
         {
             "name": "Transport-for-New-South-Wales-SBSC006",
@@ -837,9 +693,7 @@
                 "headers": {
                     "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
                 }
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            }      
         },
         {
             "name": "Transport-for-New-South-Wales-SBSC006",
@@ -849,11 +703,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {
-                "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            "headers": {},
+            "use-feed-proxy": true
         },
         {
             "name": "Transport-for-New-South-Wales-SBSC006",
@@ -863,11 +714,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {
-                "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            "headers": {},
+            "use-feed-proxy": true
         },
         {
             "name": "Transport-for-New-South-Wales-GSBC001",
@@ -881,9 +729,7 @@
                 "headers": {
                     "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
                 }
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            }      
         },
         {
             "name": "Transport-for-New-South-Wales-GSBC001",
@@ -893,11 +739,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {
-                "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            "headers": {},
+            "use-feed-proxy": true
         },
         {
             "name": "Transport-for-New-South-Wales-GSBC001",
@@ -907,11 +750,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {
-                "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            "headers": {},
+            "use-feed-proxy": true
         },
         {
             "name": "Transport-for-New-South-Wales-GSBC002",
@@ -925,9 +765,7 @@
                 "headers": {
                     "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
                 }
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            }      
         },
         {
             "name": "Transport-for-New-South-Wales-GSBC002",
@@ -937,11 +775,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {
-                "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            "headers": {},
+            "use-feed-proxy": true
         },
         {
             "name": "Transport-for-New-South-Wales-GSBC002",
@@ -951,11 +786,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {
-                "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            "headers": {},
+            "use-feed-proxy": true
         },
         {
             "name": "Transport-for-New-South-Wales-GSBC003",
@@ -969,9 +801,7 @@
                 "headers": {
                     "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
                 }
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            }      
         },
         {
             "name": "Transport-for-New-South-Wales-GSBC003",
@@ -981,11 +811,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {
-                "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            "headers": {},
+            "use-feed-proxy": true
         },
         {
             "name": "Transport-for-New-South-Wales-GSBC003",
@@ -995,11 +822,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {
-                "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            "headers": {},
+            "use-feed-proxy": true
         },
         {
             "name": "Transport-for-New-South-Wales-GSBC004",
@@ -1013,9 +837,7 @@
                 "headers": {
                     "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
                 }
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            }      
         },
         {
             "name": "Transport-for-New-South-Wales-GSBC004",
@@ -1025,11 +847,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {
-                "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            "headers": {},
+            "use-feed-proxy": true
         },
         {
             "name": "Transport-for-New-South-Wales-GSBC004",
@@ -1039,11 +858,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {
-                "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            "headers": {},
+            "use-feed-proxy": true
         },
         {
             "name": "Transport-for-New-South-Wales-GSBC007",
@@ -1057,9 +873,7 @@
                 "headers": {
                     "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
                 }
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            }      
         },
         {
             "name": "Transport-for-New-South-Wales-GSBC007",
@@ -1069,11 +883,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {
-                "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            "headers": {},
+            "use-feed-proxy": true
         },
         {
             "name": "Transport-for-New-South-Wales-GSBC007",
@@ -1083,11 +894,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {
-                "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            "headers": {},
+            "use-feed-proxy": true
         },
         {
             "name": "Transport-for-New-South-Wales-GSBC008",
@@ -1101,9 +909,7 @@
                 "headers": {
                     "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
                 }
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            }      
         },
         {
             "name": "Transport-for-New-South-Wales-GSBC008",
@@ -1113,11 +919,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {
-                "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            "headers": {},
+            "use-feed-proxy": true
         },
         {
             "name": "Transport-for-New-South-Wales-GSBC008",
@@ -1127,11 +930,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {
-                "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            "headers": {},
+            "use-feed-proxy": true
         },
         {
             "name": "Transport-for-New-South-Wales-GSBC009",
@@ -1145,9 +945,7 @@
                 "headers": {
                     "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
                 }
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            }      
         },
         {
             "name": "Transport-for-New-South-Wales-GSBC009",
@@ -1157,11 +955,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {
-                "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            "headers": {},
+            "use-feed-proxy": true
         },
         {
             "name": "Transport-for-New-South-Wales-GSBC009",
@@ -1171,11 +966,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {
-                "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            "headers": {},
+            "use-feed-proxy": true
         },
         {
             "name": "Transport-for-New-South-Wales-GSBC010",
@@ -1189,9 +981,7 @@
                 "headers": {
                     "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
                 }
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            }      
         },
         {
             "name": "Transport-for-New-South-Wales-GSBC010",
@@ -1201,11 +991,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {
-                "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            "headers": {},
+            "use-feed-proxy": true
         },
         {
             "name": "Transport-for-New-South-Wales-GSBC010",
@@ -1215,11 +1002,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {
-                "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            "headers": {},
+            "use-feed-proxy": true
         },
         {
             "name": "Transport-for-New-South-Wales-GSBC014",
@@ -1233,9 +1017,7 @@
                 "headers": {
                     "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
                 }
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            }      
         },
         {
             "name": "Transport-for-New-South-Wales-GSBC014",
@@ -1245,11 +1027,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {
-                "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            "headers": {},
+            "use-feed-proxy": true
         },
         {
             "name": "Transport-for-New-South-Wales-GSBC014",
@@ -1259,11 +1038,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {
-                "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            "headers": {},
+            "use-feed-proxy": true
         },
         {
             "name": "Transport-for-New-South-Wales-NISC001",
@@ -1277,9 +1053,7 @@
                 "headers": {
                     "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
                 }
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            }      
         },
         {
             "name": "Transport-for-New-South-Wales-NISC001",
@@ -1289,11 +1063,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {
-                "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            "headers": {},
+            "use-feed-proxy": true
         },
         {
             "name": "Transport-for-New-South-Wales-NISC001",
@@ -1303,11 +1074,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {
-                "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            "headers": {},
+            "use-feed-proxy": true
         },
         {
             "name": "Transport-for-New-South-Wales-centralwestandorana",
@@ -1321,9 +1089,7 @@
                 "headers": {
                     "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
                 }
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            }      
         },
         {
             "name": "Transport-for-New-South-Wales-centralwestandorana",
@@ -1333,11 +1099,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {
-                "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            "headers": {},
+            "use-feed-proxy": true
         },
         {
             "name": "Transport-for-New-South-Wales-centralwestandorana",
@@ -1347,11 +1110,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {
-                "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            "headers": {},
+            "use-feed-proxy": true
         },
         {
             "name": "Transport-for-New-South-Wales-farwest",
@@ -1365,9 +1125,7 @@
                 "headers": {
                     "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
                 }
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            }      
         },
         {
             "name": "Transport-for-New-South-Wales-farwest",
@@ -1377,11 +1135,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {
-                "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            "headers": {},
+            "use-feed-proxy": true
         },
         {
             "name": "Transport-for-New-South-Wales-farwest",
@@ -1391,11 +1146,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {
-                "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            "headers": {},
+            "use-feed-proxy": true
         },
         {
             "name": "Transport-for-New-South-Wales-newenglandnorthwest",
@@ -1409,9 +1161,7 @@
                 "headers": {
                     "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
                 }
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            }      
         },
         {
             "name": "Transport-for-New-South-Wales-newenglandnorthwest",
@@ -1421,11 +1171,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {
-                "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            "headers": {},
+            "use-feed-proxy": true
         },
         {
             "name": "Transport-for-New-South-Wales-newenglandnorthwest",
@@ -1435,11 +1182,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {
-                "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            "headers": {},
+            "use-feed-proxy": true
         },
         {
             "name": "Transport-for-New-South-Wales-northcoast",
@@ -1453,9 +1197,7 @@
                 "headers": {
                     "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
                 }
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            }      
         },
         {
             "name": "Transport-for-New-South-Wales-northcoast",
@@ -1465,11 +1207,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {
-                "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            "headers": {},
+            "use-feed-proxy": true
         },
         {
             "name": "Transport-for-New-South-Wales-northcoast",
@@ -1479,11 +1218,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {
-                "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            "headers": {},
+            "use-feed-proxy": true
         },
         {
             "name": "Transport-for-New-South-Wales-riverinamurray",
@@ -1497,9 +1233,7 @@
                 "headers": {
                     "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
                 }
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            }      
         },
         {
             "name": "Transport-for-New-South-Wales-riverinamurray",
@@ -1509,11 +1243,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {
-                "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            "headers": {},
+            "use-feed-proxy": true
         },
         {
             "name": "Transport-for-New-South-Wales-riverinamurray",
@@ -1523,56 +1254,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {
-                "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
-        },
-        {
-            "name": "Transport-for-New-South-Wales-riverinamurray",
-            "type": "http",
-            "spec": "gtfs",
-            "url": "https://api.transport.nsw.gov.au/v1/gtfs/schedule/regionbuses/riverinamurray",
-            "license": {
-                "spdx-identifier": "CC-BY-4.0"
-            },
-            "http-options": {
-                "headers": {
-                    "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
-                }
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
-        },
-        {
-            "name": "Transport-for-New-South-Wales-riverinamurray",
-            "type": "url",
-            "spec": "gtfs-rt",
-            "url": "https://api.transport.nsw.gov.au/v1/gtfs/realtime/regionbuses/riverinamurray",
-            "license": {
-                "spdx-identifier": "CC-BY-4.0"
-            },
-            "headers": {
-                "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
-        },
-        {
-            "name": "Transport-for-New-South-Wales-riverinamurray",
-            "type": "url",
-            "spec": "gtfs-rt",
-            "url": "https://api.transport.nsw.gov.au/v2/gtfs/alerts/regionbuses",
-            "license": {
-                "spdx-identifier": "CC-BY-4.0"
-            },
-            "headers": {
-                "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
-        },
+            "headers": {},
+            "use-feed-proxy": true
+        },        
         {
             "name": "Transport-for-New-South-Wales-southeasttablelands",
             "type": "http",
@@ -1585,9 +1269,7 @@
                 "headers": {
                     "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
                 }
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            }      
         },
         {
             "name": "Transport-for-New-South-Wales-southeasttablelands",
@@ -1597,11 +1279,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {
-                "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            "headers": {},
+            "use-feed-proxy": true
         },
         {
             "name": "Transport-for-New-South-Wales-southeasttablelands",
@@ -1611,11 +1290,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {
-                "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            "headers": {},
+            "use-feed-proxy": true
         },
         {
             "name": "Transport-for-New-South-Wales-sydneysurrounds",
@@ -1629,9 +1305,7 @@
                 "headers": {
                     "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
                 }
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            }      
         },
         {
             "name": "Transport-for-New-South-Wales-sydneysurrounds",
@@ -1641,11 +1315,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {
-                "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            "headers": {},
+            "use-feed-proxy": true
         },
         {
             "name": "Transport-for-New-South-Wales-sydneysurrounds",
@@ -1655,11 +1326,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {
-                "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            "headers": {},
+            "use-feed-proxy": true
         },
         {
             "name": "Transport-for-New-South-Wales-centralwestandorana2",
@@ -1673,9 +1341,7 @@
                 "headers": {
                     "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
                 }
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            }      
         },
         {
             "name": "Transport-for-New-South-Wales-centralwestandorana2",
@@ -1685,11 +1351,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {
-                "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            "headers": {},
+            "use-feed-proxy": true
         },
         {
             "name": "Transport-for-New-South-Wales-centralwestandorana2",
@@ -1699,11 +1362,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {
-                "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            "headers": {},
+            "use-feed-proxy": true
         },
         {
             "name": "Transport-for-New-South-Wales-northcoast2",
@@ -1717,9 +1377,7 @@
                 "headers": {
                     "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
                 }
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            }      
         },
         {
             "name": "Transport-for-New-South-Wales-northcoast2",
@@ -1729,11 +1387,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {
-                "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            "headers": {},
+            "use-feed-proxy": true
         },
         {
             "name": "Transport-for-New-South-Wales-northcoast2",
@@ -1743,11 +1398,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {
-                "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            "headers": {},
+            "use-feed-proxy": true
         },
         {
             "name": "Transport-for-New-South-Wales-northcoast3",
@@ -1761,9 +1413,7 @@
                 "headers": {
                     "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
                 }
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            }      
         },
         {
             "name": "Transport-for-New-South-Wales-northcoast3",
@@ -1773,11 +1423,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {
-                "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            "headers": {},
+            "use-feed-proxy": true
         },
         {
             "name": "Transport-for-New-South-Wales-northcoast3",
@@ -1787,11 +1434,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {
-                "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            "headers": {},
+            "use-feed-proxy": true
         },
         {
             "name": "Transport-for-New-South-Wales-riverinamurray2",
@@ -1805,9 +1449,7 @@
                 "headers": {
                     "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
                 }
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            }      
         },
         {
             "name": "Transport-for-New-South-Wales-riverinamurray2",
@@ -1817,11 +1459,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {
-                "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            "headers": {},
+            "use-feed-proxy": true
         },
         {
             "name": "Transport-for-New-South-Wales-riverinamurray2",
@@ -1831,11 +1470,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {
-                "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            "headers": {},
+            "use-feed-proxy": true
         },
         {
             "name": "Transport-for-New-South-Wales-southeasttablelands2",
@@ -1849,9 +1485,7 @@
                 "headers": {
                     "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
                 }
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            }      
         },
         {
             "name": "Transport-for-New-South-Wales-southeasttablelands2",
@@ -1861,11 +1495,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {
-                "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            "headers": {},
+            "use-feed-proxy": true
         },
         {
             "name": "Transport-for-New-South-Wales-southeasttablelands2",
@@ -1875,11 +1506,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {
-                "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            "headers": {},
+            "use-feed-proxy": true
         },
         {
             "name": "Transport-for-New-South-Wales-newcastlehunter",
@@ -1893,9 +1521,7 @@
                 "headers": {
                     "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
                 }
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            }      
         },
         {
             "name": "Transport-for-New-South-Wales-newcastlehunter",
@@ -1905,11 +1531,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {
-                "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            "headers": {},
+            "use-feed-proxy": true
         },
         {
             "name": "Transport-for-New-South-Wales-newcastlehunter",
@@ -1919,11 +1542,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {
-                "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            "headers": {},
+            "use-feed-proxy": true
         },
         {
             "name": "Transport-for-New-South-Wales-ReplacementBus",
@@ -1937,9 +1557,7 @@
                 "headers": {
                     "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
                 }
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            }      
         },
         {
             "name": "Transport-for-New-South-Wales-ReplacementBus",
@@ -1949,11 +1567,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {
-                "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            "headers": {},
+            "use-feed-proxy": true
         },
         {
             "name": "Transport-for-New-South-Wales-ReplacementBus",
@@ -1963,11 +1578,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {
-                "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
-            },
-            "skip": true,
-            "skip-reason": "rate-limiting"
+            "headers": {},
+            "use-feed-proxy": true
         }
     ]
 }

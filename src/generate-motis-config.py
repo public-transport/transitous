@@ -117,15 +117,13 @@ if __name__ == "__main__":
                             resolved_sources = [resolved_source]
                         case _:
                             resolved_sources = [source]
-                    
-
-                    use_original_url = isinstance(source, metadata.UrlSource) and not source.use_feed_proxy
-                    if arguments.feed_proxy and use_original_url:
-                        continue
-                    if arguments.feed_proxy:
-                        use_original_url = True
 
                     for source in resolved_sources:
+                        use_original_url = isinstance(source, metadata.UrlSource) and not source.use_feed_proxy
+                        if arguments.feed_proxy and use_original_url:
+                            continue
+                        if arguments.feed_proxy:
+                            use_original_url = True
                         match source.spec:
                             case source.spec if source.spec in ["gtfs", "netex"]:
                                 schedule_file = \

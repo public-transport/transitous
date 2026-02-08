@@ -31,7 +31,8 @@
             "name": "Flamingo-Christchurch",
             "type": "url",
             "spec": "gbfs",
-            "url": "https://data.rideflamingo.com/gbfs/3/christchurch/gbfs.json"
+            "url": "https://data.rideflamingo.com/gbfs/3/christchurch/gbfs.json",
+            "use-feed-proxy": true
         },
         {
             "name": "Flamingo-Dunedin",
@@ -75,9 +76,9 @@
             "type": "url",
             "url": "https://api.opendata.metlink.org.nz/v1/gtfs-rt/servicealerts",
             "headers": {
-                "Accept": "application/x-protobuf",
-                "x-api-key": "17mgElKK4t16dD0dOVxGZGrmjsvKHW8aqFPTC1vd"
-            }
+                "Accept": "application/x-protobuf"
+            },
+            "use-feed-proxy": true
         },
         {
             "name": "Metlink",
@@ -85,9 +86,9 @@
             "type": "url",
             "url": "https://api.opendata.metlink.org.nz/v1/gtfs-rt/tripupdates",
             "headers": {
-                "Accept": "application/x-protobuf",
-                "x-api-key": "17mgElKK4t16dD0dOVxGZGrmjsvKHW8aqFPTC1vd"
-            }
+                "Accept": "application/x-protobuf"
+            },
+            "use-feed-proxy": true
         },
         {
             "name": "Metlink",
@@ -95,9 +96,9 @@
             "type": "url",
             "url": "https://api.opendata.metlink.org.nz/v1/gtfs-rt/vehiclepositions",
             "headers": {
-                "Accept": "application/x-protobuf",
-                "x-api-key": "17mgElKK4t16dD0dOVxGZGrmjsvKHW8aqFPTC1vd"
-            }
+                "Accept": "application/x-protobuf"
+            },
+            "use-feed-proxy": true
         },
         {
             "name": "Otago-Regional-Council",

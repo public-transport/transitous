@@ -183,7 +183,7 @@ class HttpSource(Source):
 class UrlSource(Source):
     url: str = ""
     headers: dict[str, str]
-    use_feed_proxy: bool = True
+    use_feed_proxy: bool = False
 
     def __init__(self, parsed: Optional[dict] = None):
         self.headers = {}
