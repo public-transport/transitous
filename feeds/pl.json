@@ -151,6 +151,15 @@
             "transitland-atlas-id": "f-u3ky-bydgoszcz"
         },
         {
+            "name": "Bydgoszcz",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://next.zbiorkom.live/api6-open/bydgoszcz/gtfsRealtime/default/tripUpdates",
+            "license": {
+                "spdx-identifier": "MIT"
+            }
+        },
+        {
             "name": "Toruń",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u3mj-torun"
