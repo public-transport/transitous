@@ -367,7 +367,8 @@
             "url": "https://next.zbiorkom.live/api6-open/bydgoszcz/gtfsRealtime/default/tripUpdates",
             "license": {
                 "spdx-identifier": "MIT"
-            }
+            },
+            "use-feed-proxy": true
         },
         {
             "name": "PKP-SKM",
@@ -609,7 +610,8 @@
             "url": "https://next.zbiorkom.live/api6-open/bialystok/gtfsRealtime/WSCHODEXPRESS/tripUpdates",
             "license": {
                 "spdx-identifier": "MIT"
-            }
+            },
+            "use-feed-proxy": true
         },
         {
             "name": "PKS-Nova-Supraśl",
@@ -698,7 +700,8 @@
             "url": "https://next.zbiorkom.live/api6-open/opole/gtfsRealtime/default/tripUpdates",
             "license": {
                 "spdx-identifier": "MIT"
-            }
+            },
+            "use-feed-proxy": true
         },
         {
             "name": "Arriva",
