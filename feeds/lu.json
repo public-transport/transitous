@@ -27,8 +27,7 @@
             "name": "velOH",
             "type": "url",
             "url": "https://api.cyclocity.fr/contracts/luxembourg/gbfs/v3/gbfs.json",
-            "spec": "gbfs",
-            "use-feed-proxy": true
+            "spec": "gbfs"
         }
     ]
 }

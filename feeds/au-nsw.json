@@ -40,7 +40,7 @@
                 "headers": {
                     "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
                 }
-            }      
+            }
         },
         {
             "name": "Transport-for-New-South-Wales-metro",
@@ -80,7 +80,7 @@
             "script": "au-nsw-sydney-trains.lua",
             "drop-agency-names": [
                 "NSW Trains"
-            ]      
+            ]
         },
         {
             "name": "Transport-for-New-South-Wales-sydney-trains",
@@ -117,7 +117,7 @@
                 "headers": {
                     "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
                 }
-            }      
+            }
         },
         {
             "name": "Transport-for-New-South-Wales-nsw-trains",
@@ -153,7 +153,7 @@
                 "headers": {
                     "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
                 }
-            }      
+            }
         },
         {
             "name": "Transport-for-New-South-Wales-sydney-ferries",
@@ -189,7 +189,7 @@
                 "headers": {
                     "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
                 }
-            }      
+            }
         },
         {
             "name": "Transport-for-New-South-Wales-mff",
@@ -225,7 +225,7 @@
                 "headers": {
                     "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
                 }
-            }      
+            }
         },
         {
             "name": "Transport-for-New-South-Wales-inner-west-lr",
@@ -261,7 +261,7 @@
                 "headers": {
                     "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
                 }
-            }      
+            }
         },
         {
             "name": "Transport-for-New-South-Wales-cbd-and-southeast-lr",
@@ -297,7 +297,7 @@
                 "headers": {
                     "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
                 }
-            }      
+            }
         },
         {
             "name": "Transport-for-New-South-Wales-parramatta-lr",
@@ -333,7 +333,7 @@
                 "headers": {
                     "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
                 }
-            }      
+            }
         },
         {
             "name": "Transport-for-New-South-Wales-newcastle-lr",
@@ -369,7 +369,7 @@
                 "headers": {
                     "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
                 }
-            }      
+            }
         },
         {
             "name": "Transport-for-New-South-Wales-OSMBSC001",
@@ -405,7 +405,7 @@
                 "headers": {
                     "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
                 }
-            }      
+            }
         },
         {
             "name": "Transport-for-New-South-Wales-OSMBSC002",
@@ -441,7 +441,7 @@
                 "headers": {
                     "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
                 }
-            }      
+            }
         },
         {
             "name": "Transport-for-New-South-Wales-OSMBSC003",
@@ -477,7 +477,7 @@
                 "headers": {
                     "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
                 }
-            }      
+            }
         },
         {
             "name": "Transport-for-New-South-Wales-OSMBSC004",
@@ -513,7 +513,7 @@
                 "headers": {
                     "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
                 }
-            }      
+            }
         },
         {
             "name": "Transport-for-New-South-Wales-OSMBSC008",
@@ -549,7 +549,7 @@
                 "headers": {
                     "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
                 }
-            }      
+            }
         },
         {
             "name": "Transport-for-New-South-Wales-OSMBSC009",
@@ -585,7 +585,7 @@
                 "headers": {
                     "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
                 }
-            }      
+            }
         },
         {
             "name": "Transport-for-New-South-Wales-OSMBSC010",
@@ -621,7 +621,7 @@
                 "headers": {
                     "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
                 }
-            }      
+            }
         },
         {
             "name": "Transport-for-New-South-Wales-OSMBSC011",
@@ -657,7 +657,7 @@
                 "headers": {
                     "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
                 }
-            }      
+            }
         },
         {
             "name": "Transport-for-New-South-Wales-OSMBSC012",
@@ -693,7 +693,7 @@
                 "headers": {
                     "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
                 }
-            }      
+            }
         },
         {
             "name": "Transport-for-New-South-Wales-SBSC006",
@@ -729,7 +729,7 @@
                 "headers": {
                     "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
                 }
-            }      
+            }
         },
         {
             "name": "Transport-for-New-South-Wales-GSBC001",
@@ -765,7 +765,7 @@
                 "headers": {
                     "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
                 }
-            }      
+            }
         },
         {
             "name": "Transport-for-New-South-Wales-GSBC002",
@@ -801,7 +801,7 @@
                 "headers": {
                     "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
                 }
-            }      
+            }
         },
         {
             "name": "Transport-for-New-South-Wales-GSBC003",
@@ -837,7 +837,7 @@
                 "headers": {
                     "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
                 }
-            }      
+            }
         },
         {
             "name": "Transport-for-New-South-Wales-GSBC004",
@@ -873,7 +873,7 @@
                 "headers": {
                     "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
                 }
-            }      
+            }
         },
         {
             "name": "Transport-for-New-South-Wales-GSBC007",
@@ -909,7 +909,7 @@
                 "headers": {
                     "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
                 }
-            }      
+            }
         },
         {
             "name": "Transport-for-New-South-Wales-GSBC008",
@@ -945,7 +945,7 @@
                 "headers": {
                     "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
                 }
-            }      
+            }
         },
         {
             "name": "Transport-for-New-South-Wales-GSBC009",
@@ -981,7 +981,7 @@
                 "headers": {
                     "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
                 }
-            }      
+            }
         },
         {
             "name": "Transport-for-New-South-Wales-GSBC010",
@@ -1017,7 +1017,7 @@
                 "headers": {
                     "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
                 }
-            }      
+            }
         },
         {
             "name": "Transport-for-New-South-Wales-GSBC014",
@@ -1053,7 +1053,7 @@
                 "headers": {
                     "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
                 }
-            }      
+            }
         },
         {
             "name": "Transport-for-New-South-Wales-NISC001",
@@ -1089,7 +1089,7 @@
                 "headers": {
                     "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
                 }
-            }      
+            }
         },
         {
             "name": "Transport-for-New-South-Wales-centralwestandorana",
@@ -1125,7 +1125,7 @@
                 "headers": {
                     "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
                 }
-            }      
+            }
         },
         {
             "name": "Transport-for-New-South-Wales-farwest",
@@ -1161,7 +1161,7 @@
                 "headers": {
                     "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
                 }
-            }      
+            }
         },
         {
             "name": "Transport-for-New-South-Wales-newenglandnorthwest",
@@ -1197,7 +1197,7 @@
                 "headers": {
                     "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
                 }
-            }      
+            }
         },
         {
             "name": "Transport-for-New-South-Wales-northcoast",
@@ -1233,7 +1233,7 @@
                 "headers": {
                     "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
                 }
-            }      
+            }
         },
         {
             "name": "Transport-for-New-South-Wales-riverinamurray",
@@ -1256,7 +1256,7 @@
             },
             "headers": {},
             "use-feed-proxy": true
-        },        
+        },
         {
             "name": "Transport-for-New-South-Wales-southeasttablelands",
             "type": "http",
@@ -1269,7 +1269,7 @@
                 "headers": {
                     "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
                 }
-            }      
+            }
         },
         {
             "name": "Transport-for-New-South-Wales-southeasttablelands",
@@ -1305,7 +1305,7 @@
                 "headers": {
                     "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
                 }
-            }      
+            }
         },
         {
             "name": "Transport-for-New-South-Wales-sydneysurrounds",
@@ -1341,7 +1341,7 @@
                 "headers": {
                     "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
                 }
-            }      
+            }
         },
         {
             "name": "Transport-for-New-South-Wales-centralwestandorana2",
@@ -1377,7 +1377,7 @@
                 "headers": {
                     "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
                 }
-            }      
+            }
         },
         {
             "name": "Transport-for-New-South-Wales-northcoast2",
@@ -1413,7 +1413,7 @@
                 "headers": {
                     "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
                 }
-            }      
+            }
         },
         {
             "name": "Transport-for-New-South-Wales-northcoast3",
@@ -1449,7 +1449,7 @@
                 "headers": {
                     "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
                 }
-            }      
+            }
         },
         {
             "name": "Transport-for-New-South-Wales-riverinamurray2",
@@ -1485,7 +1485,7 @@
                 "headers": {
                     "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
                 }
-            }      
+            }
         },
         {
             "name": "Transport-for-New-South-Wales-southeasttablelands2",
@@ -1521,7 +1521,7 @@
                 "headers": {
                     "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
                 }
-            }      
+            }
         },
         {
             "name": "Transport-for-New-South-Wales-newcastlehunter",
@@ -1557,7 +1557,7 @@
                 "headers": {
                     "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
                 }
-            }      
+            }
         },
         {
             "name": "Transport-for-New-South-Wales-ReplacementBus",

@@ -31,8 +31,7 @@
             "name": "Flamingo-Christchurch",
             "type": "url",
             "spec": "gbfs",
-            "url": "https://data.rideflamingo.com/gbfs/3/christchurch/gbfs.json",
-            "use-feed-proxy": true
+            "url": "https://data.rideflamingo.com/gbfs/3/christchurch/gbfs.json"
         },
         {
             "name": "Flamingo-Dunedin",
@@ -75,9 +74,7 @@
             "spec": "gtfs-rt",
             "type": "url",
             "url": "https://api.opendata.metlink.org.nz/v1/gtfs-rt/servicealerts",
-            "headers": {
-                "Accept": "application/x-protobuf"
-            },
+            "headers": {},
             "use-feed-proxy": true
         },
         {
@@ -85,9 +82,7 @@
             "spec": "gtfs-rt",
             "type": "url",
             "url": "https://api.opendata.metlink.org.nz/v1/gtfs-rt/tripupdates",
-            "headers": {
-                "Accept": "application/x-protobuf"
-            },
+            "headers": {},
             "use-feed-proxy": true
         },
         {
@@ -95,9 +90,7 @@
             "spec": "gtfs-rt",
             "type": "url",
             "url": "https://api.opendata.metlink.org.nz/v1/gtfs-rt/vehiclepositions",
-            "headers": {
-                "Accept": "application/x-protobuf"
-            },
+            "headers": {},
             "use-feed-proxy": true
         },
         {
