@@ -31,8 +31,7 @@
             "name": "Flamingo-Christchurch",
             "type": "url",
             "spec": "gbfs",
-            "url": "https://data.rideflamingo.com/gbfs/3/christchurch/gbfs.json",
-            "use-feed-proxy": true
+            "url": "https://data.rideflamingo.com/gbfs/3/christchurch/gbfs.json"
         },
         {
             "name": "Flamingo-Dunedin",

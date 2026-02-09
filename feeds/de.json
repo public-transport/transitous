@@ -167,8 +167,7 @@
             "name": "DottFrankfurt",
             "type": "url",
             "url": "https://gbfs.api.ridedott.com/public/v2/frankfurt/gbfs.json",
-            "spec": "gbfs",
-            "use-feed-proxy": true
+            "spec": "gbfs"
         },
         {
             "name": "Deer",
@@ -224,22 +223,19 @@
             "name": "NextbikeBerlin",
             "type": "url",
             "url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_bn/gbfs.json",
-            "spec": "gbfs",
-            "use-feed-proxy": true
+            "spec": "gbfs"
         },
         {
             "name": "DottBerlin",
             "type": "url",
             "url": "https://gbfs.api.ridedott.com/public/v2/berlin/gbfs.json",
-            "spec": "gbfs",
-            "use-feed-proxy": true
+            "spec": "gbfs"
         },
         {
             "name": "esel.ac",
             "type": "url",
             "url": "https://di.esel.ac/gbfs/gbfs.json",
-            "spec": "gbfs",
-            "use-feed-proxy": true
+            "spec": "gbfs"
         }
     ]
 }
