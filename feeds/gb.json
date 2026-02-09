@@ -29,7 +29,8 @@
             "url": "https://realtime.aubin.app/great_britain_gtfsrt.binpb",
             "license": {
                 "url": "https://transitous.org/sources-great-britain"
-            }
+            },
+            "use-feed-proxy": true
         },
         {
             "name": "northern-ireland",
