@@ -355,19 +355,18 @@
             "name": "TransportGZM",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://github.com/TransportGZM-GTFS-mirror/TransportGZM-GTFS-normal/releases/latest/download/TransportGZM-GTFS.zip",
+            "url": "https://mkuran.pl/gtfs/gzm.zip",
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
-            },
-            "fix": true
+            }
         },
         {
             "name": "TransportGZM",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://gtfsrt.transportgzm.pl:5443/gtfsrt/gzm/tripUpdates",
+            "url": "https://next.zbiorkom.live/api6-open/bydgoszcz/gtfsRealtime/default/tripUpdates",
             "license": {
-                "spdx-identifier": "CC-BY-4.0"
+                "spdx-identifier": "MIT"
             }
         },
         {
@@ -604,6 +603,15 @@
             "fix": true
         },
         {
+            "name": "Wschód-Express",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://next.zbiorkom.live/api6-open/bialystok/gtfsRealtime/WSCHODEXPRESS/tripUpdates",
+            "license": {
+                "spdx-identifier": "MIT"
+            }
+        },
+        {
             "name": "PKS-Nova-Supraśl",
             "type": "http",
             "spec": "gtfs",
@@ -682,6 +690,15 @@
                 "spdx-identifier": "CC0-1.0"
             },
             "fix": true
+        },
+        {
+            "name": "Opole",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://next.zbiorkom.live/api6-open/opole/gtfsRealtime/default/tripUpdates",
+            "license": {
+                "spdx-identifier": "MIT"
+            }
         },
         {
             "name": "Arriva",
