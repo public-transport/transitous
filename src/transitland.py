@@ -48,6 +48,7 @@ class Atlas:
             result.spec = "gtfs-rt"
             result.skip = source.skip
             result.skip_reason = source.skip_reason
+            result.use_feed_proxy = source.use_feed_proxy
 
             if source.url_override:
                 result.url = source.url_override
@@ -61,6 +62,7 @@ class Atlas:
             result.spec = "gtfs-rt"
             result.skip = source.skip
             result.skip_reason = source.skip_reason
+            result.use_feed_proxy = source.use_feed_proxy
 
             if source.url_override:
                 result.url = source.url_override
@@ -74,6 +76,7 @@ class Atlas:
             result.spec = "gtfs-rt"
             result.skip = source.skip
             result.skip_reason = source.skip_reason
+            result.use_feed_proxy = source.use_feed_proxy
 
             if source.url_override:
                 result.url = source.url_override
