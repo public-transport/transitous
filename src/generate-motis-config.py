@@ -120,7 +120,7 @@ if __name__ == "__main__":
 
                     for source in resolved_sources:
                         use_original_url = isinstance(source, metadata.UrlSource) and not source.use_feed_proxy
-                        if arguments.feed_proxy and use_original_url:
+                        if arguments.feed_proxy and use_original_url and source.spec != "gbfs":
                             continue
                         if arguments.feed_proxy:
                             use_original_url = True
