@@ -58,6 +58,7 @@ class Source:
     default_timezone: Optional[str] = None
     keep_additional_fields = True
     script: Optional[str] = None
+    use_feed_proxy: bool = False
 
     def __init__(self, parsed: Optional[dict] = None):
         self.license = License()
@@ -102,6 +103,9 @@ class Source:
                 self.keep_additional_fields = bool(parsed["keep-additional-fields"])
             if "script" in parsed:
                 self.script = parsed["script"]
+            if "use-feed-proxy" in parsed:
+                self.use_feed_proxy = \
+                    bool(parsed["use-feed-proxy"])
 
 
 class HttpOptions:
@@ -192,6 +196,7 @@ class UrlSource(Source):
             self.url = parsed["url"]
             if "headers" in parsed:
                 self.headers = parsed["headers"]
+            
 
 
 def sourceFromJson(parsed: dict) -> Source:

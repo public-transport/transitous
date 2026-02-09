@@ -16,13 +16,15 @@
             "name": "lviv",
             "type": "mobility-database",
             "mdb-id": "mdb-2375",
-            "spec": "gtfs-rt"
+            "spec": "gtfs-rt",
+            "use-feed-proxy": true
         },
         {
             "name": "lviv",
             "type": "mobility-database",
             "mdb-id": "mdb-2376",
-            "spec": "gtfs-rt"
+            "spec": "gtfs-rt",
+            "use-feed-proxy": true
         },
         {
             "name": "ukrzaliznytsya",
@@ -60,9 +62,8 @@
             "type": "url",
             "spec": "gtfs-rt",
             "url": "https://gw.x24.digital/api/od-all/gtfs/v1/download/gtfs-rt-vehicles-pr.pb",
-            "headers": {
-                "ApiKey": "a8c6d35e-f2c1-4f72-b902-831fa9215009"
-            }
+            "headers": {},
+            "use-feed-proxy": true
         },
         {
             "name": "bucha",
@@ -79,9 +80,8 @@
             "type": "url",
             "spec": "gtfs-rt",
             "url": "https://gw.x24.digital/api/bu/gtfs/v1/download/gtfs-rt-vehicles-pr.pb",
-            "headers": {
-                "ApiKey": "a8c6d35e-f2c1-4f72-b902-831fa9215009"
-            }
+            "headers": {},
+            "use-feed-proxy": true
         },
         {
             "name": "kyiv",
