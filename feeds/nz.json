@@ -31,7 +31,8 @@
             "name": "Flamingo-Christchurch",
             "type": "url",
             "spec": "gbfs",
-            "url": "https://data.rideflamingo.com/gbfs/3/christchurch/gbfs.json"
+            "url": "https://data.rideflamingo.com/gbfs/3/christchurch/gbfs.json",
+            "use-feed-proxy": true
         },
         {
             "name": "Flamingo-Dunedin",
@@ -109,7 +110,8 @@
             "name": "Metro-Christchurch",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-rb6b-metrochristchurch~rt",
-            "api-key": "920de6bcafdb445699a7ba92dd5cc005"
+            "api-key": "920de6bcafdb445699a7ba92dd5cc005",
+            "use-feed-proxy": true
         },
         {
             "name": "BUSIT",

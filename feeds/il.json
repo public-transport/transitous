@@ -21,7 +21,8 @@
                 "headers": {
                     "authorization": "tlv_848e1b42-c0c2"
                 }
-            }
+            },
+            "use-feed-proxy": true
         },
         {
             "name": "Israel-MOT",

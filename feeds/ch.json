@@ -51,7 +51,8 @@
             "type": "url",
             "url": "https://sharedmobility.ch/v2/gbfs",
             "spec": "gbfs",
-            "headers": {}
+            "headers": {},
+            "use-feed-proxy": true
         }
     ]
 }

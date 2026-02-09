@@ -90,13 +90,15 @@
             "name": "MTA-BusManhattan",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://gtfsrt.prod.obanyc.com/tripUpdates?key=e6a24daf-8207-4e14-8795-b612ea66878f"
+            "url": "https://gtfsrt.prod.obanyc.com/tripUpdates?key=e6a24daf-8207-4e14-8795-b612ea66878f",
+            "use-feed-proxy": true
         },
         {
             "name": "MTA-BusManhattan",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://gtfsrt.prod.obanyc.com/alerts?key=e6a24daf-8207-4e14-8795-b612ea66878f"
+            "url": "https://gtfsrt.prod.obanyc.com/alerts?key=e6a24daf-8207-4e14-8795-b612ea66878f",
+            "use-feed-proxy": true
         },
         {
             "name": "MTA-BusQueens",
@@ -107,13 +109,15 @@
             "name": "MTA-BusQueens",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://gtfsrt.prod.obanyc.com/tripUpdates?key=e6a24daf-8207-4e14-8795-b612ea66878f"
+            "url": "https://gtfsrt.prod.obanyc.com/tripUpdates?key=e6a24daf-8207-4e14-8795-b612ea66878f",
+            "use-feed-proxy": true
         },
         {
             "name": "MTA-BusQueens",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://gtfsrt.prod.obanyc.com/alerts?key=e6a24daf-8207-4e14-8795-b612ea66878f"
+            "url": "https://gtfsrt.prod.obanyc.com/alerts?key=e6a24daf-8207-4e14-8795-b612ea66878f",
+            "use-feed-proxy": true
         },
         {
             "name": "MTA-BusStatenIsland",
@@ -124,13 +128,15 @@
             "name": "MTA-BusStatenIsland",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://gtfsrt.prod.obanyc.com/tripUpdates?key=e6a24daf-8207-4e14-8795-b612ea66878f"
+            "url": "https://gtfsrt.prod.obanyc.com/tripUpdates?key=e6a24daf-8207-4e14-8795-b612ea66878f",
+            "use-feed-proxy": true
         },
         {
             "name": "MTA-BusStatenIsland",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://gtfsrt.prod.obanyc.com/alerts?key=e6a24daf-8207-4e14-8795-b612ea66878f"
+            "url": "https://gtfsrt.prod.obanyc.com/alerts?key=e6a24daf-8207-4e14-8795-b612ea66878f",
+            "use-feed-proxy": true
         },
         {
             "name": "MTA-BusBrooklyn",
@@ -141,13 +147,15 @@
             "name": "MTA-BusBrooklyn",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://gtfsrt.prod.obanyc.com/tripUpdates?key=e6a24daf-8207-4e14-8795-b612ea66878f"
+            "url": "https://gtfsrt.prod.obanyc.com/tripUpdates?key=e6a24daf-8207-4e14-8795-b612ea66878f",
+            "use-feed-proxy": true
         },
         {
             "name": "MTA-BusBrooklyn",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://gtfsrt.prod.obanyc.com/alerts?key=e6a24daf-8207-4e14-8795-b612ea66878f"
+            "url": "https://gtfsrt.prod.obanyc.com/alerts?key=e6a24daf-8207-4e14-8795-b612ea66878f",
+            "use-feed-proxy": true
         },
         {
             "name": "MTA-BusBronx",
@@ -158,13 +166,15 @@
             "name": "MTA-BusBronx",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://gtfsrt.prod.obanyc.com/tripUpdates?key=e6a24daf-8207-4e14-8795-b612ea66878f"
+            "url": "https://gtfsrt.prod.obanyc.com/tripUpdates?key=e6a24daf-8207-4e14-8795-b612ea66878f",
+            "use-feed-proxy": true
         },
         {
             "name": "MTA-BusBronx",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://gtfsrt.prod.obanyc.com/alerts?key=e6a24daf-8207-4e14-8795-b612ea66878f"
+            "url": "https://gtfsrt.prod.obanyc.com/alerts?key=e6a24daf-8207-4e14-8795-b612ea66878f",
+            "use-feed-proxy": true
         },
         {
             "name": "MTA-BusCompany",
@@ -175,13 +185,15 @@
             "name": "MTA-BusCompany",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://gtfsrt.prod.obanyc.com/tripUpdates?key=e6a24daf-8207-4e14-8795-b612ea66878f"
+            "url": "https://gtfsrt.prod.obanyc.com/tripUpdates?key=e6a24daf-8207-4e14-8795-b612ea66878f",
+            "use-feed-proxy": true
         },
         {
             "name": "MTA-BusCompany",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://gtfsrt.prod.obanyc.com/alerts?key=e6a24daf-8207-4e14-8795-b612ea66878f"
+            "url": "https://gtfsrt.prod.obanyc.com/alerts?key=e6a24daf-8207-4e14-8795-b612ea66878f",
+            "use-feed-proxy": true
         },
         {
             "name": "PATH",

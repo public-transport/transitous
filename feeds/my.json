@@ -40,7 +40,8 @@
         {
             "name": "ktmb",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-ktmb~rt"
+            "transitland-atlas-id": "f-ktmb~rt",
+            "use-feed-proxy": true
         }
     ]
 }

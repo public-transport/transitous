@@ -16,13 +16,15 @@
             "name": "lviv",
             "type": "mobility-database",
             "mdb-id": "mdb-2375",
-            "spec": "gtfs-rt"
+            "spec": "gtfs-rt",
+            "use-feed-proxy": true
         },
         {
             "name": "lviv",
             "type": "mobility-database",
             "mdb-id": "mdb-2376",
-            "spec": "gtfs-rt"
+            "spec": "gtfs-rt",
+            "use-feed-proxy": true
         },
         {
             "name": "ukrzaliznytsya",

@@ -225,7 +225,8 @@
             "x-data-gov-fr-res-id": 81580,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "gbfs.json",
-            "x-data-gov-fr-dataset-id": "56ec0a73c751df73c4cc7169"
+            "x-data-gov-fr-dataset-id": "56ec0a73c751df73c4cc7169",
+            "use-feed-proxy": true
         },
         {
             "name": "reseau-urbain-STAR",
@@ -354,7 +355,8 @@
             "x-data-gov-fr-res-id": 50823,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "Flux GBFS",
-            "x-data-gov-fr-dataset-id": "5a4e60f2b595080ee8014056"
+            "x-data-gov-fr-dataset-id": "5a4e60f2b595080ee8014056",
+            "use-feed-proxy": true
         },
         {
             "name": "reseau-urbain-kiceo",
@@ -1458,7 +1460,8 @@
             "x-data-gov-fr-res-id": 82424,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "Optymo - VLS - Liste et état des stations",
-            "x-data-gov-fr-dataset-id": "5c209625634f41616b51e726"
+            "x-data-gov-fr-dataset-id": "5c209625634f41616b51e726",
+            "use-feed-proxy": true
         },
         {
             "name": "offre-de-transport-de-montpellier-mediterranee-metropole-tam-gtfs",
@@ -2251,7 +2254,8 @@
             "x-data-gov-fr-res-id": 79088,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "Fichier de découverte",
-            "x-data-gov-fr-dataset-id": "5d68f93d6f4441107ddce8e7"
+            "x-data-gov-fr-dataset-id": "5d68f93d6f4441107ddce8e7",
+            "use-feed-proxy": true
         },
         {
             "name": "horaires-theoriques-et-temps-reel-du-reseau-alliance-auch-gtfs-gtfs-rt",
@@ -2352,7 +2356,8 @@
             "x-data-gov-fr-res-id": 80008,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "Fichier gbfs.json",
-            "x-data-gov-fr-dataset-id": "5dd4ba78dee7e7341e936949"
+            "x-data-gov-fr-dataset-id": "5dd4ba78dee7e7341e936949",
+            "use-feed-proxy": true
         },
         {
             "name": "horaires-theoriques-du-reseau-transports-en-commun-lyonnais",
@@ -3977,7 +3982,8 @@
             "x-data-gov-fr-res-id": 82742,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "Tier-Dott Paris GBFS",
-            "x-data-gov-fr-dataset-id": "61386c427595eb09a2efff24"
+            "x-data-gov-fr-dataset-id": "61386c427595eb09a2efff24",
+            "use-feed-proxy": true
         },
         {
             "name": "horaires-theoriques-du-telepherique-de-la-bastille",
@@ -4169,7 +4175,8 @@
             "x-data-gov-fr-res-id": 60826,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "GBFS",
-            "x-data-gov-fr-dataset-id": "61643ec5d12f019ebfe51db8"
+            "x-data-gov-fr-dataset-id": "61643ec5d12f019ebfe51db8",
+            "use-feed-proxy": true
         },
         {
             "name": "bordeaux-velos-et-trottinettes-en-libre-service",
@@ -4183,7 +4190,8 @@
             "x-data-gov-fr-res-id": 60823,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "GBFS",
-            "x-data-gov-fr-dataset-id": "616440c812d5b83e054d33a1"
+            "x-data-gov-fr-dataset-id": "616440c812d5b83e054d33a1",
+            "use-feed-proxy": true
         },
         {
             "name": "offre-de-transports-jybus-a-rumilly",
@@ -4212,7 +4220,8 @@
             "x-data-gov-fr-res-id": 63612,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "GBFS v2.2 - Informations stations",
-            "x-data-gov-fr-dataset-id": "61780b3419c9158cedb3f53b"
+            "x-data-gov-fr-dataset-id": "61780b3419c9158cedb3f53b",
+            "use-feed-proxy": true
         },
         {
             "name": "paris-sud-velos-a-assistance-electrique-en-libre-service--63613",
@@ -4226,7 +4235,8 @@
             "x-data-gov-fr-res-id": 63613,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "GBFS v2.2 - États des stations",
-            "x-data-gov-fr-dataset-id": "61780b3419c9158cedb3f53b"
+            "x-data-gov-fr-dataset-id": "61780b3419c9158cedb3f53b",
+            "use-feed-proxy": true
         },
         {
             "name": "paris-sud-velos-a-assistance-electrique-en-libre-service--63614",
@@ -4240,7 +4250,8 @@
             "x-data-gov-fr-res-id": 63614,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "GBFS v2.2 - États des vélos en libre-service",
-            "x-data-gov-fr-dataset-id": "61780b3419c9158cedb3f53b"
+            "x-data-gov-fr-dataset-id": "61780b3419c9158cedb3f53b",
+            "use-feed-proxy": true
         },
         {
             "name": "paris-sud-velos-a-assistance-electrique-en-libre-service--63615",
@@ -4254,7 +4265,8 @@
             "x-data-gov-fr-res-id": 63615,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "GBFS v2.2",
-            "x-data-gov-fr-dataset-id": "61780b3419c9158cedb3f53b"
+            "x-data-gov-fr-dataset-id": "61780b3419c9158cedb3f53b",
+            "use-feed-proxy": true
         },
         {
             "name": "angers-loire-metropole-reseau-irigo-gtfs-gtfs-rt-siri",
@@ -4340,7 +4352,8 @@
             "x-data-gov-fr-res-id": 65596,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "General Bikeshare Feed Specification (GBFS) v2.3",
-            "x-data-gov-fr-dataset-id": "619216dea5f540a0bdf534a5"
+            "x-data-gov-fr-dataset-id": "619216dea5f540a0bdf534a5",
+            "use-feed-proxy": true
         },
         {
             "name": "reseau-urbain-caux-seine-mobilite-rezobus",
@@ -4411,7 +4424,8 @@
             "x-data-gov-fr-res-id": 75720,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "Lime Paris",
-            "x-data-gov-fr-dataset-id": "61b1d968a410d0d0edbb9d8f"
+            "x-data-gov-fr-dataset-id": "61b1d968a410d0d0edbb9d8f",
+            "use-feed-proxy": true
         },
         {
             "name": "reseau-interurbain-cars-region-express",
@@ -4674,7 +4688,8 @@
             "x-data-gov-fr-res-id": 79102,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "Disponibilité des vélos en libre-service  de Montpellier en temps réel ",
-            "x-data-gov-fr-dataset-id": "6253e8fc6ed8eb554148b112"
+            "x-data-gov-fr-dataset-id": "6253e8fc6ed8eb554148b112",
+            "use-feed-proxy": true
         },
         {
             "name": "reseau-urbain-ville-de-vitre--83019",
@@ -4851,7 +4866,8 @@
             "x-data-gov-fr-res-id": 80484,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "Station_Status",
-            "x-data-gov-fr-dataset-id": "632974ffdd082af417b65a89"
+            "x-data-gov-fr-dataset-id": "632974ffdd082af417b65a89",
+            "use-feed-proxy": true
         },
         {
             "name": "location-de-velos-velobaie--80485",
@@ -4865,7 +4881,8 @@
             "x-data-gov-fr-res-id": 80485,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "Station_Information",
-            "x-data-gov-fr-dataset-id": "632974ffdd082af417b65a89"
+            "x-data-gov-fr-dataset-id": "632974ffdd082af417b65a89",
+            "use-feed-proxy": true
         },
         {
             "name": "location-de-velos-velobaie--80486",
@@ -4879,7 +4896,8 @@
             "x-data-gov-fr-res-id": 80486,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "GBFS",
-            "x-data-gov-fr-dataset-id": "632974ffdd082af417b65a89"
+            "x-data-gov-fr-dataset-id": "632974ffdd082af417b65a89",
+            "use-feed-proxy": true
         },
         {
             "name": "arrets-horaires-et-parcours-theoriques-des-reseaux-naq-nio-nva-m-1",
@@ -5773,7 +5791,8 @@
             "x-data-gov-fr-res-id": 80219,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "Etat des stations de Vélos en Libre-Service C.vélo (GBFS)",
-            "x-data-gov-fr-dataset-id": "6397c0febc6459ee9ac8cd20"
+            "x-data-gov-fr-dataset-id": "6397c0febc6459ee9ac8cd20",
+            "use-feed-proxy": true
         },
         {
             "name": "reseau-yego-macs",
@@ -6905,7 +6924,8 @@
             "x-data-gov-fr-res-id": 80604,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "GBFS",
-            "x-data-gov-fr-dataset-id": "63c91087b1d439ee08239fc4"
+            "x-data-gov-fr-dataset-id": "63c91087b1d439ee08239fc4",
+            "use-feed-proxy": true
         },
         {
             "name": "semo-val-de-reuil-louviers-seine-eure-agglo",
@@ -7050,7 +7070,8 @@
             "x-data-gov-fr-res-id": 80665,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "GBFS v2.2 - États des vélos en libre-service",
-            "x-data-gov-fr-dataset-id": "63ecf86afb07b671684c0f18"
+            "x-data-gov-fr-dataset-id": "63ecf86afb07b671684c0f18",
+            "use-feed-proxy": true
         },
         {
             "name": "sngo-vernon-les-andelys-seine-normandie-agglo",
@@ -7483,7 +7504,8 @@
             "x-data-gov-fr-res-id": 81000,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "Données statiques et temps réel du service de VLS Lovélo Métropole Rouen Normandie",
-            "x-data-gov-fr-dataset-id": "64919d2f03c6861c686e0e87"
+            "x-data-gov-fr-dataset-id": "64919d2f03c6861c686e0e87",
+            "use-feed-proxy": true
         },
         {
             "name": "donnees-theoriques-et-temps-reel-du-reseau-mobi-communaute-de-communes-du-pays-de-valois",
@@ -7950,7 +7972,8 @@
             "x-data-gov-fr-res-id": 81114,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "GBFS Voi Marseille",
-            "x-data-gov-fr-dataset-id": "64bf8ad4b8d2fbf11450a82b"
+            "x-data-gov-fr-dataset-id": "64bf8ad4b8d2fbf11450a82b",
+            "use-feed-proxy": true
         },
         {
             "name": "reseau-interurbain-corolis",
@@ -8248,7 +8271,8 @@
             "x-data-gov-fr-res-id": 81452,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "Véhicules en autopartage LeoandGo dans la Métropole de Lyon - disponibilités temps réel",
-            "x-data-gov-fr-dataset-id": "657b89d24b21cb1b576b3943"
+            "x-data-gov-fr-dataset-id": "657b89d24b21cb1b576b3943",
+            "use-feed-proxy": true
         },
         {
             "name": "reseau-urbain-la-navette-commune-de-gaillac",
@@ -8795,7 +8819,8 @@
             "x-data-gov-fr-res-id": 81552,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ae/gbfs.json",
-            "x-data-gov-fr-dataset-id": "65ab0d58c86e8597d65aa47f"
+            "x-data-gov-fr-dataset-id": "65ab0d58c86e8597d65aa47f",
+            "use-feed-proxy": true
         },
         {
             "name": "offre-de-transport-cc-jalles-eau-bourde",
@@ -8869,7 +8894,8 @@
             "x-data-gov-fr-res-id": 81637,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "API Cyclocity / JCDecaux Developer",
-            "x-data-gov-fr-dataset-id": "65d5b9f71f672b6c776a9c37"
+            "x-data-gov-fr-dataset-id": "65d5b9f71f672b6c776a9c37",
+            "use-feed-proxy": true
         },
         {
             "name": "cherpa-horaires-lignes-regulieres",
@@ -8912,7 +8938,8 @@
             "x-data-gov-fr-res-id": 82400,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "https://api.gbfs.ecovelo.mobi/velyceo/gbfs.json",
-            "x-data-gov-fr-dataset-id": "65e1203bb1957b6a9b7b2a8e"
+            "x-data-gov-fr-dataset-id": "65e1203bb1957b6a9b7b2a8e",
+            "use-feed-proxy": true
         },
         {
             "name": "donnees-de-mobilite",
@@ -9296,7 +9323,8 @@
             "x-data-gov-fr-res-id": 81785,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "Vélos en Libre Service Tanlib",
-            "x-data-gov-fr-dataset-id": "663a1c64c2f2f67031630e7c"
+            "x-data-gov-fr-dataset-id": "663a1c64c2f2f67031630e7c",
+            "use-feed-proxy": true
         },
         {
             "name": "fiches-horaires-reseau-urbain-mio-ccmillaugrandscausses",
@@ -9326,7 +9354,8 @@
             "x-data-gov-fr-res-id": 81768,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "GBFS Tempo Vélo",
-            "x-data-gov-fr-dataset-id": "664dde517b5403caf89050f8"
+            "x-data-gov-fr-dataset-id": "664dde517b5403caf89050f8",
+            "use-feed-proxy": true
         },
         {
             "name": "horaires-theoriques-du-reseau-tgl",
@@ -9427,7 +9456,8 @@
             "x-data-gov-fr-res-id": 81800,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "Cyclolibre",
-            "x-data-gov-fr-dataset-id": "6661afc1e4a8ac1cf67f1fdf"
+            "x-data-gov-fr-dataset-id": "6661afc1e4a8ac1cf67f1fdf",
+            "use-feed-proxy": true
         },
         {
             "name": "reseau-rtca",
@@ -9456,7 +9486,8 @@
             "x-data-gov-fr-res-id": 81837,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "https://api.cyclocity.fr/contracts/nantes/gbfs/gbfs.json",
-            "x-data-gov-fr-dataset-id": "666b88b8f3d0ad620ec4be28"
+            "x-data-gov-fr-dataset-id": "666b88b8f3d0ad620ec4be28",
+            "use-feed-proxy": true
         },
         {
             "name": "vlille-disponibilite-en-temps-reel-3",
@@ -9470,7 +9501,8 @@
             "x-data-gov-fr-res-id": 82576,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "GBFS - V'lille",
-            "x-data-gov-fr-dataset-id": "666d11d2b378813b02c4be09"
+            "x-data-gov-fr-dataset-id": "666d11d2b378813b02c4be09",
+            "use-feed-proxy": true
         },
         {
             "name": "arrets-horaires-et-parcours-theoriques-gtfs-du-reseau-routier-regional-de-transport-scolaire-62-pas-de-calais",
@@ -9649,7 +9681,8 @@
             "x-data-gov-fr-res-id": 83173,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "Vel'in",
-            "x-data-gov-fr-dataset-id": "667053e4d6e8bd6a7b0aad0f"
+            "x-data-gov-fr-dataset-id": "667053e4d6e8bd6a7b0aad0f",
+            "use-feed-proxy": true
         },
         {
             "type": "http",
@@ -9765,7 +9798,8 @@
             "x-data-gov-fr-res-id": 82518,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "Optymo - ALS - Liste et état des stations",
-            "x-data-gov-fr-dataset-id": "667e76ec6d7d701130c5d561"
+            "x-data-gov-fr-dataset-id": "667e76ec6d7d701130c5d561",
+            "use-feed-proxy": true
         },
         {
             "name": "offre-de-transport-communaute-dagglomeration-le-grand-narbonne",
@@ -9822,7 +9856,8 @@
             "x-data-gov-fr-res-id": 81929,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "Vélos en libre-service du réseau Transvilles au format GBFS",
-            "x-data-gov-fr-dataset-id": "668562f2841f9eccd38cc2d4"
+            "x-data-gov-fr-dataset-id": "668562f2841f9eccd38cc2d4",
+            "use-feed-proxy": true
         },
         {
             "name": "lignes-des-reseaux-transport-zou-provence-alpes-cote-d-azur-scolaire-1-3",
@@ -10013,7 +10048,8 @@
             "x-data-gov-fr-res-id": 81984,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "Index racine de l'API",
-            "x-data-gov-fr-dataset-id": "669ef40c1acd6245ea444b63"
+            "x-data-gov-fr-dataset-id": "669ef40c1acd6245ea444b63",
+            "use-feed-proxy": true
         },
         {
             "name": "velo-en-libre-service-de-la-ville-damiens--83828",
@@ -10027,7 +10063,8 @@
             "x-data-gov-fr-res-id": 83828,
             "x-data-gov-fr-dataset-id": "669ef40c1acd6245ea444b63",
             "x-data-gov-fr-res-title": "Information sur le service Vélam",
-            "managed-by-script": true
+            "managed-by-script": true,
+            "use-feed-proxy": true
         },
         {
             "name": "velo-en-libre-service-de-la-ville-damiens--83829",
@@ -10041,7 +10078,8 @@
             "x-data-gov-fr-res-id": 83829,
             "x-data-gov-fr-dataset-id": "669ef40c1acd6245ea444b63",
             "x-data-gov-fr-res-title": "Caractéristiques des vélos",
-            "managed-by-script": true
+            "managed-by-script": true,
+            "use-feed-proxy": true
         },
         {
             "name": "astrobus-lisieux-normandie",
@@ -10187,7 +10225,8 @@
             "x-data-gov-fr-res-id": 82143,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "TLP Mobilités",
-            "x-data-gov-fr-dataset-id": "66cc72e157e738dfff55c91f"
+            "x-data-gov-fr-dataset-id": "66cc72e157e738dfff55c91f",
+            "use-feed-proxy": true
         },
         {
             "name": "offre-de-transport-coban",
@@ -10528,7 +10567,8 @@
             "x-data-gov-fr-res-id": 82384,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "VAELS Cap Cotentin au standard GBFS",
-            "x-data-gov-fr-dataset-id": "66faa0204dc609cfa228f93e"
+            "x-data-gov-fr-dataset-id": "66faa0204dc609cfa228f93e",
+            "use-feed-proxy": true
         },
         {
             "name": "yceo-arrets-horaires-et-lignes-urbaines-et-scolaires-gtfs-1",
@@ -10557,7 +10597,8 @@
             "x-data-gov-fr-res-id": 82385,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "Vélos à assistance électrique en libre service des ports de Piriac-sur-Mer et de La Turballe (R'Houle)",
-            "x-data-gov-fr-dataset-id": "66ff78ad5bf0c8f2f14c5dd7"
+            "x-data-gov-fr-dataset-id": "66ff78ad5bf0c8f2f14c5dd7",
+            "use-feed-proxy": true
         },
         {
             "name": "horaires-ave-espagne-france",
@@ -10586,7 +10627,8 @@
             "x-data-gov-fr-res-id": 82391,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "VLS Impulsyon",
-            "x-data-gov-fr-dataset-id": "670636214ac21a030b7b236b"
+            "x-data-gov-fr-dataset-id": "670636214ac21a030b7b236b",
+            "use-feed-proxy": true
         },
         {
             "name": "velos-a-assistance-electrique-en-libre-service-vernou-en-sologne-vernou-velo",
@@ -10600,7 +10642,8 @@
             "x-data-gov-fr-res-id": 82395,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "Vélos à assistance électrique en libre service Venou-en-Sologne (Vernou Vélo)",
-            "x-data-gov-fr-dataset-id": "6707de3ae7c55bb4c5784c39"
+            "x-data-gov-fr-dataset-id": "6707de3ae7c55bb4c5784c39",
+            "use-feed-proxy": true
         },
         {
             "name": "ecla-lons-agglo-mobilites",
@@ -10629,7 +10672,8 @@
             "x-data-gov-fr-res-id": 82417,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "GBFS Trottinettes Impulsyon",
-            "x-data-gov-fr-dataset-id": "6711155f7020dc986028b9df"
+            "x-data-gov-fr-dataset-id": "6711155f7020dc986028b9df",
+            "use-feed-proxy": true
         },
         {
             "name": "vls-vilvolt-agglomeration-depinal",
@@ -10643,7 +10687,8 @@
             "x-data-gov-fr-res-id": 82426,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "Flux GBFS Vilvolt",
-            "x-data-gov-fr-dataset-id": "6718c5d9662a09b51efc4924"
+            "x-data-gov-fr-dataset-id": "6718c5d9662a09b51efc4924",
+            "use-feed-proxy": true
         },
         {
             "name": "transport-urbain-3cma-bus",
@@ -10701,7 +10746,8 @@
             "x-data-gov-fr-res-id": 82566,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "Vélos en libre service ViVélo",
-            "x-data-gov-fr-dataset-id": "6736f506d502e042f2b00eb8"
+            "x-data-gov-fr-dataset-id": "6736f506d502e042f2b00eb8",
+            "use-feed-proxy": true
         },
         {
             "name": "horaires-rlv-mobilites",
@@ -10744,7 +10790,8 @@
             "x-data-gov-fr-res-id": 82552,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "Url du flux GBFS",
-            "x-data-gov-fr-dataset-id": "673dfeb8d69889a7e57c6659"
+            "x-data-gov-fr-dataset-id": "673dfeb8d69889a7e57c6659",
+            "use-feed-proxy": true
         },
         {
             "name": "reseau-de-transports-collectifs-de-la-ccgq",
@@ -10806,7 +10853,8 @@
             "managed-by-script": true,
             "skip": true,
             "x-data-gov-fr-res-title": "Tier-Dott Public GBFS Feed for France",
-            "x-data-gov-fr-dataset-id": "675815f48647957f99cb8fa1"
+            "x-data-gov-fr-dataset-id": "675815f48647957f99cb8fa1",
+            "use-feed-proxy": true
         },
         {
             "name": "tier-dott-gbfs-france--82748",
@@ -10821,7 +10869,8 @@
             "managed-by-script": true,
             "skip": true,
             "x-data-gov-fr-res-title": "Tier-Dott Public GBFS Feed - Bourgoin-jallieu",
-            "x-data-gov-fr-dataset-id": "675815f48647957f99cb8fa1"
+            "x-data-gov-fr-dataset-id": "675815f48647957f99cb8fa1",
+            "use-feed-proxy": true
         },
         {
             "name": "tier-dott-gbfs-france--82749",
@@ -10836,7 +10885,8 @@
             "managed-by-script": true,
             "skip": true,
             "x-data-gov-fr-res-title": "Tier-Dott Public GBFS Feed - Gpseo",
-            "x-data-gov-fr-dataset-id": "675815f48647957f99cb8fa1"
+            "x-data-gov-fr-dataset-id": "675815f48647957f99cb8fa1",
+            "use-feed-proxy": true
         },
         {
             "name": "tier-dott-gbfs-france--82750",
@@ -10851,7 +10901,8 @@
             "managed-by-script": true,
             "skip": true,
             "x-data-gov-fr-res-title": "Tier-Dott Public GBFS Feed - Paris",
-            "x-data-gov-fr-dataset-id": "675815f48647957f99cb8fa1"
+            "x-data-gov-fr-dataset-id": "675815f48647957f99cb8fa1",
+            "use-feed-proxy": true
         },
         {
             "name": "tier-dott-gbfs-france--82751",
@@ -10866,7 +10917,8 @@
             "managed-by-script": true,
             "skip": true,
             "x-data-gov-fr-res-title": "Tier-Dott Public GBFS Feed - Lyon",
-            "x-data-gov-fr-dataset-id": "675815f48647957f99cb8fa1"
+            "x-data-gov-fr-dataset-id": "675815f48647957f99cb8fa1",
+            "use-feed-proxy": true
         },
         {
             "name": "tier-dott-gbfs-france--82752",
@@ -10881,7 +10933,8 @@
             "managed-by-script": true,
             "skip": true,
             "x-data-gov-fr-res-title": "Tier-Dott Public GBFS Feed - Saint-quentin-en-yvelines",
-            "x-data-gov-fr-dataset-id": "675815f48647957f99cb8fa1"
+            "x-data-gov-fr-dataset-id": "675815f48647957f99cb8fa1",
+            "use-feed-proxy": true
         },
         {
             "name": "tier-dott-gbfs-france--82753",
@@ -10896,7 +10949,8 @@
             "managed-by-script": true,
             "skip": true,
             "x-data-gov-fr-res-title": "Tier-Dott Public GBFS Feed - Bordeaux",
-            "x-data-gov-fr-dataset-id": "675815f48647957f99cb8fa1"
+            "x-data-gov-fr-dataset-id": "675815f48647957f99cb8fa1",
+            "use-feed-proxy": true
         },
         {
             "name": "tier-dott-gbfs-france--82754",
@@ -10911,7 +10965,8 @@
             "managed-by-script": true,
             "skip": true,
             "x-data-gov-fr-res-title": "Tier-Dott Public GBFS Feed - Ol-vallee",
-            "x-data-gov-fr-dataset-id": "675815f48647957f99cb8fa1"
+            "x-data-gov-fr-dataset-id": "675815f48647957f99cb8fa1",
+            "use-feed-proxy": true
         },
         {
             "name": "tier-dott-gbfs-france--82755",
@@ -10926,7 +10981,8 @@
             "managed-by-script": true,
             "skip": true,
             "x-data-gov-fr-res-title": "Tier-Dott Public GBFS Feed - Casgbs",
-            "x-data-gov-fr-dataset-id": "675815f48647957f99cb8fa1"
+            "x-data-gov-fr-dataset-id": "675815f48647957f99cb8fa1",
+            "use-feed-proxy": true
         },
         {
             "name": "tier-dott-gbfs-france--82756",
@@ -10941,7 +10997,8 @@
             "managed-by-script": true,
             "skip": true,
             "x-data-gov-fr-res-title": "Tier-Dott Public GBFS Feed - Grenoble",
-            "x-data-gov-fr-dataset-id": "675815f48647957f99cb8fa1"
+            "x-data-gov-fr-dataset-id": "675815f48647957f99cb8fa1",
+            "use-feed-proxy": true
         },
         {
             "name": "vehicules-en-libre-service-autopartage-citiz",
@@ -10955,7 +11012,8 @@
             "x-data-gov-fr-res-id": 82716,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "citiz-angers-gbfs",
-            "x-data-gov-fr-dataset-id": "6760f791c2bc7fb5285d9105"
+            "x-data-gov-fr-dataset-id": "6760f791c2bc7fb5285d9105",
+            "use-feed-proxy": true
         },
         {
             "name": "reseau-vai-embrun",
@@ -10984,7 +11042,8 @@
             "x-data-gov-fr-res-id": 82650,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "fichier gbfs veleo electrique en libre service",
-            "x-data-gov-fr-dataset-id": "6762a6c986ab92fa17d60344"
+            "x-data-gov-fr-dataset-id": "6762a6c986ab92fa17d60344",
+            "use-feed-proxy": true
         },
         {
             "name": "vls-ca-du-libournais-calivelo--82694",
@@ -10998,7 +11057,8 @@
             "x-data-gov-fr-res-id": 82694,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "API GBFS Ecovelo du réseau vélo de Libourne",
-            "x-data-gov-fr-dataset-id": "6764270d9974cde8f16d0c9b"
+            "x-data-gov-fr-dataset-id": "6764270d9974cde8f16d0c9b",
+            "use-feed-proxy": true
         },
         {
             "name": "vls-ca-du-libournais-calivelo--82695",
@@ -11012,7 +11072,8 @@
             "x-data-gov-fr-res-id": 82695,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "API GBFS du réseau vélo de Libourne",
-            "x-data-gov-fr-dataset-id": "6764270d9974cde8f16d0c9b"
+            "x-data-gov-fr-dataset-id": "6764270d9974cde8f16d0c9b",
+            "use-feed-proxy": true
         },
         {
             "name": "vls-ca-bassin-de-brive-velibeo",
@@ -11026,7 +11087,8 @@
             "x-data-gov-fr-res-id": 82675,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "API GBFS du réseau vélo de Brive",
-            "x-data-gov-fr-dataset-id": "6764270d9974cde8f16d0c9c"
+            "x-data-gov-fr-dataset-id": "6764270d9974cde8f16d0c9c",
+            "use-feed-proxy": true
         },
         {
             "name": "vls-ca-grand-perigueux-perivelo",
@@ -11040,7 +11102,8 @@
             "x-data-gov-fr-res-id": 82674,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "API GBFS du réseau vélo de Périgueux",
-            "x-data-gov-fr-dataset-id": "6764270e9974cde8f16d0c9e"
+            "x-data-gov-fr-dataset-id": "6764270e9974cde8f16d0c9e",
+            "use-feed-proxy": true
         },
         {
             "name": "meribus-hiver",
@@ -11070,7 +11133,8 @@
             "x-data-gov-fr-res-id": 82676,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "VLS AQTA (Auray Quiberon Terre Atlantique)",
-            "x-data-gov-fr-dataset-id": "67765bb157a900bd50ba565a"
+            "x-data-gov-fr-dataset-id": "67765bb157a900bd50ba565a",
+            "use-feed-proxy": true
         },
         {
             "name": "voi-gbfs-et-netex-le-havre-et-octeville-sur-mer",
@@ -11084,7 +11148,8 @@
             "x-data-gov-fr-res-id": 82691,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "GBFS Voi Le Havre and Octeville-sur-Mer",
-            "x-data-gov-fr-dataset-id": "677e592ee35ff10f6c60ab68"
+            "x-data-gov-fr-dataset-id": "677e592ee35ff10f6c60ab68",
+            "use-feed-proxy": true
         },
         {
             "name": "bus-pastel-saint-quentin",
@@ -11156,7 +11221,8 @@
             "x-data-gov-fr-res-id": 82696,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "Vélos à assistance électrique en libre service Saint-Pierre La Réunion CIVIS (Altervélo)",
-            "x-data-gov-fr-dataset-id": "67857abda9f04ae5867c45f5"
+            "x-data-gov-fr-dataset-id": "67857abda9f04ae5867c45f5",
+            "use-feed-proxy": true
         },
         {
             "name": "velos-a-assistance-electrique-en-libre-service-pointe-a-pitre-la-guadeloupe-karuvelo",
@@ -11170,7 +11236,8 @@
             "x-data-gov-fr-res-id": 82697,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "Vélos à assistance électrique en libre service Pointe-à-Pitre Guadeloupe (Karu'vélo)",
-            "x-data-gov-fr-dataset-id": "67857e804b0274a1262c6cce"
+            "x-data-gov-fr-dataset-id": "67857e804b0274a1262c6cce",
+            "use-feed-proxy": true
         },
         {
             "name": "transport-en-commun-de-la-ville-dorange-ccpop-1",
@@ -11199,7 +11266,8 @@
             "x-data-gov-fr-res-id": 82699,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "Vélos à assistance électrique en libre service Sables d'Olonne (Les petites reines)",
-            "x-data-gov-fr-dataset-id": "678622703cf6e1fcb2c27fe7"
+            "x-data-gov-fr-dataset-id": "678622703cf6e1fcb2c27fe7",
+            "use-feed-proxy": true
         },
         {
             "name": "velos-a-assistance-electrique-en-libre-service-laon-velocite",
@@ -11213,7 +11281,8 @@
             "x-data-gov-fr-res-id": 82700,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "Vélos à assistance électrique en libre service Laon  (Vélo'Cité)",
-            "x-data-gov-fr-dataset-id": "678624f86b6e783fe52d7f1a"
+            "x-data-gov-fr-dataset-id": "678624f86b6e783fe52d7f1a",
+            "use-feed-proxy": true
         },
         {
             "name": "velos-a-assistance-electrique-en-libre-service-saumur-ogalo-cyclette",
@@ -11227,7 +11296,8 @@
             "x-data-gov-fr-res-id": 82701,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "Vélos à assistance électrique en libre service Saumur (Ogalo Cyclette)",
-            "x-data-gov-fr-dataset-id": "678627075984057ed216c0b3"
+            "x-data-gov-fr-dataset-id": "678627075984057ed216c0b3",
+            "use-feed-proxy": true
         },
         {
             "name": "velos-a-assistance-electrique-en-libre-service-argeles-sur-mer-velo-daqui-1",
@@ -11241,7 +11311,8 @@
             "x-data-gov-fr-res-id": 82707,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "Vélos à assistance électrique en libre service Argelès-sur-mer (Vélo d'Aqui)",
-            "x-data-gov-fr-dataset-id": "67868306a5980b729c33ddec"
+            "x-data-gov-fr-dataset-id": "67868306a5980b729c33ddec",
+            "use-feed-proxy": true
         },
         {
             "name": "neva-granville-terre-et-mer",
@@ -11313,7 +11384,8 @@
             "managed-by-script": true,
             "name": "citiz-autopartage-grand-est",
             "x-data-gov-fr-res-title": "gbfs-citiz-autopartage-grand-est",
-            "x-data-gov-fr-dataset-id": "678e607cea68baffac0f0513"
+            "x-data-gov-fr-dataset-id": "678e607cea68baffac0f0513",
+            "use-feed-proxy": true
         },
         {
             "name": "citiz-autopartage-bourgogne-franche-comte",
@@ -11327,7 +11399,8 @@
             "x-data-gov-fr-res-id": 83164,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "gbfs-citiz-autopartage-bfc",
-            "x-data-gov-fr-dataset-id": "678e63c0718bd105526bfa61"
+            "x-data-gov-fr-dataset-id": "678e63c0718bd105526bfa61",
+            "use-feed-proxy": true
         },
         {
             "name": "citiz-autopartage-auvergne-rhone-alpes",
@@ -11341,7 +11414,8 @@
             "x-data-gov-fr-res-id": 83163,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "gbfs-citiz-autopartage-aura",
-            "x-data-gov-fr-dataset-id": "678e69be93b3f9e17df18b70"
+            "x-data-gov-fr-dataset-id": "678e69be93b3f9e17df18b70",
+            "use-feed-proxy": true
         },
         {
             "name": "citiz-autopartage-provence",
@@ -11355,7 +11429,8 @@
             "x-data-gov-fr-res-id": 83165,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "gbfs-citiz-autopartage-provence",
-            "x-data-gov-fr-dataset-id": "678e6c068a2785ad5b2099f8"
+            "x-data-gov-fr-dataset-id": "678e6c068a2785ad5b2099f8",
+            "use-feed-proxy": true
         },
         {
             "name": "citiz-autopartage-occitanie",
@@ -11369,7 +11444,8 @@
             "x-data-gov-fr-res-id": 83162,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "gbfs-citiz-autopartage-occitanie",
-            "x-data-gov-fr-dataset-id": "678e6dfe20c290b9271d7a1d"
+            "x-data-gov-fr-dataset-id": "678e6dfe20c290b9271d7a1d",
+            "use-feed-proxy": true
         },
         {
             "name": "citiz-autopartage-grand-poitiers",
@@ -11383,7 +11459,8 @@
             "x-data-gov-fr-res-id": 83161,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "gbfs-citiz-autopartage-grand-poitiers",
-            "x-data-gov-fr-dataset-id": "678e6f4a320b82543eea4d36"
+            "x-data-gov-fr-dataset-id": "678e6f4a320b82543eea4d36",
+            "use-feed-proxy": true
         },
         {
             "name": "citiz-autopartage-developpement",
@@ -11397,7 +11474,8 @@
             "x-data-gov-fr-res-id": 83166,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "gbfs-citiz-dev",
-            "x-data-gov-fr-dataset-id": "678f5e10a7133882a3499576"
+            "x-data-gov-fr-dataset-id": "678f5e10a7133882a3499576",
+            "use-feed-proxy": true
         },
         {
             "name": "citiz-autopartage-nantes",
@@ -11411,7 +11489,8 @@
             "x-data-gov-fr-res-id": 83159,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "gbfs-citiz-nantes",
-            "x-data-gov-fr-dataset-id": "678f5f741208e3d7166b6f6a"
+            "x-data-gov-fr-dataset-id": "678f5f741208e3d7166b6f6a",
+            "use-feed-proxy": true
         },
         {
             "name": "citiz-autopartage-hauts-de-france",
@@ -11425,7 +11504,8 @@
             "x-data-gov-fr-res-id": 83157,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "gbfs-citiz-autopartage-lille-arras",
-            "x-data-gov-fr-dataset-id": "678f60ac7e98e7cd16b69641"
+            "x-data-gov-fr-dataset-id": "678f60ac7e98e7cd16b69641",
+            "use-feed-proxy": true
         },
         {
             "name": "citiz-autopartage-la-rochelle",
@@ -11439,7 +11519,8 @@
             "x-data-gov-fr-res-id": 83158,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "gbfs-citiz-la-rochelle",
-            "x-data-gov-fr-dataset-id": "678f634cf3a60de5430f5692"
+            "x-data-gov-fr-dataset-id": "678f634cf3a60de5430f5692",
+            "use-feed-proxy": true
         },
         {
             "name": "citiz-autopartage-rennes-metropole",
@@ -11453,7 +11534,8 @@
             "x-data-gov-fr-res-id": 83156,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "gbfs-citiz-autopartage-rennes-metropole",
-            "x-data-gov-fr-dataset-id": "678f65ea65ae075efc4c1632"
+            "x-data-gov-fr-dataset-id": "678f65ea65ae075efc4c1632",
+            "use-feed-proxy": true
         },
         {
             "name": "citiz-autopartage-pays-basque-aupa",
@@ -11467,7 +11549,8 @@
             "x-data-gov-fr-res-id": 83160,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "gbfs-citiz-autopartage-aupa",
-            "x-data-gov-fr-dataset-id": "678f681b52a2a990137ec453"
+            "x-data-gov-fr-dataset-id": "678f681b52a2a990137ec453",
+            "use-feed-proxy": true
         },
         {
             "name": "skibus-courchevel-hiver",
@@ -11496,7 +11579,8 @@
             "x-data-gov-fr-res-id": 82736,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "GBFS Saint-Quentin-en-Yvelines",
-            "x-data-gov-fr-dataset-id": "679754780611e9111477aebf"
+            "x-data-gov-fr-dataset-id": "679754780611e9111477aebf",
+            "use-feed-proxy": true
         },
         {
             "name": "navettes-bourg-saint-maurice",
@@ -11599,7 +11683,8 @@
             "x-data-gov-fr-res-id": 82760,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "Tier-Dott Bordeaux GBFS",
-            "x-data-gov-fr-dataset-id": "67a22451dcb17b6b440ce0e3"
+            "x-data-gov-fr-dataset-id": "67a22451dcb17b6b440ce0e3",
+            "use-feed-proxy": true
         },
         {
             "name": "tier-dott-gbfs-bourgoin-jallieu",
@@ -11613,7 +11698,8 @@
             "x-data-gov-fr-res-id": 82761,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "Tier-Dott Bourgoin-Jallieu GBFS",
-            "x-data-gov-fr-dataset-id": "67a226125919814a71957f64"
+            "x-data-gov-fr-dataset-id": "67a226125919814a71957f64",
+            "use-feed-proxy": true
         },
         {
             "name": "tier-dott-gbfs-gpseo",
@@ -11627,7 +11713,8 @@
             "x-data-gov-fr-res-id": 82764,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "Tier-Dott GPSEO GBFS",
-            "x-data-gov-fr-dataset-id": "67a227706c430dbee39ef3db"
+            "x-data-gov-fr-dataset-id": "67a227706c430dbee39ef3db",
+            "use-feed-proxy": true
         },
         {
             "name": "tier-dott-gbfs-lyon",
@@ -11641,7 +11728,8 @@
             "x-data-gov-fr-res-id": 82757,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "Tier-Dott Lyon GBFS",
-            "x-data-gov-fr-dataset-id": "67a22857d00efca27a070eca"
+            "x-data-gov-fr-dataset-id": "67a22857d00efca27a070eca",
+            "use-feed-proxy": true
         },
         {
             "name": "tier-dott-gbfs-saint-quentin-en-yvelines",
@@ -11656,7 +11744,8 @@
             "managed-by-script": true,
             "skip": true,
             "x-data-gov-fr-res-title": "Tier-Dott Saint-Quentin-en-Yvelines GBFS",
-            "x-data-gov-fr-dataset-id": "67a22952175e0c19cb0f0bb5"
+            "x-data-gov-fr-dataset-id": "67a22952175e0c19cb0f0bb5",
+            "use-feed-proxy": true
         },
         {
             "name": "tier-dott-gbfs-ol-vallee",
@@ -11670,7 +11759,8 @@
             "x-data-gov-fr-res-id": 82758,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "Tier-Dott OL Vallée GBFS",
-            "x-data-gov-fr-dataset-id": "67a22c6fe40c32edd72b1dcb"
+            "x-data-gov-fr-dataset-id": "67a22c6fe40c32edd72b1dcb",
+            "use-feed-proxy": true
         },
         {
             "name": "tier-dott-gbfs-casgbs",
@@ -11684,7 +11774,8 @@
             "x-data-gov-fr-res-id": 82759,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "Tier-Dott CASGBS GBFS",
-            "x-data-gov-fr-dataset-id": "67a22d6e6a6efd59066d8bc8"
+            "x-data-gov-fr-dataset-id": "67a22d6e6a6efd59066d8bc8",
+            "use-feed-proxy": true
         },
         {
             "name": "tier-dott-gbfs-siemu",
@@ -11698,7 +11789,8 @@
             "x-data-gov-fr-res-id": 82765,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "Tier-Dott SIEMU GBFS",
-            "x-data-gov-fr-dataset-id": "67a2370078283c9ca714b22a"
+            "x-data-gov-fr-dataset-id": "67a2370078283c9ca714b22a",
+            "use-feed-proxy": true
         },
         {
             "name": "ce-jeu-de-donnees-contient-la-liste-et-lemplacement-des-velostations-en-libres-service-du-service-libelo-appartenant-a-valence-romans-mobilites",
@@ -11712,7 +11804,8 @@
             "x-data-gov-fr-res-id": 83133,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "GBFS VRM",
-            "x-data-gov-fr-dataset-id": "67ab23386d4fd37cc036ed8f"
+            "x-data-gov-fr-dataset-id": "67ab23386d4fd37cc036ed8f",
+            "use-feed-proxy": true
         },
         {
             "name": "le-taco-1",
@@ -11755,7 +11848,8 @@
             "x-data-gov-fr-res-id": 82876,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "Choletbus 2 Roues VAELS",
-            "x-data-gov-fr-dataset-id": "67d7ed318c6d093112752064"
+            "x-data-gov-fr-dataset-id": "67d7ed318c6d093112752064",
+            "use-feed-proxy": true
         },
         {
             "name": "horaire-du-reseau-citalis",
@@ -11829,7 +11923,8 @@
             "x-data-gov-fr-res-id": 82976,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "gbfs",
-            "x-data-gov-fr-dataset-id": "67f5babd03325228295b7dbc"
+            "x-data-gov-fr-dataset-id": "67f5babd03325228295b7dbc",
+            "use-feed-proxy": true
         },
         {
             "name": "offres-de-services-bus-tram-et-scolaire-au-format-gtfs-netex-gtfs-rt-siri-lite",
@@ -11886,7 +11981,8 @@
             "x-data-gov-fr-res-id": 82957,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "GBFS.json",
-            "x-data-gov-fr-dataset-id": "67f5bb0a03325228295b7e9b"
+            "x-data-gov-fr-dataset-id": "67f5bb0a03325228295b7e9b",
+            "use-feed-proxy": true
         },
         {
             "name": "offre-et-disponibilite-temps-reel-du-service-citiz-en-autopartage-metropole-de-lyon",
@@ -11900,7 +11996,8 @@
             "x-data-gov-fr-res-id": 83040,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "Offre et disponibilité temps réel du service Citiz en Autopartage Métropole de Lyon",
-            "x-data-gov-fr-dataset-id": "68017aade8f8b0f5ced063dc"
+            "x-data-gov-fr-dataset-id": "68017aade8f8b0f5ced063dc",
+            "use-feed-proxy": true
         },
         {
             "name": "gtfs-transport-via-corsica-corte-a-la-vallee-de-la-restonica-ligne-c13",
@@ -11930,7 +12027,8 @@
             "x-data-gov-fr-res-id": 83023,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "m2a_stationsvelocite_gbfs.json",
-            "x-data-gov-fr-dataset-id": "68082e288080d9dd71622e1d"
+            "x-data-gov-fr-dataset-id": "68082e288080d9dd71622e1d",
+            "use-feed-proxy": true
         },
         {
             "name": "stations-velonecy-60-min-gbfs",
@@ -11944,7 +12042,8 @@
             "x-data-gov-fr-res-id": 83131,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "Flux GBFS Vélonecy",
-            "x-data-gov-fr-dataset-id": "682deba29652bf1ba3de230d"
+            "x-data-gov-fr-dataset-id": "682deba29652bf1ba3de230d",
+            "use-feed-proxy": true
         },
         {
             "name": "voi-trottinettes-et-velos-aire-grenobloise",
@@ -11958,7 +12057,8 @@
             "x-data-gov-fr-res-id": 83130,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "GBFS VOI Grenoble",
-            "x-data-gov-fr-dataset-id": "682ede275f90ca54abaf4166"
+            "x-data-gov-fr-dataset-id": "682ede275f90ca54abaf4166",
+            "use-feed-proxy": true
         },
         {
             "name": "andemu-gtfs-2025",
@@ -12049,7 +12149,8 @@
             "x-data-gov-fr-res-id": 83184,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "Fichier d’index GBFS (annuaire des flux)",
-            "x-data-gov-fr-dataset-id": "6851dcfdfb79f3f6a5497e94"
+            "x-data-gov-fr-dataset-id": "6851dcfdfb79f3f6a5497e94",
+            "use-feed-proxy": true
         },
         {
             "name": "navette-estivale-CVL-Mobilite",
@@ -12272,7 +12373,8 @@
             "x-data-gov-fr-res-id": 83472,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "GBFS VOI Paris",
-            "x-data-gov-fr-dataset-id": "6864f8b4943c74cb6f305173"
+            "x-data-gov-fr-dataset-id": "6864f8b4943c74cb6f305173",
+            "use-feed-proxy": true
         },
         {
             "name": "offre-de-transport-du-reseau-rivconnect-communaute-de-communes-rives-de-moselle",
@@ -12406,7 +12508,8 @@
             "x-data-gov-fr-res-id": 83717,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "Limites géographiques",
-            "x-data-gov-fr-dataset-id": "689da24595f267b399417127"
+            "x-data-gov-fr-dataset-id": "689da24595f267b399417127",
+            "use-feed-proxy": true
         },
         {
             "name": "velos-a-assistance-electrique-en-libre-service-velomoove-bassin-de-pompey--83718",
@@ -12420,7 +12523,8 @@
             "x-data-gov-fr-res-id": 83718,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "Informations tarifaires",
-            "x-data-gov-fr-dataset-id": "689da24595f267b399417127"
+            "x-data-gov-fr-dataset-id": "689da24595f267b399417127",
+            "use-feed-proxy": true
         },
         {
             "name": "velos-a-assistance-electrique-en-libre-service-velomoove-bassin-de-pompey--83720",
@@ -12434,7 +12538,8 @@
             "x-data-gov-fr-res-id": 83720,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "Types de véhicules",
-            "x-data-gov-fr-dataset-id": "689da24595f267b399417127"
+            "x-data-gov-fr-dataset-id": "689da24595f267b399417127",
+            "use-feed-proxy": true
         },
         {
             "name": "velos-a-assistance-electrique-en-libre-service-velomoove-bassin-de-pompey--83723",
@@ -12448,7 +12553,8 @@
             "x-data-gov-fr-res-id": 83723,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "Information système",
-            "x-data-gov-fr-dataset-id": "689da24595f267b399417127"
+            "x-data-gov-fr-dataset-id": "689da24595f267b399417127",
+            "use-feed-proxy": true
         },
         {
             "name": "velos-a-assistance-electrique-en-libre-service-velomoove-bassin-de-pompey--83724",
@@ -12462,7 +12568,8 @@
             "x-data-gov-fr-res-id": 83724,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "Fichier de découverte",
-            "x-data-gov-fr-dataset-id": "689da24595f267b399417127"
+            "x-data-gov-fr-dataset-id": "689da24595f267b399417127",
+            "use-feed-proxy": true
         },
         {
             "name": "horaires-theoriques-des-trains-regionaux-zou-en-provence-alpes-cote-d-azur",
@@ -12536,7 +12643,8 @@
             "x-data-gov-fr-res-id": 83407,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "Les données du fichier sont les suivantes : géolocalisation en temps réel des vélos à assistance électrique partagés du service MontenVélo sur la Communauté de communes Pays du Mont-Blanc (CCPMB). ",
-            "x-data-gov-fr-dataset-id": "68c3bb25418640eafa599eb4"
+            "x-data-gov-fr-dataset-id": "68c3bb25418640eafa599eb4",
+            "use-feed-proxy": true
         },
         {
             "name": "gtfs-reseau-cmonbus",
@@ -12625,7 +12733,8 @@
             "x-data-gov-fr-res-id": 83440,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "GBFS Vélo Fluo",
-            "x-data-gov-fr-dataset-id": "68de2e4e607ba60de956b36b"
+            "x-data-gov-fr-dataset-id": "68de2e4e607ba60de956b36b",
+            "use-feed-proxy": true
         },
         {
             "name": "velotoulouse-velo-en-libre-service-au-standard-gbfs",
@@ -12639,7 +12748,8 @@
             "x-data-gov-fr-res-id": 83456,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "https://api.cyclocity.fr/contracts/toulouse/gbfs/gbfs.json",
-            "x-data-gov-fr-dataset-id": "68e09c3ffd212d9d2aecc34d"
+            "x-data-gov-fr-dataset-id": "68e09c3ffd212d9d2aecc34d",
+            "use-feed-proxy": true
         },
         {
             "name": "transports-en-commun-pays-des-ecrins",
@@ -12698,7 +12808,8 @@
             "x-data-gov-fr-res-id": 83506,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "GBFS autopartage Clem'",
-            "x-data-gov-fr-dataset-id": "68ee46902d19915d3b5171ab"
+            "x-data-gov-fr-dataset-id": "68ee46902d19915d3b5171ab",
+            "use-feed-proxy": true
         },
         {
             "name": "fichier-gbfs-eurometropole-de-metz-1",
@@ -12712,7 +12823,8 @@
             "x-data-gov-fr-res-id": 83584,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "gbfs.json",
-            "x-data-gov-fr-dataset-id": "68f037b525cbe799b197a559"
+            "x-data-gov-fr-dataset-id": "68f037b525cbe799b197a559",
+            "use-feed-proxy": true
         },
         {
             "name": "caen-la-mer-reseau-twisto-gtfs-siri-2",
@@ -12756,7 +12868,8 @@
             "x-data-gov-fr-res-id": 83625,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "Flux GBFS France",
-            "x-data-gov-fr-dataset-id": "69039fde4e4da38ff6f7caa9"
+            "x-data-gov-fr-dataset-id": "69039fde4e4da38ff6f7caa9",
+            "use-feed-proxy": true
         },
         {
             "name": "idecycle-velos-en-libre-service-au-standard-gbfs",
@@ -12770,7 +12883,8 @@
             "x-data-gov-fr-res-id": 83577,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "https://gbfs.partners.fifteen.eu/gbfs/pau/gbfs",
-            "x-data-gov-fr-dataset-id": "6903fdc3dd73c1fb6dbaf2ac"
+            "x-data-gov-fr-dataset-id": "6903fdc3dd73c1fb6dbaf2ac",
+            "use-feed-proxy": true
         },
         {
             "name": "bacs-de-ecouflant-cantenay-epinard-et-pruille",
@@ -12875,7 +12989,8 @@
             "x-data-gov-fr-res-id": 83637,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "Bird à Ajaccio - Flux GBFS",
-            "x-data-gov-fr-dataset-id": "691b1fd2bccb21210868ca6d"
+            "x-data-gov-fr-dataset-id": "691b1fd2bccb21210868ca6d",
+            "use-feed-proxy": true
         },
         {
             "name": "bird-trottinettes-en-libre-service-a-bastia-gbfs",
@@ -12889,7 +13004,8 @@
             "x-data-gov-fr-res-id": 83638,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "Bird à Bastia - Flux GBFS",
-            "x-data-gov-fr-dataset-id": "691b221ed8287059fe5a37da"
+            "x-data-gov-fr-dataset-id": "691b221ed8287059fe5a37da",
+            "use-feed-proxy": true
         },
         {
             "name": "bird-trottinettes-en-libre-service-a-chalons-en-champagne-gbfs",
@@ -12903,7 +13019,8 @@
             "x-data-gov-fr-res-id": 83636,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "Bird à Châlons-en-Champagne - Flux GBFS",
-            "x-data-gov-fr-dataset-id": "691b2e60e3fd48fe7a6a1bae"
+            "x-data-gov-fr-dataset-id": "691b2e60e3fd48fe7a6a1bae",
+            "use-feed-proxy": true
         },
         {
             "name": "bird-trottinettes-en-libre-service-a-gap-gbfs",
@@ -12917,7 +13034,8 @@
             "x-data-gov-fr-res-id": 83639,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "Bird à Gap - Flux GBFS",
-            "x-data-gov-fr-dataset-id": "691b3012bb8986858ad8050e"
+            "x-data-gov-fr-dataset-id": "691b3012bb8986858ad8050e",
+            "use-feed-proxy": true
         },
         {
             "name": "bird-trottinettes-en-libre-service-a-laval-gbfs",
@@ -12931,7 +13049,8 @@
             "x-data-gov-fr-res-id": 83640,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "Bird à Laval - Flux GBFS",
-            "x-data-gov-fr-dataset-id": "691b3d34d963d310a61b5d7d"
+            "x-data-gov-fr-dataset-id": "691b3d34d963d310a61b5d7d",
+            "use-feed-proxy": true
         },
         {
             "name": "bird-trottinettes-en-libre-service-a-vichy-gbfs",
@@ -12945,7 +13064,8 @@
             "x-data-gov-fr-res-id": 83641,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "Bird à Vichy - Flux GBFS",
-            "x-data-gov-fr-dataset-id": "691b455fa530bc831d17ed8f"
+            "x-data-gov-fr-dataset-id": "691b455fa530bc831d17ed8f",
+            "use-feed-proxy": true
         },
         {
             "name": "pays-dopale",
@@ -12959,7 +13079,8 @@
             "x-data-gov-fr-res-id": 83663,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "Pays d'Opale",
-            "x-data-gov-fr-dataset-id": "691ee3aaed6ff2d1e0057da2"
+            "x-data-gov-fr-dataset-id": "691ee3aaed6ff2d1e0057da2",
+            "use-feed-proxy": true
         },
         {
             "name": "gtfs-les-2alpes-saison-hiver-2025-2026",
@@ -13001,7 +13122,8 @@
             "x-data-gov-fr-res-id": 83662,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "ESTREES SAINT DENIS",
-            "x-data-gov-fr-dataset-id": "69206f99bd8914ef44455d41"
+            "x-data-gov-fr-dataset-id": "69206f99bd8914ef44455d41",
+            "use-feed-proxy": true
         },
         {
             "name": "bycor-vaels-ouest-rhodanien",
@@ -13015,7 +13137,8 @@
             "x-data-gov-fr-res-id": 83661,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "VAELS OUEST RHODANIEN BYCOR",
-            "x-data-gov-fr-dataset-id": "692072066c0d5f9e13280ef1"
+            "x-data-gov-fr-dataset-id": "692072066c0d5f9e13280ef1",
+            "use-feed-proxy": true
         },
         {
             "name": "grand-chatellerault",
@@ -13029,7 +13152,8 @@
             "x-data-gov-fr-res-id": 83658,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "GRAND CHATELLERAULT",
-            "x-data-gov-fr-dataset-id": "69207c614e9a8308c47b249a"
+            "x-data-gov-fr-dataset-id": "69207c614e9a8308c47b249a",
+            "use-feed-proxy": true
         },
         {
             "name": "pays-du-coquelicot-velo-en-libre-service",
@@ -13043,7 +13167,8 @@
             "x-data-gov-fr-res-id": 83668,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "VLS PAYS DU COQUELICOT",
-            "x-data-gov-fr-dataset-id": "692471768aef481c4b1cf936"
+            "x-data-gov-fr-dataset-id": "692471768aef481c4b1cf936",
+            "use-feed-proxy": true
         },
         {
             "name": "gevaudan-velo-en-libre-service",
@@ -13057,7 +13182,8 @@
             "x-data-gov-fr-res-id": 83664,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "VLS DU GEVAUDAN",
-            "x-data-gov-fr-dataset-id": "6924727cdfe4e8817ee744b5"
+            "x-data-gov-fr-dataset-id": "6924727cdfe4e8817ee744b5",
+            "use-feed-proxy": true
         },
         {
             "name": "oloron-velo-en-libre-service",
@@ -13071,7 +13197,8 @@
             "x-data-gov-fr-res-id": 83667,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "VLS OLORON",
-            "x-data-gov-fr-dataset-id": "692473ae72f0fcf4416f770d"
+            "x-data-gov-fr-dataset-id": "692473ae72f0fcf4416f770d",
+            "use-feed-proxy": true
         },
         {
             "name": "larbresle-velo-en-livre-service",
@@ -13085,7 +13212,8 @@
             "x-data-gov-fr-res-id": 83660,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "VLS DE L'ARBRESLE",
-            "x-data-gov-fr-dataset-id": "692474730517203c700fa459"
+            "x-data-gov-fr-dataset-id": "692474730517203c700fa459",
+            "use-feed-proxy": true
         },
         {
             "name": "porte-de-vassiviere-vls",
@@ -13099,7 +13227,8 @@
             "x-data-gov-fr-res-id": 83665,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "VLS PORTE DE VASSIVIERE",
-            "x-data-gov-fr-dataset-id": "692478db143494f8aec7bd58"
+            "x-data-gov-fr-dataset-id": "692478db143494f8aec7bd58",
+            "use-feed-proxy": true
         },
         {
             "name": "vallee-dossau-velo-en-libre-service",
@@ -13113,7 +13242,8 @@
             "x-data-gov-fr-res-id": 83666,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "VLS VALLEE D'OSSAU",
-            "x-data-gov-fr-dataset-id": "692479a07fd55406d279fff4"
+            "x-data-gov-fr-dataset-id": "692479a07fd55406d279fff4",
+            "use-feed-proxy": true
         },
         {
             "name": "vallee-vezere-velo-en-libre-service",
@@ -13127,7 +13257,8 @@
             "x-data-gov-fr-res-id": 83659,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "VLS VALLEE VEZERE",
-            "x-data-gov-fr-dataset-id": "69247a4b250e2b2cac513e84"
+            "x-data-gov-fr-dataset-id": "69247a4b250e2b2cac513e84",
+            "use-feed-proxy": true
         },
         {
             "name": "navettes-stations-hiver-2025-2026-reseau-vai",
@@ -13231,7 +13362,8 @@
             "x-data-gov-fr-res-id": 83753,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "Vélos à assistance électrique en libre service Nîmes métropole (Nemovelo)",
-            "x-data-gov-fr-dataset-id": "693fd37acee34a884eeaf58e"
+            "x-data-gov-fr-dataset-id": "693fd37acee34a884eeaf58e",
+            "use-feed-proxy": true
         },
         {
             "name": "reseau-urbain-scolaire-lila-presquile",
@@ -13345,7 +13477,8 @@
             "managed-by-script": true,
             "name": "velos-et-trottinettes-pony-beauvais",
             "x-data-gov-fr-res-title": "Géolocalisation en temps réel des vélos, vélos à assistance électrique et trottinettes partagés de l’entreprise française pony à Beauvais",
-            "x-data-gov-fr-dataset-id": "695e3148c1759a5aabb6287c"
+            "x-data-gov-fr-dataset-id": "695e3148c1759a5aabb6287c",
+            "use-feed-proxy": true
         },
         {
             "type": "url",
@@ -13359,7 +13492,8 @@
             "managed-by-script": true,
             "name": "velos-et-trottinettes-pony-bourges",
             "x-data-gov-fr-res-title": "Vélos et trottinettes Pony Bourges",
-            "x-data-gov-fr-dataset-id": "69611839bca609bbc4a070df"
+            "x-data-gov-fr-dataset-id": "69611839bca609bbc4a070df",
+            "use-feed-proxy": true
         },
         {
             "type": "url",
@@ -13373,7 +13507,8 @@
             "managed-by-script": true,
             "name": "velos-et-trottinettes-pony-evry",
             "x-data-gov-fr-res-title": "Vélos et trottinettes Pony Evry",
-            "x-data-gov-fr-dataset-id": "696118a8873482a18a551bfd"
+            "x-data-gov-fr-dataset-id": "696118a8873482a18a551bfd",
+            "use-feed-proxy": true
         },
         {
             "type": "url",
@@ -13387,7 +13522,8 @@
             "managed-by-script": true,
             "name": "velos-et-trottinettes-pony-herouville",
             "x-data-gov-fr-res-title": "Vélos et trottinettes Pony Herouville",
-            "x-data-gov-fr-dataset-id": "696118e49fb6899fdb078198"
+            "x-data-gov-fr-dataset-id": "696118e49fb6899fdb078198",
+            "use-feed-proxy": true
         },
         {
             "type": "url",
@@ -13401,7 +13537,8 @@
             "managed-by-script": true,
             "name": "velos-et-trottinettes-pony-limoges",
             "x-data-gov-fr-res-title": "Vélos et trottinettes Pony Limoges",
-            "x-data-gov-fr-dataset-id": "6961193778dc947f5bf03b1e"
+            "x-data-gov-fr-dataset-id": "6961193778dc947f5bf03b1e",
+            "use-feed-proxy": true
         },
         {
             "type": "url",
@@ -13415,7 +13552,8 @@
             "managed-by-script": true,
             "name": "velos-et-trottinettes-pony-lorient",
             "x-data-gov-fr-res-title": "Vélos et trottinettes Pony Lorient",
-            "x-data-gov-fr-dataset-id": "6961196c87d81d60ddb7c648"
+            "x-data-gov-fr-dataset-id": "6961196c87d81d60ddb7c648",
+            "use-feed-proxy": true
         },
         {
             "type": "url",
@@ -13429,7 +13567,8 @@
             "managed-by-script": true,
             "name": "velos-et-trottinettes-pony-nice",
             "x-data-gov-fr-res-title": "Vélos et trottinettes Pony Nice",
-            "x-data-gov-fr-dataset-id": "6961198c408a7f851e75cfa6"
+            "x-data-gov-fr-dataset-id": "6961198c408a7f851e75cfa6",
+            "use-feed-proxy": true
         },
         {
             "type": "url",
@@ -13443,7 +13582,8 @@
             "managed-by-script": true,
             "name": "velos-et-trottinettes-pony-perpignan",
             "x-data-gov-fr-res-title": "Vélos et trottinettes Pony Perpignan",
-            "x-data-gov-fr-dataset-id": "696119c839a25ad53eb4c3fa"
+            "x-data-gov-fr-dataset-id": "696119c839a25ad53eb4c3fa",
+            "use-feed-proxy": true
         },
         {
             "type": "url",
@@ -13457,7 +13597,8 @@
             "managed-by-script": true,
             "name": "velos-et-trottinettes-pony-poitiers",
             "x-data-gov-fr-res-title": "Vélos et trottinettes Pony Poitiers",
-            "x-data-gov-fr-dataset-id": "696119fa95113369d7bf552a"
+            "x-data-gov-fr-dataset-id": "696119fa95113369d7bf552a",
+            "use-feed-proxy": true
         },
         {
             "name": "donnees-gbfs-service-vls-dauxerre",
@@ -13471,7 +13612,8 @@
             "x-data-gov-fr-res-id": 83809,
             "x-data-gov-fr-dataset-id": "6968aa0207ed90e2f66b734f",
             "x-data-gov-fr-res-title": "Données GBFS – Service de vélos en libre-service de l’Auxerrois",
-            "managed-by-script": true
+            "managed-by-script": true,
+            "use-feed-proxy": true
         },
         {
             "name": "velos-pony-pays-basque",
@@ -13485,7 +13627,8 @@
             "x-data-gov-fr-res-id": 83808,
             "x-data-gov-fr-dataset-id": "696a1d4c0094e88d1e1ceeea",
             "x-data-gov-fr-res-title": "Vélos Pony Pays Basque",
-            "managed-by-script": true
+            "managed-by-script": true,
+            "use-feed-proxy": true
         },
         {
             "name": "gbfs-le-havre-2",
@@ -13499,7 +13642,8 @@
             "x-data-gov-fr-res-id": 83815,
             "x-data-gov-fr-dataset-id": "69777ce6d66bfcc7600524c5",
             "x-data-gov-fr-res-title": "GBFS Le Havre",
-            "managed-by-script": true
+            "managed-by-script": true,
+            "use-feed-proxy": true
         },
         {
             "name": "transport-a-la-demande-flexitus-1",
@@ -13529,7 +13673,8 @@
             "x-data-gov-fr-res-id": 83818,
             "x-data-gov-fr-dataset-id": "697a32257d70ec1afaec3037",
             "x-data-gov-fr-res-title": "GBFS Marseille",
-            "managed-by-script": true
+            "managed-by-script": true,
+            "use-feed-proxy": true
         },
         {
             "name": "gbfs-lille",
@@ -13543,7 +13688,8 @@
             "x-data-gov-fr-res-id": 83816,
             "x-data-gov-fr-dataset-id": "697a38c71bc7b2ff233f8efa",
             "x-data-gov-fr-res-title": "GBFS Lille",
-            "managed-by-script": true
+            "managed-by-script": true,
+            "use-feed-proxy": true
         },
         {
             "name": "gbfs-nice",
@@ -13557,7 +13703,8 @@
             "x-data-gov-fr-res-id": 83817,
             "x-data-gov-fr-dataset-id": "697a39bc57a9a3f927a1a2cf",
             "x-data-gov-fr-res-title": "GBFS Nice",
-            "managed-by-script": true
+            "managed-by-script": true,
+            "use-feed-proxy": true
         }
     ]
 }

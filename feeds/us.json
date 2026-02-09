@@ -31,7 +31,8 @@
         {
             "name": "Brightline",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-brightline~trails~rt"
+            "transitland-atlas-id": "f-brightline~trails~rt",
+            "use-feed-proxy": true
         },
         {
             "name": "flixbus",

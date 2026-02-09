@@ -14,7 +14,8 @@
         {
             "name": "GoTriangle",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-dnr-tta~regionalbus~nc~us~rt"
+            "transitland-atlas-id": "f-dnr-tta~regionalbus~nc~us~rt",
+            "use-feed-proxy": true
         },
         {
             "name": "GoDurham",
@@ -34,7 +35,8 @@
         {
             "name": "GoRaleigh",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-dq25-capital~area~transit~nc~us~rt"
+            "transitland-atlas-id": "f-dq25-capital~area~transit~nc~us~rt",
+            "use-feed-proxy": true
         },
         {
             "name": "GoCary",

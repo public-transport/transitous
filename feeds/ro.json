@@ -181,7 +181,8 @@
             "name": "Sibiu-BikeCity",
             "type": "url",
             "url": "https://sibiu.publicbikesystem.net/customer/gbfs/v2/gbfs.json",
-            "spec": "gbfs"
+            "spec": "gbfs",
+            "use-feed-proxy": true
         },
         {
             "name": "Sinaia",
@@ -244,7 +245,8 @@
             "name": "Târgu-Mures-public-bike-system",
             "type": "url",
             "url": "https://targumures.publicbikesystem.net/customer/gbfs/v2/gbfs.json",
-            "spec": "gbfs"
+            "spec": "gbfs",
+            "use-feed-proxy": true
         },
         {
             "name": "Zalău",

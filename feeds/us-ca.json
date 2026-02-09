@@ -182,7 +182,8 @@
         {
             "name": "Monterey-Salinas-Transit",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-mst~rt"
+            "transitland-atlas-id": "f-mst~rt",
+            "use-feed-proxy": true
         },
         {
             "name": "Roseville-Transit",
