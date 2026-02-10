@@ -30,6 +30,12 @@ def find_motis_asset(asset_name: str):
 def check_file_exist_in_out_folder(file_name: str):
     return os.path.isfile(os.path.join("out", file_name))
 
+def to_motis_rt_spec(spec: str) -> str:
+    match spec:
+        case 'gtfs-rt': return 'gtfsrt'
+        case 'siri-json': return 'siri_json'
+    return spec
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Transitous MOTIS configuration generator.')
     parser.add_argument('--import-only', action='store_true', help='Generate configuration for importing only.')
@@ -147,7 +153,7 @@ if __name__ == "__main__":
                                     print("Warning: Skipping " + name + " as " + schedule_file + " is missing.")
                                     ignored_feeds.add(name)
 
-                            case "gtfs-rt" if isinstance(source, metadata.UrlSource):
+                            case source.spec if isinstance(source, metadata.UrlSource) and source.spec in ["gtfs-rt", "siri", "siri-json"]:
                                 name = f"{region_name}-{source.name}"
                                 if name not in config["timetable"]["datasets"]:
                                     eprint(
@@ -164,7 +170,8 @@ if __name__ == "__main__":
                                     config["timetable"]["datasets"][name]["rt"] = []
 
                                 rt_feed: dict[str, Any] = {
-                                    "url": source.url if use_original_url else FEED_PROXY + '/feed/' + quote(name) + "-" + str(len(config["timetable"]["datasets"][name]["rt"]))
+                                    "url": source.url if use_original_url else FEED_PROXY + '/feed/' + quote(name) + "-" + str(len(config["timetable"]["datasets"][name]["rt"])),
+                                    "protocol": to_motis_rt_spec(source.spec)
                                 }
 
                                 if source.headers and use_original_url:
