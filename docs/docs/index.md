@@ -62,8 +62,11 @@ as they use those as well.
 ### Realtime data
 
 For properly dealing with delay, disruptions and all kinds of other unplanned
-and short-notice service changes Transitous also uses [GTFS Realtime (RT)](https://gtfs.org/documentation/realtime/reference/) feeds.
-Those are polled once a minute for updates.
+and short-notice service changes Transitous also uses realtime data feeds which are polled for updates once a minute.
+
+Two formats are supported currently:
+* [GTFS Realtime (RT)](https://gtfs.org/documentation/realtime/reference/)
+* [SIRI](https://transmodel-cen.eu/index.php/siri/)
 
 GTFS-RT feeds come in three different flavors:
 
@@ -72,6 +75,10 @@ GTFS-RT feeds come in three different flavors:
 * Vehicle positions, that is geographic coordinates of the current position of trains or busses.
 
 Transitous can handle the first two so far.
+
+SIRI feeds also come in multiple flavors, the following two are supported so far:
+* Estimated Timetable (ET): schedule changes such as delays and cancellations.
+* Situation Exchange (SX): alerts messages.
 
 Note that realtime feeds typically only work in combination with a matching static schedule feed. So e.g. combining a smaller realtime feed
 of a single operator with a nationwide aggregated static feed will usually not work out of the box.
@@ -183,7 +190,7 @@ If the feed contains invalid entries, you can try to add the `"fix": true` attri
 GTFS-RT feeds contain updates for a GTFS feed.
 In order to know which feed to apply the updates to, their name must match the name of the static timetable.
 Each source can either be of `type` `mobility-database`, `transitland-atlas` or `url`.
-In the case of the `url` type, the field `spec` needs to be set to `gtfs-rt`.
+In the case of the `url` type, the field `spec` needs to be set to `gtfs-rt`, `siri` or `siri-json`.
 
 This example applies the updates to the `lviv` feed:
 ```
@@ -283,7 +290,7 @@ There are all kinds of options that may be specified in a source:
 Option Name            | Description
 ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------
 `type`                 | `http`, `mobility-database`, `transitland-atlas` or `url`. Url sources are not downloaded, but passed to MOTIS as URL. This is used for realtime feeds.
-`spec`                 | `gtfs`, `gtfs-rt`, `gbfs` or `netex`. `gtfs-rt` and `netex` may only be used when `type` is `url`.
+`spec`                 | `gtfs`, `gtfs-rt`, `gbfs`, `netex`, `siri` or `siri_json`. `gtfs-rt`, `netex`, `siri` and `siri_json` may only be used when `type` is `url`.
 `fix`                  | Fix / drop fields that are not correct.
 `skip`                 | Don't download or use this feed.
 `skip-reason`          | Reason for why this feed can't be used right now.
@@ -379,6 +386,8 @@ curl https://the.feed.url | protoc gtfs-realtime.proto --decode=transit_realtime
 ```
 
 The Protocol Buffers schema file needed for this can be downloaded [here](https://gtfs.org/documentation/realtime/gtfs-realtime.proto).
+
+SIRI feeds are XML files and as such can be inspected with a regular text editor.
 
 To see the realtime coverage available in Transitous, you can toggle the color coding of vehicles
 on [its map view](https://api.transitous.org/) in the upper right corner. A green/yellow/red gradient shows the amount
