@@ -63,7 +63,9 @@
             "name": "DukeTransit",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-dnrug-duke~nc~us",
-            "fix": true
+            "fix": true,
+            "skip": true,
+            "skip-reason": "authentication required"
         },
         {
             "name": "NCSU-Wolfline",
