@@ -16,6 +16,7 @@ MemoryMax=150G
 #CPUWeight=20
 #CPUQuota=1000%
 #IOWeight=20
+LimitNOFILE=65536
 
 [Install]
 #WantedBy=multi-user.target

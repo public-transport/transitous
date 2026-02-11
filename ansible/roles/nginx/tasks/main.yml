@@ -125,3 +125,4 @@
     name: prometheus-nginxlog-exporter
     state: started
     enabled: true
+
