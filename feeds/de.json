@@ -67,6 +67,7 @@
             "name": "VBB",
             "type": "http",
             "url": "https://www.vbb.de/vbbgtfs",
+            "fix": true,
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             }
