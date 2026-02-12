@@ -364,7 +364,7 @@
             "name": "TransportGZM",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://next.zbiorkom.live/api6-open/bydgoszcz/gtfsRealtime/default/tripUpdates",
+            "url": "https://next.zbiorkom.live/api6-open/gzm/gtfsRealtime/default/tripUpdates",
             "license": {
                 "spdx-identifier": "MIT"
             },
