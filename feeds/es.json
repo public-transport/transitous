@@ -134,7 +134,7 @@
                 "headers": {
                     "ApiKey": "b2be1741-ed99-41e7-99bf-924b32694633"
                 }
-            },
+            }
         },
         {
             "name": "Autobuses-Junta-de-Extremadura",
@@ -526,7 +526,7 @@
                 "headers": {
                     "ApiKey": "b2be1741-ed99-41e7-99bf-924b32694633"
                 }
-            },
+            }
         },
         {
             "name": "Autobús-urbano-de-Málaga",
