@@ -610,6 +610,11 @@
             "name": "Veneto-Venezia-Ferries",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u20f-actvspa"
+        },
+        {
+            "name": "Veneto-Mobilita-di-Marca",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u20-mobilitadimarca"
         }
     ]
 }
