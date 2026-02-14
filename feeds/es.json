@@ -54,7 +54,8 @@
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
-            }
+            },
+            "script": "es-alsa.lua"
         },
         {
             "name": "Autobús-Comarca-de-Pamplona",
