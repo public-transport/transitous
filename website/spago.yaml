@@ -1,0 +1,28 @@
+# SPDX-FileCopyrightText: 2024 Jonah Brüchert <jbb@kaidan.im>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+package:
+  dependencies:
+    - aff
+    - argonaut-codecs
+    - arrays
+    - bifunctors
+    - console
+    - datetime
+    - effect
+    - either
+    - elmish
+    - elmish-html
+    - fetch
+    - foldable-traversable
+    - form-urlencoded
+    - formatters
+    - maybe
+    - now
+    - prelude
+    - tuples
+  name: transitous-widget
+workspace:
+  packageSet:
+    registry: 73.1.0
