@@ -37,6 +37,11 @@
             "url": "https://gy-mate.hu/gtfs/gtfs_hu_funicular.zip"
         },
         {
+            "name": "bkk-chairlift",
+            "type": "http",
+            "url": "https://gy-mate.hu/gtfs/gtfs_hu_chairlift.zip"
+        },
+        {
             "name": "bkk",
             "type": "url",
             "spec": "gtfs-rt",
