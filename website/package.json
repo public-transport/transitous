@@ -7,12 +7,13 @@
   "license": "AGPL-3.0-or-later",
   "scripts": {
     "start": "spago build && esbuild ./output/TransitousWidget/index.js --bundle --outfile=static/widget.js --global-name=TransitousWidget && hugo server",
-    "release-start": "spago build && esbuild ./output/TransitousWidget/index.js --bundle --minify --outfile=static/widget.js --global-name=TransitousWidget && hugo --minify server",
-    "release": "spago build && esbuild ./output/TransitousWidget/index.js --bundle --minify --outfile=static/widget.js --global-name=TransitousWidget && hugo --minify --baseURL https://transitous.org/"
+    "release-start": "spago build && purs-backend-es build && esbuild ./output-es/TransitousWidget/index.js --bundle --minify --outfile=static/widget.js --global-name=TransitousWidget && hugo --minify server",
+    "release": "spago build && purs-backend-es build && esbuild ./output-es/TransitousWidget/index.js --bundle --minify --outfile=static/widget.js --global-name=TransitousWidget && hugo --minify --baseURL https://transitous.org/"
   },
   "dependencies": {
     "esbuild": "^0.27.3",
     "purescript": "^0.15.15",
+    "purs-backend-es": "^1.4.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "spago": "^1.0.3"
