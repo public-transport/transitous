@@ -9,7 +9,7 @@
 
 - name: Unpack MOTIS (frontend)
   unarchive:
-    src: https://github.com/motis-project/motis/releases/download/v2.7.0/motis-linux-amd64.tar.bz2
+    src: https://github.com/motis-project/motis/releases/download/v2.8.3/motis-linux-amd64.tar.bz2
     dest: /opt/motis/
     remote_src: yes
 
