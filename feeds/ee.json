@@ -123,7 +123,8 @@
         {
             "name": "kaugliinid-rahvusvaheline",
             "type": "http",
-            "url": "https://eu-gtfs.remix.com/kaugliinid_rahvusvaheline.zip"
+            "url": "https://eu-gtfs.remix.com/kaugliinid_rahvusvaheline.zip",
+            "script": "generic-bus-to-coach.lua"
         },
         {
             "name": "elron",
