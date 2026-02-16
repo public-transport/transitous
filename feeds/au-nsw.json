@@ -231,7 +231,7 @@
             "name": "Transport-for-New-South-Wales-inner-west-lr",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://api.transport.nsw.gov.au/v1/gtfs/realtime/lightrail/innerwest",
+            "url": "https://api.transport.nsw.gov.au/v2/gtfs/realtime/lightrail/innerwest",
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },

@@ -115,7 +115,7 @@
             "name": "Metro-Christchurch",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-rb6b-metrochristchurch~rt",
-            "api-key": "920de6bcafdb445699a7ba92dd5cc005",
+            "api-key": "key-from-secrets",
             "use-feed-proxy": true
         },
         {
