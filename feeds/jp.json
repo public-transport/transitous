@@ -20,6 +20,17 @@
             "transitland-atlas-id": "f-hiroden~jp",
             "fix": true
         },
+	{
+	    "name": "transportationbureau-cityofkawasaki",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-transportationbureau~cityofkawasaki~alllines~jp"
+	},
+	{
+	    "name": "transportationbureau-cityofkawasaki",
+	    "spec": "gtfs-rt",
+	    "type": "transitland-atlas",
+	    "transitland-atlas-id": "f-transportationbureau~cityofkawasaki~alllines~jp~rt"
+	},
         {
             "name": "tokyo-rail",
             "type": "http",
