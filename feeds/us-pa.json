@@ -246,7 +246,8 @@
         {
             "name": "PRT",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-dppn-portauthorityofalleghenycounty~bus~rt"
+            "transitland-atlas-id": "f-dppn-portauthorityofalleghenycounty~bus~rt",
+            "use-feed-proxy": true
         },
         {
             "name": "PRT",

@@ -221,8 +221,16 @@
             "name": "SuffolkCountyTransit",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-drk-ny~suffolkcountytransit~rt",
-            "skip": true,
-            "skip-reason": "api-key is missing"
+            "api-key": "key-from-secrets",
+            "use-feed-proxy": true
+        },
+        {
+            "name": "SuffolkCountyTransit",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.goswift.ly/real-time/suffolk-county/gtfs-rt-alerts/v2",
+            "headers": {},
+            "use-feed-proxy": true
         },
         {
             "name": "NassauInterCountyExpress",

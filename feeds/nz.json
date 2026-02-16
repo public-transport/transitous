@@ -74,7 +74,9 @@
             "spec": "gtfs-rt",
             "type": "url",
             "url": "https://api.opendata.metlink.org.nz/v1/gtfs-rt/servicealerts",
-            "headers": {},
+            "headers": {
+                "Accept": "application/x-protobuf"
+            },
             "use-feed-proxy": true
         },
         {
@@ -82,7 +84,9 @@
             "spec": "gtfs-rt",
             "type": "url",
             "url": "https://api.opendata.metlink.org.nz/v1/gtfs-rt/tripupdates",
-            "headers": {},
+            "headers": {
+                "Accept": "application/x-protobuf"
+            },
             "use-feed-proxy": true
         },
         {
@@ -90,7 +94,9 @@
             "spec": "gtfs-rt",
             "type": "url",
             "url": "https://api.opendata.metlink.org.nz/v1/gtfs-rt/vehiclepositions",
-            "headers": {},
+            "headers": {
+                "Accept": "application/x-protobuf"
+            },
             "use-feed-proxy": true
         },
         {
@@ -109,7 +115,7 @@
             "name": "Metro-Christchurch",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-rb6b-metrochristchurch~rt",
-            "api-key": "920de6bcafdb445699a7ba92dd5cc005",
+            "api-key": "key-from-secrets",
             "use-feed-proxy": true
         },
         {

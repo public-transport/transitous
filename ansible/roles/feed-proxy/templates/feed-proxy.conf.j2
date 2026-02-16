@@ -24,12 +24,12 @@ server {
     proxy_ssl_server_name on;
 
     proxy_pass_header Server;
-    proxy_set_header User-Agent {{ feed_proxy_host }};
+    proxy_set_header User-Agent transitous.org;
     add_header X-Cache $upstream_cache_status;
     add_header Link '<https://transitous.org/sources/>; rel="license"';
 
     proxy_cache            feed-proxy;
-    proxy_cache_key   "$proxy_host$request_uri";
+    proxy_cache_key   "$request_uri";
     proxy_buffering on;
     proxy_ignore_headers Set-Cookie;
     proxy_ignore_headers X-Accel-Expires;
@@ -37,9 +37,10 @@ server {
     proxy_ignore_headers Cache-Control;
     proxy_http_version 1.1;
     proxy_intercept_errors on;
-    error_page 301 302 307 = @handle_redirects;
-    proxy_cache_valid      200 206 40s;
-    proxy_cache_valid      404 300s;
+    error_page 301 302 307 308 = @handle_redirects;
+    proxy_cache_valid      200 40s;
+    proxy_cache_valid      400 401 403 404 200s;
+    proxy_ignore_client_abort on;
     proxy_cache_use_stale  error timeout invalid_header updating
                             http_500 http_502 http_503 http_504 http_429;
 
@@ -48,6 +49,7 @@ server {
     {% for item in feed_vars | dict2items %}   
         location "/feed/{{item.key}}" {
             set $feed_upstream "{{ item.value.url | replace('\\', '\\\\') | replace('"', '\\"') | replace('$', '$dollar') }}";
+            set $original_host "{{ item.value.url | urlsplit('hostname') }}";
             proxy_pass $feed_upstream; 
 
             {% if "headers" in item.value %}
@@ -59,19 +61,23 @@ server {
     {% endfor %}
 
     location @handle_redirects {
-       set $original_uri "$proxy_host$request_uri";
-       set $original_host "$proxy_host";
+       set $original_uri "$request_uri";
        set $orig_loc "$upstream_http_location";
+
+       proxy_cache       feed-proxy;
+       proxy_cache_key $original_uri;
+       proxy_cache_valid 200 40s;
+       proxy_cache_valid 400 401 403 404 200s;
+
        if ($orig_loc ~* "://") {
          proxy_pass $orig_loc;
+         break;
        }
        # handle relative redirect
        if ($orig_loc !~* "://") {
          proxy_pass $scheme://$original_host$orig_loc;
-       }  
-       proxy_cache       feed-proxy;
-       proxy_cache_key $original_uri;
-       proxy_cache_valid 200 206 40s;
+         break;
+       }
     }
 }
 
@@ -86,12 +92,12 @@ server {
     proxy_ssl_server_name on;
     
     proxy_pass_header Server;
-    proxy_set_header User-Agent {{ feed_proxy_host }};
+    proxy_set_header User-Agent transitous.org;
     add_header X-Cache $upstream_cache_status;
     add_header Link '<https://transitous.org/sources/>; rel="license"';
 
     proxy_cache            feed-proxy;
-    proxy_cache_key   "$proxy_host$request_uri";
+    proxy_cache_key   "$request_uri";
     proxy_buffering on;
     proxy_ignore_headers Set-Cookie;
     proxy_ignore_headers X-Accel-Expires;
@@ -99,9 +105,10 @@ server {
     proxy_ignore_headers Cache-Control;
     proxy_http_version 1.1;
     proxy_intercept_errors on;
-    error_page 301 302 307 = @handle_redirects;
-    proxy_cache_valid      200 206 40s;
-    proxy_cache_valid      404 300s;
+    error_page 301 302 307 308 = @handle_redirects;
+    proxy_cache_valid      200 40s;
+    proxy_cache_valid      400 401 403 404 200s;
+    proxy_ignore_client_abort on;
     proxy_cache_use_stale  error timeout invalid_header updating
                             http_500 http_502 http_503 http_504 http_429;
 
@@ -110,6 +117,7 @@ server {
     {% for item in feed_vars | dict2items %}   
         location "/feed/{{item.key}}" {
             set $feed_upstream "{{ item.value.url | replace('\\', '\\\\') | replace('"', '\\"') | replace('$', '$dollar') }}";
+            set $original_host "{{ item.value.url | urlsplit('hostname') }}";
             proxy_pass $feed_upstream;  
 
             {% if "headers" in item.value %}
@@ -121,19 +129,23 @@ server {
     {% endfor %}
     
     location @handle_redirects {
-       set $original_uri "$proxy_host$request_uri";
-       set $original_host "$proxy_host";
+       set $original_uri "$request_uri";
        set $orig_loc "$upstream_http_location";
+
+       proxy_cache       feed-proxy;
+       proxy_cache_key $original_uri;
+       proxy_cache_valid 200 40s;
+       proxy_cache_valid 400 401 403 404 200s;
+
        if ($orig_loc ~* "://") {
          proxy_pass $orig_loc;
+         break;
        }
        # handle relative redirect
        if ($orig_loc !~* "://") {
          proxy_pass $scheme://$original_host$orig_loc;
+         break;
        }
-       proxy_cache       feed-proxy;
-       proxy_cache_key $original_uri;
-       proxy_cache_valid 200 206 40s;
     }
 }
 
@@ -151,7 +163,7 @@ server {
     proxy_ssl_server_name on;
 
     proxy_pass_header Server;
-    proxy_set_header User-Agent {{ feed_proxy_host }};
+    proxy_set_header User-Agent transitous.org;
     add_header X-Cache $upstream_cache_status;
     add_header Link '<https://transitous.org/sources/>; rel="license"';
 
@@ -162,8 +174,9 @@ server {
     proxy_ignore_headers Expires;
     proxy_ignore_headers Cache-Control;
     proxy_http_version 1.1;
-    proxy_cache_valid      200 302 80s;
-    proxy_cache_valid      404 300s;
+    proxy_cache_valid      200 80s;
+    proxy_cache_valid      400 401 403 404 200s;
+    proxy_ignore_client_abort on;
     proxy_cache_use_stale  error timeout invalid_header updating
                             http_500 http_502 http_503 http_504 http_429;
 
@@ -192,7 +205,7 @@ server {
     proxy_ssl_server_name on;
 
     proxy_pass_header Server;
-    proxy_set_header User-Agent {{ feed_proxy_host }};
+    proxy_set_header User-Agent transitous.org;
     add_header X-Cache $upstream_cache_status;
     add_header Link '<https://transitous.org/sources/>; rel="license"';
 
@@ -203,8 +216,9 @@ server {
     proxy_ignore_headers Expires;
     proxy_ignore_headers Cache-Control;
     proxy_http_version 1.1;
-    proxy_cache_valid      200 302 80s;
-    proxy_cache_valid      404 300s;
+    proxy_cache_valid      200 80s;
+    proxy_cache_valid      400 401 403 404 200s;
+    proxy_ignore_client_abort on;
     proxy_cache_use_stale  error timeout invalid_header updating
                             http_500 http_502 http_503 http_504 http_429;
 
