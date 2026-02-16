@@ -24,12 +24,12 @@ server {
     proxy_ssl_server_name on;
 
     proxy_pass_header Server;
-    proxy_set_header User-Agent {{ feed_proxy_host }};
+    proxy_set_header User-Agent transitous.org;
     add_header X-Cache $upstream_cache_status;
     add_header Link '<https://transitous.org/sources/>; rel="license"';
 
     proxy_cache            feed-proxy;
-    proxy_cache_key   "$proxy_host$request_uri";
+    proxy_cache_key   "$request_uri";
     proxy_buffering on;
     proxy_ignore_headers Set-Cookie;
     proxy_ignore_headers X-Accel-Expires;
@@ -49,6 +49,7 @@ server {
     {% for item in feed_vars | dict2items %}   
         location "/feed/{{item.key}}" {
             set $feed_upstream "{{ item.value.url | replace('\\', '\\\\') | replace('"', '\\"') | replace('$', '$dollar') }}";
+            set $original_host "{{ item.value.url | urlsplit('hostname') }}";
             proxy_pass $feed_upstream; 
 
             {% if "headers" in item.value %}
@@ -60,8 +61,7 @@ server {
     {% endfor %}
 
     location @handle_redirects {
-       set $original_uri "$proxy_host$request_uri";
-       set $original_host "$proxy_host";
+       set $original_uri "$request_uri";
        set $orig_loc "$upstream_http_location";
 
        proxy_cache       feed-proxy;
@@ -92,12 +92,12 @@ server {
     proxy_ssl_server_name on;
     
     proxy_pass_header Server;
-    proxy_set_header User-Agent {{ feed_proxy_host }};
+    proxy_set_header User-Agent transitous.org;
     add_header X-Cache $upstream_cache_status;
     add_header Link '<https://transitous.org/sources/>; rel="license"';
 
     proxy_cache            feed-proxy;
-    proxy_cache_key   "$proxy_host$request_uri";
+    proxy_cache_key   "$request_uri";
     proxy_buffering on;
     proxy_ignore_headers Set-Cookie;
     proxy_ignore_headers X-Accel-Expires;
@@ -117,6 +117,7 @@ server {
     {% for item in feed_vars | dict2items %}   
         location "/feed/{{item.key}}" {
             set $feed_upstream "{{ item.value.url | replace('\\', '\\\\') | replace('"', '\\"') | replace('$', '$dollar') }}";
+            set $original_host "{{ item.value.url | urlsplit('hostname') }}";
             proxy_pass $feed_upstream;  
 
             {% if "headers" in item.value %}
@@ -128,8 +129,7 @@ server {
     {% endfor %}
     
     location @handle_redirects {
-       set $original_uri "$proxy_host$request_uri";
-       set $original_host "$proxy_host";
+       set $original_uri "$request_uri";
        set $orig_loc "$upstream_http_location";
 
        proxy_cache       feed-proxy;
@@ -163,7 +163,7 @@ server {
     proxy_ssl_server_name on;
 
     proxy_pass_header Server;
-    proxy_set_header User-Agent {{ feed_proxy_host }};
+    proxy_set_header User-Agent transitous.org;
     add_header X-Cache $upstream_cache_status;
     add_header Link '<https://transitous.org/sources/>; rel="license"';
 
@@ -205,7 +205,7 @@ server {
     proxy_ssl_server_name on;
 
     proxy_pass_header Server;
-    proxy_set_header User-Agent {{ feed_proxy_host }};
+    proxy_set_header User-Agent transitous.org;
     add_header X-Cache $upstream_cache_status;
     add_header Link '<https://transitous.org/sources/>; rel="license"';
 
