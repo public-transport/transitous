@@ -106,9 +106,8 @@
         },
         {
             "name": "Metro-Christchurch",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-rb6b-metrochristchurch",
-            "api-key": "920de6bcafdb445699a7ba92dd5cc005",
+            "type": "http",
+            "url": "https://gitlab.com/applecuckoo/gtfs-fixes/-/jobs/artifacts/main/raw/chc-gtfs.zip?job=gtfs-mirror",
             "fix": true
         },
         {
