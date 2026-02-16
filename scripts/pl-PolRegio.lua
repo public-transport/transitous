@@ -13,11 +13,13 @@ end
 
 function process_route(route)
 	if route:get_short_name() == "REG" then
+		route:set_route_type(106) --REGIONAL_RAIL_SERVICE in future motis
 		route:set_clasz(REGIONAL_RAIL)
 	elseif route:get_short_name() == "IR" then
+		route:set_route_type(100) --RAILWAY_SERVICE in future motis
 		route:set_clasz(REGIONAL_FAST_RAIL)
 	elseif route:get_short_name() == "ZKA REG" then
 		route:set_clasz(BUS)
-		route:set_route_type(714) -- rail replacement bus
+		route:set_route_type(714) --RAIL_REPLACEMENT_BUS_SERVICE in future motis
 	end
 end
