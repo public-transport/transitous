@@ -7,6 +7,10 @@
         {
             "name": "Petko",
             "github": "ignisf"
+        },
+        {
+            "name": "Milen-Joan",
+            "github": "BPilot253"
         }
     ],
     "sources": [
@@ -66,6 +70,12 @@
             "type": "mobility-database",
             "mdb-id": "mdb-2119",
             "fix-csv-quotes": true
+        },
+        {
+            "name": "pleven",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2120",
+            "spec": "gtfs-rt"
         }
     ]
 }
