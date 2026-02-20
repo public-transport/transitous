@@ -622,6 +622,15 @@
             "name": "Veneto-Mobilita-di-Marca",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u20-mobilitadimarca"
+        },
+        {
+            "name": "skyalps",
+            "type": "http",
+            "url": "https://gtfs.api.opendatahub.com/v1/dataset/skyalps-flight-data/raw",
+            "spec": "gtfs",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
         }
     ]
 }
