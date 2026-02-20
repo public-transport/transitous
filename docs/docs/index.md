@@ -398,7 +398,8 @@ of delay for the corresponding trip, while gray vehicles have no realtime inform
 GBFS consists of an entry point in form of a small JSON manifest that contains links to further JSON files with the actual information,
 generally split up by how often certain aspects are expected to change.
 
-Transitous currently has no built-in way to visualize availabe sharing vehicles.
+The [Transitous map view](https://api.transitous.org/) shows a button to enable markers for each
+station with details about available vehicles. The buttons appear, when zoomed in close enough.
 
 ### On-demand services
 
