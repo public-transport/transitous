@@ -1012,6 +1012,7 @@ local colors = {
         ["RB40"] = { color = 0x7a7c80, text_color = 0xffffff },
         ["RB43"] = { color = 0x7a7c80, text_color = 0xffffff },
         ["RB48"] = { color = 0x55ace0, text_color = 0xffffff },
+        ["RB48X"] = { color = 0x68ab44, text_color = 0xffffff },
         ["RB51"] = { color = 0x7a7c80, text_color = 0xffffff },
         ["RB52"] = { color = 0x7a7c80, text_color = 0xffffff },
         ["RB53"] = { color = 0x7a7c80, text_color = 0xffffff },
@@ -1019,7 +1020,6 @@ local colors = {
         ["RB63"] = { color = 0x7a7c80, text_color = 0xffffff },
         ["RB64"] = { color = 0x7a7c80, text_color = 0xffffff },
         ["RE12"] = { color = 0xad294c, text_color = 0xffffff },
-        ["RE13"] = { color = 0x7f5c1e, text_color = 0xffffff },
         ["RE17"] = { color = 0x489b40, text_color = 0xffffff },
         ["RE2"] = { color = 0x00b8f1, text_color = 0xffffff },
         ["RE22"] = { color = 0xffad3e, text_color = 0xffffff },
@@ -1036,13 +1036,12 @@ local colors = {
         ["S19"] = { color = 0x00658e, text_color = 0xffffff },
         ["S2"] = { color = 0x0074bc, text_color = 0xffffff },
         ["S23"] = { color = 0x8c2a77, text_color = 0xffffff },
-        ["S28"] = { color = 0x00a89c, text_color = 0xffffff },
         ["S3"] = { color = 0xfff200, text_color = 0x000000 },
         ["S4"] = { color = 0xf5821f, text_color = 0xffffff },
         ["S5"] = { color = 0x80c342, text_color = 0xffffff },
         ["S6"] = { color = 0xe21d3c, text_color = 0xffffff },
-        ["S68"] = { color = 0xf69324, text_color = 0xffffff },
         ["S7"] = { color = 0xbc6b28, text_color = 0xffffff },
+        ["S8"] = { color = 0xb23815, text_color = 0xffffff },
         ["S9"] = { color = 0xc6168d, text_color = 0xffffff },
     },
     ["DB Regio AG Nord"] = {
@@ -2932,7 +2931,6 @@ local colors = {
     },
     ["National Express"] = {
         ["RB48"] = { color = 0x7a7c80, text_color = 0xffffff },
-        ["RB48X"] = { color = 0x68ab44, text_color = 0xffffff },
         ["RE1"] = { color = 0xff2d16, text_color = 0xffffff },
         ["RE11"] = { color = 0x5accc2, text_color = 0xffffff },
         ["RE4"] = { color = 0xe88f24, text_color = 0xffffff },
@@ -3368,6 +3366,7 @@ local colors = {
     },
     ["REGIOBAHN"] = {
         ["RE47"] = { color = 0x66cdec, text_color = 0xffffff },
+        ["S28"] = { color = 0x4a0b4d, text_color = 0xffffff },
     },
     ["RNV HD-MA-Weinheim (Strab)"] = {
         ["RNV5"] = { color = 0x00965e, text_color = 0xffffff },
@@ -5881,10 +5880,8 @@ local colors = {
     },
     ["go.on Gesellschaft für Bus- und Schienenverkehr mbH"] = {
         ["RE22"] = { color = 0xf68617, text_color = 0xffffff },
-        ["RE4"] = { color = 0xffd204, text_color = 0x000000 },
         ["RE7"] = { color = 0xf69324, text_color = 0xffffff },
         ["RE7X"] = { color = 0xf69324, text_color = 0xffffff },
-        ["S8"] = { color = 0x397325, text_color = 0xffffff },
     },
     ["metronom"] = {
         ["RB31"] = { color = 0x7f257b, text_color = 0xffffff },
