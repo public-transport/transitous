@@ -1,8 +1,8 @@
 {
     "maintainers": [
         {
-            "name": "Volker Krause",
-            "github": "vkrause"
+            "name": "Máté Gyöngyösi",
+            "github": "gy-mate"
         }
     ],
     "sources": [
@@ -17,8 +17,7 @@
             },
             "license": {
                 "spdx-identifier": "CC0-1.0"
-            },
-            "drop-shapes": true
+            }
         },
         {
             "name": "volanbusz",
@@ -35,6 +34,11 @@
             "name": "bkk-funicular",
             "type": "http",
             "url": "https://gy-mate.hu/gtfs/gtfs_hu_funicular.zip"
+        },
+        {
+            "name": "bkk-chairlift",
+            "type": "http",
+            "url": "https://gy-mate.hu/gtfs/gtfs_hu_chairlift.zip"
         },
         {
             "name": "bkk",
@@ -113,12 +117,6 @@
             "name": "Várpalota",
             "type": "http",
             "url": "https://gtfs.menetbrand.com/download/varpalota"
-        },
-        {
-            "name": "Weekendbus",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u2mw-weekendbus",
-            "fix": true
         },
         {
             "name": "Kecskemét",

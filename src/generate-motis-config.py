@@ -16,7 +16,9 @@ from ruamel.yaml import YAML
 from typing import Any
 from pathlib import Path
 from utils import eprint
+from urllib.parse import quote
 
+FEED_PROXY="https://rt.triptix.tech"
 
 def find_motis_asset(asset_name: str):
     motis_path = shutil.which("motis")
@@ -28,10 +30,17 @@ def find_motis_asset(asset_name: str):
 def check_file_exist_in_out_folder(file_name: str):
     return os.path.isfile(os.path.join("out", file_name))
 
+def to_motis_rt_spec(spec: str) -> str:
+    match spec:
+        case 'gtfs-rt': return 'gtfsrt'
+        case 'siri-json': return 'siri_json'
+    return spec
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Transitous MOTIS configuration generator.')
     parser.add_argument('--import-only', action='store_true', help='Generate configuration for importing only.')
     parser.add_argument('--skip-missing-files', action='store_true', help='Do not generate entry for missing GTFS files')
+    parser.add_argument('--feed-proxy', action='store_true', help='Generate configuration for the feed proxy.')
     parser.add_argument('regions', type=str, help='Only generate configuration for the given region(s) (leave empty for all regions, globs are supported)', nargs="*")
     arguments = parser.parse_args()
 
@@ -69,6 +78,7 @@ if __name__ == "__main__":
         )
         config["timetable"]["datasets"] = {}
         config["gbfs"]["feeds"] = {}
+        config["gbfs"]["proxy"] = FEED_PROXY
 
         # TODO backward compatibility, remove this in a few months
         while "full" in arguments.regions:
@@ -115,6 +125,11 @@ if __name__ == "__main__":
                             resolved_sources = [source]
 
                     for source in resolved_sources:
+                        use_original_url = isinstance(source, metadata.UrlSource) and not source.use_feed_proxy
+                        if arguments.feed_proxy and use_original_url and source.spec != "gbfs":
+                            continue
+                        if arguments.feed_proxy:
+                            use_original_url = True
                         match source.spec:
                             case source.spec if source.spec in ["gtfs", "netex"]:
                                 schedule_file = \
@@ -138,7 +153,7 @@ if __name__ == "__main__":
                                     print("Warning: Skipping " + name + " as " + schedule_file + " is missing.")
                                     ignored_feeds.add(name)
 
-                            case "gtfs-rt" if isinstance(source, metadata.UrlSource):
+                            case source.spec if isinstance(source, metadata.UrlSource) and source.spec in ["gtfs-rt", "siri", "siri-json"]:
                                 name = f"{region_name}-{source.name}"
                                 if name not in config["timetable"]["datasets"]:
                                     eprint(
@@ -155,23 +170,37 @@ if __name__ == "__main__":
                                     config["timetable"]["datasets"][name]["rt"] = []
 
                                 rt_feed: dict[str, Any] = {
-                                    "url": source.url
+                                    "url": source.url if use_original_url else FEED_PROXY + '/feed/' + quote(name) + "-" + str(len(config["timetable"]["datasets"][name]["rt"])),
+                                    "protocol": to_motis_rt_spec(source.spec)
                                 }
 
-                                if source.headers:
+                                if source.headers and use_original_url:
                                     rt_feed["headers"] = source.headers
 
                                 config["timetable"]["datasets"][name]["rt"] \
-                                    .append(rt_feed)
+                                        .append(rt_feed)
 
                             case "gbfs" if isinstance(source, metadata.UrlSource):
                                 name = f"{region_name}-{source.name}"
-                                config["gbfs"]["feeds"][name] = {"url": source.url}
-                                if source.headers:
+                                config["gbfs"]["feeds"][name] = {"url": source.url if use_original_url else FEED_PROXY + '/feed/' + quote(name)}
+                                if source.headers and use_original_url:
                                     config["gbfs"]["feeds"][name]["headers"] = source.headers
 
-        with open("out/config.yml", "w") as fo:
-            yaml.dump(config, fo)
+        if arguments.feed_proxy:
+            with open("/tmp/feed-proxy-vars.yml", "w") as fo:
+                feed_vars = {}
+                for key in config["timetable"]["datasets"]:
+                    if not "rt" in config["timetable"]["datasets"][key]:
+                        continue
+                    for i, rt_feed in enumerate(config["timetable"]["datasets"][key]["rt"]):
+                        feed_vars[key + '-' + str(i)] = rt_feed
+                for key in config["gbfs"]["feeds"]:
+                    feed_vars[key] = config["gbfs"]["feeds"][key]
+                    feed_vars[key]['gbfs'] = True
+                yaml.dump(feed_vars, fo)    
+        else:
+            with open("out/config.yml", "w") as fo:
+                yaml.dump(config, fo)
 
     # copy scripts
     shutil.rmtree("out/scripts", ignore_errors=True)

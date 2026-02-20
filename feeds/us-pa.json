@@ -215,7 +215,8 @@
         {
             "name": "luzerne",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-luzerne~county~transit~authority~rt"
+            "transitland-atlas-id": "f-luzerne~county~transit~authority~rt",
+            "url-override": "https://realtimelctabus.availtec.com/InfoPoint/GTFS-Realtime.ashx?Type=TripUpdate"
         },
         {
             "name": "MMVTA",
@@ -245,12 +246,14 @@
         {
             "name": "PRT",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-dppn-portauthorityofalleghenycounty~bus~rt"
+            "transitland-atlas-id": "f-dppn-portauthorityofalleghenycounty~bus~rt",
+            "use-feed-proxy": true
         },
         {
             "name": "PRT",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-dppn-portauthorityofalleghenycounty~train~rt"
+            "transitland-atlas-id": "f-dppn-portauthorityofalleghenycounty~train~rt",
+            "use-feed-proxy": true
         },
         {
             "name": "PATCO",

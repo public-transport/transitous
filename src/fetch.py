@@ -104,30 +104,46 @@ def check_feed_not_expired(feed_info: Iterable[dict],
                            feed_timezone: ZoneInfo):
     today = datetime.now(tz=feed_timezone)
 
-    def feed_info_not_expired():
-        valid_entries = map(
+    def feed_info_latest():
+        valid_entries = list(map(
             lambda row:
                 "feed_end_date" not in row or not row["feed_end_date"] or
-                parse_gtfs_date(row["feed_end_date"], feed_timezone) >= today,
-            feed_info)
-        return all(valid_entries)
+                parse_gtfs_date(row["feed_end_date"], feed_timezone),
+            feed_info))
+        if valid_entries:
+            return max(valid_entries)
+        else:
+            return None
 
-    def calendar_not_expired():
-        valid_entries = map(
+    def calendar_latest():
+        valid_entries = list(map(
             lambda row:
-                parse_gtfs_date(row["end_date"], feed_timezone) >= today,
-            calendar)
-        return any(valid_entries)
+                parse_gtfs_date(row["end_date"], feed_timezone),
+            calendar))
+        if valid_entries:
+            return max(valid_entries)
+        else:
+            return None
 
-    def calendar_dates_not_expired():
-        valid_entries = map(
+    def calendar_dates_latest():
+        valid_entries = list(map(
             lambda row:
-                parse_gtfs_date(row["date"], feed_timezone) >= today,
-            calendar_dates)
-        return any(valid_entries)
+                parse_gtfs_date(row["date"], feed_timezone),
+            calendar_dates))
+        if valid_entries:
+            return max(valid_entries)
+        else:
+            return None
 
-    return feed_info_not_expired() and \
-        (calendar_not_expired() or calendar_dates_not_expired())
+    feed_info_end = feed_info_latest()
+    calendar_end = calendar_latest()
+    calendar_dates_end = calendar_dates_latest()
+
+    if feed_info_end:
+        return feed_info_end >= today
+    else:
+        return calendar_end and calendar_end >= today or \
+            calendar_dates_end and calendar_dates_end >= today
 
 
 def check_feed_timeframe_valid(zip_file: ZipFile) -> FeedValidity:
@@ -412,6 +428,9 @@ class Fetcher:
 
         os.rename(temp_file, output_path)
 
+        ts = input_path.stat().st_mtime
+        os.utime(output_path, (ts, ts))
+
     def fetch(self, metadata: Path) -> int:
         region = Region(json.load(open(metadata, "r")))
         metadata_filename = metadata.name
@@ -466,7 +485,8 @@ class Fetcher:
                 continue
 
             # Nothing new was downloaded, and data is already processed
-            if not new_data and output_path.exists():
+            if not new_data and output_path.exists() \
+                    and download_path.stat().st_mtime <= output_path.stat().st_mtime:
                 continue
 
             # Something new was downloaded or the data was previously not processed

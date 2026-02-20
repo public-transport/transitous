@@ -75,9 +75,9 @@
             "type": "url",
             "url": "https://api.opendata.metlink.org.nz/v1/gtfs-rt/servicealerts",
             "headers": {
-                "Accept": "application/x-protobuf",
-                "x-api-key": "17mgElKK4t16dD0dOVxGZGrmjsvKHW8aqFPTC1vd"
-            }
+                "Accept": "application/x-protobuf"
+            },
+            "use-feed-proxy": true
         },
         {
             "name": "Metlink",
@@ -85,9 +85,9 @@
             "type": "url",
             "url": "https://api.opendata.metlink.org.nz/v1/gtfs-rt/tripupdates",
             "headers": {
-                "Accept": "application/x-protobuf",
-                "x-api-key": "17mgElKK4t16dD0dOVxGZGrmjsvKHW8aqFPTC1vd"
-            }
+                "Accept": "application/x-protobuf"
+            },
+            "use-feed-proxy": true
         },
         {
             "name": "Metlink",
@@ -95,9 +95,9 @@
             "type": "url",
             "url": "https://api.opendata.metlink.org.nz/v1/gtfs-rt/vehiclepositions",
             "headers": {
-                "Accept": "application/x-protobuf",
-                "x-api-key": "17mgElKK4t16dD0dOVxGZGrmjsvKHW8aqFPTC1vd"
-            }
+                "Accept": "application/x-protobuf"
+            },
+            "use-feed-proxy": true
         },
         {
             "name": "Otago-Regional-Council",
@@ -106,16 +106,16 @@
         },
         {
             "name": "Metro-Christchurch",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-rb6b-metrochristchurch",
-            "api-key": "920de6bcafdb445699a7ba92dd5cc005",
+            "type": "http",
+            "url": "https://gitlab.com/applecuckoo/gtfs-fixes/-/jobs/artifacts/main/raw/chc-gtfs.zip?job=gtfs-mirror",
             "fix": true
         },
         {
             "name": "Metro-Christchurch",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-rb6b-metrochristchurch~rt",
-            "api-key": "920de6bcafdb445699a7ba92dd5cc005"
+            "api-key": "key-from-secrets",
+            "use-feed-proxy": true
         },
         {
             "name": "BUSIT",

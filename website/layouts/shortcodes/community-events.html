@@ -1,0 +1,20 @@
+<!--
+SPDX-FileCopyrightText: 2026 Volker Krause <vkrause@kde.org>
+SPDX-License-Identifier: AGPL-3.0-or-later
+-->
+
+<ul>
+{{ range $event := $.Site.Data.communityevents }}
+    {{ $eventEnd := time.AsTime $event.endDate }}
+    {{ if gt (time.Now) $eventEnd }}
+        {{ continue }}
+    {{ end }}
+    <li>
+        <a href="{{ .link }}">{{ .name }}</a> — {{ .startDate | time.Format ":date_medium" }}
+        {{ if ne .startDate .endDate }}
+            to {{ .endDate | time.Format ":date_medium" }}
+        {{ end }}
+        in {{ .location }}
+    </li>
+{{ end }}
+</ul>

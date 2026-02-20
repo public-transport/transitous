@@ -11,6 +11,10 @@
         {
             "name": "Alfredo Cubitos",
             "github": "AlfredoCubitos"
+        },
+        {
+            "name": "Pablo Castellanos",
+            "github": "pacastega"
         }
     ],
     "sources": [
@@ -50,7 +54,8 @@
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
-            }
+            },
+            "script": "es-alsa.lua"
         },
         {
             "name": "Autobús-Comarca-de-Pamplona",
@@ -128,11 +133,9 @@
             "http-options": {
                 "fetch-interval-days": 1,
                 "headers": {
-                    "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+                    "ApiKey": "b2be1741-ed99-41e7-99bf-924b32694633"
                 }
-            },
-            "skip": true,
-            "skip-reason": "Broken file"
+            }
         },
         {
             "name": "Autobuses-Junta-de-Extremadura",
@@ -522,11 +525,9 @@
             "http-options": {
                 "fetch-interval-days": 1,
                 "headers": {
-                    "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+                    "ApiKey": "b2be1741-ed99-41e7-99bf-924b32694633"
                 }
-            },
-            "skip": true,
-            "skip-reason": "Feed expired"
+            }
         },
         {
             "name": "Autobús-urbano-de-Málaga",

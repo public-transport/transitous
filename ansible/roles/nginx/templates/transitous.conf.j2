@@ -22,8 +22,15 @@ upstream {{ item.vhost }}-backend {
 }
 
 server {
-    listen 443 http2 ssl;
-    listen [::]:443 http2 ssl;
+    listen 443 ssl;
+    listen 443 quic {{ item.quic_options }};
+    listen [::]:443 ssl;
+    listen [::]:443 quic {{ item.quic_options }};
+
+    http2 on;
+
+    quic_gso on;
+    add_header Alt-Svc 'h3=":443"; ma=21600, h3-29=":443"; ma=21600';
 
     # Override TLS settings from included file
     ssl_protocols TLSv1.2 TLSv1.3;

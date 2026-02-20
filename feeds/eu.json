@@ -32,7 +32,18 @@
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u0-ouibus",
             "url-override": "https://www.data.gouv.fr/api/1/datasets/r/fd54f81f-4389-4e73-be75-491133d011c3",
-            "fix": true
+            "fix": true,
+            "script": "generic-bus-to-coach.lua"
+        },
+        {
+            "name": "blablacar-bus",
+            "type": "url",
+            "url": "https://open-data.bus.blablacar.com/api/siri-lite/estimated-timetable",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/blablacar-bus-horaires-theoriques-et-temps-reel-du-reseau-europeen",
+                "spdx-identifier": "ODbL-1.0"
+            },
+            "spec": "siri-json"
         },
         {
             "name": "eurostar",

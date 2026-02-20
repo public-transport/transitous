@@ -1,0 +1,37 @@
+[
+    {
+        "name": "FOSDEM 2026",
+        "link": "https://fosdem.org/2026",
+        "startDate": "2026-01-31",
+        "endDate": "2026-02-01",
+        "location": "Brussels, Belgium"
+    },
+    {
+        "name": "OSM Hack Weekend Karlsruhe",
+        "link": "https://wiki.openstreetmap.org/wiki/Karlsruhe_Hack_Weekend_February_2026",
+        "startDate": "2026-02-21",
+        "endDate": "2026-02-22",
+        "location": "Karlsruhe, Germany"
+    },
+    {
+        "name": "FOSSGIS-Konferenz 2026",
+        "link": "https://fossgis-konferenz.de/2026",
+        "startDate": "2026-03-25",
+        "endDate": "2026-03-28",
+        "location": "Göttingen, Germany"
+    },
+    {
+        "name": "State of the Map 2026",
+        "link": "https://wiki.openstreetmap.org/wiki/State_of_the_Map_2026",
+        "startDate": "2026-08-28",
+        "endDate": "2026-08-30",
+        "location": "Paris, France"
+    },
+    {
+        "name": "Open Transport Community Conference 2026",
+        "link": "https://open-transport.org",
+        "startDate": "2026-10-06",
+        "endDate": "2026-10-09",
+        "location": "Bern, Switzerland"
+    }
+]

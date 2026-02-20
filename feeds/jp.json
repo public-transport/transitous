@@ -58,11 +58,6 @@
             "mdb-id": "jbda-aichi-miyoshicity-sansanbus"
         },
         {
-            "name": "たこバスたこバスミニ",
-            "type": "mobility-database",
-            "mdb-id": "jbda-akashicity-tacobustacobusmini"
-        },
-        {
             "name": "明知鉄道",
             "type": "mobility-database",
             "mdb-id": "jbda-aketetsu-akechirailway"
@@ -702,11 +697,6 @@
             "name": "観音寺市のりあいバス",
             "type": "mobility-database",
             "mdb-id": "jbda-kanonjicity-kanonjishi-noriaibus"
-        },
-        {
-            "name": "刈谷市公共施設連絡バス「かりまる」",
-            "type": "mobility-database",
-            "mdb-id": "jbda-kariyacity-communitybus"
         },
         {
             "name": "KASAIねっぴー号はっぴーバス",

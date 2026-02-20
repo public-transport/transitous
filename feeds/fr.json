@@ -1606,7 +1606,9 @@
             "x-data-gov-fr-res-id": 80730,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "GTFS-RT Mise à jour des Alertes",
-            "x-data-gov-fr-dataset-id": "5c642379634f41657e9b5ea4"
+            "x-data-gov-fr-dataset-id": "5c642379634f41657e9b5ea4",
+            "skip": true,
+            "skip-reason": "Feed is expired according to metadata"
         },
         {
             "name": "offre-de-transport-du-reseau-tango-de-nimes-metropole-gtfs-gtfs-rt",
@@ -1620,7 +1622,9 @@
             "x-data-gov-fr-res-id": 80731,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "GTFS-RT Mises à jour des trajets en temps réel",
-            "x-data-gov-fr-dataset-id": "5c642379634f41657e9b5ea4"
+            "x-data-gov-fr-dataset-id": "5c642379634f41657e9b5ea4",
+            "skip": true,
+            "skip-reason": "Feed is expired according to metadata"
         },
         {
             "name": "offre-de-transport-du-reseau-tango-de-nimes-metropole-gtfs-gtfs-rt",
@@ -1634,7 +1638,9 @@
             "x-data-gov-fr-res-id": 83382,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "GTFS-RT - Prochains passages en temps réel",
-            "x-data-gov-fr-dataset-id": "5c642379634f41657e9b5ea4"
+            "x-data-gov-fr-dataset-id": "5c642379634f41657e9b5ea4",
+            "skip": true,
+            "skip-reason": "Feed is expired according to metadata"
         },
         {
             "name": "horaires-theoriques-et-temps-reel-gtfs-gtfs-rt-du-reseau-palmbus-cannes-pays-de-lerins",
@@ -3318,7 +3324,7 @@
             "x-data-gov-fr-res-id": 82555,
             "managed-by-script": true,
             "skip": false,
-            "x-data-gov-fr-res-title": "Données théoriques",
+            "x-data-gov-fr-res-title": "Réseau_MAT_06022026_au_03072026",
             "x-data-gov-fr-dataset-id": "601033a9f8ef84fd317562ae"
         },
         {
@@ -8818,7 +8824,7 @@
             "x-data-gov-fr-res-id": 81559,
             "managed-by-script": true,
             "skip": false,
-            "x-data-gov-fr-res-title": "KorriGo - Fichier GTFS",
+            "x-data-gov-fr-res-title": "KORRIGO",
             "x-data-gov-fr-dataset-id": "65af92d12d38ceffacb04812"
         },
         {
@@ -10006,8 +10012,36 @@
             },
             "x-data-gov-fr-res-id": 81984,
             "managed-by-script": true,
-            "x-data-gov-fr-res-title": "Vélo en libre-service",
+            "x-data-gov-fr-res-title": "Index racine de l'API",
             "x-data-gov-fr-dataset-id": "669ef40c1acd6245ea444b63"
+        },
+        {
+            "name": "velo-en-libre-service-de-la-ville-damiens--83828",
+            "type": "url",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/7179a29a-2ec0-4d66-8474-74354efb0ecd",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/velo-en-libre-service-de-la-ville-damiens",
+                "spdx-identifier": "etalab-2.0"
+            },
+            "x-data-gov-fr-res-id": 83828,
+            "x-data-gov-fr-dataset-id": "669ef40c1acd6245ea444b63",
+            "x-data-gov-fr-res-title": "Information sur le service Vélam",
+            "managed-by-script": true
+        },
+        {
+            "name": "velo-en-libre-service-de-la-ville-damiens--83829",
+            "type": "url",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/131b5c6f-0325-4020-99c6-7d382e4963a3",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/velo-en-libre-service-de-la-ville-damiens",
+                "spdx-identifier": "etalab-2.0"
+            },
+            "x-data-gov-fr-res-id": 83829,
+            "x-data-gov-fr-dataset-id": "669ef40c1acd6245ea444b63",
+            "x-data-gov-fr-res-title": "Caractéristiques des vélos",
+            "managed-by-script": true
         },
         {
             "name": "astrobus-lisieux-normandie",
@@ -12051,22 +12085,6 @@
         },
         {
             "name": "horaires-sncf",
-            "type": "url",
-            "url": "https://proxy.transport.data.gouv.fr/resource/sncf-all-gtfs-rt-trip-updates",
-            "x-data-gov-fr-res-title": "https://proxy.transport.data.gouv.fr/resource/sncf-gtfs-rt-trip-updates",
-            "license": {
-                "url": "https://transport.data.gouv.fr/datasets/horaires-sncf",
-                "spdx-identifier": "ODbL-1.0"
-            },
-            "spec": "gtfs-rt",
-            "x-data-gov-fr-res-id": 83676,
-            "x-data-gov-fr-dataset-id": "6853c089b3ed5781f6adfdf7",
-            "managed-by-script": true,
-            "skip": true,
-            "skip-reason": "static feed is skipped"
-        },
-        {
-            "name": "horaires-sncf--83582",
             "type": "http",
             "url": "https://www.data.gouv.fr/api/1/datasets/r/9ae758ec-cd7a-40cd-a890-bb3963224942",
             "fix": true,
@@ -12076,25 +12094,24 @@
             },
             "x-data-gov-fr-res-id": 83582,
             "managed-by-script": true,
-            "skip": true,
-            "skip-reason": "Same data, might be useful if realtime data uses these ids",
             "x-data-gov-fr-res-title": "https://eu.ftp.opendatasoft.com/sncf/plandata/Export_OpenData_SNCF_GTFS_NewTripId.zip",
             "x-data-gov-fr-dataset-id": "6853c089b3ed5781f6adfdf7"
         },
         {
             "name": "horaires-sncf",
             "type": "http",
-            "url": "https://www.data.gouv.fr/api/1/datasets/r/f7261f25-f76c-4324-97bb-c46c78316d6f",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/4218d9d4-15a7-464b-932f-dff22647bb96",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/horaires-sncf",
                 "spdx-identifier": "ODbL-1.0"
             },
-            "x-data-gov-fr-res-id": 83675,
-            "managed-by-script": true,
-            "skip": false,
+            "x-data-gov-fr-res-id": 83830,
+            "x-data-gov-fr-dataset-id": "6853c089b3ed5781f6adfdf7",
             "x-data-gov-fr-res-title": "https://eu.ftp.opendatasoft.com/sncf/plandata/Export_OpenData_SNCF_GTFS_NewTripId.zip",
-            "x-data-gov-fr-dataset-id": "6853c089b3ed5781f6adfdf7"
+            "managed-by-script": true,
+            "skip": true,
+            "skip-reason": "Same data, might be useful if realtime data uses these ids"
         },
         {
             "name": "horaires-sncf",
@@ -12123,6 +12140,22 @@
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "https://proxy.transport.data.gouv.fr/resource/sncf-gtfs-rt-trip-updates",
             "x-data-gov-fr-dataset-id": "6853c089b3ed5781f6adfdf7"
+        },
+        {
+            "name": "horaires-sncf",
+            "type": "url",
+            "url": "https://proxy.transport.data.gouv.fr/resource/sncf-all-gtfs-rt-trip-updates",
+            "x-data-gov-fr-res-title": "https://proxy.transport.data.gouv.fr/resource/sncf-gtfs-rt-trip-updates",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/horaires-sncf",
+                "spdx-identifier": "ODbL-1.0"
+            },
+            "spec": "gtfs-rt",
+            "x-data-gov-fr-res-id": 83831,
+            "x-data-gov-fr-dataset-id": "6853c089b3ed5781f6adfdf7",
+            "managed-by-script": true,
+            "skip": true,
+            "skip-reason": "deprecated and unavailable"
         },
         {
             "name": "hop-bus-le-reseau-100-gratuit-du-coeur-de-flandre",

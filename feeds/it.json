@@ -7,6 +7,13 @@
     ],
     "sources": [
         {
+            "name": "trenitalia",
+            "type": "http",
+            "url": "https://public-transport.github.io/transitous-trenitalia-preprocessor/trenitalia-netex.zip",
+            "spec": "netex",
+            "script": "it-trenitalia.lua"
+        },
+        {
             "name": "Calabria-CORE",
             "type": "mobility-database",
             "mdb-id": "mdb-2668",
@@ -610,6 +617,20 @@
             "name": "Veneto-Venezia-Ferries",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u20f-actvspa"
+        },
+        {
+            "name": "Veneto-Mobilita-di-Marca",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u20-mobilitadimarca"
+        },
+        {
+            "name": "skyalps",
+            "type": "http",
+            "url": "https://gtfs.api.opendatahub.com/v1/dataset/skyalps-flight-data/raw",
+            "spec": "gtfs",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
         }
     ]
 }

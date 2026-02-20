@@ -1,0 +1,14 @@
+# SPDX-FileCopyrightText: 2025 Traines <git@traines.eu>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+# ansible-playbook --vault-id feed-proxy@/etc/feed-proxy.vault -e "feed_proxy_host=proxy.example.com" feed-proxy.yml
+
+# get the feed proxy vault pass in roles/feed-proxy/vars/feed-secrets-vault-pass.yml and put it in decrypted form to /etc/feed-proxy.vault
+# encrypt a new variable to put into roles/feed-proxy/vars/feed-secrets.yml
+# ansible-vault encrypt_string --vault-id feed-proxy@/etc/feed-proxy.vault 'foobar' --name 'Authorization'
+
+- name: Set up feed proxy server
+  hosts: localhost
+  roles:
+    - feed-proxy
