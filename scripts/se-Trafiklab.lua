@@ -1,18 +1,16 @@
 -- SPDX-FileCopyrightText: Marcus Lundblad <ml@dfupdate.se>
 -- SPDX-License-Identifier: AGPL-3.0-or-later
 
-require "scripts.motis"
-
 -- map input route type to MOTIS clasz/output route type
 local agency_route_type_map = {
   ["DVVJ"] = {
-    [102] = { LONG_DISTANCE, 107 } -- map DVVJ from long distance rail to tourist rail
+    [102] = { 107 } -- map DVVJ from long distance rail to tourist rail
   },
   ["Lennakatten"] = {
-    [102] = { LONG_DISTANCE, 107 } -- map Lennakatten from long distance rail to tourist rail
+    [102] = { 107 } -- map Lennakatten from long distance rail to tourist rail
   },
   ["TJF Smalspåret"] = {
-    [102] = { LONG_DISTANCE, 107 } -- map TJF from long distance rail to tourist rail
+    [102] = { 107 } -- map TJF from long distance rail to tourist rail
   }
 }
 
@@ -91,8 +89,7 @@ function process_route(route)
     local m = route_type_map[route:get_route_type()]
 
     if m then
-      route:set_clasz(m[1])
-      route:set_route_type(m[2])
+      route:set_route_type(m[1])
     end
   end
 

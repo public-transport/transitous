@@ -1,15 +1,11 @@
 -- SPDX-FileCopyrightText: Volker Krause <vkrause@kde.org>
 -- SPDX-License-Identifier: AGPL-3.0-or-later
 
-require "scripts.motis"
-
 function process_route(route)
     if route:get_route_type() == 100 and route:get_short_name() == "L" then
-        route:set_clasz(REGIONAL_RAIL)
         route:set_route_type(106)
     end
     if route:get_route_type() == 100 and route:get_short_name():sub(1, 1) == "S" then
-        route:set_clasz(SUBURBAN)
         route:set_route_type(109)
     end
 end

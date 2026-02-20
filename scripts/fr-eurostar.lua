@@ -1,11 +1,8 @@
 -- SPDX-FileCopyrightText: Volker Krause <vkrause@kde.org>
 -- SPDX-License-Identifier: AGPL-3.0-or-later
 
-require "scripts.motis"
-
 function process_route(route)
     -- change generic rail route type to highspeed rail
-    route:set_clasz(HIGHSPEED_RAIL)
     route:set_route_type(101)
 end
 
