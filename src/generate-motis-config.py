@@ -78,6 +78,8 @@ if __name__ == "__main__":
             "datasets", before="Modified by generate-motis-config.py"
         )
         config["timetable"]["datasets"] = {}
+        if os.path.exists("out/transitous_meta"):
+            config["timetable"]["datasets"]["transitous-meta"] = {"path": "transitous_meta"}
         config["gbfs"]["feeds"] = {}
         config["gbfs"]["proxy"] = FEED_PROXY
 

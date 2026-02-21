@@ -1,0 +1,31 @@
+# SPDX-FileCopyrightText: Volker Krause <vkrause@kde.org>
+# SPDX-License-Identifier: CC0-1.0
+
+# Meta-station mapping
+# This maps Wikidata item ids for a city to a set of stations
+# The city item defines the (translated) names, the stations define the geo coordinates considered
+# to be part of this meta-station.
+#
+# Use this for:
+# - cities with multiple equally important terminus stations
+#
+# Do not use this for:
+# - cities with a single "main" station, e.g. to map the city name to that stop
+# - cities with multiple important/main stations that are on the same long-distance/high-speed lines,
+#   ie. where reaching one from the other is usually "cheap"
+
+# London
+Q84:
+    - Q219867 # King's Cross
+    - Q720102 # St Pancras
+    - Q795691 # Waterloo Station
+    - Q800751 # Euston Station
+    - Q801124 # Liverpool Street
+
+# Paris
+Q90:
+    - Q745942 # Nord
+    - Q757180 # Est
+    - Q747541 # Gare de Lyon
+    - Q631114 # Montparnasse
+    - Q1494179 # Austerlitz

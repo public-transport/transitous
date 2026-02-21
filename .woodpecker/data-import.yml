@@ -25,6 +25,7 @@ steps:
       - git submodule update --init --checkout --remote
       - ./ci/fetch-feeds.py timer
       - ./src/garbage-collect.py
+      - ./src/generate-metastations.py --config metastations/metastations.yml --output out/transitous_meta
       - ./src/generate-attribution.py
   import:
     image: ghcr.io/public-transport/transitous/import:latest
