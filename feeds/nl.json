@@ -43,22 +43,6 @@
             "type": "url",
             "spec": "gtfs-rt",
             "url": "https://gtfs.openov.nl/gtfs-rt/vehiclePositions.pb"
-        },
-        {
-            "name": "ovapi",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u-nl",
-            "fix": true,
-            "keep-agency-names": [
-                "European Sleeper"
-            ],
-            "script": "nl-ovapi.lua"
-        },
-        {
-            "name": "ovapi",
-            "type": "url",
-            "spec": "gtfs-rt",
-            "url": "https://gtfs.ovapi.nl/nl/trainUpdates.pb"
         }
     ]
 }
