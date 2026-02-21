@@ -10,14 +10,14 @@ import Prelude
 
 import Data.Bifunctor (bimap, lmap)
 import Data.DateTime (DateTime, adjust)
-import Data.Either (hush)
+import Data.Either (hush, Either(..))
 import Data.Formatter.DateTime (formatDateTime, unformatDateTime)
 import Data.Maybe (Maybe(..), fromMaybe)
 import Data.Time.Duration (negateDuration)
 import Effect (Effect)
 import Effect.Class (liftEffect)
 import Effect.Now (getTimezoneOffset, nowDateTime)
-import Elmish (Dispatch, ReactElement, Transition, forkMaybe, (<?|), (<|))
+import Elmish (Dispatch, ReactElement, Transition, forkMaybe)
 import Elmish.Boot (defaultMain)
 import Elmish.HTML.Events as E
 import Elmish.HTML.Styled as H
@@ -65,13 +65,18 @@ view state dispatch = H.div "text-end card-body p-4"
       , value: fromMaybe "" $ do
           dt <- state.dateTime
           hush (formatDateTime "YYYY-MM-DDTHH:mm" dt)
-      , onChange: dispatch <?| E.inputText >>> unformatDateTime "YYYY-MM-DDTHH:mm" >>> hush >>> map DateTimeChanged
+      , onChange: H.handle \e -> do
+          let
+            dt = unformatDateTime "YYYY-MM-DDTHH:mm" (E.inputText e)
+          case dt of
+            Right m -> dispatch (DateTimeChanged m)
+            _ -> pure unit
       }
   , H.div "form-check form-switch text-start mt-2"
       [ H.input_ "form-check-input"
           { type: "checkbox"
           , id: "arrival"
-          , onChange: dispatch <| (E.inputChecked >>> ArriveByChanged)
+          , onChange: H.handle (E.inputChecked >>> ArriveByChanged >>> dispatch)
           }
       , H.label_ "form-check-label" { htmlFor: "arrival" } [ H.text "arrival" ]
       ]
