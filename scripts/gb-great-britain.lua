@@ -60,7 +60,6 @@ function process_route(route)
     local route_id = route:get_id()
     if route_type_map[route_id] then
         local route_type = route_type_map[route_id].route_type
-        print("assigning route type", route_type)
         route:set_route_type(route_type)
     end
 end
