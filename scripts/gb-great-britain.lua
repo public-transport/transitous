@@ -1,3 +1,6 @@
+-- SPDX-FileCopyrightText: Christian Schärf <transitous-dYvaXYH2@christian.schaerf.email>
+-- SPDX-License-Identifier: MIT
+
 -- Unfortunately, the feed lumps routes together by franchise, making fine-grained type assignment impossible for the time being
 local route_type_map = {
     -- Caledonian Sleeper
