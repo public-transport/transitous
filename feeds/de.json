@@ -227,9 +227,9 @@
             "spec": "gbfs"
         },
         {
-            "name": "DottDE",
+            "name": "DottBerlin",
             "type": "url",
-            "url": "https://gbfs.api.ridedott.com/public/v2/countries/de/gbfs.json",
+            "url": "https://gbfs.api.ridedott.com/public/v2/berlin/gbfs.json",
             "spec": "gbfs"
         },
         {
