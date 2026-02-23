@@ -940,12 +940,12 @@ local colors = {
         ["S10"] = { color = 0xd30630, text_color = 0xffffff },
         ["S11"] = { color = 0x59af41, text_color = 0xffffff },
         ["S2"] = { color = 0xee1c28, text_color = 0xffffff },
+        ["S24"] = { color = 0x9a6c9c, text_color = 0xffffff },
         ["S3"] = { color = 0xf36e31, text_color = 0xffffff },
         ["S4"] = { color = 0x0166b3, text_color = 0xffffff },
         ["S5"] = { color = 0x00acdd, text_color = 0xffffff },
         ["S6"] = { color = 0x844c00, text_color = 0xffffff },
         ["S60"] = { color = 0x8a8d06, text_color = 0xffffff },
-        ["S61"] = { color = 0xc2db14, text_color = 0xffffff },
         ["S62"] = { color = 0xc3792e, text_color = 0xffffff },
     },
     ["DB Regio AG Bayern"] = {
