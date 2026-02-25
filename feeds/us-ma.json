@@ -3,6 +3,10 @@
         {
             "name": "Ken Bloom",
             "github": "kbloom"
+        },
+        {
+            "name": "Joshua Marriott",
+            "github": "JoshM2"
         }
     ],
     "sources": [
@@ -40,6 +44,16 @@
             "name": "Massport",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-drt3-909983"
+        },
+        {
+            "name": "PVTA",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-drk-pvta"
+        },
+        {
+            "name": "PVTA",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-drk-pvta~rt"
         }
     ]
 }
