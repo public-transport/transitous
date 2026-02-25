@@ -2,6 +2,13 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
+- name: Install osmupdate
+  apt:
+    update_cache: true
+    name:
+     - osmctools
+  when: motis_primary is not defined or not motis_primary
+
 - name: Create MOTIS group
   group:
     name: motis
@@ -23,7 +30,7 @@
 
 - name: Unpack MOTIS
   unarchive:
-    src: https://github.com/motis-project/motis/releases/download/v2.8.3/motis-linux-amd64.tar.bz2
+    src: https://github.com/public-transport/transitous/releases/download/motis-v2.8.3/motis-release-skylake-avx512.tar.bz2
     dest: /opt/motis/
     remote_src: yes
 
@@ -38,6 +45,7 @@
   copy:
     src: motis.service
     dest: /etc/systemd/system/motis.service
+  when: motis_primary is defined and motis_primary
 
 - name: Enable motis systemd service
   systemd:
@@ -46,6 +54,7 @@
     state: started
     masked: false
     daemon_reload: true
+  when: motis_primary is defined and motis_primary
 
 - name: Install motis-update-feeds script
   template:
@@ -61,14 +70,18 @@
     mode: '0755'
   when: motis_primary is not defined or not motis_primary
 
-- name: Install motis-update-feeds
+- name: Install motis-update-feeds service
   template:
-    src: "{{ item }}"
+    src: "motis-update-feeds.service"
     dest: /etc/systemd/system/
     mode: '644'
-  with_items:
-    - motis-update-feeds.service
-    - motis-update-feeds.timer
+
+- name: Install motis-update-feeds timer
+  template:
+    src: "motis-update-feeds.timer"
+    dest: /etc/systemd/system/
+    mode: '644'
+  when: motis_update_time is defined
 
 - name: Enable motis-update-feeds timer
   systemd:
@@ -77,3 +90,4 @@
     masked: false
     daemon_reload: true
     state: started
+  when: motis_update_time is defined
