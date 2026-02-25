@@ -10,7 +10,12 @@
             "name": "visimarsrutai",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-visimarsrutai~lt~all",
-            "fix": true
+            "fix": true,
+            "drop-agency-names": [
+                "UAB LTG Link",
+                "Vilniaus m. sav.",
+                "Klaipėdos m. sav."
+            ]
         },
         {
             "name": "vilnius",
