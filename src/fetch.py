@@ -7,7 +7,7 @@ from metadata import TransitlandSource, MobilityDatabaseSource, HttpSource, \
     UrlSource, Source, Region
 from pathlib import Path
 from datetime import datetime, timezone
-from utils import eprint
+from utils import eprint, european_iso_codes
 from zipfile import ZipFile
 from typing import Optional, Any, Iterable, IO
 from zoneinfo import ZoneInfo
@@ -512,7 +512,17 @@ if __name__ == "__main__":
 
     fetcher = Fetcher()
 
-    errors = fetcher.fetch(Path(arguments.metadata_file))
+    selector = arguments.metadata_file
+    errors = 0
+    if selector == "europe":
+        metadata_files = [f"feeds/{code}.json" for code in european_iso_codes]
+    else:
+        metadata_files = [Path(selector)]
+    for metadata_file in metadata_files:
+        try:
+            errors += fetcher.fetch(Path(metadata_file))
+        except FileNotFoundError:
+            continue
     if errors > 0:
         eprint(f"Error: {errors} errors occurred during fetching.")
         sys.exit(1)
