@@ -1,0 +1,12 @@
+<!--
+SPDX-FileCopyrightText: 2026 Volker Krause <vkrause@kde.org>
+SPDX-License-Identifier: AGPL-3.0-or-later
+-->
+
+<ul>
+{{ range $p := $.Site.Data.publications }}
+    <li>
+        {{ .author }}, <a href="{{ .url }}"><i>{{ .title }}</i><i style="white-space: nowrap;" class="bi bi-box-arrow-right m-2"></i></a>, {{ .date }}
+    </li>
+{{ end }}
+</ul>
