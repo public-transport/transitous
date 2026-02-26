@@ -31,6 +31,12 @@
             "transitland-atlas-id": "f-u2m-bkk"
         },
         {
+            "name": "bkk",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/bkk/TripUpdates"
+        },
+        {
             "name": "bkk-funicular",
             "type": "http",
             "url": "https://gy-mate.hu/gtfs/gtfs_hu_funicular.zip"
@@ -41,10 +47,9 @@
             "url": "https://gy-mate.hu/gtfs/gtfs_hu_chairlift.zip"
         },
         {
-            "name": "bkk",
-            "type": "url",
-            "spec": "gtfs-rt",
-            "url": "https://jbb.ghsq.de/gtfs/bkk/TripUpdates"
+            "name": "budaors",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u2mmz-budaörsvárosönkormányzata"
         },
         {
             "name": "mvk",
