@@ -14,7 +14,9 @@
             "drop-agency-names": [
                 "UAB LTG Link",
                 "Vilniaus m. sav.",
-                "Klaipėdos m. sav."
+                "Klaipėdos m. sav.",
+                "Kauno r. sav.",
+                "Panevėžio r. sav."
             ]
         },
         {
@@ -37,6 +39,18 @@
             "name": "kaunas",
             "type": "mobility-database",
             "mdb-id": "mdb-1041"
+        },
+        {
+            "name": "kaunas",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://www.stops.lt/kaunas/trip_updates.pb"
+        },
+        {
+            "name": "kaunas",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://www.stops.lt/kaunas/vehicle_positions.pb"
         },
         {
             "name": "panevezys",
