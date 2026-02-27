@@ -125,6 +125,12 @@
             "name": "LTG-Link",
             "type": "mobility-database",
             "mdb-id": "mdb-2991"
+        },
+        {
+            "name": "kautra",
+            "type": "http",
+            "url": "https://www.stops.lt/kautra/kautra/gtfs.zip",
+            "fix": true
         }
     ]
 }
