@@ -16,7 +16,8 @@
                 "Vilniaus m. sav.",
                 "Klaipėdos m. sav.",
                 "Kauno r. sav.",
-                "Panevėžio r. sav."
+                "Panevėžio r. sav.",
+                "Druskininkų sav."
             ]
         },
         {
@@ -88,6 +89,18 @@
             "mdb-id": "mdb-1040"
         },
         {
+            "name": "druskininkai",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://www.stops.lt/druskininkai/trip_updates.pb"
+        },
+        {
+            "name": "druskininkai",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://www.stops.lt/druskininkai/vehicle_positions.pb"
+        },
+        {
             "name": "alytus",
             "type": "mobility-database",
             "mdb-id": "mdb-1833"
@@ -102,13 +115,6 @@
             "type": "http",
             "url": "https://stops.lt/taurage/taurage/gtfs.zip",
             "fix": true
-        },
-        {
-            "name": "traukiniai",
-            "type": "http",
-            "url": "https://stops.lt/traukiniai/traukiniai/gtfs.zip",
-            "skip": true,
-            "skip-reason": "Expired"
         },
         {
             "name": "B-Bus",
