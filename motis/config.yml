@@ -8,8 +8,9 @@ server:
   web_folder: "/opt/motis/ui/"  # Just for testing, not used on server
   data_attribution_link: https://transitous.org/sources/
 
-street_routing: true
-osr_footpath: false
+street_routing:
+  elevation_data_dir: ./srtm/
+osr_footpath: true
 elevators: false
 geocoding: true
 reverse_geocoding: true
@@ -21,8 +22,8 @@ tiles:
   coastline: land-polygons-complete-4326.zip
 
 timetable:
-  first_day: TODAY
-  num_days: 365
+  first_day: -100
+  num_days: 465
   railviz: true
   with_shapes: true
   ignore_errors: true
@@ -35,6 +36,7 @@ timetable:
   incremental_rt_update: false
   max_footpath_length: 12
   extend_missing_footpaths: true
+  preprocess_max_matching_distance: 250
 # The datasets are filled in by ./src/generate-motis-config.py
   datasets:
 
