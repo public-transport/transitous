@@ -518,22 +518,6 @@
             "managed-by-script": true
         },
         {
-            "name": "reseau-orizo-grand-avignon--9279",
-            "type": "http",
-            "url": "https://www.data.gouv.fr/api/1/datasets/r/556b9c3d-ec50-406b-9c22-7d37e0f6a15b",
-            "fix": true,
-            "license": {
-                "url": "https://transport.data.gouv.fr/datasets/reseau-orizo-grand-avignon",
-                "spdx-identifier": "etalab-2.0"
-            },
-            "x-data-gov-fr-res-id": 9279,
-            "managed-by-script": true,
-            "skip": true,
-            "skip-reason": "Feed is expired according to metadata",
-            "x-data-gov-fr-res-title": "GTFS des Transports Urbains du Grand Avignon - Réseau ORIZO",
-            "x-data-gov-fr-dataset-id": "5ae2e01d88ee381811e691b5"
-        },
-        {
             "name": "horaires-theoriques-du-reseau-tag",
             "type": "http",
             "url": "https://www.data.gouv.fr/api/1/datasets/r/b6ec7ba4-09bc-46df-b9a1-79a2c2668cf2",
@@ -2660,6 +2644,20 @@
             "x-data-gov-fr-dataset-id": "5e6193349ce2e7207cf4c8f4"
         },
         {
+            "name": "dreux-offre-theorique-mobilite-reseau-urbain",
+            "type": "url",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/cf98048e-7419-46ec-a1e3-36a34e1e11a9",
+            "x-data-gov-fr-res-title": "GTFS-RT - Prochains passages & positions des véhicules",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/dreux-offre-theorique-mobilite-reseau-urbain",
+                "spdx-identifier": "ODbL-1.0"
+            },
+            "spec": "gtfs-rt",
+            "x-data-gov-fr-res-id": 83868,
+            "x-data-gov-fr-dataset-id": "5e6193349ce2e7207cf4c8f4",
+            "managed-by-script": true
+        },
+        {
             "name": "remi-offre-theorique-mobilite-reseau-interurbain-regional",
             "type": "http",
             "url": "https://www.data.gouv.fr/api/1/datasets/r/6c52238c-1c1e-4c5a-922b-8b66c0415a9e",
@@ -4407,9 +4405,10 @@
             },
             "x-data-gov-fr-res-id": 79014,
             "managed-by-script": true,
-            "skip": false,
+            "skip": true,
             "x-data-gov-fr-res-title": "Horaires temps-réel du réseau Ritmo -Haguenau (GTFS)",
-            "x-data-gov-fr-dataset-id": "619fb0437825b8a16e2bdf44"
+            "x-data-gov-fr-dataset-id": "619fb0437825b8a16e2bdf44",
+            "skip-reason": "Feed is expired according to metadata"
         },
         {
             "name": "horaires-theoriques-et-temps-reel-du-reseau-ritmo-haguenau-gtfs-gtfs-rt",
@@ -4423,7 +4422,9 @@
             "x-data-gov-fr-res-id": 79015,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "Horaires temps-réel du réseau Ritmo - Haguenau (GTFS-RT)",
-            "x-data-gov-fr-dataset-id": "619fb0437825b8a16e2bdf44"
+            "x-data-gov-fr-dataset-id": "619fb0437825b8a16e2bdf44",
+            "skip": true,
+            "skip-reason": "Base feed is skipped"
         },
         {
             "name": "gbfs-paris",
@@ -5652,9 +5653,10 @@
             },
             "x-data-gov-fr-res-id": 79992,
             "managed-by-script": true,
-            "skip": false,
+            "skip": true,
             "x-data-gov-fr-res-title": "Horaires théoriques du réseau Sarlat'BUS (GTFS)",
-            "x-data-gov-fr-dataset-id": "6373936546eacd272066a9cd"
+            "x-data-gov-fr-dataset-id": "6373936546eacd272066a9cd",
+            "skip-reason": "Feed is expired according to metadata"
         },
         {
             "name": "horaires-theoriques-et-temps-reel-du-reseau-sarlatbus-gtfs-gtfs-rt",
@@ -5668,7 +5670,9 @@
             "x-data-gov-fr-res-id": 79993,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "Horaires temps-réel du réseau Sarlat'BUS (GTFS-RT)",
-            "x-data-gov-fr-dataset-id": "6373936546eacd272066a9cd"
+            "x-data-gov-fr-dataset-id": "6373936546eacd272066a9cd",
+            "skip": true,
+            "skip-reason": "Static feed is skipped"
         },
         {
             "name": "fil-bleu-syndicat-des-mobilites-gtfs-gtfs-rt",
@@ -6238,9 +6242,10 @@
             },
             "x-data-gov-fr-res-id": 80463,
             "managed-by-script": true,
-            "skip": false,
+            "skip": true,
             "x-data-gov-fr-res-title": "Horaires théoriques du réseau Colibri (Terres Touloises) - GTFS",
-            "x-data-gov-fr-dataset-id": "63b4c3d25c38a3ee979dde9c"
+            "x-data-gov-fr-dataset-id": "63b4c3d25c38a3ee979dde9c",
+            "skip-reason": "Feed is expired according to metadata"
         },
         {
             "name": "fr-200052264-t0027-0000-1",
@@ -6254,7 +6259,9 @@
             "x-data-gov-fr-res-id": 81167,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "Horaires temps réel des lignes du réseau COLIBRI",
-            "x-data-gov-fr-dataset-id": "63b4c3d25c38a3ee979dde9c"
+            "x-data-gov-fr-dataset-id": "63b4c3d25c38a3ee979dde9c",
+            "skip": true,
+            "skip-reason": "Static feed is skipped"
         },
         {
             "name": "fr-200052264-t0001-0000-1",
@@ -8819,7 +8826,7 @@
             "managed-by-script": true,
             "skip": true,
             "skip-reason": "Feed is expired according to metadata",
-            "x-data-gov-fr-res-title": "CAPG_GTFS_2025",
+            "x-data-gov-fr-res-title": "CAPG_GTFS_2026",
             "x-data-gov-fr-dataset-id": "65a901970267d05025a905ec"
         },
         {
@@ -8981,22 +8988,6 @@
             "managed-by-script": true,
             "skip": false,
             "x-data-gov-fr-res-title": "Données de mobilité CCRV",
-            "x-data-gov-fr-dataset-id": "65e72f6f6bad2a3cc278acb9"
-        },
-        {
-            "type": "http",
-            "url": "https://www.data.gouv.fr/api/1/datasets/r/eff9558e-4575-429f-bbe1-0cd37f1e6432",
-            "fix": true,
-            "license": {
-                "url": "https://transport.data.gouv.fr/datasets/donnees-de-mobilite",
-                "spdx-identifier": "etalab-2.0"
-            },
-            "x-data-gov-fr-res-id": 83788,
-            "managed-by-script": true,
-            "skip": true,
-            "skip-reason": "Feed is expired according to metadata",
-            "name": "donnees-de-mobilite--83788",
-            "x-data-gov-fr-res-title": "données de mobilité CCRV",
             "x-data-gov-fr-dataset-id": "65e72f6f6bad2a3cc278acb9"
         },
         {
@@ -9493,8 +9484,22 @@
             },
             "x-data-gov-fr-res-id": 81837,
             "managed-by-script": true,
-            "x-data-gov-fr-res-title": "https://api.cyclocity.fr/contracts/nantes/gbfs/gbfs.json",
+            "x-data-gov-fr-res-title": "https://api.cyclocity.fr/contracts/nantes/gbfs/v3/gbfs.json",
             "x-data-gov-fr-dataset-id": "666b88b8f3d0ad620ec4be28"
+        },
+        {
+            "name": "offre-et-temps-reel-du-service-velos-en-libre-service-naolib-de-nantes-metropole-au-format-gbfs--83867",
+            "type": "url",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/a919a06f-633a-4947-8d5b-6e66c0bfc2c4",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/offre-et-temps-reel-du-service-velos-en-libre-service-naolib-de-nantes-metropole-au-format-gbfs",
+                "spdx-identifier": "etalab-2.0"
+            },
+            "x-data-gov-fr-res-id": 83867,
+            "x-data-gov-fr-dataset-id": "666b88b8f3d0ad620ec4be28",
+            "x-data-gov-fr-res-title": "https://api.cyclocity.fr/contracts/nantes/gbfs/gbfs.json",
+            "managed-by-script": true
         },
         {
             "name": "vlille-disponibilite-en-temps-reel-3",
@@ -9787,9 +9792,10 @@
             },
             "x-data-gov-fr-res-id": 83739,
             "managed-by-script": true,
-            "skip": false,
+            "skip": true,
             "x-data-gov-fr-res-title": "Téléphérique - DEC TO FEV",
-            "x-data-gov-fr-dataset-id": "667d7d9f6ca66f624e3facbf"
+            "x-data-gov-fr-dataset-id": "667d7d9f6ca66f624e3facbf",
+            "skip-reason": "Feed is expired according to metadata"
         },
         {
             "name": "optymo-auto-en-libre-service",
@@ -12833,6 +12839,20 @@
             "x-data-gov-fr-dataset-id": "690acbdcf87e825b17baf2e1"
         },
         {
+            "name": "gtfs-reseau-scolaire-coqueligo-annonay-rhone-agglo",
+            "type": "http",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/df09ccf2-6cf5-4d7a-b03a-b3ebb89f7e49",
+            "fix": true,
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/gtfs-reseau-scolaire-coqueligo-annonay-rhone-agglo",
+                "spdx-identifier": "etalab-2.0"
+            },
+            "x-data-gov-fr-res-id": 83872,
+            "x-data-gov-fr-dataset-id": "690c9a45a30becc205daee68",
+            "x-data-gov-fr-res-title": "CoqueliGO_CoqueliGO-Scolaire-V9-14_gtfs_2025-11-06_13-49-31.zip",
+            "managed-by-script": true
+        },
+        {
             "name": "horaires-theoriques-de-loffre-du-reseau-ferre-regional-de-transport",
             "type": "http",
             "url": "https://transport.data.gouv.fr/resources/83620/download",
@@ -13840,6 +13860,22 @@
             "x-data-gov-fr-dataset-id": "699652dd0a4128172bf1e1c8",
             "x-data-gov-fr-res-title": "Offre transport NA Mobilités GTFS",
             "managed-by-script": true
+        },
+        {
+            "name": "offre-de-transport-cc-cote-landes-nature",
+            "type": "http",
+            "url": "https://transport.data.gouv.fr/resources/83870/download",
+            "fix": true,
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/offre-de-transport-cc-cote-landes-nature",
+                "spdx-identifier": "ODbL-1.0"
+            },
+            "x-data-gov-fr-res-id": 83870,
+            "x-data-gov-fr-dataset-id": "699e3d4cb2dd8f8e653d1e46",
+            "x-data-gov-fr-res-title": "Offre transport NA Mobilités GTFS",
+            "managed-by-script": true,
+            "skip": true,
+            "skip-reason": "Feed is expired according to metadata"
         }
     ]
 }
