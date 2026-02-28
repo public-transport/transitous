@@ -62,8 +62,7 @@
             "name": "panevezys",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://stops.lt/panevezys/trip_updates.pb",
-            "use-feed-proxy": true
+            "url": "https://www.stops.lt/panevezys/gtfs_realtime.pb"
         },
         {
             "name": "klaipeda",
