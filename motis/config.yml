@@ -22,8 +22,8 @@ tiles:
   coastline: land-polygons-complete-4326.zip
 
 timetable:
-  first_day: -100
-  num_days: 465
+  first_day: -30
+  num_days: 395
   railviz: true
   with_shapes: true
   ignore_errors: true
