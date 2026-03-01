@@ -2,11 +2,11 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-- name: Install osmupdate
+- name: Install pyosmium-up-to-date
   apt:
     update_cache: true
     name:
-     - osmctools
+     - pyosmium
   when: motis_primary is not defined or not motis_primary
 
 - name: Create MOTIS group

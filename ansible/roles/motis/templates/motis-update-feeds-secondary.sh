@@ -16,10 +16,9 @@ mv config.yml config.bak || true
 
 #sudo -u motis wget -N https://planet.openstreetmap.org/pbf/planet-latest.osm.pbf
 sudo -u motis wget -N https://osmdata.openstreetmap.de/download/land-polygons-complete-4326.zip
-sudo -u motis mv planet-latest.osm.pbf planet-latest.osm.pbf.base
-sudo -u motis osmupdate --day planet-latest.osm.pbf.base planet-latest.osm.pbf || sudo -u motis mv planet-latest.osm.pbf.base planet-latest.osm.pbf 
+sudo -u motis pyosmium-up-to-date planet-latest.osm.pbf --size 10000 --server https://planet.osm.org/replication/day/
 
-sudo -u motis wget --limit-rate=30m --mirror -l 2 --no-parent --cut-dirs=1 --no-host-directories --include-directories=gtfs,gtfs/scripts --accept .zip --accept .lua --accept config.yml --accept .import-running -e robots=off https://api.transitous.org/gtfs/ || true
+sudo -u motis wget --limit-rate=30m --mirror -l 2 --no-parent --cut-dirs=1 --no-host-directories --include-directories=gtfs,gtfs/scripts --accept gtfs.zip --accept netex.zip --accept .lua --accept config.yml --accept .import-running -e robots=off https://api.transitous.org/gtfs/ || true
 
 # Exit if empty
 if [ -z "$(ls -A /var/cache/transitous/out)" ]; then
@@ -36,6 +35,8 @@ TODAY="$(date +%a)"
 sudo -u motis sed -i 's#extend_missing_footpaths: true#extend_missing_footpaths: true\n  preprocess_max_matching_distance: 250#' config.yml
 sudo -u motis sed -i 's#osr_footpath: false#osr_footpath: true#' config.yml
 sudo -u motis sed -i 's#street_routing: true#street_routing:\n  elevation_data_dir: ./srtm/#' config.yml
+sudo -u motis sed -i 's#first_day: TODAY#first_day: -30#' config.yml
+sudo -u motis sed -i 's#num_days: 365#num_days: 395#' config.yml
 #sudo -u motis sed -i 's#elevators: false#elevators:\n  url: https://apis.deutschebahn.com/db-api-marketplace/apis/fasta/v2/facilities\n  headers:\n    DB-Client-ID: b5d28136ffedb73474cc7c97536554df\n    DB-Api-Key: ef27b9ad8149cddb6b5e8ebb559ce245#' config.yml
 
 sudo -u motis /opt/motis/motis import -c /var/cache/transitous/out/config.yml > /var/cache/transitous/motis-import.log 2>&1
