@@ -52,6 +52,11 @@
             "transitland-atlas-id": "f-u2mmz-budaörsvárosönkormányzata"
         },
         {
+            "name": "urom",
+            "type": "http",
+            "url": "https://gy-mate.hu/gtfs/gtfs_hu_urom.zip"
+        },
+        {
             "name": "mvk",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u2wc-mvkzrt"
