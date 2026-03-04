@@ -180,7 +180,7 @@
             "mdb-id": "mdb-2712"
         },
         {
-            "name": "Autobuses-Sarbus-–-La-Vallesana",
+            "name": "Autobuses-Sarbus",
             "type": "mobility-database",
             "fix": true,
             "http-options": {
@@ -353,7 +353,8 @@
         {
             "name": "Autobús-metropolitano-Barcelona",
             "type": "mobility-database",
-            "mdb-id": "mdb-2368"
+            "mdb-id": "mdb-2368",
+            "spec": "gtfs-rt"
         },
         {
             "name": "Autobusos-de-Lleida",
@@ -508,32 +509,6 @@
                 }
             },
             "mdb-id": "mdb-2783"
-        },
-        {
-            "name": "Autobús-urbano-de-Madrid",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1097",
-            "fix": true,
-            "skip": true,
-            "skip-reason": "headway_secs is in minutes which makes timetable entirely wrong",
-            "http-options": {
-                "fetch-interval-days": 1,
-                "headers": {
-                    "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
-                }
-            }
-        },
-        {
-            "name": "Autobús-urbano-de-Madrid-(CRTM)",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1135",
-            "fix": true,
-            "http-options": {
-                "fetch-interval-days": 1,
-                "headers": {
-                    "ApiKey": "b2be1741-ed99-41e7-99bf-924b32694633"
-                }
-            }
         },
         {
             "name": "Autobús-urbano-de-Málaga",
@@ -810,7 +785,8 @@
                 "spdx-identifier": "CC-BY-4.0",
                 "url": "https://data.renfe.com/dataset/horarios-viaje-cercanias"
             },
-            "mdb-id": "mdb-2834"
+            "mdb-id": "mdb-2834",
+            "spec": "gtfs-rt"
         },
         {
             "name": "Cercanías-Renfe",
@@ -819,7 +795,8 @@
                 "spdx-identifier": "CC-BY-4.0",
                 "url": "https://data.renfe.com/dataset/incidencias-avisos"
             },
-            "mdb-id": "mdb-2833"
+            "mdb-id": "mdb-2833",
+            "spec": "gtfs-rt"
         },
         {
             "name": "Cercanías-Renfe",
@@ -828,7 +805,8 @@
                 "spdx-identifier": "CC-BY-4.0",
                 "url": "https://data.renfe.com/dataset/ubicacion-vehiculos"
             },
-            "mdb-id": "mdb-2835"
+            "mdb-id": "mdb-2835",
+            "spec": "gtfs-rt"
         },
         {
             "name": "Donostiabus-(Dbus)",
@@ -872,19 +850,8 @@
         },
         {
             "name": "Ferrocarriles-de-la-Generalitat-de-Cataluña",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1571",
-            "fix": true,
-            "http-options": {
-                "fetch-interval-days": 1,
-                "headers": {
-                    "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
-                }
-            },
-            "license": {
-                "spdx-identifier": "CC-BY-4.0",
-                "url": "https://dadesobertes.fgc.cat/explore/dataset/gtfs_zip/"
-            }
+            "type": "mobility-database",
+            "mdb-id": "mdb-1856"
         },
         {
             "name": "Ferrocarriles-de-la-Generalitat-de-Cataluña",
@@ -1313,7 +1280,7 @@
             "mdb-id": "mdb-2750"
         },
         {
-            "name": "RENFE---Media,-Larga-Distancia-y-AVE",
+            "name": "RENFE-Larga-Distancia-y-AVE",
             "type": "http",
             "url": "https://nap.transportes.gob.es/api/Fichero/download/1098",
             "fix": true,
@@ -1329,7 +1296,7 @@
             }
         },
         {
-            "name": "RENFE---Media,-Larga-Distancia-y-AVE",
+            "name": "RENFE-Larga-Distancia-y-AVE",
             "type": "url",
             "spec": "gtfs-rt",
             "url": "https://gtfsrt.renfe.com/trip_updates_LD.pb",
@@ -1613,6 +1580,433 @@
             "fix": "true",
             "skip": true,
             "skip-reason": "expired"
+        },
+        {
+            "name": "Transportes-interurbanos-de-Tenerife-(TITSA)",
+            "type": "mobility-database",
+            "mdb-id": "mdb-787"
+        },
+        {
+            "name": "Consorcio-Regional-de-Transportes-de-Madrid-CRTM-I",
+            "type": "mobility-database",
+            "mdb-id": "mdb-791",
+            "fix": true
+        },
+        {
+            "name": "Consorcio-Regional-de-Transportes-de-Madrid",
+            "type": "mobility-database",
+            "mdb-id": "mdb-792"
+        },
+        {
+            "name": "EMT-Madrid",
+            "type": "mobility-database",
+            "mdb-id": "mdb-793",
+            "skip": true,
+            "skip-reason": "Huge number of duplicated trips"
+        },
+        {
+            "name": "Metro-de-Madrid",
+            "type": "mobility-database",
+            "mdb-id": "mdb-794"
+        },
+        {
+            "name": "EMT-Valencia",
+            "type": "mobility-database",
+            "mdb-id": "mdb-795",
+            "fix": true
+        },
+        {
+            "name": "TUVISA-(Transportes-Urbanos-de-Vitoria)",
+            "type": "mobility-database",
+            "mdb-id": "mdb-797"
+        },
+        {
+            "name": "Àrea-Metropolitana-de-Barcelona-(AMB)",
+            "type": "mobility-database",
+            "mdb-id": "mdb-892"
+        },
+        {
+            "name": "TRAM-Barcelona",
+            "type": "mobility-database",
+            "mdb-id": "mdb-1003"
+        },
+        {
+            "name": "TRAM-Barcelona-Besós",
+            "type": "mobility-database",
+            "mdb-id": "mdb-1004"
+        },
+        {
+            "name": "Metro-de-Málaga",
+            "type": "mobility-database",
+            "mdb-id": "mdb-1017"
+        },
+        {
+            "name": "Bizkaibus",
+            "type": "mobility-database",
+            "mdb-id": "mdb-1135"
+        },
+        {
+            "name": "La-Burundesa-S.A.",
+            "type": "mobility-database",
+            "mdb-id": "mdb-1316",
+            "fix": true
+        },
+        {
+            "name": "Generalitat-Valenciana-(Intercity-bus)",
+            "type": "mobility-database",
+            "mdb-id": "mdb-1870"
+        },
+        {
+            "name": "Consorcio-de-Transportes-de-Mallorca",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2141"
+        },
+        {
+            "name": "Empresa-Malagueña-de-Transportes-(EMT)",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2212"
+        },
+        {
+            "name": "Empresa-Malagueña-de-Transportes-(EMT)",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2213",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "Empresa-Malagueña-de-Transportes-(EMT)",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2214",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "Empresa-Malagueña-de-Transportes-(EMT)",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2215",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "Transports-Metropolitans-de-Barcelona-(TMB)",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2359",
+            "skip": true,
+            "skip-reason": "Already in Transporte-metropolitano-de-Barcelona-(Bus-y-Metro)"
+        },
+        {
+            "name": "Àrea-Metropolitana-de-Barcelona-(AMB)",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2369",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "EMTF",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2400"
+        },
+        {
+            "name": "EMTF",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2401",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "EMTF",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2402",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "EMTF",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2403",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "Renfe-commuter-trains-(Cercanias)",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2653",
+            "skip": true,
+            "skip-reason": "Already from NAP with rt"
+        },
+        {
+            "name": "Metro-Bilbao",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2683"
+        },
+        {
+            "name": "La-Regional-Vallisoletana-S.A",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2691"
+        },
+        {
+            "name": "Bilbobus",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2698",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "Consorcio-Regional-de-Transportes-de-Madrid-CRTM-C",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2720",
+            "skip": true,
+            "skip-reason": "expired"
+        },
+        {
+            "name": "Oñati-urban-(Oñatiko-herribusa)",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2737",
+            "http-options": {
+                "fetch-interval-days": 1,
+                "headers": {
+                    "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+                }
+            }
+        },
+        {
+            "name": "Autocares-Rías-Baixas-(Rías-Baixas-Coaches)",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2752",
+            "http-options": {
+                "fetch-interval-days": 1,
+                "headers": {
+                    "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+                }
+            }
+        },
+        {
+            "name": "Tolosa-City-Council-(Urbano-de-Tolosa)",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2758",
+            "http-options": {
+                "fetch-interval-days": 1,
+                "headers": {
+                    "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+                }
+            }
+        },
+        {
+            "name": "Direxis-Masats",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2761",
+            "http-options": {
+                "fetch-interval-days": 1,
+                "headers": {
+                    "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+                }
+            }
+        },
+        {
+            "name": "Direxis-TGO-(Transportes-Generales-de-Olesa)",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2775"
+        },
+        {
+            "name": "Rodil",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2778",
+            "skip": true,
+            "skip-reason": "expired"
+        },
+        {
+            "name": "Costa-Coaches",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2780",
+            "skip": true,
+            "skip-reason": "expired"
+        },
+        {
+            "name": "Viagón-Coaches",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2786",
+            "http-options": {
+                "fetch-interval-days": 1,
+                "headers": {
+                    "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+                }
+            }
+        },
+        {
+            "name": "Alvarez-Travelers-Coaches",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2787",
+            "http-options": {
+                "fetch-interval-days": 1,
+                "headers": {
+                    "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+                }
+            }
+        },
+        {
+            "name": "Kbus-(Barakaldo-urban)",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2788",
+            "http-options": {
+                "fetch-interval-days": 1,
+                "headers": {
+                    "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+                }
+            }
+        },
+        {
+            "name": "Sopela-Town-Hall",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2790",
+            "http-options": {
+                "fetch-interval-days": 1,
+                "headers": {
+                    "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+                }
+            }
+        },
+        {
+            "name": "Erandio-City-Council-(Erandio!-Busa)",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2793",
+            "http-options": {
+                "fetch-interval-days": 1,
+                "headers": {
+                    "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+                }
+            }
+        },
+        {
+            "name": "Lázara-Coaches",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2794",
+            "skip": true,
+            "skip-reason": "expired"
+        },
+        {
+            "name": "Ancebus",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2795",
+            "http-options": {
+                "fetch-interval-days": 1,
+                "headers": {
+                    "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+                }
+            }
+        },
+        {
+            "name": "Bermibusa",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2799",
+            "skip": true,
+            "skip-reason": "duplicate"
+        },
+        {
+            "name": "Consorcio-Regional-de-Transportes-de-Madrid-CRTM-L",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2802"
+        },
+        {
+            "name": "Cots-Alsina",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2805",
+            "fix": true,
+            "http-options": {
+                "fetch-interval-days": 1,
+                "headers": {
+                    "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+                }
+            }
+        },
+        {
+            "name": "Eixbus-S.At",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2806",
+            "skip": true,
+            "skip-reason": "Invalid GTFS"
+        },
+        {
+            "name": "Albarracín-Movilidad",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2807",
+            "http-options": {
+                "fetch-interval-days": 1,
+                "headers": {
+                    "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+                }
+            },
+            "skip": true,
+            "skip-reason": "Internal server error"
+        },
+        {
+            "name": "La-Veloz-SA",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2808",
+            "http-options": {
+                "fetch-interval-days": 1,
+                "headers": {
+                    "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+                }
+            }
+        },
+        {
+            "name": "Autobús-urbano-de-Madrid-(CRTM)",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2820",
+            "fix": true
+        },
+        {
+            "name": "Barcelona-ATM",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2826",
+            "http-options": {
+                "fetch-interval-days": 1,
+                "headers": {
+                    "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+                }
+            },
+            "skip": true,
+            "skip-reason": "Already in Transporte-metropolitano-de-Barcelona-(Bus-y-Metro)"
+        },
+        {
+            "name": "Autoridad-de-Transporte-Metropolitano-del-Área-de-",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2832",
+            "skip": true,
+            "skip-reason": "duplicate"
+        },
+        {
+            "name": "Catalonia-Intercity-Bus",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2926",
+            "skip": true,
+            "skip-reason": "Same as from NAP"
+        },
+        {
+            "name": "Syndicat-des-Mobilités-Pays-Basque-Adour",
+            "type": "mobility-database",
+            "mdb-id": "tdg-80701"
+        },
+        {
+            "name": "Syndicat-des-Mobilités-Pays-Basque-Adour",
+            "type": "mobility-database",
+            "mdb-id": "tdg-80702",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "Syndicat-des-Mobilités-Pays-Basque-Adour",
+            "type": "mobility-database",
+            "mdb-id": "tdg-80703",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "Guaguas-Municipales",
+            "type": "mobility-database",
+            "mdb-id": "tld-767"
+        },
+        {
+            "name": "Palma-de-Mallorca",
+            "type": "mobility-database",
+            "mdb-id": "tld-4324",
+            "skip": true,
+            "skip-reason": "Same as from NAP"
+        },
+        {
+            "name": "TranspRober",
+            "type": "mobility-database",
+            "mdb-id": "tld-4890"
         }
     ]
 }
