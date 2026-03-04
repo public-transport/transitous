@@ -788,11 +788,6 @@
             "mdb-id": "jbda-kinokawacity-kinokawa_bus"
         },
         {
-            "name": "きそバス",
-            "type": "mobility-database",
-            "mdb-id": "jbda-kisokoikirengo-kiso-bus"
-        },
-        {
             "name": "木曽岬町自主運行バス",
             "type": "mobility-database",
             "mdb-id": "jbda-kisosakitown-communitybus"
@@ -866,11 +861,6 @@
             "name": "おでかけ北設（設楽町・東栄町・豊根村）",
             "type": "mobility-database",
             "mdb-id": "jbda-kitashitara-odekakehokusetsu"
-        },
-        {
-            "name": "神戸市コミュニティバス",
-            "type": "mobility-database",
-            "mdb-id": "jbda-kobecity-kobe-shiokaze"
         },
         {
             "name": "kochi-ekimae-kanko-Ekimae-Airportbus",
@@ -1221,11 +1211,6 @@
             "name": "地域連携バス",
             "type": "mobility-database",
             "mdb-id": "jbda-matsumotocity-guruttomatsumotobus2"
-        },
-        {
-            "name": "松阪市コミュニティ交通",
-            "type": "mobility-database",
-            "mdb-id": "jbda-matsusakacity-communitybus"
         },
         {
             "name": "松茂町地域コミュニティバス",
@@ -1623,11 +1608,6 @@
             "name": "南木曽町地域バス",
             "type": "mobility-database",
             "mdb-id": "jbda-nagisotown-communitybus"
-        },
-        {
-            "name": "なぎバス",
-            "type": "mobility-database",
-            "mdb-id": "jbda-nagitown-nagibus"
         },
         {
             "name": "中土佐町コミュニティバス",
@@ -3035,6 +3015,11 @@
             "name": "南陽市営バス",
             "type": "mobility-database",
             "mdb-id": "jbda-nanyocity-NanyoCity"
+        },
+        {
+            "name": "高速船",
+            "type": "mobility-database",
+            "mdb-id": "jbda-meikaijo-ship"
         }
     ]
 }
