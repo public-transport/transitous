@@ -237,6 +237,12 @@
             "type": "url",
             "url": "https://di.esel.ac/gbfs/gbfs.json",
             "spec": "gbfs"
+        },
+        {
+            "name": "DottRostock",
+            "type": "url",
+            "url": "https://gbfs.api.ridedott.com/public/v2/rostock/gbfs.json",
+            "spec": "gbfs"
         }
     ]
 }
