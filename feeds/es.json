@@ -705,7 +705,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0",
                 "url": "https://data.ctb.eus/en/dataset/etxebarribus"
-            }
+            },
+            "skip": true,
+            "skip-reason": "expired"
         },
         {
             "name": "KBus-Barakaldo",
@@ -926,7 +928,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0",
                 "url": "https://data.ctb.eus/en/dataset/horarios-lejoanbusa"
-            }
+            },
+            "skip": true,
+            "skip-reason": "expired"
         },
         {
             "name": "Lurraldebus-Arrasate",
