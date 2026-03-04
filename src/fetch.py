@@ -445,9 +445,9 @@ class Fetcher:
 
             if source.skip:
                 if source.skip_reason != "":
-                    print("Skipping " + source.name + ": " + source.skip_reason)
+                    print("Skipping " + region_name + "-" + source.name + ": " + source.skip_reason)
                 else:
-                    print("Skipping " + source.name)
+                    print("Skipping " + region_name + "-" + source.name)
                 continue
 
 
