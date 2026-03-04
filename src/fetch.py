@@ -105,11 +105,8 @@ def check_feed_not_expired(feed_info: Iterable[dict],
     today = datetime.now(tz=feed_timezone)
 
     def feed_info_latest():
-        valid_entries = list(map(
-            lambda row:
-                "feed_end_date" not in row or not row["feed_end_date"] or
-                parse_gtfs_date(row["feed_end_date"], feed_timezone),
-            feed_info))
+        date_rows = filter(lambda row: "feed_end_date" in row and row["feed_end_date"], feed_info)
+        valid_entries = list(map(lambda row: parse_gtfs_date(row["feed_end_date"], feed_timezone), date_rows))
         if valid_entries:
             return max(valid_entries)
         else:
