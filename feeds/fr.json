@@ -2293,35 +2293,6 @@
             "x-data-gov-fr-dataset-id": "5d80da4a6f444119c95283be"
         },
         {
-            "name": "horaires-theoriques-et-temps-reel-du-reseau-gpso-gtfs-gtfs-rt",
-            "type": "http",
-            "url": "https://www.data.gouv.fr/api/1/datasets/r/bb187aa1-d027-4a9e-bfa8-67fec4be3c71",
-            "fix": true,
-            "license": {
-                "url": "https://transport.data.gouv.fr/datasets/horaires-theoriques-et-temps-reel-du-reseau-gpso-gtfs-gtfs-rt",
-                "spdx-identifier": "ODbL-1.0"
-            },
-            "x-data-gov-fr-res-id": 43186,
-            "managed-by-script": true,
-            "skip": false,
-            "x-data-gov-fr-res-title": "Horaires théoriques du réseau GPSO (GTFS)",
-            "x-data-gov-fr-dataset-id": "5d84e60e6f4441290a77ca05"
-        },
-        {
-            "name": "horaires-theoriques-et-temps-reel-du-reseau-gpso-gtfs-gtfs-rt",
-            "type": "url",
-            "url": "https://www.data.gouv.fr/api/1/datasets/r/57138f8c-3034-4489-93e8-ea61212cc218",
-            "license": {
-                "url": "https://transport.data.gouv.fr/datasets/horaires-theoriques-et-temps-reel-du-reseau-gpso-gtfs-gtfs-rt",
-                "spdx-identifier": "ODbL-1.0"
-            },
-            "spec": "gtfs-rt",
-            "x-data-gov-fr-res-id": 43187,
-            "managed-by-script": true,
-            "x-data-gov-fr-res-title": "Horaires temps-réel du réseau GPSO (GTFS-RT)",
-            "x-data-gov-fr-dataset-id": "5d84e60e6f4441290a77ca05"
-        },
-        {
             "name": "horaires-theoriques-et-temps-reel-du-reseau-titus-rosny-sous-bois-gtfs-gtfs-rt",
             "type": "http",
             "url": "https://www.data.gouv.fr/api/1/datasets/r/ed7049d4-4063-457c-ab65-4a26c640e0a1",
@@ -3145,35 +3116,6 @@
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "Horaires temps-réel de la station de Bagnères / La Mongie (GTFS-RT)",
             "x-data-gov-fr-dataset-id": "5f7d7f3750a9afcf4af57f88"
-        },
-        {
-            "name": "horaires-theoriques-et-temps-reel-des-navettes-paris-saclay-gtfs-gtfs-rt",
-            "type": "http",
-            "url": "https://www.data.gouv.fr/api/1/datasets/r/206530ec-6a48-44a4-8042-75d76be59636",
-            "fix": true,
-            "license": {
-                "url": "https://transport.data.gouv.fr/datasets/horaires-theoriques-et-temps-reel-des-navettes-paris-saclay-gtfs-gtfs-rt",
-                "spdx-identifier": "ODbL-1.0"
-            },
-            "x-data-gov-fr-res-id": 14826,
-            "managed-by-script": true,
-            "skip": false,
-            "x-data-gov-fr-res-title": "Horaires théorique des navettes Paris-Saclay (GTFS)",
-            "x-data-gov-fr-dataset-id": "5f9008f1af9cf0bed8270cde"
-        },
-        {
-            "name": "horaires-theoriques-et-temps-reel-des-navettes-paris-saclay-gtfs-gtfs-rt",
-            "type": "url",
-            "url": "https://www.data.gouv.fr/api/1/datasets/r/c0cf09df-9248-4828-8435-336dacbbbbc6",
-            "license": {
-                "url": "https://transport.data.gouv.fr/datasets/horaires-theoriques-et-temps-reel-des-navettes-paris-saclay-gtfs-gtfs-rt",
-                "spdx-identifier": "ODbL-1.0"
-            },
-            "spec": "gtfs-rt",
-            "x-data-gov-fr-res-id": 14827,
-            "managed-by-script": true,
-            "x-data-gov-fr-res-title": "Horaires temps-réel des navettes Paris-Saclay (GTFS-RT)",
-            "x-data-gov-fr-dataset-id": "5f9008f1af9cf0bed8270cde"
         },
         {
             "name": "horaires-theoriques-et-temps-reel-du-reseau-luneo-gtfs-gtfs-rt",
@@ -9793,7 +9735,7 @@
             "x-data-gov-fr-res-id": 83739,
             "managed-by-script": true,
             "skip": true,
-            "x-data-gov-fr-res-title": "Téléphérique - DEC TO FEV",
+            "x-data-gov-fr-res-title": "Téléphérique - JAN TO AOU",
             "x-data-gov-fr-dataset-id": "667d7d9f6ca66f624e3facbf",
             "skip-reason": "Feed is expired according to metadata"
         },
@@ -10556,20 +10498,6 @@
             "skip": false,
             "x-data-gov-fr-res-title": "Arrêts, horaires et lignes urbaines et scolaires du réseau Ycéo  - GTFS",
             "x-data-gov-fr-dataset-id": "66fb3be4370262b757436db9"
-        },
-        {
-            "name": "yceo-arrets-horaires-et-lignes-urbaines-et-scolaires-gtfs-1--83847",
-            "type": "http",
-            "url": "https://www.data.gouv.fr/api/1/datasets/r/45ab4dba-29db-4773-99ef-d940ed4f4da2",
-            "fix": true,
-            "license": {
-                "url": "https://transport.data.gouv.fr/datasets/yceo-arrets-horaires-et-lignes-urbaines-et-scolaires-gtfs-1",
-                "spdx-identifier": "etalab-2.0"
-            },
-            "x-data-gov-fr-res-id": 83847,
-            "x-data-gov-fr-dataset-id": "66fb3be4370262b757436db9",
-            "x-data-gov-fr-res-title": "Arrêts, horaires et lignes urbaines et scolaires du réseau Ycéo  - GTFS",
-            "managed-by-script": true
         },
         {
             "name": "velos-a-assistance-electrique-en-libre-service-des-ports-de-piriac-sur-mer-et-de-la-turballe",
@@ -12918,13 +12846,13 @@
             "url": "https://www.data.gouv.fr/api/1/datasets/r/7e0312ef-a6e0-41ab-a75a-2b782a4b1d6b",
             "fix": true,
             "license": {
-                "url": "https://transport.data.gouv.fr/datasets/navette-pontorson-le-mont-st-michel",
+                "url": "https://transport.data.gouv.fr/datasets/navette-pontorson-le-mont-saint-michel",
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 83642,
             "managed-by-script": true,
             "skip": false,
-            "x-data-gov-fr-res-title": "Jeu de données théorique du réseau Navette Pontorson - Le Mont-St-Michel ",
+            "x-data-gov-fr-res-title": "Jeu de données théorique du réseau Navette Pontorson - Le Mont-Saint-Michel ",
             "x-data-gov-fr-dataset-id": "691ae57155fa2d9d100fe1b4"
         },
         {
@@ -13876,6 +13804,20 @@
             "managed-by-script": true,
             "skip": true,
             "skip-reason": "Feed is expired according to metadata"
+        },
+        {
+            "name": "gtfs-reseau-de-transport-tmco-3co-mayotte",
+            "type": "http",
+            "url": "https://transport.data.gouv.fr/resources/83879/download",
+            "fix": true,
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/gtfs-reseau-de-transport-tmco-3co-mayotte",
+                "spdx-identifier": "etalab-2.0"
+            },
+            "x-data-gov-fr-res-id": 83879,
+            "x-data-gov-fr-dataset-id": "69a55f80efa5f1d03cb1e9a0",
+            "x-data-gov-fr-res-title": "GTFS_TMCO_3CO_2026_02_01.zip",
+            "managed-by-script": true
         }
     ]
 }
