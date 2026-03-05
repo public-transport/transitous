@@ -66,17 +66,20 @@ if __name__ == "__main__":
         if web_folder:
             config["server"]["web_folder"] = web_folder
 
-        if arguments.import_only:
-            config.pop("tiles")
-        else:
-            tile_profile = find_motis_asset("tiles-profiles/full.lua")
-            if tile_profile:
-                config["tiles"]["profile"] = tile_profile
+        if "tiles" in config:
+            if arguments.import_only:
+                config.pop("tiles")
+            else:
+                tile_profile = find_motis_asset("tiles-profiles/full.lua")
+                if tile_profile:
+                    config["tiles"]["profile"] = tile_profile
 
         config["timetable"].yaml_set_comment_before_after_key(
             "datasets", before="Modified by generate-motis-config.py"
         )
         config["timetable"]["datasets"] = {}
+        if os.path.exists("out/transitous_meta"):
+            config["timetable"]["datasets"]["transitous-meta"] = {"path": "transitous_meta"}
         config["gbfs"]["feeds"] = {}
         config["gbfs"]["proxy"] = FEED_PROXY
 
