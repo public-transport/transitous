@@ -93,6 +93,11 @@
             }
         },
         {
+            "name": "BAHART",
+            "type": "http",
+            "url": "https://nap.bahart.hu/gtfsdata/ULPTdR8PovPQ7E9NlcsIig/43"
+        },
+        {
             "name": "kaposvár",
             "type": "http",
             "url": "https://www.kaposbusz.hu/letoltheto-menetrend",
