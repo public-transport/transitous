@@ -167,6 +167,12 @@
             "name": "JOLT-Selwyn",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-jolt~selwyn~gbfs"
+        },
+        {
+            "name": "CityLink-Whangarei",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://data.trilliumtransit.com/gtfs/nrc-nz/nrc-nz.zip"
         }
     ]
 }
