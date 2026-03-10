@@ -55,6 +55,14 @@
             }
         },
         {
+            "name": "varna",
+            "type": "http",
+            "url": "https://gtfs.livetransport.eu/gtfs/varna.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
             "name": "bdz",
             "type": "http",
             "url": "https://jbb.ghsq.de/gtfs/bg-bdz.gtfs.zip"
