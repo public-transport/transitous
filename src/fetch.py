@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 from metadata import TransitlandSource, MobilityDatabaseSource, HttpSource, \
-    UrlSource, Source, Region
+    FtpSource, UrlSource, Source, Region
 from pathlib import Path
 from datetime import datetime, timezone
 from utils import eprint
@@ -28,6 +28,9 @@ import region_helpers
 import io
 import hashlib
 import csv
+import ftplib
+import urllib
+import time
 
 
 def validate_source_name(name: str):
@@ -356,6 +359,21 @@ class Fetcher:
                     os.utime(dest_path, atime_mtime)
 
                 return True
+            case FtpSource():
+                url = urllib.parse.urlsplit(source.url)
+                ftp = ftplib.FTP(url.hostname)
+                ftp.login()
+
+                # check if file modification time has changed
+                ftptime = ftp.voidcmd(f"MDTM {url.path}")[4:]
+                mtime = time.mktime(time.strptime(ftptime, "%Y%m%d%H%M%S"))
+                if dest_path.exists() and dest_path.stat().st_mtime == mtime:
+                    return False
+
+                ftp.retrbinary(f"RETR {url.path}", open(dest_path, 'wb').write)
+                os.utime(dest_path, (mtime, mtime))
+                return True
+
             case UrlSource():
                 return False
 
