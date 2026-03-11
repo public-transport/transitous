@@ -70,7 +70,7 @@ if __name__ == "__main__":
             config.pop("tiles")
         else:
             tile_profile = find_motis_asset("tiles-profiles/full.lua")
-            if tile_profile:
+            if tile_profile and "tiles" in config:
                 config["tiles"]["profile"] = tile_profile
 
         config["timetable"].yaml_set_comment_before_after_key(
