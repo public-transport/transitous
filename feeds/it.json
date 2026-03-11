@@ -14,6 +14,20 @@
             "script": "it-trenitalia.lua"
         },
         {
+            "name": "Bolzano-STA",
+            "url": "ftp://ftp.sta.bz.it/gtfs/google_transit_shp.zip",
+            "type": "ftp",
+            "spec": "gtfs",
+            "script": "it-sta.lua"
+        },
+        {
+            "name": "Bolzano-STA-flex",
+            "url": "ftp://ftp.sta.bz.it/gtfs/google_transit_flex.zip",
+            "type": "ftp",
+            "spec": "gtfs",
+            "use-gtfsclean": false
+        },
+        {
             "name": "Calabria-CORE",
             "type": "mobility-database",
             "mdb-id": "mdb-2668",
