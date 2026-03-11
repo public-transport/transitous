@@ -146,7 +146,7 @@ The main attribute of a region is `sources`. It contains a list of feeds that sh
 
 ### Static feeds (timetable)
 
-Each source can either be of `type` `mobility-database`, `transitland-atlas` or `http`.
+Each source can either be of `type` `mobility-database`, `transitland-atlas`, `http` or `ftp`.
 Feeds from the [Mobility Database](https://mobilitydatabase.org/) can be referenced by the id in the URL on the website.
 Feeds from [Transitland](https://www.transit.land/feeds) (a different database of feeds), can be referenced by their Onestop ID.
 
@@ -168,7 +168,7 @@ Transitland:
 }
 ```
 
-If the feed is not part of any existing database, a http source can be used instead.
+If the feed is not part of any existing database, a `http` or `ftp` source can be used instead.
 
 ```json
 {
@@ -289,7 +289,7 @@ There are all kinds of options that may be specified in a source:
 
 Option Name            | Description
 ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------
-`type`                 | `http`, `mobility-database`, `transitland-atlas` or `url`. Url sources are not downloaded, but passed to MOTIS as URL. This is used for realtime feeds.
+`type`                 | `http`, `mobility-database`, `transitland-atlas`, `ftp` or `url`. URL sources are not downloaded, but passed to MOTIS as URL. This is used for realtime feeds.
 `spec`                 | `gtfs`, `gtfs-rt`, `gbfs`, `netex`, `siri` or `siri_json`. `gtfs-rt`, `netex`, `siri` and `siri_json` may only be used when `type` is `url`.
 `fix`                  | Fix / drop fields that are not correct.
 `skip`                 | Don't download or use this feed.

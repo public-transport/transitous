@@ -184,6 +184,14 @@ class HttpSource(Source):
                 self.options = HttpOptions()
 
 
+class FtpSource(Source):
+    url: str = ""
+
+    def __init__(self, parsed: dict):
+        super().__init__(parsed)
+        self.url = parsed["url"]
+
+
 class UrlSource(Source):
     url: str = ""
     headers: dict[str, str]
@@ -207,6 +215,8 @@ def sourceFromJson(parsed: dict) -> Source:
             return MobilityDatabaseSource(parsed)
         case "http":
             return HttpSource(parsed)
+        case "ftp":
+            return FtpSource(parsed)
         case "url":
             return UrlSource(parsed)
 
