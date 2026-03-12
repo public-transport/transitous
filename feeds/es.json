@@ -1297,7 +1297,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0",
                 "url": "https://data.renfe.com/dataset/horarios-de-alta-velocidad-larga-distancia-y-media-distancia"
-            }
+            },
+            "script": "es-renfe.lua"
         },
         {
             "name": "RENFE-Larga-Distancia-y-AVE",
