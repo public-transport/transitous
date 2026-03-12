@@ -1269,7 +1269,8 @@
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
             },
-            "mdb-id": "mdb-2785"
+            "mdb-id": "mdb-2785",
+            "script": "es-ouigo.lua"
         },
         {
             "name": "Pujol-autobuses",
