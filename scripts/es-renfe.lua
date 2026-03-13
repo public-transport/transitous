@@ -24,6 +24,7 @@ function process_route(route)
             break
         end
     end
+    route:set_text_color(0)
 end
 
 function process_trip(trip)
