@@ -645,6 +645,42 @@
             "license": {
                 "spdx-identifier": "CC0-1.0"
             }
+        },
+        {
+            "name": "gbfs-bolzano",
+            "url": "https://gbfs.v2.otp.opendatahub.com/bz/2.1/gbfs.json",
+            "type": "url",
+            "spec": "gbfs",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "gbfs-merano",
+            "url": "https://gbfs.v2.otp.opendatahub.com/me/2.1/gbfs.json",
+            "type": "url",
+            "spec": "gbfs",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "gbfs-papin",
+            "url": "https://gbfs.v2.otp.opendatahub.com/papin/2.1/gbfs.json",
+            "type": "url",
+            "spec": "gbfs",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "alpsgo",
+            "url": "https://carsharing.v2.otp.opendatahub.com/alpsgo/gbfs.json",
+            "type": "url",
+            "spec": "gbfs",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
         }
     ]
 }
