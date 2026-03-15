@@ -255,6 +255,11 @@
             "name": "Foothill-Transit",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-foothilltransit~rt"
+        },
+        {
+            "name": "Stanford-Marguerite",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9q9h-stanford~marguerite"
         }
     ]
 }
