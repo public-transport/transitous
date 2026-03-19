@@ -7,6 +7,7 @@ on:
   push:
     paths:
       - "ci/container/Containerfile"
+      - "requirements.txt"
     branches:
       - "main"
   workflow_dispatch:
