@@ -8181,7 +8181,9 @@
             "x-data-gov-fr-res-id": 83905,
             "x-data-gov-fr-dataset-id": "654d7323492eed0ae612b365",
             "x-data-gov-fr-res-title": "GTFS Urbain - Fichiers TXT",
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": true,
+            "skip-reason": "Invalid GFS, not zipped"
         },
         {
             "name": "fichier-gtfs-des-transports-urbains-de-la-communaute-dagglomeration-du-puy-en-velay--83906",
