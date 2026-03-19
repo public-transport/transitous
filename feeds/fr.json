@@ -1812,7 +1812,7 @@
             "x-data-gov-fr-res-id": 80676,
             "managed-by-script": true,
             "skip": false,
-            "x-data-gov-fr-res-title": "gtfs-cineo-20251110-20261031.zip",
+            "x-data-gov-fr-res-title": "gtfs-cineo-20260305-20270305.zip",
             "x-data-gov-fr-dataset-id": "5cb7170d634f414f552323c7"
         },
         {
@@ -1857,6 +1857,20 @@
             "skip": false,
             "x-data-gov-fr-res-title": "Liste des arrêts, horaires et parcours du réseau Astuce",
             "x-data-gov-fr-dataset-id": "5cd4321f8b4c4137d1244318"
+        },
+        {
+            "name": "donnees-statiques-et-temps-reel-du-reseau-astuce-metropole-rouen-normandie",
+            "type": "url",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/4e1dd875-8a01-4636-9f32-7f7f60a79d1f",
+            "x-data-gov-fr-res-title": "GTFS-RT - Alertes de service (réseau entier)",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/donnees-statiques-et-temps-reel-du-reseau-astuce-metropole-rouen-normandie",
+                "spdx-identifier": "etalab-2.0"
+            },
+            "spec": "gtfs-rt",
+            "x-data-gov-fr-res-id": 83902,
+            "x-data-gov-fr-dataset-id": "5cd4321f8b4c4137d1244318",
+            "managed-by-script": true
         },
         {
             "name": "donnees-statiques-et-temps-reel-du-reseau-astuce-metropole-rouen-normandie",
@@ -1926,20 +1940,6 @@
             "x-data-gov-fr-res-id": 83438,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "Information trafic en temps réel du réseau Astuce",
-            "x-data-gov-fr-dataset-id": "5cd4321f8b4c4137d1244318"
-        },
-        {
-            "name": "donnees-statiques-et-temps-reel-du-reseau-astuce-metropole-rouen-normandie",
-            "type": "url",
-            "url": "https://www.data.gouv.fr/api/1/datasets/r/93b93483-e475-498c-908d-ddbc10287d26",
-            "license": {
-                "url": "https://transport.data.gouv.fr/datasets/donnees-statiques-et-temps-reel-du-reseau-astuce-metropole-rouen-normandie",
-                "spdx-identifier": "etalab-2.0"
-            },
-            "spec": "gtfs-rt",
-            "x-data-gov-fr-res-id": 83733,
-            "managed-by-script": true,
-            "x-data-gov-fr-res-title": "GTFS-RT - Alertes de service (réseau entier)",
             "x-data-gov-fr-dataset-id": "5cd4321f8b4c4137d1244318"
         },
         {
@@ -4163,8 +4163,36 @@
             "x-data-gov-fr-res-id": 80092,
             "managed-by-script": true,
             "skip": false,
-            "x-data-gov-fr-res-title": "gtfs-jybus.zip",
+            "x-data-gov-fr-res-title": "Horaires Théoriques du réseau GTFS",
             "x-data-gov-fr-dataset-id": "616853a698450ae104dcab37"
+        },
+        {
+            "name": "offre-de-transports-jybus-a-rumilly",
+            "type": "url",
+            "url": "https://proxy.transport.data.gouv.fr/resource/jybus-rumilly-gtfs-rt-trip-update",
+            "x-data-gov-fr-res-title": "Ressources en temps réél GTFS-RT trajets",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/offre-de-transports-jybus-a-rumilly",
+                "spdx-identifier": "etalab-2.0"
+            },
+            "spec": "gtfs-rt",
+            "x-data-gov-fr-res-id": 83890,
+            "x-data-gov-fr-dataset-id": "616853a698450ae104dcab37",
+            "managed-by-script": true
+        },
+        {
+            "name": "offre-de-transports-jybus-a-rumilly",
+            "type": "url",
+            "url": "https://proxy.transport.data.gouv.fr/resource/jybus-rumilly-gtfs-rt-service-alert",
+            "x-data-gov-fr-res-title": "Ressources en temps réél GTFS-RT Alerte de service",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/offre-de-transports-jybus-a-rumilly",
+                "spdx-identifier": "etalab-2.0"
+            },
+            "spec": "gtfs-rt",
+            "x-data-gov-fr-res-id": 83888,
+            "x-data-gov-fr-dataset-id": "616853a698450ae104dcab37",
+            "managed-by-script": true
         },
         {
             "name": "paris-sud-velos-a-assistance-electrique-en-libre-service--63612",
@@ -4791,22 +4819,6 @@
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "Offre TC temps réel Colibri",
             "x-data-gov-fr-dataset-id": "62c7cdd63fb5b683d7457fe9"
-        },
-        {
-            "name": "transports-urbains-bandol-sanary-s-mer",
-            "type": "http",
-            "url": "https://www.data.gouv.fr/api/1/datasets/r/358ab51c-78e8-45a4-ae5a-a05722af6c09",
-            "fix": true,
-            "license": {
-                "url": "https://transport.data.gouv.fr/datasets/transports-urbains-bandol-sanary-s-mer",
-                "spdx-identifier": "etalab-2.0"
-            },
-            "x-data-gov-fr-res-id": 80363,
-            "managed-by-script": true,
-            "skip": true,
-            "skip-reason": "Feed is expired according to metadata",
-            "x-data-gov-fr-res-title": "Réseau urbain BANDOL et SANARY S/MER",
-            "x-data-gov-fr-dataset-id": "62e23c6b59de90dff68ec781"
         },
         {
             "name": "location-de-velos-velobaie--80484",
@@ -5538,6 +5550,34 @@
             "name": "reseau-de-transport-urbains-dignois",
             "x-data-gov-fr-res-title": "RTUD_Version-12_gtfs_2026-01-08_16-27-04.zip",
             "x-data-gov-fr-dataset-id": "6357f252e8746ab0a790f68e"
+        },
+        {
+            "name": "reseau-de-transport-urbains-dignois--83898",
+            "type": "http",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/6752b334-92a4-4f6f-ac40-dc78458ad514",
+            "fix": true,
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/reseau-de-transport-urbains-dignois",
+                "spdx-identifier": "etalab-2.0"
+            },
+            "x-data-gov-fr-res-id": 83898,
+            "x-data-gov-fr-dataset-id": "6357f252e8746ab0a790f68e",
+            "x-data-gov-fr-res-title": "RTUD_Version-13-Mardaric_gtfs_2026-03-11_17-30-24.zip",
+            "managed-by-script": true
+        },
+        {
+            "name": "reseau-de-transport-urbains-dignois--83915",
+            "type": "http",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/0d9ebca0-d18e-44ad-ab95-d89e8a72d781",
+            "fix": true,
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/reseau-de-transport-urbains-dignois",
+                "spdx-identifier": "etalab-2.0"
+            },
+            "x-data-gov-fr-res-id": 83915,
+            "x-data-gov-fr-dataset-id": "6357f252e8746ab0a790f68e",
+            "x-data-gov-fr-res-title": "RTUD_V16_gtfs_2026-03-17_14-14-15.zip",
+            "managed-by-script": true
         },
         {
             "name": "gtfs-urbain-de-la-zone-centre",
@@ -6700,7 +6740,7 @@
             "managed-by-script": true,
             "skip": true,
             "skip-reason": "Feed is expired according to metadata",
-            "x-data-gov-fr-res-title": "Noirmoutier Saison 2025",
+            "x-data-gov-fr-res-title": "Noirmoutier Saison 2026",
             "x-data-gov-fr-dataset-id": "63b53e19a1e9838a8de38bde"
         },
         {
@@ -6849,24 +6889,8 @@
             "x-data-gov-fr-res-id": 81455,
             "managed-by-script": true,
             "skip": false,
-            "x-data-gov-fr-res-title": "AltiGo_gtfs_2026-02-10_15-14-32",
+            "x-data-gov-fr-res-title": "AltiGo_gtfs_2026-03-10_15-14-32",
             "x-data-gov-fr-dataset-id": "63c562c646696c9cd83544b7"
-        },
-        {
-            "name": "transports-urbains-st-cyr-s-mer",
-            "type": "http",
-            "url": "https://www.data.gouv.fr/api/1/datasets/r/a67da149-19bc-445d-b2d3-855fd82aa240",
-            "fix": true,
-            "license": {
-                "url": "https://transport.data.gouv.fr/datasets/transports-urbains-st-cyr-s-mer",
-                "spdx-identifier": "etalab-2.0"
-            },
-            "x-data-gov-fr-res-id": 80498,
-            "managed-by-script": true,
-            "skip": true,
-            "skip-reason": "Feed is expired according to metadata",
-            "x-data-gov-fr-res-title": "sud-sainte-baume-janvier2023-st-cyr.zip",
-            "x-data-gov-fr-dataset-id": "63c654695157be6fe16606e3"
         },
         {
             "name": "velos-a-assistance-electrique-en-libre-service-levelo-sur-marseille",
@@ -7232,18 +7256,18 @@
         {
             "name": "gtfs-transport-horaires-chemins-de-fer-corse-1",
             "type": "http",
-            "url": "https://www.data.gouv.fr/api/1/datasets/r/eff447a1-b61c-4573-8aae-c778bd8e07d0",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/69c3db8a-a5fd-471f-b59f-46b9faded381",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/gtfs-transport-horaires-chemins-de-fer-corse-1",
                 "spdx-identifier": "etalab-2.0"
             },
-            "x-data-gov-fr-res-id": 83021,
+            "x-data-gov-fr-res-id": 83882,
+            "x-data-gov-fr-dataset-id": "6425def83ddb5f9cfd9652b2",
+            "x-data-gov-fr-res-title": "Chemin de fer de la Corse",
             "managed-by-script": true,
             "skip": true,
-            "skip-reason": "Feed is expired according to metadata",
-            "x-data-gov-fr-res-title": "Chemin de fer de la Corse",
-            "x-data-gov-fr-dataset-id": "6425def83ddb5f9cfd9652b2"
+            "skip-reason": "Feed is expired according to metadata"
         },
         {
             "name": "gtfs-transport-horaires-des-lignes-de-la-communaute-de-communes-corse-du-sud-a-berlina",
@@ -8148,6 +8172,34 @@
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "GTFS-RT",
             "x-data-gov-fr-dataset-id": "64ff1cfa864a499875d3340b"
+        },
+        {
+            "name": "fichier-gtfs-des-transports-urbains-de-la-communaute-dagglomeration-du-puy-en-velay--83905",
+            "type": "http",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/0bdd928a-c207-4d69-9a0b-cd520e870d7f",
+            "fix": true,
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/fichier-gtfs-des-transports-urbains-de-la-communaute-dagglomeration-du-puy-en-velay",
+                "spdx-identifier": null
+            },
+            "x-data-gov-fr-res-id": 83905,
+            "x-data-gov-fr-dataset-id": "654d7323492eed0ae612b365",
+            "x-data-gov-fr-res-title": "GTFS Urbain - Fichiers TXT",
+            "managed-by-script": true
+        },
+        {
+            "name": "fichier-gtfs-des-transports-urbains-de-la-communaute-dagglomeration-du-puy-en-velay--83906",
+            "type": "http",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/c3d26d87-0b2d-4d26-83b5-9474f12e31a4",
+            "fix": true,
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/fichier-gtfs-des-transports-urbains-de-la-communaute-dagglomeration-du-puy-en-velay",
+                "spdx-identifier": null
+            },
+            "x-data-gov-fr-res-id": 83906,
+            "x-data-gov-fr-dataset-id": "654d7323492eed0ae612b365",
+            "x-data-gov-fr-res-title": "GTFS Urbain - Fichier ZIP",
+            "managed-by-script": true
         },
         {
             "name": "transports-a-la-demande-en-pays-de-la-loire-gtfs-flex-aleop",
@@ -9449,7 +9501,7 @@
             "url": "https://www.data.gouv.fr/api/1/datasets/r/36459a88-73c3-47e6-acef-d1a00378c140",
             "spec": "gbfs",
             "license": {
-                "url": "https://transport.data.gouv.fr/datasets/vlille-disponibilite-en-temps-reel-3",
+                "url": "https://transport.data.gouv.fr/datasets/ilevia-vlille-disponibilite-en-temps-reel",
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 82576,
@@ -10079,7 +10131,7 @@
             "url": "https://www.data.gouv.fr/api/1/datasets/r/84f7501c-de7b-46d9-8e0c-14c30d9fa58b",
             "fix": true,
             "license": {
-                "url": "https://transport.data.gouv.fr/datasets/gtfs-3",
+                "url": "https://transport.data.gouv.fr/datasets/horaires-theoriques-du-reseau-tarbes-lourdes-tlp-mobilites-gtfs",
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 83134,
@@ -10093,7 +10145,7 @@
             "type": "url",
             "url": "https://www.data.gouv.fr/api/1/datasets/r/38611abb-fb76-4072-8be9-514fdbc4b13a",
             "license": {
-                "url": "https://transport.data.gouv.fr/datasets/gtfs-3",
+                "url": "https://transport.data.gouv.fr/datasets/horaires-theoriques-du-reseau-tarbes-lourdes-tlp-mobilites-gtfs",
                 "spdx-identifier": "etalab-2.0"
             },
             "spec": "gtfs-rt",
@@ -10487,17 +10539,16 @@
         {
             "name": "yceo-arrets-horaires-et-lignes-urbaines-et-scolaires-gtfs-1",
             "type": "http",
-            "url": "https://www.data.gouv.fr/api/1/datasets/r/e7f40c40-b39d-4583-bc03-05e5bce06949",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/a1867718-7921-42a6-b672-c53b8c583aa3",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/yceo-arrets-horaires-et-lignes-urbaines-et-scolaires-gtfs-1",
                 "spdx-identifier": "etalab-2.0"
             },
-            "x-data-gov-fr-res-id": 82693,
-            "managed-by-script": true,
-            "skip": false,
-            "x-data-gov-fr-res-title": "Arrêts, horaires et lignes urbaines et scolaires du réseau Ycéo  - GTFS",
-            "x-data-gov-fr-dataset-id": "66fb3be4370262b757436db9"
+            "x-data-gov-fr-res-id": 83881,
+            "x-data-gov-fr-dataset-id": "66fb3be4370262b757436db9",
+            "x-data-gov-fr-res-title": "https://app.mecatran.com/utw/ws/gtfsfeed/static/stran-merge?apiKey=2e6071036d276153761f0c090b4a45420",
+            "managed-by-script": true
         },
         {
             "name": "velos-a-assistance-electrique-en-libre-service-des-ports-de-piriac-sur-mer-et-de-la-turballe",
@@ -13594,20 +13645,6 @@
             "managed-by-script": true
         },
         {
-            "name": "vls-le-marcel-troyes-champagne-metropole--83832",
-            "type": "url",
-            "url": "https://www.data.gouv.fr/api/1/datasets/r/0b10f92f-ec5e-4b5d-8056-de3e3f36518d",
-            "spec": "gbfs",
-            "license": {
-                "url": "https://transport.data.gouv.fr/datasets/vls-le-marcel-troyes-champagne-metropole",
-                "spdx-identifier": "etalab-2.0"
-            },
-            "x-data-gov-fr-res-id": 83832,
-            "x-data-gov-fr-dataset-id": "697a123be72b76e71e817f64",
-            "x-data-gov-fr-res-title": "GBFS RLV'lib",
-            "managed-by-script": true
-        },
-        {
             "name": "vls-le-marcel-troyes-champagne-metropole--83833",
             "type": "url",
             "url": "https://www.data.gouv.fr/api/1/datasets/r/8e80b9b3-6418-4f44-8482-01f8a3469e95",
@@ -13808,15 +13845,141 @@
         {
             "name": "gtfs-reseau-de-transport-tmco-3co-mayotte",
             "type": "http",
-            "url": "https://transport.data.gouv.fr/resources/83879/download",
+            "url": "https://transport.data.gouv.fr/resources/83891/download",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/gtfs-reseau-de-transport-tmco-3co-mayotte",
                 "spdx-identifier": "etalab-2.0"
             },
-            "x-data-gov-fr-res-id": 83879,
+            "x-data-gov-fr-res-id": 83891,
             "x-data-gov-fr-dataset-id": "69a55f80efa5f1d03cb1e9a0",
-            "x-data-gov-fr-res-title": "GTFS_TMCO_3CO_2026_02_01.zip",
+            "x-data-gov-fr-res-title": "GTFS_TMCO_3CO_2026_02_01_V2.zip",
+            "managed-by-script": true
+        },
+        {
+            "name": "donnees-theoriques-et-temps-reel-du-reseau-le-libellule-communaute-du-liancourtois-la-vallee-doree--83907",
+            "type": "http",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/e61f439a-2321-4ce2-bda7-89be2494304f",
+            "fix": true,
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/donnees-theoriques-et-temps-reel-du-reseau-le-libellule-communaute-du-liancourtois-la-vallee-doree",
+                "spdx-identifier": "ODbL-1.0"
+            },
+            "x-data-gov-fr-res-id": 83907,
+            "x-data-gov-fr-dataset-id": "69a6f2ca10dcf3d189434a2c",
+            "x-data-gov-fr-res-title": "Description du TAD zonal (GTFS-FLEX) - réseau Le Libellule ",
+            "managed-by-script": true
+        },
+        {
+            "name": "donnees-theoriques-et-temps-reel-du-reseau-le-libellule-communaute-du-liancourtois-la-vallee-doree--83908",
+            "type": "http",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/2ca2ec9b-666a-4fc8-a348-6e7ec79e59a0",
+            "fix": true,
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/donnees-theoriques-et-temps-reel-du-reseau-le-libellule-communaute-du-liancourtois-la-vallee-doree",
+                "spdx-identifier": "ODbL-1.0"
+            },
+            "x-data-gov-fr-res-id": 83908,
+            "x-data-gov-fr-dataset-id": "69a6f2ca10dcf3d189434a2c",
+            "x-data-gov-fr-res-title": "Arrêts, horaires et parcours théoriques (GTFS) - Le Libellule",
+            "managed-by-script": true
+        },
+        {
+            "name": "liste-des-api-ecovelo-pour-les-stations-du-velo-baulois-velos-electriques-en-libre-service-sur-la-baule-escoublac-gbfs--83894",
+            "type": "url",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/d917a6fe-e36e-4eca-80dd-a5edc9f5c1a4",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/liste-des-api-ecovelo-pour-les-stations-du-velo-baulois-velos-electriques-en-libre-service-sur-la-baule-escoublac-gbfs",
+                "spdx-identifier": "etalab-2.0"
+            },
+            "x-data-gov-fr-res-id": 83894,
+            "x-data-gov-fr-dataset-id": "69a777192d5230ce183d1e68",
+            "x-data-gov-fr-res-title": "https://api.gbfs.ecovelo.mobi/labaule/gbfs.json",
+            "managed-by-script": true
+        },
+        {
+            "name": "liste-des-api-ecovelo-pour-les-stations-du-velo-baulois-velos-electriques-en-libre-service-sur-la-baule-escoublac-gbfs--83914",
+            "type": "url",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/68c3f93c-56c2-4a9e-9981-a46c19144dca",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/liste-des-api-ecovelo-pour-les-stations-du-velo-baulois-velos-electriques-en-libre-service-sur-la-baule-escoublac-gbfs",
+                "spdx-identifier": "etalab-2.0"
+            },
+            "x-data-gov-fr-res-id": 83914,
+            "x-data-gov-fr-dataset-id": "69a777192d5230ce183d1e68",
+            "x-data-gov-fr-res-title": "https://api.gbfs.ecovelo.mobi/labaule/gbfs.json",
+            "managed-by-script": true
+        },
+        {
+            "name": "gbfs-netex-vlones",
+            "type": "url",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/095ab19b-e9b2-43c5-be26-56c1575f867f",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/gbfs-netex-vlones",
+                "spdx-identifier": null
+            },
+            "x-data-gov-fr-res-id": 83918,
+            "x-data-gov-fr-dataset-id": "69aaa4031c10e90ba39b095b",
+            "x-data-gov-fr-res-title": "V'Lônes GBFS",
+            "managed-by-script": true
+        },
+        {
+            "name": "transport-urbain-sud-sainte-baume",
+            "type": "http",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/050ef913-901c-49b7-babe-ef648e14314d",
+            "fix": true,
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/transport-urbain-sud-sainte-baume",
+                "spdx-identifier": "etalab-2.0"
+            },
+            "x-data-gov-fr-res-id": 83893,
+            "x-data-gov-fr-dataset-id": "69afe32b8f680dbbe2a4f898",
+            "x-data-gov-fr-res-title": "Horaires_Lignes_regulieres_Sud_Sainte Baume.GTFS",
+            "managed-by-script": true
+        },
+        {
+            "name": "vls-naolib-micromob-nantes",
+            "type": "url",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/015bbf27-64d7-4632-8e5e-72f1b129dc16",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/vls-naolib-micromob-nantes",
+                "spdx-identifier": "etalab-2.0"
+            },
+            "x-data-gov-fr-res-id": 83899,
+            "x-data-gov-fr-dataset-id": "69b0079633c4f565004771c7",
+            "x-data-gov-fr-res-title": "GBFS Naolib micromob",
+            "managed-by-script": true
+        },
+        {
+            "name": "fichier-gtfs-des-transports-a-la-demande-de-la-communaute-dagglomeration-du-puy-en-velay--83903",
+            "type": "http",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/4544fd3f-cf34-4bab-b6ff-e5ad89476347",
+            "fix": true,
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/fichier-gtfs-des-transports-a-la-demande-de-la-communaute-dagglomeration-du-puy-en-velay",
+                "spdx-identifier": null
+            },
+            "x-data-gov-fr-res-id": 83903,
+            "x-data-gov-fr-dataset-id": "69b356c9936944c545a4f8a2",
+            "x-data-gov-fr-res-title": "GTFS TAD - Fichier ZIP",
+            "managed-by-script": true
+        },
+        {
+            "name": "fichier-gtfs-des-transports-a-la-demande-de-la-communaute-dagglomeration-du-puy-en-velay--83904",
+            "type": "http",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/72cb82e9-df44-40fc-9fea-4f93f8a527af",
+            "fix": true,
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/fichier-gtfs-des-transports-a-la-demande-de-la-communaute-dagglomeration-du-puy-en-velay",
+                "spdx-identifier": null
+            },
+            "x-data-gov-fr-res-id": 83904,
+            "x-data-gov-fr-dataset-id": "69b356c9936944c545a4f8a2",
+            "x-data-gov-fr-res-title": "GTFS TAD - Fichiers TXT",
             "managed-by-script": true
         }
     ]
