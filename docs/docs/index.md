@@ -65,6 +65,7 @@ For properly dealing with delay, disruptions and all kinds of other unplanned
 and short-notice service changes Transitous also uses realtime data feeds which are polled for updates once a minute.
 
 Two formats are supported currently:
+
 * [GTFS Realtime (RT)](https://gtfs.org/documentation/realtime/reference/)
 * [SIRI](https://transmodel-cen.eu/index.php/siri/)
 
@@ -303,6 +304,7 @@ Option Name            | Description
 `display-name-options` | Specify which strings identifying a vehicle should be displayed to the user
 `script`               | A Lua script applied by MOTIS to GTFS data during import, see [the MOTIS documentation](https://github.com/motis-project/motis/blob/master/docs/scripting.md) for details.
 `use-gtfsclean`        | Preprocess GTFS feeds with `gtfsclean`, default is `true`.
+`enable-crowd-sourced-realtime` | Whether users should be able to submit gps positions for trips from this source.
 
 #### License Options
 
@@ -318,6 +320,14 @@ Option Name           | Description
 `headers`             | Dictionary of custom HTTP headers to send when checking for updates / downloading.
 `ignore-tls-errors`   | Ignore expired / invalid TLS certificate
 `fetch-interval-days` | Fetch this feed at most every `n` days. Useful if a server doesn't send `Last-Modified`, or to comply with terms of service.
+
+### Realtime Source Specific Options
+
+Sources of `"type": "url"` are continously fetched by the routing engine for real-time information.
+
+Option Name           | Description
+--------------------- | -------------------------------
+`derive-trip-updates` | Whether a vehicle positions feed should be used for calculating delay information.
 
 #### Display Name Options
 
