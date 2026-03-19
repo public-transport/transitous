@@ -823,6 +823,24 @@
             "mdb-id": "mdb-2682"
         },
         {
+            "name": "Donostiabus-(Dbus)",
+            "type": "mobility-database",
+            "mdb-id": "mdb-3064",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "Donostiabus-(Dbus)",
+            "type": "mobility-database",
+            "mdb-id": "mdb-3065",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "Donostiabus-(Dbus)",
+            "type": "mobility-database",
+            "mdb-id": "mdb-3066",
+            "spec": "gtfs-rt"
+        },
+        {
             "name": "EMT-Tarragona",
             "type": "mobility-database",
             "fix": true,
@@ -1132,42 +1150,42 @@
         },
         {
             "name": "Metro-Bilbao",
-            "type": "http",
-            "url": "https://ctb-gtfs.s3.eu-south-2.amazonaws.com/metrobilbao.zip",
+            "type": "mobility-database",
             "license": {
                 "spdx-identifier": "CC-BY-4.0",
                 "url": "https://data.ctb.eus/en/pages/legal-notice"
-            }
+            },
+            "mdb-id": "mdb-3052"
         },
         {
             "name": "Metro-Bilbao",
-            "type": "url",
-            "spec": "gtfs-rt",
-            "url": "https://ctb-gtfs-rt.s3.eu-south-2.amazonaws.com/metro-bilbao-trip-updates.pb",
+            "type": "mobility-database",
             "license": {
                 "spdx-identifier": "CC-BY-4.0",
                 "url": "https://data.ctb.eus/en/dataset/metro-bilbao-online"
-            }
+            },
+            "mdb-id": "mdb-3057",
+            "spec": "gtfs-rt"
         },
         {
             "name": "Metro-Bilbao",
-            "type": "url",
-            "spec": "gtfs-rt",
-            "url": "https://ctb-gtfs-rt.s3.eu-south-2.amazonaws.com/metro-bilbao-service-alerts.pb",
+            "type": "mobility-database",
             "license": {
                 "spdx-identifier": "CC-BY-4.0",
                 "url": "https://data.ctb.eus/en/dataset/metro-bilbao-online"
-            }
+            },
+            "mdb-id": "mdb-3056",
+            "spec": "gtfs-rt"
         },
         {
             "name": "Metro-Bilbao",
-            "type": "url",
-            "spec": "gtfs-rt",
-            "url": "https://ctb-gtfs-rt.s3.eu-south-2.amazonaws.com/metro-bilbao-vehicle-positions.pb",
+            "type": "mobility-database",
             "license": {
                 "spdx-identifier": "CC-BY-4.0",
                 "url": "https://data.ctb.eus/en/dataset/metro-bilbao-online"
-            }
+            },
+            "mdb-id": "mdb-3058",
+            "spec": "gtfs-rt"
         },
         {
             "name": "Metro-de-Granada",
@@ -1736,7 +1754,7 @@
         {
             "name": "Metro-Bilbao",
             "type": "mobility-database",
-            "mdb-id": "mdb-2683"
+            "mdb-id": "mdb-3052"
         },
         {
             "name": "La-Regional-Vallisoletana-S.A",
