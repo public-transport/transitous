@@ -6738,8 +6738,6 @@
             },
             "x-data-gov-fr-res-id": 81924,
             "managed-by-script": true,
-            "skip": true,
-            "skip-reason": "Feed is expired according to metadata",
             "x-data-gov-fr-res-title": "Noirmoutier Saison 2026",
             "x-data-gov-fr-dataset-id": "63b53e19a1e9838a8de38bde"
         },
@@ -6755,8 +6753,6 @@
             "spec": "gtfs-rt",
             "x-data-gov-fr-res-id": 80382,
             "managed-by-script": true,
-            "skip": true,
-            "skip-reason": "expired",
             "x-data-gov-fr-dataset-id": "63b53e19a1e9838a8de38bde"
         },
         {
