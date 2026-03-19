@@ -673,32 +673,6 @@
             }
         },
         {
-            "name": "Bizkaibus",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1262",
-            "fix": true,
-            "http-options": {
-                "fetch-interval-days": 1,
-                "headers": {
-                    "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
-                }
-            },
-            "license": {
-                "spdx-identifier": "CC-BY-4.0",
-                "url": "https://data.ctb.eus/en/dataset/horarios-lineas-bizkaibus"
-            }
-        },
-        {
-            "name": "Bizkaibus",
-            "type": "url",
-            "spec": "gtfs-rt",
-            "url": "https://baliabideak.bizkaia.eus/Bizkaibus/GTFSRealTime/FeedTripUpdates.pb",
-            "license": {
-                "spdx-identifier": "CC-BY-4.0",
-                "url": "https://data.ctb.eus/en/dataset/bizkaibus-viajes-alertas-retrasos-online"
-            }
-        },
-        {
             "name": "EtxebarriBus",
             "type": "http",
             "url": "https://ctb-gtfs.s3.eu-south-2.amazonaws.com/etxebarribus.zip",
@@ -1200,30 +1174,6 @@
             "mdb-id": "mdb-2784"
         },
         {
-            "name": "Metro-de-Madrid",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1134",
-            "fix": true,
-            "http-options": {
-                "fetch-interval-days": 1,
-                "headers": {
-                    "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
-                }
-            }
-        },
-        {
-            "name": "Metro-de-Málaga",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1497",
-            "fix": true,
-            "http-options": {
-                "fetch-interval-days": 1,
-                "headers": {
-                    "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
-                }
-            }
-        },
-        {
             "name": "Metro-de-Sevilla",
             "type": "mobility-database",
             "fix": true,
@@ -1670,6 +1620,16 @@
             "mdb-id": "mdb-1135"
         },
         {
+            "name": "Bizkaibus",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://baliabideak.bizkaia.eus/Bizkaibus/GTFSRealTime/FeedTripUpdates.pb",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0",
+                "url": "https://data.ctb.eus/en/dataset/bizkaibus-viajes-alertas-retrasos-online"
+            }
+        },
+        {
             "name": "La-Burundesa-S.A.",
             "type": "mobility-database",
             "mdb-id": "mdb-1316",
@@ -1750,11 +1710,6 @@
             "mdb-id": "mdb-2653",
             "skip": true,
             "skip-reason": "Already from NAP with rt"
-        },
-        {
-            "name": "Metro-Bilbao",
-            "type": "mobility-database",
-            "mdb-id": "mdb-3052"
         },
         {
             "name": "La-Regional-Vallisoletana-S.A",
