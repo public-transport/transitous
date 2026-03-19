@@ -13978,7 +13978,9 @@
             "x-data-gov-fr-res-id": 83904,
             "x-data-gov-fr-dataset-id": "69b356c9936944c545a4f8a2",
             "x-data-gov-fr-res-title": "GTFS TAD - Fichiers TXT",
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": true,
+            "skip-reason": "Invalid GTFS, not zipped"
         }
     ]
 }
