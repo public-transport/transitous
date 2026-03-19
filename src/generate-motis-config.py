@@ -246,7 +246,7 @@ if __name__ == "__main__":
                 if source.enable_crowd_sourced_realtime:
                     config["feeds"][f"{region_name}-{source.name}"] = {
                         "gtfs_url": f"../{region_name}_{source.name}.gtfs.zip",
-                        "gtfsrt_url": f"http://localhost:5001/gtfsrt/{region_name}-{source.name}/vehicle-positions.pb"
+                        "gtfsrt_url": f"http://10.11.1.1:5001/gtfsrt/{region_name}-{source.name}/vehicle-positions.pb"
                     }
 
                 match source:

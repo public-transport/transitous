@@ -3,4 +3,4 @@
 # SPDX-License-Identifier: CC0-1.0
 
 [server]
-address = "10.11.1.1:5002"
+address = "10.11.1.1:5001"
