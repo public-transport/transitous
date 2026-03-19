@@ -13864,7 +13864,9 @@
             "x-data-gov-fr-res-id": 83907,
             "x-data-gov-fr-dataset-id": "69a6f2ca10dcf3d189434a2c",
             "x-data-gov-fr-res-title": "Description du TAD zonal (GTFS-FLEX) - réseau Le Libellule ",
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": true,
+            "skip-reason": "expired"
         },
         {
             "name": "donnees-theoriques-et-temps-reel-du-reseau-le-libellule-communaute-du-liancourtois-la-vallee-doree--83908",
