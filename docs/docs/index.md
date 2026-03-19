@@ -445,7 +445,7 @@ git submodule update --remote --checkout --init
 Proceed by building the container:
 
 ```bash
-podman build ci/container/ -t transitous -f ci/container/Containerfile
+podman build . -t transitous -f ci/container/Containerfile
 ```
 
 Enter the container:
