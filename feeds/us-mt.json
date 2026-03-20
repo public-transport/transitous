@@ -1,0 +1,33 @@
+{
+    "maintainers": [
+        {
+            "name": "Tol Wassman",
+            "github": "twassman"
+        }
+    ],
+    "sources": [
+        {
+            "name": "Mountain-Line",
+            "type": "http",
+            "url": "https://mountainline.com/files/MUTD_GTFS.zip"
+        },
+        {
+            "name": "Mountain-Line",
+            "spec": "gtfs-rt",
+            "type": "url",
+            "url": "https://bt.mountainline.com/gtfsrt/vehicles"
+        },
+        {
+            "name": "Mountain-Line",
+            "spec": "gtfs-rt",
+            "type": "url",
+            "url": "https://bt.mountainline.com/gtfsrt/trips"
+        },
+        {
+            "name": "Mountain-Line",
+            "spec": "gtfs-rt",
+            "type": "url",
+            "url": "https://bt.mountainline.com/gtfsrt/alerts"
+        }
+    ]
+}
