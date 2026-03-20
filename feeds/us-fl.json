@@ -76,6 +76,11 @@
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-djn-centralfloridaregionaltransitauthority~rt",
             "skip": true
+        },
+        {
+            "name": "Gainesville-RTS",
+            "type": "http",
+            "url": "https://go-rts.com/wp-content/uploads/2026/01/RTSGTFS_Spring2026_V6.zip"
         }
     ]
 }
