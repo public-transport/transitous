@@ -28,6 +28,29 @@
             "spec": "gtfs-rt",
             "type": "url",
             "url": "https://bt.mountainline.com/gtfsrt/alerts"
+        },
+        {
+            "name": "UDASH",
+            "type": "http",
+            "url": "https://passio3.com/Montanau/passioTransit/gtfs/google_transit.zip"
+        },
+        {
+            "name": "UDASH",
+            "spec": "gtfs-rt",
+            "type": "url",
+            "url": "https://passio3.com/Montanau/passioTransit/gtfs/realtime/serviceAlerts"
+        },
+        {
+            "name": "UDASH",
+            "spec": "gtfs-rt",
+            "type": "url",
+            "url": "https://passio3.com/Montanau/passioTransit/gtfs/realtime/tripUpdates"
+        },
+        {
+            "name": "UDASH",
+            "spec": "gtfs-rt",
+            "type": "url",
+            "url": "https://passio3.com/Montanau/passioTransit/gtfs/realtime/vehiclePositions"
         }
     ]
 }
