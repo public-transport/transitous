@@ -39,7 +39,8 @@
             "http-options": {
                 "fetch-interval-days": 2
             },
-            "script": "de-DELFI.lua"
+            "script": "de-DELFI.lua",
+            "drop-shapes": true
         },
         {
             "name": "DELFI",
