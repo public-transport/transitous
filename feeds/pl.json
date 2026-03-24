@@ -1588,6 +1588,24 @@
             "license": {
                 "spdx-identifier": "MIT"
             }
+        },
+        {
+            "name": "Bardo",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://files.girlc.at/gtfs/bardo.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "Rozprza",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://files.girlc.at/gtfs/rozprza.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
         }
     ]
 }
