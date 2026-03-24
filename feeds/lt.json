@@ -130,7 +130,8 @@
             "name": "kautra",
             "type": "http",
             "url": "https://www.stops.lt/kautra/kautra/gtfs.zip",
-            "fix": true
+            "fix": true,
+            "script": "generic-bus-to-coach.lua"
         }
     ]
 }
