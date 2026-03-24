@@ -85,11 +85,10 @@
         },
         {
             "name": "kyiv",
-            "type": "http",
-            "url": "https://jbb.ghsq.de/gtfs/ua-kyiv.gtfs.zip",
-            "license": {
-                "url": "https://data.gov.ua/dataset/96128887-4f36-4c19-a96e-5d4765fade16"
-            }
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u8v-kyivpastrans",
+            "url-override": "https://jbb.ghsq.de/gtfs/ua-kyiv.gtfs.zip",
+            "extend-calendar": true
         },
         {
             "name": "ivano-frankivsk",
