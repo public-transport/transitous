@@ -92,6 +92,13 @@
             "extend-calendar": true
         },
         {
+            "name": "kyiv",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "http://193.23.225.214:732/api/realtime",
+            "use-feed-proxy": true
+        },
+        {
             "name": "ivano-frankivsk",
             "type": "http",
             "url": "https://city.dozor.tech/iv-frankivsk/gtfs/static.zip",
