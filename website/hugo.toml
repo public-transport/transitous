@@ -11,6 +11,7 @@ theme = "ananke"
   custom_css = ["bootstrap.min.css", "bootstrap-icons.min.css", "custom.css"]
   favicon = "images/logo.svg"
   text_color = "#292e35"
+  post_content_classes = ["avenir"]
 
 [params.ananke.social.follow]
   networks = ["mastodon", "matrix", "github"]
