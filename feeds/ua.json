@@ -40,7 +40,8 @@
         {
             "name": "uzhhorod",
             "type": "mobility-database",
-            "mdb-id": "mdb-2931"
+            "mdb-id": "mdb-2931",
+            "extend-calendar": true
         },
         {
             "name": "odesa",
