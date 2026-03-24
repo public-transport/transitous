@@ -30,7 +30,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: 0.157.0
+      HUGO_VERSION: 0.159.0
     steps:
       - uses: actions/setup-node@v6
         with:
