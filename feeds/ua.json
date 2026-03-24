@@ -62,7 +62,7 @@
             "name": "odesa",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://gw.x24.digital/api/od-all/gtfs/v1/download/gtfs-rt-vehicles-pr.pb",
+            "url": "https://gw.x24.digital/api/od-all/gtfs/v1/download/gtfs-rt-vehicles.pb",
             "headers": {},
             "use-feed-proxy": true
         },
