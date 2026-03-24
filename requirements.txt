@@ -10,3 +10,4 @@ pycountry
 beautifulsoup4
 lxml
 toml
+tzdata
