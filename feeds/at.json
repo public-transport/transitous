@@ -43,6 +43,7 @@
             "managed-by-script": true,
             "x-mvo-id": "79-2026",
             "script": "at.lua",
+            "default-timezone": "Europe/Vienna",
             "use-gtfsclean": false
         },
         {
