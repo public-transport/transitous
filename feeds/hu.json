@@ -17,7 +17,8 @@
             },
             "license": {
                 "spdx-identifier": "CC0-1.0"
-            }
+            },
+            "drop-shapes": true
         },
         {
             "name": "volanbusz",
