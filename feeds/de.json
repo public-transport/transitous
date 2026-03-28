@@ -255,7 +255,8 @@
             "name": "amarillo-bw",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://amarillo.mobidata-bw.de/region/bw/gtfs-rt"
+            "url": "https://amarillo.mobidata-bw.de/region/bw/gtfs-rt",
+            "use-feed-proxy": true
         }
     ]
 }
