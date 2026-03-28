@@ -244,6 +244,18 @@
             "type": "url",
             "url": "https://gbfs.api.ridedott.com/public/v2/rostock/gbfs.json",
             "spec": "gbfs"
+        },
+        {
+            "name": "amarillo-bw",
+            "type": "http",
+            "url": "http://vkrause.github.io/amarillo-bw-liberator/amarillo-bw.zip",
+            "use-gtfsclean": false
+        },
+        {
+            "name": "amarillo-bw",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://amarillo.mobidata-bw.de/region/bw/gtfs-rt"
         }
     ]
 }
