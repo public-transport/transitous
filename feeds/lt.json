@@ -107,7 +107,8 @@
         {
             "name": "siauliai",
             "type": "mobility-database",
-            "mdb-id": "mdb-1834"
+            "mdb-id": "mdb-1834",
+            "fix": true
         },
         {
             "name": "taurage",
