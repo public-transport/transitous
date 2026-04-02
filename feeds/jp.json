@@ -3020,6 +3020,16 @@
             "name": "高速船",
             "type": "mobility-database",
             "mdb-id": "jbda-meikaijo-ship"
+        },
+        {
+            "name": "京王バス",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-keiobus~alllines~jp"
+        },
+        {
+            "name": "京王バス",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-keiobus~alllines~jp~rt"
         }
     ]
 }
