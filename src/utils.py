@@ -28,6 +28,7 @@ def decrypt_if_necessary(val):
     stdout, stderr = process.communicate(input=encrypted_bytes)
 
     if process.returncode != 0:
-        raise Exception(f"Age decryption failed: {stderr.decode()}")
-        
+        print(f"Feed API key decryption failed (this is expected on PRs from forks): {stderr.decode()}")
+        return ""
+
     return stdout.decode('utf-8')
