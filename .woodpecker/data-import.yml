@@ -25,6 +25,7 @@ steps:
         from_secret: transitous_feed_proxy_key
       TRANSITOUS_FEED_PROXY_KEY_FILE: /tmp/feed-proxy.key
     commands:
+      - printf "%s" "$TRANSITOUS_FEED_PROXY_KEY" > /tmp/feed-proxy.key
       - git submodule update --init --checkout --remote
       - ./ci/fetch-feeds.py timer
       - ./src/garbage-collect.py
@@ -37,7 +38,6 @@ steps:
     pull: true
     commands:
       - motis --version
-      - printf "%s" "$TRANSITOUS_FEED_PROXY_KEY" > /tmp/feed-proxy.key
       - touch out/.import-running
       - ./src/generate-motis-config.py --import-only
       # Remove files that we want to regenerate
