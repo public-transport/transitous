@@ -41,6 +41,8 @@
   command: python3 src/generate-motis-config.py --feed-proxy
   args:
     chdir: "{{playbook_dir}}/../"
+  environment:
+    TRANSITOUS_FEED_PROXY_KEY_FILE: /etc/feed-proxy.key
 
 - name: Include feed proxy vars
   ansible.builtin.include_vars:

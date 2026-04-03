@@ -3,11 +3,11 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 import sys
+import os
 import base64
 import subprocess
 
 AGE_SENTINEL = "AGE-ENCRYPTED:"
-AGE_KEY_PATH = "/etc/feed-proxy.key"
 
 def eprint(*args, **kwargs):
     print(*args, file=sys.stderr, **kwargs)
@@ -19,7 +19,7 @@ def decrypt_if_necessary(val):
     encrypted_bytes = base64.b64decode(val.replace(AGE_SENTINEL, ""))
 
     process = subprocess.Popen(
-        ['age', '--decrypt', '-i', AGE_KEY_PATH],
+        ['age', '--decrypt', '-i', os.environ['TRANSITOUS_FEED_PROXY_KEY_FILE']],
         stdin=subprocess.PIPE,
         stdout=subprocess.PIPE,
         stderr=subprocess.PIPE
