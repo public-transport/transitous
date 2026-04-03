@@ -38,7 +38,7 @@
             },
             "http-options": {
                 "headers": {
-                    "Authorization": "apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJPRE5PRmoyZ3lXZEkxVzNfcXdTYVBqUUVnRldLMG9IV0lrS2VvZTdvUzhjIiwiaWF0IjoxNzU0MTY3MzQ4fQ.SEms0C7NpuZFHIz2mwisET8VzDrHqKGYVKt2rqGpkMU"
+                    "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBNd1lRbEZvbTdFOFVIRzdURW9sRHFIdXdoek43eDBiemFVd0hQYVpWdnhjCmhiMVdIVVJYYmF4aFZqN2tWcmVQNXVLbENtUS9BUkFScHRXUzlaOXVMZ1UKLS0tIGdsVEI1N2QvcVdDb3lpR3FHTUptZFpoa0s2OHdIUmpNYlltN05oSWJjZ3cK/Mg8ZkBU9YJlCykGegVP9BoSQW6O7GSx5ips3NRUgap/IGfleaZOH/JRP0jEfl+L32LZNubAThFUPQSSDmZuxmcJdOSXOy+t5KU+k8x0O2bkZo1wJ+vcV+Q0bux3mZIeVdF/6l/K4Ctm29tLaf1jGFA1ZHS5qDU92hzTvflkG2pFiQRO2WDX6I0+ubX4UTUtGOlaNSV8IhwpX5I3GJb2j0VaUmmHr9JCY6oaVYRE+kwCbKLEVoyYEypLSclEYeG8bcm4fVCBvvOZ/Y1FqsZzQe9LRVdgZQ=="
                 }
             }
         },
