@@ -33,7 +33,7 @@
             "mdb-id": "mdb-2668",
             "fix": true,
             "license": {
-                "url":"https://www.dati.gov.it/content/italian-open-data-license-v20"
+                "url": "https://www.dati.gov.it/content/italian-open-data-license-v20"
             }
         },
         {
@@ -104,7 +104,7 @@
             "type": "mobility-database",
             "mdb-id": "mdb-1059",
             "license": {
-                "url":"https://www.dati.gov.it/content/italian-open-data-license-v20"
+                "url": "https://www.dati.gov.it/content/italian-open-data-license-v20"
             }
         },
         {
@@ -270,7 +270,7 @@
             "type": "http",
             "url": "https://www.amts.ct.it/GTFS/AMTCT.zip",
             "license": {
-                "url":"https://www.dati.gov.it/content/italian-open-data-license-v20"
+                "url": "https://www.dati.gov.it/content/italian-open-data-license-v20"
             }
         },
         {

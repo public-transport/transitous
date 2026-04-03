@@ -50,7 +50,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {},
+            "headers": {
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBMaVY1S2NIRE9wcDErenJFaE5hOENmTkJsNWtVcU1JTEI3WlVEWGFXWVNZClk4QWVlY2l3QkdxTnpoRkpPTGk1U3g5SWoyMkNVRmg0QTJybXY1T2pLTHcKLS0tIFdlaFh4bVpvd1gxdllqZG9JYlUyRU1ySldOZ2RWM09yRFF3Smh5M1lMUFkKzVuLQ9f926Fm0LnpAisvoM8tWALmtjc3nyvaupw6hpNIygdrfO1lKWRichTc0N0YWe1yF+voAoFPSAQtjKTemDx4FdAFUkwOYUZ9FyE0YyvKTO7krOoMwjf2HZ+HZwFirz8vGt7O2lQowVk95MBawx2Hc8yH20dGmuIJ8ttPz+mhbic01xBYfNi9LYhxSpKoO1PUWRRK46cWVfI0VPxa7S6ePSEb1rwasx6tj7EzCZD8kYwSwXUFAQ+48fTuoiDdzowxi6XouxYIP6PcYrg53DUY6Hk44w=="
+            },
             "use-feed-proxy": true
         },
         {
@@ -61,7 +63,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {},
+            "headers": {
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSAvMlM1MnV4a1lrUTUwRUZISmNhWitmTlRUeDhjU2l6akxUWEkvalRwWDFBCjExS1FJSFd6OGx6VTcyczRGbkhlRmYyS0JwZHdWamtMWUtJR3NlTS9ZeU0KLS0tIFJzUVYwbWoxd1ZrNmNKTU1KWnpQcVF3K2JFb2VTeTlialNuZitwTVZIbzQKFfRs73mZCOkGKrLB9yFBqJxu0Djig7UZ/hB0JXAjheqwvdI+bITUKQmF7ZIuE83fBOe/Sp+zOvWpMep+a4+lsNWvWUiU6du9Ww/KSeh5XIFqrmOwZSHgTfhboo+EepkQqi1Iv7fn7pG4IALvYeY0KWcatASljYk/+1OIqXuKck27rHkPcEagjt/xbwE1PTamj+GGCSFHyj/LFJzz1T3X67q00cDCDWl5wBw69uIcRkkg/VCKEBnsG26CHfnRP5yBdjhkSTs50Lk57MQjK2xn0F0fmmZ6hA=="
+            },
             "use-feed-proxy": true
         },
         {
@@ -90,7 +94,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {},
+            "headers": {
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBpNjZzN01DNUYxbGw5Mk9Tak1sOSttRVdpOUUwV1cwV3JDelFiOUwwOFFnClVOTnFhWTVUT0xqZ1lmdG90cXJ5Y21YeU41aDd4bjh4anE1ZEw2Z3A1bGcKLS0tIFI4TzI3LzJCcm92Z1JvRVhLZnBVa09BTDdxNHNSRzFtenR0OFQ1b2wyMHMKr1TmMlZPOVhZNvCJwqnNrt+YLeYbTeicz9f2UE8zXMCHzdXDNZqd7N5A6p6rpMDcw8ZkLz3wv7VnamYwLhLzXP4wxMv9aLgHn3PELZzqN+mnSCGFjpdtBbFzd+uxWnsN3Mmc/RJXHWUDl3pw30CpkFj9eaaIgHtEAVVBGg4b4jolRSfCO4aOmURsrOILM0m3MhOhjvmFmn083oKuGSQH8Qdpx+03HFJAs47v5IioMrPawv0Cesbxox+jRSY4BUEKRS7QD4KnsC73oCJw1QnvZHSRHtJMkw=="
+            },
             "use-feed-proxy": true
         },
         {
@@ -101,7 +107,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {},
+            "headers": {
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBseC80ZnB6MUg0eC9sWHU2Sk1sQWJ2TkZvdXdXY0NEa1VTWjBmOWZSUFJjCmVCWmpxTUpkVEp2VEoxSTRYSFJ1YS9mMlp6ZVBEZHVmUVF3OEk4WHMyZUUKLS0tIG03VjVBV0lxeVlqdFI2dCtITXkyYy9iYmQzZFJNVHNwdEhsd3hCSXh5bkUK5lIHF9WfLcQlccFxev9AvPRWQMPiLQJGvth7J7OrbSs/HysqhPzdqk0IhSXJmzo0Zgz2OhBgPas5FLLWQHK4zKw1kanSfOtXz6NaqNr0eN8B8ZPZBlXG1Wg3DXRpDl3kgAtcHvjQ121FajoKYjf+hk2HmeHcGUEHoHApsWsHgQQiwKqP4PHwD3f8544N01FjlIjpLRv7JWqBa31cJ06EPcfZk/jgggZ4n6vTJwxbSAHtgYwnmJe8NSren5uxx6rd/Ba2xj6CIA9/d89LDm0tmHOVWyYsQQ=="
+            },
             "use-feed-proxy": true
         },
         {
@@ -127,7 +135,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {},
+            "headers": {
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBnV3lMMndrUVg4Ry9sL2lwajFWT3RmREpSTjFaOE15ckVPcEtyVHBsUjE4ClJoOENsaFJaUGFpTWtYWnowdFpoWDBkdzdYdEVoMTZZRmRqOWRuVzMrMWMKLS0tIGFWOWVNTnFaS204WXp6bEhPNnZmYUV5cTc5REp1amsyTFhjTGp1SDVNZjgKk1bYc/I4yZAMK39NB+ghb7sim8MWClXsKGv/fUKDO1Q7oeUDVzzlw7txHLTtPcAYzHtiZ0loIdXD2C1Cb165bhqnNu7zrU7xuf8fpq+2AryO79Ka/kZs3aTKeVWUqnkSVljSgc2rcTLBO8ySS4OYk9e3cB54+ccR5Qblir4ko2XzFml9uhinbPbJOg+Djz56/IYAzTeQqSfkjZhnNeajYoTZc9YaOet6J1NcKlPbB3STRv1HuTkkNc1R4AmAKinfswn/Fos7ApYcMH4cBzL1b/hd+P6Owg=="
+            },
             "use-feed-proxy": true
         },
         {
@@ -138,7 +148,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {},
+            "headers": {
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSAzNERla0ZHUVhZektNZ0pmRnZ0eGFLbksxWmVCRjlsRzhUbElLYXd4TURjCm54aHo0K1dTWC9vSzllV21Va24yUXN3cm4wSldtV1RBUklRanZVOThsRnMKLS0tIGZJZ1VXSTVha3F4OGRIbk9XZkJ4ZWdLaStYZ1pDS0dIcTEwZTgycVJHTWcKvf0HPvfEg1tCcYAfFNeXPEArjV7U6JffzdemCNqKD0PoJRn7iO2DHQfXxHHEEJrZzlAzmc9W6UNDvcN64480e898rwlAXifY1P9yz9xq0gpu6zUBSNkkImayUex1bi24ey9d14q0ftd3NT/XluNQM95WxlWcgPIPFlI9wfvMUOvXD8mEwbz+4bGRJDMV6hmJAqrA9l8rRbDxKWWRnvjY6TB/j+ZGyywQ0aOUlrJhW47+Vcluwmpc4KB4ILZk2RpVSY8GJhiVcDJ4TrnWpKDAtHOZrjhMRA=="
+            },
             "use-feed-proxy": true
         },
         {
@@ -163,7 +175,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {},
+            "headers": {
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBUMURCNWlhaHlkZFJYL1ljSDJhV2Urc0Z2MXR6RlZqNVRNYm12WGdpUDNRCkdjUDlWWm1wRnZXWDMxUStabVlpa2lldWdNZ2pqeVNwTDRjZEtYT1lXd2cKLS0tIFhuWERQcndpcWVUQUNiUVlpcHdoY1Z0azMxWU90WGhpYmFDeStLMWNhMEUKlQMWq70jETKClmQs73eXCEdC3nypIFri3ALe49PklhmVkDPJP8yIDmfeGQh1iFuvZbhwPexSPBn549Hm8zc3vyaxOL7BnAkdqlWHTugnE/IkQ2F70xtMvnOJ4e3Ouwz6Af2nmDAVC1MTblIsg3Oqw+5/qD+CnyklixkETa2tzmQj8Th5x8vYpDpWK5wcIgaut9nEBWUzHyBklQnrLSwcBR3tpD/40j4yiNEQB7Yq4dVNzkW+cjpMGNH1Tt1JnhwUgZYJRqB1QMhssbnQjpSW2PfsSUSY7w=="
+            },
             "use-feed-proxy": true
         },
         {
@@ -174,7 +188,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {},
+            "headers": {
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSB0RDJKSmlyOHppNFZGY3UyYzZLSmU3eXJYaWNWU2tlU1FHYU0wUXZjOVZZCmY5UHh0MHVER2VYTjR2allMTW9PZ28rOXFndGtiV1JRWXkzZkp1eEIzejQKLS0tIC93TlFabGRQQWVLakxaOW11RWEyMlNJelhqWW5iQU40VmhvcHM3TGtsbWcK30S4ht+vLgFUdaC8YnE2tbMOsovpnF1Ly4aIXlCB69QycJrtA8KxsqE/Iq6vFRWMvA0Eq3PdBThKaEia9g1/kHqYpjCv3NYWCFi5oz6B3r8P8uHseVsEpezFDyEKTmOBeLHkWV1vi5/CDdh6TddWglltn2FGvl+/rgeor6sxp9kY0QCsEz4yOfyNAmOwXyjxiUtIuNKdl6Esi8cIi9v9HyksMq+DQMAA0NTDfxvSic7/2BfkLqn8qdHzWjLQbpOznP4lWuF3Pkl4s5pRa/wHFO3lXHN9Hw=="
+            },
             "use-feed-proxy": true
         },
         {
@@ -199,7 +215,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {},
+            "headers": {
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBqYUVyUWRBUE9UZk1tWGxVNHp2MzRFYnFrNDAzUGxIRUpwMGtSQ3IyTURJCnBMb3BzQk9pcHRuUnNRd0pMOThScWdDV2ozRkUwakwydC9CUVJIYjZ6TkkKLS0tIERKYnplR1haNklSOUx1S2Y2eUwyWlEveW1XUEIyQXZFZEd0NHJZTGw0UncKDvxUtBwo21etFd8Q27TO+lH6U+h1hKTu61ojut/KPg3OT0Q+SHIS1qkPdo8xMeBCCz/eFJX9dwWzSZ1E+YRWnWDK6Re4Z5keuzbSnwyvNjugtCCLWeJbcoKcTuYI06qMn+3Ize1pLqfTudsKfdvkIOfqG9aTL83/K0diLGWXprXquWlrhfex6rBVPbgBrk/6For5v9Xt/Veec0F0PrAqFHZNMKpzKgWzynL+PDul4O0eddygb2mlVtg7dO7Ql4CueQguPmr2ir7D9cZ1W2D8W+Pg68xN/g=="
+            },
             "use-feed-proxy": true
         },
         {
@@ -210,7 +228,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {},
+            "headers": {
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBwaEYyQXdtZ2ZxU25PaW5ZbDdNNkk4RGVhaVY2cU5mRWYxUUwyWjBVYTJvCkI0QVBTVUtueC9TN3JSOFlDbGdHQmM1UmdZSzFVenR0OWh0OEN0cUQ4T1kKLS0tIHo1ZjYrVklLdE4wSk5Yd0tLNFNyeCtBMlk1UDlaa2dRR0o1WnlBQkplWGsKKsFRjJoeGGxK+JTo9tB9bZZLlXQ1CTE8tbAeJxVobY/QivugS25sFVjf3FeWK0VY/Epcpk+GvelWKw325zvjrSx7sMTFLkL97aAl6D1Yejyg+50UeR8Sf8B+Cket8LqzdrucaGXIOTl+ee07VpSo2oYBBQW2ufA9Sj5cKpgIk4PavN6Xk9zTijWLTZjCdMyiaDijYm93HYAYMqF9THHIP6hOCZWb81WMBAGS6P8GdU8xKEPW7CuAo4LfYXCUfTn47WoFCI6v+JiONV5jhnWWSQPgRFwJmg=="
+            },
             "use-feed-proxy": true
         },
         {
@@ -235,7 +255,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {},
+            "headers": {
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBvVG9WQW1yeWhJRWp0R1Zxc05LZ1hYYzFUa1Vjbm9yUzJHZWQ3RVl3eDEwCmcxRVRQQUtSWFYwVVJOL01LbnJNaXBCbnZjaFhQOEN3OUlBZC9jb0dIUGcKLS0tIHo4amF5NVUwY0RkZUZkbFlVTk1hM0M3UXRPcmdiL2pzVklyQjE1KzZ1WWsKREaIk0fd3Oo/d7wctIKuTUKucXz6vAhYXyc7zaMzgqebfjsGavUsduRxVYcT9Gfe9bZ9GLhy/vOHjsZzXdaN4p7hWHl11pIdlEW+x9Lora6aQlU3jjNl5do/fhPCvfPclwshv+CEUQnJTRseQRh5JIXtyRektS8q5HE6Mlk5l7YE7Pc2PfSikciPbtHa/Un2WBste6cRlKS1iwlHQPlYDoEv2KUezL/cI6iY0SQ02+oFWgPHj4l7/EiMt1ioF98Hxfg8pSeDzDBNlrVCO2rgzQXI9zbhwg=="
+            },
             "use-feed-proxy": true
         },
         {
@@ -246,7 +268,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {},
+            "headers": {
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSAzUUpJdDhrTWMzSVFmSWhxTGcyd1FOTUU1aGRsTVBtTmdtMENVdnBheEFVCk9HRzB2Wi84SHRTUExzOEZvSEx2MVJudUYwT290VVlRWmwxUVZlZ0FjUWMKLS0tIDlRU0hGR2FoNElKYXdNTldmVVd5UllJSGZscXZCcHNJSGlZWHVTU1BhWG8KZ0enFCaXVrv7D5pPnyCLDxDHLCSnmLcWHJQownUscuEYnU9D6VPUYxMLZyuDoZkREKNq9qQLzOuO8yQJKtjZ7Tv9uPOcvqz1jBwRiGyL9VtRAMn/6VLKl8YtJZsbeBZKaTNQQchDgc8DWht16K2dzW5KbFOjDyn90trbL03w/3Zvo6vEg1NSYeCVl6FTlWr1wj4g2IA7rEM1aOPvZ6RIkONhNI3VajEiFMEWSky+jgNK4qCBBZZDxhZtZqTC0RSXR1AiyIczAZbr4XrHEirAHM3aSLcZvw=="
+            },
             "use-feed-proxy": true
         },
         {
@@ -271,7 +295,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {},
+            "headers": {
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBRMVRPTW9aNVc3SmFHT2tIUjQ0NHZzRmRVS1dHTzcyMXlab3pSMkVWK2hrCitvbE9laG9ZU1A3alMveGJTT3R1b2RKdEY2ek5kbnhHS1daeHhjMWJVR2sKLS0tIDVMQStmWTlEZWw4RmlQYitVT25KZTJKd1NrL0EyVTRiYkJQU2MxaVpUTTQK973D+KilirAD6TpYuya+YWpO9nOzp0B64Q7egEfEWevjdQ6bdHBbjxfiSHkwvg0fkh8fTkNmaNSoIQjQ5MtPU4o2ktSF7Wfl4Pg5epwd0FeU1Qol2yCDASXAbLpway9mr/SniwWbSm9fOAon1gymznoNkxHG03xTjcRy50B6S7y+Nofj5ESUApauaMQ2vCQqieDc/Xb24tkB2Ofb6FGexq1F8IPJULBUTmbOWR1EWw7ow07AQ4pmMaeu4uroGPSV1rd/qpNwOcCtv+P4jWVIFsyXXr+ZHw=="
+            },
             "use-feed-proxy": true
         },
         {
@@ -282,7 +308,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {},
+            "headers": {
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSB3b0ZvaTZKYlRpNFBjZEk3SFQrc1h3WjA5L1Y0Q2ZEc1ZQVExzb3IwVWswCm9nWm85VEl1clQ5dWtuRDd0WEM0TUVXeEpXVDF3aUJMQjk0ZGdJTWFuR2MKLS0tIEpyczhncVVsRzBORm5paWJOaUpqY0FxNWFhWmtOTlRZdTNGbkVCd0RFcW8K3JKwHMJ908tvK9wVbz+/aPruxmu9GvX8PNWzbKCmw3nlAA5L8qSxqwF1Enj8DX4CpJ2Vs8mHVTAtqTWEls6NAkBJuXFwY2NxVs7aHhp5QMKMLpC6rAVY5rf6ZLp4dgQG6b3kg/XdjLAVF++/3ZXtIJZiLVPvpWpILPO5AZYmRUCqBXdPvTWMzb0OpFk/aLbQgqG9qrxnNdVWBd6TRtOCl9v++F8waff53/5I71GJvCUSqQyWUwiFxGF8udSjD0rEObfJq5SYd/TVOYjR8Bp4fvVGVSIdkw=="
+            },
             "use-feed-proxy": true
         },
         {
@@ -307,7 +335,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {},
+            "headers": {
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBDU1ZsVy9HbTdNaDhEMjdsV25nRmk0UU9vS3hlbmlVbWZVeTZIU0lwTG1rCmhHNTRDVEp6Y3ptbkZLb01MbDdHYkc4L3NXeS9QYStsQkRLcGcxR3o5cnMKLS0tIEJBcW1reC9mZWNOU1B6aHVyWVBVUURjeSsxTXdleHBWbk9IODZCNTR2VFUKLM8qzLVwgcoL4BdifDAH3/oboRMNbs8MRKk1FFpR4sgWXQzwwOh5bKePEq9ea+kydWGmnHKlj/ClNwpaJlPEIwgscHey8wXfpEb2s9yDHbkyaNBF7yxNzMX5DWsL4+N6PAFRc0sIKidPA2/unlXM1XDey068EAdyVzsLww0KzJvwd2POXsAOMMAzkhzm1a9TUSt2np3+e5DydPgqs8/D5XYz9ZeREyGcOEYdCenLbSI28e/1KZoBCOyvm2J+Pr1m7Q6kr2USZXbGohSNo/NMCiUaQcF65Q=="
+            },
             "use-feed-proxy": true
         },
         {
@@ -318,7 +348,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {},
+            "headers": {
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBlUmQ2RkZTUkZteW1qcTI2aXZJeEpvNkk0RWhUQ0lFU0grUDl4dTlYRVFFCmRxMXRZeHplTEQxMkVvWlFDejZERHRqdHRIWThGdENTYXB5Nzd4aGxKWm8KLS0tIE9wclpXeldkQStndzNCb28rbCt5N25xL09ZM2hQdHAvaG8zY0xnU2VLR1EKEaMlODcqSUQJJ0TFSMP7uIqkXbMlNGgGkG9S8KlNDu7QUCTp9Y1cwyEL3kk8psin26R+RRgck+jOb7ytGoT4bhcURvKmbwLFJncKwol3WPrKILhwafJ4ImRzAQhR5vuXkAWWIb4wjqCdSCJAuM8p7K13N7GUuZWgA02rkrm14EsEUL/ocbuRZrG0W+6rE94LrQDx2HcNRoHoF+Ur+I73fGBDZth20oo1ukn+4BX+MCAfNrCbeUIfzWmsvCXl7swaViTymc+HF855hVjpDpUOu3OExZXH3Q=="
+            },
             "use-feed-proxy": true
         },
         {
@@ -343,7 +375,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {},
+            "headers": {
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBJZzQ1TUs0bm50OXlEVzFoSnB0S2hMM3VOeGM3aHlqeTRiaXM1NXdNMjBrCnFheGJtZXBoSDN3RDRVVzNaT1JobDRyYno4WE1DVitmMGk0eDBSYzh5aW8KLS0tIC96emRETzVoWGdVTkk3byt4dDcva2VSMWdQSnUzZE5sc3lDaVl1VGFGWVEKlP3moxaAN05qmO7q2dp/Uqt+jrzg16QAW/ZSqpwToyj6l6ghfBCvpdSb6F9R2XaKBqeFP5gqy9bh/xMw98jue/+Rq8Ffy2Ijf2ox34c3N1bdpV81AFmhshQk7VvLxCVC55Erxy1dacf2icXEnTkOOhXtEgvm08neSgVF5GBS+2Q3y/a0S7xNKi0HpzT6X6o0uhSco1dNbbr1wZXKOb9BoFuiONM/i9yIYdztsPq86neNkqoglOqbtXvkcNB0ZAqbukgQKRlBSMbWZ0HupQHTk8Dm50jTdw=="
+            },
             "use-feed-proxy": true
         },
         {
@@ -354,7 +388,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {},
+            "headers": {
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBSWm1NeGU0Q21TclA1K3JSZjdFTWdnMjVLc0hrUFVoc1V3N09FbHhhQlVNClFTNFlQb05YbTUyWkVkR0pkQzh2NVdzRkUxTjYzYzJSNlB0WWxPVldCbzAKLS0tIHhyUm5tNmVXMkJCblFoK1A5UlRpb0I3SS9LY2hsNTNTUVovMGVkcTVGZmsKAXANwFi5bTxnN0OlGXMywVZziWnZhX+DLioJMb8YzcGZXEfPQNE7NXk1JnE8uPk8JhzpVTY+TSAnXOiLDJ3G9j1HLu/EzaGtmQcs2L5yDWlhle3+mIdTIDgynK2UfBz3HDV4f60lfAghTG3S42L7hFVllqInoip+JnyhazQKz4q/VD+El/fAY9s+OPM0zvLIEbX557QZIiSfXRLFbDKxdBw8wtukeRcvvvxeyyGSAb2JaGVeRR2ezzeGVZFbhPRBzNwqyJzL3qNULvKLZqrmT5kWxceHVQ=="
+            },
             "use-feed-proxy": true
         },
         {
@@ -379,7 +415,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {},
+            "headers": {
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBaMUFFOVhiUGJnZXhnZVIzdzB1SHJLd2tVSXUxY0JqTllLSm1MVzhzNFVBCjd1THZFN2dJbkpzMFB6Mm9oWG9vdy90UGkycjZYZm1RbHlob0JMajR2R0EKLS0tIFFXY04wbldwaXRTT1ZuV3diVlZvSHVQVXVTOTQ3U0lRVXJ6N3ZoTlBOclkKvCCdClaKLrprO2Qiu78W53ThLO0uRLFnUNUrcFAW2XsEoiVFyjNo44IlRQcS1RSDz+yjZi8B8gmRIKkZWlVJ/ALYZZE9i5AKFwgo7pSITDkgQ4kjaMdLuvropX9I/XV48y8wB4ZJNxxUsi6xW3xLYLI93LzY7Egkv2YQng9UoGRx491KIU9JFnaa+9nIZ1FE9gHNnBM0Hb/ZsY2rvlRayYyHGFD0e4MGIss18q9Qe5K/iB8jh8uM7JGyozCwTVHgJ5ZnYpawH6BSH6jjNOakw9AqHNMpdw=="
+            },
             "use-feed-proxy": true
         },
         {
@@ -390,7 +428,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {},
+            "headers": {
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBjZmhSNmNscy9jUng1TDBQUnJ2WFhEUDdQN2loQnhxeW5SeGZzV2dNakJnCjlXZWJPcURGMWgzcUsybE54RDJ2QmZRbGxSMGFxWHZ5TE1CYXJxRzhWYW8KLS0tIDR1ZzY4clFWdUlQTGlVbVVWbzVJbStCSGhvbFZqQ2pEd3k1NTNoUWJnOWsKw3S9NY90ZPWIuLgD9WTMrUXtspIqubwAx5p4Q3beH4PjmYjgdlEB1SBHF7VJOJTJrooTidmdUyZfAh6724EDnzO12YaKAXvuQXzErx2HspCgZ84T+dp2RQ2/xvUTiWwjZZ6Ey4ONPXI2fTb1VnhwAQhJNJdJjcKCxQNecttjHhqt9I2h4l3FJ6D2XX9jVy9RZ4mIYDiFQiy7bfM4GMNFSLXY25rTWeaD3Nix+CKt8ScowGojDbHTzRvXwXAtJWRMQXH/1J+04bTEszP7jEztyyzhHnkpgQ=="
+            },
             "use-feed-proxy": true
         },
         {
@@ -415,7 +455,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {},
+            "headers": {
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBIQ2M0eXVtM0VkVUFTazNqK29XVTVrR3BpOGhWeXdibmZobjJRTzBWL0JnCnlMbEJKV1lTUDFhVkxXTy9kUi8vNWtqMWNqWGlLblZiM1lNeGIwQmZzbzgKLS0tIDZoTldqUDlHOUx2RlBvekp3WGNxNUZJK0ExblFxYnBzeVVqMzhXMXVDaDAKMiTJIW3mcP0lG1ud6EF/W6aua1i7x4YJd8Ohugi5gy5tEPHwgkSw3IJz+CNvLToLZf8Q9mpSqV4HVb6Ha8T5sFHUzyHsiQ9l+8soNPSZ2I4lK/pvUBNpcY0I1ip/vDkzrt6OdwEUy0J52UQrFqwnttEU4z4UhQQ9ltzIfmPZwzpcfilNIXOtOmSgqEZhziidy5offMH8odIs5GWKU7kOMaibkElZ4zZK81pujUPOg5gvTRa4cL3ngotLKZnBmtfJX2Lo9AnJK/xInCpXcSfn/gIip6dQbA=="
+            },
             "use-feed-proxy": true
         },
         {
@@ -426,7 +468,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {},
+            "headers": {
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSAzdDMxMUM4MXNHUDc4bzZvY3gzVjN3UEE3bVJuUVVYcVBwVGxTa0VvWFg0CkNGY0RMVm5QYlpHWTI0Zk5NcGZOVGNvRTYrbE56RXBlVmdRZG5ld3BXT3cKLS0tIG5aM0JsbVBPN01Cc24xNWg2cXl2NjN6NzlrempYYW5aR3Vpcks1ZldlancKxqbNkqNfh8lXmo/RBJYLibEZ2rld1DawmDghfzE6aAm9um0kwehAwPJvhYustOt2Kkox4uKfBbZ+hpdWNwzd97wQ56KXs6NZ6/pxS21JKbU4qLELT76M4A+/tnh2NypZGc/w5cONiqpSSCM1FEwzMZnt0OLoWYmicR1sSBPE1rLF0qY7Iw3PvLla143U0O0qOnuSn7cpUlWvpeMi+FVX2jO8nWLa/EmpyZG4ko7R9u8K5lXmqb6YHkLCS1GaOYE72CNG4P7Ev9WeaAVpfNJ45iGPvXkngQ=="
+            },
             "use-feed-proxy": true
         },
         {
@@ -451,7 +495,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {},
+            "headers": {
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSB0Z2dOZCtVWFVaM3NQdjJOMzhWQUU4S1NNNlRBL1RaV3NpbDJHeWt4WjF3Cis5ZmVxQWtoNFEwMVJDUTFFZXBCSlVQNEhIaWtmcmJ6bE9GOUwzRzdQMFUKLS0tIG80bWZSMyttdGpUYWhBSFcxM0dOT3cyOXhSUHdNRHBQQ3A2M0tkVWdGbk0KjQZtJNFV5BTW3zPLjmkBOvKTNHPceOj6esvnqobxRDJZYg6VFrNO6XfuP7AyakX8icdfzfiNYh9Dspb+r50LOjyQz88OH1Yb8sz6rzaS4L1uhNuWqCyhUj+iSV1P8FSN1IFOgpch9YrNiGu858+vwI4AYk06E2aZAclBHT9k+ItCoxYi251QrEBZfo1uWvIsGPWBHyQ4TLgx0tj+uTY3vnbWzBycVIK7swIG9d2Nq4BMu8tXi9zugWQjlSXZl6AMUhaGjZbcImO6Tab+nf5ha6824OQ4Wg=="
+            },
             "use-feed-proxy": true
         },
         {
@@ -462,7 +508,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {},
+            "headers": {
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBaWHFtTFlFaVlzVVlSMmRsT0JnNU1PSHkzKzVuckZ6SVB3Q3FnQ1cwdWxzCkxZZDF3MFhaOEU0ajMxT1ZtUHk1RWUwenVWQktxL2xZdW1nK01McmFOMVEKLS0tIHB1Wk9YQko2eDh4cTMwcmNVZFlmRXMxa1BGSno5T3V1Z05DUEZhbWsxR28Ki1zTZp3I8io/sN25CqnX+7wlMBXnMLPoaDnr8uMMFdxs+vNe0ZoRDM5WMpCi5+UhF7UPB29uSt8SiOyAHVzXX9hRx3Wx06LlACVyhOd3nNI7Xs9lpKqCKEwSTwhOdb/pWSQtvTy5FC0nlfjOONvS9YOUgQyo+UOOt+BkWl0OSR+RuXm7TAfQqpBg9Wu8FkTFLT7ncc/ZT75Q+NcpyukiKrsV23FahW1xteqNDwwiD9wB5No/7eX+b/U+3qKPbAzlLn+yELXzRccxUfQVRWbxNgGkMWeOlQ=="
+            },
             "use-feed-proxy": true
         },
         {
@@ -487,7 +535,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {},
+            "headers": {
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBPc2pGbDl3VEhmcE1WVTJYRVNtaXhhVkxDRXArZ3dWcTBWSDVuL1dWUFJZCmlWb3VNT3JCQVN3akJkejk2Qk5pYmNqSHdoSWxLOWlsa21NWlFFQ3oyak0KLS0tIDFEYVpnTEE5dEYvVmNwZmhQM0x2QzZEUS9sQU5IcGo1SDFxaXhBZkE0M3cK5A3LIszWkBCTRhoXXa/tisPyD0m4nWnBXocTNS/B11Op9+zugAsb3dVL4bHGozHoFBjDp8ehjYLwOQH1yH6S4K7UEZkuCvZ4bV2Sm8JmMgXJGXs/RPIJxzlRJLGM9mISrYSr3Ohom5NUWORdJT9yGQG7KMrXtyKvm0KPNV5QOmUt8Jh80/5A5xoDjxy7TGBP63MbcNrBSJ3bAyKiqFNZLzsG1C7BSrOYFeJR78wQuSiuqVcdBCKoNIC8CjMU3YukW+0S8BO5ptWwWdcRbFy3zX2Xht6vow=="
+            },
             "use-feed-proxy": true
         },
         {
@@ -498,7 +548,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {},
+            "headers": {
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBUR1JsMzlKMEZiZVQ1elJFdXE0TzVnSk9vN2VHSXZTdk14VUpXa0hCRjI0CkhzWE9wZndoVmVlNlQ5YWJxS2hqZGZBdFpIZXdYQXFSZXJSbVVrVXNUM0kKLS0tIE4vOGxUTHdRcyttcDZKNGRZUWhLcHd6bmxYVVMvSEpNcld5MytybVpxTkEKCxhZDHokEbUWWIpgwynO8QgBPFw5ndV1ivkUJ5ke7VQ9D+u/vkJNTpm97q8/xKCJ4i3PJKaiO16/ORhSxdFLhcspX8D5Y9IBGgog3RK5/oayZXBAsBsH7sR8YbUG2iCmsH7LlvtFa5AoCd5UZloPXES3Z6UX3I2HqZBnW9CVp3FrjA0Hlw+uinAgiNsXbgrfTkv6opUSfszgQ1uCivejEnHFt2ok42HpyMmWvkBbeSs5SBBVDoHAZIwXAd4IkV0vvgYt0CvwD1fagdwQJymNQ1Zt5JurhQ=="
+            },
             "use-feed-proxy": true
         },
         {
@@ -523,7 +575,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {},
+            "headers": {
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBnRG5FdTJNekRha0RkUmFtaysvNTgzZHZtWVhBenFpM1ZGcXBXSmloZVNBCk0wazZmUTNMandjREpnc016NmxiWFN5Y0NzcDdZOVZtVng0TWRJaHlxQVEKLS0tIEpwTkJZUHRibHdUU0lpZzdRazdvTEhBaitFdDhRY1BDcVFVZUZERmdKYzgKCKUap/NWna560SjKjfi3OSVre8Us90wBWBnXeF4JHIv5TamoeVIqcEamtkz+HhYGDvltUdT2UQ79Ez9+RbFuUM4S2l0YyYWasnqMObfq34a85an85t9f0fCJXy2SEcD4655Q+fW9brt57MyRMnIDsRaRLra6o51W/BsUsbD+AdcQzJxyFuIC1EJ4gf9D1vJTl/AMajn8H3LPSTso5BLqyQFlRQYYGoah3F3F2u9RUUPqdjLd3VmD19ESbxLDYIf7AnmYWHvn/zuOK6S1HZDtW1CfFCetRw=="
+            },
             "use-feed-proxy": true
         },
         {
@@ -534,7 +588,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {},
+            "headers": {
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSA0UTFPMlo0STNxbDNTQ2w5by9Wa3RuaFhoVUFyUThleU5wTHFOZWhuRWpjCkZTc3JYaHRVdktVODdEdmFockpoQWRFTDFkR2VmUzlEdG5zUjZKQkhSb3MKLS0tIG9rVkFaMzA2bEh3UEFTNFptZzRkYkppOEgvQ3RrdlVjZzBmdktUcFFVVzQKayElW+qk81kNlznlJ9Br0DIbMQ6RMskvJ4KZjop+Xoo417jlGhmhn8jrR+cz4Hro1DdN8d6d+qA7snfVzsaWDWHfbVub6lQMp2uOgS24vI0yV3fy/y1E7V8MxJ6Mw6gtCcwnmeoCVShvcGH+OVyaFx4C3VxliVupeddEjjY+7vtbba5ZferxPjFh229s4tV6yZRENtybUV4+lFG7QrUo/P6rp1mNHbESFhAE4e0y6dt4qTWzOjZnFnR+2b63r80UhalchBE8nsxLBoNFR0FQ8jLKtm9aGQ=="
+            },
             "use-feed-proxy": true
         },
         {
@@ -559,7 +615,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {},
+            "headers": {
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBseXZuY1FoUU9CbXg1Z2xnK3ZFbWp2ZVM2MnNheU1tOVR6bXJ0bTFvSVUwCnRreDhyZ0lXZ0F5cjFwcUU4ZnZQWlNSTmtQcVdZQWdMYVZpSHlnWFVwUW8KLS0tIEhjOC9Yai9xNlgxVnBGUmdoelZtS01IM2h6ek12Y3A0MTlvcVdjYnorclkKpzLpihZdBOldZFKc4b/7j4sTCGt+KUxtLZDalZlDnHnDhS2FYeQFQUjllGYy+vXrPB+xJT2kaGkBYqqXqnx/A9LMDMKk164oFr58Yt31/xHH3SG9D4RxLHmXWbS/jaI+VppBpN9/aS0SPeJJf5D9+MKAJQwl2GeV6tmJWjocd/91YWqH1U8NFrWbOLlDVjyxZ8uElfLg7VdL4yyTThpYj2XP8ofpHggVB+8QPxzCXkuyfOk5qXjMnN0gY5xNi6m09EbShUlaF5IRvBDpofZM6vm0eR42rA=="
+            },
             "use-feed-proxy": true
         },
         {
@@ -570,7 +628,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {},
+            "headers": {
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBjRDg3SGFHSjJyZDMrSjljZEpFS1Y3ekFlLzFQc2QydUFxbHBtVTBjRXk4ClR1VVk0NFU1TnluOHdid2JrSW5JRmVHR0Raa0hBcEQ2Y0dVRTZpVHU4RU0KLS0tIHRVQWFGVlBpc1NzcjgxaEExWVZKRjNGOWpxZHZSN2lSdVAyNnFYdGZsaGcKpYqB4ex/1iT2BQ8IWrJHsRIm/BRfFrja4K8tjp93E/DMjJLF5L1m7LdFvJo5LLc95b05jypmIfDDsInfZf8f7iohmL+ILJicNhvvb3XsVcav/iXQjorHUxkH7+K6jcf3aYVQEi1PPNVYsWx6kED/92iVxQ+PElSTu2fXq4z1ylbK5qaQ5yyltczIAOUs2ad40HqLkz5egJtP37NXpQVpd9oJQYo8EH14D2JZ40t7banG1bDgSx9zwkd/A8gEfWaFC0bSBtlwcOCb/p4ln11IVZOE3Y0jng=="
+            },
             "use-feed-proxy": true
         },
         {
@@ -595,7 +655,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {},
+            "headers": {
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSB5dWhIWngwVEJuN2txL1l4ektsMWxPYjdZRXBxOXhVNzVUMmxYSVJsNVNNCmM2V1lPQzdqZjVzdGViQTRZc00zWmovTjA3Kzl3ZHpWckM0RytSem5JRWcKLS0tIGVCekRWcEdkNFRNM2R5dEwzLzlRdEV1ZExVRGhqb05INlhDVEZ1aVhDbk0KElAZZcWH7PkQSeiQR2NpxBm4bnH5ukjr0vesFIS7JUuRlTmSPiFgYmI4cL+FjT+Wkx9Xuj8j5numFygYiQXjiAREixanBQvSiatEEXeGKX5QsJrL3qtEYgui8rTw6+Qj//U/Xy83ifKFF9kH2KUx5N6YlGd7UJyMTg5zVgpWIQEiW7gsvYIGjzYjAVwOK1lHO9/NpequREP4b7EiQ6fs6GFKgS5lkI8vg4dek9QnkVF57ARSHNBq0j8oWs8zZzuCrj9eNcN4ZytM5kL82vO55YMCMam0PQ=="
+            },
             "use-feed-proxy": true
         },
         {
@@ -606,7 +668,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {},
+            "headers": {
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSB0T1BlVy9TbWRMYlVpMmh4cFBNTXBSSERaTkxJMUNMZXE5bnZyZ1RlS0QwCkc5Q0Y1am9zdjBpSGVRb3FsTi8zcm5pRUxvSkh2b1dyR3lXS3llR3hzMUkKLS0tIFd2VzBmbVBYNWhnSnowU01CK3JDOGZKVWdsdWpaT2QwaTBjNUVlZWF6ckkKMufnNFvUSEYOtnLWpAYrUYB8wHsPRSw210aauUb9cSW4H72rTYdui20UhFzx+54v8CMVYUu9YQwoNjin3UpXSudcSebLKH4gYuLgdX+YDEWxZZw4Hilh8RNW2AT+cnO+f7jYRYmIlJ3VxwEI1zMWi6NadTXRVWtDLw2545lOaXfD6QCPlvwjcnxDf0y7/k1U0L33uIUA5OiUZbjSoFGCEL2rHUshB2rVAm7/K9LlYdwTZnmUAI73HjLqMT0S5iEp6fU65RKFEMFeAfndtRBscmbdS7pyNg=="
+            },
             "use-feed-proxy": true
         },
         {
@@ -631,7 +695,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {},
+            "headers": {
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBZRUFoUDFaemFTemxQakZVNzE5ZXcvam5HUDZ3MmFXY2FaRzc3dE1oOGlrCjc5TmV2L0UzUmt6cm51UkRmT1c4S2tSOHY1YkIrb215VU1UUEppY3ptcDQKLS0tIGNpdTM5cFU4dml5dnNyVGxBZGFscnV6enRwOThLUWlUWXhKYWVZeHVOSlEKmbjnD3aKSIb6WgT6MFpECDxM9kn+lmtDmF3pVxDpqJqRooCkXBHhcNKYUogmB0wQ3x4fZfRLroMjpR4Y/qFw3C24nsnyNBV2PouQ5WqBNOCaRlokam8eoCsEEM3a7YVfo4JcQmbPlo1lw4QKljtwHe2IXUdoCB5pn9M+xIlVr6P2uqhmZV9zCM7X761EX2HhU30TanmSU4MlgSLOThhbA2DkpKkrB3cE00vaq4VM+z2813QVEK9LsgV5y4u3OPG7rjMWzUU1i8hKlg3dXlDmh42yubrFAQ=="
+            },
             "use-feed-proxy": true
         },
         {
@@ -642,7 +708,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {},
+            "headers": {
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBkSlBCWU1iQWh4c0Mza3puNkw5RXlOSmhGTkhqZFNsQVhKMlByT2JiV1djCjYxcktXWkhHK0dGNVNOMk03K2dIREM1MGZwUC9nSzIrajV0VkY2VFY5amMKLS0tIDlLdzRkWDVsTExOWGI5M3l1RDJwWFByNnJNUUFFdGt4MjRTanpYZVBKcDAK0/tjLeCSZlb7UdojkynOvHfC/PJei8qP38gaKwlN2fNJNB2YlytCW77MfGXKDcYFc2J3Ly2tBHVqCKSaGqlkjGYjsT3tMQ++g9tjjykZmDIaEYKcSPln1LfYuauzX9DEzlZ8JcjppGg9KHGEz8XdsnVUHqWBOZEaeqGLwLNNNxsXKT6VkLITXnAwE8C72ruQhn/A7C2x++NWvUr2k2ukxwr/da6Gvj0RusFJIOHKFjJfLoiVAs/esUk+oCkv8iaZNDVhDa/ZvsFVaF6EJPEFlZLkP7ZM1g=="
+            },
             "use-feed-proxy": true
         },
         {
@@ -667,7 +735,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {},
+            "headers": {
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSB4R1N5a1N2dGVjR0VHUkFiMU9ZSkprb1VWektkY0s5VDhGTEFtUU5ZVGx3CnJsOXpWenpleEh1UVRvSDlaNk5hMHkwa1RYNk9ibXJsQWZDSjB1V0Y5ck0KLS0tIDNpd25UNzJpMyszbXVGVWU1ajFTTVM3bEJCbTRlR1B3ZkpPY1hjTlJRNUUKAA2KfHyIb11e+TGWLRVo0dUCJjMIWDSFRhALwhA8P+Utj8zynCZVTlIgVesooASWEFHLOJDjdlTf5Ed8arTIb0PvrSzPbjtlLbv7eblarypag+D+uC+OdrcjZttQ50yUJCPufyiZJBcr2wq7fEwf4xLZq3PtZCZNBgrEBtrq9TYfgv1kjHBf++2lTUiG6DxZJp4okDylemBD7jgfTae2DN95nkOkUAtRQSz2ZSbEt3qC/pziPa04UgNQqYfKjvEMODd3j4uDlikj3EktJ95TocMh7eANtQ=="
+            },
             "use-feed-proxy": true
         },
         {
@@ -678,7 +748,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {},
+            "headers": {
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBva3JQZ1VSVUFQSkJrRDErZ2JiaERRbFNuYzczVDQreC91UDlMQVFFSFJrClI5eFZVR0plWWlxb2swNGd6c0NueksxdVlpNWNnMS9uMVdPOTVuampqU2MKLS0tIFI0V1hwdVFnTUltN2lFYk1WejNtclV5c0FLRTVlbGY4RXBrSkp1KzUxL1UKrdskoNRFIsRFk+RGiNuGbSjVJ0XQUJXj3Tm5Qtf2MQg9ILdNNexTt8R86YqEYl9qvRF42igEuM/+GA2nwUXH12oUL9u7WjUxrV4a2wjWTIaO+aFwXWvIRrqCfaGSeBXPeGHDrt2AvJU67DbuH5L2pRZzZ0GJxKStEGS7L6V8A/t+SGLqryz8JDyaGLA96WfwPkpLi2HK7t2AtaqmxXgwEkNmq7kC5JBsKwXot3YHgBZrF+AAfKEIQsx/ghqPpsuV6daEDKK20S34lSmDwHHBw2ivcuca6A=="
+            },
             "use-feed-proxy": true
         },
         {
@@ -703,7 +775,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {},
+            "headers": {
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBsbktodnFmbUJOQTAweGRkT3p6MURUY2pEMEJOcExWVi9kdXlSNENHRFNrClNaVU1sMkdaWjY3QWFKdEliMWVhSE52djdLYnJEOWM5TVVVd2F3ZUJNU3MKLS0tIDJhUWhjOUNmVlJtcG1GWkhTYyt6cHdCbnJGcmZaeit6aE13YU9yZE9lUVkKj1acqcwWllr8KiCWRkFKbSg8VgxfHOw47yId3AnLDm89I813nVtw+letpHFE2dpoTnpowGFpdw2pGkWtegWXGL2MBK7D9nIIJPrYStbLstm8E2ldFueL5QufJ58/GdPYJeVjOR7oLp+N5o48JNWTsCqU0xKQcG0/HbCtgToxSA3MNitN3aQnOMjfkJIZ+lQrrajQJoPt5OXJyDKZsF9PeAYVZFdo5MwmLuJXwFJUE3FCzqLMWK421ULdrXsr+nVAeT5qgYh8ngBKQU6aMHkkDSQeS2nJ3A=="
+            },
             "use-feed-proxy": true
         },
         {
@@ -714,7 +788,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {},
+            "headers": {
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBVZTZUZlRER2xyV2VtRCsrZWVHWlZZUzFRRjdrSXVscENSQWFMdU44ZndBClVxbjlxaWwrS0xaelJabkpNUGE3V1Z3SGplZzFIZG9ja2M4LzI1OXlvVncKLS0tIHV3Z1ArSWhjK2tKcUpkRGNpUUdpOUxmNWFhSEFoTDk4Vjlmb1NKcURQekkKvxE6FdiysqazNWXKeuLGLpjdTrMw1l7qeyVMCDlpU5VkkkVJM7wjg5MCIMby+lP+jgyH1cesEOQaP6+tB2GSdYxfYSmNNoaE/RU9qtDdupJDfEV11SLu/hES8x/Oj03Wtf5kKKguS8wOrPCzVPt50x38jPZ00eBTf9S+BBAai1tA3wWX/OUbaT0ap6FBH/UHECb7XRXHATD+7l6e0tr5ulRqNBz0EQ6iCpqvk7twzKFFXCARm2NLiLbCtSqBr5O8gXV5UzUsqITGna6y0GfYxoCdpNOhzg=="
+            },
             "use-feed-proxy": true
         },
         {
@@ -739,7 +815,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {},
+            "headers": {
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSA5dmd3V01uTFlyQ1dFa3FidmZUSThzZ09hVCt6RG83eGptVEx1ZmRxeWxVCkE3WjF6U3E1RzFOWEFwc0s4bHhyNmZxUTF1Qlk2K012N2RrTWdJb3BWT3MKLS0tICthV1ZLcHh3OU1SOHBOc0JadlZkNXRKYVJUNHhMc3pUanVUeDB2c2tVL1UKE8OItB3VU1oszFMyIs2rikOLQDAcXpBY29957Q9PDGUo/Z1trhkiXtt5TFgGWGzMKUJbBKEHiaL/1uuIB7fjHm7JdeEpsjy0ArxEb5C1MWS+WkizgiiTXHSOn3Z2BevQDZBtp7uy/YC01BXlNbgRc8T6EXg6pl9K8dpLCkRwiW/eGhAPScGCOhZLsPsNTNcNJHCLk0vmrrgRjl3/yLW7/8TjsUS4zXez2W2BhTkqJgcValdo78AQxA1hWwHtJTwaeEORjXF7HUIIX5arO+u6L9mWLqNKcg=="
+            },
             "use-feed-proxy": true
         },
         {
@@ -750,7 +828,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {},
+            "headers": {
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSA5NkVFOXcrTUt5Q2UwWEEwN2FHeDB4TFlQbnh4VjFSMzRPekxXekZOWlRjCnBuU3FpU2FUL3g3VHBpejRpbENFN3hiRDMzUlh3cmpBUlU0WVVHMXN6QmMKLS0tIHJSajdkTjZaN2xSeUlhZ0ZCVHJNODRNY3ZqRk5RTWtpV0hMOE5NM2Y2clEKPCJuiLq8qPtqUYWwST6MMWK1bSLIkS3i096ZKqzUMIpi9r4r2pQX/jAffqvIi42h5vSCbuy6nNGELA4DFwC7KU5yDrbdzCOsktYEW5x4X58469DSvbtnYr/Vch19SI5J2Qb0xBK7/go1scmKNwCUbzkJD0ZdWlsbPsP7FU9gvxz6coYHX1VYessqSsHIGYHRJkHh0C1sClEMaPk2lRLkZ2ESZhwHT16VuBbNh/V6JJT/zYwsnI4JtNjiAY2XY6x3xEVhBREBZZz5bdp7mHExyBsYAqlCgg=="
+            },
             "use-feed-proxy": true
         },
         {
@@ -775,7 +855,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {},
+            "headers": {
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSB1aCs5Sm9LUFBzV0VuWTVNUzdZM3JXQ05TVkhZUzg4NEYrd1YxVGxFL1RjCm03Z0JORklKOE5ZUmg2UHpRVHBKYytUeTJLeUJ3SFV1aUw5VVo4ekkyTXMKLS0tIGJ6QVNmQzQ4SXlaU0hkbHB3N0pYcnllTnVTVkZUTHBDVnVxcTluNFNiSGMKpRaIjyYjNB7Ld4UNqUIjsgc8Utl0+bvhaoevFhGDPireJbQ+g2ll0AU5j/B2i0EVdRHV/MCJ3akRCgrNvHXxaxhelVvf/nfZygqKe9oVX8Q1QyNYQj+dGY3UA3grEmjEFDPxwPOnb/m4yemFCCjCvyalzq5QGB2jT11hv7Z0CH+0TpI43wkNCyjJ5eCMRbss22HlFQk/nZQLuJSmkjUu1VVKfs0XIFtbJXp9xxObu89PNJcSr4rVbt2UrhFyRx1k9B5jcKlpgAgZfZ6pJJn98GQAczTZ4w=="
+            },
             "use-feed-proxy": true
         },
         {
@@ -786,7 +868,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {},
+            "headers": {
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBERzA3SjEzY1d4Tnk0bGJsREQydEh3WGtxZXUxaEdYUEF0VjRJNW01bjNnCldCZW1od2JtZmFsdWpMQkF0ZUR5NnZUc1hyMXFCOFFDenhSUmRxdVpadFkKLS0tIFZtVTk2Uk5aaG1pT0wzVG05bDRGMkNLdThEZXVXeUQyUGd3NFhraEVXUGMKcSRlV4O6F2zv56Vq8RWpdSS+lKML6ryzoNvH37UP8I0Q2mUHhLWJ8bsbyBi+3clVQ9aJGq1jS0PIUFaGUOF9F/daE1QacTm0vEtDVRVygHDBa0ce7UPljnpL9dXTKdTjdStsSdRw8NA5YVuwfXj7bbcBIcaKpyz87O8YDFbiokAB9rR8LGMskJp8hqXNVVKbSR+b0enYzyrgbUPb6nG9ey52nsmdjDRNntShZSxMAJcVZw13vUjDhSuDDEoGWOHo5dusOGZg2M7lzL9xr9zgBdnlY8r0NA=="
+            },
             "use-feed-proxy": true
         },
         {
@@ -811,7 +895,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {},
+            "headers": {
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBGaTJ1S1llWG04SWt0eUJheFJQTHlZQXc5Yjg4VVdiRXNTVE9QYk5EbzJFCnJMdHZjdmdERUZ0dzBOTGIxL3A4VXNLQVVLbDVhU05YSEhOYlZ2ek1GVEkKLS0tIFprVzZOUTBRK1p3RnlSV2pMeGx1eFdHYitwQm5MVTY0M0VPUm9EQUFDVVUKeYONJ3avOqsyU9sx1pFdqXtP5Io1Xudg2noziG1SoG0FLwQL0md9M6hj5RlrdCqMl2kaDOt+vew7os304odtgxrCbQSL/kByGfOnNRZSTo4PTM/9j6K88aTE5lEkn/xuqiTeEBzD6RdGZV6C1FEbonODeISpQbvPfsDNq2r8VDIhYhVs6KylkRgg+x+IJxQKbqU/RumYDlmsIUwamhDsd181gb1Qj0gQv/IcL5s2dn4/bmho8WTkyoqsd16drswZkAQXvTvontVSNzS3otmw/J2zcWWiGQ=="
+            },
             "use-feed-proxy": true
         },
         {
@@ -822,7 +908,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {},
+            "headers": {
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBxL3hjWmo5a0JYYW9vRWNmS1psREduR2dwWmVNak5UcFRsMnkzVmE1M2t3CmU1b1YraGhZNXlSSjFOeFJscGswSzM2TldMcExTR1R6K0IrdjhxVEtTZDgKLS0tIFlvdWFoV01NL1cybW4xRDJtdnFjdHJrQVllYlFVeFZNcTZOay8wV0pLRDgK75h7iQDjUrDHyj5hq1FHNSWcvxWsc7l1ZdGsxMy6hmhBX9+XOFiH/KgYw56PhQzS/W7NWB25tfm5QGAKbbwsRczjaflsZ8U+7gY+np4FQ0vCnri0UI/KX7x59VQ5mIUNt3Zeyj/3bCwI/I3IGhFhFIJAS8zmwU+f4/5cM9bZNLhClkeGpBfM74GCTpd8Ox5l3YAUUPcNMqW1j4oKIdMP6Pwr5d9JqCsRtaHIqUCGTzAxp6ildukkonoY6g7FN7wwU+JvuH/31vnqE7wQDj0rpKnfrgL3XA=="
+            },
             "use-feed-proxy": true
         },
         {
@@ -847,7 +935,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {},
+            "headers": {
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBBd0IxVkd0TEVDbGRtd2d5Sk0wb0NjcWYxSjU4WTBjenl6MWFURm9jdG1JCndPMm8vNWlIVnhNVVFDTFJGdWR6UHE5OE0wSnZqa21aNUhuWEFWbDF3MTAKLS0tIDZseFYzcnhVM2dPdmpRT2lXanRQVW1uclkwWElRMEthMW5pWXBvQlVPTFkKW3wy1G4xLyHLrlTM97itFCGsV/KGOEXoM5O1bK4EPzttaaLYD8ijdvc63lx0OwJGOnwWQfOMXEBBNCcVR/jBTYYORmRM+M77akTn5a1L/cJwqiBj/G81j9fEhPoo2b4wvkDgw/gA3lD7HCM43BNFX86DRK3oEY0/hBZuwJ3yLHMnvYcgpivURJ7Pydzjm8yAUbA7pEx5JwPaMyecmOqbGPPWRiBUuQGWXHwkIGvwH5NByMpAL1xE4WpSQM+cFQXiGYlN7OOEpELyd8YIY/fP+xGaoR0y3A=="
+            },
             "use-feed-proxy": true
         },
         {
@@ -858,7 +948,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {},
+            "headers": {
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBzVTZjMndSZ2JQSEpjNWdVaVlXKzNaTW1OTWQwaWtHODZVd29lelpEbFY4CktZbFBrNk1nS1kvZnlpeE4rK0svbW5EeHMrTVNCemlBd1JZcmJianNRbmMKLS0tIE9zQWl6dERKTGJyTE5TU0R0UFpsaWRlVHdHRDFOc2tZTTE1aGZLYXdoazQKQfVmantRUKcZMjvKMN55bk3WOf0bZ3r4cMIxcSJQ2+WbtEY8mzt8Xck9GFyog+sv3UgIgEhjU+sXEh8GBahi3EPnp+51vcv6E4J6Zc22cQXhCHr9wNJrrASRmCtuGy9jU77/pl3QRxifWPQ1im9Y7fn8f3fih9chzYScYx6eTV9lauh6t6b3ColQGejyw7wK7jIF1tcQaIfw0XToIEjUI+89ZuIp9P0OZVV4ipn7mEbDqf+ZV278Bb/jXaeWHqMQJXSVt58WkwZaZheP2Q1r4dwOghivmQ=="
+            },
             "use-feed-proxy": true
         },
         {
@@ -883,7 +975,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {},
+            "headers": {
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBzWkpYZTFjUFc0RXZLMGxmVTc1U1BtY2cvQjlVWUZIOHZudHh3RVFkc3pzCnY0VEZ6SlN4aFNsdEV2bXVJSmdHbWdPby9ISDVRMzd4Znh5N3Z3bDlPUlkKLS0tIGd6MUdFdUVGQi9SZVZacGxMT01NdW00K1k1Ny80clprb1Z4NHJDbEZneE0KZMcFQxq7HuyOpq/0kvsTZvld5b/MURilfaDwKvfP8p+Lr6cNKB7VVKhPYZi/RsKuwDdCC3fF1WPD3WEh3YIi6ltR7l4e41uLcTHpR86qC3esdyySfUczwnkRVMoTyxpDOvLoZsmhHf/WcZI9nZxljdxU1UDJIpXIavtcBvjb7/RyZaoe5lJ1b8uXKc/AMXkM9alTZcMQt5tZPwtyVDyix7zNND+QXIEGjoOH1ZC/3YOgwkJwPXv6+501I+9Wcw6Y1hfijGgx+BGTY7sotK9KEkc7l4NtYg=="
+            },
             "use-feed-proxy": true
         },
         {
@@ -894,7 +988,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {},
+            "headers": {
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSB2WENYazFSSVpJaUh4RnJxVHQ5MndaNERxV01xemFCQmFTbUluUTZudlU4CkpnSC9pQXBtcFBSL3dHTzdoTGo0WFhudmUxZitCdnVqeXNBdGc4MGFZdkEKLS0tIDh1bVZqUmJPWDFjUERPUGlWeUVDM3hwODlzTUU3L3F3elhKMzJ6SHJDbjgKaoxLxMn+S/bCLZR2vfrj3aFg62bNzWmi9wih2x3TPSXDDLcbh7WEOlIQ0SYL7zt/jZClJp3Jg8/NWnCswo2VbEtdupxLAZhehXaFTQq/NWN+yEXCI1zioIrtRXqaYiOpp6Lj0Vss3MQj6bygdevMfR4Q4D9rxp1/uA9GIrZJN6TWy/+DqeYmVpJ7Tp2Zr9owKJW/x7T18EpcQ6Udx9uunUqqFl5FiiK6A0w0Hfkec5HOVObgHY5gpF/vnUCcHxqwB+NiQwA8QdlqXUNKOrpGpSvjX98UtQ=="
+            },
             "use-feed-proxy": true
         },
         {
@@ -919,7 +1015,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {},
+            "headers": {
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBNSzZMK1VHckxtTmpHMW9OSGh2ZTJ2dHZESVdjZFpqK0ZSNVZ3VnJFQ0V3ClRZMG9XV2tGTEl4RUxBSzQwd2hHcXBaZXFwbVlNMzZReU44bCthUHR4TGMKLS0tIHFGN20zTFhkY2dBdnF5dEhKN2VsRitYZEExTm5TM0RhSDlZeUc5VStHMFEKtz6TrgAkifVKYeF3gl5knX9UlNG3fvYTXj+Wra/6lcYOP8RCqYm6V/d45LzW1imWDIQnjPtC3GRSdn+LTwaI6SiFLF3n0TJUzJpfMsa+uRzGSw+qNIWXTvoVjWOo5vB+W/XoM7LvExvH6PWp0abIpVBzBlN5uEfdMU7fnnUfpFNwlTPAL3VwHN7khQTOUjD67/d0U5d585vods1uldOqRi/nqaEulPrZZTahlKtNQ9ELxQH2fhU1GlkCDHlLyCQ0ggMxE55y22+2itNlTvRFRVuMqeioKg=="
+            },
             "use-feed-proxy": true
         },
         {
@@ -930,7 +1028,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {},
+            "headers": {
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBvSjBiRXZFZ3dpRzRySGlvSnlNL3Q1VWJHYzlRKzJKckxoV3B6c0NwKzBBCjlsUkZrN0RVR01UTGIra1dxczdGODFEd0U1cnBMdU9idTducFdzTkhDQVEKLS0tIFZOREZtbW9PTjNJQy9qWmNNY3NiREI3d1ZpSk5nSmJMdGVLcjRLTWd2Vk0KM2U5zC6u9CxNzy0M3JwO0bXCI03KVLCakSxk5Elx5uABFonDl6XJwX3VPLgU2qfNuzqQ4js3pA1ZXFRozpMn/EZqblv8alomEqk/r0Y9l29/ncxemDCrCfNMEol6DgZTz33zYU8pDmAxnUg481A6zn55FtqYmMZ/tt444vINsiR2uX3hkDxKLiBYiEVj8yFf4TfizrJx/+pegUvTBFGatEY9CnRXcQiEf4kv+in+pMf12muSuf94SekTzBHy55VrFyx6evMMMTgApvcTuzHgoZ8JfTUSoQ=="
+            },
             "use-feed-proxy": true
         },
         {
@@ -955,7 +1055,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {},
+            "headers": {
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBsUUZwdTlwTS9BWmRydjRXTk5kNVVvSzY0MFhTZUM2VHBKa0QwWlFZZzBzCktyWFI1WGxYTlFRajZjOGRkY1Fwc05MSXpxUFJKOUU0dUdSQlhZQjZtdnMKLS0tIFBScGZ2Q1dTQUxxOHk1WFc3QWIxaGt0N0hzdDZCVWVhVThsejcxZ01WZVkK0K5z8TlofZ1if5Cg4UMxTV9OpOWMgDa+AoPtA19NmcZsUWxk+qi+q0uMQGl8vwzQJblfXSW7g88UbsaXUAlNOH65fVmod+hQGVa2Iup3+YXTGcJSVPzQZVVYYDt+mft8XAmBD0n4ALRxjGu/3hqqHJX2fhM8WE+5MsUFk1QpW58DQqUPbMC2xoosUNdWQhWc26ufl7NXL+oiGnr8B3SWlUGN36397E8aPcYL/ooQi2nPAPkQHwoLGnE1kNMtasxch+HktP5cwnN8GrhnBiXsh5lgzoF49Q=="
+            },
             "use-feed-proxy": true
         },
         {
@@ -966,7 +1068,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {},
+            "headers": {
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBHYzhhQTN1cXRnTEpMMlZiMUVGN3cxT2x1U1ltN3BhR2RDYmQxRHltVlRZCklWckFtUFN2ZnRkN0duLzdjQ3I4OWhKTkMrY3RlNFRQMzRmZktPdnJZZW8KLS0tIEtYdStaRUxPbE5HbXlqd2RLRFExOWVxeCsyaFhqTXNFb1JEN0krL3VIR0EKWlHsmB8k7SxahNOmrlNgJaN2it1senLSPFk1I2XZ9ln31AmU3SGsTwFu6bBFMwVnTlT/JSPrVVhiG9XmCkty+Bl4bZft8Fq2wDuPlGAM5BVCGm4fgBKcc3Gd5AiyfisaCn26VUihwR6FqUJN5fMAT8ZBrL1b+yz4Q3zYPjjrxbaf9p8wPvCKgx2Om3+XKPCLUIXqDP4jvDwrRLKd4T/DXIa98J1+GWxdr1Eun5iYB+MJeB/uzQ5aihiyw8GIOq9mu0hIlbAvW5xOXMRMl5Z2C72vDj47Og=="
+            },
             "use-feed-proxy": true
         },
         {
@@ -991,7 +1095,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {},
+            "headers": {
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBlMEswRk1ldlpBdldZaFlPMkMzMkRBUHVuQXl0WTJwM3VqSFNWTzAzdVdRCjBjZCsyVzl0Wkd1WGdpaGJsbXppWW1ROFErT2t5Nk5YOWZMSFkzOU81UzAKLS0tIHpLbVRUN2tLYzUwOVBHZGJ0dm1lUDhqZ3AvNi9UdElvM2xDVStVU09hSUkKO9PAErr/9pkUFhRI9pkXOxEds7g2pL0i5nNPpMaNQEURDPj2xIg5/OccWTOvwl9OgWsu72q70R7QafxBSQZKKmgiJRKdcxssfBL2+R/GdqrElDe6+grPD2clb2ekkvR36F/oPX73FDbG4z73qmXyHDOUdRuBCpshOOv5dpRPbj7mewMtkKdq9XFjbUlHsromYFjgsGgzNroHfvUVMhTEYDouSgLD5m2ors3NACUYvIuzwrNvpo0qqEJbawUPyR0MxDRLYSmRBPrAymD9plqi+wBYfdMDfw=="
+            },
             "use-feed-proxy": true
         },
         {
@@ -1002,7 +1108,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {},
+            "headers": {
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBWaVhOT2l2aG0xK1JjUDZ2L0lTVHBhOXJ0TWEzSkdTWXFsajBJYlhFL1ZJCmVqU2ZkbGxLeGFSRm5rOWZEYk9BdVZNa0E5VWFnV1FTM2RMTGJZUVpOb00KLS0tIHNpa2lENHRsOFR1SGt1SUczYnUxYW1iUTlQblRGcUlhaUlnVmdnSnNCVFkKTzlb2ev3USS1mav1HB7SYxk7SSTEgG2WNEWkjMd4UJTDJlDRKWHv2CKBau2IfGh3dHu+pLMFpAI8WJo7pmzrK5gAnGpbzlVgw4aYdKIMKnU0RCsOLe3tj6UD8xQ0NADYupf7FYyi0VgByGQ3A7aw9HrtEXTfZhy1S/OdCkvjJRCSMz6roKE/Dw107290TwK0Qp1GJ+bEGtKr+hvGeCTOXj5xQvpTJhxwPcy6cL1YM4hHbTVy2XiIjjHQ+dffMYMn8rCSPbk1y6zeuPN2QfXeQ2OlJz60bQ=="
+            },
             "use-feed-proxy": true
         },
         {
@@ -1027,7 +1135,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {},
+            "headers": {
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBFTWtxY3ZKWUlVaElXUEY5TFIxNGZ6YmpvZjlEMVNvTitQWlVlMU91dkdRCk5ySm5oVXRQcU44bmVLYkNCT0lWRFhJSStPVkRzbDdOWGQyUlpHRVFQYlUKLS0tIHhaNW5KUTJVdGprUUtqUjdJUmJnVk8xRUZ6SjQ3RXZtOVNFK2pCOGdWOUkKr/tTdxBAVhJgequoCE+eONDKuXGErp37o12AsF7obKfLODmZLHERCag9PA/aMVbdKej5DIFeZ31mCsdaR4G0EFVN9rCIrkh4dhN0OcxClppwnXQj68q+usEIJhI0hd/UyVMB7phGiUJec+VqHodVM8E4YmUiwFlsfGvslZKOHabve6DBMJMxG8dhOyADQTV7R15frTYcZbVTcJXlYUieZArswxHkze/3DPfb3TMtQXf48fI+VfekK4iHTn2c2JERfku7eldU0OuUJ2x9QIzzXX9P+6DzyQ=="
+            },
             "use-feed-proxy": true
         },
         {
@@ -1038,7 +1148,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {},
+            "headers": {
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSB2UDNYaExpNGFsbHBzaVRrQzJ0TVJhMFdLWG5FbnFZeVdhSGNIN1NneUFZCllPODlDenprc25nRTMwd3NoQjA5RFdzSTdPR1RtQW9uUy8xS1lUQWJrTzQKLS0tIEJoblBmWjdqK3ZGQ2szdnBSSTREbVYxZ1JSUEF2S0ZNZjZ1SDhTemF2UU0KOyXyek0IUr+1C2v60A/vtz1M+fX1HJ2DHrrCcKF+Z0kTaTB5f/9tec02Hkub/TYQ5R+JE0oszpD5sZwXJOpVvgRm9PElZLXrsrgFmdnk/9VZf2eAvjGfkOfM0Tti7iAOhjtKs4/vIxd/ZdJEFh4McyhQR2YruJdaY19Fjjd6vQF6kYRsAPr6kfsFxrn5f3t71QFG37uMf/ZeCtvhBw916KKJ2nUwZDhVD6KdjHZBIpv/nkzXvBhs+3nkvAbBAjBJhpenFn94Pp1rB0v5BuokbOPU5A49wg=="
+            },
             "use-feed-proxy": true
         },
         {
@@ -1063,7 +1175,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {},
+            "headers": {
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBXNitKZ3daU1NWSGlhQ085cGl2QnMvdTQwVy9TK1hHblN0bEZ5ZkR5YjJBCnYwUXRVczBNZ1NWYVpmTnFCMjdsT2FsR1M0YWZTV29qdWFwdTY2TG5UYU0KLS0tIGdLT29FNmk1eU5DUVpVbXhTai80Zi9FUUJMWHFGS2xNS0EzQWlBQ2xKUFUKBHQ3x3kJbmNTRdVmH6mMSCx+2pdvaweiNCpTYI8UKEZ2WxvOvic9QR9kRQz+rANBvnfujhlWkE9dPjB3zv9Jms4jEKSh9fNHHMUdv7gBalVgpQh6rULHRuL6RYuGfWYZQaw46JYo/sXmZ8S5jc3/39ErgoSMJl7Y+bZgNGD542M7NmEPmb0xo+aPPbRAO2qAqpu+OkC0ChY1yG7k1Me2hw+5kMKwkMpX5mJ7SKZhlyEX9FFqRePCg7KCylaI1uis8bCJ6uuQcTbHKtD4oJWnKZX/XKEdDg=="
+            },
             "use-feed-proxy": true
         },
         {
@@ -1074,7 +1188,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {},
+            "headers": {
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBPblMxOTZPMXA2UmNnLy9RTlB2QWtaaUhyQzJ0T0RQK3NDU0ZyWFRMTndFCkVWTi9NSE5aaExGY1c4cVkrODZaL0p0cDdSV2szWnJpRzNwUGtPYnNIVjAKLS0tIFFsZHRZRnAxc0FoM0gwZ21vUzdMKy9PaVBhN2RMUnlWTWxiUHRzUEJaNVUKWtm7eGBoaIgX94YGy2ptSRtoDCJldAERZ77qWT8MihSWDfUsHr3VdY02lTB0tAU/HJsWqPR4iWiGJ73yNVJ218ai3qOhe6sSuFaRG6HKXWo+WQtXzrcv/iZEE0Glr4XGrrOWAlmjwWD9JoCDn+U85xwQm+2RCYvuec1mdfOnRZaxzVpU1TRNubOfqrAWjKeMuw7cMMOEt+XM3ItOCaCfcpuq+qI0oxB/aDMRd77Jbax6/n10DmZfBDm1zY4/8UsxH+oq985JErBIpP49UwalPu/Ijv51mg=="
+            },
             "use-feed-proxy": true
         },
         {
@@ -1099,7 +1215,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {},
+            "headers": {
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBQY3RrSHd6ZGcxQ3VUWGxQQStTZ2VqNmI4Vjg5dmhYZk1SRVdmL241WGhVCks1Qktkdkwwdmo2QzVHT0J1c2Z5ZEFwenlzQytRUUhvWHRrU2dYRkR2elUKLS0tIFdGOHQ1aXY4TFlta3VxYm1RQXpUYTF6cWxMQ2Z5QmVFaTZtTk9Bc0dJZUEKNNG1qZg0l4izXx9grDZyJ+ntqJJJvYk9DedO3YkaEFM3qtjGmd0nKtkvX8eyXHjcuPkV8WYI8cJhgtHrDKC7AoJe8fLUOojOn3bWN0KSfnpj5oa2XTrxEU65riMlk1fPdZ5wnuJBLEukGe82f8rV0T1Sdvr0q8aedyLsdah4dRJdau/Fz9CF/eSnOjN9ce9zwM12TfdbVuT4WXJ4PPuc3mYaCOCg6BXbaKEgJ0IB6EQ5YGjATCWdeEaSwrJeg7B8n33a34Qot+BwLWz+HHW494tkAnY/PQ=="
+            },
             "use-feed-proxy": true
         },
         {
@@ -1110,7 +1228,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {},
+            "headers": {
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSA0YVFpMUc2SnlFZXdLUVY3dWZpOGNTZVZMaHp6OC9lN0lzcER6T3loVWtFCmluZFR4QVB2RHQzbms2UzZCZStvdFFuMFVVSlRmb1J1eXdoVGRLYmpkQzAKLS0tIFVMMjJkYmNQWnpJN1p5cEVvNnNBUi9LTTVHeWVRR3pOK3EycmpxSmxxcmcKBI5bY4CYc1SJ5k8Dxo64a97hJCyFmNgRiRJ9JJ+mnmMQWiiXHm5v6GrZiXkUxu25nQ2bz+15D++rpI377vG5Hm4VZVi6TqZpcj8+q18si5a27gdol45yr85cVHzBCVLVyvsTrcYrhpJ9lk/EJAPhn3NkRK5cutYqIS5g8V/TgnpNrVPpvCLEVdMpRA500XjdMPTb8vsK1fDZ12/VvGeOiaxGO/wtSz/kCmyu1+EDnQ06X4da+IFLwJWN78ghcHOHbrc77/jnu/toOAzQ7J4/O2I8whhsuw=="
+            },
             "use-feed-proxy": true
         },
         {
@@ -1135,7 +1255,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {},
+            "headers": {
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSArLzgzd3lOZHVCV3NqYzF3WjhvazRYSE96TEZnMnI5QUowaW9oWkxEQ0ZzCjJrNnZ2N3RkK01yTjE1VVJacHFGRzdNRndINlBDRHZIUE91ZzZJTzNQNXcKLS0tIFprQnpkQWVGbThWcHc3Rnd4ZUc0TGRwUmp4VC9rQ3V5ZXQ4WG5sOGRjcG8KSnekeWgKXvAeRh52NMVXLZrcXf6wXKiJj1eWlXCNz9WyX9htwVwz5M4Uz5dsCs/FzrWoVlsLORQwgDJEf9nj/QgncGvqhY0bAKZ2z0aFJfTaHypOO2O4DxADX4sZxh9kYu8BygDMwww9ARabfLeWi/P0UUYbQJy4OXx7MYXXkTl9X113Zbds7VPTbqxPUWMkIlu/tKXsqX1rdl49dUL0tQVK2oxlTmkz4qlps37nQHpZMyptw1QXQEM6O2WSAIlznE4fQpf//mDWNFwDVGSxq9bn78CMJQ=="
+            },
             "use-feed-proxy": true
         },
         {
@@ -1146,7 +1268,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {},
+            "headers": {
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBHa09MOU9tTXp1Q0RuRjdEMDl1U3c0dmorc1lsTXlpd2t3Z282NkhCSHhFCnkxK0Q4Y0V6RC9JZG1wUDJiYkh1aEFBeWRTeXlZOXREVHloZXd0QnpYOE0KLS0tIDFWTWdIK0FVQVdzT2xMdEtCeStKb2w0aHJ6a0VaN0tZWS83ZVVrRmpCbmMKDMDEpBpFcg+/X+CRNhPzXkFWmzeF/1CQ8TYQSlOlVJ+ulF28/z7F1S5YIWtKWSITcQEk+tighLpekyNcS04VBv3L3I9lA/pwAh3nkPNfacQrfagn3MhDZD2fjBl7W5MBHXuB39ED/KPCwdiZriQeY8TPIRfVjh4DYIZJlVEIsI+QZF6+xcWxI4TZu1PQtzkowYQGm0489cGR7HmhHiGSxdoZr34CDFXnGnBX7ni+nKFhDnytAyJ7YK15s4iC4Bq/W/zSATvmp4w/he583VB2eGT3WqvIBw=="
+            },
             "use-feed-proxy": true
         },
         {
@@ -1171,7 +1295,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {},
+            "headers": {
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBRNjVKbkdkUSt3WU5KNXVRU3RHL0RhUDMrOHkzbG1zYWZXM3hld0ZROXp3CmREaDJMallmWkNZT0lHZDJHZHh0Wm5BNDN5Vk54aWdKbzZXVEhVUTFLYjAKLS0tIFNoMkVPT2lFK0UxTnIxbk1UK1V4WUtoVUl6MWN6ZUdMV0x2TGl2QTI0NVkKUjwxSHDMGb/Fcvg+JdchJ8+51VCQOYx0LICx5IqvS+VuJut3+lmWY+zIajnvxuCWaJcqRfOs8CBBuzpVk4d4woNNhvx/6VlaQVxaruCo+5u3pgQRYSbnRQ/qJZKvZky89FqSfBrGqykgLNb1kHRYAFRbbMCe6GJcfG0UY9xQ1TAM79BV5dK31Eklc8oaXG4ovR/OQbqlOYwDyZAFcWh4BaMmyqikM1H4pPyI2XRqRHRuWZp7QjKVGamg5celBnHEMdGxCfbuUZzaOyIxyU0K6pe3gptHzQ=="
+            },
             "use-feed-proxy": true
         },
         {
@@ -1182,7 +1308,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {},
+            "headers": {
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBTa1FHSjkxU0IwWDk3RFZBNUJMWDhydm1QSEg3VDlzRHZFeTlwWWpSZDFrCjIvVDhsME9lOFhvaDlVemtmSmlTc0sxTThpMEI3Umt1cHNrVjA5bkFHY2cKLS0tIEFrdktKWUNyTElJNTZ3NWRraWErNWtSSVUvVFlrOUdZaUd6R3J3Q3ZCdEUKOiJhBRY8B3MxDdL6JQGqz0aW1Rr5swMgM6H6OjEpY0TBJTu2HlHqtpmd0nAh0VcWiBAabKwWIQL+kpW6ThjQYmormShdOaMk980lrDEn7cpAowFu9Ltfv5NDGepwL2qZaVAdS8YLbf6rIGky1eSTXSWdYO/tZpDIAFDiccwpWK3Y5G8s8BlxMCpPHjtzVu6kf8s+M/WoOVM6/6ud0U6pMgsciyOerirouQz51X/PV969qhgLCzjJscM8Y4j2EURaaeLEi9Q7+aCc4zBBlGW4+YSSlUhh8A=="
+            },
             "use-feed-proxy": true
         },
         {
@@ -1207,7 +1335,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {},
+            "headers": {
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBWZEhrc2gxdDgxREoyeG1aSlRKWU1tcitDT2QreWhDb2lRWmJOVmh3cnowCkM2QnIxZXQ1RC91cjZLdzVpNUswcGsvWXl4WjFvY2dSem9iTDFNQk5ZUWcKLS0tIExUdUdKWG1Ycy9ETTl0eVZNNE5QNVpPVVQ1V1V1dVlRVERkZE54YUdJeHcKgIOz4sRcZOxi46PE0G5lnq8kRIdLnRcH4VZw8hj2i4HzN1+x9wYjZHMWZUTpemLV7EihpIHLALsBnf+Qi5bhI+W6LvVnwcsRVVtY+kxm7p65M8brfCSHab6tfUpBwHcXmLR/x8Iras583s3+u+iPg19ZGE3aFmj6U+p87IT67hfonbiQXg+TEVss93s7Oqi/8KFcaT/UGA8Pcdc+6ObD6XO/c8aElJegmDHH4YfsPQ8fndyNkpux+U60n6b4r/Ef8XXEbovvYzncz54rsScfi8SM6T8J+Q=="
+            },
             "use-feed-proxy": true
         },
         {
@@ -1218,7 +1348,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {},
+            "headers": {
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSB1NUZwdUpGdDVPQW1zdzdDamhSOTFWU3h2SUN2bEM2aEVtRTIwY2puaVQ0CmtoOSsrcDR0SkZQVmJiQnZDZlozWW96N0tSbWtMU05VSlRRbm9aeEY1ZXcKLS0tIHZmZHNSK0lVVloxL2xQcEpQaDRaR3RweDZyZjRUcjV1K3dtdWtrUVd1RGcKgD74/RGuSlicx4bdguK6umiuynEsdXIteTUzYavDLL6v7d4TZw5aNz3U9Gmils4v2JvybiyyQIfkau89gPGAQaV8BGO2RnNNoDEhNo9xc9USq2291vtsP2+iXki5URsJQDammGbiOO/pBuHBOo0BiDEq7k0LYd+2DP7T5RPzSpqkobJUHQYhdyU9Z7p85j9sQYBaiz6wSoxrAHyCH8ELdIhnngDJcPGNeEnEaEd8flZQqWfJeA8KpX/hGvQTQlRGZqguD8VbuBfe2vPdizfW+IRMn74q6w=="
+            },
             "use-feed-proxy": true
         },
         {
@@ -1243,7 +1375,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {},
+            "headers": {
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSAwTllnN3VHVCtCT0cwSXRjRVJURjU1M1VLZDNIbzdHT1lvSjJZZW1FYmpnCnkzTDBkMDlrdDU2L2d3Y29mckdGTU5sdTVoTm9vOXZNSmV6WkxBTDByNHcKLS0tIHcxTmRmWm1kQ05zck1xWEkzbXVONFFFTjg3S0oreHRiN0JGTEhsam50QzgKVpzs9gzNZUYhWIPojb++U8rlMt/dMYD41ugY6xnvH4E2bO0UVP9/ihqmLuQyFgM+yZzdOnqxnQgdd34WUo2HveyRq69iuYXIBqEJQsftANxvFV5RlcAM7guw8a7ps1gSSJKcUyMXilUmaN+e4XRNGxzdqqBjVT3OX0cK68wkplauHtCdqaxzrvpIe95/9YsXCOfztazUYvvDnb3873wCLa4OVL64Dwrt3O91oKq/BmrrqUPaSTOe4HEcDm3Kndqqo91tzAjeF6OOlk62XDArvTa/YPGDzQ=="
+            },
             "use-feed-proxy": true
         },
         {
@@ -1254,7 +1388,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {},
+            "headers": {
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBoT3ZXWXBRQ0JOekI4Nm4zMnpmOTY2ajB5T2YxTURsLzEvdGl3UVZpblRVCm9TTW90SW5EM2w2OG51dmlscHBFZmtIKy92WlZWQ0Z0L1FXZG9RMHZtMkUKLS0tIGZSQlg3cnNZMlpxUStIN0tXTlZSbERjQmhGKzRRRnRhSlNUazZvcmtUMlkKfPAbIK/DVLlG8FEr4ZNnTLiZ3rhrRXUJfoJ8IygbWVSSbCZcTnH6nimTbI82mLflvQw3LrR+5GMzO2JvGHwM/tvd2uh0hdAX39tzoXHSVntHgX06W0CTRemsyNrDTtagTtIVG5oAMuF7iKF0BztZMDGHh4pHKjR7mCBuI/KYAdQYyiDmRI+d+AiuIAkbWYSCIiplRbeQTTs3N3qODaH6hm4JnI5VceSzEjzDsBr/w3w4OjckLN9ey7BXttItKldXvkExeyDWTuXXYgifFvWHCxdAWVl83A=="
+            },
             "use-feed-proxy": true
         },
         {
@@ -1279,7 +1415,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {},
+            "headers": {
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSB1TjBqTkk0ZjI1dlNBemxYeEpwZUxxeGh2RTJEOU9tbmdvbFJHREREdEZFCmp6UGtkMHVSOTdtNjhqaFd0TlM2V1hYdWI5UzFnTnlhenBOUE5GTFJsTTAKLS0tIG5aVDl0RHlxMFN2L3RTL2FYenUxOWx0RTB1RzRESkVma0RpNGVZYUhSbUkKTvUjhte6NluaSsAddMJ0kyrIJgBRbSmlvE3pCpdEhqoxHh+eV20VmATUl66sL31Rzlez0UHUsuGSIb6b49TpqeHaB+kWpLEy74j2DpfwsSfn3FQxbgKKEMraud+ZtPWstl9BjZAwSoAaSwcrwmPz4qqOJw2afa4ZHTTH7JDvb/FPgebUEiVkFbODsUG/RLsCE4X0HjPp6nhLcD+xH+fSvSOsbMt8Sx6d5uBJOmAGASbsNOp95fuQ1NHNMbomq4ZY9mLZB6sKNPYhD7qlP97z/bGLYcpfTg=="
+            },
             "use-feed-proxy": true
         },
         {
@@ -1290,7 +1428,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {},
+            "headers": {
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBUakxDN1ZDRHFwQ2R4anpvNEF0QTVRVm9EZHNYNUc3K2dvRDIrdksva0NVCmdsUXcvRnpoUE9YcFhDTFpyRjltZnNiKzBOWjV3djNuQzdFOSsxdldHOEkKLS0tIGIxbC9ENk9aZTZLYnFya3loOHJZTW9YdWZMdkVOQWRKZEx1WVhDcWdYSUEKAmjM4JX6XblNL1CcKXgV2H0HEtv7RH9JHi+hIohRQXs5ETL3lAkcGUV7hCnZopm8jaacL9mTOvmtvwELnOdGHQayLuX7MFPIZqpzxzGXP/U08Z+HwVMoh3a8sI8hUqAc/8xIys7wnEtDyNXC1dHRFVt4z6nA4ro1My5esIhVIVVyA7pt/WY46g4p3Db9OSoNEMJ0MRk97AvuZJGJhy+1dx2h018GrBff7kUaHqR7gHlcwvISrI2s/cIwTAeiclbzdgAYYjcZid/RUK15PG4UvQ23Od8lUw=="
+            },
             "use-feed-proxy": true
         },
         {
@@ -1315,7 +1455,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {},
+            "headers": {
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSAzVm85di9hUmNlVk5Db3pIaTNycjdLVVJxRUlQeGw5NS9pUTdSeGxqTGo0CmJjaUJicDM2Y0p4U210SlJXclBHRUlKTGJjZXVwc3FZMG5mV3Y0VTBVVG8KLS0tIG5MTmNyeUZZa1RrMTJ1bVQvdENKV29GcVVDNmNHQWVYeDF3b3phWGVvT00KckTP+unxvO0K8cwjQNBa9qVhW5UA28LG3AGUBbvMGcBCS/IO6N88ebPEgWUV6p3yTWodLrLtO0yFRaRT6/8HZ6Vd2cy891XPbqhsHLQwbhXilN9jz7YtYM1FdV9tWBm+dl8RLs883FdcXuseU7sxkGkkAJOoIY3NoKN0PpTGjdTgg0ja+WLGQlol5wAoyNMZXaJx0rzW7ICRvHsKehnja6yPFsZq8h737QYEszG5AHc4ZIYC07KmZZT2GH+47ucqpFWnzKxNaU+2EN+6VeHNwZ1QOi3iOQ=="
+            },
             "use-feed-proxy": true
         },
         {
@@ -1326,7 +1468,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {},
+            "headers": {
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBoQ2xYdVh6ODVyV0pPOTk5NXZVbGUvaTdJTkF0cTE3ZVd4ZHh6SUxwd3g0CldSc3NFSEROVDF2cXJaRk5jcDNCWDY2ZkJ1SVFXVklHTC80K3FLN0ZrbVEKLS0tIDNKMjA1RXpZMDdWN0VnSlFFa2J5NlYxZ2RxanZhaVFIWTRVL3p1TkNNRHcKAHmABqSAbD/oBQb6VCX+1y6dvmcESmHIyWC37BuCjW+lStFVetTSkwZZ4rxof4Is9uFAzKVbcr7JKjey4try0Nk3Xs6bbbdaBYrTNz5C4wzr21K+bsVSuYDGiIiPZxyo4sJ2sxt9EXojAimlSHW363lGi/AHPg+BVz8RRf/yO0Fi6L2vNsbDNc0SNbQZG3RdlzzqLY2Qabccu8Xl15XZruWx+oUWdssyyJ1Y0XNxx7X8B4ouyYsnfqyPzu/ZEVhqYxD5VEVfT7Go2ywFxwdlyvE8KDPS1Q=="
+            },
             "use-feed-proxy": true
         },
         {
@@ -1351,7 +1495,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {},
+            "headers": {
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBGK3luUmNGcjlrZVc0TzBCSUI5cjhHNU8rbzN5NHlCU3pJTW01SGF5TXpNClJhc2ZhZnFDK0dsVU10OUhDU2gwNW9ORDE1R2VreGd6L3BDWWd0NjdTak0KLS0tIEo1MWQxek5HcHVzRHI4N3Fxcjg2RXU4VU5CbjBhWlZGdU1jVmo5Q1B3eXMK7wzr018k4pEYBWmKM/a0i5fny4yzDhYrp5XJZBB2PgRs7MhBDNS9uYYwymKBC5RmIFIcMd8LcqbgIgrVI8gic6IpYleV1OwcsaUL8BunzUKq/YATGFI225mqkN+suxrP/7JjHqroAeozb4rKA0ZWSYa7/PymhVfC/6EL5XeadbmcNw1ZfbkJJN6JcSslD0HtuWJk2oqm0YWOIH1gBexT1/TBLo0wiU3Pzb0/x1tcQwTDczWpsz473hDRcZl1aiAhB72jl7Zzkh8n6fvpHBUwISVzgtJbPA=="
+            },
             "use-feed-proxy": true
         },
         {
@@ -1362,7 +1508,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {},
+            "headers": {
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBCOVpnZ2gxNVFjRDRwUkYyN0sxUFIrMjQ2ZmNhTWc3bHh4REE0L1IrcG00CkNZc3FZUnRpajd2NWpZcERFNllNanpKTkZhaDZFMTZGRHg5ejhzVWVOSTQKLS0tIGNrL0JyZm1DZGNaM0dFV2J0QldldjNQTkpKN3BkR1lIOTJUeHZGY1ZFVWcKXD1OCwRV3CE8Ekz4S5tPI/4YJL3L2CSPEn/dKSac56XLtqA+TpOXFxaSjXhjHhyUVMVLTWkSDcOEDxjCt8z2++HAtUNhBdnN9wM3pbrNYYBqQYEIgQThucsjqcpqeJ8zUOeOFX3dasKvng/0R4HyjJfvW9W30pbBuV3hXO5PZUxEowM3htez0epP27Ts8NHJ23IWjVfFDC0Zs61vxiP6AjoD/hIumPf1n+c6wve488OoHgXaLRArCEWHkH0DesLH9RcjietZwr72yZlbYv4j1vMT56NQ8g=="
+            },
             "use-feed-proxy": true
         },
         {
@@ -1387,7 +1535,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {},
+            "headers": {
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSAzVWk3eTdKdEtBMkMwa25udCtMNTd6NmZkNUdyWmhhd3MyMk95c0F4cG0wCmI0SUlXZUZRNG4xTmh2SnRFSW1weG11VFRNTkJXRzZ2U01jYmhrZ2VUeVkKLS0tIFN6MGFRMnlucklkSTk5WlR1NytaSEFubGZ3V3gxeU1hMk1jUDBETmdXa2sKC+jN6rKDAeLDElTVH5jNXCcIQut+GYpCB8/9A6nDj9Td9koUcDelzh3uFyMFSMAXRxH4d4RidlTZ5ziDsBt+X1H3BdjJ4R9+5PRgP4iMKMFsMAp0/V0XwB9mvuZr5vFv3sU8sUR+P+rmdEWIvP8QZp9q7qCGxBYdBdSVZJ0xVMXVcoBfOHZvXPH95nGsN4AYzpxoRRH8eB4Q8YO8GVjE6rUEi+z9X3tgimQEhDM7SH+oaJC/DHQenozsUrAX0lx5kyNh24/XyiZqQRIGuaTG/wGWxOBK9Q=="
+            },
             "use-feed-proxy": true
         },
         {
@@ -1398,7 +1548,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {},
+            "headers": {
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSA3RjVkdjZWQUdBRzN4QzUrT0V3YTFFOFZoOWoyWkxkcGZTMjNoWUVaVldFCmFsNjVLdmE1WGE4U1lsNWJHVW1RTE1sMmFZQk1KVGVWcGdwVzhyS3I1RncKLS0tIHozdDdJNXdpN01Cb2VqQWZMZ0VXRjdEODZXNFpqVjkyeHg5NngrMGloQWsKJF9ThBVzX+Pcc3+fheUsszDe7kvaZEg3wKgoQmXTkMmri8qsafPqGB0augOTzqOhyljGjR6OuEaQ6+1i3YdunAHhJpt3oOv7x7/LB4C5q8ayXc55S///J4ZbiQO0iF8nyYpNChl/QrNZ0R6wjhjZFQiuajFGeza3q3Uw9hKid1KHfo01z96LSyttqZdaJWDm3kL0nEvH6PJd5n267F0Ya6G+OS8LMGxVr+W0/mkRl3YMdz6biZ3Mcj2kTRpmR1T4mVNTQvUZq00sovTe1yLeRNo0cf9V3A=="
+            },
             "use-feed-proxy": true
         },
         {
@@ -1423,7 +1575,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {},
+            "headers": {
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBUYk5FRURXRXlTMmFjZWNnNnBoOVRjVGNZSVhhY0NwY1F1QWdYV0dGZGpRCmNJeDVmY1BJQW9FWkRhWU03NUxqVFlHOGVvRzJGZzZpMkhLcSs0d1F0KzgKLS0tIDF4LzFPaDFER2szQTlrMHJNeFdNdVRIT1o3VDhWMDFWU3dBVTRhaldRS3MKCy78C3c2KtZhLnXiRbaZoHbt0CPvpxfP2p9DNdyB4cCA/mNmQLKtxWVOtJz8XuGnEjWTIZAwxz5sQfXgIDx4T6WI1YPHbwJLMnSh+coqGSGV1R4IZ3ygpTTJQ28zJtD4kGfs7V0n5FJRc3eufcEBSpwp13Yd7AvQrSkrP8Of/G+iuZlFl0mDvZ6wE7frZfjV248KVhFsHuxnp6OcxdQUPysMTqcM5AAO/Jj3agK29FzSykZ8zvaPzQrPrbFci6pck4/ZMXMa+j2Gbucd0zKSMt0OXThHTA=="
+            },
             "use-feed-proxy": true
         },
         {
@@ -1434,7 +1588,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {},
+            "headers": {
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBzMnc4c0RtUnh6eGI0Y0hoWjFUdzd3amFldnN3WHpjSDBFV0hGUmo0YXlzCm1YMHA4VzRJaG1zZWdqTUI2YVdwa0ZBVG15UmFtdGdLZWhoekxlNll2N0EKLS0tIGcvNDVKekJQOWNBYmZvRFlzUktqbG9yWmxsSzk2OHNOK3lnVkNsZjhMY0kK28RHsVUsioKR38DI5uGbR0BDLySBYUbBUcwD/28PIBtACvNK6XtBDOpfkFsbr0mJCLXx05cN7GRRID8CCksHvPuElB6WuwDI4uLuc1WSNLMOIWbLIgVdkrQ/mafWlaNu2BZR+wAAinYbFD3vNHR2aHoaSXxAe+SX6oypnhuOiqSH6xY08dFZblvXd1kX6GzAMIW/kjHwD7ZAVtKDtTjHQzzar1i9Wmr3CIoEHLjJHsYh+SIdrbZ1u63FfN3iQXYnlm1yhd/5CQ6AaIieWsdj641xrrXPpA=="
+            },
             "use-feed-proxy": true
         },
         {
@@ -1459,7 +1615,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {},
+            "headers": {
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBWQVlqWjFydDlhcXE1NHEyQ3NLaU45MUlEeTBib0NLY0hYeVZZMDY1TDJ3CnZkVk4vVjlFTmJmREFYMjliQ3Z1cWx6NFBWMEQxZzJrT0JBR1NqMHFmWkEKLS0tIDVMeVhqQzIzcHVJQmJhQk52RWViaEVHZ3ZrMVFGK3RtdTdyQm9aTTV1NUkKs151E8aRbyWUaWZM7MgIyfQfHgIywMtsUotX20g/2IVbe3A4zkdMv3ylxL4LigLQt3qdJ6SCS1UICTMkxnqZLHiHBPr1Peh13JYrYuqeVPAgHdLserAyAiWhrl9payoiD8/9Yl67mviNwsGVRzXppNw/YKXue/pcrtapNW9fAM0LaqHYhyxWSREa5WnOhKSutaUeCH69dB+DXz8mbE3UmB4zO/n3gjGYCGEe7Oh/QJpvddSWjkedxsAtSuPARa+o6uTK+jzwaOUl8918dbrNjAwQpCXCbA=="
+            },
             "use-feed-proxy": true
         },
         {
@@ -1470,7 +1628,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {},
+            "headers": {
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSB4M29hVjNWejNTa24rbFU5ZlA3MGJFTlJDUm9mZGQ0QzRIN0ZQcGNsR3k4CjZGM1dDczQzbXViOXBtZ1ErWjFNQTd0OHdIUkRiS1NSdTlxbDBOMVZtZjAKLS0tIFczdEU0UlpvN01nRlZ1VzJkMi9CZGU4WnBGdGhzRVNUZENTYm5QZWlaZlUKa1QKpNyj93NNUbsifacQ7WykGLj6v4X03VwBsmVsX0Se8poUIUd3wsmyR0CGd6oOWEBquHU4Upqul2sIIU2ovDd5CMLvU9rTNme/1HX4yh/wjPTWS2gik+jtvHIF891zHlivVa9Eu93O6I7Jq1iJlpBNc6fFgEmsQsJnHjgrCiEGXV3Y3h2/Bg2rtsuGzfvpy/lV99oNkcHZVZzzsDsQ+MHxjfZ1gTrM0eQDCbqvHowAjhBj2OfL/CW/t4oqiEM6Yo3JdAVB139p2Im0fPrxh599X/f6Pg=="
+            },
             "use-feed-proxy": true
         },
         {
@@ -1495,7 +1655,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {},
+            "headers": {
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBqY3IwdmYzN2xqMnRzK3NEN3BZRG1UQ2pXTVY0TStXQysvc0ROUElFcFZrCmNKZU11R24wNlF6VGJtSndITUI3MG93RjVBakxTN0xzNHNyWFV3U3UwV2sKLS0tIDkxdk9LbWJHSGRTdE80WEZSOE44RWV3TzlXcDFOaXMvbkZCRW9GS0wrdTgKEE83PnHhgdDexzMLmcYb8dsWgbMurIcBOud8uHRa9/lcjwV3xadPn37L1tviyGaipOxjoYzO+tNqdOfiJklN0ZRkuAkBwmN2zs/eNm+KjrydBvyqOCiAUGkI46GQjHG3W2UGF1ipE/J7CKs20pFFhQX1PXcxyZ2SNY/YYlQycphZ0J7GJhVvD1HiJLnoHgeIsmHbCM86vw/TFq5u5Xwq0RMuHVSbqozNxvmTmqyDCmV6KUp6pvbD9O2BpQib/a6TnclAxQpx7I6I/mrxsrsFJfexFWZl0g=="
+            },
             "use-feed-proxy": true
         },
         {
@@ -1506,7 +1668,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {},
+            "headers": {
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBTdzZmSnN1cmcxS1RwdDlHYmhEWW95WUdZMDQ3OFpPeUVUTEhWa0pBOWo0CmxzTzVhWHV3eGFSdWYwQUl2Mm1Uams4UzMxa0plNHJkbng3eW9nU2xQaTAKLS0tIFJETmpPSGNlWndGS0FzR0NiWHdZa0dUY0g0eUtnN29hdFhoOVJ0MTZCaTQKjWD6abR1CvG+yxORbss7m2SFeipk9FO+fc+VX4JMIpU6dd3XavQY5uL/eZxvbYCMZaWctoQETuLBu+akN88XblCdz8d5EmrxXK2tao6C8RA2jGcXxJjIoyyqFDO+FXL+aAplQnBD333pLvsjpr0L73k0238A7G00Bxnk0nn+DjYfh/G5knPSXhs77ALcMft8knsRgHe7wcYKkZ02XnmcBi1RD0f1D/8C1gGt1m4fJAwsgEXS4km0YP72MKijknFoNA7v9SRGqOhZYkGGkUlCWov9Pa0+1Q=="
+            },
             "use-feed-proxy": true
         },
         {
@@ -1531,7 +1695,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {},
+            "headers": {
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBDaDNTN0hOZlBsdlRBZG9jT0s3SFhQcXcvUkhrTklRU3hjWUtNcnllbTA0CmgyQmRPeWNZT21WOGhCZ3ZVdXUwRlkzbGFCdEhjV0czR0tZQy96d3F2WFEKLS0tIHR1dDNNVnFsTTY5UVNrQVFiUTRxc0tLQVdBNS95ZkJEMkZWckI5M0RRSjgKrYDrkhGwua/HgpAp1Ph0sNC7V8e+wp/rvAjudysN6861TCVUNAxvpBElinWcS+fNAE/FK5fzdjrzyU7TzCx2ZZOMvLEQs66FBuzEaoe+pX9HhEoaLYJiiWmLxXI/tjjQe7vQBbunrJnNmaLtE9HhxDOAC5p6XlH4z5ACc9lBM2Rp6RzGc2yTNz6ICLzdHOo7K75MCNjiNezWStqB6kD/PMBGBF/QtLIL0t+qfUHjrg5BOCgn993hVP0X0uK8Rf5+Ltrc4w545YEvCNUyX8ShVrfrGnnYdA=="
+            },
             "use-feed-proxy": true
         },
         {
@@ -1542,7 +1708,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {},
+            "headers": {
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBzaTFtT1ZEVlQwSHFIUjhreDFHblQzaUlhWnRWTU95MVF2L2o3Q1NmbTBNCnMyZ0dxWkQ0aG5lRVkydlV6UVpRWFdRb1JpRE9aQ3g2bEszQ3RKaktwNUEKLS0tIFJQR2FIR3VuMGpNWnJ1WUJnbUFZb1puRUNsWDFUcnVrYyt3cFRudndIZDgKYdXZlfwrNJq/w7ZfU9WzoM5RuGMCo88LnqqrnQcCqI0OsBwAcTcOI8657rvppnYUTuG3Mek3yEO0dYHZAOkKz9mAQ7/TS7G86kAWK4A8cpGGaAUm7HnCBc/cjyc+EO4e09fNiJF+pOXRj27aG2HewgIFRfu4qTasToCENpObEDu1pHiASOaD6J1K1Spt7y65RlXZvVjFiamux8sX88PH5uwlu9LsvAIJb0lt2jW1+XBhQXSmRcxRUqiAHr41aRK3H0KJwjq2XOsJFUqCTSb1o1SXOniEpg=="
+            },
             "use-feed-proxy": true
         },
         {
@@ -1567,7 +1735,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {},
+            "headers": {
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBBS0dBcUtFSGJGY21kNjdONk1hUC9aeUlpS3F1d0pEYmJESTZIdC9Tbng0CkRzOVBXc0toZ2tWd0dNWnByRURqbnhTOTBBellQYTJNTTQ3dXIxdnRzalUKLS0tIFF5VlBpMlpFSldnaUpIYmtoMXl1N05FOUhudm5hOC84b0RiZGtTYjNnNXMKLE6IeCYuMjPywS9iVVeTl4IF4mJkt9Jyx0Nl3w3GHhoKxDMqH8C6dkeWz3NhhDqVw1ECbO4hArCxqj/8YstIJI3+NsjiF0F0LG1ViQ9Up3OxEs6Y+iIhNvYdCS3APzV+N1GJSgNy9x7nifHEI7sX22DT0TjVXpsji478lD1ZANyYSxH+tIZJqywwvELugfIVlTNr1xDhDV9WsxnQ4UKJewdj8IvZiJLK8nBCIo9LO9vDf0N/bp8nnyD3Nx3UGmq5CSVLF8awnh1pTD0BprCgzIgcer3o8A=="
+            },
             "use-feed-proxy": true
         },
         {
@@ -1578,7 +1748,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "headers": {},
+            "headers": {
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBTRXRySXYrVjJrY2JrT1lxKzh6SjlDY1pFVnlOSmU5YXFqbEhGeVhTMlNRCmtZa1Z0d3oreFRqVFBEWlZKcFZVTFJhOHcrTDAzTDZvVHdpaHo1dFRKYlUKLS0tIElnbGhWK01PNXI3Ni9VUnBVNnFzRk1vb28rSXhPQTlWWHRxZU5RZ3N1NGMKx6CKT0AQjAKIZe7pkGMwzSnb8lyeVo1IyiQcpiHtnbUBCEEM+om+g13Ir9E1K15cT4Chjz2XdSKJStUuiBXeDrkC2TKmVfAmBdiyPGRWxU2aDMafD3joyWYQqhbRiGr+UC3BNfXgVWlj9rkb55TnADrSACcSBdxR2AwTRb0fmzJmHEb5pcphJKfAtlHKrrh/gbxE/3PuVED+VAOhxjgotzpOQcZQcd1oTXvR3zveyaON7bn5XiVplwG/yyyMIYn1kahgaN82kIJG8Em/1byXWz8dt2xC5g=="
+            },
             "use-feed-proxy": true
         }
     ]
