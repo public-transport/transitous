@@ -16,7 +16,7 @@ import mobilitydatabase
 from ruamel.yaml import YAML
 from typing import Any
 from pathlib import Path
-from utils import eprint
+from utils import eprint, decrypt_if_necessary
 from urllib.parse import quote
 
 FEED_PROXY="https://rt.triptix.tech"
@@ -180,12 +180,14 @@ if __name__ == "__main__":
                                     config["timetable"]["datasets"][name]["rt"] = []
 
                                 rt_feed: dict[str, Any] = {
-                                    "url": source.url if use_original_url else FEED_PROXY + '/feed/' + quote(name) + "-" + str(len(config["timetable"]["datasets"][name]["rt"])),
+                                    "url": decrypt_if_necessary(source.url) if use_original_url else FEED_PROXY + '/feed/' + quote(name) + "-" + str(len(config["timetable"]["datasets"][name]["rt"])),
                                     "protocol": to_motis_rt_spec(source.spec)
                                 }
 
                                 if source.headers and use_original_url:
-                                    rt_feed["headers"] = source.headers
+                                    rt_feed["headers"] = {}
+                                    for key, value in source.headers.items():
+                                        rt_feed["headers"][key] = decrypt_if_necessary(value)
 
                                 config["timetable"]["datasets"][name]["rt"] \
                                         .append(rt_feed)
@@ -198,9 +200,11 @@ if __name__ == "__main__":
 
                             case "gbfs" if isinstance(source, metadata.UrlSource):
                                 name = f"{region_name}-{source.name}"
-                                config["gbfs"]["feeds"][name] = {"url": source.url if use_original_url else FEED_PROXY + '/feed/' + quote(name)}
+                                config["gbfs"]["feeds"][name] = {"url": decrypt_if_necessary(source.url) if use_original_url else FEED_PROXY + '/feed/' + quote(name)}
                                 if source.headers and use_original_url:
-                                    config["gbfs"]["feeds"][name]["headers"] = source.headers
+                                    config["gbfs"]["feeds"][name]["headers"] = {}
+                                    for key, value in source.headers.items():
+                                        config["gbfs"]["feeds"][name]["headers"][key] = decrypt_if_necessary(value)
 
         if arguments.feed_proxy:
             with open("/tmp/feed-proxy-vars.yml", "w") as fo:

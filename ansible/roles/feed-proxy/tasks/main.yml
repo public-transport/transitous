@@ -31,6 +31,12 @@
 #    dest: /var/www/html/robots.txt
 #
 
+- name: Install age
+  apt:
+    update_cache: true
+    name:
+     - age
+
 - name: Generate feed proxy vars
   command: python3 src/generate-motis-config.py --feed-proxy
   args:
@@ -41,9 +47,9 @@
     file: /tmp/feed-proxy-vars.yml
     name: feed_vars
 
-- name: Include encrypted feed proxy vars
+- name: Include additional feed proxy vars
   ansible.builtin.include_vars:
-    file: feed-secrets.yml
+    file: feed-whitelist.yml
     name: feed_vars
     hash_behaviour: merge
 
