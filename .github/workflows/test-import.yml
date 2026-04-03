@@ -22,8 +22,9 @@ jobs:
       env:
         TRANSITOUS_FEED_PROXY_KEY: ${{ secrets.TRANSITOUS_FEED_PROXY_KEY }}
       run: |
-        printf "%s" "$TRANSITOUS_FEED_PROXY_KEY" > /tmp/feed-proxy.key
+        printf "%s" "$TRANSITOUS_FEED_PROXY_KEY" > ./.feed-proxy.key
+        ls -la ./.feed-proxy.key
         find . -type d -exec chmod 777 {} \;
-        docker run -v $PWD:/transitous -v /tmp/feed-proxy.key:/tmp/feed-proxy.key -e TRANSITOUS_FEED_PROXY_KEY_FILE=/tmp/feed-proxy.key -w /transitous transitous ci/fetch-feeds.py merge-request
+        docker run -v $PWD:/transitous -v ./.feed-proxy.key:/tmp/.feed-proxy.key -e TRANSITOUS_FEED_PROXY_KEY_FILE=/tmp/.feed-proxy.key -w /transitous transitous ci/fetch-feeds.py merge-request
         docker run -v $PWD:/transitous -w /transitous transitous src/generate-motis-config.py
 

@@ -23,9 +23,9 @@ steps:
         from_secret: github_issues_token
       TRANSITOUS_FEED_PROXY_KEY:
         from_secret: transitous_feed_proxy_key
-      TRANSITOUS_FEED_PROXY_KEY_FILE: /tmp/feed-proxy.key
+      TRANSITOUS_FEED_PROXY_KEY_FILE: ./.feed-proxy.key
     commands:
-      - printf "%s" "$TRANSITOUS_FEED_PROXY_KEY" > /tmp/feed-proxy.key
+      - printf "%s" "$TRANSITOUS_FEED_PROXY_KEY" > ./.feed-proxy.key
       - git submodule update --init --checkout --remote
       - ./ci/fetch-feeds.py timer
       - ./src/garbage-collect.py
