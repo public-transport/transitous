@@ -775,26 +775,6 @@
             }
         },
         {
-            "name": "Piecki",
-            "type": "http",
-            "spec": "gtfs",
-            "url": "https://files.girlc.at/gtfs/piecki.zip",
-            "fix": true,
-            "license": {
-                "spdx-identifier": "CC0-1.0"
-            }
-        },
-        {
-            "name": "Powiat-Olsztyński",
-            "type": "http",
-            "spec": "gtfs",
-            "url": "https://files.girlc.at/gtfs/powiat_olsztynski.zip",
-            "fix": true,
-            "license": {
-                "spdx-identifier": "CC0-1.0"
-            }
-        },
-        {
             "name": "Skarżysko-Kamienna",
             "type": "http",
             "spec": "gtfs",
@@ -858,7 +838,7 @@
             "name": "Mińsk-Mazowiecki",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://api.zbiorkom.live/api6-open/warsaw/gtfs/MINSK/default",
+            "url": "https://api.zbiorkom.live/api6-open/warsaw/gtfs/MINSK",
             "license": {
                 "spdx-identifier": "MIT"
             }
@@ -979,15 +959,6 @@
             }
         },
         {
-            "name": "Morąg",
-            "type": "http",
-            "spec": "gtfs",
-            "url": "https://files.girlc.at/gtfs/morag.zip",
-            "license": {
-                "spdx-identifier": "CC0-1.0"
-            }
-        },
-        {
             "name": "Legnica",
             "type": "http",
             "spec": "gtfs",
@@ -1001,7 +972,7 @@
             "name": "Grodziskie-Przewozy-Autobusowe",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://api.zbiorkom.live/api6-open/warsaw/gtfs/GPA/default",
+            "url": "https://api.zbiorkom.live/api6-open/warsaw/gtfs/GPA",
             "license": {
                 "spdx-identifier": "MIT"
             }
