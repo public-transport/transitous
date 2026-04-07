@@ -1262,7 +1262,7 @@
             "name": "Radzymin",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://api.zbiorkom.live/api6-open/warsaw/gtfs/RADZYMİN",
+            "url": "https://api.zbiorkom.live/api6-open/warsaw/gtfs/RADZYMIN",
             "license": {
                 "spdx-identifier": "MIT"
             }
@@ -1271,7 +1271,7 @@
             "name": "Radzymin",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://api.zbiorkom.live/api6-open/warsaw/gtfsRealtime/RADZYMİN/tripUpdates",
+            "url": "https://api.zbiorkom.live/api6-open/warsaw/gtfsRealtime/RADZYMIN/tripUpdates",
             "license": {
                 "spdx-identifier": "MIT"
             },
