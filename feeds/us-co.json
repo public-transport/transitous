@@ -14,7 +14,8 @@
         {
             "name": "RTD",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-rtddenver~rt"
+            "transitland-atlas-id": "f-rtddenver~rt",
+            "use-feed-proxy": true
         },
         {
             "name": "RTD-bustang",
@@ -24,7 +25,8 @@
         {
             "name": "RTD-bustang",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-denver~rtd~bustang~rt"
+            "transitland-atlas-id": "f-denver~rtd~bustang~rt",
+            "use-feed-proxy": true
         }
     ]
 }

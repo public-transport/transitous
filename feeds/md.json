@@ -13,8 +13,7 @@
             "license": {
                 "spdx-identifier": "CC-BY-SA-4.0"
             },
-            "skip": true,
-            "skip-reason": "expired"
+            "extend-calendar": true
         },
         {
             "name": "Chișinău",
@@ -22,9 +21,7 @@
             "mdb-id": "mdb-2343",
             "license": {
                 "spdx-identifier": "CC-BY-SA-4.0"
-            },
-            "skip": true,
-            "skip-reason": "expired"
+            }
         },
         {
             "name": "CFM",

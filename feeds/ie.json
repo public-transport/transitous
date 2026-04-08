@@ -24,12 +24,11 @@
             "type": "url",
             "spec": "gtfs-rt",
             "url": "https://api.nationaltransport.ie/gtfsr/v2/TripUpdates",
-            "headers": {
-                "x-api-key": "428a90e546aa482f9dfe75d7682ae8f1"
-            },
+            "headers": {},
             "license": {
                 "spdx-identifier": "CC-BY-SA-4.0"
-            }
+            },
+            "use-feed-proxy": true
         },
         {
             "name": "ferries-cablecars-flights",

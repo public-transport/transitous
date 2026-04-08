@@ -120,7 +120,8 @@
         {
             "name": "Guelph-Transit",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-guelph~rt"
+            "transitland-atlas-id": "f-guelph~rt",
+            "use-feed-proxy": true
         },
         {
             "name": "Hamilton-Street-Railway",

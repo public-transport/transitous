@@ -18,7 +18,8 @@
         {
             "name": "STM",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-f25d-socitdetransportdemontral~rt"
+            "transitland-atlas-id": "f-f25d-socitdetransportdemontral~rt",
+            "use-feed-proxy": true
         },
         {
             "name": "Exo-reseaudetransportmetropolitain",

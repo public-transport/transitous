@@ -22,8 +22,15 @@ upstream {{ item.vhost }}-backend {
 }
 
 server {
-    listen 443 http2 ssl;
-    listen [::]:443 http2 ssl;
+    listen 443 ssl;
+    listen 443 quic {{ item.quic_options }};
+    listen [::]:443 ssl;
+    listen [::]:443 quic {{ item.quic_options }};
+
+    http2 on;
+
+    quic_gso on;
+    add_header Alt-Svc 'h3=":443"; ma=21600, h3-29=":443"; ma=21600';
 
     # Override TLS settings from included file
     ssl_protocols TLSv1.2 TLSv1.3;
@@ -75,12 +82,29 @@ server {
 
         limit_req zone=api_harmless burst=100 delay=50;
 
+        proxy_connect_timeout       2s;
+        proxy_send_timeout          60;
+        proxy_read_timeout          60;
+        send_timeout                60;
+
         proxy_cache            motis;
         proxy_cache_valid      200 302 1d;
         proxy_cache_valid      404 1s;
         proxy_cache_use_stale  error timeout invalid_header updating
                                 http_500 http_502 http_503 http_504;
         add_header Cache-Control "public, max-age=36000";
+    }
+
+    # OJP endpoint
+    location /ojp20 {
+        proxy_pass http://{{ item.vhost }}-backend/ojp20;
+
+        limit_req zone=api burst=40 delay=10;
+        
+        proxy_connect_timeout       2s;
+        proxy_send_timeout          60;
+        proxy_read_timeout          120;
+        send_timeout                60;
     }
 
     # Rate limit plan API
@@ -107,7 +131,7 @@ server {
         send_timeout                60;
     }
 
-    # MOTIS
+    # other endpoints
     location /api/ {
         proxy_pass http://{{ item.vhost }}-backend/api/;
 

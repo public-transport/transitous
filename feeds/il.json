@@ -17,11 +17,8 @@
             "spec": "gtfs-rt",
             "type": "url",
             "url": "https://api.busnear.by/external/gtfsrt/export",
-            "http-options": {
-                "headers": {
-                    "authorization": "tlv_848e1b42-c0c2"
-                }
-            }
+            "headers": {},
+            "use-feed-proxy": true
         },
         {
             "name": "Israel-MOT",

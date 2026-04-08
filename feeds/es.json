@@ -11,13 +11,16 @@
         {
             "name": "Alfredo Cubitos",
             "github": "AlfredoCubitos"
+        },
+        {
+            "name": "Pablo Castellanos",
+            "github": "pacastega"
         }
     ],
     "sources": [
         {
             "name": "AECFA-slots",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1096",
+            "type": "mobility-database",
             "fix": true,
             "skip": true,
             "skip-reason": "Not correct GTFS, too bad for automatic fixing",
@@ -26,48 +29,49 @@
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
-            }
+            },
+            "mdb-id": "mdb-2727"
         },
         {
             "name": "Alavabus",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1362",
+            "type": "mobility-database",
             "fix": true,
             "http-options": {
                 "fetch-interval-days": 1,
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
-            }
+            },
+            "mdb-id": "mdb-2824"
         },
         {
             "name": "ALSA-autobuses",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1133",
+            "type": "mobility-database",
             "fix": true,
             "http-options": {
                 "fetch-interval-days": 1,
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
-            }
+            },
+            "script": "es-alsa.lua",
+            "mdb-id": "mdb-2825"
         },
         {
             "name": "Autobús-Comarca-de-Pamplona",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1177",
+            "type": "mobility-database",
             "fix": true,
             "http-options": {
                 "fetch-interval-days": 1,
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
-            }
+            },
+            "mdb-id": "mdb-2719"
         },
         {
             "name": "Autobús-de-la-isla-de-Ibiza",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1273",
+            "type": "mobility-database",
             "fix": true,
             "http-options": {
                 "fetch-interval-days": 1,
@@ -78,12 +82,12 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0",
                 "url": "https://eivissa.tib.org/web/cie/cataleg-dades"
-            }
+            },
+            "mdb-id": "mdb-2797"
         },
         {
             "name": "Autobús-de-la-isla-de-Menorca",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1363",
+            "type": "mobility-database",
             "fix": true,
             "http-options": {
                 "fetch-interval-days": 1,
@@ -94,31 +98,32 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0",
                 "url": "https://menorca.tib.org/web/cime/cataleg-dades"
-            }
+            },
+            "mdb-id": "mdb-2763"
         },
         {
             "name": "Autobús-en-Cantabria",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1560",
+            "type": "mobility-database",
             "fix": true,
             "http-options": {
                 "fetch-interval-days": 1,
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
-            }
+            },
+            "mdb-id": "mdb-2748"
         },
         {
             "name": "Autobuses-Empresa-Casas",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1578",
+            "type": "mobility-database",
             "fix": true,
             "http-options": {
                 "fetch-interval-days": 1,
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
-            }
+            },
+            "mdb-id": "mdb-2754"
         },
         {
             "name": "Autobuses-interurbanos-de-la-Comunidad-de-Madrid",
@@ -128,11 +133,9 @@
             "http-options": {
                 "fetch-interval-days": 1,
                 "headers": {
-                    "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+                    "ApiKey": "b2be1741-ed99-41e7-99bf-924b32694633"
                 }
-            },
-            "skip": true,
-            "skip-reason": "Broken file"
+            }
         },
         {
             "name": "Autobuses-Junta-de-Extremadura",
@@ -144,12 +147,13 @@
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
-            }
+            },
+            "skip": true,
+            "skip-reason": "expired"
         },
         {
             "name": "Autobuses-La-Unión-(ALU)",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1266",
+            "type": "mobility-database",
             "fix": true,
             "http-options": {
                 "fetch-interval-days": 1,
@@ -160,72 +164,72 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0",
                 "url": "https://data.ctb.eus/en/dataset/horarios-la-union-bilbao-vitoria-por-autopista"
-            }
+            },
+            "mdb-id": "mdb-2718"
         },
         {
             "name": "Autobuses-Samar",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1165",
+            "type": "mobility-database",
             "fix": true,
             "http-options": {
                 "fetch-interval-days": 1,
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
-            }
+            },
+            "mdb-id": "mdb-2712"
         },
         {
-            "name": "Autobuses-Sarbus-–-La-Vallesana",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1581",
+            "name": "Autobuses-Sarbus",
+            "type": "mobility-database",
             "fix": true,
             "http-options": {
                 "fetch-interval-days": 1,
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
-            }
+            },
+            "mdb-id": "mdb-2755"
         },
         {
             "name": "Autobuses-TCC-Barcelona",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1580",
+            "type": "mobility-database",
             "fix": true,
             "http-options": {
                 "fetch-interval-days": 1,
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
-            }
+            },
+            "mdb-id": "mdb-2749"
         },
         {
             "name": "Autobuses-urbanos-de-Alicante",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1607",
+            "type": "mobility-database",
             "fix": true,
             "http-options": {
                 "fetch-interval-days": 1,
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
-            }
+            },
+            "mdb-id": "mdb-2822"
         },
         {
             "name": "Autobuses-Urbanos-de-Ciudad-Real",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1599",
+            "type": "mobility-database",
             "fix": true,
             "http-options": {
                 "fetch-interval-days": 1,
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
-            }
+            },
+            "mdb-id": "mdb-2765"
         },
         {
             "name": "Autobuses-urbanos-de-San-Vicente-del-Raspeig",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1566",
+            "type": "mobility-database",
             "fix": true,
             "http-options": {
                 "fetch-interval-days": 1,
@@ -234,12 +238,12 @@
                 }
             },
             "skip": true,
-            "skip-reason": "Feed expired"
+            "skip-reason": "Feed expired",
+            "mdb-id": "mdb-2815"
         },
         {
             "name": "Autobuses-Urbanos-Dos-Hermanas",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1582",
+            "type": "mobility-database",
             "fix": true,
             "skip": true,
             "skip-reason": "expired",
@@ -248,19 +252,20 @@
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
-            }
+            },
+            "mdb-id": "mdb-2711"
         },
         {
             "name": "Autobuses-Xunta-de-Galicia",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1584",
+            "type": "mobility-database",
             "fix": true,
             "http-options": {
                 "fetch-interval-days": 1,
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
-            }
+            },
+            "mdb-id": "mdb-2821"
         },
         {
             "name": "Autobús-interurbano-Comunidad-Valenciana",
@@ -279,15 +284,15 @@
         },
         {
             "name": "Autobús-interurbano-de-Cataluña",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1364",
+            "type": "mobility-database",
             "fix": true,
             "http-options": {
                 "fetch-interval-days": 1,
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
-            }
+            },
+            "mdb-id": "mdb-2796"
         },
         {
             "name": "Autobús-interurbano-de-Navarra",
@@ -299,7 +304,9 @@
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
-            }
+            },
+            "skip": true,
+            "skip-reason": "expired"
         },
         {
             "name": "Autobús-interurbano-de-Tenerife",
@@ -319,8 +326,7 @@
         },
         {
             "name": "Autobus-Madrid-Aranda-de-Duero-Burgo-de-Osma",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1561",
+            "type": "mobility-database",
             "fix": true,
             "http-options": {
                 "fetch-interval-days": 1,
@@ -329,7 +335,8 @@
                 }
             },
             "skip": true,
-            "skip-reason": "Feed expired"
+            "skip-reason": "Feed expired",
+            "mdb-id": "mdb-2813"
         },
         {
             "name": "Autobús-metropolitano-Barcelona",
@@ -345,91 +352,91 @@
         },
         {
             "name": "Autobús-metropolitano-Barcelona",
-            "type": "url",
-            "spec": "gtfs-rt",
-            "url": "https://www.ambmobilitat.cat/transit/trips-updates/trips.bin"
+            "type": "mobility-database",
+            "mdb-id": "mdb-2368",
+            "spec": "gtfs-rt"
         },
         {
             "name": "Autobusos-de-Lleida",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1579",
+            "type": "mobility-database",
             "fix": true,
             "http-options": {
                 "fetch-interval-days": 1,
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
-            }
+            },
+            "mdb-id": "mdb-2753"
         },
         {
             "name": "Autobús-Principado-de-Asturias",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1178",
+            "type": "mobility-database",
             "fix": true,
             "http-options": {
                 "fetch-interval-days": 1,
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
-            }
+            },
+            "mdb-id": "mdb-2827"
         },
         {
             "name": "Autobús-urbano-de-Ávila",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1170",
+            "type": "mobility-database",
             "fix": true,
             "http-options": {
                 "fetch-interval-days": 1,
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
-            }
+            },
+            "mdb-id": "mdb-2772",
+            "skip": true,
+            "skip-reason": "expired"
         },
         {
             "name": "Autobús-urbano-de-Cáceres",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1493",
+            "type": "mobility-database",
             "fix": true,
             "http-options": {
                 "fetch-interval-days": 1,
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
-            },          
+            },
             "license": {
                 "spdx-identifier": "CC-BY-3.0",
                 "url": "https://opendata.caceres.es/dataset/autobuses-caceres"
-            }
-            
+            },
+            "mdb-id": "mdb-2714"
         },
         {
             "name": "Autobús-urbano-de-Castellón-de-la-Plana",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1572",
+            "type": "mobility-database",
             "fix": true,
             "http-options": {
                 "fetch-interval-days": 1,
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
-            }
+            },
+            "mdb-id": "mdb-2771"
         },
         {
             "name": "Autobús-urbano-de-Córdoba",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1573",
+            "type": "mobility-database",
             "fix": true,
             "http-options": {
                 "fetch-interval-days": 1,
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
-            }
+            },
+            "mdb-id": "mdb-2713"
         },
         {
             "name": "Autobús-urbano-de-Fuengirola",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1710",
+            "type": "mobility-database",
             "fix": true,
             "http-options": {
                 "fetch-interval-days": 1,
@@ -438,86 +445,12 @@
                 }
             },
             "skip": true,
-            "skip-reason": "Feed expired"
+            "skip-reason": "Feed expired",
+            "mdb-id": "mdb-2798"
         },
         {
             "name": "Autobús-urbano-de-Girona",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1570",
-            "fix": true,
-            "http-options": {
-                "fetch-interval-days": 1,
-                "headers": {
-                    "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
-                }
-            }
-        },
-        {
-            "name": "Autobús-urbano-de-Granada",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1564",
-            "fix": true,
-            "http-options": {
-                "fetch-interval-days": 1,
-                "headers": {
-                    "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
-                }
-            }
-        },
-        {
-            "name": "Autobús-urbano-de-Huesca",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1172",
-            "fix": true,
-            "http-options": {
-                "fetch-interval-days": 1,
-                "headers": {
-                    "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
-                }
-            }
-        },
-        {
-            "name": "Autobús-urbano-de-la-Coruña",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1574",
-            "fix": true,
-            "http-options": {
-                "fetch-interval-days": 1,
-                "headers": {
-                    "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
-                }
-            }
-        },
-        {
-            "name": "Autobús-urbano-de-Las-Palmas-de-Gran-Canaria",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1295",
-            "fix": true,
-            "http-options": {
-                "fetch-interval-days": 1,
-                "headers": {
-                    "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
-                }
-            }
-        },
-        {
-            "name": "Autobús-urbano-de-Madrid",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1097",
-            "fix": true,
-            "skip": true,
-            "skip-reason": "headway_secs is in minutes which makes timetable entirely wrong",
-            "http-options": {
-                "fetch-interval-days": 1,
-                "headers": {
-                    "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
-                }
-            }
-        },
-        {
-            "name": "Autobús-urbano-de-Madrid-(CRTM)",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1135",
+            "type": "mobility-database",
             "fix": true,
             "http-options": {
                 "fetch-interval-days": 1,
@@ -525,8 +458,57 @@
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
             },
+            "mdb-id": "mdb-2751"
+        },
+        {
+            "name": "Autobús-urbano-de-Granada",
+            "type": "mobility-database",
+            "fix": true,
+            "http-options": {
+                "fetch-interval-days": 1,
+                "headers": {
+                    "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+                }
+            },
+            "mdb-id": "mdb-2769"
+        },
+        {
+            "name": "Autobús-urbano-de-Huesca",
+            "type": "mobility-database",
+            "fix": true,
+            "http-options": {
+                "fetch-interval-days": 1,
+                "headers": {
+                    "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+                }
+            },
+            "mdb-id": "mdb-2819",
             "skip": true,
-            "skip-reason": "Feed expired"
+            "skip-reason": "expired"
+        },
+        {
+            "name": "Autobús-urbano-de-la-Coruña",
+            "type": "mobility-database",
+            "fix": true,
+            "http-options": {
+                "fetch-interval-days": 1,
+                "headers": {
+                    "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+                }
+            },
+            "mdb-id": "mdb-2767"
+        },
+        {
+            "name": "Autobús-urbano-de-Las-Palmas-de-Gran-Canaria",
+            "type": "mobility-database",
+            "fix": true,
+            "http-options": {
+                "fetch-interval-days": 1,
+                "headers": {
+                    "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+                }
+            },
+            "mdb-id": "mdb-2783"
         },
         {
             "name": "Autobús-urbano-de-Málaga",
@@ -542,20 +524,19 @@
         },
         {
             "name": "Autobús-urbano-de-Mataró",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1173",
+            "type": "mobility-database",
             "fix": true,
             "http-options": {
                 "fetch-interval-days": 1,
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
-            }
+            },
+            "mdb-id": "mdb-2768"
         },
         {
             "name": "Autobús-urbano-de-Ourense",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1586",
+            "type": "mobility-database",
             "fix": true,
             "http-options": {
                 "fetch-interval-days": 1,
@@ -564,43 +545,46 @@
                 }
             },
             "skip": true,
-            "skip-reason": "Feed expired"
+            "skip-reason": "Feed expired",
+            "mdb-id": "mdb-2804"
         },
         {
             "name": "Autobús-urbano-de-Palma-de-Mallorca",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1495",
+            "type": "mobility-database",
             "fix": true,
             "http-options": {
                 "fetch-interval-days": 1,
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
-            }
+            },
+            "mdb-id": "mdb-2782"
         },
         {
             "name": "Autobús-urbano-de-Soria",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1174",
+            "type": "mobility-database",
             "fix": true,
             "http-options": {
                 "fetch-interval-days": 1,
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
-            }
+            },
+            "mdb-id": "mdb-2818",
+            "skip": true,
+            "skip-reason": "expired"
         },
         {
             "name": "Autobús-urbano-de-Tarrasa",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1175",
+            "type": "mobility-database",
             "fix": true,
             "http-options": {
                 "fetch-interval-days": 1,
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
-            }
+            },
+            "mdb-id": "mdb-2716"
         },
         {
             "name": "Autobús-urbano-de-Valencia",
@@ -616,56 +600,7 @@
         },
         {
             "name": "Autobús-urbano-de-Valladolid",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1563",
-            "fix": true,
-            "http-options": {
-                "fetch-interval-days": 1,
-                "headers": {
-                    "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
-                }
-            }
-        },
-        {
-            "name": "Autobús-y-tranvía-de-Sevilla",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1567",
-            "fix": true,
-            "http-options": {
-                "fetch-interval-days": 1,
-                "headers": {
-                    "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
-                }
-            }
-        },
-        {
-            "name": "Autocares-Autocorb",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1171",
-            "fix": true,
-            "http-options": {
-                "fetch-interval-days": 1,
-                "headers": {
-                    "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
-                }
-            }
-        },
-        {
-            "name": "Autocares-Baraza",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1169",
-            "fix": true,
-            "http-options": {
-                "fetch-interval-days": 1,
-                "headers": {
-                    "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
-                }
-            }
-        },
-        {
-            "name": "Bilbobus",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1460",
+            "type": "mobility-database",
             "fix": true,
             "http-options": {
                 "fetch-interval-days": 1,
@@ -673,10 +608,59 @@
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
             },
-                "license": {
+            "mdb-id": "mdb-2730"
+        },
+        {
+            "name": "Autobús-y-tranvía-de-Sevilla",
+            "type": "mobility-database",
+            "fix": true,
+            "http-options": {
+                "fetch-interval-days": 1,
+                "headers": {
+                    "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+                }
+            },
+            "mdb-id": "mdb-2770"
+        },
+        {
+            "name": "Autocares-Autocorb",
+            "type": "mobility-database",
+            "fix": true,
+            "http-options": {
+                "fetch-interval-days": 1,
+                "headers": {
+                    "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+                }
+            },
+            "mdb-id": "mdb-2779"
+        },
+        {
+            "name": "Autocares-Baraza",
+            "type": "mobility-database",
+            "fix": true,
+            "http-options": {
+                "fetch-interval-days": 1,
+                "headers": {
+                    "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+                }
+            },
+            "mdb-id": "mdb-2774"
+        },
+        {
+            "name": "Bilbobus",
+            "type": "mobility-database",
+            "fix": true,
+            "http-options": {
+                "fetch-interval-days": 1,
+                "headers": {
+                    "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+                }
+            },
+            "license": {
                 "spdx-identifier": "CC-BY-4.0",
                 "url": "https://data.ctb.eus/en/dataset/horario-lineas-bilbobus"
-                }
+            },
+            "mdb-id": "mdb-2681"
         },
         {
             "name": "Bilbobus",
@@ -689,39 +673,15 @@
             }
         },
         {
-            "name": "Bizkaibus",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1262",
-            "fix": true,
-            "http-options": {
-                "fetch-interval-days": 1,
-                "headers": {
-                    "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
-                }
-            },
-            "license": {
-                "spdx-identifier": "CC-BY-4.0",
-                "url": "https://data.ctb.eus/en/dataset/horarios-lineas-bizkaibus"
-                    }
-        },
-        {
-            "name": "Bizkaibus",
-            "type": "url",
-            "spec": "gtfs-rt",
-            "url": "https://baliabideak.bizkaia.eus/Bizkaibus/GTFSRealTime/FeedTripUpdates.pb",
-            "license": {
-                "spdx-identifier": "CC-BY-4.0",
-                "url": "https://data.ctb.eus/en/dataset/bizkaibus-viajes-alertas-retrasos-online"
-            }
-        },
-        {
             "name": "EtxebarriBus",
             "type": "http",
             "url": "https://ctb-gtfs.s3.eu-south-2.amazonaws.com/etxebarribus.zip",
             "license": {
                 "spdx-identifier": "CC-BY-4.0",
                 "url": "https://data.ctb.eus/en/dataset/etxebarribus"
-            }
+            },
+            "skip": true,
+            "skip-reason": "expired"
         },
         {
             "name": "KBus-Barakaldo",
@@ -743,24 +703,26 @@
         },
         {
             "name": "Puente-Colgante-Bizkaia",
-            "type": "http",
-            "url": "https://ctb-gtfs.s3.eu-south-2.amazonaws.com/puentebizkaia.zip",
+            "type": "mobility-database",
             "license": {
                 "spdx-identifier": "CC-BY-4.0",
                 "url": "https://data.ctb.eus/en/dataset/horarios-puente-colgante"
-            }
+            },
+            "mdb-id": "mdb-1162"
         },
         {
             "name": "Bus-urbano-de-Segovia",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1559",
+            "type": "mobility-database",
             "fix": true,
             "http-options": {
                 "fetch-interval-days": 1,
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
-            }
+            },
+            "mdb-id": "mdb-2816",
+            "skip": true,
+            "skip-reason": "expired"
         },
         {
             "name": "Cercanías-Madrid",
@@ -772,7 +734,9 @@
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
-            }
+            },
+            "skip": true,
+            "skip-reason": "expired"
         },
         {
             "name": "Cercanías-Renfe",
@@ -792,62 +756,79 @@
         },
         {
             "name": "Cercanías-Renfe",
-            "type": "url",
-            "spec": "gtfs-rt",
-            "url": "https://gtfsrt.renfe.com/trip_updates.pb",
+            "type": "mobility-database",
             "license": {
                 "spdx-identifier": "CC-BY-4.0",
                 "url": "https://data.renfe.com/dataset/horarios-viaje-cercanias"
-            }
+            },
+            "mdb-id": "mdb-2834",
+            "spec": "gtfs-rt"
         },
         {
             "name": "Cercanías-Renfe",
-            "type": "url",
-            "spec": "gtfs-rt",
-            "url": "https://gtfsrt.renfe.com/alerts.pb",
+            "type": "mobility-database",
             "license": {
                 "spdx-identifier": "CC-BY-4.0",
                 "url": "https://data.renfe.com/dataset/incidencias-avisos"
-            }
+            },
+            "mdb-id": "mdb-2833",
+            "spec": "gtfs-rt"
         },
         {
             "name": "Cercanías-Renfe",
-            "type": "url",
-            "spec": "gtfs-rt",
-            "url": "https://gtfsrt.renfe.com/vehicle_positions.pb",
+            "type": "mobility-database",
             "license": {
                 "spdx-identifier": "CC-BY-4.0",
                 "url": "https://data.renfe.com/dataset/ubicacion-vehiculos"
-            }
+            },
+            "mdb-id": "mdb-2835",
+            "spec": "gtfs-rt"
         },
         {
             "name": "Donostiabus-(Dbus)",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1196",
+            "type": "mobility-database",
             "fix": true,
             "http-options": {
                 "fetch-interval-days": 1,
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
-            }
+            },
+            "mdb-id": "mdb-2682"
+        },
+        {
+            "name": "Donostiabus-(Dbus)",
+            "type": "mobility-database",
+            "mdb-id": "mdb-3064",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "Donostiabus-(Dbus)",
+            "type": "mobility-database",
+            "mdb-id": "mdb-3065",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "Donostiabus-(Dbus)",
+            "type": "mobility-database",
+            "mdb-id": "mdb-3066",
+            "spec": "gtfs-rt"
         },
         {
             "name": "EMT-Tarragona",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1694",
+            "type": "mobility-database",
             "fix": true,
             "http-options": {
                 "fetch-interval-days": 1,
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
-            }
+            },
+            "mdb-id": "mdb-2777"
         },
         {
             "name": "Euskotren",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1263",
+            "type": "mobility-database",
             "fix": true,
             "http-options": {
                 "fetch-interval-days": 1,
@@ -858,23 +839,13 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0",
                 "url": "https://data.ctb.eus/en/dataset/horarios-servicios-euskotren"
-            }
+            },
+            "mdb-id": "mdb-2715"
         },
         {
             "name": "Ferrocarriles-de-la-Generalitat-de-Cataluña",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1571",
-            "fix": true,
-            "http-options": {
-                "fetch-interval-days": 1,
-                "headers": {
-                    "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
-                }
-            },
-            "license": {
-                "spdx-identifier": "CC-BY-4.0", 
-                "url": "https://dadesobertes.fgc.cat/explore/dataset/gtfs_zip/"
-                }
+            "type": "mobility-database",
+            "mdb-id": "mdb-1856"
         },
         {
             "name": "Ferrocarriles-de-la-Generalitat-de-Cataluña",
@@ -882,38 +853,37 @@
             "url": "https://dadesobertes.fgc.cat/explore/dataset/trip-updates-gtfs_realtime/files/735985017f62fd33b2fe46e31ce53829/download/",
             "spec": "gtfs-rt",
             "license": {
-                "spdx-identifier": "CC-BY-4.0", 
+                "spdx-identifier": "CC-BY-4.0",
                 "url": "https://dadesobertes.fgc.cat/explore/dataset/trip-updates-gtfs_realtime/"
-                }
+            }
         },
         {
             "name": "Ferry-Baleària",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1527",
+            "type": "mobility-database",
             "fix": true,
             "http-options": {
                 "fetch-interval-days": 1,
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
-            }
+            },
+            "mdb-id": "mdb-2814"
         },
         {
             "name": "Ferry-Fred.Olsen",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1528",
+            "type": "mobility-database",
             "fix": true,
             "http-options": {
                 "fetch-interval-days": 1,
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
-            }
+            },
+            "mdb-id": "mdb-2722"
         },
         {
             "name": "Feve",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1131",
+            "type": "mobility-database",
             "fix": true,
             "http-options": {
                 "fetch-interval-days": 1,
@@ -924,12 +894,12 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0",
                 "url": "https://data.renfe.com/dataset/horario-feve"
-            }
+            },
+            "mdb-id": "mdb-2717"
         },
         {
             "name": "Funicular-de-Artxanda",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1264",
+            "type": "mobility-database",
             "fix": true,
             "http-options": {
                 "fetch-interval-days": 1,
@@ -940,7 +910,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0",
                 "url": "https://data.ctb.eus/en/dataset/horarios-funicular-artxanda"
-            }
+            },
+            "mdb-id": "mdb-2680"
         },
         {
             "name": "LeioaBus",
@@ -949,187 +920,189 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0",
                 "url": "https://data.ctb.eus/en/dataset/horarios-lejoanbusa"
-            }
+            },
+            "skip": true,
+            "skip-reason": "expired"
         },
         {
             "name": "Lurraldebus-Arrasate",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1198",
+            "type": "mobility-database",
             "fix": true,
             "http-options": {
                 "fetch-interval-days": 1,
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
-            }
+            },
+            "mdb-id": "mdb-2733"
         },
         {
             "name": "Lurraldebus-auif",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1199",
+            "type": "mobility-database",
             "fix": true,
             "http-options": {
                 "fetch-interval-days": 1,
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
-            }
+            },
+            "mdb-id": "mdb-2724"
         },
         {
             "name": "Lurraldebus-Eibar",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1200",
+            "type": "mobility-database",
             "fix": true,
             "http-options": {
                 "fetch-interval-days": 1,
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
-            }
+            },
+            "mdb-id": "mdb-2735"
         },
         {
             "name": "Lurraldebus-Ekialdebus",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1201",
+            "type": "mobility-database",
             "fix": true,
             "http-options": {
                 "fetch-interval-days": 1,
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
-            }
+            },
+            "mdb-id": "mdb-2731"
         },
         {
             "name": "Lurraldebus-Euskotren-bus",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1202",
+            "type": "mobility-database",
             "fix": true,
             "http-options": {
                 "fetch-interval-days": 1,
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
-            }
+            },
+            "mdb-id": "mdb-2756"
         },
         {
             "name": "Lurraldebus-Goierrialdea",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1229",
+            "type": "mobility-database",
             "fix": true,
             "http-options": {
                 "fetch-interval-days": 1,
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
-            }
+            },
+            "mdb-id": "mdb-2732"
         },
         {
             "name": "Lurraldebus-Guipuzcoana",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1204",
+            "type": "mobility-database",
             "fix": true,
             "http-options": {
                 "fetch-interval-days": 1,
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
-            }
+            },
+            "mdb-id": "mdb-2736"
         },
         {
             "name": "Lurraldebus-Hernani",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1230",
+            "type": "mobility-database",
             "fix": true,
             "http-options": {
                 "fetch-interval-days": 1,
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
-            }
+            },
+            "mdb-id": "mdb-2734"
         },
         {
             "name": "Lurraldebus-Lasarte",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1231",
+            "type": "mobility-database",
             "fix": true,
             "http-options": {
                 "fetch-interval-days": 1,
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
-            }
+            },
+            "mdb-id": "mdb-2760"
         },
         {
             "name": "Lurraldebus-Oiartzun",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1232",
+            "type": "mobility-database",
             "fix": true,
             "http-options": {
                 "fetch-interval-days": 1,
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
-            }
+            },
+            "mdb-id": "mdb-2725"
         },
         {
             "name": "Lurraldebus-Pesa",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1233",
+            "type": "mobility-database",
             "fix": true,
             "http-options": {
                 "fetch-interval-days": 1,
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
-            }
+            },
+            "mdb-id": "mdb-2776"
         },
         {
             "name": "Lurraldebus-Rentería",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1234",
+            "type": "mobility-database",
             "fix": true,
             "http-options": {
                 "fetch-interval-days": 1,
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
-            }
+            },
+            "mdb-id": "mdb-2759"
         },
         {
             "name": "Lurraldebus-TBH-(Interurbano-Tolosa-Buruntzaldea)",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1608",
+            "type": "mobility-database",
             "fix": true,
             "http-options": {
                 "fetch-interval-days": 1,
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
-            }
+            },
+            "mdb-id": "mdb-2757"
         },
         {
             "name": "Lurraldebus-Tolosaldea",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1235",
+            "type": "mobility-database",
             "fix": true,
             "http-options": {
                 "fetch-interval-days": 1,
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
-            }
+            },
+            "mdb-id": "mdb-2726"
         },
         {
             "name": "Lurraldebus-Zarautz",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1237",
+            "type": "mobility-database",
             "fix": true,
             "http-options": {
                 "fetch-interval-days": 1,
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
-            }
+            },
+            "mdb-id": "mdb-2728"
         },
         {
             "name": "Bermibusa",
@@ -1148,105 +1121,81 @@
                 "spdx-identifier": "CC-BY-4.0",
                 "url": "https://data.ctb.eus/en/dataset/horarios-erandiobus"
             }
-        },      
+        },
         {
             "name": "Metro-Bilbao",
-            "type": "http",
-            "url": "https://ctb-gtfs.s3.eu-south-2.amazonaws.com/metrobilbao.zip",
+            "type": "mobility-database",
             "license": {
                 "spdx-identifier": "CC-BY-4.0",
                 "url": "https://data.ctb.eus/en/pages/legal-notice"
-            }
+            },
+            "mdb-id": "mdb-3052"
         },
         {
             "name": "Metro-Bilbao",
-            "type": "url",
-            "spec": "gtfs-rt",
-            "url": "https://ctb-gtfs-rt.s3.eu-south-2.amazonaws.com/metro-bilbao-trip-updates.pb",
+            "type": "mobility-database",
             "license": {
                 "spdx-identifier": "CC-BY-4.0",
                 "url": "https://data.ctb.eus/en/dataset/metro-bilbao-online"
-            }
+            },
+            "mdb-id": "mdb-3057",
+            "spec": "gtfs-rt"
         },
         {
             "name": "Metro-Bilbao",
-            "type": "url",
-            "spec": "gtfs-rt",
-            "url": "https://ctb-gtfs-rt.s3.eu-south-2.amazonaws.com/metro-bilbao-service-alerts.pb",
+            "type": "mobility-database",
             "license": {
                 "spdx-identifier": "CC-BY-4.0",
                 "url": "https://data.ctb.eus/en/dataset/metro-bilbao-online"
-            }
+            },
+            "mdb-id": "mdb-3056",
+            "spec": "gtfs-rt"
         },
         {
             "name": "Metro-Bilbao",
-            "type": "url",
-            "spec": "gtfs-rt",
-            "url": "https://ctb-gtfs-rt.s3.eu-south-2.amazonaws.com/metro-bilbao-vehicle-positions.pb",
+            "type": "mobility-database",
             "license": {
                 "spdx-identifier": "CC-BY-4.0",
                 "url": "https://data.ctb.eus/en/dataset/metro-bilbao-online"
-            }
+            },
+            "mdb-id": "mdb-3058",
+            "spec": "gtfs-rt"
         },
         {
             "name": "Metro-de-Granada",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1568",
+            "type": "mobility-database",
             "fix": true,
             "http-options": {
                 "fetch-interval-days": 1,
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
-            }
-        },
-        {
-            "name": "Metro-de-Madrid",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1134",
-            "fix": true,
-            "http-options": {
-                "fetch-interval-days": 1,
-                "headers": {
-                    "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
-                }
-            }
-        },
-        {
-            "name": "Metro-de-Málaga",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1497",
-            "fix": true,
-            "http-options": {
-                "fetch-interval-days": 1,
-                "headers": {
-                    "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
-                }
-            }
+            },
+            "mdb-id": "mdb-2784"
         },
         {
             "name": "Metro-de-Sevilla",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1583",
+            "type": "mobility-database",
             "fix": true,
             "http-options": {
                 "fetch-interval-days": 1,
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
-            }
+            },
+            "mdb-id": "mdb-2781"
         },
         {
             "name": "Metro-de-Valencia",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1168",
+            "type": "mobility-database",
             "fix": true,
             "http-options": {
                 "fetch-interval-days": 1,
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
-            }
+            },
+            "mdb-id": "mdb-2830"
         },
         {
             "name": "Metro-Ligero-y-Tranvía-Comunidad-de-Madrid",
@@ -1274,34 +1223,37 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0",
                 "url": "https://datos.tenerife.es/en/datos/conjuntos-de-datos/informacion-sobre-el-sistema-de-transporte-de-metropolitano-de-tenerife-tranvia?return=aHR0cHM6Ly9kYXRvcy50ZW5lcmlmZS5lcy9lbi9kYXRvcy9jb25qdW50b3MtZGUtZGF0b3M="
-            }
+            },
+            "skip": true,
+            "skip-reason": "expired"
         },
         {
             "name": "Ouigo",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1766",
+            "type": "mobility-database",
             "fix": true,
             "http-options": {
                 "fetch-interval-days": 1,
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
-            }
+            },
+            "mdb-id": "mdb-2785",
+            "script": "es-ouigo.lua"
         },
         {
             "name": "Pujol-autobuses",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1577",
+            "type": "mobility-database",
             "fix": true,
             "http-options": {
                 "fetch-interval-days": 1,
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
-            }
+            },
+            "mdb-id": "mdb-2750"
         },
         {
-            "name": "RENFE---Media,-Larga-Distancia-y-AVE",
+            "name": "RENFE-Larga-Distancia-y-AVE",
             "type": "http",
             "url": "https://nap.transportes.gob.es/api/Fichero/download/1098",
             "fix": true,
@@ -1314,10 +1266,11 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0",
                 "url": "https://data.renfe.com/dataset/horarios-de-alta-velocidad-larga-distancia-y-media-distancia"
-            }
+            },
+            "script": "es-renfe.lua"
         },
         {
-            "name": "RENFE---Media,-Larga-Distancia-y-AVE",
+            "name": "RENFE-Larga-Distancia-y-AVE",
             "type": "url",
             "spec": "gtfs-rt",
             "url": "https://gtfsrt.renfe.com/trip_updates_LD.pb",
@@ -1328,63 +1281,65 @@
         },
         {
             "name": "Reus-Transport",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1788",
+            "type": "mobility-database",
             "fix": true,
             "http-options": {
                 "fetch-interval-days": 1,
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
-            }
+            },
+            "mdb-id": "mdb-2803",
+            "skip": true,
+            "skip-reason": "expired"
         },
         {
             "name": "Salamanca-de-Transportes-S.A.-",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1598",
+            "type": "mobility-database",
             "fix": true,
             "http-options": {
                 "fetch-interval-days": 1,
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
-            }
+            },
+            "mdb-id": "mdb-2823"
         },
         {
             "name": "Sarfa-autobuses",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1576",
+            "type": "mobility-database",
             "fix": true,
             "http-options": {
                 "fetch-interval-days": 1,
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
-            }
+            },
+            "mdb-id": "mdb-2764"
         },
         {
             "name": "Transbordador-Puente-Bizkaia",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1270",
+            "type": "mobility-database",
             "fix": true,
             "http-options": {
                 "fetch-interval-days": 1,
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
-            }
+            },
+            "mdb-id": "mdb-2789"
         },
         {
             "name": "Transporte-metropolitano-Andalucía",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1562",
+            "type": "mobility-database",
             "fix": true,
             "http-options": {
                 "fetch-interval-days": 1,
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
-            }
+            },
+            "mdb-id": "mdb-2721"
         },
         {
             "name": "Transporte-metropolitano-de-Barcelona-(Bus-y-Metro)",
@@ -1400,8 +1355,7 @@
         },
         {
             "name": "Transporte-público-de-la-Isla-de-Mallorca",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1272",
+            "type": "mobility-database",
             "fix": true,
             "http-options": {
                 "fetch-interval-days": 1,
@@ -1412,31 +1366,32 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0",
                 "url": "https://www.tib.org/ca/sobre-ctm/portal-de-transparencia/dades-obertes"
-            }
+            },
+            "mdb-id": "mdb-2766"
         },
         {
             "name": "Transportes-de-Murcia",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1597",
+            "type": "mobility-database",
             "fix": true,
             "http-options": {
                 "fetch-interval-days": 1,
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
-            }
+            },
+            "mdb-id": "mdb-2828"
         },
         {
             "name": "Transportes-Urbanos-de-Santander",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1602",
+            "type": "mobility-database",
             "fix": true,
             "http-options": {
                 "fetch-interval-days": 1,
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
-            }
+            },
+            "mdb-id": "mdb-2762"
         },
         {
             "name": "Transportes-Urbanos-de-Vitoria-(TUVISA)",
@@ -1454,39 +1409,39 @@
         },
         {
             "name": "Transporte-urbano-de-Zaragoza",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1176",
+            "type": "mobility-database",
             "fix": true,
             "http-options": {
                 "fetch-interval-days": 1,
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
-            }
+            },
+            "mdb-id": "mdb-2773"
         },
         {
             "name": "Tranvía-de-Murcia",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1569",
+            "type": "mobility-database",
             "fix": true,
             "http-options": {
                 "fetch-interval-days": 1,
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
-            }
+            },
+            "mdb-id": "mdb-2729"
         },
         {
             "name": "Tranvía-de-Zaragoza",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1687",
+            "type": "mobility-database",
             "fix": true,
             "http-options": {
                 "fetch-interval-days": 1,
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
-            }
+            },
+            "mdb-id": "mdb-2801"
         },
         {
             "name": "Tranvía-Metropolitano-Barcelona",
@@ -1514,32 +1469,31 @@
         },
         {
             "name": "Trenes-y-tranvías-de-Alicante-y-Costa-Blanca",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1167",
+            "type": "mobility-database",
             "fix": true,
             "http-options": {
                 "fetch-interval-days": 1,
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
-            }
+            },
+            "mdb-id": "mdb-2829"
         },
         {
             "name": "Unauto",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1575",
+            "type": "mobility-database",
             "fix": true,
             "http-options": {
                 "fetch-interval-days": 1,
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
-            }
+            },
+            "mdb-id": "mdb-2723"
         },
         {
             "name": "VAC-124.-Huesca-Lleida-con-hijuelas",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1713",
+            "type": "mobility-database",
             "fix": true,
             "http-options": {
                 "fetch-interval-days": 1,
@@ -1548,12 +1502,12 @@
                 }
             },
             "skip": true,
-            "skip-reason": "Feed expired"
+            "skip-reason": "Feed expired",
+            "mdb-id": "mdb-2809"
         },
         {
             "name": "VAC-231.-Madrid,-Piedrabuena-(Ciudad-Real)-y-Agudo-(Ciudad-Real)",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1711",
+            "type": "mobility-database",
             "fix": true,
             "http-options": {
                 "fetch-interval-days": 1,
@@ -1562,12 +1516,12 @@
                 }
             },
             "skip": true,
-            "skip-reason": "Feed expired"
+            "skip-reason": "Feed expired",
+            "mdb-id": "mdb-2811"
         },
         {
             "name": "VAC-232.-Madrid,-Málaga-y-Algeciras-(Cádiz)",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1132",
+            "type": "mobility-database",
             "fix": true,
             "http-options": {
                 "fetch-interval-days": 1,
@@ -1576,12 +1530,12 @@
                 }
             },
             "skip": true,
-            "skip-reason": "Feed expired"
+            "skip-reason": "Feed expired",
+            "mdb-id": "mdb-2817"
         },
         {
             "name": "VAC-245.-Huesca-Barcelona",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1712",
+            "type": "mobility-database",
             "fix": true,
             "http-options": {
                 "fetch-interval-days": 1,
@@ -1590,13 +1544,449 @@
                 }
             },
             "skip": true,
-            "skip-reason": "Feed expired"
+            "skip-reason": "Feed expired",
+            "mdb-id": "mdb-2810"
         },
         {
             "name": "Trasnportes-Insular-de-La-Palma-(TILP)",
             "type": "http",
             "url": "https://www.arcgis.com/sharing/rest/content/items/a00541a34b4b432aa7c9937f34b3e19e/data",
-            "fix": "true"
+            "fix": "true",
+            "skip": true,
+            "skip-reason": "expired"
+        },
+        {
+            "name": "Transportes-interurbanos-de-Tenerife-(TITSA)",
+            "type": "mobility-database",
+            "mdb-id": "mdb-787"
+        },
+        {
+            "name": "Consorcio-Regional-de-Transportes-de-Madrid-CRTM-I",
+            "type": "mobility-database",
+            "mdb-id": "mdb-791",
+            "fix": true
+        },
+        {
+            "name": "Consorcio-Regional-de-Transportes-de-Madrid",
+            "type": "mobility-database",
+            "mdb-id": "mdb-792"
+        },
+        {
+            "name": "EMT-Madrid",
+            "type": "mobility-database",
+            "mdb-id": "mdb-793",
+            "skip": true,
+            "skip-reason": "Huge number of duplicated trips"
+        },
+        {
+            "name": "Metro-de-Madrid",
+            "type": "mobility-database",
+            "mdb-id": "mdb-794"
+        },
+        {
+            "name": "EMT-Valencia",
+            "type": "mobility-database",
+            "mdb-id": "mdb-795",
+            "fix": true
+        },
+        {
+            "name": "TUVISA-(Transportes-Urbanos-de-Vitoria)",
+            "type": "mobility-database",
+            "mdb-id": "mdb-797"
+        },
+        {
+            "name": "Àrea-Metropolitana-de-Barcelona-(AMB)",
+            "type": "mobility-database",
+            "mdb-id": "mdb-892"
+        },
+        {
+            "name": "TRAM-Barcelona",
+            "type": "mobility-database",
+            "mdb-id": "mdb-1003"
+        },
+        {
+            "name": "TRAM-Barcelona-Besós",
+            "type": "mobility-database",
+            "mdb-id": "mdb-1004"
+        },
+        {
+            "name": "Metro-de-Málaga",
+            "type": "mobility-database",
+            "mdb-id": "mdb-1017"
+        },
+        {
+            "name": "Bizkaibus",
+            "type": "mobility-database",
+            "mdb-id": "mdb-1135"
+        },
+        {
+            "name": "Bizkaibus",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://baliabideak.bizkaia.eus/Bizkaibus/GTFSRealTime/FeedTripUpdates.pb",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0",
+                "url": "https://data.ctb.eus/en/dataset/bizkaibus-viajes-alertas-retrasos-online"
+            }
+        },
+        {
+            "name": "La-Burundesa-S.A.",
+            "type": "mobility-database",
+            "mdb-id": "mdb-1316",
+            "fix": true
+        },
+        {
+            "name": "Generalitat-Valenciana-(Intercity-bus)",
+            "type": "mobility-database",
+            "mdb-id": "mdb-1870"
+        },
+        {
+            "name": "Consorcio-de-Transportes-de-Mallorca",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2141"
+        },
+        {
+            "name": "Empresa-Malagueña-de-Transportes-(EMT)",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2212"
+        },
+        {
+            "name": "Empresa-Malagueña-de-Transportes-(EMT)",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2213",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "Empresa-Malagueña-de-Transportes-(EMT)",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2214",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "Empresa-Malagueña-de-Transportes-(EMT)",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2215",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "Transports-Metropolitans-de-Barcelona-(TMB)",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2359",
+            "skip": true,
+            "skip-reason": "Already in Transporte-metropolitano-de-Barcelona-(Bus-y-Metro)"
+        },
+        {
+            "name": "Àrea-Metropolitana-de-Barcelona-(AMB)",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2369",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "EMTF",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2400"
+        },
+        {
+            "name": "EMTF",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2401",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "EMTF",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2402",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "EMTF",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2403",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "Renfe-commuter-trains-(Cercanias)",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2653",
+            "skip": true,
+            "skip-reason": "Already from NAP with rt"
+        },
+        {
+            "name": "La-Regional-Vallisoletana-S.A",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2691"
+        },
+        {
+            "name": "Bilbobus",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2698",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "Consorcio-Regional-de-Transportes-de-Madrid-CRTM-C",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2720",
+            "skip": true,
+            "skip-reason": "expired"
+        },
+        {
+            "name": "Oñati-urban-(Oñatiko-herribusa)",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2737",
+            "http-options": {
+                "fetch-interval-days": 1,
+                "headers": {
+                    "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+                }
+            }
+        },
+        {
+            "name": "Autocares-Rías-Baixas-(Rías-Baixas-Coaches)",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2752",
+            "fix": true,
+            "http-options": {
+                "fetch-interval-days": 1,
+                "headers": {
+                    "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+                }
+            }
+        },
+        {
+            "name": "Tolosa-City-Council-(Urbano-de-Tolosa)",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2758",
+            "http-options": {
+                "fetch-interval-days": 1,
+                "headers": {
+                    "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+                }
+            }
+        },
+        {
+            "name": "Direxis-Masats",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2761",
+            "http-options": {
+                "fetch-interval-days": 1,
+                "headers": {
+                    "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+                }
+            }
+        },
+        {
+            "name": "Direxis-TGO-(Transportes-Generales-de-Olesa)",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2775"
+        },
+        {
+            "name": "Rodil",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2778",
+            "skip": true,
+            "skip-reason": "expired"
+        },
+        {
+            "name": "Costa-Coaches",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2780",
+            "skip": true,
+            "skip-reason": "expired"
+        },
+        {
+            "name": "Viagón-Coaches",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2786",
+            "http-options": {
+                "fetch-interval-days": 1,
+                "headers": {
+                    "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+                }
+            }
+        },
+        {
+            "name": "Alvarez-Travelers-Coaches",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2787",
+            "http-options": {
+                "fetch-interval-days": 1,
+                "headers": {
+                    "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+                }
+            }
+        },
+        {
+            "name": "Kbus-(Barakaldo-urban)",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2788",
+            "http-options": {
+                "fetch-interval-days": 1,
+                "headers": {
+                    "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+                }
+            }
+        },
+        {
+            "name": "Sopela-Town-Hall",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2790",
+            "http-options": {
+                "fetch-interval-days": 1,
+                "headers": {
+                    "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+                }
+            }
+        },
+        {
+            "name": "Erandio-City-Council-(Erandio!-Busa)",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2793",
+            "http-options": {
+                "fetch-interval-days": 1,
+                "headers": {
+                    "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+                }
+            }
+        },
+        {
+            "name": "Lázara-Coaches",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2794",
+            "skip": true,
+            "skip-reason": "expired"
+        },
+        {
+            "name": "Ancebus",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2795",
+            "http-options": {
+                "fetch-interval-days": 1,
+                "headers": {
+                    "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+                }
+            }
+        },
+        {
+            "name": "Bermibusa",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2799",
+            "skip": true,
+            "skip-reason": "duplicate"
+        },
+        {
+            "name": "Consorcio-Regional-de-Transportes-de-Madrid-CRTM-L",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2802"
+        },
+        {
+            "name": "Cots-Alsina",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2805",
+            "fix": true,
+            "http-options": {
+                "fetch-interval-days": 1,
+                "headers": {
+                    "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+                }
+            }
+        },
+        {
+            "name": "Eixbus-S.At",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2806",
+            "skip": true,
+            "skip-reason": "Invalid GTFS"
+        },
+        {
+            "name": "Albarracín-Movilidad",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2807",
+            "http-options": {
+                "fetch-interval-days": 1,
+                "headers": {
+                    "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+                }
+            },
+            "skip": true,
+            "skip-reason": "Internal server error"
+        },
+        {
+            "name": "La-Veloz-SA",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2808",
+            "http-options": {
+                "fetch-interval-days": 1,
+                "headers": {
+                    "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+                }
+            }
+        },
+        {
+            "name": "Autobús-urbano-de-Madrid-(CRTM)",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2820",
+            "fix": true
+        },
+        {
+            "name": "Barcelona-ATM",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2826",
+            "http-options": {
+                "fetch-interval-days": 1,
+                "headers": {
+                    "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
+                }
+            },
+            "skip": true,
+            "skip-reason": "Already in Transporte-metropolitano-de-Barcelona-(Bus-y-Metro)"
+        },
+        {
+            "name": "Autoridad-de-Transporte-Metropolitano-del-Área-de-",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2832",
+            "skip": true,
+            "skip-reason": "duplicate"
+        },
+        {
+            "name": "Catalonia-Intercity-Bus",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2926",
+            "skip": true,
+            "skip-reason": "Same as from NAP"
+        },
+        {
+            "name": "Syndicat-des-Mobilités-Pays-Basque-Adour",
+            "type": "mobility-database",
+            "mdb-id": "tdg-80701"
+        },
+        {
+            "name": "Syndicat-des-Mobilités-Pays-Basque-Adour",
+            "type": "mobility-database",
+            "mdb-id": "tdg-80702",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "Syndicat-des-Mobilités-Pays-Basque-Adour",
+            "type": "mobility-database",
+            "mdb-id": "tdg-80703",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "Guaguas-Municipales",
+            "type": "mobility-database",
+            "mdb-id": "tld-767"
+        },
+        {
+            "name": "Palma-de-Mallorca",
+            "type": "mobility-database",
+            "mdb-id": "tld-4324",
+            "skip": true,
+            "skip-reason": "Same as from NAP"
+        },
+        {
+            "name": "TranspRober",
+            "type": "mobility-database",
+            "mdb-id": "tld-4890"
         }
     ]
 }

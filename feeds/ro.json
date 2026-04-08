@@ -230,6 +230,7 @@
             "name": "Tursib",
             "type": "mobility-database",
             "mdb-id": "mdb-2099",
+            "fix": true,
             "license": {
                 "spdx-identifier": "CC-BY-SA-4.0"
             }

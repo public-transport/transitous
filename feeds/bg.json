@@ -7,6 +7,10 @@
         {
             "name": "Petko",
             "github": "ignisf"
+        },
+        {
+            "name": "Milen-Joan",
+            "github": "BPilot253"
         }
     ],
     "sources": [
@@ -51,6 +55,14 @@
             }
         },
         {
+            "name": "varna",
+            "type": "http",
+            "url": "https://gtfs.livetransport.eu/gtfs/varna.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
             "name": "bdz",
             "type": "http",
             "url": "https://jbb.ghsq.de/gtfs/bg-bdz.gtfs.zip"
@@ -60,6 +72,18 @@
             "type": "url",
             "spec": "gtfs-rt",
             "url": "https://rt.gtfs.baguette.pirnet.si/gtfs-rt/bdz/trip_updates.pb"
+        },
+        {
+            "name": "pleven",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2119",
+            "fix-csv-quotes": true
+        },
+        {
+            "name": "pleven",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2120",
+            "spec": "gtfs-rt"
         }
     ]
 }

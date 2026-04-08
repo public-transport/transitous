@@ -62,8 +62,12 @@ as they use those as well.
 ### Realtime data
 
 For properly dealing with delay, disruptions and all kinds of other unplanned
-and short-notice service changes Transitous also uses [GTFS Realtime (RT)](https://gtfs.org/documentation/realtime/reference/) feeds.
-Those are polled once a minute for updates.
+and short-notice service changes Transitous also uses realtime data feeds which are polled for updates once a minute.
+
+Two formats are supported currently:
+
+* [GTFS Realtime (RT)](https://gtfs.org/documentation/realtime/reference/)
+* [SIRI](https://transmodel-cen.eu/index.php/siri/)
 
 GTFS-RT feeds come in three different flavors:
 
@@ -72,6 +76,10 @@ GTFS-RT feeds come in three different flavors:
 * Vehicle positions, that is geographic coordinates of the current position of trains or busses.
 
 Transitous can handle the first two so far.
+
+SIRI feeds also come in multiple flavors, the following two are supported so far:
+* Estimated Timetable (ET): schedule changes such as delays and cancellations.
+* Situation Exchange (SX): alerts messages.
 
 Note that realtime feeds typically only work in combination with a matching static schedule feed. So e.g. combining a smaller realtime feed
 of a single operator with a nationwide aggregated static feed will usually not work out of the box.
@@ -139,7 +147,7 @@ The main attribute of a region is `sources`. It contains a list of feeds that sh
 
 ### Static feeds (timetable)
 
-Each source can either be of `type` `mobility-database`, `transitland-atlas` or `http`.
+Each source can either be of `type` `mobility-database`, `transitland-atlas`, `http` or `ftp`.
 Feeds from the [Mobility Database](https://mobilitydatabase.org/) can be referenced by the id in the URL on the website.
 Feeds from [Transitland](https://www.transit.land/feeds) (a different database of feeds), can be referenced by their Onestop ID.
 
@@ -161,7 +169,7 @@ Transitland:
 }
 ```
 
-If the feed is not part of any existing database, a http source can be used instead.
+If the feed is not part of any existing database, a `http` or `ftp` source can be used instead.
 
 ```json
 {
@@ -183,7 +191,7 @@ If the feed contains invalid entries, you can try to add the `"fix": true` attri
 GTFS-RT feeds contain updates for a GTFS feed.
 In order to know which feed to apply the updates to, their name must match the name of the static timetable.
 Each source can either be of `type` `mobility-database`, `transitland-atlas` or `url`.
-In the case of the `url` type, the field `spec` needs to be set to `gtfs-rt`.
+In the case of the `url` type, the field `spec` needs to be set to `gtfs-rt`, `siri` or `siri-json`.
 
 This example applies the updates to the `lviv` feed:
 ```
@@ -282,8 +290,8 @@ There are all kinds of options that may be specified in a source:
 
 Option Name            | Description
 ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------
-`type`                 | `http`, `mobility-database`, `transitland-atlas` or `url`. Url sources are not downloaded, but passed to MOTIS as URL. This is used for realtime feeds.
-`spec`                 | `gtfs`, `gtfs-rt`, `gbfs` or `netex`. `gtfs-rt` and `netex` may only be used when `type` is `url`.
+`type`                 | `http`, `mobility-database`, `transitland-atlas`, `ftp` or `url`. URL sources are not downloaded, but passed to MOTIS as URL. This is used for realtime feeds.
+`spec`                 | `gtfs`, `gtfs-rt`, `gbfs`, `netex`, `siri` or `siri_json`. `gtfs-rt`, `netex`, `siri` and `siri_json` may only be used when `type` is `url`.
 `fix`                  | Fix / drop fields that are not correct.
 `skip`                 | Don't download or use this feed.
 `skip-reason`          | Reason for why this feed can't be used right now.
@@ -296,6 +304,7 @@ Option Name            | Description
 `display-name-options` | Specify which strings identifying a vehicle should be displayed to the user
 `script`               | A Lua script applied by MOTIS to GTFS data during import, see [the MOTIS documentation](https://github.com/motis-project/motis/blob/master/docs/scripting.md) for details.
 `use-gtfsclean`        | Preprocess GTFS feeds with `gtfsclean`, default is `true`.
+`enable-crowd-sourced-realtime` | Whether users should be able to submit gps positions for trips from this source.
 
 #### License Options
 
@@ -311,6 +320,14 @@ Option Name           | Description
 `headers`             | Dictionary of custom HTTP headers to send when checking for updates / downloading.
 `ignore-tls-errors`   | Ignore expired / invalid TLS certificate
 `fetch-interval-days` | Fetch this feed at most every `n` days. Useful if a server doesn't send `Last-Modified`, or to comply with terms of service.
+
+### Realtime Source Specific Options
+
+Sources of `"type": "url"` are continously fetched by the routing engine for real-time information.
+
+Option Name           | Description
+--------------------- | -------------------------------
+`derive-trip-updates` | Whether a vehicle positions feed should be used for calculating delay information.
 
 #### Display Name Options
 
@@ -380,6 +397,8 @@ curl https://the.feed.url | protoc gtfs-realtime.proto --decode=transit_realtime
 
 The Protocol Buffers schema file needed for this can be downloaded [here](https://gtfs.org/documentation/realtime/gtfs-realtime.proto).
 
+SIRI feeds are XML files and as such can be inspected with a regular text editor.
+
 To see the realtime coverage available in Transitous, you can toggle the color coding of vehicles
 on [its map view](https://api.transitous.org/) in the upper right corner. A green/yellow/red gradient shows the amount
 of delay for the corresponding trip, while gray vehicles have no realtime information.
@@ -389,7 +408,8 @@ of delay for the corresponding trip, while gray vehicles have no realtime inform
 GBFS consists of an entry point in form of a small JSON manifest that contains links to further JSON files with the actual information,
 generally split up by how often certain aspects are expected to change.
 
-Transitous currently has no built-in way to visualize availabe sharing vehicles.
+The [Transitous map view](https://api.transitous.org/) shows a button to enable markers for each
+station with details about available vehicles. The buttons appear, when zoomed in close enough.
 
 ### On-demand services
 
@@ -435,7 +455,7 @@ git submodule update --remote --checkout --init
 Proceed by building the container:
 
 ```bash
-podman build ci/container/ -t transitous -f ci/container/Containerfile
+podman build . -t transitous -f ci/container/Containerfile
 ```
 
 Enter the container:
@@ -450,7 +470,7 @@ Now inside the container, you can download and post-process the feeds you want.
 ./src/fetch.py feeds/<region>.json
 ```
 
-If you want to download all of them instead, you can use `mkdir -p out && cd out && wget --mirror -l 1 --no-parent --no-directories --accept gtfs.zip -e robots=off https://api.transitous.org/gtfs/` to download the postprocessed files from the Transitous server, or `./ci/fetch-feeds.py timer` to process them yourself. However, importing all feeds will take about half an hour even on powerful hardware.
+If you want to download all of them instead, you can use `mkdir -p out && cd out && wget --limit-rate=30m --mirror -l 2 --no-parent --cut-dirs=1 --no-host-directories --include-directories=gtfs,gtfs/scripts --accept .zip --accept .lua --accept config.yml -e robots=off https://api.transitous.org/gtfs/` to download the postprocessed files from the Transitous server, or `./ci/fetch-feeds.py timer` to process them yourself. However, importing all feeds will take about half an hour even on powerful hardware.
 
 The `out/` directory should now contain a number of zip files.
 

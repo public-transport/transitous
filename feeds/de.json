@@ -34,14 +34,13 @@
                 "FlixBus-de",
                 "EUROSTAR",
                 "Bremer Straßenbahn AG",
-                "Verkehrsgemeinschaft Osnabrück",
-                "Stadtwerke Landshut",
-                "PKP Intercity"
+                "Verkehrsgemeinschaft Osnabrück"
             ],
             "http-options": {
                 "fetch-interval-days": 2
             },
-            "script": "de-DELFI.lua"
+            "script": "de-DELFI.lua",
+            "drop-shapes": true
         },
         {
             "name": "DELFI",
@@ -51,7 +50,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-SA-4.0",
                 "url": "https://germany.motis-project.org/LICENSE.txt"
-            }
+            },
+            "use-feed-proxy": false
         },
         {
             "name": "DELFI",
@@ -61,12 +61,14 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0",
                 "url": "http://[2a00:12d8:700e:0:9a12:3eb4:e927:3d9a]/feed/LICENSE.txt"
-            }
+            },
+            "use-feed-proxy": false
         },
         {
             "name": "VBB",
             "type": "http",
             "url": "https://www.vbb.de/vbbgtfs",
+            "fix": true,
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             }
@@ -236,6 +238,25 @@
             "type": "url",
             "url": "https://di.esel.ac/gbfs/gbfs.json",
             "spec": "gbfs"
+        },
+        {
+            "name": "DottRostock",
+            "type": "url",
+            "url": "https://gbfs.api.ridedott.com/public/v2/rostock/gbfs.json",
+            "spec": "gbfs"
+        },
+        {
+            "name": "amarillo-bw",
+            "type": "http",
+            "url": "http://vkrause.github.io/amarillo-bw-liberator/amarillo-bw.zip",
+            "use-gtfsclean": false
+        },
+        {
+            "name": "amarillo-bw",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://amarillo.mobidata-bw.de/region/bw/gtfs-rt",
+            "use-feed-proxy": true
         }
     ]
 }

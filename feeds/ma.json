@@ -1,0 +1,18 @@
+{
+    "maintainers": [
+        {
+            "name": "Carl Schwan",
+            "github": "carlschwan"
+        }
+    ],
+    "sources": [
+        {
+            "name": "oncf",
+            "type": "http",
+            "url": "https://github.com/CarlSchwan/rail_maroc_oncf/raw/refs/heads/carl/expiration-date/oncf_gtfs.zip",
+            "license": {
+                "spdx-identifier": "ODbL-1.0"
+            }
+        }
+    ]
+}

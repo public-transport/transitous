@@ -58,6 +58,8 @@ class Source:
     default_timezone: Optional[str] = None
     keep_additional_fields = True
     script: Optional[str] = None
+    use_feed_proxy: bool = False
+    enable_crowd_sourced_realtime = False
 
     def __init__(self, parsed: Optional[dict] = None):
         self.license = License()
@@ -102,6 +104,11 @@ class Source:
                 self.keep_additional_fields = bool(parsed["keep-additional-fields"])
             if "script" in parsed:
                 self.script = parsed["script"]
+            if "use-feed-proxy" in parsed:
+                self.use_feed_proxy = \
+                    bool(parsed["use-feed-proxy"])
+            if "enable-crowd-sourced-realtime" in parsed:
+                self.enable_crowd_sourced_realtime = bool(parsed["enable-crowd-sourced-realtime"])
 
 
 class HttpOptions:
@@ -180,9 +187,18 @@ class HttpSource(Source):
                 self.options = HttpOptions()
 
 
+class FtpSource(Source):
+    url: str = ""
+
+    def __init__(self, parsed: dict):
+        super().__init__(parsed)
+        self.url = parsed["url"]
+
+
 class UrlSource(Source):
     url: str = ""
     headers: dict[str, str]
+    derive_trip_updates: bool = False
 
     def __init__(self, parsed: Optional[dict] = None):
         self.headers = {}
@@ -192,6 +208,9 @@ class UrlSource(Source):
             self.url = parsed["url"]
             if "headers" in parsed:
                 self.headers = parsed["headers"]
+            if "derive-trip-updates" in parsed:
+                self.derive_trip_updates = parsed["derive-trip-updates"]
+            
 
 
 def sourceFromJson(parsed: dict) -> Source:
@@ -202,6 +221,8 @@ def sourceFromJson(parsed: dict) -> Source:
             return MobilityDatabaseSource(parsed)
         case "http":
             return HttpSource(parsed)
+        case "ftp":
+            return FtpSource(parsed)
         case "url":
             return UrlSource(parsed)
 

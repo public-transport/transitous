@@ -14,7 +14,8 @@
         {
             "name": "MARTA",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-dnh-marta~rt"
+            "transitland-atlas-id": "f-dnh-marta~rt",
+            "use-feed-proxy": true
         }
     ]
 }
