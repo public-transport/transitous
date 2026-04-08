@@ -1,0 +1,41 @@
+<!--
+SPDX-FileCopyrightText: 2026 Kristjan Esperanto
+
+SPDX-License-Identifier: AGPL-3.0-or-later
+-->
+
+{{/* Dark mode: apply stored/OS preference before first paint */}}
+<script>
+  (function () {
+    var stored = null;
+    try { stored = localStorage.getItem('bs-theme'); } catch (e) {}
+    var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    var theme = stored || (prefersDark ? 'dark' : 'light');
+    document.documentElement.setAttribute('data-bs-theme', theme);
+  })();
+</script>
+
+{{/* Dark mode toggle button — injected into nav via JS, no template override needed */}}
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var nav = document.querySelector('nav .flex-l.justify-between > .flex-l.items-center');
+    if (!nav) return;
+    var btn = document.createElement('button');
+    btn.className = 'theme-toggle-btn';
+    btn.title = 'Toggle dark/light mode';
+    btn.innerHTML = '<i id="theme-icon" class="bi bi-moon-fill"></i>';
+    btn.addEventListener('click', function () {
+      var html = document.documentElement;
+      var next = html.getAttribute('data-bs-theme') === 'dark' ? 'light' : 'dark';
+      html.setAttribute('data-bs-theme', next);
+      try { localStorage.setItem('bs-theme', next); } catch (e) {}
+      updateIcon(next);
+    });
+    nav.appendChild(btn);
+    function updateIcon(theme) {
+      var icon = document.getElementById('theme-icon');
+      if (icon) icon.className = theme === 'dark' ? 'bi bi-sun-fill' : 'bi bi-moon-fill';
+    }
+    updateIcon(document.documentElement.getAttribute('data-bs-theme'));
+  });
+</script>

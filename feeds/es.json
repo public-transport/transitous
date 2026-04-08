@@ -1744,6 +1744,7 @@
             "name": "Autocares-Rías-Baixas-(Rías-Baixas-Coaches)",
             "type": "mobility-database",
             "mdb-id": "mdb-2752",
+            "fix": true,
             "http-options": {
                 "fetch-interval-days": 1,
                 "headers": {

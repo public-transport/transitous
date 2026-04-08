@@ -30,7 +30,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: 0.143.0
+      HUGO_VERSION: 0.159.0
     steps:
       - uses: actions/setup-node@v6
         with:
@@ -42,24 +42,27 @@ jobs:
           && sudo dpkg -i ${{ runner.temp }}/hugo.deb
 
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           submodules: recursive
           fetch-depth: 0
 
       - name: Setup Pages
         id: pages
-        uses: actions/configure-pages@v4
+        uses: actions/configure-pages@v5
 
       - name: Install Node.js dependencies
         run: cd website && npm install
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: 3.x
 
       - run: pip install mkdocs
       - run: mkdocs build --site-dir ../website/static/doc/ -f docs/mkdocs.yml
+
+      - name: Build widget
+        run: cd website && npm run build:widget
 
       - name: Build with Hugo
         env:
@@ -68,10 +71,10 @@ jobs:
           HUGO_ENV: production
         run: |
           wget https://api.transitous.org/gtfs/license.json -O website/data/license.json
-          cd website && npm run release
+          cd website && hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           path: ./website/public
 
