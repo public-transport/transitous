@@ -104,7 +104,8 @@
             "url": "https://github.com/rozkladnik/gtfs-pwik-jaroslaw/releases/latest/download/gtfs.zip",
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
-            }
+            },
+            "fix": true
         },
         {
             "name": "Koleje-Mazowieckie",
@@ -128,7 +129,8 @@
             "url": "https://files.girlc.at/gtfs/swinoujscie.zip",
             "license": {
                 "spdx-identifier": "CC0-1.0"
-            }
+            },
+            "fix": true
         },
         {
             "name": "Koleje-Dolnośląskie",
@@ -555,8 +557,13 @@
         },
         {
             "name": "MPK-Wrocław",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u3h4-mpkautobusy~mpktramwaje~dla~sevibussiechnice~dlawiszniama"
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://cdn.zbiorkom.live/gtfs/wroclaw.zip",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "fix": true
         },
         {
             "name": "Łódź",
@@ -1283,7 +1290,9 @@
             "url": "https://files.girlc.at/gtfs/plonsk.zip",
             "license": {
                 "spdx-identifier": "CC0-1.0"
-            }
+            },
+            "skip": true,
+            "skip-reason": "Feed expired"
         },
         {
             "name": "Żywiec",
@@ -1363,9 +1372,9 @@
             "name": "Siechnice",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://files.girlc.at/gtfs/siechnice.zip",
+            "url": "https://cdn.zbiorkom.live/gtfs/wroclaw-siechnice.zip",
             "license": {
-                "spdx-identifier": "CC0-1.0"
+                "spdx-identifier": "MIT"
             }
         },
         {
@@ -1503,10 +1512,12 @@
             "license": {
                 "spdx-identifier": "MIT"
             },
-            "fix": true
+            "fix": true,
+            "skip": true,
+            "skip-reason": "Broken timetable data"
         },
         {
-            "name": "Bochnia",
+            "name": "RPK-Bochnia",
             "type": "http",
             "spec": "gtfs",
             "url": "https://owncloud.cesnet.cz/index.php/s/iZamXZfQIydo965/download",
@@ -1522,6 +1533,24 @@
             "url": "https://api.odt.org.pl/static/media/public_transport_data/GTFS-SKA.zip",
             "license": {
                 "spdx-identifier": "MIT"
+            }
+        },
+        {
+            "name": "Bardo",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://files.girlc.at/gtfs/bardo.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "Rozprza",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://files.girlc.at/gtfs/rozprza.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
             }
         }
     ]
