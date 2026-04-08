@@ -3024,12 +3024,22 @@
         {
             "name": "京王バス",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-keiobus~alllines~jp"
+            "transitland-atlas-id": "f-keiobus~alllines~jp",
+            "url-override": "https://api.odpt.org/api/v4/files/odpt/KeioBus/AllLines.zip?date=current&acl:consumerKey=h4jpflx7jl8psxxde205lm5yrj6zi30ijf11bwugealaslomp7f38bxw868ab34j"                                                                                                              
         },
         {
             "name": "京王バス",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-keiobus~alllines~jp~rt"
+            "transitland-atlas-id": "f-keiobus~alllines~jp~rt",
+            "spec": "gtfs-rt",
+            "url-override": "https://api.odpt.org/api/v4/gtfs/realtime/odpt_KeioBus_AllLines_vehicle?acl:consumerKey=h4jpflx7jl8psxxde205lm5yrj6zi30ijf11bwugealaslomp7f38bxw868ab34j"
+        },
+        {
+            "name": "京王バス",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-keiobus~alllines~jp~rt",
+            "spec": "gtfs-rt",
+            "url-override": "https://api.odpt.org/api/v4/gtfs/realtime/odpt_KeioBus_AllLines_trip_updates?acl:consumerKey=h4jpflx7jl8psxxde205lm5yrj6zi30ijf11bwugealaslomp7f38bxw868ab34j"
         }
     ]
 }
