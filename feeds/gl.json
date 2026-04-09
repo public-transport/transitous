@@ -1,0 +1,18 @@
+{
+    "maintainers": [
+        {
+            "name": "Thomas Ryde",
+            "github": "thomasryde"
+        }
+    ],
+    "sources": [
+        {
+            "name": "nuup-bussii",
+            "type": "http",
+            "url": "https://github.com/thomasryde/nuup-bussii-gtfs/releases/latest/download/nuup-bussii-gtfs.zip",
+            "license": {
+                "url": "https://bus.gl"
+            }
+        }
+    ]
+}
