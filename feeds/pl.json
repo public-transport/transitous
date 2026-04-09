@@ -270,8 +270,11 @@
         },
         {
             "name": "Gdańsk",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-ztm~gdansk",
+            "type": "http",
+            "url": "https://api.zbiorkom.live/api6-open/tricity/gtfs/default",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
             "fix": true
         },
         {
@@ -280,10 +283,22 @@
             "transitland-atlas-id": "f-u3tm-ztm~gdansk~rt"
         },
         {
+            "name": "Gdańsk",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.zbiorkom.live/api6-open/tricity/gtfsRealtime/default/tripUpdates",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "use-feed-proxy": true
+        },
+        {
             "name": "Gdynia",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-ztm~gdynia",
-            "fix": true
+            "fix": true,
+            "skip": true,
+            "skip-reason": "Deprecated due to lack of GTFS-RT feed"
         },
         {
             "name": "Giżycko",
@@ -559,7 +574,7 @@
             "name": "MPK-Wrocław",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://cdn.zbiorkom.live/gtfs/wroclaw.zip",
+            "url": "https://api.zbiorkom.live/api6-open/wroclaw/gtfs/default",
             "license": {
                 "spdx-identifier": "MIT"
             },
@@ -1372,7 +1387,7 @@
             "name": "Siechnice",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://cdn.zbiorkom.live/gtfs/wroclaw-siechnice.zip",
+            "url": "https://api.zbiorkom.live/api6-open/wroclaw/gtfs/siechnice",
             "license": {
                 "spdx-identifier": "MIT"
             }
