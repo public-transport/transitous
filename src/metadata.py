@@ -50,7 +50,7 @@ class Source:
     skip_reason: str = ""
     function: Optional[str] = None
     drop_too_fast_trips: bool = True
-    drop_shapes: bool = False
+    drop_shapes: bool = True
     drop_agency_names: List[str] = []
     keep_agency_names: List[str] = []
     display_name_options: Optional[DisplayNameOptions] = None
