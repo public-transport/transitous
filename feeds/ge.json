@@ -1,0 +1,18 @@
+{
+    "maintainers": [
+        {
+            "name": "Jonah Brüchert",
+            "github": "jbruechert"
+        }
+    ],
+    "sources": [
+        {
+            "name": "georgian-railway",
+            "type": "http",
+            "url": "https://jbb.ghsq.de/gtfs/ge-georgian-railway.gtfs.zip",
+            "license": {
+                "spdx-identifier": "ODbL-1.0"
+            }
+        }
+    ]
+}
