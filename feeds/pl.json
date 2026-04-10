@@ -716,7 +716,8 @@
             "url": "https://files.girlc.at/gtfs/arriva.zip",
             "license": {
                 "spdx-identifier": "CC0-1.0"
-            }
+            },
+            "script": "pl-Koleje-Wielkopolskie.lua"
         },
         {
             "name": "Arriva",
@@ -1472,7 +1473,8 @@
             "url": "https://github.com/pawlinski07/pawlinski-gtfs/raw/refs/heads/main/KolejPleszewska.zip",
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
-            }
+            },
+            "script": "pl-Koleje-Wielkopolskie.lua"
         },
         {
             "name": "Chełmski-Rower",
