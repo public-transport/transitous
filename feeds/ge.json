@@ -17,7 +17,14 @@
         {
             "name": "tbilisi-transport-company",
             "type": "http",
-            "url": "https://jbb.ghsq.de/gtfs/ge-georgian-railway.gtfs.zip"
+            "url": "https://jbb.ghsq.de/gtfs/ge-tbilisi.gtfs.zip"
+        },
+        {
+            "name": "tbilisi-transport-company",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "http://vm-gtfs.spline.de/gtfs-rt.pb",
+            "derive-trip-updates": true
         }
     ]
 }
