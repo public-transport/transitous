@@ -17,7 +17,9 @@
             "spec": "gtfs-rt",
             "type": "url",
             "url": "https://api.busnear.by/external/gtfsrt/export",
-            "headers": {},
+            "headers": {
+                "authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBVSEZSSzBIakZBMmNZUFdyb0F3YVY2YnhMSUdSeTR5QWZZL05veGhFL2lJCjIzd0RhbW5lT2NYRStxb1NXN0lORk56emNReTM0bVZYK2dIbFNzVG5XNG8KLS0tIEFjKzRjZk9yeUZVdkYrUGZUMmx3ck5EUytFWVVod0QybGg0azA4eGRIc2sK+SXkpNXfkefnzLd3/QdlQAsjgynsj4EU/NBbGof5PTO0HHWw8P7eYPgKAwTJ/ZrzHQ=="
+            },
             "use-feed-proxy": true
         },
         {

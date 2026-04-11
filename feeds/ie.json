@@ -24,7 +24,9 @@
             "type": "url",
             "spec": "gtfs-rt",
             "url": "https://api.nationaltransport.ie/gtfsr/v2/TripUpdates",
-            "headers": {},
+            "headers": {
+                "x-api-key": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSA2cUZmTDNielNGN2M2VW42V284NGFzTHRLMUMxRVVrcFFxRkwyWE8vQmdnCk41NzRyVm1FRG10c1Zadm03L3ZOTVVVY01rSXVxK0VxZXNlN1g0UEhTeGMKLS0tIGhma3dmTXRvcWhjQkpqNkUxaENScnhGZkt1eVdTdFgzSWQvcExpdDNqMDgK+zEGcPuxQ5Z87rsRcAm8feL1ntIXvrnLuHwhjp76VfCE/TWdfdWzdHV0BtObxbz0JkXkkQl1r3rXLQi/rhFS6Q=="
+            },
             "license": {
                 "spdx-identifier": "CC-BY-SA-4.0"
             },
