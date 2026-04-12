@@ -367,6 +367,14 @@ This is useful for passing in things like headers with API keys.
 }
 ```
 
+### Private API keys
+
+If a static or realtime feed needs an API key that you do not want to commit publicly, you can encrypt it with [age](https://age-encryption.org/) with the public key `age1xpexzyk4k608tsccev20d7uakptkmgxr4nc8s0azzywkgtz86aaqsdryr4`, base64-encode it, and preprend `AGE-ENCRYPTED:`
+
+`echo AGE-ENCRYPTED:$(echo -n "my-api-key" | age -r age1xpexzyk4k608tsccev20d7uakptkmgxr4nc8s0azzywkgtz86aaqsdryr4 | base64 -w0)`
+
+You can use the resulting string as a value for HTTP headers ([example](https://github.com/public-transport/transitous/blob/main/feeds/ch.json)) or as the URL of the feed itself (in case the URL contains the API key). For realtime feeds, you will additionally need to set `"use-feed-proxy": true`. The encrypted strings will be decrypted while fetching the feeds, the private key for decryption of the API keys is only known to Transitous maintainers.
+
 ## Diagnostics
 
 There's a number of built-in and external tools available to inspect data sets and to check whether they

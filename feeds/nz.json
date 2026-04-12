@@ -75,7 +75,8 @@
             "type": "url",
             "url": "https://api.opendata.metlink.org.nz/v1/gtfs-rt/servicealerts",
             "headers": {
-                "Accept": "application/x-protobuf"
+                "Accept": "application/x-protobuf",
+                "x-api-key": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBkalRWdEFCcWsrUmYzRDVOZ0wzUEtaVzZ6clZtYWF1UGM1M3pjUjNvaVVnClp5RzlKbGgrc2E5eWx5ZytJNmR2eWppSU83YUI1ZzNiZ1J3emdEMG5HSm8KLS0tIEhraHlkTk1OclZGTzBpalVhdUNBWFpkWWQyZjQwdGo3ZDR4UFErOEx3UncKXF8mLI7X4WDHu3VniUP7V2XEfTlWL0UZ9wqX5nMFFMYDF0cZPhDTZWPs12y3JDQUIKi2HkY8FpQwksnMapAyogE8TGvAr+BI"
             },
             "use-feed-proxy": true
         },
@@ -85,7 +86,8 @@
             "type": "url",
             "url": "https://api.opendata.metlink.org.nz/v1/gtfs-rt/tripupdates",
             "headers": {
-                "Accept": "application/x-protobuf"
+                "Accept": "application/x-protobuf",
+                "x-api-key": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBlMnNMUkZrWFJVOVRkV1ZhWS9rcWtuWUdKU0FTSXBickpkZ21NeDRrNGxrCnhxdmI2R3cvOXlDVy81VUVrK1Z5NGJKeDlyeGNQblNvV21WNUVhRG1VUUEKLS0tIGJMd0RNUlJuUGVGWEd6SGZpYTF5QXJLR3BtcThIbTBBS0tRWnVHWGVhYTAKGHZDGKZ9dOqss9rfZBpWBC8tL0/fYdii/WJT6cyiJntMzu+wpxZHcfSmuVzZ5gyYmTQyFAIHIhqjbAqZeu9gI5n3TyZddwJb"
             },
             "use-feed-proxy": true
         },
@@ -95,7 +97,8 @@
             "type": "url",
             "url": "https://api.opendata.metlink.org.nz/v1/gtfs-rt/vehiclepositions",
             "headers": {
-                "Accept": "application/x-protobuf"
+                "Accept": "application/x-protobuf",
+                "x-api-key": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBQdXZtOGd0dTFrMDN3TUx4ZFVnbFdOMnd3NTdPQmpqZTIvZDRwN3dZNGxFCjlqc0JhaUc1RjMycTZoSzdTb2Y0K0l3UVYrODNiY3JEMERReGZoc0F3R1kKLS0tIFdnc2ptQ05wWDlaeFkvNVgxWUt0Nm41NitELzNzSCtEdU1ONkx1RlZKNjAKyLNwmFQ8GFlXpTba+r8i6GtgQXTHiBJmy8QtSAZabSKy8kxT893G6tKwF1yMxxZHXkS23LoWaeRyyjNXSnVt5H+Z3FMl+uur"
             },
             "use-feed-proxy": true
         },

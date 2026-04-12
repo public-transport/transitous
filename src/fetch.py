@@ -7,7 +7,7 @@ from metadata import TransitlandSource, MobilityDatabaseSource, HttpSource, \
     FtpSource, UrlSource, Source, Region
 from pathlib import Path
 from datetime import datetime, timezone
-from utils import eprint
+from utils import eprint, decrypt_if_necessary
 from zipfile import ZipFile
 from typing import Optional, Any, Iterable, IO
 from zoneinfo import ZoneInfo
@@ -188,7 +188,9 @@ def download_http_source(
         "timeout": 30
     }
 
-    headers = source.options.headers.copy()
+    headers = {}
+    for key, value in source.options.headers.items():
+        headers[key] = decrypt_if_necessary(value)
     if "user-agent" not in headers:
         headers["user-agent"] \
             = "Transitous GTFS Fetcher (https://transitous.org)"
@@ -214,7 +216,7 @@ def download_http_source(
         ("cache-url", source.cache_url)
     ]:
         if url:
-            urls_to_try.append((name, url))
+            urls_to_try.append((name, decrypt_if_necessary(url)))
 
     primary_url_name, primary_url = urls_to_try[0]
 

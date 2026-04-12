@@ -63,7 +63,9 @@
             "type": "url",
             "spec": "gtfs-rt",
             "url": "https://gw.x24.digital/api/od-all/gtfs/v1/download/gtfs-rt-vehicles.pb",
-            "headers": {},
+            "headers": {
+                "ApiKey": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBXSVR6cU5yeStVNUhHTDJFZERkSHFaZE1sT0M1QXdmdGxuOXZZVU9DbjFFCjNTY3hnK0xxcHpTYkM5YkxxbzZjOXVVMENMSUFWQkloUHFTYWJWcndJZlUKLS0tIEFXZkdWNmQ0Y1kvaFZFYnRVWEExMzJuaVRpRTd5YzZIQnk2aklaeFJMd3cKCa0mgy8fexIhptgHr7tpdvRx0wLlChigphLqYXOPpFcjDnHZQBLwxA4X3rN+8LEqAbWLiQuOAyP1Cx5Qn7zSw0UkVHA="
+            },
             "use-feed-proxy": true
         },
         {
@@ -81,7 +83,9 @@
             "type": "url",
             "spec": "gtfs-rt",
             "url": "https://gw.x24.digital/api/bu/gtfs/v1/download/gtfs-rt-vehicles-pr.pb",
-            "headers": {},
+            "headers": {
+                "ApiKey": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBxOEJXenVqczVlU1lXdEFLNDZTdnpmc3FoZlRzNW00cHl4VkZMTlFoU3lVCnQyRmhjcVZBVkdxV2twV1pQQXlTcnhJaWRFdkZBdXhidEo1bUQ1cmIxU1UKLS0tIEhheDlMWnFvZ0toa0lWRVN4VjdPYjVjTngrWlo1VnRpVDY2RGt4dWV6cjQKS+/wDJ4j2lKRS46hGi4w8D0R6Q0S1lusRNaDFftEw+pufqS1c/J1rMsa7NVWmO8wsOtMsLmM0uCDjVlMbkTBos2RIO4="
+            },
             "use-feed-proxy": true
         },
         {
