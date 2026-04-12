@@ -30,12 +30,11 @@
 #    src: robots.txt
 #    dest: /var/www/html/robots.txt
 #
-
-- name: Install age
-  apt:
-    update_cache: true
-    name:
-     - age
+#- name: Install age
+#  apt:
+#    update_cache: true
+#    name:
+#     - age
 
 - name: Generate feed proxy vars
   command: python3 src/generate-motis-config.py --feed-proxy
