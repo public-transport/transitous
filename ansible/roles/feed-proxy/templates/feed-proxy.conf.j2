@@ -43,6 +43,7 @@ server {
     proxy_ignore_headers Expires;
     proxy_ignore_headers Cache-Control;
     proxy_http_version 1.1;
+    proxy_ssl_server_name on;
     proxy_intercept_errors on;
     error_page 301 302 307 308 = @handle_redirects;
     proxy_cache_valid      400 401 403 404 429 500 502 503 504 200s;
@@ -106,6 +107,7 @@ server {
     proxy_ignore_headers Expires;
     proxy_ignore_headers Cache-Control;
     proxy_http_version 1.1;
+    proxy_ssl_server_name on;
     proxy_cache_valid      400 401 403 404 429 500 502 503 504 200s;
     proxy_ignore_client_abort on;
     proxy_cache_use_stale  updating;
@@ -124,8 +126,8 @@ server {
     }  
 }
 
-{% endfor %}
 {% endif %}
+{% endfor %}
 
 {% for proto in ['http', 'https'] %}
 
@@ -133,7 +135,6 @@ server {
     {% if proto == 'https' %}
     listen 443 http2 ssl;
     listen [::]:443 http2 ssl;
-    proxy_ssl_server_name on;
     {% else %}
     listen 80;
     listen [::]:80;
@@ -158,7 +159,7 @@ server {
     proxy_cache_valid      200 40s;
     proxy_ignore_client_abort on;
     proxy_cache_use_stale  error timeout invalid_header updating
-                            http_401 http_403 http_404 http_429 http_500 http_502 http_503 http_504 http_400;
+                            http_403 http_404 http_429 http_500 http_502 http_503 http_504;
 
     limit_req zone=feed-proxy-quota burst=10000 nodelay;
 
@@ -179,7 +180,6 @@ server {
     {% if proto == 'https' %}
     listen 443 http2 ssl;
     listen [::]:443 http2 ssl;
-    proxy_ssl_server_name on;
     {% else %}
     listen 80;
     listen [::]:80;
@@ -206,7 +206,7 @@ server {
     proxy_cache_valid      301 302 307 308 200s;
     proxy_ignore_client_abort on;
     proxy_cache_use_stale  error timeout invalid_header updating
-                            http_401 http_403 http_404 http_429 http_500 http_502 http_503 http_504 http_400;
+                            http_403 http_404 http_429 http_500 http_502 http_503 http_504;
 
     limit_req zone=feed-proxy-quota burst=10000 nodelay;
 
