@@ -86,7 +86,8 @@
         {
             "name": "flixbus",
             "type": "http",
-            "url": "http://gtfs.gis.flix.tech/gtfs_generic_turkey.zip"
+            "url": "http://gtfs.gis.flix.tech/gtfs_generic_turkey.zip",
+            "script": "generic-bus-to-coach.lua"
         },
         {
             "name": "flixbus",

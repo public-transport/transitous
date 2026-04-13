@@ -1,0 +1,80 @@
+[
+    {
+        "title": "Transitous - Free and Open Public transport routing",
+        "eventName": "Grazer Linuxtage 2026",
+        "link": "https://pretalx.linuxtage.at/glt26/talk/AJZHEG/",
+        "time": "2026-04-11T15:15:00"
+    },
+    {
+        "title": "Routing mit MOTIS",
+        "eventName": "FOSSGIS-Konferenz 2026",
+        "link": "https://pretalx.com/fossgis2026/talk/PKLL8T/",
+        "language": "de",
+        "time": "2026-03-27T09:00:00"
+    },
+    {
+        "title": "Crowdsourcing Delay Information",
+        "eventName": "FOSDEM 2026",
+        "link": "https://fosdem.org/2026/schedule/event/Z9GDAF-crowdsourcing_delay_information/",
+        "time": "2026-01-31T16:20:00"
+    },
+    {
+        "title": "From first FLOSS Poznań public transport app to global coverage with Transitous",
+        "eventName": "FOSDEM 2026",
+        "link": "https://fosdem.org/2026/schedule/event/YVHDF7-from-first-floss-poznan-pt-app/",
+        "time": "2026-01-31T16:15:00"
+    },
+    {
+        "title": "Transitous Meetup",
+        "eventName": "39C3",
+        "language": "en",
+        "link": "https://github.com/public-transport/transitous/wiki/Transitous-Meetup-at-39C3",
+        "time": "2025-12-30T11:30:00"
+    },
+    {
+        "title": "Session Notes: Transitous",
+        "eventName": "Open Transport Community Conference 2025",
+        "language": "en",
+        "link": "https://github.com/public-transport/open-transport-community-conference/wiki/2025-Session-Notes:-Transitous",
+        "time": "2025-10-17T16:15:00"
+    },
+    {
+        "title": "Barrierefreies Routing mit MOTIS",
+        "eventName": "FOSSGIS-Konferenz 2025",
+        "language": "de",
+        "link": "https://pretalx.com/fossgis2025/talk/HGUKFM/",
+        "time": "2025-03-27T11:10:00"
+    },
+    {
+        "title": "Transitous - Freies Public Transport Routing",
+        "eventName": "FOSSGIS-Konferenz 2025",
+        "language": "de",
+        "link": "https://pretalx.com/fossgis2025/talk/TJVVDZ/",
+        "time": "2025-03-27T10:00:00"
+    },
+    {
+        "title": "Transitous Import Pipeline",
+        "eventName": "Open Transport Meetup",
+        "link": "https://meet.systect.de/playback/presentation/2.3/d941f8412ff350b73e9084e0fd1da86394aff088-1739990087983",
+        "time": "2025-02-19T20:00:00"
+    },
+    {
+        "title": "GNOME Maps meets Transitous meets MOTIS",
+        "eventName": "FOSDEM 2025",
+        "link": "https://archive.fosdem.org/2025/schedule/event/fosdem-2025-4105-gnome-maps-meets-transitous-meets-motis/",
+        "time": "2025-02-02T16:30:00"
+    },
+    {
+        "title": "Transitous - offener Routingdienst für öffentliche Verkehrsmittel",
+        "eventName": "38C3",
+        "language": "de",
+        "link": "https://media.ccc.de/v/38c3-transitous-offener-routingdienst-fr-ffentliche-verkehrsmittel",
+        "time": "2024-12-28T12:00:00"
+    },
+    {
+        "title": "Transitous",
+        "eventName": "Open Transport Meetup",
+        "link": "https://meet.systect.de/playback/presentation/2.3/d941f8412ff350b73e9084e0fd1da86394aff088-1708540821542",
+        "time": "2024-02-21T20:00:00"
+    }
+]

@@ -1,8 +1,6 @@
 -- SPDX-FileCopyrightText: Transitous Contributors
 -- SPDX-License-Identifier: AGPL-3.0-or-later
 
-require "scripts.motis"
-
 function process_route(route)
-	route:set_clasz(SUBURBAN)
+  	route:set_route_type(109) -- SUBURBAN_RAILWAY_SERVICE in future motis
 end

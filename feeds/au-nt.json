@@ -12,7 +12,7 @@
             "spec": "gtfs",
             "url": "https://dli.nt.gov.au/data-feeds/bus-gtfs/google-transit-darwin.zip",
             "license": {
-                "spdx_identifier": "CC-BY-4.0"
+                "spdx-identifier": "CC-BY-4.0"
             },
             "fix": true
         },
@@ -22,7 +22,7 @@
             "spec": "gtfs",
             "url": "https://dipl.nt.gov.au/data-feeds/bus-gtfs/gtfs-alice-new.zip",
             "license": {
-                "spdx_identifier": "CC-BY-4.0"
+                "spdx-identifier": "CC-BY-4.0"
             },
             "fix": true
         }

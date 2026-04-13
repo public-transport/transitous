@@ -7,49 +7,50 @@
     ],
     "sources": [
         {
-            "name": "opentransportdataswiss25",
-            "type": "http",
-            "url": "https://data.opentransportdata.swiss/de/dataset/timetable-2025-gtfs2020/permalink",
-            "license": {
-                "url": "https://opentransportdata.swiss/de/terms-of-use/"
-            },
-            "script": "ch-opentransportdataswiss.lua"
-        },
-        {
             "name": "opentransportdataswiss26",
             "type": "http",
             "url": "https://data.opentransportdata.swiss/de/dataset/timetable-2026-gtfs2020/permalink",
             "license": {
                 "url": "https://opentransportdata.swiss/de/terms-of-use/"
             },
+            "drop-agency-names": [
+                "DB Regio AG Baden-Württemberg",
+                "FPLAN VHB SBP",
+                "FPLAN BOD RAB OMP",
+                "Verkehrsverbund Vorarlberg",
+                "DistriBus",
+                "Südbadenbus"
+            ],
             "script": "ch-opentransportdataswiss.lua"
         },
         {
-            "name": "opentransportdataswiss25",
+            "name": "opentransportdataswiss26",
             "type": "url",
             "spec": "gtfs-rt",
             "url": "https://api.opentransportdata.swiss/la/gtfs-rt",
+            "use-feed-proxy": true,
             "headers": {
-                "authorization": "Bearer 57c5dbbbf1fe4d000100001833a821a9de3748e5876bfb6c1efe6973"
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBFcHdsdkJWeE5kbG9UVDIyZmlHNWRFOUdSN3RUSGtmc0k1NHBjYzFhblJZCjllMDM3QlVtRVpzUTZxa1ZrVUNuTStnM3Z5QmlJVGFVeDJId0svNEYrV00KLS0tIHIrRE8zNTB2VmNMOXM3U05KTU1tREFYWWh4aHZPTURCaGhRaFFFRlZ4VVUK9cNd8+HPYZ8T8Asr3lyfUypsSCKAUs9CuEzudfnJLJbh/m45OJFyAILudEmetKjtBHc5rmY8cXURuGZVGKXRQphhAON9xJsmowZ6LIZu+BvRlPwjHsr9MPxwf8wKip8="
             }
         },
         {
-            "name": "opentransportdataswiss25",
+            "name": "opentransportdataswiss26",
             "type": "url",
             "spec": "gtfs-rt",
             "url": "https://api.opentransportdata.swiss/la/gtfs-sa",
+            "use-feed-proxy": true,
             "headers": {
-                "authorization": "Bearer eyJvcmciOiI2NDA2NTFhNTIyZmEwNTAwMDEyOWJiZTEiLCJpZCI6IjFmZjIzNTNmMDNiNTQyMzk4ZDdhN2M2NzMyNzczYTFmIiwiaCI6Im11cm11cjEyOCJ9"
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBPZE5nTzdVQXdsZ2JXTm4yVk5lUjJhdlR4NmlJSEZtWUlLRTJuanRGOEc4CnMzakthU0hkQ0FOVXFxSEJkNWpvenhjWHBLb214ZC9hcGJPckpKMUhSTEkKLS0tIE9tTEtsRjZud3c3UWh4WGljUWdxeGNKQ1ZzeDNSYnI1c3l5VUszMFZ1c2sKxmNx35r4JbTyq0l9EcYLY74qM+T2i8wumGzBAeo2lLauf6JLMS2ScNiamTso0v1y90TAf2YjkGwETuYYroIaTb3xjfOYchH0o8prvRi6gIyCI04X1TzViksFS/oPRh8PtY0xse9L9Fxo08UyIIzdICv9MlS4eOFKD+lWaQJiCW+o9yQEdJz/UNybV7+wOle6R9PlAy9Q3AkERjuSaRLy"
             }
         },
         {
             "name": "opentransportdataswiss-flex",
             "type": "http",
-            "spec": "gtfs-flex",
             "url": "https://data.opentransportdata.swiss/en/dataset/gtfsflex/permalink",
             "license": {
                 "url": "https://opentransportdata.swiss/de/terms-of-use/"
-            }
+            },
+            "use-gtfsclean": false
         },
         {
             "name": "sharedmobility-ch",
@@ -57,8 +58,9 @@
             "url": "https://sharedmobility.ch/v2/gbfs",
             "spec": "gbfs",
             "headers": {
-                "authorization": "public-transport-backends@kde.org"
-            }
+                "authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSA3NGZTL2luZWxrb1ZqRWI1YjdjcHBiRGl6clR2emloSVdnZ2lGN2s4cDBFCnRjblc2L09UZ0NHaVpMMjhWZXJCdXBSWHFnTVJUVXMzazdVWXp0S202VWcKLS0tIHV6VDh4dkdjdi8wdEJHcDRMOU1kMGpiMjRNOE5sajNpYUtyQVBtMzRwdlUKeFojJqLHIQO1NuwZZUoy8RaVg6z7zOPvRe2dur5Tv+3btt7cNCUkKLYYM9ljf+PEPCx/Z71ngj8E2Q+SIDQQfUg="
+            },
+            "use-feed-proxy": true
         }
     ]
 }

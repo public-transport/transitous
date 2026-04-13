@@ -11,18 +11,32 @@ theme = "ananke"
   custom_css = ["bootstrap.min.css", "bootstrap-icons.min.css", "custom.css"]
   favicon = "images/logo.svg"
   text_color = "#292e35"
+  post_content_classes = ["avenir"]
 
-[[params.ananke_socials]]
-  name = "mastodon"
-  url = "https://en.osm.town/@transitous"
+[params.ananke.social.follow]
+  networks = ["mastodon", "matrix", "github"]
+
+[params.ananke.social.mastodon]
+  profilelink = "https://en.osm.town/@transitous"
   label = "Transitous on Mastodon"
   rel = "me"
-[[params.ananke_socials]]
-  name = "github"
-  url = "https://github.com/public-transport/transitous"
+
+[params.ananke.social.matrix]
+  profilelink = "https://app.element.io/#/room/#transitous:matrix.spline.de"
+  label = "Transitous on Matrix"
+
+[params.ananke.social.github]
+  profilelink = "https://github.com/public-transport/transitous"
   label = "Transitous on GitHub"
+
+[params.ananke.social.networks.matrix]
+  slug = "matrix"
+  label = "Matrix"
+  color = "#0dbd8b"
+  profile = ""
+  icon = "matrix"
 
 [menus]
   [[menus.main]]
     name = "Status"
-    url = "https://spline-status.de/status/transitous"
+    url = "https://splinestatus.de/status/transitous"

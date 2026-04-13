@@ -41,6 +41,13 @@ class Database:
 
         return db
 
+    def redirect_by_id(self, mdb_id: str) -> Optional[str]:
+        row = self.by_id.get(mdb_id)
+        if not row:
+            return None
+
+        return row.get("redirect.id")
+
     def source_by_id(self, source: MobilityDatabaseSource) -> Optional[Source]:
         result: Optional[Source] = None
         feed = self.by_id.get(source.mdb_id)
@@ -59,10 +66,14 @@ class Database:
             case "gtfs_rt":
                 result = UrlSource()
                 result.name = source.name
-                result.url = feed["urls.direct_download"]
+                if source.url_override:
+                    result.url = source.url_override
+                else:
+                    result.url = feed["urls.direct_download"]
                 result.spec = "gtfs-rt"
                 result.skip = source.skip
                 result.skip_reason = source.skip_reason
+                result.use_feed_proxy = source.use_feed_proxy
             case data_type:
                 eprint("Warning: Found MDB source that we can't handle:",
                        source.mdb_id, "of type", data_type)

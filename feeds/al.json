@@ -8,13 +8,12 @@
     "sources": [
         {
             "name": "tirana",
-            "type": "http",
-            "url": "https://pt.tirana.al/gtfs/gtfs.zip",
-            "url-override": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/al-tirana-municipality-of-tirana-gtfs-2345.zip?alt=media",
+            "type": "mobility-database",
             "fix": true,
             "license": {
                 "spdx-identifier": "CC-BY-SA-4.0"
-            }
+            },
+            "mdb-id": "mdb-2345"
         }
     ]
 }

@@ -1,0 +1,31 @@
+{
+    "maintainers": [
+        {
+            "name": "Jonah Brüchert",
+            "github": "jbruechert"
+        }
+    ],
+    "sources": [
+        {
+            "name": "georgian-railway",
+            "type": "http",
+            "url": "https://jbb.ghsq.de/gtfs/ge-georgian-railway.gtfs.zip",
+            "license": {
+                "spdx-identifier": "ODbL-1.0"
+            }
+        },
+        {
+            "name": "tbilisi-transport-company",
+            "type": "http",
+            "url": "https://jbb.ghsq.de/gtfs/ge-tbilisi.gtfs.zip",
+            "drop-shapes": true
+        },
+        {
+            "name": "tbilisi-transport-company",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "http://vm-gtfs.spline.de/gtfs-rt.pb",
+            "derive-trip-updates": true
+        }
+    ]
+}

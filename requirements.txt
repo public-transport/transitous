@@ -1,0 +1,13 @@
+# SPDX-FileCopyrightText: none
+#
+# SPDX-License-Identifier: CC0-1.0
+
+requests
+types-requests
+ruamel.yaml
+license-expression
+pycountry
+beautifulsoup4
+lxml
+toml
+tzdata

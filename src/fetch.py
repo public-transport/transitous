@@ -4,10 +4,10 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 from metadata import TransitlandSource, MobilityDatabaseSource, HttpSource, \
-    UrlSource, Source, Region
+    FtpSource, UrlSource, Source, Region
 from pathlib import Path
 from datetime import datetime, timezone
-from utils import eprint
+from utils import eprint, decrypt_if_necessary
 from zipfile import ZipFile
 from typing import Optional, Any, Iterable, IO
 from zoneinfo import ZoneInfo
@@ -28,6 +28,9 @@ import region_helpers
 import io
 import hashlib
 import csv
+import ftplib
+import urllib
+import time
 
 
 def validate_source_name(name: str):
@@ -104,30 +107,43 @@ def check_feed_not_expired(feed_info: Iterable[dict],
                            feed_timezone: ZoneInfo):
     today = datetime.now(tz=feed_timezone)
 
-    def feed_info_not_expired():
-        valid_entries = map(
-            lambda row:
-                "feed_end_date" not in row or not row["feed_end_date"] or
-                parse_gtfs_date(row["feed_end_date"], feed_timezone) >= today,
-            feed_info)
-        return all(valid_entries)
+    def feed_info_latest():
+        date_rows = filter(lambda row: "feed_end_date" in row and row["feed_end_date"], feed_info)
+        valid_entries = list(map(lambda row: parse_gtfs_date(row["feed_end_date"], feed_timezone), date_rows))
+        if valid_entries:
+            return max(valid_entries)
+        else:
+            return None
 
-    def calendar_not_expired():
-        valid_entries = map(
+    def calendar_latest():
+        valid_entries = list(map(
             lambda row:
-                parse_gtfs_date(row["end_date"], feed_timezone) >= today,
-            calendar)
-        return any(valid_entries)
+                parse_gtfs_date(row["end_date"], feed_timezone),
+            calendar))
+        if valid_entries:
+            return max(valid_entries)
+        else:
+            return None
 
-    def calendar_dates_not_expired():
-        valid_entries = map(
+    def calendar_dates_latest():
+        valid_entries = list(map(
             lambda row:
-                parse_gtfs_date(row["date"], feed_timezone) >= today,
-            calendar_dates)
-        return any(valid_entries)
+                parse_gtfs_date(row["date"], feed_timezone),
+            calendar_dates))
+        if valid_entries:
+            return max(valid_entries)
+        else:
+            return None
 
-    return feed_info_not_expired() and \
-        (calendar_not_expired() or calendar_dates_not_expired())
+    feed_info_end = feed_info_latest()
+    calendar_end = calendar_latest()
+    calendar_dates_end = calendar_dates_latest()
+
+    if feed_info_end:
+        return feed_info_end >= today
+    else:
+        return calendar_end and calendar_end >= today or \
+            calendar_dates_end and calendar_dates_end >= today
 
 
 def check_feed_timeframe_valid(zip_file: ZipFile) -> FeedValidity:
@@ -172,7 +188,9 @@ def download_http_source(
         "timeout": 30
     }
 
-    headers = source.options.headers.copy()
+    headers = {}
+    for key, value in source.options.headers.items():
+        headers[key] = decrypt_if_necessary(value)
     if "user-agent" not in headers:
         headers["user-agent"] \
             = "Transitous GTFS Fetcher (https://transitous.org)"
@@ -198,7 +216,7 @@ def download_http_source(
         ("cache-url", source.cache_url)
     ]:
         if url:
-            urls_to_try.append((name, url))
+            urls_to_try.append((name, decrypt_if_necessary(url)))
 
     primary_url_name, primary_url = urls_to_try[0]
 
@@ -267,12 +285,12 @@ class Fetcher:
     def resolve_database_sources(self, source: Source) -> Source:
         match source:
             case TransitlandSource():
-                http_source = self.transitland_atlas.source_by_id(source)
+                http_source = self.transitland_atlas.sources_by_id(source)
                 if not http_source:
                     eprint("Error: Could not resolve", source.transitland_atlas_id)
                     sys.exit(1)
 
-                return http_source
+                return http_source[0]  # multi-source feeds only occur for GTFS-RT, which we don't handle here
             case MobilityDatabaseSource():
                 if not self.mobility_database:
                     self.mobility_database = mobilitydatabase.Database.load()
@@ -288,7 +306,7 @@ class Fetcher:
 
     # Returns whether something was downloaded
     def fetch_source(self, dest_path: Path, source: Source) -> bool:
-        if source.spec != "gtfs" and source.spec != "gtfs-flex" and source.spec != "gbfs":
+        if source.spec != "gtfs" and source.spec != "gbfs" and source.spec != "netex":
             return False
 
         match source:
@@ -343,6 +361,21 @@ class Fetcher:
                     os.utime(dest_path, atime_mtime)
 
                 return True
+            case FtpSource():
+                url = urllib.parse.urlsplit(source.url)
+                ftp = ftplib.FTP(url.hostname)
+                ftp.login()
+
+                # check if file modification time has changed
+                ftptime = ftp.voidcmd(f"MDTM {url.path}")[4:]
+                mtime = time.mktime(time.strptime(ftptime, "%Y%m%d%H%M%S"))
+                if dest_path.exists() and dest_path.stat().st_mtime == mtime:
+                    return False
+
+                ftp.retrbinary(f"RETR {url.path}", open(dest_path, 'wb').write)
+                os.utime(dest_path, (mtime, mtime))
+                return True
+
             case UrlSource():
                 return False
 
@@ -354,11 +387,10 @@ class Fetcher:
         temp_file = output_path.parent / f".tmp-{output_path.name}"
         shutil.copyfile(input_path, temp_file)
 
-        if source.fix_csv_quotes:
+        if source.fix_csv_quotes and source.spec == "gtfs":
             subprocess.check_call(["./src/fix-csv-quotes.py", temp_file])
 
-        if source.spec != "gtfs-flex":
-            # gtfsclean can't handle GTFS-Flex data and would discard it entirely
+        if source.use_gtfsclean and source.spec == "gtfs":
             command = ["gtfsclean", str(temp_file),
                     "--fix-zip",
                     "--check-null-coords",
@@ -394,23 +426,27 @@ class Fetcher:
 
             subprocess.check_call(command)
 
-        with ZipFile(file=open(temp_file, "rb")) as z:
-            validity = check_feed_timeframe_valid(z)
-            if validity == FeedValidity.IN_FUTURE and output_path.exists():
-                eprint("Info: Feed not yet valid, using old version")
-                os.remove(temp_file)
-                os.remove(input_path)  # to force checking again
-                return
+        if source.spec == "gtfs":
+            with ZipFile(file=open(temp_file, "rb")) as z:
+                validity = check_feed_timeframe_valid(z)
+                if validity == FeedValidity.IN_FUTURE and output_path.exists():
+                    eprint("Info: Feed not yet valid, using old version")
+                    os.remove(temp_file)
+                    os.remove(input_path)  # to force checking again
+                    return
 
-            if validity == FeedValidity.EXPIRED:
-                if source.extend_calendar:
-                    eprint("Warning: Feed is expired, the calendar will be extended beyond the specified end date")
-                else:
-                    eprint("Error: Feed is expired, please consider " +
-                       "removing or updating its source")
-                    raise Exception("Feed is expired")
+                if validity == FeedValidity.EXPIRED:
+                    if source.extend_calendar:
+                        eprint("Warning: Feed is expired, the calendar will be extended beyond the specified end date")
+                    else:
+                        eprint("Error: Feed is expired, please consider " +
+                        "removing or updating its source")
+                        raise Exception("Feed is expired")
 
         os.rename(temp_file, output_path)
+
+        ts = input_path.stat().st_mtime
+        os.utime(output_path, (ts, ts))
 
     def fetch(self, metadata: Path) -> int:
         region = Region(json.load(open(metadata, "r")))
@@ -429,9 +465,9 @@ class Fetcher:
 
             if source.skip:
                 if source.skip_reason != "":
-                    print("Skipping " + source.name + ": " + source.skip_reason)
+                    print("Skipping " + region_name + "-" + source.name + ": " + source.skip_reason)
                 else:
-                    print("Skipping " + source.name)
+                    print("Skipping " + region_name + "-" + source.name)
                 continue
 
 
@@ -439,7 +475,7 @@ class Fetcher:
                 validate_spdx_identifier(self.licensing, source.license.spdx_identifier)
 
             validate_source_name(source.name)
-            download_name = f"{region_name}_{source.name}"
+            download_name = f"{region_name}_{source.name}.{source.spec}.zip"
 
 
             print(f"Fetching {region_name}-{source.name}…")
@@ -448,15 +484,15 @@ class Fetcher:
             source = self.resolve_database_sources(source)
 
             # Nothing to download for realtime feeds
-            if source.spec != "gtfs" and source.spec != "gtfs-flex":
+            if source.spec != "gtfs" and source.spec != "netex":
                 continue
 
             download_dir = Path("downloads/")
             if not download_dir.exists():
                 os.mkdir(download_dir)
 
-            download_path = download_dir.absolute() / f"{download_name}.gtfs.zip"
-            output_path = outdir.absolute() / f"{download_name}.gtfs.zip"
+            download_path = download_dir.absolute() / download_name
+            output_path = outdir.absolute() / download_name
 
             try:
                 new_data = self.fetch_source(download_path, source)
@@ -466,7 +502,8 @@ class Fetcher:
                 continue
 
             # Nothing new was downloaded, and data is already processed
-            if not new_data and output_path.exists():
+            if not new_data and output_path.exists() \
+                    and download_path.stat().st_mtime <= output_path.stat().st_mtime:
                 continue
 
             # Something new was downloaded or the data was previously not processed

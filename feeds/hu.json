@@ -1,8 +1,8 @@
 {
     "maintainers": [
         {
-            "name": "Volker Krause",
-            "github": "vkrause"
+            "name": "Máté Gyöngyösi",
+            "github": "gy-mate"
         }
     ],
     "sources": [
@@ -38,6 +38,26 @@
             "url": "https://jbb.ghsq.de/gtfs/bkk/TripUpdates"
         },
         {
+            "name": "bkk-funicular",
+            "type": "http",
+            "url": "https://gy-mate.hu/gtfs/gtfs_hu_funicular.zip"
+        },
+        {
+            "name": "bkk-chairlift",
+            "type": "http",
+            "url": "https://gy-mate.hu/gtfs/gtfs_hu_chairlift.zip"
+        },
+        {
+            "name": "budaors",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u2mmz-budaörsvárosönkormányzata"
+        },
+        {
+            "name": "urom",
+            "type": "http",
+            "url": "https://gy-mate.hu/gtfs/gtfs_hu_urom.zip"
+        },
+        {
             "name": "mvk",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u2wc-mvkzrt"
@@ -50,7 +70,7 @@
         {
             "name": "v-busz",
             "type": "http",
-            "url": "https://gtfs.menetbrand.com/download/veszprem",
+            "url": "https://vbusz.hu/gtfs",
             "license": {
                 "spdx-identifier": "CC0-1.0"
             }
@@ -74,6 +94,11 @@
             }
         },
         {
+            "name": "BAHART",
+            "type": "http",
+            "url": "https://nap.bahart.hu/gtfsdata/ULPTdR8PovPQ7E9NlcsIig/43"
+        },
+        {
             "name": "kaposvár",
             "type": "http",
             "url": "https://www.kaposbusz.hu/letoltheto-menetrend",
@@ -91,9 +116,15 @@
             }
         },
         {
+            "name": "kiskunhalas",
+            "type": "http",
+            "url": "https://www.kiskunhalas.hu/article_files/249/kiskunhalas_gtfs.zip"
+        },
+        {
             "name": "Hódmezővásárhely",
             "type": "http",
-            "url": "https://www.hvszzrt.hu/data/source/hodmezovasarhelyi-hu_gtfs.zip",
+            "url": "https://www.hvszzrt.hu/helyikozlekedes-98",
+            "function": "data_hodmezovasarhely_latest_resource",
             "license": {
                 "spdx-identifier": "CC0-1.0"
             }
@@ -107,12 +138,6 @@
             "name": "Várpalota",
             "type": "http",
             "url": "https://gtfs.menetbrand.com/download/varpalota"
-        },
-        {
-            "name": "Weekendbus",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u2mw-weekendbus",
-            "fix": true
         },
         {
             "name": "Kecskemét",

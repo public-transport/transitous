@@ -21,7 +21,7 @@
             "type": "http",
             "url": "https://www.gitlab.com/Lach-anonym/athens-gtfs/-/jobs/artifacts/main/raw/gtfs-rail.zip?job=download-republish-gtfs",
             "license": {
-                "spdx_identifier": "CC-BY-SA-4.0"
+                "spdx-identifier": "CC-BY-SA-4.0"
             },
             "fix": true,
             "extend-calendar": true

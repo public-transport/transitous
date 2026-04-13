@@ -1,18 +1,16 @@
 -- SPDX-FileCopyrightText: Marcus Lundblad <ml@dfupdate.se>
 -- SPDX-License-Identifier: AGPL-3.0-or-later
 
-require "scripts.motis"
-
 -- map input route type to MOTIS clasz/output route type
 local agency_route_type_map = {
   ["DVVJ"] = {
-    [102] = { LONG_DISTANCE, 107 } -- map DVVJ from long distance rail to tourist rail
+    [102] = { 107 } -- map DVVJ from long distance rail to tourist rail
   },
   ["Lennakatten"] = {
-    [102] = { LONG_DISTANCE, 107 } -- map Lennakatten from long distance rail to tourist rail
+    [102] = { 107 } -- map Lennakatten from long distance rail to tourist rail
   },
   ["TJF Smalspåret"] = {
-    [102] = { LONG_DISTANCE, 107 } -- map TJF from long distance rail to tourist rail
+    [102] = { 107 } -- map TJF from long distance rail to tourist rail
   }
 }
 
@@ -53,7 +51,7 @@ local route_id_short_name_color_map = {
   ["1279500900001"] = { "9", 0xFF80CDF4, 0xFF22B4EC }, -- Göteborg tram 9
   ["1279501000001"] = { "10", 0xFFD0DE87, 0xFF00ABE9 }, -- Göteborg tram 10
   ["1279501100001"] = { "11", 0xFF1B1A18, 0xFFFFFFFF }, -- Göteborg tram 11
-  ["1279501200001"] = { "12", 0xFFB3B3B3, 0xFF306CB7 }, -- Göteborg tram 12
+  ["1279501200001"] = { "12", 0xFF57B9A8, 0xFF04303B }, -- Göteborg tram 12
   ["1251000100001"] = { "1", 0xFFFDFEFF, 0xFF49606C }, -- UL bus 1
   ["1251000200001"] = { "2", 0xFFB01216, 0xFFFDFEFF }, -- UL bus 2
   ["1251000300001"] = { "3", 0xFF00A551, 0xFFFDFEFF }, -- UL bus 3
@@ -91,8 +89,7 @@ function process_route(route)
     local m = route_type_map[route:get_route_type()]
 
     if m then
-      route:set_clasz(m[1])
-      route:set_route_type(m[2])
+      route:set_route_type(m[1])
     end
   end
 

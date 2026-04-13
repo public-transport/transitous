@@ -47,17 +47,14 @@ def delhi_gov_in_csrf(source: HttpSource) -> HttpSource:
     return source
 
 
-def data_mzk_gorzow_latest_resource(source: HttpSource) -> HttpSource:
+def data_zielona_gora_latest_resource(source: HttpSource) -> HttpSource:
     from bs4 import BeautifulSoup
 
-    headers = {
-        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
-    } # user-agent is necessary to avoid 403 Forbidden
-
-    html = requests.get(source.url, headers=headers).text
+    html = requests.get(source.url).text
+    
 
     soup = BeautifulSoup(html, "lxml")
-    gtfs_link = soup.find("a", href=lambda x: x and "gtfs" in x and x.endswith(".zip"))["href"]
+    gtfs_link = next((a["href"] for a in soup.find_all("a") if "GTFS" in a.get_text()), None)
 
     base_url = source.url.rsplit("/", 1)[0]
     source.url = f"{base_url}/{gtfs_link}"
@@ -112,6 +109,22 @@ def data_kaposvar_latest_resource(source: HttpSource) -> HttpSource:
     url_path_safe = quote(url_path)
 
     source.url = f"{split_source_url.scheme}://{split_source_url.netloc}{url_path_safe}"
+    return source
+
+
+def data_hodmezovasarhely_latest_resource(source: HttpSource) -> HttpSource:
+    import re
+    from bs4 import BeautifulSoup
+
+    page_html = requests.get(source.url).text
+    page_html_parsed = BeautifulSoup(page_html, "lxml")
+
+    contains_word_gtfs = re.compile(r".*GTFS.*", re.IGNORECASE)
+    url_paragraph_label = page_html_parsed.find("span", string=contains_word_gtfs)
+    assert url_paragraph_label
+
+    url_paragraph = url_paragraph_label.parent.parent
+    source.url = url_paragraph["href"]
     return source
 
 

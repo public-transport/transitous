@@ -10,7 +10,8 @@
             "name": "sncb",
             "type": "http",
             "url": "https://sncb-opendata.hafas.de/gtfs/static/c21ac6758dd25af84cca5b707f3cb3de",
-            "fix": true
+            "fix": true,
+            "script": "be-sncb.lua"
         },
         {
             "name": "sncb",
@@ -33,7 +34,9 @@
         {
             "name": "dewaterbus",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u155-dewaterbus"
+            "transitland-atlas-id": "f-u155-dewaterbus",
+            "skip": true,
+            "skip-reason": "Feed expired"
         },
         {
             "name": "tec",

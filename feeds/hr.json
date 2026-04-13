@@ -176,6 +176,11 @@
             "type": "http",
             "url": "https://gitlab.com/api/v4/projects/vekejsn%2Fgtfs-generators/packages/generic/karlovac-gtfs/latest/karlovac_gtfs.zip",
             "fix": true
+        },
+        {
+            "name": "terzic-slavonski-brod",
+            "type": "http",
+            "url": "https://owncloud.cesnet.cz/index.php/s/yhgK8qUqrZI2kg6/download"
         }
     ]
 }

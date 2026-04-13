@@ -98,7 +98,9 @@
         {
             "name": "STARS",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-saginaw~stars"
+            "transitland-atlas-id": "f-saginaw~stars",
+            "skip": true,
+            "skip-reason": "authentication required"
         },
         {
             "name": "The-Rapid",

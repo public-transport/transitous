@@ -32,12 +32,15 @@
                 "Kraftverkehrsgesellschaft mbH Braunschweig",
                 "SWO Mobil GmbH",
                 "FlixBus-de",
-                "EUROSTAR"
+                "EUROSTAR",
+                "Bremer Straßenbahn AG",
+                "Verkehrsgemeinschaft Osnabrück"
             ],
             "http-options": {
                 "fetch-interval-days": 2
             },
-            "script": "de-DELFI.lua"
+            "script": "de-DELFI.lua",
+            "drop-shapes": true
         },
         {
             "name": "DELFI",
@@ -47,7 +50,8 @@
             "license": {
                 "spdx-identifier": "CC-BY-SA-4.0",
                 "url": "https://germany.motis-project.org/LICENSE.txt"
-            }
+            },
+            "use-feed-proxy": false
         },
         {
             "name": "DELFI",
@@ -57,12 +61,14 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0",
                 "url": "http://[2a00:12d8:700e:0:9a12:3eb4:e927:3d9a]/feed/LICENSE.txt"
-            }
+            },
+            "use-feed-proxy": false
         },
         {
             "name": "VBB",
             "type": "http",
             "url": "https://www.vbb.de/vbbgtfs",
+            "fix": true,
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             }
@@ -80,6 +86,10 @@
             "name": "VBN",
             "type": "http",
             "url": "https://www.connect-info.net/opendata/gtfs/connect-nds-lowlevel/eyqasqtsse",
+            "drop-agency-names": [
+                "DB Fernverkehr (Codesharing)"
+            ],
+            "script": "de-VBN.lua",
             "http-options": {
                 "fetch-interval-days": 1
             },
@@ -210,6 +220,46 @@
             "name": "NextbikeLeipzig",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-nextbike~leipzig~gbfs"
+        },
+        {
+            "name": "NextbikeBerlin",
+            "type": "url",
+            "url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_bn/gbfs.json",
+            "spec": "gbfs"
+        },
+        {
+            "name": "DottBerlin",
+            "type": "url",
+            "url": "https://gbfs.api.ridedott.com/public/v2/berlin/gbfs.json",
+            "spec": "gbfs"
+        },
+        {
+            "name": "esel.ac",
+            "type": "url",
+            "url": "https://di.esel.ac/gbfs/gbfs.json",
+            "spec": "gbfs"
+        },
+        {
+            "name": "DottRostock",
+            "type": "url",
+            "url": "https://gbfs.api.ridedott.com/public/v2/rostock/gbfs.json",
+            "spec": "gbfs"
+        },
+        {
+            "name": "amarillo-bw",
+            "type": "http",
+            "url": "http://vkrause.github.io/amarillo-bw-liberator/amarillo-bw.zip",
+            "use-gtfsclean": false
+        },
+        {
+            "name": "amarillo-bw",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://amarillo.mobidata-bw.de/region/bw/gtfs-rt",
+            "use-feed-proxy": true,
+            "headers": {
+                "x-api-key": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBnaHZwS04wL1Zyc2Rob1dwbzJLMlZtMHZZYTVLak41WGFkU240eE80MnhVCkF5cERtZ1ZIUmlXMk5YUEFQS0h1RnVmZHpHTk1tV0pVeUR6MlNiUnFocXcKLS0tIFdTN0lKYkJhU25iWWx1azRSeE5YalV5d3BkVlFKcGlVUVJnamhlSmN1K28KT2pXSvkuCAVsNBrxcYZCfgkfe19pjieImMXSkL2m9RUQ6gSs7wW2tFJQ3v5MNOHstmsiKSFfxL+FpUe77+aHWw=="
+            }
         }
     ]
 }

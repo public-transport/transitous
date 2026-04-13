@@ -19,7 +19,7 @@ We provide the service on a best-effort basis and reserve the right to stop prov
 <h3>Resource Usage</h3>
 
 <p>Our hosting resources are limited.
-Please contact us before doing any potentially resource-intensive operations, such as many requests (also from different users) or primarily difficult to calculate requests (such as routing, isochrones).
+Please contact us before using any potentially resource-intensive API endpoints, doing many requests (also from different users) or primarily doing difficult to calculate requests (such as routing, isochrones) in your project.
 Generally, if your requests take long, they are difficult to calculate.</p>
 
 <p>We'll try to find ways to accommodate your use. Should we hit the limits of what we can handle with our current resources,
@@ -34,12 +34,20 @@ there's also the option to <a href="/doc/#running-a-transitous-instance-locally"
 <ul>
 <li>Contact us <a href="https://matrix.to/#/%23transitous:matrix.spline.de">in our Matrix Channel</a> to make sure we can handle your
 expected resource usage and so we are aware of your usecases. This also allows us to contact you in case we want to coordinate breaking changes.</li>
-<li>Make sure your send HTTP <code>User-Agent</code> or <code>X-Client-Identification</code> headers with every request, at least containing the following information:</li>
-<ul>
-    <li>Name of the application</li>
-    <li>Version of the client implementation</li>
-    <li>A way of contact (e-mail address or website URL)</li>
-</ul>
+<li>
+    <p>
+        Make sure your send HTTP <code>User-Agent</code> headers with every request, at least containing the following information:
+        <ul>
+            <li>Name of the application</li>
+            <li>Version of the client implementation</li>
+            <li>A way of contact (e-mail address or website URL)</li>
+        </ul>
+    </p>
+    <p>
+    If it is not possible to send a <code>User-Agent</code> header, because your application runs inside a browser, the <code>Referer</code> header is a sufficient replacement.
+    However, please make sure to add contact information to your website in this case.
+    </p>
+</li>
 <li>You may <a href="https://github.com/public-transport/transitous/blob/b2d184b51cb4cf20fb48d0b76420ba57f4d3fce0/website/content/_index.html#L30">add your application to the Transitous website</a></li>
 </ul>
 
@@ -58,7 +66,7 @@ We will make a decision on a case-by-case basis.
 
 <p>API endpoints for Transitous' own development, such as the staging instance (<code>staging.api.transitous.org</code>), or internal API endpoints for direct access to servers behind the load balancer (<code>*.motis-project.org</code>, <code>*.motis-project.de</code>, <code>*.spline.de</code>), must not be used by applications.</p>
 
-<a class="btn btn-primary text-black" href="https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/motis-project/motis/refs/tags/v2.5.1/openapi.yaml">API Documentation</a>
+<a class="btn btn-primary text-black" href="https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/motis-project/motis/refs/tags/v2.8.3/openapi.yaml">API Documentation</a>
 
 <h2>Client Libraries</h2>
 <div class="mt-4 app-card-row">
@@ -67,6 +75,10 @@ We will make a decision on a case-by-case basis.
 {{< library-card name="motis-fptf-client" description="Exposing the MOTIS API as a Friendly Public Transport Format API" tags="JS"  website="https://www.npmjs.com/package/@motis-project/motis-fptf-client">}}
 {{< library-card name="Travel::Status::MOTIS" description="Interface to MOTIS routing services " tags="Perl"  website="https://finalrewind.org/projects/Travel-Status-MOTIS/">}}
 </div>
+
+<h2>Web Widget</h2>
+
+<p>You can embed a journey-search widget into your website. You can find more information in the <a href="https://github.com/public-transport/transitous/wiki/Transitous-Widget">Wiki</a>.</p>
 
 <h2>Staging API</h2>
 

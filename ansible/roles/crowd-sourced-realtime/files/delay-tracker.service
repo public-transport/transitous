@@ -1,0 +1,17 @@
+# SPDX-FileCopyrightText: 2025 Jonah Brüchert <jbb@kaidan.im>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+[Unit]
+Description=Delay Tracker
+After=network.target
+
+[Service]
+User=crowd-sourced-realtime
+Group=nogroup
+Restart=always
+ExecStart=/usr/local/bin/delay-tracker
+WorkingDirectory=/var/cache/transitous/out/delay-tracker/
+
+[Install]
+WantedBy=multi-user.target

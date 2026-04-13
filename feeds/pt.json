@@ -29,7 +29,7 @@
         {
             "name": "Carris",
             "type": "mobility-database",
-            "mdb-id": "mdb-1032",
+            "mdb-id": "mdb-2929",
             "license": {
                 "spdx-identifier": "CC0-1.0"
             }
@@ -72,21 +72,6 @@
             "name": "Funchal",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-etgc-hf~urbano~hf~interurbano"
-        },
-        {
-            "name": "Leira-Mobilis",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-ez1-mobilis"
-        },
-        {
-            "name": "CIMRL-Leira",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-ez-cimrl"
-        },
-        {
-            "name": "Meio-MedioTejo",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-e-cimmt"
         },
         {
             "name": "Algarve-Vamus",

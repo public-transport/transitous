@@ -42,13 +42,15 @@
             "name": "Beograd",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://rt.buslogic.baguette.pirnet.si/beograd/rt.pb"
+            "url": "https://rt.buslogic.baguette.pirnet.si/beograd/rt.pb",
+            "use-feed-proxy": true
         },
         {
             "name": "Beograd-Prigrad",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://rt.buslogic.baguette.pirnet.si/beograd/rt.pb"
+            "url": "https://rt.buslogic.baguette.pirnet.si/beograd/rt.pb",
+            "use-feed-proxy": true
         },
         {
             "name": "Uzice",
@@ -82,7 +84,8 @@
             "name": "Novisad",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://rt.buslogic.baguette.pirnet.si/jgsp_ns/rt.pb"
+            "url": "https://rt.buslogic.baguette.pirnet.si/jgsp_ns/rt.pb",
+            "use-feed-proxy": true
         },
         {
             "name": "Litas",
@@ -120,7 +123,8 @@
             "name": "Nis",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://rt.buslogic.baguette.pirnet.si/nis/rt.pb"
+            "url": "https://rt.buslogic.baguette.pirnet.si/nis/rt.pb",
+            "use-feed-proxy": true
         }
     ]
 }

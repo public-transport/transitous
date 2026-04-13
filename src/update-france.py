@@ -1,0 +1,242 @@
+#!/usr/bin/env python3
+# SPDX-FileCopyrightText: 2024 Jonah Brüchert <jbb@kaidan.im>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+import requests
+import json
+import sys
+from datetime import datetime, timedelta
+
+
+if __name__ == "__main__":
+    datasets = requests.get("https://transport.data.gouv.fr/api/datasets").json()
+
+    region = json.load(open("feeds/fr.json", "r"))
+
+    id_map = {}
+    for feed in region["sources"]:
+        # Don't handle feeds that are not from gouv.fr
+        if "x-data-gov-fr-res-id" in feed:
+            id_map[feed["x-data-gov-fr-res-id"]] = feed
+
+    license_map = {
+        "odc-odbl": "ODbL-1.0",
+        "lov2": "etalab-2.0",
+        "fr-lo": "etalab-2.0",
+        "notspecified": None
+    }
+
+    def get_spdx_identifier(license):
+        match = license in license_map
+        if match:
+            return license_map[license]
+        else:
+            print(f"Unknown license {license}.")
+            return None
+
+    currently_active_ids = set()
+    for dataset in datasets:
+        for resource in dataset["resources"]:
+            currently_active_ids.add(resource["id"])
+
+        gtfs = list(
+            filter(
+                lambda r: "format" in r
+                and (r["format"] == "GTFS" or r["format"] == "gtfs-rt"),
+                dataset["resources"],
+            )
+        )
+        gbfs = list(
+            filter(
+                lambda r: "format" in r
+                and (r["format"] == "gbfs"),
+                dataset["resources"],
+            )
+        )
+        if gbfs and dataset["slug"]:
+            # Exclude resources with "community_resource_publishers" field
+            gbfs_resources = [
+                r for r in gbfs if not r.get("community_resource_publisher")
+            ]
+
+            # Sort resources by the id field
+            gbfs_resources.sort(key=lambda r: str(r.get("id", "")))
+
+            if not gbfs_resources:
+                print(f"{dataset['slug']} has no official GBFS data, or resources are removed.", file=sys.stderr)
+                continue
+
+            # Add all GBFS resources
+            for resource in gbfs_resources:
+                source_name = (
+                    dataset["slug"]
+                    if len(gbfs_resources) == 1
+                    else dataset["slug"]
+                    + "--"
+                    + str(resource["id"])
+                    .replace(" ", "-")
+                    .replace("_", "-")
+                    .replace("/", "-")
+                )
+                source = {
+                    "type": "url",
+                    "url": resource["url"],
+                    "spec": "gbfs",
+                    "license": {},
+                    "x-data-gov-fr-res-id": resource["id"],
+                    "x-data-gov-fr-dataset-id": dataset["id"],
+                    "x-data-gov-fr-res-title": resource["title"],
+                    "managed-by-script": True
+                }
+                if "page_url" in dataset:
+                    source["license"]["url"] = dataset["page_url"]
+                if "licence" in dataset:
+                    source["license"]["spdx-identifier"] = get_spdx_identifier(dataset["licence"])
+
+                if resource["id"] in id_map:
+                    id_map[resource["id"]].update(source)
+                else:
+                    new = {"name": source_name}
+                    new.update(source)
+                    region["sources"].append(new)
+
+        if gtfs and dataset["slug"]:
+            resources = list(
+                filter(lambda r: "format" in r and r["format"] == "GTFS", gtfs)
+            )
+            # Exclude resources with "community_resource_publishers" field
+            resources = [
+                r for r in resources if not r.get("community_resource_publisher")
+            ]
+
+            # Sort resources by the id field
+            resources.sort(key=lambda r: str(r.get("id", "")))
+
+            if not resources:
+                print(f"{dataset['slug']} only has GTFS-RT data?", file=sys.stderr)
+                continue
+
+            # Check if multiple GTFS feeds are present
+            unique_GTFS = len(resources) == 1
+
+            # Add all GTFS resources
+            for resource in resources:
+                source_name = (
+                    dataset["slug"]
+                    if unique_GTFS
+                    else dataset["slug"]
+                    + "--"
+                    + str(resource["id"])
+                    .replace(" ", "-")
+                    .replace("_", "-")
+                    .replace("/", "-")
+                )
+
+                source = {
+                    "type": "http",
+                    "url": resource["url"],
+                    "fix": True,
+                    "license": {},
+                    "x-data-gov-fr-res-id": resource["id"],
+                    "x-data-gov-fr-dataset-id": dataset["id"],
+                    "x-data-gov-fr-res-title": resource["title"],
+                    "managed-by-script": True,
+                }
+
+                expired = "metadata" in resource and "end_date" and "end_date" in resource["metadata"] and resource["metadata"]["end_date"] and datetime.strptime(resource["metadata"]["end_date"], '%Y-%m-%d') < (datetime.now()-timedelta(days=0))
+                if expired:
+                    source["skip"] = True
+                    source["skip-reason"] = "Feed is expired according to metadata"
+                if "page_url" in dataset:
+                    source["license"]["url"] = dataset["page_url"]
+                if "licence" in dataset:
+                    source["license"]["spdx-identifier"] = get_spdx_identifier(dataset["licence"])
+
+                if resource["id"] in id_map:
+                    id_map[resource["id"]].update(source)
+                else:
+                    new = {
+                        "name": source_name
+                    }
+                    new.update(source)
+                    region["sources"].append(new)
+
+            def cond(r) -> bool:
+                return (
+                    "format" in r
+                    and r["format"] == "gtfs-rt"
+                    and ("features" not in r
+                         or not r["features"]
+                         or ("trip_updates" in r["features"] or "service_alerts" in r["features"]))
+                )
+
+            def find_static_feed(sources, dataset_id) -> int | None:
+                candidates = [index for (index, entry) in enumerate(sources) if entry.get("x-data-gov-fr-dataset-id") == dataset_id and entry.get("type")  == "http"]
+                if not candidates:
+                    return None
+                if len(candidates) > 1:
+                    return None
+                else:
+                    return candidates[0]
+
+
+            resources = list(filter(cond, gtfs))
+            resources.sort(key=lambda r: str(r.get("id", "")))
+            if not resources:
+                continue
+
+            for resource in resources:
+                # We can only continue if their is a unique GTFS file, or if there is a `gtfs_rt_select` entry for this dataset
+                feed_name = dataset["slug"]
+                # Check if there is a corresponding GTFS feed with the same name!
+                source = {
+                    "type": "url",
+                    "url": resource["url"],
+                    "x-data-gov-fr-res-title": resource["title"],
+                    "license": {},
+                    "spec": "gtfs-rt",
+                    "x-data-gov-fr-res-id": resource["id"],
+                    "x-data-gov-fr-dataset-id": dataset["id"],
+                    "managed-by-script": True
+                }
+                if "page_url" in dataset:
+                    source["license"]["url"] = dataset["page_url"]
+
+                if "licence" in dataset:
+                    source["license"]["spdx-identifier"] = get_spdx_identifier(dataset["licence"])
+
+                if resource["id"] in id_map:
+                    id_map[resource["id"]].update(source)
+                else:
+                    new = {
+                        "name": feed_name
+                    }
+                    new.update(source)
+
+                    index = find_static_feed(region["sources"], dataset["id"])
+                    if index is not None:
+                        # Name needs to match static feed
+                        new["name"] = region["sources"][index]["name"]
+
+                        if region["sources"][index].get("skip", False):
+                            new["skip"] = True
+                            new["skip-reason"] = "static feed is skipped"
+                        region["sources"].insert(index + 1, new)
+                    else:
+                        print(
+                            f"Warning: Failed to find an unambigous static feed for GTFS-RT {feed_name}. Please manually edit fr.json to fix this.",
+                            file=sys.stderr,
+                        )
+                        new["skip"] = True
+                        new["skip-reason"] = "Needs to be renamed to match the corresponding static feed"
+                        region["sources"].append(new)
+
+    # Remove no longer existing entries
+    region["sources"] = list(filter(lambda feed: "x-data-gov-fr-res-id" not in feed or feed["x-data-gov-fr-res-id"] in currently_active_ids, region["sources"]))
+
+    region["sources"].sort(key=lambda source: source.get("x-data-gov-fr-dataset-id", ""))
+
+    with open("feeds/fr.json", "w") as f:
+        json.dump(region, f, indent=4, ensure_ascii=False)
+        f.write("\n")

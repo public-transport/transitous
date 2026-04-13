@@ -1,0 +1,20 @@
+{
+    "maintainers": [
+        {
+            "name": "Steven Alexander",
+            "github": "stevenalexander44"
+        }
+    ],
+    "sources": [
+        {
+            "name": "TARC",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dng1-transitauthorityofrivercity"
+        },
+        {
+            "name": "TARC",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-tarc~rt"
+        }
+    ]
+}

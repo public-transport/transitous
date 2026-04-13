@@ -11,6 +11,10 @@
         {
             "name": "Nedžad Beus",
             "github": "vekejsn"
+        },
+        {
+            "name": "Tol Wassman",
+            "github": "twassman"
         }
     ],
     "sources": [
@@ -182,7 +186,8 @@
         {
             "name": "Monterey-Salinas-Transit",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-mst~rt"
+            "transitland-atlas-id": "f-mst~rt",
+            "use-feed-proxy": true
         },
         {
             "name": "Roseville-Transit",
@@ -244,6 +249,21 @@
             "type": "url",
             "spec": "gtfs-rt",
             "url": "https://www.modeshift.app/api/v1/df7541b2-ba8b-483e-b767-9de5043a54f7/transport/gtfsrt/alerts.pb"
+        },
+        {
+            "name": "Foothill-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9qh1-foothilltransit"
+        },
+        {
+            "name": "Foothill-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-foothilltransit~rt"
+        },
+        {
+            "name": "Stanford-Marguerite",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9q9h-stanford~marguerite"
         }
     ]
 }

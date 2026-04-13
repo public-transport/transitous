@@ -28,6 +28,12 @@
             "transitland-atlas-id": "f-flamingo~auckland~gbfs"
         },
         {
+            "name": "Flamingo-Christchurch",
+            "type": "url",
+            "spec": "gbfs",
+            "url": "https://data.rideflamingo.com/gbfs/3/christchurch/gbfs.json"
+        },
+        {
             "name": "Flamingo-Dunedin",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-flamingo~dunedin~gbfs"
@@ -70,8 +76,9 @@
             "url": "https://api.opendata.metlink.org.nz/v1/gtfs-rt/servicealerts",
             "headers": {
                 "Accept": "application/x-protobuf",
-                "x-api-key": "17mgElKK4t16dD0dOVxGZGrmjsvKHW8aqFPTC1vd"
-            }
+                "x-api-key": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBkalRWdEFCcWsrUmYzRDVOZ0wzUEtaVzZ6clZtYWF1UGM1M3pjUjNvaVVnClp5RzlKbGgrc2E5eWx5ZytJNmR2eWppSU83YUI1ZzNiZ1J3emdEMG5HSm8KLS0tIEhraHlkTk1OclZGTzBpalVhdUNBWFpkWWQyZjQwdGo3ZDR4UFErOEx3UncKXF8mLI7X4WDHu3VniUP7V2XEfTlWL0UZ9wqX5nMFFMYDF0cZPhDTZWPs12y3JDQUIKi2HkY8FpQwksnMapAyogE8TGvAr+BI"
+            },
+            "use-feed-proxy": true
         },
         {
             "name": "Metlink",
@@ -80,8 +87,9 @@
             "url": "https://api.opendata.metlink.org.nz/v1/gtfs-rt/tripupdates",
             "headers": {
                 "Accept": "application/x-protobuf",
-                "x-api-key": "17mgElKK4t16dD0dOVxGZGrmjsvKHW8aqFPTC1vd"
-            }
+                "x-api-key": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBlMnNMUkZrWFJVOVRkV1ZhWS9rcWtuWUdKU0FTSXBickpkZ21NeDRrNGxrCnhxdmI2R3cvOXlDVy81VUVrK1Z5NGJKeDlyeGNQblNvV21WNUVhRG1VUUEKLS0tIGJMd0RNUlJuUGVGWEd6SGZpYTF5QXJLR3BtcThIbTBBS0tRWnVHWGVhYTAKGHZDGKZ9dOqss9rfZBpWBC8tL0/fYdii/WJT6cyiJntMzu+wpxZHcfSmuVzZ5gyYmTQyFAIHIhqjbAqZeu9gI5n3TyZddwJb"
+            },
+            "use-feed-proxy": true
         },
         {
             "name": "Metlink",
@@ -90,8 +98,9 @@
             "url": "https://api.opendata.metlink.org.nz/v1/gtfs-rt/vehiclepositions",
             "headers": {
                 "Accept": "application/x-protobuf",
-                "x-api-key": "17mgElKK4t16dD0dOVxGZGrmjsvKHW8aqFPTC1vd"
-            }
+                "x-api-key": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBQdXZtOGd0dTFrMDN3TUx4ZFVnbFdOMnd3NTdPQmpqZTIvZDRwN3dZNGxFCjlqc0JhaUc1RjMycTZoSzdTb2Y0K0l3UVYrODNiY3JEMERReGZoc0F3R1kKLS0tIFdnc2ptQ05wWDlaeFkvNVgxWUt0Nm41NitELzNzSCtEdU1ONkx1RlZKNjAKyLNwmFQ8GFlXpTba+r8i6GtgQXTHiBJmy8QtSAZabSKy8kxT893G6tKwF1yMxxZHXkS23LoWaeRyyjNXSnVt5H+Z3FMl+uur"
+            },
+            "use-feed-proxy": true
         },
         {
             "name": "Otago-Regional-Council",
@@ -100,16 +109,16 @@
         },
         {
             "name": "Metro-Christchurch",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-rb6b-metrochristchurch",
-            "api-key": "920de6bcafdb445699a7ba92dd5cc005",
+            "type": "http",
+            "url": "https://gitlab.com/applecuckoo/gtfs-fixes/-/jobs/artifacts/main/raw/chc-gtfs.zip?job=gtfs-mirror",
             "fix": true
         },
         {
             "name": "Metro-Christchurch",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-rb6b-metrochristchurch~rt",
-            "api-key": "920de6bcafdb445699a7ba92dd5cc005"
+            "api-key": "key-from-secrets",
+            "use-feed-proxy": true
         },
         {
             "name": "BUSIT",
@@ -136,6 +145,37 @@
             "name": "eBus",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-nsn~nz"
+        },
+        {
+            "name": "goBay",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://data.trilliumtransit.com/gtfs/hbrc-nz/hbrc-nz.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0",
+                "url": "https://www.gobay.co.nz/general-transit-feed-specification/"
+            }
+        },
+        {
+            "name": "JOLT-Hutt-Valley",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-jolt~hutt~valley~gbfs"
+        },
+        {
+            "name": "JOLT-New-Plymouth",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-jolt~new~plymouth~gbfs"
+        },
+        {
+            "name": "JOLT-Selwyn",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-jolt~selwyn~gbfs"
+        },
+        {
+            "name": "CityLink-Whangarei",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://data.trilliumtransit.com/gtfs/nrc-nz/nrc-nz.zip"
         }
     ]
 }

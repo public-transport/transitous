@@ -18,7 +18,8 @@
         {
             "name": "STM",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-f25d-socitdetransportdemontral~rt"
+            "transitland-atlas-id": "f-f25d-socitdetransportdemontral~rt",
+            "use-feed-proxy": true
         },
         {
             "name": "Exo-reseaudetransportmetropolitain",
@@ -201,7 +202,9 @@
             "name": "STTR",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-societe~de~transport~de~trois-rivieres",
-            "fix": true
+            "fix": true,
+            "skip": true,
+            "skip-reason": "Removed from transitland"
         },
         {
             "name": "Bixi-Montreal",

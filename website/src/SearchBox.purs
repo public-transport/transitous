@@ -23,7 +23,7 @@ import Effect.Aff (Aff, delay)
 import Effect.Class (liftEffect)
 import Effect.Console (log)
 import Effect.Now (nowDateTime)
-import Elmish (Transition, Dispatch, ReactElement, (<|), (<?|))
+import Elmish (Transition, Dispatch, ReactElement)
 import Elmish.Component (fork, forkMaybe)
 import Elmish.HTML.Events as E
 import Elmish.HTML.Styled as H
@@ -33,14 +33,10 @@ type Area = { name :: String, adminLevel :: Int }
 type Location =
   { type :: String
   , id :: String
-  , tokens :: Array (Array Int)
   , name :: String
   , lat :: Number
   , lon :: Number
   , areas :: Array Area
-  , level :: Maybe Int
-  , zip :: Maybe String
-  , score :: Number
   }
 
 motisInstance :: String
@@ -82,10 +78,12 @@ data Message
   | StartGuessRequest String
   | SelectionUp
   | SelectionDown
+  | SuggestionsHaveFocus Boolean
 
 type State =
   { entries :: Array Location
   , showSuggestions :: Boolean
+  , suggestionsHaveFocus :: Boolean
   , station :: Maybe Location
   , query :: String
   , placeholderText :: String
@@ -148,11 +146,12 @@ onSearchChanged state query = do
 
   pure state { query = query, station = Nothing }
 
-init :: String -> Transition Message State
-init placeholderText = pure
+init :: String -> Maybe Location -> Transition Message State
+init placeholderText initialEntry = pure
   { entries: []
   , showSuggestions: false
-  , station: Nothing
+  , suggestionsHaveFocus: false
+  , station: initialEntry
   , query: ""
   , placeholderText: placeholderText
   , lastRequestTime: Nothing
@@ -168,20 +167,24 @@ update state (NewInput time) = pure state { lastRequestTime = Just time }
 update state (StartGuessRequest query) = requestGuessesDebounced state query
 update state SelectionUp = pure state { currentlySelectedIndex = (state.currentlySelectedIndex - 1) `mod` (length state.entries) }
 update state SelectionDown = pure state { currentlySelectedIndex = (state.currentlySelectedIndex + 1) `mod` (length state.entries) }
+update state (SuggestionsHaveFocus focus) = pure state { suggestionsHaveFocus = focus }
 
 view :: State -> Dispatch Message -> ReactElement
 view state dispatch = H.div "mb-3"
   [ H.input_ "form-control mb-2"
-      { onChange: dispatch <| E.inputText >>> SearchChanged
-      , onFocus: dispatch <| ShowSuggestions true
+      { onChange: H.handle (E.inputText >>> SearchChanged >>> dispatch)
+      , onFocus: H.handle \_ -> dispatch (ShowSuggestions true)
+      , onBlur: H.handle \_ -> when (not state.suggestionsHaveFocus) (dispatch (ShowSuggestions false))
       , placeholder: state.placeholderText
-      , onKeyUp: dispatch <?| \(E.KeyboardEvent event) -> case event.key of
-          "ArrowUp" -> Just SelectionUp
-          "ArrowDown" -> Just SelectionDown
+      , onKeyUp: H.handle \(E.KeyboardEvent event) -> case event.key of
+          "ArrowUp" -> dispatch SelectionUp
+          "ArrowDown" -> dispatch SelectionDown
           "Enter" -> do
-            station <- state.entries !! state.currentlySelectedIndex
-            pure $ Select station
-          _ -> Nothing
+            let station = state.entries !! state.currentlySelectedIndex
+            case station of
+              Just s -> dispatch (Select s)
+              Nothing -> pure unit
+          _ -> pure unit
       , value: case state.station of
           Just guess -> guess.name
           Nothing -> state.query
@@ -199,7 +202,11 @@ view state dispatch = H.div "mb-3"
                 true -> "dropdown-item cursor-shape-pointer dropdown-item-active"
                 false -> "dropdown-item cursor-shape-pointer"
             )
-            { onClick: dispatch <| Select location, autoFocus: true }
+            { onClick: H.handle \_ -> dispatch (Select location)
+            , autoFocus: true
+            , onMouseEnter: H.handle \_ -> dispatch (SuggestionsHaveFocus true)
+            , onMouseLeave: H.handle \_ -> dispatch (SuggestionsHaveFocus false)
+            }
             [ H.i
                 ( case location.type of
                     "STOP" -> "bi-train-front-fill"

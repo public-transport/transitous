@@ -17,7 +17,7 @@ summary h3 {
 
 {{ $lastCountry := "_initial_" }}
 {{ $lastSubdivision := "" }}
-{{ range $index, $source := $.Site.Data.license }}
+{{ range $index, $source := hugo.Data.license }}
   {{ $country := .country_name }}
   {{ $subdivision := .subdivision_name }}
 

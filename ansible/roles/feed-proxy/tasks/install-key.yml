@@ -1,0 +1,10 @@
+# SPDX-FileCopyrightText: 2025 Traines <git@traines.eu>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+# feed-proxy.key is encrypted with the main ansible vault key.
+# run this once to decrypt the age private key and put it to the place where decrypt_if_necessary expects it
+- name: Install feed proxy age key
+  template:
+    src: "feed-proxy.key"
+    dest: "/etc/feed-proxy.key"

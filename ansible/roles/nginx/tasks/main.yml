@@ -9,9 +9,23 @@
 
 - name: Unpack MOTIS (frontend)
   unarchive:
-    src: https://github.com/motis-project/motis/releases/download/v2.6.2/motis-linux-amd64.tar.bz2
+    src: https://github.com/motis-project/motis/releases/download/v2.8.3/motis-linux-amd64.tar.bz2
     dest: /opt/motis/
     remote_src: yes
+
+- name: Increase nproc for nginx workers
+  pam_limits:
+    domain: www-data
+    limit_type: hard
+    limit_item: nproc
+    value: '5000'
+
+- name: Increase nofile for nginx workers
+  pam_limits:
+    domain: www-data
+    limit_type: hard
+    limit_item: nofile
+    value: '5000'
 
 - name: Install nginx
   apt:
@@ -20,9 +34,14 @@
      - nginx
      - certbot
 
-- name: Create nginx cache directory
+- name: Create nginx motis cache directory
   file:
-    path: /var/cache/nginx
+    path: /var/cache/nginx/motis/
+    state: directory
+
+- name: Create nginx gtfsrt cache directory
+  file:
+    path: /var/cache/nginx/gtfsrt
     state: directory
 
 - name: Install nginx config
@@ -35,6 +54,11 @@
     src: logrotate-nginx
     dest: /etc/logrotate.d/nginx
 
+- name: Install 403 error page
+  copy:
+    src: error403.html
+    dest: /var/www/html/error403.html
+
 - name: Install robots.txt
   copy:
     src: robots.txt
@@ -46,17 +70,26 @@
     dest: "/etc/nginx/sites-available/{{ item.vhost }}"
   with_items:
     - vhost: api.transitous.org
+      quic_options: "reuseport" # reuseport can only be used once, automatically applies to all uses of the port
       backends:
         - address: 10.11.1.1:8080
           options: "backup" # nginx backend options
         - address: 10.11.1.3:8080
           options: ""
     - vhost: staging.api.transitous.org
+      quic_options: ""
       backends:
         - address: 10.11.1.2:8080
           options: ""
         - address: 10.11.1.1:8080
           options: "backup"
+
+- name: Install site config
+  template:
+    src: "crowd-sourced-realtime.conf.j2"
+    dest: "/etc/nginx/sites-available/{{ vhost }}"
+  vars:
+    vhost: "crowdsourcing.transitous.org"
 
 - name: Disable default site configuration
   file:
@@ -71,6 +104,7 @@
   with_items:
     - vhost: api.transitous.org
     - vhost: staging.api.transitous.org
+    - vhost: crowdsourcing.transitous.org
 
 - name: Reload nginx
   systemd:

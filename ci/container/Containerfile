@@ -1,20 +1,21 @@
 # SPDX-FileCopyrightText: 2024 Jonah Brüchert <jbb@kaidan.im>
 # SPDX-License-Identifier: CC0-1.0
 
-FROM docker.io/golang:1.24 as build
+FROM docker.io/golang:1.25 as build
 RUN GOPROXY=direct GOBIN=/usr/local/bin/ go install github.com/public-transport/gtfsclean@latest
 
 
-FROM docker.io/debian:bookworm-slim
+FROM docker.io/debian:trixie-slim
 
-ARG MOTIS_VERSION=v2.7.0
+ARG MOTIS_VERSION=v2.8.3
 
 RUN apt-get update -y && \
-    apt-get install -y --no-install-recommends git python3-pip wget bzip2 rsync openssh-client && \
+    apt-get install -y --no-install-recommends git python3-pip wget bzip2 rsync openssh-client age && \
     apt-get clean -y && \
-    rm -rf /var/lib/apt/lists/* 
-RUN rm /usr/lib/python3.*/EXTERNALLY-MANAGED && \
-    pip3 install requests ruamel.yaml pycountry beautifulsoup4 lxml license-expression
+    rm -rf /var/lib/apt/lists/* && \
+    rm /usr/lib/python3.*/EXTERNALLY-MANAGED
+COPY requirements.txt /tmp/requirements.txt
+RUN pip install -r /tmp/requirements.txt
 
 COPY --from=build /usr/local/bin/gtfsclean /usr/local/bin/gtfsclean
 RUN mkdir -p /opt/motis/ && \
