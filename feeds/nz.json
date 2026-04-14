@@ -123,29 +123,9 @@
         },
         {
             "name": "Metro-Christchurch",
-            "type": "url",
-            "url": "https://apis.metroinfo.co.nz/rti/gtfsrt/v1/service-alerts.pb",
-            "headers": {
-                "Ocp-Apim-Subscription-Key": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSArRDhISEtWYTJwYms5UVdXY3IyTzBudWdldHQ3Tjg3SVhYdHdENjlQUWxJClpPKzZVTG5VM2cvVENWZ1J2Qlpndm5qNDdZdXFobHJoVTdNVGVsamlic0UKLS0tIFF6RjdTaFlGMnM3QkJyVjFNdER4RWd6czVjRHNHL3lSU3ZpQ1p1dHRwQkEKuLrshIcb3nCoRsQ4ETXEgitAURwB4QJCaj66kI2VbeOOjr3bKSWiAvo3i0UentTimUCJhW5z+0S0B861sJovZQ=="
-            },
-            "use-feed-proxy": true
-        },
-        {
-            "name": "Metro-Christchurch",
-            "type": "url",
-            "url": "https://apis.metroinfo.co.nz/rti/gtfsrt/v1/trip-updates.pb",
-            "headers": {
-                "Ocp-Apim-Subscription-Key": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSArRDhISEtWYTJwYms5UVdXY3IyTzBudWdldHQ3Tjg3SVhYdHdENjlQUWxJClpPKzZVTG5VM2cvVENWZ1J2Qlpndm5qNDdZdXFobHJoVTdNVGVsamlic0UKLS0tIFF6RjdTaFlGMnM3QkJyVjFNdER4RWd6czVjRHNHL3lSU3ZpQ1p1dHRwQkEKuLrshIcb3nCoRsQ4ETXEgitAURwB4QJCaj66kI2VbeOOjr3bKSWiAvo3i0UentTimUCJhW5z+0S0B861sJovZQ=="
-            },
-            "use-feed-proxy": true
-        },
-        {
-            "name": "Metro-Christchurch",
-            "type": "url",
-            "url": "https://apis.metroinfo.co.nz/rti/gtfsrt/v1/vehicle-positions.pb",
-            "headers": {
-                "Ocp-Apim-Subscription-Key": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSArRDhISEtWYTJwYms5UVdXY3IyTzBudWdldHQ3Tjg3SVhYdHdENjlQUWxJClpPKzZVTG5VM2cvVENWZ1J2Qlpndm5qNDdZdXFobHJoVTdNVGVsamlic0UKLS0tIFF6RjdTaFlGMnM3QkJyVjFNdER4RWd6czVjRHNHL3lSU3ZpQ1p1dHRwQkEKuLrshIcb3nCoRsQ4ETXEgitAURwB4QJCaj66kI2VbeOOjr3bKSWiAvo3i0UentTimUCJhW5z+0S0B861sJovZQ=="
-            },
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-rb6b-metrochristchurch~rt",
+            "api-key": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSArRDhISEtWYTJwYms5UVdXY3IyTzBudWdldHQ3Tjg3SVhYdHdENjlQUWxJClpPKzZVTG5VM2cvVENWZ1J2Qlpndm5qNDdZdXFobHJoVTdNVGVsamlic0UKLS0tIFF6RjdTaFlGMnM3QkJyVjFNdER4RWd6czVjRHNHL3lSU3ZpQ1p1dHRwQkEKuLrshIcb3nCoRsQ4ETXEgitAURwB4QJCaj66kI2VbeOOjr3bKSWiAvo3i0UentTimUCJhW5z+0S0B861sJovZQ==",
             "use-feed-proxy": true
         },
         {
