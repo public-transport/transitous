@@ -270,12 +270,8 @@
         },
         {
             "name": "Gdańsk",
-            "type": "http",
-            "url": "https://api.zbiorkom.live/api6-open/tricity/gtfs/default",
-            "license": {
-                "spdx-identifier": "MIT"
-            },
-            "fix": true
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-ztm~gdansk"
         },
         {
             "name": "Gdańsk",
@@ -283,7 +279,13 @@
             "transitland-atlas-id": "f-u3tm-ztm~gdansk~rt"
         },
         {
-            "name": "Gdańsk",
+            "name": "Gdynia",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-ztm~gdynia",
+            "fix": true
+        },
+        {
+            "name": "Gdynia",
             "type": "url",
             "spec": "gtfs-rt",
             "url": "https://api.zbiorkom.live/api6-open/tricity/gtfsRealtime/default/tripUpdates",
@@ -291,14 +293,6 @@
                 "spdx-identifier": "MIT"
             },
             "use-feed-proxy": true
-        },
-        {
-            "name": "Gdynia",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-ztm~gdynia",
-            "fix": true,
-            "skip": true,
-            "skip-reason": "Deprecated due to lack of GTFS-RT feed"
         },
         {
             "name": "Giżycko",
@@ -985,7 +979,8 @@
             "name": "Legnica",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://cdn.zbiorkom.live/gtfs/legnica.zip",
+            "url": "https://api.zbiorkom.live/api6-open/legnica/gtfs/default",
+            "url-override": "https://cdn.zbiorkom.live/gtfs/legnica.zip",
             "fix": true,
             "license": {
                 "spdx-identifier": "MIT"
@@ -1379,7 +1374,8 @@
             "name": "Pruszków",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://cdn.zbiorkom.live/gtfs/warsaw-pruszkow.zip",
+            "url": "https://api.zbiorkom.live/api6-open/warsaw/gtfs/pruszkow",
+            "url-override": "https://cdn.zbiorkom.live/gtfs/warsaw-pruszkow.zip",
             "license": {
                 "spdx-identifier": "MIT"
             }
@@ -1389,6 +1385,7 @@
             "type": "http",
             "spec": "gtfs",
             "url": "https://api.zbiorkom.live/api6-open/wroclaw/gtfs/siechnice",
+            "url-override": "https://cdn.zbiorkom.live/gtfs/wroclaw-siechnice.zip",
             "license": {
                 "spdx-identifier": "MIT"
             }
@@ -1568,6 +1565,15 @@
             "url": "https://files.girlc.at/gtfs/rozprza.zip",
             "license": {
                 "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "Żuławska-Kolej-Dojazdowa",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://github.com/Lach-anonym/gtfs-collection/blob/main/zkd.zip",
+            "license": {
+                "spdx-identifier": "MIT"
             }
         }
     ]
