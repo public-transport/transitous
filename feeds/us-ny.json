@@ -225,7 +225,7 @@
             "name": "SuffolkCountyTransit",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-drk-ny~suffolkcountytransit~rt",
-            "api-key": "key-from-secrets",
+            "api-key": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBCSDBQa1VaYmlZb2lEd09ncHZ5YmYyMmsrbFNxN0tES1NHUkxYa0hDMXpFCjNhSDN4cWtZL3Qrc3FVNXJxbnpjZlRBcEJqK3Rnbld0a3p2UXhscW5pZkUKLS0tIDFwUzFya2JrcENyaVYySGtoM3Bjek5WeEFRK0NneTlIUDBYRjU5V0RNMlkKBY8R3FtbmSVnQlG8d7Mdsj2CfMbto2vfDXhks9+vYYTES5Ni1nlCSbA/Kv65Ap4GM06VEKfE4BbJT18N0NsuJg==",
             "use-feed-proxy": true
         },
         {
