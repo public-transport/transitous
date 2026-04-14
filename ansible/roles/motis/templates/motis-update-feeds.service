@@ -8,14 +8,15 @@ Description=Update MOTIS Feeds
 [Service]
 Type=oneshot
 ExecStart=/usr/local/bin/motis-update-feeds
-CPUAccounting=true
+#CPUAccounting=true
 MemoryAccounting=true
-IOAccounting=true
-MemoryHigh=80G
-MemoryMax=90G
-CPUWeight=20
-CPUQuota=1000%
-IOWeight=20
+#IOAccounting=true
+MemoryHigh=140G
+MemoryMax=150G
+#CPUWeight=20
+#CPUQuota=1000%
+#IOWeight=20
+LimitNOFILE=65536
 
 [Install]
 #WantedBy=multi-user.target
