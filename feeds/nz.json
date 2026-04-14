@@ -20,7 +20,12 @@
             "name": "AT",
             "spec": "gtfs-rt",
             "type": "url",
-            "url": "https://jbb.ghsq.de/gtfs/at/legacy"
+            "url": "https://api.at.govt.nz/realtime/legacy/",
+            "headers": {
+                "Accept": "application/x-protobuf",
+                "Ocp-Apim-Subscription-Key": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSAyVG5pcGdhQnFpOE9jTlV6RVpQVWFlNVh5MzdNOExsWkFVaE5CbFd4THpjCjE0QkRzZVJrZExjSkRhYmM2MDZQNWt1ZWJIbUs3SndvM1lMeExvd09IZjQKLS0tIFJJUk9pMHVLelBvSi9uZjBSM3lqZy80VmZTRHowRWxqWlM1ZXVMSVV4RWcKKeqXFv7A+cJ5xNUharR0hvB+GmKdNWue8TQocekK4XraGNEM/mEk4anoSgKrv7BTIMMEl2iaCvAUa6dJfCRc3g=="
+            },
+            "use-feed-proxy": true
         },
         {
             "name": "Flamingo-Auckland",
@@ -110,14 +115,19 @@
         {
             "name": "Metro-Christchurch",
             "type": "http",
-            "url": "https://gitlab.com/applecuckoo/gtfs-fixes/-/jobs/artifacts/main/raw/chc-gtfs.zip?job=gtfs-mirror",
-            "fix": true
+            "url": "https://apis.metroinfo.co.nz/rti/gtfs/v1/gtfs.zip",
+            "fix": true,
+            "http-options": {
+                "headers": {
+                    "Ocp-Apim-Subscription-Key": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSArRDhISEtWYTJwYms5UVdXY3IyTzBudWdldHQ3Tjg3SVhYdHdENjlQUWxJClpPKzZVTG5VM2cvVENWZ1J2Qlpndm5qNDdZdXFobHJoVTdNVGVsamlic0UKLS0tIFF6RjdTaFlGMnM3QkJyVjFNdER4RWd6czVjRHNHL3lSU3ZpQ1p1dHRwQkEKuLrshIcb3nCoRsQ4ETXEgitAURwB4QJCaj66kI2VbeOOjr3bKSWiAvo3i0UentTimUCJhW5z+0S0B861sJovZQ=="
+                }
+            }
         },
         {
             "name": "Metro-Christchurch",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-rb6b-metrochristchurch~rt",
-            "api-key": "key-from-secrets",
+            "api-key": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSArRDhISEtWYTJwYms5UVdXY3IyTzBudWdldHQ3Tjg3SVhYdHdENjlQUWxJClpPKzZVTG5VM2cvVENWZ1J2Qlpndm5qNDdZdXFobHJoVTdNVGVsamlic0UKLS0tIFF6RjdTaFlGMnM3QkJyVjFNdER4RWd6czVjRHNHL3lSU3ZpQ1p1dHRwQkEKuLrshIcb3nCoRsQ4ETXEgitAURwB4QJCaj66kI2VbeOOjr3bKSWiAvo3i0UentTimUCJhW5z+0S0B861sJovZQ==",
             "use-feed-proxy": true
         },
         {

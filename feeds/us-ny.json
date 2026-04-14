@@ -7,6 +7,10 @@
         {
             "name": "Marcus Lundblad",
             "github": "mlundblad"
+        },
+        {
+            "name": "applecuckoo",
+            "github": "applecuckoo"
         }
     ],
     "sources": [
@@ -90,14 +94,14 @@
             "name": "MTA-BusManhattan",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://gtfsrt.prod.obanyc.com/tripUpdates?key=e6a24daf-8207-4e14-8795-b612ea66878f",
+            "url": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBHdGVtMXBwckpWWHhQenlhOHlISXhJZEZ2aENPN3JmNDZqVnJubjRvVmc0CjllUVdCbXcvNndFWlo0VlBCY1M3Tnk2Y2hEYXcybDkvbGU5R096VDNjMmMKLS0tIGd4UE9tUU9wZGtRMlIyaHJINlJ6WWU5bkNlMnd0Nmw5WFh4SGtmYTVGcncKo4LWEYLhPQo9nsae+waYSYEjCE4S4EmZrDa9P3zk9r8Ix5oqDbQCXaqVAQZZV3cBMIU7cyhB+6eld1Xct6osLVUJ+78X6ES0BCXslUJUa7sqG5HfgrVEKecF2OJ1VX5aTzAILxZiMlLyrdHq757FfsXqlg==",
             "use-feed-proxy": true
         },
         {
             "name": "MTA-BusManhattan",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://gtfsrt.prod.obanyc.com/alerts?key=e6a24daf-8207-4e14-8795-b612ea66878f",
+            "url": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBQTG1YMVdpWS8rdThiMmR4eUZIRk9vNkh5a0dyTmxZM3hmWmtUTmF0VlVrCk1tMmQ3R05XRGQ5VkRRVXIvT05oYTc2ZERKaXNaeTF3V2xxUktuRWxYYmsKLS0tIFFuRkw4TE1mQkNZeFVOaWg5bDNzbVlIM1BzRTlPeFd5WFNsVWVBKzB4Tk0KkPo9eCWlYT+fXuoYV9T83A946l2t2eBsw+FRh8aUyVK6duRpYv7zuUYxqcKf5Ci+xd5RYPGLESF6j5HqgQH1R8/m5GAwYpQ6FsCvR+nluGxZPWSFqBpH52qv6tyKBJvT2LCN+K79Q4a+nCHWsww=",
             "use-feed-proxy": true
         },
         {
@@ -109,14 +113,14 @@
             "name": "MTA-BusQueens",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://gtfsrt.prod.obanyc.com/tripUpdates?key=e6a24daf-8207-4e14-8795-b612ea66878f",
+            "url": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBHdGVtMXBwckpWWHhQenlhOHlISXhJZEZ2aENPN3JmNDZqVnJubjRvVmc0CjllUVdCbXcvNndFWlo0VlBCY1M3Tnk2Y2hEYXcybDkvbGU5R096VDNjMmMKLS0tIGd4UE9tUU9wZGtRMlIyaHJINlJ6WWU5bkNlMnd0Nmw5WFh4SGtmYTVGcncKo4LWEYLhPQo9nsae+waYSYEjCE4S4EmZrDa9P3zk9r8Ix5oqDbQCXaqVAQZZV3cBMIU7cyhB+6eld1Xct6osLVUJ+78X6ES0BCXslUJUa7sqG5HfgrVEKecF2OJ1VX5aTzAILxZiMlLyrdHq757FfsXqlg==",
             "use-feed-proxy": true
         },
         {
             "name": "MTA-BusQueens",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://gtfsrt.prod.obanyc.com/alerts?key=e6a24daf-8207-4e14-8795-b612ea66878f",
+            "url": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBQTG1YMVdpWS8rdThiMmR4eUZIRk9vNkh5a0dyTmxZM3hmWmtUTmF0VlVrCk1tMmQ3R05XRGQ5VkRRVXIvT05oYTc2ZERKaXNaeTF3V2xxUktuRWxYYmsKLS0tIFFuRkw4TE1mQkNZeFVOaWg5bDNzbVlIM1BzRTlPeFd5WFNsVWVBKzB4Tk0KkPo9eCWlYT+fXuoYV9T83A946l2t2eBsw+FRh8aUyVK6duRpYv7zuUYxqcKf5Ci+xd5RYPGLESF6j5HqgQH1R8/m5GAwYpQ6FsCvR+nluGxZPWSFqBpH52qv6tyKBJvT2LCN+K79Q4a+nCHWsww=",
             "use-feed-proxy": true
         },
         {
@@ -128,14 +132,14 @@
             "name": "MTA-BusStatenIsland",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://gtfsrt.prod.obanyc.com/tripUpdates?key=e6a24daf-8207-4e14-8795-b612ea66878f",
+            "url": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBHdGVtMXBwckpWWHhQenlhOHlISXhJZEZ2aENPN3JmNDZqVnJubjRvVmc0CjllUVdCbXcvNndFWlo0VlBCY1M3Tnk2Y2hEYXcybDkvbGU5R096VDNjMmMKLS0tIGd4UE9tUU9wZGtRMlIyaHJINlJ6WWU5bkNlMnd0Nmw5WFh4SGtmYTVGcncKo4LWEYLhPQo9nsae+waYSYEjCE4S4EmZrDa9P3zk9r8Ix5oqDbQCXaqVAQZZV3cBMIU7cyhB+6eld1Xct6osLVUJ+78X6ES0BCXslUJUa7sqG5HfgrVEKecF2OJ1VX5aTzAILxZiMlLyrdHq757FfsXqlg==",
             "use-feed-proxy": true
         },
         {
             "name": "MTA-BusStatenIsland",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://gtfsrt.prod.obanyc.com/alerts?key=e6a24daf-8207-4e14-8795-b612ea66878f",
+            "url": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBQTG1YMVdpWS8rdThiMmR4eUZIRk9vNkh5a0dyTmxZM3hmWmtUTmF0VlVrCk1tMmQ3R05XRGQ5VkRRVXIvT05oYTc2ZERKaXNaeTF3V2xxUktuRWxYYmsKLS0tIFFuRkw4TE1mQkNZeFVOaWg5bDNzbVlIM1BzRTlPeFd5WFNsVWVBKzB4Tk0KkPo9eCWlYT+fXuoYV9T83A946l2t2eBsw+FRh8aUyVK6duRpYv7zuUYxqcKf5Ci+xd5RYPGLESF6j5HqgQH1R8/m5GAwYpQ6FsCvR+nluGxZPWSFqBpH52qv6tyKBJvT2LCN+K79Q4a+nCHWsww=",
             "use-feed-proxy": true
         },
         {
@@ -147,14 +151,14 @@
             "name": "MTA-BusBrooklyn",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://gtfsrt.prod.obanyc.com/tripUpdates?key=e6a24daf-8207-4e14-8795-b612ea66878f",
+            "url": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBHdGVtMXBwckpWWHhQenlhOHlISXhJZEZ2aENPN3JmNDZqVnJubjRvVmc0CjllUVdCbXcvNndFWlo0VlBCY1M3Tnk2Y2hEYXcybDkvbGU5R096VDNjMmMKLS0tIGd4UE9tUU9wZGtRMlIyaHJINlJ6WWU5bkNlMnd0Nmw5WFh4SGtmYTVGcncKo4LWEYLhPQo9nsae+waYSYEjCE4S4EmZrDa9P3zk9r8Ix5oqDbQCXaqVAQZZV3cBMIU7cyhB+6eld1Xct6osLVUJ+78X6ES0BCXslUJUa7sqG5HfgrVEKecF2OJ1VX5aTzAILxZiMlLyrdHq757FfsXqlg==",
             "use-feed-proxy": true
         },
         {
             "name": "MTA-BusBrooklyn",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://gtfsrt.prod.obanyc.com/alerts?key=e6a24daf-8207-4e14-8795-b612ea66878f",
+            "url": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBQTG1YMVdpWS8rdThiMmR4eUZIRk9vNkh5a0dyTmxZM3hmWmtUTmF0VlVrCk1tMmQ3R05XRGQ5VkRRVXIvT05oYTc2ZERKaXNaeTF3V2xxUktuRWxYYmsKLS0tIFFuRkw4TE1mQkNZeFVOaWg5bDNzbVlIM1BzRTlPeFd5WFNsVWVBKzB4Tk0KkPo9eCWlYT+fXuoYV9T83A946l2t2eBsw+FRh8aUyVK6duRpYv7zuUYxqcKf5Ci+xd5RYPGLESF6j5HqgQH1R8/m5GAwYpQ6FsCvR+nluGxZPWSFqBpH52qv6tyKBJvT2LCN+K79Q4a+nCHWsww=",
             "use-feed-proxy": true
         },
         {
@@ -166,14 +170,14 @@
             "name": "MTA-BusBronx",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://gtfsrt.prod.obanyc.com/tripUpdates?key=e6a24daf-8207-4e14-8795-b612ea66878f",
+            "url": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBHdGVtMXBwckpWWHhQenlhOHlISXhJZEZ2aENPN3JmNDZqVnJubjRvVmc0CjllUVdCbXcvNndFWlo0VlBCY1M3Tnk2Y2hEYXcybDkvbGU5R096VDNjMmMKLS0tIGd4UE9tUU9wZGtRMlIyaHJINlJ6WWU5bkNlMnd0Nmw5WFh4SGtmYTVGcncKo4LWEYLhPQo9nsae+waYSYEjCE4S4EmZrDa9P3zk9r8Ix5oqDbQCXaqVAQZZV3cBMIU7cyhB+6eld1Xct6osLVUJ+78X6ES0BCXslUJUa7sqG5HfgrVEKecF2OJ1VX5aTzAILxZiMlLyrdHq757FfsXqlg==",
             "use-feed-proxy": true
         },
         {
             "name": "MTA-BusBronx",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://gtfsrt.prod.obanyc.com/alerts?key=e6a24daf-8207-4e14-8795-b612ea66878f",
+            "url": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBQTG1YMVdpWS8rdThiMmR4eUZIRk9vNkh5a0dyTmxZM3hmWmtUTmF0VlVrCk1tMmQ3R05XRGQ5VkRRVXIvT05oYTc2ZERKaXNaeTF3V2xxUktuRWxYYmsKLS0tIFFuRkw4TE1mQkNZeFVOaWg5bDNzbVlIM1BzRTlPeFd5WFNsVWVBKzB4Tk0KkPo9eCWlYT+fXuoYV9T83A946l2t2eBsw+FRh8aUyVK6duRpYv7zuUYxqcKf5Ci+xd5RYPGLESF6j5HqgQH1R8/m5GAwYpQ6FsCvR+nluGxZPWSFqBpH52qv6tyKBJvT2LCN+K79Q4a+nCHWsww=",
             "use-feed-proxy": true
         },
         {
@@ -185,14 +189,14 @@
             "name": "MTA-BusCompany",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://gtfsrt.prod.obanyc.com/tripUpdates?key=e6a24daf-8207-4e14-8795-b612ea66878f",
+            "url": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBHdGVtMXBwckpWWHhQenlhOHlISXhJZEZ2aENPN3JmNDZqVnJubjRvVmc0CjllUVdCbXcvNndFWlo0VlBCY1M3Tnk2Y2hEYXcybDkvbGU5R096VDNjMmMKLS0tIGd4UE9tUU9wZGtRMlIyaHJINlJ6WWU5bkNlMnd0Nmw5WFh4SGtmYTVGcncKo4LWEYLhPQo9nsae+waYSYEjCE4S4EmZrDa9P3zk9r8Ix5oqDbQCXaqVAQZZV3cBMIU7cyhB+6eld1Xct6osLVUJ+78X6ES0BCXslUJUa7sqG5HfgrVEKecF2OJ1VX5aTzAILxZiMlLyrdHq757FfsXqlg==",
             "use-feed-proxy": true
         },
         {
             "name": "MTA-BusCompany",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://gtfsrt.prod.obanyc.com/alerts?key=e6a24daf-8207-4e14-8795-b612ea66878f",
+            "url": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBQTG1YMVdpWS8rdThiMmR4eUZIRk9vNkh5a0dyTmxZM3hmWmtUTmF0VlVrCk1tMmQ3R05XRGQ5VkRRVXIvT05oYTc2ZERKaXNaeTF3V2xxUktuRWxYYmsKLS0tIFFuRkw4TE1mQkNZeFVOaWg5bDNzbVlIM1BzRTlPeFd5WFNsVWVBKzB4Tk0KkPo9eCWlYT+fXuoYV9T83A946l2t2eBsw+FRh8aUyVK6duRpYv7zuUYxqcKf5Ci+xd5RYPGLESF6j5HqgQH1R8/m5GAwYpQ6FsCvR+nluGxZPWSFqBpH52qv6tyKBJvT2LCN+K79Q4a+nCHWsww=",
             "use-feed-proxy": true
         },
         {
@@ -221,7 +225,7 @@
             "name": "SuffolkCountyTransit",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-drk-ny~suffolkcountytransit~rt",
-            "api-key": "key-from-secrets",
+            "api-key": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBCSDBQa1VaYmlZb2lEd09ncHZ5YmYyMmsrbFNxN0tES1NHUkxYa0hDMXpFCjNhSDN4cWtZL3Qrc3FVNXJxbnpjZlRBcEJqK3Rnbld0a3p2UXhscW5pZkUKLS0tIDFwUzFya2JrcENyaVYySGtoM3Bjek5WeEFRK0NneTlIUDBYRjU5V0RNMlkKBY8R3FtbmSVnQlG8d7Mdsj2CfMbto2vfDXhks9+vYYTES5Ni1nlCSbA/Kv65Ap4GM06VEKfE4BbJT18N0NsuJg==",
             "use-feed-proxy": true
         },
         {
