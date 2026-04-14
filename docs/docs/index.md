@@ -480,7 +480,11 @@ Now inside the container, you can download and post-process the feeds you want.
 
 If you want to download all of them instead, you can use `mkdir -p out && cd out && wget --limit-rate=30m --mirror -l 2 --no-parent --cut-dirs=1 --no-host-directories --include-directories=gtfs,gtfs/scripts --accept .zip --accept .lua --accept config.yml -e robots=off https://api.transitous.org/gtfs/` to download the postprocessed files from the Transitous server, or `./ci/fetch-feeds.py timer` to process them yourself. However, importing all feeds will take about half an hour even on powerful hardware.
 
-The `out/` directory should now contain a number of zip files.
+The `out/` directory should now contain a number of zip files. Execute the rest of the instructions in that directory:
+
+```bash
+cd out
+```
 
 In addition to those, you also need a background map. Importing the entire planet would take too long,
 so for now, use a smaller region.
@@ -490,23 +494,22 @@ You can click on the region names to find downloads for smaller subregions.
 Then download the chosen region:
 
 ```bash
-wget https://download.geofabrik.de/europe/germany/berlin-latest.osm.pbf -P out
+wget https://download.geofabrik.de/europe/germany/berlin-latest.osm.pbf
 ```
 
 In order to start motis, we need a config file listing all the feeds we want to use.
-You can generate one using our script:
+You can generate one using motis:
 
 ```bash
-./src/generate-motis-config.py --skip-missing-files
+motis config berlin-latest.osm.pbf <feed>.zip
 ```
 
 The generated config file still needs a small adjustment.
-Edit the line in `out/config.yml` that starts with `osm:` to point to your map, and remove the `coastline` option in `tiles`.
+Edit the line in `config.yml` that says `profile: tiles-profiles/full.lua` to point to `/opt/motis/tiles-profiles/full.lua`.
 
-You can then go to the `out` directory, import everything and start motis:
+You can then import everything and start motis:
 
 ```bash
-cd out
 motis import
 motis server
 ```
