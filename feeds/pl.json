@@ -1571,7 +1571,7 @@
             "name": "Żuławska-Kolej-Dojazdowa",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://github.com/Lach-anonym/gtfs-collection/blob/main/zkd.zip",
+            "url": "https://github.com/Lach-anonym/gtfs-collection/raw/refs/heads/main/zkd.zip",
             "license": {
                 "spdx-identifier": "MIT"
             }
