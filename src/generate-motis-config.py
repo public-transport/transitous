@@ -166,6 +166,8 @@ if __name__ == "__main__":
                             case source.spec if isinstance(source, metadata.UrlSource) and source.spec in ["gtfs-rt", "siri", "siri-json"]:
                                 name = f"{region_name}-{source.name}"
                                 if name not in config["timetable"]["datasets"]:
+                                    if arguments.skip_missing_files:  # Probably the static feed was not downloaded
+                                        continue
                                     eprint(
                                         "Error: The name of a realtime (gtfs-rt) "
                                         + "feed needs to match the name of its "
