@@ -992,6 +992,8 @@ local colors = {
         ["RE7"] = { color = 0xed6e19, text_color = 0xffffff },
         ["RE93"] = { color = 0x009fe3, text_color = 0xffffff },
         ["RES1"] = { color = 0xd30630, text_color = 0xffffff },
+        ["RS2"] = { color = 0x901411, text_color = 0xffffff },
+        ["RS21"] = { color = 0xe92a1c, text_color = 0xffffff },
         ["S1"] = { color = 0xd30630, text_color = 0xffffff },
         ["S10"] = { color = 0xd30630, text_color = 0xffffff },
         ["S11"] = { color = 0xf69795, text_color = 0xffffff },
@@ -1400,10 +1402,6 @@ local colors = {
         ["RB88"] = { color = 0x47359c, text_color = 0xffffff },
         ["RE80"] = { color = 0x423f41, text_color = 0xffffff },
         ["RE87"] = { color = 0xff2e17, text_color = 0xffffff },
-    },
-    ["DB ZugBus Regionalverkehr Alb-Bodensee"] = {
-        ["RS2"] = { color = 0x901411, text_color = 0xffffff },
-        ["RS21"] = { color = 0xe92a1c, text_color = 0xffffff },
     },
     ["DVB-Bus"] = {
         ["166"] = { color = 0x35a9e1, text_color = 0xffffff },
