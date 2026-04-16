@@ -111,6 +111,7 @@
             "name": "Koleje-Mazowieckie",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u3-kolejemazowieckie",
+            "drop-shapes": true,
             "script": "pl-Koleje-Mazowieckie.lua"
         },
         {
@@ -236,6 +237,7 @@
             "license": {
                 "spdx-identifier": "MIT"
             },
+            "drop-shapes": true,
             "script": "pl-SKM-Warszawa.lua"
         },
         {
@@ -549,6 +551,7 @@
             "drop-agency-names": [
                 "PKS w Kaliszu Sp. z o.o."
             ],
+            "drop-shapes": true,
             "fix": true
         },
         {
@@ -969,6 +972,7 @@
             "license": {
                 "spdx-identifier": "CC0-1.0"
             },
+            "drop-shapes": true,
             "fix": true
         },
         {
@@ -998,7 +1002,8 @@
             "url": "https://api.zbiorkom.live/api6-open/warsaw/gtfs/GPA",
             "license": {
                 "spdx-identifier": "MIT"
-            }
+            },
+            "drop-shapes": true
         },
         {
             "name": "Grodziskie-Przewozy-Autobusowe",
