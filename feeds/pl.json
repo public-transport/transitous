@@ -108,6 +108,15 @@
             "fix": true
         },
         {
+            "name": "Jarosław",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://github.com/rozkladnik/gtfs-pwik-jaroslaw/raw/refs/heads/main/alerts.pb",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
+        },
+        {
             "name": "Koleje-Mazowieckie",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u3-kolejemazowieckie",
