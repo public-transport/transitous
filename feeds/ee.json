@@ -184,7 +184,8 @@
             "url": "https://eu-gtfs.remix.com/kaugliinid.zip",
             "license": {
                 "spdx-identifier": "CC0-1.0"
-            }
+            },
+            "script": "generic-bus-to-coach.lua"
         },
         {
             "name": "kaugliinid-rahvusvaheline",
