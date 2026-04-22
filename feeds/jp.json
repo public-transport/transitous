@@ -3020,6 +3020,28 @@
             "name": "高速船",
             "type": "mobility-database",
             "mdb-id": "jbda-meikaijo-ship"
+        },
+        {
+            "name": "京王バス",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-keiobus~alllines~jp",
+            "url-override": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBjM0VvZ3FvMkxjcWZtWjUrQ0xZYW5WTnFKaUcyS2l2UXhKV0hqU0hzakRNCktWTitrM3A3amVQQ2d5K3N3ZjV5S2NqU3FWNDgxNTcxdy9GWXRhZVFqZ2sKLS0tIFdBeHV0L2J1dm15bml3NEZzb0liS1IrRG5UVWFPWUUxeW5uOFpWM1VYOUEKMZ8n/CYKmyvNDDpTSO8UJMSZH2IVf+QYCHcDI6rKGTZ2zLoWGCKPE5ZytxYvWO7AIxKHCEfFZhUImTG1Wb3FwsbwiCMxo7ckDmDomYpX2PsUc05BLTVOkYwIw2/Fmmrrgfw6cSTfgMJtY5szhW2taiiUMJOMW/y3UuSKUlEE0zAcOFt53BFE6+BcuAHoo4VgIQFxuQvxuWOOb+7mzU7wDP06PFdP/xydGdWkbCEh2Nvqf/ItWwNX6Ic="
+        },
+        {
+            "name": "京王バス",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-keiobus~alllines~jp~rt",
+            "spec": "gtfs-rt",
+            "url-override": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBOUXh5YXU0RlhBQk5ySmlFbWsxVTdleW9lNDR1bkw4bU9mWlYvWU1nMEFJCkdpdWtCN3h5RjFFWFo0cmN5OUJDeUYvV1JUdFdFUHVGd1lhdS9uOU1jSWsKLS0tIGtiaENYM0VKV0Z1THFYVDdCNmV4RDdLbFV6V3cwSENuQjJ4UU5rNmpyY0EKJDaFy1LYcqH4MpPoJ6H9ZAHj98hMyD/D7em7en4Z4ljulrMMb8p69VMJ3RNYndbhSoyElN2wVy9cngmJ1ju7K70enmqVxV+lrHetTg5KyXWRlzmpydAJQfl7kajNBl0sJyMhAVhoux2cJ6DViaDBBFdqNKk+3wVibu9hKVCIvH/XM+7SH/Fws7aSF4JLB96uZefDabV2d85t6C7uq3429RDjSdUid8bTaI5WMitUVY6t9sDXAnlCOA==",
+            "use-feed-proxy": true
+        },
+        {
+            "name": "京王バス",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-keiobus~alllines~jp~rt",
+            "spec": "gtfs-rt",
+            "url-override": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSB6WnRqcVd4bUtraHpaQVJ1UWFFYVlaRHZBdU5hcFMwNmU4a2U4WGlxUmlvCmlIUUgzTmJQbGZwYXV6YjhTZzR3YzFIK1RnbkpNOENOZWlYRVZZNmdiUEEKLS0tIHo5SjVhRXA1cEJyWW5uR0MxTGFiOGFzRE1ETm5MdXhxZEsra0xsbkRPMzAKy9Lc4QYi8m/cC1uS/5NaQ+pN7ckAWeaF22UdPDJZx3uxvLcn0fqmoSO+2l6u68FDf5JcJJGzO/8XbJkeTc+agVkhK04VZL0Wd7zFyzFW706eRI2txc2N0f0c+LEXrtUzYp611O0YtBy/kT8Bw9p20IA2ePyFAejHNicSb2RVDk0V22h1nHLYH6cdi2soqIOSb47Zng2nphrN7FbmQR9VO/eOUulH5eQVQdrvmDPyuaoKewsyYWURDznB1JeN",
+            "use-feed-proxy": true
         }
     ]
 }
