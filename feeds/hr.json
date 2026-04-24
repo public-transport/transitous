@@ -128,7 +128,7 @@
         {
             "name": "rapska-plovidba",
             "type": "http",
-            "url": "https://owncloud.cesnet.cz/index.php/s/iXWzNC4zKGD8sa8/download"
+            "url": "https://hoermalmeister.github.io/gtfs-rehost/rapska_plovidba/rapska_plovidba.zip"
         },
         {
             "name": "rapska-vozidba",
@@ -138,27 +138,27 @@
         {
             "name": "crikvenica",
             "type": "http",
-            "url": "https://owncloud.cesnet.cz/index.php/s/UsB5SB51KZnjwM8/download"
+            "url": "https://hoermalmeister.github.io/gtfs-rehost/crikvenica/crikvenica.zip"
         },
         {
             "name": "opatija",
             "type": "http",
-            "url": "https://owncloud.cesnet.cz/index.php/s/docWLlTJeomKemk/download"
+            "url": "https://hoermalmeister.github.io/gtfs-rehost/opatija/opatija.zip"
         },
         {
             "name": "porec",
             "type": "http",
-            "url": "https://owncloud.cesnet.cz/index.php/s/D3OAxN1BkRSt20T/download"
+            "url": "https://hoermalmeister.github.io/gtfs-rehost/porec/porec.zip"
         },
         {
             "name": "sveta-nedelja",
             "type": "http",
-            "url": "https://owncloud.cesnet.cz/index.php/s/qWqrNkMjCUIDlSv/download"
+            "url": "https://hoermalmeister.github.io/gtfs-rehost/sveta_nedelja/sveta_nedelja.zip"
         },
         {
             "name": "vela-luka",
             "type": "http",
-            "url": "https://owncloud.cesnet.cz/index.php/s/Y5Xf2hAiP5z7q6U/download"
+            "url": "https://hoermalmeister.github.io/gtfs-rehost/vela_luka/vela_luka.zip"
         },
         {
             "name": "zadar",
@@ -180,7 +180,7 @@
         {
             "name": "terzic-slavonski-brod",
             "type": "http",
-            "url": "https://owncloud.cesnet.cz/index.php/s/yhgK8qUqrZI2kg6/download"
+            "url": "https://hoermalmeister.github.io/gtfs-rehost/slavonski_brod/slavonski_brod.zip"
         }
     ]
 }
