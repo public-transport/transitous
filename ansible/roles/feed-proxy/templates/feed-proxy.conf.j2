@@ -4,8 +4,17 @@
 #
 
 proxy_cache_path /var/cache/nginx/feed-proxy max_size=10g keys_zone=feed-proxy:10m inactive=1h;
+proxy_cache_path /var/cache/nginx/feed-proxy-error max_size=1g keys_zone=feed-proxy-error:10m inactive=1h;
+
+
+map $request_uri $feed_region {
+    default                 "$http_host";
+    "~^/feed/([a-z]{2}-.)"  "$1";
+}
 
 limit_req_zone $binary_remote_addr zone=feed-proxy-quota:10m rate=10000r/m;
+limit_req_zone $feed_region zone=feed-proxy-upstream-quota:10m rate=4r/s;
+limit_req_zone $feed_region zone=feed-proxy-upstream-gbfs-quota:10m rate=9r/s;
 limit_req_status 429;
 
 
@@ -14,21 +23,19 @@ geo $dollar {
     default "$";
 }
 
+
 server {
-    listen 80;
-    listen [::]:80;
-    server_name {{ feed_proxy_host }};
+    listen 127.0.0.1:8081 http2;
+    listen [::1]:8081 http2;
+    
+    server_name localhost;
 
     include ./conf.d/feed-proxy-http-default;
 
-    proxy_ssl_server_name on;
-
     proxy_pass_header Server;
     proxy_set_header User-Agent transitous.org;
-    add_header X-Cache $upstream_cache_status;
-    add_header Link '<https://transitous.org/sources/>; rel="license"';
 
-    proxy_cache            feed-proxy;
+    proxy_cache            feed-proxy-error;
     proxy_cache_key   "$request_uri";
     proxy_buffering on;
     proxy_ignore_headers Set-Cookie;
@@ -36,20 +43,19 @@ server {
     proxy_ignore_headers Expires;
     proxy_ignore_headers Cache-Control;
     proxy_http_version 1.1;
+    proxy_ssl_server_name on;
     proxy_intercept_errors on;
     error_page 301 302 307 308 = @handle_redirects;
-    proxy_cache_valid      200 40s;
-    proxy_cache_valid      400 401 403 404 200s;
+    proxy_cache_valid      400 401 403 404 429 500 502 503 504 200s;
     proxy_ignore_client_abort on;
-    proxy_cache_use_stale  error timeout invalid_header updating
-                            http_500 http_502 http_503 http_504 http_429;
+    proxy_cache_use_stale  updating;
 
-    limit_req zone=feed-proxy-quota burst=10000 nodelay;
+    limit_req zone=feed-proxy-upstream-quota burst=40;
 
     {% for item in feed_vars | dict2items %}   
         location "/feed/{{item.key}}" {
             set $feed_upstream "{{ item.value.url | replace('\\', '\\\\') | replace('"', '\\"') | replace('$', '$dollar') }}";
-            set $original_host "{{ item.value.url | urlsplit('hostname') }}";
+            set $original_host "{{ item.value.url | urlsplit('scheme') }}://{{ item.value.url | urlsplit('hostname') }}";
             proxy_pass $feed_upstream; 
 
             {% if "headers" in item.value %}
@@ -64,10 +70,9 @@ server {
        set $original_uri "$request_uri";
        set $orig_loc "$upstream_http_location";
 
-       proxy_cache       feed-proxy;
+       proxy_cache       feed-proxy-error;
        proxy_cache_key $original_uri;
-       proxy_cache_valid 200 40s;
-       proxy_cache_valid 400 401 403 404 200s;
+       proxy_cache_valid 400 401 403 404 429 500 502 503 504 200s;
 
        if ($orig_loc ~* "://") {
          proxy_pass $orig_loc;
@@ -75,75 +80,7 @@ server {
        }
        # handle relative redirect
        if ($orig_loc !~* "://") {
-         proxy_pass $scheme://$original_host$orig_loc;
-         break;
-       }
-    }
-}
-
-server {
-    listen 443 http2 ssl;
-    listen [::]:443 http2 ssl;
-
-    server_name {{ feed_proxy_host }};
-
-    include ./conf.d/feed-proxy-https-default;
-
-    proxy_ssl_server_name on;
-    
-    proxy_pass_header Server;
-    proxy_set_header User-Agent transitous.org;
-    add_header X-Cache $upstream_cache_status;
-    add_header Link '<https://transitous.org/sources/>; rel="license"';
-
-    proxy_cache            feed-proxy;
-    proxy_cache_key   "$request_uri";
-    proxy_buffering on;
-    proxy_ignore_headers Set-Cookie;
-    proxy_ignore_headers X-Accel-Expires;
-    proxy_ignore_headers Expires;
-    proxy_ignore_headers Cache-Control;
-    proxy_http_version 1.1;
-    proxy_intercept_errors on;
-    error_page 301 302 307 308 = @handle_redirects;
-    proxy_cache_valid      200 40s;
-    proxy_cache_valid      400 401 403 404 200s;
-    proxy_ignore_client_abort on;
-    proxy_cache_use_stale  error timeout invalid_header updating
-                            http_500 http_502 http_503 http_504 http_429;
-
-    limit_req zone=feed-proxy-quota burst=10000 nodelay;
-
-    {% for item in feed_vars | dict2items %}   
-        location "/feed/{{item.key}}" {
-            set $feed_upstream "{{ item.value.url | replace('\\', '\\\\') | replace('"', '\\"') | replace('$', '$dollar') }}";
-            set $original_host "{{ item.value.url | urlsplit('hostname') }}";
-            proxy_pass $feed_upstream;  
-
-            {% if "headers" in item.value %}
-                {% for header in item.value.headers | dict2items -%}
-                    proxy_set_header "{{ header.key }}" "{{ header.value | replace('\\', '\\\\') | replace('"', '\\"') | replace('$', '$dollar') }}";
-                {% endfor %}
-            {% endif %}            
-        }
-    {% endfor %}
-    
-    location @handle_redirects {
-       set $original_uri "$request_uri";
-       set $orig_loc "$upstream_http_location";
-
-       proxy_cache       feed-proxy;
-       proxy_cache_key $original_uri;
-       proxy_cache_valid 200 40s;
-       proxy_cache_valid 400 401 403 404 200s;
-
-       if ($orig_loc ~* "://") {
-         proxy_pass $orig_loc;
-         break;
-       }
-       # handle relative redirect
-       if ($orig_loc !~* "://") {
-         proxy_pass $scheme://$original_host$orig_loc;
+         proxy_pass $original_host$orig_loc;
          break;
        }
     }
@@ -154,33 +91,28 @@ server {
 {% if "gbfs" in item.value -%}
 
 server {
-    listen 80;
-    listen [::]:80;
+    listen 127.0.0.1:8081 http2;
+    listen [::1]:8081 http2;
+
     server_name "{{ item.value.url | urlsplit('hostname') }}";
 
     include ./conf.d/feed-proxy-http-default;
 
-    proxy_ssl_server_name on;
-
     proxy_pass_header Server;
     proxy_set_header User-Agent transitous.org;
-    add_header X-Cache $upstream_cache_status;
-    add_header Link '<https://transitous.org/sources/>; rel="license"';
 
-    proxy_cache            feed-proxy;
-    proxy_buffering on;
+    proxy_cache            feed-proxy-error;
     proxy_ignore_headers Set-Cookie;
     proxy_ignore_headers X-Accel-Expires;
     proxy_ignore_headers Expires;
     proxy_ignore_headers Cache-Control;
     proxy_http_version 1.1;
-    proxy_cache_valid      200 80s;
-    proxy_cache_valid      400 401 403 404 200s;
+    proxy_ssl_server_name on;
+    proxy_cache_valid      400 401 403 404 429 500 502 503 504 200s;
     proxy_ignore_client_abort on;
-    proxy_cache_use_stale  error timeout invalid_header updating
-                            http_500 http_502 http_503 http_504 http_429;
+    proxy_cache_use_stale  updating;
 
-    limit_req zone=feed-proxy-quota burst=10000 nodelay;
+    limit_req zone=feed-proxy-upstream-gbfs-quota burst=90;
 
     location / {
         set $feed_upstream "{{ item.value.url | urlsplit('scheme') }}://{{ item.value.url | urlsplit('hostname') }}";
@@ -194,20 +126,74 @@ server {
     }  
 }
 
+{% endif %}
+{% endfor %}
+
+{% for proto in ['http', 'https'] %}
+
 server {
+    {% if proto == 'https' %}
     listen 443 http2 ssl;
     listen [::]:443 http2 ssl;
+    {% else %}
+    listen 80;
+    listen [::]:80;
+    {% endif %}
+
+    server_name {{ feed_proxy_host }};
+
+    include ./conf.d/feed-proxy-{{ proto }}-default;
+
+    proxy_pass_header Server;
+    add_header X-Cache $upstream_cache_status;
+    add_header Link '<https://transitous.org/sources/>; rel="license"';
+
+    proxy_cache            feed-proxy;
+    proxy_cache_key   "$request_uri";
+    proxy_buffering on;
+    proxy_ignore_headers Set-Cookie;
+    proxy_ignore_headers X-Accel-Expires;
+    proxy_ignore_headers Expires;
+    proxy_ignore_headers Cache-Control;
+    proxy_http_version 1.1;
+    proxy_cache_valid      200 40s;
+    proxy_ignore_client_abort on;
+    proxy_cache_use_stale  error timeout invalid_header updating
+                            http_403 http_404 http_429 http_500 http_502 http_503 http_504;
+
+    limit_req zone=feed-proxy-quota burst=10000 nodelay;
+
+    {% for item in feed_vars | dict2items %}   
+        location "/feed/{{item.key}}" {
+            proxy_pass http://127.0.0.1:8081; 
+        }
+    {% endfor %}
+}
+
+{% endfor %}
+
+{% for item in feed_vars | dict2items -%}   
+{% if "gbfs" in item.value -%}
+{% for proto in ['http', 'https'] %}
+
+server {
+    {% if proto == 'https' %}
+    listen 443 http2 ssl;
+    listen [::]:443 http2 ssl;
+    {% else %}
+    listen 80;
+    listen [::]:80;
+    {% endif %}
 
     server_name "{{ item.value.url | urlsplit('hostname') }}";
 
-    include ./conf.d/feed-proxy-https-default;
-
-    proxy_ssl_server_name on;
+    include ./conf.d/feed-proxy-{{ proto }}-default;
 
     proxy_pass_header Server;
-    proxy_set_header User-Agent transitous.org;
     add_header X-Cache $upstream_cache_status;
     add_header Link '<https://transitous.org/sources/>; rel="license"';
+
+    proxy_set_header Host "{{ item.value.url | urlsplit('hostname') }}";
 
     proxy_cache            feed-proxy;
     proxy_buffering on;
@@ -217,24 +203,18 @@ server {
     proxy_ignore_headers Cache-Control;
     proxy_http_version 1.1;
     proxy_cache_valid      200 80s;
-    proxy_cache_valid      400 401 403 404 200s;
+    proxy_cache_valid      301 302 307 308 200s;
     proxy_ignore_client_abort on;
     proxy_cache_use_stale  error timeout invalid_header updating
-                            http_500 http_502 http_503 http_504 http_429;
+                            http_403 http_404 http_429 http_500 http_502 http_503 http_504;
 
     limit_req zone=feed-proxy-quota burst=10000 nodelay;
 
     location / {
-        set $feed_upstream "{{ item.value.url | urlsplit('scheme') }}://{{ item.value.url | urlsplit('hostname') }}";
-        proxy_pass $feed_upstream;        
-
-        {% if "headers" in item.value -%}
-            {% for header in item.value.headers | dict2items -%}
-                proxy_set_header "{{ header.key }}" "{{ header.value | replace('\\', '\\\\') | replace('"', '\\"') | replace('$', '$dollar') }}";
-            {% endfor %}
-        {% endif %} 
-    }           
+        proxy_pass http://127.0.0.1:8081;
+    }  
 }
 
+{% endfor %}
 {% endif %}
 {% endfor %}
