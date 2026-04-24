@@ -1548,7 +1548,7 @@
             "name": "RPK-Bochnia",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://owncloud.cesnet.cz/index.php/s/iZamXZfQIydo965/download",
+            "url": "https://api.odt.org.pl/static/media/public_transport_data/RPKBochnia_bgLAcxp.zip",
             "license": {
                 "spdx-identifier": "MIT"
             },
