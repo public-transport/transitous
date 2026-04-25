@@ -99,7 +99,7 @@ server {
     location /ojp20 {
         proxy_pass http://{{ item.vhost }}-backend/ojp20;
 
-        limit_req zone=api burst=40 delay=10;
+        limit_req zone=api burst=20 delay=10;
         
         proxy_connect_timeout       2s;
         proxy_send_timeout          60;
@@ -111,7 +111,7 @@ server {
     location ~ ^/api/(v1|v2|v3|v4|v5|v6|experimental)/(plan|one-to-all) {
         proxy_pass http://{{ item.vhost }}-backend$uri?$args;
 
-        limit_req zone=api_plan burst=20 delay=10;
+        limit_req zone=api_plan burst=17 delay=7;
 
         proxy_connect_timeout       2s;
         proxy_send_timeout          60;

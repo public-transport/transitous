@@ -9,7 +9,7 @@
         {
             "name": "Trainkos",
             "type": "http",
-            "url": "https://owncloud.cesnet.cz/index.php/s/VmdhITswp9CxVfZ/download"
+            "url": "https://hoermalmeister.github.io/gtfs-rehost/trainkos/trainkos.zip"
         }
     ]
 }
