@@ -117,6 +117,15 @@
             }
         },
         {
+            "name": "PKS-Jarosław",
+            "type": "http",
+            "url": "https://github.com/rozkladnik/gtfs-pks-jaroslaw/releases/latest/download/gtfs.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            },
+            "fix": true
+        },
+        {
             "name": "Koleje-Mazowieckie",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u3-kolejemazowieckie",
