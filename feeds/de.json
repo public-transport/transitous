@@ -260,6 +260,11 @@
             "headers": {
                 "x-api-key": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBnaHZwS04wL1Zyc2Rob1dwbzJLMlZtMHZZYTVLak41WGFkU240eE80MnhVCkF5cERtZ1ZIUmlXMk5YUEFQS0h1RnVmZHpHTk1tV0pVeUR6MlNiUnFocXcKLS0tIFdTN0lKYkJhU25iWWx1azRSeE5YalV5d3BkVlFKcGlVUVJnamhlSmN1K28KT2pXSvkuCAVsNBrxcYZCfgkfe19pjieImMXSkL2m9RUQ6gSs7wW2tFJQ3v5MNOHstmsiKSFfxL+FpUe77+aHWw=="
             }
+        },
+        {
+            "name": "euregiobike",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-euregiobike~aachen~gbfs"
         }
     ]
 }
