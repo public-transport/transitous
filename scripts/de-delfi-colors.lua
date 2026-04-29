@@ -1272,7 +1272,6 @@ local colors = {
     },
     ["DB Regio AG S-Bahn Stuttgart"] = {
         ["RB11"] = { color = 0x02aa9e, text_color = 0xffffff },
-        ["RB64"] = { color = 0xb6931d, text_color = 0xffffff },
         ["S1"] = { color = 0x59af41, text_color = 0xffffff },
         ["S11"] = { color = 0x59af41, text_color = 0xffffff },
         ["S2"] = { color = 0xee1c28, text_color = 0xffffff },
@@ -1402,6 +1401,9 @@ local colors = {
         ["RB88"] = { color = 0x47359c, text_color = 0xffffff },
         ["RE80"] = { color = 0x423f41, text_color = 0xffffff },
         ["RE87"] = { color = 0xff2e17, text_color = 0xffffff },
+    },
+    ["DB-Zug  (nicht VVS)1"] = {
+        ["RB64"] = { color = 0xb6931d, text_color = 0xffffff },
     },
     ["DVB-Bus"] = {
         ["166"] = { color = 0x35a9e1, text_color = 0xffffff },
