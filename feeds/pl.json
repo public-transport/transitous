@@ -859,9 +859,7 @@
             "url": "https://kasmar00.github.io/gtfs-warsaw-custom/feeds/warsaw-ferries/latest.zip",
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
-            },
-            "skip": true,
-            "skip-reason": "Outdated feed"
+            }
         },
         {
             "name": "Ząbki",
