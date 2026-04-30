@@ -40,12 +40,18 @@
         {
             "name": "bkk-funicular",
             "type": "http",
-            "url": "https://gy-mate.hu/gtfs/gtfs_hu_funicular.zip"
+            "url": "https://gy-mate.hu/gtfs/gtfs_hu_funicular.zip",
+            "license": {
+                "spdx-identifier": "GPL-3.0-only"
+            }
         },
         {
             "name": "bkk-chairlift",
             "type": "http",
-            "url": "https://gy-mate.hu/gtfs/gtfs_hu_chairlift.zip"
+            "url": "https://gy-mate.hu/gtfs/gtfs_hu_chairlift.zip",
+            "license": {
+                "spdx-identifier": "GPL-3.0-only"
+            }
         },
         {
             "name": "budaors",
@@ -55,7 +61,10 @@
         {
             "name": "urom",
             "type": "http",
-            "url": "https://gy-mate.hu/gtfs/gtfs_hu_urom.zip"
+            "url": "https://gy-mate.hu/gtfs/gtfs_hu_urom.zip",
+            "license": {
+                "spdx-identifier": "GPL-3.0-only"
+            }
         },
         {
             "name": "mvk",
