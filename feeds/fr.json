@@ -13983,6 +13983,15 @@
             "managed-by-script": true,
             "skip": true,
             "skip-reason": "Invalid GTFS, not zipped"
+        },
+        {
+            "name": "airfrance-klm",
+            "type": "http",
+            "url": "https://public-transport.github.io/ssim-converter/AF-KL-TO-HV-S26-W26.zip",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/programme-des-vols-air-france",
+                "spdx-identifier": null
+            }
         }
     ]
 }
