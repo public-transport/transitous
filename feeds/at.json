@@ -158,6 +158,11 @@
             },
             "managed-by-script": true,
             "x-mvo-id": "57-2026"
+        },
+        {
+            "name": "WienMobil-Rad",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-wienmobil~rad~vienna~gbfs"
         }
     ]
 }
