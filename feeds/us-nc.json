@@ -60,6 +60,22 @@
             "transitland-atlas-id": "f-dnru-chapel~hill~transit~nc~us~rt"
         },
         {
+            "name": "CATS",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dnq-charlotteareatransitsystem",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "CATS",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dnq-charlotteareatransitsystem~rt",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
             "name": "DukeTransit",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-dnrug-duke~nc~us",
