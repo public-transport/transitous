@@ -3,6 +3,10 @@
         {
             "name": "Volker Krause",
             "github": "vkrause"
+        },
+        {
+            "name": "Alex Ghandhi",
+            "github": "aGhandhii"
         }
     ],
     "sources": [
@@ -15,6 +19,16 @@
             "name": "Minneapolis-St-Paul",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-twin~cities~minnesota~rt"
+        },
+        {
+            "name": "Duluth Transit Authority",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-cbq6-duluthtransitauthority"
+        },
+        {
+            "name": "Duluth Transit Authority",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-duluthtransitauthority~rt"
         }
     ]
 }
