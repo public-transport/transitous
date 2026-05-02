@@ -21,12 +21,12 @@
             "transitland-atlas-id": "f-twin~cities~minnesota~rt"
         },
         {
-            "name": "Duluth Transit Authority",
+            "name": "Duluth-Transit-Authority",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-cbq6-duluthtransitauthority"
         },
         {
-            "name": "Duluth Transit Authority",
+            "name": "Duluth-Transit-Authority",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-duluthtransitauthority~rt"
         }
