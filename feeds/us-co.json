@@ -3,6 +3,10 @@
         {
             "name": "Marcus Lundblad",
             "github": "mlundblad"
+        },
+        {
+            "name": "Alex Ghandhi",
+            "github": "aGhandhii"
         }
     ],
     "sources": [
@@ -27,6 +31,11 @@
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-denver~rtd~bustang~rt",
             "use-feed-proxy": true
+        },
+        {
+            "name": "MMT",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9wvk-mountainmetropolitantransit"
         }
     ]
 }
