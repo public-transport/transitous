@@ -84,6 +84,12 @@ summary h3 {
     </p>
   {{ end }}
 
+  {{ if $source.last_updated }}
+    <p>
+    The data was last updated at {{ time.Format "02 Jan 06 15:04 UTC" $source.last_updated }}.
+    </p>
+  {{ end }}
+
   {{ if $source.attributions }}
     <p>
     It contains information under copyright of
