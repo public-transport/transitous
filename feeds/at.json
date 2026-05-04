@@ -45,7 +45,32 @@
             "script": "at.lua",
             "default-timezone": "Europe/Vienna",
             "use-gtfsclean": false
-        },
+        },        {
+            "name": PTA-Styria-Flex-2026-stwl",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://efa.verbundlinie.at:7790/trips"
+        },        {
+            "name": PTA-Styria-Flex-2026-grazholding",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://efa.verbundlinie.at:7792/trips"
+        },        {
+            "name": PTA-Styria-Flex-2026-regiobusverbundlinie",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://efa.verbundlinie.at:7794/trips"
+        },        {
+            "name": PTA-Styria-Flex-2026-stb",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://efa.verbundlinie.at:7796/trips"
+        },        {
+            "name": PTA-Styria-Flex-2026-gkb",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://efa.verbundlinie.at:7798/trips"
+        },        },
         {
             "name": "PTA-Carinthia-Flex-2026",
             "type": "http",
