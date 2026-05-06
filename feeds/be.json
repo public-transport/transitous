@@ -27,6 +27,9 @@
                 "headers": {
                     "bmc-partner-key": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSA5S2Vta25xcENRU2lXUkdMN1BBWTVTdmlpRnJvTVNZTW9ZUzBxVmNCR3pZCkRjcXFJcHNMZDJMYVdXSjljT1A2QjFydFpxMXlpT0VDQjc0NHZwVGRhL1kKLS0tIFFlZ2pjcXAvUjdIMWpwZ1YxT1dRMmZkTlZqZEZaVVlJSUlqTXFWWlNBRDQKjOjCfyFtya6Yg3r5RMjmf3TzgEa5B4OUYt+wEzeeF/DqGEJ0uVRvHadE1xtKbKoG4lzwmij672j5fJGYdR70NA=="
                 }
+            },
+            "license": {
+                "spdx-idenfifier": "CC-BY-4.0"
             }
         },
         {
@@ -37,6 +40,9 @@
                 "headers": {
                     "bmc-partner-key": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSA5S2Vta25xcENRU2lXUkdMN1BBWTVTdmlpRnJvTVNZTW9ZUzBxVmNCR3pZCkRjcXFJcHNMZDJMYVdXSjljT1A2QjFydFpxMXlpT0VDQjc0NHZwVGRhL1kKLS0tIFFlZ2pjcXAvUjdIMWpwZ1YxT1dRMmZkTlZqZEZaVVlJSUlqTXFWWlNBRDQKjOjCfyFtya6Yg3r5RMjmf3TzgEa5B4OUYt+wEzeeF/DqGEJ0uVRvHadE1xtKbKoG4lzwmij672j5fJGYdR70NA=="
                 }
+            },
+            "license": {
+                "spdx-idenfifier": "CC-BY-4.0"
             }
         },
         {
@@ -47,7 +53,10 @@
             "headers": {
                 "bmc-partner-key": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSA5S2Vta25xcENRU2lXUkdMN1BBWTVTdmlpRnJvTVNZTW9ZUzBxVmNCR3pZCkRjcXFJcHNMZDJMYVdXSjljT1A2QjFydFpxMXlpT0VDQjc0NHZwVGRhL1kKLS0tIFFlZ2pjcXAvUjdIMWpwZ1YxT1dRMmZkTlZqZEZaVVlJSUlqTXFWWlNBRDQKjOjCfyFtya6Yg3r5RMjmf3TzgEa5B4OUYt+wEzeeF/DqGEJ0uVRvHadE1xtKbKoG4lzwmij672j5fJGYdR70NA=="
             },
-            "use-feed-proxy": true
+            "use-feed-proxy": true,
+            "license": {
+                "spdx-idenfifier": "CC-BY-4.0"
+            }
         },
         {
             "name": "delijn",
@@ -57,7 +66,10 @@
             "headers": {
                 "bmc-partner-key": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSA5S2Vta25xcENRU2lXUkdMN1BBWTVTdmlpRnJvTVNZTW9ZUzBxVmNCR3pZCkRjcXFJcHNMZDJMYVdXSjljT1A2QjFydFpxMXlpT0VDQjc0NHZwVGRhL1kKLS0tIFFlZ2pjcXAvUjdIMWpwZ1YxT1dRMmZkTlZqZEZaVVlJSUlqTXFWWlNBRDQKjOjCfyFtya6Yg3r5RMjmf3TzgEa5B4OUYt+wEzeeF/DqGEJ0uVRvHadE1xtKbKoG4lzwmij672j5fJGYdR70NA=="
             },
-            "use-feed-proxy": true
+            "use-feed-proxy": true,
+            "license": {
+                "spdx-idenfifier": "CC-BY-4.0"
+            }
         },
         {
             "name": "dewaterbus",
@@ -74,6 +86,9 @@
                 "headers": {
                     "bmc-partner-key": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSA5S2Vta25xcENRU2lXUkdMN1BBWTVTdmlpRnJvTVNZTW9ZUzBxVmNCR3pZCkRjcXFJcHNMZDJMYVdXSjljT1A2QjFydFpxMXlpT0VDQjc0NHZwVGRhL1kKLS0tIFFlZ2pjcXAvUjdIMWpwZ1YxT1dRMmZkTlZqZEZaVVlJSUlqTXFWWlNBRDQKjOjCfyFtya6Yg3r5RMjmf3TzgEa5B4OUYt+wEzeeF/DqGEJ0uVRvHadE1xtKbKoG4lzwmij672j5fJGYdR70NA=="
                 }
+            },
+            "license": {
+                "spdx-idenfifier": "CC-BY-4.0"
             }
         },
         {
@@ -84,7 +99,10 @@
             "headers": {
                 "bmc-partner-key": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSA5S2Vta25xcENRU2lXUkdMN1BBWTVTdmlpRnJvTVNZTW9ZUzBxVmNCR3pZCkRjcXFJcHNMZDJMYVdXSjljT1A2QjFydFpxMXlpT0VDQjc0NHZwVGRhL1kKLS0tIFFlZ2pjcXAvUjdIMWpwZ1YxT1dRMmZkTlZqZEZaVVlJSUlqTXFWWlNBRDQKjOjCfyFtya6Yg3r5RMjmf3TzgEa5B4OUYt+wEzeeF/DqGEJ0uVRvHadE1xtKbKoG4lzwmij672j5fJGYdR70NA=="
             },
-            "use-feed-proxy": true
+            "use-feed-proxy": true,
+            "license": {
+                "spdx-idenfifier": "CC-BY-4.0"
+            }
         },
         {
             "name": "tec",
@@ -94,7 +112,10 @@
             "headers": {
                 "bmc-partner-key": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSA5S2Vta25xcENRU2lXUkdMN1BBWTVTdmlpRnJvTVNZTW9ZUzBxVmNCR3pZCkRjcXFJcHNMZDJMYVdXSjljT1A2QjFydFpxMXlpT0VDQjc0NHZwVGRhL1kKLS0tIFFlZ2pjcXAvUjdIMWpwZ1YxT1dRMmZkTlZqZEZaVVlJSUlqTXFWWlNBRDQKjOjCfyFtya6Yg3r5RMjmf3TzgEa5B4OUYt+wEzeeF/DqGEJ0uVRvHadE1xtKbKoG4lzwmij672j5fJGYdR70NA=="
             },
-            "use-feed-proxy": true
+            "use-feed-proxy": true,
+            "license": {
+                "spdx-idenfifier": "CC-BY-4.0"
+            }
         },
         {
             "name": "villo-brussels",
