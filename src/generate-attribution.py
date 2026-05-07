@@ -13,7 +13,8 @@ import pycountry
 from pathlib import Path
 from metadata import TransitlandSource, MobilityDatabaseSource, Region, UrlSource, HttpSource
 from zipfile import ZipFile
-from typing import Optional
+from typing import Optional, Any
+from datetime import datetime, timezone
 
 
 # extensions/overrides for ISO 3166-1/2 codes
@@ -44,6 +45,8 @@ def http_source_attribution(source: HttpSource, source_id: str, region_data: dic
             source.license.spdx_identifier
     if source.license.url:
         attribution["license_url"] = source.license.url
+    if source.license.attribution_text:
+        attribution["attribution_text"] = source.license.attribution_text
 
     attribution["operators"] = []
     attribution["source"] = source.url
@@ -58,72 +61,84 @@ def http_source_attribution(source: HttpSource, source_id: str, region_data: dic
         map(lambda w: w[0].upper() + w[1:] if len(w) > 0 else w, human_name.split(" "))
     )
     attribution["human_name"] = human_name
-    contacts: list[dict] = []
 
     # For now, metadata extraction code only supports GTFS.
     # For NeTEx we rely on the source name for now.
-    if feed_path.exists() and source.spec == "gtfs":
-        with ZipFile(feed_path) as z:
-            if "feed_info.txt" in z.namelist():
-                with z.open("feed_info.txt", "r") as i:
-                    with io.TextIOWrapper(i) as it:
-                        inforeader = csv.DictReader(it, delimiter=",", quotechar='"')
+    if feed_path.exists():
+        mtime = feed_path.stat().st_mtime
+        last_modified = datetime.fromtimestamp(mtime,
+                                               tz=timezone.utc)
+        attribution["last_updated"] = last_modified.isoformat()
 
-                        publisher = next(inforeader)
-                        if "feed_publisher_name" in publisher and "feed_publisher_url" in publisher:
-                            attribution["publisher"] = {}
-                            attribution["publisher"]["name"] = publisher["feed_publisher_name"]
-                            attribution["publisher"]["url"] = publisher["feed_publisher_url"]
+        if source.spec == "gtfs":
+            contacts: list[dict] = []
 
-                            contact = {
-                                    "type": "publisher",
-                                    "name": publisher["feed_publisher_name"],
-                                    "email": publisher.get("feed_contact_email"),
-                                    "url": publisher.get("feed_contact_url")
-                            }
+            with ZipFile(feed_path) as z:
+                if "feed_info.txt" in z.namelist():
+                    with z.open("feed_info.txt", "r") as i:
+                        with io.TextIOWrapper(i) as it:
+                            inforeader = csv.DictReader(it, delimiter=",", quotechar='"')
 
-                            contacts.append(contact)
+                            publisher = next(inforeader)
+                            if "feed_publisher_name" in publisher and "feed_publisher_url" in publisher:
+                                attribution["publisher"] = {}
+                                attribution["publisher"]["name"] = publisher["feed_publisher_name"]
+                                attribution["publisher"]["url"] = publisher["feed_publisher_url"]
 
-            with z.open("agency.txt", "r") as a:
-                with io.TextIOWrapper(a) as at:
-                    agencyreader = list(csv.DictReader(at, delimiter=",", quotechar='"'))
+                                contact = {
+                                        "type": "publisher",
+                                        "name": publisher["feed_publisher_name"],
+                                        "email": publisher.get("feed_contact_email"),
+                                        "url": publisher.get("feed_contact_url")
+                                }
 
-                    attribution["operators"] = \
-                        filter_duplicates(map(lambda agency: agency["agency_name"],
-                                            agencyreader))
+                                contacts.append(contact)
 
-                    contacts += map(lambda agency: {
-                            "type": "agency",
-                            "agency_id": agency.get("agency_id"),
-                            "name": agency["agency_name"],
-                            "email": agency.get("agency_email")
-                        }, agencyreader)
-
-            if "attributions.txt" in z.namelist():
-                with z.open("attributions.txt", "r") as a:
+                with z.open("agency.txt", "r") as a:
                     with io.TextIOWrapper(a) as at:
-                        attributionstxt = csv.DictReader(at, delimiter=",", quotechar='"')
-                        attribution["attributions"] = filter_duplicates(
-                            map(
-                                lambda contrib: {
-                                    "name": contrib["organization_name"],
-                                    "url": contrib.get("attribution_url")
-                                },
-                                attributionstxt,
+                        agencyreader = list(csv.DictReader(at, delimiter=",", quotechar='"'))
+
+                        attribution["operators"] = \
+                            filter_duplicates(map(lambda agency: agency["agency_name"],
+                                                agencyreader))
+
+                        contacts += map(lambda agency: {
+                                "type": "agency",
+                                "agency_id": agency.get("agency_id"),
+                                "name": agency["agency_name"],
+                                "email": agency.get("agency_email")
+                            }, agencyreader)
+
+                if "attributions.txt" in z.namelist():
+                    with z.open("attributions.txt", "r") as a:
+                        with io.TextIOWrapper(a) as at:
+                            attributionstxt = csv.DictReader(at, delimiter=",", quotechar='"')
+                            attribution["attributions"] = filter_duplicates(
+                                map(
+                                    lambda contrib: {
+                                        "name": contrib["organization_name"],
+                                        "url": contrib.get("attribution_url")
+                                    },
+                                    attributionstxt,
+                                )
                             )
-                        )
 
-                        attribution_contacts = map(lambda operator: {
-                                "type": "attribution",
-                                "name": operator["organization_name"],
-                                "email": operator.get("attribution_email")
-                            }, attributionstxt)
+                            attribution_contacts = map(lambda operator: {
+                                    "type": "attribution",
+                                    "name": operator["organization_name"],
+                                    "email": operator.get("attribution_email")
+                                }, attributionstxt)
 
-                        contacts += attribution_contacts
+                            contacts += attribution_contacts
 
-    attribution["contacts"] = \
-        list(filter(lambda c: c.get("email") or c.get("url"),
-                    contacts))
+            attribution["contacts"] = \
+                list(filter(lambda c: c.get("email") or c.get("url"),
+                            contacts))
+
+    if source.license.publisher:
+        attribution["publisher"] = {}
+        attribution["publisher"]["name"] = source.license.publisher
+        attribution["publisher"]["url"] = source.license.publisher_url
 
     if (
         "operators" in attribution
@@ -136,14 +151,23 @@ def http_source_attribution(source: HttpSource, source_id: str, region_data: dic
 
 
 def add_rt_attribution(attribution: dict, source: UrlSource) -> None:
-    if not "rt" in attribution:
+    if "rt" not in attribution:
         attribution["rt"] = []
 
-    attribution["rt"].append({
+    rt_attribution: dict[str, Any] = {
             "source": source.url,
             "spdx_license_identifier": source.license.spdx_identifier,
-            "license_url": source.license.url
-    })
+            "license_url": source.license.url,
+            "attribution_text": source.license.attribution_text,
+    }
+
+    if source.license.publisher:
+        rt_attribution["publisher"] = {
+                "name": source.license.publisher,
+                "url": source.license.publisher_url
+        }
+
+    attribution["rt"].append(rt_attribution)
 
 
 def get_region_data(code: str) -> dict:

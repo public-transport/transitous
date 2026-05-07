@@ -10,6 +10,10 @@ on:
 
   workflow_dispatch:
 
+  schedule:
+   - cron: "0 06 * * *"
+
+
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read

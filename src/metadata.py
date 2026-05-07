@@ -19,6 +19,9 @@ class Maintainer:
 class License:
     spdx_identifier: Optional[str] = None
     url: Optional[str] = None
+    attribution_text: Optional[str] = None
+    publisher: Optional[str] = None
+    publisher_url: Optional[str] = None
 
 
 class DisplayNameOptions:
@@ -69,6 +72,12 @@ class Source:
                     self.license.spdx_identifier = parsed["license"]["spdx-identifier"]
                 if "url" in parsed["license"]:
                     self.license.url = parsed["license"]["url"]
+                if "attribution-text" in parsed["license"]:
+                    self.license.attribution_text = parsed["license"]["attribution-text"]
+                if "publisher" in parsed["license"]:
+                    self.license.publisher = parsed["license"]["publisher"]
+                if "publisher-url" in parsed["license"]:
+                    self.license.publisher_url = parsed["license"]["publisher-url"]
 
             self.name = parsed["name"]
             if "fix" in parsed:

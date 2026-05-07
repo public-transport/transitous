@@ -15,7 +15,8 @@
             "type": "http",
             "url": "https://jbb.ghsq.de/gtfs/ro-railway.gtfs.zip",
             "license": {
-                "url": "https://data.gov.ro/base/images/logoinst/OGL-ROU-1.0.pdf"
+                "url": "https://data.gov.ro/base/images/logoinst/OGL-ROU-1.0.pdf",
+                "attribution-text": "Conține informații publice în baza Licenței pentru Guvernare Deschisă v1.0"
             }
         },
         {

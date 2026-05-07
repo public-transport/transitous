@@ -312,6 +312,9 @@ Option Name       | Description
 ----------------- | --------------------------------------------------
 `spdx-identifier` | License identifier from <https://spdx.org/licenses/>
 `url`             | Website that states the License of the data
+`publisher`       | Publisher to credit. Automatically extracted from GTFS if not set
+`publisher-url`   | Publisher website. Automatically extracted from GTFS if not set
+`attribution-text`| Custom attribution text. Should be set if required by the license or terms of service.
 
 #### HTTP Options
 

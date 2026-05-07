@@ -29,7 +29,6 @@ steps:
       - git submodule update --init --checkout --remote
       - ./ci/fetch-feeds.py timer
       - ./src/garbage-collect.py
-      - ./src/generate-attribution.py
   import:
     image: ghcr.io/public-transport/transitous/import:latest
     when:
@@ -45,4 +44,5 @@ steps:
       # Start import
       - cd out && motis import -c config.yml > motis-import.log && rm motis-import.log && cd ..
       - src/generate-motis-config.py
+      - src/generate-attribution.py
       - rm out/.import-running
