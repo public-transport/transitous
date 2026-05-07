@@ -95,7 +95,10 @@
         {
             "name": "Grand-River-Transit",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-dpwz-grandrivertransit~lrt"
+            "transitland-atlas-id": "f-dpwz-grandrivertransit~lrt",
+            "http-options": {
+                "ignore-tls-errors": true
+            }
         },
         {
             "name": "Grand-River-Transit",
@@ -110,7 +113,10 @@
         {
             "name": "Grand-River-Transit-Bus",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-dpwz-grandrivertransit~bus"
+            "transitland-atlas-id": "f-dpwz-grandrivertransit~bus",
+            "http-options": {
+                "ignore-tls-errors": true
+            }
         },
         {
             "name": "Grand-River-Transit-Bus",
