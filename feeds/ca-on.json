@@ -96,9 +96,7 @@
             "name": "Grand-River-Transit",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-dpwz-grandrivertransit~lrt",
-            "http-options": {
-                "ignore-tls-errors": true
-            }
+            "url-override": "http://webapps.regionofwaterloo.ca/api/grt-routes/api/staticfeeds/2"
         },
         {
             "name": "Grand-River-Transit",
@@ -114,9 +112,7 @@
             "name": "Grand-River-Transit-Bus",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-dpwz-grandrivertransit~bus",
-            "http-options": {
-                "ignore-tls-errors": true
-            }
+            "url-override": "http://webapps.regionofwaterloo.ca/api/grt-routes/api/staticfeeds/1"
         },
         {
             "name": "Grand-River-Transit-Bus",
