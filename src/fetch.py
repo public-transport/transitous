@@ -13,6 +13,10 @@ from typing import Optional, Any, Iterable, IO
 from zoneinfo import ZoneInfo
 from enum import Enum
 from license_expression import get_spdx_licensing, Licensing, ExpressionError
+from urllib3.util import create_urllib3_context
+from urllib3 import PoolManager
+from requests.adapters import HTTPAdapter
+from requests import Session
 
 import argparse
 import email.utils
@@ -31,7 +35,13 @@ import csv
 import ftplib
 import urllib
 import time
+import ssl
 
+class LenientCipherAdapter(HTTPAdapter):
+    def init_poolmanager(self, *args, **kwargs):
+        context = create_urllib3_context(ciphers="ALL:@SECLEVEL=1", cert_reqs=ssl.CERT_NONE)
+        kwargs['ssl_context'] = context
+        return super(LenientCipherAdapter, self).init_poolmanager(*args, **kwargs)
 
 def validate_source_name(name: str):
     if " " in name:
@@ -187,6 +197,10 @@ def download_http_source(
         "verify": not source.options.ignore_tls_errors,
         "timeout": 30
     }
+    if source.options.ignore_tls_errors:
+        session.mount("https://", LenientCipherAdapter())
+    else:
+        session.mount("https://", HTTPAdapter())
 
     headers = {}
     for key, value in source.options.headers.items():
