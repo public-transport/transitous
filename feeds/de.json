@@ -276,6 +276,17 @@
             "name": "euregiobike",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-euregiobike~aachen~gbfs"
+        },
+        {
+            "name": "DottMunich",
+            "type": "url",
+            "url": "https://gbfs.api.ridedott.com/public/v2/munich/gbfs.json",
+            "spec": "gbfs"
+        },
+        {
+            "name": "MyRadlMunich",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-myradl~munich~gbfs"
         }
     ]
 }
