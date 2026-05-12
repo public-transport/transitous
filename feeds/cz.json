@@ -98,7 +98,7 @@
         {
             "name": "JDF-merged",
             "type": "http",
-            "url": "https://github.com/KoblizekXD/gtfs-processor/raw/refs/heads/gtfs/files/latest.zip",
+            "url": "https://github.com/0xaa55h/gtfs-processor/raw/refs/heads/gtfs/files/latest.zip",
             "license": {
                 "spdx-identifier": "CC0-1.0"
             }
