@@ -5267,7 +5267,8 @@
             ],
             "x-data-gov-fr-res-id": 79818,
             "managed-by-script": true,
-            "skip": false,
+            "skip": true,
+            "skip-reason": "Aéroport Nantes Atlantique flights are exposed as bus journeys with unrealistic times. See #1646.",
             "x-data-gov-fr-res-title": "GTFS Destineo Pays de la Loire",
             "x-data-gov-fr-dataset-id": "632b2a8a8bf5b436bed4f8df"
         },
