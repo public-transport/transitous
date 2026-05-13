@@ -52,6 +52,17 @@ local route_agency_short_name_color_map = {
     ["32"] = { 0xFF0089D0, 0xFFFDFEFF }, -- UL bus 32
     ["33"] = { 0xFF00A551, 0xFFFDFEFF }, -- UL bus 33
     ["34"] = { 0xFFB01216, 0xFFFDFEFF } -- UL bus 34
+  },
+  ["VL"] = {
+    ["1"] = { 0xFFDF494C, 0xFFFDFEFF }, -- Västerås bus 1
+    ["2"] = { 0xFF00A96A, 0xFFFDFEFF }, -- Västerås bus 2
+    ["3"] = { 0xFFF39DC3, 0xFFFDFEFF }, -- Västerås bus 3
+    ["4"] = { 0xFF12ADE4, 0xFFFDFEFF }, -- Västerås bus 4
+    ["5"] = { 0xFFFDCB35, 0xFFFDFEFF }, -- Västerås bus 5
+    ["6"] = { 0xFFF4832D, 0xFFFDFEFF }, -- Västerås bus 6
+    ["7"] = { 0xFFA777B4, 0xFFFDFEFF }, -- Västerås bus 7
+    ["14"] = { 0xFFA7A39F, 0xFFFFFFFF }, -- Västerås bus 14
+    ["15"] = { 0xFFA7A39F, 0xFFFFFFFF } -- Västerås bus 15
   }
 }
 
