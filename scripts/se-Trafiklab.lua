@@ -85,6 +85,12 @@ local route_agency_type_short_name_color_map = {
        ["14"] = { 0xFFD7B1F4, 0xFF7D43FF }, -- Göteborg tram 14
        ["X"] = { 0xFFFFFFFF, 0xFFFF0000 } -- Göteborg tram X
     }
+  },
+  ["Östgötatrafiken"] = {
+     [900] = {
+       ["2"] = { 0xFFCD0000, 0xFFFFFFFF }, -- Norrköping tram 2
+       ["3"] = { 0xFF008000, 0xFFFFFFFF } -- Norrköping tram 3
+     }
   }
 }
 
