@@ -20,13 +20,11 @@ local route_agency_short_name_color_map = {
     ["7"] = { 0xFF999999, 0xFFFFFFFF }, -- Stockholm tram 7
     ["10"] = { 0xFF0089CA, 0xFFFFFFFF }, -- Stockholm metro 10 (blue line)
     ["11"] = { 0xFF0089CA, 0xFFFFFFFF }, -- Stockholm metro 11 (blue line)
-    ["12"] = { 0xFF669999, 0xFFFFFFFF }, -- Stockholm Nockebybanan 12
     ["13"] = { 0xFFD71D24, 0xFFFFFFFF }, -- Stockholm metro 13 (red line)
     ["14"] = { 0xFFD71D24, 0xFFFFFFFF }, -- Stockholm metro 14 (red line)
     ["17"] = { 0xFF04A64A, 0xFFFFFFFF }, -- Stockholm metro 17 (green line)
     ["18"] = { 0xFF04A64A, 0xFFFFFFFF }, -- Stockholm metro 18 (green line)
     ["19"] = { 0xFF04A64A, 0xFFFFFFFF }, -- Stockholm metro 19 (green line)
-    ["21"] = { 0xFFB66931, 0xFFFFFFFF }, -- Stockholm Lidingöbanan 21
     ["25"] = { 0xFF03AAAE, 0xFFFFFFFF }, -- Stockholm Saltsjöbanan 25
     ["26"] = { 0xFF03AAAE, 0xFFFFFFFF } -- Stockholm Saltsjöbanan 26
   },
@@ -69,6 +67,7 @@ local route_agency_short_name_color_map = {
 -- override route colors based on agency name and long_name
 local route_agency_long_name_color_map = {
   ["SL"] = {
+    ["Nockebybanan"] = { 0xFF669999, 0xFFFFFFFF }, -- Stockholm Nockebybanan 12
     ["Lidingöbanan"] = { 0xFFB66931, 0xFFFFFFFF }, -- Stockholm Lidingöbanan 21
     ["Roslagsbanan"] = { 0xFFA05EA5, 0xFFFFFFFF }, -- Roslagsbanan 27, 28, 29
     ["Tvärbanan"] = { 0xFFFF9900, 0xFFFFFFFF }, -- Stockholm Tvärbanan 30, 31
