@@ -936,6 +936,9 @@ local colors = {
         ["661"] = { color = 0xed1c24, text_color = 0xffffff },
         ["662"] = { color = 0xffcb04, text_color = 0x000000 },
         ["663"] = { color = 0x00a99c, text_color = 0xffffff },
+        ["664"] = { color = 0x8981b0, text_color = 0xffffff },
+        ["670"] = { color = 0xf89339, text_color = 0x000000 },
+        ["770"] = { color = 0xea028c, text_color = 0xffffff },
         ["880"] = { color = 0x0072bc, text_color = 0xffffff },
     },
     ["Ceske Drahy"] = {
@@ -1372,6 +1375,7 @@ local colors = {
         ["RB71"] = { color = 0xec2933, text_color = 0xffffff },
         ["RE10a"] = { color = 0x9f5a2c, text_color = 0xffffff },
         ["RE10b"] = { color = 0x9f5a2c, text_color = 0xffffff },
+        ["RE17"] = { color = 0x561d6f, text_color = 0xffffff },
         ["RE18"] = { color = 0x009c48, text_color = 0xffffff },
         ["RE6"] = { color = 0xebaf2d, text_color = 0xffffff },
         ["RE71"] = { color = 0xb6921d, text_color = 0xffffff },
@@ -3299,6 +3303,8 @@ local colors = {
     },
     ["MittelrheinBahn (Trans Regio)"] = {
         ["RB26"] = { color = 0x7a7c80, text_color = 0xffffff },
+        ["RB32"] = { color = 0xda8a9b, text_color = 0xffffff },
+        ["RE2"] = { color = 0x7a52a1, text_color = 0xffffff },
     },
     ["Müller"] = {
         ["30/1"] = { color = 0xb37ab4, text_color = 0xffffff },
@@ -3661,7 +3667,6 @@ local colors = {
         ["R33"] = { color = 0x00aeef, text_color = 0xffffff },
     },
     ["Privatunternehmer-Bus (CW)"] = {
-        ["670"] = { color = 0xf89339, text_color = 0xffffff },
         ["759"] = { color = 0xffcb04, text_color = 0xffffff },
     },
     ["Privatunternehmer-Bus (VVS)"] = {
@@ -6554,8 +6559,17 @@ local colors = {
         ["RB35"] = { color = 0x7a7c80, text_color = 0xffffff },
         ["RB39"] = { color = 0x7a7c80, text_color = 0xffffff },
         ["RB46"] = { color = 0x7a7c80, text_color = 0xffffff },
+        ["RB61"] = { color = 0x007dc5, text_color = 0xffffff },
+        ["RB66"] = { color = 0x007dc5, text_color = 0xffffff },
+        ["RB81"] = { color = 0xec1f25, text_color = 0xffffff },
+        ["RB82"] = { color = 0xec1f25, text_color = 0xffffff },
+        ["RB86"] = { color = 0xe3a026, text_color = 0xffffff },
+        ["RB91"] = { color = 0x7a7c80, text_color = 0xffffff },
         ["RE16"] = { color = 0x005c76, text_color = 0xffffff },
         ["RE19"] = { color = 0x22601f, text_color = 0xffffff },
+        ["RE34"] = { color = 0x985f85, text_color = 0xffffff },
+        ["RE80"] = { color = 0xec1f25, text_color = 0xffffff },
+        ["RE85"] = { color = 0xe3a026, text_color = 0xffffff },
     },
     ["VSH1"] = {
         ["R10"] = { color = 0xfecb09, text_color = 0xffffff },
@@ -7305,6 +7319,7 @@ local colors = {
         ["RE17"] = { color = 0xf37050, text_color = 0xffffff },
         ["RE2"] = { color = 0xec174c, text_color = 0xffffff },
         ["RE3"] = { color = 0xd12025, text_color = 0xffffff },
+        ["RE34"] = { color = 0x0688ca, text_color = 0xffffff },
         ["RE4"] = { color = 0xf8941d, text_color = 0xffffff },
     },
     ["vogtlandbahn - Die Länderbahn GmbH DLB"] = {
