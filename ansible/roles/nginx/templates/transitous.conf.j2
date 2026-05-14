@@ -17,7 +17,7 @@ server {
 
 upstream {{ item.vhost }}-backend {
 {% for backend in item.backends %}
-    server {{ backend.address }} {{ backend.options }};
+    server {{ backend.address }} fail_timeout=3s max_fails=10 {{ backend.options }}; # only mark a server down if many requests fail (due to error, timeout, denied or invalid_header), and try to recover quickly
 {% endfor %}
 }
 
@@ -89,9 +89,8 @@ server {
 
         proxy_cache            motis;
         proxy_cache_valid      200 302 1d;
-        proxy_cache_valid      404 1s;
         proxy_cache_use_stale  error timeout invalid_header updating
-                                http_500 http_502 http_503 http_504;
+                                http_404 http_500 http_502 http_503 http_504;
         add_header Cache-Control "public, max-age=36000";
     }
 
