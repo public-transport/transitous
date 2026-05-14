@@ -18,7 +18,8 @@
             "name": "tbilisi-transport-company",
             "type": "http",
             "url": "https://jbb.ghsq.de/gtfs/ge-tbilisi.gtfs.zip",
-            "drop-shapes": true
+            "drop-shapes": true,
+            "fix": true
         },
         {
             "name": "tbilisi-transport-company",
