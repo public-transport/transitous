@@ -5,7 +5,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 
 {{ $lastYear := "" }}
 
-{{ range $talk := $.Site.Data.talks }}
+{{ range $talk := hugo.Data.talks }}
     {{ $year := (strings.Substr $talk.time 0 4) }}
     {{ $talkTime := time.AsTime $talk.time }}
     {{ if lt (time.Now) $talkTime }}

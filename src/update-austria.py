@@ -92,7 +92,7 @@ if __name__ == "__main__":
                 sources.append(source)
 
     # Remove sources that no longer exist
-    sources = list(filter(lambda source: "x-mvo-id" in source and source["x-mvo-id"] in current_data_set_ids, sources))
+    sources = list(filter(lambda source: "x-mvo-id" not in source or source["x-mvo-id"] in current_data_set_ids, sources))
 
     region["sources"] = sources
 

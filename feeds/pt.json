@@ -74,21 +74,6 @@
             "transitland-atlas-id": "f-etgc-hf~urbano~hf~interurbano"
         },
         {
-            "name": "Leira-Mobilis",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-ez1-mobilis"
-        },
-        {
-            "name": "CIMRL-Leira",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-ez-cimrl"
-        },
-        {
-            "name": "Meio-MedioTejo",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-e-cimmt"
-        },
-        {
             "name": "Algarve-Vamus",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-ey-vizur"
@@ -105,9 +90,12 @@
         },
         {
             "name": "Porto-STCP",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-stcp~porto~pt",
-            "url-override": "https://opendata.porto.digital/dataset/5275c986-592c-43f5-8f87-aabbd4e4f3a4/resource/1e0f4315-3694-42b0-a8ce-5218ad4742e5/download/horarios_gtfs_stcp_06_01_2025.zip"
+            "type": "http",
+            "url": "https://opendata.porto.digital/dataset/horarios-paragens-e-rotas-em-formato-gtfs-stcp",
+            "function": "data_stcp_latest_resource",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
         },
         {
             "name": "Tavira",

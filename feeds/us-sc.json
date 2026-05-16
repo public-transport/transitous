@@ -1,0 +1,15 @@
+{
+    "maintainers": [
+        {
+            "name": "Adam Evyč",
+            "github": "apiote"
+        }
+    ],
+    "sources": [
+        {
+            "name": "myride",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-rock~hill~sc~us"
+        }
+    ]
+}

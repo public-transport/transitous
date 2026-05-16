@@ -32,7 +32,7 @@
     },
     "package_set": {
       "address": {
-        "registry": "73.1.0"
+        "registry": "73.3.0"
       },
       "compiler": ">=0.15.15 <0.16.0",
       "content": {
@@ -139,7 +139,7 @@
         "echarts-simple": "0.0.1",
         "effect": "4.0.0",
         "either": "6.1.0",
-        "elmish": "0.14.0",
+        "elmish": "0.13.0",
         "elmish-enzyme": "0.1.1",
         "elmish-hooks": "0.11.0",
         "elmish-html": "0.10.0",
@@ -462,6 +462,7 @@
         "selective-functors": "1.0.1",
         "semirings": "7.0.0",
         "shuffle": "2.0.0",
+        "sigil": "0.3.0",
         "signal": "13.0.0",
         "simple-emitter": "3.0.1",
         "simple-i18n": "2.0.1",
@@ -621,7 +622,10 @@
         "zipperarray": "2.0.0"
       }
     },
-    "extra_packages": {}
+    "extra_packages": {
+      "elmish": "0.14.0",
+      "elmish-html": "0.11.1"
+    }
   },
   "packages": {
     "aff": {
@@ -830,8 +834,8 @@
     },
     "elmish": {
       "type": "registry",
-      "version": "0.13.0",
-      "integrity": "sha256-ikyo9n9XJXU3AY0kiuQD7paVXsMJQXYjiwwPjrsAMNs=",
+      "version": "0.14.0",
+      "integrity": "sha256-IRVU9rKJBa+Q1luPIseBsvj16t8dOLobEBfOmCNj/rA=",
       "dependencies": [
         "aff",
         "argonaut-core",
@@ -852,8 +856,6 @@
         "partial",
         "prelude",
         "refs",
-        "safe-coerce",
-        "type-equality",
         "typelevel-prelude",
         "undefined-is-not-a-problem",
         "unsafe-coerce",
@@ -863,8 +865,8 @@
     },
     "elmish-html": {
       "type": "registry",
-      "version": "0.10.0",
-      "integrity": "sha256-AdeG6lucnGTEmNmITMtO8iyOVCF7ePPzATc47roBUBM=",
+      "version": "0.11.1",
+      "integrity": "sha256-vTKUfpb66rvcoy02lzqQ2eUAEmHt85vjCIopdfGipb4=",
       "dependencies": [
         "effect",
         "elmish",

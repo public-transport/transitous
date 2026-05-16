@@ -32,3 +32,4 @@ chown -R motis:motis /var/lib/motis/data/
 
 echo "Restarting MOTIS…"
 systemctl --no-ask-password restart motis.service
+systemctl --no-ask-password restart delay-tracker.service

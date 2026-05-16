@@ -28,14 +28,20 @@
             "type": "url",
             "spec": "gtfs-rt",
             "url": "https://api.opentransportdata.swiss/la/gtfs-rt",
-            "use-feed-proxy": true
+            "use-feed-proxy": true,
+            "headers": {
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBFcHdsdkJWeE5kbG9UVDIyZmlHNWRFOUdSN3RUSGtmc0k1NHBjYzFhblJZCjllMDM3QlVtRVpzUTZxa1ZrVUNuTStnM3Z5QmlJVGFVeDJId0svNEYrV00KLS0tIHIrRE8zNTB2VmNMOXM3U05KTU1tREFYWWh4aHZPTURCaGhRaFFFRlZ4VVUK9cNd8+HPYZ8T8Asr3lyfUypsSCKAUs9CuEzudfnJLJbh/m45OJFyAILudEmetKjtBHc5rmY8cXURuGZVGKXRQphhAON9xJsmowZ6LIZu+BvRlPwjHsr9MPxwf8wKip8="
+            }
         },
         {
             "name": "opentransportdataswiss26",
             "type": "url",
             "spec": "gtfs-rt",
             "url": "https://api.opentransportdata.swiss/la/gtfs-sa",
-            "use-feed-proxy": true
+            "use-feed-proxy": true,
+            "headers": {
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBPZE5nTzdVQXdsZ2JXTm4yVk5lUjJhdlR4NmlJSEZtWUlLRTJuanRGOEc4CnMzakthU0hkQ0FOVXFxSEJkNWpvenhjWHBLb214ZC9hcGJPckpKMUhSTEkKLS0tIE9tTEtsRjZud3c3UWh4WGljUWdxeGNKQ1ZzeDNSYnI1c3l5VUszMFZ1c2sKxmNx35r4JbTyq0l9EcYLY74qM+T2i8wumGzBAeo2lLauf6JLMS2ScNiamTso0v1y90TAf2YjkGwETuYYroIaTb3xjfOYchH0o8prvRi6gIyCI04X1TzViksFS/oPRh8PtY0xse9L9Fxo08UyIIzdICv9MlS4eOFKD+lWaQJiCW+o9yQEdJz/UNybV7+wOle6R9PlAy9Q3AkERjuSaRLy"
+            }
         },
         {
             "name": "opentransportdataswiss-flex",
@@ -51,7 +57,9 @@
             "type": "url",
             "url": "https://sharedmobility.ch/v2/gbfs",
             "spec": "gbfs",
-            "headers": {},
+            "headers": {
+                "authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSA3NGZTL2luZWxrb1ZqRWI1YjdjcHBiRGl6clR2emloSVdnZ2lGN2s4cDBFCnRjblc2L09UZ0NHaVpMMjhWZXJCdXBSWHFnTVJUVXMzazdVWXp0S202VWcKLS0tIHV6VDh4dkdjdi8wdEJHcDRMOU1kMGpiMjRNOE5sajNpYUtyQVBtMzRwdlUKeFojJqLHIQO1NuwZZUoy8RaVg6z7zOPvRe2dur5Tv+3btt7cNCUkKLYYM9ljf+PEPCx/Z71ngj8E2Q+SIDQQfUg="
+            },
             "use-feed-proxy": true
         }
     ]

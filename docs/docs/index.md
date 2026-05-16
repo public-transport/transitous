@@ -65,6 +65,7 @@ For properly dealing with delay, disruptions and all kinds of other unplanned
 and short-notice service changes Transitous also uses realtime data feeds which are polled for updates once a minute.
 
 Two formats are supported currently:
+
 * [GTFS Realtime (RT)](https://gtfs.org/documentation/realtime/reference/)
 * [SIRI](https://transmodel-cen.eu/index.php/siri/)
 
@@ -146,7 +147,7 @@ The main attribute of a region is `sources`. It contains a list of feeds that sh
 
 ### Static feeds (timetable)
 
-Each source can either be of `type` `mobility-database`, `transitland-atlas` or `http`.
+Each source can either be of `type` `mobility-database`, `transitland-atlas`, `http` or `ftp`.
 Feeds from the [Mobility Database](https://mobilitydatabase.org/) can be referenced by the id in the URL on the website.
 Feeds from [Transitland](https://www.transit.land/feeds) (a different database of feeds), can be referenced by their Onestop ID.
 
@@ -168,7 +169,7 @@ Transitland:
 }
 ```
 
-If the feed is not part of any existing database, a http source can be used instead.
+If the feed is not part of any existing database, a `http` or `ftp` source can be used instead.
 
 ```json
 {
@@ -289,7 +290,7 @@ There are all kinds of options that may be specified in a source:
 
 Option Name            | Description
 ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------
-`type`                 | `http`, `mobility-database`, `transitland-atlas` or `url`. Url sources are not downloaded, but passed to MOTIS as URL. This is used for realtime feeds.
+`type`                 | `http`, `mobility-database`, `transitland-atlas`, `ftp` or `url`. URL sources are not downloaded, but passed to MOTIS as URL. This is used for realtime feeds.
 `spec`                 | `gtfs`, `gtfs-rt`, `gbfs`, `netex`, `siri` or `siri_json`. `gtfs-rt`, `netex`, `siri` and `siri_json` may only be used when `type` is `url`.
 `fix`                  | Fix / drop fields that are not correct.
 `skip`                 | Don't download or use this feed.
@@ -303,6 +304,7 @@ Option Name            | Description
 `display-name-options` | Specify which strings identifying a vehicle should be displayed to the user
 `script`               | A Lua script applied by MOTIS to GTFS data during import, see [the MOTIS documentation](https://github.com/motis-project/motis/blob/master/docs/scripting.md) for details.
 `use-gtfsclean`        | Preprocess GTFS feeds with `gtfsclean`, default is `true`.
+`enable-crowd-sourced-realtime` | Whether users should be able to submit gps positions for trips from this source.
 
 #### License Options
 
@@ -310,6 +312,9 @@ Option Name       | Description
 ----------------- | --------------------------------------------------
 `spdx-identifier` | License identifier from <https://spdx.org/licenses/>
 `url`             | Website that states the License of the data
+`publisher`       | Publisher to credit. Automatically extracted from GTFS if not set
+`publisher-url`   | Publisher website. Automatically extracted from GTFS if not set
+`attribution-text`| Custom attribution text. Should be set if required by the license or terms of service.
 
 #### HTTP Options
 
@@ -318,6 +323,14 @@ Option Name           | Description
 `headers`             | Dictionary of custom HTTP headers to send when checking for updates / downloading.
 `ignore-tls-errors`   | Ignore expired / invalid TLS certificate
 `fetch-interval-days` | Fetch this feed at most every `n` days. Useful if a server doesn't send `Last-Modified`, or to comply with terms of service.
+
+### Realtime Source Specific Options
+
+Sources of `"type": "url"` are continously fetched by the routing engine for real-time information.
+
+Option Name           | Description
+--------------------- | -------------------------------
+`derive-trip-updates` | Whether a vehicle positions feed should be used for calculating delay information.
 
 #### Display Name Options
 
@@ -356,6 +369,14 @@ This is useful for passing in things like headers with API keys.
     }
 }
 ```
+
+### Private API keys
+
+If a static or realtime feed needs an API key that you do not want to commit publicly, you can encrypt it with [age](https://age-encryption.org/) with the public key `age1xpexzyk4k608tsccev20d7uakptkmgxr4nc8s0azzywkgtz86aaqsdryr4`, base64-encode it, and preprend `AGE-ENCRYPTED:`
+
+`echo AGE-ENCRYPTED:$(echo -n "my-api-key" | age -r age1xpexzyk4k608tsccev20d7uakptkmgxr4nc8s0azzywkgtz86aaqsdryr4 | base64 -w0)`
+
+You can use the resulting string as a value for HTTP headers ([example](https://github.com/public-transport/transitous/blob/main/feeds/ch.json)) or as the URL of the feed itself (in case the URL contains the API key). For realtime feeds, you will additionally need to set `"use-feed-proxy": true`. The encrypted strings will be decrypted while fetching the feeds, the private key for decryption of the API keys is only known to Transitous maintainers.
 
 ## Diagnostics
 
@@ -398,7 +419,8 @@ of delay for the corresponding trip, while gray vehicles have no realtime inform
 GBFS consists of an entry point in form of a small JSON manifest that contains links to further JSON files with the actual information,
 generally split up by how often certain aspects are expected to change.
 
-Transitous currently has no built-in way to visualize availabe sharing vehicles.
+The [Transitous map view](https://api.transitous.org/) shows a button to enable markers for each
+station with details about available vehicles. The buttons appear, when zoomed in close enough.
 
 ### On-demand services
 
@@ -444,7 +466,7 @@ git submodule update --remote --checkout --init
 Proceed by building the container:
 
 ```bash
-podman build ci/container/ -t transitous -f ci/container/Containerfile
+podman build . -t transitous -f ci/container/Containerfile
 ```
 
 Enter the container:
@@ -459,7 +481,7 @@ Now inside the container, you can download and post-process the feeds you want.
 ./src/fetch.py feeds/<region>.json
 ```
 
-If you want to download all of them instead, you can use `mkdir -p out && cd out && wget --mirror -l 1 --no-parent --no-directories --accept gtfs.zip -e robots=off https://api.transitous.org/gtfs/` to download the postprocessed files from the Transitous server, or `./ci/fetch-feeds.py timer` to process them yourself. However, importing all feeds will take about half an hour even on powerful hardware.
+If you want to download all of them instead, you can use `mkdir -p out && cd out && wget --limit-rate=30m --mirror -l 2 --no-parent --cut-dirs=1 --no-host-directories --include-directories=gtfs,gtfs/scripts --accept .zip --accept .lua --accept config.yml -e robots=off https://api.transitous.org/gtfs/` to download the postprocessed files from the Transitous server, or `./ci/fetch-feeds.py timer` to process them yourself. However, importing all feeds will take about half an hour even on powerful hardware.
 
 The `out/` directory should now contain a number of zip files.
 

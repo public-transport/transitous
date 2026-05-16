@@ -2,26 +2,23 @@
 -- SPDX-FileCopyrightText: Volker Krause <vkrause@kde.org>
 -- SPDX-License-Identifier: AGPL-3.0-or-later
 
-require "scripts.motis"
-
--- route short name, MOTIS class, target route type
+-- route short name, target route type
 local route_type_map = {
-    { "FR", HIGHSPEED_RAIL, 101 },
-    { "FA", HIGHSPEED_RAIL, 101 },
-    { "FB", LONG_DISTANCE, 102 },
-    { "IC", LONG_DISTANCE, 102 },
-    { "EC", LONG_DISTANCE, 102 },
-    { "ICN", NIGHT_RAIL, 105 },
-    { "ECN", NIGHT_RAIL, 105 },
-    { "RV", REGIONAL_FAST_RAIL, 106 },
-    { "REG", REGIONAL_RAIL, 106 },
+    { "FR", 101 },
+    { "FA", 101 },
+    { "FB", 102 },
+    { "IC", 102 },
+    { "EC", 102 },
+    { "ICN", 105 },
+    { "ECN", 105 },
+    { "RV", 106 },
+    { "REG", 106 },
 }
 
 function process_route(route)
     for _,m in ipairs(route_type_map) do
         if route:get_route_type() == 100 and route:get_short_name() == m[1] then
-            route:set_clasz(m[2])
-            route:set_route_type(m[3])
+            route:set_route_type(m[2])
             break
         end
     end

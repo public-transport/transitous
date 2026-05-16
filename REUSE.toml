@@ -23,3 +23,8 @@ SPDX-License-Identifier = "CC0-1.0"
 path = "ansible/roles/feed-proxy/files/robots.txt"
 SPDX-FileCopyrightText = "none"
 SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "ansible/roles/feed-proxy/templates/feed-proxy.key"
+SPDX-FileCopyrightText = "none"
+SPDX-License-Identifier = "CC0-1.0"

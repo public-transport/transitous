@@ -4,7 +4,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 -->
 
 <ul>
-{{ range $event := $.Site.Data.communityevents }}
+{{ range $event := hugo.Data.communityevents }}
     {{ $eventEnd := time.AsTime $event.endDate }}
     {{ if gt (time.Now) $eventEnd }}
         {{ continue }}

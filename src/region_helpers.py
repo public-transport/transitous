@@ -14,33 +14,38 @@ import requests
 
 
 def mvo_keycloak_token(source: HttpSource) -> HttpSource:
-    token = requests.post("https://user.mobilitaetsverbuende.at/auth/realms/dbp-public/protocol/openid-connect/token", data={
+    token = requests.post(
+        "https://user.mobilitaetsverbuende.at/auth/realms/dbp-public/protocol/openid-connect/token",
+        data={
             "client_id": "dbp-public-ui",
             "username": "5f7xgv6ilp@ro5wy.anonbox.net",
             "password": ")#E8qE'~CqND5b#",
             "grant_type": "password",
-            "scope": "openid"
-        }).json()["access_token"]
+            "scope": "openid",
+        },
+    ).json()["access_token"]
 
     source.options.headers["Authorization"] = f"Bearer {token}"
 
     return source
 
 
-def data_public_lu_latest_resource(
-        source: HttpSource) -> HttpSource:
+def data_public_lu_latest_resource(source: HttpSource) -> HttpSource:
     api = requests.get(source.url).json()
-    res = sorted(api["resources"],
-                 key=lambda res: datetime.fromisoformat(res["last_modified"]),
-                 reverse=True)
+    res = sorted(
+        api["resources"],
+        key=lambda res: datetime.fromisoformat(res["last_modified"]),
+        reverse=True,
+    )
     source.url = res[0]["latest"]
     return source
 
 
 def delhi_gov_in_csrf(source: HttpSource) -> HttpSource:
     from bs4 import BeautifulSoup
+
     html = requests.get(source.url).text
-    element = BeautifulSoup(html, "lxml").find(attrs = {"name": "csrfmiddlewaretoken"})
+    element = BeautifulSoup(html, "lxml").find(attrs={"name": "csrfmiddlewaretoken"})
     csrftoken = element["value"]
     source.options.headers["Cookie"] = f"csrftoken={csrftoken}"
     source.options.request_body = f"csrfmiddlewaretoken={csrftoken}"
@@ -51,10 +56,11 @@ def data_zielona_gora_latest_resource(source: HttpSource) -> HttpSource:
     from bs4 import BeautifulSoup
 
     html = requests.get(source.url).text
-    
 
     soup = BeautifulSoup(html, "lxml")
-    gtfs_link = next((a["href"] for a in soup.find_all("a") if "GTFS" in a.get_text()), None)
+    gtfs_link = next(
+        (a["href"] for a in soup.find_all("a") if "GTFS" in a.get_text()), None
+    )
 
     base_url = source.url.rsplit("/", 1)[0]
     source.url = f"{base_url}/{gtfs_link}"
@@ -67,7 +73,7 @@ def data_slupsk_latest_resource(source: HttpSource) -> HttpSource:
 
     headers = {
         "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
-    } # user-agent is necessary to avoid 403 Forbidden
+    }  # user-agent is necessary to avoid 403 Forbidden
 
     html = requests.get(source.url, headers=headers).text
 
@@ -82,7 +88,7 @@ def data_slupsk_latest_resource(source: HttpSource) -> HttpSource:
 
 def data_tasmania_latest_resource(source: HttpSource) -> HttpSource:
     from bs4 import BeautifulSoup
-    
+
     html = requests.get(source.url).text
 
     soup = BeautifulSoup(html, "lxml")
@@ -131,6 +137,7 @@ def data_hodmezovasarhely_latest_resource(source: HttpSource) -> HttpSource:
 def data_metroporto_latest_resource(source: HttpSource) -> HttpSource:
     from bs4 import BeautifulSoup
     from urllib.parse import urljoin
+    import requests
 
     headers = {
         "user-agent": (
@@ -140,21 +147,96 @@ def data_metroporto_latest_resource(source: HttpSource) -> HttpSource:
         )
     }
 
-    html = requests.get(source.url, headers=headers).text
+    html = requests.get(source.url, headers=headers, timeout=30).text
     soup = BeautifulSoup(html, "html.parser")
 
-    li = soup.find("li", class_=lambda c: c and "last zip" in c)
+    li = soup.select_one("li.last.zip")
     if li is None:
         raise ValueError("Could not find the latest GTFS link on Metro do Porto page")
 
-    a_tag = li.find("a")
-    if a_tag is None or "href" not in a_tag.attrs:
-        raise ValueError("No <a> tag with href found inside the <li>")
+    a_tag = li.find("a", href=True)
+    if a_tag is None:
+        raise ValueError("No <a> tag with href found")
 
     gtfs_url = urljoin(source.url, a_tag["href"])
-
     source.url = gtfs_url
     return source
+
+
+def data_stcp_latest_resource(source: HttpSource) -> HttpSource:
+    from bs4 import BeautifulSoup
+    from urllib.parse import urljoin
+    import requests
+    import re
+    from datetime import datetime
+
+    headers = {
+        "user-agent": (
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+            "AppleWebKit/537.36 (KHTML, like Gecko) "
+            "Chrome/138.0.0.0 Safari/537.36"
+        )
+    }
+
+    html = requests.get(source.url, headers=headers, timeout=30).text
+    soup = BeautifulSoup(html, "html.parser")
+
+    resources = soup.select("li.resource-item")
+    if not resources:
+        raise ValueError("No resources found on STCP page")
+
+    def _extract_download(li, base_url, source):
+        from urllib.parse import urljoin
+
+        for a in li.select("a[href]"):
+            href = a.get("href", "")
+            label = a.get_text(" ", strip=True).lower()
+
+            if "/download/" in href or "transferir" in label:
+                source.url = urljoin(base_url, href)
+                return source
+
+        raise ValueError("Download link not found in selected resource")
+
+    # look for Mas Recente
+    for li in resources:
+        heading = li.select_one("a.heading")
+        if not heading:
+            continue
+
+        title = heading.get("title", "")
+        text = heading.get_text(" ", strip=True)
+
+        if "Mais Recente" in title or "Mais Recente" in text:
+            return _extract_download(li, source.url, source)
+
+    # fallback: parse dates and pick latest
+    dated_resources = []
+
+    date_pattern = re.compile(r"(\d{2}-\d{2}-\d{4})")
+
+    for li in resources:
+        heading = li.select_one("a.heading")
+        if not heading:
+            continue
+
+        text = heading.get_text(" ", strip=True)
+
+        match = date_pattern.search(text)
+        if not match:
+            continue
+
+        try:
+            dt = datetime.strptime(match.group(1), "%d-%m-%Y")
+            dated_resources.append((dt, li))
+        except ValueError:
+            continue
+
+    if not dated_resources:
+        raise ValueError("No dated GTFS resources found")
+
+    latest_li = max(dated_resources, key=lambda x: x[0])[1]
+    return _extract_download(latest_li, source.url, source)
 
 
 def chile_dtp_downloader(source: HttpSource) -> HttpSource:

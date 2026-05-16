@@ -10,6 +10,15 @@
             "name": "rejseplanen",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-rejseplanen~dk~gtfs"
+        },
+        {
+            "name": "rejseplanen",
+            "type": "url",
+            "spec": "siri",
+            "license": {
+                "attribution_text": "Provided by Rejsekort & Rejseplan A/S, converted from event queue subscription using https://gitlab.spline.de/spline/transitous/danmark-rt/"
+            },
+            "url": "https://jbb.ghsq.de/siri/danmark"
         }
     ]
 }

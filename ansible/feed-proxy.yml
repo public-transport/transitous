@@ -2,11 +2,11 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-# ansible-playbook --vault-id feed-proxy@/etc/feed-proxy.vault -e "feed_proxy_host=proxy.example.com" feed-proxy.yml
+# ansible-playbook -e "feed_proxy_host=proxy.example.com" -e "feed_proxy_conf_dir=/tmp/" feed-proxy.yml
 
-# get the feed proxy vault pass in roles/feed-proxy/vars/feed-secrets-vault-pass.yml and put it in decrypted form to /etc/feed-proxy.vault
-# encrypt a new variable to put into roles/feed-proxy/vars/feed-secrets.yml
-# ansible-vault encrypt_string --vault-id feed-proxy@/etc/feed-proxy.vault 'foobar' --name 'Authorization'
+# run install-key.yml once or manually get the feed proxy age private key in roles/feed-proxy/templates/feed-proxy.key and put it in decrypted form to $TRANSITOUS_FEED_PROXY_KEY_FILE
+# encrypting new secrets to put directly into feed jsons as values:
+# echo AGE-ENCRYPTED:$(echo -n "my-api-key" | age -r age1xpexzyk4k608tsccev20d7uakptkmgxr4nc8s0azzywkgtz86aaqsdryr4 | base64 -w0)
 
 - name: Set up feed proxy server
   hosts: localhost

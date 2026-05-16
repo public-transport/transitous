@@ -95,12 +95,38 @@
         {
             "name": "Grand-River-Transit",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-dpwz-grandrivertransit"
+            "transitland-atlas-id": "f-dpwz-grandrivertransit~lrt",
+            "http-options": {
+                "ignore-tls-errors": true
+            }
         },
         {
             "name": "Grand-River-Transit",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-grt~rt"
+            "transitland-atlas-id": "f-grt~alerts~rt"
+        },
+        {
+            "name": "Grand-River-Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-grt~lrt~rt"
+        },
+        {
+            "name": "Grand-River-Transit-Bus",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dpwz-grandrivertransit~bus",
+            "http-options": {
+                "ignore-tls-errors": true
+            }
+        },
+        {
+            "name": "Grand-River-Transit-Bus",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-grt~alerts~rt"
+        },
+        {
+            "name": "Grand-River-Transit-Bus",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-grt~bus~rt"
         },
         {
             "name": "Greater-Sudbury-Transit",

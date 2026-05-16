@@ -39,7 +39,8 @@
             "http-options": {
                 "fetch-interval-days": 2
             },
-            "script": "de-DELFI.lua"
+            "script": "de-DELFI.lua",
+            "drop-shapes": true
         },
         {
             "name": "DELFI",
@@ -49,6 +50,17 @@
             "license": {
                 "spdx-identifier": "CC-BY-SA-4.0",
                 "url": "https://germany.motis-project.org/LICENSE.txt"
+            },
+            "use-feed-proxy": false
+        },
+        {
+            "name": "DELFI",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://stc.traines.eu/mirror/german-delfi-gtfs-rt/latest.original.gtfs-sa.pbf",
+            "license": {
+                "spdx-identifier": "CC-BY-SA-4.0",
+                "url": "https://mobilithek.info/offers/747118037921857536"
             },
             "use-feed-proxy": false
         },
@@ -237,6 +249,44 @@
             "type": "url",
             "url": "https://di.esel.ac/gbfs/gbfs.json",
             "spec": "gbfs"
+        },
+        {
+            "name": "DottRostock",
+            "type": "url",
+            "url": "https://gbfs.api.ridedott.com/public/v2/rostock/gbfs.json",
+            "spec": "gbfs"
+        },
+        {
+            "name": "amarillo-bw",
+            "type": "http",
+            "url": "http://vkrause.github.io/amarillo-bw-liberator/amarillo-bw.zip",
+            "use-gtfsclean": false
+        },
+        {
+            "name": "amarillo-bw",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://amarillo.mobidata-bw.de/region/bw/gtfs-rt",
+            "use-feed-proxy": true,
+            "headers": {
+                "x-api-key": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBnaHZwS04wL1Zyc2Rob1dwbzJLMlZtMHZZYTVLak41WGFkU240eE80MnhVCkF5cERtZ1ZIUmlXMk5YUEFQS0h1RnVmZHpHTk1tV0pVeUR6MlNiUnFocXcKLS0tIFdTN0lKYkJhU25iWWx1azRSeE5YalV5d3BkVlFKcGlVUVJnamhlSmN1K28KT2pXSvkuCAVsNBrxcYZCfgkfe19pjieImMXSkL2m9RUQ6gSs7wW2tFJQ3v5MNOHstmsiKSFfxL+FpUe77+aHWw=="
+            }
+        },
+        {
+            "name": "euregiobike",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-euregiobike~aachen~gbfs"
+        },
+        {
+            "name": "DottMunich",
+            "type": "url",
+            "url": "https://gbfs.api.ridedott.com/public/v2/munich/gbfs.json",
+            "spec": "gbfs"
+        },
+        {
+            "name": "MyRadlMunich",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-myradl~munich~gbfs"
         }
     ]
 }

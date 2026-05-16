@@ -5,6 +5,7 @@
 
 import argparse
 import json
+import toml
 import metadata
 import os
 import shutil
@@ -15,7 +16,7 @@ import mobilitydatabase
 from ruamel.yaml import YAML
 from typing import Any
 from pathlib import Path
-from utils import eprint
+from utils import eprint, decrypt_if_necessary
 from urllib.parse import quote
 
 FEED_PROXY="https://rt.triptix.tech"
@@ -50,10 +51,26 @@ if __name__ == "__main__":
     atlas = transitland.Atlas.load(Path("transitland-atlas/"))
     mdb = mobilitydatabase.Database.load()
 
-    gtfs_feeds: list[dict] = []
-    gtfsrt_feeds: list[dict] = []
+    # TODO backward compatibility, remove this in a few months
+    while "full" in arguments.regions:
+        print("Ignoring legacy option 'full', this is the default now.")
+        arguments.regions.remove("full")
 
-    with open("motis/config.yml") as f:
+    feeds = []
+    regions: list[tuple[str, metadata.Region]] = []
+    if len(arguments.regions) == 0:
+        feeds = list(feed_dir.glob("*.json"))
+    else:
+        for region in arguments.regions:
+            feeds += list(feed_dir.glob(f"{region}.json"))
+
+    for feed in sorted(feeds):
+        region_name = feed.name[:feed.name.rfind(".")]
+        regions.append((region_name, metadata.Region(json.load(open(feed, "r")))))
+
+    ignored_feeds = set() # for feeds ignored due to missing file
+
+    with open("configs/motis/config.yml") as f:
         yaml = YAML(typ="rt")
 
         config = yaml.load(f)
@@ -70,7 +87,7 @@ if __name__ == "__main__":
             config.pop("tiles")
         else:
             tile_profile = find_motis_asset("tiles-profiles/full.lua")
-            if tile_profile:
+            if tile_profile and "tiles" in config:
                 config["tiles"]["profile"] = tile_profile
 
         config["timetable"].yaml_set_comment_before_after_key(
@@ -79,20 +96,6 @@ if __name__ == "__main__":
         config["timetable"]["datasets"] = {}
         config["gbfs"]["feeds"] = {}
         config["gbfs"]["proxy"] = FEED_PROXY
-
-        # TODO backward compatibility, remove this in a few months
-        while "full" in arguments.regions:
-            print("Ignoring legacy option 'full', this is the default now.")
-            arguments.regions.remove("full")
-
-        feeds = []
-        if len(arguments.regions) == 0:
-            feeds = feed_dir.glob("*.json")
-        else:
-            for region in arguments.regions:
-                feeds += feed_dir.glob(f"{region}.json")
-
-        ignored_feeds = set() # for feeds ignored due to missing file
 
         for feed in sorted(feeds):
             with open(feed, "r") as f:
@@ -141,8 +144,15 @@ if __name__ == "__main__":
                                             "path": schedule_file,
                                             "extend_calendar": source.extend_calendar
                                         }
+
                                     if source.default_timezone is not None:
                                         config["timetable"]["datasets"][name]["default_timezone"] = source.default_timezone
+
+                                    if source.enable_crowd_sourced_realtime:
+                                        if "rt" not in config["timetable"]["datasets"][name]:
+                                            config["timetable"]["datasets"][name]["rt"] = []
+
+                                        config["timetable"]["datasets"][name]["rt"].append({"url": f"http://crowdsourcing.transitous.org/gtfsrt/{name}/trip-updates.pb" })
 
                                     if source.script is not None:
                                         if not os.path.exists(os.path.join(script_dir, source.script)):
@@ -156,6 +166,8 @@ if __name__ == "__main__":
                             case source.spec if isinstance(source, metadata.UrlSource) and source.spec in ["gtfs-rt", "siri", "siri-json"]:
                                 name = f"{region_name}-{source.name}"
                                 if name not in config["timetable"]["datasets"]:
+                                    if arguments.skip_missing_files:  # Probably the static feed was not downloaded
+                                        continue
                                     eprint(
                                         "Error: The name of a realtime (gtfs-rt) "
                                         + "feed needs to match the name of its "
@@ -170,21 +182,31 @@ if __name__ == "__main__":
                                     config["timetable"]["datasets"][name]["rt"] = []
 
                                 rt_feed: dict[str, Any] = {
-                                    "url": source.url if use_original_url else FEED_PROXY + '/feed/' + quote(name) + "-" + str(len(config["timetable"]["datasets"][name]["rt"])),
+                                    "url": decrypt_if_necessary(source.url) if use_original_url else FEED_PROXY + '/feed/' + quote(name) + "-" + str(len(config["timetable"]["datasets"][name]["rt"])),
                                     "protocol": to_motis_rt_spec(source.spec)
                                 }
 
                                 if source.headers and use_original_url:
-                                    rt_feed["headers"] = source.headers
+                                    rt_feed["headers"] = {}
+                                    for key, value in source.headers.items():
+                                        rt_feed["headers"][key] = decrypt_if_necessary(value)
 
                                 config["timetable"]["datasets"][name]["rt"] \
                                         .append(rt_feed)
 
+                                if source.derive_trip_updates:
+                                    config["timetable"]["datasets"][name]["rt"].append({
+                                        "url": f"https://crowdsourcing.transitous.org/gtfsrt/{name}/trip-updates.pb",
+                                        "protocol": "gtfsrt"
+                                    })
+
                             case "gbfs" if isinstance(source, metadata.UrlSource):
                                 name = f"{region_name}-{source.name}"
-                                config["gbfs"]["feeds"][name] = {"url": source.url if use_original_url else FEED_PROXY + '/feed/' + quote(name)}
+                                config["gbfs"]["feeds"][name] = {"url": decrypt_if_necessary(source.url) if use_original_url else FEED_PROXY + '/feed/' + quote(name)}
                                 if source.headers and use_original_url:
-                                    config["gbfs"]["feeds"][name]["headers"] = source.headers
+                                    config["gbfs"]["feeds"][name]["headers"] = {}
+                                    for key, value in source.headers.items():
+                                        config["gbfs"]["feeds"][name]["headers"][key] = decrypt_if_necessary(value)
 
         if arguments.feed_proxy:
             with open("/tmp/feed-proxy-vars.yml", "w") as fo:
@@ -205,3 +227,44 @@ if __name__ == "__main__":
     # copy scripts
     shutil.rmtree("out/scripts", ignore_errors=True)
     shutil.copytree(script_dir, "out/scripts")
+
+    with open("configs/gps-collector/config.toml", "r") as f:
+        config = toml.load(f)
+        config["feeds"] = {}
+
+        for (region_name, region) in regions:
+            for source in region.sources:
+                if source.enable_crowd_sourced_realtime:
+                    config["feeds"][f"{region_name}-{source.name}"] = {}
+
+        if not os.path.exists("out/gps-collector/"):
+            os.makedirs("out/gps-collector/")
+
+        with open("out/gps-collector/config.toml", "w") as fo:
+            toml.dump(config, fo)
+
+    with open("configs/delay-tracker/config.toml", "r") as f:
+        config = toml.load(f)
+        config["feeds"] = {}
+
+        for (region_name, region) in regions:
+            for source in region.sources:
+                if source.enable_crowd_sourced_realtime:
+                    config["feeds"][f"{region_name}-{source.name}"] = {
+                        "gtfs_url": f"../{region_name}_{source.name}.gtfs.zip",
+                        "gtfsrt_url": f"http://10.11.1.1:5001/gtfsrt/{region_name}-{source.name}/vehicle-positions.pb"
+                    }
+
+                match source:
+                    case metadata.UrlSource():
+                        if source.derive_trip_updates:
+                            config["feeds"][f"{region_name}-{source.name}"] = {
+                                "gtfs_url": f"../{region_name}_{source.name}.gtfs.zip",
+                                "gtfsrt_url": source.url
+                            }
+
+        if not os.path.exists("out/delay-tracker/"):
+            os.makedirs("out/delay-tracker/")
+
+        with open("out/delay-tracker/config.toml", "w") as fo:
+            toml.dump(config, fo)

@@ -66,3 +66,45 @@ h3 {
 h2 {
   margin-top: 60px;
 }
+
+/* ---- Dark mode toggle button ---- */
+.theme-toggle-btn {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.9);
+  border-radius: 4px;
+  padding: 4px 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  line-height: 1;
+  margin-left: 8px;
+  transition: background-color 0.15s, border-color 0.15s;
+}
+
+.theme-toggle-btn:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.65);
+}
+
+/* ---- Dark mode overrides for Tachyons classes Bootstrap doesn't control ---- */
+
+/* Smooth theme transition */
+body, .card, .table {
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+}
+
+/* Body background (Tachyons bg-near-white → Bootstrap body bg) */
+[data-bs-theme="dark"] body {
+  background-color: var(--bs-body-bg) !important;
+}
+
+/* Content text (Tachyons mid-gray / dark-gray → Bootstrap body color) */
+[data-bs-theme="dark"] .mid-gray,
+[data-bs-theme="dark"] .dark-gray {
+  color: var(--bs-body-color) !important;
+}
+
+/* App card shadow for dark mode */
+[data-bs-theme="dark"] .app-card:hover {
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.5), 0 2px 12px 0 rgba(0, 0, 0, 0.4);
+}

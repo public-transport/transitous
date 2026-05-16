@@ -23,7 +23,7 @@ import Effect.Aff (Aff, delay)
 import Effect.Class (liftEffect)
 import Effect.Console (log)
 import Effect.Now (nowDateTime)
-import Elmish (Transition, Dispatch, ReactElement, (<|), (<?|))
+import Elmish (Transition, Dispatch, ReactElement)
 import Elmish.Component (fork, forkMaybe)
 import Elmish.HTML.Events as E
 import Elmish.HTML.Styled as H
@@ -172,19 +172,19 @@ update state (SuggestionsHaveFocus focus) = pure state { suggestionsHaveFocus = 
 view :: State -> Dispatch Message -> ReactElement
 view state dispatch = H.div "mb-3"
   [ H.input_ "form-control mb-2"
-      { onChange: dispatch <| E.inputText >>> SearchChanged
-      , onFocus: dispatch <| ShowSuggestions true
-      , onBlur: dispatch <?| case state.suggestionsHaveFocus of
-          true -> Nothing
-          false -> Just (ShowSuggestions false)
+      { onChange: H.handle (E.inputText >>> SearchChanged >>> dispatch)
+      , onFocus: H.handle \_ -> dispatch (ShowSuggestions true)
+      , onBlur: H.handle \_ -> when (not state.suggestionsHaveFocus) (dispatch (ShowSuggestions false))
       , placeholder: state.placeholderText
-      , onKeyUp: dispatch <?| \(E.KeyboardEvent event) -> case event.key of
-          "ArrowUp" -> Just SelectionUp
-          "ArrowDown" -> Just SelectionDown
+      , onKeyUp: H.handle \(E.KeyboardEvent event) -> case event.key of
+          "ArrowUp" -> dispatch SelectionUp
+          "ArrowDown" -> dispatch SelectionDown
           "Enter" -> do
-            station <- state.entries !! state.currentlySelectedIndex
-            pure $ Select station
-          _ -> Nothing
+            let station = state.entries !! state.currentlySelectedIndex
+            case station of
+              Just s -> dispatch (Select s)
+              Nothing -> pure unit
+          _ -> pure unit
       , value: case state.station of
           Just guess -> guess.name
           Nothing -> state.query
@@ -202,10 +202,10 @@ view state dispatch = H.div "mb-3"
                 true -> "dropdown-item cursor-shape-pointer dropdown-item-active"
                 false -> "dropdown-item cursor-shape-pointer"
             )
-            { onClick: dispatch <| Select location
+            { onClick: H.handle \_ -> dispatch (Select location)
             , autoFocus: true
-            , onMouseEnter: dispatch <| (SuggestionsHaveFocus true)
-            , onMouseLeave: dispatch <| (SuggestionsHaveFocus false)
+            , onMouseEnter: H.handle \_ -> dispatch (SuggestionsHaveFocus true)
+            , onMouseLeave: H.handle \_ -> dispatch (SuggestionsHaveFocus false)
             }
             [ H.i
                 ( case location.type of

@@ -40,7 +40,11 @@
         {
             "name": "uzhhorod",
             "type": "mobility-database",
-            "mdb-id": "mdb-2931"
+            "mdb-id": "mdb-2931",
+            "extend-calendar": true,
+            "fix": true,
+            "skip": true,
+            "skip-reason": "End date before start date"
         },
         {
             "name": "odesa",
@@ -61,8 +65,10 @@
             "name": "odesa",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://gw.x24.digital/api/od-all/gtfs/v1/download/gtfs-rt-vehicles-pr.pb",
-            "headers": {},
+            "url": "https://gw.x24.digital/api/od-all/gtfs/v1/download/gtfs-rt-vehicles.pb",
+            "headers": {
+                "ApiKey": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBXSVR6cU5yeStVNUhHTDJFZERkSHFaZE1sT0M1QXdmdGxuOXZZVU9DbjFFCjNTY3hnK0xxcHpTYkM5YkxxbzZjOXVVMENMSUFWQkloUHFTYWJWcndJZlUKLS0tIEFXZkdWNmQ0Y1kvaFZFYnRVWEExMzJuaVRpRTd5YzZIQnk2aklaeFJMd3cKCa0mgy8fexIhptgHr7tpdvRx0wLlChigphLqYXOPpFcjDnHZQBLwxA4X3rN+8LEqAbWLiQuOAyP1Cx5Qn7zSw0UkVHA="
+            },
             "use-feed-proxy": true
         },
         {
@@ -73,23 +79,32 @@
                 "headers": {
                     "ApiKey": "a8c6d35e-f2c1-4f72-b902-831fa9215009"
                 }
-            }
+            },
+            "fix": true
         },
         {
             "name": "bucha",
             "type": "url",
             "spec": "gtfs-rt",
             "url": "https://gw.x24.digital/api/bu/gtfs/v1/download/gtfs-rt-vehicles-pr.pb",
-            "headers": {},
+            "headers": {
+                "ApiKey": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBxOEJXenVqczVlU1lXdEFLNDZTdnpmc3FoZlRzNW00cHl4VkZMTlFoU3lVCnQyRmhjcVZBVkdxV2twV1pQQXlTcnhJaWRFdkZBdXhidEo1bUQ1cmIxU1UKLS0tIEhheDlMWnFvZ0toa0lWRVN4VjdPYjVjTngrWlo1VnRpVDY2RGt4dWV6cjQKS+/wDJ4j2lKRS46hGi4w8D0R6Q0S1lusRNaDFftEw+pufqS1c/J1rMsa7NVWmO8wsOtMsLmM0uCDjVlMbkTBos2RIO4="
+            },
             "use-feed-proxy": true
         },
         {
             "name": "kyiv",
-            "type": "http",
-            "url": "https://jbb.ghsq.de/gtfs/ua-kyiv.gtfs.zip",
-            "license": {
-                "url": "https://data.gov.ua/dataset/96128887-4f36-4c19-a96e-5d4765fade16"
-            }
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u8v-kyivpastrans",
+            "url-override": "https://jbb.ghsq.de/gtfs/ua-kyiv.gtfs.zip",
+            "extend-calendar": true
+        },
+        {
+            "name": "kyiv",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "http://193.23.225.214:732/api/realtime",
+            "use-feed-proxy": true
         },
         {
             "name": "ivano-frankivsk",
@@ -201,6 +216,11 @@
             "url": "https://city.dozor.tech/uzhgorod/gtfs/trip_updates",
             "skip": true,
             "skip-reason": "static feed skipped"
+        },
+        {
+            "name": "vdexpress",
+            "type": "http",
+            "url": "https://vdexpress.net/api/gtfs/feed"
         }
     ]
 }

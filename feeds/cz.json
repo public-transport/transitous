@@ -93,12 +93,12 @@
         {
             "name": "IDZK",
             "type": "http",
-            "url": "https://dataportal-files.bileto.net/id-zk-all.zip"
+            "url": "https://hoermalmeister.github.io/gtfs-rehost/idzk/id-zk-all.zip"
         },
         {
             "name": "JDF-merged",
             "type": "http",
-            "url": "https://github.com/KoblizekXD/gtfs-processor/raw/refs/heads/gtfs/files/latest.zip",
+            "url": "https://github.com/0xaa55h/gtfs-processor/raw/refs/heads/gtfs/files/latest.zip",
             "license": {
                 "spdx-identifier": "CC0-1.0"
             }

@@ -25,4 +25,7 @@ package:
   name: transitous-widget
 workspace:
   packageSet:
-    registry: 73.1.0
+    registry: 73.3.0
+  extraPackages:
+    elmish: 0.14.0
+    elmish-html: 0.11.1

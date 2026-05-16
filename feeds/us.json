@@ -38,7 +38,8 @@
             "name": "flixbus",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-9-flixbus",
-            "fix": true
+            "fix": true,
+            "script": "generic-bus-to-coach.lua"
         },
         {
             "name": "flixbus",

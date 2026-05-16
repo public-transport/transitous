@@ -59,6 +59,14 @@
             "license": {
                 "spdx-identifier": "CC0-1.0"
             }
+        },
+        {
+            "name": "european-sleeper",
+            "type": "http",
+            "url": "https://jbb.ghsq.de/gtfs/eu-es.gtfs.zip",
+            "license": {
+                "spdx-identifier": "ODbL-1.0"
+            }
         }
     ]
 }

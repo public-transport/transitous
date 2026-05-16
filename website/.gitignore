@@ -13,6 +13,8 @@
 /.psa*
 /.spago
 /static/index.js
+/static/widget.js
 /static/doc
+/.hugo_build.lock
 /public
 /resources

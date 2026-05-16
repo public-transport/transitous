@@ -32,20 +32,39 @@
             "transitland-atlas-id": "f-u2m-bkk"
         },
         {
-            "name": "bkk-funicular",
-            "type": "http",
-            "url": "https://gy-mate.hu/gtfs/gtfs_hu_funicular.zip"
-        },
-        {
-            "name": "bkk-chairlift",
-            "type": "http",
-            "url": "https://gy-mate.hu/gtfs/gtfs_hu_chairlift.zip"
-        },
-        {
             "name": "bkk",
             "type": "url",
             "spec": "gtfs-rt",
             "url": "https://jbb.ghsq.de/gtfs/bkk/TripUpdates"
+        },
+        {
+            "name": "bkk-funicular",
+            "type": "http",
+            "url": "https://gy-mate.hu/gtfs/gtfs_hu_funicular.zip",
+            "license": {
+                "spdx-identifier": "GPL-3.0-only"
+            }
+        },
+        {
+            "name": "bkk-chairlift",
+            "type": "http",
+            "url": "https://gy-mate.hu/gtfs/gtfs_hu_chairlift.zip",
+            "license": {
+                "spdx-identifier": "GPL-3.0-only"
+            }
+        },
+        {
+            "name": "budaors",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-u2mmz-budaörsvárosönkormányzata"
+        },
+        {
+            "name": "urom",
+            "type": "http",
+            "url": "https://gy-mate.hu/gtfs/gtfs_hu_urom.zip",
+            "license": {
+                "spdx-identifier": "GPL-3.0-only"
+            }
         },
         {
             "name": "mvk",
@@ -84,6 +103,11 @@
             }
         },
         {
+            "name": "BAHART",
+            "type": "http",
+            "url": "https://nap.bahart.hu/gtfsdata/ULPTdR8PovPQ7E9NlcsIig/43"
+        },
+        {
             "name": "kaposvár",
             "type": "http",
             "url": "https://www.kaposbusz.hu/letoltheto-menetrend",
@@ -99,6 +123,11 @@
             "license": {
                 "spdx-identifier": "CC0-1.0"
             }
+        },
+        {
+            "name": "kiskunhalas",
+            "type": "http",
+            "url": "https://www.kiskunhalas.hu/article_files/249/kiskunhalas_gtfs.zip"
         },
         {
             "name": "Hódmezővásárhely",
