@@ -61,6 +61,18 @@ local route_agency_short_name_color_map = {
     ["7"] = { 0xFFA777B4, 0xFFFDFEFF }, -- Västerås bus 7
     ["14"] = { 0xFFA7A39F, 0xFFFFFFFF }, -- Västerås bus 14
     ["15"] = { 0xFFA7A39F, 0xFFFFFFFF } -- Västerås bus 15
+  },
+  ["X-trafik"] = {
+    -- Lines 1-4 have local variants in Gävleborg in Gävle, Söderhamn, Hudiksvall
+    -- sharing the same colors
+    ["1"] = { 0xFF139046, 0xFFFDFEFF },
+    ["2"] = { 0xFFEC1F25, 0xFFFDFDFE },
+    ["3"] = { 0xFF005DA1, 0xFFFDFEFF },
+    ["4"] = { 0xFFFECB09, 0xFF221F21 },
+    ["11"] = { 0xFFA5A9AC, 0xFF221F21 },
+    ["12"] = { 0xFFA5A9AC, 0xFF221F21 },
+    ["14"] = { 0xFFA5A9AC, 0xFF221F21 },
+    ["15"] = { 0xFFA5A9AC, 0xFF221F21 }
   }
 }
 
