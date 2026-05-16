@@ -14,6 +14,9 @@ fi
 touch .import-running
 mv config.yml config.bak || true
 
+TODAY="$(date +%a)"
+[ "${TODAY}" == "Sun" ] && sleep 4000
+
 #sudo -u motis wget -N https://planet.openstreetmap.org/pbf/planet-latest.osm.pbf
 sudo -u motis wget -N https://osmdata.openstreetmap.de/download/land-polygons-complete-4326.zip
 sudo -u motis pyosmium-up-to-date planet-latest.osm.pbf --size 10000 --server https://planet.osm.org/replication/day/
@@ -29,8 +32,9 @@ if ! grep -q tiles /var/cache/transitous/out/config.yml; then
     exit 0
 fi
 
-TODAY="$(date +%a)"
-[ "${TODAY}" != "Sun" ] && sudo -u motis sed -i 's#tiles:#no_tiles:#' config.yml
+sudo -u motis sed -i 's#with_shapes: true#with_shapes: true\n  route_shapes:\n    mode: missing\n    cache_reuse_old_osm_data: false\n    debug_api: true\n    n_threads: 16#' config.yml
+
+[ "${TODAY}" != "Sun" ] && sudo -u motis sed -i 's#^tiles:#no_tiles:#' config.yml && sudo -u motis sed -i 's#cache_reuse_old_osm_data: false#cache_reuse_old_osm_data: true#' config.yml
 
 sudo -u motis sed -i 's#extend_missing_footpaths: true#extend_missing_footpaths: true\n  preprocess_max_matching_distance: 250#' config.yml
 sudo -u motis sed -i 's#osr_footpath: false#osr_footpath: true#' config.yml
@@ -51,8 +55,8 @@ chown -R motis:motis /var/cache/transitous/out/data/
 
 echo "Import done."
 echo "Transferring..."
-rsync --bwlimit=50000 -a --whole-file --exclude 'logs/' --stats /var/cache/transitous/out/data/ {{ motis_target_machine }}:/var/cache/transitous/out/data/
-rsync --bwlimit=50000 -a /var/cache/transitous/out/config.yml {{ motis_target_machine }}:/var/cache/transitous/out/config.yml
+rsync --bwlimit=200000 -a --whole-file --exclude 'logs/' --stats /var/cache/transitous/out/data/ {{ motis_target_machine }}:/var/cache/transitous/out/data/
+rsync --bwlimit=200000 -a /var/cache/transitous/out/config.yml {{ motis_target_machine }}:/var/cache/transitous/out/config.yml
 
 echo "Restarting MOTIS…"
 ssh {{ motis_target_machine }} sudo /bin/systemctl --no-ask-password start motis-update-feeds.service
