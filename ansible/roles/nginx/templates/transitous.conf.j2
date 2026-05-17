@@ -17,6 +17,7 @@ server {
 }
 
 upstream {{ item.vhost }}-backend {
+    least_conn;
 {% for backend in item.backends %}
     server {{ backend.address }} fail_timeout=3s max_fails=10 {{ backend.options }}; # only mark a server down if many requests fail (due to error, timeout, denied or invalid_header), and try to recover quickly
 {% endfor %}
