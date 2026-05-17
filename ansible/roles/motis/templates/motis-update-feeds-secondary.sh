@@ -34,7 +34,8 @@ fi
 
 sudo -u motis sed -i 's#with_shapes: true#with_shapes: true\n  route_shapes:\n    mode: missing\n    cache_reuse_old_osm_data: false\n    debug_api: true\n    n_threads: 16#' config.yml
 
-[ "${TODAY}" != "Sun" ] && sudo -u motis sed -i 's#^tiles:#no_tiles:#' config.yml && sudo -u motis sed -i 's#cache_reuse_old_osm_data: false#cache_reuse_old_osm_data: true#' config.yml
+[ "${TODAY}" != "Sun" ] && sudo -u motis sed -i 's#^tiles:#no_tiles:#' config.yml
+sudo -u motis sed -i 's#cache_reuse_old_osm_data: false#cache_reuse_old_osm_data: true#' config.yml
 
 sudo -u motis sed -i 's#extend_missing_footpaths: true#extend_missing_footpaths: true\n  preprocess_max_matching_distance: 250#' config.yml
 sudo -u motis sed -i 's#osr_footpath: false#osr_footpath: true#' config.yml
@@ -54,10 +55,16 @@ chown -R motis:motis /var/cache/transitous/out/data/
 # Defaults  rlimit_nofile=65536  
 
 echo "Import done."
+
+{% for motis_target_machine in motis_target_machines %}
+
 echo "Transferring..."
 rsync --bwlimit=200000 -a --whole-file --exclude 'logs/' --stats /var/cache/transitous/out/data/ {{ motis_target_machine }}:/var/cache/transitous/out/data/
 rsync --bwlimit=200000 -a /var/cache/transitous/out/config.yml {{ motis_target_machine }}:/var/cache/transitous/out/config.yml
 
 echo "Restarting MOTIS…"
 ssh {{ motis_target_machine }} sudo /bin/systemctl --no-ask-password start motis-update-feeds.service
+
+{% endfor %}
+
 rm .import-running || true
