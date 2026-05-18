@@ -62,6 +62,33 @@ local route_agency_short_name_color_map = {
     ["14"] = { 0xFFA7A39F, 0xFFFFFFFF }, -- Västerås bus 14
     ["15"] = { 0xFFA7A39F, 0xFFFFFFFF } -- Västerås bus 15
   },
+  ["Värmlandstrafik"] = {
+    ["S"] = { 0xFFBF1A35, 0xFFFDFEFF },
+    ["1"] = { 0xFFFAAF19, 0xFF000114 },
+    ["2"] = { 0xFF0BB14C, 0xFFFDFEFF },
+    ["4"] = { 0xFF00AABD, 0xFFFDFEFF },
+    ["5"] = { 0xFFF48221, 0xFFFDFEFF },
+    ["6"] = { 0xFF003C69, 0xFFFDFEFF },
+    ["7"] = { 0xFFD6118C, 0xFFFDFEFF },
+    ["8"] = { 0xFF0072BC, 0xFFFDFEFF },
+    ["10"] = { 0xFF8B2B91, 0xFFFDFEFF },
+    ["11"] = { 0xFF8B2B91, 0xFFFDFEFF },
+    ["12"] = { 0xFF8B2B91, 0xFFFDFEFF },
+    ["13"] = { 0xFF8B2B91, 0xFFFDFEFF },
+    ["22"] = { 0xFF000114, 0xFFFDFEFF },
+    ["50"] = { 0xFF5C6263, 0xFFFDFEFF },
+    ["51"] = { 0xFFFCB915, 0xFFFDFEFF },
+    ["52"] = { 0xFF6EBF45, 0xFFFDFEFF },
+    ["56"] = { 0xFF004182, 0xFFFDFEFF },
+    ["57"] = { 0xFFD6118C, 0xFFFDFEFF },
+    ["58"] = { 0xFF5AC7F3, 0xFFFDFEFF },
+    ["59"] = { 0xFF00743E, 0xFFFDFEFF },
+    ["84"] = { 0xFF00AABD, 0xFFFDFEFF },
+    ["85"] = { 0xFFF48221, 0xFFFDFEFF },
+    ["86"] = { 0xFF004182, 0xFFFDFEFF },
+    ["87"] = { 0xFFD6118C, 0xFFFDFEFF },
+    ["98"] = { 0xFF5AC7F3, 0xFFFDFEFF }
+  },
   ["X-trafik"] = {
     -- Lines 1-4 have local variants in Gävleborg in Gävle, Söderhamn, Hudiksvall
     -- sharing the same colors
@@ -118,6 +145,8 @@ local route_agency_type_short_name_color_map = {
 
 -- override route_short_name and route colors based on route_id
 local route_id_short_name_color_map = {
+  ["1265000300001"] = { "3", 0xFFD98A7E, 0xFF000114 }, -- Karlstad bus 3
+  ["1265106300001"] = { "3", 0xFFBF282E, 0xFFFDFEFF }, -- Kristinehamn bus 3
   ["1279501600001"] = { "16", 0xFF007C4F, 0xFFFFFF50 }, -- Göteborg stombuss 16
   ["1279501700001"] = { "17", 0xFF00008E, 0xFFFFFF50 }, -- Göteborg stombuss 17
   ["1279501800001"] = { "18", 0xFF323232, 0xFFFFFF50 }, -- Göteborg stombuss 18
