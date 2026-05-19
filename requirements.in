@@ -1,0 +1,17 @@
+# SPDX-FileCopyrightText: none
+#
+# SPDX-License-Identifier: CC0-1.0
+#
+# Direct dependencies — edit this file, then run:
+#   pip-compile requirements.in
+# to regenerate the pinned requirements.txt lockfile.
+
+requests
+types-requests
+ruamel.yaml
+license-expression
+pycountry
+beautifulsoup4
+lxml
+toml
+tzdata
