@@ -31,3 +31,7 @@ function process_trip(trip)
     local train_nr = id:match("railTRENITALIA:[^-]+%-(%d+)%-") or ''
     trip:set_display_name(trip:get_route():get_short_name() .. ' ' .. train_nr)
 end
+
+function process_agency(agency)
+  agency:set_url("https://www.trenitalia.com")
+end
