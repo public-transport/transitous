@@ -291,7 +291,7 @@
         {
             "name": "pollo",
             "type": "http",
-            "url": "https://github.com/kompottokar/pollo/blob/main/output/pollo.zip",
+            "url": "https://github.com/kompottokar/pollo/raw/refs/heads/main/output/pollo.zip",
             "license": {
                 "spdx-identifier": "CC0-1.0",
                 "url": "https://github.com/kompottokar/pollo/blob/main/LICENSE"
