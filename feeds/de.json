@@ -288,5 +288,14 @@
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-myradl~munich~gbfs"
         }
+        {
+            "name": "pollo",
+            "type": "http",
+            "url": "https://github.com/kompottokar/pollo/blob/main/output/pollo.zip",
+            "license": {
+                "spdx-identifier": "<license identifier from https://spdx.org/licenses/ if known>",
+                "url": "< url as source for the license if available >"
+    }
+}
     ]
 }
