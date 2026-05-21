@@ -34,9 +34,8 @@
         },
         {
             "name": "Flamingo-Christchurch",
-            "type": "url",
-            "spec": "gbfs",
-            "url": "https://data.rideflamingo.com/gbfs/3/christchurch/gbfs.json"
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-flamingo~christchurch~gbfs"
         },
         {
             "name": "Flamingo-Dunedin",

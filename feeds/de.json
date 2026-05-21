@@ -178,9 +178,8 @@
         },
         {
             "name": "DottFrankfurt",
-            "type": "url",
-            "url": "https://gbfs.api.ridedott.com/public/v2/frankfurt/gbfs.json",
-            "spec": "gbfs"
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dott~frankfurt~gbfs"
         },
         {
             "name": "Deer",
@@ -234,27 +233,23 @@
         },
         {
             "name": "NextbikeBerlin",
-            "type": "url",
-            "url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_bn/gbfs.json",
-            "spec": "gbfs"
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-nextbike~berlin~gbfs"
         },
         {
             "name": "DottBerlin",
-            "type": "url",
-            "url": "https://gbfs.api.ridedott.com/public/v2/berlin/gbfs.json",
-            "spec": "gbfs"
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dott~berlin~gbfs"
         },
         {
             "name": "esel.ac",
-            "type": "url",
-            "url": "https://di.esel.ac/gbfs/gbfs.json",
-            "spec": "gbfs"
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-esel~ac~aachen~gbfs"
         },
         {
             "name": "DottRostock",
-            "type": "url",
-            "url": "https://gbfs.api.ridedott.com/public/v2/rostock/gbfs.json",
-            "spec": "gbfs"
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dott~rostock~gbfs"
         },
         {
             "name": "amarillo-bw",
@@ -279,9 +274,8 @@
         },
         {
             "name": "DottMunich",
-            "type": "url",
-            "url": "https://gbfs.api.ridedott.com/public/v2/munich/gbfs.json",
-            "spec": "gbfs"
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dott~munich~gbfs"
         },
         {
             "name": "MyRadlMunich",
