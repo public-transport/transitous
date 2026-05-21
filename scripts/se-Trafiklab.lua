@@ -16,6 +16,13 @@ local agency_route_type_map = {
 
 -- override route colors based on agency name and short_name
 local route_agency_short_name_color_map = {
+  ["Kiruna Stadstrafik"] = {
+    ["Grön"] = { 0xFF83A72A, 0xFFFFFFFF },
+    ["Gul."] = { 0xFFF9B000, 0xFF000000 },
+    ["Lila."] = { 0xFF8D4895, 0xFFFFFFFF },
+    ["RÖD"] = { 0xFFE30513, 0xFFFFFFFF },
+    ["Röd."] = { 0xFFE30513, 0xFFFFFFFF }
+  },
   ["SL"] = {
     ["7"] = { 0xFF999999, 0xFFFFFFFF }, -- Stockholm tram 7
     ["10"] = { 0xFF0089CA, 0xFFFFFFFF }, -- Stockholm metro 10 (blue line)
