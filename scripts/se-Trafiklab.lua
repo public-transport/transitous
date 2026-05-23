@@ -154,10 +154,11 @@ local route_agency_type_short_name_color_map = {
 local route_id_short_name_color_map = {
   ["1265000300001"] = { "3", 0xFFD98A7E, 0xFF000114 }, -- Karlstad bus 3
   ["1265106300001"] = { "3", 0xFFBF282E, 0xFFFDFEFF }, -- Kristinehamn bus 3
-  ["1279501600001"] = { "16", 0xFF007C4F, 0xFFFFFF50 }, -- Göteborg stombuss 16
   ["1279501700001"] = { "17", 0xFF00008E, 0xFFFFFF50 }, -- Göteborg stombuss 17
   ["1279501800001"] = { "18", 0xFF323232, 0xFFFFFF50 }, -- Göteborg stombuss 18
-  ["1279501900001"] = { "19", 0xFFE0005B, 0xFFFFFF50 } -- Göteborg stombuss 19
+  ["1279501900001"] = { "19", 0xFFE0005B, 0xFFFFFF50 }, -- Göteborg stombuss 19
+  ["1279502100001"] = { "21", 0xFF901580, 0xFFFFFF50 }, -- Göteborg stombuss 21
+  ["1279502500001"] = { "25", 0xFF006FDE, 0xFFFFFF50 } -- Göteborg stombuss 25
 }
 
 -- override route_type based on route_id
