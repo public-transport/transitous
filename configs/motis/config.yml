@@ -25,7 +25,6 @@ timetable:
   num_days: 365
   railviz: true
   with_shapes: true
-  ignore_errors: true
   adjust_footpaths: true
   merge_dupes_intra_src: true
   merge_dupes_inter_src: true
