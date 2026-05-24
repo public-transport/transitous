@@ -107,6 +107,20 @@ local route_agency_short_name_color_map = {
     ["12"] = { 0xFFA5A9AC, 0xFF221F21 },
     ["14"] = { 0xFFA5A9AC, 0xFF221F21 },
     ["15"] = { 0xFFA5A9AC, 0xFF221F21 }
+  },
+  ["Östgötatrafiken"] = {
+    ["14"] = { 0xFFF8A1D5, 0xFF000000 }, -- Linköping bus 14
+    ["15"] = { 0xFFF142AA, 0xFFFFFFFF }, -- Linköping bus 15
+    ["16"] = { 0xFFB10F8E, 0xFFFFFFFF }, -- Linköping bus 16
+    ["17"] = { 0xFF672290, 0xFFFFFFFF }, -- Linköping bus 17
+    ["18"] = { 0xFF158968, 0xFFFFFFFF }, -- Linköping bus 18
+    ["22"] = { 0xFFBDBCBC, 0xFF000000 }, -- Linköping bus 22
+    ["26"] = { 0xFFBDBCBC, 0xFF000000 }, -- Linköping bus 26
+    ["232"] = { 0xFFBDBCBC, 0xFF000000 }, -- Linköping bus 232
+    ["240"] = { 0xFFBDBCBC, 0xFF000000 }, -- Linköping bus 240
+    ["241"] = { 0xFFBDBCBC, 0xFF000000 }, -- Linköping bus 241
+    ["243"] = { 0xFFBDBCBC, 0xFF000000 }, -- Linköping bus 243
+    ["250"] = { 0xFFBDBCBC, 0xFF000000 }, -- Linköping bus 250
   }
 }
 
@@ -143,6 +157,14 @@ local route_agency_type_short_name_color_map = {
     }
   },
   ["Östgötatrafiken"] = {
+     [700] = {
+       ["1"] = { 0xFFED1C24, 0xFFFFFFFF }, -- Linköping bus 1
+       ["2"] = { 0xFF0091CB, 0xFFFFFFFF }, -- Linköping bus 2
+       ["3"] = { 0xFF9ED51E, 0xFF000000 }, -- Linköping bus 3
+       ["4"] = { 0xFF7BD2C0, 0xFF000000 }, -- Linköping bus 4
+       ["5"] = { 0xFFFFF200, 0xFF000000 }, -- Linköping bus 5
+       ["6"] = { 0xFF4ABC39, 0xFFFFFFFF }, -- Linköping bus 6
+     },
      [900] = {
        ["2"] = { 0xFFCD0000, 0xFFFFFFFF }, -- Norrköping tram 2
        ["3"] = { 0xFF008000, 0xFFFFFFFF } -- Norrköping tram 3
@@ -152,6 +174,18 @@ local route_agency_type_short_name_color_map = {
 
 -- override route_short_name and route colors based on route_id
 local route_id_short_name_color_map = {
+  ["1253021000001"] = { "10", 0xFFF9A72B, 0xFF000000 }, -- Linköping bus 10
+  ["1253021100001"] = { "11", 0xFFFDE1AD, 0xFF000000 }, -- Linköping bus 11
+  ["1253021200001"] = { "12", 0xFFCCEA94, 0xFF000000 }, -- Linköping bus 12
+  ["1253021300001"] = { "13", 0xFFF46F17, 0xFF000000 }, -- Linköping bus 13
+  ["1253022000001"] = { "20", 0xFFBCBCBC, 0xFF000000 }, -- Linköping bus 20
+  ["1253022100001"] = { "21", 0xFFBCBCBC, 0xFF000000 }, -- Linköping bus 21
+  ["1253011000001"] = { "10", 0xFF87CEFF, 0xFF000000 }, -- Norrköping bus 10
+  ["1253011100001"] = { "11", 0xFFFF6EB4, 0xFF000000 }, -- Norrköping bus 11
+  ["1253011200001"] = { "12", 0xFF1E90FF, 0xFF000000 }, -- Norrköping bus 12
+  ["1253011300001"] = { "13", 0xFFFFFF00, 0xFF000000 }, -- Norrköping bus 13
+  ["1253012000001"] = { "20", 0xFFEE7600, 0xFF000000 }, -- Norrköping bus 20
+  ["1253012100001"] = { "21", 0xFFFFF68F, 0xFF000000 }, -- Norrköping bus 21
   ["1265000300001"] = { "3", 0xFFD98A7E, 0xFF000114 }, -- Karlstad bus 3
   ["1265106300001"] = { "3", 0xFFBF282E, 0xFFFDFEFF }, -- Kristinehamn bus 3
   ["1279501700001"] = { "17", 0xFF00008E, 0xFFFFFF50 }, -- Göteborg stombuss 17
