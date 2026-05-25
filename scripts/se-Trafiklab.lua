@@ -16,6 +16,13 @@ local agency_route_type_map = {
 
 -- override route colors based on agency name and short_name
 local route_agency_short_name_color_map = {
+  ["Din Tur"] = {
+    ["1"] = { 0xFFFF0000, 0xFFFFFFFF }, -- Sundsvall bus 1
+    ["2"] = { 0xFF008000, 0xFFFFFFFF }, -- Sundsvall bus 2
+    ["3"] = { 0xFFFFFF00, 0xFF000000 }, -- Sundsvall bus 3
+    ["4"] = { 0xFFADD8E6, 0xFF000000 }, -- Sundsvall bus 4
+    ["5"] = { 0xFF00008B, 0XFFFFFFFF } -- Sundsvall bus 5
+  },
   ["Kiruna Stadstrafik"] = {
     ["Grön"] = { 0xFF83A72A, 0xFFFFFFFF },
     ["Gul."] = { 0xFFF9B000, 0xFF000000 },
