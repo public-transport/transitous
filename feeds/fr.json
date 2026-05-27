@@ -7269,14 +7269,14 @@
         {
             "name": "reseau-urbain-et-interurbain-dile-de-france-mobilites",
             "type": "http",
-            "url": "https://www.data.gouv.fr/api/1/datasets/r/413988ed-d340-467b-8be2-7b999fcd207a",
+            "url": "http://gtfsidfm.clarifygdps.com/gtfs",
             "fix": true,
             "license": {
-                "url": "https://transport.data.gouv.fr/datasets/reseau-urbain-et-interurbain-dile-de-france-mobilites",
+                "url": "https://github.com/Jouca/IDFM_GTFS-RT/blob/main/LICENSE",
                 "spdx-identifier": null
             },
             "x-data-gov-fr-res-id": 80921,
-            "managed-by-script": true,
+            "managed-by-script": false,
             "skip": false,
             "x-data-gov-fr-res-title": "Horaires au format GTFS",
             "x-data-gov-fr-dataset-id": "6449c52caeceb71273a42dd3"
