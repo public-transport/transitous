@@ -30,6 +30,22 @@ local route_agency_short_name_color_map = {
     ["RÖD"] = { 0xFFE30513, 0xFFFFFFFF },
     ["Röd."] = { 0xFFE30513, 0xFFFFFFFF }
   },
+  ["Länstrafiken Västerbotten"] = {
+    ["1"] = { 0xFFEC1F25, 0xFFFDFEFF }, -- Umeå bus 1
+    ["2"] = { 0xFF0072BC, 0xFFFDFEFF }, -- Umeå bus 2
+    ["3"] = { 0xFF4FB7E8, 0xFFFDFEFF }, -- Umeå bus 3
+    ["5"] = { 0xFFF6941F, 0xFFFDFEFF }, -- Umeå bus 5
+    ["7"] = { 0xFF006551, 0xFFFDFEFF }, -- Umeå bus 7
+    ["8"] = { 0xFF8BC640, 0xFFFDFEFF }, -- Umeå bus 8
+    ["9"] = { 0xFFE9C901, 0xFFFDFEFF }, -- Umeå bus 9
+    ["72"] = { 0xFF99D4C7, 0xFFFDFEFF }, -- Umeå bus 72
+    ["75"] = { 0xFF6D8BB8, 0xFFFDFEFF }, -- Umeå bus 75
+    ["76"] = { 0xFFF08632, 0xFFFDFEFF }, -- Umeå bus 76
+    ["78"] = { 0xFFA57550, 0xFFFDFEFF }, -- Umeå bus 78
+    ["79"] = { 0xFF2AB45B, 0xFFFDFEFF }, -- Umeå bus 79
+    ["80"] = { 0xFFEF5BA1, 0xFFFDFEFF }, -- Umeå bus 80
+    ["81"] = { 0xFFBE2075, 0xFFFDFEFF } -- Umeå bus 81
+  },
   ["SL"] = {
     ["7"] = { 0xFF999999, 0xFFFFFFFF }, -- Stockholm tram 7
     ["10"] = { 0xFF0089CA, 0xFFFFFFFF }, -- Stockholm metro 10 (blue line)
