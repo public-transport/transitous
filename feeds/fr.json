@@ -214,6 +214,15 @@
             "x-data-gov-fr-dataset-id": "56b0c2fba3a7294d39b88a86"
         },
         {
+            "name": "tisseo-reseau-transport-urbain-toulousain",
+            "type": "url",
+            "url": "https://gtfs.willbrooks.fr/trip_updates.json",
+            "license": {
+                "url": "https://gtfs.willbrooks.fr/license.txt"
+            },
+            "spec": "gtfs-rt"
+        },
+        {
             "name": "stations-velov-de-la-metropole-de-lyon-disponibilites-temps-reel",
             "type": "url",
             "url": "https://www.data.gouv.fr/api/1/datasets/r/4cf2b946-9c2c-44a9-bbc7-4b5cb9e2c2fe",
