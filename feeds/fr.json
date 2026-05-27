@@ -7276,8 +7276,8 @@
                 "spdx-identifier": null
             },
             "x-data-gov-fr-res-id": 80921,
-            "managed-by-script": false,
-            "skip": false,
+            "managed-by-script": true,
+            "skip": true,
             "x-data-gov-fr-res-title": "Horaires au format GTFS",
             "x-data-gov-fr-dataset-id": "6449c52caeceb71273a42dd3"
         },
