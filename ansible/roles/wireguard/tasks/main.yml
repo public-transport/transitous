@@ -18,3 +18,7 @@
     state: started
     daemon_reload: yes
     enabled: yes
+
+# apply amended config:
+# wg syncconf wg0 <(wg-quick strip wg0)
+
