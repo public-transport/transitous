@@ -10,7 +10,8 @@
             "name": "sncb",
             "type": "http",
             "url": "https://sncb-opendata.hafas.de/gtfs/static/c21ac6758dd25af84cca5b707f3cb3de",
-            "fix": true
+            "fix": true,
+            "script": "be-sncb.lua"
         },
         {
             "name": "sncb",
@@ -20,33 +21,101 @@
         },
         {
             "name": "stib",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u151-stib",
-            "fix": true
+            "type": "http",
+            "url": "https://api-management-opendata-production.azure-api.net/api/gtfs/feed/stibmivb/static",
+            "http-options": {
+                "headers": {
+                    "bmc-partner-key": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSA5S2Vta25xcENRU2lXUkdMN1BBWTVTdmlpRnJvTVNZTW9ZUzBxVmNCR3pZCkRjcXFJcHNMZDJMYVdXSjljT1A2QjFydFpxMXlpT0VDQjc0NHZwVGRhL1kKLS0tIFFlZ2pjcXAvUjdIMWpwZ1YxT1dRMmZkTlZqZEZaVVlJSUlqTXFWWlNBRDQKjOjCfyFtya6Yg3r5RMjmf3TzgEa5B4OUYt+wEzeeF/DqGEJ0uVRvHadE1xtKbKoG4lzwmij672j5fJGYdR70NA=="
+                }
+            },
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
         },
         {
             "name": "delijn",
             "type": "http",
-            "url": "https://gtfs.irail.be/de-lijn/de_lijn-gtfs.zip",
-            "fix": true
+            "url": "https://api-management-opendata-production.azure-api.net/api/gtfs/feed/delijn/static",
+            "http-options": {
+                "headers": {
+                    "bmc-partner-key": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSA5S2Vta25xcENRU2lXUkdMN1BBWTVTdmlpRnJvTVNZTW9ZUzBxVmNCR3pZCkRjcXFJcHNMZDJMYVdXSjljT1A2QjFydFpxMXlpT0VDQjc0NHZwVGRhL1kKLS0tIFFlZ2pjcXAvUjdIMWpwZ1YxT1dRMmZkTlZqZEZaVVlJSUlqTXFWWlNBRDQKjOjCfyFtya6Yg3r5RMjmf3TzgEa5B4OUYt+wEzeeF/DqGEJ0uVRvHadE1xtKbKoG4lzwmij672j5fJGYdR70NA=="
+                }
+            },
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
+        },
+        {
+            "name": "delijn",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api-management-opendata-production.azure-api.net/api/gtfs/feed/delijn/rt/trip-update?format=protobuf",
+            "headers": {
+                "bmc-partner-key": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSA5S2Vta25xcENRU2lXUkdMN1BBWTVTdmlpRnJvTVNZTW9ZUzBxVmNCR3pZCkRjcXFJcHNMZDJMYVdXSjljT1A2QjFydFpxMXlpT0VDQjc0NHZwVGRhL1kKLS0tIFFlZ2pjcXAvUjdIMWpwZ1YxT1dRMmZkTlZqZEZaVVlJSUlqTXFWWlNBRDQKjOjCfyFtya6Yg3r5RMjmf3TzgEa5B4OUYt+wEzeeF/DqGEJ0uVRvHadE1xtKbKoG4lzwmij672j5fJGYdR70NA=="
+            },
+            "use-feed-proxy": true,
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
+        },
+        {
+            "name": "delijn",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api-management-opendata-production.azure-api.net/api/gtfs/feed/delijn/rt/alert?format=protobuf",
+            "headers": {
+                "bmc-partner-key": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSA5S2Vta25xcENRU2lXUkdMN1BBWTVTdmlpRnJvTVNZTW9ZUzBxVmNCR3pZCkRjcXFJcHNMZDJMYVdXSjljT1A2QjFydFpxMXlpT0VDQjc0NHZwVGRhL1kKLS0tIFFlZ2pjcXAvUjdIMWpwZ1YxT1dRMmZkTlZqZEZaVVlJSUlqTXFWWlNBRDQKjOjCfyFtya6Yg3r5RMjmf3TzgEa5B4OUYt+wEzeeF/DqGEJ0uVRvHadE1xtKbKoG4lzwmij672j5fJGYdR70NA=="
+            },
+            "use-feed-proxy": true,
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
         },
         {
             "name": "dewaterbus",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u155-dewaterbus"
-        },
-        {
-            "name": "tec",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u0g-tec",
-            "fix": true
-        },
-        {
-            "name": "tec",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u0g-tec~rt",
+            "transitland-atlas-id": "f-u155-dewaterbus",
             "skip": true,
-            "skip-reason": "api-key is missing"
+            "skip-reason": "Feed expired"
+        },
+        {
+            "name": "tec",
+            "type": "http",
+            "url": "https://api-management-opendata-production.azure-api.net/api/gtfs/feed/tec/static",
+            "http-options": {
+                "headers": {
+                    "bmc-partner-key": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSA5S2Vta25xcENRU2lXUkdMN1BBWTVTdmlpRnJvTVNZTW9ZUzBxVmNCR3pZCkRjcXFJcHNMZDJMYVdXSjljT1A2QjFydFpxMXlpT0VDQjc0NHZwVGRhL1kKLS0tIFFlZ2pjcXAvUjdIMWpwZ1YxT1dRMmZkTlZqZEZaVVlJSUlqTXFWWlNBRDQKjOjCfyFtya6Yg3r5RMjmf3TzgEa5B4OUYt+wEzeeF/DqGEJ0uVRvHadE1xtKbKoG4lzwmij672j5fJGYdR70NA=="
+                }
+            },
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
+        },
+        {
+            "name": "tec",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api-management-opendata-production.azure-api.net/api/gtfs/feed/tec/rt/trip-update?format=protobuf",
+            "headers": {
+                "bmc-partner-key": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSA5S2Vta25xcENRU2lXUkdMN1BBWTVTdmlpRnJvTVNZTW9ZUzBxVmNCR3pZCkRjcXFJcHNMZDJMYVdXSjljT1A2QjFydFpxMXlpT0VDQjc0NHZwVGRhL1kKLS0tIFFlZ2pjcXAvUjdIMWpwZ1YxT1dRMmZkTlZqZEZaVVlJSUlqTXFWWlNBRDQKjOjCfyFtya6Yg3r5RMjmf3TzgEa5B4OUYt+wEzeeF/DqGEJ0uVRvHadE1xtKbKoG4lzwmij672j5fJGYdR70NA=="
+            },
+            "use-feed-proxy": true,
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
+        },
+        {
+            "name": "tec",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api-management-opendata-production.azure-api.net/api/gtfs/feed/tec/rt/alert?format=protobuf",
+            "headers": {
+                "bmc-partner-key": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSA5S2Vta25xcENRU2lXUkdMN1BBWTVTdmlpRnJvTVNZTW9ZUzBxVmNCR3pZCkRjcXFJcHNMZDJMYVdXSjljT1A2QjFydFpxMXlpT0VDQjc0NHZwVGRhL1kKLS0tIFFlZ2pjcXAvUjdIMWpwZ1YxT1dRMmZkTlZqZEZaVVlJSUlqTXFWWlNBRDQKjOjCfyFtya6Yg3r5RMjmf3TzgEa5B4OUYt+wEzeeF/DqGEJ0uVRvHadE1xtKbKoG4lzwmij672j5fJGYdR70NA=="
+            },
+            "use-feed-proxy": true,
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
         },
         {
             "name": "villo-brussels",

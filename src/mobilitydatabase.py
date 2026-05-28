@@ -73,6 +73,7 @@ class Database:
                 result.spec = "gtfs-rt"
                 result.skip = source.skip
                 result.skip_reason = source.skip_reason
+                result.use_feed_proxy = source.use_feed_proxy
             case data_type:
                 eprint("Warning: Found MDB source that we can't handle:",
                        source.mdb_id, "of type", data_type)

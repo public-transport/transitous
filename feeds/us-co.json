@@ -3,6 +3,10 @@
         {
             "name": "Marcus Lundblad",
             "github": "mlundblad"
+        },
+        {
+            "name": "Alex Ghandhi",
+            "github": "aGhandhii"
         }
     ],
     "sources": [
@@ -14,7 +18,8 @@
         {
             "name": "RTD",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-rtddenver~rt"
+            "transitland-atlas-id": "f-rtddenver~rt",
+            "use-feed-proxy": true
         },
         {
             "name": "RTD-bustang",
@@ -24,7 +29,13 @@
         {
             "name": "RTD-bustang",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-denver~rtd~bustang~rt"
+            "transitland-atlas-id": "f-denver~rtd~bustang~rt",
+            "use-feed-proxy": true
+        },
+        {
+            "name": "MMT",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9wvk-mountainmetropolitantransit"
         }
     ]
 }

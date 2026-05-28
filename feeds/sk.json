@@ -15,13 +15,13 @@
     ],
     "sources": [
         {
-            "name": "zssk",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-eo0-zssk",
-            "url-override": "https://jbb.ghsq.de/gtfs/sk-zssk.gtfs.zip",
+            "name": "zsr",
+            "type": "http",
+            "fix": true,
             "display-name-options": {
                 "copy-trip-names-matching": "((EC|Os|Zr|Ex|REX|RJX|IC|RRR|R|EN|NJ)) +\\d+ +.*"
-            }
+            },
+            "url": "https://data.slovensko.sk/download?id=c5a63281-3c44-4dba-82c9-7b7ad603db5d"
         },
         {
             "name": "Bratislava",

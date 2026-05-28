@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+SPDX-FileCopyrightText: 2026 The Transitous contributors
+
+SPDX-License-Identifier: AGPL-3.0-or-later
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <path d="M3 3h4v2H5v14h2v2H3zm14 0h4v18h-4v-2h2V5h-2z"/>
+  <path d="M6.8 16V9h1.5l.3.7q.6-.8 1.8-.8t1.9 1q.8-1 2-1Q17 9 17 12v4h-2v-3.8q0-1.4-1.1-1.4t-1.2 1.5V16h-2v-3.8q0-1.4-1.1-1.4t-1.2 1.5V16z"/>
+</svg>

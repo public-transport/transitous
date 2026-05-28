@@ -1,8 +1,6 @@
 -- SPDX-FileCopyrightText: applecuckoo <nufjoysb@duck.com>
 -- SPDX-License-Identifier: AGPL-3.0-or-later
 
-require "scripts.motis"
-
 function process_route(route)
     -- set all routes with the RB (Rail Bus) prefix as rail replacement buses
     if string.find(route:get_short_name(), "RB") then

@@ -56,7 +56,9 @@
             "name": "amarillo",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-amarillo~city~transit",
-            "fix": true
+            "fix": true,
+            "skip": true,
+            "skip-reason": "authentication required"
         },
         {
             "name": "lubbock",

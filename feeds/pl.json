@@ -27,8 +27,8 @@
             "type": "http",
             "url": "https://gtfs.kasznia.net/static/pkp-ic.zip",
             "script": "pl-PKP-Intercity.lua",
-            "license":{
-                "spdx-identifier":"CC-BY-4.0"
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
             }
         },
         {
@@ -60,8 +60,8 @@
             "type": "url",
             "spec": "gtfs-rt",
             "url": "https://gtfs.kasznia.net/rt/polregio.pb",
-            "license":{
-                "spdx-identifier":"CC-BY-4.0"
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
             }
         },
         {
@@ -82,17 +82,54 @@
             }
         },
         {
-            "name": "Jarosław",
+            "name": "PKS-Rzeszów",
             "type": "http",
-            "url": "https://github.com/rozkladnik/gtfs-pwik-jaroslaw/releases/latest/download/gtfs.zip",
+            "url": "https://www.mpkrzeszow.pl/gtfs-pks/latest.zip",
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             }
         },
         {
+            "name": "PKS-Rzeszów",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://www.mpkrzeszow.pl/gtfs-pks/rt/gtfsrt.pb",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
+        },
+        {
+            "name": "Jarosław",
+            "type": "http",
+            "url": "https://github.com/rozkladnik/gtfs-pwik-jaroslaw/releases/latest/download/gtfs.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            },
+            "fix": true
+        },
+        {
+            "name": "Jarosław",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://github.com/rozkladnik/gtfs-pwik-jaroslaw/raw/refs/heads/main/alerts.pb",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
+        },
+        {
+            "name": "PKS-Jarosław",
+            "type": "http",
+            "url": "https://github.com/rozkladnik/gtfs-pks-jaroslaw/releases/latest/download/gtfs.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            },
+            "fix": true
+        },
+        {
             "name": "Koleje-Mazowieckie",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u3-kolejemazowieckie",
+            "drop-shapes": true,
             "script": "pl-Koleje-Mazowieckie.lua"
         },
         {
@@ -100,8 +137,8 @@
             "type": "url",
             "spec": "gtfs-rt",
             "url": "https://gtfs.kasznia.net/rt/km.pb",
-            "license":{
-                "spdx-identifier":"CC-BY-4.0"
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
             }
         },
         {
@@ -111,7 +148,8 @@
             "url": "https://files.girlc.at/gtfs/swinoujscie.zip",
             "license": {
                 "spdx-identifier": "CC0-1.0"
-            }
+            },
+            "fix": true
         },
         {
             "name": "Koleje-Dolnośląskie",
@@ -124,14 +162,28 @@
             "type": "url",
             "spec": "gtfs-rt",
             "url": "https://gtfs.kasznia.net/rt/kd.pb",
-            "license":{
-                "spdx-identifier":"CC-BY-4.0"
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
             }
         },
         {
             "name": "Bydgoszcz",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u3ky-bydgoszcz"
+            "type": "http",
+            "url": "https://api.zbiorkom.live/api6-open/bydgoszcz/gtfs/default",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "fix": true
+        },
+        {
+            "name": "Bydgoszcz",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.zbiorkom.live/api6-open/bydgoszcz/gtfsRealtime/default/tripUpdates",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "use-feed-proxy": true
         },
         {
             "name": "Toruń",
@@ -141,8 +193,8 @@
         {
             "name": "Kielce",
             "type": "http",
-            "url": "https://cdn.zbiorkom.live/gtfs/kielce.zip",
-            "license":{
+            "url": "https://api.zbiorkom.live/api6-open/kielce/gtfs/default",
+            "license": {
                 "spdx-identifier": "MIT"
             },
             "fix": true
@@ -151,16 +203,17 @@
             "name": "Kielce",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://cdn.zbiorkom.live/gtfs-rt/kielce.pb",
+            "url": "https://api.zbiorkom.live/api6-open/kielce/gtfsRealtime/default/tripUpdates",
             "license": {
                 "spdx-identifier": "MIT"
-            }
+            },
+            "use-feed-proxy": true
         },
         {
             "name": "Radom",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://cdn.zbiorkom.live/gtfs/radom.zip",
+            "url": "https://api.zbiorkom.live/api6-open/radom/gtfs/default",
             "license": {
                 "spdx-identifier": "MIT"
             }
@@ -169,16 +222,17 @@
             "name": "Radom",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://cdn.zbiorkom.live/gtfs-rt/radom.pb",
+            "url": "https://api.zbiorkom.live/api6-open/radom/gtfsRealtime/default/tripUpdates",
             "license": {
                 "spdx-identifier": "MIT"
-            }
+            },
+            "use-feed-proxy": true
         },
         {
             "name": "Warszawa",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://cdn.zbiorkom.live/gtfs/warsaw.zip",
+            "url": "https://api.zbiorkom.live/api6-open/warsaw/gtfs/default",
             "license": {
                 "spdx-identifier": "MIT"
             }
@@ -187,10 +241,11 @@
             "name": "Warszawa",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://cdn.zbiorkom.live/gtfs-rt/warsaw.pb",
+            "url": "https://api.zbiorkom.live/api6-open/warsaw/gtfsRealtime/default/tripUpdates",
             "license": {
                 "spdx-identifier": "MIT"
-            }
+            },
+            "use-feed-proxy": true
         },
         {
             "name": "SKM-Warszawa",
@@ -200,6 +255,7 @@
             "license": {
                 "spdx-identifier": "MIT"
             },
+            "drop-shapes": true,
             "script": "pl-SKM-Warszawa.lua"
         },
         {
@@ -207,8 +263,8 @@
             "type": "url",
             "spec": "gtfs-rt",
             "url": "https://gtfs.kasznia.net/rt/skm-waw.pb",
-            "license":{
-                "spdx-identifier":"CC-BY-4.0"
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
             }
         },
         {
@@ -235,8 +291,7 @@
         {
             "name": "Gdańsk",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-ztm~gdansk",
-            "fix": true
+            "transitland-atlas-id": "f-ztm~gdansk"
         },
         {
             "name": "Gdańsk",
@@ -250,6 +305,16 @@
             "fix": true
         },
         {
+            "name": "Gdynia",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.zbiorkom.live/api6-open/tricity/gtfsRealtime/default/tripUpdates",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "use-feed-proxy": true
+        },
+        {
             "name": "Giżycko",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u3x7-gizycko"
@@ -258,7 +323,7 @@
             "name": "Lublin",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://cdn.zbiorkom.live/gtfs/lublin.zip",
+            "url": "https://api.zbiorkom.live/api6-open/lublin/gtfs/default",
             "fix": true,
             "license": {
                 "spdx-identifier": "MIT"
@@ -268,16 +333,17 @@
             "name": "Lublin",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://cdn.zbiorkom.live/gtfs-rt/lublin.pb",
+            "url": "https://api.zbiorkom.live/api6-open/lublin/gtfsRealtime/default/tripUpdates",
             "license": {
                 "spdx-identifier": "MIT"
-            }
+            },
+            "use-feed-proxy": true
         },
         {
             "name": "Elbląg",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://cdn.zbiorkom.live/gtfs/elblag.zip",
+            "url": "https://api.zbiorkom.live/api6-open/elblag/gtfs/default",
             "license": {
                 "spdx-identifier": "MIT"
             }
@@ -286,10 +352,11 @@
             "name": "Elbląg",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://cdn.zbiorkom.live/gtfs-rt/elblag.pb",
+            "url": "https://api.zbiorkom.live/api6-open/elblag/gtfsRealtime/default/tripUpdates",
             "license": {
                 "spdx-identifier": "MIT"
-            }
+            },
+            "use-feed-proxy": true
         },
         {
             "name": "Poznań",
@@ -300,7 +367,8 @@
         {
             "name": "Poznań",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u3k4-poznan~rt"
+            "transitland-atlas-id": "f-u3k4-poznan~rt",
+            "use-feed-proxy": true
         },
         {
             "name": "Poznań",
@@ -322,20 +390,20 @@
             "name": "TransportGZM",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://github.com/TransportGZM-GTFS-mirror/TransportGZM-GTFS-normal/releases/latest/download/TransportGZM-GTFS.zip",
+            "url": "https://api.zbiorkom.live/api6-open/gzm/gtfs/default",
             "license": {
-                "spdx-identifier": "CC-BY-4.0"
-            },
-            "fix": true
+                "spdx-identifier": "MIT"
+            }
         },
         {
             "name": "TransportGZM",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://gtfsrt.transportgzm.pl:5443/gtfsrt/gzm/tripUpdates",
+            "url": "https://api.zbiorkom.live/api6-open/gzm/gtfsRealtime/default/tripUpdates",
             "license": {
-                "spdx-identifier": "CC-BY-4.0"
-            }
+                "spdx-identifier": "MIT"
+            },
+            "use-feed-proxy": true
         },
         {
             "name": "PKP-SKM",
@@ -349,14 +417,14 @@
             "type": "url",
             "spec": "gtfs-rt",
             "url": "https://gtfs.kasznia.net/rt/skmt.pb",
-            "license":{
-                "spdx-identifier":"CC-BY-4.0"
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
             }
         },
         {
             "name": "Koleje-Małopolskie",
             "type": "http",
-            "spec":"gtfs",
+            "spec": "gtfs",
             "url": "https://gtfs.kasznia.net/static/sanitized/kml.zip",
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
@@ -367,8 +435,8 @@
             "type": "url",
             "spec": "gtfs-rt",
             "url": "https://gtfs.kasznia.net/rt/kml.pb",
-            "license":{
-                "spdx-identifier":"CC-BY-4.0"
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
             }
         },
         {
@@ -434,8 +502,8 @@
             "type": "url",
             "spec": "gtfs-rt",
             "url": "https://gtfs.kasznia.net/rt/ks.pb",
-            "license":{
-                "spdx-identifier":"CC-BY-4.0"
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
             }
         },
         {
@@ -466,19 +534,10 @@
             }
         },
         {
-            "name": "Łódzka-Kolej-Aglomeracyjna-bus",
-            "type": "url",
-            "spec": "gtfs-rt",
-            "url": "https://cdn.zbiorkom.live/gtfs-rt/lodz-lka.pb",
-            "license": {
-                "spdx-identifier": "MIT"
-            }
-        },
-        {
             "name": "PKS-Kalisz",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://pks.kalisz.pl/wp-content/uploads/2025/07/PKS-20250528.zip",
+            "url": "https://gtfs.kasznia.net/static/kalisz-pks.zip",
             "license": {
                 "spdx-identifier": "CC0-1.0"
             }
@@ -504,6 +563,7 @@
             "drop-agency-names": [
                 "PKS w Kaliszu Sp. z o.o."
             ],
+            "drop-shapes": true,
             "fix": true
         },
         {
@@ -521,20 +581,25 @@
             "type": "url",
             "spec": "gtfs-rt",
             "url": "https://gtfs.kasznia.net/rt/kw.pb",
-            "license":{
-                "spdx-identifier":"CC-BY-4.0"
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
             }
         },
         {
             "name": "MPK-Wrocław",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u3h4-mpkautobusy~mpktramwaje~dla~sevibussiechnice~dlawiszniama"
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://api.zbiorkom.live/api6-open/wroclaw/gtfs/default",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "fix": true
         },
         {
             "name": "Łódź",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://cdn.zbiorkom.live/gtfs/lodz.zip",
+            "url": "https://api.zbiorkom.live/api6-open/lodz/gtfs/default",
             "license": {
                 "spdx-identifier": "MIT"
             },
@@ -544,10 +609,11 @@
             "name": "Łódź",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://cdn.zbiorkom.live/gtfs-rt/lodz.pb",
+            "url": "https://api.zbiorkom.live/api6-open/lodz/gtfsRealtime/default/tripUpdates",
             "license": {
                 "spdx-identifier": "MIT"
-            }
+            },
+            "use-feed-proxy": true
         },
         {
             "name": "Białystok",
@@ -567,6 +633,16 @@
                 "spdx-identifier": "CC0-1.0"
             },
             "fix": true
+        },
+        {
+            "name": "Wschód-Express",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.zbiorkom.live/api6-open/bialystok/gtfsRealtime/WSCHODEXPRESS/tripUpdates",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "use-feed-proxy": true
         },
         {
             "name": "PKS-Nova-Supraśl",
@@ -589,22 +665,12 @@
             "fix": true
         },
         {
-            "name": "Żyrardów",
-            "type": "http",
-            "spec": "gtfs",
-            "url": "https://files.girlc.at/gtfs/zyrardow.zip",
-            "license": {
-                "spdx-identifier": "CC0-1.0"
-            },
-            "fix": true
-        },
-        {
             "name": "Sochaczew",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://files.girlc.at/gtfs/sochaczew.zip",
+            "url": "https://api.zbiorkom.live/api6-open/warsaw/gtfs/SOCHACZEW",
             "license": {
-                "spdx-identifier": "CC0-1.0"
+                "spdx-identifier": "MIT"
             },
             "fix": true
         },
@@ -612,18 +678,19 @@
             "name": "Sochaczew",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://cdn.zbiorkom.live/gtfs-rt/warsaw-sochaczew.pb",
+            "url": "https://api.zbiorkom.live/api6-open/warsaw/gtfsRealtime/SOCHACZEW/tripUpdates",
             "license": {
                 "spdx-identifier": "MIT"
-            }
+            },
+            "use-feed-proxy": true
         },
         {
             "name": "Otwock",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://files.girlc.at/gtfs/otwock.zip",
+            "url": "https://api.zbiorkom.live/api6-open/warsaw/gtfs/OTWOCK",
             "license": {
-                "spdx-identifier": "CC0-1.0"
+                "spdx-identifier": "MIT"
             },
             "fix": true
         },
@@ -631,20 +698,31 @@
             "name": "Otwock",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://cdn.zbiorkom.live/gtfs-rt/warsaw-otwock.pb",
+            "url": "https://api.zbiorkom.live/api6-open/warsaw/gtfsRealtime/OTWOCK/tripUpdates",
             "license": {
                 "spdx-identifier": "MIT"
-            }
+            },
+            "use-feed-proxy": true
         },
         {
             "name": "Opole",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://files.girlc.at/gtfs/opole.zip",
+            "url": "https://api.zbiorkom.live/api6-open/opole/gtfs/default",
             "license": {
-                "spdx-identifier": "CC0-1.0"
+                "spdx-identifier": "MIT"
             },
             "fix": true
+        },
+        {
+            "name": "Opole",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.zbiorkom.live/api6-open/opole/gtfsRealtime/default/tripUpdates",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "use-feed-proxy": true
         },
         {
             "name": "Arriva",
@@ -653,22 +731,23 @@
             "url": "https://files.girlc.at/gtfs/arriva.zip",
             "license": {
                 "spdx-identifier": "CC0-1.0"
-            }
+            },
+            "script": "pl-Koleje-Wielkopolskie.lua"
         },
         {
             "name": "Arriva",
             "type": "url",
             "spec": "gtfs-rt",
             "url": "https://gtfs.kasznia.net/rt/arriva.pb",
-            "license":{
-                "spdx-identifier":"CC-BY-4.0"
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
             }
         },
         {
             "name": "Jastrzębie-Zdrój",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://cdn.zbiorkom.live/gtfs/rybnik-jastrzebie.zip",
+            "url": "https://api.zbiorkom.live/api6-open/rybnik/gtfs/JASTRZEBIE",
             "license": {
                 "spdx-identifier": "MIT"
             },
@@ -678,16 +757,17 @@
             "name": "Jastrzębie-Zdrój",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://cdn.zbiorkom.live/gtfs-rt/rybnik-jastrzebie.pb",
+            "url": "https://api.zbiorkom.live/api6-open/rybnik/gtfsRealtime/JASTRZEBIE/tripUpdates",
             "license": {
                 "spdx-identifier": "MIT"
-            }
+            },
+            "use-feed-proxy": true
         },
         {
             "name": "Rybnik",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://cdn.zbiorkom.live/gtfs/rybnik.zip",
+            "url": "https://api.zbiorkom.live/api6-open/rybnik/gtfs/default",
             "license": {
                 "spdx-identifier": "MIT"
             },
@@ -697,16 +777,17 @@
             "name": "Rybnik",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://cdn.zbiorkom.live/gtfs-rt/rybnik.pb",
+            "url": "https://api.zbiorkom.live/api6-open/rybnik/gtfsRealtime/default/tripUpdates",
             "license": {
                 "spdx-identifier": "MIT"
-            }
+            },
+            "use-feed-proxy": true
         },
         {
             "name": "Kutno",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://cdn.zbiorkom.live/gtfs/kutno.zip",
+            "url": "https://api.zbiorkom.live/api6-open/kutno/gtfs/default",
             "license": {
                 "spdx-identifier": "MIT"
             }
@@ -715,36 +796,17 @@
             "name": "Kutno",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://cdn.zbiorkom.live/gtfs-rt/kutno.pb",
+            "url": "https://api.zbiorkom.live/api6-open/kutno/gtfsRealtime/default/tripUpdates",
             "license": {
                 "spdx-identifier": "MIT"
-            }
+            },
+            "use-feed-proxy": true
         },
         {
             "name": "Dąbrówka",
             "type": "http",
             "spec": "gtfs",
             "url": "https://files.girlc.at/gtfs/dabrowka.zip",
-            "fix": true,
-            "license": {
-                "spdx-identifier": "CC0-1.0"
-            }
-        },
-        {
-            "name": "Piecki",
-            "type": "http",
-            "spec": "gtfs",
-            "url": "https://files.girlc.at/gtfs/piecki.zip",
-            "fix": true,
-            "license": {
-                "spdx-identifier": "CC0-1.0"
-            }
-        },
-        {
-            "name": "Powiat-Olsztyński",
-            "type": "http",
-            "spec": "gtfs",
-            "url": "https://files.girlc.at/gtfs/powiat_olsztynski.zip",
             "fix": true,
             "license": {
                 "spdx-identifier": "CC0-1.0"
@@ -766,8 +828,6 @@
             "spec": "gtfs",
             "url": "https://files.girlc.at/gtfs/olesnica.zip",
             "fix": true,
-            "skip": true,
-            "skip-reason": "Expired",
             "license": {
                 "spdx-identifier": "CC0-1.0"
             }
@@ -776,11 +836,21 @@
             "name": "Olsztyn",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://cdn.zbiorkom.live/gtfs/olsztyn.zip",
+            "url": "https://api.zbiorkom.live/api6-open/olsztyn/gtfs/default",
             "fix": true,
             "license": {
                 "spdx-identifier": "MIT"
             }
+        },
+        {
+            "name": "Olsztyn",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.zbiorkom.live/api6-open/olsztyn/gtfsRealtime/default/tripUpdates",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "use-feed-proxy": true
         },
         {
             "name": "Warsaw-Ferries",
@@ -789,9 +859,7 @@
             "url": "https://kasmar00.github.io/gtfs-warsaw-custom/feeds/warsaw-ferries/latest.zip",
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
-            },
-            "skip": true,
-            "skip-reason": "Outdated feed"
+            }
         },
         {
             "name": "Ząbki",
@@ -806,25 +874,26 @@
             "name": "Mińsk-Mazowiecki",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://kasmar00.github.io/gtfs-warsaw-custom/feeds/minsk-maz/latest.zip",
+            "url": "https://api.zbiorkom.live/api6-open/warsaw/gtfs/MINSK",
             "license": {
-                "spdx-identifier": "CC-BY-4.0"
+                "spdx-identifier": "MIT"
             }
         },
         {
             "name": "Mińsk-Mazowiecki",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://cdn.zbiorkom.live/gtfs-rt/warsaw-minsk.pb",
+            "url": "https://api.zbiorkom.live/api6-open/warsaw/gtfsRealtime/MINSK/tripUpdates",
             "license": {
                 "spdx-identifier": "MIT"
-            }
+            },
+            "use-feed-proxy": true
         },
         {
             "name": "Gorzów-Wielkopolski",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://cdn.zbiorkom.live/gtfs/gorzow.zip",
+            "url": "https://api.zbiorkom.live/api6-open/gorzow/gtfs/default",
             "license": {
                 "spdx-identifier": "MIT"
             }
@@ -833,10 +902,11 @@
             "name": "Gorzów-Wielkopolski",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://cdn.zbiorkom.live/gtfs-rt/gorzow.pb",
-            "license":{
+            "url": "https://api.zbiorkom.live/api6-open/gorzow/gtfsRealtime/default/tripUpdates",
+            "license": {
                 "spdx-identifier": "MIT"
-            }
+            },
+            "use-feed-proxy": true
         },
         {
             "name": "PKS-Poznań",
@@ -912,6 +982,7 @@
             "license": {
                 "spdx-identifier": "CC0-1.0"
             },
+            "drop-shapes": true,
             "fix": true
         },
         {
@@ -925,59 +996,35 @@
             }
         },
         {
-            "name": "Morąg",
-            "type": "http",
-            "spec": "gtfs",
-            "url": "https://files.girlc.at/gtfs/morag.zip",
-            "license": {
-                "spdx-identifier": "CC0-1.0"
-            }
-        },
-        {
-            "name": "Orneta",
-            "type": "http",
-            "spec": "gtfs",
-            "url": "https://files.girlc.at/gtfs/orneta.zip",
-            "license": {
-                "spdx-identifier": "CC0-1.0"
-            }
-        },
-        {
             "name": "Legnica",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://cdn.zbiorkom.live/gtfs/legnica.zip",
+            "url": "https://api.zbiorkom.live/api6-open/legnica/gtfs/default",
+            "url-override": "https://cdn.zbiorkom.live/gtfs/legnica.zip",
             "fix": true,
             "license": {
                 "spdx-identifier": "MIT"
             }
         },
         {
-            "name": "Legnica",
-            "type": "url",
-            "spec": "gtfs-rt",
-            "url": "https://cdn.zbiorkom.live/gtfs-rt/legnica.pb",
-            "license": {
-                "spdx-identifier": "MIT"
-            }
-        },
-        {
             "name": "Grodziskie-Przewozy-Autobusowe",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://cdn.zbiorkom.live/gtfs/warsaw-gpa.zip",
+            "url": "https://api.zbiorkom.live/api6-open/warsaw/gtfs/GPA",
             "license": {
                 "spdx-identifier": "MIT"
-            }
+            },
+            "drop-shapes": true
         },
         {
             "name": "Grodziskie-Przewozy-Autobusowe",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://cdn.zbiorkom.live/gtfs-rt/warsaw-gpa.pb",
+            "url": "https://api.zbiorkom.live/api6-open/warsaw/gtfsRealtime/GPA/tripUpdates",
             "license": {
                 "spdx-identifier": "MIT"
-            }
+            },
+            "use-feed-proxy": true
         },
         {
             "name": "RegioJet",
@@ -994,8 +1041,8 @@
             "type": "url",
             "spec": "gtfs-rt",
             "url": "https://gtfs.kasznia.net/rt/regio-jet.pb",
-            "license":{
-                "spdx-identifier":"CC-BY-4.0"
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
             }
         },
         {
@@ -1030,7 +1077,7 @@
             "name": "Przemyśl",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://cdn.zbiorkom.live/gtfs/przemysl.zip",
+            "url": "https://api.zbiorkom.live/api6-open/przemysl/gtfs/default",
             "license": {
                 "spdx-identifier": "MIT"
             }
@@ -1039,16 +1086,17 @@
             "name": "Przemyśl",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://cdn.zbiorkom.live/gtfs-rt/przemysl.pb",
+            "url": "https://api.zbiorkom.live/api6-open/przemysl/gtfsRealtime/default/tripUpdates",
             "license": {
                 "spdx-identifier": "MIT"
-            }
+            },
+            "use-feed-proxy": true
         },
         {
             "name": "Suwałki",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://cdn.zbiorkom.live/gtfs/suwalki.zip",
+            "url": "https://api.zbiorkom.live/api6-open/suwalki/gtfs/default",
             "license": {
                 "spdx-identifier": "MIT"
             }
@@ -1057,10 +1105,11 @@
             "name": "Suwałki",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://cdn.zbiorkom.live/gtfs-rt/suwalki.pb",
+            "url": "https://api.zbiorkom.live/api6-open/suwalki/gtfsRealtime/default/tripUpdates",
             "license": {
                 "spdx-identifier": "MIT"
-            }
+            },
+            "use-feed-proxy": true
         },
         {
             "name": "PKS-Nova",
@@ -1223,34 +1272,26 @@
             "name": "Radzymin",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://files.girlc.at/gtfs/radzymin.zip",
+            "url": "https://api.zbiorkom.live/api6-open/warsaw/gtfs/RADZYMIN",
             "license": {
-                "spdx-identifier": "CC0-1.0"
+                "spdx-identifier": "MIT"
             }
         },
         {
             "name": "Radzymin",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://cdn.zbiorkom.live/gtfs-rt/warsaw-radzymin.pb",
+            "url": "https://api.zbiorkom.live/api6-open/warsaw/gtfsRealtime/RADZYMIN/tripUpdates",
             "license": {
                 "spdx-identifier": "MIT"
-            }
+            },
+            "use-feed-proxy": true
         },
         {
             "name": "Łomianki",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://files.girlc.at/gtfs/lomianki.zip",
-            "license": {
-                "spdx-identifier": "CC0-1.0"
-            }
-        },
-        {
-            "name": "Łomianki",
-            "type": "url",
-            "spec": "gtfs-rt",
-            "url": "https://cdn.zbiorkom.live/gtfs-rt/warsaw-lomianki.pb",
+            "url": "https://api.zbiorkom.live/api6-open/warsaw/gtfs/LOMIANKI",
             "license": {
                 "spdx-identifier": "MIT"
             }
@@ -1259,7 +1300,7 @@
             "name": "Leszno",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://cdn.zbiorkom.live/gtfs/leszno.zip",
+            "url": "https://api.zbiorkom.live/api6-open/leszno/gtfs/default",
             "license": {
                 "spdx-identifier": "MIT"
             }
@@ -1268,10 +1309,11 @@
             "name": "Leszno",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://cdn.zbiorkom.live/gtfs-rt/leszno.pb",
+            "url": "https://api.zbiorkom.live/api6-open/leszno/gtfsRealtime/default/tripUpdates",
             "license": {
                 "spdx-identifier": "MIT"
-            }
+            },
+            "use-feed-proxy": true
         },
         {
             "name": "Płońsk",
@@ -1280,7 +1322,9 @@
             "url": "https://files.girlc.at/gtfs/plonsk.zip",
             "license": {
                 "spdx-identifier": "CC0-1.0"
-            }
+            },
+            "skip": true,
+            "skip-reason": "Feed expired"
         },
         {
             "name": "Żywiec",
@@ -1295,7 +1339,7 @@
         {
             "name": "Zielona-Góra",
             "type": "http",
-            "spec":"gtfs",
+            "spec": "gtfs",
             "url": "https://www.mzk.zgora.pl/dla-deweloperow",
             "function": "data_zielona_gora_latest_resource",
             "license": {
@@ -1321,19 +1365,38 @@
             }
         },
         {
-            "name": "Pruszków",
+            "name": "Oborniki-Śląskie",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://cdn.zbiorkom.live/gtfs/warsaw-pruszkow.zip",
+            "url": "https://feed.gtfs.cc/oborniki-slaskie/gtfs.zip",
+            "license": {
+                "spdx-identifier": "MIT"
+            }
+        },
+        {
+            "name": "Biskupiec",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://feed.gtfs.cc/biskupiec/gtfs.zip",
+            "license": {
+                "spdx-identifier": "MIT"
+            }
+        },
+        {
+            "name": "Ornontowice",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://feed.gtfs.cc/ornontowice/gtfs.zip",
             "license": {
                 "spdx-identifier": "MIT"
             }
         },
         {
             "name": "Pruszków",
-            "type": "url",
-            "spec": "gtfs-rt",
-            "url": "https://cdn.zbiorkom.live/gtfs-rt/warsaw-pruszkow.pb",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://api.zbiorkom.live/api6-open/warsaw/gtfs/pruszkow",
+            "url-override": "https://cdn.zbiorkom.live/gtfs/warsaw-pruszkow.zip",
             "license": {
                 "spdx-identifier": "MIT"
             }
@@ -1342,9 +1405,10 @@
             "name": "Siechnice",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://files.girlc.at/gtfs/siechnice.zip",
+            "url": "https://api.zbiorkom.live/api6-open/wroclaw/gtfs/siechnice",
+            "url-override": "https://cdn.zbiorkom.live/gtfs/wroclaw-siechnice.zip",
             "license": {
-                "spdx-identifier": "CC0-1.0"
+                "spdx-identifier": "MIT"
             }
         },
         {
@@ -1369,7 +1433,7 @@
             "name": "Częstochowa",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://cdn.zbiorkom.live/gtfs/czestochowa.zip",
+            "url": "https://api.zbiorkom.live/api6-open/czestochowa/gtfs/default",
             "license": {
                 "spdx-identifier": "MIT"
             }
@@ -1378,10 +1442,11 @@
             "name": "Częstochowa",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://cdn.zbiorkom.live/gtfs-rt/czestochowa.pb",
+            "url": "https://api.zbiorkom.live/api6-open/czestochowa/gtfsRealtime/default/tripUpdates",
             "license": {
                 "spdx-identifier": "MIT"
-            }
+            },
+            "use-feed-proxy": true
         },
         {
             "name": "Szczytno",
@@ -1400,6 +1465,34 @@
             "license": {
                 "spdx-identifier": "CC0-1.0"
             }
+        },
+        {
+            "name": "Powiat-Miński",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://files.girlc.at/gtfs/powiat_minski.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "Pleszew",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://files.girlc.at/gtfs/pleszew.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "Kolej-Pleszewska",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://github.com/pawlinski07/pawlinski-gtfs/raw/refs/heads/main/KolejPleszewska.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            },
+            "script": "pl-Koleje-Wielkopolskie.lua"
         },
         {
             "name": "Chełmski-Rower",
@@ -1445,6 +1538,64 @@
             "name": "WRM-Wrocław",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-wrm~nextbike~poland~wrocław~gbfs"
+        },
+        {
+            "name": "Iława",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://api.odt.org.pl/static/media/public_transport_data/gtfs-ILAWA.zip",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "fix": true,
+            "skip": true,
+            "skip-reason": "Broken timetable data"
+        },
+        {
+            "name": "RPK-Bochnia",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://api.odt.org.pl/static/media/public_transport_data/RPKBochnia_bgLAcxp.zip",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "fix": true
+        },
+        {
+            "name": "Wałbrzych",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://api.odt.org.pl/static/media/public_transport_data/GTFS-SKA.zip",
+            "license": {
+                "spdx-identifier": "MIT"
+            }
+        },
+        {
+            "name": "Bardo",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://files.girlc.at/gtfs/bardo.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "Rozprza",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://files.girlc.at/gtfs/rozprza.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "Żuławska-Kolej-Dojazdowa",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://github.com/Lach-anonym/gtfs-collection/raw/refs/heads/main/zkd.zip",
+            "license": {
+                "spdx-identifier": "MIT"
+            }
         }
     ]
 }

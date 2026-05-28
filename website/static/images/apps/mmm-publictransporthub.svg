@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-label="MagicMirror with bus and train" viewBox="0 0 320 320">
+  <defs>
+    <linearGradient id="a" x1="0" x2="277.1" y1="0" y2="277.1" gradientTransform="scale(1.2)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4575bd"/>
+      <stop offset="1" stop-color="#14238c"/>
+    </linearGradient>
+    <linearGradient id="b" x1="41" x2="41" y1="44" y2="218.2" gradientTransform="matrix(1.4 0 0 1 -22 10)" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#93c5fd" stop-opacity=".3"/>
+      <stop offset="100%" stop-color="#60a5fa" stop-opacity=".1"/>
+    </linearGradient>
+  </defs>
+  <rect width="320" height="320" fill="url(#a)" rx="20"/>
+  <rect width="273.1" height="184.3" x="23.5" y="37.3" fill="#0b1220" stroke="#94a3b8" stroke-width="2.3" rx="18.2"/>
+  <rect width="245.8" height="157" x="37.1" y="50.9" fill="url(#b)" stroke="#334155" stroke-width="1.7" rx="11.4"/>
+  <path fill="#e2e8f0" fill-opacity=".1" d="M57.6 60h56.9L194 208h-56.9z"/>
+  <path stroke="#475569" stroke-width="1.7" d="M160 62.3v134.3"/>
+  <rect width="63.7" height="41" x="75.8" y="110.1" fill="#a78bfa" rx="9.1"/>
+  <rect width="50.1" height="13.7" x="82.6" y="116.9" fill="#ede9fe" rx="3.4"/>
+  <rect width="18.2" height="9.1" x="82.6" y="135.1" fill="#ede9fe" rx="2.3"/>
+  <rect width="27.3" height="9.1" x="105.4" y="135.1" fill="#ede9fe" rx="2.3"/>
+  <circle cx="91.7" cy="153.4" r="5.7" fill="#0f172a"/>
+  <circle cx="123.6" cy="153.4" r="5.7" fill="#0f172a"/>
+  <path fill="#22d3ee" d="M189.6 110.1c0-6.8 4.5-11.4 11.4-11.4h36.4c6.8 0 11.4 4.6 11.4 11.4v29.6c0 11.4-9.1 20.5-20.5 20.5H210a20.4 20.4 0 0 1-20.5-20.5z"/>
+  <rect width="41" height="15.9" x="198.7" y="107.8" fill="#cffafe" rx="4.6"/>
+  <circle cx="206.7" cy="132.9" r="3.4" fill="#0f172a"/>
+  <circle cx="231.7" cy="132.9" r="3.4" fill="#0f172a"/>
+  <path stroke="#22d3ee" stroke-linecap="round" stroke-width="3.4" d="m210 160.2-9 11.4m27.3-11.4 9 11.4"/>
+  <text x="160" y="272.4" fill="#e2e8f0" stroke-opacity=".5" stroke-width=".1" font-family="Arial, sans-serif" font-size="20.5" font-weight="700" text-anchor="middle"><tspan x="160" y="272.4" fill="#f1f7ff" font-size="42.7">MagicMirror²</tspan></text>
+  <text x="160.7" y="273.1" stroke-opacity=".5" stroke-width=".1" font-family="Arial, sans-serif" font-size="20.7" font-weight="700" text-anchor="middle"><tspan x="160.7" y="299" fill="#fff" fill-opacity=".9">MMM-PublicTransportHub</tspan></text>
+</svg>
+

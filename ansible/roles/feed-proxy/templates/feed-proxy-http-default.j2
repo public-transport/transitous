@@ -1,0 +1,9 @@
+# SPDX-FileCopyrightText: 2025 Traines <git@traines.eu>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+#
+
+# For certbot
+location ^~ /.well-known/acme-challenge/ {
+    root /var/www/html/;
+}

@@ -1,0 +1,55 @@
+# SPDX-FileCopyrightText: 2025 Jonah Brüchert <jbb@kaidan.im>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+- name: Create crowd-sourced-realtime user
+  user:
+    name: crowd-sourced-realtime
+
+- name: Install delay-tracker executable
+  get_url:
+    url: https://cloud.ghsq.de/s/BfAQb86e5qZWrf8/download/delay-tracker-x86_64
+    dest: /usr/local/bin/delay-tracker
+    mode: '0755'
+
+- name: Install delay-tracker service
+  copy:
+    src: delay-tracker.service
+    dest: /etc/systemd/system/delay-tracker.service
+  register: install_delay_tracker_service
+
+- name: Install transitous-gps-collector
+  get_url:
+    url: https://cloud.ghsq.de/s/8FYsw7eXxfStoD5/download/transitous-gps-collector-x86_64
+    dest: /usr/local/bin/transitous-gps-collector
+    mode: '0755'
+
+- name: Install transitous-gps-collector service
+  copy:
+    src: transitous-gps-collector.service
+    dest: /etc/systemd/system/transitous-gps-collector.service
+  register: install_gps_collector_service
+
+- name: Enable delay-tracker
+  systemd_service:
+    name: delay-tracker.service
+    daemon_reload: true
+  when: install_delay_tracker_service.changed
+
+- name: Enable transitous-gps-collector
+  systemd_service:
+    name: transitous-gps-collector.service
+    daemon_reload: true
+  when: install_gps_collector_service.changed
+
+- name: Enable delay-tracker
+  systemd_service:
+    name: delay-tracker.service
+    enabled: true
+    state: "started"
+
+- name: Enable transitous-gps-collector
+  systemd_service:
+    name: transitous-gps-collector.service
+    enabled: true
+    state: "started"

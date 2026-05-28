@@ -53,6 +53,11 @@
             "name": "Peoria-CityLink",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-dp0r-citylink"
+        },
+        {
+            "name": "Metra",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dp3-metra"
         }
     ]
 }

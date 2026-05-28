@@ -17,7 +17,7 @@ summary h3 {
 
 {{ $lastCountry := "_initial_" }}
 {{ $lastSubdivision := "" }}
-{{ range $index, $source := $.Site.Data.license }}
+{{ range $index, $source := hugo.Data.license }}
   {{ $country := .country_name }}
   {{ $subdivision := .subdivision_name }}
 
@@ -58,29 +58,44 @@ summary h3 {
     {{ end }}
   {{ end }}
 
-  for the following operators:
-
   {{ if $source.operators }}
-    {{ if compare.Gt (len $source.operators) 10 }}
-      <button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-{{ crypto.SHA256 .source }}" aria-expanded="false" aria-controls="collapse-{{ crypto.SHA256 $source.source }}">
-        Show Operators…
-      </button>
+    for the following operators:
 
-      <div class="collapse mt-2 mb-2" id="collapse-{{ crypto.SHA256 $source.source }}">
-        <div>
-          <p class="fs-6">
-          {{ delimit $source.operators ", " }}
-          </p>
+    {{ if $source.operators }}
+      {{ if compare.Gt (len $source.operators) 10 }}
+        <button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-{{ crypto.SHA256 .source }}" aria-expanded="false" aria-controls="collapse-{{ crypto.SHA256 $source.source }}">
+          Show Operators…
+        </button>
+
+        <div class="collapse mt-2 mb-2" id="collapse-{{ crypto.SHA256 $source.source }}">
+          <div>
+            <p class="fs-6">
+            {{ delimit $source.operators ", " }}
+            </p>
+          </div>
         </div>
-      </div>
-    {{ else }}
-      <p class="fs-6">{{ delimit $source.operators ", " }}</p>
+      {{ else }}
+        <p class="fs-6">{{ delimit $source.operators ", " }}</p>
+      {{ end }}
     {{ end }}
-  {{ end }}
+  {{ else }}
+  .
+  {{ end}}
+  </p>
 
   {{ if and $source.publisher.name $source.publisher.url }}
     <p>
     It is published by <a href="{{ $source.publisher.url }}">{{ $source.publisher.name }}</a>.
+    </p>
+  {{ end }}
+
+  {{ if $source.attribution_text }}
+  <p>{{ $source.attribution_text }}</p>
+  {{ end }}
+
+  {{ if $source.last_updated }}
+    <p>
+    The data was last updated at {{ time.Format "02 Jan 06 15:04 UTC" $source.last_updated }}.
     </p>
   {{ end }}
 
@@ -110,6 +125,19 @@ summary h3 {
       <a href="https://spdx.org/licenses/{{ $rt_source.spdx_license_identifier }}.html">{{ $rt_source.spdx_license_identifier }}</a>
       {{ end }}
     {{- end }}.
+
+    {{ if $rt_source.publisher }}
+      It is published by
+      {{ if $rt_source.publisher.url }}
+      <a href="{{ $rt_source.publisher.url }}">{{ $rt_source.publisher.name }}</a>.
+      {{ else }}
+      {{ $rt_source.publisher.name }}.
+      {{ end }}
+    {{ end }}
+
+    {{ if $rt_source.attribution_text }}
+    {{ $rt_source.attribution_text }}
+    {{ end }}
     </p>
     {{ end }}
   {{ end }}

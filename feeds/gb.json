@@ -20,7 +20,8 @@
             },
             "drop-agency-names": [
                 "FlixBus"
-            ]
+            ],
+            "script": "gb-great-britain.lua"
         },
         {
             "name": "great-britain",
@@ -29,17 +30,23 @@
             "url": "https://realtime.aubin.app/great_britain_gtfsrt.binpb",
             "license": {
                 "url": "https://transitous.org/sources-great-britain"
-            }
+            },
+            "use-feed-proxy": true
         },
         {
             "name": "northern-ireland",
             "type": "http",
-            "url": "https://s3.transitpdf.com/files/uran/improved-gtfs-northern-ireland.zip"
+            "url": "https://blues3.transitpdf.com/files/sourcedata/northern-ireland.zip",
+            "license": {
+                "url": "https://busmaps.com/en/license",
+                "attribution-text": "This product includes derivative public transportation data provided by busmaps.com. For more information, visit busmaps.com"
+            }
         },
         {
             "name": "flixbus",
             "type": "http",
-            "url": "http://gtfs.gis.flix.tech/gtfs_generic_gb.zip"
+            "url": "https://gtfs.gis.flix.tech/gtfs_generic_gb.zip",
+            "script": "generic-bus-to-coach.lua"
         },
         {
             "name": "flixbus",

@@ -26,7 +26,8 @@
         {
             "name": "arlington",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-dqcjj-arlingtontransit"
+            "transitland-atlas-id": "f-dqcjj-arlingtontransit",
+            "use-feed-proxy": true
         },
         {
             "name": "arlington",

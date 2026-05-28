@@ -19,7 +19,7 @@
             "type": "http",
             "url": "https://feed.justusewheels.com/hk.gtfs.zip",
             "license": {
-                "spdx_identifier": "ODbL-1.0",
+                "spdx-identifier": "ODbL-1.0",
                 "url": "https://github.com/wheelstransit/hongkong-community-gtfs/tree/main?tab=readme-ov-file#license"
             }
         }

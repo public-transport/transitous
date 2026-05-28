@@ -10,47 +10,65 @@
             "name": "visimarsrutai",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-visimarsrutai~lt~all",
-            "fix": true
+            "fix": true,
+            "drop-agency-names": [
+                "UAB LTG Link",
+                "Vilniaus m. sav.",
+                "Klaipėdos m. sav.",
+                "Kauno r. sav.",
+                "Panevėžio r. sav.",
+                "Druskininkų sav."
+            ]
         },
         {
             "name": "vilnius",
-            "type": "http",
-            "url": "https://stops.lt/vilnius/vilnius/gtfs.zip",
-            "fix": true
+            "type": "mobility-database",
+            "fix": true,
+            "mdb-id": "mdb-1044"
         },
         {
             "name": "vilnius",
-            "type": "url",
-            "spec": "gtfs-rt",
-            "url": "https://stops.lt/vilnius/trip_updates.pb"
+            "type": "mobility-database",
+            "mdb-id": "mdb-2382"
         },
         {
             "name": "vilnius",
-            "type": "url",
-            "spec": "gtfs-rt",
-            "url": "https://www.stops.lt/vilnius/service_alerts.pb"
+            "type": "mobility-database",
+            "mdb-id": "mdb-2384"
         },
         {
             "name": "kaunas",
-            "type": "http",
-            "url": "https://stops.lt/kaunas/kaunas/gtfs.zip"
+            "type": "mobility-database",
+            "mdb-id": "mdb-1041"
+        },
+        {
+            "name": "kaunas",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://www.stops.lt/kaunas/trip_updates.pb"
+        },
+        {
+            "name": "kaunas",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://www.stops.lt/kaunas/vehicle_positions.pb"
         },
         {
             "name": "panevezys",
-            "type": "http",
-            "url": "https://stops.lt/panevezys/panevezys/gtfs.zip"
+            "type": "mobility-database",
+            "mdb-id": "mdb-1043"
         },
         {
             "name": "panevezys",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://stops.lt/panevezys/trip_updates.pb"
+            "url": "https://www.stops.lt/panevezys/gtfs_realtime.pb"
         },
         {
             "name": "klaipeda",
-            "type": "http",
-            "url": "https://stops.lt/klaipeda/klaipeda/gtfs.zip",
-            "fix": true
+            "type": "mobility-database",
+            "fix": true,
+            "mdb-id": "mdb-1042"
         },
         {
             "name": "klaipeda",
@@ -66,18 +84,31 @@
         },
         {
             "name": "druskininkai",
-            "type": "http",
-            "url": "https://stops.lt/druskininkai/druskininkai/gtfs.zip"
+            "type": "mobility-database",
+            "mdb-id": "mdb-1040"
+        },
+        {
+            "name": "druskininkai",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://www.stops.lt/druskininkai/trip_updates.pb"
+        },
+        {
+            "name": "druskininkai",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://www.stops.lt/druskininkai/vehicle_positions.pb"
         },
         {
             "name": "alytus",
-            "type": "http",
-            "url": "https://stops.lt/alytus/alytus/gtfs.zip"
+            "type": "mobility-database",
+            "mdb-id": "mdb-1833"
         },
         {
             "name": "siauliai",
-            "type": "http",
-            "url": "https://stops.lt/siauliai/siauliai/gtfs.zip"
+            "type": "mobility-database",
+            "mdb-id": "mdb-1834",
+            "fix": true
         },
         {
             "name": "taurage",
@@ -86,21 +117,22 @@
             "fix": true
         },
         {
-            "name": "traukiniai",
-            "type": "http",
-            "url": "https://stops.lt/traukiniai/traukiniai/gtfs.zip",
-            "skip": true,
-            "skip-reason": "Expired"
-        },
-        {
             "name": "B-Bus",
             "type": "mobility-database",
             "mdb-id": "mdb-2385"
         },
         {
             "name": "LTG-Link",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2991",
+            "enable-crowd-sourced-realtime": true
+        },
+        {
+            "name": "kautra",
             "type": "http",
-            "url": "https://jbb.ghsq.de/gtfs/lt-ltglink.gtfs.zip"
+            "url": "https://www.stops.lt/kautra/kautra/gtfs.zip",
+            "fix": true,
+            "script": "generic-bus-to-coach.lua"
         }
     ]
 }

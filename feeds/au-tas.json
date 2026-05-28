@@ -13,7 +13,7 @@
             "url": "https://www.transport.tas.gov.au/public_transport/gtfs-data",
             "function": "data_tasmania_latest_resource",
             "license": {
-                "spdx_identifier": "CC-BY-4.0"
+                "spdx-identifier": "CC-BY-4.0"
             },
             "fix": true
         }
