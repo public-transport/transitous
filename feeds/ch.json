@@ -19,7 +19,10 @@
                 "FPLAN BOD RAB OMP",
                 "Verkehrsverbund Vorarlberg",
                 "DistriBus",
-                "Südbadenbus"
+                "Südbadenbus",
+                "Verkehrsverbund Tirol",
+                "SWEG Südwestdeutsche Landesverkehrs-GmbH",
+                "Verkehrsverbund Hegau-Bodensee"
             ],
             "script": "ch-opentransportdataswiss.lua"
         },
