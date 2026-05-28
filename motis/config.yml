@@ -26,7 +26,11 @@ timetable:
   num_days: 395
   railviz: true
   with_shapes: true
-  ignore_errors: true
+  route_shapes:
+    mode: missing
+    cache_reuse_old_osm_data: true
+    debug_api: true
+    n_threads: 16
   adjust_footpaths: true
   merge_dupes_intra_src: true
   merge_dupes_inter_src: true
