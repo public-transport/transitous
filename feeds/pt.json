@@ -32,7 +32,8 @@
             "mdb-id": "mdb-2929",
             "license": {
                 "spdx-identifier": "CC0-1.0"
-            }
+            },
+            "fix": true
         },
         {
             "name": "Metro-Lisboa",
