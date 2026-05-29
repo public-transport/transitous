@@ -32,7 +32,8 @@
         {
             "name": "LPT",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-lpt~cy"
+            "transitland-atlas-id": "f-lpt~cy",
+            "fix": true
         },
         {
             "name": "LPT",
@@ -43,7 +44,8 @@
         {
             "name": "NPT",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-npt~cy"
+            "transitland-atlas-id": "f-npt~cy",
+            "fix": true
         },
         {
             "name": "NPT",
@@ -76,7 +78,8 @@
         {
             "name": "Pame-Express",
             "type": "http",
-            "url": "https://motionbuscard.org.cy/opendata/downloadfile?file=GTFS%5C11_google_transit.zip&rel=True"
+            "url": "https://motionbuscard.org.cy/opendata/downloadfile?file=GTFS%5C11_google_transit.zip&rel=True",
+            "fix": true
         },
         {
             "name": "Pame-Express",
