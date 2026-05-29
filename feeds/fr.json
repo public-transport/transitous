@@ -7286,8 +7286,19 @@
             },
             "x-data-gov-fr-res-id": 80921,
             "managed-by-script": true,
-            "skip": false,
+            "skip": true,
+            "skip-reason": "Replaced by postprocessed community feed",
             "x-data-gov-fr-res-title": "Horaires au format GTFS",
+            "x-data-gov-fr-dataset-id": "6449c52caeceb71273a42dd3"
+        },
+        {
+            "name": "reseau-urbain-et-interurbain-dile-de-france-mobilites",
+            "type": "http",
+            "url": "http://gtfsidfm.clarifygdps.com/gtfs",
+            "fix": true,
+            "license": {
+                "url": "https://github.com/Jouca/IDFM_GTFS-RT/blob/main/LICENSE"
+            },
             "x-data-gov-fr-dataset-id": "6449c52caeceb71273a42dd3"
         },
         {
