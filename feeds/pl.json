@@ -60,7 +60,8 @@
                 "PKP Intercity",
                 "Koleje Mazowieckie",
                 "Ostdeutsche Eisenbahn"
-            ]
+            ],
+            "script": "pl-polish-trains.lua"
         },
         {
             "name": "Polish-Trains",
