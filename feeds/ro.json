@@ -264,6 +264,11 @@
             "mdb-id": "mdb-1104",
             "skip": true,
             "skip-reason": "different conversion for the same source data of ro-railway"
+        },
+        {
+            "name": "Consiliul-Județean-Buzău-Transport-județean",
+            "type": "mobility-database",
+            "mdb-id": "mdb-3179"
         }
     ]
 }
