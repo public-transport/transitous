@@ -1487,6 +1487,16 @@
             }
         },
         {
+            "name": "Sulejówek",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.zbiorkom.live/api6-open/czestochowa/gtfsRealtime/SULEJOWEK/tripUpdates",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "use-feed-proxy": true
+        },
+        {
             "name": "Powiat-Miński",
             "type": "http",
             "spec": "gtfs",
@@ -1494,6 +1504,16 @@
             "license": {
                 "spdx-identifier": "CC0-1.0"
             }
+        },
+        {
+            "name": "Powiat-Miński",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.zbiorkom.live/api6-open/warsaw/gtfsRealtime/MINSKI/tripUpdates",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "use-feed-proxy": true
         },
         {
             "name": "Pleszew",
