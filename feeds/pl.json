@@ -548,8 +548,9 @@
             "spec": "gtfs",
             "url": "https://gtfs.kasznia.net/static/kalisz.zip",
             "license": {
-                "spdx-identifier": "CC-BY-4.0"
-            }
+                "spdx-identifier": "CC0-1.0"
+            },
+            "fix": true
         },
         {
             "name": "KLA-Kalisz",
