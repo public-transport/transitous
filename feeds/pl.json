@@ -35,7 +35,7 @@
             "name": "PKP-Intercity",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://gtfs.kasznia.net/rt/pkpic.pb",
+            "url": "https://gtfs.kasznia.net/rt/pkpicshim.pb",
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             }
@@ -49,17 +49,23 @@
             }
         },
         {
-            "name": "PolRegio",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-pol~regio~pl",
-            "fix": true,
-            "script": "pl-PolRegio.lua"
+            "name": "Polish-Trains",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://gtfs.kasznia.net/static/polish-trains.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            },
+            "drop-agency-names": [
+                "PKP Intercity",
+                "Koleje Mazowieckie"
+            ]
         },
         {
-            "name": "PolRegio",
+            "name": "Polish-Trains",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://gtfs.kasznia.net/rt/polregio.pb",
+            "url": "https://mkuran.pl/gtfs/polish_trains/updates.pb",
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             }
@@ -152,21 +158,6 @@
             "fix": true
         },
         {
-            "name": "Koleje-Dolnośląskie",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u3h-koleje~dolnoslaskie",
-            "api-key": "a2Q6QmFld29uZ29od3VnM0Fv"
-        },
-        {
-            "name": "Koleje-Dolnośląskie",
-            "type": "url",
-            "spec": "gtfs-rt",
-            "url": "https://gtfs.kasznia.net/rt/kd.pb",
-            "license": {
-                "spdx-identifier": "CC-BY-4.0"
-            }
-        },
-        {
             "name": "Bydgoszcz",
             "type": "http",
             "url": "https://api.zbiorkom.live/api6-open/bydgoszcz/gtfs/default",
@@ -246,26 +237,6 @@
                 "spdx-identifier": "MIT"
             },
             "use-feed-proxy": true
-        },
-        {
-            "name": "SKM-Warszawa",
-            "type": "http",
-            "spec": "gtfs",
-            "url": "https://cdn.zbiorkom.live/gtfs/pkp-skmw.zip",
-            "license": {
-                "spdx-identifier": "MIT"
-            },
-            "drop-shapes": true,
-            "script": "pl-SKM-Warszawa.lua"
-        },
-        {
-            "name": "SKM-Warszawa",
-            "type": "url",
-            "spec": "gtfs-rt",
-            "url": "https://gtfs.kasznia.net/rt/skm-waw.pb",
-            "license": {
-                "spdx-identifier": "CC-BY-4.0"
-            }
         },
         {
             "name": "Warszawska-Kolej-Dojazdowa",
@@ -406,40 +377,6 @@
             "use-feed-proxy": true
         },
         {
-            "name": "PKP-SKM",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u3t-skm~trojmiasto",
-            "fix": true,
-            "script": "pl-PKP-SKM.lua"
-        },
-        {
-            "name": "PKP-SKM",
-            "type": "url",
-            "spec": "gtfs-rt",
-            "url": "https://gtfs.kasznia.net/rt/skmt.pb",
-            "license": {
-                "spdx-identifier": "CC-BY-4.0"
-            }
-        },
-        {
-            "name": "Koleje-Małopolskie",
-            "type": "http",
-            "spec": "gtfs",
-            "url": "https://gtfs.kasznia.net/static/sanitized/kml.zip",
-            "license": {
-                "spdx-identifier": "CC-BY-4.0"
-            }
-        },
-        {
-            "name": "Koleje-Małopolskie",
-            "type": "url",
-            "spec": "gtfs-rt",
-            "url": "https://gtfs.kasznia.net/rt/kml.pb",
-            "license": {
-                "spdx-identifier": "CC-BY-4.0"
-            }
-        },
-        {
             "name": "Koleje-Małopolskie-ald",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u2y-koleje~małopolskie~ald"
@@ -490,41 +427,6 @@
             "transitland-atlas-id": "f-u3xf-elk~rt"
         },
         {
-            "name": "Koleje-Śląskie",
-            "type": "http",
-            "url": "https://gtfs.kasznia.net/static/sanitized/ks.zip",
-            "license": {
-                "spdx-identifier": "CC-BY-4.0"
-            }
-        },
-        {
-            "name": "Koleje-Śląskie",
-            "type": "url",
-            "spec": "gtfs-rt",
-            "url": "https://gtfs.kasznia.net/rt/ks.pb",
-            "license": {
-                "spdx-identifier": "CC-BY-4.0"
-            }
-        },
-        {
-            "name": "Łódzka-Kolej-Aglomeracyjna",
-            "type": "http",
-            "spec": "gtfs",
-            "url": "https://gtfs.kasznia.net/static/sanitized/lka_train.zip",
-            "license": {
-                "spdx-identifier": "CC-BY-4.0"
-            }
-        },
-        {
-            "name": "Łódzka-Kolej-Aglomeracyjna",
-            "type": "url",
-            "spec": "gtfs-rt",
-            "url": "https://gtfs.kasznia.net/rt/lka.pb",
-            "license": {
-                "spdx-identifier": "CC-BY-4.0"
-            }
-        },
-        {
             "name": "Łódzka-Kolej-Aglomeracyjna-bus",
             "type": "http",
             "spec": "gtfs",
@@ -565,25 +467,6 @@
             ],
             "drop-shapes": true,
             "fix": true
-        },
-        {
-            "name": "Koleje-Wielkopolskie",
-            "type": "http",
-            "spec": "gtfs",
-            "url": "https://gtfs.kasznia.net/static/sanitized/kw.zip",
-            "license": {
-                "spdx-identifier": "CC-BY-4.0"
-            },
-            "script": "pl-Koleje-Wielkopolskie.lua"
-        },
-        {
-            "name": "Koleje-Wielkopolskie",
-            "type": "url",
-            "spec": "gtfs-rt",
-            "url": "https://gtfs.kasznia.net/rt/kw.pb",
-            "license": {
-                "spdx-identifier": "CC-BY-4.0"
-            }
         },
         {
             "name": "MPK-Wrocław",
@@ -723,25 +606,6 @@
                 "spdx-identifier": "MIT"
             },
             "use-feed-proxy": true
-        },
-        {
-            "name": "Arriva",
-            "type": "http",
-            "spec": "gtfs",
-            "url": "https://files.girlc.at/gtfs/arriva.zip",
-            "license": {
-                "spdx-identifier": "CC0-1.0"
-            },
-            "script": "pl-Koleje-Wielkopolskie.lua"
-        },
-        {
-            "name": "Arriva",
-            "type": "url",
-            "spec": "gtfs-rt",
-            "url": "https://gtfs.kasznia.net/rt/arriva.pb",
-            "license": {
-                "spdx-identifier": "CC-BY-4.0"
-            }
         },
         {
             "name": "Jastrzębie-Zdrój",
@@ -1025,25 +889,6 @@
                 "spdx-identifier": "MIT"
             },
             "use-feed-proxy": true
-        },
-        {
-            "name": "RegioJet",
-            "type": "http",
-            "spec": "gtfs",
-            "url": "https://gtfs.kasznia.net/static/regio-jet.zip",
-            "license": {
-                "spdx-identifier": "CC-BY-4.0"
-            },
-            "script": "pl-RegioJet.lua"
-        },
-        {
-            "name": "RegioJet",
-            "type": "url",
-            "spec": "gtfs-rt",
-            "url": "https://gtfs.kasznia.net/rt/regio-jet.pb",
-            "license": {
-                "spdx-identifier": "CC-BY-4.0"
-            }
         },
         {
             "name": "Suchowola",
