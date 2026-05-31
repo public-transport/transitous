@@ -130,6 +130,7 @@
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u3-kolejemazowieckie",
             "drop-shapes": true,
+            "fix": true,
             "script": "pl-Koleje-Mazowieckie.lua"
         },
         {
@@ -233,6 +234,7 @@
             "type": "http",
             "spec": "gtfs",
             "url": "https://api.zbiorkom.live/api6-open/warsaw/gtfs/default",
+            "fix": true,
             "license": {
                 "spdx-identifier": "MIT"
             }
@@ -1137,6 +1139,7 @@
             "type": "http",
             "spec": "gtfs",
             "url": "https://api.zbiorkom.live/api6-open/suwalki/gtfs/default",
+            "fix": true,
             "license": {
                 "spdx-identifier": "MIT"
             }
@@ -1255,6 +1258,7 @@
             "name": "Polbus",
             "type": "http",
             "spec": "gtfs",
+            "fix": true,
             "url": "https://files.girlc.at/gtfs/polbus.zip",
             "license": {
                 "spdx-identifier": "CC0-1.0"
@@ -1473,6 +1477,7 @@
             "name": "Częstochowa",
             "type": "http",
             "spec": "gtfs",
+            "fix": true,
             "url": "https://api.zbiorkom.live/api6-open/czestochowa/gtfs/default",
             "license": {
                 "spdx-identifier": "MIT"
@@ -1521,6 +1526,7 @@
             "type": "http",
             "spec": "gtfs",
             "url": "https://files.girlc.at/gtfs/powiat_minski.zip",
+            "fix": true,
             "license": {
                 "spdx-identifier": "CC0-1.0"
             }
