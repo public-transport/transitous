@@ -558,7 +558,8 @@
             "url": "https://api.zbiorkom.live/api6-open/kalisz/gtfsRealtime/tripUpdates",
             "license": {
                 "spdx-identifier": "MIT"
-            }
+            },
+            "use-feed-proxy": true
         },
         {
             "name": "Kalisz-LocalBuses",
