@@ -546,11 +546,19 @@
             "name": "KLA-Kalisz",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://gtfs.kasznia.net/static/kalisz.zip",
+            "url": "https://api.zbiorkom.live/api6-open/kalisz/gtfs/default",
             "license": {
-                "spdx-identifier": "CC0-1.0"
-            },
-            "fix": true
+                "spdx-identifier": "MIT"
+            }
+        },
+        {
+            "name": "KLA-Kalisz",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.zbiorkom.live/api6-open/kalisz/gtfsRealtime/tripUpdates",
+            "license": {
+                "spdx-identifier": "MIT"
+            }
         },
         {
             "name": "Kalisz-LocalBuses",
