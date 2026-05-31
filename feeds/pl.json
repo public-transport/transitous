@@ -894,6 +894,15 @@
         },
         {
             "name": "Mińsk-Mazowiecki",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://api.zbiorkom.live/api6-open/warsaw/gtfs/MINSK",
+            "license": {
+                "spdx-identifier": "MIT"
+            }
+        },
+        {
+            "name": "Mińsk-Mazowiecki",
             "type": "url",
             "spec": "gtfs-rt",
             "url": "https://api.zbiorkom.live/api6-open/warsaw/gtfsRealtime/ZABKI/tripUpdates",
@@ -901,15 +910,6 @@
                 "spdx-identifier": "MIT"
             },
             "use-feed-proxy": true
-        },
-        {
-            "name": "Mińsk-Mazowiecki",
-            "type": "http",
-            "spec": "gtfs",
-            "url": "https://api.zbiorkom.live/api6-open/warsaw/gtfs/MINSK",
-            "license": {
-                "spdx-identifier": "MIT"
-            }
         },
         {
             "name": "Mińsk-Mazowiecki",
