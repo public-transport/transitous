@@ -546,9 +546,9 @@
             "name": "KLA-Kalisz",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://api.zbiorkom.live/api6-open/kalisz/gtfs/default",
+            "url": "https://gtfs.kasznia.net/static/kalisz.zip",
             "license": {
-                "spdx-identifier": "MIT"
+                "spdx-identifier": "CC-BY-4.0"
             }
         },
         {
