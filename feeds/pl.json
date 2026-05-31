@@ -534,6 +534,16 @@
             }
         },
         {
+            "name": "Łódzka-Kolej-Aglomeracyjna-bus",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": " https://cdn.zbiorkom.live/gtfs-rt/lodz-lka.pb",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "use-feed-proxy": true
+        },
+        {
             "name": "PKS-Kalisz",
             "type": "http",
             "spec": "gtfs",
@@ -1025,6 +1035,16 @@
             "license": {
                 "spdx-identifier": "MIT"
             }
+        },
+        {
+            "name": "Legnica",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://cdn.zbiorkom.live/gtfs-rt/legnica.pb",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "use-feed-proxy": true
         },
         {
             "name": "Grodziskie-Przewozy-Autobusowe",
