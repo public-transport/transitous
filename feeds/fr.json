@@ -12887,7 +12887,9 @@
             "x-data-gov-fr-res-id": 84018,
             "x-data-gov-fr-dataset-id": "690acbdcf87e825b17baf2e1",
             "x-data-gov-fr-res-title": "bacs_alm_gtfs.zip",
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": true,
+            "skip-reason": "Missing mandatory fields"
         },
         {
             "name": "gtfs-reseau-scolaire-coqueligo-annonay-rhone-agglo",
