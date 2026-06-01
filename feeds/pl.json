@@ -58,8 +58,7 @@
             },
             "drop-agency-names": [
                 "PKP Intercity",
-                "Koleje Mazowieckie",
-                "Ostdeutsche Eisenbahn"
+                "Koleje Mazowieckie"
             ],
             "script": "pl-polish-trains.lua"
         },
