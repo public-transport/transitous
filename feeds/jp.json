@@ -3042,6 +3042,12 @@
             "spec": "gtfs-rt",
             "url-override": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSB6WnRqcVd4bUtraHpaQVJ1UWFFYVlaRHZBdU5hcFMwNmU4a2U4WGlxUmlvCmlIUUgzTmJQbGZwYXV6YjhTZzR3YzFIK1RnbkpNOENOZWlYRVZZNmdiUEEKLS0tIHo5SjVhRXA1cEJyWW5uR0MxTGFiOGFzRE1ETm5MdXhxZEsra0xsbkRPMzAKy9Lc4QYi8m/cC1uS/5NaQ+pN7ckAWeaF22UdPDJZx3uxvLcn0fqmoSO+2l6u68FDf5JcJJGzO/8XbJkeTc+agVkhK04VZL0Wd7zFyzFW706eRI2txc2N0f0c+LEXrtUzYp611O0YtBy/kT8Bw9p20IA2ePyFAejHNicSb2RVDk0V22h1nHLYH6cdi2soqIOSb47Zng2nphrN7FbmQR9VO/eOUulH5eQVQdrvmDPyuaoKewsyYWURDznB1JeN",
             "use-feed-proxy": true
+        },
+        {
+            "name": "小田急バス",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-odakyubus~aiilines~jp",
+            "url-override": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBXc0lwUU5xNWxadzZlUlpKL2hic1hxUDNIdEVINzB5UkM3NCt1bzFxdTJnCjhXU1FpSGU2T0lWL2QzdHVidEdCNVVEMU9sRTJCc2xkM1VGSzdTeE5HbVUKLS0tIE5LUXBLWXZuTjhPWTJaMDdqdkV1eldqaXpsUnhCNDdya3ViaTV0Yys1WWsKhU7HSzliHpY+eH8IaQiilJWJAcQdmte/yGXX5I7MD2B2FHx+DwlsRqO384nK4DTXwvVDu05EB3wjo7Iug34rDBMzVrf+2tCeigtmEq26w7VuyVc79dKBlm57c3DoVfEFlk1QOhxUlDERJIhxn7wTgOwlJ4KfFTMa6uLszoRcyUKdbu9viyVnBB2arV+Gfw3mHP9wJlwaQO/id/QPK38u41CArm629f45zUUgdossRG36XVC1ZwD0zOJyTg=="
         }
     ]
 }
