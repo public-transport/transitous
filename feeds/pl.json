@@ -60,7 +60,8 @@
                 "PKP Intercity",
                 "Koleje Mazowieckie"
             ],
-            "script": "pl-polish-trains.lua"
+            "script": "pl-polish-trains.lua",
+            "fix": true
         },
         {
             "name": "Polish-Trains",
