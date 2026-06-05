@@ -67,6 +67,12 @@
             "license": {
                 "spdx-identifier": "ODbL-1.0"
             }
+        },
+        {
+            "name": "european-sleeper",
+            "type": "url",
+            "spec": "siri",
+            "url": "https://jbb.ghsq.de/siri/european-sleeper"
         }
     ]
 }
