@@ -539,7 +539,7 @@
             "name": "Łódzka-Kolej-Aglomeracyjna-bus",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": " https://cdn.zbiorkom.live/gtfs-rt/lodz-lka.pb",
+            "url": "https://cdn.zbiorkom.live/gtfs-rt/lodz-lka.pb",
             "license": {
                 "spdx-identifier": "MIT"
             },
