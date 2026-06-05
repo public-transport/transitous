@@ -33,9 +33,10 @@
         {
             "name": "Thessaloniki-OSETH",
             "type": "http",
-            "url": "https://github.com/MartinLangbecker/thessaloniki-gtfs-mirror/releases/latest/download/oseth_gtfs.zip",
+            "url": "https://data.gov.gr/api/3/action/package_show?id=dedomena-astikon-sygkoinonion-p-e-thessalonikis",
+            "function": "data_gov_gr_latest_resource",
             "license": {
-                "url": "https://data.gov.gr/pages/terms-of-use"
+                "spdx-identifier": "CC-BY-4.0"
             },
             "fix": true,
             "extend-calendar": true
