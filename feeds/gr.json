@@ -3,6 +3,10 @@
         {
             "name": "Lach Anonym",
             "github": "Lach-anonym"
+        },
+        {
+            "name": "Martin Langbecker",
+            "github": "MartinLangbecker"
         }
     ],
     "sources": [
@@ -22,6 +26,17 @@
             "url": "https://www.gitlab.com/Lach-anonym/athens-gtfs/-/jobs/artifacts/main/raw/gtfs-rail.zip?job=download-republish-gtfs",
             "license": {
                 "spdx-identifier": "CC-BY-SA-4.0"
+            },
+            "fix": true,
+            "extend-calendar": true
+        },
+        {
+            "name": "Thessaloniki-OSETH",
+            "type": "http",
+            "url": "https://data.gov.gr/api/3/action/package_show?id=dedomena-astikon-sygkoinonion-p-e-thessalonikis",
+            "function": "data_gov_gr_latest_resource",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
             },
             "fix": true,
             "extend-calendar": true
