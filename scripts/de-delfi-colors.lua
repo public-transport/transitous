@@ -3516,6 +3516,13 @@ local colors = {
         ["RE8"] = { color = 0x775fb0, text_color = 0xffffff },
         ["RE9"] = { color = 0xb51d48, text_color = 0xffffff },
     },
+    ["OK.go Mobilitäts AG"] = {
+        ["220"] = { color = 0xe4afea, text_color = 0xffffff },
+        ["330"] = { color = 0xe4afea, text_color = 0xffffff },
+        ["332"] = { color = 0xe4afea, text_color = 0xffffff },
+        ["334"] = { color = 0xe4afea, text_color = 0xffffff },
+        ["340"] = { color = 0xe4afea, text_color = 0xffffff },
+    },
     ["OMNIBUS"] = {
         ["21"] = { color = 0x4a8871, text_color = 0xffffff },
         ["22"] = { color = 0xd27060, text_color = 0xffffff },
@@ -3605,35 +3612,7 @@ local colors = {
         ["P(Pirna)"] = { color = 0x5a9230, text_color = 0xffffff },
         ["Z(Pirna)"] = { color = 0xf6b12f, text_color = 0x000000 },
     },
-    ["Omnibus Dannenmann GmbH"] = {
-        ["266"] = { color = 0x0994dc, text_color = 0xffffff },
-        ["268"] = { color = 0xf47216, text_color = 0xffffff },
-    },
-    ["Omnibus Groß GmbH"] = {
-        ["18"] = { color = 0x9995c9, text_color = 0xffffff },
-    },
-    ["Omnibus Verkehr Oberlausitz"] = {
-        ["8"] = { color = 0xd41217, text_color = 0xffffff },
-    },
-    ["Omnibus-Verkehr Ruoff GmbH"] = {
-        ["100"] = { color = 0xd972a8, text_color = 0xffffff },
-        ["172"] = { color = 0xc09766, text_color = 0xffffff },
-        ["173"] = { color = 0x00adea, text_color = 0xffffff },
-        ["42"] = { color = 0x66c430, text_color = 0xffffff },
-        ["44"] = { color = 0xed1c24, text_color = 0xffffff },
-        ["46"] = { color = 0x00642c, text_color = 0xffffff },
-        ["47"] = { color = 0x66c430, text_color = 0xffffff },
-        ["48"] = { color = 0x00a998, text_color = 0xffffff },
-        ["79"] = { color = 0xf6e3db, text_color = 0xb6242a },
-    },
-    ["Omnibusbetrieb Winzenhöler GmbH + Co. KG"] = {
-        ["X69"] = { color = 0xe7007a, text_color = 0xffffff },
-        ["X71"] = { color = 0xe7007a, text_color = 0xffffff },
-    },
-    ["Omnibusunternehmen Paul Knühl e.K."] = {
-        ["848"] = { color = 0x5e370f, text_color = 0xffffff },
-    },
-    ["Omnibusverkehr Abt Schwäbisch Gmünd"] = {
+    ["Ok. go Mobilitäts AG"] = {
         ["210"] = { color = 0x3c2b99, text_color = 0xffffff },
         ["211"] = { color = 0x3c2b99, text_color = 0xffffff },
         ["214"] = { color = 0x00a759, text_color = 0xffffff },
@@ -3666,7 +3645,35 @@ local colors = {
         ["72/2"] = { color = 0x00a759, text_color = 0xffffff },
         ["77"] = { color = 0x67aa79, text_color = 0xffffff },
     },
-    ["Omnibusverkehr Abt Schwäbisch Gmünd1"] = {
+    ["Omnibus Dannenmann GmbH"] = {
+        ["266"] = { color = 0x0994dc, text_color = 0xffffff },
+        ["268"] = { color = 0xf47216, text_color = 0xffffff },
+    },
+    ["Omnibus Groß GmbH"] = {
+        ["18"] = { color = 0x9995c9, text_color = 0xffffff },
+    },
+    ["Omnibus Verkehr Oberlausitz"] = {
+        ["8"] = { color = 0xd41217, text_color = 0xffffff },
+    },
+    ["Omnibus-Verkehr Ruoff GmbH"] = {
+        ["100"] = { color = 0xd972a8, text_color = 0xffffff },
+        ["172"] = { color = 0xc09766, text_color = 0xffffff },
+        ["173"] = { color = 0x00adea, text_color = 0xffffff },
+        ["42"] = { color = 0x66c430, text_color = 0xffffff },
+        ["44"] = { color = 0xed1c24, text_color = 0xffffff },
+        ["46"] = { color = 0x00642c, text_color = 0xffffff },
+        ["47"] = { color = 0x66c430, text_color = 0xffffff },
+        ["48"] = { color = 0x00a998, text_color = 0xffffff },
+        ["79"] = { color = 0xf6e3db, text_color = 0xb6242a },
+    },
+    ["Omnibusbetrieb Winzenhöler GmbH + Co. KG"] = {
+        ["X69"] = { color = 0xe7007a, text_color = 0xffffff },
+        ["X71"] = { color = 0xe7007a, text_color = 0xffffff },
+    },
+    ["Omnibusunternehmen Paul Knühl e.K."] = {
+        ["848"] = { color = 0x5e370f, text_color = 0xffffff },
+    },
+    ["Omnibusverkehr Abt Schwäbisch Gmünd"] = {
         ["1"] = { color = 0xed1c24, text_color = 0xffffff },
         ["2"] = { color = 0x6e87cd, text_color = 0xffffff },
         ["3"] = { color = 0xfff200, text_color = 0x000000 },
@@ -4114,7 +4121,6 @@ local colors = {
     },
     ["RNV HD-MA-Weinheim (Strab)"] = {
         ["RNV5"] = { color = 0x00965e, text_color = 0xffffff },
-        ["RNV5A"] = { color = 0x00965e, text_color = 0xffffff },
     },
     ["RNV Heidelberg (Bus)"] = {
         ["RNV20"] = { color = 0xe07500, text_color = 0xffffff },
@@ -4148,7 +4154,8 @@ local colors = {
     ["RNV LU-MA (Strab)"] = {
         ["RNV1"] = { color = 0xf39b9a, text_color = 0xffffff },
         ["RNV10"] = { color = 0xa60f80, text_color = 0xffffff },
-        ["RNV15"] = { color = 0xf7ab63, text_color = 0xffffff },
+        ["RNV12"] = { color = 0xcb6745, text_color = 0xffffff },
+        ["RNV15"] = { color = 0xcb6745, text_color = 0xffffff },
         ["RNV2"] = { color = 0xb00044, text_color = 0xffffff },
         ["RNV3"] = { color = 0xd5ad00, text_color = 0xffffff },
         ["RNV4"] = { color = 0xe3000b, text_color = 0xffffff },
@@ -4163,6 +4170,7 @@ local colors = {
     },
     ["RNV Mannheim (Bus)"] = {
         ["RNV40"] = { color = 0x4c2182, text_color = 0xffffff },
+        ["RNV41"] = { color = 0xbe296f, text_color = 0xffffff },
         ["RNV42"] = { color = 0xa1c3d5, text_color = 0xffffff },
         ["RNV43"] = { color = 0x4896d2, text_color = 0xffffff },
         ["RNV44"] = { color = 0x009992, text_color = 0xffffff },
@@ -4174,7 +4182,6 @@ local colors = {
         ["RNV50"] = { color = 0x91c46d, text_color = 0xffffff },
         ["RNV51"] = { color = 0x0068b4, text_color = 0xffffff },
         ["RNV52"] = { color = 0xa89ab1, text_color = 0xffffff },
-        ["RNV53"] = { color = 0x00bbee, text_color = 0xffffff },
         ["RNV54"] = { color = 0xb19fcd, text_color = 0xffffff },
         ["RNV55"] = { color = 0x4c2182, text_color = 0xffffff },
         ["RNV56"] = { color = 0x00bbee, text_color = 0xffffff },
@@ -4606,14 +4613,7 @@ local colors = {
         ["150"] = { color = 0x9c7491, text_color = 0xffffff },
         ["153"] = { color = 0x002a5c, text_color = 0xffffff },
     },
-    ["Regionalbusse (privat)"] = {
-        ["101"] = { color = 0xed1c24, text_color = 0xffffff },
-        ["102"] = { color = 0xffdd00, text_color = 0x000000 },
-        ["103"] = { color = 0x2e3092, text_color = 0xffffff },
-        ["104"] = { color = 0x808285, text_color = 0xffffff },
-        ["105"] = { color = 0xf1a130, text_color = 0xffffff },
-        ["106"] = { color = 0x947139, text_color = 0xffffff },
-        ["109"] = { color = 0xb4cc2d, text_color = 0xffffff },
+    ["Regionalbusse"] = {
         ["700"] = { color = 0x92278f, text_color = 0xffffff },
         ["701"] = { color = 0x009f4d, text_color = 0xffffff },
         ["702"] = { color = 0xf27bb0, text_color = 0xffffff },
@@ -5795,6 +5795,15 @@ local colors = {
         ["9"] = { color = 0xa4bde3, text_color = 0xffffff },
         ["CS"] = { color = 0x9fca78, text_color = 0xffffff },
         ["N"] = { color = 0x9c9d9d, text_color = 0xffffff },
+    },
+    ["Stadtbus Mühlacker"] = {
+        ["101"] = { color = 0xed1c24, text_color = 0xffffff },
+        ["102"] = { color = 0xffdd00, text_color = 0x000000 },
+        ["103"] = { color = 0x2e3092, text_color = 0xffffff },
+        ["104"] = { color = 0x808285, text_color = 0xffffff },
+        ["105"] = { color = 0xf1a130, text_color = 0xffffff },
+        ["106"] = { color = 0x947139, text_color = 0xffffff },
+        ["109"] = { color = 0xb4cc2d, text_color = 0xffffff },
     },
     ["Stadtbus Radolfzell"] = {
         ["1"] = { color = 0xcf171e, text_color = 0xffffff },
