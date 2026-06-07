@@ -13,9 +13,9 @@
         {
             "name": "Athens-Bus",
             "type": "http",
-            "url": "https://www.gitlab.com/Lach-anonym/athens-gtfs/-/jobs/artifacts/main/raw/gtfs-bus.zip?job=download-republish-gtfs",
+            "url": "https://data.gov.gr/dataset/fb049bb1-aea6-4443-95fa-8b941dd6a057/resource/119db488-16ea-4c76-b560-41c472872390/download/osy_gtfs.zip",
             "license": {
-                "spdx-identifier": "CC-BY-SA-4.0"
+                "spdx-identifier": "CC-BY-4.0"
             },
             "fix": true,
             "extend-calendar": true
