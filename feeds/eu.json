@@ -72,6 +72,12 @@
         {
             "name": "european-sleeper",
             "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/european-sleeper/TripUpdates"
+        },
+        {
+            "name": "european-sleeper",
+            "type": "url",
             "spec": "siri",
             "url": "https://jbb.ghsq.de/siri/european-sleeper"
         }
