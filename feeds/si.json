@@ -257,7 +257,7 @@
             "url": "https://api.nextbike.net/maps/gbfs/v2/nextbike_cl/gbfs.json"
         },
         {
-            "name": "nextbike_cn",
+            "name": "nextbike-cn",
             "type": "url",
             "spec": "gbfs",
             "url": "https://api.nextbike.net/maps/gbfs/v2/nextbike_cn/gbfs.json"
