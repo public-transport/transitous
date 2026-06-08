@@ -209,7 +209,7 @@
             "url": "https://gbfs.derp.si/gbfs/scbikes_pokolo/gbfs.json"
         },
         {
-            "name": "jcdecaux_maribor",
+            "name": "jcdecaux-maribor",
             "type": "url",
             "spec": "gbfs",
             "url": "https://gbfs.derp.si/gbfs/jcdecaux_maribor/gbfs.json"
