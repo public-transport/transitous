@@ -48,16 +48,6 @@
             "url": "https://rt.gtfs.derp.si/sources/lpp/all"
         },
         {
-            "name": "jesenice",
-            "type": "http",
-            "url": "https://b2b.nap.si/data/b2b.gtfs.jesenice",
-            "url-override": "https://jbb.ghsq.de/gtfs/si-jesenice.gtfs.zip",
-            "license": {
-                "spdx-identifier": "CC-BY-SA-4.0",
-                "url": "https://nap.si/en/datasets_details?id=36cf8092-f234-4796-9cc9-d63830003ff9"
-            }
-        },
-        {
             "name": "kranjska-gora",
             "type": "http",
             "url": "https://b2b.nap.si/data/b2b.gtfs.kranjska-gora",
@@ -65,26 +55,6 @@
             "license": {
                 "spdx-identifier": "CC-BY-SA-4.0",
                 "url": "https://nap.si/en/datasets_details?id=b1f8aacc-e144-490c-a1d7-d0b07c2e8ac3"
-            }
-        },
-        {
-            "name": "nova-gorica",
-            "type": "http",
-            "url": "https://b2b.nap.si/data/b2b.gtfs.nova-gorica",
-            "url-override": "https://jbb.ghsq.de/gtfs/si-nova-gorica.gtfs.zip",
-            "license": {
-                "spdx-identifier": "CC-BY-SA-4.0",
-                "url": "https://nap.si/en/datasets_details?id=c41d24aa-3609-4beb-818c-22980f1fa1b8"
-            }
-        },
-        {
-            "name": "brežice",
-            "type": "http",
-            "url": "https://b2b.nap.si/data/b2b.gtfs.brezice",
-            "url-override": "https://jbb.ghsq.de/gtfs/si-bre%C5%BEice.gtfs.zip",
-            "license": {
-                "spdx-identifier": "CC-BY-SA-4.0",
-                "url": "https://nap.si/en/datasets_details?id=7110f4c4-3581-4b91-a826-6843ee4d7201"
             }
         },
         {
