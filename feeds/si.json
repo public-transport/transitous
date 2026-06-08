@@ -97,7 +97,7 @@
             "url": "https://gitlab.com/api/v4/projects/derp-si%2Fgtfs-generators/packages/generic/extract_moms_gtfs/latest/moms_gtfs.zip"
         },
         {
-            "name": "murska_sobota",
+            "name": "murska-sobota",
             "type": "url",
             "spec": "gtfs-rt",
             "url": "https://rt.gtfs.derp.si/sources/moms/trip_updates"
