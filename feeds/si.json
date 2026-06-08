@@ -120,7 +120,8 @@
         {
             "name": "brežice",
             "type": "http",
-            "url": "http://gtfs.derp.si/brezice_manual.zip"
+            "url": "http://gtfs.derp.si/brezice_manual.zip",
+            "fix": true
         },
         {
             "name": "postojna",
@@ -161,31 +162,31 @@
             "url": "https://gbfs.derp.si/gbfs/scbikes_posbikes/gbfs.json"
         },
         {
-            "name": "scbikes_kras",
+            "name": "scbikes-kras",
             "type": "url",
             "spec": "gbfs",
             "url": "https://gbfs.derp.si/gbfs/scbikes_kras/gbfs.json"
         },
         {
-            "name": "scbikes_pors",
+            "name": "scbikes-pors",
             "type": "url",
             "spec": "gbfs",
             "url": "https://gbfs.derp.si/gbfs/scbikes_pors/gbfs.json"
         },
         {
-            "name": "scbikes_gbike",
+            "name": "scbikes-gbike",
             "type": "url",
             "spec": "gbfs",
             "url": "https://gbfs.derp.si/gbfs/scbikes_gbike/gbfs.json"
         },
         {
-            "name": "scbikes_sobota",
+            "name": "scbikes-sobota",
             "type": "url",
             "spec": "gbfs",
             "url": "https://gbfs.derp.si/gbfs/scbikes_sobota/gbfs.json"
         },
         {
-            "name": "scbikes_kulu",
+            "name": "scbikes-kulu",
             "type": "url",
             "spec": "gbfs",
             "url": "https://gbfs.derp.si/gbfs/scbikes_kulu/gbfs.json"
@@ -221,7 +222,7 @@
             "url": "https://gbfs.derp.si/gbfs/jcdecaux_ljubljana/gbfs.json"
         },
         {
-            "name": "nextbike_cc",
+            "name": "nextbike-cc",
             "type": "url",
             "spec": "gbfs",
             "url": "https://api.nextbike.net/maps/gbfs/v2/nextbike_cc/gbfs.json"
@@ -245,13 +246,13 @@
             "url": "https://api.nextbike.net/maps/gbfs/v2/nextbike_cf/gbfs.json"
         },
         {
-            "name": "nextbike_ck",
+            "name": "nextbike-ck",
             "type": "url",
             "spec": "gbfs",
             "url": "https://api.nextbike.net/maps/gbfs/v2/nextbike_ck/gbfs.json"
         },
         {
-            "name": "nextbike_cl",
+            "name": "nextbike-cl",
             "type": "url",
             "spec": "gbfs",
             "url": "https://api.nextbike.net/maps/gbfs/v2/nextbike_cl/gbfs.json"
@@ -263,7 +264,7 @@
             "url": "https://api.nextbike.net/maps/gbfs/v2/nextbike_cn/gbfs.json"
         },
         {
-            "name": "nextbike_cx",
+            "name": "nextbike-cx",
             "type": "url",
             "spec": "gbfs",
             "url": "https://api.nextbike.net/maps/gbfs/v2/nextbike_cx/gbfs.json"
