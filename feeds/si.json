@@ -155,7 +155,7 @@
             "url": "https://gbfs.derp.si/gbfs/sharengo/gbfs.json"
         },
         {
-            "name": "scbikes_posbikes",
+            "name": "scbikes-posbikes",
             "type": "url",
             "spec": "gbfs",
             "url": "https://gbfs.derp.si/gbfs/scbikes_posbikes/gbfs.json"
