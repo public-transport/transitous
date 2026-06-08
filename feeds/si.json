@@ -293,7 +293,7 @@
             "url": "https://gbfs.derp.si/gbfs/micikel/gbfs.json"
         },
         {
-            "name": "bolt_359",
+            "name": "bolt-359",
             "type": "url",
             "spec": "gbfs",
             "url": "https://gbfs.derp.si/bolt_proxy/2/359/gbfs"
