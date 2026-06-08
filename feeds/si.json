@@ -179,12 +179,6 @@
             "url": "https://gbfs.derp.si/gbfs/avant2go_si/gbfs.json"
         },
         {
-            "name": "avant2go_hr",
-            "type": "url",
-            "spec": "gbfs",
-            "url": "https://gbfs.derp.si/gbfs/avant2go_hr/gbfs.json"
-        },
-        {
             "name": "sharengo",
             "type": "url",
             "spec": "gbfs",
