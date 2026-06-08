@@ -28,6 +28,12 @@
             "url": "https://rt.gtfs.derp.si/sources/ijpp/trip_updates"
         },
         {
+            "name": "nap",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://rt.gtfs.derp.si/sources/ijpp/service_alerts"
+        },
+        {
             "name": "lpp",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u24q-ljubljanskipotniškipromet",
@@ -103,6 +109,68 @@
             "type": "url",
             "spec": "gtfs-rt",
             "url": "https://rt.gtfs.derp.si/sources/celje/trip_updates"
+        },
+        {
+            "name": "kranj",
+            "type": "http",
+            "url": "https://gitlab.com/api/v4/projects/derp-si%2Fgtfs-generators/packages/generic/kranj/latest/kranj_gtfs.zip"
+        },
+        {
+            "name": "kranj",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://rt.gtfs.derp.si/sources/kranj/trip_updates"
+        },
+        {
+            "name": "murska_sobota",
+            "type": "http",
+            "url": "https://gitlab.com/api/v4/projects/derp-si%2Fgtfs-generators/packages/generic/extract_moms_gtfs/latest/moms_gtfs.zip"
+        },
+        {
+            "name": "murska_sobota",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://rt.gtfs.derp.si/sources/moms/trip_updates"
+        },
+        {
+            "name": "sevnica",
+            "type": "http",
+            "url": "http://gtfs.derp.si/sevnica_manual.zip"
+        },
+        {
+            "name": "novo_mesto",
+            "type": "http",
+            "url": "http://gtfs.derp.si/monm_manual.zip"
+        },
+        {
+            "name": "velenje",
+            "type": "http",
+            "url": "http://gtfs.derp.si/velenje_manual.zip"
+        },
+        {
+            "name": "brežice",
+            "type": "http",
+            "url": "http://gtfs.derp.si/brezice_manual.zip"
+        },
+        {
+            "name": "postojna",
+            "type": "http",
+            "url": "http://gtfs.derp.si/postojna_gtfs.zip"
+        },
+        {
+            "name": "koper",
+            "type": "http",
+            "url": "http://gtfs.derp.si/koper_gtfs.zip"
+        },
+        {
+            "name": "nova_gorica",
+            "type": "http",
+            "url": "http://gtfs.derp.si/mong_gtfs.zip"
+        },
+        {
+            "name": "ptuj",
+            "type": "http",
+            "url": "http://gtfs.derp.si/ptuj_gtfs.zip"
         }
     ]
 }
