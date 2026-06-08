@@ -133,7 +133,7 @@
             "url": "http://gtfs.derp.si/koper_gtfs.zip"
         },
         {
-            "name": "nova_gorica",
+            "name": "nova-gorica",
             "type": "http",
             "url": "http://gtfs.derp.si/mong_gtfs.zip"
         },
