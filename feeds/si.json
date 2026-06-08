@@ -108,7 +108,7 @@
             "url": "http://gtfs.derp.si/sevnica_manual.zip"
         },
         {
-            "name": "novo_mesto",
+            "name": "novo-mesto",
             "type": "http",
             "url": "http://gtfs.derp.si/monm_manual.zip"
         },
