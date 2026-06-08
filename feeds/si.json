@@ -92,7 +92,7 @@
             "url": "https://rt.gtfs.derp.si/sources/kranj/trip_updates"
         },
         {
-            "name": "murska_sobota",
+            "name": "murska-sobota",
             "type": "http",
             "url": "https://gitlab.com/api/v4/projects/derp-si%2Fgtfs-generators/packages/generic/extract_moms_gtfs/latest/moms_gtfs.zip"
         },
