@@ -191,19 +191,19 @@
             "url": "https://gbfs.derp.si/gbfs/scbikes_kulu/gbfs.json"
         },
         {
-            "name": "scbikes_gonm",
+            "name": "scbikes-gonm",
             "type": "url",
             "spec": "gbfs",
             "url": "https://gbfs.derp.si/gbfs/scbikes_gonm/gbfs.json"
         },
         {
-            "name": "scbikes_biciklanc",
+            "name": "scbikes-biciklanc",
             "type": "url",
             "spec": "gbfs",
             "url": "https://gbfs.derp.si/gbfs/scbikes_biciklanc/gbfs.json"
         },
         {
-            "name": "scbikes_pokolo",
+            "name": "scbikes-pokolo",
             "type": "url",
             "spec": "gbfs",
             "url": "https://gbfs.derp.si/gbfs/scbikes_pokolo/gbfs.json"
@@ -215,7 +215,7 @@
             "url": "https://gbfs.derp.si/gbfs/jcdecaux_maribor/gbfs.json"
         },
         {
-            "name": "jcdecaux_ljubljana",
+            "name": "jcdecaux-ljubljana",
             "type": "url",
             "spec": "gbfs",
             "url": "https://gbfs.derp.si/gbfs/jcdecaux_ljubljana/gbfs.json"
@@ -227,19 +227,19 @@
             "url": "https://api.nextbike.net/maps/gbfs/v2/nextbike_cc/gbfs.json"
         },
         {
-            "name": "nextbike_cd",
+            "name": "nextbike-cd",
             "type": "url",
             "spec": "gbfs",
             "url": "https://api.nextbike.net/maps/gbfs/v2/nextbike_cd/gbfs.json"
         },
         {
-            "name": "nextbike_ce",
+            "name": "nextbike-ce",
             "type": "url",
             "spec": "gbfs",
             "url": "https://api.nextbike.net/maps/gbfs/v2/nextbike_ce/gbfs.json"
         },
         {
-            "name": "nextbike_cf",
+            "name": "nextbike-cf",
             "type": "url",
             "spec": "gbfs",
             "url": "https://api.nextbike.net/maps/gbfs/v2/nextbike_cf/gbfs.json"
@@ -275,13 +275,13 @@
             "url": "https://gbfs.derp.si/gbfs/kvik/gbfs.json"
         },
         {
-            "name": "greengo_544",
+            "name": "greengo-544",
             "type": "url",
             "spec": "gbfs",
             "url": "https://greengo.rideatom.com/gbfs/v2_2/en/gbfs?id=544"
         },
         {
-            "name": "greengo_1451",
+            "name": "greengo-1451",
             "type": "url",
             "spec": "gbfs",
             "url": "https://greengo.rideatom.com/gbfs/v2_2/en/gbfs?id=1451"
