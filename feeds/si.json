@@ -171,6 +171,168 @@
             "name": "ptuj",
             "type": "http",
             "url": "http://gtfs.derp.si/ptuj_gtfs.zip"
+        },
+        {
+            "name": "avant2go_si",
+            "type": "url",
+            "spec": "gbfs",
+            "url": "https://gbfs.derp.si/gbfs/avant2go_si/gbfs.json"
+        },
+        {
+            "name": "avant2go_hr",
+            "type": "url",
+            "spec": "gbfs",
+            "url": "https://gbfs.derp.si/gbfs/avant2go_hr/gbfs.json"
+        },
+        {
+            "name": "sharengo",
+            "type": "url",
+            "spec": "gbfs",
+            "url": "https://gbfs.derp.si/gbfs/sharengo/gbfs.json"
+        },
+        {
+            "name": "scbikes_posbikes",
+            "type": "url",
+            "spec": "gbfs",
+            "url": "https://gbfs.derp.si/gbfs/scbikes_posbikes/gbfs.json"
+        },
+        {
+            "name": "scbikes_kras",
+            "type": "url",
+            "spec": "gbfs",
+            "url": "https://gbfs.derp.si/gbfs/scbikes_kras/gbfs.json"
+        },
+        {
+            "name": "scbikes_pors",
+            "type": "url",
+            "spec": "gbfs",
+            "url": "https://gbfs.derp.si/gbfs/scbikes_pors/gbfs.json"
+        },
+        {
+            "name": "scbikes_gbike",
+            "type": "url",
+            "spec": "gbfs",
+            "url": "https://gbfs.derp.si/gbfs/scbikes_gbike/gbfs.json"
+        },
+        {
+            "name": "scbikes_sobota",
+            "type": "url",
+            "spec": "gbfs",
+            "url": "https://gbfs.derp.si/gbfs/scbikes_sobota/gbfs.json"
+        },
+        {
+            "name": "scbikes_kulu",
+            "type": "url",
+            "spec": "gbfs",
+            "url": "https://gbfs.derp.si/gbfs/scbikes_kulu/gbfs.json"
+        },
+        {
+            "name": "scbikes_gonm",
+            "type": "url",
+            "spec": "gbfs",
+            "url": "https://gbfs.derp.si/gbfs/scbikes_gonm/gbfs.json"
+        },
+        {
+            "name": "scbikes_biciklanc",
+            "type": "url",
+            "spec": "gbfs",
+            "url": "https://gbfs.derp.si/gbfs/scbikes_biciklanc/gbfs.json"
+        },
+        {
+            "name": "scbikes_pokolo",
+            "type": "url",
+            "spec": "gbfs",
+            "url": "https://gbfs.derp.si/gbfs/scbikes_pokolo/gbfs.json"
+        },
+        {
+            "name": "jcdecaux_maribor",
+            "type": "url",
+            "spec": "gbfs",
+            "url": "https://gbfs.derp.si/gbfs/jcdecaux_maribor/gbfs.json"
+        },
+        {
+            "name": "jcdecaux_ljubljana",
+            "type": "url",
+            "spec": "gbfs",
+            "url": "https://gbfs.derp.si/gbfs/jcdecaux_ljubljana/gbfs.json"
+        },
+        {
+            "name": "nextbike_cc",
+            "type": "url",
+            "spec": "gbfs",
+            "url": "https://api.nextbike.net/maps/gbfs/v2/nextbike_cc/gbfs.json"
+        },
+        {
+            "name": "nextbike_cd",
+            "type": "url",
+            "spec": "gbfs",
+            "url": "https://api.nextbike.net/maps/gbfs/v2/nextbike_cd/gbfs.json"
+        },
+        {
+            "name": "nextbike_ce",
+            "type": "url",
+            "spec": "gbfs",
+            "url": "https://api.nextbike.net/maps/gbfs/v2/nextbike_ce/gbfs.json"
+        },
+        {
+            "name": "nextbike_cf",
+            "type": "url",
+            "spec": "gbfs",
+            "url": "https://api.nextbike.net/maps/gbfs/v2/nextbike_cf/gbfs.json"
+        },
+        {
+            "name": "nextbike_ck",
+            "type": "url",
+            "spec": "gbfs",
+            "url": "https://api.nextbike.net/maps/gbfs/v2/nextbike_ck/gbfs.json"
+        },
+        {
+            "name": "nextbike_cl",
+            "type": "url",
+            "spec": "gbfs",
+            "url": "https://api.nextbike.net/maps/gbfs/v2/nextbike_cl/gbfs.json"
+        },
+        {
+            "name": "nextbike_cn",
+            "type": "url",
+            "spec": "gbfs",
+            "url": "https://api.nextbike.net/maps/gbfs/v2/nextbike_cn/gbfs.json"
+        },
+        {
+            "name": "nextbike_cx",
+            "type": "url",
+            "spec": "gbfs",
+            "url": "https://api.nextbike.net/maps/gbfs/v2/nextbike_cx/gbfs.json"
+        },
+        {
+            "name": "kvik",
+            "type": "url",
+            "spec": "gbfs",
+            "url": "https://gbfs.derp.si/gbfs/kvik/gbfs.json"
+        },
+        {
+            "name": "greengo_544",
+            "type": "url",
+            "spec": "gbfs",
+            "url": "https://greengo.rideatom.com/gbfs/v2_2/en/gbfs?id=544"
+        },
+        {
+            "name": "greengo_1451",
+            "type": "url",
+            "spec": "gbfs",
+            "url": "https://greengo.rideatom.com/gbfs/v2_2/en/gbfs?id=1451"
+        },
+        {
+            "name": "micikel",
+            "type": "url",
+            "spec": "gbfs",
+            "url": "https://gbfs.derp.si/gbfs/micikel/gbfs.json"
+        },
+        {
+            "name": "bolt_359",
+            "type": "url",
+            "spec": "gbfs",
+            "url": "https://gbfs.derp.si/bolt_proxy/2/359/gbfs"
         }
     ]
 }
