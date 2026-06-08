@@ -143,7 +143,7 @@
             "url": "http://gtfs.derp.si/ptuj_gtfs.zip"
         },
         {
-            "name": "avant2go_si",
+            "name": "avant2go-si",
             "type": "url",
             "spec": "gbfs",
             "url": "https://gbfs.derp.si/gbfs/avant2go_si/gbfs.json"
