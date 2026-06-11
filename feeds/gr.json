@@ -40,6 +40,11 @@
             },
             "fix": true,
             "extend-calendar": true
+        },
+        {
+            "name": "Hellenic-Train",
+            "type": "http",
+            "url": "https://jbb.ghsq.de/gtfs/gr-hellenic-train.gtfs.zip"
         }
     ]
 }
