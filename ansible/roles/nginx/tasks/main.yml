@@ -27,12 +27,13 @@
     limit_item: nofile
     value: '5000'
 
-- name: Install nginx
+- name: Install nginx and node-exporter
   apt:
     update_cache: true
     name:
      - nginx
      - certbot
+     - prometheus-node-exporter
 
 - name: Create nginx motis cache directory
   file:
