@@ -23,6 +23,60 @@
             "type": "http",
             "url": "https://github.com/Neo2308/indianrailways-gtfs/raw/refs/heads/main/gtfs/gtfs.zip",
             "fix": "true"
+        },
+        {
+            "name": "Bengaluru-BMTC",
+            "type": "http",
+            "url": "https://raw.githubusercontent.com/Vonter/bmtc-gtfs/main/gtfs/bmtc.zip",
+            "fix": true
+        },
+        {
+            "name": "Chennai",
+            "type": "http",
+            "url": "https://raw.githubusercontent.com/ungalsoththu/ChennaiGTFS/main/data/chennai-unified-gtfs.zip",
+            "fix": true
+        },
+        {
+            "name": "Pune-PMPML",
+            "type": "http",
+            "url": "https://raw.githubusercontent.com/croyla/pmpml-gtfs/main/pmpml_gtfs.zip",
+            "fix": true
+        },
+        {
+            "name": "Mumbai",
+            "type": "http",
+            "url": "https://raw.githubusercontent.com/croyla/mumbai-gtfs/main/gtfs.zip",
+            "fix": true
+        },
+        {
+            "name": "Ahmedabad",
+            "type": "http",
+            "url": "https://raw.githubusercontent.com/croyla/amd-gtfs/main/gtfs.zip",
+            "fix": true
+        },
+        {
+            "name": "Rajkot",
+            "type": "http",
+            "url": "https://raw.githubusercontent.com/croyla/rrl-gtfs/main/gtfs.zip",
+            "fix": true
+        },
+        {
+            "name": "Hubli-Dharwad-BRTS",
+            "type": "http",
+            "url": "https://raw.githubusercontent.com/croyla/hdbrts-gtfs/main/gtfs.zip",
+            "fix": true
+        },
+        {
+            "name": "Indore-AICTSL",
+            "type": "http",
+            "url": "https://raw.githubusercontent.com/Neo2308/aictsl-gtfs/main/gtfs/gtfs.zip",
+            "fix": true
+        },
+        {
+            "name": "Andhra-Pradesh-APSRTC",
+            "type": "http",
+            "url": "https://raw.githubusercontent.com/Neo2308/apsrtc-gtfs/main/gtfs/gtfs.zip",
+            "fix": true
         }
     ]
 }
