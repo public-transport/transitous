@@ -97,6 +97,25 @@ server {
         add_header Cache-Control "public, max-age=36000";
     }
 
+    location /mapterhorn/ {
+        proxy_pass http://tiles.mapterhorn.com/;
+
+        limit_req zone=api_harmless burst=200 delay=50;
+
+        proxy_set_header "User-Agent" "transitous.org";
+
+        proxy_connect_timeout       2s;
+        proxy_send_timeout          60;
+        proxy_read_timeout          60;
+        send_timeout                60;
+
+        proxy_cache            motis;
+        proxy_cache_valid      200 302 1d;
+        proxy_cache_valid      404 1s;
+        proxy_cache_use_stale  error timeout invalid_header updating
+                                http_500 http_502 http_503 http_504;
+    }
+
     # OJP endpoint
     location /ojp20 {
         proxy_pass http://{{ item.vhost }}-backend/ojp20;
