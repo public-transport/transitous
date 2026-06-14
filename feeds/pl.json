@@ -131,7 +131,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "fix": true
+            "fix": true,
+            "skip": true,
+            "skip-reason": "Expired feed, see https://github.com/rozkladnik/gtfs-pks-jaroslaw/issues/1"
         },
         {
             "name": "Koleje-Mazowieckie",
@@ -898,7 +900,6 @@
             "type": "http",
             "spec": "gtfs",
             "url": "https://api.zbiorkom.live/api6-open/legnica/gtfs/default",
-            "url-override": "https://cdn.zbiorkom.live/gtfs/legnica.zip",
             "fix": true,
             "license": {
                 "spdx-identifier": "MIT"
@@ -1194,7 +1195,9 @@
             "url": "https://api.zbiorkom.live/api6-open/leszno/gtfs/default",
             "license": {
                 "spdx-identifier": "MIT"
-            }
+            },
+            "skip": true,
+            "skip-reason": "Feed expired, will be available again later in 2026"
         },
         {
             "name": "Leszno",
