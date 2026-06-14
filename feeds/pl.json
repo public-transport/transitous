@@ -57,8 +57,7 @@
                 "spdx-identifier": "CC-BY-4.0"
             },
             "drop-agency-names": [
-                "PKP Intercity",
-                "Koleje Mazowieckie"
+                "PKP Intercity"
             ],
             "script": "pl-polish-trains.lua",
             "fix": true
@@ -68,6 +67,15 @@
             "type": "url",
             "spec": "gtfs-rt",
             "url": "https://mkuran.pl/gtfs/polish_trains/updates.pb",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
+        },
+        {
+            "name": "Koleje-Mazowieckie-ZL",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://gtfs.kasznia.net/static/km-zl.zip",
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             }
@@ -132,23 +140,6 @@
                 "spdx-identifier": "CC-BY-4.0"
             },
             "fix": true
-        },
-        {
-            "name": "Koleje-Mazowieckie",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u3-kolejemazowieckie",
-            "drop-shapes": true,
-            "fix": true,
-            "script": "pl-Koleje-Mazowieckie.lua"
-        },
-        {
-            "name": "Koleje-Mazowieckie",
-            "type": "url",
-            "spec": "gtfs-rt",
-            "url": "https://gtfs.kasznia.net/rt/km.pb",
-            "license": {
-                "spdx-identifier": "CC-BY-4.0"
-            }
         },
         {
             "name": "Świnoujście",
