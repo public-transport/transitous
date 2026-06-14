@@ -8,6 +8,7 @@ server:
   web_folder: "/opt/motis/ui/"  # Just for testing, not used on server
   data_attribution_link: https://transitous.org/sources/
 
+user_agent: transitous.org
 street_routing: true
 osr_footpath: false
 elevators: false
