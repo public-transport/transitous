@@ -835,6 +835,7 @@
             "x-data-gov-fr-res-id": 39603,
             "managed-by-script": true,
             "skip": false,
+            "drop-shapes": true,
             "x-data-gov-fr-res-title": "GTFS AIXENBUS ",
             "x-data-gov-fr-dataset-id": "5b3b3de988ee38708ada1789"
         },
