@@ -1,0 +1,24 @@
+{
+    "maintainers": [
+        {
+            "name": "Thomas Dickson",
+            "github": "Hoverth"
+        },
+        {
+            "name": "applecuckoo",
+            "github": "applecuckoo"
+        }
+    ],
+    "sources": [
+        {
+            "name": "Baybus",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-boprc~nz"
+        },
+        {
+            "name": "Flamingo-Tauranga",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-flamingo~tauranga~gbfs"
+        }
+    ]
+}

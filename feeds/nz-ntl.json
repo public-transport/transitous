@@ -1,0 +1,20 @@
+{
+    "maintainers": [
+        {
+            "name": "Thomas Dickson",
+            "github": "Hoverth"
+        },
+        {
+            "name": "applecuckoo",
+            "github": "applecuckoo"
+        }
+    ],
+    "sources": [
+        {
+            "name": "CityLink-Whangarei",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://data.trilliumtransit.com/gtfs/nrc-nz/nrc-nz.zip"
+        }
+    ]
+}
