@@ -1,0 +1,24 @@
+{
+    "maintainers": [
+        {
+            "name": "Thomas Dickson",
+            "github": "Hoverth"
+        },
+        {
+            "name": "applecuckoo",
+            "github": "applecuckoo"
+        }
+    ],
+    "sources": [
+        {
+            "name": "Otago-Regional-Council",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-pz-otagoregionalcouncil~otagoregionalcouncil"
+        },
+        {
+            "name": "Flamingo-Dunedin",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-flamingo~dunedin~gbfs"
+        }
+    ]
+}

@@ -1,0 +1,41 @@
+{
+    "maintainers": [
+        {
+            "name": "Thomas Dickson",
+            "github": "Hoverth"
+        },
+        {
+            "name": "applecuckoo",
+            "github": "applecuckoo"
+        }
+    ],
+    "sources": [
+        {
+            "name": "AT",
+            "type": "mobility-database",
+            "mdb-id": "mdb-1029",
+            "script": "nz-auk-AT.lua",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
+        },
+        {
+            "name": "AT",
+            "spec": "gtfs-rt",
+            "type": "url",
+            "url": "https://api.at.govt.nz/realtime/legacy/",
+            "headers": {
+                "Accept": "application/x-protobuf",
+                "Ocp-Apim-Subscription-Key": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSAyVG5pcGdhQnFpOE9jTlV6RVpQVWFlNVh5MzdNOExsWkFVaE5CbFd4THpjCjE0QkRzZVJrZExjSkRhYmM2MDZQNWt1ZWJIbUs3SndvM1lMeExvd09IZjQKLS0tIFJJUk9pMHVLelBvSi9uZjBSM3lqZy80VmZTRHowRWxqWlM1ZXVMSVV4RWcKKeqXFv7A+cJ5xNUharR0hvB+GmKdNWue8TQocekK4XraGNEM/mEk4anoSgKrv7BTIMMEl2iaCvAUa6dJfCRc3g=="
+            },
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
+        },
+        {
+            "name": "Flamingo-Auckland",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-flamingo~auckland~gbfs"
+        }
+    ]
+}

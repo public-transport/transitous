@@ -1,0 +1,24 @@
+{
+    "maintainers": [
+        {
+            "name": "Thomas Dickson",
+            "github": "Hoverth"
+        },
+        {
+            "name": "applecuckoo",
+            "github": "applecuckoo"
+        }
+    ],
+    "sources": [
+        {
+            "name": "Horizons-Regional-Council",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-rck-horizons~regional~council"
+        },
+        {
+            "name": "Flamingo-Palmerston-North",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-flamingo~palmerston~north~gbfs"
+        }
+    ]
+}
