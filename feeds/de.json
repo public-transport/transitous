@@ -300,6 +300,127 @@
             "transitland-atlas-id": "f-car~ship~constance~gbfs"
         },
         {
+            "name": "Stella",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-stella~stuttgart~gbfs"
+        },
+        {
+            "name": "Frank-e",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-franke~freiburg~im~breisgau~gbfs"
+        },
+        {
+            "name": "DottBöblingen",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dott~böblingen~gbfs"
+        },
+        {
+            "name": "DottFriedrichshafen",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dott~friedrichshafen~gbfs"
+        },
+        {
+            "name": "DottHeidelberg",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dott~heidelberg~gbfs"
+        },
+        {
+            "name": "DottHeilbronn",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dott~heilbronn~gbfs"
+        },
+        {
+            "name": "DottKarlsruhe",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dott~karlsruhe~gbfs",
+            "url-override": "https://api.mobidata-bw.de/sharing/gbfs/v2/dott_karlsruhe/gbfs"
+        },
+        {
+            "name": "DottLindau",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dott~lindau~gbfs"
+        },
+        {
+            "name": "DottLudwigsburg",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dott~ludwigsburg~gbfs"
+        },
+        {
+            "name": "DottMannheim",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dott~mannheim~gbfs"
+        },
+        {
+            "name": "DottReutlingen",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dott~reutlingen~gbfs"
+        },
+        {
+            "name": "DottStuttgart",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dott~stuttgart~gbfs"
+        },
+        {
+            "name": "DottTübingen",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dott~tübingen~gbfs"
+        },
+        {
+            "name": "DottÜberlingen",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dott~überlingen~gbfs"
+        },
+        {
+            "name": "DottUlm",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dott~ulm~gbfs"
+        },
+        {
+            "name": "DottKaiserslautern",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dott~kaiserslautern~gbfs"
+        },
+        {
+            "name": "DottSaarbrücken",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dott~saarbrücken~gbfs"
+        },
+        {
+            "name": "DottFrankfurt",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dott~frankfurt~gbfs"
+        },
+        {
+            "name": "DottDarmstadt",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dott~darmstadt~gbfs"
+        },
+        {
+            "name": "ALF",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-alf~das~affstätter~lastenfahrrad~herrenberg~gbfs"
+        },
+        {
+            "name": "FaRe",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-fare~das~bananologen~lastenrad~herrenberg~gbfs"
+        },
+        {
+            "name": "Gülf",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-gülf~das~gültsteiner~lastenrad~herrenberg~gbfs"
+        },
+        {
+            "name": "StadtRadHerrenberg",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-stadtrad~das~stadtnavi~lastenrad~herrenberg~gbfs"
+        },
+        {
+            "name": "HoppKonstanz",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-hopp~konstanz~gbfs"
+        },
+        {
             "name": "MOBIBikeDresden",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-mobibike~dresden~gbfs"
