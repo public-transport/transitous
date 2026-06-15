@@ -1,0 +1,19 @@
+{
+    "maintainers": [
+        {
+            "name": "Thomas Dickson",
+            "github": "Hoverth"
+        },
+        {
+            "name": "applecuckoo",
+            "github": "applecuckoo"
+        }
+    ],
+    "sources": [
+        {
+            "name": "eBus",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-nsn~nz"
+        }
+    ]
+}

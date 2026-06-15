@@ -1,0 +1,24 @@
+{
+    "maintainers": [
+        {
+            "name": "Thomas Dickson",
+            "github": "Hoverth"
+        },
+        {
+            "name": "applecuckoo",
+            "github": "applecuckoo"
+        }
+    ],
+    "sources": [
+        {
+            "name": "Taranaki-Regional-Council",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-trc~nz"
+        },
+        {
+            "name": "JOLT-New-Plymouth",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-jolt~new~plymouth~gbfs"
+        }
+    ]
+}

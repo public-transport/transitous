@@ -43,6 +43,15 @@
             }
         },
         {
+            "name": "ARTESP",
+            "type": "http",
+            "url": "https://dadosabertos.artesp.sp.gov.br/dataset/92e8bb31-df66-4700-ad9a-42a48f04fb7f/resource/4c0f3a81-b587-4ead-ab10-4584c02614e0/download/artesp_gtfs.zip",
+            "fix": true,
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
+        },
+        {
             "name": "flixbus",
             "type": "http",
             "url": "http://gtfs.gis.flix.tech/gtfs_generic_brazil.zip",

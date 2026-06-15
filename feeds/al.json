@@ -14,6 +14,11 @@
                 "spdx-identifier": "CC-BY-SA-4.0"
             },
             "mdb-id": "mdb-2345"
+        },
+        {
+            "name": "Urban-Trans-Vlora",
+            "type": "mobility-database",
+            "mdb-id": "mdb-3182"
         }
     ]
 }

@@ -90,8 +90,9 @@
         },
         {
             "name": "TheVictoriaClipper",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-c28-thevictoriaclipper"
+            "type": "mobility-database",
+            "mdb-id": "mdb-282",
+            "extend-calendar": true
         },
         {
             "name": "Microsoft-Shuttles",

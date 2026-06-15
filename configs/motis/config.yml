@@ -8,6 +8,7 @@ server:
   web_folder: "/opt/motis/ui/"  # Just for testing, not used on server
   data_attribution_link: https://transitous.org/sources/
 
+user_agent: transitous.org
 street_routing: true
 osr_footpath: false
 elevators: false
@@ -48,3 +49,7 @@ limits:
   onetoall_max_results: 524288
   onetoall_max_travel_minutes: 2880
   routing_max_timeout_seconds: 90
+  street_routing_max_prepost_transit_seconds: 7200
+  street_routing_max_direct_seconds: 21600
+  geocode_max_suggestions: 512
+  reverse_geocode_max_results: 512
