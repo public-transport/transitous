@@ -421,6 +421,126 @@
             "transitland-atlas-id": "f-hopp~konstanz~gbfs"
         },
         {
+            "name": "LimeBW",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-lime~stuttgart~konstanz~gbfs"
+        },
+        {
+            "name": "MeinKonrad",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-mein~konrad~konstanz~gbfs"
+        },
+        {
+            "name": "NextbikeNorderstedt",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-nextbike~norderstedt~gbfs"
+        },
+        {
+            "name": "BoltKarlsruhe",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-bolt~technology~oü~karlsruhe~gbfs"
+        },
+        {
+            "name": "BoltStuttgart",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-bolt~technology~oü~stuttgart~gbfs"
+        },
+        {
+            "name": "BoltReutlingenTübingen",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-bolt~technology~oü~reutlingen~gbfs"
+        },
+        {
+            "name": "DonkeyBamberg",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-donkey~republic~bamberg~gbfs"
+        },
+        {
+            "name": "DonkeyKiel",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-donkey~republic~kiel~gbfs"
+        },
+        {
+            "name": "VoiGermany",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-voi~germany~gbfs"
+        },
+        {
+            "name": "YoioFreiburg",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-yoio~freiburg~im~breisgau~gbfs"
+        },
+        {
+            "name": "ZeoBruchsal",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-zeo~carsharing~bruchsal~gbfs"
+        },
+        {
+            "name": "ZeusFreiburg",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-zeus~freiburg~im~breisgau~gbfs"
+        },
+        {
+            "name": "ZeusHeidelberg",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-zeus~heidelberg~gbfs"
+        },
+        {
+            "name": "ZeusKonstanz",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-zeus~konstanz~gbfs"
+        },
+        {
+            "name": "ZeusLudwigsburg",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-zeus~ludwigsburg~gbfs"
+        },
+        {
+            "name": "ZeusNeustadt",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-zeus~neustadt~gbfs"
+        },
+        {
+            "name": "ZeusPforzheim",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-zeus~pforzheim~gbfs"
+        },
+        {
+            "name": "ZeusSchwäbischGmünd",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-zeus~schwäbisch~gmünd~gbfs"
+        },
+        {
+            "name": "ZeusTübingen",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-zeus~tubingen~gbfs"
+        },
+        {
+            "name": "ZeusTuttlingen",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-zeus~tuttlingen~gbfs"
+        },
+        {
+            "name": "ZeusVillingenSchwenningen",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-zeus~villingen~schwenningen~gbfs"
+        },
+        {
+            "name": "ZeusRenningenMalmsheim",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-zeus~renningen~malmsheim~gbfs"
+        },
+        {
+            "name": "ZeusGöppingen",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-zeus~goppingen~gbfs"
+        },
+        {
+            "name": "ZeusWürzburg",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-zeus~wurzburg~gbfs"
+        },
+        {
             "name": "MOBIBikeDresden",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-mobibike~dresden~gbfs"
