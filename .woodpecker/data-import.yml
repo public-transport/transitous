@@ -36,6 +36,8 @@ steps:
         cron: daily-import
     pull: true
     environment:
+      TRANSITOUS_FEED_PROXY_KEY:
+        from_secret: transitous_feed_proxy_key
       TRANSITOUS_FEED_PROXY_KEY_FILE: /tmp/feed-proxy.key
     commands:
       - motis --version
