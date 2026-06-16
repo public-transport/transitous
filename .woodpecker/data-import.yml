@@ -35,12 +35,7 @@ steps:
       - event: cron
         cron: daily-import
     pull: true
-    environment:
-      TRANSITOUS_FEED_PROXY_KEY:
-        from_secret: transitous_feed_proxy_key
-      TRANSITOUS_FEED_PROXY_KEY_FILE: /tmp/feed-proxy.key
     commands:
-      - printf "%s" "$TRANSITOUS_FEED_PROXY_KEY" > /tmp/feed-proxy.key
       - motis --version
       - touch out/.import-running
       - ./src/generate-motis-config.py --import-only
