@@ -29,7 +29,8 @@ if [ -z "$(ls -A /var/cache/transitous/out)" ]; then
 fi
 
 if ! grep -q tiles /var/cache/transitous/out/config.yml; then
-    exit 0
+    echo "Upstream import failed, reverting to previous config.yml"
+    cp config.bak config.yml
 fi
 
 sudo -u motis sed -i 's#with_shapes: true#with_shapes: true\n  route_shapes:\n    mode: missing\n    cache_reuse_old_osm_data: false\n    debug_api: true\n    n_threads: 16#' config.yml
