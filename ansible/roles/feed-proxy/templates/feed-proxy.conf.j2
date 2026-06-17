@@ -13,7 +13,7 @@ map $request_uri $feed_region {
 }
 
 limit_req_zone $binary_remote_addr zone=feed-proxy-quota:10m rate=10000r/m;
-limit_req_zone $feed_region zone=feed-proxy-upstream-quota:10m rate=4r/s;
+limit_req_zone $feed_region zone=feed-proxy-upstream-quota:10m rate=40r/m;
 limit_req_zone $feed_region zone=feed-proxy-upstream-gbfs-quota:10m rate=9r/s;
 limit_req_status 429;
 
@@ -50,7 +50,7 @@ server {
     proxy_ignore_client_abort on;
     proxy_cache_use_stale  updating;
 
-    limit_req zone=feed-proxy-upstream-quota burst=40;
+    limit_req zone=feed-proxy-upstream-quota burst=15 delay=4;
 
     {% for item in feed_vars | dict2items %}   
         location "/feed/{{item.key}}" {
