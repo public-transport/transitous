@@ -132,7 +132,7 @@ server {
     location ~ ^/api/(v1|v2|v3|v4|v5|v6|v7|experimental)/(plan|one-to-all) {
         proxy_pass http://{{ item.vhost }}-backend$uri?$args;
 
-        limit_req zone=api_plan burst=17 delay=7;
+        limit_req zone=api_plan burst=20 delay=10;
 
         proxy_connect_timeout       2s;
         proxy_send_timeout          60;
@@ -144,7 +144,7 @@ server {
     location ~ ^/api/(v1|v2|v3|v4|v5|v6|v7|experimental)/(geocode|reverse-geocode|stoptimes|map/stops|map/levels|map/initial|trip|refresh-itinerary) {
         proxy_pass http://{{ item.vhost }}-backend$uri?$args;
 
-        limit_req zone=api_harmless burst=100 delay=10;
+        limit_req zone=api_harmless burst=150 delay=20;
 
         proxy_connect_timeout       2s;
         proxy_send_timeout          60;
@@ -156,8 +156,7 @@ server {
     location /api/ {
         proxy_pass http://{{ item.vhost }}-backend/api/;
 
-        limit_req zone=api burst=40 delay=10;
-
+        limit_req zone=api burst=40 delay=15;
         proxy_connect_timeout       2s;
         proxy_send_timeout          60;
         proxy_read_timeout          60;
