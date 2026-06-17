@@ -305,6 +305,7 @@ Option Name            | Description
 `script`               | A Lua script applied by MOTIS to GTFS data during import, see [the MOTIS documentation](https://github.com/motis-project/motis/blob/master/docs/scripting.md) for details.
 `use-gtfsclean`        | Preprocess GTFS feeds with `gtfsclean`, default is `true`.
 `enable-crowd-sourced-realtime` | Whether users should be able to submit gps positions for trips from this source.
+`extend-calendar`      | Extend the calendar beyond the specified end date, although the feed is expired, default is `false`.
 
 #### License Options
 
