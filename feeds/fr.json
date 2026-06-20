@@ -180,7 +180,8 @@
             },
             "x-data-gov-fr-res-id": 67595,
             "managed-by-script": true,
-            "skip": false,
+            "skip": true,
+            "skip-reason": "Duplication of trips by postprocessed community feed",
             "x-data-gov-fr-res-title": "https://eu.ftp.opendatasoft.com/sncf/gtfs/transilien-gtfs.zip",
             "x-data-gov-fr-dataset-id": "563dd039b5950814b0588710"
         },
