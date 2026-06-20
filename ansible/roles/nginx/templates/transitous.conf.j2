@@ -5,6 +5,7 @@
 
 server {
     listen 80;
+    listen [::]:80;
     server_name {{ item.vhost }};
 
     # For certbot
@@ -16,6 +17,7 @@ server {
 }
 
 upstream {{ item.vhost }}-backend {
+    least_conn;
 {% for backend in item.backends %}
     server {{ backend.address }} fail_timeout=3s max_fails=10 {{ backend.options }}; # only mark a server down if many requests fail (due to error, timeout, denied or invalid_header), and try to recover quickly
 {% endfor %}
@@ -80,7 +82,7 @@ server {
     location /tiles/ {
         proxy_pass http://{{ item.vhost }}-backend/tiles/;
 
-        limit_req zone=api_harmless burst=100 delay=50;
+        limit_req zone=api_harmless burst=200 delay=50;
 
         proxy_connect_timeout       2s;
         proxy_send_timeout          60;
@@ -89,9 +91,29 @@ server {
 
         proxy_cache            motis;
         proxy_cache_valid      200 302 1d;
+        proxy_cache_valid      404 1s;
         proxy_cache_use_stale  error timeout invalid_header updating
-                                http_404 http_500 http_502 http_503 http_504;
+                                http_500 http_502 http_503 http_504;
         add_header Cache-Control "public, max-age=36000";
+    }
+
+    location /mapterhorn/ {
+        proxy_pass http://tiles.mapterhorn.com/;
+
+        limit_req zone=api_harmless burst=200 delay=50;
+
+        proxy_set_header "User-Agent" "transitous.org";
+
+        proxy_connect_timeout       2s;
+        proxy_send_timeout          60;
+        proxy_read_timeout          60;
+        send_timeout                60;
+
+        proxy_cache            motis;
+        proxy_cache_valid      200 302 1d;
+        proxy_cache_valid      404 1s;
+        proxy_cache_use_stale  error timeout invalid_header updating
+                                http_500 http_502 http_503 http_504;
     }
 
     # OJP endpoint
@@ -107,10 +129,10 @@ server {
     }
 
     # Rate limit plan API
-    location ~ ^/api/(v1|v2|v3|v4|v5|v6|experimental)/(plan|one-to-all) {
+    location ~ ^/api/(v1|v2|v3|v4|v5|v6|v7|experimental)/(plan|one-to-all) {
         proxy_pass http://{{ item.vhost }}-backend$uri?$args;
 
-        limit_req zone=api_plan burst=17 delay=7;
+        limit_req zone=api_plan burst=20 delay=10;
 
         proxy_connect_timeout       2s;
         proxy_send_timeout          60;
@@ -119,10 +141,10 @@ server {
     }
 
     # Routes that are basically free for us don't need a rate limit
-    location ~ ^/api/(v1|v2|v3|v4|v5|v6|experimental)/(geocode|reverse-geocode|stoptimes|map/stops|map/levels|trip) {
+    location ~ ^/api/(v1|v2|v3|v4|v5|v6|v7|experimental)/(geocode|reverse-geocode|stoptimes|map/stops|map/levels|map/initial|trip|refresh-itinerary) {
         proxy_pass http://{{ item.vhost }}-backend$uri?$args;
 
-        limit_req zone=api_harmless burst=100 delay=10;
+        limit_req zone=api_harmless burst=150 delay=20;
 
         proxy_connect_timeout       2s;
         proxy_send_timeout          60;
@@ -134,8 +156,7 @@ server {
     location /api/ {
         proxy_pass http://{{ item.vhost }}-backend/api/;
 
-        limit_req zone=api burst=40 delay=10;
-
+        limit_req zone=api burst=40 delay=15;
         proxy_connect_timeout       2s;
         proxy_send_timeout          60;
         proxy_read_timeout          60;

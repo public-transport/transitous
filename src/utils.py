@@ -28,7 +28,7 @@ def decrypt_if_necessary(val):
     stdout, stderr = process.communicate(input=encrypted_bytes)
 
     if process.returncode != 0:
-        print(f"Feed API key decryption failed (this is expected on PRs from forks): {stderr.decode()}")
+        print(f"Feed API key decryption failed. This is expected for static feeds on PRs from forks. If this occurs for RT feeds, you have forgotten to set 'use-feed-proxy'. Original error: {stderr.decode()}")
         return ""
 
     return stdout.decode('utf-8')

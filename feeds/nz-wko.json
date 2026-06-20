@@ -1,0 +1,20 @@
+{
+    "maintainers": [
+        {
+            "name": "Thomas Dickson",
+            "github": "Hoverth"
+        },
+        {
+            "name": "applecuckoo",
+            "github": "applecuckoo"
+        }
+    ],
+    "sources": [
+        {
+            "name": "BUSIT",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-busit~nz",
+            "script": "nz-wko-BUSIT.lua"
+        }
+    ]
+}

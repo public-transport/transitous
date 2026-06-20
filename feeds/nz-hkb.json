@@ -1,0 +1,24 @@
+{
+    "maintainers": [
+        {
+            "name": "Thomas Dickson",
+            "github": "Hoverth"
+        },
+        {
+            "name": "applecuckoo",
+            "github": "applecuckoo"
+        }
+    ],
+    "sources": [
+        {
+            "name": "goBay",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://data.trilliumtransit.com/gtfs/hbrc-nz/hbrc-nz.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0",
+                "url": "https://www.gobay.co.nz/general-transit-feed-specification/"
+            }
+        }
+    ]
+}

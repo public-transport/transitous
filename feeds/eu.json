@@ -18,6 +18,7 @@
             "name": "flixbus",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u-flixbus",
+            "drop-shapes": true,
             "fix": true,
             "script": "eu-flixbus.lua"
         },
@@ -67,6 +68,18 @@
             "license": {
                 "spdx-identifier": "ODbL-1.0"
             }
+        },
+        {
+            "name": "european-sleeper",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/european-sleeper/TripUpdates"
+        },
+        {
+            "name": "european-sleeper",
+            "type": "url",
+            "spec": "siri",
+            "url": "https://jbb.ghsq.de/siri/european-sleeper"
         }
     ]
 }

@@ -35,7 +35,7 @@
             "name": "PKP-Intercity",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://gtfs.kasznia.net/rt/pkpic.pb",
+            "url": "https://gtfs.kasznia.net/rt/pkpicshim.pb",
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             }
@@ -49,17 +49,33 @@
             }
         },
         {
-            "name": "PolRegio",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-pol~regio~pl",
-            "fix": true,
-            "script": "pl-PolRegio.lua"
+            "name": "Polish-Trains",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://gtfs.kasznia.net/static/polish-trains.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            },
+            "drop-agency-names": [
+                "PKP Intercity"
+            ],
+            "script": "pl-polish-trains.lua",
+            "fix": true
         },
         {
-            "name": "PolRegio",
+            "name": "Polish-Trains",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://gtfs.kasznia.net/rt/polregio.pb",
+            "url": "https://mkuran.pl/gtfs/polish_trains/updates.pb",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
+        },
+        {
+            "name": "Koleje-Mazowieckie-ZL",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://gtfs.kasznia.net/static/km-zl.zip",
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             }
@@ -123,23 +139,9 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "fix": true
-        },
-        {
-            "name": "Koleje-Mazowieckie",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u3-kolejemazowieckie",
-            "drop-shapes": true,
-            "script": "pl-Koleje-Mazowieckie.lua"
-        },
-        {
-            "name": "Koleje-Mazowieckie",
-            "type": "url",
-            "spec": "gtfs-rt",
-            "url": "https://gtfs.kasznia.net/rt/km.pb",
-            "license": {
-                "spdx-identifier": "CC-BY-4.0"
-            }
+            "fix": true,
+            "skip": true,
+            "skip-reason": "Expired feed, see https://github.com/rozkladnik/gtfs-pks-jaroslaw/issues/1"
         },
         {
             "name": "Świnoujście",
@@ -150,21 +152,6 @@
                 "spdx-identifier": "CC0-1.0"
             },
             "fix": true
-        },
-        {
-            "name": "Koleje-Dolnośląskie",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u3h-koleje~dolnoslaskie",
-            "api-key": "a2Q6QmFld29uZ29od3VnM0Fv"
-        },
-        {
-            "name": "Koleje-Dolnośląskie",
-            "type": "url",
-            "spec": "gtfs-rt",
-            "url": "https://gtfs.kasznia.net/rt/kd.pb",
-            "license": {
-                "spdx-identifier": "CC-BY-4.0"
-            }
         },
         {
             "name": "Bydgoszcz",
@@ -233,6 +220,7 @@
             "type": "http",
             "spec": "gtfs",
             "url": "https://api.zbiorkom.live/api6-open/warsaw/gtfs/default",
+            "fix": true,
             "license": {
                 "spdx-identifier": "MIT"
             }
@@ -246,26 +234,6 @@
                 "spdx-identifier": "MIT"
             },
             "use-feed-proxy": true
-        },
-        {
-            "name": "SKM-Warszawa",
-            "type": "http",
-            "spec": "gtfs",
-            "url": "https://cdn.zbiorkom.live/gtfs/pkp-skmw.zip",
-            "license": {
-                "spdx-identifier": "MIT"
-            },
-            "drop-shapes": true,
-            "script": "pl-SKM-Warszawa.lua"
-        },
-        {
-            "name": "SKM-Warszawa",
-            "type": "url",
-            "spec": "gtfs-rt",
-            "url": "https://gtfs.kasznia.net/rt/skm-waw.pb",
-            "license": {
-                "spdx-identifier": "CC-BY-4.0"
-            }
         },
         {
             "name": "Warszawska-Kolej-Dojazdowa",
@@ -406,40 +374,6 @@
             "use-feed-proxy": true
         },
         {
-            "name": "PKP-SKM",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u3t-skm~trojmiasto",
-            "fix": true,
-            "script": "pl-PKP-SKM.lua"
-        },
-        {
-            "name": "PKP-SKM",
-            "type": "url",
-            "spec": "gtfs-rt",
-            "url": "https://gtfs.kasznia.net/rt/skmt.pb",
-            "license": {
-                "spdx-identifier": "CC-BY-4.0"
-            }
-        },
-        {
-            "name": "Koleje-Małopolskie",
-            "type": "http",
-            "spec": "gtfs",
-            "url": "https://gtfs.kasznia.net/static/sanitized/kml.zip",
-            "license": {
-                "spdx-identifier": "CC-BY-4.0"
-            }
-        },
-        {
-            "name": "Koleje-Małopolskie",
-            "type": "url",
-            "spec": "gtfs-rt",
-            "url": "https://gtfs.kasznia.net/rt/kml.pb",
-            "license": {
-                "spdx-identifier": "CC-BY-4.0"
-            }
-        },
-        {
             "name": "Koleje-Małopolskie-ald",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u2y-koleje~małopolskie~ald"
@@ -490,41 +424,6 @@
             "transitland-atlas-id": "f-u3xf-elk~rt"
         },
         {
-            "name": "Koleje-Śląskie",
-            "type": "http",
-            "url": "https://gtfs.kasznia.net/static/sanitized/ks.zip",
-            "license": {
-                "spdx-identifier": "CC-BY-4.0"
-            }
-        },
-        {
-            "name": "Koleje-Śląskie",
-            "type": "url",
-            "spec": "gtfs-rt",
-            "url": "https://gtfs.kasznia.net/rt/ks.pb",
-            "license": {
-                "spdx-identifier": "CC-BY-4.0"
-            }
-        },
-        {
-            "name": "Łódzka-Kolej-Aglomeracyjna",
-            "type": "http",
-            "spec": "gtfs",
-            "url": "https://gtfs.kasznia.net/static/sanitized/lka_train.zip",
-            "license": {
-                "spdx-identifier": "CC-BY-4.0"
-            }
-        },
-        {
-            "name": "Łódzka-Kolej-Aglomeracyjna",
-            "type": "url",
-            "spec": "gtfs-rt",
-            "url": "https://gtfs.kasznia.net/rt/lka.pb",
-            "license": {
-                "spdx-identifier": "CC-BY-4.0"
-            }
-        },
-        {
             "name": "Łódzka-Kolej-Aglomeracyjna-bus",
             "type": "http",
             "spec": "gtfs",
@@ -532,6 +431,16 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             }
+        },
+        {
+            "name": "Łódzka-Kolej-Aglomeracyjna-bus",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://cdn.zbiorkom.live/gtfs-rt/lodz-lka.pb",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "use-feed-proxy": true
         },
         {
             "name": "PKS-Kalisz",
@@ -553,6 +462,16 @@
             "fix": true
         },
         {
+            "name": "KLA-Kalisz",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.zbiorkom.live/api6-open/kalisz/gtfsRealtime/tripUpdates",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "use-feed-proxy": true
+        },
+        {
             "name": "Kalisz-LocalBuses",
             "type": "http",
             "spec": "gtfs",
@@ -565,25 +484,6 @@
             ],
             "drop-shapes": true,
             "fix": true
-        },
-        {
-            "name": "Koleje-Wielkopolskie",
-            "type": "http",
-            "spec": "gtfs",
-            "url": "https://gtfs.kasznia.net/static/sanitized/kw.zip",
-            "license": {
-                "spdx-identifier": "CC-BY-4.0"
-            },
-            "script": "pl-Koleje-Wielkopolskie.lua"
-        },
-        {
-            "name": "Koleje-Wielkopolskie",
-            "type": "url",
-            "spec": "gtfs-rt",
-            "url": "https://gtfs.kasznia.net/rt/kw.pb",
-            "license": {
-                "spdx-identifier": "CC-BY-4.0"
-            }
         },
         {
             "name": "MPK-Wrocław",
@@ -725,25 +625,6 @@
             "use-feed-proxy": true
         },
         {
-            "name": "Arriva",
-            "type": "http",
-            "spec": "gtfs",
-            "url": "https://files.girlc.at/gtfs/arriva.zip",
-            "license": {
-                "spdx-identifier": "CC0-1.0"
-            },
-            "script": "pl-Koleje-Wielkopolskie.lua"
-        },
-        {
-            "name": "Arriva",
-            "type": "url",
-            "spec": "gtfs-rt",
-            "url": "https://gtfs.kasznia.net/rt/arriva.pb",
-            "license": {
-                "spdx-identifier": "CC-BY-4.0"
-            }
-        },
-        {
             "name": "Jastrzębie-Zdrój",
             "type": "http",
             "spec": "gtfs",
@@ -865,9 +746,9 @@
             "name": "Ząbki",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://kasmar00.github.io/gtfs-warsaw-custom/feeds/zabki/latest.zip",
+            "url": "https://api.zbiorkom.live/api6-open/warsaw/gtfs/ZABKI",
             "license": {
-                "spdx-identifier": "CC-BY-4.0"
+                "spdx-identifier": "MIT"
             }
         },
         {
@@ -878,6 +759,16 @@
             "license": {
                 "spdx-identifier": "MIT"
             }
+        },
+        {
+            "name": "Mińsk-Mazowiecki",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.zbiorkom.live/api6-open/warsaw/gtfsRealtime/ZABKI/tripUpdates",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "use-feed-proxy": true
         },
         {
             "name": "Mińsk-Mazowiecki",
@@ -1000,11 +891,20 @@
             "type": "http",
             "spec": "gtfs",
             "url": "https://api.zbiorkom.live/api6-open/legnica/gtfs/default",
-            "url-override": "https://cdn.zbiorkom.live/gtfs/legnica.zip",
             "fix": true,
             "license": {
                 "spdx-identifier": "MIT"
             }
+        },
+        {
+            "name": "Legnica",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://cdn.zbiorkom.live/gtfs-rt/legnica.pb",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "use-feed-proxy": true
         },
         {
             "name": "Grodziskie-Przewozy-Autobusowe",
@@ -1025,25 +925,6 @@
                 "spdx-identifier": "MIT"
             },
             "use-feed-proxy": true
-        },
-        {
-            "name": "RegioJet",
-            "type": "http",
-            "spec": "gtfs",
-            "url": "https://gtfs.kasznia.net/static/regio-jet.zip",
-            "license": {
-                "spdx-identifier": "CC-BY-4.0"
-            },
-            "script": "pl-RegioJet.lua"
-        },
-        {
-            "name": "RegioJet",
-            "type": "url",
-            "spec": "gtfs-rt",
-            "url": "https://gtfs.kasznia.net/rt/regio-jet.pb",
-            "license": {
-                "spdx-identifier": "CC-BY-4.0"
-            }
         },
         {
             "name": "Suchowola",
@@ -1097,6 +978,7 @@
             "type": "http",
             "spec": "gtfs",
             "url": "https://api.zbiorkom.live/api6-open/suwalki/gtfs/default",
+            "fix": true,
             "license": {
                 "spdx-identifier": "MIT"
             }
@@ -1215,6 +1097,7 @@
             "name": "Polbus",
             "type": "http",
             "spec": "gtfs",
+            "fix": true,
             "url": "https://files.girlc.at/gtfs/polbus.zip",
             "license": {
                 "spdx-identifier": "CC0-1.0"
@@ -1303,7 +1186,9 @@
             "url": "https://api.zbiorkom.live/api6-open/leszno/gtfs/default",
             "license": {
                 "spdx-identifier": "MIT"
-            }
+            },
+            "skip": true,
+            "skip-reason": "Feed expired, will be available again later in 2026"
         },
         {
             "name": "Leszno",
@@ -1313,7 +1198,8 @@
             "license": {
                 "spdx-identifier": "MIT"
             },
-            "use-feed-proxy": true
+            "use-feed-proxy": true,
+            "skip": true
         },
         {
             "name": "Płońsk",
@@ -1433,6 +1319,7 @@
             "name": "Częstochowa",
             "type": "http",
             "spec": "gtfs",
+            "fix": true,
             "url": "https://api.zbiorkom.live/api6-open/czestochowa/gtfs/default",
             "license": {
                 "spdx-identifier": "MIT"
@@ -1467,13 +1354,34 @@
             }
         },
         {
+            "name": "Sulejówek",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.zbiorkom.live/api6-open/czestochowa/gtfsRealtime/SULEJOWEK/tripUpdates",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "use-feed-proxy": true
+        },
+        {
             "name": "Powiat-Miński",
             "type": "http",
             "spec": "gtfs",
             "url": "https://files.girlc.at/gtfs/powiat_minski.zip",
+            "fix": true,
             "license": {
                 "spdx-identifier": "CC0-1.0"
             }
+        },
+        {
+            "name": "Powiat-Miński",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.zbiorkom.live/api6-open/warsaw/gtfsRealtime/MINSKI/tripUpdates",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "use-feed-proxy": true
         },
         {
             "name": "Pleszew",
@@ -1491,8 +1399,7 @@
             "url": "https://github.com/pawlinski07/pawlinski-gtfs/raw/refs/heads/main/KolejPleszewska.zip",
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
-            },
-            "script": "pl-Koleje-Wielkopolskie.lua"
+            }
         },
         {
             "name": "Chełmski-Rower",

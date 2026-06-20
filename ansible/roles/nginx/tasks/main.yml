@@ -7,11 +7,11 @@
     path: /opt/motis/
     state: directory
 
-- name: Unpack MOTIS (frontend)
-  unarchive:
-    src: https://github.com/motis-project/motis/releases/download/v2.8.3/motis-linux-amd64.tar.bz2
-    dest: /opt/motis/
-    remote_src: yes
+#- name: Unpack MOTIS (frontend)
+#  unarchive:
+#    src: https://github.com/motis-project/motis/releases/download/v2.10.2/motis-linux-amd64.tar.bz2
+#    dest: /opt/motis/
+#    remote_src: yes
 
 - name: Increase nproc for nginx workers
   pam_limits:
@@ -27,12 +27,13 @@
     limit_item: nofile
     value: '5000'
 
-- name: Install nginx
+- name: Install nginx and node-exporter
   apt:
     update_cache: true
     name:
      - nginx
      - certbot
+     - prometheus-node-exporter
 
 - name: Create nginx motis cache directory
   file:
@@ -76,6 +77,8 @@
           options: "backup" # nginx backend options
         - address: 10.11.1.3:8080
           options: ""
+        - address: 10.11.1.4:8080
+          options: "down"
     - vhost: staging.api.transitous.org
       quic_options: ""
       backends:
@@ -138,3 +141,4 @@
     name: prometheus-nginxlog-exporter
     state: started
     enabled: true
+

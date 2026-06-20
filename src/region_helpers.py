@@ -288,3 +288,21 @@ def chile_dtp_downloader(source: HttpSource) -> HttpSource:
 
     source.url = max(all_gtfs_feeds)
     return source
+
+
+def data_gov_gr_latest_resource(source: HttpSource) -> HttpSource:
+    resources = requests.get(source.url).json()["result"]["resources"]
+
+    gtfs_resources = [
+        r for r in resources
+        if r.get("last_modified")
+        and r.get("format") == "ZIP"
+        and not r.get("downloadall_datapackage_hash")
+    ]
+
+    source.url = max(
+        gtfs_resources,
+        key=lambda r: datetime.fromisoformat(r["last_modified"])
+    )["url"]
+
+    return source

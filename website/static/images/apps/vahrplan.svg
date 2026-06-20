@@ -1,0 +1,27 @@
+<svg width='512px' height='512px' viewBox="-7 -7 40 40" xmlns='http://www.w3.org/2000/svg'>
+    <style>
+        svg {
+            background: oklch(0.99 0.002 170);
+        }
+        .regular-lines {
+            stroke: oklch(0.25 0.02 170);
+        }
+        .accent-lines {
+            stroke: oklch(0.5 0.09 170);
+        }
+    </style>
+    <mask id="line-mask">
+        <g stroke="white" stroke-width="4" stroke-linecap="round">
+            <line x1="2" y1="6" x2="24" y2="6"/>
+            <line x1="2" y1="13" x2="24" y2="13"/>
+            <line x1="2" y1="20" x2="24" y2="20"/>
+        </g>
+        <line stroke="black" stroke-width="8" stroke-linecap="round" x1="11" y1="13" x2="6" y2="6"/>
+    </mask>
+    <g class="regular-lines" stroke-width="3" stroke-linecap="round" mask="url(#line-mask)">
+        <line x1="2" y1="6" x2="24" y2="6"/>
+        <line x1="2" y1="13" x2="24" y2="13"/>
+        <line x1="2" y1="20" x2="24" y2="20"/>
+    </g>
+    <polyline class="accent-lines" points="2,6 6,6 11,13 24,13" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" fill="none"/>
+</svg>

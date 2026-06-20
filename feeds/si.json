@@ -28,6 +28,12 @@
             "url": "https://rt.gtfs.derp.si/sources/ijpp/trip_updates"
         },
         {
+            "name": "nap",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://rt.gtfs.derp.si/sources/ijpp/service_alerts"
+        },
+        {
             "name": "lpp",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u24q-ljubljanskipotniškipromet",
@@ -42,16 +48,6 @@
             "url": "https://rt.gtfs.derp.si/sources/lpp/all"
         },
         {
-            "name": "jesenice",
-            "type": "http",
-            "url": "https://b2b.nap.si/data/b2b.gtfs.jesenice",
-            "url-override": "https://jbb.ghsq.de/gtfs/si-jesenice.gtfs.zip",
-            "license": {
-                "spdx-identifier": "CC-BY-SA-4.0",
-                "url": "https://nap.si/en/datasets_details?id=36cf8092-f234-4796-9cc9-d63830003ff9"
-            }
-        },
-        {
             "name": "kranjska-gora",
             "type": "http",
             "url": "https://b2b.nap.si/data/b2b.gtfs.kranjska-gora",
@@ -59,26 +55,6 @@
             "license": {
                 "spdx-identifier": "CC-BY-SA-4.0",
                 "url": "https://nap.si/en/datasets_details?id=b1f8aacc-e144-490c-a1d7-d0b07c2e8ac3"
-            }
-        },
-        {
-            "name": "nova-gorica",
-            "type": "http",
-            "url": "https://b2b.nap.si/data/b2b.gtfs.nova-gorica",
-            "url-override": "https://jbb.ghsq.de/gtfs/si-nova-gorica.gtfs.zip",
-            "license": {
-                "spdx-identifier": "CC-BY-SA-4.0",
-                "url": "https://nap.si/en/datasets_details?id=c41d24aa-3609-4beb-818c-22980f1fa1b8"
-            }
-        },
-        {
-            "name": "brežice",
-            "type": "http",
-            "url": "https://b2b.nap.si/data/b2b.gtfs.brezice",
-            "url-override": "https://jbb.ghsq.de/gtfs/si-bre%C5%BEice.gtfs.zip",
-            "license": {
-                "spdx-identifier": "CC-BY-SA-4.0",
-                "url": "https://nap.si/en/datasets_details?id=7110f4c4-3581-4b91-a826-6843ee4d7201"
             }
         },
         {
@@ -103,6 +79,225 @@
             "type": "url",
             "spec": "gtfs-rt",
             "url": "https://rt.gtfs.derp.si/sources/celje/trip_updates"
+        },
+        {
+            "name": "kranj",
+            "type": "http",
+            "url": "https://gitlab.com/api/v4/projects/derp-si%2Fgtfs-generators/packages/generic/kranj/latest/kranj_gtfs.zip"
+        },
+        {
+            "name": "kranj",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://rt.gtfs.derp.si/sources/kranj/trip_updates"
+        },
+        {
+            "name": "murska-sobota",
+            "type": "http",
+            "url": "https://gitlab.com/api/v4/projects/derp-si%2Fgtfs-generators/packages/generic/extract_moms_gtfs/latest/moms_gtfs.zip"
+        },
+        {
+            "name": "murska-sobota",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://rt.gtfs.derp.si/sources/moms/trip_updates"
+        },
+        {
+            "name": "sevnica",
+            "type": "http",
+            "url": "http://gtfs.derp.si/sevnica_manual.zip"
+        },
+        {
+            "name": "novo-mesto",
+            "type": "http",
+            "url": "http://gtfs.derp.si/monm_manual.zip"
+        },
+        {
+            "name": "velenje",
+            "type": "http",
+            "url": "http://gtfs.derp.si/velenje_manual.zip"
+        },
+        {
+            "name": "brežice",
+            "type": "http",
+            "url": "http://gtfs.derp.si/brezice_manual.zip",
+            "fix": true
+        },
+        {
+            "name": "postojna",
+            "type": "http",
+            "url": "http://gtfs.derp.si/postojna_gtfs.zip"
+        },
+        {
+            "name": "koper",
+            "type": "http",
+            "url": "http://gtfs.derp.si/koper_gtfs.zip"
+        },
+        {
+            "name": "nova-gorica",
+            "type": "http",
+            "url": "http://gtfs.derp.si/mong_gtfs.zip"
+        },
+        {
+            "name": "ptuj",
+            "type": "http",
+            "url": "http://gtfs.derp.si/ptuj_gtfs.zip"
+        },
+        {
+            "name": "avant2go-si",
+            "type": "url",
+            "spec": "gbfs",
+            "url": "https://gbfs.derp.si/gbfs/avant2go_si/gbfs.json"
+        },
+        {
+            "name": "sharengo",
+            "type": "url",
+            "spec": "gbfs",
+            "url": "https://gbfs.derp.si/gbfs/sharengo/gbfs.json"
+        },
+        {
+            "name": "scbikes-posbikes",
+            "type": "url",
+            "spec": "gbfs",
+            "url": "https://gbfs.derp.si/gbfs/scbikes_posbikes/gbfs.json"
+        },
+        {
+            "name": "scbikes-kras",
+            "type": "url",
+            "spec": "gbfs",
+            "url": "https://gbfs.derp.si/gbfs/scbikes_kras/gbfs.json"
+        },
+        {
+            "name": "scbikes-pors",
+            "type": "url",
+            "spec": "gbfs",
+            "url": "https://gbfs.derp.si/gbfs/scbikes_pors/gbfs.json"
+        },
+        {
+            "name": "scbikes-gbike",
+            "type": "url",
+            "spec": "gbfs",
+            "url": "https://gbfs.derp.si/gbfs/scbikes_gbike/gbfs.json"
+        },
+        {
+            "name": "scbikes-sobota",
+            "type": "url",
+            "spec": "gbfs",
+            "url": "https://gbfs.derp.si/gbfs/scbikes_sobota/gbfs.json"
+        },
+        {
+            "name": "scbikes-kulu",
+            "type": "url",
+            "spec": "gbfs",
+            "url": "https://gbfs.derp.si/gbfs/scbikes_kulu/gbfs.json"
+        },
+        {
+            "name": "scbikes-gonm",
+            "type": "url",
+            "spec": "gbfs",
+            "url": "https://gbfs.derp.si/gbfs/scbikes_gonm/gbfs.json"
+        },
+        {
+            "name": "scbikes-biciklanc",
+            "type": "url",
+            "spec": "gbfs",
+            "url": "https://gbfs.derp.si/gbfs/scbikes_biciklanc/gbfs.json"
+        },
+        {
+            "name": "scbikes-pokolo",
+            "type": "url",
+            "spec": "gbfs",
+            "url": "https://gbfs.derp.si/gbfs/scbikes_pokolo/gbfs.json"
+        },
+        {
+            "name": "jcdecaux-maribor",
+            "type": "url",
+            "spec": "gbfs",
+            "url": "https://gbfs.derp.si/gbfs/jcdecaux_maribor/gbfs.json"
+        },
+        {
+            "name": "jcdecaux-ljubljana",
+            "type": "url",
+            "spec": "gbfs",
+            "url": "https://gbfs.derp.si/gbfs/jcdecaux_ljubljana/gbfs.json"
+        },
+        {
+            "name": "nextbike-cc",
+            "type": "url",
+            "spec": "gbfs",
+            "url": "https://api.nextbike.net/maps/gbfs/v2/nextbike_cc/gbfs.json"
+        },
+        {
+            "name": "nextbike-cd",
+            "type": "url",
+            "spec": "gbfs",
+            "url": "https://api.nextbike.net/maps/gbfs/v2/nextbike_cd/gbfs.json"
+        },
+        {
+            "name": "nextbike-ce",
+            "type": "url",
+            "spec": "gbfs",
+            "url": "https://api.nextbike.net/maps/gbfs/v2/nextbike_ce/gbfs.json"
+        },
+        {
+            "name": "nextbike-cf",
+            "type": "url",
+            "spec": "gbfs",
+            "url": "https://api.nextbike.net/maps/gbfs/v2/nextbike_cf/gbfs.json"
+        },
+        {
+            "name": "nextbike-ck",
+            "type": "url",
+            "spec": "gbfs",
+            "url": "https://api.nextbike.net/maps/gbfs/v2/nextbike_ck/gbfs.json"
+        },
+        {
+            "name": "nextbike-cl",
+            "type": "url",
+            "spec": "gbfs",
+            "url": "https://api.nextbike.net/maps/gbfs/v2/nextbike_cl/gbfs.json"
+        },
+        {
+            "name": "nextbike-cn",
+            "type": "url",
+            "spec": "gbfs",
+            "url": "https://api.nextbike.net/maps/gbfs/v2/nextbike_cn/gbfs.json"
+        },
+        {
+            "name": "nextbike-cx",
+            "type": "url",
+            "spec": "gbfs",
+            "url": "https://api.nextbike.net/maps/gbfs/v2/nextbike_cx/gbfs.json"
+        },
+        {
+            "name": "kvik",
+            "type": "url",
+            "spec": "gbfs",
+            "url": "https://gbfs.derp.si/gbfs/kvik/gbfs.json"
+        },
+        {
+            "name": "greengo-544",
+            "type": "url",
+            "spec": "gbfs",
+            "url": "https://greengo.rideatom.com/gbfs/v2_2/en/gbfs?id=544"
+        },
+        {
+            "name": "greengo-1451",
+            "type": "url",
+            "spec": "gbfs",
+            "url": "https://greengo.rideatom.com/gbfs/v2_2/en/gbfs?id=1451"
+        },
+        {
+            "name": "micikel",
+            "type": "url",
+            "spec": "gbfs",
+            "url": "https://gbfs.derp.si/gbfs/micikel/gbfs.json"
+        },
+        {
+            "name": "bolt-359",
+            "type": "url",
+            "spec": "gbfs",
+            "url": "https://gbfs.derp.si/bolt_proxy/2/359/gbfs"
         }
     ]
 }

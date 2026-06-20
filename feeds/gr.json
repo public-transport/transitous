@@ -3,15 +3,19 @@
         {
             "name": "Lach Anonym",
             "github": "Lach-anonym"
+        },
+        {
+            "name": "Martin Langbecker",
+            "github": "MartinLangbecker"
         }
     ],
     "sources": [
         {
             "name": "Athens-Bus",
             "type": "http",
-            "url": "https://www.gitlab.com/Lach-anonym/athens-gtfs/-/jobs/artifacts/main/raw/gtfs-bus.zip?job=download-republish-gtfs",
+            "url": "https://data.gov.gr/dataset/fb049bb1-aea6-4443-95fa-8b941dd6a057/resource/119db488-16ea-4c76-b560-41c472872390/download/osy_gtfs.zip",
             "license": {
-                "spdx-identifier": "CC-BY-SA-4.0"
+                "spdx-identifier": "CC-BY-4.0"
             },
             "fix": true,
             "extend-calendar": true
@@ -19,12 +23,68 @@
         {
             "name": "Athens-Rail",
             "type": "http",
-            "url": "https://www.gitlab.com/Lach-anonym/athens-gtfs/-/jobs/artifacts/main/raw/gtfs-rail.zip?job=download-republish-gtfs",
+            "url": "https://data.gov.gr/dataset/4e897a75-975a-4ce7-af65-f32ea01f93b9/resource/5e3858ee-d9ba-48c2-9015-744ea160976d/download/stasy_gtfs.zip",
+            "fix": true,
+            "extend-calendar": true
+        },
+        {
+            "name": "Thessaloniki-OSETH",
+            "type": "http",
+            "url": "https://data.gov.gr/api/3/action/package_show?id=dedomena-astikon-sygkoinonion-p-e-thessalonikis",
+            "function": "data_gov_gr_latest_resource",
             "license": {
-                "spdx-identifier": "CC-BY-SA-4.0"
+                "spdx-identifier": "CC-BY-4.0"
             },
             "fix": true,
             "extend-calendar": true
+        },
+        {
+            "name": "Hellenic-Train",
+            "type": "http",
+            "url": "https://jbb.ghsq.de/gtfs/gr-hellenic-train.gtfs.zip"
+        },
+        {
+            "name": "Hellenic-Train",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "http://jbb.ghsq.de/gtfs/railway-gov-gr/VehiclePositions",
+            "derive-trip-updates": true
+        },
+        {
+            "name": "Dott-Thessaloniki",
+            "type": "url",
+            "spec": "gbfs",
+            "url": "https://gbfs.api.ridedott.com/public/v2/thessaloniki/gbfs.json"
+        },
+        {
+            "name": "Dott-Thessaloniki",
+            "type": "url",
+            "spec": "gbfs",
+            "url": "https://gbfs.api.ridedott.com/public/v2/athens/gbfs.json"
+        },
+        {
+            "name": "Nextbike-Glyfada",
+            "type": "url",
+            "spec": "gbfs",
+            "url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_gx/gbfs.json"
+        },
+        {
+            "name": "Nextbike-Palaio-Faliro",
+            "type": "url",
+            "spec": "gbfs",
+            "url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_gy/gbfs.json"
+        },
+        {
+            "name": "Nextbike-Argyroupoli",
+            "type": "url",
+            "spec": "gbfs",
+            "url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_gu/gbfs.json"
+        },
+        {
+            "name": "Nextbike-Alimos",
+            "type": "url",
+            "spec": "gbfs",
+            "url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_gv/gbfs.json"
         }
     ]
 }

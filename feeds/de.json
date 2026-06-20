@@ -172,11 +172,6 @@
             "transitland-atlas-id": "f-lime~frankfurt~gbfs"
         },
         {
-            "name": "NextbikeFrankfurt",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-nextbike~frankfurt~gbfs"
-        },
-        {
             "name": "DottFrankfurt",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-dott~frankfurt~gbfs"
@@ -184,7 +179,14 @@
         {
             "name": "Deer",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-deer~germany~gbfs"
+            "transitland-atlas-id": "f-deer~germany~gbfs",
+            "skip": true,
+            "skip-reason": "Unavailable since Deer migrated to a new system"
+        },
+        {
+            "name": "Mikar",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-mikar~germany~gbfs"
         },
         {
             "name": "StadtmobilStuttgart",
@@ -220,6 +222,323 @@
             "name": "TeilAutoSchwäbischHall",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-teilauto~schwäbisch~hall~gbfs"
+        },
+        {
+            "name": "CarSharingRenningen",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-carsharing~renningen~gbfs"
+        },
+        {
+            "name": "DieGrüneFlotte",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-die~grüne~flotte~freiburg~im~breisgau~gbfs"
+        },
+        {
+            "name": "swu2go",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-swu2go~carsharing~ulm~gbfs",
+            "url-override": "https://api.mobidata-bw.de/sharing/gbfs/v2/swu2go/gbfs"
+        },
+        {
+            "name": "Conficars",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-conficars~ulm~gbfs"
+        },
+        {
+            "name": "StadtwerkTauberfranken",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-stadtwerk~tauberfranken~germany~gbfs"
+        },
+        {
+            "name": "Flinkster",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-flinkster~germany~gbfs"
+        },
+        {
+            "name": "OberSchwabenMobil",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-oberschwabenmobil~carsharing~halle~saale~~gbfs"
+        },
+        {
+            "name": "FordCarsharingAutohausBaur",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-ford~carsharing~autohaus~baur~germany~gbfs"
+        },
+        {
+            "name": "FordCarharingAutohausKauderer",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-ford~carsharing~autohaus~kauderer~eislingen~gbfs"
+        },
+        {
+            "name": "EinfachUnterwegs",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-einfach~unterwegs~germany~gbfs"
+        },
+        {
+            "name": "Seefahrer",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-seefahrer~e~carsharing~radolfzell~gbfs"
+        },
+        {
+            "name": "StadtwerkeWertheim",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-carsharing~in~wertheim~gbfs"
+        },
+        {
+            "name": "Hertlein,",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-hertlein~carsharing~weikersheim~gbfs"
+        },
+        {
+            "name": "LaRaToGo",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-lara~to~go~waiblingen~gbfs"
+        },
+        {
+            "name": "Car-ship",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-car~ship~constance~gbfs"
+        },
+        {
+            "name": "Stella",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-stella~stuttgart~gbfs"
+        },
+        {
+            "name": "Frank-e",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-franke~freiburg~im~breisgau~gbfs"
+        },
+        {
+            "name": "DottBöblingen",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dott~böblingen~gbfs"
+        },
+        {
+            "name": "DottFriedrichshafen",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dott~friedrichshafen~gbfs"
+        },
+        {
+            "name": "DottHeidelberg",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dott~heidelberg~gbfs"
+        },
+        {
+            "name": "DottHeilbronn",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dott~heilbronn~gbfs"
+        },
+        {
+            "name": "DottKarlsruhe",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dott~karlsruhe~gbfs",
+            "url-override": "https://api.mobidata-bw.de/sharing/gbfs/v2/dott_karlsruhe/gbfs"
+        },
+        {
+            "name": "DottLindau",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dott~lindau~gbfs"
+        },
+        {
+            "name": "DottLudwigsburg",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dott~ludwigsburg~gbfs"
+        },
+        {
+            "name": "DottMannheim",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dott~mannheim~gbfs"
+        },
+        {
+            "name": "DottReutlingen",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dott~reutlingen~gbfs"
+        },
+        {
+            "name": "DottStuttgart",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dott~stuttgart~gbfs"
+        },
+        {
+            "name": "DottTübingen",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dott~tübingen~gbfs"
+        },
+        {
+            "name": "DottÜberlingen",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dott~überlingen~gbfs"
+        },
+        {
+            "name": "DottUlm",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dott~ulm~gbfs"
+        },
+        {
+            "name": "DottKaiserslautern",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dott~kaiserslautern~gbfs"
+        },
+        {
+            "name": "DottSaarbrücken",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dott~saarbrücken~gbfs"
+        },
+        {
+            "name": "DottFrankfurt",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dott~frankfurt~gbfs"
+        },
+        {
+            "name": "DottDarmstadt",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dott~darmstadt~gbfs"
+        },
+        {
+            "name": "ALF",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-alf~das~affstätter~lastenfahrrad~herrenberg~gbfs"
+        },
+        {
+            "name": "FaRe",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-fare~das~bananologen~lastenrad~herrenberg~gbfs"
+        },
+        {
+            "name": "Gülf",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-gülf~das~gültsteiner~lastenrad~herrenberg~gbfs"
+        },
+        {
+            "name": "StadtRadHerrenberg",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-stadtrad~das~stadtnavi~lastenrad~herrenberg~gbfs"
+        },
+        {
+            "name": "HoppKonstanz",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-hopp~konstanz~gbfs"
+        },
+        {
+            "name": "LimeBW",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-lime~stuttgart~konstanz~gbfs"
+        },
+        {
+            "name": "MeinKonrad",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-mein~konrad~konstanz~gbfs"
+        },
+        {
+            "name": "NextbikeNorderstedt",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-nextbike~norderstedt~gbfs"
+        },
+        {
+            "name": "BoltKarlsruhe",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-bolt~technology~oü~karlsruhe~gbfs"
+        },
+        {
+            "name": "BoltStuttgart",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-bolt~technology~oü~stuttgart~gbfs"
+        },
+        {
+            "name": "BoltReutlingenTübingen",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-bolt~technology~oü~reutlingen~gbfs"
+        },
+        {
+            "name": "DonkeyBamberg",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-donkey~republic~bamberg~gbfs"
+        },
+        {
+            "name": "DonkeyKiel",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-donkey~republic~kiel~gbfs"
+        },
+        {
+            "name": "VoiGermany",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-voi~germany~gbfs"
+        },
+        {
+            "name": "YoioFreiburg",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-yoio~freiburg~im~breisgau~gbfs"
+        },
+        {
+            "name": "ZeoBruchsal",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-zeo~carsharing~bruchsal~gbfs"
+        },
+        {
+            "name": "ZeusFreiburg",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-zeus~freiburg~im~breisgau~gbfs"
+        },
+        {
+            "name": "ZeusHeidelberg",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-zeus~heidelberg~gbfs"
+        },
+        {
+            "name": "ZeusKonstanz",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-zeus~konstanz~gbfs"
+        },
+        {
+            "name": "ZeusLudwigsburg",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-zeus~ludwigsburg~gbfs"
+        },
+        {
+            "name": "ZeusNeustadt",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-zeus~neustadt~gbfs"
+        },
+        {
+            "name": "ZeusPforzheim",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-zeus~pforzheim~gbfs"
+        },
+        {
+            "name": "ZeusSchwäbischGmünd",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-zeus~schwäbisch~gmünd~gbfs"
+        },
+        {
+            "name": "ZeusTübingen",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-zeus~tubingen~gbfs"
+        },
+        {
+            "name": "ZeusTuttlingen",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-zeus~tuttlingen~gbfs"
+        },
+        {
+            "name": "ZeusVillingenSchwenningen",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-zeus~villingen~schwenningen~gbfs"
+        },
+        {
+            "name": "ZeusRenningenMalmsheim",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-zeus~renningen~malmsheim~gbfs"
+        },
+        {
+            "name": "ZeusGöppingen",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-zeus~goppingen~gbfs"
+        },
+        {
+            "name": "ZeusWürzburg",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-zeus~wurzburg~gbfs"
         },
         {
             "name": "MOBIBikeDresden",
