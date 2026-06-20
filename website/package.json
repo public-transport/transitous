@@ -12,11 +12,11 @@
     "release": "npm run build:widget && hugo --minify --baseURL https://transitous.org/"
   },
   "devDependencies": {
-    "esbuild": "^0.27.3",
-    "purescript": "^0.15.15",
+    "esbuild": "^0.28.1",
+    "purescript": "^0.15.16",
     "purs-backend-es": "^1.4.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "spago": "^1.0.3"
+    "spago": "^1.0.4"
   }
 }
