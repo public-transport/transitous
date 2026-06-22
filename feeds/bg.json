@@ -55,6 +55,14 @@
             }
         },
         {
+            "name": "sofia-airport-shuttle",
+            "type": "http",
+            "url": "https://gtfs.livetransport.eu/gtfs/sofia-airport-shuttle.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
             "name": "varna",
             "type": "http",
             "url": "https://gtfs.livetransport.eu/gtfs/varna.zip",
@@ -84,6 +92,14 @@
             "type": "mobility-database",
             "mdb-id": "mdb-2120",
             "spec": "gtfs-rt"
+        },
+        {
+            "name": "yambol",
+            "type": "http",
+            "url": "https://gtfs.livetransport.eu/gtfs/yambol.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
         },
         {
             "name": "aytos",
