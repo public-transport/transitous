@@ -609,6 +609,11 @@
                 "spdx-identifier": "CC0-1.0",
                 "url": "https://github.com/kompottokar/pollo/blob/main/LICENSE"
             }
+        },
+        {
+            "name": "westbike",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-westbike~heinsberg~gbfs"
         }
     ]
 }
