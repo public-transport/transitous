@@ -23,6 +23,11 @@ upstream {{ item.vhost }}-backend {
 {% endfor %}
 }
 
+map "$http_user_agent:$http_accept_language:$http_accept" $no_ua_no_browser {
+    default 0;
+    ::*/* 1;
+}
+
 server {
     listen 443 ssl;
     listen 443 quic {{ item.quic_options }};
@@ -60,6 +65,14 @@ server {
     location = /error403.html {
         root /var/www/html/;
         allow all;
+    }
+
+    if ($no_ua_no_browser = "1") {
+        return 403 "Empty user-agent header is not allowed. Please review the usage policy: https://transitous.org/api/";
+    }
+
+    if ($http_user_agent ~ "^(node|python-requests\/\d+.\d+.\d+)$") {
+        return 403 "Generic user-agent headers are not allowed, please set your own. Please review the usage policy: https://transitous.org/api/";
     }
 
     # IP-addresses that have ignored usage policy, should be blocked and shown an according message
