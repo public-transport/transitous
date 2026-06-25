@@ -217,9 +217,9 @@
         {
             "name": "tisseo-reseau-transport-urbain-toulousain",
             "type": "url",
-            "url": "https://gtfs.willbrooks.fr/trip_updates.pb",
+            "url": "https://1.gtfs.download/tisseo/trip_updates.pb",
             "license": {
-                "url": "https://gtfs.willbrooks.fr/license.txt"
+                "url": "https://1.gtfs.download/license.txt"
             },
             "spec": "gtfs-rt",
             "x-data-gov-fr-dataset-id": "56b0c2fba3a7294d39b88a86"
