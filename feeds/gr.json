@@ -47,7 +47,7 @@
             "name": "Hellenic-Train",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "http://jbb.ghsq.de/gtfs/railway-gov-gr/VehiclePositions",
+            "url": "https://jbb.ghsq.de/gtfs/railway-gov-gr/VehiclePositions",
             "derive-trip-updates": true
         },
         {
