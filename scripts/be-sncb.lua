@@ -26,7 +26,8 @@ end
 local use_trip_short_name = {
     ["IC"] = true,
     ["L"] = true,
-    ["P"] = true
+    ["P"] = true,
+    ["EC"] = true,
 }
 
 function process_trip(trip)
