@@ -181,6 +181,11 @@
             "name": "terzic-slavonski-brod",
             "type": "http",
             "url": "https://hoermalmeister.github.io/gtfs-rehost/slavonski_brod/slavonski_brod.zip"
+        },
+        {
+            "name": "livnobus",
+            "type": "http",
+            "url": "https://livnobus.com/gtfs/google-transit"
         }
     ]
 }
