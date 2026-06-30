@@ -1,8 +1,6 @@
 -- SPDX-FileCopyrightText: Volker Krause <vkrause@kde.org>
 -- SPDX-License-Identifier: AGPL-3.0-or-later
 
-require "scripts.motis"
-
 -- source route type, route type name prefix, MOTIS class, target route type, display name prefix
 local route_type_map = {
     { 2, "Intercity direct", LONG_DISTANCE, 102, "ICD" },
