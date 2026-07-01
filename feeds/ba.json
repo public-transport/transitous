@@ -41,6 +41,11 @@
             "type": "http",
             "url": "https://gitlab.com/api/v4/projects/vekejsn%2Fgtfs-generators/packages/generic/mostar-gtfs/latest/mobus_gtfs.zip",
             "fix": true
+        },
+        {
+            "name": "livnobus",
+            "type": "http",
+            "url": "https://livnobus.com/gtfs/google-transit"
         }
     ]
 }
