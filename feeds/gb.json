@@ -21,7 +21,8 @@
             "drop-agency-names": [
                 "FlixBus"
             ],
-            "script": "gb-great-britain.lua"
+            "script": "gb-great-britain.lua",
+            "keep-additional-fields": false
         },
         {
             "name": "great-britain",
