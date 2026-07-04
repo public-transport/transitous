@@ -10,6 +10,7 @@
             "name": "CairoPublicRoadTransport",
             "type": "http",
             "url": "https://data.transportforcairo.com/documents/88/link",
+            "extend-calendar": true,
             "license": {
                 "spdx-identifier": "CC-BY-4.0",
                 "url": "https://data.transportforcairo.com/catalogue/#/document/88"
@@ -19,6 +20,7 @@
             "name": "CairoMetro",
             "type": "http",
             "url": "https://data.transportforcairo.com/documents/87/link",
+            "extend-calendar": true,
             "license": {
                 "spdx-identifier": "CC-BY-4.0",
                 "url": "https://data.transportforcairo.com/catalogue/#/document/87"
