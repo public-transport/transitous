@@ -298,7 +298,9 @@
         {
             "name": "Car-ship",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-car~ship~constance~gbfs"
+            "transitland-atlas-id": "f-car~ship~constance~gbfs",
+            "skip": true,
+            "skip-reason": "Server overloaded by our requests, MOTIS ttl handling and our proxy need investigation (https://github.com/public-transport/transitous/issues/2279)"
         },
         {
             "name": "Stella",
