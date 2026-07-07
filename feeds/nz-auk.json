@@ -7,10 +7,6 @@
         {
             "name": "applecuckoo",
             "github": "applecuckoo"
-        },
-        {
-            "name": "AddTransit",
-            "github": "AddTransit"
         }
     ],
     "sources": [
