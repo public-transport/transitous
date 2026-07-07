@@ -7,6 +7,10 @@
         {
             "name": "applecuckoo",
             "github": "applecuckoo"
+        },
+        {
+            "name": "AddTransit",
+            "github": "AddTransit"
         }
     ],
     "sources": [
@@ -37,6 +41,16 @@
             "name": "Flamingo-Auckland",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-flamingo~auckland~gbfs"
+        },
+        {
+            "name": "MahuCityExpress",
+            "type": "http",
+            "url": "https://addtransit.com/gtfsfile/97011/MahuCityExpress.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0",
+                "publisher": "Mahu City Express",
+                "publisher-url": "https://www.mahucityexpress.co.nz/"
+            }
         }
     ]
 }
