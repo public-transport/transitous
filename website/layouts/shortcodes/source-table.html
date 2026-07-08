@@ -110,8 +110,10 @@ summary h3 {
     </p>
   {{ end }}
 
+  {{ if $source.filename }}
   <a class="btn btn-outline-secondary" href="{{ $source.source }}">Original File</a>
   <a class="btn btn-outline-secondary" href="https://api.transitous.org/gtfs/{{ $source.filename }}">Processed File</a>
+  {{ end }}
 
   {{ if or $source.rt }}
     {{ range $rt_source := $source.rt }}
