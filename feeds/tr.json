@@ -94,6 +94,144 @@
             "type": "url",
             "spec": "gtfs-rt",
             "url": "https://rt.flix.baguette.pirnet.si/rt.pb"
+        },
+        {
+            "name": "nigde",
+            "type": "http",
+            "url": "https://github.com/Egezenn/kk-gtfs/raw/main/data/nigde.zip",
+            "fix": true
+        },
+        {
+            "name": "adana",
+            "type": "http",
+            "url": "https://github.com/Egezenn/kk-gtfs/raw/main/data/adana.zip",
+            "fix": true
+        },
+        {
+            "name": "akcakoca",
+            "type": "http",
+            "url": "https://github.com/Egezenn/kk-gtfs/raw/main/data/akcakoca.zip",
+            "fix": true
+        },
+        {
+            "name": "alanya",
+            "type": "http",
+            "url": "https://github.com/Egezenn/kk-gtfs/raw/main/data/alanya.zip",
+            "fix": true
+        },
+        {
+            "name": "alapli",
+            "type": "http",
+            "url": "https://github.com/Egezenn/kk-gtfs/raw/main/data/alapli.zip",
+            "fix": true
+        },
+        {
+            "name": "altinova",
+            "type": "http",
+            "url": "https://github.com/Egezenn/kk-gtfs/raw/main/data/altinova.zip",
+            "fix": true
+        },
+        {
+            "name": "burdur",
+            "type": "http",
+            "url": "https://github.com/Egezenn/kk-gtfs/raw/main/data/burdur.zip",
+            "fix": true
+        },
+        {
+            "name": "canakkale",
+            "type": "http",
+            "url": "https://github.com/Egezenn/kk-gtfs/raw/main/data/canakkale.zip",
+            "fix": true
+        },
+        {
+            "name": "duzce",
+            "type": "http",
+            "url": "https://github.com/Egezenn/kk-gtfs/raw/main/data/duzce.zip",
+            "fix": true
+        },
+        {
+            "name": "edirne",
+            "type": "http",
+            "url": "https://github.com/Egezenn/kk-gtfs/raw/main/data/edirne.zip",
+            "fix": true
+        },
+        {
+            "name": "eregli",
+            "type": "http",
+            "url": "https://github.com/Egezenn/kk-gtfs/raw/main/data/eregli.zip",
+            "fix": true
+        },
+        {
+            "name": "erzurum",
+            "type": "http",
+            "url": "https://github.com/Egezenn/kk-gtfs/raw/main/data/erzurum.zip",
+            "fix": true
+        },
+        {
+            "name": "kastamonu",
+            "type": "http",
+            "url": "https://github.com/Egezenn/kk-gtfs/raw/main/data/kastamonu.zip",
+            "fix": true
+        },
+        {
+            "name": "kirklareli",
+            "type": "http",
+            "url": "https://github.com/Egezenn/kk-gtfs/raw/main/data/kirklareli.zip",
+            "fix": true
+        },
+        {
+            "name": "luleburgaz",
+            "type": "http",
+            "url": "https://github.com/Egezenn/kk-gtfs/raw/main/data/luleburgaz.zip",
+            "fix": true
+        },
+        {
+            "name": "mardin",
+            "type": "http",
+            "url": "https://github.com/Egezenn/kk-gtfs/raw/main/data/mardin.zip",
+            "fix": true
+        },
+        {
+            "name": "mugla",
+            "type": "http",
+            "url": "https://github.com/Egezenn/kk-gtfs/raw/main/data/mugla.zip",
+            "fix": true
+        },
+        {
+            "name": "ordu",
+            "type": "http",
+            "url": "https://github.com/Egezenn/kk-gtfs/raw/main/data/ordu.zip",
+            "fix": true
+        },
+        {
+            "name": "osmaniye",
+            "type": "http",
+            "url": "https://github.com/Egezenn/kk-gtfs/raw/main/data/osmaniye.zip",
+            "fix": true
+        },
+        {
+            "name": "safranbolu",
+            "type": "http",
+            "url": "https://github.com/Egezenn/kk-gtfs/raw/main/data/safranbolu.zip",
+            "fix": true
+        },
+        {
+            "name": "sivas",
+            "type": "http",
+            "url": "https://github.com/Egezenn/kk-gtfs/raw/main/data/sivas.zip",
+            "fix": true
+        },
+        {
+            "name": "tokat",
+            "type": "http",
+            "url": "https://github.com/Egezenn/kk-gtfs/raw/main/data/tokat.zip",
+            "fix": true
+        },
+        {
+            "name": "yozgat",
+            "type": "http",
+            "url": "https://github.com/Egezenn/kk-gtfs/raw/main/data/yozgat.zip",
+            "fix": true
         }
     ]
 }
