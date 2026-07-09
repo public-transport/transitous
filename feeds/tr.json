@@ -103,7 +103,7 @@
             "name": "adana",
             "type": "http",
             "url": "https://github.com/Egezenn/kk-gtfs/raw/main/data/adana.zip",
-            "fix": true,
+            "fix": true
         },
         {
             "name": "alanya",
