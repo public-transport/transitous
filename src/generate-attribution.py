@@ -169,6 +169,42 @@ def add_rt_attribution(attribution: dict, source: UrlSource) -> None:
 
     attribution["rt"].append(rt_attribution)
 
+def gbfs_source_attribution(source: UrlSource, source_id: str, region_data: dict):
+    attribution = region_data
+
+    if source.license.spdx_identifier:
+        attribution["spdx_license_identifier"] = \
+            source.license.spdx_identifier
+    if source.license.url:
+        attribution["license_url"] = source.license.url
+    if source.license.attribution_text:
+        attribution["attribution_text"] = source.license.attribution_text
+
+    attribution["operators"] = []
+    attribution["source"] = source.url
+
+    human_name: str = (
+        source_id.split("_")[1].replace("-", " ")
+    )
+    human_name = " ".join(
+        map(lambda w: w[0].upper() + w[1:] if len(w) > 0 else w, human_name.split(" "))
+    )
+    attribution["human_name"] = human_name
+
+    if source.license.publisher:
+        attribution["publisher"] = {}
+        attribution["publisher"]["name"] = source.license.publisher
+        attribution["publisher"]["url"] = source.license.publisher_url
+
+    if (
+            "operators" in attribution
+            and len(attribution["operators"]) == 1
+            and len(attribution["operators"][0]) > 1
+    ):
+        attribution["human_name"] = attribution["operators"][0]
+
+    return attribution
+
 
 def get_region_data(code: str) -> dict:
     code = code.upper()
@@ -234,12 +270,19 @@ if __name__ == "__main__":
 
             for source in resolved_sources:
                 match source:
-                    case UrlSource() if source.spec == "gtfs-rt":
-                        if source_id not in attributions:
-                            print(f"Warning: Stray gtfs-rt source for {source_id} without a (locally available) static timetable")
-                            continue
-                        else:
-                            add_rt_attribution(attributions[source_id], source)
+                    case UrlSource():
+                        if source.spec == "gtfs-rt":
+                            if source_id not in attributions:
+                                print(f"Warning: Stray gtfs-rt source for {source_id} without a (locally available) static timetable")
+                                continue
+                            else:
+                                add_rt_attribution(attributions[source_id], source)
+                        elif source.spec == "gbfs":
+                            gbfs_attribution = gbfs_source_attribution(source, source_id, region_data.copy())
+                            if not gbfs_attribution:
+                                continue
+                            if source_id not in attributions:
+                                attributions[source_id] = gbfs_attribution
                     case HttpSource():
                         http_attribution = http_source_attribution(source, source_id, region_data.copy())
                         if not http_attribution:
