@@ -279,7 +279,7 @@ if __name__ == "__main__":
                                 add_rt_attribution(attributions[source_id], source)
                         elif source.spec == "gbfs":
                             gbfs_attribution = gbfs_source_attribution(source, source_id, region_data.copy())
-                            if not http_attribution:
+                            if not gbfs_attribution:
                                 continue
                             if source_id not in attributions:
                                 attributions[source_id] = gbfs_attribution
