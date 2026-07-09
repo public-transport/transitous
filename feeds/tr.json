@@ -53,7 +53,7 @@
         {
             "name": "konya",
             "type": "http",
-            "url": "https://acikveri.konya.bel.tr/tr/dataset/c2e034e6-e015-49c6-8eec-6e2f7de9c105/resource/5742b7bd-3cbf-4784-bee1-f949fc0ca118/download/gtfs_07_2024.zip"
+            "url": "https://acikveri.konya.bel.tr/dataset/c2e034e6-e015-49c6-8eec-6e2f7de9c105/resource/ec944ecd-1c1f-4687-a7f6-fcf2dc5bb5db/download/gtfs_11_2025.zip"
         },
         {
             "name": "kocaeli",
@@ -78,7 +78,6 @@
             "name": "gaziantep",
             "type": "http",
             "url": "https://acikveri.gaziantep.bel.tr/dataset/12d26c98-edc5-4be3-8988-c753764b84f4/resource/b3254aa0-359e-4b7c-87a3-d5d56ad27353/download/attached_gtfs.zip",
-            "fix": true,
             "http-options": {
                 "ignore-tls-errors": true
             }
@@ -98,44 +97,33 @@
         {
             "name": "nigde",
             "type": "http",
-            "url": "https://github.com/Egezenn/kk-gtfs/raw/main/data/nigde.zip",
-            "fix": true
+            "url": "https://github.com/Egezenn/kk-gtfs/raw/main/data/nigde.zip"
         },
         {
             "name": "adana",
             "type": "http",
             "url": "https://github.com/Egezenn/kk-gtfs/raw/main/data/adana.zip",
-            "fix": true
-        },
-        {
-            "name": "akcakoca",
-            "type": "http",
-            "url": "https://github.com/Egezenn/kk-gtfs/raw/main/data/akcakoca.zip",
-            "fix": true
+            "fix": true,
+            "s": true
         },
         {
             "name": "alanya",
             "type": "http",
             "url": "https://github.com/Egezenn/kk-gtfs/raw/main/data/alanya.zip",
-            "fix": true
+            "skip": true,
+            "skip-reason": "trips.txt doesn't exist"
         },
         {
             "name": "alapli",
             "type": "http",
             "url": "https://github.com/Egezenn/kk-gtfs/raw/main/data/alapli.zip",
-            "fix": true
-        },
-        {
-            "name": "altinova",
-            "type": "http",
-            "url": "https://github.com/Egezenn/kk-gtfs/raw/main/data/altinova.zip",
-            "fix": true
+            "skip": true,
+            "skip-reason": "routes.txt doesn't exist"
         },
         {
             "name": "burdur",
             "type": "http",
-            "url": "https://github.com/Egezenn/kk-gtfs/raw/main/data/burdur.zip",
-            "fix": true
+            "url": "https://github.com/Egezenn/kk-gtfs/raw/main/data/burdur.zip"
         },
         {
             "name": "canakkale",
@@ -153,13 +141,15 @@
             "name": "edirne",
             "type": "http",
             "url": "https://github.com/Egezenn/kk-gtfs/raw/main/data/edirne.zip",
-            "fix": true
+            "skip": true,
+            "skip-reason": "trips.txt doesn't exist"
         },
         {
             "name": "eregli",
             "type": "http",
             "url": "https://github.com/Egezenn/kk-gtfs/raw/main/data/eregli.zip",
-            "fix": true
+            "skip": true,
+            "skip-reason": "trips.txt doesn't exist"
         },
         {
             "name": "erzurum",
@@ -200,37 +190,29 @@
         {
             "name": "ordu",
             "type": "http",
-            "url": "https://github.com/Egezenn/kk-gtfs/raw/main/data/ordu.zip",
-            "fix": true
+            "url": "https://github.com/Egezenn/kk-gtfs/raw/main/data/ordu.zip"
         },
         {
             "name": "osmaniye",
             "type": "http",
-            "url": "https://github.com/Egezenn/kk-gtfs/raw/main/data/osmaniye.zip",
-            "fix": true
+            "url": "https://github.com/Egezenn/kk-gtfs/raw/main/data/osmaniye.zip"
         },
         {
             "name": "safranbolu",
             "type": "http",
-            "url": "https://github.com/Egezenn/kk-gtfs/raw/main/data/safranbolu.zip",
-            "fix": true
+            "url": "https://github.com/Egezenn/kk-gtfs/raw/main/data/safranbolu.zip"
         },
         {
             "name": "sivas",
             "type": "http",
             "url": "https://github.com/Egezenn/kk-gtfs/raw/main/data/sivas.zip",
-            "fix": true
+            "skip": true,
+            "skip-reason": "trips.txt doesn't exist"
         },
         {
             "name": "tokat",
             "type": "http",
             "url": "https://github.com/Egezenn/kk-gtfs/raw/main/data/tokat.zip",
-            "fix": true
-        },
-        {
-            "name": "yozgat",
-            "type": "http",
-            "url": "https://github.com/Egezenn/kk-gtfs/raw/main/data/yozgat.zip",
             "fix": true
         }
     ]
