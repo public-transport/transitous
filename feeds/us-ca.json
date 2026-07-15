@@ -161,6 +161,12 @@
             "transitland-atlas-id": "f-9qh-metrolinktrains"
         },
         {
+            "name": "Metrolink",
+            "type": "url",
+            "url": "https://birch.catenarymaps.org/gtfs_rt?feed_id=f-metrolinktrains~rt&feed_type=trip",
+            "spec": "gtfs-rt"
+        },
+        {
             "name": "Catalina-Express",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-catalina~express",
@@ -229,6 +235,12 @@
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-9mu-orangecountytransportationauthority",
             "url-override": "https://github.com/catenarytransit/agency-gtfs-mirror/raw/refs/heads/main/octa_gtfs.zip"
+        },
+        {
+            "name": "OC-Bus",
+            "spec": "gtfs-rt",
+            "type": "url",
+            "url": "https://birch.catenarymaps.org/gtfs_rt?feed_id=f-octa~rt&feed_type=trip"
         },
         {
             "name": "Marin-Airporter",
