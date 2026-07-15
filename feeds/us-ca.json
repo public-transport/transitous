@@ -74,10 +74,9 @@
         },
         {
             "name": "Santa-Cruz-Metro",
-            "type": "transitland-atlas",
+            "type": "url",
             "transitland-atlas-id": "f-9q9-scmtdcom~rt",
-            "skip": true,
-            "skip-reason": "Generates 404"
+            "url": "https://birch.catenarymaps.org/gtfs_rt?feed_id=f-9q9-scmtdcom~rt&feed_type=trip"
         },
         {
             "name": "Sacramento-Regional-Transit",
@@ -99,6 +98,23 @@
             "name": "Metro-LosAngeles-Rail",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-9q5-metro~losangeles~rail"
+        },
+        {
+            "name": "Metro-LosAngeles",
+            "spec": "gtfs-rt",
+            "type": "url",
+            "url": "https://birch.catenarymaps.org/gtfs_rt?feed_id=f-metro~losangeles~bus~rt&feed_type=trip"
+        },
+        {
+            "name": "Metro-LosAngeles-Rail",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9q5-metro~losangeles~rail"
+        },
+        {
+            "name": "Metro-LosAngeles-Rail",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://birch.catenarymaps.org/gtfs_rt?feed_id=f-metro~losangeles~rail~rt&feed_type=trip"
         },
         {
             "name": "Antelope-Valley-Transit-Authority",
@@ -175,8 +191,7 @@
             "name": "SDMTS",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-mts~rt~onebusaway",
-            "skip": true,
-            "skip-reason": "api-key must be set in query params (url-override?)"
+            "url-override": "https://birch.catenarymaps.org/gtfs_rt?feed_id=f-mts~rt~onebusaway&feed_type=trip"
         },
         {
             "name": "Monterey-Salinas-Transit",
