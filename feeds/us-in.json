@@ -35,8 +35,7 @@
             "name": "IndyGo",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-indygo~rt",
-            "skip": true,
-            "skip-reason": "api-key is missing"
+            "url-override": "https://birch.catenarymaps.org/gtfs_rt?feed_id=f-indygo~rt&feed_type=trip"
         },
         {
             "name": "Indiana-County-Transit-Authority",
