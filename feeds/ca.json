@@ -3,6 +3,10 @@
         {
             "name": "Gordon Leung",
             "github": "pi-cla"
+        },
+        {
+            "name": "Kyler Chin <kyler@catenarymaps.org>",
+            "github": "kylerchin"
         }
     ],
     "sources": [
@@ -142,6 +146,12 @@
             "name": "Viarail",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-f-viarail~traindecharlevoix"
+        },
+        {
+            "name": "Viarail",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://birch.catenarymaps.org/gtfs_rt?feed_id=f-viarail~rt&feed_type=trip"
         },
         {
             "name": "Whitehorse-Transit",

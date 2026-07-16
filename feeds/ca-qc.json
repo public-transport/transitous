@@ -31,8 +31,7 @@
             "name": "Exo-reseaudetransportmetropolitain",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-exo~reseaudetransportmetropolitain~rt",
-            "skip": true,
-            "skip-reason": "api-key is missing"
+            "url-override": "https://birch.catenarymaps.org/gtfs_rt?feed_id=f-exo~reseaudetransportmetropolitain~rt&feed_type=trip"
         },
         {
             "name": "Exo-varannes",
@@ -43,8 +42,7 @@
             "name": "Exo-varannes",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-f25-exo~citsorel~varennes~rt",
-            "skip": true,
-            "skip-reason": "api-key is missing"
+            "url-override": "https://birch.catenarymaps.org/gtfs_rt?feed_id=f-f25-exo~citsorel~varennes~rt&feed_type=trip"
         },
         {
             "name": "Exo-citsud",
@@ -56,8 +54,7 @@
             "name": "Exo-citsud",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-f253-exo~citsud~ouest~rt",
-            "skip": true,
-            "skip-reason": "api-key is missing"
+            "url-override": "https://birch.catenarymaps.org/gtfs_rt?feed_id=f-f253-exo~citsud~ouest~rt&feed_type=trip"
         },
         {
             "name": "Exo-citlapresquîle",
@@ -68,8 +65,7 @@
             "name": "Exo-citlapresquîle",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-f256-exo~citlapresquîle~rt",
-            "skip": true,
-            "skip-reason": "api-key is missing"
+            "url-override": "https://birch.catenarymaps.org/gtfs_rt?feed_id=f-f256-exo~citlapresquîle~rt&feed_type=trip"
         },
         {
             "name": "Exo-citlaurentides",
@@ -80,8 +76,7 @@
             "name": "Exo-citlaurentides",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-f257-exo~citlaurentides~rt",
-            "skip": true,
-            "skip-reason": "api-key is missing"
+            "url-override": "https://birch.catenarymaps.org/gtfs_rt?feed_id=f-f257-exo~citlaurentides~rt&feed_type=trip"
         },
         {
             "name": "Exo-citduhaut-saint-laurent",
@@ -92,8 +87,7 @@
             "name": "Exo-citduhaut-saint-laurent",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-f259-exo~citduhaut~saint~laurent~rt",
-            "skip": true,
-            "skip-reason": "api-key is missing"
+            "url-override": "https://birch.catenarymaps.org/gtfs_rt?feed_id=f-f259-exo~citduhaut~saint~laurent~rt&feed_type=trip"
         },
         {
             "name": "Exo-richelain-roussillon",
@@ -104,8 +98,7 @@
             "name": "Exo-richelain-roussillon",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-f25d-exo~richelain~roussillon~rt",
-            "skip": true,
-            "skip-reason": "api-key is missing"
+            "url-override": "https://birch.catenarymaps.org/gtfs_rt?feed_id=f-f25d-exo~richelain~roussillon~rt&feed_type=trip"
         },
         {
             "name": "Exo-citchambly-richelieu-carignan",
@@ -116,8 +109,7 @@
             "name": "Exo-citchambly-richelieu-carignan",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-f25f-exo~citchambly~richelieu~carignan~rt",
-            "skip": true,
-            "skip-reason": "api-key is missing"
+            "url-override": "https://birch.catenarymaps.org/gtfs_rt?feed_id=f-f25f-exo~citchambly~richelieu~carignan~rt&feed_type=trip"
         },
         {
             "name": "Exo-citvallée-du-richelieu",
@@ -128,8 +120,7 @@
             "name": "Exo-citvallée-du-richelieu",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-f25g-exo~citvallée~du~richelieu~rt",
-            "skip": true,
-            "skip-reason": "api-key is missing"
+            "url-override": "https://birch.catenarymaps.org/gtfs_rt?feed_id=f-f25g-exo~citvallée~du~richelieu~rt&feed_type=trip"
         },
         {
             "name": "Exo-omitsainte-julie",
@@ -140,8 +131,7 @@
             "name": "Exo-omitsainte-julie",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-f25g-exo~omitsainte~julie~rt",
-            "skip": true,
-            "skip-reason": "api-key is missing"
+            "url-override": "https://birch.catenarymaps.org/gtfs_rt?feed_id=f-f25g-exo~omitsainte~julie~rt&feed_type=trip"
         },
         {
             "name": "Exo-mrclesmoulinsurbis",
@@ -152,8 +142,7 @@
             "name": "Exo-mrclesmoulinsurbis",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-f25s-exo~mrclesmoulinsurbis~rt",
-            "skip": true,
-            "skip-reason": "api-key is missing"
+            "url-override": "https://birch.catenarymaps.org/gtfs_rt?feed_id=f-f25s-exo~mrclesmoulinsurbis~rt&feed_type=trip"
         },
         {
             "name": "Exo-mrcdelassomption",
@@ -164,8 +153,7 @@
             "name": "Exo-mrcdelassomption",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-f25u-exo~mrcdelassomption~rt",
-            "skip": true,
-            "skip-reason": "api-key is missing"
+            "url-override": "https://birch.catenarymaps.org/gtfs_rt?feed_id=f-f25u-exo~mrcdelassomption~rt&feed_type=trip"
         },
         {
             "name": "STS-Sherbrooke",

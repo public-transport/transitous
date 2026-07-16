@@ -207,8 +207,7 @@
             "name": "TransLink",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-translink~rt",
-            "skip": true,
-            "skip-reason": "api-key is missing"
+            "url-override": "https://birch.catenarymaps.org/gtfs_rt?feed_id=f-translink~rt&feed_type=trip"
         },
         {
             "name": "Victoria-Transit",

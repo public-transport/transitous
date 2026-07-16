@@ -11,6 +11,10 @@
         {
             "name": "Ethan C",
             "github": "ethanc8"
+        },
+        {
+            "name": "Kyler Chin <kyler@catenarymaps.org>",
+            "github": "kylerchin"
         }
     ],
     "sources": [
@@ -25,6 +29,18 @@
             "http-options": {
                 "fetch-interval-days": 1
             }
+        },
+        {
+            "name": "CTA",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://birch.catenarymaps.org/gtfs_rt?feed_id=f-dp3-cta~rt&feed_type=trip"
+        },
+        {
+            "name": "CTA",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://birch.catenarymaps.org/gtfs_rt?feed_id=f-dp3-cta~bus~rt&feed_type=trip"
         },
         {
             "name": "Pace",
@@ -58,6 +74,12 @@
             "name": "Metra",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-dp3-metra"
+        },
+        {
+            "name": "Metra",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://birch.catenarymaps.org/gtfs_rt?feed_id=f-metra~rt&feed_type=trip"
         }
     ]
 }
