@@ -1508,7 +1508,7 @@
             "name": "Krosno",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://mks.ekrosno.pl/GTFS-ST/GTFS.zip",
+            "url": "https://mks.ekrosno.pl/GTFS-ST/GTFS.zip"
         },
         {
             "name": "Krosno",
