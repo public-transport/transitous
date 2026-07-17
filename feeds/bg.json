@@ -82,6 +82,7 @@
             "name": "bdz",
             "type": "http",
             "url": "https://gtfs.livetransport.eu/gtfs/bdz.zip",
+            "script": "bg-bdz.lua",
             "license": {
                 "spdx-identifier": "CC0-1.0"
             }
