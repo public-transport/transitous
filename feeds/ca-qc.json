@@ -65,7 +65,7 @@
             "name": "Exo-citlapresquîle",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-f256-exo~citlapresquîle~rt",
-            "url-override": "https://birch.catenarymaps.org/gtfs_rt?feed_id=f-f256-exo~citlapresquîle~rt&feed_type=trip"
+            "url-override": "https://birch.catenarymaps.org/gtfs_rt?feed_id=f-f256-exo~citlapresqu%C3%AEle~rt&feed_type=trip"
         },
         {
             "name": "Exo-citlaurentides",
@@ -120,7 +120,7 @@
             "name": "Exo-citvallée-du-richelieu",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-f25g-exo~citvallée~du~richelieu~rt",
-            "url-override": "https://birch.catenarymaps.org/gtfs_rt?feed_id=f-f25g-exo~citvallée~du~richelieu~rt&feed_type=trip"
+            "url-override": "https://birch.catenarymaps.org/gtfs_rt?feed_id=f-f25g-exo~citvall%C3%A9e~du~richelieu~rt&feed_type=trip"
         },
         {
             "name": "Exo-omitsainte-julie",
