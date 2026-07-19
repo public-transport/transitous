@@ -39,6 +39,21 @@ timetable:
   datasets:
 
 gbfs:
+  ttl:
+    # static information - 6h
+    overwrite:
+      gbfs: 21600
+      manifest: 21600
+      system_information: 21600
+      vehicle_types: 21600
+      station_information: 21600
+      geofencing_zones: 21600
+
+    # dynamic information - 3min
+    default:
+      station_status: 180
+      vehicle_status: 180
+      free_bike_status: 180
   feeds:
 
 limits:
