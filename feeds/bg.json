@@ -91,7 +91,7 @@
             "name": "bdz",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://sipbg.gov.bg/bgnap/portal/api/catalog/subsets/cc43fe99-141e-4eb8-bef1-cae144870a0f/realtime-download"
+            "url": "https://gtfs.livetransport.eu/gtfs-rt/bdz.pb"
         },
         {
             "name": "pleven",
