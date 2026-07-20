@@ -71,7 +71,7 @@ server {
         return 403 "Empty user-agent header is not allowed. Please review the usage policy: https://transitous.org/api/";
     }
 
-    if ($http_user_agent ~ "^(node|python-requests\/\d+.\d+.\d+)$") {
+    if ($http_user_agent ~ "^(node|python-requests\/\d+.\d+.\d+|Python-urllib\/\d+.\d+|python-httpx\/\d+.\d+.\d+)$") {
         return 403 "Generic user-agent headers are not allowed, please set your own. Please review the usage policy: https://transitous.org/api/";
     }
 
