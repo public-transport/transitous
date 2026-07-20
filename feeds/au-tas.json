@@ -10,8 +10,7 @@
             "name": "Tasmanian-Department-of-State-Growth",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://www.transport.tas.gov.au/public_transport/gtfs-data",
-            "function": "data_tasmania_latest_resource",
+            "url": "https://www.transport.tas.gov.au/__data/assets/file/0011/557615/tas_gtfs.zip",
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },

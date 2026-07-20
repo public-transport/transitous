@@ -86,17 +86,6 @@ def data_slupsk_latest_resource(source: HttpSource) -> HttpSource:
     return source
 
 
-def data_tasmania_latest_resource(source: HttpSource) -> HttpSource:
-    from bs4 import BeautifulSoup
-
-    html = requests.get(source.url).text
-
-    soup = BeautifulSoup(html, "lxml")
-    source.url = soup.find("a", href=lambda x: x and x.endswith(".zip"))["href"]
-
-    return source
-
-
 def data_kaposvar_latest_resource(source: HttpSource) -> HttpSource:
     import re
     from bs4 import BeautifulSoup
