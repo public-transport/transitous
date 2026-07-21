@@ -375,8 +375,12 @@
         },
         {
             "name": "Koleje-Małopolskie-ald",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u2y-koleje~małopolskie~ald"
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://files.girlc.at/gtfs/malopolskie_linie_dowozowe.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
         },
         {
             "name": "ZTP-Kraków-T",
@@ -746,7 +750,7 @@
             "name": "Warsaw-Ferries",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://api.zbiorkom.live/api6-open/warsaw/gtfsRealtime/FERRIES/tripUpdates,serviceAlerts+json",
+            "url": "https://api.zbiorkom.live/api6-open/warsaw/gtfsRealtime/FERRIES/tripUpdates,serviceAlerts",
             "license": {
                 "spdx-identifier": "MIT"
             },
@@ -1437,6 +1441,42 @@
             "spec": "gtfs",
             "url": "https://files.girlc.at/gtfs/halinow.zip",
             "fix": true,
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "Powiat-Wodzisławski",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://files.girlc.at/gtfs/powiat_wodzislawski.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "Wieliszew",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://files.girlc.at/gtfs/wieliszew.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "Zamość",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://files.girlc.at/gtfs/zamosc.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "Zamość",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://files.girlc.at/gtfs/zyrardow.zip",
             "license": {
                 "spdx-identifier": "CC0-1.0"
             }
