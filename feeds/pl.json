@@ -1516,15 +1516,6 @@
             }
         },
         {
-            "name": "Żyrardów",
-            "type": "http",
-            "spec": "gtfs",
-            "url": "https://files.girlc.at/gtfs/zyrardow.zip",
-            "license": {
-                "spdx-identifier": "CC0-1.0"
-            }
-        },
-        {
             "name": "Chełmski-Rower",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-chełmski~rower~gbfs"
