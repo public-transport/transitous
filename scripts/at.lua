@@ -20,6 +20,12 @@ local route_type_map = {
 }
 
 function process_route(route)
+    local short = route:get_short_name()
+
+    if short == "096" or short == "X96" then
+        return false
+    end
+
     for _,m in ipairs(route_type_map) do
         if route:get_route_type() == m[1] and route:get_short_name():sub(1, #m[2]) == m[2] then
             route:set_route_type(m[3])
