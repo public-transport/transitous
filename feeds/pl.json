@@ -1513,7 +1513,7 @@
             }
         },
         {
-            "name": "Zamość",
+            "name": "Żyrardów",
             "type": "http",
             "spec": "gtfs",
             "url": "https://files.girlc.at/gtfs/zyrardow.zip",
