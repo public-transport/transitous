@@ -72,10 +72,10 @@
             }
         },
         {
-            "name": "Koleje-Mazowieckie-ZL",
+            "name": "Kolejki-Wąskotorowe",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://gtfs.kasznia.net/static/km-zl.zip",
+            "url": "https://gtfs.kasznia.net/static/narrow-gauge.zip",
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             }
