@@ -63,7 +63,7 @@ def data_zielona_gora_latest_resource(source: HttpSource) -> HttpSource:
     )
 
     base_url = source.url.rsplit("/", 1)[0]
-    source.url = f"{base_url}/{gtfs_link}"
+    source.url = f"{base_url}{gtfs_link}"
 
     return source
 
