@@ -1080,7 +1080,8 @@
             "url": "https://files.girlc.at/gtfs/tribus.zip",
             "license": {
                 "spdx-identifier": "CC0-1.0"
-            }
+            },
+            "fix":true
         },
         {
             "name": "PKS-Opoczno",
@@ -1453,7 +1454,9 @@
             "url": "https://github.com/pawlinski07/pawlinski-gtfs/raw/refs/heads/main/KolejPleszewska.zip",
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
-            }
+            },
+            "skip": true,
+            "skip-reason":"Expired feed, see https://github.com/pawlinski07/pawlinski-gtfs/issues/1"
         },
         {
             "name": "Koszalin",
