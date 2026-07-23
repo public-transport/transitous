@@ -778,7 +778,7 @@
             "type": "http",
             "spec": "gtfs",
             "url": "https://kasmar00.github.io/gtfs-warsaw-custom/feeds/warsaw-ferries/latest.zip",
-            "url-override": "https://api.zbiorkom.live/api6-open/warsaw/gtfs/FERRIES/",
+            "url-override": "https://api.zbiorkom.live/api6-open/warsaw/gtfs/FERRIES",
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             }
