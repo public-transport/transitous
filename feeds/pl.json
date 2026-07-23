@@ -778,7 +778,7 @@
             "type": "http",
             "spec": "gtfs",
             "url": "https://kasmar00.github.io/gtfs-warsaw-custom/feeds/warsaw-ferries/latest.zip",
-            "url-override": "https://api.zbiorkom.live/api6-open/warsaw/gtfs/FERRIES/",
+            "url-override": "https://api.zbiorkom.live/api6-open/warsaw/gtfs/FERRIES",
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             }
@@ -993,9 +993,20 @@
             "type": "http",
             "spec": "gtfs",
             "url": "https://files.girlc.at/gtfs/nowy_dwor_mazowiecki.zip",
+            "url-override": "https://api.zbiorkom.live/api6-open/warsaw/gtfs/NDM",
             "license": {
                 "spdx-identifier": "CC0-1.0"
             }
+        },
+        {
+            "name": "Nowy-Dwór-Mazowiecki",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.zbiorkom.live/api6-open/warsaw/gtfsRealtime/NDM/tripUpdates,serviceAlerts",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "use-feed-proxy": true
         },
         {
             "name": "Ciechanów",
@@ -1423,6 +1434,7 @@
             "type": "http",
             "spec": "gtfs",
             "url": "https://files.girlc.at/gtfs/powiat_minski.zip",
+            "url-override": "https://api.zbiorkom.live/api6-open/warsaw/gtfs/MINSKI",
             "fix": true,
             "license": {
                 "spdx-identifier": "CC0-1.0"
