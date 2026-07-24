@@ -35,3 +35,21 @@ function process_trip(trip)
         trip:set_display_name(trip:get_route():get_short_name() .. " " .. trip:get_short_name())
     end
 end
+
+local location_overrides = {
+	-- Hergenrath
+	["S8844644"] = { 50.7090259, 6.0432282 },
+	["8844644"] = { 50.7090259, 6.0432282 },
+	["8844644_1"] = { 50.7090182, 6.0432049 },
+	["8844644_2"] = { 50.7090338, 6.0432516 },
+}
+
+function process_location(location)
+	local override_pos = location_overrides[location:get_id()]
+	if override_pos ~= nil then
+		local pos = location:get_pos()
+		pos:set_lat(override_pos[1])
+		pos:set_lng(override_pos[2])
+		location:set_pos(pos)
+	end
+end
