@@ -13,6 +13,7 @@ local route_type_map = {
     { 2, "EuroCity", 102, "ECC" },
     { 2, "ICE", 101, "ICE" },
     { 2, "Eurostar", 101, "EST" },
+    { 2, "GoVolta", 102, "GV" },
 }
 
 function process_route(route)
