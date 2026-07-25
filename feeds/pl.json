@@ -279,15 +279,17 @@
         },
         {
             "name": "Gdynia",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-ztm~gdynia",
-            "fix": true
+            "type": "http",
+            "url": "https://api.zbiorkom.live/api6-open/tricity/gtfs/GDYNIA",
+            "license":{
+                "spdx-identifier": "MIT"
+            }
         },
         {
             "name": "Gdynia",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://api.zbiorkom.live/api6-open/tricity/gtfsRealtime/default/tripUpdates,serviceAlerts",
+            "url": "https://api.zbiorkom.live/api6-open/tricity/gtfsRealtime/GDYNIA/tripUpdates,serviceAlerts",
             "license": {
                 "spdx-identifier": "MIT"
             },
@@ -1161,10 +1163,21 @@
             "type": "http",
             "spec": "gtfs",
             "url": "https://files.girlc.at/gtfs/tczew.zip",
+            "url-override": "https://api.zbiorkom.live/api6-open/tczew/gtfs/default",
             "license": {
                 "spdx-identifier": "CC0-1.0"
             },
             "fix": true
+        },
+        {
+            "name": "Tczew",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.zbiorkom.live/api6-open/tczew/gtfsRealtime/default/tripUpdates,serviceAlerts",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "use-feed-proxy": true
         },
         {
             "name": "Plusbus",
@@ -1404,6 +1417,7 @@
             "type": "http",
             "spec": "gtfs",
             "url": "https://files.girlc.at/gtfs/sulejowek.zip",
+            "url-override": "https://api.zbiorkom.live/api6-open/warsaw/gtfs/SULEJOWEK",
             "license": {
                 "spdx-identifier": "CC0-1.0"
             }
@@ -1412,7 +1426,7 @@
             "name": "Sulejówek",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://api.zbiorkom.live/api6-open/czestochowa/gtfsRealtime/SULEJOWEK/tripUpdates,serviceAlerts",
+            "url": "https://api.zbiorkom.live/api6-open/warsaw/gtfsRealtime/SULEJOWEK/tripUpdates,serviceAlerts",
             "license": {
                 "spdx-identifier": "MIT"
             },
@@ -1423,6 +1437,7 @@
             "type": "http",
             "spec": "gtfs",
             "url": "https://files.girlc.at/gtfs/powiat_minski.zip",
+            "url-override": "https://api.zbiorkom.live/api6-open/warsaw/gtfs/MINSKI",
             "fix": true,
             "license": {
                 "spdx-identifier": "CC0-1.0"
@@ -1463,6 +1478,7 @@
             "type": "http",
             "spec": "gtfs",
             "url": "https://files.girlc.at/gtfs/koszalin.zip",
+            "url-override": "https://api.zbiorkom.live/api6-open/koszalin/gtfs/default",
             "fix": true,
             "license": {
                 "spdx-identifier": "CC0-1.0"
