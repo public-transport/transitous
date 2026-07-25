@@ -157,6 +157,17 @@
             }
         },
         {
+            "name": "KVV",
+            "type": "url",
+            "spec": "siri",
+            "url": "https://cdn.k118.de/siri-et/bw-kvv/latest.xml",
+            "url-contact": "github.com/MrKrisKrisu",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0",
+                "url": "https://mobilithek.info/offers/832218391386144768"
+            }
+        },
+        {
             "name": "RegioRadStuttgart",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-regioradstuttgart~stuttgart~gbfs"
