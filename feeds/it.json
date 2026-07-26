@@ -50,6 +50,11 @@
             "transitland-atlas-id": "f-eave~wimob~it"
         },
         {
+            "name": "Emilia-Romagna-TEP-Parma",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-spz3-tepparma"
+        },
+        {
             "name": "Emilia-Romagna-TPER-Bologna",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-srb-tperspa~bologna"
