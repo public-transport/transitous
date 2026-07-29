@@ -139,19 +139,21 @@ local colors = {
         ["38"] = { color = 0xd0aece, text_color = 0xffffff },
         ["X250"] = { color = 0x2fac66, text_color = 0xffffff },
     },
-    ["Bayerische Oberlandbahn"] = {
-        ["RB55"] = { color = 0xff6600, text_color = 0xffffff },
-        ["RB56"] = { color = 0xff6600, text_color = 0xffffff },
-        ["RB57"] = { color = 0xff6600, text_color = 0xffffff },
-    },
     ["Bayerische Regiobahn"] = {
         ["RB13"] = { color = 0xffb200, text_color = 0xffffff },
         ["RB14"] = { color = 0xffb200, text_color = 0xffffff },
+        ["RB53"] = { color = 0xff9999, text_color = 0xffffff },
+        ["RB54"] = { color = 0x00ace5, text_color = 0xffffff },
+        ["RB55"] = { color = 0xff6600, text_color = 0xffffff },
+        ["RB56"] = { color = 0xff6600, text_color = 0xffffff },
+        ["RB57"] = { color = 0xff6600, text_color = 0xffffff },
+        ["RB58"] = { color = 0xffb200, text_color = 0xffffff },
         ["RB67"] = { color = 0xbf73bf, text_color = 0xffffff },
         ["RB68"] = { color = 0x90bf26, text_color = 0xffffff },
         ["RB69"] = { color = 0x00ace5, text_color = 0xffffff },
         ["RB77"] = { color = 0x24b27d, text_color = 0xffffff },
         ["RB83"] = { color = 0xbf73bf, text_color = 0xffffff },
+        ["RE5"] = { color = 0x00416d, text_color = 0xffffff },
         ["S3"] = { color = 0x3ab048, text_color = 0xffffff },
         ["S4"] = { color = 0x9764ac, text_color = 0xffffff },
     },
@@ -208,11 +210,6 @@ local colors = {
     ["Berberich Walldürn"] = {
         ["846"] = { color = 0xa7a9ac, text_color = 0xffffff },
         ["849"] = { color = 0x009f4d, text_color = 0xffffff },
-    },
-    ["Berchtesgadener Land Bahn"] = {
-        ["RB53"] = { color = 0xff9999, text_color = 0xffffff },
-        ["S3"] = { color = 0x2aa335, text_color = 0xffffff },
-        ["S4"] = { color = 0xa765a2, text_color = 0xffffff },
     },
     ["Bergisch Gladbach"] = {
         ["SB40"] = { color = 0x9b8ec4, text_color = 0xffffff },
@@ -3315,11 +3312,6 @@ local colors = {
     ["Medenbach Traffic GmbH"] = {
         ["X89"] = { color = 0xe7007a, text_color = 0xffffff },
     },
-    ["Meridian"] = {
-        ["RB54"] = { color = 0x00ace5, text_color = 0xffffff },
-        ["RB58"] = { color = 0xffb200, text_color = 0xffffff },
-        ["RE5"] = { color = 0x00416d, text_color = 0xffffff },
-    },
     ["Miller"] = {
         ["920"] = { color = 0x00b6ed, text_color = 0xffffff },
         ["929"] = { color = 0xa9adaf, text_color = 0xffffff },
@@ -4937,6 +4929,11 @@ local colors = {
         ["416"] = { color = 0x9c97c4, text_color = 0xffffff },
         ["419"] = { color = 0xf9b141, text_color = 0xffffff },
         ["420"] = { color = 0xed1b2e, text_color = 0xffffff },
+    },
+    ["Reisebüro Schmidt"] = {
+        ["730"] = { color = 0x66ccff, text_color = 0xffffff },
+        ["731"] = { color = 0xff0000, text_color = 0xffffff },
+        ["740"] = { color = 0x00cc00, text_color = 0xffffff },
     },
     ["Reisedienst Krauss & Wolff Reisen"] = {
         ["900"] = { color = 0x527032, text_color = 0xffffff },
