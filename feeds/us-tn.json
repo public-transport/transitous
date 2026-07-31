@@ -38,6 +38,7 @@
         },
         {
             "name": "cleveland",
+            "spec": "gtfs-rt",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-cuats~tn~us~rt"
         },
@@ -48,6 +49,7 @@
         },
         {
             "name": "ethra",
+            "spec": "gtfs-rt",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-east~tennessee~human~resource~agency~inc~rt"
         },
@@ -73,6 +75,7 @@
         },
         {
             "name": "knoxville",
+            "spec": "gtfs-rt",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-dnkk-knoxvilleareatransit~rt"
         },
@@ -83,6 +86,7 @@
         },
         {
             "name": "memphis",
+            "spec": "gtfs-rt",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-memphis~area~transit~authority~rt"
         },
@@ -93,6 +97,7 @@
         },
         {
             "name": "nashville",
+            "spec": "gtfs-rt",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-nashvillemta~rt"
         },
