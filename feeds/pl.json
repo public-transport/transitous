@@ -988,7 +988,9 @@
             "fix": true,
             "license": {
                 "spdx-identifier": "CC0-1.0"
-            }
+            },
+            "skip" :true,
+            "skip-reason": "Feed expired"
         },
         {
             "name": "Nowy-Dwór-Mazowiecki",
@@ -1356,16 +1358,6 @@
             }
         },
         {
-            "name": "Siechnice",
-            "type": "http",
-            "spec": "gtfs",
-            "url": "https://api.zbiorkom.live/api6-open/wroclaw/gtfs/siechnice",
-            "url-override": "https://cdn.zbiorkom.live/gtfs/wroclaw-siechnice.zip",
-            "license": {
-                "spdx-identifier": "MIT"
-            }
-        },
-        {
             "name": "Goleniów",
             "type": "http",
             "spec": "gtfs",
@@ -1550,11 +1542,6 @@
             "name": "KRM-Koszalin",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-koszaliński~rower~miejski~poland~koszalin~gbfs"
-        },
-        {
-            "name": "ŁRP-Łódź",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-łódzki~rower~publiczny~łódź~pl~gbfs"
         },
         {
             "name": "Metrorower",
