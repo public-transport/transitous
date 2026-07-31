@@ -1299,7 +1299,8 @@
             "url": "https://api.zbiorkom.live/api6-open/zielonaGora/gtfs/default",
             "license": {
                 "spdx-identifier": "MIT"
-            }
+            },
+            "fix": true
         },
         {
             "name": "Zielona-Góra",
@@ -1360,8 +1361,7 @@
             "name": "Pruszków",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://api.zbiorkom.live/api6-open/warsaw/gtfs/pruszkow",
-            "url-override": "https://cdn.zbiorkom.live/gtfs/warsaw-pruszkow.zip",
+            "url": "https://api.zbiorkom.live/api6-open/warsaw/gtfs/PRUSZKOW",
             "license": {
                 "spdx-identifier": "MIT"
             }
@@ -1411,7 +1411,9 @@
             "url": "https://files.girlc.at/gtfs/szczytno.zip",
             "license": {
                 "spdx-identifier": "CC0-1.0"
-            }
+            },
+            "skip": true,
+            "skip-reason": "Feed expired"
         },
         {
             "name": "Sulejówek",
@@ -1588,19 +1590,28 @@
             "name": "RPK-Bochnia",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://api.odt.org.pl/static/media/public_transport_data/RPKBochnia_bgLAcxp.zip",
+            "url": "https://api.odt.org.pl/feed/21/GTFS_RPKBochnia.zip",
             "license": {
                 "spdx-identifier": "MIT"
             },
             "fix": true
         },
         {
-            "name": "Wałbrzych",
+            "name": "Wałbrzych-SKA",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://api.odt.org.pl/static/media/public_transport_data/GTFS-SKA.zip",
+            "url": "https://api.odt.org.pl/feed/20/SKA.zip",
             "license": {
-                "spdx-identifier": "MIT"
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "Wałbrzych-MUZK",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://api.odt.org.pl/feed/19/MUZK.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
             }
         },
         {
