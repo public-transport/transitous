@@ -1656,13 +1656,15 @@
             "name": "Krosno",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://mks.ekrosno.pl/GTFS-ST/GTFS.zip"
+            "url": "https://mks.ekrosno.pl/GTFS-ST/GTFS.zip",
+            "url-override": "https://api.zbiorkom.live/api6-open/krosno/gtfs/default"
         },
         {
             "name": "Krosno",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://mks.ekrosno.pl/GTFS-RT/trip_updates.bin"
+            "url": "https://mks.ekrosno.pl/GTFS-RT/trip_updates.bin",
+            "url-override": "https://api.zbiorkom.live/api6-open/krosno/gtfsRealtime/default/tripUpdates,serviceAlerts"
         }
     ]
 }
