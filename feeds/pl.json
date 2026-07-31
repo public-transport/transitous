@@ -1296,11 +1296,20 @@
             "name": "Zielona-Góra",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://www.mzk.zgora.pl/dla-deweloperow",
-            "function": "data_zielona_gora_latest_resource",
+            "url": "https://api.zbiorkom.live/api6-open/zielonaGora/gtfs/default",
             "license": {
-                "spdx-identifier": "CC0-1.0"
+                "spdx-identifier": "MIT"
             }
+        },
+        {
+            "name": "Zielona-Góra",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.zbiorkom.live/api6-open/zielonaGora/gtfsRealtime/default/tripUpdates,serviceAlerts",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "use-feed-proxy": true
         },
         {
             "name": "Zakroczym",
