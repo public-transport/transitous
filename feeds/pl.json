@@ -1664,7 +1664,8 @@
             "type": "url",
             "spec": "gtfs-rt",
             "url": "https://mks.ekrosno.pl/GTFS-RT/trip_updates.bin",
-            "url-override": "https://api.zbiorkom.live/api6-open/krosno/gtfsRealtime/default/tripUpdates,serviceAlerts"
+            "url-override": "https://api.zbiorkom.live/api6-open/krosno/gtfsRealtime/default/tripUpdates,serviceAlerts",
+            "use-feed-proxy": true
         }
     ]
 }
