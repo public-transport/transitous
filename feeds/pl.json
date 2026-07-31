@@ -1657,7 +1657,11 @@
             "type": "http",
             "spec": "gtfs",
             "url": "https://mks.ekrosno.pl/GTFS-ST/GTFS.zip",
-            "url-override": "https://api.zbiorkom.live/api6-open/krosno/gtfs/default"
+            "url-override": "https://api.zbiorkom.live/api6-open/krosno/gtfs/default",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "fix": true
         },
         {
             "name": "Krosno",
@@ -1665,7 +1669,10 @@
             "spec": "gtfs-rt",
             "url": "https://mks.ekrosno.pl/GTFS-RT/trip_updates.bin",
             "url-override": "https://api.zbiorkom.live/api6-open/krosno/gtfsRealtime/default/tripUpdates,serviceAlerts",
-            "use-feed-proxy": true
+            "use-feed-proxy": true,
+            "license": {
+                "spdx-identifier": "MIT"
+            }
         }
     ]
 }
