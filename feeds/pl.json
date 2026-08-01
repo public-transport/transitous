@@ -1548,11 +1548,6 @@
             "transitland-atlas-id": "f-koszaliński~rower~miejski~poland~koszalin~gbfs"
         },
         {
-            "name": "ŁRP-Łódź",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-łódzki~rower~publiczny~łódź~pl~gbfs"
-        },
-        {
             "name": "Metrorower",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-metrorower~tychy~pl~gbfs"

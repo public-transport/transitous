@@ -173,11 +173,6 @@
             "transitland-atlas-id": "f-lime~frankfurt~gbfs"
         },
         {
-            "name": "DottFrankfurt",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-dott~frankfurt~gbfs"
-        },
-        {
             "name": "Deer",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-deer~germany~gbfs",
@@ -387,11 +382,6 @@
             "name": "DottSaarbrücken",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-dott~saarbrücken~gbfs"
-        },
-        {
-            "name": "DottFrankfurt",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-dott~frankfurt~gbfs"
         },
         {
             "name": "DottDarmstadt",
