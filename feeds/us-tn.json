@@ -114,7 +114,8 @@
         {
             "name": "university-of-tennessee",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-utk~tn~us"
+            "transitland-atlas-id": "f-utk~tn~us",
+            "fix": true
         }
     ]
 }
