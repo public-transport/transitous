@@ -82,7 +82,8 @@
         {
             "name": "memphis",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-memphis~area~transit~authority"
+            "transitland-atlas-id": "f-memphis~area~transit~authority",
+            "fix": true
         },
         {
             "name": "memphis",
