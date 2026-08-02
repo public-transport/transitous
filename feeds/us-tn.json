@@ -30,6 +30,8 @@
             "name": "clarksville",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-clarksville~tn~us"
+            "skip": true,
+            "skip-reason": "Outdated GTFS"
         },
         {
             "name": "cleveland",
@@ -111,6 +113,8 @@
             "name": "columbia",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-muletown"
+            "skip": true,
+            "skip-reason": "Outdated GTFS"
         },
         {
             "name": "university-of-tennessee",
