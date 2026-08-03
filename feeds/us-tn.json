@@ -112,7 +112,7 @@
         {
             "name": "columbia",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-muletown"
+            "transitland-atlas-id": "f-muletown",
             "skip": true,
             "skip-reason": "Outdated GTFS"
         },
