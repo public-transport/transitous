@@ -317,9 +317,7 @@
         {
             "name": "Toscana-AT",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-srb-atnonscolastico",
-            "skip": true,
-            "skip-reason": "Expired feed"
+            "transitland-atlas-id": "f-s-lineeregionali",
         },
         {
             "name": "Toscana-AT-Scolatico",
