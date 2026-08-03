@@ -81,13 +81,15 @@
         {
             "name": "Exo-citduhaut-saint-laurent",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-f259-exo~citduhaut~saint~laurent"
+            "transitland-atlas-id": "o-zenbus~mrc~haut~saint~laurent"
         },
         {
             "name": "Exo-citduhaut-saint-laurent",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-f259-exo~citduhaut~saint~laurent~rt",
-            "url-override": "https://birch.catenarymaps.org/gtfs_rt?feed_id=f-f259-exo~citduhaut~saint~laurent~rt&feed_type=trip"
+            "url-override": "https://birch.catenarymaps.org/gtfs_rt?feed_id=f-f259-exo~citduhaut~saint~laurent~rt&feed_type=trip",
+            "skip": true,
+            "skip-reason": "f-f259-exo~citduhaut~saint~laurent~rt does not exist anymore?"
         },
         {
             "name": "Exo-richelain-roussillon",
