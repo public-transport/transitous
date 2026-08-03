@@ -160,12 +160,16 @@
         {
             "name": "STS-Sherbrooke",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-f2hf-sociétédetransportdesherbrooke"
+            "transitland-atlas-id": "f-f2hf-sociétédetransportdesherbrooke",
+            "skip": true,
+            "skip-reason": "api-key is missing"
         },
         {
             "name": "STS-Sherbrooke",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-f2hf-sociétédetransportdesherbrooke~rt"
+            "transitland-atlas-id": "f-f2hf-sociétédetransportdesherbrooke~rt",
+            "skip": true,
+            "skip-reason": "api-key is missing"
         },
         {
             "name": "RTC",
