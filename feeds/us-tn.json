@@ -1,0 +1,126 @@
+{
+    "maintainers": [
+        {
+            "name": "RJMcBug",
+            "github": "rjmcbug"
+        }
+    ],
+    "sources": [
+        {
+            "name": "bristol",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-city~of~bristol~tennessee"
+        },
+        {
+            "name": "chattanooga",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dn5r-carta"
+        },
+        {
+            "name": "gatlinburg",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-gatlinburg~tn~us"
+        },
+        {
+            "name": "murfreesboro",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-murfreesboro~transit"
+        },
+        {
+            "name": "clarksville",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-clarksville~tn~us",
+            "skip": true,
+            "skip-reason": "Outdated GTFS"
+        },
+        {
+            "name": "cleveland",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-cuats~tn~us"
+        },
+        {
+            "name": "cleveland",
+            "spec": "gtfs-rt",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-cuats~tn~us~rt"
+        },
+        {
+            "name": "ethra",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-east~tennessee~human~resource~agency~inc"
+        },
+        {
+            "name": "ethra",
+            "spec": "gtfs-rt",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-east~tennessee~human~resource~agency~inc~rt"
+        },
+        {
+            "name": "franklin",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dn6hr-tma~tn~us"
+        },
+        {
+            "name": "johnson-city",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-johnson~city~tn~us"
+        },
+        {
+            "name": "kingsport",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-kats~tn"
+        },
+        {
+            "name": "knoxville",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dnkk-knoxvilleareatransit"
+        },
+        {
+            "name": "knoxville",
+            "spec": "gtfs-rt",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dnkk-knoxvilleareatransit~rt"
+        },
+        {
+            "name": "memphis",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-memphis~area~transit~authority",
+            "fix": true
+        },
+        {
+            "name": "memphis",
+            "spec": "gtfs-rt",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-memphis~area~transit~authority~rt"
+        },
+        {
+            "name": "nashville",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dn6-regionaltransportationauthorityofmiddletennessee~nashville"
+        },
+        {
+            "name": "nashville",
+            "spec": "gtfs-rt",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-nashvillemta~rt"
+        },
+        {
+            "name": "pigeon-forge",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-pigeon~forge~tn~us"
+        },
+        {
+            "name": "columbia",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-muletown",
+            "skip": true,
+            "skip-reason": "Outdated GTFS"
+        },
+        {
+            "name": "university-of-tennessee",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-utk~tn~us",
+            "fix": true
+        }
+    ]
+}
