@@ -7414,7 +7414,8 @@
             "managed-by-script": true,
             "skip": false,
             "x-data-gov-fr-res-title": "GTFS Trenitalia France",
-            "x-data-gov-fr-dataset-id": "64635525318cc75a9a8a771f"
+            "x-data-gov-fr-dataset-id": "64635525318cc75a9a8a771f",
+            "script": "fr-trenitalia.lua"
         },
         {
             "name": "horaires-des-trains-trenitalia-france",
@@ -12244,6 +12245,43 @@
         {
             "name": "horaires-sncf",
             "type": "http",
+            "url": "https://mirror.traines.eu/french-netex/sncf-netex.fixed.zip",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/horaires-sncf",
+                "spdx-identifier": "ODbL-1.0"
+            },
+            "spec": "netex",
+            "x-data-gov-fr-res-id": 83195,
+            "managed-by-script": false,
+            "script": "fr-sncf.lua"
+        },
+        {
+            "name": "horaires-sncf",
+            "type": "url",
+            "url": "https://proxy.transport.data.gouv.fr/resource/sncf-siri-lite-estimated-timetable",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/horaires-sncf",
+                "spdx-identifier": "ODbL-1.0"
+            },
+            "spec": "siri",
+            "x-data-gov-fr-res-id": 83198,
+            "managed-by-script": false
+        },
+        {
+            "name": "horaires-sncf",
+            "type": "url",
+            "url": "https://proxy.transport.data.gouv.fr/resource/sncf-siri-lite-situation-exchange",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/horaires-sncf",
+                "spdx-identifier": "ODbL-1.0"
+            },
+            "spec": "siri",
+            "x-data-gov-fr-res-id": 83199,
+            "managed-by-script": false
+        },
+        {
+            "name": "horaires-sncf",
+            "type": "http",
             "url": "https://www.data.gouv.fr/api/1/datasets/r/9ae758ec-cd7a-40cd-a890-bb3963224942",
             "fix": true,
             "license": {
@@ -12253,7 +12291,9 @@
             "x-data-gov-fr-res-id": 83582,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "https://eu.ftp.opendatasoft.com/sncf/plandata/Export_OpenData_SNCF_GTFS_NewTripId.zip",
-            "x-data-gov-fr-dataset-id": "6853c089b3ed5781f6adfdf7"
+            "x-data-gov-fr-dataset-id": "6853c089b3ed5781f6adfdf7",
+            "skip": true,
+            "skip-reason": "netex is better"
         },
         {
             "name": "horaires-sncf",
@@ -12267,7 +12307,9 @@
             "x-data-gov-fr-res-id": 83196,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "https://proxy.transport.data.gouv.fr/resource/sncf-gtfs-rt-service-alerts",
-            "x-data-gov-fr-dataset-id": "6853c089b3ed5781f6adfdf7"
+            "x-data-gov-fr-dataset-id": "6853c089b3ed5781f6adfdf7",
+            "skip": true,
+            "skip-reason": "siri is better"
         },
         {
             "name": "horaires-sncf",
@@ -12281,7 +12323,9 @@
             "x-data-gov-fr-res-id": 83583,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "https://proxy.transport.data.gouv.fr/resource/sncf-gtfs-rt-trip-updates",
-            "x-data-gov-fr-dataset-id": "6853c089b3ed5781f6adfdf7"
+            "x-data-gov-fr-dataset-id": "6853c089b3ed5781f6adfdf7",
+            "skip": true,
+            "skip-reason": "siri is better"
         },
         {
             "name": "hop-bus-le-reseau-100-gratuit-du-coeur-de-flandre",
