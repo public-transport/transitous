@@ -514,6 +514,13 @@
             "x-data-gov-fr-dataset-id": "5ae1715488ee384c8ba0342b"
         },
         {
+            "name": "donnees-theoriques-gtfs-et-temps-reel-siri-lite-du-reseau-cts",
+            "type": "url",
+            "spec": "siri",
+            "url": "https://cdn.k118.de/siri-et/fr/cts/latest.xml",
+            "url-contact": "github.com/MrKrisKrisu"
+        },
+        {
             "name": "reseau-orizo-grand-avignon",
             "type": "http",
             "url": "https://www.data.gouv.fr/api/1/datasets/r/68eddc46-b2f5-4396-a298-214c415f6984",

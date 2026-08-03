@@ -213,6 +213,12 @@
             "type": "http",
             "url": "https://github.com/Egezenn/kk-gtfs/raw/main/data/tokat.zip",
             "fix": true
+        },
+        {
+            "name": "tcdd",
+            "type": "http",
+            "url": "https://github.com/yasinkaraaslan/tcdd-gtfs/raw/main/output/tcdd.zip",
+            "fix": true
         }
     ]
 }

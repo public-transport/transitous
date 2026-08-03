@@ -80,8 +80,8 @@
         },
         {
             "name": "Exo-citduhaut-saint-laurent",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-f259-exo~citduhaut~saint~laurent"
+            "type": "mobility-database",
+            "mdb-id": "mdb-745"
         },
         {
             "name": "Exo-citduhaut-saint-laurent",
