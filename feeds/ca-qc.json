@@ -157,13 +157,13 @@
         },
         {
             "name": "STS-Sherbrooke",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-f2hf-sociétédetransportdesherbrooke"
+            "type": "mobility-database",
+            "mdb-id": "mdb-1996"
         },
         {
             "name": "STS-Sherbrooke",
             "type": "mobility-database",
-            "mdb-id": "mdb-1996"
+            "mdb-id": "tld-4753-tu"
         },
         {
             "name": "RTC",
