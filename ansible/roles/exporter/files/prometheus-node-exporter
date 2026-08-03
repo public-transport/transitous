@@ -1,0 +1,5 @@
+# Set the command-line arguments to pass to the server.
+# Due to shell escaping, to pass backslashes for regexes, you need to double
+# them (\\d for \d). If running under systemd, you need to double them again
+# (\\\\d to mean \d), and escape newlines too.
+ARGS="--collector.systemd --collector.systemd.unit-include='.*motis.*' --collector.systemd.enable-restarts-metrics --collector.systemd.enable-start-time-metrics --collector.zfs"
