@@ -85,9 +85,9 @@
         },
         {
             "name": "Exo-citduhaut-saint-laurent",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-f259-exo~citduhaut~saint~laurent~rt",
-            "url-override": "https://birch.catenarymaps.org/gtfs_rt?feed_id=f-f259-exo~citduhaut~saint~laurent~rt&feed_type=trip"
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://birch.catenarymaps.org/gtfs_rt?feed_id=f-f259-exo~citduhaut~saint~laurent~rt&feed_type=trip"
         },
         {
             "name": "Exo-richelain-roussillon",
@@ -162,8 +162,8 @@
         },
         {
             "name": "STS-Sherbrooke",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-f2hf-sociétédetransportdesherbrooke~rt"
+            "type": "mobility-database",
+            "mdb-id": "mdb-1996"
         },
         {
             "name": "RTC",
