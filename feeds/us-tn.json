@@ -29,7 +29,7 @@
         {
             "name": "clarksville",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-clarksville~tn~us"
+            "transitland-atlas-id": "f-clarksville~tn~us",
             "skip": true,
             "skip-reason": "Outdated GTFS"
         },
