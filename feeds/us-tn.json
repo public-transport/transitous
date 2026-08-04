@@ -9,7 +9,9 @@
         {
             "name": "bristol",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-city~of~bristol~tennessee"
+            "transitland-atlas-id": "f-city~of~bristol~tennessee",
+            "skip": true,
+            "skip-reason": "cloudflare blocking and transitland cache needs account?"
         },
         {
             "name": "chattanooga",
