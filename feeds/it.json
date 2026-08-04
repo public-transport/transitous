@@ -282,6 +282,15 @@
             }
         },
         {
+            "name": "Sicilia-Messina-ATM",
+            "type": "http",
+            "url": "https://www.atmmessinaspa.it/GTFS/GTFS_ATM_SPA.zip",
+            "spec": "gtfs",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
+        },
+        {
             "name": "Sicilia-Palermo-AMAT",
             "type": "http",
             "url": "https://opendata.comune.palermo.it/js/server/uploads/dataset/gtfs/amat_gtfs.zip",
