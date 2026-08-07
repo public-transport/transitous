@@ -21,8 +21,8 @@ steps:
       - export target_flags="-march=skylake-avx512"
       - export CUDACXX=/usr/local/cuda/bin/nvcc
       - export LD_LIBRARY_PATH=/usr/local/cuda/lib64
-      - cmake --preset cuda -Smotis-src -DCMAKE_CUDA_ARCHITECTURES="89" -DMOTIS_TARGET_FLAGS="$target_flags"
-      - cmake --build --preset cuda --target motis -Smotis-src
+      - cmake --preset cuda -Smotis-src -Bmotis-src/build -DCMAKE_CUDA_ARCHITECTURES="89" -DMOTIS_TARGET_FLAGS="$target_flags"
+      - cmake --build --preset cuda -Bmotis-src/build --target motis
       - mkdir -p motis-out
       - mv motis-src/build/motis motis-out/motis
       - cp -r motis-src/deps/tiles/profile motis-out/tiles-profiles
@@ -32,9 +32,7 @@ steps:
   build-release-skylake-avx512:
     image: docker.io/alpine
     commands:
-      - export MOTIS_TAG=v2.11.0
       - apk add musl-dev cmake ninja gcc g++ git pnpm linux-headers
-      - git clone https://github.com/motis-project/motis -b $MOTIS_TAG motis-src
       - mkdir -p motis-src/build
       - export flags="-static -O3 -fomit-frame-pointer -flto -DNDEBUG"
       - export target_flags="-march=skylake-avx512"
