@@ -66,6 +66,7 @@ motis:
       ansible_become: true
       ansible_host: tamassia
       no_cow: true
+      woodpecker_no_docker: true
       motis_primary: false
       motis_update_time: "2:30:00" # UTC
       motis_target_machines:
