@@ -3,6 +3,8 @@
 
 when:
   - event: tag
+  - event: push
+    branch: [work/traines-source/woodpecker]
 
 labels:
   host: crunchy
@@ -40,6 +42,25 @@ steps:
       - mv motis-src/ui/build motis-out/ui
       - cp -r motis-src/deps/tiles/profile motis-out/tiles-profiles
       - tar -C ./motis-out -cjf motis-staging-haswell.tar.bz2 ./motis ./tiles-profiles ./ui
+
+  build-release-cuda-89:
+    image: nvidia/cuda:13.3.1-cudnn-devel-ubuntu26.04
+    commands:
+      - export MOTIS_TAG=v2.11.0
+      - apt-get update && apt-get install -y g++-15 gcc-15 cmake ninja-build git
+      - git clone https://github.com/motis-project/motis -b $MOTIS_TAG motis-src
+      - mkdir -p motis-src/build
+      - export target_flags="-march=skylake-avx512"
+      - export DEBIAN_FRONTEND=noninteractive
+      - export CUDACXX=/usr/local/cuda/bin/nvcc
+      - export LD_LIBRARY_PATH=/usr/local/cuda/lib64
+      - cmake --preset cuda -DCMAKE_CUDA_ARCHITECTURES="89" -DMOTIS_TARGET_FLAGS="$target_flags"
+      - cmake --build --preset cuda --target motis
+      - mkdir -p motis-out
+      - mv motis-src/build/motis motis-out/motis
+      - cp -r motis-src/deps/tiles/profile motis-out/tiles-profiles
+      - tar -C ./motis-out -cjf motis-release-cuda-89.tar.bz2 ./motis ./tiles-profiles
+      - rm motis-src/build -rf
 
   upload:
     image: docker.io/woodpeckerci/plugin-release
