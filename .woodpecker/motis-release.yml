@@ -22,7 +22,7 @@ steps:
       - export CUDACXX=/usr/local/cuda/bin/nvcc
       - export LD_LIBRARY_PATH=/usr/local/cuda/lib64
       - cmake --preset cuda -Smotis-src -Bmotis-src/build -DCMAKE_CUDA_ARCHITECTURES="89" -DMOTIS_TARGET_FLAGS="$target_flags"
-      - cmake --build --preset cuda -Bmotis-src/build --target motis
+      - ninja -C motis-src/build motis
       - mkdir -p motis-out
       - mv motis-src/build/motis motis-out/motis
       - cp -r motis-src/deps/tiles/profile motis-out/tiles-profiles
@@ -37,7 +37,7 @@ steps:
       - export flags="-static -O3 -fomit-frame-pointer -flto -DNDEBUG"
       - export target_flags="-march=skylake-avx512"
       - cmake --compile-no-warning-as-error -DCMAKE_BUILD_TYPE=None -DMOTIS_MIMALLOC=ON -DCMAKE_CXX_FLAGS="$flags" -DCMAKE_C_FLAGS="$flags" -DMOTIS_TARGET_FLAGS="$target_flags" -GNinja -DNO_BUILDCACHE=ON -Bmotis-src/build -Smotis-src
-      - ninja -C motis-src/build motis motis-test motis-web-ui
+      - ninja -C motis-src/build motis motis-web-ui
       - mkdir -p motis-out
       - mv motis-src/build/motis motis-out/motis
       - mv motis-src/ui/build motis-out/ui
@@ -53,7 +53,7 @@ steps:
       - export flags="-static -O3 -fno-omit-frame-pointer -DNDEBUG"
       - export target_flags="-march=haswell"
       - cmake --compile-no-warning-as-error -DCMAKE_BUILD_TYPE=None -DMOTIS_MIMALLOC=ON -DCMAKE_CXX_FLAGS="$flags" -DCMAKE_C_FLAGS="$flags" -DMOTIS_TARGET_FLAGS="$target_flags" -GNinja -DNO_BUILDCACHE=ON -Bmotis-src/build -Smotis-src
-      - ninja -C motis-src/build motis motis-test motis-web-ui
+      - ninja -C motis-src/build motis motis-web-ui
       - mkdir -p motis-out
       - mv motis-src/build/motis motis-out/motis
       - mv motis-src/ui/build motis-out/ui
