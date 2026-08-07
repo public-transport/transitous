@@ -6,6 +6,7 @@
   hosts: woodpecker
   roles:
     - woodpecker
+    - wireguard
 
 - name: Set up Woodpecker agent
   hosts: crunchy
