@@ -31,10 +31,8 @@ steps:
   build-release-cuda-89:
     image: nvidia/cuda:13.3.1-cudnn-devel-ubuntu26.04
     commands:
-      - export MOTIS_TAG=v2.11.0
       - export DEBIAN_FRONTEND=noninteractive
       - apt-get update && apt-get install -y g++-15 gcc-15 cmake ninja-build git
-      - git clone https://github.com/motis-project/motis -b $MOTIS_TAG motis-src
       - mkdir -p motis-src/build
       - export target_flags="-march=skylake-avx512"
       - export CUDACXX=/usr/local/cuda/bin/nvcc
