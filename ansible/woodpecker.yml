@@ -11,5 +11,11 @@
 - name: Set up Woodpecker agent
   hosts: crunchy
   roles:
+    - docker
     - woodpecker-agent
     - gtfs-server
+
+- name: Set up Woodpecker agent
+  hosts: tamassia
+  roles:
+    - woodpecker-agent
