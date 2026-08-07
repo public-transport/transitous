@@ -34,50 +34,9 @@
 
 - name: Unpack MOTIS
   unarchive:
-    src: https://github.com/public-transport/transitous/releases/download/motis-{{motis_version}}/motis-release-skylake-avx512.tar.bz2
+    src: https://github.com/public-transport/transitous/releases/download/motis-{{motis_version}}/motis-release-{{motis_build_flavour}}.tar.bz2
     dest: /opt/motis/
     remote_src: yes
-
-- name: Create motis source dir
-  delegate_to: localhost
-  ansible.builtin.file:
-    path: /var/cache/motis-git
-    state: directory
-    owner: algolocal
-    group: algolocal
-    mode: 0775
-  when: gpu_build is defined and gpu_build
-
-- name: Get motis source
-  delegate_to: localhost
-  ansible.builtin.git:
-    repo: 'https://github.com/motis-project/motis.git'
-    dest: /var/cache/motis-git
-    version: "{{motis_version}}"
-  when: gpu_build is defined and gpu_build
-
-- name: Install build deps
-  delegate_to: localhost
-  become: true
-  apt:
-    update_cache: true
-    name:
-     - g++-15
-     - gcc-15
-     - cmake
-     - ninja-build
-  when: gpu_build is defined and gpu_build
-
-- name: motis gpu build
-  ansible.builtin.script: gpu-build.sh
-  delegate_to: localhost
-  when: gpu_build is defined and gpu_build
-
-- name: Copy motis gpu binary
-  copy:
-    src: /var/cache/motis-git/build/cuda/motis
-    dest: /opt/motis/motis
-  when: gpu_build is defined and gpu_build
 
 - name: Create MOTIS runtime directory
   file:

@@ -7,6 +7,7 @@ motis:
     crunchy:
       ansible_user: root
       ansible_host: crunchy.spline.de
+      motis_build_flavour: skylake-avx512
       motis_primary: true
       motis_update_time: "5:00:00" #Europe/Berlin
       transitous_woodpecker_agent_secret: !vault |
@@ -33,8 +34,8 @@ motis:
       ansible_sudo_user: root
       ansible_become: true
       ansible_host: goldberg
+      motis_build_flavour: cuda-89
       gpu: true
-      gpu_build: true
       no_cow: true
       motis_primary: true
       transitous_wireguard_privkey: !vault |
@@ -53,6 +54,7 @@ motis:
       ansible_host: johnson
       gpu: true
       no_cow: true
+      motis_build_flavour: skylake-avx512
       motis_primary: true
       transitous_wireguard_privkey: !vault |
         $ANSIBLE_VAULT;1.1;AES256
@@ -68,7 +70,7 @@ motis:
       ansible_sudo_user: root
       ansible_become: true
       ansible_host: tamassia
-      gpu_build: true
+      motis_build_flavour: cuda-89
       no_cow: true
       motis_primary: false
       motis_update_time: "2:30:00" # UTC
