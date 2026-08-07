@@ -4,6 +4,9 @@
 when:
   - event: tag
 
+labels:
+  host: crunchy
+
 steps:
   build-release-skylake-avx512:
     image: docker.io/alpine
