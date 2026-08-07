@@ -24,6 +24,9 @@
             "name": "Athens-Rail",
             "type": "http",
             "url": "https://data.gov.gr/dataset/4e897a75-975a-4ce7-af65-f32ea01f93b9/resource/5e3858ee-d9ba-48c2-9015-744ea160976d/download/stasy_gtfs.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            },
             "fix": true,
             "extend-calendar": true
         },
