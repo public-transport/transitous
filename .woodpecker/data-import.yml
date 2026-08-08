@@ -1,6 +1,9 @@
 # SPDX-FileCopyrightText: 2024 Jonah Brüchert <jbb@kaidan.im>
 # SPDX-License-Identifier: CC0-1.0
 
+labels:
+  host: crunchy
+
 when:
   - event: push
     branch: [main, work/jbb/woodpecker]

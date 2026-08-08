@@ -279,15 +279,17 @@
         },
         {
             "name": "Gdynia",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-ztm~gdynia",
-            "fix": true
+            "type": "http",
+            "url": "https://api.zbiorkom.live/api6-open/tricity/gtfs/GDYNIA",
+            "license":{
+                "spdx-identifier": "MIT"
+            }
         },
         {
             "name": "Gdynia",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://api.zbiorkom.live/api6-open/tricity/gtfsRealtime/default/tripUpdates,serviceAlerts",
+            "url": "https://api.zbiorkom.live/api6-open/tricity/gtfsRealtime/GDYNIA/tripUpdates,serviceAlerts",
             "license": {
                 "spdx-identifier": "MIT"
             },
@@ -986,7 +988,9 @@
             "fix": true,
             "license": {
                 "spdx-identifier": "CC0-1.0"
-            }
+            },
+            "skip" :true,
+            "skip-reason": "Feed expired"
         },
         {
             "name": "Nowy-Dwór-Mazowiecki",
@@ -1172,10 +1176,21 @@
             "type": "http",
             "spec": "gtfs",
             "url": "https://files.girlc.at/gtfs/tczew.zip",
+            "url-override": "https://api.zbiorkom.live/api6-open/tczew/gtfs/default",
             "license": {
                 "spdx-identifier": "CC0-1.0"
             },
             "fix": true
+        },
+        {
+            "name": "Tczew",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.zbiorkom.live/api6-open/tczew/gtfsRealtime/default/tripUpdates,serviceAlerts",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "use-feed-proxy": true
         },
         {
             "name": "Plusbus",
@@ -1292,11 +1307,21 @@
             "name": "Zielona-Góra",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://www.mzk.zgora.pl/dla-deweloperow",
-            "function": "data_zielona_gora_latest_resource",
+            "url": "https://api.zbiorkom.live/api6-open/zielonaGora/gtfs/default",
             "license": {
-                "spdx-identifier": "CC0-1.0"
-            }
+                "spdx-identifier": "MIT"
+            },
+            "fix": true
+        },
+        {
+            "name": "Zielona-Góra",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.zbiorkom.live/api6-open/zielonaGora/gtfsRealtime/default/tripUpdates,serviceAlerts",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "use-feed-proxy": true
         },
         {
             "name": "Zakroczym",
@@ -1347,18 +1372,7 @@
             "name": "Pruszków",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://api.zbiorkom.live/api6-open/warsaw/gtfs/pruszkow",
-            "url-override": "https://cdn.zbiorkom.live/gtfs/warsaw-pruszkow.zip",
-            "license": {
-                "spdx-identifier": "MIT"
-            }
-        },
-        {
-            "name": "Siechnice",
-            "type": "http",
-            "spec": "gtfs",
-            "url": "https://api.zbiorkom.live/api6-open/wroclaw/gtfs/siechnice",
-            "url-override": "https://cdn.zbiorkom.live/gtfs/wroclaw-siechnice.zip",
+            "url": "https://api.zbiorkom.live/api6-open/warsaw/gtfs/PRUSZKOW",
             "license": {
                 "spdx-identifier": "MIT"
             }
@@ -1408,13 +1422,16 @@
             "url": "https://files.girlc.at/gtfs/szczytno.zip",
             "license": {
                 "spdx-identifier": "CC0-1.0"
-            }
+            },
+            "skip": true,
+            "skip-reason": "Feed expired"
         },
         {
             "name": "Sulejówek",
             "type": "http",
             "spec": "gtfs",
             "url": "https://files.girlc.at/gtfs/sulejowek.zip",
+            "url-override": "https://api.zbiorkom.live/api6-open/warsaw/gtfs/SULEJOWEK",
             "license": {
                 "spdx-identifier": "CC0-1.0"
             }
@@ -1423,7 +1440,7 @@
             "name": "Sulejówek",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://api.zbiorkom.live/api6-open/czestochowa/gtfsRealtime/SULEJOWEK/tripUpdates,serviceAlerts",
+            "url": "https://api.zbiorkom.live/api6-open/warsaw/gtfsRealtime/SULEJOWEK/tripUpdates,serviceAlerts",
             "license": {
                 "spdx-identifier": "MIT"
             },
@@ -1475,6 +1492,7 @@
             "type": "http",
             "spec": "gtfs",
             "url": "https://files.girlc.at/gtfs/koszalin.zip",
+            "url-override": "https://api.zbiorkom.live/api6-open/koszalin/gtfs/default",
             "fix": true,
             "license": {
                 "spdx-identifier": "CC0-1.0"
@@ -1583,19 +1601,28 @@
             "name": "RPK-Bochnia",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://api.odt.org.pl/static/media/public_transport_data/RPKBochnia_bgLAcxp.zip",
+            "url": "https://api.odt.org.pl/feed/21/GTFS_RPKBochnia.zip",
             "license": {
                 "spdx-identifier": "MIT"
             },
             "fix": true
         },
         {
-            "name": "Wałbrzych",
+            "name": "Wałbrzych-SKA",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://api.odt.org.pl/static/media/public_transport_data/GTFS-SKA.zip",
+            "url": "https://api.odt.org.pl/feed/20/SKA.zip",
             "license": {
-                "spdx-identifier": "MIT"
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "Wałbrzych-MUZK",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://api.odt.org.pl/feed/19/MUZK.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
             }
         },
         {
@@ -1629,13 +1656,23 @@
             "name": "Krosno",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://mks.ekrosno.pl/GTFS-ST/GTFS.zip"
+            "url": "https://mks.ekrosno.pl/GTFS-ST/GTFS.zip",
+            "url-override": "https://api.zbiorkom.live/api6-open/krosno/gtfs/default",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "fix": true
         },
         {
             "name": "Krosno",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://mks.ekrosno.pl/GTFS-RT/trip_updates.bin"
+            "url": "https://mks.ekrosno.pl/GTFS-RT/trip_updates.bin",
+            "url-override": "https://api.zbiorkom.live/api6-open/krosno/gtfsRealtime/default/tripUpdates,serviceAlerts",
+            "use-feed-proxy": true,
+            "license": {
+                "spdx-identifier": "MIT"
+            }
         }
     ]
 }

@@ -180,7 +180,15 @@ server {
 
     # Source files
     location /gtfs/ {
-        proxy_pass http://10.11.1.1:80/;
+        proxy_pass http://10.11.1.1:80/out/;
+    }
+
+    location /source-data/raw/ {
+        proxy_pass http://10.11.1.1:80/downloads/;
+    }
+
+    location /source-data/processed/ {
+        proxy_pass http://10.11.1.1:80/out/;
     }
 
     location /robots.txt {

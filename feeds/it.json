@@ -282,11 +282,38 @@
             }
         },
         {
+            "name": "Sicilia-Messina-ATM",
+            "type": "http",
+            "url": "https://www.atmmessinaspa.it/GTFS/GTFS_ATM_SPA.zip",
+            "spec": "gtfs",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
+        },
+        {
             "name": "Sicilia-Palermo-AMAT",
             "type": "http",
             "url": "https://opendata.comune.palermo.it/js/server/uploads/dataset/gtfs/amat_gtfs.zip",
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
+            }
+        },
+        {
+            "name": "Sicilia-intercity-coaches",
+            "type": "http",
+            "url": "https://it.mangonese.dev/gtfs/sicily-coaches.gtfs.zip",
+            "spec": "gtfs",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
+        },
+        {
+            "name": "Sicilia-FCE-Circumetnea",
+            "type": "http",
+            "url": "https://it.mangonese.dev/gtfs/fce.gtfs.zip",
+            "spec": "gtfs",
+            "license": {
+                "url": "https://www.circumetnea.it/pubblicazione-orari-del-trasporto-pubblico-locale-in-formato-gtfs/"
             }
         },
         {

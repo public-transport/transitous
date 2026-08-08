@@ -8,7 +8,8 @@ After=network.target
 
 [Service]
 Environment="WOODPECKER_GITHUB=true"
-Environment="WOODPECKER_SERVER_ADDR=vm-motis-import.spline.de:8000"
+Environment="WOODPECKER_SERVER_ADDR=127.0.0.1:8000"
+Environment="WOODPECKER_GRPC_ADDR=10.11.1.6:9000"
 Environment="WOODPECKER_GITHUB_CLIENT={{ transitous_woodpecker_client_id }}"
 Environment="WOODPECKER_GITHUB_SECRET={{ transitous_woodpecker_client_secret }}"
 Environment="WOODPECKER_HOST=https://routing-import.spline.de"
