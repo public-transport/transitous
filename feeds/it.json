@@ -18,7 +18,11 @@
             "url": "ftp://ftp.sta.bz.it/gtfs/google_transit_shp.zip",
             "type": "ftp",
             "spec": "gtfs",
-            "script": "it-sta.lua"
+            "script": "it-sta.lua",
+            "license": {
+                "spdx-identifier": "CC0-1.0",
+                "url": "https://github.com/noi-techpark/opendatahub-gtfs-api/blob/839d698938a224a7db4885f717ca05706fa6bae1/datasets.yml#L33"
+            }
         },
         {
             "name": "Bolzano-STA-flex",
