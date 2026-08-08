@@ -130,11 +130,12 @@ server {
                                 http_500 http_502 http_503 http_504;
     }
 
-    # OJP endpoint
-    location /ojp20 {
-        proxy_pass http://{{ item.vhost }}-backend/ojp20;
+    # multi-purpose endpoints
+    location ~ ^/(ojp20|api/mcp) {
+        proxy_pass http://{{ item.vhost }}-backend$uri?$args;
 
         limit_req zone=api burst=20 delay=10;
+        limit_conn api_plan_conn 3;
         
         proxy_connect_timeout       2s;
         proxy_send_timeout          60;
