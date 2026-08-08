@@ -7,4 +7,3 @@
   roles:
     - wireguard
     - motis
-    - exporter

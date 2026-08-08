@@ -2,13 +2,13 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-#- name: Install node-exporter
-#  apt:
-#    name: prometheus-node-exporter
-#- name: Copy node-exporter config
-#  ansible.builtin.copy:
-#    src: prometheus-node-exporter
-#    dest: /etc/default/prometheus-node-exporter
+- name: Install node-exporter
+  apt:
+    name: prometheus-node-exporter
+- name: Copy node-exporter config
+  ansible.builtin.copy:
+    src: prometheus-node-exporter
+    dest: /etc/default/prometheus-node-exporter
 - name: Install nvidia-gpu-exporter
   apt:
     deb: https://github.com/utkuozdemir/nvidia_gpu_exporter/releases/download/v1.13.1/nvidia-gpu-exporter_1.13.1_linux_amd64.deb

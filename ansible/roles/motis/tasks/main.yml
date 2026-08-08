@@ -30,7 +30,7 @@
 
 - name: Set motis version
   set_fact:
-    motis_version: v2.11.0
+    motis_version: v2.11.1
 
 - name: Unpack MOTIS
   unarchive:
