@@ -1938,6 +1938,8 @@ local colors = {
         ["N8"] = { color = 0x009ee3, text_color = 0xffffff },
         ["N9"] = { color = 0x009640, text_color = 0xffffff },
         ["S15"] = { color = 0x002650, text_color = 0xffffff },
+		["SEV"] = { color = 0x002453, text_color = 0xfdfeff },
+		["SEV3"] = { color = 0xf5d300, text_color = 0x002453 },
     },
     ["GTNord"] = {
         ["160"] = { color = 0x8a2737, text_color = 0xffffff },
