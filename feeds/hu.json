@@ -97,7 +97,7 @@
         {
             "name": "paksbusz",
             "type": "http",
-            "url": "https://utazastervezo.paksbusz.hu/api/static/v1/gtfs-google/gtfs-google.zip",
+            "url": "https://utazastervezo.paksbusz.net/api/static/v1/gtfs-google/gtfs-google.zip",
             "license": {
                 "spdx-identifier": "CC0-1.0"
             }
