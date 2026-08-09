@@ -25,12 +25,21 @@
       {
         "name": "korail",
         "type": "http",
-        "url": "https://shells.ccc.ac/~aelin/gtfs/korail.gtfs.zip",
+        "url": "https://mkuran.pl/gtfs/korail.zip",
         "license": {
-          "spdx-identifier": "ODbL-1.0",
-          "url": "https://shells.ccc.ac/~aelin/gtfs/LICENSE.txt"
+          "spdx-identifier": "CC-BY-4.0",
+          "url": "https://mkuran.pl/gtfs/"
+        }
+      },
+      {
+        "name": "korail",
+        "spec": "gtfs-rt",
+        "type": "url",
+        "url": "https://mkuran.pl/gtfs/korail.pb",
+        "license": {
+            "spdx-identifier": "CC-BY-4.0",
+            "url": "https://mkuran.pl/gtfs/"
         }
       }
     ]
   }
-  
