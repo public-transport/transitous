@@ -127,7 +127,7 @@
         {
             "name": "kiskunhalas",
             "type": "http",
-            "url": "https://www.kiskunhalas.hu/article_files/249/kiskunhalas_gtfs.zip"
+            "url": "https://gy-mate.hu/gtfs/gtfs_hu_kiskunhalas.zip"
         },
         {
             "name": "Hódmezővásárhely",
