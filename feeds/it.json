@@ -15,8 +15,8 @@
         },
         {
             "name": "Bolzano-STA",
-            "url": "ftp://ftp.sta.bz.it/gtfs/google_transit_shp.zip",
-            "type": "ftp",
+            "url": "https://gtfs.api.opendatahub.com/v1/dataset/sta-time-tables/raw",
+            "type": "http",
             "spec": "gtfs",
             "script": "it-sta.lua",
             "license": {
