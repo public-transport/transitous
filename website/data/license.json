@@ -14952,6 +14952,17 @@
         "human_name": "Veneto Venezia Ferries"
     },
     {
+        "country_code": "IT",
+        "country_name": "Italy",
+        "region_code": "IT",
+        "region_name": "Italy",
+        "spdx_license_identifier": "CC0-1.0",
+        "operators": [],
+        "source": "http://gtfs.api.opendatahub.com/v1/dataset/sta-time-tables/raw",
+        "filename": "it_Bolzano-STA.gtfs.zip",
+        "human_name": "Südtiroler Transportstrukturen AG"
+    },
+    {
         "country_code": "JP",
         "country_name": "Japan",
         "region_code": "JP",
