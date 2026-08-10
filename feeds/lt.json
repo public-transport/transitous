@@ -119,7 +119,8 @@
         {
             "name": "B-Bus",
             "type": "mobility-database",
-            "mdb-id": "mdb-2385"
+            "mdb-id": "mdb-2385",
+            "fix": true
         },
         {
             "name": "LTG-Link",
