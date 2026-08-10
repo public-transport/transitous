@@ -29,7 +29,8 @@
         "license": {
           "spdx-identifier": "CC-BY-4.0",
           "url": "https://mkuran.pl/gtfs/"
-        }
+        },
+        "script": "kr-korail.lua"
       },
       {
         "name": "korail",
