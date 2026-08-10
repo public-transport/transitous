@@ -11,7 +11,7 @@ import mobilitydatabase
 import pycountry
 
 from pathlib import Path
-from metadata import TransitlandSource, MobilityDatabaseSource, Region, UrlSource, HttpSource
+from metadata import TransitlandSource, MobilityDatabaseSource, Region, UrlSource, HttpSource, FtpSource
 from zipfile import ZipFile
 from typing import Optional, Any
 from datetime import datetime, timezone
@@ -37,7 +37,7 @@ def filter_duplicates(elems):
     return out
 
 
-def http_source_attribution(source: HttpSource, source_id: str, region_data: dict) -> Optional[dict]:
+def http_source_attribution(source: HttpSource | FtpSource, source_id: str, region_data: dict) -> Optional[dict]:
     attribution = region_data
 
     if source.license.spdx_identifier:
@@ -283,7 +283,7 @@ if __name__ == "__main__":
                                 continue
                             if source_id not in attributions:
                                 attributions[source_id] = gbfs_attribution
-                    case HttpSource():
+                    case HttpSource() | FtpSource():
                         http_attribution = http_source_attribution(source, source_id, region_data.copy())
                         if not http_attribution:
                             continue
