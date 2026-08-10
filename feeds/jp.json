@@ -7,6 +7,11 @@
     ],
     "sources": [
         {
+            "name": "japan-rail",
+            "type": "http",
+            "url": "https://jbb.ghsq.de/gtfs/jp-jr.gtfs.zip"
+        },
+        {
             "name": "hiroden",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-hiroden~jp",
