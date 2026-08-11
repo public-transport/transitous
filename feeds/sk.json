@@ -48,6 +48,12 @@
             "url-override": "https://www.arcgis.com/sharing/rest/content/items/aba12fd2cbac4843bc7406151bc66106/data"
         },
         {
+            "name": "dpmp",
+            "type": "http",
+            "fix": true,
+            "url": "https://transiq.xhyrom.dev/gtfs/sk/dpmp.zip"
+        },
+        {
             "name": "idsbk-regional-buses",
             "type": "http",
             "fix": true,
