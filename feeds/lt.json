@@ -124,9 +124,8 @@
         },
         {
             "name": "LTG-Link",
-            "type": "mobility-database",
-            "mdb-id": "mdb-2991",
-            "enable-crowd-sourced-realtime": true
+            "type": "http",
+            "url": "https://gitlab.com/jbb/hafas-converter-ng/-/jobs/artifacts/main/raw/lt_ltglink-shapes.gtfs.zip?job=update-ltglink-feed"
         },
         {
             "name": "kautra",
