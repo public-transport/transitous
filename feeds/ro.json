@@ -131,6 +131,17 @@
             "transitland-atlas-id": "f-dej~velo~city~gbfs"
         },
         {
+            "name": "Galati-Transurb",
+            "type": "http",
+            "url": "https://github.com/Steinhagen/gtfs-galati/releases/download/gtfs-latest/gtfs-transurb.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0",
+                "url": "https://github.com/Steinhagen/gtfs-galati/blob/main/LICENSE",
+                "publisher": "Steinhagen",
+                "publisher-url": "https://github.com/Steinhagen/gtfs-galati"
+            }
+        },
+        {
             "name": "Hunedoara-public-bike-system",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-hunedoara~gbfs"
