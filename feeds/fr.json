@@ -1050,7 +1050,8 @@
             "managed-by-script": true,
             "skip": false,
             "x-data-gov-fr-res-title": "cars Région Isère (38) - Offre théorique au format GTFS",
-            "x-data-gov-fr-dataset-id": "5bb1caa6634f4136693d9053"
+            "x-data-gov-fr-dataset-id": "5bb1caa6634f4136693d9053",
+            "script": "generic-coach-to-bus.lua"
         },
         {
             "name": "reseau-cars-region-isere-38",
@@ -3644,7 +3645,8 @@
             "managed-by-script": true,
             "skip": false,
             "x-data-gov-fr-res-title": "GTFS AIN",
-            "x-data-gov-fr-dataset-id": "60784f6022a1bbe2484cf248"
+            "x-data-gov-fr-dataset-id": "60784f6022a1bbe2484cf248",
+            "script": "generic-coach-to-bus.lua"
         },
         {
             "name": "reseau-interurbain-cars-region-ardeche-07",
@@ -3659,7 +3661,8 @@
             "managed-by-script": true,
             "skip": false,
             "x-data-gov-fr-res-title": "GTFS_ardeche.zip",
-            "x-data-gov-fr-dataset-id": "60785d62ee7e37e2041a9c6a"
+            "x-data-gov-fr-dataset-id": "60785d62ee7e37e2041a9c6a",
+            "script": "generic-coach-to-bus.lua"
         },
         {
             "name": "reseau-interurbain-et-scolaire-cars-region-drome-26",
@@ -3674,7 +3677,8 @@
             "managed-by-script": true,
             "skip": false,
             "x-data-gov-fr-res-title": "GTFS_drome.zip",
-            "x-data-gov-fr-dataset-id": "607860847e79b65f245982db"
+            "x-data-gov-fr-dataset-id": "607860847e79b65f245982db",
+            "script": "generic-coach-to-bus.lua"
         },
         {
             "name": "reseau-interurbain-cars-region-haute-savoie-74",
@@ -3689,7 +3693,8 @@
             "managed-by-script": true,
             "skip": false,
             "x-data-gov-fr-res-title": "GTFS_haute_savoie.zip",
-            "x-data-gov-fr-dataset-id": "607861844a84ad655a94f8c5"
+            "x-data-gov-fr-dataset-id": "607861844a84ad655a94f8c5",
+            "script": "generic-coach-to-bus.lua"
         },
         {
             "name": "reseau-interurbain-cars-region-loire-42",
@@ -3704,7 +3709,8 @@
             "managed-by-script": true,
             "skip": false,
             "x-data-gov-fr-res-title": "GTFS LOIRE",
-            "x-data-gov-fr-dataset-id": "607862167487e5d490677f13"
+            "x-data-gov-fr-dataset-id": "607862167487e5d490677f13",
+            "script": "generic-coach-to-bus.lua"
         },
         {
             "name": "reseau-interurbain-cars-region-savoie-73",
@@ -3719,7 +3725,8 @@
             "managed-by-script": true,
             "skip": false,
             "x-data-gov-fr-res-title": "GTFS Car région Savoie",
-            "x-data-gov-fr-dataset-id": "607862da7487e5d490677f14"
+            "x-data-gov-fr-dataset-id": "607862da7487e5d490677f14",
+            "script": "generic-coach-to-bus.lua"
         },
         {
             "name": "reseau-interurbain-cars-region-cantal-15",
@@ -3734,7 +3741,8 @@
             "managed-by-script": true,
             "skip": false,
             "x-data-gov-fr-res-title": "GTFS Car Région Cantal",
-            "x-data-gov-fr-dataset-id": "6082bcd3f3187a37252532bd"
+            "x-data-gov-fr-dataset-id": "6082bcd3f3187a37252532bd",
+            "script": "generic-coach-to-bus.lua"
         },
         {
             "name": "reseau-interurbain-cars-region-allier-03",
@@ -3749,7 +3757,8 @@
             "managed-by-script": true,
             "skip": false,
             "x-data-gov-fr-res-title": "GTFS",
-            "x-data-gov-fr-dataset-id": "6082da3e17667def63f6d47f"
+            "x-data-gov-fr-dataset-id": "6082da3e17667def63f6d47f",
+            "script": "generic-coach-to-bus.lua"
         },
         {
             "name": "reseau-interurbain-cars-region-puy-de-dome-63",
@@ -3764,7 +3773,8 @@
             "managed-by-script": true,
             "skip": false,
             "x-data-gov-fr-res-title": "GTFS PUY DE DOME",
-            "x-data-gov-fr-dataset-id": "6082dacfd1d05e89970795f5"
+            "x-data-gov-fr-dataset-id": "6082dacfd1d05e89970795f5",
+            "script": "generic-coach-to-bus.lua"
         },
         {
             "name": "reseau-interurbain-cars-region-haute-loire-43",
@@ -3779,7 +3789,8 @@
             "managed-by-script": true,
             "skip": false,
             "x-data-gov-fr-res-title": "GTFS",
-            "x-data-gov-fr-dataset-id": "6082db303e52f13729b5e124"
+            "x-data-gov-fr-dataset-id": "6082db303e52f13729b5e124",
+            "script": "generic-coach-to-bus.lua"
         },
         {
             "name": "yelo-disponibilite-des-velos-en-libre-service",
@@ -5613,7 +5624,8 @@
             "managed-by-script": true,
             "skip": false,
             "x-data-gov-fr-res-title": "Offre TC théorique Saônibus",
-            "x-data-gov-fr-dataset-id": "63569e592e0b3789f55f360c"
+            "x-data-gov-fr-dataset-id": "63569e592e0b3789f55f360c",
+            "script": "generic-coach-to-bus.lua"
         },
         {
             "name": "saonibus-horaires-theoriques-et-temps-reel-du-reseau-de-transport-urbain-de-la-cc-dsv",
@@ -8452,7 +8464,8 @@
             "managed-by-script": true,
             "skip": false,
             "x-data-gov-fr-res-title": "Breizhgo Car 22",
-            "x-data-gov-fr-dataset-id": "658626a8a582bbf574c71b48"
+            "x-data-gov-fr-dataset-id": "658626a8a582bbf574c71b48",
+            "script": "generic-coach-to-bus.lua"
         },
         {
             "name": "breizhgo-car-22",
@@ -8481,7 +8494,8 @@
             "managed-by-script": true,
             "skip": false,
             "x-data-gov-fr-res-title": "Breizhgo Car 29",
-            "x-data-gov-fr-dataset-id": "658626a8a582bbf574c71b48"
+            "x-data-gov-fr-dataset-id": "658626a8a582bbf574c71b48",
+            "script": "generic-coach-to-bus.lua"
         },
         {
             "name": "breizhgo-car--81463",
@@ -8496,7 +8510,8 @@
             "managed-by-script": true,
             "skip": false,
             "x-data-gov-fr-res-title": "Breizhgo 35",
-            "x-data-gov-fr-dataset-id": "658626a8a582bbf574c71b48"
+            "x-data-gov-fr-dataset-id": "658626a8a582bbf574c71b48",
+            "script": "generic-coach-to-bus.lua"
         },
         {
             "name": "breizhgo-car--81464",
@@ -8511,7 +8526,8 @@
             "managed-by-script": true,
             "skip": false,
             "x-data-gov-fr-res-title": "Breizhgo Car 56",
-            "x-data-gov-fr-dataset-id": "658626a8a582bbf574c71b48"
+            "x-data-gov-fr-dataset-id": "658626a8a582bbf574c71b48",
+            "script": "generic-coach-to-bus.lua"
         },
         {
             "name": "breizhgo-car--83728",
@@ -8526,7 +8542,8 @@
             "managed-by-script": true,
             "skip": false,
             "x-data-gov-fr-res-title": "Breizhgo Car - Nord-Sud",
-            "x-data-gov-fr-dataset-id": "658626a8a582bbf574c71b48"
+            "x-data-gov-fr-dataset-id": "658626a8a582bbf574c71b48",
+            "script": "generic-coach-to-bus.lua"
         },
         {
             "name": "breizhgo-car-rennes",
@@ -8541,7 +8558,8 @@
             "managed-by-script": true,
             "skip": false,
             "x-data-gov-fr-res-title": "Breizhgo Car - Rennes – Loudéac/Pontivy",
-            "x-data-gov-fr-dataset-id": "658626a8a582bbf574c71b48"
+            "x-data-gov-fr-dataset-id": "658626a8a582bbf574c71b48",
+            "script": "generic-coach-to-bus.lua"
         },
         {
             "name": "breizhgo-car-rennes",
@@ -8555,7 +8573,8 @@
             "x-data-gov-fr-res-id": 83732,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "Breizhgo Car - Rennes – Loudéac/Pontivy",
-            "x-data-gov-fr-dataset-id": "658626a8a582bbf574c71b48"
+            "x-data-gov-fr-dataset-id": "658626a8a582bbf574c71b48",
+            "script": "generic-coach-to-bus.lua"
         },
         {
             "name": "breizhgo-car--81463",
@@ -8569,7 +8588,8 @@
             "x-data-gov-fr-res-id": 81804,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "Breizhgo Car 35",
-            "x-data-gov-fr-dataset-id": "658626a8a582bbf574c71b48"
+            "x-data-gov-fr-dataset-id": "658626a8a582bbf574c71b48",
+            "script": "generic-coach-to-bus.lua"
         },
         {
             "name": "ar-bus-landerneau-daoulas-transport",
@@ -9013,7 +9033,8 @@
             "managed-by-script": true,
             "skip": false,
             "x-data-gov-fr-res-title": "KORRIGO",
-            "x-data-gov-fr-dataset-id": "65af92d12d38ceffacb04812"
+            "x-data-gov-fr-dataset-id": "65af92d12d38ceffacb04812",
+            "script": "generic-coach-to-bus.lua"
         },
         {
             "name": "elios-transports-urbains-du-grand-villeneuvois",
@@ -10463,7 +10484,8 @@
             "managed-by-script": true,
             "skip": false,
             "x-data-gov-fr-res-title": "Linéotim - Morlaix Communauté",
-            "x-data-gov-fr-dataset-id": "66e4d27756fdff01d8227709"
+            "x-data-gov-fr-dataset-id": "66e4d27756fdff01d8227709",
+            "script": "generic-coach-to-bus.lua"
         },
         {
             "name": "gtfs-du-transport-scolaire-en-martinique",
@@ -10522,7 +10544,8 @@
             "managed-by-script": true,
             "skip": false,
             "x-data-gov-fr-res-title": "PT_TH_OFFER_NOMAD_gtfs_20251215_920_OPENDATA.zip",
-            "x-data-gov-fr-dataset-id": "66f677da53400e3740df1878"
+            "x-data-gov-fr-dataset-id": "66f677da53400e3740df1878",
+            "script": "generic-coach-to-bus.lua"
         },
         {
             "name": "argentanbus-argentan-intercom",

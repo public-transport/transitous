@@ -9,4 +9,5 @@ end
 function process_trip(trip)
     -- Use trip short name as display name
     trip:set_display_name('EST ' .. trip:get_short_name())
+    trip:set_compulsory_reservation(true)
 end
