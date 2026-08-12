@@ -23,6 +23,13 @@
                 "Verkehrsverbund Tirol",
                 "SWEG Südwestdeutsche Landesverkehrs-GmbH",
                 "Verkehrsverbund Hegau-Bodensee"
+                "Evian",
+                "Société Nationale des Chemins de fer Français",
+                "Transports Publics de l'agglomération d'Annemasse",
+                "DistriBus",
+                "Réseau de transports de l'Agglomération de Thonon",
+                "SIBRA",
+                "RDTAin"
             ],
             "script": "ch-opentransportdataswiss.lua"
         },
