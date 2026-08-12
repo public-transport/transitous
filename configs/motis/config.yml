@@ -9,8 +9,9 @@ server:
   data_attribution_link: https://transitous.org/sources/
 
 user_agent: transitous.org
-street_routing: true
-osr_footpath: false
+street_routing:
+  elevation_data_dir: ./srtm/
+osr_footpath: true
 elevators: false
 geocoding: true
 reverse_geocoding: true
@@ -22,8 +23,8 @@ tiles:
   coastline: land-polygons-complete-4326.zip
 
 timetable:
-  first_day: TODAY
-  num_days: 365
+  first_day: -30
+  num_days: 395
   railviz: true
   with_shapes: true
   adjust_footpaths: true
@@ -39,6 +40,21 @@ timetable:
   datasets:
 
 gbfs:
+  ttl:
+    # static information - 6h
+    overwrite:
+      gbfs: 21600
+      manifest: 21600
+      system_information: 21600
+      vehicle_types: 21600
+      station_information: 21600
+      geofencing_zones: 21600
+
+    # dynamic information - 3min
+    default:
+      station_status: 180
+      vehicle_status: 180
+      free_bike_status: 180
   feeds:
 
 limits:
@@ -53,3 +69,4 @@ limits:
   street_routing_max_direct_seconds: 21600
   geocode_max_suggestions: 512
   reverse_geocode_max_results: 512
+  preprocess_max_matching_distance: 250

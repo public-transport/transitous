@@ -24,10 +24,34 @@
             "url": "https://data.slovensko.sk/download?id=c5a63281-3c44-4dba-82c9-7b7ad603db5d"
         },
         {
+            "name": "zsr",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/zsr/TripUpdates"
+        },
+        {
+            "name": "zsr",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/zsr/Alerts"
+        },
+        {
+            "name": "zsr",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/zsr/VehiclePositions"
+        },
+        {
             "name": "Bratislava",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u2s1vm0ergtc~bratislava",
             "url-override": "https://www.arcgis.com/sharing/rest/content/items/aba12fd2cbac4843bc7406151bc66106/data"
+        },
+        {
+            "name": "dpmp",
+            "type": "http",
+            "fix": true,
+            "url": "https://transiq.xhyrom.dev/gtfs/sk/dpmp.zip"
         },
         {
             "name": "idsbk-regional-buses",

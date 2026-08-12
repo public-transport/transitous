@@ -16,6 +16,15 @@
             "transitland-atlas-id": "f-trc~nz"
         },
         {
+            "name": "Taranaki-Regional-Council",
+            "spec": "gtfs-rt",
+            "type": "url",
+            "url": "https://www.tepahi.govt.nz/api/v1/gtfs-rt/servicealerts",
+            "headers": {
+                "Accept": "application/x-protobuf"
+            }
+        },
+        {
             "name": "JOLT-New-Plymouth",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-jolt~new~plymouth~gbfs"

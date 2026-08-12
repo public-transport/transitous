@@ -52,22 +52,6 @@ def delhi_gov_in_csrf(source: HttpSource) -> HttpSource:
     return source
 
 
-def data_zielona_gora_latest_resource(source: HttpSource) -> HttpSource:
-    from bs4 import BeautifulSoup
-
-    html = requests.get(source.url).text
-
-    soup = BeautifulSoup(html, "lxml")
-    gtfs_link = next(
-        (a["href"] for a in soup.find_all("a") if "GTFS" in a.get_text()), None
-    )
-
-    base_url = source.url.rsplit("/", 1)[0]
-    source.url = f"{base_url}/{gtfs_link}"
-
-    return source
-
-
 def data_slupsk_latest_resource(source: HttpSource) -> HttpSource:
     from bs4 import BeautifulSoup
 
@@ -82,17 +66,6 @@ def data_slupsk_latest_resource(source: HttpSource) -> HttpSource:
 
     base_url = source.url.rsplit("/", 1)[0]
     source.url = f"{base_url}/{gtfs_link}"
-
-    return source
-
-
-def data_tasmania_latest_resource(source: HttpSource) -> HttpSource:
-    from bs4 import BeautifulSoup
-
-    html = requests.get(source.url).text
-
-    soup = BeautifulSoup(html, "lxml")
-    source.url = soup.find("a", href=lambda x: x and x.endswith(".zip"))["href"]
 
     return source
 

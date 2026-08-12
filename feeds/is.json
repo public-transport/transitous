@@ -3,6 +3,10 @@
         {
             "github": "vkrause",
             "name": "Volker Krause"
+        },
+        {
+            "name": "Kyler Chin <kyler@catenarymaps.org>",
+            "github": "kylerchin"
         }
     ],
     "sources": [
@@ -11,6 +15,12 @@
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-ge2kx-straeto",
             "fix": true
+        },
+        {
+            "name": "straeto",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://birch.catenarymaps.org/gtfs_rt?feed_id=f-ge2kx-straeto~rt&feed_type=trip"
         }
     ]
 }

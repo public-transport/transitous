@@ -76,8 +76,7 @@
             "name": "Santa-Cruz-Metro",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-9q9-scmtdcom~rt",
-            "skip": true,
-            "skip-reason": "Generates 404"
+            "url-override": "https://birch.catenarymaps.org/gtfs_rt?feed_id=f-9q9-scmtdcom~rt&feed_type=trip"
         },
         {
             "name": "Sacramento-Regional-Transit",
@@ -99,6 +98,23 @@
             "name": "Metro-LosAngeles-Rail",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-9q5-metro~losangeles~rail"
+        },
+        {
+            "name": "Metro-LosAngeles",
+            "spec": "gtfs-rt",
+            "type": "url",
+            "url": "https://birch.catenarymaps.org/gtfs_rt?feed_id=f-metro~losangeles~bus~rt&feed_type=trip"
+        },
+        {
+            "name": "Metro-LosAngeles-Rail",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9q5-metro~losangeles~rail"
+        },
+        {
+            "name": "Metro-LosAngeles-Rail",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://birch.catenarymaps.org/gtfs_rt?feed_id=f-metro~losangeles~rail~rt&feed_type=trip"
         },
         {
             "name": "Antelope-Valley-Transit-Authority",
@@ -145,6 +161,12 @@
             "transitland-atlas-id": "f-9qh-metrolinktrains"
         },
         {
+            "name": "Metrolink",
+            "type": "url",
+            "url": "https://birch.catenarymaps.org/gtfs_rt?feed_id=f-metrolinktrains~rt&feed_type=trip",
+            "spec": "gtfs-rt"
+        },
+        {
             "name": "Catalina-Express",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-catalina~express",
@@ -175,8 +197,7 @@
             "name": "SDMTS",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-mts~rt~onebusaway",
-            "skip": true,
-            "skip-reason": "api-key must be set in query params (url-override?)"
+            "url-override": "https://birch.catenarymaps.org/gtfs_rt?feed_id=f-mts~rt~onebusaway&feed_type=trip"
         },
         {
             "name": "Monterey-Salinas-Transit",
@@ -214,6 +235,12 @@
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-9mu-orangecountytransportationauthority",
             "url-override": "https://github.com/catenarytransit/agency-gtfs-mirror/raw/refs/heads/main/octa_gtfs.zip"
+        },
+        {
+            "name": "OC-Bus",
+            "spec": "gtfs-rt",
+            "type": "url",
+            "url": "https://birch.catenarymaps.org/gtfs_rt?feed_id=f-octa~rt&feed_type=trip"
         },
         {
             "name": "Marin-Airporter",

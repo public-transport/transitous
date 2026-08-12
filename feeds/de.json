@@ -34,7 +34,29 @@
                 "FlixBus-de",
                 "EUROSTAR",
                 "Bremer Straßenbahn AG",
-                "Verkehrsgemeinschaft Osnabrück"
+                "Verkehrsgemeinschaft Osnabrück",
+                "SNCB",
+                "Tram VBK",
+                "Bus VBK",
+                "Albtal-Verkehrs-Gesellschaft",
+                "Stadtbahn Karlsruhe SEV",
+                "Bus VERA",
+                "Bus RVS",
+                "Bus SWEG",
+                "Taxiverkehre",
+                "Bus Engel",
+                "Bus Faller",
+                "Bus Hassis",
+                "Bus Wöhrle",
+                "Bus Richard Eberhardt GmbH",
+                "Bus Stadtwerke Baden-Baden",
+                "Friedrich Müller Omnibus GmbH",
+                "Kraichtal Bus GbR",
+                "Bus NVW (Walz)",
+                "Busverkehr Nordschwarzwald GmbH",
+                "SEV T+B (Tram + Sonstige Busse)",
+                "Nachtverkehr",
+                "Nachtverkehr Ausstieg"
             ],
             "http-options": {
                 "fetch-interval-days": 2
@@ -127,6 +149,25 @@
             }
         },
         {
+            "name": "KVV",
+            "type": "http",
+            "url": "https://projekte.kvv-efa.de/GTFS/google_transit.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "KVV",
+            "type": "url",
+            "spec": "siri",
+            "url": "https://cdn.k118.de/siri-et/bw-kvv/latest.xml",
+            "url-contact": "github.com/MrKrisKrisu",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0",
+                "url": "https://mobilithek.info/offers/832218391386144768"
+            }
+        },
+        {
             "name": "RegioRadStuttgart",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-regioradstuttgart~stuttgart~gbfs"
@@ -170,11 +211,6 @@
             "name": "LimeFrankfurt",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-lime~frankfurt~gbfs"
-        },
-        {
-            "name": "DottFrankfurt",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-dott~frankfurt~gbfs"
         },
         {
             "name": "Deer",
@@ -260,9 +296,19 @@
             "transitland-atlas-id": "f-oberschwabenmobil~carsharing~halle~saale~~gbfs"
         },
         {
+            "name": "FordCarsharingAutohausAlbert",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-ford~carsharing~autohaus~albert~donaueschingen~gbfs"
+        },
+        {
             "name": "FordCarsharingAutohausBaur",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-ford~carsharing~autohaus~baur~germany~gbfs"
+        },
+        {
+            "name": "FordCarsharingAutohausBölz",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-ford~carsharing~autohaus~bölz~sinsheim~gbfs"
         },
         {
             "name": "FordCarharingAutohausKauderer",
@@ -297,7 +343,8 @@
         {
             "name": "Car-ship",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-car~ship~constance~gbfs"
+            "transitland-atlas-id": "f-car~ship~constance~gbfs",
+            "url-override": "https://api.mobidata-bw.de/sharing/gbfs/v2/car_ship/gbfs"
         },
         {
             "name": "Stella",
@@ -384,11 +431,6 @@
             "name": "DottSaarbrücken",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-dott~saarbrücken~gbfs"
-        },
-        {
-            "name": "DottFrankfurt",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-dott~frankfurt~gbfs"
         },
         {
             "name": "DottDarmstadt",
@@ -609,6 +651,11 @@
                 "spdx-identifier": "CC0-1.0",
                 "url": "https://github.com/kompottokar/pollo/blob/main/LICENSE"
             }
+        },
+        {
+            "name": "westbike",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-westbike~heinsberg~gbfs"
         }
     ]
 }

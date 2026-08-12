@@ -4,23 +4,43 @@
 when:
   - event: tag
 
+labels:
+  host: crunchy
+
 steps:
   build-release-skylake-avx512:
     image: docker.io/alpine
     commands:
-      - export MOTIS_TAG=v2.10.2
+      - export MOTIS_TAG=v2.11.2
       - apk add musl-dev cmake ninja gcc g++ git pnpm linux-headers
       - git clone https://github.com/motis-project/motis -b $MOTIS_TAG motis-src
       - mkdir -p motis-src/build
-      - export flags="-static -O3 -fomit-frame-pointer -flto -DNDEBUG"
+      - export flags="-static -O3 -fomit-frame-pointer -DNDEBUG"
       - export target_flags="-march=skylake-avx512"
       - cmake --compile-no-warning-as-error -DCMAKE_BUILD_TYPE=None -DMOTIS_MIMALLOC=ON -DCMAKE_CXX_FLAGS="$flags" -DCMAKE_C_FLAGS="$flags" -DMOTIS_TARGET_FLAGS="$target_flags" -GNinja -DNO_BUILDCACHE=ON -Bmotis-src/build -Smotis-src
-      - ninja -C motis-src/build motis motis-test motis-web-ui
+      - ninja -C motis-src/build motis motis-web-ui
       - mkdir -p motis-out
       - mv motis-src/build/motis motis-out/motis
       - mv motis-src/ui/build motis-out/ui
       - cp -r motis-src/deps/tiles/profile motis-out/tiles-profiles
       - tar -C ./motis-out -cjf motis-release-skylake-avx512.tar.bz2 ./motis ./tiles-profiles ./ui
+      - rm motis-src/build -rf
+
+  build-release-cuda-89:
+    image: nvidia/cuda:13.3.1-cudnn-devel-ubuntu26.04
+    commands:
+      - export DEBIAN_FRONTEND=noninteractive
+      - apt-get update && apt-get install -y g++-15 gcc-15 cmake ninja-build git
+      - mkdir -p motis-src/build
+      - export target_flags="-march=skylake-avx512"
+      - export CUDACXX=/usr/local/cuda/bin/nvcc
+      - export LD_LIBRARY_PATH=/usr/local/cuda/lib64
+      - cmake --preset cuda -Smotis-src -Bmotis-src/build -DCMAKE_CUDA_ARCHITECTURES="89" -DMOTIS_TARGET_FLAGS="$target_flags"
+      - ninja -C motis-src/build motis
+      - mkdir -p motis-out
+      - mv motis-src/build/motis motis-out/motis
+      - cp -r motis-src/deps/tiles/profile motis-out/tiles-profiles
+      - tar -C ./motis-out -cjf motis-release-cuda-89.tar.bz2 ./motis ./tiles-profiles ./ui
       - rm motis-src/build -rf
 
   build-staging-haswell:
@@ -31,7 +51,7 @@ steps:
       - export flags="-static -O3 -fno-omit-frame-pointer -DNDEBUG"
       - export target_flags="-march=haswell"
       - cmake --compile-no-warning-as-error -DCMAKE_BUILD_TYPE=None -DMOTIS_MIMALLOC=ON -DCMAKE_CXX_FLAGS="$flags" -DCMAKE_C_FLAGS="$flags" -DMOTIS_TARGET_FLAGS="$target_flags" -GNinja -DNO_BUILDCACHE=ON -Bmotis-src/build -Smotis-src
-      - ninja -C motis-src/build motis motis-test motis-web-ui
+      - ninja -C motis-src/build motis motis-web-ui
       - mkdir -p motis-out
       - mv motis-src/build/motis motis-out/motis
       - mv motis-src/ui/build motis-out/ui

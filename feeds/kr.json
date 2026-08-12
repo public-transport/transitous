@@ -3,6 +3,14 @@
       {
         "name": "SungjunPark",
         "github": "parkss404"
+      },
+      {
+        "name": "Dan Cojocaru",
+        "github": "dancojocaru2000"
+      },
+      {
+        "name": "Aelin",
+        "github": "Gelbpunkt"
       }
     ],
     "sources": [
@@ -13,7 +21,26 @@
         "license": {
           "url": "https://www.ktdb.go.kr"
         }
+      },
+      {
+        "name": "korail",
+        "type": "http",
+        "url": "https://mkuran.pl/gtfs/korail.zip",
+        "license": {
+          "spdx-identifier": "CC-BY-4.0",
+          "url": "https://mkuran.pl/gtfs/"
+        },
+        "script": "kr-korail.lua"
+      },
+      {
+        "name": "korail",
+        "spec": "gtfs-rt",
+        "type": "url",
+        "url": "https://mkuran.pl/gtfs/korail.pb",
+        "license": {
+            "spdx-identifier": "CC-BY-4.0",
+            "url": "https://mkuran.pl/gtfs/"
+        }
       }
     ]
   }
-  

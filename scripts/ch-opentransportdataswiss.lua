@@ -11,9 +11,11 @@ function process_trip(trip)
     if trip:get_route():get_agency():get_id() == "87_LEX" then
         if trip:get_route():get_route_type() == 101 then
             trip:set_display_name("TGV " .. trip:get_short_name())
+            trip:set_compulsory_reservation(true)
         end
         if trip:get_route():get_route_type() == 102 then
             trip:set_display_name("IC " .. trip:get_short_name())
+            trip:set_compulsory_reservation(true)
         end
     end
 end

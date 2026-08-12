@@ -62,8 +62,7 @@
             "name": "MTA-bus",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-dq-mtamaryland~bus~rt",
-            "skip": true,
-            "skip-reason": "api-key is missing"
+            "url-override": "https://birch.catenarymaps.org/gtfs_rt?feed_id=f-dq-mtamaryland~bus~rt&feed_type=trip"
         },
         {
             "name": "RTA",

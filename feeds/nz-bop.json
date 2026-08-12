@@ -16,6 +16,15 @@
             "transitland-atlas-id": "f-boprc~nz"
         },
         {
+            "name": "Baybus",
+            "spec": "gtfs-rt",
+            "type": "url",
+            "url": "https://www.baybus.co.nz/api/v1/gtfs-rt/servicealerts",
+            "headers": {
+                "Accept": "application/x-protobuf"
+            }
+        },
+        {
             "name": "Flamingo-Tauranga",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-flamingo~tauranga~gbfs"

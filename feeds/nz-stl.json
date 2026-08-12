@@ -1,0 +1,20 @@
+{
+    "maintainers": [
+        {
+            "name": "Thomas Dickson",
+            "github": "Hoverth"
+        },
+        {
+            "name": "applecuckoo",
+            "github": "applecuckoo"
+        }
+    ],
+    "sources": [
+        {
+            "name": "BusSmart",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://codeberg.org/applecuckoo/gtfs-mirror/raw/branch/main/icc-nz.zip"
+        }
+    ]
+}

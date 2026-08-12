@@ -97,7 +97,7 @@
         {
             "name": "paksbusz",
             "type": "http",
-            "url": "https://utazastervezo.paksbusz.hu/api/static/v1/gtfs-google/gtfs-google.zip",
+            "url": "https://utazastervezo.paksbusz.net/api/static/v1/gtfs-google/gtfs-google.zip",
             "license": {
                 "spdx-identifier": "CC0-1.0"
             }
@@ -127,7 +127,7 @@
         {
             "name": "kiskunhalas",
             "type": "http",
-            "url": "https://www.kiskunhalas.hu/article_files/249/kiskunhalas_gtfs.zip"
+            "url": "https://gy-mate.hu/gtfs/gtfs_hu_kiskunhalas.zip"
         },
         {
             "name": "Hódmezővásárhely",

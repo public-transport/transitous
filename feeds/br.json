@@ -16,15 +16,15 @@
     "sources": [
         {
             "name": "rio-de-janeiro",
-            "type": "http",
-            "url": "https://www.arcgis.com/sharing/rest/content/items/8ffe62ad3b2f42e49814bf941654ea6c/data",
+            "type": "mobility-database",
             "fix": true,
             "http-options": {
                 "fetch-interval-days": 2
             },
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
-            }
+            },
+            "mdb-id": "mdb-1791"
         },
         {
             "name": "rio-grande-do-sul",
@@ -62,6 +62,21 @@
             "type": "url",
             "spec": "gtfs-rt",
             "url": "https://rt.flix.baguette.pirnet.si/rt.pb"
+        },
+        {
+            "name": "Belo-Horizont",
+            "type": "mobility-database",
+            "mdb-id": "mdb-9"
+        },
+        {
+            "name": "Belo-Horizont-Supplemental",
+            "type": "mobility-database",
+            "mdb-id": "mdb-687"
+        },
+        {
+            "name": "ETUFOR",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2934"
         }
     ]
 }

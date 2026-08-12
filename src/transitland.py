@@ -20,7 +20,7 @@ class Atlas:
     def load(path: Path):
         atlas = Atlas()
         for f in Path(path / "feeds").iterdir():
-            for feed in json.load(open(f, "r"))["feeds"]:
+            for feed in json.load(open(f, "r", encoding="utf-8"))["feeds"]:
                 atlas.by_id[feed["id"]] = feed
 
         return atlas

@@ -28,9 +28,13 @@
     path: /var/cache/transitous/out/
     state: directory
 
+- name: Set motis version
+  set_fact:
+    motis_version: v2.11.1
+
 - name: Unpack MOTIS
   unarchive:
-    src: https://github.com/public-transport/transitous/releases/download/motis-v2.10.2/motis-release-skylake-avx512.tar.bz2
+    src: https://github.com/public-transport/transitous/releases/download/motis-{{motis_version}}/motis-release-{{motis_build_flavour}}.tar.bz2
     dest: /opt/motis/
     remote_src: yes
 

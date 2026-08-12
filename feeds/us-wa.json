@@ -7,6 +7,10 @@
         {
             "name": "Adam C",
             "github": "cheeseandcereal"
+        },
+        {
+            "name": "Kyler Chin <kyler@catenarymaps.org>",
+            "github": "kylerchin"
         }
     ],
     "sources": [
@@ -36,8 +40,7 @@
             "name": "Sound-Transit",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-soundtransit~rt",
-            "skip": true,
-            "skip-reason": "api-key must be set in query params (url-override?)"
+            "url-override": "https://birch.catenarymaps.org/gtfs_rt?feed_id=f-soundtransit~rt&feed_type=trip"
         },
         {
             "name": "Pierce-Transit",
@@ -49,8 +52,7 @@
             "name": "Pierce-Transit",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-piercetransit~rt",
-            "skip": true,
-            "skip-reason": "api-key must be set in query params (url-override?)"
+            "url-override": "https://birch.catenarymaps.org/gtfs_rt?feed_id=f-piercetransit~rt&feed_type=trip"
         },
         {
             "name": "Everett-Transit",
@@ -61,8 +63,7 @@
             "name": "Everett-Transit",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-everetttransit~rt",
-            "skip": true,
-            "skip-reason": "api-key must be set in query params (url-override?)"
+            "url-override": "https://birch.catenarymaps.org/gtfs_rt?feed_id=f-everetttransit~rt&feed_type=trip"
         },
         {
             "name": "Kitsap-Transit",

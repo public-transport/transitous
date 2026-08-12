@@ -41,6 +41,12 @@ function process_trip(trip)
         trip:set_display_name(trip:get_short_name())
       end
     end
+    if trip:get_route():get_agency():get_name() == 'FlixTrain-de' or trip:get_route():get_agency():get_name() == 'SNCF' then
+        trip:set_compulsory_reservation(true)
+    elseif trip:get_route():get_agency():get_name() == "HEAG mobiBus GmbH + Co. KG" and trip:get_route():get_short_name() == "AIR" then
+        trip:set_compulsory_reservation(true)
+        trip:set_route_type(203)
+    end
   end
 
   if trip:get_route():get_route_type() == 106 and is_number(trip:get_short_name()) then

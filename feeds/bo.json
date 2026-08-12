@@ -1,0 +1,24 @@
+{
+    "maintainers": [
+        {
+            "name": "Andrés Chirinos",
+            "github": "andres-chirinos"
+        },
+        {
+            "name": "Sylvain Lesage",
+            "github": "severo"
+        }
+    ],
+    "sources": [
+        {
+            "name": "mi-teleferico",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://datosbolivia.github.io/gtfs/mi-teleferico.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            },
+            "extend-calendar": true
+        }
+    ]
+}

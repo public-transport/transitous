@@ -44,8 +44,7 @@
             "name": "las-vegas-rtc",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-rtcsnv~rt",
-            "skip": true,
-            "skip-reason": "api-key is missing"
+            "url-override": "https://birch.catenarymaps.org/gtfs_rt?feed_id=f-rtcsnv~rt&feed_type=trip"
         },
         {
             "name": "las-vegas-rtc",

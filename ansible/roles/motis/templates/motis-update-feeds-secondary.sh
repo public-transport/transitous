@@ -33,18 +33,13 @@ if ! grep -q tiles /var/cache/transitous/out/config.yml; then
     cp config.bak config.yml
 fi
 
-sudo -u motis sed -i 's#with_shapes: true#with_shapes: true\n  route_shapes:\n    mode: missing\n    cache_reuse_old_osm_data: false\n    debug_api: true\n    n_threads: 16#' config.yml
+sudo -u motis sed -i 's#with_shapes: true#with_shapes: true\n  route_shapes:\n    mode: missing\n    cache_reuse_old_osm_data: false\n    debug_api: true\n    n_threads: 8#' config.yml
 
 [ "${TODAY}" != "Sun" ] && sudo -u motis sed -i 's#^tiles:#no_tiles:#' config.yml && sudo -u motis sed -i 's#cache_reuse_old_osm_data: false#cache_reuse_old_osm_data: true#' config.yml
 
-sudo -u motis sed -i 's#extend_missing_footpaths: true#extend_missing_footpaths: true\n  preprocess_max_matching_distance: 250#' config.yml
-sudo -u motis sed -i 's#osr_footpath: false#osr_footpath: true#' config.yml
-sudo -u motis sed -i 's#street_routing: true#street_routing:\n  elevation_data_dir: ./srtm/#' config.yml
-sudo -u motis sed -i 's#first_day: TODAY#first_day: -30#' config.yml
-sudo -u motis sed -i 's#num_days: 365#num_days: 395#' config.yml
 #sudo -u motis sed -i 's#elevators: false#elevators:\n  url: https://apis.deutschebahn.com/db-api-marketplace/apis/fasta/v2/facilities\n  headers:\n    DB-Client-ID: b5d28136ffedb73474cc7c97536554df\n    DB-Api-Key: ef27b9ad8149cddb6b5e8ebb559ce245#' config.yml
 
-sudo -u motis /opt/motis/motis import -c /var/cache/transitous/out/config.yml > /var/cache/transitous/motis-import.log 2>&1
+/usr/bin/sudo.ws -u motis /opt/motis/motis import -c /var/cache/transitous/out/config.yml > /var/cache/transitous/motis-import.log 2>&1
 
 sudo -u motis sed -i 's#no_tiles:#tiles:#' config.yml
 chown -R motis:motis /var/cache/transitous/out/data/

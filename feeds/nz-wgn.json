@@ -14,7 +14,7 @@
             "name": "Metlink",
             "type": "mobility-database",
             "mdb-id": "mdb-1132",
-            "script": "nz-wlg-Metlink.lua",
+            "script": "nz-wgn-Metlink.lua",
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             }

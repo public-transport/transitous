@@ -23,6 +23,11 @@ upstream {{ item.vhost }}-backend {
 {% endfor %}
 }
 
+map "$http_user_agent:$http_accept_language:$http_accept" $no_ua_no_browser {
+    default 0;
+    ::*/* 1;
+}
+
 server {
     listen 443 ssl;
     listen 443 quic {{ item.quic_options }};
@@ -62,8 +67,17 @@ server {
         allow all;
     }
 
+    if ($no_ua_no_browser = "1") {
+        return 403 "Empty user-agent header is not allowed. Please review the usage policy: https://transitous.org/api/";
+    }
+
+    if ($http_user_agent ~ "^(node|python-requests\/\d+.\d+.\d+|Python-urllib\/\d+.\d+|python-httpx\/\d+.\d+.\d+)$") {
+        return 403 "Generic user-agent headers are not allowed, please set your own. Please review the usage policy: https://transitous.org/api/";
+    }
+
     # IP-addresses that have ignored usage policy, should be blocked and shown an according message
     # deny <ip-address>
+    deny 208.113.190.160;  # distanzechilometriche.net/2.0
 
     # For certbot
     location ^~ /.well-known/acme-challenge/ {
@@ -80,14 +94,14 @@ server {
 
     # Proxy and cache tiles
     location /tiles/ {
-        proxy_pass http://{{ item.vhost }}-backend/tiles/;
+        proxy_pass http://10.11.1.3:8080/tiles/; #TODO revert when failovers upgraded
 
         limit_req zone=api_harmless burst=200 delay=50;
 
         proxy_connect_timeout       2s;
-        proxy_send_timeout          60;
-        proxy_read_timeout          60;
-        send_timeout                60;
+        proxy_send_timeout          10s;
+        proxy_read_timeout          10s;
+        send_timeout                60s;
 
         proxy_cache            motis;
         proxy_cache_valid      200 302 1d;
@@ -116,11 +130,12 @@ server {
                                 http_500 http_502 http_503 http_504;
     }
 
-    # OJP endpoint
-    location /ojp20 {
-        proxy_pass http://{{ item.vhost }}-backend/ojp20;
+    # multi-purpose endpoints
+    location ~ ^/(ojp20|api/mcp) {
+        proxy_pass http://{{ item.vhost }}-backend$uri?$args;
 
         limit_req zone=api burst=20 delay=10;
+        limit_conn api_plan_conn 3;
         
         proxy_connect_timeout       2s;
         proxy_send_timeout          60;
@@ -133,6 +148,7 @@ server {
         proxy_pass http://{{ item.vhost }}-backend$uri?$args;
 
         limit_req zone=api_plan burst=20 delay=10;
+        limit_conn api_plan_conn 10;
 
         proxy_connect_timeout       2s;
         proxy_send_timeout          60;
@@ -147,9 +163,9 @@ server {
         limit_req zone=api_harmless burst=150 delay=20;
 
         proxy_connect_timeout       2s;
-        proxy_send_timeout          60;
-        proxy_read_timeout          120;
-        send_timeout                60;
+        proxy_send_timeout          10s;
+        proxy_read_timeout          10s;
+        send_timeout                60s;
     }
 
     # other endpoints
@@ -165,7 +181,15 @@ server {
 
     # Source files
     location /gtfs/ {
-        proxy_pass http://10.11.1.1:80/;
+        proxy_pass http://10.11.1.1:80/out/;
+    }
+
+    location /source-data/raw/ {
+        proxy_pass http://10.11.1.1:80/downloads/;
+    }
+
+    location /source-data/processed/ {
+        proxy_pass http://10.11.1.1:80/out/;
     }
 
     location /robots.txt {
