@@ -157,6 +157,11 @@
                     "Authorization": "Basic Z3lvbmd5b3NpbWF0ZTFAZ21haWwuY29tOkh4NG1MTUY1ZTl2Q0pjUm0="
                 }
             }
+        },
+        {
+            "name": "kecskemeti-kisvasut",
+            "type": "http",
+            "url": "https://kecskemetikisvasut.hu/wp-content/uploads/jk-gtfs/feed.zip"
         }
     ]
 }
