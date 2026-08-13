@@ -1,0 +1,23 @@
+{
+    "maintainers": [
+        {
+            "name": "Javier Canizalez",
+            "github": "jcanizalez"
+        }
+    ],
+    "sources": [
+        {
+            "name": "taiwan-tdx",
+            "type": "http",
+            "url": "https://github.com/jcanizalez/tdx-gtfs-mirror/releases/download/latest/tw-gtfs.zip",
+            "license": {
+                "url": "https://tdx.transportdata.tw/term",
+                "publisher": "Ministry of Transportation and Communications, Taiwan (TDX)",
+                "publisher-url": "https://tdx.transportdata.tw",
+                "attribution-text": "Ministry of Transportation and Communications Transportation Data Circulation Service Platform"
+            },
+            "fix": true,
+            "fetch-interval-days": 1
+        }
+    ]
+}
