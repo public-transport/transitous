@@ -27,9 +27,8 @@
         {
             "name": "Bolzano-STA",
             "url": "https://files.opendatahub.com/gtfs-rt/feeds/sta/trip-updates.pb",
-            "type": "http",
+            "type": "url",
             "spec": "gtfs-rt",
-            "script": "it-sta.lua",
             "license": {
                 "spdx-identifier": "CC0-1.0",
                 "url": "https://github.com/noi-techpark/opendatahub-gtfs-api/blob/839d698938a224a7db4885f717ca05706fa6bae1/datasets.yml#L33"
