@@ -30,6 +30,9 @@ function process_trip(trip)
     local id = trip:get_id()
     local train_nr = id:match("railTRENITALIA:[^-]+%-(%d+)%-") or ''
     trip:set_display_name(trip:get_route():get_short_name() .. ' ' .. train_nr)
+    if trip:get_route():get_route_type() == 101 or trip:get_route():get_route_type() == 102 then
+        trip:set_compulsory_reservation(true)
+    end
 end
 
 function process_agency(agency)
