@@ -56,7 +56,9 @@
                 "Busverkehr Nordschwarzwald GmbH",
                 "SEV T+B (Tram + Sonstige Busse)",
                 "Nachtverkehr",
-                "Nachtverkehr Ausstieg"
+                "Nachtverkehr Ausstieg",
+                "Tram CTS-Strasbourg",
+                "SNCF"
             ],
             "http-options": {
                 "fetch-interval-days": 2
