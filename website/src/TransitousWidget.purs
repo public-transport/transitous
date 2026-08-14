@@ -18,7 +18,7 @@ import Effect (Effect)
 import Effect.Class (liftEffect)
 import Effect.Now (getTimezoneOffset, nowDateTime)
 import Elmish (Dispatch, ReactElement, Transition, forkMaybe)
-import Elmish.Boot (defaultMain)
+import Elmish.HTML.Boot (defaultMain)
 import Elmish.HTML.Events as E
 import Elmish.HTML.Styled as H
 import MotisForward (toMotisWebUrl)
