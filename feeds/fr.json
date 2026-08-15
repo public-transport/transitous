@@ -13043,7 +13043,8 @@
             },
             "x-data-gov-fr-res-id": 83620,
             "managed-by-script": true,
-            "skip": false,
+            "skip": true,
+            "skip-reason": "Duplicate",
             "x-data-gov-fr-res-title": "Données réseau ferré_GTFS",
             "x-data-gov-fr-dataset-id": "69127d95821dea86547b9619"
         },
