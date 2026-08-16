@@ -66,6 +66,12 @@
             "spec": "gbfs"
         },
         {
+            "name": "donkey-republic",
+            "type": "url",
+            "url": "https://stables.donkey.bike/api/public/gbfs/3.0/donkey_budapest/gbfs.json",
+            "spec": "gbfs"
+        },
+        {
             "name": "budaors",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u2mmz-budaörsvárosönkormányzata"
