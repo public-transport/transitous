@@ -60,6 +60,12 @@
             }
         },
         {
+            "name": "mol-bubi",
+            "type": "url",
+            "url": "https://gbfs.urbansharing.com/molbubi.hu/gbfs.json",
+            "spec": "gbfs"
+        },
+        {
             "name": "budaors",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u2mmz-budaörsvárosönkormányzata"
