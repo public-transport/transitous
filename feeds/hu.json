@@ -27,6 +27,12 @@
             "fix": true
         },
         {
+            "name": "dott",
+            "type": "url",
+            "url": "https://gbfs.api.ridedott.com/public/v2/countries/hu/gbfs.json",
+            "spec": "gbfs"
+        },
+        {
             "name": "bkk",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u2m-bkk"
