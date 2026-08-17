@@ -17,7 +17,7 @@
             "fix": true,
             "drop-agency-names": [
                 "Eurobahn"
-            ]
+            ],
             "license": {
                 "spdx-identifier": "CC0-1.0",
                 "url": "https://gtfs.openov.nl/LICENSE.TXT"
