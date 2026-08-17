@@ -29,7 +29,7 @@ with open(region_file, "r") as f:
             continue
 
         def make_name(name: str, provider: str, feed_id: str):
-            return (name or provider or feed_id).replace("/", "").replace("_", "-").replace(" ", "-").replace(",", "")[0:50]
+            return (provider or name or feed_id).replace("/", "").replace("_", "-").replace(" ", "-").replace(",", "")[0:50]
 
         name = ""
         if "static_reference" in feed and feed["static_reference"]:
