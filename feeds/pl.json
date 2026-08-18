@@ -762,10 +762,21 @@
             "type": "http",
             "spec": "gtfs",
             "url": "https://files.girlc.at/gtfs/skarzysko_kamienna.zip",
+            "url-override": "https://api.zbiorkom.live/api6-open/skarzyskoKamienna/gtfs/default",
             "fix": true,
             "license": {
                 "spdx-identifier": "CC0-1.0"
             }
+        },
+        {
+            "name": "Skarżysko-Kamienna",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.zbiorkom.live/api6-open/skarzyskoKamienna/gtfsRealtime/default/tripUpdates,serviceAlerts",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "use-feed-proxy": true
         },
         {
             "name": "Gmina-Oleśnica",
@@ -906,10 +917,21 @@
             "type": "http",
             "spec": "gtfs",
             "url": "https://files.girlc.at/gtfs/bielsko_biala.zip",
+            "url-override": "https://api.zbiorkom.live/api6-open/bielskoBiala/gtfs/default",
             "fix": true,
             "license": {
                 "spdx-identifier": "CC0-1.0"
             }
+        },
+        {
+            "name": "Bielsko-Biała",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.zbiorkom.live/api6-open/bielskoBiala/gtfsRealtime/default/tripUpdates,serviceAlerts",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "use-feed-proxy": true
         },
         {
             "name": "Kombus-Kórnik",
@@ -976,7 +998,7 @@
             "name": "Legnica",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://cdn.zbiorkom.live/gtfs-rt/legnica.pb",
+            "url": "https://api.zbiorkom.live/api6-open/legnica/gtfsRealtime/default/tripUpdates,serviceAlerts",
             "license": {
                 "spdx-identifier": "MIT"
             },
@@ -1338,7 +1360,7 @@
             "fix": true
         },
         {
-            "name": "Zielona-Góra",
+            "name": "Żywiec",
             "type": "url",
             "spec": "gtfs-rt",
             "url": "https://api.zbiorkom.live/api6-open/zywiec/gtfsRealtime/default/tripUpdates,serviceAlerts",
