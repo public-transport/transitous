@@ -8,8 +8,8 @@
     "sources": [
         {
             "name": "myride",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-rock~hill~sc~us"
+            "type": "mobility-database",
+            "mdb-id": "tld-6741"
         }
     ]
 }
