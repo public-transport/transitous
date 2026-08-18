@@ -161,6 +161,15 @@
             "name": "kompa-vojka",
             "type": "http",
             "url": "https://github.gtfs.sk/kompa-vojka/gtfs.zip"
+        },
+        {
+            "name": "Detska-zeleznica-Kosice",
+            "type": "http",
+            "url": "https://github.gtfs.sk/mirror-dzk/gtfs.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0",
+                "url": "https://www.detskazeleznica.sk/gtfs-license"
+            }
         }
     ]
 }
