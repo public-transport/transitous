@@ -124,7 +124,9 @@
             "type": "http",
             "url": "https://www.connect-info.net/opendata/gtfs/connect-nds-lowlevel/eyqasqtsse",
             "drop-agency-names": [
-                "DB Fernverkehr (Codesharing)"
+                "DB Fernverkehr (Codesharing)",
+                "MOIN Mobilitäts und -betriebs GmbH",
+                "metronom Eisenbahngesellschaft mbH"
             ],
             "script": "de-VBN.lua",
             "http-options": {
