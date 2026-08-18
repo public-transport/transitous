@@ -1790,6 +1790,26 @@
             "license": {
                 "spdx-identifier": "MIT"
             }
+        },
+        {
+            "name": "Piotrków-Trybunalski",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://api.zbiorkom.live/api6-open/piotrkowTrybunalski/gtfs/default",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "fix": true
+        },
+        {
+            "name": "Piotrków-Trybunalski",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.zbiorkom.live/api6-open/piotrkowTrybunalski/gtfsRealtime/default/tripUpdates,serviceAlerts",
+            "use-feed-proxy": true,
+            "license": {
+                "spdx-identifier": "MIT"
+            }
         }
     ]
 }
