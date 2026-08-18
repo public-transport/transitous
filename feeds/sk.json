@@ -165,7 +165,11 @@
         {
             "name": "Detska-zeleznica-Kosice",
             "type": "http",
-            "url": "https://github.gtfs.sk/mirror-dzk/gtfs.zip"
+            "url": "https://github.gtfs.sk/mirror-dzk/gtfs.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0",
+                "url": "https://www.detskazeleznica.sk/gtfs-license"
+            }
         }
     ]
 }
