@@ -128,6 +128,14 @@
             "fix": true
         },
         {
+            "name": "BAHART-ferry",
+            "type": "http",
+            "url": "https://gy-mate.hu/gtfs/gtfs_hu_bahart-ferry.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
+        },
+        {
             "name": "kaposvár",
             "type": "http",
             "url": "https://www.kaposbusz.hu/letoltheto-menetrend",
