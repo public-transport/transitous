@@ -35,6 +35,7 @@
                 "FlixBus-de",
                 "EUROSTAR",
                 "Bremer Straßenbahn AG",
+                "MOIN Mobilitäts und -betriebs GmbH",
                 "Verkehrsgemeinschaft Osnabrück",
                 "Weser-Ems-Bus Betrieb Osnabrück",
                 "SNCB",
@@ -124,7 +125,8 @@
             "type": "http",
             "url": "https://www.connect-info.net/opendata/gtfs/connect-nds-lowlevel/eyqasqtsse",
             "drop-agency-names": [
-                "DB Fernverkehr (Codesharing)"
+                "DB Fernverkehr (Codesharing)",
+                "metronom Eisenbahngesellschaft mbH"
             ],
             "script": "de-VBN.lua",
             "http-options": {
