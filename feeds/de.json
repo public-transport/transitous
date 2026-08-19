@@ -665,7 +665,7 @@
         },
         {
             "name": "DonkeyDuesseldorf",
-            "type": "http",
+            "type": "url",
             "url": "https://www.mobilitaetsdaten.nrw/api/systemadapter-gbfs-provider/conflated/v3.0/donkey-republic-duesselbike/manifest.json",
             "license": {
                 "url": "https://www.mobilitaetsdaten.nrw/api/ckan/de/dataset/donkey-republic-duesselbike/resource/95ca78cd-52f9-445d-bd7a-823f59486c77?"
