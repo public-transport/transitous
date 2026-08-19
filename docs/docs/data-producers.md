@@ -64,6 +64,7 @@ We download sources with the user-agent header `transitous.org` from the
 following IP-addresses:
 
 - `90.187.116.41` (rt.triptix.de)
+- `130.83.165.222` (transitous.motis-project.de)
 - `130.133.110.30` / `2001:470:51c5:babe::30:1`
   (crunchy.spline.inf.fu-berlin.de)
-- `130.83.165.222` (transitous.motis-project.de)
+- `130.133.110.91` / `2001:470:51c5:babe::91:1` (vm-motis.spline.inf.fu-berlin.de)
