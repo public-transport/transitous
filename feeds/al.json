@@ -19,6 +19,11 @@
             "name": "Urban-Trans-Vlora",
             "type": "mobility-database",
             "mdb-id": "mdb-3182"
+        },
+        {
+            "name": "ShowMeBus",
+            "type": "mobility-database",
+            "mdb-id": "mdb-3483"
         }
     ]
 }
