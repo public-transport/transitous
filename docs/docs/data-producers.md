@@ -18,11 +18,11 @@ If you publish open data for example for use in Transitous the following recomme
 For schedules:
 
 - GTFS
-- GTFS-RT
+- NeTEx (may require changes on our side if a new profile is used)
 
 For real-time updates:
 
-- NeTEx (may require changes on our side if a new profile is used)
+- GTFS-RT
 - SIRI-ET (XML/JSON)
 
 ## Supported GTFS Features
@@ -30,14 +30,14 @@ For real-time updates:
 The following GTFS features are supported in our routing engine (MOTIS) and used in the Transitous deployment.
 We recommend that you include data for them in your GTFS file if possible.
 
-- Fares V2
+- [Fares V2](https://gtfs.org/community/extensions/fares-v2/)
 - Shapes
 - Translations
 - Bikes Allowed
 - Wheelchair Accessibility
 - Flex
-- Google Transit Ticketing Extension
-- Google Transit Extended Route Types
+- [Google Transit Ticketing Extension](https://developers.google.com/transit/gtfs/reference/google-transit-ticketing-extension)
+- [Google Transit Extended Route Types](https://developers.google.com/transit/gtfs/reference/extended-route-types)
 
 ## Supported GTFS-RT features
 
@@ -48,11 +48,7 @@ We recommend that you include data for them in your GTFS file if possible.
 ## Recommended Licenses
 
 The data should ideally be clearly licensed, even if you don't intend to restrict usage of the data in any way.
-We recommend that you use an established standard license, for example:
-
-- `CC0-1.0` If you don't want to restrict usage at all
-- `ODbL` Compatible with OpenStreetMap
-- `CC-BY-4.0` / `CC-BY-SA-4.0`
+We recommend that you use an established standard license, as listed [here](https://opendefinition.org/licenses/).
 
 ## Recommended Web Server Features
 
