@@ -125,8 +125,9 @@
             "type": "http",
             "url": "https://www.connect-info.net/opendata/gtfs/connect-nds-lowlevel/eyqasqtsse",
             "drop-agency-names": [
-                "DB Fernverkehr (Codesharing)",,
-                "eurobahn"
+                "DB Fernverkehr (Codesharing)",
+                "DB Regio AG Nord",
+                "eurobahn",
                 "metronom Eisenbahngesellschaft mbH",
                 "NordWestBahn"
             ],
