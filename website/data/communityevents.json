@@ -28,6 +28,13 @@
         "location": "Paris, France"
     },
     {
+        "name": "Open Transport Community Conference 2026",
+        "link": "https://open-transport.org",
+        "startDate": "2026-10-06",
+        "endDate": "2026-10-09",
+        "location": "Bern, Switzerland"
+    },
+    {
         "name": "OSM Hack Weekend Berlin",
         "link": "https://wiki.openstreetmap.org/wiki/Berlin_Hack_Weekend_Oktober_2026",
         "startDate": "2026-10-24",
@@ -35,10 +42,9 @@
         "location": "Berlin, Germany"
     },
     {
-        "name": "Open Transport Community Conference 2026",
-        "link": "https://open-transport.org",
-        "startDate": "2026-10-06",
-        "endDate": "2026-10-09",
-        "location": "Bern, Switzerland"
+        "name": "40C3",
+        "startDate": "2026-12-27",
+        "endDate": "2026-12-30",
+        "location": "Hamburg, Germany"
     }
 ]
