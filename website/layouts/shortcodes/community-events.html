@@ -10,7 +10,10 @@ SPDX-License-Identifier: AGPL-3.0-or-later
         {{ continue }}
     {{ end }}
     <li>
-        <a href="{{ .link }}">{{ .name }}</a> — {{ .startDate | time.Format ":date_medium" }}
+        {{ if .link }}<a href="{{ .link }}">{{ end }}
+        {{ .name }}
+        {{ if .link }}</a>{{ end }}
+        — {{ .startDate | time.Format ":date_medium" }}
         {{ if ne .startDate .endDate }}
             to {{ .endDate | time.Format ":date_medium" }}
         {{ end }}
