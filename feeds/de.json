@@ -665,6 +665,22 @@
             "name": "westbike",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-westbike~heinsberg~gbfs"
+        },
+        {
+            "name": "DonkeyDuesseldorf",
+            "type": "http",
+            "url": "https://www.mobilitaetsdaten.nrw/api/systemadapter-gbfs-provider/feed/v3.0/donkey-republic-duesselbike/source-duesselbike/gbfs.json",
+            "headers": {
+                "Authorization": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJPS3BuT3ZBeWN1QnVfRUNIZHVMbW9BVFQ0TWgxcjQtbWMzUWJHQTlpQXhFIn0.eyJleHAiOjE3ODcxOTk2OTcsImlhdCI6MTc4NzE3MDg5NywianRpIjoiMmMyMmNlM2QtZGU3Yi00M2NhLWI1MGUtZTQyNDk1YTliM2JlIiwiaXNzIjoiaHR0cHM6Ly93d3cubW9iaWxpdGFldHNkYXRlbi5ucncva2V5Y2xvYWsvcmVhbG1zL21vYmlkcm9tIiwic3ViIjoiNjY3NmU4NzEtN2NiMi00MjZjLTkzYzQtM2ZjNjQ1Yjg0OWUwIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiZ2Jmcy1hcGkiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIi8qIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJPUkdBX0FuZ2VtZWxkZXRlIEJlbnV0emVyIl19LCJzY29wZSI6InByb2ZpbGUgZ3JvdXBzIGVtYWlsIiwiY2xpZW50SG9zdCI6IjEwMC45OC4yMzIuMjUxIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJzZXJ2aWNlLWFjY291bnQtZ2Jmcy1hcGkiLCJjbGllbnRBZGRyZXNzIjoiMTAwLjk4LjIzMi4yNTEiLCJjbGllbnRfaWQiOiJnYmZzLWFwaSJ9.R4QG4x7FvmBvb5_8MxoI3VZy2QM_fJKvZlgHilz6DmJ5RR1iIdLAT9GSVK69MkZuvOWcTRZeYOTrEIUmh3nP72e5yfX64o9x_BFs-CYiiGDivB5KIWn0VADJHlhhlVLL5TWGyT-x1mPtviNYXcYNqEb4OvIMLKg6tqt0QJP13MeAP5vHiKnmT8ryUZnwEa-3IJgR8jJ98RQX9FnF5fCGbvhQnBy5KsIJx4c8lAfkrE6jlXgo_AqmHAXJ6ud8H0FRJ9DbHozHHCXsoDFXmGdfCmt5CgdAVHAfsXbytUCLhcNkjdIK0LBPU9wAAzt2R2TLz8jM9tr0arYDYe-c0Av7Ww"
+            },
+            "license": {
+                "url": "https://www.mobilitaetsdaten.nrw/api/ckan/de/dataset/donkey-republic-duesselbike/resource/95ca78cd-52f9-445d-bd7a-823f59486c77?"
+            }
+        },
+        {
+            "name": "LimeWuppertal",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-lime~wuppertal~gbfs"
         }
     ]
 }
