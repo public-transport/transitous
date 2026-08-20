@@ -59,7 +59,7 @@
             "type": "http",
             "url": "https://gtfs.livetransport.eu/gtfs/sofia-airport-shuttle.zip",
             "license": {
-                "spdx-identifier": "CC0-1.0"
+                "spdx-identifier": "CC-BY-4.0"
             }
         },
         {
@@ -67,7 +67,7 @@
             "type": "http",
             "url": "https://gtfs.livetransport.eu/gtfs/sofia-ring-mall.zip",
             "license": {
-                "spdx-identifier": "CC0-1.0"
+                "spdx-identifier": "CC-BY-4.0"
             }
         },
         {
@@ -75,7 +75,7 @@
             "type": "http",
             "url": "https://gtfs.livetransport.eu/gtfs/varna.zip",
             "license": {
-                "spdx-identifier": "CC0-1.0"
+                "spdx-identifier": "CC-BY-4.0"
             }
         },
         {
@@ -84,14 +84,17 @@
             "url": "https://gtfs.livetransport.eu/gtfs/bdz.zip",
             "script": "bg-bdz.lua",
             "license": {
-                "spdx-identifier": "CC0-1.0"
+                "spdx-identifier": "CC-BY-4.0"
             }
         },
         {
             "name": "bdz",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://gtfs.livetransport.eu/gtfs-rt/bdz.pb"
+            "url": "https://gtfs.livetransport.eu/gtfs-rt/bdz.pb",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
         },
         {
             "name": "pleven",
@@ -110,7 +113,16 @@
             "type": "http",
             "url": "https://gtfs.livetransport.eu/gtfs/yambol.zip",
             "license": {
-                "spdx-identifier": "CC0-1.0"
+                "spdx-identifier": "CC-BY-4.0"
+            }
+        },
+        {
+            "name": "yambol",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://gtfs.livetransport.eu/gtfs-rt/yambol.pb",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
             }
         },
         {
