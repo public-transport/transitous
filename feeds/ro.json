@@ -133,12 +133,23 @@
         {
             "name": "Galati-Transurb",
             "type": "http",
-            "url": "https://github.com/Steinhagen/gtfs-galati/releases/download/gtfs-latest/gtfs-transurb.zip",
+            "url": "https://codeberg.org/rapiteanu/public-transport/releases/download/gtfs-transurb/gtfs-transurb.zip",
             "license": {
                 "spdx-identifier": "CC-BY-4.0",
-                "url": "https://github.com/Steinhagen/gtfs-galati/blob/main/LICENSE",
-                "publisher": "Steinhagen",
-                "publisher-url": "https://github.com/Steinhagen/gtfs-galati"
+                "url": "https://codeberg.org/rapiteanu/public-transport/raw/branch/main/LICENSE",
+                "publisher": "rapiteanu",
+                "publisher-url": "https://codeberg.org/rapiteanu/public-transport"
+            }
+        },
+        {
+            "name": "Galati-Navrom-Bac",
+            "type": "http",
+            "url": "https://codeberg.org/rapiteanu/public-transport/releases/download/gtfs-navrom-bac/gtfs-navrom-bac.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0",
+                "url": "https://codeberg.org/rapiteanu/public-transport/raw/branch/main/LICENSE",
+                "publisher": "rapiteanu",
+                "publisher-url": "https://codeberg.org/rapiteanu/public-transport"
             }
         },
         {
