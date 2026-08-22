@@ -665,6 +665,11 @@
             "name": "westbike",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-westbike~heinsberg~gbfs"
+        },
+        {
+            "name": "LimeWuppertal",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-lime~wuppertal~gbfs"
         }
     ]
 }
