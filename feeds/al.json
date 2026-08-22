@@ -23,7 +23,8 @@
         {
             "name": "ShowMeBus",
             "type": "mobility-database",
-            "mdb-id": "mdb-3483"
+            "mdb-id": "mdb-3483",
+            "fix": true
         }
     ]
 }
