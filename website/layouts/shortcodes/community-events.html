@@ -17,7 +17,12 @@ SPDX-License-Identifier: AGPL-3.0-or-later
         {{ if ne .startDate .endDate }}
             to {{ .endDate | time.Format ":date_medium" }}
         {{ end }}
-        in {{ .location }}
+        in
+        {{ if and .coordinates .address }}
+             <a href="https://api.transitous.org/?toPlace={{ .coordinates }}&toName={{ .address }}&time={{ .startDate }}T08%3A00%3A00.000Z">{{ .location }}</a>
+        {{ else }}
+            {{ .location }}
+        {{end }}
     </li>
 {{ end }}
 </ul>
