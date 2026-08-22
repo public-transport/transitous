@@ -19,7 +19,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
         {{ end }}
         in
         {{ if and .coordinates .address }}
-             <a href="https://api.transitous.org/?toPlace={{ .coordinates }}&toName={{ .address }}">{{ .location }}</a>
+             <a href="https://api.transitous.org/?toPlace={{ .coordinates }}&toName={{ .address }}&time={{ .startDate }}T08%3A00%3A00.000Z">{{ .location }}</a>
         {{ else }}
             {{ .location }}
         {{end }}
