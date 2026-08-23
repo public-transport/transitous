@@ -7,6 +7,10 @@
         {
             "name": "Luna",
             "github": "luna-cant-code"
+        },
+        {
+            "name": "Jonah Brüchert",
+            "github": "jbruechert"
         }
     ],
     "sources": [
@@ -42,7 +46,7 @@
         {
             "name": "istanbul-ibb",
             "type": "http",
-            "url": "https://github.com/luna-cant-code/istanbul-gtfs/blob/main/istanbul-gtfs.zip",
+            "url": "https://jbb.ghsq.de/gtfs/tr-istanbul.gtfs.zip",
             "fix": false,
             "skip": false
         },
