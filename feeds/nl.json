@@ -29,25 +29,22 @@
             "name": "OpenOV",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://gtfs.openov.nl/gtfs-rt/trainUpdates.pb"
+            "url": "https://gtfs.openov.nl/gtfs-rt/trainUpdates.pb",
+            "use-feed-proxy": true
         },
         {
             "name": "OpenOV",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://gtfs.openov.nl/gtfs-rt/tripUpdates.pb"
+            "url": "https://gtfs.openov.nl/gtfs-rt/tripUpdates.pb",
+            "use-feed-proxy": true
         },
         {
             "name": "OpenOV",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://gtfs.openov.nl/gtfs-rt/alerts.pb"
-        },
-        {
-            "name": "OpenOV",
-            "type": "url",
-            "spec": "gtfs-rt",
-            "url": "https://gtfs.openov.nl/gtfs-rt/vehiclePositions.pb"
+            "url": "https://gtfs.openov.nl/gtfs-rt/alerts.pb",
+            "use-feed-proxy": true
         }
     ]
 }
