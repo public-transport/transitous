@@ -238,6 +238,21 @@
             "name": "Whistler-Transit",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-c2bt-bctransit~whistlertransitsystem~rt"
+        },
+        {
+            "name": "Mobi",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-mobi~bike~share~vancouver~gbfs"
+        },
+        {
+            "name": "Lime - Vancouver",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-lime~vancouver~gbfs"
+        },
+        {
+            "name": "Lime - Kelowna",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-lime~kelowna~gbfs"
         }
     ]
 }
