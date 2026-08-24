@@ -11,7 +11,11 @@
             "type": "http",
             "url": "https://public-transport.github.io/transitous-trenitalia-preprocessor/trenitalia-netex.zip",
             "spec": "netex",
-            "script": "it-trenitalia.lua"
+            "script": "it-trenitalia.lua",
+            "license": {
+                "spdx-identifier": "CC0-1.0",
+                "url": "https://github.com/public-transport/transitous-trenitalia-preprocessor/blob/f9a75007965035d5a1efd7859e802fe3849aef73/preprocess.sh#L4"
+            }
         },
         {
             "name": "Bolzano-STA",
