@@ -3,6 +3,14 @@
         {
             "name": "Yasin Karaaslan",
             "github": "yasinkaraaslan"
+        },
+        {
+            "name": "Luna",
+            "github": "luna-cant-code"
+        },
+        {
+            "name": "Jonah Brüchert",
+            "github": "jbruechert"
         }
     ],
     "sources": [
@@ -38,9 +46,9 @@
         {
             "name": "istanbul-ibb",
             "type": "http",
-            "url": "https://dl.dropboxusercontent.com/scl/fi/v937qi0xnytzl21a3bbd0/istanbul-ibb.zip?rlkey=dgi6l0cxb2203fresf1s16r7i",
-            "fix": true,
-            "skip": true
+            "url": "https://jbb.ghsq.de/gtfs/tr-istanbul.gtfs.zip",
+            "fix": false,
+            "skip": false
         },
         {
             "name": "istanbul-iett",
