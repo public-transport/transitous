@@ -24,7 +24,8 @@
             "name": "ShowMeBus",
             "type": "mobility-database",
             "mdb-id": "mdb-3483",
-            "fix": true
+            "fix": true,
+            "script": "generic-bus-to-coach.lua"
         }
     ]
 }
