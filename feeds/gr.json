@@ -44,14 +44,20 @@
         {
             "name": "Hellenic-Train",
             "type": "http",
-            "url": "https://jbb.ghsq.de/gtfs/gr-hellenic-train.gtfs.zip"
+            "url": "https://jbb.ghsq.de/gtfs/gr-hellenic-train.gtfs.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-SA-4.0"
+            }
         },
         {
             "name": "Hellenic-Train",
             "type": "url",
             "spec": "gtfs-rt",
             "url": "https://jbb.ghsq.de/gtfs/railway-gov-gr/VehiclePositions",
-            "derive-trip-updates": true
+            "derive-trip-updates": true,
+            "license": {
+                "spdx-identifier": "CC-BY-SA-4.0"
+            }
         },
         {
             "name": "Dott-Thessaloniki",
