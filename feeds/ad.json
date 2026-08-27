@@ -7,7 +7,7 @@
     ],
     "sources": [
         {
-            "name": "Andorra_Bus",
+            "name": "Andorra-Bus",
             "type": "http",
             "url": "https://hoermalmeister.github.io/andorra_gtfs/andorra_gtfs.zip",
             "license": {
