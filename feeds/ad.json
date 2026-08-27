@@ -1,0 +1,18 @@
+{
+    "maintainers": [
+        {
+            "name": "Petr Novák",
+            "github": "hoermalmeister"
+        }
+    ],
+    "sources": [
+        {
+            "name": "Andorra Bus",
+            "type": "http",
+            "url": "https://hoermalmeister.github.io/andorra_gtfs/andorra_gtfs.zip",
+            "license": {
+                "url": "https://hoermalmeister.github.io/andorra_gtfs/LICENSE"
+            }
+        }
+    ]
+}
