@@ -80,6 +80,11 @@
             "spec": "gtfs-rt",
             "type": "url",
             "url": "https://realtime.hsl.fi/realtime/vehicle-positions/v2/hsl"
+        },
+        {
+            "name": "nysse",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-udb-tampereenjoukkoliikenne"
         }
     ]
 }
