@@ -83,7 +83,7 @@
         },
         {
             "name": "nysse",
-            "spec": "transitland-atlas",
+            "type": "transitland-atlas",
             "transitland-atlas-id": "f-udb-tampereenjoukkoliikenne"
         }
     ]
