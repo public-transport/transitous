@@ -17,7 +17,8 @@
                 "attribution-text": "Ministry of Transportation and Communications Transportation Data Circulation Service Platform"
             },
             "fix": true,
-            "fetch-interval-days": 1
+            "fetch-interval-days": 1,
+            "keep-additional-fields": false
         }
     ]
 }

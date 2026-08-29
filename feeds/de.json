@@ -28,13 +28,16 @@
                 "Verkehrsgesellschaft Teltow-Fläming mbH",
                 "Verkehrsbetriebe Oldenburger Land",
                 "üstra Hannoversche Verkehrsbetriebe AG",
+                "RegioBus Hannover GmbH",
                 "Braunschweiger Verkehrs-GmbH",
                 "Kraftverkehrsgesellschaft mbH Braunschweig",
                 "SWO Mobil GmbH",
                 "FlixBus-de",
                 "EUROSTAR",
                 "Bremer Straßenbahn AG",
+                "MOIN Mobilitäts und -betriebs GmbH",
                 "Verkehrsgemeinschaft Osnabrück",
+                "Weser-Ems-Bus Betrieb Osnabrück",
                 "SNCB",
                 "Tram VBK",
                 "Bus VBK",
@@ -122,7 +125,11 @@
             "type": "http",
             "url": "https://www.connect-info.net/opendata/gtfs/connect-nds-lowlevel/eyqasqtsse",
             "drop-agency-names": [
-                "DB Fernverkehr (Codesharing)"
+                "DB Fernverkehr (Codesharing)",
+                "DB Regio AG Nord",
+                "eurobahn",
+                "metronom Eisenbahngesellschaft mbH",
+                "NordWestBahn"
             ],
             "script": "de-VBN.lua",
             "http-options": {
@@ -658,6 +665,11 @@
             "name": "westbike",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-westbike~heinsberg~gbfs"
+        },
+        {
+            "name": "LimeWuppertal",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-lime~wuppertal~gbfs"
         }
     ]
 }

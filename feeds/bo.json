@@ -7,6 +7,10 @@
         {
             "name": "Sylvain Lesage",
             "github": "severo"
+        },
+        {
+            "name": "Ismael Angulo",
+            "github": "IsmaDavidAA"
         }
     ],
     "sources": [
@@ -17,6 +21,18 @@
             "url": "https://datosbolivia.github.io/gtfs/mi-teleferico.zip",
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
+            },
+            "extend-calendar": true
+        },
+        {
+            "name": "trufi-cochabamba",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://raw.githubusercontent.com/trufi-association/trufi-gtfs-builder/refs/heads/main/examples/Bolivia-Cochabamba/out/cochabamba.gtfs.zip",
+            "license": {
+                "spdx-identifier": "ODbL-1.0",
+                "url": "https://www.openstreetmap.org/copyright",
+                "attribution-text": "Data from OpenStreetMap"
             },
             "extend-calendar": true
         }

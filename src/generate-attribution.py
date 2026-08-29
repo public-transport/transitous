@@ -20,7 +20,8 @@ from datetime import datetime, timezone
 # extensions/overrides for ISO 3166-1/2 codes
 COUNTRIES = {
     "EU": "European Union",
-    "XK":  "Kosovo"
+    "XK": "Kosovo",
+    "TW": "Taiwan"
 }
 SUBDIVISIONS: dict[str, str] = {}
 
@@ -210,14 +211,16 @@ def get_region_data(code: str) -> dict:
     code = code.upper()
     region_data = {}
     if len(code) == 2:
+        override_country = COUNTRIES.get(code)
         country = pycountry.countries.get(alpha_2=code)
         region_data["country_code"] = code
-        region_data["country_name"] = country.name if country else COUNTRIES[code]
+        region_data["country_name"] = override_country if override_country else country.name
     else:
         region_data = get_region_data(code[:2])
         subdivision = pycountry.subdivisions.get(code=code)
+        override_subdivision = SUBDIVISIONS.get(code)
         region_data["subdivision_code"] = code
-        region_data["subdivision_name"] = subdivision.name if subdivision else SUBDIVISIONS[code]
+        region_data["subdivision_name"] = override_subdivision if override_subdivision else subdivision.name
 
     # TODO backward compatibility for not yet adapted consumer code, remove eventually
     region_data["region_code"] = region_data.get("subdivision_code", region_data["country_code"])

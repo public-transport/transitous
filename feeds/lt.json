@@ -125,7 +125,7 @@
         {
             "name": "LTG-Link",
             "type": "http",
-            "url": "https://gitlab.com/jbb/hafas-converter-ng/-/jobs/artifacts/main/raw/lt_ltglink-shapes.gtfs.zip?job=update-ltglink-feed"
+            "url": "https://jbb.ghsq.de/gtfs/lt-ltglink.gtfs.zip"
         },
         {
             "name": "kautra",

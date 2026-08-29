@@ -11,52 +11,79 @@ SPDX-FileCopyrightText: 2024 Jonah Brüchert <jbb@kaidan.im>
 SPDX-License-Identifier: AGPL-3.0-or-later
 -->
 
-<h2>Usage Policy</h2>
-
-<p>Transitous is provided by a community of volunteers to fulfill the needs of Free and Open Source applications and other non-profit activities.
+<p>Transitous is provided by a community of volunteers to fulfill the needs of Free and Open Source applications.
 We provide the service on a best-effort basis and reserve the right to stop providing it to any consumer at any time.</p>
 
-<h3>Resource Usage</h3>
+<h3>Can I use it?</h3>
 
-<p>Our hosting resources are limited.
-Please contact us before using any potentially resource-intensive API endpoints, doing many requests (also from different users) or primarily doing difficult to calculate requests (such as routing, isochrones) in your project.
-Generally, if your requests take long, they are difficult to calculate.</p>
+Go ahead if all of these points apply to your project:
 
-<p>We'll try to find ways to accommodate your use. Should we hit the limits of what we can handle with our current resources,
-there's also the option to <a href="/doc/#running-a-transitous-instance-locally">self-host your own instance of Transitous</a>.</p>
+<p>
+  <div>
+    <div class="form-check">
+      <input class="form-check-input opacity-100" type="checkbox" id="open" checked disabled>
+      <label class="form-check-label opacity-100" for="open">
+        Your project is open-source
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input opacity-100" type="checkbox" id="commercial" checked disabled>
+      <label class="form-check-label opacity-100" for="commercial">
+        Your project is not commercial
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input opacity-100" type="checkbox" id="resources" checked disabled>
+      <label class="form-check-label opacity-100" for="resources">
+        Your project is light on our resources
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input opacity-100" type="checkbox" id="policy" checked disabled>
+      <label class="form-check-label opacity-100" for="policy">
+        Your project conforms to our usage policy below
+      </label>
+    </div>
+  </div>
+</p>
 
-<p>There is no need to scrape data using the API, you may download our entire source dataset <a href="https://github.com/public-transport/transitous/wiki/Using-Transitous-data">here</a>.
+<p>See sections below "API Usage" for details.</p>
+
+<h2>Usage Policy</h2>
 
 <h3>API Usage</h3>
 
-<p>If you want to use the API for your free and open-source application, please:<p>
-
-<ul>
-<li>Make sure your source code is published under an appropriate open-source license (light prototype testing before that is of course fine).</li>
-<li>If you have any doubt about the load your requests will be causing (expensive requests, many users, etc.), please contact us <a href="https://matrix.to/#/%23transitous:matrix.spline.de">in our Matrix Channel</a> to make sure we can handle your
+<ol>
+  <li><b>publish your code:</b> Make sure your source code is published under an appropriate open-source license (light prototype testing before that is fine).</li>
+  <li><b>clarify open questions:</b> If you have any doubt about the load your requests will be causing (expensive requests, many users, etc.), please contact us <a href="https://matrix.to/#/%23transitous:matrix.spline.de">in our Matrix Channel</a> to make sure we can handle your
 expected resource usage. In general, we are always happy to hear about the projects using the API and their use cases. This also allows us to contact you in case we want to coordinate breaking changes.</li>
-<li>
+  <li><b>contact information:</b>
     <p>
-        Make sure you send HTTP <code>User-Agent</code> headers with every request, at least containing the following information:
-        <ul>
-            <li>Name of the application</li>
-            <li>Version of the client implementation</li>
-            <li>A way of contact (e-mail address or website URL)</li>
-        </ul>
+      Make sure you send HTTP <code>User-Agent</code> headers with every request, containing at least the following information:
+      <ul>
+        <li>Name of the application</li>
+        <li>Version of the client</li>
+        <li>A way of contact (e-mail address or website URL)</li>
+      </ul>
     </p>
     <p>
     If it is not possible to send a <code>User-Agent</code> header, because your application runs inside a browser, the <code>Referer</code> header is a sufficient replacement.
     However, please make sure to add contact information to your website in this case.
     </p>
-</li>
-<li>Link to <a href="https://transitous.org/sources/">https://transitous.org/sources/</a> in a visible place in order to properly attribute the data sources. Make sure to adhere to the conditions imposed by these sources. In particular, since Transitous uses OpenStreetMap data, you have to adhere to its <a href="https://www.openstreetmap.org/copyright">attribution guidelines</a>, too.</li>
-<li>You may <a href="https://github.com/public-transport/transitous/blob/b2d184b51cb4cf20fb48d0b76420ba57f4d3fce0/website/content/_index.html#L30">add your application to the Transitous website</a>.</li>
-</ul>
+  </li>
+  <li><b>attribution: </b>Link to <a href="https://transitous.org/sources/">https://transitous.org/sources/</a> in a visible place. Make sure to adhere to the conditions imposed by these sources. In particular, since Transitous uses OpenStreetMap data, you have to adhere to its <a href="https://www.openstreetmap.org/copyright">attribution guidelines</a>, too.</li>
+  <li><b>showcase: </b>You may <a href="https://github.com/public-transport/transitous/blob/b2d184b51cb4cf20fb48d0b76420ba57f4d3fce0/website/content/_index.html#L30">add your application to the Transitous website</a>.</li>
+</ol>
+
+<h3>Resource Usage</h3>
+
+<p>Please contact us before using any potentially resource-intensive API endpoints (such as routing, isochrones) or doing many requests (also from different users) in your project.</p>
+
+<p>There is no need to scrape data using the API, you may download our entire source dataset <a href="https://github.com/public-transport/transitous/wiki/Using-Transitous-data">here</a>.
 
 <h3>Commercial Use</h3>
 
-<p>Transitous is not intended for commercial or for-profit purposes. If you are not sure whether your use qualifies, please contact us.
-We will make a decision on a case-by-case basis.
+<p>Due to data source licences and resource prioritisation, commercial use is not allowed. If you are unsure whether your use is commercial, please contact us in advance.
 <!--For commercial use, see the <a href="/suppliers/">list of companies providing consulting and MOTIS hosting<a/>. TODO uncomment as soon as that list is no longer empty -->
 </p>
 

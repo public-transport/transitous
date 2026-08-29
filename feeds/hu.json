@@ -27,6 +27,12 @@
             "fix": true
         },
         {
+            "name": "dott",
+            "type": "url",
+            "url": "https://gbfs.api.ridedott.com/public/v2/countries/hu/gbfs.json",
+            "spec": "gbfs"
+        },
+        {
             "name": "bkk",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u2m-bkk"
@@ -42,7 +48,7 @@
             "type": "http",
             "url": "https://gy-mate.hu/gtfs/gtfs_hu_funicular.zip",
             "license": {
-                "spdx-identifier": "GPL-3.0-only"
+                "spdx-identifier": "CC-BY-4.0"
             }
         },
         {
@@ -50,8 +56,20 @@
             "type": "http",
             "url": "https://gy-mate.hu/gtfs/gtfs_hu_chairlift.zip",
             "license": {
-                "spdx-identifier": "GPL-3.0-only"
+                "spdx-identifier": "CC-BY-4.0"
             }
+        },
+        {
+            "name": "mol-bubi",
+            "type": "url",
+            "url": "https://gbfs.urbansharing.com/molbubi.hu/gbfs.json",
+            "spec": "gbfs"
+        },
+        {
+            "name": "donkey-republic",
+            "type": "url",
+            "url": "https://stables.donkey.bike/api/public/gbfs/3.0/donkey_budapest/gbfs.json",
+            "spec": "gbfs"
         },
         {
             "name": "budaors",
@@ -63,7 +81,7 @@
             "type": "http",
             "url": "https://gy-mate.hu/gtfs/gtfs_hu_urom.zip",
             "license": {
-                "spdx-identifier": "GPL-3.0-only"
+                "spdx-identifier": "CC-BY-4.0"
             }
         },
         {
@@ -108,6 +126,14 @@
             "type": "http",
             "url": "https://nap.bahart.hu/gtfsdata/ULPTdR8PovPQ7E9NlcsIig/43",
             "fix": true
+        },
+        {
+            "name": "BAHART-ferry",
+            "type": "http",
+            "url": "https://gy-mate.hu/gtfs/gtfs_hu_bahart-ferry.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
         },
         {
             "name": "kaposvár",

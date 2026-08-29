@@ -1,15 +1,15 @@
 {
     "maintainers": [
         {
-            "name": "Omar Rhazal",
-            "github": "orhazal"
+            "name": "Jonah Brüchert",
+            "github": "jbruechert"
         }
     ],
     "sources": [
         {
-            "name": "oncf",
+            "name": "railway",
             "type": "http",
-            "url": "https://github.com/orhazal/oncf-gtfs-unofficial/raw/refs/heads/master/oncf-gtfs.zip",
+            "url": "https://jbb.ghsq.de/gtfs/am-railway.gtfs.zip",
             "license": {
                 "spdx-identifier": "ODbL-1.0"
             }

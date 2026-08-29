@@ -28,17 +28,29 @@
         "location": "Paris, France"
     },
     {
-        "name": "OSM Hack Weekend Berlin",
-        "link": "https://wiki.openstreetmap.org/wiki/Berlin_Hack_Weekend_Oktober_2026",
-        "startDate": "2026-10-24",
-        "endDate": "2026-10-25",
-        "location": "Berlin, Germany"
-    },
-    {
         "name": "Open Transport Community Conference 2026",
         "link": "https://open-transport.org",
         "startDate": "2026-10-06",
         "endDate": "2026-10-09",
-        "location": "Bern, Switzerland"
+        "location": "Bern, Switzerland",
+        "coordinates": "46.967814,7.463196",
+        "address": "Hilfikerstrasse 1, 3014 Bern, Switzerland"
+    },
+    {
+        "name": "OSM Hack Weekend Berlin",
+        "link": "https://wiki.openstreetmap.org/wiki/Berlin_Hack_Weekend_Oktober_2026",
+        "startDate": "2026-10-24",
+        "endDate": "2026-10-25",
+        "location": "Berlin, Germany",
+        "coordinates": "52.4983474,13.3808087",
+        "address": "Wikimedia e.V. Tempelhofer Ufer 23-24, 10963 Berlin"
+    },
+    {
+        "name": "40C3",
+        "startDate": "2026-12-27",
+        "endDate": "2026-12-30",
+        "location": "Hamburg, Germany",
+        "coordinates": "53.56020,9.97823",
+        "address": "Hamburg Messe"
     }
 ]

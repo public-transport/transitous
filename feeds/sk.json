@@ -11,6 +11,14 @@
         {
             "name": "Jozef Steinhübl",
             "github": "xhyrom"
+        },
+        {
+            "name": "Charlie",
+            "github": "0charliecat"
+        },
+        {
+            "name": "gtfs.sk",
+            "github": "gtfs-sk"
         }
     ],
     "sources": [
@@ -148,6 +156,20 @@
             "name": "Slovak-Lines-Express",
             "type": "http",
             "url": "https://transiq.xhyrom.dev/gtfs/sk/slovak-lines-express-as.zip"
+        },
+        {
+            "name": "kompa-vojka",
+            "type": "http",
+            "url": "https://github.gtfs.sk/kompa-vojka/gtfs.zip"
+        },
+        {
+            "name": "Detska-zeleznica-Kosice",
+            "type": "http",
+            "url": "https://github.gtfs.sk/mirror-dzk/gtfs.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0",
+                "url": "https://www.detskazeleznica.sk/gtfs-license"
+            }
         }
     ]
 }
