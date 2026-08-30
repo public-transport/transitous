@@ -126,6 +126,7 @@
             "managed-by-script": true,
             "x-mvo-id": "77-2026",
             "use-gtfsclean": false,
+            "blank-headsigns-matching": "0",
             "script": "at.lua"
         },
         {
