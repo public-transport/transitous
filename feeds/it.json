@@ -98,6 +98,7 @@
             "name": "Lazio-Cotral",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-cotral~lazio~italia",
+            "url-override": "https://hoermalmeister.github.io/gtfs-rehost/cotral/cotral.zip",
             "fix": true
         },
         {
