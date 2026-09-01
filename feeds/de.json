@@ -222,6 +222,11 @@
             "transitland-atlas-id": "f-lime~frankfurt~gbfs"
         },
         {
+            "name": "LimeHamburg",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-lime~Hamburg~gbfs"
+        },
+        {
             "name": "Deer",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-deer~germany~gbfs",
@@ -374,6 +379,11 @@
             "name": "DottFriedrichshafen",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-dott~friedrichshafen~gbfs"
+        },
+        {
+            "name": "DottHamburg",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dott~hamburg~gbfs"
         },
         {
             "name": "DottHeidelberg",
