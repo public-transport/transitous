@@ -48,7 +48,10 @@
             "type": "http",
             "url": "https://jbb.ghsq.de/gtfs/tr-istanbul.gtfs.zip",
             "fix": false,
-            "skip": false
+            "skip": false,
+            "license": {
+                "spdx-identifier": "CC-BY-SA-4.0"
+            }
         },
         {
             "name": "istanbul-iett",
@@ -226,7 +229,10 @@
             "name": "tcdd",
             "type": "http",
             "url": "https://github.com/yasinkaraaslan/tcdd-gtfs/raw/main/output/tcdd.zip",
-            "fix": true
+            "fix": true,
+            "license": {
+                "spdx-identifier": "MIT"
+            }
         }
     ]
 }
