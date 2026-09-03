@@ -48,7 +48,10 @@
             "type": "http",
             "url": "https://jbb.ghsq.de/gtfs/tr-istanbul.gtfs.zip",
             "fix": false,
-            "skip": false
+            "skip": false,
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
         },
         {
             "name": "istanbul-iett",
