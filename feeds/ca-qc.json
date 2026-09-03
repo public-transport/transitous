@@ -213,7 +213,7 @@
         {
             "name": "REM",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "o-reseau~express~metropolitain"
+            "transitland-atlas-id": "f-reseau~express~metropolitain"
         }
     ]
 }
