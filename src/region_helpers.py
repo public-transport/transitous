@@ -279,3 +279,9 @@ def data_gov_gr_latest_resource(source: HttpSource) -> HttpSource:
     )["url"]
 
     return source
+
+
+def podgorica_me(source: HttpSource) -> HttpSource:
+    from bs4 import BeautifulSoup
+    source.url = BeautifulSoup(requests.get("https://podgorica.me/otvoreni-podaci/").text, "html.parser").select_one('a[href$=".zip"]')["href"]
+    return source
