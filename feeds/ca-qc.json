@@ -209,6 +209,11 @@
             "name": "Acces-Velo",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-accès~vélo~saguenay~gbfs"
+        },
+        {
+            "name": "REM",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-reseau~express~metropolitain"
         }
     ]
 }

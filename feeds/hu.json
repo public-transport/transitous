@@ -85,6 +85,22 @@
             }
         },
         {
+            "name": "dunakeszi-ferry",
+            "type": "http",
+            "url": "https://gy-mate.hu/gtfs/gtfs_hu_dunakeszi-ferry.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
+        },
+        {
+            "name": "pasztor-ferry",
+            "type": "http",
+            "url": "https://gy-mate.hu/gtfs/gtfs_hu_pasztor-ferry.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
+        },
+        {
             "name": "mvk",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u2wc-mvkzrt",

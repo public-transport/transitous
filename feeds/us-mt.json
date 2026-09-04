@@ -55,7 +55,8 @@
         {
             "name": "Billings-MET",
             "type": "http",
-            "url": "https://passio3.com/billings/passioTransit/gtfs/google_transit.zip"
+            "url": "https://passio3.com/billings/passioTransit/gtfs/google_transit.zip",
+            "fix": true
         },
         {
             "name": "Billings-MET",
