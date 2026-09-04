@@ -12478,17 +12478,30 @@
         {
             "name": "reseau-de-transports-collectifs-naolib",
             "type": "http",
-            "url": "https://www.data.gouv.fr/api/1/datasets/r/a18d5977-ca80-4712-a9cf-1a555feb2621",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/65bdd7e4-a8e7-4a54-893a-808e71c34d68",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/reseau-de-transports-collectifs-naolib",
                 "spdx-identifier": "etalab-2.0"
             },
-            "x-data-gov-fr-res-id": 83251,
+            "x-data-gov-fr-res-id": 84101,
             "managed-by-script": true,
             "skip": false,
-            "x-data-gov-fr-res-title": "gtfs.zip",
-            "x-data-gov-fr-dataset-id": "685d9000ec5a7481ab634360"
+            "x-data-gov-fr-res-title": "gtfs_lumidata_id.zip",
+            "x-data-gov-fr-dataset-id": "65bdd7e4-a8e7-4a54-893a-808e71c34d68"
+        },
+        {
+            "name": "reseau-de-transports-collectifs-naolib",
+            "type": "url",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/59cdccb0-3b3a-40cb-bce4-eb98fc352b61",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/reseau-de-transports-collectifs-naolib",
+                "spdx-identifier": "etalab-2.0"
+            },
+            "spec": "gtfs-rt",
+            "x-data-gov-fr-res-id": 84103,
+            "managed-by-script": true,
+            "x-data-gov-fr-dataset-id": "59cdccb0-3b3a-40cb-bce4-eb98fc352b61"
         },
         {
             "name": "reseau-urbain-de-redon-agglomeration",
