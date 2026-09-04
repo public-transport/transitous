@@ -17,7 +17,7 @@
         {
             "name": "CanbyAreaTransit",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-c209-canbyareatransit",
+            "transitland-atlas-id": "f-c209-canbyareatransit"
         },
         {
             "name": "Columbia Area Transit",
