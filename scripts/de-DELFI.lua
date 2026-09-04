@@ -63,6 +63,11 @@ end
 function process_route(route)
     local agency_name = route:get_agency():get_name()
     local route_name = route:get_short_name()
+  -- temp Rheinbahn fix (make buses to metro, GTFS issue is already open)
+    if route:get_short_name() == 'U80' or route:get_short_name() == 'U81' or route:get_short_name() == 'U79' or route:get_short_name() == 'U75' or route:get_short_name() == 'U77' then
+      route:set_route_type(1) -- metro
+    end
+  -- end of Rheinbahn fix
 	-- remove spaces from route name for matching
 	route_name = route_name:gsub("%s+", "")
 	local original_route_color = route:get_color()
