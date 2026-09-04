@@ -17,42 +17,47 @@
         {
             "name": "CanbyAreaTransit",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "o-c209-canbyareatransit",
+            "transitland-atlas-id": "f-c209-canbyareatransit",
         },
         {
             "name": "Columbia Area Transit",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "o-c21-columbiaareatransit"
+            "transitland-atlas-id": "f-c21-hoodriver~or~us"
         },
         {
             "name": "Cherriots",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "o-9rb-cherriots",
+            "transitland-atlas-id": "f-9rb-cherriots~rt",
         },
         {
             "name": "ClackamasCounty",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "o-clackamascounty~or~us"
+            "transitland-atlas-id": "f-clackamascounty~or~us~rt"
         },
         {
             "name": "C-TRAN",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-c20g-c~tran"
+            "transitland-atlas-id": "f-c20g-c~tran~rt"
         },
         {
             "name": "LTD",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "o-9rb-lanetransitdistrict"
+            "transitland-atlas-id": "f-ltd~rt"
         },
         {
             "name": "MultnomahCounty",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "o-c20d-multnomahcountytransit"
+            "transitland-atlas-id": "f-c20d-multnomahcounty~or~us"
         },
         {
             "name": "POINT",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "o-point~or~us"
+            "transitland-atlas-id": "f-utel~uiuc~intercity~bus"
+        },
+        {
+            "name": "POINT",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-point~or-us"
         },
         {
             "name": "RideConnection",
@@ -62,27 +67,27 @@
         {
             "name": "RVTD",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "o-9r88-rogue~valley~transportation~district"
+            "transitland-atlas-id": "f-rogue~valley~transportation~district~rt"
         },
         {
             "name": "SAM",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "o-c214-sandyareametro"
+            "transitland-atlas-id": "f-c214-sandy~or~us~rt"
         },
         {
             "name": "SCTD",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "o-c20c-southclackamastransportationdistrict"
+            "transitland-atlas-id": "f-c20c-sctd~or~us"
         },
         {
             "name": "SETD",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "o-c0p-sunsetempiretransportationdistrict"
+            "transitland-atlas-id": "f-sunsetempiretransportationdistrict~rt"
         },
         {
             "name": "SMART",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-c20-wilsonville~or~us"
+            "transitland-atlas-id": "f-southmetroarearegionaltransit~rt"
         },
         {
             "name": "TriMet",
@@ -99,17 +104,17 @@
         {
             "name": "WashingtonPark",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "o-c20dz-washingtonparkshuttle"
+            "transitland-atlas-id": "f-c20dz-washingtonparkshuttle~or~us~alerts"
         },
         {
             "name": "Wave",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "o-c0p-tillamookcountytransportationdistrict"
+            "transitland-atlas-id": "f-c20-tillamook~or~us~rt~alerts"
         },
         {
             "name": "YCTA",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "o-c20-yamhillcountytransitarea"
+            "transitland-atlas-id": "f-c20-yamhillcounty~or~us~rt"
         }
     ]
 }
