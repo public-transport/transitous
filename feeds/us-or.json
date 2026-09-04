@@ -7,20 +7,114 @@
         {
             "name": "Kyler Chin <kyler@catenarymaps.org>",
             "github": "kylerchin"
+        },
+        {
+            "name": "thesupertechie",
+            "github": "thesupertechie"
         }
     ],
     "sources": [
         {
-            "name": "Trimet",
+            "name": "CanbyAreaTransit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-c209-canbytransit~or~us"
+        },
+        {
+            "name": "Columbia Area Transit",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-c21-hoodriver~or~us"
+        },
+        {
+            "name": "Cherriots",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9rb-cherriots~rt"
+        },
+        {
+            "name": "ClackamasCounty",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-clackamascounty~or~us~rt"
+        },
+        {
+            "name": "C-TRAN",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-c20g-c~tran~rt"
+        },
+        {
+            "name": "LTD",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-ltd~rt"
+        },
+        {
+            "name": "MultnomahCounty",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-c20d-multnomahcounty~or~us"
+        },
+        {
+            "name": "POINT",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-utel~uiuc~intercity~bus"
+        },
+        {
+            "name": "POINT",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-point~or-us"
+        },
+        {
+            "name": "RideConnection",
+            "type": "mobility-database",
+            "mdb-id": "mdb-253"
+        },
+        {
+            "name": "RVTD",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-rogue~valley~transportation~district~rt"
+        },
+        {
+            "name": "SAM",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-c214-sandy~or~us~rt"
+        },
+        {
+            "name": "SCTD",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-c20c-sctd~or~us"
+        },
+        {
+            "name": "SETD",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-sunsetempiretransportationdistrict~rt"
+        },
+        {
+            "name": "SMART",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-southmetroarearegionaltransit~rt"
+        },
+        {
+            "name": "TriMet",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-c20-trimet",
             "fix": true
         },
         {
-            "name": "Trimet",
+            "name": "TriMet",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-trimet~rt",
             "url-override": "https://birch.catenarymaps.org/gtfs_rt?feed_id=f-trimet~rt&feed_type=trip"
+        },
+        {
+            "name": "WashingtonPark",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-c20dz-washingtonparkshuttle~or~us~alerts"
+        },
+        {
+            "name": "Wave",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-c20-tillamook~or~us~rt~alerts"
+        },
+        {
+            "name": "YCTA",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-c20-yamhillcounty~or~us~rt"
         }
     ]
 }
