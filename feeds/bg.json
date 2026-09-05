@@ -132,6 +132,11 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             }
+        },
+        {
+            "name": "blagoevgrad",
+            "type": "http",
+            "url": "https://www.modeshift.app/api/v1/d2835d46-0fbd-4d65-aa94-a17a6304b460/transport/gtfs/gtfs.zip"
         }
     ]
 }
