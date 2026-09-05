@@ -18,6 +18,8 @@ Examples of behavior that contributes to a positive environment for our communit
 * Giving and gracefully accepting constructive feedback
 * Accepting responsibility and apologizing to those affected by our mistakes, and learning from the experience
 * Focusing on what is best not just for us as individuals, but for the overall community
+* Seeking help from others instead of continuing on unreliable assumptions (including LLM output)
+* Communicating in your own words.
 
 Examples of unacceptable behavior include:
 
@@ -26,6 +28,8 @@ Examples of unacceptable behavior include:
 * Public or private harassment
 * Publishing others' private information, such as a physical or email address, without their explicit permission
 * Other conduct which could reasonably be considered inappropriate in a professional setting
+* Using LLM generated text to communicate to other members of the Transitous community. This applies for example to messages on Matrix, GitHub Issues, or Pull Requests. Use strictly for translations is of course fine.
+* Letting so-called AI agents loose in our repositories or communication channels
 
 ## Enforcement Responsibilities
 
