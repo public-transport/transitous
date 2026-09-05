@@ -97,30 +97,6 @@
             "script": "fr-sncf.lua"
         },
         {
-            "name": "horaires-sncf",
-            "type": "url",
-            "url": "https://proxy.transport.data.gouv.fr/resource/sncf-siri-lite-estimated-timetable",
-            "license": {
-                "url": "https://transport.data.gouv.fr/datasets/horaires-sncf",
-                "spdx-identifier": "ODbL-1.0"
-            },
-            "spec": "siri",
-            "x-data-gov-fr-res-id": 83198,
-            "managed-by-script": false
-        },
-        {
-            "name": "horaires-sncf",
-            "type": "url",
-            "url": "https://proxy.transport.data.gouv.fr/resource/sncf-siri-lite-situation-exchange",
-            "license": {
-                "url": "https://transport.data.gouv.fr/datasets/horaires-sncf",
-                "spdx-identifier": "ODbL-1.0"
-            },
-            "spec": "siri",
-            "x-data-gov-fr-res-id": 83199,
-            "managed-by-script": false
-        },
-        {
             "name": "fichiers-gtfs-eurometropole-de-metz",
             "type": "http",
             "url": "https://www.data.gouv.fr/api/1/datasets/r/92af6161-1b1a-4e0b-8f60-d97f213d993a",
@@ -576,6 +552,76 @@
             "skip": false,
             "x-data-gov-fr-res-title": "Données théoriques (GTFS)",
             "x-data-gov-fr-dataset-id": "5ae1715488ee384c8ba0342b"
+        },
+        {
+            "name": "donnees-theoriques-gtfs-et-temps-reel-siri-lite-du-reseau-cts",
+            "type": "url",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/f93b2124-59f7-47d3-a677-b3eba71f6a7a",
+            "x-data-gov-fr-res-title": "Liste des lignes : API SIRI-lite lines-discovery",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/donnees-theoriques-gtfs-et-temps-reel-siri-lite-du-reseau-cts",
+                "spdx-identifier": "etalab-2.0"
+            },
+            "spec": "siri",
+            "x-data-gov-fr-res-id": 81173,
+            "x-data-gov-fr-dataset-id": "5ae1715488ee384c8ba0342b",
+            "managed-by-script": true
+        },
+        {
+            "name": "donnees-theoriques-gtfs-et-temps-reel-siri-lite-du-reseau-cts",
+            "type": "url",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/90bf5e71-4699-4186-9d98-b689453fa838",
+            "x-data-gov-fr-res-title": "Liste des arrêts : API SIRI-lite stoppoints-discovery",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/donnees-theoriques-gtfs-et-temps-reel-siri-lite-du-reseau-cts",
+                "spdx-identifier": "etalab-2.0"
+            },
+            "spec": "siri",
+            "x-data-gov-fr-res-id": 81172,
+            "x-data-gov-fr-dataset-id": "5ae1715488ee384c8ba0342b",
+            "managed-by-script": true
+        },
+        {
+            "name": "donnees-theoriques-gtfs-et-temps-reel-siri-lite-du-reseau-cts",
+            "type": "url",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/d4931834-e0e2-45d4-9be8-e8dbc693fe0b",
+            "x-data-gov-fr-res-title": "Infos trafic : API SIRI-lite general-message",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/donnees-theoriques-gtfs-et-temps-reel-siri-lite-du-reseau-cts",
+                "spdx-identifier": "etalab-2.0"
+            },
+            "spec": "siri",
+            "x-data-gov-fr-res-id": 81171,
+            "x-data-gov-fr-dataset-id": "5ae1715488ee384c8ba0342b",
+            "managed-by-script": true
+        },
+        {
+            "name": "donnees-theoriques-gtfs-et-temps-reel-siri-lite-du-reseau-cts",
+            "type": "url",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/b2533427-cac4-4ab8-a236-c0cd9b1ef40e",
+            "x-data-gov-fr-res-title": "Horaires en temps réel : API SIRI-lite estimated-timetable",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/donnees-theoriques-gtfs-et-temps-reel-siri-lite-du-reseau-cts",
+                "spdx-identifier": "etalab-2.0"
+            },
+            "spec": "siri",
+            "x-data-gov-fr-res-id": 81170,
+            "x-data-gov-fr-dataset-id": "5ae1715488ee384c8ba0342b",
+            "managed-by-script": true
+        },
+        {
+            "name": "donnees-theoriques-gtfs-et-temps-reel-siri-lite-du-reseau-cts",
+            "type": "url",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/8ed7ef82-9661-4df5-8914-a4ca0c97901f",
+            "x-data-gov-fr-res-title": "Horaires en temps réel : API SIRI-lite stop-monitoring",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/donnees-theoriques-gtfs-et-temps-reel-siri-lite-du-reseau-cts",
+                "spdx-identifier": "etalab-2.0"
+            },
+            "spec": "siri",
+            "x-data-gov-fr-res-id": 81118,
+            "x-data-gov-fr-dataset-id": "5ae1715488ee384c8ba0342b",
+            "managed-by-script": true
         },
         {
             "name": "donnees-theoriques-gtfs-et-temps-reel-siri-lite-du-reseau-cts",
@@ -2165,6 +2211,22 @@
             "x-data-gov-fr-dataset-id": "5cdef3698b4c416d21fd76b9"
         },
         {
+            "name": "blablacar-bus-horaires-theoriques-et-temps-reel-du-reseau-europeen",
+            "type": "url",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/66569792-afb9-4464-a52a-33e3fbb0df3e",
+            "x-data-gov-fr-res-title": "SIRI-LITE BlaBlaCar Bus - estimated-timetable",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/blablacar-bus-horaires-theoriques-et-temps-reel-du-reseau-europeen",
+                "spdx-identifier": "ODbL-1.0"
+            },
+            "spec": "siri",
+            "x-data-gov-fr-res-id": 83428,
+            "x-data-gov-fr-dataset-id": "5cdef3698b4c416d21fd76b9",
+            "managed-by-script": true,
+            "skip": true,
+            "skip-reason": "static feed is skipped"
+        },
+        {
             "name": "base-de-donnees-multimodale-des-reseaux-de-transport-public-normands",
             "type": "http",
             "url": "https://transport.data.gouv.fr/resources/81942/download",
@@ -2529,6 +2591,54 @@
             "skip-reason": "Feed is expired according to metadata",
             "x-data-gov-fr-res-title": "Horaires théoriques du réseau Transports en Commun Lyonnais",
             "x-data-gov-fr-dataset-id": "5de42c4d8b4c417a10e62ec9"
+        },
+        {
+            "name": "horaires-theoriques-du-reseau-transports-en-commun-lyonnais",
+            "type": "url",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/2558f280-b9b5-4ae4-8970-43e827fcb0b5",
+            "x-data-gov-fr-res-title": "Horaires théoriques du réseau Transports en Commun Lyonnais",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/horaires-theoriques-du-reseau-transports-en-commun-lyonnais",
+                "spdx-identifier": null
+            },
+            "spec": "siri",
+            "x-data-gov-fr-res-id": 84028,
+            "x-data-gov-fr-dataset-id": "5de42c4d8b4c417a10e62ec9",
+            "managed-by-script": true,
+            "skip": true,
+            "skip-reason": "static feed is skipped"
+        },
+        {
+            "name": "horaires-theoriques-du-reseau-transports-en-commun-lyonnais",
+            "type": "url",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/9a9988fc-5e90-468a-9497-d62051eb498d",
+            "x-data-gov-fr-res-title": "Horaires théoriques du réseau Transports en Commun Lyonnais",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/horaires-theoriques-du-reseau-transports-en-commun-lyonnais",
+                "spdx-identifier": null
+            },
+            "spec": "siri",
+            "x-data-gov-fr-res-id": 84027,
+            "x-data-gov-fr-dataset-id": "5de42c4d8b4c417a10e62ec9",
+            "managed-by-script": true,
+            "skip": true,
+            "skip-reason": "static feed is skipped"
+        },
+        {
+            "name": "horaires-theoriques-du-reseau-transports-en-commun-lyonnais",
+            "type": "url",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/b1873838-694b-475f-988c-3e58351b44bd",
+            "x-data-gov-fr-res-title": "Horaires théoriques du réseau Transports en Commun Lyonnais",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/horaires-theoriques-du-reseau-transports-en-commun-lyonnais",
+                "spdx-identifier": null
+            },
+            "spec": "siri",
+            "x-data-gov-fr-res-id": 84026,
+            "x-data-gov-fr-dataset-id": "5de42c4d8b4c417a10e62ec9",
+            "managed-by-script": true,
+            "skip": true,
+            "skip-reason": "static feed is skipped"
         },
         {
             "name": "horaires-theoriques-et-temps-reel-du-reseau-transports-urbains-mendois-mende-gtfs-gtfs-rt",
@@ -7681,6 +7791,54 @@
             "x-data-gov-fr-dataset-id": "6449c52caeceb71273a42dd3"
         },
         {
+            "name": "reseau-urbain-et-interurbain-dile-de-france-mobilites",
+            "type": "url",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/3db6aa6c-740e-41f6-a209-0d43202c4adf",
+            "x-data-gov-fr-res-title": "Messages affichés sur les écrans IDFM (plateforme Ile-de-France Mobilités)",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/reseau-urbain-et-interurbain-dile-de-france-mobilites",
+                "spdx-identifier": null
+            },
+            "spec": "siri",
+            "x-data-gov-fr-res-id": 80923,
+            "x-data-gov-fr-dataset-id": "6449c52caeceb71273a42dd3",
+            "managed-by-script": true,
+            "skip": true,
+            "skip-reason": "Needs to be renamed to match the corresponding static feed"
+        },
+        {
+            "name": "reseau-urbain-et-interurbain-dile-de-france-mobilites",
+            "type": "url",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/6f1a0d56-5f21-40c9-96ed-59242347b7e6",
+            "x-data-gov-fr-res-title": "Prochains passages (plateforme Île-de-France Mobilités) - Requête globale",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/reseau-urbain-et-interurbain-dile-de-france-mobilites",
+                "spdx-identifier": null
+            },
+            "spec": "siri",
+            "x-data-gov-fr-res-id": 80924,
+            "x-data-gov-fr-dataset-id": "6449c52caeceb71273a42dd3",
+            "managed-by-script": true,
+            "skip": true,
+            "skip-reason": "Needs to be renamed to match the corresponding static feed"
+        },
+        {
+            "name": "reseau-urbain-et-interurbain-dile-de-france-mobilites",
+            "type": "url",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/fe659347-0011-4413-b112-ae4b277ce52b",
+            "x-data-gov-fr-res-title": "Prochains passages (plateforme Île-de-France Mobilités) - Requête unitaire",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/reseau-urbain-et-interurbain-dile-de-france-mobilites",
+                "spdx-identifier": null
+            },
+            "spec": "siri",
+            "x-data-gov-fr-res-id": 80925,
+            "x-data-gov-fr-dataset-id": "6449c52caeceb71273a42dd3",
+            "managed-by-script": true,
+            "skip": true,
+            "skip-reason": "Needs to be renamed to match the corresponding static feed"
+        },
+        {
             "name": "horaires-des-trains-trenitalia-france",
             "type": "http",
             "url": "https://www.data.gouv.fr/api/1/datasets/r/bdecea2c-ebc9-4f22-812d-927e4a2e4bad",
@@ -12391,6 +12549,90 @@
         {
             "name": "offres-de-services-bus-tram-et-scolaire-au-format-gtfs-netex-gtfs-rt-siri-lite",
             "type": "url",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/b959f9ec-c561-4314-9ebe-64bc4ee0377f",
+            "x-data-gov-fr-res-title": "SIRI-Lite check-status",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/offres-de-services-bus-tram-et-scolaire-au-format-gtfs-netex-gtfs-rt-siri-lite",
+                "spdx-identifier": "etalab-2.0"
+            },
+            "spec": "siri",
+            "x-data-gov-fr-res-id": 83033,
+            "x-data-gov-fr-dataset-id": "67f5bad303325228295b7dff",
+            "managed-by-script": true
+        },
+        {
+            "name": "offres-de-services-bus-tram-et-scolaire-au-format-gtfs-netex-gtfs-rt-siri-lite",
+            "type": "url",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/06259851-246e-4f1e-ad30-644cd2cd29af",
+            "x-data-gov-fr-res-title": "SIRI-Lite estimated-timetable",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/offres-de-services-bus-tram-et-scolaire-au-format-gtfs-netex-gtfs-rt-siri-lite",
+                "spdx-identifier": "etalab-2.0"
+            },
+            "spec": "siri",
+            "x-data-gov-fr-res-id": 83032,
+            "x-data-gov-fr-dataset-id": "67f5bad303325228295b7dff",
+            "managed-by-script": true
+        },
+        {
+            "name": "offres-de-services-bus-tram-et-scolaire-au-format-gtfs-netex-gtfs-rt-siri-lite",
+            "type": "url",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/1365146c-ffd0-4b3b-aa66-3cbef7440b7b",
+            "x-data-gov-fr-res-title": "SIRI-Lite stop-monitoring",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/offres-de-services-bus-tram-et-scolaire-au-format-gtfs-netex-gtfs-rt-siri-lite",
+                "spdx-identifier": "etalab-2.0"
+            },
+            "spec": "siri",
+            "x-data-gov-fr-res-id": 83031,
+            "x-data-gov-fr-dataset-id": "67f5bad303325228295b7dff",
+            "managed-by-script": true
+        },
+        {
+            "name": "offres-de-services-bus-tram-et-scolaire-au-format-gtfs-netex-gtfs-rt-siri-lite",
+            "type": "url",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/b56df549-5b02-4c58-b7d1-449caefe2ff8",
+            "x-data-gov-fr-res-title": "SIRI-Lite general-message",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/offres-de-services-bus-tram-et-scolaire-au-format-gtfs-netex-gtfs-rt-siri-lite",
+                "spdx-identifier": "etalab-2.0"
+            },
+            "spec": "siri",
+            "x-data-gov-fr-res-id": 83030,
+            "x-data-gov-fr-dataset-id": "67f5bad303325228295b7dff",
+            "managed-by-script": true
+        },
+        {
+            "name": "offres-de-services-bus-tram-et-scolaire-au-format-gtfs-netex-gtfs-rt-siri-lite",
+            "type": "url",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/8e35ce74-33f3-465c-8344-6d8c7dda5e82",
+            "x-data-gov-fr-res-title": "SIRI-Lite lines-discovery",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/offres-de-services-bus-tram-et-scolaire-au-format-gtfs-netex-gtfs-rt-siri-lite",
+                "spdx-identifier": "etalab-2.0"
+            },
+            "spec": "siri",
+            "x-data-gov-fr-res-id": 83029,
+            "x-data-gov-fr-dataset-id": "67f5bad303325228295b7dff",
+            "managed-by-script": true
+        },
+        {
+            "name": "offres-de-services-bus-tram-et-scolaire-au-format-gtfs-netex-gtfs-rt-siri-lite",
+            "type": "url",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/d9af0e0a-4b59-417f-9104-5121fdb6735c",
+            "x-data-gov-fr-res-title": "SIRI-Lite stoppoints-discovery",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/offres-de-services-bus-tram-et-scolaire-au-format-gtfs-netex-gtfs-rt-siri-lite",
+                "spdx-identifier": "etalab-2.0"
+            },
+            "spec": "siri",
+            "x-data-gov-fr-res-id": 83028,
+            "x-data-gov-fr-dataset-id": "67f5bad303325228295b7dff",
+            "managed-by-script": true
+        },
+        {
+            "name": "offres-de-services-bus-tram-et-scolaire-au-format-gtfs-netex-gtfs-rt-siri-lite",
+            "type": "url",
             "url": "https://www.data.gouv.fr/api/1/datasets/r/bd01907f-4756-43f4-8eb3-6a9650d6e4b5",
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/offres-de-services-bus-tram-et-scolaire-au-format-gtfs-netex-gtfs-rt-siri-lite",
@@ -12627,6 +12869,34 @@
         },
         {
             "name": "horaires-sncf",
+            "type": "url",
+            "url": "https://proxy.transport.data.gouv.fr/resource/sncf-siri-lite-estimated-timetable",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/horaires-sncf",
+                "spdx-identifier": "ODbL-1.0"
+            },
+            "spec": "siri",
+            "x-data-gov-fr-res-id": 83198,
+            "managed-by-script": true,
+            "x-data-gov-fr-res-title": "https://proxy.transport.data.gouv.fr/resource/sncf-siri-lite-estimated-timetable",
+            "x-data-gov-fr-dataset-id": "6853c089b3ed5781f6adfdf7"
+        },
+        {
+            "name": "horaires-sncf",
+            "type": "url",
+            "url": "https://proxy.transport.data.gouv.fr/resource/sncf-siri-lite-situation-exchange",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/horaires-sncf",
+                "spdx-identifier": "ODbL-1.0"
+            },
+            "spec": "siri",
+            "x-data-gov-fr-res-id": 83199,
+            "managed-by-script": true,
+            "x-data-gov-fr-res-title": "https://proxy.transport.data.gouv.fr/resource/sncf-siri-lite-situation-exchange",
+            "x-data-gov-fr-dataset-id": "6853c089b3ed5781f6adfdf7"
+        },
+        {
+            "name": "horaires-sncf",
             "type": "http",
             "url": "https://www.data.gouv.fr/api/1/datasets/r/9ae758ec-cd7a-40cd-a890-bb3963224942",
             "fix": true,
@@ -12760,6 +13030,20 @@
             "skip": false,
             "x-data-gov-fr-res-title": "gtfs_lumidata_id.zip",
             "x-data-gov-fr-dataset-id": "685d9000ec5a7481ab634360"
+        },
+        {
+            "name": "reseau-de-transports-collectifs-naolib",
+            "type": "url",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/0e5261ce-4093-4f88-b3e0-aaa58cbb772c",
+            "x-data-gov-fr-res-title": "Siri-lite",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/reseau-de-transports-collectifs-naolib",
+                "spdx-identifier": "etalab-2.0"
+            },
+            "spec": "siri",
+            "x-data-gov-fr-res-id": 83920,
+            "x-data-gov-fr-dataset-id": "685d9000ec5a7481ab634360",
+            "managed-by-script": true
         },
         {
             "name": "reseau-de-transports-collectifs-naolib",

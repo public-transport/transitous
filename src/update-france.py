@@ -40,10 +40,10 @@ if __name__ == "__main__":
         for resource in dataset["resources"]:
             currently_active_ids.add(resource["id"])
 
-        gtfs = list(
+        schedules = list(
             filter(
                 lambda r: "format" in r
-                and (r["format"] == "GTFS" or r["format"] == "gtfs-rt"),
+                and (r["format"] == "GTFS" or r["format"] == "gtfs-rt" or r["format"] == "SIRI Lite"),
                 dataset["resources"],
             )
         )
@@ -101,9 +101,9 @@ if __name__ == "__main__":
                     new.update(source)
                     region["sources"].append(new)
 
-        if gtfs and dataset["slug"]:
+        if schedules and dataset["slug"]:
             resources = list(
-                filter(lambda r: "format" in r and r["format"] == "GTFS", gtfs)
+                filter(lambda r: "format" in r and r["format"] == "GTFS", schedules)
             )
             # Exclude resources with "community_resource_publishers" field
             resources = [
@@ -165,10 +165,10 @@ if __name__ == "__main__":
             def cond(r) -> bool:
                 return (
                     "format" in r
-                    and r["format"] == "gtfs-rt"
+                    and ((r["format"] == "gtfs-rt"
                     and ("features" not in r
                          or not r["features"]
-                         or ("trip_updates" in r["features"] or "service_alerts" in r["features"]))
+                         or ("trip_updates" in r["features"] or "service_alerts" in r["features"]))) or r["format"] == "SIRI Lite")
                 )
 
             def find_static_feed(sources, dataset_id) -> int | None:
@@ -181,7 +181,7 @@ if __name__ == "__main__":
                     return candidates[0]
 
 
-            resources = list(filter(cond, gtfs))
+            resources = list(filter(cond, schedules))
             resources.sort(key=lambda r: str(r.get("id", "")))
             if not resources:
                 continue
@@ -195,11 +195,17 @@ if __name__ == "__main__":
                     "url": resource["url"],
                     "x-data-gov-fr-res-title": resource["title"],
                     "license": {},
-                    "spec": "gtfs-rt",
                     "x-data-gov-fr-res-id": resource["id"],
                     "x-data-gov-fr-dataset-id": dataset["id"],
                     "managed-by-script": True
                 }
+
+                match resource["format"]:
+                    case "gtfs-rt":
+                        source["spec"] = "gtfs-rt"
+                    case "SIRI Lite":
+                        source["spec"] = "siri"
+
                 if "page_url" in dataset:
                     source["license"]["url"] = dataset["page_url"]
 
