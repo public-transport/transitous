@@ -84,13 +84,6 @@
             }
         },
         {
-            "name": "donnees-theoriques-gtfs-et-temps-reel-siri-lite-du-reseau-cts",
-            "type": "url",
-            "spec": "siri",
-            "url": "https://cdn.k118.de/siri-et/fr/cts/latest.xml",
-            "url-contact": "github.com/MrKrisKrisu"
-        },
-        {
             "name": "horaires-sncf",
             "type": "http",
             "url": "https://mirror.traines.eu/french-netex/sncf-netex.fixed.zip",
@@ -582,6 +575,14 @@
             "managed-by-script": true,
             "skip": false,
             "x-data-gov-fr-res-title": "Données théoriques (GTFS)",
+            "x-data-gov-fr-dataset-id": "5ae1715488ee384c8ba0342b"
+        },
+        {
+            "name": "donnees-theoriques-gtfs-et-temps-reel-siri-lite-du-reseau-cts",
+            "type": "url",
+            "spec": "siri",
+            "url": "https://cdn.k118.de/siri-et/fr/cts/latest.xml",
+            "url-contact": "github.com/MrKrisKrisu",
             "x-data-gov-fr-dataset-id": "5ae1715488ee384c8ba0342b"
         },
         {
@@ -14375,7 +14376,7 @@
             "managed-by-script": true
         },
         {
-            "name": "donnees-theoriques-et-temps-reel-du-reseau-le-libellule-communaute-du-liancourtois-la-vallee-doree--83921",
+            "name": "donnees-theoriques-et-temps-reel-du-reseau-le-libellule-communaute-du-liancourtois-la-vallee-doree-flex",
             "type": "http",
             "url": "https://www.data.gouv.fr/api/1/datasets/r/e61f439a-2321-4ce2-bda7-89be2494304f",
             "fix": true,
@@ -14389,7 +14390,7 @@
             "managed-by-script": true
         },
         {
-            "name": "donnees-theoriques-et-temps-reel-du-reseau-le-libellule-communaute-du-liancourtois-la-vallee-doree--83922",
+            "name": "donnees-theoriques-et-temps-reel-du-reseau-le-libellule-communaute-du-liancourtois-la-vallee-doree",
             "type": "http",
             "url": "https://www.data.gouv.fr/api/1/datasets/r/2ca2ec9b-666a-4fc8-a348-6e7ec79e59a0",
             "fix": true,
@@ -14414,9 +14415,7 @@
             "spec": "gtfs-rt",
             "x-data-gov-fr-res-id": 83923,
             "x-data-gov-fr-dataset-id": "69a6f2ca10dcf3d189434a2c",
-            "managed-by-script": true,
-            "skip": true,
-            "skip-reason": "Needs to be renamed to match the corresponding static feed"
+            "managed-by-script": true
         },
         {
             "name": "liste-des-api-ecovelo-pour-les-stations-du-velo-baulois-velos-electriques-en-libre-service-sur-la-baule-escoublac-gbfs--83894",
