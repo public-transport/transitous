@@ -116,6 +116,10 @@
             "type": "url",
             "spec": "gtfs-rt",
             "url": "https://production.gtfsrt.vbb.de/data",
+            "use-feed-proxy": true,
+            "headers": {
+                "user-agent": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBSOS9icUpZVlEya1hGM0V3cHBiOFNXdC9wbHA4UTBGK0UwMnRUb09kTGhnCmt6RjhQNXNBT3RUdERPUEgvcGhGNVZXZmRhaTlCMzZMYXNGRlhHdFE1a0UKLS0tIE5MTmQwejlRNlY4T2NRejRXMEFuMG9WVm9LdGF2SDAyUjZvaUM0aEhxRjgKp6h5l5NXvbdBbpLvCVN8PejH05eVVMpqQZrLKDnZ4S2Tpy17WONLTfBbVa71HKIjw2K8ozhuYfiEMQJ2gVn6"
+            },
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             }
