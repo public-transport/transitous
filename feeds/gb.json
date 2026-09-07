@@ -22,7 +22,8 @@
                 "FlixBus"
             ],
             "script": "gb-great-britain.lua",
-            "keep-additional-fields": false
+            "keep-additional-fields": false,
+            "drop-shapes": true
         },
         {
             "name": "great-britain",
