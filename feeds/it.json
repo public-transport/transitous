@@ -453,6 +453,15 @@
             "license": {
                 "spdx-identifier": "CC0-1.0"
             }
+        },
+        {
+            "name": "liguria-riviera-transporti",
+            "type": "http",
+            "url": "https://dati.regione.liguria.it/api/3/action/package_show?id=ds-639",
+            "function": "data_regione_liguria_latest_resource",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
         }
     ]
 }

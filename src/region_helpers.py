@@ -285,3 +285,21 @@ def podgorica_me(source: HttpSource) -> HttpSource:
     from bs4 import BeautifulSoup
     source.url = BeautifulSoup(requests.get("https://podgorica.me/otvoreni-podaci/").text, "html.parser").select_one('a[href$=".zip"]')["href"]
     return source
+
+
+def data_regione_liguria_latest_resource(source: HttpSource) -> HttpSource:
+    resources = requests.get("https://dati.regione.liguria.it/api/3/action/package_show?id=ds-639").json()["result"]["resources"]
+
+    gtfs_resources = [
+        r for r in resources
+        if r.get("created")
+        and r.get("format") == "CSV"
+        and "PF" in r["name"]
+    ]
+
+    source.url = max(
+        gtfs_resources,
+        key=lambda r: datetime.fromisoformat(r["created"])
+    )["url"]
+
+    return source
