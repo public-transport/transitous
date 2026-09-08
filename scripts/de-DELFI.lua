@@ -11,6 +11,23 @@ function remove_leading_zeros(str)
   return string.format("%d", tonumber(str))
 end
 
+-- route short names that are operated as EuroCity Express (all have route_type 102)
+local ece_route_short_names = {
+    "20", -- Hamburg - Frankfurt - Basel
+    "75", -- Hamburg - Padborg - København
+    "85", -- Frankfurt - Zürich - Milano
+    "88"  -- München - Lindau - Zürich
+}
+
+function contains(list, value)
+  for _,v in ipairs(list) do
+    if v == value then
+      return true
+    end
+  end
+  return false
+end
+
 -- routes from international operators that need their display names fixed
 -- { source route type, route name }
 local intl_name_map = {
@@ -30,7 +47,11 @@ function process_trip(trip)
       trip:set_short_name('ICE ' .. remove_leading_zeros(trip:get_short_name()))
       trip:set_display_name(trip:get_short_name())
     elseif trip:get_route():get_route_type() == 102 then
-      trip:set_short_name('IC ' .. remove_leading_zeros(trip:get_short_name()))
+      local prefix = 'IC '
+      if contains(ece_route_short_names, trip:get_route():get_short_name()) then
+        prefix = 'ECE '
+      end
+      trip:set_short_name(prefix .. remove_leading_zeros(trip:get_short_name()))
       trip:set_display_name(trip:get_short_name())
     end
   else
