@@ -10443,7 +10443,8 @@
             "managed-by-script": true,
             "skip": false,
             "x-data-gov-fr-res-title": "ZOU_Réseau Express GTFS.Zip",
-            "x-data-gov-fr-dataset-id": "668d0a08a847603d391cbed7"
+            "x-data-gov-fr-dataset-id": "668d0a08a847603d391cbed7",
+            "script": "fr-trains-as-ter.lua"
         },
         {
             "name": "lignes-des-reseaux-transport-zou-provence-alpes-cote-d-azur-express-3-3",
@@ -13006,7 +13007,7 @@
             "skip": false,
             "x-data-gov-fr-res-title": "GTFS Schedule : les horaires théoriques, les arrêts, les calendriers et les itinéraires.",
             "x-data-gov-fr-dataset-id": "685baf2be31192d0ec7bcdc9",
-            "script": "generic-display-trip-short-name.lua"
+            "script": "fr-trains-as-ter.lua"
         },
         {
             "name": "zou",
@@ -14904,7 +14905,8 @@
             "x-data-gov-fr-res-id": 83990,
             "x-data-gov-fr-dataset-id": "69e2cd307123972d45a21d49",
             "x-data-gov-fr-res-title": "Trains ZOU ( Format GTFS)",
-            "managed-by-script": true
+            "managed-by-script": true,
+            "script": "fr-trains-as-ter.lua"
         },
         {
             "name": "trains-express-regionaux-zou-en-provence-alpes-cote-d-azur",
