@@ -10413,7 +10413,8 @@
             "managed-by-script": true,
             "skip": false,
             "x-data-gov-fr-res-title": "ZOU_Réseau Scolaire GTFS.Zip",
-            "x-data-gov-fr-dataset-id": "668d09dea847603d391cbe9b"
+            "x-data-gov-fr-dataset-id": "668d09dea847603d391cbe9b",
+            "script": "fr-trains-as-ter.lua"
         },
         {
             "name": "lignes-des-reseaux-transport-zou-provence-alpes-cote-d-azur-scolaire-1-3",
