@@ -22,6 +22,9 @@
             "license": {
                 "spdx-identifier": "CC0-1.0",
                 "url": "https://github.com/noi-techpark/opendatahub-gtfs-api/blob/839d698938a224a7db4885f717ca05706fa6bae1/datasets.yml#L33"
+            },
+            "http-options": {
+                "fetch-interval-days": 1
             }
         },
         {
@@ -66,7 +69,10 @@
         {
             "name": "Emilia-Romagna-TEP-Parma",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-spz3-tepparma"
+            "transitland-atlas-id": "f-spz3-tepparma",
+            "http-options": {
+                "fetch-interval-days": 1
+            }
         },
         {
             "name": "Emilia-Romagna-TPER-Bologna",
@@ -458,6 +464,15 @@
             "name": "liguria-riviera-transporti",
             "type": "http",
             "url": "https://dati.regione.liguria.it/api/3/action/package_show?id=ds-639",
+            "function": "data_regione_liguria_latest_resource",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
+        },
+        {
+            "name": "liguria-atc-esercizio",
+            "type": "http",
+            "url": "https://dati.regione.liguria.it/api/3/action/package_show?id=ds-640",
             "function": "data_regione_liguria_latest_resource",
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
