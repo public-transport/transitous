@@ -13004,7 +13004,8 @@
             "managed-by-script": true,
             "skip": false,
             "x-data-gov-fr-res-title": "GTFS Schedule : les horaires théoriques, les arrêts, les calendriers et les itinéraires.",
-            "x-data-gov-fr-dataset-id": "685baf2be31192d0ec7bcdc9"
+            "x-data-gov-fr-dataset-id": "685baf2be31192d0ec7bcdc9",
+            "script": "generic-display-trip-short-name.lua"
         },
         {
             "name": "zou",
