@@ -13065,7 +13065,8 @@
             "spec": "siri",
             "x-data-gov-fr-res-id": 83920,
             "x-data-gov-fr-dataset-id": "685d9000ec5a7481ab634360",
-            "managed-by-script": true
+            "managed-by-script": true,
+            "use-feed-proxy": true
         },
         {
             "name": "reseau-de-transports-collectifs-naolib",
@@ -13079,7 +13080,8 @@
             "x-data-gov-fr-res-id": 84103,
             "managed-by-script": true,
             "x-data-gov-fr-dataset-id": "685d9000ec5a7481ab634360",
-            "x-data-gov-fr-res-title": "GTFS-RT Alerts"
+            "x-data-gov-fr-res-title": "GTFS-RT Alerts",
+            "use-feed-proxy": true
         },
         {
             "name": "reseau-urbain-de-redon-agglomeration",
