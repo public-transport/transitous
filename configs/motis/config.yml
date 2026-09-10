@@ -34,6 +34,7 @@ timetable:
   update_interval: 60
   http_timeout: 30
   incremental_rt_update: false
+  preprocess_max_matching_distance: 0
   max_footpath_length: 12
   extend_missing_footpaths: true
 # The datasets are filled in by ./src/generate-motis-config.py
@@ -69,4 +70,3 @@ limits:
   street_routing_max_direct_seconds: 21600
   geocode_max_suggestions: 512
   reverse_geocode_max_results: 512
-  preprocess_max_matching_distance: 250
