@@ -274,11 +274,6 @@
             "url": "https://jbb.ghsq.de/gtfs/octranspo/TripUpdates"
         },
         {
-            "name": "PCConnect",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-perth~county~on~ca"
-        },
-        {
             "name": "Quinte-Transit",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-quinte~transit~ca",
