@@ -311,6 +311,19 @@
             }
         },
         {
+            "name": "Sicilia-Messina-ATM",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://rt.annacati.com/atm-messina/messina.pb",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0",
+                "url": "https://opendata.comune.messina.it/dataset/dati-trasporto-pubblico-urbano-atm-gtfs",
+                "publisher": "Azienda Trasporti Messina S.p.A.",
+                "publisher-url": "https://www.atmmessinaspa.it/",
+                "attribution-text": "This feed contains derivative realtime data based on public transport data provided by Azienda Trasporti Messina S.p.A. (ATM Messina), licensed under CC-BY. Realtime feed produced by Annacati."
+            }
+        },
+        {
             "name": "Sicilia-Palermo-AMAT",
             "type": "http",
             "url": "https://opendata.comune.palermo.it/js/server/uploads/dataset/gtfs/amat_gtfs.zip",
