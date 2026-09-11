@@ -21,6 +21,24 @@
             ]
         },
         {
+            "name": "visimarsrutai",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://www.visimarsrutai.lt/gtfs-realtime/trip_updates.pb"
+        },
+        {
+            "name": "visimarsrutai",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://www.visimarsrutai.lt/gtfs-realtime/service_alerts.pb"
+        },
+        {
+            "name": "visimarsrutai",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://www.visimarsrutai.lt/gtfs-realtime/vehicle_positions.pb"
+        },
+        {
             "name": "vilnius",
             "type": "mobility-database",
             "fix": true,
