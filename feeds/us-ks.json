@@ -9,12 +9,16 @@
         {
             "name": "Wichita-Transit",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-9ydy-wichitatransit"
+            "transitland-atlas-id": "f-9ydy-wichitatransit",
+            "skip": true,
+            "skip-reason": "Feed expired"
         },
         {
             "name": "Wichita-Transit",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-9ydy-wichitatransit~rt"
+            "transitland-atlas-id": "f-9ydy-wichitatransit~rt",
+            "skip": true,
+            "skip-reason": "Feed expired"
         },
         {
             "name": "RideKC",
