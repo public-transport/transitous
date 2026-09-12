@@ -35,4 +35,6 @@ markdown_extensions:
 
 # Page tree
 nav:
-  - Home: index.md
+  - Overview: overview.md
+  - For Contributors: contributors.md
+  - For Data Producers: data-producers.md
