@@ -2047,9 +2047,18 @@
             },
             "x-data-gov-fr-res-id": 64973,
             "managed-by-script": true,
-            "skip": false,
+            "skip": true,
+            "skip-reason": "Replaced by GTFS @ gtfs.bus-tracker.fr",
             "x-data-gov-fr-res-title": "Liste des arrêts, horaires et parcours du réseau Astuce",
             "x-data-gov-fr-dataset-id": "5cd4321f8b4c4137d1244318"
+        },
+        {
+            "name": "donnees-statiques-et-temps-reel-du-reseau-astuce-metropole-rouen-normandie",
+            "type": "http",
+            "url": "https://gtfs.bus-tracker.fr/astuce-global.zip",
+            "license": {
+                "spdx-identifier": "ODbL-1.0"
+            }
         },
         {
             "name": "donnees-statiques-et-temps-reel-du-reseau-astuce-metropole-rouen-normandie",
@@ -2076,6 +2085,8 @@
             "spec": "gtfs-rt",
             "x-data-gov-fr-res-id": 80752,
             "managed-by-script": true,
+            "skip": true,
+            "skip-reason": "Replaced by res-id 82678",
             "x-data-gov-fr-res-title": "Prochains passages des lignes du réseau Astuce exploitées par Transdev Rouen",
             "x-data-gov-fr-dataset-id": "5cd4321f8b4c4137d1244318"
         },
