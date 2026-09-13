@@ -403,6 +403,66 @@
             "skip-reason": "Expired feed"
         },
         {
+            "name": "Autolinee-Toscane-Urbano-Pisa",
+            "type": "mobility-database",
+            "mdb-id": "tld-6970"
+        },
+        {
+            "name": "Autolinee-Toscane-ExtraUrbano-Firenze",
+            "type": "mobility-database",
+            "mdb-id": "tld-6953"
+        },
+        {
+            "name": "Autolinee-Toscane-Emg-Extraurbano-Pisa",
+            "type": "mobility-database",
+            "mdb-id": "tld-6963"
+        },
+        {
+            "name": "Autolinee-Toscane-Urbano-Lucca",
+            "type": "mobility-database",
+            "mdb-id": "tld-6991"
+        },
+        {
+            "name": "Autolinee-Toscane-Debole-Extraurbano-CEV",
+            "type": "mobility-database",
+            "mdb-id": "tld-6960"
+        },
+        {
+            "name": "Autolinee-Toscane-Servizi-Sostitutivi-Ferro",
+            "type": "mobility-database",
+            "mdb-id": "tld-6958"
+        },
+        {
+            "name": "Autolinee-Toscane-Emg-Urbano-Pontedera",
+            "type": "mobility-database",
+            "mdb-id": "tld-6997"
+        },
+        {
+            "name": "Autolinee-Toscane-Emg-Urbano-San-Miniato",
+            "type": "mobility-database",
+            "mdb-id": "tld-6998"
+        },
+        {
+            "name": "Autolinee-Toscane-ExtraUrbano-Lucca",
+            "type": "mobility-database",
+            "mdb-id": "tld-6987"
+        },
+        {
+            "name": "Autolinee-Toscane-ExtraUrbano-Pisa",
+            "type": "mobility-database",
+            "mdb-id": "tld-6967"
+        },
+        {
+            "name": "Autolinee-Toscane-Emg-Urbano-Volterra",
+            "type": "mobility-database",
+            "mdb-id": "tld-6981"
+        },
+        {
+            "name": "Autolinee-Toscane-Debole-Urbano-Pisa",
+            "type": "mobility-database",
+            "mdb-id": "tld-6985"
+        },
+        {
             "name": "Trentino-Extraurbano",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u0p-trentinotrasportieserciziospa"
