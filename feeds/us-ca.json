@@ -293,9 +293,9 @@
             "transitland-atlas-id": "f-9q9h-stanford~marguerite"
         },
         {
-            "name": "unitrans",
-            "type": "mobility-database",
-            "mdb-id": "mdb-82"
+            "name": "Unitrans",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9qc7-unitransdavis"
         }
     ]
 }
