@@ -146,6 +146,11 @@
             "name": "Transtejo-Soflusa",
             "type": "mobility-database",
             "mdb-id": "mdb-2921"
+        },
+        {
+            "name": "Metro-Transportes-do-Sul",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2408"
         }
     ]
 }
