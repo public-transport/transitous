@@ -228,9 +228,7 @@
         {
             "name": "Deer",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-deer~germany~gbfs",
-            "skip": true,
-            "skip-reason": "Unavailable since Deer migrated to a new system"
+            "transitland-atlas-id": "f-deer~germany~gbfs"
         },
         {
             "name": "Mikar",
@@ -306,7 +304,7 @@
         {
             "name": "OberSchwabenMobil",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-oberschwabenmobil~carsharing~halle~saale~~gbfs"
+            "transitland-atlas-id": "f-oberschwabenmobil~carsharing~halle~saale~gbfs"
         },
         {
             "name": "FordCarsharingAutohausAlbert",
