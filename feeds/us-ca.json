@@ -291,6 +291,11 @@
             "name": "Stanford-Marguerite",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-9q9h-stanford~marguerite"
+        },
+        {
+            "name": "Unitrans",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9qc7-unitransdavis"
         }
     ]
 }
