@@ -15268,7 +15268,9 @@
             "x-data-gov-fr-res-id": 84203,
             "x-data-gov-fr-dataset-id": "6a2852b7baa58d82b47766ea",
             "x-data-gov-fr-res-title": "colette_gtfs.zip",
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": true,
+            "skip-reason": "Feed is expired according to metadata"
         },
         {
             "name": "u-vagabondu",
@@ -15324,7 +15326,9 @@
             "x-data-gov-fr-res-id": 84204,
             "x-data-gov-fr-dataset-id": "6a2f9a84779d9f873659ae48",
             "x-data-gov-fr-res-title": "gtfs_Remontees_au_depart_Courchevel_ete2026.zip",
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": true,
+            "skip-reason": "Feed is expired according to metadata"
         },
         {
             "name": "vls-viavelo-villefranche-sur-saone",
