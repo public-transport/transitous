@@ -11,6 +11,15 @@
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-9g3-semovi",
             "fix": true
+        },
+        {
+            "name": "mex-mich-zamora",
+            "type": "http",
+            "url": "https://hdtp.codeandomexico.org/gtfs/mex-mich-zamora.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-SA-4.0",
+                "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+            }
         }
     ]
 }
