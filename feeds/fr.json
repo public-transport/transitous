@@ -9730,7 +9730,7 @@
             "skip-reason": "Feed is expired according to metadata"
         },
         {
-            "name": "offre-de-transport-tam-en-temps-reel-gtfs-rt-urbain-et-suburbain--84199",
+            "name": "offre-de-transport-tam-en-temps-reel-gtfs-rt-urbain-et-suburbain",
             "type": "http",
             "url": "https://www.data.gouv.fr/api/1/datasets/r/93a29ce2-cfc8-44ff-b712-bcfd814b7f00",
             "fix": true,
@@ -9744,8 +9744,8 @@
             "managed-by-script": true
         },
         {
-            "name": "offre-de-transport-tam-en-temps-reel-gtfs-rt-urbain-et-suburbain--84200",
-            "type": "http",
+            "name": "offre-de-transport-tam-en-temps-reel-gtfs-rt-urbain-et-suburbain",
+            "type": "url",
             "url": "https://www.data.gouv.fr/api/1/datasets/r/9516d4d0-c5cd-4bdd-9cb8-1e793660c683",
             "fix": true,
             "license": {
@@ -9755,11 +9755,11 @@
             "x-data-gov-fr-res-id": 84200,
             "x-data-gov-fr-dataset-id": "662ba9a3f7d9ff84a3060d0a",
             "x-data-gov-fr-res-title": "Trip Update commun urbain et suburbain",
-            "managed-by-script": true
+            "managed-by-script": false
         },
         {
-            "name": "offre-de-transport-tam-en-temps-reel-gtfs-rt-urbain-et-suburbain--84201",
-            "type": "http",
+            "name": "offre-de-transport-tam-en-temps-reel-gtfs-rt-urbain-et-suburbain",
+            "type": "url",
             "url": "https://www.data.gouv.fr/api/1/datasets/r/0a5b437c-3692-4c08-9269-abc62bc6f99e",
             "fix": true,
             "license": {
@@ -9769,11 +9769,11 @@
             "x-data-gov-fr-res-id": 84201,
             "x-data-gov-fr-dataset-id": "662ba9a3f7d9ff84a3060d0a",
             "x-data-gov-fr-res-title": "Alert commun urbain et suburbain",
-            "managed-by-script": true
+            "managed-by-script": false
         },
         {
-            "name": "offre-de-transport-tam-en-temps-reel-gtfs-rt-urbain-et-suburbain--84202",
-            "type": "http",
+            "name": "offre-de-transport-tam-en-temps-reel-gtfs-rt-urbain-et-suburbain",
+            "type": "url",
             "url": "https://www.data.gouv.fr/api/1/datasets/r/19b807c6-d4fb-4720-90b5-74c1ccc13661",
             "fix": true,
             "license": {
@@ -9783,7 +9783,7 @@
             "x-data-gov-fr-res-id": 84202,
             "x-data-gov-fr-dataset-id": "662ba9a3f7d9ff84a3060d0a",
             "x-data-gov-fr-res-title": "Vehicule Position commun urbain et suburbain",
-            "managed-by-script": true
+            "managed-by-script": false
         },
         {
             "name": "stations-velos-en-libre-service-tanlib-flux-en-temps-reel",
