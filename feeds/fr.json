@@ -84,6 +84,15 @@
             }
         },
         {
+            "name": "caen-la-mer-reseau-twisto-gtfs-siri",
+            "type": "url",
+            "url": "https://gtfs.bus-tracker.fr/gtfs-rt/caen/",
+            "license": {
+                "spdx-identifier": "ODbL-1.0"
+            },
+            "spec": "gtfs-rt"
+        },
+        {
             "name": "horaires-sncf",
             "type": "http",
             "url": "https://mirror.traines.eu/french-netex/sncf-netex.fixed.zip",
