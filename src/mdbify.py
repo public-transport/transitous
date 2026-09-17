@@ -60,7 +60,7 @@ for source in region["sources"]:
         mdb_id = transitland_to_mdb[source["transitland-atlas-id"]]
         if mdb_id:
             source["type"] = "mobility-database"
-            source["mdb-id"] = mdb_id
+            source["mdb-id"] = f"mdb-{mdb_id}"
             source.pop("transitland-atlas-id", None)
 
 
