@@ -6,15 +6,31 @@
 
 from mobilitydatabase import Database
 from urllib.parse import urlparse
+from pathlib import Path
 
 import json
 import sys
+import csv
+import requests
 
 
 def canonicalize_url(url: str) -> str:
     parsed = urlparse(url)
     return parsed._replace(scheme="https", netloc=parsed.netloc.strip("www.")).geturl()
 
+id_mapping_file = "mobilitydatabase-mapping.csv"
+
+if not Path(id_mapping_file).exists():
+    table = requests.get("https://docs.google.com/spreadsheets/d/1Q96KDppKsn2khdrkraZCQ7T_qRSfwj7WsvqXvuMt4Bc/export?format=csv&gid=1787149399").text
+    with open(id_mapping_file, "w") as f:
+        f.write(table)
+
+transitland_to_mdb = {}
+
+with open(id_mapping_file, "r") as f:
+    for row in csv.DictReader(f, delimiter=",", quotechar="\""):
+        if "Transitland ID" in row and row["Transitland ID"].strip():
+            transitland_to_mdb[row["Transitland ID"]] = row["mdb_source_id"]
 
 mdb = Database.load()
 url_to_id = {}
@@ -37,6 +53,15 @@ for source in region["sources"]:
             source["mdb-id"] = mdb_id
             source.pop("url", None)
             source.pop("spec", None)
+    if source["type"] == "transitland-atlas":
+        if not source["transitland-atlas-id"] in transitland_to_mdb:
+            continue
+
+        mdb_id = transitland_to_mdb[source["transitland-atlas-id"]]
+        if mdb_id:
+            source["type"] = "mobility-database"
+            source["mdb-id"] = mdb_id
+            source.pop("transitland-atlas-id", None)
 
 
 print(region)
