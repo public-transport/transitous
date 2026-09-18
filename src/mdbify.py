@@ -5,8 +5,10 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 from mobilitydatabase import Database
+from transitland import Atlas
 from urllib.parse import urlparse
 from pathlib import Path
+from metadata import *
 
 import json
 import sys
@@ -37,6 +39,8 @@ url_to_id = {}
 for feed in mdb.by_id.values():
     url_to_id[canonicalize_url(feed["urls.direct_download"])] = feed["id"]
 
+atlas = Atlas.load(Path("transitland-atlas"))
+
 region = json.load(open(sys.argv[1], "r"))
 
 for source in region["sources"]:
@@ -54,14 +58,23 @@ for source in region["sources"]:
             source.pop("url", None)
             source.pop("spec", None)
     if source["type"] == "transitland-atlas":
-        if not source["transitland-atlas-id"] in transitland_to_mdb:
-            continue
-
-        mdb_id = transitland_to_mdb[source["transitland-atlas-id"]]
-        if mdb_id:
-            source["type"] = "mobility-database"
-            source["mdb-id"] = f"mdb-{mdb_id}"
-            source.pop("transitland-atlas-id", None)
+        if source["transitland-atlas-id"] in transitland_to_mdb:
+            mdb_id = transitland_to_mdb[source["transitland-atlas-id"]]
+            if mdb_id:
+                source["type"] = "mobility-database"
+                source["mdb-id"] = f"mdb-{mdb_id}"
+                source.pop("transitland-atlas-id", None)
+        else:
+            mdb_sources = atlas.sources_by_id(sourceFromJson(source))
+            if not mdb_sources:
+                continue
+            mdb_source = mdb_sources[0]
+            url = mdb_source.url
+            mdb_id = url_to_id.get(canonicalize_url(url))
+            if mdb_id:
+                source["type"] = "mobility-database"
+                source["mdb-id"] = mdb_id
+                source.pop("transitland-atlas-id", None)
 
 
 print(region)
