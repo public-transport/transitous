@@ -21,7 +21,7 @@
         {
             "name": "CZPTT",
             "type": "http",
-            "url": "https://data.jr.ggu.cz/results/latest/CZPTT_GTFS.zip",
+            "url": "https://motis.obehy.cz/get-feeds/cz-czptt-gtfs.zip",
             "license": {
                 "spdx-identifier": "CC0-1.0"
             },
