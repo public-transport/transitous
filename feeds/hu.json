@@ -35,7 +35,8 @@
         {
             "name": "bkk",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u2m-bkk"
+            "transitland-atlas-id": "f-u2m-bkk",
+            "fix": true
         },
         {
             "name": "bkk",
