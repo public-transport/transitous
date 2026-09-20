@@ -182,8 +182,8 @@
         },
         {
             "name": "STO",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-f244-sto"
+            "type": "mobility-database",
+            "mdb-id": "mdb-740"
         },
         {
             "name": "STO",
