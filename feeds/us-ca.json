@@ -314,7 +314,7 @@ xJeS6oNTTxCrDk4NLUyaa42obS/wqJt65p3uNuTR06agp7FVVjIrpw=="
          {
             "name": "Unitrans",
             "type": "url",
-            "spec": "gtfs-rt" 
+            "spec": "gtfs-rt",
             "url": "https://api.goswift.ly/real-time/unitrans/gtfs-rt-vehicle-positions",
             "use-feed-proxy": true,
             "headers": {
