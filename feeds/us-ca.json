@@ -300,7 +300,7 @@
         {
             "name": "Unitrans",
             "type": "url",
-            "spec": "gtfs-rt" 
+            "spec": "gtfs-rt",
             "url": "https://api.goswift.ly/real-time/unitrans/gtfs-rt-trip-updates",
             "use-feed-proxy": true,
             "headers": {
