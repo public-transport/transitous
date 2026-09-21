@@ -8,8 +8,8 @@
     "sources": [
         {
             "name": "LTA",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-w21z-lta"
+            "type": "mobility-database",
+            "mdb-id": "mdb-1076"
         }
     ]
 }
