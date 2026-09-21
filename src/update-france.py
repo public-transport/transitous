@@ -161,6 +161,9 @@ if __name__ == "__main__":
                                 if feed["name"] == id_map[resource["id"]]["name"]:
                                     feed["skip"] = True
                                     feed["skip-reason"] = "Feed is expired according to metadata"
+                        elif "skip-reason" in feed and feed["skip-reason"] == "Feed is expired according to metadata":
+                            feed.pop("skip")
+                            feed.pop("skip-reason")
 
                 else:
                     new = {

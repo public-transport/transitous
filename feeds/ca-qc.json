@@ -182,10 +182,20 @@
         },
         {
             "name": "STO",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-f244-sto",
-            "skip": true,
-            "skip-reason": "Connection to www.contenu.sto.ca timed out"
+            "type": "mobility-database",
+            "mdb-id": "mdb-740"
+        },
+        {
+            "name": "STO",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://proxy.octransparency.ca/ca/qc-STO/TripUpdates"
+        },
+        {
+            "name": "STO",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://proxy.octransparency.ca/ca/qc-STO/Alerts"
         },
         {
             "name": "STTR",
