@@ -2457,7 +2457,7 @@
             "url": "https://www.data.gouv.fr/api/1/datasets/r/8d4c3e5c-1702-4649-b47a-b16c6016dcc6",
             "fix": true,
             "license": {
-                "url": "https://transport.data.gouv.fr/datasets/filibus-urbain",
+                "url": "https://transport.data.gouv.fr/datasets/reseau-filibus",
                 "spdx-identifier": "etalab-2.0"
             },
             "x-data-gov-fr-res-id": 80587,
@@ -2472,7 +2472,7 @@
             "url": "https://www.data.gouv.fr/api/1/datasets/r/7e4b9d82-0863-4eaa-8051-a1dcf5e086f5",
             "x-data-gov-fr-res-title": "GTFS-RT - Prochains passages & positions des véhicules",
             "license": {
-                "url": "https://transport.data.gouv.fr/datasets/filibus-urbain",
+                "url": "https://transport.data.gouv.fr/datasets/reseau-filibus",
                 "spdx-identifier": "etalab-2.0"
             },
             "spec": "gtfs-rt",
@@ -3665,7 +3665,7 @@
             "x-data-gov-fr-res-id": 82555,
             "managed-by-script": true,
             "skip": false,
-            "x-data-gov-fr-res-title": "Réseau_MAT_19082026_au_31122026",
+            "x-data-gov-fr-res-title": "Réseau_MAT_18092026_au_31122026",
             "x-data-gov-fr-dataset-id": "601033a9f8ef84fd317562ae"
         },
         {
@@ -11171,6 +11171,20 @@
             "x-data-gov-fr-dataset-id": "6703a201386f775e01f4269b"
         },
         {
+            "name": "horaires-ave-espagne-france",
+            "type": "url",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/db9c89fb-c174-4c38-b861-5c51cc1d8856",
+            "x-data-gov-fr-res-title": "Horaires des trains en temps réel",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/horaires-ave-espagne-france",
+                "spdx-identifier": "etalab-2.0"
+            },
+            "x-data-gov-fr-res-id": 84210,
+            "x-data-gov-fr-dataset-id": "6703a201386f775e01f4269b",
+            "managed-by-script": true,
+            "spec": "gtfs-rt"
+        },
+        {
             "name": "stations-velo-en-libre-service-vls-de-la-roche-sur-yon",
             "type": "url",
             "url": "https://www.data.gouv.fr/api/1/datasets/r/9db56b13-60a0-487e-aa06-0b20a4a18b99",
@@ -13332,7 +13346,7 @@
         {
             "name": "gtfs-periodes-scolaires",
             "type": "http",
-            "url": "https://www.data.gouv.fr/api/1/datasets/r/0602751c-36aa-445d-88e2-aa4c51c13205",
+            "url": "https://transport.data.gouv.fr/resources/83578/download",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/gtfs-rentree",
@@ -13347,7 +13361,7 @@
         {
             "name": "gtfs-rentree--84192",
             "type": "http",
-            "url": "https://www.data.gouv.fr/api/1/datasets/r/02a3fad2-7d83-4e73-a99f-66644ca96e8c",
+            "url": "https://transport.data.gouv.fr/resources/84192/download",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/gtfs-rentree",
@@ -14387,7 +14401,7 @@
             "url": "https://proxy.transport.data.gouv.fr/resource/pony-lorient-gbfs/gbfs.json",
             "spec": "gbfs",
             "license": {
-                "url": "https://transport.data.gouv.fr/datasets/velos-et-trottinettes-pony-lorient",
+                "url": "https://transport.data.gouv.fr/datasets/trottinettes-pony-a-lorient",
                 "spdx-identifier": null
             },
             "x-data-gov-fr-res-id": 83797,
@@ -14401,7 +14415,7 @@
             "url": "https://proxy.transport.data.gouv.fr/resource/pony-nice-gbfs/gbfs.json",
             "spec": "gbfs",
             "license": {
-                "url": "https://transport.data.gouv.fr/datasets/velos-et-trottinettes-pony-nice",
+                "url": "https://transport.data.gouv.fr/datasets/velos-pony-a-nice",
                 "spdx-identifier": null
             },
             "x-data-gov-fr-res-id": 83799,
@@ -15324,6 +15338,20 @@
             "managed-by-script": true
         },
         {
+            "name": "arche-agglo-le-bus-horaires-du-reseau-de-lagglomeration-de-tain-tournon-07",
+            "type": "http",
+            "url": "https://transport.data.gouv.fr/resources/84226/download",
+            "fix": true,
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/arche-agglo-le-bus-horaires-du-reseau-de-lagglomeration-de-tain-tournon-07",
+                "spdx-identifier": "ODbL-1.0"
+            },
+            "x-data-gov-fr-res-id": 84226,
+            "x-data-gov-fr-dataset-id": "6a2bb945f9c07a372b6b71c3",
+            "x-data-gov-fr-res-title": "GTFS du réseau ARCHE AGGLO LE BUS",
+            "managed-by-script": true
+        },
+        {
             "name": "remontees-mecaniques-courchevel",
             "type": "http",
             "url": "https://transport.data.gouv.fr/resources/84204/download",
@@ -15657,7 +15685,7 @@
             "url": "https://proxy.transport.data.gouv.fr/resource/pony-marseille-gbfs/gbfs.json",
             "spec": "gbfs",
             "license": {
-                "url": "https://transport.data.gouv.fr/datasets/pony-netex-gbfs-marseille",
+                "url": "https://transport.data.gouv.fr/datasets/velos-pony-a-marseille-gbfs-netex",
                 "spdx-identifier": null
             },
             "x-data-gov-fr-res-id": 84197,
