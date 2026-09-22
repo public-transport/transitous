@@ -15,6 +15,10 @@
         {
             "name": "Pablo Castellanos",
             "github": "pacastega"
+        },
+        {
+            "name": "Diego Miguel Lozano",
+            "github": "dmlls"
         }
     ],
     "sources": [
@@ -1985,6 +1989,11 @@
             "name": "TranspRober",
             "type": "mobility-database",
             "mdb-id": "tld-4890"
+        },
+        {
+            "name": "Autobuses-urbanos-de-Burgos",
+            "type": "mobility-database",
+            "mdb-id": "mdb-3145"
         }
     ]
 }
