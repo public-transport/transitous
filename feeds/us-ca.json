@@ -304,7 +304,7 @@
             "url": "https://api.goswift.ly/real-time/unitrans/gtfs-rt-trip-updates",
             "use-feed-proxy": true,
             "headers": {
-                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBjV251WDZyVWFOVE90WUZJckZIMmttSUpndVVzeEdkblIwUDZ0UGdYOVFVCkFYMTJKQ0VWQVBBRCt1YnN2eTAzNjNhVHJOTHVheXdkMFNwdmt1a2VZSDgKLS0tIHljb1lRT2o1YlhkSzZBRTBCbnJuTE1BUnVUMXN3SEpDUkNQZzNmME0xOWMKqQHeN+sfoUcW7XVpajJFLUuVUVeYD0yRxJeS6oNTTxCrDk4NLUyaa42obS/wqJt65p3uNuTR06agp7FVVjIrpw=="
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSAxbVBHaStydDRTNzRBZnhnQW05N2tOQWk2MnlQWldVS0RkU0JKY0FjKzNrCnd5Tm1ySExtZ09ZR1NGRnBDS2ROQmFUT2FKdE5xV3o1QXNGaXlHMDlnWHcKLS0tIG9xV2dTNDY0bEQ4YWJaL3BsV3U5bnNqWUY1b3lrdEhMQ2tCdWMwMndxVXcKhNPIZYY7UDBuQ+9XAnwr/2eLYBTVSqZaHnet28uUAK0pBwBqzEHiLWUMrUikH62wfQ8YrciOkeF56ZdO8T1MOw=="
             }
          },
          {
@@ -314,7 +314,17 @@
             "url": "https://api.goswift.ly/real-time/unitrans/gtfs-rt-vehicle-positions",
             "use-feed-proxy": true,
             "headers": {
-                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBjV251WDZyVWFOVE90WUZJckZIMmttSUpndVVzeEdkblIwUDZ0UGdYOVFVCkFYMTJKQ0VWQVBBRCt1YnN2eTAzNjNhVHJOTHVheXdkMFNwdmt1a2VZSDgKLS0tIHljb1lRT2o1YlhkSzZBRTBCbnJuTE1BUnVUMXN3SEpDUkNQZzNmME0xOWMKqQHeN+sfoUcW7XVpajJFLUuVUVeYD0yRxJeS6oNTTxCrDk4NLUyaa42obS/wqJt65p3uNuTR06agp7FVVjIrpw=="
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBiZE1BQ1p3b0pVVkRhQ2ZiWForUWloTTF6ajdNTk1tZ3NJSUVDMHQzMDFVCnFvUjJmenMwTWRUbDd0aDdML0NQOWdLa1RjcUFLSUx1VEpXdEdLVmdWZEEKLS0tIFNGSTBYVXIybmlnbk1jUUdVeDV1YitDUlN1NVpHczlrRng2NjBWblJhbEkKMIyzU5SnSu+bdBHj47fS45PXCxI2EHWbEG80gHLtfcEGBptX1b1ys+5ziHPLTxBmOqyRWvxpwBPge7Kqe5grLw=="
+            }
+         },
+         {
+            "name": "Unitrans",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.goswift.ly/real-time/unitrans/gtfs-rt-alerts",
+            "use-feed-proxy": true,
+            "headers": {
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBWSUdtQ1hmUWNQTFJ6WHhQcWp2aTgxaUcvQjB5ZmROYmJsZUh5ME5tTURBCkRxcGtCTHJZNVlycUp4Yy9hWm5VSVViUFYyUjBsUXQ5a1Bod216RVNlUEEKLS0tIGYxVjZDTVg1eUgwdkJpVVJSZllmM0IyaGxRTzloMW5kSnc3RjhTZVFabWcKk2ccIJnSJxzncGhiuO7PFkAzphVdPqj7jDqKPJ3sSr4RguX+kdXw3UA91Ay30gz26I6L/x3r+poPOA6SDtXIwQ=="
             }
          }
     ]
