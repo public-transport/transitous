@@ -324,7 +324,7 @@
             "url": "https://api.goswift.ly/real-time/unitrans/gtfs-rt-alerts",
             "use-feed-proxy": true,
             "headers": {
-                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBjV251WDZyVWFOVE90WUZJckZIMmttSUpndVVzeEdkblIwUDZ0UGdYOVFVCkFYMTJKQ0VWQVBBRCt1YnN2eTAzNjNhVHJOTHVheXdkMFNwdmt1a2VZSDgKLS0tIHljb1lRT2o1YlhkSzZBRTBCbnJuTE1BUnVUMXN3SEpDUkNQZzNmME0xOWMKqQHeN+sfoUcW7XVpajJFLUuVUVeYD0yRxJeS6oNTTxCrDk4NLUyaa42obS/wqJt65p3uNuTR06agp7FVVjIrpw=="
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBWSUdtQ1hmUWNQTFJ6WHhQcWp2aTgxaUcvQjB5ZmROYmJsZUh5ME5tTURBCkRxcGtCTHJZNVlycUp4Yy9hWm5VSVViUFYyUjBsUXQ5a1Bod216RVNlUEEKLS0tIGYxVjZDTVg1eUgwdkJpVVJSZllmM0IyaGxRTzloMW5kSnc3RjhTZVFabWcKk2ccIJnSJxzncGhiuO7PFkAzphVdPqj7jDqKPJ3sSr4RguX+kdXw3UA91Ay30gz26I6L/x3r+poPOA6SDtXIwQ=="
             }
          }
     ]
