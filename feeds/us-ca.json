@@ -304,7 +304,7 @@
             "url": "https://api.goswift.ly/real-time/unitrans/gtfs-rt-trip-updates",
             "use-feed-proxy": true,
             "headers": {
-                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBjV251WDZyVWFOVE90WUZJckZIMmttUpndVVzeEdkblIwUDZ0UGdYOVFVCkFYMTJKQ0VWQVBBRCt1YnN2eTAzNjNhVHJOTHVheXdkMFNwdmt1a2VZSDgKLS0tIHljb1lRT2o1YlhkSzZBRTBCbnJuTE1BUnVUMXN3SEpDUkNQZzNmME0xOWMKqQHeN+sfoUcW7XVpajJFLUuVUVeYD0yRxJeS6oNTTxCrDk4NLUyaa42obS/wqJt65p3uNuTR06agp7FVVjIrpw=="
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSAxbVBHaStydDRTNzRBZnhnQW05N2tOQWk2MnlQWldVS0RkU0JKY0FjKzNrCnd5Tm1ySExtZ09ZR1NGRnBDS2ROQmFUT2FKdE5xV3o1QXNGaXlHMDlnWHcKLS0tIG9xV2dTNDY0bEQ4YWJaL3BsV3U5bnNqWUY1b3lrdEhMQ2tCdWMwMndxVXcKhNPIZYY7UDBuQ+9XAnwr/2eLYBTVSqZaHnet28uUAK0pBwBqzEHiLWUMrUikH62wfQ8YrciOkeF56ZdO8T1MOw=="
             }
          },
          {
