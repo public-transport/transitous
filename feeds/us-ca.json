@@ -314,7 +314,7 @@
             "url": "https://api.goswift.ly/real-time/unitrans/gtfs-rt-vehicle-positions",
             "use-feed-proxy": true,
             "headers": {
-                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBjV251WDZyVWFOVE90WUZJckZIMmttSUpndVVzeEdkblIwUDZ0UGdYOVFVCkFYMTJKQ0VWQVBBRCt1YnN2eTAzNjNhVHJOTHVheXdkMFNwdmt1a2VZSDgKLS0tIHljb1lRT2o1YlhkSzZBRTBCbnJuTE1BUnVUMXN3SEpDUkNQZzNmME0xOWMKqQHeN+sfoUcW7XVpajJFLUuVUVeYD0yRxJeS6oNTTxCrDk4NLUyaa42obS/wqJt65p3uNuTR06agp7FVVjIrpw=="
+                "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBiZE1BQ1p3b0pVVkRhQ2ZiWForUWloTTF6ajdNTk1tZ3NJSUVDMHQzMDFVCnFvUjJmenMwTWRUbDd0aDdML0NQOWdLa1RjcUFLSUx1VEpXdEdLVmdWZEEKLS0tIFNGSTBYVXIybmlnbk1jUUdVeDV1YitDUlN1NVpHczlrRng2NjBWblJhbEkKMIyzU5SnSu+bdBHj47fS45PXCxI2EHWbEG80gHLtfcEGBptX1b1ys+5ziHPLTxBmOqyRWvxpwBPge7Kqe5grLw=="
             }
          },
          {
