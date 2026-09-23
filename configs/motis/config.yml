@@ -11,7 +11,7 @@ server:
 user_agent: transitous.org
 street_routing:
   elevation_data_dir: ./srtm/
-osr_footpath: true
+osr_footpath: false
 elevators: false
 geocoding: true
 reverse_geocoding: true
