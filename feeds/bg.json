@@ -160,7 +160,8 @@
             "url": "https://gtfs.livetransport.eu/gtfs/plovdiv.zip",
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
-            }
+            },
+            "fix": true
         },
         {
             "name": "kazanlak",
