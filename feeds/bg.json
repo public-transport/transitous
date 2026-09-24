@@ -137,6 +137,46 @@
             "name": "blagoevgrad",
             "type": "http",
             "url": "https://www.modeshift.app/api/v1/d2835d46-0fbd-4d65-aa94-a17a6304b460/transport/gtfs/gtfs.zip"
+        },
+        {
+            "name": "stara-zagora",
+            "type": "http",
+            "url": "https://gtfs.livetransport.eu/gtfs/stara-zagora.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
+        },
+        {
+            "name": "sliven",
+            "type": "http",
+            "url": "https://gtfs.livetransport.eu/gtfs/sliven.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
+        },
+        {
+            "name": "plovdiv",
+            "type": "http",
+            "url": "https://gtfs.livetransport.eu/gtfs/plovdiv.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
+        },
+        {
+            "name": "kazanlak",
+            "type": "http",
+            "url": "https://gtfs.livetransport.eu/gtfs/kazanlak.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
+        },
+        {
+            "name": "dobrich",
+            "type": "http",
+            "url": "https://gtfs.livetransport.eu/gtfs/dobrich.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
         }
     ]
 }
