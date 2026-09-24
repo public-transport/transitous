@@ -1499,9 +1499,7 @@
             "url": "https://files.girlc.at/gtfs/szczytno.zip",
             "license": {
                 "spdx-identifier": "CC0-1.0"
-            },
-            "skip": true,
-            "skip-reason": "Feed expired"
+            }
         },
         {
             "name": "Sulejówek",
@@ -1815,6 +1813,162 @@
             "name": "Manikar-Stronie-Slaskie",
             "type": "http",
             "url": "https://hoermalmeister.github.io/gtfs-rehost/manikar/manikar.zip"
+        },
+        {
+            "name": "Bytów",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://files.girlc.at/gtfs/bytow.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "Miastkowo",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://files.girlc.at/gtfs/miastkowo.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "Mława",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://files.girlc.at/gtfs/mlawa.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "Powiat-Nowodworski",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://files.girlc.at/gtfs/powiat_nowodworski.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "Skawina",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://files.girlc.at/gtfs/skawina.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "Stryków",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://files.girlc.at/gtfs/strykow.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "Województwo-świętokrzyskie",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://files.girlc.at/gtfs/swietokrzyskie.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "Wolsztyn",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://files.girlc.at/gtfs/wolsztyn.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "MKS-Jasło",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://data.odt.org.pl/gtfs/jaslo-gtfs.zip",
+            "license": {
+                "spdx-identifier": "MIT"
+            }
+        },
+        {
+            "name": "Pabianice",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://gtfs.mzkpabianice.pl/GTFS.zip",
+            "license": {
+                "spdx-identifier": "MIT"
+            }
+        },
+        {
+            "name": "Siedlce",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://ftp.mpk.siedlce.pl/GTFS-ST/GTFS.zip",
+            "license": {
+                "spdx-identifier": "MIT"
+            }
+        },
+        {
+            "name": "Siedlce",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://ftp.mpk.siedlce.pl/GTFS-RT/alerts.bin",
+            "use-feed-proxy": true,
+            "license": {
+                "spdx-identifier": "MIT"
+            }
+        },
+        {
+            "name": "Siedlce",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://ftp.mpk.siedlce.pl/GTFS-RT/trip_updates.bin",
+            "use-feed-proxy": true,
+            "license": {
+                "spdx-identifier": "MIT"
+            }
+        },
+        {
+            "name": "Siedlce",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://ftp.mpk.siedlce.pl/GTFS-RT/vehicle_positions.bin",
+            "use-feed-proxy": true,
+            "license": {
+                "spdx-identifier": "MIT"
+            }
+        },
+        {
+            "name": "Chrzanów",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://data.odt.org.pl/gtfs/zkkm-gtfs.zip",
+            "license": {
+                "spdx-identifier": "MIT"
+            }
+        },
+        {
+            "name": "Olkusz",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://data.odt.org.pl/gtfs/olkusz-gtfs.zip",
+            "license": {
+                "spdx-identifier": "MIT"
+            }
+        },
+        {
+            "name": "Olkusz",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.odt.org.pl/feed/rt/5/trip_update/",
+            "license": {
+                "spdx-identifier": "MIT"
+            }
         }
     ]
 }
