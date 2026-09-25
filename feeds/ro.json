@@ -302,6 +302,11 @@
             "name": "Consiliul-Județean-Buzău-Transport-județean",
             "type": "mobility-database",
             "mdb-id": "mdb-3179"
+        },
+        {
+            "name": "SC-Transport-Public-SA",
+            "type": "http",
+            "url": "https://tpfocsani.ro/images/gtfs/GTFS.zip"
         }
     ]
 }
