@@ -937,14 +937,21 @@
             "name": "Kombus-Kórnik",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://kombus.pl/gtfs/kombus.zip",
+            "url": "https://api.zbiorkom.live/api6-open/poznan/gtfs/KOMBUS",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
             "fix": true
         },
         {
             "name": "Kombus-Kórnik",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "http://kombus.pl/gtfs/tripUpdates"
+            "url": "https://api.zbiorkom.live/api6-open/poznan/gtfsRealtime/KOMBUS/tripUpdates,serviceAlerts",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "use-feed-proxy": true
         },
         {
             "name": "Kombus-Środa-Wielkopolska",
@@ -1969,6 +1976,246 @@
             "license": {
                 "spdx-identifier": "MIT"
             }
+        },
+        {
+            "name": "Sanok",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://api.zbiorkom.live/api6-open/Sanok/gtfs/default",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "fix": true
+        },
+        {
+            "name": "Sanok",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.zbiorkom.live/api6-open/Sanok/gtfsRealtime/default/tripUpdates,serviceAlerts",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "use-feed-proxy": true
+        },
+        {
+            "name": "Niepołomice",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://api.zbiorkom.live/api6-open/krakow/gtfs/NIEPOLOMICE",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "fix": true
+        },
+        {
+            "name": "Niepołomice",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.zbiorkom.live/api6-open/krakow/gtfsRealtime/NIEPOLOMICE/tripUpdates,serviceAlerts",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "use-feed-proxy": true
+        },
+        {
+            "name": "Chełm",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://api.zbiorkom.live/api6-open/chelm/gtfs/default",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "fix": true
+        },
+        {
+            "name": "Chełm",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.zbiorkom.live/api6-open/chelm/gtfsRealtime/default/tripUpdates,serviceAlerts",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "use-feed-proxy": true
+        },
+        {
+            "name": "Cieszyn",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://api.zbiorkom.live/api6-open/Cieszyn/gtfs/default",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "fix": true
+        },
+        {
+            "name": "Cieszyn",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.zbiorkom.live/api6-open/Cieszyn/gtfsRealtime/default/tripUpdates,serviceAlerts",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "use-feed-proxy": true
+        },
+        {
+            "name": "Dębica",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://api.zbiorkom.live/api6-open/debica/gtfs/default",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "fix": true
+        },
+        {
+            "name": "Dębica",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.zbiorkom.live/api6-open/debica/gtfsRealtime/default/tripUpdates,serviceAlerts",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "use-feed-proxy": true
+        },
+        {
+            "name": "Kraśnik",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://api.zbiorkom.live/api6-open/krasnik/gtfs/default",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "fix": true
+        },
+        {
+            "name": "Kraśnik",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.zbiorkom.live/api6-open/krasnik/gtfsRealtime/default/tripUpdates,serviceAlerts",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "use-feed-proxy": true
+        },
+        {
+            "name": "Mielec",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://api.zbiorkom.live/api6-open/mielec/gtfs/default",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "fix": true
+        },
+        {
+            "name": "Mielec",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.zbiorkom.live/api6-open/mielec/gtfsRealtime/default/tripUpdates,serviceAlerts",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "use-feed-proxy": true
+        },
+        {
+            "name": "Ostrołęka",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://api.zbiorkom.live/api6-open/ostroleka/gtfs/default",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "fix": true
+        },
+        {
+            "name": "Ostrołęka",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.zbiorkom.live/api6-open/ostroleka/gtfsRealtime/default/tripUpdates,serviceAlerts",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "use-feed-proxy": true
+        },
+        {
+            "name": "Ostrowiec-Świętokrzyski",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://api.zbiorkom.live/api6-open/ostrowiecswietokrzyski/gtfs/default",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "fix": true
+        },
+        {
+            "name": "Ostrowiec-Świętokrzyski",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.zbiorkom.live/api6-open/ostrowiecswietokrzyski/gtfsRealtime/default/tripUpdates,serviceAlerts",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "use-feed-proxy": true
+        },
+        {
+            "name": "Płock",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://api.zbiorkom.live/api6-open/Plock/gtfs/default",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "fix": true
+        },
+        {
+            "name": "Płock",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.zbiorkom.live/api6-open/Plock/gtfsRealtime/default/tripUpdates,serviceAlerts",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "use-feed-proxy": true
+        },
+        {
+            "name": "Radomsko",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://api.zbiorkom.live/api6-open/radomsko/gtfs/default",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "fix": true
+        },
+        {
+            "name": "Radomsko",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.zbiorkom.live/api6-open/radomsko/gtfsRealtime/default/tripUpdates,serviceAlerts",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "use-feed-proxy": true
+        },
+        {
+            "name": "Tarnów",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://api.zbiorkom.live/api6-open/tarnow/gtfs/default",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "fix": true
+        },
+        {
+            "name": "Tarnów",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.zbiorkom.live/api6-open/tarnow/gtfsRealtime/default/tripUpdates,serviceAlerts",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "use-feed-proxy": true
         }
     ]
 }
