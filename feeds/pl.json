@@ -2058,26 +2058,6 @@
             "use-feed-proxy": true
         },
         {
-            "name": "Dębica",
-            "type": "http",
-            "spec": "gtfs",
-            "url": "https://api.zbiorkom.live/api6-open/debica/gtfs/default",
-            "license": {
-                "spdx-identifier": "MIT"
-            },
-            "fix": true
-        },
-        {
-            "name": "Dębica",
-            "type": "url",
-            "spec": "gtfs-rt",
-            "url": "https://api.zbiorkom.live/api6-open/debica/gtfsRealtime/default/tripUpdates,serviceAlerts",
-            "license": {
-                "spdx-identifier": "MIT"
-            },
-            "use-feed-proxy": true
-        },
-        {
             "name": "Kraśnik",
             "type": "http",
             "spec": "gtfs",
@@ -2138,30 +2118,10 @@
             "use-feed-proxy": true
         },
         {
-            "name": "Ostrowiec-Świętokrzyski",
-            "type": "http",
-            "spec": "gtfs",
-            "url": "https://api.zbiorkom.live/api6-open/ostrowiecswietokrzyski/gtfs/default",
-            "license": {
-                "spdx-identifier": "MIT"
-            },
-            "fix": true
-        },
-        {
-            "name": "Ostrowiec-Świętokrzyski",
-            "type": "url",
-            "spec": "gtfs-rt",
-            "url": "https://api.zbiorkom.live/api6-open/ostrowiecswietokrzyski/gtfsRealtime/default/tripUpdates,serviceAlerts",
-            "license": {
-                "spdx-identifier": "MIT"
-            },
-            "use-feed-proxy": true
-        },
-        {
             "name": "Płock",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://api.zbiorkom.live/api6-open/Plock/gtfs/default",
+            "url": "https://api.zbiorkom.live/api6-open/plock/gtfs/default",
             "license": {
                 "spdx-identifier": "MIT"
             },
@@ -2171,7 +2131,7 @@
             "name": "Płock",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://api.zbiorkom.live/api6-open/Plock/gtfsRealtime/default/tripUpdates,serviceAlerts",
+            "url": "https://api.zbiorkom.live/api6-open/plock/gtfsRealtime/default/tripUpdates,serviceAlerts",
             "license": {
                 "spdx-identifier": "MIT"
             },
