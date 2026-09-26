@@ -2041,7 +2041,7 @@
             "name": "Cieszyn",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://api.zbiorkom.live/api6-open/Cieszyn/gtfs/default",
+            "url": "https://api.zbiorkom.live/api6-open/cieszyn/gtfs/default",
             "license": {
                 "spdx-identifier": "MIT"
             },
@@ -2051,7 +2051,7 @@
             "name": "Cieszyn",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://api.zbiorkom.live/api6-open/Cieszyn/gtfsRealtime/default/tripUpdates,serviceAlerts",
+            "url": "https://api.zbiorkom.live/api6-open/cieszyn/gtfsRealtime/default/tripUpdates,serviceAlerts",
             "license": {
                 "spdx-identifier": "MIT"
             },
