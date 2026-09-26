@@ -32,7 +32,7 @@
     },
     "package_set": {
       "address": {
-        "registry": "80.5.0"
+        "registry": "81.1.0"
       },
       "compiler": ">=0.15.15 <0.16.0",
       "content": {
@@ -146,10 +146,11 @@
         "echarts-simple": "0.0.1",
         "effect": "4.0.0",
         "either": "6.1.0",
-        "elmish": "0.15.0",
+        "elmish": "0.16.0",
         "elmish-enzyme": "0.1.1",
-        "elmish-html": "0.13.0",
-        "elmish-testing-library": "0.4.0",
+        "elmish-hooks": "0.12.0",
+        "elmish-html": "0.14.0",
+        "elmish-testing-library": "0.5.0",
         "email-validate": "7.0.0",
         "encoding": "0.0.10",
         "enums": "6.0.1",
@@ -362,6 +363,7 @@
         "node-path": "5.0.1",
         "node-process": "11.2.0",
         "node-readline": "8.1.1",
+        "node-sqlite": "0.2.0",
         "node-sqlite3": "8.0.0",
         "node-stream-pipes": "2.1.6",
         "node-streams": "9.0.1",
@@ -408,7 +410,7 @@
         "pipes": "8.0.0",
         "pirates-charm": "0.0.1",
         "play": "1.0.0",
-        "pmock": "0.9.0",
+        "pmock": "1.1.0",
         "point-free": "1.0.0",
         "pointed-list": "0.5.1",
         "polymorphic-vectors": "4.0.0",
@@ -645,12 +647,12 @@
         "yoga-dynamodb": "0.1.1",
         "yoga-elasticsearch": "0.1.1",
         "yoga-fastify": "0.5.4",
-        "yoga-fastify-om": "0.4.6",
+        "yoga-fastify-om": "0.4.7",
         "yoga-fetch": "1.0.1",
-        "yoga-fetch-om": "0.7.0",
+        "yoga-fetch-om": "0.8.0",
         "yoga-format": "1.0.0",
         "yoga-heroui": "2.0.3",
-        "yoga-http-api": "0.3.3",
+        "yoga-http-api": "0.3.4",
         "yoga-jaeger": "0.1.1",
         "yoga-json": "5.2.1",
         "yoga-language": "1.0.0",
@@ -685,8 +687,8 @@
       }
     },
     "extra_packages": {
-      "elmish": "0.15.0",
-      "elmish-html": "0.13.0"
+      "elmish": "0.16.0",
+      "elmish-html": "0.14.0"
     }
   },
   "packages": {
@@ -896,8 +898,8 @@
     },
     "elmish": {
       "type": "registry",
-      "version": "0.15.0",
-      "integrity": "sha256-UbA8nUHTjX4ne5JZRUkzK5YzwoFochkZBLrtVumrkXs=",
+      "version": "0.16.0",
+      "integrity": "sha256-XN6M36Ok/Ud6DQikid+zsZMccFRORf5lKx2us4T4FB4=",
       "dependencies": [
         "aff",
         "argonaut-core",
@@ -917,6 +919,7 @@
         "partial",
         "prelude",
         "refs",
+        "tuples",
         "typelevel-prelude",
         "undefined-is-not-a-problem",
         "unsafe-coerce"
@@ -924,8 +927,8 @@
     },
     "elmish-html": {
       "type": "registry",
-      "version": "0.13.0",
-      "integrity": "sha256-0YIm+aGIBCZ4ifM+4XnSreRuSGw1U2Ahqlw5PNLGCx0=",
+      "version": "0.14.0",
+      "integrity": "sha256-LHJJ1fWPUKCPt3l+Bwa1zzPCBQmiexySmQd0+WrYUnU=",
       "dependencies": [
         "console",
         "effect",

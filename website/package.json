@@ -15,8 +15,8 @@
     "esbuild": "^0.28.2",
     "purescript": "^0.15.16",
     "purs-backend-es": "^1.4.3",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
     "spago": "^1.0.4"
   }
 }
