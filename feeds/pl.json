@@ -1981,7 +1981,7 @@
             "name": "Sanok",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://api.zbiorkom.live/api6-open/Sanok/gtfs/default",
+            "url": "https://api.zbiorkom.live/api6-open/sanok/gtfs/default",
             "license": {
                 "spdx-identifier": "MIT"
             },
@@ -1991,7 +1991,7 @@
             "name": "Sanok",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://api.zbiorkom.live/api6-open/Sanok/gtfsRealtime/default/tripUpdates,serviceAlerts",
+            "url": "https://api.zbiorkom.live/api6-open/sanok/gtfsRealtime/default/tripUpdates,serviceAlerts",
             "license": {
                 "spdx-identifier": "MIT"
             },
