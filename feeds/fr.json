@@ -533,6 +533,20 @@
             "managed-by-script": true
         },
         {
+            "name": "gtfs-du-reseau-des-transports-bus-et-tramway-setram-circulant-sur-le-territoire-le-mans-metropole--84233",
+            "type": "http",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/c9bb5f5a-5310-4544-a26a-754ac9889afb",
+            "fix": true,
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/gtfs-du-reseau-des-transports-bus-et-tramway-setram-circulant-sur-le-territoire-le-mans-metropole",
+                "spdx-identifier": "etalab-2.0"
+            },
+            "x-data-gov-fr-res-id": 84233,
+            "x-data-gov-fr-dataset-id": "5acb75f0c751df341652c886",
+            "x-data-gov-fr-res-title": "gtfs_setram_flex.zip",
+            "managed-by-script": true
+        },
+        {
             "name": "donnees-gtfs-du-reseau-de-transport-public-cara-bus",
             "type": "http",
             "url": "https://www.data.gouv.fr/api/1/datasets/r/d4915904-ebd0-43cf-9b35-fbfc04ce91fd",
@@ -8786,16 +8800,16 @@
         {
             "name": "gtfs-reseau-chamonix-mobilite",
             "type": "url",
-            "url": "https://www.data.gouv.fr/api/1/datasets/r/c447183d-c831-42f6-b85f-5789978398d8",
-            "x-data-gov-fr-res-title": "GTFS Chamonix Mobilité ",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/977dbe7b-37a6-447b-ba35-574042301471",
+            "x-data-gov-fr-res-title": "GTFS RT Automne 2026 Chamonix Mobilité",
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/gtfs-reseau-chamonix-mobilite",
                 "spdx-identifier": "etalab-2.0"
             },
-            "spec": "gtfs-rt",
-            "x-data-gov-fr-res-id": 84067,
+            "x-data-gov-fr-res-id": 84231,
             "x-data-gov-fr-dataset-id": "6569e1dd21f63c926518143b",
-            "managed-by-script": true
+            "managed-by-script": true,
+            "spec": "gtfs-rt"
         },
         {
             "name": "lignes-arrets-et-horaires-theorique-du-reseau-de-transport-gtfs-netex-saumur-val-de-loire-agglomeration",
@@ -10214,25 +10228,23 @@
             },
             "spec": "gtfs-rt",
             "x-data-gov-fr-res-id": 82278,
-            "managed-by-script": true,
+            "managed-by-script": false,
             "x-data-gov-fr-res-title": "Horaires temps-réel du réseau Sitac - Calais (GTFS-RT)",
             "x-data-gov-fr-dataset-id": "6670560d00478a9b4a2d0233"
         },
         {
             "name": "regie-des-transports-baag-gtfs",
             "type": "http",
-            "url": "https://www.data.gouv.fr/api/1/datasets/r/47ead4b7-dc95-41f0-916a-7411d9f6b79b",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/ba040e45-b186-4d16-9657-ceb865ff0315",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/regie-des-transports-baag-gtfs",
                 "spdx-identifier": "etalab-2.0"
             },
-            "x-data-gov-fr-res-id": 83757,
-            "managed-by-script": true,
-            "skip": true,
-            "x-data-gov-fr-res-title": "BAAG 17122025",
+            "x-data-gov-fr-res-id": 84232,
             "x-data-gov-fr-dataset-id": "6673e093cfce64c1c7d5820d",
-            "skip-reason": "Feed is expired according to metadata"
+            "x-data-gov-fr-res-title": "EXPORT GTFS 250926.zip",
+            "managed-by-script": true
         },
         {
             "name": "horaires-du-reseau-de-bus-intercom-3",
@@ -15668,15 +15680,15 @@
         {
             "name": "donnees-gtfs-reseau-topaz",
             "type": "http",
-            "url": "https://transport.data.gouv.fr/resources/84193/download",
+            "url": "https://transport.data.gouv.fr/resources/84230/download",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/donnees-gtfs-reseau-topaz",
                 "spdx-identifier": "etalab-2.0"
             },
-            "x-data-gov-fr-res-id": 84193,
+            "x-data-gov-fr-res-id": 84230,
             "x-data-gov-fr-dataset-id": "6a96dffbcaf655ae9a2b46d2",
-            "x-data-gov-fr-res-title": "GTFS_20260901A_TopoStudio.zip",
+            "x-data-gov-fr-res-title": "GTFS_20260924A_Réseau_ToPAz",
             "managed-by-script": true
         },
         {
@@ -15706,6 +15718,34 @@
             "x-data-gov-fr-dataset-id": "6aa3c0dc6f094bde83826c55",
             "x-data-gov-fr-res-title": "LIGNE_REGU_PEM_CCPEIF-100926.zip",
             "managed-by-script": true
+        },
+        {
+            "name": "gtfs-reseau-alliance-bus-grand-auch",
+            "type": "http",
+            "url": "https://transport.data.gouv.fr/resources/84228/download",
+            "fix": true,
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/gtfs-reseau-alliance-bus-grand-auch",
+                "spdx-identifier": "etalab-2.0"
+            },
+            "x-data-gov-fr-res-id": 84228,
+            "x-data-gov-fr-dataset-id": "6aad138e7b2f5124c636d922",
+            "x-data-gov-fr-res-title": "GTFS statique - Alliance bus",
+            "managed-by-script": true
+        },
+        {
+            "name": "gtfs-reseau-alliance-bus-grand-auch",
+            "type": "url",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/6974ab10-1b0f-4c59-aec0-9924bccb8dbc",
+            "x-data-gov-fr-res-title": "GTFS RT - Réseau Alliance bus - Grand Auch",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/gtfs-reseau-alliance-bus-grand-auch",
+                "spdx-identifier": "etalab-2.0"
+            },
+            "x-data-gov-fr-res-id": 84229,
+            "x-data-gov-fr-dataset-id": "6aad138e7b2f5124c636d922",
+            "managed-by-script": true,
+            "spec": "gtfs-rt"
         }
     ]
 }
