@@ -36,6 +36,16 @@
             "name": "MMT",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-9wvk-mountainmetropolitantransit"
+        },
+        {
+            "name": "Bustang-Outrider",
+            "type": "http",
+            "url": "https://data.trilliumtransit.com/gtfs/outrider-co-us/outrider-co-us.zip"
+        },
+        {
+            "name": "Colorado-Mountain-Express",
+            "type": "http",
+            "url": "http://data.trilliumtransit.com/gtfs/cme-co-us/cme-co-us.zip"
         }
     ]
 }

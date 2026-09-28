@@ -54,6 +54,11 @@
             "name": "PVTA",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-drk-pvta~rt"
+        },
+        {
+            "name": "Hy-Line-Cruises",
+            "type": "http",
+            "url": "http://data.trilliumtransit.com/gtfs/hylinecruises-ma-us/hylinecruises-ma-us.zip"
         }
     ]
 }

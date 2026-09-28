@@ -230,6 +230,11 @@
             "name": "winchester",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-wintran~va~us"
+        },
+        {
+            "name": "Virginia-Breeze",
+            "type": "http",
+            "url": "https://maps.tds.ai/download-feed/virginia-breeze-gtfs"
         }
     ]
 }

@@ -21,6 +21,31 @@
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-trimet~rt",
             "url-override": "https://birch.catenarymaps.org/gtfs_rt?feed_id=f-trimet~rt&feed_type=trip"
+        },
+        {
+            "name": "Pacific-Crest-Bus-Lines",
+            "type": "http",
+            "url": "https://oregon-gtfs.trilliumtransit.com/gtfs_data/pacificcrest-or-us/pacificcrest-or-us.zip"
+        },
+        {
+            "name": "POINT",
+            "type": "http",
+            "url": "https://oregon-gtfs.trilliumtransit.com/gtfs_data/point-or-us/point-or-us.zip"
+        },
+        {
+            "name": "Central-Oregon-Breeze",
+            "type": "http",
+            "url": "https://oregon-gtfs.trilliumtransit.com/gtfs_data/cobreeze-or-us/cobreeze-or-us.zip"
+        },
+        {
+            "name": "Groome-Transportation",
+            "type": "http",
+            "url": "https://oregon-gtfs.trilliumtransit.com/gtfs_data/oregonexpressshuttle-or-us/oregonexpressshuttle-or-us.zip"
+        },
+        {
+            "name": "Diamond-Express",
+            "type": "http",
+            "url": "https://oregon-gtfs.trilliumtransit.com/gtfs_data/diamondexpress-or-us/diamondexpress-or-us.zip"
         }
     ]
 }

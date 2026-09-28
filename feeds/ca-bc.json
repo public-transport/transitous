@@ -253,6 +253,11 @@
             "name": "Lime-Kelowna",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-lime~kelowna~gbfs"
+        },
+        {
+            "name": "Hullo",
+            "type": "http",
+            "url": "https://hullo.com/gtfs/gtfs-hullo.zip"
         }
     ]
 }

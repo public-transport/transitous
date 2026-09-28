@@ -1,0 +1,20 @@
+{
+    "maintainers": [
+        {
+            "name": "Sander",
+            "github": "Sandertttt"
+        }
+    ],
+    "sources": [
+        {
+            "name": "Alaska-Railroad",
+            "type": "http",
+            "url": "https://www.alaskarailroad.com/sites/default/files/GTFS/GTFS-20260410.zip"
+        },
+        {
+            "name": "Inter-Island-Ferry",
+            "type": "http",
+            "url": "http://data.trilliumtransit.com/gtfs/interisland-ak-us/interisland-ak-us.zip"
+        }
+    ]
+}
