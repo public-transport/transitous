@@ -1,0 +1,18 @@
+{
+    "maintainers": [
+        {
+            "name": "Sander",
+            "github": "Sandertttt"
+        }
+    ],
+    "sources": [
+        {
+            "name": "MTOP-interdepartamental",
+            "type": "http",
+            "url": "https://catalogodatos.gub.uy/dataset/1d50ccf7-121d-48a7-951e-28a02858d24e/resource/9f44b654-751a-42a4-a481-af91b7c9a2e4/download/gtfs_20260921.zip",
+            "license": {
+                "url": "https://catalogodatos.gub.uy/dataset/1d50ccf7-121d-48a7-951e-28a02858d24e"
+            }
+        }
+    ]
+}

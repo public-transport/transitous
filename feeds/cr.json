@@ -1,0 +1,15 @@
+{
+    "maintainers": [
+        {
+            "name": "Sander",
+            "github": "Sandertttt"
+        }
+    ],
+    "sources": [
+        {
+            "name": "INCOFER",
+            "type": "http",
+            "url": "https://feeds.simovi.org/incofer/schedule/gtfs.zip"
+        }
+    ]
+}
