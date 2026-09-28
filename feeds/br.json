@@ -77,6 +77,16 @@
             "name": "ETUFOR",
             "type": "mobility-database",
             "mdb-id": "mdb-2934"
+        },
+        {
+            "name": "ARCE-Ceara-Metropolitano",
+            "type": "http",
+            "url": "https://www.arce.ce.gov.br/wp-content/uploads/sites/53/2018/11/gtfs_ARCE_20260925_0.zip"
+        },
+        {
+            "name": "Grande-Recife",
+            "type": "http",
+            "url": "https://www.granderecife.pe.gov.br/gtfs/gtfs.zip"
         }
     ]
 }
