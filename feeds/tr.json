@@ -16,14 +16,14 @@
     "sources": [
         {
             "name": "izmir-eshot",
-            "type": "http",
-            "url": "https://www.eshot.gov.tr/gtfs/bus-eshot-gtfs.zip",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-eshot~tr",
             "fix": true
         },
         {
             "name": "izmir-metro",
-            "type": "http",
-            "url": "https://www.izmirmetro.com.tr/gtfs/rail-metro-gtfs.zip"
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-izmir~metro"
         },
         {
             "name": "izmir-izban",
