@@ -2243,6 +2243,26 @@
                 "spdx-identifier": "MIT"
             },
             "use-feed-proxy": true
-        }
+        },
+        {
+            "name": "Ostrowiec-Świętokrzyski",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://api.zbiorkom.live/api6-open/ostrowiecSwietokrzyski/gtfs/default",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "fix": true
+        },
+        {
+            "name": "Ostrowiec-Świętokrzyski",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.zbiorkom.live/api6-open/ostrowiecSwietokrzyski/gtfsRealtime/default/tripUpdates,serviceAlerts",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "use-feed-proxy": true
+        },
     ]
 }
