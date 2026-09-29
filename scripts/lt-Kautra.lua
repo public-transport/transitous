@@ -7,9 +7,9 @@ function process_route(route)
     if route:get_route_type() == 3 and route:get_short_name() < 200 then
         route:set_route_type(200)
     end
--- remove duplicated/outdated routes
--- basically M lines with numbers 1000 and higher have to be skipped, please help me in this
-    if string.find(route:get_short_name(), "D" or "EL" or "FIN" or "RK") or route:get_short_name() == "M-1017" then
+-- remove most of international routes in feed (they are duplicates of Flixbus or Lux Express coaches already included in other feeds and also it doesn't seem to have trips regularily updated)
+-- basically M lines with numbers 1000 and higher (these are international) have to be skipped, please help me in this
+    if string.find(route:get_short_name(), "D" or "EL" or "FIN" or "RK" or "N") or route:get_short_name() == "M-1017" then
         return false
     end
 -- Druskininkai balloon
