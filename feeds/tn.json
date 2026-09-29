@@ -41,7 +41,8 @@
         {
             "name": "SRT-Medenine",
             "type": "http",
-            "url": "https://openmobilitydata-data.s3.us-west-1.amazonaws.com/public/feeds/srtmedenine/1204/20190801/gtfs.zip"
+            "url": "https://openmobilitydata-data.s3.us-west-1.amazonaws.com/public/feeds/srtmedenine/1204/20190801/gtfs.zip",
+            "fix": true
         }
     ]
 }
