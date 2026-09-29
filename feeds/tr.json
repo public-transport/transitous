@@ -16,8 +16,8 @@
     "sources": [
         {
             "name": "izmir-eshot",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-eshot~tr",
+            "type": "http",
+            "url": "https://dl.dropbox.com/scl/fi/4zqbe47ijsafkejvkqfyp/bus-eshot-gtfs.zip?rlkey=v54imnsdv8ayusflrm0s6f914",
             "fix": true
         },
         {
