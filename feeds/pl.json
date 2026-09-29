@@ -168,6 +168,7 @@
             "name": "Bydgoszcz",
             "type": "http",
             "url": "https://api.zbiorkom.live/api6-open/bydgoszcz/gtfs/default",
+            "url-override": "https://mkuran.pl/gtfs/bydgoszcz.zip",
             "license": {
                 "spdx-identifier": "MIT"
             },
@@ -271,7 +272,9 @@
         {
             "name": "Łomża",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u3rw-lomza"
+            "transitland-atlas-id": "f-u3rw-lomza",
+            "skip": true,
+            "skip-reason": "Expired feed"
         },
         {
             "name": "Wejherowo",
@@ -309,7 +312,9 @@
         {
             "name": "Giżycko",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u3x7-gizycko"
+            "transitland-atlas-id": "f-u3x7-gizycko",
+            "skip": true,
+            "skip-reason": "Expired feed"
         },
         {
             "name": "Lublin",
@@ -1176,7 +1181,8 @@
             "url": "https://files.girlc.at/gtfs/opoczno.zip",
             "license": {
                 "spdx-identifier": "CC0-1.0"
-            }
+            },
+            "fix": true
         },
         {
             "name": "Świecie",
@@ -1714,7 +1720,8 @@
             "url": "https://files.girlc.at/gtfs/bardo.zip",
             "license": {
                 "spdx-identifier": "CC0-1.0"
-            }
+            },
+            "fix": true
         },
         {
             "name": "Rozprza",
@@ -2221,7 +2228,7 @@
             "name": "Gmina-Tczew",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://api.zbiorkom.live/api6-open/tczew/gtfs/GMINA_TCZEW",
+            "url": "https://api.zbiorkom.live/api6-open/tczew/gtfs/GMINATCZEW",
             "license": {
                 "spdx-identifier": "MIT"
             },
