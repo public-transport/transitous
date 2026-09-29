@@ -2263,6 +2263,6 @@
                 "spdx-identifier": "MIT"
             },
             "use-feed-proxy": true
-        },
+        }
     ]
 }
