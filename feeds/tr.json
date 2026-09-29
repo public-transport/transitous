@@ -16,35 +16,30 @@
     "sources": [
         {
             "name": "izmir-eshot",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-eshot~tr",
-            "skip": true,
-            "skip-reason": "Expired feed"
+            "type": "http",
+            "url": "https://www.eshot.gov.tr/gtfs/bus-eshot-gtfs.zip",
+            "fix": true
         },
         {
             "name": "izmir-metro",
             "type": "http",
-            "url": "https://dl.dropboxusercontent.com/scl/fi/4pq6whnox4yzunrql6xdh/izmir-metro.zip?rlkey=cy6i0qbjq4hod0d5yh4i5efmi",
-            "skip": true,
-            "skip-reason": "Expired feed"
+            "url": "https://www.izmirmetro.com.tr/gtfs/rail-metro-gtfs.zip"
         },
         {
             "name": "izmir-izban",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-izmir~rail",
+            "type": "http",
+            "url": "https://www.izban.com.tr/gtfs/rail-izban-gtfs.zip",
             "fix": true,
             "skip": true,
             "skip-reason": "Expired feed"
         },
         {
             "name": "izmir-tram",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-izmir~tram",
-            "skip": true,
-            "skip-reason": "Expired feed"
+            "type": "http",
+            "url": "https://www.tramizmir.com/gtfs/rail-tramizmir-gtfs.zip"
         },
         {
-            "name": "istanbul-ibb",
+            "name": "istanbul-iett",
             "type": "http",
             "url": "https://jbb.ghsq.de/gtfs/tr-istanbul.gtfs.zip",
             "fix": false,
@@ -52,14 +47,6 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             }
-        },
-        {
-            "name": "istanbul-iett",
-            "type": "http",
-            "url": "https://dl.dropboxusercontent.com/scl/fi/t57vx1ivwq02x0xy51tum/istanbul-iett.zip?rlkey=qb0ien7ba5s2okt3or2lzc2nn",
-            "drop-too-fast-trips": false,
-            "skip": true,
-            "skip-reason": "Most trips are not usable, causes routing to return nonsensical results."
         },
         {
             "name": "konya",
