@@ -404,6 +404,11 @@ class Fetcher:
         if source.fix_csv_quotes and source.spec == "gtfs":
             subprocess.check_call(["./src/fix-csv-quotes.py", temp_file])
 
+        if source.blank_headsigns_matching and source.spec == "gtfs":
+            subprocess.check_call(["./src/blank-headsigns-matching.py",
+                                   temp_file,
+                                   source.blank_headsigns_matching])
+
         if source.use_gtfsclean and source.spec == "gtfs":
             command = ["gtfsclean", str(temp_file),
                     "--fix-zip",

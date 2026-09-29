@@ -49,6 +49,7 @@ class Source:
     license: License
     spec: str = "gtfs"
     fix_csv_quotes: bool = False
+    blank_headsigns_matching: Optional[str] = None
     skip: bool = False
     skip_reason: str = ""
     function: Optional[str] = None
@@ -86,6 +87,9 @@ class Source:
                 self.use_gtfsclean = bool(parsed["use-gtfsclean"])
             if "fix-csv-quotes" in parsed:
                 self.fix_csv_quotes = bool(parsed["fix-csv-quotes"])
+            if "blank-headsigns-matching" in parsed:
+                self.blank_headsigns_matching = \
+                    parsed["blank-headsigns-matching"]
             if "spec" in parsed:
                 self.spec = parsed["spec"]
             if "skip" in parsed:
