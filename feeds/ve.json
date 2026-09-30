@@ -9,7 +9,8 @@
         {
             "name": "Crom-Studio",
             "type": "http",
-            "url": "https://transporte.cromstudio.com.ve/data/horarios.zip"
+            "url": "https://transporte.cromstudio.com.ve/data/horarios.zip",
+            "fix": true
         }
     ]
 }
