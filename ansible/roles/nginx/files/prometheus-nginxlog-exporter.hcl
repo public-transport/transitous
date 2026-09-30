@@ -8,7 +8,7 @@ listen {
 }
 
 namespace "rp" {
-  format = "[$time_local] $host rl=$request_length urt=\"$upstream_response_time\" rt=$request_time bbs=$body_bytes_sent s=$status ph=\"$upstream_addr\" uri=\"$uri\" l=\"$http_accept_language\" ua=\"$http_user_agent\""
+  format = "[$time_local] $host rl=$request_length urt=\"$upstream_response_time\" rt=$request_time bbs=$body_bytes_sent s=$status ph=\"$upstream_addr\" uri=\"$uri\" sp=\"$server_protocol\" gz=\"$sent_http_content_encoding\" l=\"$http_accept_language\" ua=\"$http_user_agent\""
 
   source {
     files = ["/var/log/nginx/metrics.log"]
@@ -48,6 +48,14 @@ namespace "rp" {
     match "^/.*" {
       replacement = "other"
     }
+  }
+
+  relabel "protocol" {
+    from         = "server_protocol"
+  }
+
+  relabel "encoding" {
+    from         = "sent_http_content_encoding"
   }
 
   relabel "user_agent" {
