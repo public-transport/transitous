@@ -224,6 +224,16 @@
             "name": "REM",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-reseau~express~metropolitain"
+        },
+        {
+            "name": "Orleans-Express",
+            "type": "http",
+            "url": "https://gtfs.keolis.ca/gtfs.zip"
+        },
+        {
+            "name": "Traversiers-du-Quebec",
+            "type": "http",
+            "url": "https://gtfs.traversiers.com/api/gtfs.zip"
         }
     ]
 }

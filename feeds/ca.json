@@ -173,6 +173,11 @@
             "name": "Wood-Buffalo-Transit",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-regional~municipality~of~wood~buffalo~rt"
+        },
+        {
+            "name": "Maritime-Bus",
+            "type": "http",
+            "url": "https://data.trilliumtransit.com/gtfs/maritimebus-ca/maritimebus-ca.zip"
         }
     ]
 }
