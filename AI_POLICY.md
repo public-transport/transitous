@@ -24,4 +24,4 @@ Please do not:
 Caveats of using LLMs in this project:
 
  - Visibly LLM generated changes will be reviewed with about the effort that was put into them.
- - They may be reviewed while in a bad mood.
+ - They may be reviewed with less goodwill
