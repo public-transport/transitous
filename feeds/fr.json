@@ -2114,22 +2114,6 @@
         {
             "name": "donnees-statiques-et-temps-reel-du-reseau-astuce-metropole-rouen-normandie",
             "type": "url",
-            "url": "https://www.data.gouv.fr/api/1/datasets/r/178700bf-570a-4a5e-95a2-59ac5857c622",
-            "license": {
-                "url": "https://transport.data.gouv.fr/datasets/donnees-statiques-et-temps-reel-du-reseau-astuce-metropole-rouen-normandie",
-                "spdx-identifier": "etalab-2.0"
-            },
-            "spec": "gtfs-rt",
-            "x-data-gov-fr-res-id": 82678,
-            "managed-by-script": true,
-            "skip": true,
-            "skip-reason": "Replaced by res-id 82677",
-            "x-data-gov-fr-res-title": "GTFS-RT - Horaires de passage en temps réel (lignes Transdev Rouen)",
-            "x-data-gov-fr-dataset-id": "5cd4321f8b4c4137d1244318"
-        },
-        {
-            "name": "donnees-statiques-et-temps-reel-du-reseau-astuce-metropole-rouen-normandie",
-            "type": "url",
             "url": "https://www.data.gouv.fr/api/1/datasets/r/544afe29-c195-40b1-a52d-c5d654b98f75",
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/donnees-statiques-et-temps-reel-du-reseau-astuce-metropole-rouen-normandie",
