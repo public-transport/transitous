@@ -135,7 +135,7 @@ server {
         proxy_pass http://{{ item.vhost }}-backend$uri?$args;
 
         limit_req zone=api_client burst=20 delay=10;
-        limit_req zone=api_ip burst=20 delay=10;
+        limit_req zone=api burst=20 delay=10;
         limit_conn api_ip_conn 3;
         limit_conn api_ip_ua_conn 1;
 
