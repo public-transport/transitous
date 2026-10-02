@@ -94,8 +94,8 @@
         {
             "name": "DELFI",
             "type": "url",
-            "spec": "gtfs-rt",
-            "url": "http://2a00-12d8-700e-0-9a12-3eb4-e927-3d9a.has-a.name/feed/feed.pb",
+            "spec": "siri",
+            "url": "http://2a00-12d8-700e-0-9a12-3eb4-e927-3d9a.has-a.name/feed/siri/feed.xml",
             "license": {
                 "spdx-identifier": "CC-BY-4.0",
                 "url": "http://[2a00:12d8:700e:0:9a12:3eb4:e927:3d9a]/feed/LICENSE.txt"
