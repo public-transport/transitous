@@ -550,6 +550,47 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             }
+        },
+        {
+            "name": "Italo",
+            "type": "http",
+            "url": "https://raw.githubusercontent.com/deryclem/italo-gtfs/main/gtfs-italo.zip"
+        },
+        {
+            "name": "Sardegna-Ferries-Grimaldi",
+            "type": "http",
+            "url": "https://www.sardegnamobilita.it/opendata/R_SARDEGTRASP_00031_1_GTFS_dati_grimaldi.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            },
+            "extend-calendar": true
+        },
+        {
+            "name": "Sardegna-Ferries-Tirrenia",
+            "type": "http",
+            "url": "https://www.sardegnamobilita.it/opendata/R_SARDEGTRASP_00026_1_GTFS_dati_tirrenia.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            },
+            "extend-calendar": true
+        },
+        {
+            "name": "Sardegna-Ferries-Moby",
+            "type": "http",
+            "url": "https://www.sardegnamobilita.it/opendata/R_SARDEGTRASP_00027_1_GTFS_dati_moby.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            },
+            "extend-calendar": true
+        },
+        {
+            "name": "Sardegna-Ferries-GNV",
+            "type": "http",
+            "url": "https://www.sardegnamobilita.it/opendata/R_SARDEGTRASP_00029_1_dati_gnv.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            },
+            "extend-calendar": true
         }
     ]
 }

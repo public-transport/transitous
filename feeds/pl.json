@@ -2176,6 +2176,11 @@
                 "spdx-identifier": "MIT"
             },
             "use-feed-proxy": true
+        },
+        {
+            "name": "Koleje-Śląskie",
+            "type": "http",
+            "url": "https://koleje-ks.pl/gtfs/2025-2026.zip"
         }
     ]
 }
