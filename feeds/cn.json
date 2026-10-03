@@ -1,0 +1,15 @@
+{
+    "maintainers": [
+        { "name": "yikesjp", "github": "yikesjp" }
+    ],
+    "sources": [
+        {
+            "name": "china-railway",
+            "type": "http",
+            "url": "https://github.com/wensimehrp/chinese-railway-gtfs/releases/latest/download/output_gtfs.zip",
+            "license": {
+                "url": "https://github.com/wensimehrp/chinese-railway-gtfs"
+            }
+        }
+    ]
+}
