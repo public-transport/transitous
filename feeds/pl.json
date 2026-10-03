@@ -168,6 +168,7 @@
             "name": "Bydgoszcz",
             "type": "http",
             "url": "https://api.zbiorkom.live/api6-open/bydgoszcz/gtfs/default",
+            "url-override": "https://mkuran.pl/gtfs/bydgoszcz.zip",
             "license": {
                 "spdx-identifier": "MIT"
             },
@@ -271,7 +272,9 @@
         {
             "name": "Łomża",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u3rw-lomza"
+            "transitland-atlas-id": "f-u3rw-lomza",
+            "skip": true,
+            "skip-reason": "Expired feed"
         },
         {
             "name": "Wejherowo",
@@ -309,7 +312,9 @@
         {
             "name": "Giżycko",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u3x7-gizycko"
+            "transitland-atlas-id": "f-u3x7-gizycko",
+            "skip": true,
+            "skip-reason": "Expired feed"
         },
         {
             "name": "Lublin",
@@ -1176,7 +1181,8 @@
             "url": "https://files.girlc.at/gtfs/opoczno.zip",
             "license": {
                 "spdx-identifier": "CC0-1.0"
-            }
+            },
+            "fix": true
         },
         {
             "name": "Świecie",
@@ -1714,7 +1720,8 @@
             "url": "https://files.girlc.at/gtfs/bardo.zip",
             "license": {
                 "spdx-identifier": "CC0-1.0"
-            }
+            },
+            "fix": true
         },
         {
             "name": "Rozprza",
@@ -2172,6 +2179,86 @@
             "type": "url",
             "spec": "gtfs-rt",
             "url": "https://api.zbiorkom.live/api6-open/tarnow/gtfsRealtime/default/tripUpdates,serviceAlerts",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "use-feed-proxy": true
+        },
+        {
+            "name": "Zgierz",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://api.zbiorkom.live/api6-open/lodz/gtfs/ZGIERZ",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "fix": true
+        },
+        {
+            "name": "Zgierz",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.zbiorkom.live/api6-open/lodz/gtfsRealtime/ZGIERZ/tripUpdates,serviceAlerts",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "use-feed-proxy": true
+        },
+        {
+            "name": "Gryfino",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://api.zbiorkom.live/api6-open/szczecin/gtfs/GRYFINO",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "fix": true
+        },
+        {
+            "name": "Gryfino",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.zbiorkom.live/api6-open/szczecin/gtfsRealtime/GRYFINO/tripUpdates,serviceAlerts",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "use-feed-proxy": true
+        },
+        {
+            "name": "Gmina-Tczew",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://api.zbiorkom.live/api6-open/tczew/gtfs/GMINATCZEW",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "fix": true
+        },
+        {
+            "name": "Gmina-Tczew",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.zbiorkom.live/api6-open/tczew/gtfsRealtime/GMINA_TCZEW/tripUpdates,serviceAlerts",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "use-feed-proxy": true
+        },
+        {
+            "name": "Ostrowiec-Świętokrzyski",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://api.zbiorkom.live/api6-open/ostrowiecSwietokrzyski/gtfs/default",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "fix": true
+        },
+        {
+            "name": "Ostrowiec-Świętokrzyski",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.zbiorkom.live/api6-open/ostrowiecSwietokrzyski/gtfsRealtime/default/tripUpdates,serviceAlerts",
             "license": {
                 "spdx-identifier": "MIT"
             },
