@@ -62,7 +62,8 @@
         {
             "name": "hsl",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-ud9-helsinginseudunliikenne"
+            "transitland-atlas-id": "f-ud9-helsinginseudunliikenne",
+            "script": "fi-hsl.lua"
         },
         {
             "name": "hsl",
