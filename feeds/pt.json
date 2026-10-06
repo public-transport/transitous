@@ -151,6 +151,24 @@
             "name": "Metro-Transportes-do-Sul",
             "type": "mobility-database",
             "mdb-id": "mdb-2408"
+        },
+               {
+            "name": "Metro-Mondego-Metrobus",
+            "type": "http",
+            "url": "https://bquelhas.github.io/brutemaps-data/gtfs/metro-mondego/metro-mondego.zip",
+            "license": {
+                "spdx-identifier": "ODbL-1.0",
+                "url": "https://github.com/bquelhas/brutemaps-data/tree/main/gtfs"
+            }
+        },
+        {
+            "name": "Metrobus-Porto",
+            "type": "http",
+            "url": "https://bquelhas.github.io/brutemaps-data/gtfs/metrobus-porto/metrobus-porto.zip",
+            "license": {
+                "spdx-identifier": "ODbL-1.0",
+                "url": "https://github.com/bquelhas/brutemaps-data/tree/main/gtfs"
+            }
         }
     ]
 }
