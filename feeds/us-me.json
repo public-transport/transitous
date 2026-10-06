@@ -45,7 +45,9 @@
         {
             "name": "south-portland",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-dry0-cityofsouthportland"
+            "transitland-atlas-id": "f-dry0-cityofsouthportland",
+            "skip": true,
+            "skip-reason": "Removed from transitland"
         }
     ]
 }
