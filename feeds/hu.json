@@ -175,6 +175,17 @@
             "url": "https://gy-mate.hu/gtfs/gtfs_hu_kiskunhalas.zip"
         },
         {
+            "name": "oroshaza",
+            "type": "http",
+            "url": "https://gtfs.gpspositions.net/storage/exports/OROSH_V_ONK/gtfs_latest.zip"
+        },
+        {
+            "name": "oroshaza",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://gtfs.gpspositions.net/storage/realtime/OROSH_V_ONK/vehicle_positions.pb"
+        },
+        {
             "name": "Hódmezővásárhely",
             "type": "http",
             "url": "https://www.hvszzrt.hu/helyikozlekedes-98",
