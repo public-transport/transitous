@@ -306,6 +306,7 @@ Option Name            | Description
 `use-gtfsclean`        | Preprocess GTFS feeds with `gtfsclean`, default is `true`.
 `enable-crowd-sourced-realtime` | Whether users should be able to submit gps positions for trips from this source.
 `extend-calendar`      | Extend the calendar beyond the specified end date, although the feed is expired, default is `false`. Only works for feeds that use `calendar.txt`.
+`function`             | Name of a python function that injects short lived tokens, resolves urls or similar. The function is loaded from `src/region_helpers.py`
 
 #### License Options
 
