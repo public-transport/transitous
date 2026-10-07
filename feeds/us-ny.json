@@ -277,6 +277,11 @@
             "name": "NationalParkService",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-statue~of~liberty~ferries"
+        },
+        {
+            "name": "Trailways",
+            "type": "http",
+            "url": "https://cmscdn.trailways.com/gtfs/trailways_gtfs.zip"
         }
     ]
 }

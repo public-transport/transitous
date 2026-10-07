@@ -16,6 +16,11 @@
             "name": "NJ-Transit-Rail",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-dr5-nj~transit~rail"
+        },
+        {
+            "name": "Cape-May-Lewes-Ferry",
+            "type": "http",
+            "url": "https://www.cmlf.com/wp-content/uploads/2026/06/CMLF_GTFS-2026-06222026.zip"
         }
     ]
 }

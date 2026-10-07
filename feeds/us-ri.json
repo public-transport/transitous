@@ -15,6 +15,16 @@
             "name": "RIPTA",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-ripta~rt"
+        },
+        {
+            "name": "Block-Island-Ferry",
+            "type": "http",
+            "url": "http://data.trilliumtransit.com/gtfs/blockislandferry-ri-us/blockislandferry-ri-us.zip"
+        },
+        {
+            "name": "Vineyard-Fast-Ferry",
+            "type": "http",
+            "url": "http://data.trilliumtransit.com/gtfs/vineyardfastferry-ri-us/vineyardfastferry-ri-us.zip"
         }
     ]
 }

@@ -252,6 +252,11 @@
             "name": "Asotin-County-PTBA",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-asotincounty~wa~us"
+        },
+        {
+            "name": "Northwestern-Stage-Lines",
+            "type": "http",
+            "url": "https://maps.tds.ai/download-feed/gtfs-northwestern"
         }
     ]
 }
