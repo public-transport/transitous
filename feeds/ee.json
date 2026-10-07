@@ -194,7 +194,9 @@
             "license": {
                 "spdx-identifier": "CC0-1.0"
             },
-            "script": "generic-bus-to-coach.lua"
+            "script": "generic-bus-to-coach.lua",
+            "skip": true,
+            "skip-reason": "expired"
         },
         {
             "name": "elron",
