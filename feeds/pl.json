@@ -167,21 +167,10 @@
         {
             "name": "Bydgoszcz",
             "type": "http",
-            "url": "https://api.zbiorkom.live/api6-open/bydgoszcz/gtfs/default",
+            "url": "https://mkuran.pl/gtfs/bydgoszcz.zip",
             "license": {
-                "spdx-identifier": "MIT"
-            },
-            "fix": true
-        },
-        {
-            "name": "Bydgoszcz",
-            "type": "url",
-            "spec": "gtfs-rt",
-            "url": "https://api.zbiorkom.live/api6-open/bydgoszcz/gtfsRealtime/default/tripUpdates,serviceAlerts",
-            "license": {
-                "spdx-identifier": "MIT"
-            },
-            "use-feed-proxy": true
+                "spdx-identifier": "CC0-1.0"
+            }
         },
         {
             "name": "Toruń",
@@ -850,7 +839,9 @@
             "url-override": "https://api.zbiorkom.live/api6-open/warsaw/gtfs/FERRIES",
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
-            }
+            },
+            "skip": true,
+            "skip-reason": "Seasonal, only in summer"
         },
         {
             "name": "Warsaw-Ferries",
@@ -860,7 +851,9 @@
             "license": {
                 "spdx-identifier": "MIT"
             },
-            "use-feed-proxy": true
+            "use-feed-proxy": true,
+            "skip": true,
+            "skip-reason": "Seasonal, only in summer"
         },
         {
             "name": "Ząbki",
@@ -1872,6 +1865,7 @@
             "type": "http",
             "spec": "gtfs",
             "url": "https://files.girlc.at/gtfs/bardo.zip",
+            "fix": true,
             "license": {
                 "spdx-identifier": "CC0-1.0"
             }
@@ -2054,6 +2048,7 @@
             "spec": "gtfs",
             "url": "https://files.girlc.at/gtfs/strykow.zip",
             "url-override": "https://api.zbiorkom.live/api6-open/lodz/gtfs/STRYKOW",
+            "fix": true,
             "license": {
                 "spdx-identifier": "CC0-1.0"
             }
@@ -2179,26 +2174,6 @@
             "license": {
                 "spdx-identifier": "MIT"
             }
-        },
-        {
-            "name": "Sanok",
-            "type": "http",
-            "spec": "gtfs",
-            "url": "https://api.zbiorkom.live/api6-open/sanok/gtfs/default",
-            "license": {
-                "spdx-identifier": "MIT"
-            },
-            "fix": true
-        },
-        {
-            "name": "Sanok",
-            "type": "url",
-            "spec": "gtfs-rt",
-            "url": "https://api.zbiorkom.live/api6-open/sanok/gtfsRealtime/default/tripUpdates,serviceAlerts",
-            "license": {
-                "spdx-identifier": "MIT"
-            },
-            "use-feed-proxy": true
         },
         {
             "name": "Niepołomice",
@@ -2341,26 +2316,6 @@
             "use-feed-proxy": true
         },
         {
-            "name": "Radomsko",
-            "type": "http",
-            "spec": "gtfs",
-            "url": "https://api.zbiorkom.live/api6-open/radomsko/gtfs/default",
-            "license": {
-                "spdx-identifier": "MIT"
-            },
-            "fix": true
-        },
-        {
-            "name": "Radomsko",
-            "type": "url",
-            "spec": "gtfs-rt",
-            "url": "https://api.zbiorkom.live/api6-open/radomsko/gtfsRealtime/default/tripUpdates,serviceAlerts",
-            "license": {
-                "spdx-identifier": "MIT"
-            },
-            "use-feed-proxy": true
-        },
-        {
             "name": "Tarnów",
             "type": "http",
             "spec": "gtfs",
@@ -2387,7 +2342,8 @@
             "url": "https://api.zbiorkom.live/api6-open/boleslawiec/gtfs/default",
             "license": {
                 "spdx-identifier": "MIT"
-            }
+            },
+            "fix": true
         },
         {
             "name": "Bolesławiec",
@@ -2482,7 +2438,8 @@
             "url": "https://api.zbiorkom.live/api6-open/lodz/gtfs/ZGIERZ",
             "license": {
                 "spdx-identifier": "MIT"
-            }
+            },
+            "fix": true
         },
         {
             "name": "Zgierz",
