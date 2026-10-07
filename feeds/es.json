@@ -515,18 +515,6 @@
             "mdb-id": "mdb-2783"
         },
         {
-            "name": "Autobús-urbano-de-Málaga",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1494",
-            "fix": true,
-            "http-options": {
-                "fetch-interval-days": 1,
-                "headers": {
-                    "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
-                }
-            }
-        },
-        {
             "name": "Autobús-urbano-de-Mataró",
             "type": "mobility-database",
             "fix": true,
@@ -589,18 +577,6 @@
                 }
             },
             "mdb-id": "mdb-2716"
-        },
-        {
-            "name": "Autobús-urbano-de-Valencia",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1166",
-            "fix": true,
-            "http-options": {
-                "fetch-interval-days": 1,
-                "headers": {
-                    "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
-                }
-            }
         },
         {
             "name": "Autobús-urbano-de-Valladolid",
@@ -1202,18 +1178,6 @@
             "mdb-id": "mdb-2830"
         },
         {
-            "name": "Metro-Ligero-y-Tranvía-Comunidad-de-Madrid",
-            "type": "http",
-            "url": "https://nap.transportes.gob.es/api/Fichero/download/1427",
-            "fix": true,
-            "http-options": {
-                "fetch-interval-days": 1,
-                "headers": {
-                    "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
-                }
-            }
-        },
-        {
             "name": "Metrotenerife",
             "type": "http",
             "url": "https://nap.transportes.gob.es/api/Fichero/download/1690",
@@ -1571,7 +1535,9 @@
         {
             "name": "Consorcio-Regional-de-Transportes-de-Madrid",
             "type": "mobility-database",
-            "mdb-id": "mdb-792"
+            "mdb-id": "mdb-792",
+            "skip": true,
+            "skip-reason": "Same as Consorcio-Regional-de-Transportes-de-Madrid-CRTM-L"
         },
         {
             "name": "EMT-Madrid",
