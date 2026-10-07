@@ -277,6 +277,14 @@
                 "spdx-identifier": "MIT"
             },
             "fix": true
+        },
+        {
+            "name": "TCDD-Ray-Atlası",
+            "type": "http",
+            "url": "https://ttezer.github.io/tr-railways/gtfs/tr_railways_20260921.zip",
+            "license": {
+                "attribution-text": "© OpenStreetMap contributors; Ray Atlası (ttezer/tr-railways); timetables TCDD Taşımacılık"
+            }
         }
     ]
 }
