@@ -29,7 +29,8 @@
                     "X-BusOne-Key": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSByWkpOUGdHaE1PaG4xdXExclhxd2VwNGxGSDNEY0JobWw1amh4aHhKMXhRCktxWTZhN08wNC9uRFhkSjk2enF0a0hjdEsydkprUXZWSUx4VlRlYVhkbHMKLS0tIHduOHVxSStBR0xlR3JkWHl3NWduWEI0eVZzQVVVOWl1a3Ezb2FyU3lBZUkK/qBbVs7d2hv548Ug3qEVhi4u+rB/I6Yhiwj6JPApJppIR8ko1PriEnt34Aswp7zw7px2Jc2AZFrqUmrchwelBSkISoZfjJ5ZSkU6"
                 }
             },
-            "use-gtfsclean": false
+            "use-gtfsclean": false,
+            "script": "it-trenitalia.lua"
         },
         {
             "name": "trenitalia",
