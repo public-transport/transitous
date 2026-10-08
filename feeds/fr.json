@@ -2054,8 +2054,36 @@
             },
             "x-data-gov-fr-res-id": 64973,
             "managed-by-script": true,
-            "skip": false,
+            "skip": true,
+            "skip-reason": "Replaced by res-id 84182",
             "x-data-gov-fr-res-title": "Liste des arrêts, horaires et parcours du réseau Astuce",
+            "x-data-gov-fr-dataset-id": "5cd4321f8b4c4137d1244318"
+        },
+        {
+            "name": "donnees-statiques-et-temps-reel-du-reseau-astuce-metropole-rouen-normandie",
+            "type": "http",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/307f2911-39a3-42a6-85ee-2b742955836a",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/donnees-statiques-et-temps-reel-du-reseau-astuce-metropole-rouen-normandie",
+                "spdx-identifier": "etalab-2.0"
+            },
+            "x-data-gov-fr-res-id": 84182,
+            "managed-by-script": true,
+            "x-data-gov-fr-res-title": "GTFS - Données enrichies du réseau Astuce",
+            "x-data-gov-fr-dataset-id": "5cd4321f8b4c4137d1244318"
+        },
+        {
+            "name": "donnees-statiques-et-temps-reel-du-reseau-astuce-metropole-rouen-normandie",
+            "type": "url",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/f5127667-1005-4515-b8d9-a2169ee83097",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/donnees-statiques-et-temps-reel-du-reseau-astuce-metropole-rouen-normandie",
+                "spdx-identifier": "etalab-2.0"
+            },
+            "spec": "gtfs-rt",
+            "x-data-gov-fr-res-id": 82677,
+            "managed-by-script": true,
+            "x-data-gov-fr-res-title": "GTFS-RT - Horaires temps réel + Positions des véhicules + Modifications de trajets + Alertes de service",
             "x-data-gov-fr-dataset-id": "5cd4321f8b4c4137d1244318"
         },
         {
@@ -2098,7 +2126,9 @@
             "spec": "gtfs-rt",
             "x-data-gov-fr-res-id": 83902,
             "x-data-gov-fr-dataset-id": "5cd4321f8b4c4137d1244318",
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": true,
+            "skip-reason": "Replaced by res-id 82677"
         },
         {
             "name": "donnees-statiques-et-temps-reel-du-reseau-astuce-metropole-rouen-normandie",
@@ -2111,21 +2141,9 @@
             "spec": "gtfs-rt",
             "x-data-gov-fr-res-id": 80752,
             "managed-by-script": true,
+            "skip": true,
+            "skip-reason": "Replaced by res-id 82677",
             "x-data-gov-fr-res-title": "Prochains passages des lignes du réseau Astuce exploitées par Transdev Rouen",
-            "x-data-gov-fr-dataset-id": "5cd4321f8b4c4137d1244318"
-        },
-        {
-            "name": "donnees-statiques-et-temps-reel-du-reseau-astuce-metropole-rouen-normandie",
-            "type": "url",
-            "url": "https://www.data.gouv.fr/api/1/datasets/r/178700bf-570a-4a5e-95a2-59ac5857c622",
-            "license": {
-                "url": "https://transport.data.gouv.fr/datasets/donnees-statiques-et-temps-reel-du-reseau-astuce-metropole-rouen-normandie",
-                "spdx-identifier": "etalab-2.0"
-            },
-            "spec": "gtfs-rt",
-            "x-data-gov-fr-res-id": 82678,
-            "managed-by-script": true,
-            "x-data-gov-fr-res-title": "GTFS-RT - Horaires de passage en temps réel (lignes Transdev Rouen)",
             "x-data-gov-fr-dataset-id": "5cd4321f8b4c4137d1244318"
         },
         {
@@ -2139,6 +2157,8 @@
             "spec": "gtfs-rt",
             "x-data-gov-fr-res-id": 83186,
             "managed-by-script": true,
+            "skip": true,
+            "skip-reason": "Replaced by res-id 82677",
             "x-data-gov-fr-res-title": "Prochains passages des lignes du réseau Astuce exploitées par TNI",
             "x-data-gov-fr-dataset-id": "5cd4321f8b4c4137d1244318"
         },
@@ -2153,6 +2173,8 @@
             "spec": "gtfs-rt",
             "x-data-gov-fr-res-id": 83187,
             "managed-by-script": true,
+            "skip": true,
+            "skip-reason": "Replaced by res-id 82677",
             "x-data-gov-fr-res-title": "Prochains passages des lignes du réseau Astuce exploitées par TAE",
             "x-data-gov-fr-dataset-id": "5cd4321f8b4c4137d1244318"
         },
@@ -2167,6 +2189,8 @@
             "spec": "gtfs-rt",
             "x-data-gov-fr-res-id": 83438,
             "managed-by-script": true,
+            "skip": true,
+            "skip-reason": "Replaced by res-id 82677",
             "x-data-gov-fr-res-title": "Information trafic en temps réel du réseau Astuce",
             "x-data-gov-fr-dataset-id": "5cd4321f8b4c4137d1244318"
         },
