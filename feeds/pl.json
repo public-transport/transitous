@@ -2450,15 +2450,6 @@
                 "spdx-identifier": "MIT"
             },
             "use-feed-proxy": true
-        },
-        {
-            "name": "Żyrardów",
-            "type": "http",
-            "spec": "gtfs",
-            "url": "https://files.girlc.at/gtfs/zyrardow.zip",
-            "license": {
-                "spdx-identifier": "CC0-1.0"
-            }
         }
     ]
 }
