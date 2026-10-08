@@ -277,6 +277,96 @@
             "name": "NationalParkService",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-statue~of~liberty~ferries"
-        }
+        },
+        {
+             "name": "RGRTA-MonroeCounty",
+             "type": "mobility-database",
+             "mdb-id": "mdb-533"
+         },
+         {
+             "name": "RGRTA-MonroeCounty",
+             "type": "mobility-database",
+             "mdb-id": "mdb-1775"
+         },
+         {
+             "name": "RGRTA-SenecaCounty",
+             "type": "transitland-atlas",
+             "transitland-atlas-id": "f-rts~seneca~ny"
+         },
+         {
+             "name": "RGRTA-GeneseeCounty",
+             "type": "transitland-atlas",
+             "transitland-atlas-id": "f-rts~genesee"
+         },
+         {
+             "name": "RGRTA-WyomingCounty",
+             "type": "transitland-atlas",
+             "transitland-atlas-id": "f-rts~wyoming"
+         },
+         {
+             "name": "RGRTA-OrleansCounty",
+             "type": "transitland-atlas",
+             "transitland-atlas-id": "f-rts~orleans"
+         },
+         {
+             "name": "RGRTA-WayneCounty",
+             "type": "transitland-atlas",
+             "transitland-atlas-id": "f-rts~wayne~ny"
+         },
+         {
+             "name": "RGRTA-LivingstonCounty",
+             "type": "transitland-atlas",
+             "transitland-atlas-id": "f-rts~livingston"
+         },
+         {
+             "name": "RGRTA-OntarioCounty",
+             "type": "transitland-atlas",
+             "transitland-atlas-id": "f-rts~ontario"
+         },
+         {
+             "name": "RIT-Bus",
+             "type": "transitland-atlas",
+             "transitland-atlas-id": "f-rochester~institute~of~technology"
+         },
+         {
+             "name": "RIT-Bus",
+             "type": "transitland-atlas",
+             "transitland-atlas-id": "f-rochester~institute~of~technology~rt"
+         },
+         {
+             "name": "Trailways",
+             "type": "transitland-atlas",
+             "transitland-atlas-id": "f-trailways~nyp~ny"
+         },
+         {
+             "name": "Trailways",
+             "type": "transitland-atlas",
+             "transitland-atlas-id": "f-trailways~adp~ny"
+         },
+         {
+             "name": "Trailways",
+             "type": "transitland-atlas",
+             "transitland-atlas-id": "f-utel~uiuc~intercity~bus"
+         },
+         {
+             "name": "Trailways",
+             "type": "transitland-atlas",
+             "transitland-atlas-id": "f-utel~uiuc~intercity~bus"
+         },
+         {
+             "name": "Trailways",
+             "type": "transitland-atlas",
+             "transitland-atlas-id": "f-utel~uiuc~intercity~bus"
+         },
+         {
+             "name": "Trailways",
+             "type": "transitland-atlas",
+             "transitland-atlas-id": "f-adirondack~trailways~adt"
+         },
+         {
+             "name": "RochesterVeoBikes",
+             "type": "transitland-atlas",
+             "transitland-atlas-id": "f-veo~rochester~ny~gbfs"
+         }
     ]
 }
