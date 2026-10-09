@@ -43,6 +43,33 @@
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-ktmb~rt",
             "use-feed-proxy": true
+        },
+        {
+            "name": "BAS.MY-Seremban-A",
+            "type": "http",
+            "url": "https://api.data.gov.my/gtfs-static/mybas-seremban-a",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            },
+            "extend-calendar": true
+        },
+        {
+            "name": "BAS.MY-Seremban-B",
+            "type": "http",
+            "url": "https://api.data.gov.my/gtfs-static/mybas-seremban-b",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            },
+            "extend-calendar": true
+        },
+        {
+            "name": "BAS.MY-Kuching",
+            "type": "http",
+            "url": "https://api.data.gov.my/gtfs-static/mybas-kuching",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            },
+            "fix": true
         }
     ]
 }
