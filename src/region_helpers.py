@@ -285,3 +285,21 @@ def data_regione_liguria_latest_resource(source: HttpSource) -> HttpSource:
     )["url"]
 
     return source
+
+
+def data_slovensko_sk(source: HttpSource) -> HttpSource:
+    from bs4 import BeautifulSoup
+
+    resp = requests.post(
+        source.url,
+        json={
+            "language": "sk",
+            "page": 1,
+            "pageSize": 1,
+            "filters": {"id": ["ebeeedf1-aca2-451a-bdc0-35d536714888"]},
+            "requiredFacets": [],
+        },
+    ).json()
+
+    source.url = resp["items"][0]["distributions"][0]["downloadUrl"]
+    return source

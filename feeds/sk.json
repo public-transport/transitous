@@ -29,7 +29,8 @@
             "display-name-options": {
                 "copy-trip-names-matching": "((EC|Os|Zr|Ex|REX|RJX|IC|RRR|R|EN|NJ)) +\\d+ +.*"
             },
-            "url": "https://data.slovensko.sk/download?id=fb3a9724-623b-4ddf-a6b5-a19b4a346281"
+            "url": "https://data.slovensko.sk/datasets/search",
+            "function": "data_slovensko_sk"
         },
         {
             "name": "zsr",
