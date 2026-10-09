@@ -9,7 +9,8 @@
         {
             "name": "Sri-Lanka-Railways",
             "type": "http",
-            "url": "https://api.transit.seyone.dev/api/v1/gtfs/download?agency=SLR"
+            "url": "https://api.transit.seyone.dev/api/v1/gtfs/download?agency=SLR",
+            "fix": true
         }
     ]
 }
