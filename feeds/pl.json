@@ -1173,20 +1173,9 @@
             "type": "http",
             "spec": "gtfs",
             "url": "https://files.girlc.at/gtfs/pks_nova.zip",
-            "url-override": "https://api.zbiorkom.live/api6-open/bialystok/gtfs/PKSNOVA",
             "license": {
                 "spdx-identifier": "CC0-1.0"
             }
-        },
-        {
-            "name": "PKS-Nova",
-            "type": "url",
-            "spec": "gtfs-rt",
-            "url": "https://api.zbiorkom.live/api6-open/bialystok/gtfsRealtime/PKSNOVA/tripUpdates,serviceAlerts",
-            "license": {
-                "spdx-identifier": "MIT"
-            },
-            "use-feed-proxy": true
         },
         {
             "name": "Piła",
