@@ -68,7 +68,8 @@
             "url": "https://api.data.gov.my/gtfs-static/mybas-kuching",
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
-            }
+            },
+            "fix": true
         }
     ]
 }
