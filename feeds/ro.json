@@ -17,7 +17,29 @@
             "license": {
                 "url": "https://data.gov.ro/base/images/logoinst/OGL-ROU-1.0.pdf",
                 "attribution-text": "Conține informații publice în baza Licenței pentru Guvernare Deschisă v1.0"
-            }
+            },
+            "drop-agency-names": [
+                "Regio Călători",
+                "Transferoviar Calatori"
+            ]
+        },
+        {
+            "name": "transferoviarcalatori",
+            "type": "http",
+            "url": "https://static.gtfs.ro/operators/transferoviarcalatori-ro.zip",
+            "script": "ro-private-operators.lua"
+        },
+        {
+            "name": "regiocalatori-brasov",
+            "type": "http",
+            "url": "https://static.gtfs.ro/operators/regiocalatori-brasov-ro.zip",
+            "script": "ro-private-operators.lua"
+        },
+        {
+            "name": "astra-bucharest",
+            "type": "http",
+            "url": "https://static.gtfs.ro/operators/astra-bucharest-ro.zip",
+            "script": "ro-private-operators.lua"
         },
         {
             "name": "railway",
