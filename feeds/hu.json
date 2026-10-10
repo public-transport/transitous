@@ -42,7 +42,8 @@
             "name": "bkk",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://jbb.ghsq.de/gtfs/bkk/TripUpdates"
+            "use-feed-proxy": true,
+            "url": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBLcG5FZld3R3hMd2VnZmJQaG9QTEVKR0RxK3lHbUhqTS9RN3d5Sm8zRUdRCnE1VkNHWUlRaGV3MEdnWVByczVpWXZjTUtnRmgvTWdEVnluMlN2czZlVDQKLS0tIDdFVWpiRVFsVGwxazJUdFV2SVNLK0NDdDNIMVY4aWlZYUVWZlZnV055NmMKiSnO+3iQyYYLN3K4eUIhhPmeoDlTQZ0l3cPBrWd373GfAlO2M+ipgg9PEQ+5jFZqz1XI/sn26Eizi037YNKHoOY6GWjMR4ua9MJIWDK1gXQpucgDPg545G5Zu4KBRaDHFW/cVM/0vUMRM3to7BaMNxwl7nzeiDsxp3jWDWK6iGHLbGWIe8M="
         },
         {
             "name": "bkk-funicular",
