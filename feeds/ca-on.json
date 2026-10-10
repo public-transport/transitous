@@ -271,7 +271,10 @@
             "name": "OCTranspo",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://jbb.ghsq.de/gtfs/octranspo/TripUpdates"
+            "url": "https://nextrip-public-api.azure-api.net/octranspo/gtfs-rt-tp/beta/v1/TripUpdates",
+            "headers": {
+                "Ocp-Apim-Subscription-Key": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBncGQ1L254cHpDRFhqdllhZWdTMTdONHBGbXN5S0FJVk5CbnZwYmZ0TjBNCkh1anNNVHlRRmtyME9uc2dua29DQjBqWFc0OENHWmlYdlJHeTB4WXh0R0kKLS0tIFBSRHAzcS8zUmsxUUhxeUNlSkVxQWVPUDMwaTV2ZzR6WGl3SEVQQ3JEUlEK73fV2LYufTsrx+31bx15A2PLFE0umJ6H2xPxVFDLt59fPdbf5aFE7YkADH/8IM2Zk6WTKRKDjBRLrN9Fmz4HeA=="
+            }
         },
         {
             "name": "Quinte-Transit",
