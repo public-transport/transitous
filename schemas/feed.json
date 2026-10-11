@@ -34,12 +34,22 @@
                 "properties": {
                     "name": {
                         "description": "Name of a feed",
-                        "type": "string"
+                        "type": "string",
+                        "pattern": "^[^\/ _]*$"
                     },
                     "type": {
                         "description": "The type of source used for this feed",
                         "type": "string",
-                        "enum": ["url", "http", "mobility-database", "transitland-atlas"]
+                        "enum": ["url", "http", "ftp", "mobility-database", "transitland-atlas"]
+                    },
+                    "spec": {
+                        "description": "the format of the feed",
+                        "type": "string",
+                        "enum": ["gtfs", "gtfs-rt", "gbfs", "netex", "siri", "siri_json"]
+                    },
+                    "headers": {
+                        "description": "a dictionary of arbitrary headers for use with a URL source.",
+                        "type": "object"
                     }
                 },
                 "required": ["name", "type"]
