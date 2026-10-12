@@ -31,9 +31,7 @@
             "name": "CZPTT",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://owncloud.cesnet.cz/index.php/s/DQdSPwh0bJjtEWq/download",
-            "skip": true,
-            "skip-reason": "Feed does not return proper delays"
+            "url": "https://motis.obehy.cz/get-feeds/cz-czptt-gtfs-rt.pb"
         },
         {
             "name": "PID",
@@ -102,6 +100,12 @@
             "license": {
                 "spdx-identifier": "CC0-1.0"
             }
+        },
+        {
+            "name": "JDF-merged",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://motis.obehy.cz/get-feeds/cz-jdf-gtfs-rt.pb"
         },
         {
             "name": "IDZK",

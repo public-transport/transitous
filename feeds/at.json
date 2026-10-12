@@ -110,7 +110,9 @@
             "default-timezone": "Europe/Vienna",
             "managed-by-script": true,
             "x-mvo-id": "78-2026",
-            "use-gtfsclean": false
+            "use-gtfsclean": false,
+            "skip": true,
+            "skip-reason": "Stay Seated forever during MOTIS import"
         },
         {
             "name": "PTA-Upper-Austria-Flex-2026",
