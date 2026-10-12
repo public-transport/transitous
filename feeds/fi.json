@@ -30,6 +30,37 @@
             ]
         },
         {
+            "name": "fintraffic",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://mobility-api.mobility-database.fintraffic.fi/gtfs-realtime/v2/",
+            "use-feed-proxy": true,
+            "headers": {
+                "x-api-key": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBjM3VlMkkxNzk1Vy9IOW9WQlJGbFQ5bW0xeUF4S1FOTVZtR3VEc3lwdWdnCjVQTnVxRzhoS2pEMVVTbnJoNVFBU1dldGcrOVA4K0RFZHQzWERGOTREQ0UKLS0tIFlVdTdZL0JqVEVPM0wvN1ZiNGJSVHI2VjA3TzlPYkd6NlF2cDlWZEYwdUEKkQSCM8/Zt/DRXpOObHp8BwEFBCgXn+kEJ4TJZS7tjvShbbca+m7KbjEWUA7CtlYjghfmEVUT2usdHLtkVeoQFRVsq3urFyVJ",
+                "Accept": "application/protobuf"
+            }
+        },
+        {
+            "name": "fintraffic-gbfsv2",
+            "type": "url",
+            "spec": "gbfs",
+            "url": "https://mobility-api.mobility-database.fintraffic.fi/gbfs/v2/gbfs.json",
+            "use-feed-proxy": true,
+            "headers": {
+                "x-api-key": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBjM3VlMkkxNzk1Vy9IOW9WQlJGbFQ5bW0xeUF4S1FOTVZtR3VEc3lwdWdnCjVQTnVxRzhoS2pEMVVTbnJoNVFBU1dldGcrOVA4K0RFZHQzWERGOTREQ0UKLS0tIFlVdTdZL0JqVEVPM0wvN1ZiNGJSVHI2VjA3TzlPYkd6NlF2cDlWZEYwdUEKkQSCM8/Zt/DRXpOObHp8BwEFBCgXn+kEJ4TJZS7tjvShbbca+m7KbjEWUA7CtlYjghfmEVUT2usdHLtkVeoQFRVsq3urFyVJ"
+            }
+        },
+        {
+            "name": "fintraffic-gbfsv3",
+            "type": "url",
+            "spec": "gbfs",
+            "url": "https://mobility-api.mobility-database.fintraffic.fi/gbfs/v3/gbfs.json",
+            "use-feed-proxy": true,
+            "headers": {
+                "x-api-key": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBjM3VlMkkxNzk1Vy9IOW9WQlJGbFQ5bW0xeUF4S1FOTVZtR3VEc3lwdWdnCjVQTnVxRzhoS2pEMVVTbnJoNVFBU1dldGcrOVA4K0RFZHQzWERGOTREQ0UKLS0tIFlVdTdZL0JqVEVPM0wvN1ZiNGJSVHI2VjA3TzlPYkd6NlF2cDlWZEYwdUEKkQSCM8/Zt/DRXpOObHp8BwEFBCgXn+kEJ4TJZS7tjvShbbca+m7KbjEWUA7CtlYjghfmEVUT2usdHLtkVeoQFRVsq3urFyVJ"
+            }
+        },
+        {
             "name": "digitraffic",
             "type": "http",
             "url": "https://rata.digitraffic.fi/api/v1/trains/gtfs-passenger-stops.zip",
