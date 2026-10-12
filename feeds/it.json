@@ -220,6 +220,11 @@
             },
             "use-feed-proxy": true
         },
+               {
+            "name": "Lazio-Cotral-Ferrovie",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-cotral~lazio~ferro"
+        },
         {
             "name": "Liguria-Genova",
             "type": "transitland-atlas",
