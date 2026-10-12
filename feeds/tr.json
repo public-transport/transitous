@@ -3,52 +3,50 @@
         {
             "name": "Yasin Karaaslan",
             "github": "yasinkaraaslan"
+        },
+        {
+            "name": "Luna",
+            "github": "luna-cant-code"
+        },
+        {
+            "name": "Jonah Brüchert",
+            "github": "jbruechert"
         }
     ],
     "sources": [
         {
             "name": "izmir-eshot",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-eshot~tr",
-            "skip": true,
-            "skip-reason": "Expired feed"
+            "type": "http",
+            "url": "https://dl.dropbox.com/scl/fi/4zqbe47ijsafkejvkqfyp/bus-eshot-gtfs.zip?rlkey=v54imnsdv8ayusflrm0s6f914",
+            "fix": true
         },
         {
             "name": "izmir-metro",
-            "type": "http",
-            "url": "https://dl.dropboxusercontent.com/scl/fi/4pq6whnox4yzunrql6xdh/izmir-metro.zip?rlkey=cy6i0qbjq4hod0d5yh4i5efmi",
-            "skip": true,
-            "skip-reason": "Expired feed"
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-izmir~metro"
         },
         {
             "name": "izmir-izban",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-izmir~rail",
+            "type": "http",
+            "url": "https://www.izban.com.tr/gtfs/rail-izban-gtfs.zip",
             "fix": true,
             "skip": true,
             "skip-reason": "Expired feed"
         },
         {
             "name": "izmir-tram",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-izmir~tram",
-            "skip": true,
-            "skip-reason": "Expired feed"
-        },
-        {
-            "name": "istanbul-ibb",
             "type": "http",
-            "url": "https://dl.dropboxusercontent.com/scl/fi/v937qi0xnytzl21a3bbd0/istanbul-ibb.zip?rlkey=dgi6l0cxb2203fresf1s16r7i",
-            "fix": true,
-            "skip": true
+            "url": "https://www.tramizmir.com/gtfs/rail-tramizmir-gtfs.zip"
         },
         {
             "name": "istanbul-iett",
             "type": "http",
-            "url": "https://dl.dropboxusercontent.com/scl/fi/t57vx1ivwq02x0xy51tum/istanbul-iett.zip?rlkey=qb0ien7ba5s2okt3or2lzc2nn",
-            "drop-too-fast-trips": false,
-            "skip": true,
-            "skip-reason": "Most trips are not usable, causes routing to return nonsensical results."
+            "url": "https://jbb.ghsq.de/gtfs/tr-istanbul.gtfs.zip",
+            "fix": false,
+            "skip": false,
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
         },
         {
             "name": "konya",
@@ -97,12 +95,18 @@
         {
             "name": "nigde",
             "type": "http",
-            "url": "https://github.com/Egezenn/kk-gtfs/raw/main/data/nigde.zip"
+            "url": "https://github.com/Egezenn/kk-gtfs/raw/main/data/nigde.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
         },
         {
             "name": "adana",
             "type": "http",
             "url": "https://github.com/Egezenn/kk-gtfs/raw/main/data/adana.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            },
             "fix": true
         },
         {
@@ -116,30 +120,45 @@
             "name": "alapli",
             "type": "http",
             "url": "https://github.com/Egezenn/kk-gtfs/raw/main/data/alapli.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            },
             "skip": true,
             "skip-reason": "routes.txt doesn't exist"
         },
         {
             "name": "burdur",
             "type": "http",
-            "url": "https://github.com/Egezenn/kk-gtfs/raw/main/data/burdur.zip"
+            "url": "https://github.com/Egezenn/kk-gtfs/raw/main/data/burdur.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
         },
         {
             "name": "canakkale",
             "type": "http",
             "url": "https://github.com/Egezenn/kk-gtfs/raw/main/data/canakkale.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            },
             "fix": true
         },
         {
             "name": "duzce",
             "type": "http",
             "url": "https://github.com/Egezenn/kk-gtfs/raw/main/data/duzce.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            },
             "fix": true
         },
         {
             "name": "edirne",
             "type": "http",
             "url": "https://github.com/Egezenn/kk-gtfs/raw/main/data/edirne.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            },
             "skip": true,
             "skip-reason": "trips.txt doesn't exist"
         },
@@ -147,6 +166,9 @@
             "name": "eregli",
             "type": "http",
             "url": "https://github.com/Egezenn/kk-gtfs/raw/main/data/eregli.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            },
             "skip": true,
             "skip-reason": "trips.txt doesn't exist"
         },
@@ -154,57 +176,87 @@
             "name": "erzurum",
             "type": "http",
             "url": "https://github.com/Egezenn/kk-gtfs/raw/main/data/erzurum.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            },
             "fix": true
         },
         {
             "name": "kastamonu",
             "type": "http",
             "url": "https://github.com/Egezenn/kk-gtfs/raw/main/data/kastamonu.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            },
             "fix": true
         },
         {
             "name": "kirklareli",
             "type": "http",
             "url": "https://github.com/Egezenn/kk-gtfs/raw/main/data/kirklareli.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            },
             "fix": true
         },
         {
             "name": "luleburgaz",
             "type": "http",
             "url": "https://github.com/Egezenn/kk-gtfs/raw/main/data/luleburgaz.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            },
             "fix": true
         },
         {
             "name": "mardin",
             "type": "http",
             "url": "https://github.com/Egezenn/kk-gtfs/raw/main/data/mardin.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            },
             "fix": true
         },
         {
             "name": "mugla",
             "type": "http",
             "url": "https://github.com/Egezenn/kk-gtfs/raw/main/data/mugla.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            },
             "fix": true
         },
         {
             "name": "ordu",
             "type": "http",
-            "url": "https://github.com/Egezenn/kk-gtfs/raw/main/data/ordu.zip"
+            "url": "https://github.com/Egezenn/kk-gtfs/raw/main/data/ordu.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
         },
         {
             "name": "osmaniye",
             "type": "http",
-            "url": "https://github.com/Egezenn/kk-gtfs/raw/main/data/osmaniye.zip"
+            "url": "https://github.com/Egezenn/kk-gtfs/raw/main/data/osmaniye.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
         },
         {
             "name": "safranbolu",
             "type": "http",
-            "url": "https://github.com/Egezenn/kk-gtfs/raw/main/data/safranbolu.zip"
+            "url": "https://github.com/Egezenn/kk-gtfs/raw/main/data/safranbolu.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
         },
         {
             "name": "sivas",
             "type": "http",
             "url": "https://github.com/Egezenn/kk-gtfs/raw/main/data/sivas.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            },
             "skip": true,
             "skip-reason": "trips.txt doesn't exist"
         },
@@ -212,12 +264,18 @@
             "name": "tokat",
             "type": "http",
             "url": "https://github.com/Egezenn/kk-gtfs/raw/main/data/tokat.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            },
             "fix": true
         },
         {
             "name": "tcdd",
             "type": "http",
             "url": "https://github.com/yasinkaraaslan/tcdd-gtfs/raw/main/output/tcdd.zip",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
             "fix": true
         }
     ]

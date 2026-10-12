@@ -21,6 +21,24 @@
             ]
         },
         {
+            "name": "visimarsrutai",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://www.visimarsrutai.lt/gtfs-realtime/trip_updates.pb"
+        },
+        {
+            "name": "visimarsrutai",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://www.visimarsrutai.lt/gtfs-realtime/service_alerts.pb"
+        },
+        {
+            "name": "visimarsrutai",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://www.visimarsrutai.lt/gtfs-realtime/vehicle_positions.pb"
+        },
+        {
             "name": "vilnius",
             "type": "mobility-database",
             "fix": true,
@@ -125,7 +143,7 @@
         {
             "name": "LTG-Link",
             "type": "http",
-            "url": "https://gitlab.com/jbb/hafas-converter-ng/-/jobs/artifacts/main/raw/lt_ltglink-shapes.gtfs.zip?job=update-ltglink-feed"
+            "url": "https://jbb.ghsq.de/gtfs/lt-ltglink.gtfs.zip"
         },
         {
             "name": "kautra",

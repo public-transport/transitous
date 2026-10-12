@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="48px" height="48px" viewBox="-32 -32 1088 1088">
+    <defs>
+        <linearGradient id="background-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" style="stop-color:#f8f080" /> <!-- #f0c410 -->
+            <stop offset="100%" style="stop-color:#f8f080" /> <!-- #f0c410 -->
+        </linearGradient>
+        <linearGradient id="symbol-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" style="stop-color:#40a33f" />
+            <stop offset="100%" style="stop-color:#40a33f" />
+        </linearGradient>
+        <filter id="background-shadow">
+            <feOffset
+                result="offsetOut" in="SourceGraphic" dx="0" dy="32" />
+            <feColorMatrix
+                result="matrixOut" in="offsetOut" type="matrix"
+                values="0.15 0 0 0 0 0 0.15 0 0 0 0 0 0.15 0 0 0 0 0 1 0" />
+            <feGaussianBlur
+                result="blurOut" in="matrixOut" stdDeviation="32" />
+            <feBlend
+                in="SourceGraphic" in2="blurOut" mode="normal" />
+        </filter>
+    </defs>
+
+    <!-- background -->
+    <circle cx="512" cy="512" r="512" fill="url(#symbol-gradient)" />
+    <circle cx="512" cy="512" r="400" fill="url(#background-gradient)" filter="url(#background-shadow)" />
+
+    <!-- stiletto -->
+    <path d="M 387,787 v -355 a 120,120 0 0,1 120,-120" style="fill:none;stroke:#40a33f;stroke-width:104" />
+    <!-- trangle -->
+    <path d="M 507,312 v 130 l 260,-130 l -260,-130 z" style="fill:#40a33f" />
+
+<!--    <mask id="m">-->
+<!--        <rect x="520" y="600" width="300" height="280" rx="80" fill="#AAA"/>-->
+<!--        <text x="563" y="795" font-size="150" font-weight="bold" fill="#222">NG</text>-->
+<!--    </mask>-->
+<!--    <rect x="520" y="600" width="300" height="280" rx="80" mask="url(#m)"/>-->
+    <rect x="520" y="600" width="300" height="280" rx="80" fill="#000000" fill-opacity="0.4"/>
+    <g fill="#f8f080" transform="translate(552, 618) scale(3.4,4.0)">
+        <path
+            d="M0 13.35L8.85 13.35L26.50 36.55L23.75 37.50L23.75 13.35L33.25 13.35L33.25 48.40L24.40 48.40L6.80 25.30L9.55 24.35L9.55 48.40L0 48.40L0 13.35ZM65.60 25.20Q63.80 23.45 61.38 22.40Q58.95 21.35 56.65 21.35Q54.75 21.35 53.13 22.07Q51.50 22.80 50.33 24.07Q49.15 25.35 48.48 27.07Q47.80 28.80 47.80 30.85Q47.80 32.90 48.48 34.65Q49.15 36.40 50.35 37.70Q51.55 39 53.20 39.72Q54.85 40.45 56.75 40.45Q58.50 40.45 60.83 39.55Q63.15 38.65 65.10 37.20L71 44.50Q69.10 45.85 66.55 46.90Q64 47.95 61.25 48.52Q58.50 49.10 56 49.10Q51.95 49.10 48.53 47.73Q45.10 46.35 42.53 43.90Q39.95 41.45 38.55 38.10Q37.15 34.75 37.15 30.85Q37.15 26.95 38.60 23.65Q40.05 20.35 42.70 17.87Q45.35 15.40 48.90 14.05Q52.45 12.70 56.70 12.70Q59.40 12.70 62.10 13.35Q64.80 14 67.23 15.20Q69.65 16.40 71.50 18.10L65.60 25.20M62.05 30.25L71 30.25L71 44.50L62.05 44.50L62.05 30.25Z" />
+    </g>
+</svg>

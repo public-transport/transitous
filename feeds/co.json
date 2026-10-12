@@ -10,6 +10,24 @@
             "name": "transmilenio",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-d2g6-transmilenio~troncal~transmilenio~alimentadores~transmile"
+        },
+        {
+            "name": "Transportes-Luz",
+            "type": "http",
+            "url": "https://raw.githubusercontent.com/ColombiaInfo/ColombiaGTFS/master/Transportes%20Luz/TransportesLuz.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-SA-4.0"
+            },
+            "extend-calendar": true
+        },
+        {
+            "name": "Coointur",
+            "type": "http",
+            "url": "https://raw.githubusercontent.com/ColombiaInfo/ColombiaGTFS/master/Coointur/Coointur.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-SA-4.0"
+            },
+            "extend-calendar": true
         }
     ]
 }

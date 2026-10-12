@@ -1,0 +1,16 @@
+{
+    "maintainers": [
+        {
+            "name": "Sander",
+            "github": "Sandertttt"
+        }
+    ],
+    "sources": [
+        {
+            "name": "Crom-Studio",
+            "type": "http",
+            "url": "https://transporte.cromstudio.com.ve/data/horarios.zip",
+            "fix": true
+        }
+    ]
+}

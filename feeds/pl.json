@@ -148,29 +148,29 @@
             "type": "http",
             "spec": "gtfs",
             "url": "https://files.girlc.at/gtfs/swinoujscie.zip",
+            "url-override": "https://api.zbiorkom.live/api6-open/swinoujscie/gtfs/default",
             "license": {
                 "spdx-identifier": "CC0-1.0"
             },
             "fix": true
         },
         {
-            "name": "Bydgoszcz",
-            "type": "http",
-            "url": "https://api.zbiorkom.live/api6-open/bydgoszcz/gtfs/default",
-            "license": {
-                "spdx-identifier": "MIT"
-            },
-            "fix": true
-        },
-        {
-            "name": "Bydgoszcz",
+            "name": "Świnoujście",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://api.zbiorkom.live/api6-open/bydgoszcz/gtfsRealtime/default/tripUpdates,serviceAlerts",
+            "url": "https://api.zbiorkom.live/api6-open/swinoujscie/gtfsRealtime/default/tripUpdates,serviceAlerts",
             "license": {
                 "spdx-identifier": "MIT"
             },
             "use-feed-proxy": true
+        },
+        {
+            "name": "Bydgoszcz",
+            "type": "http",
+            "url": "https://mkuran.pl/gtfs/bydgoszcz.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
         },
         {
             "name": "Toruń",
@@ -558,9 +558,21 @@
             "type": "http",
             "spec": "gtfs",
             "url": "https://files.girlc.at/gtfs/bialystok.zip",
+            "url-override": "https://api.zbiorkom.live/api6-open/bialystok/gtfs/default",
             "license": {
                 "spdx-identifier": "CC0-1.0"
-            }
+            },
+            "fix": true
+        },
+        {
+            "name": "Białystok",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.zbiorkom.live/api6-open/bialystok/gtfsRealtime/default/tripUpdates,serviceAlerts",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "use-feed-proxy": true
         },
         {
             "name": "Wschód-Express",
@@ -598,10 +610,21 @@
             "type": "http",
             "spec": "gtfs",
             "url": "https://files.girlc.at/gtfs/turosn_koscielna.zip",
+            "url-override": "https://api.zbiorkom.live/api6-open/bialystok/gtfs/TUROSN",
             "license": {
                 "spdx-identifier": "CC0-1.0"
             },
             "fix": true
+        },
+        {
+            "name": "Turośń-Kościelna",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.zbiorkom.live/api6-open/bialystok/gtfsRealtime/TUROSN/tripUpdates,serviceAlerts",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "use-feed-proxy": true
         },
         {
             "name": "Sochaczew",
@@ -730,6 +753,28 @@
             "type": "http",
             "spec": "gtfs",
             "url": "https://files.girlc.at/gtfs/dabrowka.zip",
+            "url-override": "https://api.zbiorkom.live/api6-open/warsaw/gtfs/DABROWKA",
+            "fix": true,
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "Dąbrówka",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.zbiorkom.live/api6-open/warsaw/gtfsRealtime/DABROWKA/tripUpdates,serviceAlerts",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "use-feed-proxy": true
+        },
+        {
+            "name": "Skarżysko-Kamienna",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://files.girlc.at/gtfs/skarzysko_kamienna.zip",
+            "url-override": "https://api.zbiorkom.live/api6-open/skarzyskoKamienna/gtfs/default",
             "fix": true,
             "license": {
                 "spdx-identifier": "CC0-1.0"
@@ -737,9 +782,20 @@
         },
         {
             "name": "Skarżysko-Kamienna",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.zbiorkom.live/api6-open/skarzyskoKamienna/gtfsRealtime/default/tripUpdates,serviceAlerts",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "use-feed-proxy": true
+        },
+        {
+            "name": "Gmina-Oleśnica",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://files.girlc.at/gtfs/skarzysko_kamienna.zip",
+            "url": "https://files.girlc.at/gtfs/olesnica.zip",
+            "url-override": "https://api.zbiorkom.live/api6-open/wroclaw/gtfs/OLESNICA",
             "fix": true,
             "license": {
                 "spdx-identifier": "CC0-1.0"
@@ -747,13 +803,13 @@
         },
         {
             "name": "Gmina-Oleśnica",
-            "type": "http",
-            "spec": "gtfs",
-            "url": "https://files.girlc.at/gtfs/olesnica.zip",
-            "fix": true,
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.zbiorkom.live/api6-open/wroclaw/gtfsRealtime/OLESNICA/tripUpdates,serviceAlerts",
             "license": {
-                "spdx-identifier": "CC0-1.0"
-            }
+                "spdx-identifier": "MIT"
+            },
+            "use-feed-proxy": true
         },
         {
             "name": "Olsztyn",
@@ -783,7 +839,9 @@
             "url-override": "https://api.zbiorkom.live/api6-open/warsaw/gtfs/FERRIES",
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
-            }
+            },
+            "skip": true,
+            "skip-reason": "Seasonal, only in summer"
         },
         {
             "name": "Warsaw-Ferries",
@@ -793,7 +851,9 @@
             "license": {
                 "spdx-identifier": "MIT"
             },
-            "use-feed-proxy": true
+            "use-feed-proxy": true,
+            "skip": true,
+            "skip-reason": "Seasonal, only in summer"
         },
         {
             "name": "Ząbki",
@@ -874,6 +934,28 @@
             "type": "http",
             "spec": "gtfs",
             "url": "https://files.girlc.at/gtfs/oswiecim.zip",
+            "url-override": "https://api.zbiorkom.live/api6-open/oswiecim/gtfs/default",
+            "fix": true,
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "Oświęcim",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.zbiorkom.live/api6-open/oswiecim/gtfsRealtime/default/tripUpdates,serviceAlerts",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "use-feed-proxy": true
+        },
+        {
+            "name": "Bielsko-Biała",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://files.girlc.at/gtfs/bielsko_biala.zip",
+            "url-override": "https://api.zbiorkom.live/api6-open/bielskoBiala/gtfs/default",
             "fix": true,
             "license": {
                 "spdx-identifier": "CC0-1.0"
@@ -881,26 +963,33 @@
         },
         {
             "name": "Bielsko-Biała",
-            "type": "http",
-            "spec": "gtfs",
-            "url": "https://files.girlc.at/gtfs/bielsko_biala.zip",
-            "fix": true,
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.zbiorkom.live/api6-open/bielskoBiala/gtfsRealtime/default/tripUpdates,serviceAlerts",
             "license": {
-                "spdx-identifier": "CC0-1.0"
-            }
+                "spdx-identifier": "MIT"
+            },
+            "use-feed-proxy": true
         },
         {
             "name": "Kombus-Kórnik",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://kombus.pl/gtfs/kombus.zip",
+            "url": "https://api.zbiorkom.live/api6-open/poznan/gtfs/KOMBUS",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
             "fix": true
         },
         {
             "name": "Kombus-Kórnik",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "http://kombus.pl/gtfs/tripUpdates"
+            "url": "https://api.zbiorkom.live/api6-open/poznan/gtfsRealtime/KOMBUS/tripUpdates,serviceAlerts",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "use-feed-proxy": true
         },
         {
             "name": "Kombus-Środa-Wielkopolska",
@@ -922,23 +1011,42 @@
             "name": "Słupsk",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://zimslupsk.pl/otwarte-dane.html",
-            "function": "data_slupsk_latest_resource",
+            "url": "https://api.zbiorkom.live/api6-open/slupsk/gtfs/default",
             "license": {
-                "spdx-identifier": "CC0-1.0"
+                "spdx-identifier": "MIT"
             },
-            "drop-shapes": true,
             "fix": true
+        },
+        {
+            "name": "Słupsk",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.zbiorkom.live/api6-open/slupsk/gtfsRealtime/default/tripUpdates,serviceAlerts",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "use-feed-proxy": true
         },
         {
             "name": "Ełk",
             "type": "http",
             "spec": "gtfs",
             "url": "https://files.girlc.at/gtfs/elk.zip",
+            "url-override": "https://api.zbiorkom.live/api6-open/elk/gtfs/default",
             "fix": true,
             "license": {
                 "spdx-identifier": "CC0-1.0"
             }
+        },
+        {
+            "name": "Ełk",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.zbiorkom.live/api6-open/elk/gtfsRealtime/default/tripUpdates,serviceAlerts",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "use-feed-proxy": true
         },
         {
             "name": "Legnica",
@@ -954,7 +1062,7 @@
             "name": "Legnica",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://cdn.zbiorkom.live/gtfs-rt/legnica.pb",
+            "url": "https://api.zbiorkom.live/api6-open/legnica/gtfsRealtime/default/tripUpdates,serviceAlerts",
             "license": {
                 "spdx-identifier": "MIT"
             },
@@ -1074,9 +1182,20 @@
             "type": "http",
             "spec": "gtfs",
             "url": "https://files.girlc.at/gtfs/pila.zip",
+            "url-override": "https://api.zbiorkom.live/api6-open/pila/gtfs/default",
             "license": {
                 "spdx-identifier": "CC0-1.0"
             }
+        },
+        {
+            "name": "Piła",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.zbiorkom.live/api6-open/pila/gtfsRealtime/default/tripUpdates,serviceAlerts",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "use-feed-proxy": true
         },
         {
             "name": "Powiat-Olecki",
@@ -1093,10 +1212,21 @@
             "type": "http",
             "spec": "gtfs",
             "url": "https://files.girlc.at/gtfs/tribus.zip",
+            "url-override": "https://api.zbiorkom.live/api6-open/olsztyn/gtfs/TRIBUS",
             "license": {
                 "spdx-identifier": "CC0-1.0"
             },
             "fix":true
+        },
+        {
+            "name": "Tribus",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.zbiorkom.live/api6-open/olsztyn/gtfsRealtime/TRIBUS/tripUpdates,serviceAlerts",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "use-feed-proxy": true
         },
         {
             "name": "PKS-Opoczno",
@@ -1165,11 +1295,21 @@
             "name": "Polbus",
             "type": "http",
             "spec": "gtfs",
-            "fix": true,
             "url": "https://files.girlc.at/gtfs/polbus.zip",
+            "url-override": "https://api.zbiorkom.live/api6-open/wroclaw/gtfs/POLBUS",
             "license": {
                 "spdx-identifier": "CC0-1.0"
             }
+        },
+        {
+            "name": "Polbus",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.zbiorkom.live/api6-open/wroclaw/gtfsRealtime/POLBUS/tripUpdates,serviceAlerts",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "use-feed-proxy": true
         },
         {
             "name": "Tczew",
@@ -1217,18 +1357,40 @@
             "type": "http",
             "spec": "gtfs",
             "url": "https://files.girlc.at/gtfs/konin.zip",
+            "url-override": "https://api.zbiorkom.live/api6-open/konin/gtfs/default",
             "license": {
                 "spdx-identifier": "CC0-1.0"
             }
+        },
+        {
+            "name": "Konin",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.zbiorkom.live/api6-open/konin/gtfsRealtime/default/tripUpdates,serviceAlerts",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "use-feed-proxy": true
         },
         {
             "name": "Tomaszów-Mazowiecki",
             "type": "http",
             "spec": "gtfs",
             "url": "https://files.girlc.at/gtfs/tomaszow_mazowiecki.zip",
+            "url-override": "https://api.zbiorkom.live/api6-open/tomaszowMazowiecki/gtfs/default",
             "license": {
                 "spdx-identifier": "CC0-1.0"
             }
+        },
+        {
+            "name": "Tomaszów-Mazowiecki",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.zbiorkom.live/api6-open/tomaszowMazowiecki/gtfsRealtime/default/tripUpdates,serviceAlerts",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "use-feed-proxy": true
         },
         {
             "name": "Radzymin",
@@ -1259,6 +1421,16 @@
             "license": {
                 "spdx-identifier": "CC0-1.0"
             }
+        },
+        {
+            "name": "Łomianki",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.zbiorkom.live/api6-open/warsaw/gtfsRealtime/LOMIANKI/tripUpdates,serviceAlerts",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "use-feed-proxy": true
         },
         {
             "name": "Leszno",
@@ -1298,10 +1470,21 @@
             "type": "http",
             "spec": "gtfs",
             "url": "https://files.girlc.at/gtfs/zywiec.zip",
+            "url-override":"https://api.zbiorkom.live/api6-open/zywiec/gtfs/default",
             "license": {
                 "spdx-identifier": "CC0-1.0"
             },
             "fix": true
+        },
+        {
+            "name": "Żywiec",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.zbiorkom.live/api6-open/zywiec/gtfsRealtime/default/tripUpdates,serviceAlerts",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "use-feed-proxy": true
         },
         {
             "name": "Zielona-Góra",
@@ -1382,18 +1565,40 @@
             "type": "http",
             "spec": "gtfs",
             "url": "https://files.girlc.at/gtfs/goleniow.zip",
+            "url-override": "https://api.zbiorkom.live/api6-open/szczecin/gtfs/GOLENIOW",
             "license": {
                 "spdx-identifier": "CC0-1.0"
             }
+        },
+        {
+            "name": "Goleniów",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.zbiorkom.live/api6-open/szczecin/gtfsRealtime/GOLENIOW/tripUpdates,serviceAlerts",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "use-feed-proxy": true
         },
         {
             "name": "Aleksandrów-Łódzki",
             "type": "http",
             "spec": "gtfs",
             "url": "https://files.girlc.at/gtfs/aleksandrow_lodzki.zip",
+            "url-override": "https://api.zbiorkom.live/api6-open/lodz/gtfs/ALEKSANDROW",
             "license": {
                 "spdx-identifier": "CC0-1.0"
             }
+        },
+        {
+            "name": "Aleksandrów-Łódzki",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.zbiorkom.live/api6-open/lodz/gtfsRealtime/ALEKSANDROW/tripUpdates,serviceAlerts",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "use-feed-proxy": true
         },
         {
             "name": "Częstochowa",
@@ -1422,9 +1627,7 @@
             "url": "https://files.girlc.at/gtfs/szczytno.zip",
             "license": {
                 "spdx-identifier": "CC0-1.0"
-            },
-            "skip": true,
-            "skip-reason": "Feed expired"
+            }
         },
         {
             "name": "Sulejówek",
@@ -1513,10 +1716,20 @@
             "type": "http",
             "spec": "gtfs",
             "url": "https://files.girlc.at/gtfs/halinow.zip",
-            "fix": true,
+            "url-override": "https://api.zbiorkom.live/api6-open/warsaw/gtfs/HALINOW",
             "license": {
                 "spdx-identifier": "CC0-1.0"
             }
+        },
+        {
+            "name": "Halinów",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.zbiorkom.live/api6-open/warsaw/gtfsRealtime/HALINOW/tripUpdates,serviceAlerts",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "use-feed-proxy": true
         },
         {
             "name": "Powiat-Wodzisławski",
@@ -1532,9 +1745,20 @@
             "type": "http",
             "spec": "gtfs",
             "url": "https://files.girlc.at/gtfs/wieliszew.zip",
+            "url-override": "https://api.zbiorkom.live/api6-open/warsaw/gtfs/WIELISZEW",
             "license": {
                 "spdx-identifier": "CC0-1.0"
             }
+        },
+        {
+            "name": "Wieliszew",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.zbiorkom.live/api6-open/warsaw/gtfsRealtime/WIELISZEW/tripUpdates,serviceAlerts",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "use-feed-proxy": true
         },
         {
             "name": "Zamość",
@@ -1630,6 +1854,7 @@
             "type": "http",
             "spec": "gtfs",
             "url": "https://files.girlc.at/gtfs/bardo.zip",
+            "fix": true,
             "license": {
                 "spdx-identifier": "CC0-1.0"
             }
@@ -1678,6 +1903,547 @@
             "name": "Łódź-Suburban",
             "type": "mobility-database",
             "mdb-id": "mdb-3477"
+        },
+        {
+            "name": "Kołobrzeg",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://api.zbiorkom.live/api6-open/kolobrzeg/gtfs/default",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "fix": true
+        },
+        {
+            "name": "Kołobrzeg",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.zbiorkom.live/api6-open/kolobrzeg/gtfsRealtime/default/tripUpdates,serviceAlerts",
+            "use-feed-proxy": true,
+            "license": {
+                "spdx-identifier": "MIT"
+            }
+        },
+        {
+            "name": "Starachowice",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://api.zbiorkom.live/api6-open/starachowice/gtfs/default",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "fix": true
+        },
+        {
+            "name": "Starachowice",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.zbiorkom.live/api6-open/starachowice/gtfsRealtime/default/tripUpdates,serviceAlerts",
+            "use-feed-proxy": true,
+            "license": {
+                "spdx-identifier": "MIT"
+            }
+        },
+        {
+            "name": "Piotrków-Trybunalski",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://api.zbiorkom.live/api6-open/piotrkowTrybunalski/gtfs/default",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "fix": true
+        },
+        {
+            "name": "Piotrków-Trybunalski",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.zbiorkom.live/api6-open/piotrkowTrybunalski/gtfsRealtime/default/tripUpdates,serviceAlerts",
+            "use-feed-proxy": true,
+            "license": {
+                "spdx-identifier": "MIT"
+            }
+        },
+        {
+            "name": "Manikar-Stronie-Slaskie",
+            "type": "http",
+            "url": "https://hoermalmeister.github.io/gtfs-rehost/manikar/manikar.zip"
+        },
+        {
+            "name": "Bytów",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://files.girlc.at/gtfs/bytow.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "Miastkowo",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://files.girlc.at/gtfs/miastkowo.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "Mława",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://files.girlc.at/gtfs/mlawa.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "Powiat-Nowodworski",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://files.girlc.at/gtfs/powiat_nowodworski.zip",
+            "url-override": "https://api.zbiorkom.live/api6-open/warsaw/gtfs/NOWODWORSKI",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "Powiat-Nowodworski",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.zbiorkom.live/api6-open/warsaw/gtfsRealtime/NOWODWORSKI/tripUpdates,serviceAlerts",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "use-feed-proxy": true
+        },
+        {
+            "name": "Skawina",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://files.girlc.at/gtfs/skawina.zip",
+            "url-override": "https://api.zbiorkom.live/api6-open/krakow/gtfs/SKAWINA",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "Skawina",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.zbiorkom.live/api6-open/krakow/gtfsRealtime/SKAWINA/tripUpdates,serviceAlerts",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "use-feed-proxy": true
+        },
+        {
+            "name": "Stryków",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://files.girlc.at/gtfs/strykow.zip",
+            "url-override": "https://api.zbiorkom.live/api6-open/lodz/gtfs/STRYKOW",
+            "fix": true,
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "Stryków",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.zbiorkom.live/api6-open/lodz/gtfsRealtime/STRYKOW/tripUpdates,serviceAlerts",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "use-feed-proxy": true
+        },
+        {
+            "name": "Województwo-świętokrzyskie",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://files.girlc.at/gtfs/swietokrzyskie.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "Wolsztyn",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://files.girlc.at/gtfs/wolsztyn.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
+        },
+        {
+            "name": "MKS-Jasło",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://data.odt.org.pl/gtfs/jaslo-gtfs.zip",
+            "license": {
+                "spdx-identifier": "MIT"
+            }
+        },
+        {
+            "name": "Pabianice",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://api.zbiorkom.live/api6-open/lodz/gtfs/PABIANICE",
+            "license": {
+                "spdx-identifier": "MIT"
+            }
+        },
+        {
+            "name": "Pabianice",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.zbiorkom.live/api6-open/lodz/gtfsRealtime/PABIANICE/tripUpdates,serviceAlerts",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "use-feed-proxy": true
+        },
+        {
+            "name": "Siedlce",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://ftp.mpk.siedlce.pl/GTFS-ST/GTFS.zip",
+            "license": {
+                "spdx-identifier": "MIT"
+            }
+        },
+        {
+            "name": "Siedlce",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://ftp.mpk.siedlce.pl/GTFS-RT/alerts.bin",
+            "use-feed-proxy": true,
+            "license": {
+                "spdx-identifier": "MIT"
+            }
+        },
+        {
+            "name": "Siedlce",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://ftp.mpk.siedlce.pl/GTFS-RT/trip_updates.bin",
+            "use-feed-proxy": true,
+            "license": {
+                "spdx-identifier": "MIT"
+            }
+        },
+        {
+            "name": "Siedlce",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://ftp.mpk.siedlce.pl/GTFS-RT/vehicle_positions.bin",
+            "use-feed-proxy": true,
+            "license": {
+                "spdx-identifier": "MIT"
+            }
+        },
+        {
+            "name": "Chrzanów",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://data.odt.org.pl/gtfs/zkkm-gtfs.zip",
+            "license": {
+                "spdx-identifier": "MIT"
+            }
+        },
+        {
+            "name": "Olkusz",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://data.odt.org.pl/gtfs/olkusz-gtfs.zip",
+            "license": {
+                "spdx-identifier": "MIT"
+            }
+        },
+        {
+            "name": "Olkusz",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.odt.org.pl/feed/rt/5/trip_update/",
+            "license": {
+                "spdx-identifier": "MIT"
+            }
+        },
+        {
+            "name": "Niepołomice",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://api.zbiorkom.live/api6-open/krakow/gtfs/NIEPOLOMICE",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "fix": true
+        },
+        {
+            "name": "Niepołomice",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.zbiorkom.live/api6-open/krakow/gtfsRealtime/NIEPOLOMICE/tripUpdates,serviceAlerts",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "use-feed-proxy": true
+        },
+        {
+            "name": "Chełm",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://api.zbiorkom.live/api6-open/chelm/gtfs/default",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "fix": true
+        },
+        {
+            "name": "Chełm",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.zbiorkom.live/api6-open/chelm/gtfsRealtime/default/tripUpdates,serviceAlerts",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "use-feed-proxy": true
+        },
+        {
+            "name": "Cieszyn",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://api.zbiorkom.live/api6-open/cieszyn/gtfs/default",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "fix": true
+        },
+        {
+            "name": "Cieszyn",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.zbiorkom.live/api6-open/cieszyn/gtfsRealtime/default/tripUpdates,serviceAlerts",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "use-feed-proxy": true
+        },
+        {
+            "name": "Kraśnik",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://api.zbiorkom.live/api6-open/krasnik/gtfs/default",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "fix": true
+        },
+        {
+            "name": "Kraśnik",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.zbiorkom.live/api6-open/krasnik/gtfsRealtime/default/tripUpdates,serviceAlerts",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "use-feed-proxy": true
+        },
+        {
+            "name": "Mielec",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://api.zbiorkom.live/api6-open/mielec/gtfs/default",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "fix": true
+        },
+        {
+            "name": "Mielec",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.zbiorkom.live/api6-open/mielec/gtfsRealtime/default/tripUpdates,serviceAlerts",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "use-feed-proxy": true
+        },
+        {
+            "name": "Ostrołęka",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://api.zbiorkom.live/api6-open/ostroleka/gtfs/default",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "fix": true
+        },
+        {
+            "name": "Ostrołęka",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.zbiorkom.live/api6-open/ostroleka/gtfsRealtime/default/tripUpdates,serviceAlerts",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "use-feed-proxy": true
+        },
+        {
+            "name": "Płock",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://api.zbiorkom.live/api6-open/plock/gtfs/default",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "fix": true
+        },
+        {
+            "name": "Płock",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.zbiorkom.live/api6-open/plock/gtfsRealtime/default/tripUpdates,serviceAlerts",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "use-feed-proxy": true
+        },
+        {
+            "name": "Tarnów",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://api.zbiorkom.live/api6-open/tarnow/gtfs/default",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "fix": true
+        },
+        {
+            "name": "Tarnów",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.zbiorkom.live/api6-open/tarnow/gtfsRealtime/default/tripUpdates,serviceAlerts",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "use-feed-proxy": true
+        },
+        {
+            "name": "Bolesławiec",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://api.zbiorkom.live/api6-open/boleslawiec/gtfs/default",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "fix": true
+        },
+        {
+            "name": "Bolesławiec",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.zbiorkom.live/api6-open/boleslawiec/gtfsRealtime/default/tripUpdates,serviceAlerts",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "use-feed-proxy": true
+        },
+        {
+            "name": "Gmina-Tczew",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://api.zbiorkom.live/api6-open/tczew/gtfs/GMINATCZEW",
+            "license": {
+                "spdx-identifier": "MIT"
+            }
+        },
+        {
+            "name": "Gmina-Tczew",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.zbiorkom.live/api6-open/tczew/gtfsRealtime/GMINATCZEW/tripUpdates,serviceAlerts",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "use-feed-proxy": true
+        },
+        {
+            "name": "Gryfino",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://api.zbiorkom.live/api6-open/szczecin/gtfs/GRYFINO",
+            "license": {
+                "spdx-identifier": "MIT"
+            }
+        },
+        {
+            "name": "Gryfino",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.zbiorkom.live/api6-open/szczecin/gtfsRealtime/GRYFINO/tripUpdates,serviceAlerts",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "use-feed-proxy": true
+        },
+        {
+            "name": "Ostrowiec-Świętokrzyski",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://api.zbiorkom.live/api6-open/ostrowiecSwietokrzyski/gtfs/default",
+            "license": {
+                "spdx-identifier": "MIT"
+            }
+        },
+        {
+            "name": "Ostrowiec-Świętokrzyski",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.zbiorkom.live/api6-open/ostrowiecSwietokrzyski/gtfsRealtime/default/tripUpdates,serviceAlerts",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "use-feed-proxy": true
+        },
+        {
+            "name": "Stalowa-Wola",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://api.zbiorkom.live/api6-open/stalowaWola/gtfs/default",
+            "license": {
+                "spdx-identifier": "MIT"
+            }
+        },
+        {
+            "name": "Stalowa-Wola",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.zbiorkom.live/api6-open/stalowaWola/gtfsRealtime/default/tripUpdates,serviceAlerts",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "use-feed-proxy": true
+        },
+        {
+            "name": "Zgierz",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://api.zbiorkom.live/api6-open/lodz/gtfs/ZGIERZ",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "fix": true
+        },
+        {
+            "name": "Zgierz",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.zbiorkom.live/api6-open/lodz/gtfsRealtime/ZGIERZ/tripUpdates,serviceAlerts",
+            "license": {
+                "spdx-identifier": "MIT"
+            },
+            "use-feed-proxy": true
         }
     ]
 }

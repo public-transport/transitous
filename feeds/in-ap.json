@@ -1,0 +1,16 @@
+{
+    "maintainers": [
+        {
+            "name": "P. Radha Krishna",
+            "github": "Neo2308"
+        }
+    ],
+    "sources": [
+        {
+            "name": "andhra-pradesh-state-road-transport-corporation",
+            "type": "http",
+            "url": "https://github.com/Neo2308/apsrtc-gtfs/raw/refs/heads/main/gtfs/gtfs.zip",
+            "fix": true
+        }
+    ]
+}

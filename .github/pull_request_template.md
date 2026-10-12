@@ -1,0 +1,1 @@
+- [ ] [I have considered the AI policy](https://github.com/public-transport/transitous/blob/main/AI_POLICY.md)

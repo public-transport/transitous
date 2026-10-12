@@ -10,6 +10,15 @@
             "name": "BMTC",
             "type": "http",
             "url": "https://github.com/Vonter/bmtc-gtfs/raw/refs/heads/main/gtfs/bmtc.zip"
+        },
+        {
+            "name": "KSRTC",
+            "type": "http",
+            "url": "https://github.com/croyla/ksrtc-gtfs/raw/refs/heads/main/gtfs_compat.zip",
+            "license": {
+                "spdx-identifier": "MIT-0"
+            },
+            "extend-calendar": true
         }
     ]
 }

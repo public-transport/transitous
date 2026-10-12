@@ -29,6 +29,11 @@
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-wmata~rail~rt",
             "api-key": "805c9dcd1a43482597e501957f5b1d31"
+        },
+        {
+            "name": "capital-bikeshare",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-capital~bike~share~washington~dc~gbfs"
         }
     ]
 }

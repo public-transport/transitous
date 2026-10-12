@@ -35,13 +35,15 @@
         {
             "name": "bkk",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u2m-bkk"
+            "transitland-atlas-id": "f-u2m-bkk",
+            "fix": true
         },
         {
             "name": "bkk",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://jbb.ghsq.de/gtfs/bkk/TripUpdates"
+            "use-feed-proxy": true,
+            "url": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBLcG5FZld3R3hMd2VnZmJQaG9QTEVKR0RxK3lHbUhqTS9RN3d5Sm8zRUdRCnE1VkNHWUlRaGV3MEdnWVByczVpWXZjTUtnRmgvTWdEVnluMlN2czZlVDQKLS0tIDdFVWpiRVFsVGwxazJUdFV2SVNLK0NDdDNIMVY4aWlZYUVWZlZnV055NmMKiSnO+3iQyYYLN3K4eUIhhPmeoDlTQZ0l3cPBrWd373GfAlO2M+ipgg9PEQ+5jFZqz1XI/sn26Eizi037YNKHoOY6GWjMR4ua9MJIWDK1gXQpucgDPg545G5Zu4KBRaDHFW/cVM/0vUMRM3to7BaMNxwl7nzeiDsxp3jWDWK6iGHLbGWIe8M="
         },
         {
             "name": "bkk-funicular",
@@ -80,6 +82,22 @@
             "name": "urom",
             "type": "http",
             "url": "https://gy-mate.hu/gtfs/gtfs_hu_urom.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
+        },
+        {
+            "name": "dunakeszi-ferry",
+            "type": "http",
+            "url": "https://gy-mate.hu/gtfs/gtfs_hu_dunakeszi-ferry.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
+        },
+        {
+            "name": "pasztor-ferry",
+            "type": "http",
+            "url": "https://gy-mate.hu/gtfs/gtfs_hu_pasztor-ferry.zip",
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             }
@@ -128,6 +146,14 @@
             "fix": true
         },
         {
+            "name": "BAHART-ferry",
+            "type": "http",
+            "url": "https://gy-mate.hu/gtfs/gtfs_hu_bahart-ferry.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
+        },
+        {
             "name": "kaposvár",
             "type": "http",
             "url": "https://www.kaposbusz.hu/letoltheto-menetrend",
@@ -148,6 +174,17 @@
             "name": "kiskunhalas",
             "type": "http",
             "url": "https://gy-mate.hu/gtfs/gtfs_hu_kiskunhalas.zip"
+        },
+        {
+            "name": "oroshaza",
+            "type": "http",
+            "url": "https://gtfs.gpspositions.net/storage/exports/OROSH_V_ONK/gtfs_latest.zip"
+        },
+        {
+            "name": "oroshaza",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://gtfs.gpspositions.net/storage/realtime/OROSH_V_ONK/vehicle_positions.pb"
         },
         {
             "name": "Hódmezővásárhely",

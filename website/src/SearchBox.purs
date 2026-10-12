@@ -78,12 +78,10 @@ data Message
   | StartGuessRequest String
   | SelectionUp
   | SelectionDown
-  | SuggestionsHaveFocus Boolean
 
 type State =
   { entries :: Array Location
   , showSuggestions :: Boolean
-  , suggestionsHaveFocus :: Boolean
   , station :: Maybe Location
   , query :: String
   , placeholderText :: String
@@ -150,7 +148,6 @@ init :: String -> Maybe Location -> Transition Message State
 init placeholderText initialEntry = pure
   { entries: []
   , showSuggestions: false
-  , suggestionsHaveFocus: false
   , station: initialEntry
   , query: ""
   , placeholderText: placeholderText
@@ -167,14 +164,13 @@ update state (NewInput time) = pure state { lastRequestTime = Just time }
 update state (StartGuessRequest query) = requestGuessesDebounced state query
 update state SelectionUp = pure state { currentlySelectedIndex = (state.currentlySelectedIndex - 1) `mod` (length state.entries) }
 update state SelectionDown = pure state { currentlySelectedIndex = (state.currentlySelectedIndex + 1) `mod` (length state.entries) }
-update state (SuggestionsHaveFocus focus) = pure state { suggestionsHaveFocus = focus }
 
 view :: State -> Dispatch Message -> ReactElement
 view state dispatch = H.div "mb-3"
   [ H.input_ "form-control mb-2"
       { onChange: H.handle (E.inputText >>> SearchChanged >>> dispatch)
       , onFocus: H.handle \_ -> dispatch (ShowSuggestions true)
-      , onBlur: H.handle \_ -> when (not state.suggestionsHaveFocus) (dispatch (ShowSuggestions false))
+      , onBlur: H.handle \_ -> dispatch (ShowSuggestions false)
       , placeholder: state.placeholderText
       , onKeyUp: H.handle \(E.KeyboardEvent event) -> case event.key of
           "ArrowUp" -> dispatch SelectionUp
@@ -202,10 +198,8 @@ view state dispatch = H.div "mb-3"
                 true -> "dropdown-item cursor-shape-pointer dropdown-item-active"
                 false -> "dropdown-item cursor-shape-pointer"
             )
-            { onClick: H.handle \_ -> dispatch (Select location)
+            { onMouseDown: H.handle \_ -> dispatch (Select location)
             , autoFocus: true
-            , onMouseEnter: H.handle \_ -> dispatch (SuggestionsHaveFocus true)
-            , onMouseLeave: H.handle \_ -> dispatch (SuggestionsHaveFocus false)
             }
             [ H.i
                 ( case location.type of

@@ -14,6 +14,13 @@
             },
             "mdb-id": "mdb-2377",
             "enable-crowd-sourced-realtime": true
+        },
+        {
+            "name": "podgorica",
+            "type": "http",
+            "url": "https://podgorica.me/otvoreni-podaci/",
+            "function": "podgorica_me",
+            "extend-calendar": true
         }
     ]
 }

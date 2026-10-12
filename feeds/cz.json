@@ -21,19 +21,17 @@
         {
             "name": "CZPTT",
             "type": "http",
-            "url": "https://data.jr.ggu.cz/results/latest/CZPTT_GTFS.zip",
+            "url": "https://motis.obehy.cz/get-feeds/cz-czptt-gtfs.zip",
             "license": {
                 "spdx-identifier": "CC0-1.0"
             },
-            "fix": true
+			"script": "cz-CZPTT.lua"
         },
         {
             "name": "CZPTT",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://owncloud.cesnet.cz/index.php/s/DQdSPwh0bJjtEWq/download",
-            "skip": true,
-            "skip-reason": "Feed does not return proper delays"
+            "url": "https://motis.obehy.cz/get-feeds/cz-czptt-gtfs-rt.pb"
         },
         {
             "name": "PID",
@@ -98,10 +96,16 @@
         {
             "name": "JDF-merged",
             "type": "http",
-            "url": "https://github.com/0xaa55h/gtfs-processor/raw/refs/heads/gtfs/files/latest.zip",
+            "url": "https://motis.obehy.cz/get-feeds/cz-jdf-filtered-gtfs.zip",
             "license": {
                 "spdx-identifier": "CC0-1.0"
             }
+        },
+        {
+            "name": "JDF-merged",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://motis.obehy.cz/get-feeds/cz-jdf-gtfs-rt.pb"
         },
         {
             "name": "IDZK",

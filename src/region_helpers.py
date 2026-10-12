@@ -52,24 +52,6 @@ def delhi_gov_in_csrf(source: HttpSource) -> HttpSource:
     return source
 
 
-def data_slupsk_latest_resource(source: HttpSource) -> HttpSource:
-    from bs4 import BeautifulSoup
-
-    headers = {
-        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
-    }  # user-agent is necessary to avoid 403 Forbidden
-
-    html = requests.get(source.url, headers=headers).text
-
-    soup = BeautifulSoup(html, "lxml")
-    gtfs_link = soup.find("a", href=lambda x: x and x.endswith(".zip"))["href"]
-
-    base_url = source.url.rsplit("/", 1)[0]
-    source.url = f"{base_url}/{gtfs_link}"
-
-    return source
-
-
 def data_kaposvar_latest_resource(source: HttpSource) -> HttpSource:
     import re
     from bs4 import BeautifulSoup
@@ -278,4 +260,46 @@ def data_gov_gr_latest_resource(source: HttpSource) -> HttpSource:
         key=lambda r: datetime.fromisoformat(r["last_modified"])
     )["url"]
 
+    return source
+
+
+def podgorica_me(source: HttpSource) -> HttpSource:
+    from bs4 import BeautifulSoup
+    source.url = BeautifulSoup(requests.get("https://podgorica.me/otvoreni-podaci/").text, "html.parser").select_one('a[href$=".zip"]')["href"]
+    return source
+
+
+def data_regione_liguria_latest_resource(source: HttpSource) -> HttpSource:
+    resources = requests.get(source.url).json()["result"]["resources"]
+
+    gtfs_resources = [
+        r for r in resources
+        if r.get("created")
+        and r.get("format") == "CSV"
+        and "PF" in r["name"]
+    ]
+
+    source.url = max(
+        gtfs_resources,
+        key=lambda r: datetime.fromisoformat(r["created"])
+    )["url"]
+
+    return source
+
+
+def zsk_latest_resource(source: HttpSource) -> HttpSource:
+    from bs4 import BeautifulSoup
+
+    resp = requests.post(
+        "https://data.slovensko.sk/datasets/search",
+        json={
+            "language": "sk",
+            "page": 1,
+            "pageSize": 1,
+            "filters": {"id": ["ebeeedf1-aca2-451a-bdc0-35d536714888"]},
+            "requiredFacets": [],
+        },
+    ).json()
+
+    source.url = resp["items"][0]["distributions"][0]["downloadUrl"]
     return source

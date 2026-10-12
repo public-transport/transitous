@@ -10,11 +10,19 @@ SPDX-License-Identifier: AGPL-3.0-or-later
         {{ continue }}
     {{ end }}
     <li>
-        <a href="{{ .link }}">{{ .name }}</a> — {{ .startDate | time.Format ":date_medium" }}
+        {{ if .link }}<a href="{{ .link }}">{{ end }}
+        {{ .name }}
+        {{ if .link }}</a>{{ end }}
+        — {{ .startDate | time.Format ":date_medium" }}
         {{ if ne .startDate .endDate }}
             to {{ .endDate | time.Format ":date_medium" }}
         {{ end }}
-        in {{ .location }}
+        in
+        {{ if and .coordinates .address }}
+             <a href="https://api.transitous.org/?toPlace={{ .coordinates }}&toName={{ .address }}&time={{ .startDate }}T08%3A00%3A00.000Z">{{ .location }}</a>
+        {{ else }}
+            {{ .location }}
+        {{end }}
     </li>
 {{ end }}
 </ul>

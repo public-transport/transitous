@@ -3,6 +3,10 @@
         {
             "name": "Altonss",
             "github": "altonss"
+        },
+        {
+            "name": "Óscar Hernández",
+            "github": "oxcar"
         }
     ],
     "sources": [
@@ -11,6 +15,30 @@
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-9g3-semovi",
             "fix": true
+        },
+        {
+            "name": "mex-cdmx-ecobici",
+            "type": "url",
+            "url": "https://gbfs.mex.lyftbikes.com/gbfs/gbfs.json",
+            "spec": "gbfs"
+        },
+        {
+            "name": "mex-mich-zamora",
+            "type": "http",
+            "url": "https://hdtp.codeandomexico.org/gtfs/mex-mich-zamora.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-SA-4.0",
+                "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+            }
+        },
+        {
+            "name": "mex-oax-salinacruz",
+            "type": "http",
+            "url": "https://hdtp.codeandomexico.org/gtfs/mex-oax-salinacruz.zip",
+            "license": {
+                "spdx-identifier": "ODC-By-1.0",
+                "url": "https://opendatacommons.org/licenses/by/1-0/"
+            }
         }
     ]
 }

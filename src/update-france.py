@@ -40,10 +40,10 @@ if __name__ == "__main__":
         for resource in dataset["resources"]:
             currently_active_ids.add(resource["id"])
 
-        gtfs = list(
+        schedules = list(
             filter(
                 lambda r: "format" in r
-                and (r["format"] == "GTFS" or r["format"] == "gtfs-rt"),
+                and (r["format"] == "GTFS" or r["format"] == "gtfs-rt" or r["format"] == "SIRI Lite"),
                 dataset["resources"],
             )
         )
@@ -95,15 +95,16 @@ if __name__ == "__main__":
                     source["license"]["spdx-identifier"] = get_spdx_identifier(dataset["licence"])
 
                 if resource["id"] in id_map:
-                    id_map[resource["id"]].update(source)
+                    if id_map[resource["id"]]["managed-by-script"]:
+                        id_map[resource["id"]].update(source)
                 else:
                     new = {"name": source_name}
                     new.update(source)
                     region["sources"].append(new)
 
-        if gtfs and dataset["slug"]:
+        if schedules and dataset["slug"]:
             resources = list(
-                filter(lambda r: "format" in r and r["format"] == "GTFS", gtfs)
+                filter(lambda r: "format" in r and r["format"] == "GTFS", schedules)
             )
             # Exclude resources with "community_resource_publishers" field
             resources = [
@@ -145,16 +146,25 @@ if __name__ == "__main__":
                 }
 
                 expired = "metadata" in resource and "end_date" and "end_date" in resource["metadata"] and resource["metadata"]["end_date"] and datetime.strptime(resource["metadata"]["end_date"], '%Y-%m-%d') < (datetime.now()-timedelta(days=0))
-                if expired:
-                    source["skip"] = True
-                    source["skip-reason"] = "Feed is expired according to metadata"
                 if "page_url" in dataset:
                     source["license"]["url"] = dataset["page_url"]
                 if "licence" in dataset:
                     source["license"]["spdx-identifier"] = get_spdx_identifier(dataset["licence"])
 
                 if resource["id"] in id_map:
-                    id_map[resource["id"]].update(source)
+                    if id_map[resource["id"]]["managed-by-script"]:
+                        id_map[resource["id"]].update(source)
+
+                        # mark all related feeds as skipped
+                        if expired:
+                            for feed in region["sources"]:
+                                if feed["name"] == id_map[resource["id"]]["name"]:
+                                    feed["skip"] = True
+                                    feed["skip-reason"] = "Feed is expired according to metadata"
+                        elif "skip-reason" in feed and feed["skip-reason"] == "Feed is expired according to metadata":
+                            feed.pop("skip")
+                            feed.pop("skip-reason")
+
                 else:
                     new = {
                         "name": source_name
@@ -165,10 +175,10 @@ if __name__ == "__main__":
             def cond(r) -> bool:
                 return (
                     "format" in r
-                    and r["format"] == "gtfs-rt"
+                    and ((r["format"] == "gtfs-rt"
                     and ("features" not in r
                          or not r["features"]
-                         or ("trip_updates" in r["features"] or "service_alerts" in r["features"]))
+                         or ("trip_updates" in r["features"] or "service_alerts" in r["features"]))) or r["format"] == "SIRI Lite")
                 )
 
             def find_static_feed(sources, dataset_id) -> int | None:
@@ -181,7 +191,7 @@ if __name__ == "__main__":
                     return candidates[0]
 
 
-            resources = list(filter(cond, gtfs))
+            resources = list(filter(cond, schedules))
             resources.sort(key=lambda r: str(r.get("id", "")))
             if not resources:
                 continue
@@ -195,11 +205,17 @@ if __name__ == "__main__":
                     "url": resource["url"],
                     "x-data-gov-fr-res-title": resource["title"],
                     "license": {},
-                    "spec": "gtfs-rt",
                     "x-data-gov-fr-res-id": resource["id"],
                     "x-data-gov-fr-dataset-id": dataset["id"],
                     "managed-by-script": True
                 }
+
+                match resource["format"]:
+                    case "gtfs-rt":
+                        source["spec"] = "gtfs-rt"
+                    case "SIRI Lite":
+                        source["spec"] = "siri"
+
                 if "page_url" in dataset:
                     source["license"]["url"] = dataset["page_url"]
 
@@ -207,7 +223,8 @@ if __name__ == "__main__":
                     source["license"]["spdx-identifier"] = get_spdx_identifier(dataset["licence"])
 
                 if resource["id"] in id_map:
-                    id_map[resource["id"]].update(source)
+                    if id_map[resource["id"]]["managed-by-script"]:
+                        id_map[resource["id"]].update(source)
                 else:
                     new = {
                         "name": feed_name

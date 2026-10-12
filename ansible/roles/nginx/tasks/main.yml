@@ -18,14 +18,14 @@
     domain: www-data
     limit_type: hard
     limit_item: nproc
-    value: '5000'
+    value: '10000'
 
 - name: Increase nofile for nginx workers
   pam_limits:
     domain: www-data
     limit_type: hard
     limit_item: nofile
-    value: '5000'
+    value: '10000'
 
 - name: Install nginx and node-exporter
   apt:

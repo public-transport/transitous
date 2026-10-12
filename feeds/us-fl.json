@@ -7,21 +7,25 @@
         {
             "name": "Tol Wassman",
             "github": "twassman"
+        },
+        {
+            "name": "Wyatt Agathe",
+            "github": "jumpingpants"
         }
     ],
     "sources": [
         {
             "name": "miami-dade",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-dhw-miamidadetransit",
-            "fix": true
+            "type": "mobility-database",
+            "fix": true,
+            "mdb-id": "mdb-331"
         },
         {
             "name": "miami-dade",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-miamidadetransit~rt",
+            "type": "mobility-database",
             "skip": true,
-            "skip-reason": "api-key is missing"
+            "skip-reason": "api-key is missing",
+            "mdb-id": "mdb-1738"
         },
         {
             "name": "miami-dade",
@@ -32,8 +36,8 @@
         },
         {
             "name": "miami-beach",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-miamibeach"
+            "type": "mobility-database",
+            "mdb-id": "mdb-2322"
         },
         {
             "name": "miami-beach",
@@ -51,36 +55,38 @@
         },
         {
             "name": "tri-rail",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-dhx-tri~rail"
+            "type": "mobility-database",
+            "mdb-id": "mdb-333"
         },
         {
             "name": "tri-rail",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-dhx-tri~rail~rt"
+            "type": "mobility-database",
+            "mdb-id": "tld-5584-tu"
         },
         {
             "name": "sunrail",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-djn-floridadepartmentoftransportation"
+            "type": "mobility-database",
+            "mdb-id": "mdb-626"
         },
         {
             "name": "lynx",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-djn-centralfloridaregionaltransitauthority",
-            "skip": true,
-            "skip-reason": "Not accessible from our import server or the transitland proxy"
+            "type": "mobility-database",
+            "mdb-id": "mdb-347"
         },
         {
             "name": "lynx",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-djn-centralfloridaregionaltransitauthority~rt",
-            "skip": true
+            "type": "mobility-database",
+            "mdb-id": "mdb-1767"
+        },
+        {
+            "name": "lynx",
+            "type": "mobility-database",
+            "mdb-id": "mdb-1768"
         },
         {
             "name": "Gainesville-RTS",
             "type": "http",
-            "url": "https://go-rts.com/wp-content/uploads/2026/01/RTSGTFS_Spring2026_V6.zip"
+            "url": "https://go-rts.com/wp-content/uploads/2026/08/RTSGTFS_Fall2026-1.zip"
         }
     ]
 }

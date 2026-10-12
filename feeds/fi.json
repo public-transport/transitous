@@ -23,9 +23,10 @@
                 "FlixBus",
                 "FlixBus-eu",
                 "FlixTrain-eu",
-                "VR",
+                "Vr",
                 "Pohjois-Suomen Rautatieharrastajat ry",
-                "Sinisten vaunujen ystävät ry"
+                "Sinisten vaunujen ystävät ry",
+                "Nysse/VR"
             ]
         },
         {
@@ -61,7 +62,8 @@
         {
             "name": "hsl",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-ud9-helsinginseudunliikenne"
+            "transitland-atlas-id": "f-ud9-helsinginseudunliikenne",
+            "script": "fi-hsl.lua"
         },
         {
             "name": "hsl",
@@ -80,6 +82,11 @@
             "spec": "gtfs-rt",
             "type": "url",
             "url": "https://realtime.hsl.fi/realtime/vehicle-positions/v2/hsl"
+        },
+        {
+            "name": "nysse",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-udb-tampereenjoukkoliikenne"
         }
     ]
 }

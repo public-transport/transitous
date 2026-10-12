@@ -12,12 +12,12 @@
     "sources": [
         {
             "name": "railway",
-            "type": "http",
-            "url": "https://jbb.ghsq.de/gtfs/ro-railway.gtfs.zip",
+            "type": "mobility-database",
             "license": {
                 "url": "https://data.gov.ro/base/images/logoinst/OGL-ROU-1.0.pdf",
                 "attribution-text": "Conține informații publice în baza Licenței pentru Guvernare Deschisă v1.0"
-            }
+            },
+            "mdb-id": "mdb-3236"
         },
         {
             "name": "railway",
@@ -133,12 +133,34 @@
         {
             "name": "Galati-Transurb",
             "type": "http",
-            "url": "https://github.com/Steinhagen/gtfs-galati/releases/download/gtfs-latest/gtfs-transurb.zip",
+            "url": "https://codeberg.org/rapiteanu/public-transport/releases/download/gtfs-transurb/gtfs-transurb.zip",
             "license": {
                 "spdx-identifier": "CC-BY-4.0",
-                "url": "https://github.com/Steinhagen/gtfs-galati/blob/main/LICENSE",
-                "publisher": "Steinhagen",
-                "publisher-url": "https://github.com/Steinhagen/gtfs-galati"
+                "url": "https://codeberg.org/rapiteanu/public-transport/raw/branch/main/LICENSE",
+                "publisher": "rapiteanu",
+                "publisher-url": "https://codeberg.org/rapiteanu/public-transport"
+            }
+        },
+        {
+            "name": "Galati-Navrom-Bac",
+            "type": "http",
+            "url": "https://codeberg.org/rapiteanu/public-transport/releases/download/gtfs-navrom-bac/gtfs-navrom-bac.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0",
+                "url": "https://codeberg.org/rapiteanu/public-transport/raw/branch/main/LICENSE",
+                "publisher": "rapiteanu",
+                "publisher-url": "https://codeberg.org/rapiteanu/public-transport"
+            }
+        },
+        {
+            "name": "Galati-Tegaltrans",
+            "type": "http",
+            "url": "https://codeberg.org/rapiteanu/public-transport/releases/download/gtfs-tegaltrans/gtfs-tegaltrans.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0",
+                "url": "https://codeberg.org/rapiteanu/public-transport/raw/branch/main/LICENSE",
+                "publisher": "rapiteanu",
+                "publisher-url": "https://codeberg.org/rapiteanu/public-transport"
             }
         },
         {
@@ -280,6 +302,11 @@
             "name": "Consiliul-Județean-Buzău-Transport-județean",
             "type": "mobility-database",
             "mdb-id": "mdb-3179"
+        },
+        {
+            "name": "SC-Transport-Public-SA",
+            "type": "http",
+            "url": "https://tpfocsani.ro/images/gtfs/GTFS.zip"
         }
     ]
 }

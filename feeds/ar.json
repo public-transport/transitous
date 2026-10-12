@@ -1,0 +1,19 @@
+{
+    "maintainers": [
+        {
+            "name": "Sander",
+            "github": "Sandertttt"
+        }
+    ],
+    "sources": [
+        {
+            "name": "Trenes-Argentinos-AMBA",
+            "type": "http",
+            "url": "https://cdn.buenosaires.gob.ar/datosabiertos/datasets/transporte-y-obras-publicas/trenes-gtfs/trenes-gtfs.zip",
+            "license": {
+                "url": "https://data.buenosaires.gob.ar/dataset/trenes-gtfs"
+            },
+            "extend-calendar": true
+        }
+    ]
+}

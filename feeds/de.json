@@ -35,6 +35,7 @@
                 "FlixBus-de",
                 "EUROSTAR",
                 "Bremer Straßenbahn AG",
+                "MOIN Mobilitäts und -betriebs GmbH",
                 "Verkehrsgemeinschaft Osnabrück",
                 "Weser-Ems-Bus Betrieb Osnabrück",
                 "SNCB",
@@ -93,8 +94,8 @@
         {
             "name": "DELFI",
             "type": "url",
-            "spec": "gtfs-rt",
-            "url": "http://2a00-12d8-700e-0-9a12-3eb4-e927-3d9a.has-a.name/feed/feed.pb",
+            "spec": "siri",
+            "url": "http://2a00-12d8-700e-0-9a12-3eb4-e927-3d9a.has-a.name/feed/siri/feed.xml",
             "license": {
                 "spdx-identifier": "CC-BY-4.0",
                 "url": "http://[2a00:12d8:700e:0:9a12:3eb4:e927:3d9a]/feed/LICENSE.txt"
@@ -115,6 +116,10 @@
             "type": "url",
             "spec": "gtfs-rt",
             "url": "https://production.gtfsrt.vbb.de/data",
+            "use-feed-proxy": true,
+            "headers": {
+                "user-agent": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBSOS9icUpZVlEya1hGM0V3cHBiOFNXdC9wbHA4UTBGK0UwMnRUb09kTGhnCmt6RjhQNXNBT3RUdERPUEgvcGhGNVZXZmRhaTlCMzZMYXNGRlhHdFE1a0UKLS0tIE5MTmQwejlRNlY4T2NRejRXMEFuMG9WVm9LdGF2SDAyUjZvaUM0aEhxRjgKp6h5l5NXvbdBbpLvCVN8PejH05eVVMpqQZrLKDnZ4S2Tpy17WONLTfBbVa71HKIjw2K8ozhuYfiEMQJ2gVn6"
+            },
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             }
@@ -124,7 +129,11 @@
             "type": "http",
             "url": "https://www.connect-info.net/opendata/gtfs/connect-nds-lowlevel/eyqasqtsse",
             "drop-agency-names": [
-                "DB Fernverkehr (Codesharing)"
+                "DB Fernverkehr (Codesharing)",
+                "DB Regio AG Nord",
+                "eurobahn",
+                "metronom Eisenbahngesellschaft mbH",
+                "NordWestBahn"
             ],
             "script": "de-VBN.lua",
             "http-options": {
@@ -219,9 +228,7 @@
         {
             "name": "Deer",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-deer~germany~gbfs",
-            "skip": true,
-            "skip-reason": "Unavailable since Deer migrated to a new system"
+            "transitland-atlas-id": "f-deer~germany~gbfs"
         },
         {
             "name": "Mikar",
@@ -297,7 +304,7 @@
         {
             "name": "OberSchwabenMobil",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-oberschwabenmobil~carsharing~halle~saale~~gbfs"
+            "transitland-atlas-id": "f-oberschwabenmobil~carsharing~halle~saale~gbfs"
         },
         {
             "name": "FordCarsharingAutohausAlbert",
@@ -660,6 +667,11 @@
             "name": "westbike",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-westbike~heinsberg~gbfs"
+        },
+        {
+            "name": "LimeWuppertal",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-lime~wuppertal~gbfs"
         }
     ]
 }

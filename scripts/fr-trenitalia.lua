@@ -7,5 +7,5 @@ end
 
 function process_trip(trip)
         trip:set_compulsory_reservation(true)
-        trip:set_route_type(102)
+        trip:set_display_name('FR')
 end

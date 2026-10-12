@@ -98,7 +98,9 @@
         {
             "name": "Microsoft-Shuttles",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-c23n-microsoftshuttles"
+            "transitland-atlas-id": "f-c23n-microsoftshuttles",
+            "skip": true,
+            "skip-reason": "Expired"
         },
         {
             "name": "Community-Transit",
