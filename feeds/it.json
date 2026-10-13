@@ -107,11 +107,41 @@
         },
         {
             "name": "Campania-ANM",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-s-anm~it",
+            "type": "http",
+            "url": "https://proxy.busone.app/anm/gtfs.zip",
+            "spec": "gtfs",
+            "license": {
+                "url": "https://proxy.busone.app/#data-terms",
+                "publisher": "BusOne",
+                "publisher-url": "https://busone.app",
+                "attribution-text": "BusOne (https://busone.app) and ANM. BusOne processing and service are free only for non-commercial use by individuals, nonprofit entities and NGOs. Other organisations and all commercial uses require prior written permission from BusOne. Original source licences and attribution requirements continue to apply."
+            },
             "http-options": {
-                "fetch-interval-days": 1
+                "fetch-interval-days": 1,
+                "headers": {
+                    "X-BusOne-Client": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSA2YU94TkwrVjM2Qm54MU5NRnV5OTliU1RpeFBSc1NmTkY3TkJqWE0vejIwCmVZMmJtMTdlV0lTNG5yV2s5MFBEY0RlcjJabW1XQVdzTDJ2dFg2WnVNek0KLS0tIFVCUUJVV0RJOWhGMFRzQmF1RVp0VGhkZktNYzQ3dEErbmVJYy95Slo0WWMKVRNouzmAn0owOaARJbCJr/FYjca5BvT4zgx5Fb0auM8TIXMM9tdmPSlIKpOQPsgqPA0ZEOh4+MfbkOzFwEJ5fdJs",
+                    "X-BusOne-Use": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBmWGNWLzRZVlpGbVljazE1eUpEOU1tRkhlOHQzK0FlOWdMYi9FQmNwa2dJCi96L0ZLNDJkZjdXbjBBOTVJeU9ZakR3dS9FQ2xzb3lIb1VlT2g1SWE2cEUKLS0tIHowUzdrVmZUakpnZHJYZDJoSDR3R1BKTVdNQndwc0Jkc2ZPeE9kVkhTVE0KCeSvYSgFB/cYhX6MvlKgnrgUKCUi7pENC/8+uP/R6N4YUWuu69qEYbg=",
+                    "X-BusOne-Key": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSByWkpOUGdHaE1PaG4xdXExclhxd2VwNGxGSDNEY0JobWw1amh4aHhKMXhRCktxWTZhN08wNC9uRFhkSjk2enF0a0hjdEsydkprUXZWSUx4VlRlYVhkbHMKLS0tIHduOHVxSStBR0xlR3JkWHl3NWduWEI0eVZzQVVVOWl1a3Ezb2FyU3lBZUkK/qBbVs7d2hv548Ug3qEVhi4u+rB/I6Yhiwj6JPApJppIR8ko1PriEnt34Aswp7zw7px2Jc2AZFrqUmrchwelBSkISoZfjJ5ZSkU6"
+                }
             }
+        },
+        {
+            "name": "Campania-ANM",
+            "type": "url",
+            "url": "https://proxy.busone.app/anm/gtfs-rt/trip-updates.pb",
+            "spec": "gtfs-rt",
+            "headers": {
+                "X-BusOne-Client": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSA2YU94TkwrVjM2Qm54MU5NRnV5OTliU1RpeFBSc1NmTkY3TkJqWE0vejIwCmVZMmJtMTdlV0lTNG5yV2s5MFBEY0RlcjJabW1XQVdzTDJ2dFg2WnVNek0KLS0tIFVCUUJVV0RJOWhGMFRzQmF1RVp0VGhkZktNYzQ3dEErbmVJYy95Slo0WWMKVRNouzmAn0owOaARJbCJr/FYjca5BvT4zgx5Fb0auM8TIXMM9tdmPSlIKpOQPsgqPA0ZEOh4+MfbkOzFwEJ5fdJs",
+                "X-BusOne-Use": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBmWGNWLzRZVlpGbVljazE1eUpEOU1tRkhlOHQzK0FlOWdMYi9FQmNwa2dJCi96L0ZLNDJkZjdXbjBBOTVJeU9ZakR3dS9FQ2xzb3lIb1VlT2g1SWE2cEUKLS0tIHowUzdrVmZUakpnZHJYZDJoSDR3R1BKTVdNQndwc0Jkc2ZPeE9kVkhTVE0KCeSvYSgFB/cYhX6MvlKgnrgUKCUi7pENC/8+uP/R6N4YUWuu69qEYbg=",
+                "X-BusOne-Key": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSByWkpOUGdHaE1PaG4xdXExclhxd2VwNGxGSDNEY0JobWw1amh4aHhKMXhRCktxWTZhN08wNC9uRFhkSjk2enF0a0hjdEsydkprUXZWSUx4VlRlYVhkbHMKLS0tIHduOHVxSStBR0xlR3JkWHl3NWduWEI0eVZzQVVVOWl1a3Ezb2FyU3lBZUkK/qBbVs7d2hv548Ug3qEVhi4u+rB/I6Yhiwj6JPApJppIR8ko1PriEnt34Aswp7zw7px2Jc2AZFrqUmrchwelBSkISoZfjJ5ZSkU6"
+            },
+            "license": {
+                "url": "https://proxy.busone.app/#data-terms",
+                "publisher": "BusOne",
+                "publisher-url": "https://busone.app",
+                "attribution-text": "BusOne (https://busone.app) and ANM. BusOne processing and service are free only for non-commercial use by individuals, nonprofit entities and NGOs. Other organisations and all commercial uses require prior written permission from BusOne. Original source licences and attribution requirements continue to apply."
+            },
+            "use-feed-proxy": true
         },
         {
             "name": "Campania-EAV",
@@ -289,9 +319,50 @@
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u0j-piemonte~autobus",
             "fix": true,
+            "drop-agency-names": [
+                "Granda Bus"
+            ],
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             }
+        },
+        {
+            "name": "Piemonte-GrandaBus",
+            "type": "http",
+            "url": "https://proxy.busone.app/grandabus/gtfs.zip",
+            "spec": "gtfs",
+            "license": {
+                "url": "https://proxy.busone.app/#data-terms",
+                "publisher": "BusOne",
+                "publisher-url": "https://busone.app",
+                "attribution-text": "BusOne (https://busone.app) and Consorzio GrandaBus. BusOne processing and service are free only for non-commercial use by individuals, nonprofit entities and NGOs. Other organisations and all commercial uses require prior written permission from BusOne. Original source licences and attribution requirements continue to apply."
+            },
+            "http-options": {
+                "fetch-interval-days": 1,
+                "headers": {
+                    "X-BusOne-Client": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSA2YU94TkwrVjM2Qm54MU5NRnV5OTliU1RpeFBSc1NmTkY3TkJqWE0vejIwCmVZMmJtMTdlV0lTNG5yV2s5MFBEY0RlcjJabW1XQVdzTDJ2dFg2WnVNek0KLS0tIFVCUUJVV0RJOWhGMFRzQmF1RVp0VGhkZktNYzQ3dEErbmVJYy95Slo0WWMKVRNouzmAn0owOaARJbCJr/FYjca5BvT4zgx5Fb0auM8TIXMM9tdmPSlIKpOQPsgqPA0ZEOh4+MfbkOzFwEJ5fdJs",
+                    "X-BusOne-Use": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBmWGNWLzRZVlpGbVljazE1eUpEOU1tRkhlOHQzK0FlOWdMYi9FQmNwa2dJCi96L0ZLNDJkZjdXbjBBOTVJeU9ZakR3dS9FQ2xzb3lIb1VlT2g1SWE2cEUKLS0tIHowUzdrVmZUakpnZHJYZDJoSDR3R1BKTVdNQndwc0Jkc2ZPeE9kVkhTVE0KCeSvYSgFB/cYhX6MvlKgnrgUKCUi7pENC/8+uP/R6N4YUWuu69qEYbg=",
+                    "X-BusOne-Key": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSByWkpOUGdHaE1PaG4xdXExclhxd2VwNGxGSDNEY0JobWw1amh4aHhKMXhRCktxWTZhN08wNC9uRFhkSjk2enF0a0hjdEsydkprUXZWSUx4VlRlYVhkbHMKLS0tIHduOHVxSStBR0xlR3JkWHl3NWduWEI0eVZzQVVVOWl1a3Ezb2FyU3lBZUkK/qBbVs7d2hv548Ug3qEVhi4u+rB/I6Yhiwj6JPApJppIR8ko1PriEnt34Aswp7zw7px2Jc2AZFrqUmrchwelBSkISoZfjJ5ZSkU6"
+                }
+            }
+        },
+        {
+            "name": "Piemonte-GrandaBus",
+            "type": "url",
+            "url": "https://proxy.busone.app/grandabus/gtfs-rt/trip-updates.pb",
+            "spec": "gtfs-rt",
+            "headers": {
+                "X-BusOne-Client": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSA2YU94TkwrVjM2Qm54MU5NRnV5OTliU1RpeFBSc1NmTkY3TkJqWE0vejIwCmVZMmJtMTdlV0lTNG5yV2s5MFBEY0RlcjJabW1XQVdzTDJ2dFg2WnVNek0KLS0tIFVCUUJVV0RJOWhGMFRzQmF1RVp0VGhkZktNYzQ3dEErbmVJYy95Slo0WWMKVRNouzmAn0owOaARJbCJr/FYjca5BvT4zgx5Fb0auM8TIXMM9tdmPSlIKpOQPsgqPA0ZEOh4+MfbkOzFwEJ5fdJs",
+                "X-BusOne-Use": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBmWGNWLzRZVlpGbVljazE1eUpEOU1tRkhlOHQzK0FlOWdMYi9FQmNwa2dJCi96L0ZLNDJkZjdXbjBBOTVJeU9ZakR3dS9FQ2xzb3lIb1VlT2g1SWE2cEUKLS0tIHowUzdrVmZUakpnZHJYZDJoSDR3R1BKTVdNQndwc0Jkc2ZPeE9kVkhTVE0KCeSvYSgFB/cYhX6MvlKgnrgUKCUi7pENC/8+uP/R6N4YUWuu69qEYbg=",
+                "X-BusOne-Key": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSByWkpOUGdHaE1PaG4xdXExclhxd2VwNGxGSDNEY0JobWw1amh4aHhKMXhRCktxWTZhN08wNC9uRFhkSjk2enF0a0hjdEsydkprUXZWSUx4VlRlYVhkbHMKLS0tIHduOHVxSStBR0xlR3JkWHl3NWduWEI0eVZzQVVVOWl1a3Ezb2FyU3lBZUkK/qBbVs7d2hv548Ug3qEVhi4u+rB/I6Yhiwj6JPApJppIR8ko1PriEnt34Aswp7zw7px2Jc2AZFrqUmrchwelBSkISoZfjJ5ZSkU6"
+            },
+            "license": {
+                "url": "https://proxy.busone.app/#data-terms",
+                "publisher": "BusOne",
+                "publisher-url": "https://busone.app",
+                "attribution-text": "BusOne (https://busone.app) and Consorzio GrandaBus. BusOne processing and service are free only for non-commercial use by individuals, nonprofit entities and NGOs. Other organisations and all commercial uses require prior written permission from BusOne. Original source licences and attribution requirements continue to apply."
+            },
+            "use-feed-proxy": true
         },
         {
             "name": "Piemonte-Gruppo-Torinese-Trasporti",
@@ -613,6 +684,44 @@
                 "publisher": "BusOne",
                 "publisher-url": "https://busone.app",
                 "attribution-text": "BusOne (https://busone.app) and Trentino Trasporti. BusOne processing and service are free only for non-commercial use by individuals, nonprofit entities and NGOs. Other organisations and all commercial uses require prior written permission from BusOne. Original source licences and attribution requirements continue to apply."
+            },
+            "use-feed-proxy": true
+        },
+        {
+            "name": "Veneto-Busitalia",
+            "type": "http",
+            "url": "https://proxy.busone.app/biv/gtfs.zip",
+            "spec": "gtfs",
+            "license": {
+                "url": "https://proxy.busone.app/#data-terms",
+                "publisher": "BusOne",
+                "publisher-url": "https://busone.app",
+                "attribution-text": "BusOne (https://busone.app) and Busitalia Veneto. BusOne processing and service are free only for non-commercial use by individuals, nonprofit entities and NGOs. Other organisations and all commercial uses require prior written permission from BusOne. Original source licences and attribution requirements continue to apply."
+            },
+            "http-options": {
+                "fetch-interval-days": 1,
+                "headers": {
+                    "X-BusOne-Client": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSA2YU94TkwrVjM2Qm54MU5NRnV5OTliU1RpeFBSc1NmTkY3TkJqWE0vejIwCmVZMmJtMTdlV0lTNG5yV2s5MFBEY0RlcjJabW1XQVdzTDJ2dFg2WnVNek0KLS0tIFVCUUJVV0RJOWhGMFRzQmF1RVp0VGhkZktNYzQ3dEErbmVJYy95Slo0WWMKVRNouzmAn0owOaARJbCJr/FYjca5BvT4zgx5Fb0auM8TIXMM9tdmPSlIKpOQPsgqPA0ZEOh4+MfbkOzFwEJ5fdJs",
+                    "X-BusOne-Use": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBmWGNWLzRZVlpGbVljazE1eUpEOU1tRkhlOHQzK0FlOWdMYi9FQmNwa2dJCi96L0ZLNDJkZjdXbjBBOTVJeU9ZakR3dS9FQ2xzb3lIb1VlT2g1SWE2cEUKLS0tIHowUzdrVmZUakpnZHJYZDJoSDR3R1BKTVdNQndwc0Jkc2ZPeE9kVkhTVE0KCeSvYSgFB/cYhX6MvlKgnrgUKCUi7pENC/8+uP/R6N4YUWuu69qEYbg=",
+                    "X-BusOne-Key": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSByWkpOUGdHaE1PaG4xdXExclhxd2VwNGxGSDNEY0JobWw1amh4aHhKMXhRCktxWTZhN08wNC9uRFhkSjk2enF0a0hjdEsydkprUXZWSUx4VlRlYVhkbHMKLS0tIHduOHVxSStBR0xlR3JkWHl3NWduWEI0eVZzQVVVOWl1a3Ezb2FyU3lBZUkK/qBbVs7d2hv548Ug3qEVhi4u+rB/I6Yhiwj6JPApJppIR8ko1PriEnt34Aswp7zw7px2Jc2AZFrqUmrchwelBSkISoZfjJ5ZSkU6"
+                }
+            }
+        },
+        {
+            "name": "Veneto-Busitalia",
+            "type": "url",
+            "url": "https://proxy.busone.app/biv/gtfs-rt/trip-updates.pb",
+            "spec": "gtfs-rt",
+            "headers": {
+                "X-BusOne-Client": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSA2YU94TkwrVjM2Qm54MU5NRnV5OTliU1RpeFBSc1NmTkY3TkJqWE0vejIwCmVZMmJtMTdlV0lTNG5yV2s5MFBEY0RlcjJabW1XQVdzTDJ2dFg2WnVNek0KLS0tIFVCUUJVV0RJOWhGMFRzQmF1RVp0VGhkZktNYzQ3dEErbmVJYy95Slo0WWMKVRNouzmAn0owOaARJbCJr/FYjca5BvT4zgx5Fb0auM8TIXMM9tdmPSlIKpOQPsgqPA0ZEOh4+MfbkOzFwEJ5fdJs",
+                "X-BusOne-Use": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBmWGNWLzRZVlpGbVljazE1eUpEOU1tRkhlOHQzK0FlOWdMYi9FQmNwa2dJCi96L0ZLNDJkZjdXbjBBOTVJeU9ZakR3dS9FQ2xzb3lIb1VlT2g1SWE2cEUKLS0tIHowUzdrVmZUakpnZHJYZDJoSDR3R1BKTVdNQndwc0Jkc2ZPeE9kVkhTVE0KCeSvYSgFB/cYhX6MvlKgnrgUKCUi7pENC/8+uP/R6N4YUWuu69qEYbg=",
+                "X-BusOne-Key": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSByWkpOUGdHaE1PaG4xdXExclhxd2VwNGxGSDNEY0JobWw1amh4aHhKMXhRCktxWTZhN08wNC9uRFhkSjk2enF0a0hjdEsydkprUXZWSUx4VlRlYVhkbHMKLS0tIHduOHVxSStBR0xlR3JkWHl3NWduWEI0eVZzQVVVOWl1a3Ezb2FyU3lBZUkK/qBbVs7d2hv548Ug3qEVhi4u+rB/I6Yhiwj6JPApJppIR8ko1PriEnt34Aswp7zw7px2Jc2AZFrqUmrchwelBSkISoZfjJ5ZSkU6"
+            },
+            "license": {
+                "url": "https://proxy.busone.app/#data-terms",
+                "publisher": "BusOne",
+                "publisher-url": "https://busone.app",
+                "attribution-text": "BusOne (https://busone.app) and Busitalia Veneto. BusOne processing and service are free only for non-commercial use by individuals, nonprofit entities and NGOs. Other organisations and all commercial uses require prior written permission from BusOne. Original source licences and attribution requirements continue to apply."
             },
             "use-feed-proxy": true
         },
