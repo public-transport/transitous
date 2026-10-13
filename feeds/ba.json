@@ -45,7 +45,8 @@
         {
             "name": "livnobus",
             "type": "http",
-            "url": "https://livnobus.com/gtfs/google-transit"
+            "url": "https://livnobus.com/gtfs/google-transit",
+            "fix": true
         }
     ]
 }
