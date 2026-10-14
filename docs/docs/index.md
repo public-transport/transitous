@@ -296,6 +296,7 @@ Option Name            | Description
 `skip`                 | Don't download or use this feed.
 `skip-reason`          | Reason for why this feed can't be used right now.
 `fix-csv-quotes`       | Try to fix GTFS files in which fields are improperly quoted. A symptom of this is if stop names start containing CSV.
+`blank-headsigns-matching` | Regular expression for `trip_headsign` values that are placeholders rather than destinations, e.g. `0`. Matching headsigns are cleared before import, so MOTIS falls back to the last stop of the trip. Clearing them from an import script does not work, because the fallback is applied before the script stage runs.
 `license`              | Dictionary of license-related options
 `http-options`         | Dictionary of HTTP-related options
 `drop-shapes`          | Remove route shapes, use if the shapes are mostly wrong
