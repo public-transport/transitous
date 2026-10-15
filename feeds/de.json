@@ -368,11 +368,6 @@
             "transitland-atlas-id": "f-franke~freiburg~im~breisgau~gbfs"
         },
         {
-            "name": "DottBöblingen",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-dott~böblingen~gbfs"
-        },
-        {
             "name": "DottFriedrichshafen",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-dott~friedrichshafen~gbfs"
