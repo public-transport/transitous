@@ -10,7 +10,8 @@
             "license": {
                 "url": "https://github.com/wensimehrp/chinese-railway-gtfs"
             },
-            "fix": true
+            "fix": true,
+            "script": "cn-china-railway.lua"
         }
     ]
 }
