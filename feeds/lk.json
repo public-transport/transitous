@@ -1,16 +1,35 @@
 {
     "maintainers": [
         {
+            "name": "Seyone Gunasingham",
+            "github": "seyone22"
+        },
+        {
             "name": "Sander",
             "github": "Sandertttt"
         }
     ],
     "sources": [
         {
-            "name": "Sri-Lanka-Railways",
-            "type": "http",
-            "url": "https://api.transit.seyone.dev/api/v1/gtfs/download?agency=SLR",
-            "fix": true
+            "name": "lanka-metro-transit",
+            "type": "mobility-database",
+            "mdb-id": "mdb-3490",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0",
+                "url": "https://creativecommons.org/licenses/by/4.0/"
+            }
+        },
+        {
+            "name": "lanka-metro-transit",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.transit.seyone.dev/api/v1/realtime/vehicle-positions"
+        },
+        {
+            "name": "lanka-metro-transit",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.transit.seyone.dev/api/v1/realtime/trip-updates"
         }
     ]
 }
