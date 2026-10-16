@@ -574,6 +574,8 @@
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
             },
+            "skip": true,
+            "skip-reason": "Feed expired",
             "mdb-id": "mdb-2716"
         },
         {
@@ -672,12 +674,10 @@
         },
         {
             "name": "Sopelbus",
-            "type": "http",
-            "url": "https://ctb-gtfs.s3.eu-south-2.amazonaws.com/sopelbus.zip",
-            "license": {
-                "spdx-identifier": "CC-BY-4.0",
-                "url": "https://data.ctb.eus/en/dataset/horarios-sopelbus"
-            }
+            "type": "mobility-database",
+            "mdb-id": "mdb-2790",
+            "skip": true,
+            "skip-reason": "Feed expired"
         },
         {
             "name": "Puente-Colgante-Bizkaia",
@@ -873,7 +873,9 @@
                 "spdx-identifier": "CC-BY-4.0",
                 "url": "https://data.renfe.com/dataset/horario-feve"
             },
-            "mdb-id": "mdb-2717"
+            "mdb-id": "mdb-2717",
+            "skip": true,
+            "skip-reason": "Feed expired"
         },
         {
             "name": "Funicular-de-Artxanda",
@@ -1355,6 +1357,8 @@
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
             },
+            "skip": true,
+            "skip-reason": "Feed expired",
             "mdb-id": "mdb-2762"
         },
         {
@@ -1538,7 +1542,9 @@
         {
             "name": "Metro-de-Madrid",
             "type": "mobility-database",
-            "mdb-id": "mdb-794"
+            "mdb-id": "mdb-794",
+            "skip": true,
+            "skip-reason": "Feed expired"
         },
         {
             "name": "EMT-Valencia",
@@ -1740,7 +1746,7 @@
             "name": "Rodil",
             "type": "mobility-database",
             "fix": true,
-            "mdb-id": "mdb-2720"
+            "mdb-id": "mdb-2778"
         },
         {
             "name": "Costa-Coaches",
@@ -1791,7 +1797,9 @@
                 "headers": {
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
-            }
+            },
+            "skip": true,
+            "skip-reason": "Feed expired"
         },
         {
             "name": "Erandio-City-Council-(Erandio!-Busa)",
