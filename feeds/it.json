@@ -344,7 +344,8 @@
                     "X-BusOne-Use": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBmWGNWLzRZVlpGbVljazE1eUpEOU1tRkhlOHQzK0FlOWdMYi9FQmNwa2dJCi96L0ZLNDJkZjdXbjBBOTVJeU9ZakR3dS9FQ2xzb3lIb1VlT2g1SWE2cEUKLS0tIHowUzdrVmZUakpnZHJYZDJoSDR3R1BKTVdNQndwc0Jkc2ZPeE9kVkhTVE0KCeSvYSgFB/cYhX6MvlKgnrgUKCUi7pENC/8+uP/R6N4YUWuu69qEYbg=",
                     "X-BusOne-Key": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSByWkpOUGdHaE1PaG4xdXExclhxd2VwNGxGSDNEY0JobWw1amh4aHhKMXhRCktxWTZhN08wNC9uRFhkSjk2enF0a0hjdEsydkprUXZWSUx4VlRlYVhkbHMKLS0tIHduOHVxSStBR0xlR3JkWHl3NWduWEI0eVZzQVVVOWl1a3Ezb2FyU3lBZUkK/qBbVs7d2hv548Ug3qEVhi4u+rB/I6Yhiwj6JPApJppIR8ko1PriEnt34Aswp7zw7px2Jc2AZFrqUmrchwelBSkISoZfjJ5ZSkU6"
                 }
-            }
+            },
+            "use-gtfsclean": false
         },
         {
             "name": "Piemonte-GrandaBus",
