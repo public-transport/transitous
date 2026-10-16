@@ -1946,8 +1946,14 @@
         },
         {
             "name": "Autobuses-urbanos-de-Burgos",
-            "type": "mobility-database",
-            "mdb-id": "mdb-3145"
+            "type": "http",
+            "url": "https://nap.transportes.gob.es/api/Fichero/download/2150",
+            "http-options": {
+                "fetch-interval-days": 1,
+                "headers": {
+                    "ApiKey": "716dfb77-a51b-49a9-aadf-6aff45b798e4"
+                }
+            }
         },
         {
             "name": "Autobuses-del-Gobierno-de-Aragón",
