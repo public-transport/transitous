@@ -488,9 +488,7 @@
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
             },
-            "mdb-id": "mdb-2819",
-            "skip": true,
-            "skip-reason": "expired"
+            "mdb-id": "mdb-2819"
         },
         {
             "name": "Autobús-urbano-de-la-Coruña",
@@ -564,9 +562,7 @@
                     "ApiKey": "e8143a1e-d12e-4a01-9b08-caf3071e4853"
                 }
             },
-            "mdb-id": "mdb-2818",
-            "skip": true,
-            "skip-reason": "expired"
+            "mdb-id": "mdb-2818"
         },
         {
             "name": "Autobús-urbano-de-Tarrasa",
@@ -1743,9 +1739,8 @@
         {
             "name": "Rodil",
             "type": "mobility-database",
-            "mdb-id": "mdb-2778",
-            "skip": true,
-            "skip-reason": "expired"
+            "fix": true,
+            "mdb-id": "mdb-2720"
         },
         {
             "name": "Costa-Coaches",
