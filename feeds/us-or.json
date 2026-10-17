@@ -57,7 +57,7 @@
         {
             "name": "POINT",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-point~or-us"
+            "transitland-atlas-id": "f-point~or~us"
         },
         {
             "name": "RideConnection",
