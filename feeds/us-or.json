@@ -82,7 +82,11 @@
         {
             "name": "SETD",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-sunsetempiretransportationdistrict~rt"
+            "transitland-atlas-id": "f-sunsetempiretransportationdistrict~rt",
+            "headers": {
+               "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBzWWRvZ0JKc3U2RXRWYWZFM1J4am02WFM4ejRmZjIzaEJLSm5BQzJaRVcwCjZEZkNaR2NpSTNXRFA3dXdyUHFvaDl0dU9tSnQwTjFyRTJBSlFUOTB2ZkUKLS0tIEJnYUpNaUUzQzVzQ1N1UzV2VXNUbXhCOXRqNThyWnBGUjN3Z0NWK3lRcnMKR1VGx7ST0DZVte6o+X8nLL884V933DteQvOA262THV72ToeOsSFaAxuOqRhd0/i0ZOk/xUG0uEhox3jdz/Na0g=="
+            },
+            "use-feed-proxy": true
         },
         {
             "name": "SMART",
