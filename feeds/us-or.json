@@ -27,6 +27,11 @@
         {
             "name": "Cherriots",
             "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9rb-cherriots"
+        },
+        {
+            "name": "Cherriots",
+            "type": "transitland-atlas",
             "transitland-atlas-id": "f-9rb-cherriots~rt"
         },
         {
