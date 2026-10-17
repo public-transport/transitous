@@ -1529,7 +1529,7 @@
             "x-data-gov-fr-dataset-id": "5bf52498634f410a498457b6"
         },
         {
-            "name": "donnees-tcat-troyes-champagne-metropole-1--79847",
+            "name": "donnees-tcat-troyes-champagne-metropole-1",
             "type": "http",
             "url": "https://transport.data.gouv.fr/resources/79847/download",
             "fix": true,
@@ -1539,23 +1539,7 @@
             },
             "x-data-gov-fr-res-id": 79847,
             "managed-by-script": true,
-            "skip": true,
-            "skip-reason": "Same data but outdated",
             "x-data-gov-fr-res-title": "gtfs-navineo.zip",
-            "x-data-gov-fr-dataset-id": "5c0933e88b4c4177a394acd1"
-        },
-        {
-            "name": "donnees-tcat-troyes-champagne-metropole-1",
-            "type": "http",
-            "url": "https://www.data.gouv.fr/api/1/datasets/r/79151f50-b842-4fa9-a4b5-046c0029417b",
-            "fix": true,
-            "license": {
-                "url": "https://transport.data.gouv.fr/datasets/donnees-tcat-troyes-champagne-metropole-1",
-                "spdx-identifier": "ODbL-1.0"
-            },
-            "x-data-gov-fr-res-id": 79747,
-            "managed-by-script": false,
-            "x-data-gov-fr-res-title": "gtfs.zip",
             "x-data-gov-fr-dataset-id": "5c0933e88b4c4177a394acd1"
         },
         {
@@ -1585,38 +1569,6 @@
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "Mises à jour des trajets en temps réel",
             "x-data-gov-fr-dataset-id": "5c0933e88b4c4177a394acd1"
-        },
-        {
-            "name": "offre-de-transport-du-reseau-trema-gtfs",
-            "type": "http",
-            "url": "https://www.data.gouv.fr/api/1/datasets/r/2c2b58d3-e93b-47af-be7b-655520671cbc",
-            "fix": true,
-            "license": {
-                "url": "https://transport.data.gouv.fr/datasets/offre-de-transport-du-reseau-trema-gtfs",
-                "spdx-identifier": "ODbL-1.0"
-            },
-            "x-data-gov-fr-res-id": 83507,
-            "managed-by-script": true,
-            "skip": true,
-            "x-data-gov-fr-res-title": "trema-gtfs-2025-10-15.zip",
-            "x-data-gov-fr-dataset-id": "5c0f8c7e634f41201cf158a6",
-            "skip-reason": "Feed is expired according to metadata"
-        },
-        {
-            "name": "offre-de-transport-du-reseau-trema-gtfs--84097",
-            "type": "http",
-            "url": "https://www.data.gouv.fr/api/1/datasets/r/92b18bc7-cd60-41f5-9af7-978eacbe0691",
-            "fix": true,
-            "license": {
-                "url": "https://transport.data.gouv.fr/datasets/offre-de-transport-du-reseau-trema-gtfs",
-                "spdx-identifier": "ODbL-1.0"
-            },
-            "x-data-gov-fr-res-id": 84097,
-            "x-data-gov-fr-dataset-id": "5c0f8c7e634f41201cf158a6",
-            "x-data-gov-fr-res-title": "trema-gtfs-2026-07-01.zip",
-            "managed-by-script": true,
-            "skip": true,
-            "skip-reason": "Feed is expired according to metadata"
         },
         {
             "name": "offre-de-transport-du-reseau-trema-gtfs--84156",
@@ -2076,7 +2028,7 @@
             "name": "donnees-statiques-et-temps-reel-du-reseau-astuce-metropole-rouen-normandie",
             "type": "url",
             "url": "https://www.data.gouv.fr/api/1/datasets/r/f5127667-1005-4515-b8d9-a2169ee83097",
-            "x-data-gov-fr-res-title": "GTFS-RT - Positions des véhicules (lignes Transdev Rouen)",
+            "x-data-gov-fr-res-title": "GTFS-RT - Horaires temps réel + Positions des véhicules + Modifications de trajets + Alertes de service",
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/donnees-statiques-et-temps-reel-du-reseau-astuce-metropole-rouen-normandie",
                 "spdx-identifier": "etalab-2.0"
@@ -2112,20 +2064,6 @@
             "x-data-gov-fr-res-id": 80752,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "Prochains passages des lignes du réseau Astuce exploitées par Transdev Rouen",
-            "x-data-gov-fr-dataset-id": "5cd4321f8b4c4137d1244318"
-        },
-        {
-            "name": "donnees-statiques-et-temps-reel-du-reseau-astuce-metropole-rouen-normandie",
-            "type": "url",
-            "url": "https://www.data.gouv.fr/api/1/datasets/r/178700bf-570a-4a5e-95a2-59ac5857c622",
-            "license": {
-                "url": "https://transport.data.gouv.fr/datasets/donnees-statiques-et-temps-reel-du-reseau-astuce-metropole-rouen-normandie",
-                "spdx-identifier": "etalab-2.0"
-            },
-            "spec": "gtfs-rt",
-            "x-data-gov-fr-res-id": 82678,
-            "managed-by-script": true,
-            "x-data-gov-fr-res-title": "GTFS-RT - Horaires de passage en temps réel (lignes Transdev Rouen)",
             "x-data-gov-fr-dataset-id": "5cd4321f8b4c4137d1244318"
         },
         {
@@ -2378,18 +2316,18 @@
             "skip-reason": "Feed is expired according to metadata"
         },
         {
+            "name": "reseau-de-transport-transcove-de-la-communaute-dagglomeration-ventoux-comtat-venaissin",
             "type": "http",
-            "url": "https://www.data.gouv.fr/api/1/datasets/r/89e09fb6-0bf6-4ca5-95f3-50444ab6c681",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/39454716-461b-4fca-843f-0345fc412c28",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/reseau-de-transport-transcove-de-la-communaute-dagglomeration-ventoux-comtat-venaissin",
                 "spdx-identifier": "etalab-2.0"
             },
-            "x-data-gov-fr-res-id": 83785,
-            "managed-by-script": true,
-            "name": "reseau-de-transport-transcove-de-la-communaute-dagglomeration-ventoux-comtat-venaissin",
+            "x-data-gov-fr-res-id": 84237,
+            "x-data-gov-fr-dataset-id": "5d155dbe9ce2e7713bf50c0e",
             "x-data-gov-fr-res-title": "TransCoVe_GTFS",
-            "x-data-gov-fr-dataset-id": "5d155dbe9ce2e7713bf50c0e"
+            "managed-by-script": true
         },
         {
             "name": "horaires-theoriques-et-temps-reel-du-reseau-buss-saintes-gtfs-gtfs-rt",
@@ -2536,35 +2474,6 @@
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "Fichier de découverte",
             "x-data-gov-fr-dataset-id": "5d68f93d6f4441107ddce8e7"
-        },
-        {
-            "name": "horaires-theoriques-et-temps-reel-du-reseau-alliance-auch-gtfs-gtfs-rt",
-            "type": "http",
-            "url": "https://www.data.gouv.fr/api/1/datasets/r/cf9e898c-9ba6-4820-a51a-93709c07f891",
-            "fix": true,
-            "license": {
-                "url": "https://transport.data.gouv.fr/datasets/horaires-theoriques-et-temps-reel-du-reseau-alliance-auch-gtfs-gtfs-rt",
-                "spdx-identifier": "ODbL-1.0"
-            },
-            "x-data-gov-fr-res-id": 8119,
-            "managed-by-script": true,
-            "skip": false,
-            "x-data-gov-fr-res-title": "Horaires théoriques du réseau ALLIANCE - Auch(GTFS)",
-            "x-data-gov-fr-dataset-id": "5d80da4a6f444119c95283be"
-        },
-        {
-            "name": "horaires-theoriques-et-temps-reel-du-reseau-alliance-auch-gtfs-gtfs-rt",
-            "type": "url",
-            "url": "https://www.data.gouv.fr/api/1/datasets/r/ee7325a5-172f-430e-afe7-4072e0cf1321",
-            "license": {
-                "url": "https://transport.data.gouv.fr/datasets/horaires-theoriques-et-temps-reel-du-reseau-alliance-auch-gtfs-gtfs-rt",
-                "spdx-identifier": "ODbL-1.0"
-            },
-            "spec": "gtfs-rt",
-            "x-data-gov-fr-res-id": 8118,
-            "managed-by-script": true,
-            "x-data-gov-fr-res-title": "Horaires temps-réel du réseau ALLIANCE - Auch (GTFS-RT)",
-            "x-data-gov-fr-dataset-id": "5d80da4a6f444119c95283be"
         },
         {
             "name": "horaires-theoriques-et-temps-reel-du-reseau-titus-rosny-sous-bois-gtfs-gtfs-rt",
@@ -3023,23 +2932,9 @@
             "x-data-gov-fr-res-id": 83126,
             "managed-by-script": true,
             "skip": true,
-            "x-data-gov-fr-res-title": "GTFS_20250520190316Z.zip",
+            "x-data-gov-fr-res-title": "GTFS",
             "x-data-gov-fr-dataset-id": "5e9ff4cd897a11100789e5c3",
             "skip-reason": "Feed is expired according to metadata"
-        },
-        {
-            "name": "transport-scolaire-redon-agglomeration-format-gtfs--84171",
-            "type": "http",
-            "url": "https://www.data.gouv.fr/api/1/datasets/r/4e1e0dbb-3237-413e-bc19-1defce589303",
-            "fix": true,
-            "license": {
-                "url": "https://transport.data.gouv.fr/datasets/transport-scolaire-redon-agglomeration-format-gtfs",
-                "spdx-identifier": "ODbL-1.0"
-            },
-            "x-data-gov-fr-res-id": 84171,
-            "x-data-gov-fr-dataset-id": "5e9ff4cd897a11100789e5c3",
-            "x-data-gov-fr-res-title": "GTFS_20260830220846Z.zip",
-            "managed-by-script": true
         },
         {
             "name": "horaires-theoriques-du-reseau-tougo",
@@ -3679,7 +3574,7 @@
             "x-data-gov-fr-res-id": 82555,
             "managed-by-script": true,
             "skip": false,
-            "x-data-gov-fr-res-title": "Réseau_MAT_18092026_au_31122026",
+            "x-data-gov-fr-res-title": "Réseau_MAT_06102026_au_31122026",
             "x-data-gov-fr-dataset-id": "601033a9f8ef84fd317562ae"
         },
         {
@@ -3996,6 +3891,20 @@
             "x-data-gov-fr-res-title": "GTFS Car région Savoie",
             "x-data-gov-fr-dataset-id": "607862da7487e5d490677f14",
             "script": "generic-coach-to-bus.lua"
+        },
+        {
+            "name": "reseau-interurbain-cars-region-savoie-73--84247",
+            "type": "http",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/3f74ea07-5385-467c-be4c-74bca2404333",
+            "fix": true,
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/reseau-interurbain-cars-region-savoie-73",
+                "spdx-identifier": "ODbL-1.0"
+            },
+            "x-data-gov-fr-res-id": 84247,
+            "x-data-gov-fr-dataset-id": "607862da7487e5d490677f14",
+            "x-data-gov-fr-res-title": "GTFS des cars Région Savoie Lignes touristiques",
+            "managed-by-script": true
         },
         {
             "name": "reseau-interurbain-cars-region-cantal-15",
@@ -7275,7 +7184,7 @@
             "x-data-gov-fr-res-id": 81455,
             "managed-by-script": true,
             "skip": false,
-            "x-data-gov-fr-res-title": "GTFS_ALTIGO RENTREE 26 27 V6",
+            "x-data-gov-fr-res-title": "GTFS_ALTIGO RENTREE 26 27 V7",
             "x-data-gov-fr-dataset-id": "63c562c646696c9cd83544b7"
         },
         {
@@ -7306,6 +7215,20 @@
             "skip": false,
             "x-data-gov-fr-res-title": "Jeu de données théorique du réseau Semo (Val-de-Reuil, Louviers, Seine Eure Agglo)",
             "x-data-gov-fr-dataset-id": "63ce63e875b5484b930b83b7"
+        },
+        {
+            "name": "semo-val-de-reuil-louviers-seine-eure-agglo",
+            "type": "url",
+            "url": "https://proxy.transport.data.gouv.fr/resource/seine-eure-semo-gtfs-rt-vehicle-position",
+            "x-data-gov-fr-res-title": "Données en temps réel de la position des véhicules du réseau SEMO",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/semo-val-de-reuil-louviers-seine-eure-agglo",
+                "spdx-identifier": "etalab-2.0"
+            },
+            "x-data-gov-fr-res-id": 83285,
+            "x-data-gov-fr-dataset-id": "63ce63e875b5484b930b83b7",
+            "managed-by-script": true,
+            "spec": "gtfs-rt"
         },
         {
             "name": "semo-val-de-reuil-louviers-seine-eure-agglo",
@@ -8625,9 +8548,10 @@
             },
             "x-data-gov-fr-res-id": 82305,
             "managed-by-script": true,
-            "skip": false,
+            "skip": true,
             "x-data-gov-fr-res-title": "Via-Mare.zip",
-            "x-data-gov-fr-dataset-id": "64d0d79d00f3062c1e41a3b7"
+            "x-data-gov-fr-dataset-id": "64d0d79d00f3062c1e41a3b7",
+            "skip-reason": "Feed is expired according to metadata"
         },
         {
             "name": "reseau-urbain-pondibus",
@@ -11855,7 +11779,7 @@
             "name": "transport-en-commun-de-la-ville-dorange-ccpop-1",
             "type": "url",
             "url": "https://www.data.gouv.fr/api/1/datasets/r/b9ac4d41-c7d1-4fa8-9785-9f631d8fd62d",
-            "x-data-gov-fr-res-title": "GTFS-RT Trip updates au format Json",
+            "x-data-gov-fr-res-title": "GTFS-RT Trip updates au format bin",
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/transport-en-commun-de-la-ville-dorange-ccpop-1",
                 "spdx-identifier": "ODbL-1.0"
@@ -13356,6 +13280,38 @@
             "skip-reason": "Feed is expired according to metadata"
         },
         {
+            "name": "reseau-de-transport-artis",
+            "type": "url",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/7194ba5b-8ae1-4255-a295-608dce98a0bc",
+            "x-data-gov-fr-res-title": "ARTIS-GTFS-RT_URBAIN",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/reseau-de-transport-artis",
+                "spdx-identifier": "etalab-2.0"
+            },
+            "x-data-gov-fr-res-id": 84250,
+            "x-data-gov-fr-dataset-id": "68b169c0157d0b9b1d417479",
+            "managed-by-script": true,
+            "spec": "gtfs-rt",
+            "skip": true,
+            "skip-reason": "static feed is skipped"
+        },
+        {
+            "name": "reseau-de-transport-artis",
+            "type": "url",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/058d6107-7dd7-4caf-a22d-127cb3f6e0e3",
+            "x-data-gov-fr-res-title": "GTFS-RT_CITADINE-RURALE",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/reseau-de-transport-artis",
+                "spdx-identifier": "etalab-2.0"
+            },
+            "x-data-gov-fr-res-id": 84249,
+            "x-data-gov-fr-dataset-id": "68b169c0157d0b9b1d417479",
+            "managed-by-script": true,
+            "spec": "gtfs-rt",
+            "skip": true,
+            "skip-reason": "static feed is skipped"
+        },
+        {
             "name": "gtfs-periodes-scolaires",
             "type": "http",
             "url": "https://transport.data.gouv.fr/resources/83578/download",
@@ -13382,7 +13338,9 @@
             "x-data-gov-fr-res-id": 84192,
             "x-data-gov-fr-dataset-id": "68b48c2486fd35d69fb0272e",
             "x-data-gov-fr-res-title": "GTFS_ARV'i_09-09_16-10 V3.zip",
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": true,
+            "skip-reason": "Feed is expired according to metadata"
         },
         {
             "name": "gtfs-reseau-arc-en-ciel-secteur-nord-perimetre-caudresis-catesis",
@@ -14089,17 +14047,31 @@
             "skip-reason": "Feed is expired according to metadata"
         },
         {
-            "name": "rubis-grand-bourg-mobilites-offre-de-transport-theorique-et-temps-reel",
+            "name": "rubis-grand-bourg-mobilites-offre-de-transport-theorique-et-temps-reel--84243",
             "type": "http",
-            "url": "https://transport.data.gouv.fr/resources/83841/download",
+            "url": "https://transport.data.gouv.fr/resources/84243/download",
             "fix": true,
             "license": {
                 "url": "https://transport.data.gouv.fr/datasets/rubis-grand-bourg-mobilites-offre-de-transport-theorique-et-temps-reel",
                 "spdx-identifier": "etalab-2.0"
             },
-            "x-data-gov-fr-res-id": 83841,
+            "x-data-gov-fr-res-id": 84243,
             "x-data-gov-fr-dataset-id": "6929bcf1f8e17f7057966df0",
-            "x-data-gov-fr-res-title": "RUBIS GTFS théorique SAEIV",
+            "x-data-gov-fr-res-title": "GTFS SAEIV",
+            "managed-by-script": true
+        },
+        {
+            "name": "rubis-grand-bourg-mobilites-offre-de-transport-theorique-et-temps-reel",
+            "type": "http",
+            "url": "https://transport.data.gouv.fr/resources/84244/download",
+            "fix": true,
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/rubis-grand-bourg-mobilites-offre-de-transport-theorique-et-temps-reel",
+                "spdx-identifier": "etalab-2.0"
+            },
+            "x-data-gov-fr-res-id": 84244,
+            "x-data-gov-fr-dataset-id": "6929bcf1f8e17f7057966df0",
+            "x-data-gov-fr-res-title": "RUBIS GTFS théorique",
             "managed-by-script": true
         },
         {
@@ -14918,7 +14890,9 @@
             "x-data-gov-fr-res-id": 83969,
             "x-data-gov-fr-dataset-id": "69c2b4e8c305846b8a911688",
             "x-data-gov-fr-res-title": "GTFS Challans Gois.zip",
-            "managed-by-script": true
+            "managed-by-script": true,
+            "skip": true,
+            "skip-reason": "Feed is expired according to metadata"
         },
         {
             "name": "telecabine-eau-dolle-express-allemond-oz",
@@ -15594,20 +15568,6 @@
             "skip-reason": "Feed is expired according to metadata"
         },
         {
-            "name": "lignes-scolaires-reseau-tedbus-dracenie-provence-verdon-agglomeration",
-            "type": "http",
-            "url": "https://transport.data.gouv.fr/resources/84188/download",
-            "fix": true,
-            "license": {
-                "url": "https://transport.data.gouv.fr/datasets/lignes-scolaires-reseau-tedbus-dracenie-provence-verdon-agglomeration",
-                "spdx-identifier": "etalab-2.0"
-            },
-            "x-data-gov-fr-res-id": 84188,
-            "x-data-gov-fr-dataset-id": "6a8cdca6330a3c73f6d656db",
-            "x-data-gov-fr-res-title": "TEDbus - Horairesscolaires.GTFS.ZIP",
-            "managed-by-script": true
-        },
-        {
             "name": "ozcar-navette-intercommunale",
             "type": "http",
             "url": "https://transport.data.gouv.fr/resources/84190/download",
@@ -15688,7 +15648,7 @@
             },
             "x-data-gov-fr-res-id": 84230,
             "x-data-gov-fr-dataset-id": "6a96dffbcaf655ae9a2b46d2",
-            "x-data-gov-fr-res-title": "GTFS_20260924A_Réseau_ToPAz",
+            "x-data-gov-fr-res-title": "GTFS_20261015A_Réseau_ToPAz",
             "managed-by-script": true
         },
         {
@@ -15720,6 +15680,20 @@
             "managed-by-script": true
         },
         {
+            "name": "bus-plm",
+            "type": "http",
+            "url": "https://transport.data.gouv.fr/resources/84245/download",
+            "fix": true,
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/bus-plm",
+                "spdx-identifier": "etalab-2.0"
+            },
+            "x-data-gov-fr-res-id": 84245,
+            "x-data-gov-fr-dataset-id": "6aa9446178ca04675cf33d92",
+            "x-data-gov-fr-res-title": "PLM.zip",
+            "managed-by-script": true
+        },
+        {
             "name": "gtfs-reseau-alliance-bus-grand-auch",
             "type": "http",
             "url": "https://transport.data.gouv.fr/resources/84228/download",
@@ -15746,6 +15720,76 @@
             "x-data-gov-fr-dataset-id": "6aad138e7b2f5124c636d922",
             "managed-by-script": true,
             "spec": "gtfs-rt"
+        },
+        {
+            "name": "gbfs-paris-saclay",
+            "type": "url",
+            "url": "https://www.data.gouv.fr/api/1/datasets/r/40e3cc67-e051-47b5-87c5-8933ba9b1d9b",
+            "spec": "gbfs",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/gbfs-paris-saclay",
+                "spdx-identifier": "etalab-2.0"
+            },
+            "x-data-gov-fr-res-id": 84246,
+            "x-data-gov-fr-dataset-id": "6ab65c37cfb8e94afdd982b2",
+            "x-data-gov-fr-res-title": "Lime Paris Saclay",
+            "managed-by-script": true
+        },
+        {
+            "name": "ligne-de-bus-obc",
+            "type": "http",
+            "url": "https://transport.data.gouv.fr/resources/84235/download",
+            "fix": true,
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/ligne-de-bus-obc",
+                "spdx-identifier": "etalab-2.0"
+            },
+            "x-data-gov-fr-res-id": 84235,
+            "x-data-gov-fr-dataset-id": "6aba64850843835c85dfe067",
+            "x-data-gov-fr-res-title": "GTFS_OBC1_hiver_2026_2027.zip",
+            "managed-by-script": true
+        },
+        {
+            "name": "reseau-urbain-villefranche-de-rouergue",
+            "type": "http",
+            "url": "https://transport.data.gouv.fr/resources/84234/download",
+            "fix": true,
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/reseau-urbain-villefranche-de-rouergue",
+                "spdx-identifier": "etalab-2.0"
+            },
+            "x-data-gov-fr-res-id": 84234,
+            "x-data-gov-fr-dataset-id": "6aba8a0e61c4060c6f32cee0",
+            "x-data-gov-fr-res-title": "GTFS.zip",
+            "managed-by-script": true
+        },
+        {
+            "name": "lot-gtfs-stibus",
+            "type": "http",
+            "url": "https://transport.data.gouv.fr/resources/84240/download",
+            "fix": true,
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/lot-gtfs-stibus",
+                "spdx-identifier": "etalab-2.0"
+            },
+            "x-data-gov-fr-res-id": 84240,
+            "x-data-gov-fr-dataset-id": "6abcdca4928f582ed8af5b8c",
+            "x-data-gov-fr-res-title": "google transit.zip",
+            "managed-by-script": true
+        },
+        {
+            "name": "reseau-tedbus-lignes-scolaires-dracenie-provence-verdon-agglomeration",
+            "type": "http",
+            "url": "https://transport.data.gouv.fr/resources/84251/download",
+            "fix": true,
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/reseau-tedbus-lignes-scolaires-dracenie-provence-verdon-agglomeration",
+                "spdx-identifier": "etalab-2.0"
+            },
+            "x-data-gov-fr-res-id": 84251,
+            "x-data-gov-fr-dataset-id": "6ad018064a2b79227c7ebf8d",
+            "x-data-gov-fr-res-title": "TEDbus-horaires_scolaires.zip",
+            "managed-by-script": true
         }
     ]
 }
