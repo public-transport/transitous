@@ -41,7 +41,7 @@ class Atlas:
 
             results.append(result)
 
-        if "static_historic" in feed["urls"]:
+        if "static_historic" in feed["urls"] and not "static_current" in feed["urls"]:
             result = inherit_options_from_db_source(source)
             result.url = feed["urls"]["static_historic"]
             result.cache_url = "https://gtfsproxy.fale.io/" + \
