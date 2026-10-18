@@ -303,7 +303,19 @@
             "name": "oroshaza",
             "type": "url",
             "spec": "gtfs-rt",
+            "url": "https://gtfs.gpspositions.net/storage/realtime/OROSH_V_ONK/trip_updates.pb"
+        },
+        {
+            "name": "oroshaza",
+            "type": "url",
+            "spec": "gtfs-rt",
             "url": "https://gtfs.gpspositions.net/storage/realtime/OROSH_V_ONK/vehicle_positions.pb"
+        },
+        {
+            "name": "oroshaza",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://gtfs.gpspositions.net/storage/realtime/OROSH_V_ONK/service_alerts.pb"
         },
         {
             "name": "Hódmezővásárhely",
