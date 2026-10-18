@@ -176,9 +176,26 @@
         },
         {
             "name": "mvk",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u2wc-mvkzrt",
-            "fix": true
+            "type": "http",
+            "url": "https://jbb.ghsq.de/gtfs/hu-mvk_zrt..gtfs.zip"
+        },
+        {
+            "name": "mvk",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/mvkzrt/trip-updates.pb"
+        },
+        {
+            "name": "mvk",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/mvkzrt/vehicle-positions.pb"
+        },
+        {
+            "name": "mvk",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/mvkzrt/alerts.pb"
         },
         {
             "name": "szkt",
