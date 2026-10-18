@@ -203,12 +203,27 @@
             "transitland-atlas-id": "f-u2nr-dakkzrt~szkt"
         },
         {
-            "name": "v-busz",
+            "name": "vbusz",
             "type": "http",
-            "url": "https://vbusz.hu/gtfs",
-            "license": {
-                "spdx-identifier": "CC0-1.0"
-            }
+            "url": "https://jbb.ghsq.de/gtfs/hu-v-busz_kft..gtfs.zip"
+        },
+        {
+            "name": "vbusz",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/VBUSZ/trip-updates.pb"
+        },
+        {
+            "name": "vbusz",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/VBUSZ/vehicle-positions.pb"
+        },
+        {
+            "name": "vbusz",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/VBUSZ/alerts.pb"
         },
         {
             "name": "tukebusz",
