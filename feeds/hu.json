@@ -9,6 +9,11 @@
         {
             "name": "mav",
             "type": "http",
+            "url": "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt..gtfs.zip"
+        },
+        {
+            "name": "mav-gyermekvasut",
+            "type": "http",
             "url": "https://www.mavcsoport.hu/gtfs/gtfsMavMenetrend.zip",
             "http-options": {
                 "headers": {
@@ -18,7 +23,51 @@
             "license": {
                 "spdx-identifier": "CC0-1.0"
             },
-            "drop-shapes": true
+            "drop-shapes": true,
+            "keep-agency-names": [
+                "Gyermekvasút"
+            ]
+        },
+        {
+            "name": "mav",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/1_198/trip-updates.pb"
+        },
+        {
+            "name": "mav",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/1_198/vehicle-positions.pb"
+        },
+        {
+            "name": "mav",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/1_198/alerts.pb"
+        },
+        {
+            "name": "gysev",
+            "type": "http",
+            "url": "https://jbb.ghsq.de/gtfs/hu-gysev_zrt..gtfs.zip"
+        },
+        {
+            "name": "gysev",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/1_134/trip-updates.pb"
+        },
+        {
+            "name": "gysev",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/1_134/vehicle-positions.pb"
+        },
+        {
+            "name": "gysev",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/1_134/alerts.pb"
         },
         {
             "name": "volanbusz",
