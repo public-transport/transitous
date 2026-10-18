@@ -46,7 +46,7 @@ local route_agency_short_name_color_map = {
     ["80"] = { 0xFFEF5BA1, 0xFFFDFEFF }, -- Umeå bus 80
     ["81"] = { 0xFFBE2075, 0xFFFDFEFF } -- Umeå bus 81
   },
-  ["SL"] = {
+  ["Storstockholms Lokaltrafik"] = {
     ["7"] = { 0xFF999999, 0xFFFFFFFF }, -- Stockholm tram 7
     ["10"] = { 0xFF0089CA, 0xFFFFFFFF }, -- Stockholm metro 10 (blue line)
     ["11"] = { 0xFF0089CA, 0xFFFFFFFF }, -- Stockholm metro 11 (blue line)
@@ -149,7 +149,7 @@ local route_agency_short_name_color_map = {
 
 -- override route colors based on agency name and long_name
 local route_agency_long_name_color_map = {
-  ["SL"] = {
+  ["Storstockholms Lokaltrafik"] = {
     ["Nockebybanan"] = { 0xFF669999, 0xFFFFFFFF }, -- Stockholm Nockebybanan 12
     ["Lidingöbanan"] = { 0xFFB66931, 0xFFFFFFFF }, -- Stockholm Lidingöbanan 21
     ["Roslagsbanan"] = { 0xFFA05EA5, 0xFFFFFFFF }, -- Roslagsbanan 27, 28, 29
