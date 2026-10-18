@@ -40,3 +40,6 @@ theme = "ananke"
   [[menus.main]]
     name = "Status"
     url = "https://splinestatus.de/status/transitous"
+  [[menus.main]]
+    name = "Statistics"
+    url = "https://stats.transitous.org"
