@@ -9,11 +9,7 @@
         {
             "name": "georgian-railway",
             "type": "http",
-            "url": "https://jbb.ghsq.de/gtfs/ge-georgian-railway.gtfs.zip",
-            "fix": true,
-            "license": {
-                "spdx-identifier": "ODbL-1.0"
-            }
+            "url": "https://georailway.com/gtfs/georgian-railway.zip"
         },
         {
             "name": "tbilisi-transport-company",
