@@ -223,10 +223,25 @@
         {
             "name": "paksbusz",
             "type": "http",
-            "url": "https://utazastervezo.paksbusz.net/api/static/v1/gtfs-google/gtfs-google.zip",
-            "license": {
-                "spdx-identifier": "CC0-1.0"
-            }
+            "url": "https://jbb.ghsq.de/gtfs/hu-paks.gtfs.zip"
+        },
+        {
+            "name": "paksbusz",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/paks/trip-updates.pb"
+        },
+        {
+            "name": "paksbusz",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/paks/vehicle-positions.pb"
+        },
+        {
+            "name": "paksbusz",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/paks/alerts.pb"
         },
         {
             "name": "BAHART",
