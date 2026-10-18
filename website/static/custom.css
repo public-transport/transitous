@@ -111,3 +111,34 @@ body, .card, .table {
 [data-bs-theme="dark"] .app-card:hover {
   box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.5), 0 2px 12px 0 rgba(0, 0, 0, 0.4);
 }
+
+.paypal-donate-btn {
+  display: block;
+  min-width: 98px;
+  height: 26px;
+  padding: 0 14px;
+  margin: 16px;
+  border: 0;
+  border-radius: 13px;
+  background-color: #FFC439;
+  box-shadow: inset 0 1px 0 #FFDC8A, inset 0 -1px 0 #D9A630;
+  color: #000000;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 26px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.paypal-donate-btn:hover {
+  background-color: #F2BA36;
+}
+
+.paypal-donate-btn:active {
+  box-shadow: inset 0 1px 2px #D9A630;
+}
+
+.paypal-donate-btn:focus-visible {
+  outline: 2px solid #0070BA;
+  outline-offset: 2px;
+}
