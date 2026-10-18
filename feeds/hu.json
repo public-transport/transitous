@@ -152,6 +152,29 @@
             }
         },
         {
+            "name": "dkv",
+            "type": "http",
+            "url": "https://jbb.ghsq.de/gtfs/hu-dkv_debreceni_k%C3%B6zleked%C3%A9si_zrt..gtfs.zip"
+        },
+        {
+            "name": "dkv",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/debrecen/trip-updates.pb"
+        },
+        {
+            "name": "dkv",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/debrecen/vehicle-positions.pb"
+        },
+        {
+            "name": "dkv",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/debrecen/alerts.pb"
+        },
+        {
             "name": "mvk",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-u2wc-mvkzrt",
