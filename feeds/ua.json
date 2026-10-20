@@ -224,11 +224,11 @@
         },
         {
             "name": "malyn",
-            "type": "http",
-            "url": "https://malin.kiev.ua/transport/gtfs.zip",
+            "type": "mobility-database",
+            "mdb-id": "mdb-3615",
             "license": {
                 "url": "https://own-net.com/license.html",
-                "attribution-text": "community feed by malin.kiev.ua"
+                "attribution-text": "Data: malin.kiev.ua — Serhii Merenkov / Technologies LLC"
             }
         }
     ]
