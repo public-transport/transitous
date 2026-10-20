@@ -15,6 +15,15 @@
                 "spdx-identifier": "CC-BY-4.0"
             },
             "fix": true
+        },
+        {
+            "name": "Bruny-Island-Ferry",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://gtfs.elwell.au/ferry.zip",
+            "license": {
+                "spdx-identifier": "Apache-2.0"
+            }
         }
     ]
 }
