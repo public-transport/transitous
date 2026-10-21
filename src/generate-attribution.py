@@ -132,6 +132,18 @@ def http_source_attribution(source: HttpSource | FtpSource, source_id: str, regi
 
                             contacts += attribution_contacts
 
+                if "licenses.txt" in z.namelist():
+                    with z.open("licenses.txt", "r") as a:
+                        with io.TextIOWrapper(a) as at:
+                            licensestxt = csv.DictReader(at, delimiter=",", quotechar='"')
+                            licenses = filter(lambda l: l["licensed_table_name"] == "", licensestxt)
+                            if licenses:
+                                license = next(licenses)
+                                if "license_spdx_id" in license and license["license_spdx_id"]:
+                                    attribution["spdx_license_identifier"] = license["license_spdx_id"]
+                                if "custom_license_url" in license and license["custom_license_url"]:
+                                    attribution["license_url"] = license["custom_license_url"]
+
             attribution["contacts"] = \
                 list(filter(lambda c: c.get("email") or c.get("url"),
                             contacts))
