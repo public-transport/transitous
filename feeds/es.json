@@ -1981,6 +1981,12 @@
                     "ApiKey": "716dfb77-a51b-49a9-aadf-6aff45b798e4"
                 }
             }
+        },
+        {
+            "name": "Bizi-Zaragoza",
+            "type": "url",
+            "url": "https://zaragoza.publicbikesystem.net/customer/gbfs/v2/gbfs.json",
+            "spec": "gbfs"
         }
     ]
 }
