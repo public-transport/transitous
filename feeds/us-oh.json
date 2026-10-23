@@ -18,7 +18,9 @@
         {
             "name": "RTA",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-greaterclevelandregionaltransitauthority~rt"
+            "transitland-atlas-id": "f-greaterclevelandregionaltransitauthority~rt",
+            "skip": true,
+            "skip-reason": "missing api key"
         },
         {
             "name": "Yourmetrobus",
