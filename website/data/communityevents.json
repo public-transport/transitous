@@ -46,11 +46,47 @@
         "address": "Wikimedia e.V. Tempelhofer Ufer 23-24, 10963 Berlin"
     },
     {
+        "name": "OpenTransport Hackday at MOBIDROM",
+        "startDate": "2026-11-21",
+        "endDate": "2026-11-21",
+        "location": "Düsseldorf, Germany",
+        "coordinates": "51.2731150,6.7678353",
+        "address": "Klaus-Bungert-Straße 4, 40468 Düsseldorf"
+    },
+    {
         "name": "40C3",
+        "link": "https://events.ccc.de/congress/2026/",
         "startDate": "2026-12-27",
         "endDate": "2026-12-30",
         "location": "Hamburg, Germany",
         "coordinates": "53.56020,9.97823",
         "address": "Hamburg Messe"
+    },
+    {
+        "name": "FOSDEM 2027",
+        "link": "https://fosdem.org/2027",
+        "startDate": "2027-01-30",
+        "endDate": "2027-01-31",
+        "location": "Brussels, Belgium",
+        "coordinates": "50.813150,4.382048",
+        "address": "Campus Solbosch of the Université Libre de Bruxelles (ULB)"
+    },
+    {
+        "name": "OSM Hack Weekend Karlsruhe",
+        "link": "https://wiki.openstreetmap.org/wiki/Karlsruhe_Hack_Weekend_February_2027",
+        "startDate": "2026-02-13",
+        "endDate": "2026-02-14",
+        "location": "Karlsruhe, Germany",
+        "coordinates": "49.009610,8.390210",
+        "address": "Amalienstraße 44, 76133 Karlsruhe"
+    },
+    {
+        "name": "FOSSGIS-Konferenz 2027",
+        "link": "https://fossgis-konferenz.de/2027/",
+        "startDate": "2027-03-10",
+        "endDate": "2027-03-13",
+        "location": "Heidelberg, Germany",
+        "coordinate": "49.417023,8.671892",
+        "address": "audiMAX Uni Heidelberg, Im Neuenheimer Feld 289, 69120 Heidelberg"
     }
 ]
