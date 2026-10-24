@@ -22,7 +22,7 @@
             "name": "tbilisi-transport-company",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "http://vm-gtfs.spline.de/gtfs-rt.pb",
+            "url": "http://gtfs.spline.de/gtfs-rt/tbilisi/vehicle-positions.pb",
             "derive-trip-updates": true
         }
     ]
