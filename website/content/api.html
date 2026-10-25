@@ -55,8 +55,8 @@ Go ahead if all of these points apply to your project:
 
 <ol>
   <li><b>publish your code:</b> Make sure your source code is published under an appropriate open-source license (light prototype testing before that is fine).</li>
-  <li><b>clarify open questions:</b> If you think your requests might require significant resources on our side (many <code>/plan</code> / <code>/one-to-many</code> / <code>/one-to-all</code> requests, many users, automated requests, etc.), please contact us <a href="https://matrix.to/#/%23transitous:matrix.spline.de">in our Matrix Channel</a> to make sure we can handle your
-expected resource usage. We can also help you to pick the most efficient endpoint for your functionality. We will also coordinate breaking changes in that channel.
+  <li><b>clarify open questions:</b> If you think your requests might require significant resources on our side (see Resource Usage), please contact us <a href="https://matrix.to/#/%23transitous:matrix.spline.de">in our Matrix Channel</a> to make sure we can handle your
+expected resource usage. We can also help you to pick the most efficient endpoint for your functionality. We will also coordinate breaking changes in that channel. Please refrain from contacting us if your case is already excluded in this policy.
   <li><b>contact information:</b>
     <p>
       Make sure you send HTTP <code>User-Agent</code> headers with every request, containing at least the following information:
@@ -77,13 +77,17 @@ expected resource usage. We can also help you to pick the most efficient endpoin
 
 <h3>Resource Usage</h3>
 
-<p>Please contact us before using any potentially resource-intensive API endpoints (such as routing, isochrones) or doing many requests (also from different users) in your project.</p>
+<p>
+Many requests (> 720 requests / 24h) of type <code>/plan</code>, <code>/one-to-many</code>, <code>/one-to-all</code>, many users and automated requests are the primary source of high resource usage on our side.
+Please coordinate with us if your use case requires any of this.
+</p>
 
 <p>There is no need to scrape data using the API, you may download our entire source dataset <a href="https://github.com/public-transport/transitous/wiki/Using-Transitous-data">here</a>.
 
 <h3>Commercial Use</h3>
 
-<p>Due to data source licences and resource prioritisation, commercial use is not allowed. If you are unsure whether your use is commercial, please contact us in advance.
+<p>
+Due to data source licences and resource prioritisation, commercial use is not allowed. If you are a charitable organization and not already covered by other rules above, you may contact us to discuss exceptions.
 <!--For commercial use, see the <a href="/suppliers/">list of companies providing consulting and MOTIS hosting<a/>. TODO uncomment as soon as that list is no longer empty -->
 </p>
 
