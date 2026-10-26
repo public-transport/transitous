@@ -445,7 +445,6 @@ class Fetcher:
                 if validity == FeedValidity.IN_FUTURE and output_path.exists():
                     eprint("Info: Feed not yet valid, using old version")
                     os.remove(temp_file)
-                    os.remove(input_path)  # to force checking again
                     return
 
                 if validity == FeedValidity.EXPIRED:
