@@ -112,7 +112,7 @@ server {
     }
 
     location /mapterhorn/ {
-        proxy_pass http://tiles.mapterhorn.com/;
+        proxy_pass https://mirror.transitous.org;
 
         limit_req zone=api_harmless burst=200 delay=50;
 
