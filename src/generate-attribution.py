@@ -137,12 +137,14 @@ def http_source_attribution(source: HttpSource | FtpSource, source_id: str, regi
                         with io.TextIOWrapper(a) as at:
                             licensestxt = csv.DictReader(at, delimiter=",", quotechar='"')
                             licenses = filter(lambda l: l["licensed_table_name"] == "", licensestxt)
-                            if licenses:
+                            try:
                                 license = next(licenses)
                                 if "license_spdx_id" in license and license["license_spdx_id"]:
                                     attribution["spdx_license_identifier"] = license["license_spdx_id"]
                                 if "custom_license_url" in license and license["custom_license_url"]:
                                     attribution["license_url"] = license["custom_license_url"]
+                            except StopIteration:
+                                pass
 
             attribution["contacts"] = \
                 list(filter(lambda c: c.get("email") or c.get("url"),
