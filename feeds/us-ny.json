@@ -244,6 +244,12 @@
             "transitland-atlas-id": "f-dr5x-wwwnicebuscom"
         },
         {
+            "name": "NassauInterCountyExpress",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-nice~rt",
+            "url-override": "https://birch.catenarymaps.org/gtfs_rt?feed_id=f-nice~rt&feed_type=trip"
+        },
+        {
             "name": "LongBeach",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-clbt~nassau~ny~us"
