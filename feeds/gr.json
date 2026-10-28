@@ -42,6 +42,11 @@
             "extend-calendar": true
         },
         {
+            "name": "Thessaloniki-Metro",
+            "type": "http",
+            "url": "https://gtfs.sorunome.de/thessmetro.zip"
+        },
+        {
             "name": "Hellenic-Train",
             "type": "http",
             "url": "https://jbb.ghsq.de/gtfs/gr-hellenic-train.gtfs.zip"
