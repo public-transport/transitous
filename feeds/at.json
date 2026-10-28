@@ -212,7 +212,9 @@
                 "fetch-interval-days": 2
             },
             "managed-by-script": true,
-            "x-mvo-id": "57-2026"
+            "x-mvo-id": "57-2026",
+            "skip": true,
+            "skip-reason": "We use the Flex feed instead"
         },
         {
             "name": "WienMobil-Rad",
