@@ -24,7 +24,7 @@
             "name": "miami-dade",
             "type": "mobility-database",
             "url-override": "https://birch.catenarymaps.org/gtfs_rt?feed_id=f-miamidadetransit~rt&feed_type=trip",
-            "mdb-id": "mdb-1738",
+            "mdb-id": "mdb-1738"
         },
         {
             "name": "miami-dade",
