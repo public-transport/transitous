@@ -1984,9 +1984,8 @@
         },
         {
             "name": "Bizi-Zaragoza",
-            "type": "url",
-            "url": "https://zaragoza.publicbikesystem.net/customer/gbfs/v2/gbfs.json",
-            "spec": "gbfs"
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-bizi~zaragoza~gbfs"
         }
     ]
 }
