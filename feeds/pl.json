@@ -1529,9 +1529,20 @@
             "type": "http",
             "spec": "gtfs",
             "url": "https://feed.gtfs.cc/oborniki-slaskie/gtfs.zip",
+            "url-override": "https://api.zbiorkom.live/api6-open/wroclaw/gtfs/OBORNIKI",
             "license": {
                 "spdx-identifier": "MIT"
             }
+        },
+        {
+            "name": "Oborniki-Śląskie",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.zbiorkom.live/api6-open/default/gtfsRealtime/OBORNIKI/tripUpdates,serviceAlerts",
+            "license":{
+                "spdx-identifier": "MIT"
+            },
+            "use-feed-proxy": true
         },
         {
             "name": "Biskupiec",
@@ -2442,6 +2453,15 @@
                 "spdx-identifier": "MIT"
             },
             "use-feed-proxy": true
+        },
+        {
+            "name": "Włocławek",
+            "type": "http",
+            "spec": "gtfs",
+            "url": "http://mzdiz.pl/gtfs/ITSWloclawek.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
         }
     ]
 }
