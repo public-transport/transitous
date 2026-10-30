@@ -66,7 +66,7 @@
             "name": "Polish-Trains",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://mkuran.pl/gtfs/polish_trains/updates.pb",
+            "url": "https://gtfs.kasznia.net/rt/polish-trains.pb",
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             }
