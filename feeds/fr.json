@@ -1756,9 +1756,7 @@
             "spec": "gtfs-rt",
             "x-data-gov-fr-res-id": 84126,
             "x-data-gov-fr-dataset-id": "5c642379634f41657e9b5ea4",
-            "managed-by-script": true,
-            "skip": true,
-            "skip-reason": "static feed is skipped"
+            "managed-by-script": true
         },
         {
             "name": "offre-de-transport-du-reseau-tango-de-nimes-metropole-gtfs-gtfs-rt",
@@ -1790,7 +1788,7 @@
             "x-data-gov-fr-res-title": "GTFS-RT Mises à jour des trajets en temps réel",
             "x-data-gov-fr-dataset-id": "5c642379634f41657e9b5ea4",
             "skip": true,
-            "skip-reason": "Feed is expired according to metadata"
+            "skip-reason": "Trip and stop IDs do not match the GTFS, the Bus Tracker feed is used instead"
         },
         {
             "name": "horaires-theoriques-et-temps-reel-gtfs-gtfs-rt-du-reseau-palmbus-cannes-pays-de-lerins",
