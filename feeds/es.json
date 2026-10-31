@@ -1981,6 +1981,11 @@
                     "ApiKey": "716dfb77-a51b-49a9-aadf-6aff45b798e4"
                 }
             }
+        },
+        {
+            "name": "Bizi-Zaragoza",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-bizi~zaragoza~gbfs"
         }
     ]
 }

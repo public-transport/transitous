@@ -9,11 +9,7 @@
         {
             "name": "georgian-railway",
             "type": "http",
-            "url": "https://jbb.ghsq.de/gtfs/ge-georgian-railway.gtfs.zip",
-            "fix": true,
-            "license": {
-                "spdx-identifier": "ODbL-1.0"
-            }
+            "url": "https://georailway.com/gtfs/georgian-railway.zip"
         },
         {
             "name": "tbilisi-transport-company",
@@ -26,7 +22,7 @@
             "name": "tbilisi-transport-company",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "http://vm-gtfs.spline.de/gtfs-rt.pb",
+            "url": "http://gtfs.spline.de/gtfs-rt/tbilisi/vehicle-positions.pb",
             "derive-trip-updates": true
         }
     ]

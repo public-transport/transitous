@@ -302,11 +302,6 @@
             "transitland-atlas-id": "f-flinkster~germany~gbfs"
         },
         {
-            "name": "OberSchwabenMobil",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-oberschwabenmobil~carsharing~halle~saale~gbfs"
-        },
-        {
             "name": "FordCarsharingAutohausAlbert",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-ford~carsharing~autohaus~albert~donaueschingen~gbfs"
@@ -503,11 +498,6 @@
             "transitland-atlas-id": "f-zeus~schwäbisch~gmünd~gbfs"
         },
         {
-            "name": "ZeusTübingen",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-zeus~tubingen~gbfs"
-        },
-        {
             "name": "ZeusTuttlingen",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-zeus~tuttlingen~gbfs"
@@ -521,11 +511,6 @@
             "name": "ZeusRenningenMalmsheim",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-zeus~renningen~malmsheim~gbfs"
-        },
-        {
-            "name": "ZeusGöppingen",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-zeus~goppingen~gbfs"
         },
         {
             "name": "ZeusWürzburg",

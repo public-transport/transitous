@@ -48,8 +48,7 @@
         },
         {
             "name": "odesa",
-            "type": "http",
-            "url": "https://gw.x24.digital/api/od-all/gtfs/v1/download/static",
+            "type": "mobility-database",
             "fix": true,
             "http-options": {
                 "headers": {
@@ -59,7 +58,8 @@
             "license": {
                 "url": "https://omr.gov.ua/ua/city/departments/dtks/open-data/",
                 "spdx-identifier": "CC-BY-4.0"
-            }
+            },
+            "mdb-id": "mdb-2946"
         },
         {
             "name": "odesa",
@@ -73,14 +73,14 @@
         },
         {
             "name": "bucha",
-            "type": "http",
-            "url": "https://gw.x24.digital/api/bu/gtfs/v1/download/static",
+            "type": "mobility-database",
             "http-options": {
                 "headers": {
                     "ApiKey": "a8c6d35e-f2c1-4f72-b902-831fa9215009"
                 }
             },
-            "fix": true
+            "fix": true,
+            "mdb-id": "mdb-2945"
         },
         {
             "name": "bucha",
@@ -94,17 +94,17 @@
         },
         {
             "name": "kyiv",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u8v-kyivpastrans",
+            "type": "mobility-database",
             "url-override": "https://jbb.ghsq.de/gtfs/ua-kyiv.gtfs.zip",
-            "extend-calendar": true
+            "extend-calendar": true,
+            "fix": "true",
+            "mdb-id": "mdb-3230"
         },
         {
             "name": "kyiv",
-            "type": "url",
-            "spec": "gtfs-rt",
-            "url": "http://193.23.225.214:732/api/realtime",
-            "use-feed-proxy": true
+            "type": "mobility-database",
+            "use-feed-proxy": true,
+            "mdb-id": "mdb-3231"
         },
         {
             "name": "ivano-frankivsk",
@@ -219,8 +219,17 @@
         },
         {
             "name": "vdexpress",
-            "type": "http",
-            "url": "https://vdexpress.net/api/gtfs/feed"
+            "type": "mobility-database",
+            "mdb-id": "mdb-3134"
+        },
+        {
+            "name": "malyn",
+            "type": "mobility-database",
+            "mdb-id": "mdb-3615",
+            "license": {
+                "url": "https://own-net.com/license.html",
+                "attribution-text": "Data: malin.kiev.ua — Serhii Merenkov / Technologies LLC"
+            }
         }
     ]
 }

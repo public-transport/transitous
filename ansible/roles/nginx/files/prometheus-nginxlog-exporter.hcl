@@ -51,6 +51,7 @@ namespace "rp" {
   }
 
   relabel "protocol" {
+    only_counter = true
     from         = "server_protocol"
   }
 
@@ -71,6 +72,7 @@ namespace "rp" {
   }
 
   relabel "accept_language" {
+    only_counter = true
     from         = "http_accept_language"
 
     match "^([a-z]{2}).*" {

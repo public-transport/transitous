@@ -145,7 +145,8 @@
         {
             "name": "Viarail",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-f-viarail~traindecharlevoix"
+            "transitland-atlas-id": "f-f-viarail~traindecharlevoix",
+            "script": "ca-viarail.lua"
         },
         {
             "name": "Viarail",

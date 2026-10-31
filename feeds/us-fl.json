@@ -23,8 +23,7 @@
         {
             "name": "miami-dade",
             "type": "mobility-database",
-            "skip": true,
-            "skip-reason": "api-key is missing",
+            "url-override": "https://birch.catenarymaps.org/gtfs_rt?feed_id=f-miamidadetransit~rt&feed_type=trip",
             "mdb-id": "mdb-1738"
         },
         {
@@ -43,8 +42,7 @@
             "name": "miami-beach",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-miamibeach~rt",
-            "skip": true,
-            "skip-reason": "api-key is missing"
+            "url-override": "https://birch.catenarymaps.org/gtfs_rt?feed_id=f-miamidadetransit~rt&feed_type=trip"
         },
         {
             "name": "miami-beach",

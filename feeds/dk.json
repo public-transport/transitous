@@ -18,7 +18,7 @@
             "license": {
                 "attribution_text": "Provided by Rejsekort & Rejseplan A/S, converted from event queue subscription using https://gitlab.spline.de/spline/transitous/danmark-rt/"
             },
-            "url": "https://jbb.ghsq.de/siri/danmark"
+            "url": "http://gtfs.spline.de/siri/danmark/estimated-timetable.xml"
         }
     ]
 }

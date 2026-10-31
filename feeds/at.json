@@ -174,7 +174,9 @@
                 "fetch-interval-days": 2
             },
             "managed-by-script": true,
-            "x-mvo-id": "69-2026"
+            "x-mvo-id": "69-2026",
+            "skip": true,
+            "skip-reason": "We use the Flex feed instead"
         },
         {
             "name": "Railway-Current-Reference-Data-2026",
@@ -210,12 +212,44 @@
                 "fetch-interval-days": 2
             },
             "managed-by-script": true,
-            "x-mvo-id": "57-2026"
+            "x-mvo-id": "57-2026",
+            "skip": true,
+            "skip-reason": "We use the Flex feed instead"
         },
         {
             "name": "WienMobil-Rad",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-wienmobil~rad~vienna~gbfs"
+        },
+        {
+            "name": "Fahrplandaten-Verkehrsverbund-Tirol-Flex-2026",
+            "type": "http",
+            "url": "https://data.mobilitaetsverbuende.at/api/public/v1/data-sets/76/2026/file",
+            "license": {
+                "url": "https://mobilitaetsverbuende.atlassian.net/wiki/spaces/DBP/pages/185237505/Terms+of+Use"
+            },
+            "function": "mvo_keycloak_token",
+            "http-options": {
+                "fetch-interval-days": 2
+            },
+            "managed-by-script": true,
+            "x-mvo-id": "76-2026",
+            "use-gtfsclean": false
+        },
+        {
+            "name": "Fahrplandaten-Linz-AG-Flex-2026",
+            "type": "http",
+            "url": "https://data.mobilitaetsverbuende.at/api/public/v1/data-sets/74/2026/file",
+            "license": {
+                "url": "https://mobilitaetsverbuende.atlassian.net/wiki/spaces/DBP/pages/185237505/Terms+of+Use"
+            },
+            "function": "mvo_keycloak_token",
+            "http-options": {
+                "fetch-interval-days": 2
+            },
+            "managed-by-script": true,
+            "x-mvo-id": "74-2026",
+            "use-gtfsclean": false
         }
     ]
 }

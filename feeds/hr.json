@@ -181,6 +181,11 @@
             "name": "terzic-slavonski-brod",
             "type": "http",
             "url": "https://hoermalmeister.github.io/gtfs-rehost/slavonski_brod/slavonski_brod.zip"
+        },
+        {
+            "name": "bajs",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-bajs~zagreb~croatia~grad~gbfs"
         }
     ]
 }

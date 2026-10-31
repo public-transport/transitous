@@ -305,8 +305,68 @@
         },
         {
             "name": "SC-Transport-Public-SA",
-            "type": "http",
-            "url": "https://tpfocsani.ro/images/gtfs/GTFS.zip"
+            "type": "mobility-database",
+            "mdb-id": "mdb-3599"
+        },
+        {
+            "name": "Transurban-Satu-Mare",
+            "type": "mobility-database",
+            "mdb-id": "mdb-3591"
+        },
+        {
+            "name": "Braicar-Brăila",
+            "type": "mobility-database",
+            "mdb-id": "mdb-3592"
+        },
+        {
+            "name": "Transurb-Dej",
+            "type": "mobility-database",
+            "mdb-id": "mdb-3593"
+        },
+        {
+            "name": "Transport-Public-Tulcea",
+            "type": "mobility-database",
+            "mdb-id": "mdb-3594"
+        },
+        {
+            "name": "Compania-de-Transport-Public-Arad",
+            "type": "mobility-database",
+            "mdb-id": "mdb-3595"
+        },
+        {
+            "name": "Ali-Trans-Com-Călărași",
+            "type": "mobility-database",
+            "mdb-id": "mdb-3596"
+        },
+        {
+            "name": "Transmixt-Bistrița-Exmitiani-Ani-Tour-Năsăud",
+            "type": "mobility-database",
+            "mdb-id": "mdb-3597"
+        },
+        {
+            "name": "Meditur-Mediaș",
+            "type": "mobility-database",
+            "mdb-id": "mdb-3598"
+        },
+        {
+            "name": "Transport-Urban-Reșița",
+            "type": "mobility-database",
+            "mdb-id": "mdb-3600"
+        },
+        {
+            "name": "Transport-Public-Local-Suceava",
+            "type": "mobility-database",
+            "mdb-id": "mdb-3601"
+        },
+        {
+            "name": "Transport-Urban-de-Călători-Râmnicu-Sărat",
+            "type": "mobility-database",
+            "mdb-id": "mdb-3602"
+        },
+        {
+            "name": "Urbana-Odorheiu-Secuiesc",
+            "type": "mobility-database",
+            "mdb-id": "mdb-3603"
         }
     ]
 }

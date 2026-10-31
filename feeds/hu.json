@@ -9,6 +9,11 @@
         {
             "name": "mav",
             "type": "http",
+            "url": "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt..gtfs.zip"
+        },
+        {
+            "name": "mav-gyermekvasut",
+            "type": "http",
             "url": "https://www.mavcsoport.hu/gtfs/gtfsMavMenetrend.zip",
             "http-options": {
                 "headers": {
@@ -18,13 +23,74 @@
             "license": {
                 "spdx-identifier": "CC0-1.0"
             },
-            "drop-shapes": true
+            "drop-shapes": true,
+            "keep-agency-names": [
+                "Gyermekvasút"
+            ]
         },
         {
-            "name": "volanbusz",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-volanbusz~hu",
-            "fix": true
+            "name": "mav",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/1_198/trip-updates.pb"
+        },
+        {
+            "name": "mav",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/1_198/vehicle-positions.pb"
+        },
+        {
+            "name": "mav",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/1_198/alerts.pb"
+        },
+        {
+            "name": "gysev",
+            "type": "http",
+            "url": "https://jbb.ghsq.de/gtfs/hu-gysev_zrt..gtfs.zip"
+        },
+        {
+            "name": "gysev",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/1_134/trip-updates.pb"
+        },
+        {
+            "name": "gysev",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/1_134/vehicle-positions.pb"
+        },
+        {
+            "name": "gysev",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/1_134/alerts.pb"
+        },
+        {
+            "name": "volan-helykozi",
+            "type": "http",
+            "url": "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_helyk%C3%B6zi_busz.gtfs.zip"
+        },
+        {
+            "name": "volan-helykozi",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir/trip-updates.pb"
+        },
+        {
+            "name": "volan-helykozi",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir/vehicle-positions.pb"
+        },
+        {
+            "name": "volan-helykozi",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir/alerts.pb"
         },
         {
             "name": "dott",
@@ -103,10 +169,50 @@
             }
         },
         {
+            "name": "dkv",
+            "type": "http",
+            "url": "https://jbb.ghsq.de/gtfs/hu-dkv_debreceni_k%C3%B6zleked%C3%A9si_zrt..gtfs.zip"
+        },
+        {
+            "name": "dkv",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/debrecen/trip-updates.pb"
+        },
+        {
+            "name": "dkv",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/debrecen/vehicle-positions.pb"
+        },
+        {
+            "name": "dkv",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/debrecen/alerts.pb"
+        },
+        {
             "name": "mvk",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u2wc-mvkzrt",
-            "fix": true
+            "type": "http",
+            "url": "https://jbb.ghsq.de/gtfs/hu-mvk_zrt..gtfs.zip"
+        },
+        {
+            "name": "mvk",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/mvkzrt/trip-updates.pb"
+        },
+        {
+            "name": "mvk",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/mvkzrt/vehicle-positions.pb"
+        },
+        {
+            "name": "mvk",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/mvkzrt/alerts.pb"
         },
         {
             "name": "szkt",
@@ -114,12 +220,27 @@
             "transitland-atlas-id": "f-u2nr-dakkzrt~szkt"
         },
         {
-            "name": "v-busz",
+            "name": "vbusz",
             "type": "http",
-            "url": "https://vbusz.hu/gtfs",
-            "license": {
-                "spdx-identifier": "CC0-1.0"
-            }
+            "url": "https://jbb.ghsq.de/gtfs/hu-v-busz_kft..gtfs.zip"
+        },
+        {
+            "name": "vbusz",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/VBUSZ/trip-updates.pb"
+        },
+        {
+            "name": "vbusz",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/VBUSZ/vehicle-positions.pb"
+        },
+        {
+            "name": "vbusz",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/VBUSZ/alerts.pb"
         },
         {
             "name": "tukebusz",
@@ -134,10 +255,25 @@
         {
             "name": "paksbusz",
             "type": "http",
-            "url": "https://utazastervezo.paksbusz.net/api/static/v1/gtfs-google/gtfs-google.zip",
-            "license": {
-                "spdx-identifier": "CC0-1.0"
-            }
+            "url": "https://jbb.ghsq.de/gtfs/hu-paks.gtfs.zip"
+        },
+        {
+            "name": "paksbusz",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/paks/trip-updates.pb"
+        },
+        {
+            "name": "paksbusz",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/paks/vehicle-positions.pb"
+        },
+        {
+            "name": "paksbusz",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/paks/alerts.pb"
         },
         {
             "name": "BAHART",
@@ -184,7 +320,19 @@
             "name": "oroshaza",
             "type": "url",
             "spec": "gtfs-rt",
+            "url": "https://gtfs.gpspositions.net/storage/realtime/OROSH_V_ONK/trip_updates.pb"
+        },
+        {
+            "name": "oroshaza",
+            "type": "url",
+            "spec": "gtfs-rt",
             "url": "https://gtfs.gpspositions.net/storage/realtime/OROSH_V_ONK/vehicle_positions.pb"
+        },
+        {
+            "name": "oroshaza",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://gtfs.gpspositions.net/storage/realtime/OROSH_V_ONK/service_alerts.pb"
         },
         {
             "name": "Hódmezővásárhely",
@@ -219,6 +367,1363 @@
             "name": "kecskemeti-kisvasut",
             "type": "http",
             "url": "https://kecskemetikisvasut.hu/wp-content/uploads/jk-gtfs/feed.zip"
+        },
+        {
+            "name": "volan-ajka",
+            "type": "http",
+            "url": "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_ajka.gtfs.zip"
+        },
+        {
+            "name": "volan-ajka",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-06673/trip-updates.pb"
+        },
+        {
+            "name": "volan-ajka",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-06673/vehicle-positions.pb"
+        },
+        {
+            "name": "volan-ajka",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-06673/alerts.pb"
+        },
+        {
+            "name": "volan-baja",
+            "type": "http",
+            "url": "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_baja.gtfs.zip"
+        },
+        {
+            "name": "volan-baja",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-03522/trip-updates.pb"
+        },
+        {
+            "name": "volan-baja",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-03522/vehicle-positions.pb"
+        },
+        {
+            "name": "volan-baja",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-03522/alerts.pb"
+        },
+        {
+            "name": "volan-balassagyarmat",
+            "type": "http",
+            "url": "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_balassagyarmat.gtfs.zip"
+        },
+        {
+            "name": "volan-balassagyarmat",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-13657/trip-updates.pb"
+        },
+        {
+            "name": "volan-balassagyarmat",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-13657/vehicle-positions.pb"
+        },
+        {
+            "name": "volan-balassagyarmat",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-13657/alerts.pb"
+        },
+        {
+            "name": "volan-balatonfured",
+            "type": "http",
+            "url": "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_balatonf%C3%BCred.gtfs.zip"
+        },
+        {
+            "name": "volan-balatonfured",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-21175/trip-updates.pb"
+        },
+        {
+            "name": "volan-balatonfured",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-21175/vehicle-positions.pb"
+        },
+        {
+            "name": "volan-balatonfured",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-21175/alerts.pb"
+        },
+        {
+            "name": "volan-balatonfuzfo",
+            "type": "http",
+            "url": "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_balatonf%C5%B1zf%C5%91.gtfs.zip"
+        },
+        {
+            "name": "volan-balatonfuzfo",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-02219/trip-updates.pb"
+        },
+        {
+            "name": "volan-balatonfuzfo",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-02219/vehicle-positions.pb"
+        },
+        {
+            "name": "volan-balatonfuzfo",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-02219/alerts.pb"
+        },
+        {
+            "name": "volan-balmazujvaros",
+            "type": "http",
+            "url": "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_balmaz%C3%BAjv%C3%A1ros.gtfs.zip"
+        },
+        {
+            "name": "volan-balmazujvaros",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-02918/trip-updates.pb"
+        },
+        {
+            "name": "volan-balmazujvaros",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-02918/vehicle-positions.pb"
+        },
+        {
+            "name": "volan-balmazujvaros",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-02918/alerts.pb"
+        },
+        {
+            "name": "volan-bataszek",
+            "type": "http",
+            "url": "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_b%C3%A1tasz%C3%A9k.gtfs.zip"
+        },
+        {
+            "name": "volan-bataszek",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-08864/trip-updates.pb"
+        },
+        {
+            "name": "volan-bataszek",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-08864/vehicle-positions.pb"
+        },
+        {
+            "name": "volan-bataszek",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-08864/alerts.pb"
+        },
+        {
+            "name": "volan-batonyterenye",
+            "type": "http",
+            "url": "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_b%C3%A1tonyterenye.gtfs.zip"
+        },
+        {
+            "name": "volan-batonyterenye",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-33534/trip-updates.pb"
+        },
+        {
+            "name": "volan-batonyterenye",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-33534/vehicle-positions.pb"
+        },
+        {
+            "name": "volan-batonyterenye",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-33534/alerts.pb"
+        },
+        {
+            "name": "volan-bekescsaba",
+            "type": "http",
+            "url": "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_b%C3%A9k%C3%A9scsaba.gtfs.zip"
+        },
+        {
+            "name": "volan-bekescsaba",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-15200/trip-updates.pb"
+        },
+        {
+            "name": "volan-bekescsaba",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-15200/vehicle-positions.pb"
+        },
+        {
+            "name": "volan-bekescsaba",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-15200/alerts.pb"
+        },
+        {
+            "name": "volan-bonyhad",
+            "type": "http",
+            "url": "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_bonyh%C3%A1d.gtfs.zip"
+        },
+        {
+            "name": "volan-bonyhad",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-06497/trip-updates.pb"
+        },
+        {
+            "name": "volan-bonyhad",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-06497/vehicle-positions.pb"
+        },
+        {
+            "name": "volan-bonyhad",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-06497/alerts.pb"
+        },
+        {
+            "name": "volan-csongrad",
+            "type": "http",
+            "url": "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_csongr%C3%A1d.gtfs.zip"
+        },
+        {
+            "name": "volan-csongrad",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-05111/trip-updates.pb"
+        },
+        {
+            "name": "volan-csongrad",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-05111/vehicle-positions.pb"
+        },
+        {
+            "name": "volan-csongrad",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-05111/alerts.pb"
+        },
+        {
+            "name": "volan-csurgo",
+            "type": "http",
+            "url": "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_csurg%C3%B3.gtfs.zip"
+        },
+        {
+            "name": "volan-csurgo",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-21315/trip-updates.pb"
+        },
+        {
+            "name": "volan-csurgo",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-21315/vehicle-positions.pb"
+        },
+        {
+            "name": "volan-csurgo",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-21315/alerts.pb"
+        },
+        {
+            "name": "volan-dunaujvaros",
+            "type": "http",
+            "url": "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_duna%C3%BAjv%C3%A1ros.gtfs.zip"
+        },
+        {
+            "name": "volan-dunaujvaros",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-03115/trip-updates.pb"
+        },
+        {
+            "name": "volan-dunaujvaros",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-03115/vehicle-positions.pb"
+        },
+        {
+            "name": "volan-dunaujvaros",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-03115/alerts.pb"
+        },
+        {
+            "name": "volan-eger",
+            "type": "http",
+            "url": "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_eger.gtfs.zip"
+        },
+        {
+            "name": "volan-eger",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-20491/trip-updates.pb"
+        },
+        {
+            "name": "volan-eger",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-20491/vehicle-positions.pb"
+        },
+        {
+            "name": "volan-eger",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-20491/alerts.pb"
+        },
+        {
+            "name": "volan-ercsi",
+            "type": "http",
+            "url": "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_ercsi.gtfs.zip"
+        },
+        {
+            "name": "volan-ercsi",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-23603/trip-updates.pb"
+        },
+        {
+            "name": "volan-ercsi",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-23603/vehicle-positions.pb"
+        },
+        {
+            "name": "volan-ercsi",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-23603/alerts.pb"
+        },
+        {
+            "name": "volan-erd",
+            "type": "http",
+            "url": "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_%C3%A9rd.gtfs.zip"
+        },
+        {
+            "name": "volan-erd",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-30988/trip-updates.pb"
+        },
+        {
+            "name": "volan-erd",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-30988/vehicle-positions.pb"
+        },
+        {
+            "name": "volan-erd",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-30988/alerts.pb"
+        },
+        {
+            "name": "volan-esztergom",
+            "type": "http",
+            "url": "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_esztergom.gtfs.zip"
+        },
+        {
+            "name": "volan-esztergom",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-25131/trip-updates.pb"
+        },
+        {
+            "name": "volan-esztergom",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-25131/vehicle-positions.pb"
+        },
+        {
+            "name": "volan-esztergom",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-25131/alerts.pb"
+        },
+        {
+            "name": "volan-fonyod",
+            "type": "http",
+            "url": "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_fony%C3%B3d.gtfs.zip"
+        },
+        {
+            "name": "volan-fonyod",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-14632/trip-updates.pb"
+        },
+        {
+            "name": "volan-fonyod",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-14632/vehicle-positions.pb"
+        },
+        {
+            "name": "volan-fonyod",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-14632/alerts.pb"
+        },
+        {
+            "name": "volan-godollo",
+            "type": "http",
+            "url": "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_g%C3%B6d%C3%B6ll%C5%91.gtfs.zip"
+        },
+        {
+            "name": "volan-godollo",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-32559/trip-updates.pb"
+        },
+        {
+            "name": "volan-godollo",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-32559/vehicle-positions.pb"
+        },
+        {
+            "name": "volan-godollo",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-32559/alerts.pb"
+        },
+        {
+            "name": "volan-gyongyos",
+            "type": "http",
+            "url": "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_gy%C3%B6ngy%C3%B6s.gtfs.zip"
+        },
+        {
+            "name": "volan-gyongyos",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-05236/trip-updates.pb"
+        },
+        {
+            "name": "volan-gyongyos",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-05236/vehicle-positions.pb"
+        },
+        {
+            "name": "volan-gyongyos",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-05236/alerts.pb"
+        },
+        {
+            "name": "volan-gyor",
+            "type": "http",
+            "url": "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_gy%C5%91r.gtfs.zip"
+        },
+        {
+            "name": "volan-gyor",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-25584/trip-updates.pb"
+        },
+        {
+            "name": "volan-gyor",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-25584/vehicle-positions.pb"
+        },
+        {
+            "name": "volan-gyor",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-25584/alerts.pb"
+        },
+        {
+            "name": "volan-gyula",
+            "type": "http",
+            "url": "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_gyula.gtfs.zip"
+        },
+        {
+            "name": "volan-gyula",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-05032/trip-updates.pb"
+        },
+        {
+            "name": "volan-gyula",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-05032/vehicle-positions.pb"
+        },
+        {
+            "name": "volan-gyula",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-05032/alerts.pb"
+        },
+        {
+            "name": "volan-hajduszoboszlo",
+            "type": "http",
+            "url": "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_hajd%C3%BAszoboszl%C3%B3.gtfs.zip"
+        },
+        {
+            "name": "volan-hajduszoboszlo",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-05175/trip-updates.pb"
+        },
+        {
+            "name": "volan-hajduszoboszlo",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-05175/vehicle-positions.pb"
+        },
+        {
+            "name": "volan-hajduszoboszlo",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-05175/alerts.pb"
+        },
+        {
+            "name": "volan-jaszbereny",
+            "type": "http",
+            "url": "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_j%C3%A1szber%C3%A9ny.gtfs.zip"
+        },
+        {
+            "name": "volan-jaszbereny",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-18209/trip-updates.pb"
+        },
+        {
+            "name": "volan-jaszbereny",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-18209/vehicle-positions.pb"
+        },
+        {
+            "name": "volan-jaszbereny",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-18209/alerts.pb"
+        },
+        {
+            "name": "volan-karcag",
+            "type": "http",
+            "url": "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_karcag.gtfs.zip"
+        },
+        {
+            "name": "volan-karcag",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-04923/trip-updates.pb"
+        },
+        {
+            "name": "volan-karcag",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-04923/vehicle-positions.pb"
+        },
+        {
+            "name": "volan-karcag",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-04923/alerts.pb"
+        },
+        {
+            "name": "volan-kazincbarcika",
+            "type": "http",
+            "url": "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_kazincbarcika.gtfs.zip"
+        },
+        {
+            "name": "volan-kazincbarcika",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-06691/trip-updates.pb"
+        },
+        {
+            "name": "volan-kazincbarcika",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-06691/vehicle-positions.pb"
+        },
+        {
+            "name": "volan-kazincbarcika",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-06691/alerts.pb"
+        },
+        {
+            "name": "volan-keszthely",
+            "type": "http",
+            "url": "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_keszthely.gtfs.zip"
+        },
+        {
+            "name": "volan-keszthely",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-18421/trip-updates.pb"
+        },
+        {
+            "name": "volan-keszthely",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-18421/vehicle-positions.pb"
+        },
+        {
+            "name": "volan-keszthely",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-18421/alerts.pb"
+        },
+        {
+            "name": "volan-komarom",
+            "type": "http",
+            "url": "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_kom%C3%A1rom.gtfs.zip"
+        },
+        {
+            "name": "volan-komarom",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-05449/trip-updates.pb"
+        },
+        {
+            "name": "volan-komarom",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-05449/vehicle-positions.pb"
+        },
+        {
+            "name": "volan-komarom",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-05449/alerts.pb"
+        },
+        {
+            "name": "volan-komlo",
+            "type": "http",
+            "url": "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_koml%C3%B3.gtfs.zip"
+        },
+        {
+            "name": "volan-komlo",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-26408/trip-updates.pb"
+        },
+        {
+            "name": "volan-komlo",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-26408/vehicle-positions.pb"
+        },
+        {
+            "name": "volan-komlo",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-26408/alerts.pb"
+        },
+        {
+            "name": "volan-kormend",
+            "type": "http",
+            "url": "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_k%C3%B6rmend.gtfs.zip"
+        },
+        {
+            "name": "volan-kormend",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-13532/trip-updates.pb"
+        },
+        {
+            "name": "volan-kormend",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-13532/vehicle-positions.pb"
+        },
+        {
+            "name": "volan-kormend",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-13532/alerts.pb"
+        },
+        {
+            "name": "volan-lenti",
+            "type": "http",
+            "url": "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_lenti.gtfs.zip"
+        },
+        {
+            "name": "volan-lenti",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-12575/trip-updates.pb"
+        },
+        {
+            "name": "volan-lenti",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-12575/vehicle-positions.pb"
+        },
+        {
+            "name": "volan-lenti",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-12575/alerts.pb"
+        },
+        {
+            "name": "volan-mako",
+            "type": "http",
+            "url": "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_mak%C3%B3.gtfs.zip"
+        },
+        {
+            "name": "volan-mako",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-07357/trip-updates.pb"
+        },
+        {
+            "name": "volan-mako",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-07357/vehicle-positions.pb"
+        },
+        {
+            "name": "volan-mako",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-07357/alerts.pb"
+        },
+        {
+            "name": "volan-mezokovesd",
+            "type": "http",
+            "url": "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_mez%C5%91k%C3%B6vesd.gtfs.zip"
+        },
+        {
+            "name": "volan-mezokovesd",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-19433/trip-updates.pb"
+        },
+        {
+            "name": "volan-mezokovesd",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-19433/vehicle-positions.pb"
+        },
+        {
+            "name": "volan-mezokovesd",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-19433/alerts.pb"
+        },
+        {
+            "name": "volan-mezotur",
+            "type": "http",
+            "url": "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_mez%C5%91t%C3%BAr.gtfs.zip"
+        },
+        {
+            "name": "volan-mezotur",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-04260/trip-updates.pb"
+        },
+        {
+            "name": "volan-mezotur",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-04260/vehicle-positions.pb"
+        },
+        {
+            "name": "volan-mezotur",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-04260/alerts.pb"
+        },
+        {
+            "name": "volan-mohacs",
+            "type": "http",
+            "url": "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_moh%C3%A1cs.gtfs.zip"
+        },
+        {
+            "name": "volan-mohacs",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-23959/trip-updates.pb"
+        },
+        {
+            "name": "volan-mohacs",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-23959/vehicle-positions.pb"
+        },
+        {
+            "name": "volan-mohacs",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-23959/alerts.pb"
+        },
+        {
+            "name": "volan-morahalom",
+            "type": "http",
+            "url": "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_m%C3%B3rahalom.gtfs.zip"
+        },
+        {
+            "name": "volan-morahalom",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-04349/trip-updates.pb"
+        },
+        {
+            "name": "volan-morahalom",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-04349/vehicle-positions.pb"
+        },
+        {
+            "name": "volan-morahalom",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-04349/alerts.pb"
+        },
+        {
+            "name": "volan-mosonmagyarovar",
+            "type": "http",
+            "url": "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_mosonmagyar%C3%B3v%C3%A1r.gtfs.zip"
+        },
+        {
+            "name": "volan-mosonmagyarovar",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-04783/trip-updates.pb"
+        },
+        {
+            "name": "volan-mosonmagyarovar",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-04783/vehicle-positions.pb"
+        },
+        {
+            "name": "volan-mosonmagyarovar",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-04783/alerts.pb"
+        },
+        {
+            "name": "volan-nagyatad",
+            "type": "http",
+            "url": "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_nagyat%C3%A1d.gtfs.zip"
+        },
+        {
+            "name": "volan-nagyatad",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-17941/trip-updates.pb"
+        },
+        {
+            "name": "volan-nagyatad",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-17941/vehicle-positions.pb"
+        },
+        {
+            "name": "volan-nagyatad",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-17941/alerts.pb"
+        },
+        {
+            "name": "volan-nagykanizsa",
+            "type": "http",
+            "url": "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_nagykanizsa.gtfs.zip"
+        },
+        {
+            "name": "volan-nagykanizsa",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-30933/trip-updates.pb"
+        },
+        {
+            "name": "volan-nagykanizsa",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-30933/vehicle-positions.pb"
+        },
+        {
+            "name": "volan-nagykanizsa",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-30933/alerts.pb"
+        },
+        {
+            "name": "volan-nyiregyhaza",
+            "type": "http",
+            "url": "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_ny%C3%ADregyh%C3%A1za.gtfs.zip"
+        },
+        {
+            "name": "volan-nyiregyhaza",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-17206/trip-updates.pb"
+        },
+        {
+            "name": "volan-nyiregyhaza",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-17206/vehicle-positions.pb"
+        },
+        {
+            "name": "volan-nyiregyhaza",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-17206/alerts.pb"
+        },
+        {
+            "name": "volan-oroszlany",
+            "type": "http",
+            "url": "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_oroszl%C3%A1ny.gtfs.zip"
+        },
+        {
+            "name": "volan-oroszlany",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-30766/trip-updates.pb"
+        },
+        {
+            "name": "volan-oroszlany",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-30766/vehicle-positions.pb"
+        },
+        {
+            "name": "volan-oroszlany",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-30766/alerts.pb"
+        },
+        {
+            "name": "volan-ozd",
+            "type": "http",
+            "url": "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_%C3%B3zd.gtfs.zip"
+        },
+        {
+            "name": "volan-ozd",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-14492/trip-updates.pb"
+        },
+        {
+            "name": "volan-ozd",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-14492/vehicle-positions.pb"
+        },
+        {
+            "name": "volan-ozd",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-14492/alerts.pb"
+        },
+        {
+            "name": "volan-papa",
+            "type": "http",
+            "url": "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_p%C3%A1pa.gtfs.zip"
+        },
+        {
+            "name": "volan-papa",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-31945/trip-updates.pb"
+        },
+        {
+            "name": "volan-papa",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-31945/vehicle-positions.pb"
+        },
+        {
+            "name": "volan-papa",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-31945/alerts.pb"
+        },
+        {
+            "name": "volan-salgotarjan",
+            "type": "http",
+            "url": "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_salg%C3%B3tarj%C3%A1n.gtfs.zip"
+        },
+        {
+            "name": "volan-salgotarjan",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-25788/trip-updates.pb"
+        },
+        {
+            "name": "volan-salgotarjan",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-25788/vehicle-positions.pb"
+        },
+        {
+            "name": "volan-salgotarjan",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-25788/alerts.pb"
+        },
+        {
+            "name": "volan-siklos",
+            "type": "http",
+            "url": "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_sikl%C3%B3s.gtfs.zip"
+        },
+        {
+            "name": "volan-siklos",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-05519/trip-updates.pb"
+        },
+        {
+            "name": "volan-siklos",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-05519/vehicle-positions.pb"
+        },
+        {
+            "name": "volan-siklos",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-05519/alerts.pb"
+        },
+        {
+            "name": "volan-siofok",
+            "type": "http",
+            "url": "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_si%C3%B3fok.gtfs.zip"
+        },
+        {
+            "name": "volan-siofok",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-17631/trip-updates.pb"
+        },
+        {
+            "name": "volan-siofok",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-17631/vehicle-positions.pb"
+        },
+        {
+            "name": "volan-siofok",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-17631/alerts.pb"
+        },
+        {
+            "name": "volan-sopron",
+            "type": "http",
+            "url": "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_sopron.gtfs.zip"
+        },
+        {
+            "name": "volan-sopron",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-08518/trip-updates.pb"
+        },
+        {
+            "name": "volan-sopron",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-08518/vehicle-positions.pb"
+        },
+        {
+            "name": "volan-sopron",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-08518/alerts.pb"
+        },
+        {
+            "name": "volan-szeged",
+            "type": "http",
+            "url": "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_szeged_hkir_hkir_V-33367.gtfs.zip"
+        },
+        {
+            "name": "volan-szeged",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-33367/trip-updates.pb"
+        },
+        {
+            "name": "volan-szeged",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-33367/vehicle-positions.pb"
+        },
+        {
+            "name": "volan-szeged",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-33367/alerts.pb"
+        },
+        {
+            "name": "volan-szekesfehervar",
+            "type": "http",
+            "url": "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_sz%C3%A9kesfeh%C3%A9rv%C3%A1r.gtfs.zip"
+        },
+        {
+            "name": "volan-szekesfehervar",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-14827/trip-updates.pb"
+        },
+        {
+            "name": "volan-szekesfehervar",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-14827/vehicle-positions.pb"
+        },
+        {
+            "name": "volan-szekesfehervar",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-14827/alerts.pb"
+        },
+        {
+            "name": "volan-szekszard",
+            "type": "http",
+            "url": "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_szeksz%C3%A1rd.gtfs.zip"
+        },
+        {
+            "name": "volan-szekszard",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-22761/trip-updates.pb"
+        },
+        {
+            "name": "volan-szekszard",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-22761/vehicle-positions.pb"
+        },
+        {
+            "name": "volan-szekszard",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-22761/alerts.pb"
+        },
+        {
+            "name": "volan-szentes",
+            "type": "http",
+            "url": "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_szentes.gtfs.zip"
+        },
+        {
+            "name": "volan-szentes",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-14456/trip-updates.pb"
+        },
+        {
+            "name": "volan-szentes",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-14456/vehicle-positions.pb"
+        },
+        {
+            "name": "volan-szentes",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-14456/alerts.pb"
+        },
+        {
+            "name": "volan-szigetvar",
+            "type": "http",
+            "url": "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_szigetv%C3%A1r.gtfs.zip"
+        },
+        {
+            "name": "volan-szigetvar",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-26578/trip-updates.pb"
+        },
+        {
+            "name": "volan-szigetvar",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-26578/vehicle-positions.pb"
+        },
+        {
+            "name": "volan-szigetvar",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-26578/alerts.pb"
+        },
+        {
+            "name": "volan-szolnok",
+            "type": "http",
+            "url": "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_szolnok.gtfs.zip"
+        },
+        {
+            "name": "volan-szolnok",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-27854/trip-updates.pb"
+        },
+        {
+            "name": "volan-szolnok",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-27854/vehicle-positions.pb"
+        },
+        {
+            "name": "volan-szolnok",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-27854/alerts.pb"
+        },
+        {
+            "name": "volan-tata",
+            "type": "http",
+            "url": "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_tata.gtfs.zip"
+        },
+        {
+            "name": "volan-tata",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-20127/trip-updates.pb"
+        },
+        {
+            "name": "volan-tata",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-20127/vehicle-positions.pb"
+        },
+        {
+            "name": "volan-tata",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-20127/alerts.pb"
+        },
+        {
+            "name": "volan-tiszafured",
+            "type": "http",
+            "url": "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_tiszaf%C3%BCred.gtfs.zip"
+        },
+        {
+            "name": "volan-tiszafured",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-29726/trip-updates.pb"
+        },
+        {
+            "name": "volan-tiszafured",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-29726/vehicle-positions.pb"
+        },
+        {
+            "name": "volan-tiszafured",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-29726/alerts.pb"
+        },
+        {
+            "name": "volan-tiszaujvaros",
+            "type": "http",
+            "url": "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_tisza%C3%BAjv%C3%A1ros.gtfs.zip"
+        },
+        {
+            "name": "volan-tiszaujvaros",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-28352/trip-updates.pb"
+        },
+        {
+            "name": "volan-tiszaujvaros",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-28352/vehicle-positions.pb"
+        },
+        {
+            "name": "volan-tiszaujvaros",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-28352/alerts.pb"
+        },
+        {
+            "name": "volan-ujszasz",
+            "type": "http",
+            "url": "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_%C3%BAjsz%C3%A1sz.gtfs.zip"
+        },
+        {
+            "name": "volan-ujszasz",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-15291/trip-updates.pb"
+        },
+        {
+            "name": "volan-ujszasz",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-15291/vehicle-positions.pb"
+        },
+        {
+            "name": "volan-ujszasz",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-15291/alerts.pb"
+        },
+        {
+            "name": "volan-vac",
+            "type": "http",
+            "url": "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_v%C3%A1c.gtfs.zip"
+        },
+        {
+            "name": "volan-vac",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-24934/trip-updates.pb"
+        },
+        {
+            "name": "volan-vac",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-24934/vehicle-positions.pb"
+        },
+        {
+            "name": "volan-vac",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-24934/alerts.pb"
+        },
+        {
+            "name": "volan-zalaegerszeg",
+            "type": "http",
+            "url": "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_zalaegerszeg.gtfs.zip"
+        },
+        {
+            "name": "volan-zalaegerszeg",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-32054/trip-updates.pb"
+        },
+        {
+            "name": "volan-zalaegerszeg",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-32054/vehicle-positions.pb"
+        },
+        {
+            "name": "volan-zalaegerszeg",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://jbb.ghsq.de/gtfs/hu/hkir_hkir_V-32054/alerts.pb"
         }
     ]
 }

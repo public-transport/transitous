@@ -12,6 +12,11 @@
             "transitland-atlas-id": "f-9vg-dallasarearapidtransit"
         },
         {
+            "name": "dallas-area-rapidtransit",
+            "type": "http",
+            "url": "https://birch.catenarymaps.org/gtfs_rt?feed_id=f-9vg-dart~rt~catenary~unwire&feed_type=trip"
+        },
+        {
             "name": "houston-metro",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-9vk-metropolitantransitauthorityofharriscounty"
