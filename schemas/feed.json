@@ -44,8 +44,7 @@
                     },
                     "spec": {
                         "description": "the format of the feed",
-                        "type": "string",
-                        "enum": ["gtfs", "gtfs-rt", "gbfs", "netex", "siri", "siri_json"]
+                        "type": "string"
                     },
                     "headers": {
                         "description": "a dictionary of arbitrary headers for use with a URL source.",
@@ -56,6 +55,26 @@
                         "type": "string",
                         "$comment": "fairly lenient Onestop ID check that only looks for the feed prefix. could be improved.",
                         "pattern": "^f-"
+                    },
+                    "fix": {
+                        "description": "fix and drop broken fields",
+                        "type": "boolean"
+                    }
+
+                },
+                "if": {
+                    "properties": {
+                        "type": {"const": "url"}
+                    }
+                },
+                "then": {
+                    "properties": {
+                        "spec": {"enum": ["gtfs-rt", "netex", "siri", "siri_json"]}
+                    }
+                },
+                "else": {
+                    "properties": {
+                        "spec": {"enum": ["gtfs", "gbfs"]}
                     }
                 },
                 "required": ["name", "type"]
