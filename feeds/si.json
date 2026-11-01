@@ -14,7 +14,7 @@
             "name": "nap",
             "type": "http",
             "url": "https://b2b.nap.si/data/b2b.gtfs",
-            "url-override": "https://gitlab.com/api/v4/projects/derp-si%2Fgtfs-generators/packages/generic/IJPP/latest/ijpp_gtfs.zip",
+            "url-override": "https://gitlab.com/api/v4/projects/derp-si%2Fgtfs-generators/packages/generic/IJPP/latest/ijpp_intl_gtfs.zip",
             "fix": true,
             "license": {
                 "spdx-identifier": "CC-BY-SA-4.0",
