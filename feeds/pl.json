@@ -38,7 +38,8 @@
             "url": "https://gtfs.kasznia.net/rt/pkpicshim.pb",
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
-            }
+            },
+            "use-feed-proxy": true
         },
         {
             "name": "PKP-Intercity-Germany",
@@ -455,6 +456,7 @@
             "type": "http",
             "spec": "gtfs",
             "url": "https://gtfs.kasznia.net/static/sanitized/lka_bus.zip",
+            "url-override": "https://api.zbiorkom.live/api6-open/lka/gtfs/LKA",
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             }
@@ -463,7 +465,7 @@
             "name": "Łódzka-Kolej-Aglomeracyjna-bus",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://cdn.zbiorkom.live/gtfs-rt/lodz-lka.pb",
+            "url": "https://api.zbiorkom.live/api6-open/lka/gtfsRealtime/LKA/tripUpdates,serviceAlerts",
             "license": {
                 "spdx-identifier": "MIT"
             },
