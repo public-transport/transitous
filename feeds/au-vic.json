@@ -10,10 +10,11 @@
             "name": "Transport-Victoria-regional-trains",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://opendata.transport.vic.gov.au/dataset/3f4e292e-7f8a-4ffe-831f-1953be0fe448/resource/7a79a94a-ac95-43fb-bdb0-f00ca4671ac2/download/gtfs.zip#1/google_transit.zip",
+            "url": "#1/google_transit.zip",
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
+            "function": "transport_victoria_latest_resource",
             "fix": true
         },
         {
@@ -46,10 +47,11 @@
             "name": "Transport-Victoria-metro-trains",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://opendata.transport.vic.gov.au/dataset/3f4e292e-7f8a-4ffe-831f-1953be0fe448/resource/7a79a94a-ac95-43fb-bdb0-f00ca4671ac2/download/gtfs.zip#2/google_transit.zip",
+            "url": "#2/google_transit.zip",
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
+            "function": "transport_victoria_latest_resource",
             "fix": true,
             "script": "au-vic-Transport-Victoria-metro-trains.lua"
         },
@@ -96,10 +98,11 @@
             "name": "Transport-Victoria-metro-trams",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://opendata.transport.vic.gov.au/dataset/3f4e292e-7f8a-4ffe-831f-1953be0fe448/resource/7a79a94a-ac95-43fb-bdb0-f00ca4671ac2/download/gtfs.zip#3/google_transit.zip",
+            "url": "#3/google_transit.zip",
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
+            "function": "transport_victoria_latest_resource",
             "fix": true
         },
         {
@@ -145,10 +148,11 @@
             "name": "Transport-Victoria-myki-buses",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://opendata.transport.vic.gov.au/dataset/3f4e292e-7f8a-4ffe-831f-1953be0fe448/resource/7a79a94a-ac95-43fb-bdb0-f00ca4671ac2/download/gtfs.zip#4/google_transit.zip",
+            "url": "#4/google_transit.zip",
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
+            "function": "transport_victoria_latest_resource",
             "fix": true
         },
         {
@@ -181,40 +185,44 @@
             "name": "Transport-Victoria-regional-coaches",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://opendata.transport.vic.gov.au/dataset/3f4e292e-7f8a-4ffe-831f-1953be0fe448/resource/7a79a94a-ac95-43fb-bdb0-f00ca4671ac2/download/gtfs.zip#5/google_transit.zip",
+            "url": "#5/google_transit.zip",
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
+            "function": "transport_victoria_latest_resource",
             "fix": true
         },
         {
             "name": "Transport-Victoria-regional-buses",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://opendata.transport.vic.gov.au/dataset/3f4e292e-7f8a-4ffe-831f-1953be0fe448/resource/7a79a94a-ac95-43fb-bdb0-f00ca4671ac2/download/gtfs.zip#6/google_transit.zip",
+            "url": "#6/google_transit.zip",
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
+            "function": "transport_victoria_latest_resource",
             "fix": true
         },
         {
             "name": "Transport-Victoria-interstate",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://opendata.transport.vic.gov.au/dataset/3f4e292e-7f8a-4ffe-831f-1953be0fe448/resource/7a79a94a-ac95-43fb-bdb0-f00ca4671ac2/download/gtfs.zip#10/google_transit.zip",
+            "url": "#10/google_transit.zip",
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
+            "function": "transport_victoria_latest_resource",
             "fix": true
         },
         {
             "name": "Transport-Victoria-skybus",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://opendata.transport.vic.gov.au/dataset/3f4e292e-7f8a-4ffe-831f-1953be0fe448/resource/7a79a94a-ac95-43fb-bdb0-f00ca4671ac2/download/gtfs.zip#11/google_transit.zip",
+            "url": "#11/google_transit.zip",
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
+            "function": "transport_victoria_latest_resource",
             "fix": true
         }
     ]
