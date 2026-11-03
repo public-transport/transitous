@@ -157,16 +157,6 @@ def http_source_attribution(source: HttpSource | FtpSource, source_id: str, regi
                                     if "custom_license_url" in license and license["custom_license_url"]:
                                         attribution["file-licenses"][table]["license_url"] = license["custom_license_url"]
 
-                            licenses = filter(lambda l: l["licensed_table_name"] == "", licensestxt)
-                            try:
-                                license = next(licenses)
-                                if "license_spdx_id" in license and license["license_spdx_id"]:
-                                    attribution["spdx_license_identifier"] = license["license_spdx_id"]
-                                if "custom_license_url" in license and license["custom_license_url"]:
-                                    attribution["license_url"] = license["custom_license_url"]
-                            except StopIteration:
-                                pass
-
             attribution["contacts"] = \
                 list(filter(lambda c: c.get("email") or c.get("url"),
                             contacts))
