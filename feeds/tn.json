@@ -1,0 +1,19 @@
+{
+    "maintainers": [],
+    "sources": [
+        {
+            "name": "UABS-Banlieue-Sahel",
+            "type": "mobility-database",
+            "mdb-id": "mdb-1016",
+            "extend-calendar": true
+        },
+        {
+            "name": "SRTMedenine",
+            "type": "mobility-database",
+            "mdb-id": "mdb-1158",
+            "fix": true,
+            "skip": true,
+            "skip-reason": "Feed contains invalid dates (e.g. 20480000)"
+        }
+    ]
+}

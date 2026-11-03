@@ -1,0 +1,11 @@
+{
+    "maintainers": [],
+    "sources": [
+        {
+            "name": "SOMATRA",
+            "type": "mobility-database",
+            "mdb-id": "mdb-1807",
+            "extend-calendar": true
+        }
+    ]
+}

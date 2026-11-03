@@ -1,0 +1,23 @@
+{
+    "maintainers": [],
+    "sources": [
+        {
+            "name": "Instituto-Regulador-del-Transporte-del-Municipio-d",
+            "type": "mobility-database",
+            "mdb-id": "mdb-1021",
+            "extend-calendar": true
+        },
+        {
+            "name": "Nicaragua",
+            "type": "mobility-database",
+            "mdb-id": "mdb-1022",
+            "extend-calendar": true
+        },
+        {
+            "name": "MapaNica-Estelí",
+            "type": "mobility-database",
+            "mdb-id": "mdb-1023",
+            "extend-calendar": true
+        }
+    ]
+}

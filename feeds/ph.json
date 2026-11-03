@@ -1,0 +1,23 @@
+{
+    "maintainers": [],
+    "sources": [
+        {
+            "name": "HM-Transport-Inc.-and-Robinsons-Malls-Froehlich-To",
+            "type": "mobility-database",
+            "mdb-id": "mdb-1105",
+            "url-override": "https://github.com/sakayph/p2p-gtfs/archive/master.zip",
+            "fix": true,
+            "extend-calendar": true,
+            "skip": true,
+            "skip-reason": "Expired, extend-calendar ineffective (no feed_end_date)"
+        },
+        {
+            "name": "Manila-Light-Rail-Transit-Authority-LTFRB-Manila-M",
+            "type": "mobility-database",
+            "mdb-id": "mdb-1106",
+            "url-override": "https://github.com/sakayph/gtfs/archive/master.zip",
+            "skip": true,
+            "skip-reason": "Expired, extend-calendar ineffective (no feed_end_date)"
+        }
+    ]
+}

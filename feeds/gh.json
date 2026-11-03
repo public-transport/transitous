@@ -1,0 +1,17 @@
+{
+    "maintainers": [],
+    "sources": [
+        {
+            "name": "AMA-Department-of-Transport",
+            "type": "mobility-database",
+            "mdb-id": "mdb-881",
+            "extend-calendar": true
+        },
+        {
+            "name": "INGEROP",
+            "type": "mobility-database",
+            "mdb-id": "mdb-1814",
+            "fix": true
+        }
+    ]
+}

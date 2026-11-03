@@ -1,0 +1,25 @@
+{
+    "maintainers": [],
+    "sources": [
+        {
+            "name": "Harare-Kombis",
+            "type": "mobility-database",
+            "mdb-id": "mdb-1960",
+            "extend-calendar": true,
+            "url-override": "https://gitlab.com/digitaltransport/data/africa/harare/-/raw/master/GTFS_-_Harare.zip?inline=false#Harare Kombis.zip",
+            "fix": true,
+            "skip": true,
+            "skip-reason": "Expired, extend-calendar ineffective (feed_end_date does not match calendar)"
+        },
+        {
+            "name": "Harare-City-Shuttle",
+            "type": "mobility-database",
+            "mdb-id": "mdb-1960",
+            "extend-calendar": true,
+            "url-override": "https://gitlab.com/digitaltransport/data/africa/harare/-/raw/master/GTFS_-_Harare.zip?inline=false#Harare City Shuttle.zip",
+            "fix": true,
+            "skip": true,
+            "skip-reason": "Expired, extend-calendar ineffective (feed_end_date does not match calendar)"
+        }
+    ]
+}
