@@ -196,6 +196,7 @@ server {
     proxy_set_header Host "{{ item.value.url | urlsplit('hostname') }}";
 
     proxy_cache            feed-proxy;
+    proxy_cache_key   "{{ item.value.url | urlsplit('hostname') }}$request_uri";
     proxy_buffering on;
     proxy_ignore_headers Set-Cookie;
     proxy_ignore_headers X-Accel-Expires;
