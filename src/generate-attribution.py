@@ -257,8 +257,6 @@ def get_region_data(code: str) -> dict:
         region_data["subdivision_code"] = code
         region_data["subdivision_name"] = override_subdivision if override_subdivision else subdivision.name
 
-    # TODO backward compatibility for not yet adapted consumer code, remove eventually
-    region_data["region_code"] = region_data.get("subdivision_code", region_data["country_code"])
     region_data["region_name"] = region_data.get("subdivision_name", region_data["country_name"])
 
     return region_data
