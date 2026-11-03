@@ -136,6 +136,27 @@ def http_source_attribution(source: HttpSource | FtpSource, source_id: str, regi
                     with z.open("licenses.txt", "r") as a:
                         with io.TextIOWrapper(a) as at:
                             licensestxt = csv.DictReader(at, delimiter=",", quotechar='"')
+
+                            attribution["file-licenses"] = {}
+
+                            for license in licensestxt:
+                                if license["licensed_table_name"] == "":
+                                    if "license_spdx_id" in license and license["license_spdx_id"]:
+                                        attribution["spdx_license_identifier"] = license["license_spdx_id"]
+                                    if "custom_license_url" in license and license["custom_license_url"]:
+                                        attribution["license_url"] = license["custom_license_url"]
+
+                                else:
+                                    table = license["licensed_table_name"] + ".txt"
+
+                                    if table not in attribution["file-licenses"]:
+                                        attribution["file-licenses"][table] = {}
+
+                                    if "license_spdx_id" in license and license["license_spdx_id"]:
+                                        attribution["file-licenses"][table]["spdx_license_identifier"] = license["license_spdx_id"]
+                                    if "custom_license_url" in license and license["custom_license_url"]:
+                                        attribution["file-licenses"][table]["license_url"] = license["custom_license_url"]
+
                             licenses = filter(lambda l: l["licensed_table_name"] == "", licensestxt)
                             try:
                                 license = next(licenses)
