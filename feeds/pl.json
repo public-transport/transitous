@@ -260,8 +260,12 @@
         },
         {
             "name": "Łomża",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u3rw-lomza"
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://mpklomza.pl/dane-otwarte/GTFS-static.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0",
+            }
         },
         {
             "name": "Wejherowo",
@@ -299,7 +303,9 @@
         {
             "name": "Giżycko",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u3x7-gizycko"
+            "transitland-atlas-id": "f-u3x7-gizycko",
+            "skip": true,
+            "skip-reason": "Feed removed, looking for replacement"
         },
         {
             "name": "Lublin",
