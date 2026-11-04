@@ -45,6 +45,11 @@
             "transitland-atlas-id": "f-u25k-zagrebačkielektričnitramvaj~rt"
         },
         {
+            "name": "zet-extra",
+            "type": "http",
+            "url": "https://gtfs.sorunome.de/zagrebextra.zip",
+        },
+        {
             "name": "jl",
             "type": "http",
             "url": "https://b2b.promet-info.hr/dc/b2b.gtfs.jl",
