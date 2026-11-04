@@ -18,5 +18,8 @@
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
     "spago": "^1.0.4"
+  },
+  "dependencies": {
+    "age-encryption": "^0.3.1"
   }
 }

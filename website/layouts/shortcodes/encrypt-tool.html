@@ -1,0 +1,7 @@
+{{ with resources.Get "js/encrypt.js" }}
+{{ $js := . | js.Build (dict
+"target" "es2022"
+"minify" hugo.IsProduction
+) }}
+<script src="{{ $js.RelPermalink }}" defer></script>
+{{ end }}

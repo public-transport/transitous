@@ -1,0 +1,30 @@
+---
+title: "Encryption tool"
+omit_header_text: true
+featured_image: ''
+menu: main
+---
+
+<p>
+    As described in the <a href="https://transitous.org/doc/#private-api-keys">documentation for adding feed</a>,
+    you can encrypt API keys before comitting them.
+    Only the maintainers have the private key to decrypt.
+    For convenience, we build this web tool that does the encryption.
+</p>
+
+<div>
+    <label>
+        input secret
+        <input id="input" type="text" />
+    </label>
+
+    <button id="encrypt">Encrypt</button>
+</div>
+
+<p>
+    <code id="output" style="word-break: break-all;"></code>
+</p>
+
+<p id="error"></p>
+
+{{< encrypt-tool>}}
