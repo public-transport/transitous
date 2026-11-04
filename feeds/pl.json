@@ -38,7 +38,8 @@
             "url": "https://gtfs.kasznia.net/rt/pkpicshim.pb",
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
-            }
+            },
+            "use-feed-proxy": true
         },
         {
             "name": "PKP-Intercity-Germany",
@@ -259,8 +260,12 @@
         },
         {
             "name": "Łomża",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u3rw-lomza"
+            "type": "http",
+            "spec": "gtfs",
+            "url": "https://mpklomza.pl/dane-otwarte/GTFS-static.zip",
+            "license": {
+                "spdx-identifier": "CC0-1.0"
+            }
         },
         {
             "name": "Wejherowo",
@@ -298,7 +303,9 @@
         {
             "name": "Giżycko",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u3x7-gizycko"
+            "transitland-atlas-id": "f-u3x7-gizycko",
+            "skip": true,
+            "skip-reason": "Feed removed, looking for replacement"
         },
         {
             "name": "Lublin",
@@ -455,6 +462,7 @@
             "type": "http",
             "spec": "gtfs",
             "url": "https://gtfs.kasznia.net/static/sanitized/lka_bus.zip",
+            "url-override": "https://api.zbiorkom.live/api6-open/lka/gtfs/LKA",
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             }
@@ -463,7 +471,7 @@
             "name": "Łódzka-Kolej-Aglomeracyjna-bus",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://cdn.zbiorkom.live/gtfs-rt/lodz-lka.pb",
+            "url": "https://api.zbiorkom.live/api6-open/lka/gtfsRealtime/LKA/tripUpdates,serviceAlerts",
             "license": {
                 "spdx-identifier": "MIT"
             },
