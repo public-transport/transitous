@@ -264,7 +264,7 @@
             "spec": "gtfs",
             "url": "https://mpklomza.pl/dane-otwarte/GTFS-static.zip",
             "license": {
-                "spdx-identifier": "CC0-1.0",
+                "spdx-identifier": "CC0-1.0"
             }
         },
         {
