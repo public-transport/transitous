@@ -47,7 +47,7 @@
         {
             "name": "zet-extra",
             "type": "http",
-            "url": "https://gtfs.sorunome.de/zagrebextra.zip",
+            "url": "https://gtfs.sorunome.de/zagrebextra.zip"
         },
         {
             "name": "jl",
