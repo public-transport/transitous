@@ -80,8 +80,8 @@
         },
         {
             "name": "Sacramento-Regional-Transit",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-9qce-sacramentoregionaltransit"
+            "type": "mobility-database",
+            "mdb-id": "mdb-3621"
         },
         {
             "name": "Sacramento-Regional-Transit",
@@ -174,9 +174,8 @@
         },
         {
             "name": "Elkgrove",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-9qcd-etranelkgrove",
-            "url-override": "https://iportal.sacrt.com/gtfs/eg/google_transit.zip"
+            "type": "mobility-database",
+            "mdb-id": "mdb-3620"
         },
         {
             "name": "Elkgrove",
@@ -217,8 +216,8 @@
         },
         {
             "name": "Southcounty-Transitlink",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-southcountytransitlink~ca~us"
+            "type": "mobility-database",
+            "mdb-id": "mdb-3622"
         },
         {
             "name": "Sage-Stage",
