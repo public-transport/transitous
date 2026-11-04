@@ -7,6 +7,9 @@ languageCode = 'en-us'
 title = 'Transitous'
 theme = "ananke"
 
+[security]
+  allowContent = [ "text/markdown", "text/html" ]
+
 [params]
   custom_css = ["bootstrap.min.css", "bootstrap-icons.min.css", "custom.css"]
   favicon = "images/logo.svg"

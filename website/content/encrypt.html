@@ -1,0 +1,38 @@
+---
+title: "Encryption tool"
+omit_header_text: true
+featured_image: ''
+---
+
+<!--
+SPDX-FileCopyrightText: 2026 jendrikw
+
+SPDX-License-Identifier: AGPL-3.0-or-later
+-->
+
+<p>
+    As described in the <a href="https://transitous.org/doc/#private-api-keys">documentation for adding feed</a>,
+    you can encrypt API keys before comitting them.
+    Only the maintainers have the private key to decrypt them.
+    For convenience, you can use this web tool to do the encryption.
+</p>
+
+<div class="row g-3 mt-4">
+    <label for="input" class="col-form-label col-auto">secret:</label>
+
+    <div class="col-auto">
+        <input id="input" type="text" class="form-control" />
+    </div>
+
+    <div class="col-auto">
+        <button id="encrypt" class="form-control btn btn-primary">Encrypt</button>
+    </div>
+</div>
+
+<p>
+    <code id="output" style="word-break: break-all;"></code>
+</p>
+
+<p id="error"></p>
+
+{{< encrypt-tool>}}
