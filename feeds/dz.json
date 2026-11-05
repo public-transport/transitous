@@ -1,0 +1,16 @@
+{
+    "maintainers": [
+        {
+            "name": "Sander",
+            "github": "Sandertttt"
+        }
+    ],
+    "sources": [
+        {
+            "name": "SNTF",
+            "type": "http",
+            "url": "https://openmobilitydata-data.s3.us-west-1.amazonaws.com/public/feeds/societe-nationale-des-transports-ferroviaires/1084/20190325/gtfs.zip",
+            "extend-calendar": true
+        }
+    ]
+}
