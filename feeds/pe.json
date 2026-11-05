@@ -1,0 +1,15 @@
+{
+    "maintainers": [],
+    "sources": [
+        {
+            "name": "Aeroexpreso",
+            "type": "mobility-database",
+            "mdb-id": "mdb-1985"
+        },
+        {
+            "name": "TMT-Trujillo---Gerencia-de-Transporte",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2200"
+        }
+    ]
+}

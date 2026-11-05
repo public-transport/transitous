@@ -1,0 +1,30 @@
+{
+    "maintainers": [],
+    "sources": [
+        {
+            "name": "Socatur",
+            "type": "mobility-database",
+            "mdb-id": "mdb-1810",
+            "extend-calendar": true,
+            "fix": true,
+            "skip": true,
+            "skip-reason": "Expired, extend-calendar ineffective (feed_end_date does not match calendar)"
+        },
+        {
+            "name": "Douala-Yellow-Taxis",
+            "type": "mobility-database",
+            "mdb-id": "mdb-1811",
+            "extend-calendar": true,
+            "fix": true,
+            "skip": true,
+            "skip-reason": "Expired, extend-calendar ineffective (feed_end_date does not match calendar)"
+        },
+        {
+            "name": "Socatur-Bus",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2077",
+            "extend-calendar": true,
+            "fix": true
+        }
+    ]
+}

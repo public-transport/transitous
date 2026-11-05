@@ -1,0 +1,12 @@
+{
+    "maintainers": [],
+    "sources": [
+        {
+            "name": "GTFS-Honduras-Open-(National-Transit-Feed)",
+            "type": "mobility-database",
+            "mdb-id": "mdb-3135",
+            "skip": true,
+            "skip-reason": "Archive contains .csv instead of .txt files in a subfolder"
+        }
+    ]
+}
