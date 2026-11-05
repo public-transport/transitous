@@ -1,0 +1,60 @@
+{
+    "$schema": "https://json-schema.org/draft-07/schema",
+    "title": "Feed",
+    "description": "A feed file for a geographic area",
+    "type": "object",
+    "properties": {
+        "maintainers": {
+            "description": "Array of maintainers for a region",
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "description": "Name of a maintainer",
+                        "type": "string"
+                    },
+                    "github": {
+                        "description": "GitHub username of a maintainer",
+                        "type": "string"
+                    }
+                },
+                "required": ["name", "github"]
+            }
+        },
+        "sources": {
+            "description": "Array of source feeds for a region",
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "description": "Name of a feed",
+                        "type": "string",
+                        "pattern": "^[^\/ _]*$"
+                    },
+                    "type": {
+                        "description": "The type of source used for this feed",
+                        "type": "string",
+                        "enum": ["url", "http", "ftp", "mobility-database", "transitland-atlas"]
+                    },
+                    "spec": {
+                        "description": "the format of the feed",
+                        "type": "string",
+                        "enum": ["gtfs", "gtfs-rt", "gbfs", "netex", "siri", "siri_json"]
+                    },
+                    "headers": {
+                        "description": "a dictionary of arbitrary headers for use with a URL source.",
+                        "type": "object"
+                    }
+                },
+                "required": ["name", "type"]
+            }
+        }
+    },
+    "required": ["maintainers", "sources"]
+}
