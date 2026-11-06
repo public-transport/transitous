@@ -27,7 +27,9 @@ function process_trip(trip)
   local agency = trip:get_route():get_agency():get_name();
 
   if trip:get_route():get_route_type() == 2 then
-    if agency == 'DSB Vores Tog' or agency == "Lokaltog A/S" or agency == "Midttrafik" then
+    if agency == "DSB Vores Tog" then
+      trip:set_display_name(remove_leading_zeros(trip:get_short_name()))
+    elseif agency == "Lokaltog A/S" or agency == "Midttrafik" then
       trip:set_display_name("Lokalbane " .. trip:get_route():get_short_name())
     elseif agency == "NT" then
       trip:set_display_name(trip:get_route():get_short_name())
