@@ -308,3 +308,38 @@ def transport_victoria_latest_resource(source: HttpSource) -> HttpSource:
     url = requests.get('https://opendata.transport.vic.gov.au/api/3/action/package_show?id=gtfs-schedule').json()['result']['resources'][0]['url']
     source.url = url + source.url
     return source
+
+def unitrans_latest_gtfs(source: HttpSource) -> HttpSource:
+    """Resolve the current Unitrans GTFS download URL.
+
+    Unitrans replaces its GTFS zip - and the URL pointing to it -
+    roughly every quarter. Rather than hard-coding a URL that expires,
+    fetch the GTFS page and extract the current zip link from it.
+    Transitous runs this on each fetch cycle, so a new quarterly file
+    is picked up automatically.
+    """
+    from bs4 import BeautifulSoup
+    from urllib.parse import urljoin
+
+    response = requests.get(source.url)
+    response.raise_for_status()
+
+    soup = BeautifulSoup(response.text, "html.parser")
+
+    gtfs_links = []
+    for a in soup.find_all("a", href=True):
+        href = a["href"]
+        lower = href.lower()
+        if lower.endswith(".zip") and "gtfs" in lower:
+            gtfs_links.append(urljoin(source.url, href))
+
+    if not gtfs_links:
+        raise ValueError("No GTFS zip link found on the Unitrans GTFS page")
+
+    # Single link is the normal case; max() guards against stale
+    # duplicate links by preferring the lexicographically last path,
+    # mirroring the fallback used by other resolvers.
+    source.url = max(gtfs_links)
+    return source
+
+

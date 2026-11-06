@@ -289,8 +289,10 @@
         },
         {
             "name": "Unitrans",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-9qc7-unitransdavis"
+            "type": "http",
+            "url": "https://unitrans.ucdavis.edu/gtfs",
+            "function": "unitrans_latest_gtfs",
+            "fix": true
         },
         {
             "name": "Unitrans",
