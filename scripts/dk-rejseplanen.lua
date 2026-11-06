@@ -25,14 +25,15 @@ function process_trip(trip)
   end
 
   local agency = trip:get_route():get_agency():get_name();
-  if agency == 'DSB Vores Tog' or agency == "Lokaltog A/S" or agency == "Midttrafik" then
-    if trip:get_route():get_route_type() == 2 then
-      trip:set_display_name("Lokalbane " .. trip:get_route():get_short_name())
-    end
-  end
 
-  if agency == "NT" then
-    trip:set_display_name(trip:get_route():get_short_name())
+  if trip:get_route():get_route_type() == 2 then
+    if agency == 'DSB Vores Tog' or agency == "Lokaltog A/S" or agency == "Midttrafik" then
+      trip:set_display_name("Lokalbane " .. trip:get_route():get_short_name())
+    elseif agency == "NT" then
+      trip:set_display_name(trip:get_route():get_short_name())
+    elseif agency == "Skånetrafiken" then
+      trip:set_display_name(remove_leading_zeros(trip:get_short_name()))
+    end
   end
 end
 
@@ -41,6 +42,13 @@ function process_route(route)
     if v[1] == route:get_short_name() then
         route:set_route_type(v[2])
       break
+    end
+  end
+
+  local agency = route:get_agency():get_name();
+  if route:get_route_type() == 2 then
+    if agency == "Snälltåget AB" then
+      route:set_route_type(105)
     end
   end
 end
