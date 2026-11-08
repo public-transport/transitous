@@ -467,7 +467,7 @@
             "name": "YoioFreiburg",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-yoio~freiburg~im~breisgau~gbfs",
-            "https://api.mobidata-bw.de/sharing/gbfs/v3/yoio_freiburg/gbfs"
+            "url-override": "https://api.mobidata-bw.de/sharing/gbfs/v3/yoio_freiburg/gbfs"
         },
         {
             "name": "ZeoBruchsal",
