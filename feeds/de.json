@@ -193,12 +193,14 @@
         {
             "name": "KVV.nextbike",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-kvv~nextbike~karlsruhe~gbfs"
+            "transitland-atlas-id": "f-kvv~nextbike~karlsruhe~gbfs",
+            "url-override": "https://api.mobidata-bw.de/sharing/gbfs/v3/nextbike_fg/gbfs"
         },
         {
             "name": "FreloFreiburg",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-frelo~freiburg~gbfs"
+            "transitland-atlas-id": "f-frelo~freiburg~gbfs",
+            "url-override": "https://api.mobidata-bw.de/sharing/gbfs/v3/nextbike_df/gbfs"
         },
         {
             "name": "LastenVeloFreiburg",
@@ -208,17 +210,20 @@
         {
             "name": "SAPWalldorf",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-sap~walldorf~gbfs"
+            "transitland-atlas-id": "f-sap~walldorf~gbfs",
+            "url-override": "https://api.mobidata-bw.de/sharing/gbfs/v3/nextbike_fg/gbfs"
         },
         {
             "name": "EinfachMobil",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-einfachmobil~ortenaukreis~gbfs"
+            "transitland-atlas-id": "f-einfachmobil~ortenaukreis~gbfs",
+            "url-override": "https://api.mobidata-bw.de/sharing/gbfs/v3/nextbike_eh/gbfs"
         },
         {
             "name": "VRNnextbike",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-vrnnextbike~rhine~neckar~gbfs"
+            "transitland-atlas-id": "f-vrnnextbike~rhine~neckar~gbfs",
+            "url-override": "https://api.mobidata-bw.de/sharing/gbfs/v3/nextbike_vn/gbfs"
         },
         {
             "name": "LimeFrankfurt",
@@ -284,7 +289,7 @@
             "name": "swu2go",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-swu2go~carsharing~ulm~gbfs",
-            "url-override": "https://api.mobidata-bw.de/sharing/gbfs/v2/swu2go/gbfs"
+            "url-override": "https://api.mobidata-bw.de/sharing/gbfs/v3/swu2go/gbfs"
         },
         {
             "name": "Conficars",
@@ -350,7 +355,7 @@
             "name": "Car-ship",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-car~ship~constance~gbfs",
-            "url-override": "https://api.mobidata-bw.de/sharing/gbfs/v2/car_ship/gbfs"
+            "url-override": "https://api.mobidata-bw.de/sharing/gbfs/v3/car_ship/gbfs"
         },
         {
             "name": "Stella",
@@ -365,22 +370,26 @@
         {
             "name": "DottHeidelberg",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-dott~heidelberg~gbfs"
+            "transitland-atlas-id": "f-dott~heidelberg~gbfs",
+            "url-override": "https://api.mobidata-bw.de/sharing/gbfs/v3/dott_heidelberg/gbfs"
         },
         {
             "name": "DottHeilbronn",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-dott~heilbronn~gbfs"
+            "transitland-atlas-id": "f-dott~heilbronn~gbfs",
+            "url-override": "https://api.mobidata-bw.de/sharing/gbfs/v3/dott_heilbronn/gbfs"
         },
         {
             "name": "DottStuttgart",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-dott~stuttgart~gbfs"
+            "transitland-atlas-id": "f-dott~stuttgart~gbfs",
+            "url-override": "https://api.mobidata-bw.de/sharing/gbfs/v3/dott_stuttgart/gbfs"
         },
         {
             "name": "DottKaiserslautern",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-dott~kaiserslautern~gbfs"
+            "transitland-atlas-id": "f-dott~kaiserslautern~gbfs",
+            "url-override": "https://api.mobidata-bw.de/sharing/gbfs/v3/dott_kaiserslautern/gbfs"
         },
         {
             "name": "ALF",
@@ -415,12 +424,14 @@
         {
             "name": "MeinKonrad",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-mein~konrad~konstanz~gbfs"
+            "transitland-atlas-id": "f-mein~konrad~konstanz~gbfs",
+            "url-override": "https://api.mobidata-bw.de/sharing/gbfs/v3/nextbike_kk/gbfs"
         },
         {
             "name": "NextbikeNorderstedt",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-nextbike~norderstedt~gbfs"
+            "transitland-atlas-id": "f-nextbike~norderstedt~gbfs",
+            "url-override": "https://api.mobidata-bw.de/sharing/gbfs/v3/nextbike_nn/gbfs"
         },
         {
             "name": "BoltKarlsruhe",
@@ -455,7 +466,8 @@
         {
             "name": "YoioFreiburg",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-yoio~freiburg~im~breisgau~gbfs"
+            "transitland-atlas-id": "f-yoio~freiburg~im~breisgau~gbfs",
+            "url-override": "https://api.mobidata-bw.de/sharing/gbfs/v3/yoio_freiburg/gbfs"
         },
         {
             "name": "ZeoBruchsal",
