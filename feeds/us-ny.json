@@ -363,6 +363,16 @@
             "name": "RochesterVeoBikes",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-veo~rochester~ny~gbfs"
+        },
+        {
+            "name": "TCAT",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-dr997-tompkinsconsolidatedareatransit"
+        },
+        {
+            "name": "TCAT",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-tompkinsconsolidatedareatransit~rt"
         }
     ]
 }
