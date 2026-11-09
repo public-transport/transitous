@@ -98,13 +98,19 @@
             "url-override": "https://jbb.ghsq.de/gtfs/ua-kyiv.gtfs.zip",
             "extend-calendar": true,
             "fix": "true",
-            "mdb-id": "mdb-3230"
+            "mdb-id": "mdb-3230",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
         },
         {
             "name": "kyiv",
             "type": "mobility-database",
             "use-feed-proxy": true,
-            "mdb-id": "mdb-3231"
+            "mdb-id": "mdb-3231",
+            "license": {
+                "spdx-identifier": "CC-BY-4.0"
+            }
         },
         {
             "name": "ivano-frankivsk",
