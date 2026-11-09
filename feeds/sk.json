@@ -30,7 +30,10 @@
                 "copy-trip-names-matching": "((EC|Os|Zr|Ex|REX|RJX|IC|RRR|R|EN|NJ)) +\\d+ +.*"
             },
             "url": "https://data.slovensko.sk/datasety/ebeeedf1-aca2-451a-bdc0-35d536714888",
-            "function": "zsk_latest_resource"
+            "function": "zsk_latest_resource",
+            "license": {
+                "spdx-identifier": "CC-BY-1.0"
+            }
         },
         {
             "name": "zsr",
