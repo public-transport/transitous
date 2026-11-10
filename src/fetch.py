@@ -472,9 +472,6 @@ class Fetcher:
             os.mkdir(outdir)
 
         for source in region.sources:
-            if source.function:
-                source = getattr(region_helpers, source.function)(source)
-
             if source.skip:
                 if source.skip_reason != "":
                     print("Skipping " + region_name + "-" + source.name + ": " + source.skip_reason)
@@ -507,6 +504,9 @@ class Fetcher:
             output_path = outdir.absolute() / download_name
 
             try:
+                if source.function:
+                    source = getattr(region_helpers, source.function)(source)
+
                 new_data = self.fetch_source(download_path, source)
             except Exception as e:
                 eprint(f"Error: Could not fetch {region_name}-{source.name}: {e}")
