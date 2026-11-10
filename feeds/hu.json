@@ -51,7 +51,7 @@
             "skip-reason": "We currently don't make use of vehicle positions feeds",
             "license": {
                 "spdx-identifier": "CC0-1.0"
-            }
+            }            
         },
         {
             "name": "mav",
@@ -94,20 +94,14 @@
         {
             "name": "volan-helykozi",
             "type": "http",
-            "url": "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_helyk%C3%B6zi_busz.gtfs.zip",
-            "license": {
-                "spdx-identifier": "CC0-1.0"
-            }
+            "url": "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_helyk%C3%B6zi_busz.gtfs.zip"
         },
         {
             "name": "volan-helykozi",
             "type": "url",
             "spec": "gtfs-rt",
             "url": "https://jbb.ghsq.de/gtfs/hu/hkir/trip-updates.pb",
-            "use-feed-proxy": true,
-            "license": {
-                "spdx-identifier": "CC0-1.0"
-            }
+            "use-feed-proxy": true
         },
         {
             "name": "volan-helykozi",
@@ -116,20 +110,14 @@
             "url": "https://jbb.ghsq.de/gtfs/hu/hkir/vehicle-positions.pb",
             "use-feed-proxy": true,
             "skip": true,
-            "skip-reason": "We currently don't make use of vehicle positions feeds",
-            "license": {
-                "spdx-identifier": "CC0-1.0"
-            }
+            "skip-reason": "We currently don't make use of vehicle positions feeds"
         },
         {
             "name": "volan-helykozi",
             "type": "url",
             "spec": "gtfs-rt",
             "url": "https://jbb.ghsq.de/gtfs/hu/hkir/alerts.pb",
-            "use-feed-proxy": true,
-            "license": {
-                "spdx-identifier": "CC0-1.0"
-            }
+            "use-feed-proxy": true
         },
         {
             "name": "dott",
