@@ -14,7 +14,7 @@
             "name": "CityLink-Whangarei",
             "type": "http",
             "spec": "gtfs",
-            "url": "https://data.trilliumtransit.com/gtfs/nrc-nz/nrc-nz.zip"
+            "url": "https://au-gtfs.remix.com/nrc-nz-public.zip"
         }
     ]
 }
