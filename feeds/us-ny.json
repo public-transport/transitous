@@ -352,7 +352,9 @@
         {
             "name": "Trailways-uiuc",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-utel~uiuc~intercity~bus"
+            "transitland-atlas-id": "f-utel~uiuc~intercity~bus",
+            "skip": true,
+            "skip-reason": "Removed from transitland"
         },
         {
             "name": "Trailways-adt",
