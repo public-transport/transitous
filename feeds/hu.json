@@ -339,6 +339,10 @@
             "name": "BAHART",
             "type": "http",
             "url": "https://nap.bahart.hu/gtfsdata/ULPTdR8PovPQ7E9NlcsIig/43",
+            "license": {
+                "spdx-identifier": "CC0-1.0",
+                "url": "https://nap.bahart.hu"
+            },
             "fix": true
         },
         {
