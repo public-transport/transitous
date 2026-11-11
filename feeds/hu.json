@@ -156,7 +156,8 @@
             "type": "http",
             "url": "https://gy-mate.hu/gtfs/gtfs_hu_funicular.zip",
             "license": {
-                "spdx-identifier": "CC-BY-4.0"
+                "spdx-identifier": "CC-BY-4.0",
+                "url": "https://github.com/gy-mate/gtfs-feeds/blob/25119c2b1ca0b01cb2e450ed0583aaff15297b48/license.txt"
             }
         },
         {
@@ -164,7 +165,8 @@
             "type": "http",
             "url": "https://gy-mate.hu/gtfs/gtfs_hu_chairlift.zip",
             "license": {
-                "spdx-identifier": "CC-BY-4.0"
+                "spdx-identifier": "CC-BY-4.0",
+                "url": "https://github.com/gy-mate/gtfs-feeds/blob/25119c2b1ca0b01cb2e450ed0583aaff15297b48/license.txt"
             }
         },
         {
@@ -189,7 +191,8 @@
             "type": "http",
             "url": "https://gy-mate.hu/gtfs/gtfs_hu_urom.zip",
             "license": {
-                "spdx-identifier": "CC-BY-4.0"
+                "spdx-identifier": "CC-BY-4.0",
+                "url": "https://github.com/gy-mate/gtfs-feeds/blob/25119c2b1ca0b01cb2e450ed0583aaff15297b48/license.txt"
             }
         },
         {
@@ -197,7 +200,8 @@
             "type": "http",
             "url": "https://gy-mate.hu/gtfs/gtfs_hu_dunakeszi-ferry.zip",
             "license": {
-                "spdx-identifier": "CC-BY-4.0"
+                "spdx-identifier": "CC-BY-4.0",
+                "url": "https://github.com/gy-mate/gtfs-feeds/blob/25119c2b1ca0b01cb2e450ed0583aaff15297b48/license.txt"
             }
         },
         {
@@ -205,7 +209,8 @@
             "type": "http",
             "url": "https://gy-mate.hu/gtfs/gtfs_hu_pasztor-ferry.zip",
             "license": {
-                "spdx-identifier": "CC-BY-4.0"
+                "spdx-identifier": "CC-BY-4.0",
+                "url": "https://github.com/gy-mate/gtfs-feeds/blob/25119c2b1ca0b01cb2e450ed0583aaff15297b48/license.txt"
             }
         },
         {
@@ -350,7 +355,8 @@
             "type": "http",
             "url": "https://gy-mate.hu/gtfs/gtfs_hu_bahart-ferry.zip",
             "license": {
-                "spdx-identifier": "CC-BY-4.0"
+                "spdx-identifier": "CC-BY-4.0",
+                "url": "https://github.com/gy-mate/gtfs-feeds/blob/25119c2b1ca0b01cb2e450ed0583aaff15297b48/license.txt"
             }
         },
         {
