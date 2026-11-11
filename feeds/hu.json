@@ -127,6 +127,22 @@
             "url": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBLcG5FZld3R3hMd2VnZmJQaG9QTEVKR0RxK3lHbUhqTS9RN3d5Sm8zRUdRCnE1VkNHWUlRaGV3MEdnWVByczVpWXZjTUtnRmgvTWdEVnluMlN2czZlVDQKLS0tIDdFVWpiRVFsVGwxazJUdFV2SVNLK0NDdDNIMVY4aWlZYUVWZlZnV055NmMKiSnO+3iQyYYLN3K4eUIhhPmeoDlTQZ0l3cPBrWd373GfAlO2M+ipgg9PEQ+5jFZqz1XI/sn26Eizi037YNKHoOY6GWjMR4ua9MJIWDK1gXQpucgDPg545G5Zu4KBRaDHFW/cVM/0vUMRM3to7BaMNxwl7nzeiDsxp3jWDWK6iGHLbGWIe8M="
         },
         {
+            "name": "bkk",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "use-feed-proxy": true,
+            "url": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBneElPVm5jOXpmQ0drZXl4VWdsbHJVMUtmeDhjUGgxOGlDZm4yNXZSSFdzCjhTVy90V0J4RStmaVlKMGN6Z1Qvdld0bVhCdVFjdUxpdXV4MW41aWhvYW8KLS0tIE5YbzAydkgrZlg4Z0wyOXpwdlFsbkNkZUVQU3Z5Wjh0MU1yS2FsYy9DdDQK6rUbxg7PvClwEVkCqFvBNcutAfnVSML7tX6fXkMhMAf+DY+zNHVEJJic29OE+9ukrYvxgJalkg0iV0UiX9Iv+cFTgITiSmaocC9p/6O/mVqQs+voldwyrSVbrOm01orGcmISjvAAwTp28Neh9tDJePO4vlrErIq1GIiXp52yjN3J2e6I4tcdYwcoSg==",
+            "skip": true,
+            "skip-reason": "We currently don't make use of vehicle positions feeds"
+        },
+        {
+            "name": "bkk",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "use-feed-proxy": true,
+            "url": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSA2WXkwbXFKYWw5eUVJblE3Y0VLWXU1ck9SUjZPb0ZnSWR2ckVIYzNkbDBVCkgwMS9TejF0SFNZc0I5K3VjTHlrUmlOK2Z3UmhGdXppbkcveXpxU0Yrd0EKLS0tIHE5LzIvazBsbzdTVHAvZ21Dc3MvTEtoYXV5OENKd2xMNENsMTBySW1vbm8KS8QSEJmHBsw+AYe8ulda+D2SGzV7APcADpv+eAKzkXBYVeRLMH/p0iHrehXzUifXtLJObx+2pnGLl0yRgGgZZoQoI7VagFp+lwTzY9PxKOxbfxN3+ERo2pou4T94ES0y61WFe9OL8tn9MDgtsXG+grnRVLJMQnRzLLXWDO8839tY"
+        },
+        {
             "name": "bkk-funicular",
             "type": "http",
             "url": "https://gy-mate.hu/gtfs/gtfs_hu_funicular.zip",
