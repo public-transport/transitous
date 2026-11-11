@@ -1,0 +1,48 @@
+{
+    "maintainers": [
+        {
+            "name": "Sander",
+            "github": "Sandertttt"
+        }
+    ],
+    "sources": [
+        {
+            "name": "SNCFT",
+            "type": "http",
+            "url": "https://gps.sncft.com.tn/gps/gtfs_ALL.ZIP",
+            "extend-calendar": true
+        },
+        {
+            "name": "SNTRI",
+            "type": "http",
+            "url": "https://catalogue-data.transport.tn/dataset/fa645687-e5df-42c8-86dd-a810c66d0a1c/resource/6dde9e96-e6e9-451b-9afc-3369112927b1/download/fa645687-e5df-42c8-86dd-a810c66d0a1c_d8f7acf1-91a5-467e-b2c0-fd9b04971809.zip",
+            "license": {
+                "url": "https://catalogue-data.transport.tn/dataset/fa645687-e5df-42c8-86dd-a810c66d0a1c"
+            },
+            "extend-calendar": true
+        },
+        {
+            "name": "SORETRAK-Kairouan",
+            "type": "http",
+            "url": "https://catalogue-data.transport.tn/dataset/2ec89a38-4328-45b4-b4e1-d0990c841104/resource/c1d8642d-874c-4315-bc71-ec763a670163/download/2ec89a38-4328-45b4-b4e1-d0990c841104_f2dd2440-b7e1-44fb-8bf1-6fa631078cd2.zip",
+            "license": {
+                "url": "https://catalogue-data.transport.tn/dataset/2ec89a38-4328-45b4-b4e1-d0990c841104"
+            }
+        },
+        {
+            "name": "SRT-Jendouba",
+            "type": "http",
+            "url": "https://catalogue-data.transport.tn/dataset/76f61e42-45bf-476f-9704-3cad7b76bab6/resource/7eea28ec-3c2c-4ded-9468-397f49b60a5a/download/76f61e42-45bf-476f-9704-3cad7b76bab6_08d703db-7c87-49a1-863d-c8574f76f280.zip",
+            "license": {
+                "url": "https://catalogue-data.transport.tn/dataset/76f61e42-45bf-476f-9704-3cad7b76bab6"
+            },
+            "extend-calendar": true
+        },
+        {
+            "name": "SRT-Medenine",
+            "type": "http",
+            "url": "https://openmobilitydata-data.s3.us-west-1.amazonaws.com/public/feeds/srtmedenine/1204/20190801/gtfs.zip",
+            "fix": true
+        }
+    ]
+}
