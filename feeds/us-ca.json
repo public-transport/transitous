@@ -320,6 +320,29 @@
             "headers": {
                 "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBWSUdtQ1hmUWNQTFJ6WHhQcWp2aTgxaUcvQjB5ZmROYmJsZUh5ME5tTURBCkRxcGtCTHJZNVlycUp4Yy9hWm5VSVViUFYyUjBsUXQ5a1Bod216RVNlUEEKLS0tIGYxVjZDTVg1eUgwdkJpVVJSZllmM0IyaGxRTzloMW5kSnc3RjhTZVFabWcKk2ccIJnSJxzncGhiuO7PFkAzphVdPqj7jDqKPJ3sSr4RguX+kdXw3UA91Ay30gz26I6L/x3r+poPOA6SDtXIwQ=="
             }
+        },
+        {
+            "name": "Yolobus",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9qc7-yolobusyolocounty"
+        },
+        {
+            "name": "Yolobus",
+            "spec": "gtfs-rt",
+            "type": "url",
+            "url": "https://avl.yctd.org/RealTime/GTFS_VehiclePositions.pb"
+        }, 
+        {
+            "name": "Yolobus",
+            "spec": "gtfs-rt",
+            "type": "url",
+            "url": "https://avl.yctd.org/RealTime/GTFS_TripUpdates.pb"
+        },
+        {
+            "name": "Yolobus",
+            "spec": "gtfs-rt",
+            "type": "url",
+            "url": "https://avl.yctd.org/RealTime/GTFS_ServiceAlerts.pb"
         }
     ]
 }
