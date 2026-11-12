@@ -11,14 +11,14 @@
             "type": "http",
             "spec": "gtfs",
             "url": "https://transport.api.act.gov.au/gtfs/data/gtfs/v2/gtfs.zip",
-            "use-feed-proxy": true,
             "http-options": {
                 "headers": {
                     "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBFbUthS3F2RXVkOTZ0N0hwWUdQZjRYTnd1K3RMUnNWdlhwOTlpVVpCUmxNCklMUnk3dWRXZU5tbDZ0UjJmb2tQa050U28zM3MydytsWG51MGRKTC9OZGsKLS0tIG1UQ0xMbWpUZVRTYUdiaE4wSVI2SjRJMU5ZMHFsMW9uMURxZXpvaFRBTmMKI+j2wlaW5R8ctwrPwJYGOUV9fyWJfqdmC8nXM8CQMbt2R418mdQoKA8Baqpnmn0oKBSnslrK0Lzgh6AGXZG2oydRLhLzt6nvnH2rx2qjlwICd+wnfKl2utQJH1Y++2+rvyKwe3G+M8bYsN+R+woV3MP4v0lAbDiwQ2j/p0SD"
                 }
             },
             "license": {
-            	"url": "https://www.transport.act.gov.au/contact-us/information-for-developers"
+            	"url": "https://www.transport.act.gov.au/contact-us/information-for-developers",
+                "spdx-identifier": "CC-BY-4.0"
             }
         },
         {
@@ -31,7 +31,8 @@
                 "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBFbUthS3F2RXVkOTZ0N0hwWUdQZjRYTnd1K3RMUnNWdlhwOTlpVVpCUmxNCklMUnk3dWRXZU5tbDZ0UjJmb2tQa050U28zM3MydytsWG51MGRKTC9OZGsKLS0tIG1UQ0xMbWpUZVRTYUdiaE4wSVI2SjRJMU5ZMHFsMW9uMURxZXpvaFRBTmMKI+j2wlaW5R8ctwrPwJYGOUV9fyWJfqdmC8nXM8CQMbt2R418mdQoKA8Baqpnmn0oKBSnslrK0Lzgh6AGXZG2oydRLhLzt6nvnH2rx2qjlwICd+wnfKl2utQJH1Y++2+rvyKwe3G+M8bYsN+R+woV3MP4v0lAbDiwQ2j/p0SD"
             },
             "license": {
-            	"url": "https://www.transport.act.gov.au/contact-us/information-for-developers"
+            	"url": "https://www.transport.act.gov.au/contact-us/information-for-developers",
+                "spdx-identifier": "CC-BY-4.0"
             }
         },
         {
@@ -44,7 +45,8 @@
                 "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBFbUthS3F2RXVkOTZ0N0hwWUdQZjRYTnd1K3RMUnNWdlhwOTlpVVpCUmxNCklMUnk3dWRXZU5tbDZ0UjJmb2tQa050U28zM3MydytsWG51MGRKTC9OZGsKLS0tIG1UQ0xMbWpUZVRTYUdiaE4wSVI2SjRJMU5ZMHFsMW9uMURxZXpvaFRBTmMKI+j2wlaW5R8ctwrPwJYGOUV9fyWJfqdmC8nXM8CQMbt2R418mdQoKA8Baqpnmn0oKBSnslrK0Lzgh6AGXZG2oydRLhLzt6nvnH2rx2qjlwICd+wnfKl2utQJH1Y++2+rvyKwe3G+M8bYsN+R+woV3MP4v0lAbDiwQ2j/p0SD"
             },
             "license": {
-            	"url": "https://www.transport.act.gov.au/contact-us/information-for-developers"
+            	"url": "https://www.transport.act.gov.au/contact-us/information-for-developers",
+                "spdx-identifier": "CC-BY-4.0"
             }
         },
         {
@@ -57,7 +59,8 @@
                 "Authorization": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBFbUthS3F2RXVkOTZ0N0hwWUdQZjRYTnd1K3RMUnNWdlhwOTlpVVpCUmxNCklMUnk3dWRXZU5tbDZ0UjJmb2tQa050U28zM3MydytsWG51MGRKTC9OZGsKLS0tIG1UQ0xMbWpUZVRTYUdiaE4wSVI2SjRJMU5ZMHFsMW9uMURxZXpvaFRBTmMKI+j2wlaW5R8ctwrPwJYGOUV9fyWJfqdmC8nXM8CQMbt2R418mdQoKA8Baqpnmn0oKBSnslrK0Lzgh6AGXZG2oydRLhLzt6nvnH2rx2qjlwICd+wnfKl2utQJH1Y++2+rvyKwe3G+M8bYsN+R+woV3MP4v0lAbDiwQ2j/p0SD"
             },
             "license": {
-            	"url": "https://www.transport.act.gov.au/contact-us/information-for-developers"
+            	"url": "https://www.transport.act.gov.au/contact-us/information-for-developers",
+                "spdx-identifier": "CC-BY-4.0"
             }
         }
     ]
