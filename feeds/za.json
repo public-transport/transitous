@@ -1,0 +1,18 @@
+{
+    "maintainers": [],
+    "sources": [
+        {
+            "name": "Esprit-de-Mort-Esprit-de-Vie-Transco-Taxi-Jaune",
+            "type": "mobility-database",
+            "mdb-id": "mdb-1965",
+            "extend-calendar": true,
+            "skip": true,
+            "skip-reason": "Expired, extend-calendar ineffective (feed_end_date does not match calendar)"
+        },
+        {
+            "name": "Algoa-Bus",
+            "type": "mobility-database",
+            "mdb-id": "mdb-3133"
+        }
+    ]
+}

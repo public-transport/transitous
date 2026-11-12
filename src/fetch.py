@@ -341,9 +341,10 @@ class Fetcher:
                         server_headers["last-modified"])
 
                 content: bytes
-                if "#" in source.url and source.url.partition("#")[2]:
+                url = source.url_override or source.url
+                if "#" in url and url.partition("#")[2]:
                     # if URL contains #, treat the path after # as an embedded ZIP file
-                    sub_path = source.url.partition("#")[2]
+                    sub_path = url.partition("#")[2]
                     zipfile = ZipFile(io.BytesIO(response.content))
 
                     content = zipfile.read(sub_path)
