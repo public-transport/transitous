@@ -19,5 +19,5 @@ RUN pip install -r /tmp/requirements.txt
 
 COPY --from=build /usr/local/bin/gtfsclean /usr/local/bin/gtfsclean
 RUN mkdir -p /opt/motis/ && \
-    wget -qO - https://github.com/public-transport/transitous/releases/download/motis-v2.11.4/motis-debian-trixie-ticketing-fix.tar.bz2 | tar -C /opt/motis/ -jx
+    wget -qO - https://github.com/public-transport/transitous/releases/download/motis-v2.11.4/motis-release-debian-trixie-ticketing-fix.tar.bz2 | tar -C /opt/motis/ -jx
 ENV PATH=/opt/motis:$PATH
