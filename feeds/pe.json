@@ -4,7 +4,9 @@
         {
             "name": "Aeroexpreso",
             "type": "mobility-database",
-            "mdb-id": "mdb-1985"
+            "mdb-id": "mdb-1985",
+            "skip": true,
+            "skip-reason": "triggers motis bug"
         },
         {
             "name": "TMT-Trujillo---Gerencia-de-Transporte",
