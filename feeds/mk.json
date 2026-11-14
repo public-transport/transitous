@@ -12,8 +12,8 @@
     "sources": [
         {
             "name": "zr-north-macedonia",
-            "type": "http",
-            "url": "https://hoermalmeister.github.io/gtfs-rehost/mzi/mzi.zip"
+            "type": "mobility-database",
+            "mdb-id": "mdb-3461"
         },
         {
             "name": "jsp",
