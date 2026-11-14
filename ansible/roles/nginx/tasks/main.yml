@@ -32,6 +32,8 @@
     update_cache: true
     name:
      - nginx
+     - libnginx-mod-http-geoip2
+     - curl
      - certbot
      - prometheus-node-exporter
 
@@ -44,6 +46,25 @@
   file:
     path: /var/cache/nginx/gtfsrt
     state: directory
+
+- name: Install GeoIP database update script
+  copy:
+    src: update-geoip-db.sh
+    dest: /usr/local/bin/update-geoip-db
+    mode: '0755'
+
+- name: Download initial GeoIP database
+  command: /usr/local/bin/update-geoip-db
+  args:
+    creates: /var/lib/GeoIP/dbip-country-lite.mmdb
+
+- name: Update GeoIP database monthly
+  cron:
+    name: update-geoip-db
+    day: '3'
+    hour: '4'
+    minute: '0'
+    job: /usr/local/bin/update-geoip-db
 
 - name: Install nginx config
   copy:
