@@ -32,6 +32,8 @@
     update_cache: true
     name:
      - nginx
+     - libnginx-mod-http-geoip2
+     - curl
      - certbot
      - prometheus-node-exporter
 
