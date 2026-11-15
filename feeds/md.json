@@ -14,9 +14,6 @@
             "name": "Chișinău",
             "type": "mobility-database",
             "mdb-id": "mdb-2341",
-            "license": {
-                "spdx-identifier": "CC-BY-SA-4.0"
-            },
             "extend-calendar": true
         },
         {
@@ -28,12 +25,14 @@
         {
             "name": "Chișinău",
             "type": "mobility-database",
-            "mdb-id": "mdb-2343"
+            "mdb-id": "mdb-2343",
+             "spec": "gtfs-rt"
         },
         {
             "name": "Chișinău",
             "type": "mobility-database",
-            "mdb-id": "mdb-2344"
+            "mdb-id": "mdb-2344",
+             "spec": "gtfs-rt"
         },
         {
             "name": "CFM",
