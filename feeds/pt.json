@@ -92,7 +92,7 @@
         {
             "name": "Porto-STCP",
             "type": "http",
-            "url": "https://opendata.porto.digital/dataset/horarios-paragens-e-rotas-em-formato-gtfs-stcp",
+            "url": "https://dadosabertos.cm-porto.pt/dataset/horarios-paragens-e-rotas-stcp",
             "function": "data_stcp_latest_resource",
             "license": {
                 "spdx-identifier": "CC0-1.0"

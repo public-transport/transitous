@@ -119,79 +119,43 @@ def data_metroporto_latest_resource(source: HttpSource) -> HttpSource:
 
 
 def data_stcp_latest_resource(source: HttpSource) -> HttpSource:
-    from bs4 import BeautifulSoup
-    from urllib.parse import urljoin
-    import requests
+    """
+    Pick the newest STCP GTFS resource from the Porto open data portal (CKAN).
+    source.url is the dataset page, e.g. https://dadosabertos.cm-porto.pt/dataset/<name>
+    """
     import re
-    from datetime import datetime
+    from urllib.parse import urlsplit
 
-    headers = {
-        "user-agent": (
-            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-            "AppleWebKit/537.36 (KHTML, like Gecko) "
-            "Chrome/138.0.0.0 Safari/537.36"
-        )
-    }
+    parts = urlsplit(source.url)
+    dataset = parts.path.rstrip("/").split("/")[-1]
+    api = f"{parts.scheme}://{parts.netloc}/api/3/action/package_show"
 
-    html = requests.get(source.url, headers=headers, timeout=30).text
-    soup = BeautifulSoup(html, "html.parser")
-
-    resources = soup.select("li.resource-item")
+    response = requests.get(api, params={"id": dataset}, timeout=30)
+    response.raise_for_status()
+    resources = response.json()["result"]["resources"]
     if not resources:
         raise ValueError("No resources found on STCP page")
 
-    def _extract_download(li, base_url, source):
-        from urllib.parse import urljoin
-
-        for a in li.select("a[href]"):
-            href = a.get("href", "")
-            label = a.get_text(" ", strip=True).lower()
-
-            if "/download/" in href or "transferir" in label:
-                source.url = urljoin(base_url, href)
-                return source
-
-        raise ValueError("Download link not found in selected resource")
-
-    # look for Mas Recente
-    for li in resources:
-        heading = li.select_one("a.heading")
-        if not heading:
-            continue
-
-        title = heading.get("title", "")
-        text = heading.get_text(" ", strip=True)
-
-        if "Mais Recente" in title or "Mais Recente" in text:
-            return _extract_download(li, source.url, source)
-
-    # fallback: parse dates and pick latest
-    dated_resources = []
+    for resource in resources:
+        if "mais recente" in resource.get("name", "").lower():
+            source.url = resource["url"]
+            return source
 
     date_pattern = re.compile(r"(\d{2}-\d{2}-\d{4})")
+    dated = []
+    for resource in resources:
+        match = date_pattern.search(resource.get("name", ""))
+        if match:
+            try:
+                dated.append((datetime.strptime(match.group(1), "%d-%m-%Y"), resource))
+            except ValueError:
+                pass
 
-    for li in resources:
-        heading = li.select_one("a.heading")
-        if not heading:
-            continue
-
-        text = heading.get_text(" ", strip=True)
-
-        match = date_pattern.search(text)
-        if not match:
-            continue
-
-        try:
-            dt = datetime.strptime(match.group(1), "%d-%m-%Y")
-            dated_resources.append((dt, li))
-        except ValueError:
-            continue
-
-    if not dated_resources:
+    if not dated:
         raise ValueError("No dated GTFS resources found")
 
-    latest_li = max(dated_resources, key=lambda x: x[0])[1]
-    return _extract_download(latest_li, source.url, source)
+    source.url = max(dated, key=lambda x: x[0])[1]["url"]
+    return source
 
 
 def chile_dtp_downloader(source: HttpSource) -> HttpSource:
