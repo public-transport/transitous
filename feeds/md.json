@@ -18,10 +18,18 @@
         {
             "name": "Chișinău",
             "type": "mobility-database",
-            "mdb-id": "mdb-2343",
-            "license": {
-                "spdx-identifier": "CC-BY-SA-4.0"
-            }
+            "mdb-id": "mdb-2342",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "Chișinău",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2343"
+        },
+        {
+            "name": "Chișinău",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2344"
         },
         {
             "name": "CFM",
@@ -30,8 +38,8 @@
         },
         {
             "name": "Ungheni",
-            "type": "http",
-            "url": "https://github.com/UngheniTransport/gtfs/raw/main/ungheni_gtfs.zip",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2343",
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             }
