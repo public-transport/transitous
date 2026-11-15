@@ -70,9 +70,9 @@
             "transitland-atlas-id": "f-transportes~colectivos~do~barreiro~pt"
         },
         {
-            "name": "Funchal",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-etgc-hf~urbano~hf~interurbano"
+            "name": "Madeira-SIGA",
+            "type": "http",
+            "url": "https://gtfs.tiim.pt/rede-siga/rede-siga-gtfs.zip"
         },
         {
             "name": "Algarve-Vamus",
