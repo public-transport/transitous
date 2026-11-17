@@ -197,30 +197,39 @@ local route_agency_type_short_name_color_map = {
 
 -- override route_short_name and route colors based on route_id
 local route_id_short_name_color_map = {
-  ["1253021000001"] = { "10", 0xFFF9A72B, 0xFF000000 }, -- Linköping bus 10
-  ["1253021100001"] = { "11", 0xFFFDE1AD, 0xFF000000 }, -- Linköping bus 11
-  ["1253021200001"] = { "12", 0xFFCCEA94, 0xFF000000 }, -- Linköping bus 12
-  ["1253021300001"] = { "13", 0xFFF46F17, 0xFF000000 }, -- Linköping bus 13
-  ["1253022000001"] = { "20", 0xFFBCBCBC, 0xFF000000 }, -- Linköping bus 20
-  ["1253022100001"] = { "21", 0xFFBCBCBC, 0xFF000000 }, -- Linköping bus 21
-  ["1253011000001"] = { "10", 0xFF87CEFF, 0xFF000000 }, -- Norrköping bus 10
-  ["1253011100001"] = { "11", 0xFFFF6EB4, 0xFF000000 }, -- Norrköping bus 11
-  ["1253011200001"] = { "12", 0xFF1E90FF, 0xFF000000 }, -- Norrköping bus 12
-  ["1253011300001"] = { "13", 0xFFFFFF00, 0xFF000000 }, -- Norrköping bus 13
-  ["1253012000001"] = { "20", 0xFFEE7600, 0xFF000000 }, -- Norrköping bus 20
-  ["1253012100001"] = { "21", 0xFFFFF68F, 0xFF000000 }, -- Norrköping bus 21
-  ["1265000300001"] = { "3", 0xFFD98A7E, 0xFF000114 }, -- Karlstad bus 3
-  ["1265106300001"] = { "3", 0xFFBF282E, 0xFFFDFEFF }, -- Kristinehamn bus 3
-  ["1279501700001"] = { "17", 0xFF00008E, 0xFFFFFF50 }, -- Göteborg stombuss 17
-  ["1279501800001"] = { "18", 0xFF323232, 0xFFFFFF50 }, -- Göteborg stombuss 18
-  ["1279501900001"] = { "19", 0xFFE0005B, 0xFFFFFF50 }, -- Göteborg stombuss 19
-  ["1279502100001"] = { "21", 0xFF901580, 0xFFFFFF50 }, -- Göteborg stombuss 21
-  ["1279502500001"] = { "25", 0xFF006FDE, 0xFFFFFF50 } -- Göteborg stombuss 25
+  ["9011005021000000"] = { "10", 0xFFF9A72B, 0xFF000000 }, -- Linköping bus 10
+  ["9011005021100000"] = { "11", 0xFFFDE1AD, 0xFF000000 }, -- Linköping bus 11
+  ["9011005021200000"] = { "12", 0xFFCCEA94, 0xFF000000 }, -- Linköping bus 12
+  ["9011005021300000"] = { "13", 0xFFF46F17, 0xFF000000 }, -- Linköping bus 13
+  ["9011005022000000"] = { "20", 0xFFBCBCBC, 0xFF000000 }, -- Linköping bus 20
+  ["9011005022100000"] = { "21", 0xFFBCBCBC, 0xFF000000 }, -- Linköping bus 21
+  ["9011005011000000"] = { "10", 0xFF87CEFF, 0xFF000000 }, -- Norrköping bus 10
+  ["9011005011100000"] = { "11", 0xFFFF6EB4, 0xFF000000 }, -- Norrköping bus 11
+  ["9011005011200000"] = { "12", 0xFF1E90FF, 0xFF000000 }, -- Norrköping bus 12
+  ["9011005011300000"] = { "13", 0xFFFFFF00, 0xFF000000 }, -- Norrköping bus 13
+  ["9011005012000000"] = { "20", 0xFFEE7600, 0xFF000000 }, -- Norrköping bus 20
+  ["9011005012100000"] = { "21", 0xFFFFF68F, 0xFF000000 }, -- Norrköping bus 21
+  ["9011017000300000"] = { "3", 0xFFD98A7E, 0xFF000114 }, -- Karlstad bus 3
+  ["9011017106300000"] = { "3", 0xFFBF282E, 0xFFFDFEFF }, -- Kristinehamn bus 3
+  ["9011014501700000"] = { "17", 0xFF00008E, 0xFFFFFF50 }, -- Göteborg stombuss 17
+  ["9011014501800000"] = { "18", 0xFF323232, 0xFFFFFF50 }, -- Göteborg stombuss 18
+  ["9011014501900000"] = { "19", 0xFFE0005B, 0xFFFFFF50 }, -- Göteborg stombuss 19
+  ["9011014502100000"] = { "21", 0xFF901580, 0xFFFFFF50 }, -- Göteborg stombuss 21
+  ["9011014502500000"] = { "25", 0xFF006FDE, 0xFFFFFF50 } -- Göteborg stombuss 25
 }
 
 -- override route_type based on route_id
 local route_id_route_type_map = {
-  ["1276076300001"] = 800 -- trolley bus (line 3) in Landskrona
+  ["9011012076300000"] = 800 -- trolley bus (line 3) in Landskrona
+}
+
+-- agency names in GTFS Sweden 3 that differ from the names used below
+local agency_name_aliases = {
+  ["AB SL Kundtjänst"] = "Storstockholms Lokaltrafik",
+  ["Dintur"] = "Din Tur",
+  ["Länstrafiken i Västerbotten"] = "Länstrafiken Västerbotten",
+  ["Västmanlands Lokaltrafik"] = "VL",
+  ["X-Trafik Kundtjänst"] = "X-trafik"
 }
 
 function set_colors(route, map)
@@ -236,14 +245,17 @@ function set_colors(route, map)
 end
 
 function process_route(route)
-  local route_type_map = agency_route_type_map[route:get_agency():get_name()]
+  local agency_name = route:get_agency():get_name()
+  agency_name = agency_name_aliases[agency_name] or agency_name
+
+  local route_type_map = agency_route_type_map[agency_name]
   local route_id_map = route_id_short_name_color_map[route:get_id()]
   local agency_route_short_name_map =
-    route_agency_short_name_color_map[route:get_agency():get_name()]
+    route_agency_short_name_color_map[agency_name]
   local agency_type_route_short_name_map =
-    route_agency_type_short_name_color_map[route:get_agency():get_name()]
+    route_agency_type_short_name_color_map[agency_name]
   local agency_route_long_name_map =
-    route_agency_long_name_color_map[route:get_agency():get_name()]
+    route_agency_long_name_color_map[agency_name]
   local route_type = route_id_route_type_map[route:get_id()]
 
   if route_type_map then
