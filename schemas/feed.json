@@ -48,7 +48,8 @@
                     },
                     "headers": {
                         "description": "a dictionary of arbitrary headers for use with a URL source.",
-                        "type": "object"
+                        "type": "object",
+                        "additionalProperties": {"type": "string"}
                     },
                     "transitland-atlas-id": {
                         "description": "a Onestop ID provided by the Transitland Atlas project.",
@@ -59,8 +60,27 @@
                     "fix": {
                         "description": "fix and drop broken fields",
                         "type": "boolean"
+                    },
+                    "license": {
+                        "description": "License information regarding a feed",
+                        "type": "object",
+                        "properties": {
+                            "url": {
+                                "description": "URL regarding a feed's license information",
+                                "type": "string"
+                            },
+                            "spdx-identifier": {
+                                "description": "An SPDX ID for the feed's license",
+                                "type": "string"
+                            }
+                        },
+                        "minProperties": 1,
+                        "maxProperties": 2
                     }
 
+                },
+                "dependencies": {
+                    "skip-reason": ["skip"]
                 },
                 "allOf": [
                     {
