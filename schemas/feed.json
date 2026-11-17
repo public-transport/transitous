@@ -62,21 +62,34 @@
                     }
 
                 },
-                "if": {
-                    "properties": {
-                        "type": {"const": "url"}
+                "allOf": [
+                    {
+                        "$comment": "I think this works? url should only be 'live' types while http is basically just gtfs at the moment",
+                        "if": {
+                            "properties": {
+                                "type": {"enum": ["url", "mobility-database", "transitland-atlas", "ftp"]}
+                            }
+                        },
+                        "then": {
+                            "properties": {
+                                "spec": {"enum": ["gbfs", "gtfs-rt", "netex", "siri", "siri_json"]}
+                            }
+                        }
+                    },
+                    {
+                        "$comment": "then we constrain http type feeds to gtfs only",
+                        "if": {
+                            "properties": {
+                                "type": {"const": "http"}
+                            }
+                        },
+                        "then": {
+                            "properties": {
+                                "spec": {"const": "gtfs"}
+                            }
+                        }
                     }
-                },
-                "then": {
-                    "properties": {
-                        "spec": {"enum": ["gtfs-rt", "netex", "siri", "siri_json"]}
-                    }
-                },
-                "else": {
-                    "properties": {
-                        "spec": {"enum": ["gtfs", "gbfs"]}
-                    }
-                },
+                ],
                 "required": ["name", "type"]
             }
         }
