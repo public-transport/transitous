@@ -5,17 +5,52 @@
 from pathlib import Path
 from typing import Dict, Optional
 from metadata import UrlSource, HttpSource, Source, MobilityDatabaseSource, License, inherit_options_from_db_source
+from license_expression import get_spdx_licensing, ExpressionError, Licensing
 from utils import eprint
 import requests
 import csv
 import os
+import urllib
 
 
 class Database:
     by_id: Dict[str, dict]
+    licensing: Licensing
 
     def __init__(self):
         self.by_id = {}
+        self.licensing = get_spdx_licensing()
+
+    @staticmethod
+    def url_to_spdx(licensing: Licensing, url: str) -> Optional[str]:
+        parsed = urllib.parse.urlparse(url)
+        spdx_identifier = None
+
+        if parsed.hostname == "creativecommons.org":
+            path = iter(parsed.path.split("/"))
+            next(path)
+
+            if next(path) == "licenses":
+                cc_type = next(path).upper()
+                version = next(path)
+                document = next(path)
+                country = None
+
+                if not document.startswith("deed"):
+                    country = document.upper()
+
+                if country:
+                    spdx_identifier = f"CC-{cc_type}-{version}-{country}"
+                else:
+                    spdx_identifier = f"CC-{cc_type}-{version}"
+
+        try:
+            licensing.validate_license_keys(licensing.parse(spdx_identifier))
+        except ExpressionError as e:
+            spdx_identifier = None
+
+        return spdx_identifier
+
 
     @staticmethod
     def load() -> "Database":
@@ -81,8 +116,9 @@ class Database:
 
         result.license = License()
 
-        if "license" in feed:
-            result.license.url = feed["license"]
+        if "urls.license" in feed and feed["urls.license"]:
+            result.license.url = feed["urls.license"]
+            result.license.spdx_identifier = Database.url_to_spdx(self.licensing, feed["urls.license"])
 
         # Allow to override these as mobility database does not have spdx-identifiers (yet)
         if source.license.spdx_identifier:
