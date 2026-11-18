@@ -28,21 +28,34 @@ class Database:
 
         if parsed.hostname == "creativecommons.org":
             path = iter(parsed.path.split("/"))
-            next(path)
+            try:
+                next(path)
+                dir = next(path)
 
-            if next(path) == "licenses":
-                cc_type = next(path).upper()
-                version = next(path)
-                document = next(path)
-                country = None
+                if dir == "licenses":
+                    cc_type = next(path).upper()
+                    version = next(path)
+                    document = next(path)
+                    country = None
 
-                if not document.startswith("deed"):
-                    country = document.upper()
+                    if not document.startswith("deed"):
+                        country = document.upper()
 
-                if country:
-                    spdx_identifier = f"CC-{cc_type}-{version}-{country}"
-                else:
-                    spdx_identifier = f"CC-{cc_type}-{version}"
+                    if country:
+                        spdx_identifier = f"CC-{cc_type}-{version}-{country}"
+                    else:
+                        spdx_identifier = f"CC-{cc_type}-{version}"
+                elif dir == "publicdomain":
+                    cc_type = next(path)
+                    version = next(path)
+                    document = next(path)
+
+                    if document.startswith("deed"):
+                        match cc_type:
+                            case zero:
+                                spdx_identifier = f"CC0-{version}"
+            except StopIteration:
+                pass
 
         try:
             licensing.validate_license_keys(licensing.parse(spdx_identifier))
