@@ -165,7 +165,7 @@ def check_feed_timeframe_valid(zip_file: ZipFile) -> FeedValidity:
         at = io.TextIOWrapper(a)
         return parse_gtfs_csv(at)
 
-    feed_info = read_file("feed_info.txt")
+    feed_info = list(read_file("feed_info.txt"))
     calendar = read_file("calendar.txt")
     calendar_dates = read_file("calendar_dates.txt")
 
