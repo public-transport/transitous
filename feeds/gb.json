@@ -11,29 +11,32 @@
     ],
     "sources": [
         {
-            "name": "great-britain",
+            "name": "dft-bods",
             "type": "http",
-            "url": "https://beta.aubin.app/gtfs/great_britain_gtfs.zip",
+            "url": "https://data.bus-data.dft.gov.uk/timetable/download/gtfs-file/all/",
             "fix": true,
             "license": {
-                "url": "https://transitous.org/sources-great-britain"
+                "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+                "attribution-text": "Data from Bus Open Data Service is licensed under the UK Open Government Licence (OGL) v3.0."
             },
             "drop-agency-names": [
                 "FlixBus"
             ],
-            "script": "gb-great-britain.lua",
             "keep-additional-fields": false,
             "drop-shapes": true
         },
         {
-            "name": "great-britain",
-            "type": "url",
-            "spec": "gtfs-rt",
-            "url": "https://realtime.aubin.app/great_britain_gtfsrt.binpb",
+            "name": "national-rail",
+            "type": "http",
+            "url": "https://github.com/planarnetwork/gb-transit/releases/latest/download/gtfs-national-rail-only.zip",
+            "fix": true,
             "license": {
-                "url": "https://transitous.org/sources-great-britain"
+                "url": "https://planarnetwork.github.io/gb-transit/",
+                "attribution-text": "This dataset contains data derived from Rail Delivery Group under RSP Data Licence, DfT under OGL v3.0 and National Rail Enquiries under National Rail Enquiries Knowledgebase Licence."
             },
-            "use-feed-proxy": true
+            "script": "gb-great-britain.lua",
+            "keep-additional-fields": false,
+            "drop-shapes": true
         },
         {
             "name": "northern-ireland",
