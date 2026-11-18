@@ -52,10 +52,13 @@ class Database:
 
                     if document.startswith("deed"):
                         match cc_type:
-                            case zero:
+                            case "zero":
                                 spdx_identifier = f"CC0-{version}"
             except StopIteration:
                 pass
+        elif parsed.hostname == "opendatacommons.org":
+            if parsed.path.strip("/") == "licenses/odbl" or parsed.path.strip("/") == "licenses/odbl/1.0":
+                spdx_identifier = "ODbL-1.0"
 
         try:
             licensing.validate_license_keys(licensing.parse(spdx_identifier))
