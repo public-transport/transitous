@@ -14,6 +14,18 @@
                 "spdx-identifier": "CC-BY-NC-ND-4.0",
                 "url": "https://hoermalmeister.github.io/andorra_gtfs/LICENSE"
             }
+        },
+        {
+            "name": "Andorra-Bus",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://andorragtfsrt-production.up.railway.app/trip_updates.pb"
+        },
+        {
+            "name": "Andorra-Bus",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://andorragtfsrt-production.up.railway.app/vehicle_positions.pb"
         }
     ]
 }
