@@ -34,7 +34,10 @@
         {
             "name": "ZFBiH",
             "type": "http",
-            "url": "https://hoermalmeister.github.io/gtfs-rehost/zfbih/zfbih.zip"
+            "url": "https://hoermalmeister.github.io/gtfs-rehost/zfbih/zfbih.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-NC-ND-4.0"
+            }
         },
         {
             "name": "Mostar",
