@@ -349,6 +349,11 @@
             "mdb-id": "mdb-3598"
         },
         {
+            "name": "Transport-Public-Focșani",
+            "type": "mobility-database",
+            "mdb-id": "mdb-3599"
+        },
+        {
             "name": "Transport-Urban-Reșița",
             "type": "mobility-database",
             "mdb-id": "mdb-3600"
