@@ -81,6 +81,7 @@
   copy:
     src: nginx.conf
     dest: /etc/nginx/nginx.conf
+  notify: Restart nginx
 
 - name: Install nginx logrotate config
   copy:
@@ -126,6 +127,7 @@
     dest: "/etc/nginx/sites-available/{{ vhost }}"
   vars:
     vhost: "crowdsourcing.transitous.org"
+  notify: Reload nginx
 
 - name: Disable default site configuration
   file:
