@@ -41,10 +41,10 @@
         {
             "name": "northern-ireland",
             "type": "http",
-            "url": "https://blues3.transitpdf.com/files/sourcedata/northern-ireland.zip",
+            "url": "https://www.transportforireland.ie/transitData/Data/GTFS_NI.zip",
             "license": {
-                "url": "https://busmaps.com/en/license",
-                "attribution-text": "This product includes derivative public transportation data provided by busmaps.com. For more information, visit busmaps.com"
+                "spdx-identifier": "CC-BY-4.0",
+                "url": "https://data.gov.ie/dataset/nta-gtfs"
             }
         },
         {
