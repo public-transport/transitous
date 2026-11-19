@@ -37,6 +37,17 @@
      - certbot
      - prometheus-node-exporter
 
+- name: Create nginx systemd override dir
+  file:
+    path: /etc/systemd/system/nginx.service.d/
+    state: directory
+
+- name: Install unit override
+  copy:
+    src: systemd-override.conf
+    dest: /etc/systemd/system/nginx.service.d/override.conf
+  notify: Restart nginx
+
 - name: Create nginx motis cache directory
   file:
     path: /var/cache/nginx/motis/
@@ -107,6 +118,7 @@
           options: ""
         - address: 10.11.1.1:8080
           options: "backup"
+  notify: Reload nginx
 
 - name: Install site config
   template:
@@ -119,6 +131,7 @@
   file:
     path: /etc/nginx/sites-enabled/default
     state: absent
+  notify: Reload nginx
 
 - name: Enable nginx sites
   file:
@@ -129,11 +142,7 @@
     - vhost: api.transitous.org
     - vhost: staging.api.transitous.org
     - vhost: crowdsourcing.transitous.org
-
-- name: Reload nginx
-  systemd:
-    name: nginx.service
-    state: reloaded
+  notify: Reload nginx
 
 # For now, initial certificate generation is not handled, run `certbot certonly --noninteractive --agree-tos --standalone --email "root@vm-motis-proxy.spline.de" --domains api.transitous.org --dry-run`
 # `certbot certonly --noninteractive --agree-tos --webroot --email "root@vm-motis-proxy.spline.de" --domains api.transitous.org -w /var/www/html --force-renewal` once nginx is running
