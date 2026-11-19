@@ -12,13 +12,318 @@
     "sources": [
         {
             "name": "Trafiklab",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-u-se",
+            "type": "http",
+            "url": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSAySHp3ZDV5K0lESDdqakxPZ1hNZEFvbGRBNUJaalNJTHgyNGJNLzVmWDBvCmtlOUNOTXpqa0REbnpkT0MrbkhNNkR3czRSK0ErMHFBN2ZlYkkwc1lINzQKLT4gPDotZ3JlYXNlIE0KRS9iU21BZFVrNk15MDdYdWZibS9MU3pjR0EKLS0tIFVzQkRlanVaS1NBSTJoZ1lGcXlXSGdDeUxwNXdBaGdSeWdVUG9CVUdsbFUKop76DgzWpRLU66byfJYLXDQXSUtIOD/Vp5JM/a4ew3R+hSLYAkAkB+2ndezalb5D612i8QHpB4cWFLufx8SFbYOJJl97EXpLoShpfZkT9D4uqvb69E4qA4/nDWNrmc1xHzW+oXbxJL/cVtCckzWXLYohGsyo/YEce4fo",
             "fix": true,
             "drop-agency-names": [
-                "Flixbus"
+                "FlixBus Sverige AB"
             ],
+            "http-options": {
+                "headers": {
+                    "accept-encoding": "gzip"
+                }
+            },
             "script": "se-Trafiklab.lua"
+        },
+        {
+            "name": "Trafiklab",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBGRU9yMk9DSjh6TisyR1VUS08xOGh2UUk0cXRGa2lRL09Qa3hJSnhYUUc0CnowRWU5TU5QdE9KWkJDR3J0eUp6TmJVNjRqRG9CTUQ2a0JRT2VUOHN6c1UKLT4gcW9Cai1ncmVhc2UKN1p6TFNHUnlvL3hVQk1mVWxMWUUKLS0tIGpXN01zaXZETjhRc241SUlhWHJWd0xNaFlZenlCQ013TDljQXE2UHk1a1EKEcsR0nWTawMHa5nzUPKjpyvPF/vPmvPEo6hsOq2FuyzNX0qgVnEgi+BYoNMC1P4kyxerzh6AgDkkGSEVb4YwPb+TIcyiVz7u8eTT2VHh2tRT7yy1p0ug8tu/qozWTJfxHHPFKdJ1K5cwHk5kssnf8gxG6tQEwocJwaNMczVJEDssjj4VFXgIqUjbYw==",
+            "use-feed-proxy": true,
+            "headers": {
+                "Accept-Encoding": "gzip"
+            }
+        },
+        {
+            "name": "Trafiklab",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSB3YWlDaE4vUWhuQ0s2QkNHUmpQMUg1ZlJROU5xNms3VEhnVHNGVVV5WGtjCnZVb21ONkY4TzJ4cGxENlZmUVNDOXVDd0ZteW1lYy81c29uM3FEK09OaHcKLT4gfjZuMDtIRi1ncmVhc2UgQ3xBRHsqUGcgSXErdDEKbmI0WGtCcnQ5U1NTVEp6RXZyUUlKRmhwU24xY0RqTGlHbUd1V3hVa1R5U3VuVzNWRmt1WW13ZHFBNXM4Z1o5Qwo3TGtyWFBZa05abWtxSUNNZEZsKzJmaitHaUs3blZxRGJ0WnJkNURvTVVuRG92c3pkUHVHMnNRK0hPZHFZYmsKLS0tIEFxQ05yTlNDK2k5MjQ4R0dlam1UUkJvZVpFZ00reUw3UFh0YTJPQStEY0EKYZ3k781uzi1ZzInIGzdfBdbtyehTff3B/FVqB68qDo+y79qb27iYf7KiHDCCFfDILyIVAul9hs2/6qI+XrnAIYYFmCPWoMyVUu9Mm3Tsu6PlahNgak/yZp3GSzTKKyKgqvdPNSvke3OcfNYVCBBJTKrTrQQyou5aSnOZv3UAsKgQVsZMxmORZPa5caUt",
+            "use-feed-proxy": true,
+            "headers": {
+                "Accept-Encoding": "gzip"
+            }
+        },
+        {
+            "name": "Trafiklab",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSA2WVRxTjlRZmllNFR5QXprck1TbU1XVjVyMEl6K0lYbjZrbjZoejB2VWxjClo5NUpvclIvOFZ3VzdDYXMwdlJ4ZG9WMWMwSlhaMTJkTkNpR1dYM2hhUXcKLT4gaC8wXXJ8dS1ncmVhc2UgIUpDX3BgYSBSQSB6PzkgVzJoajN0Rwo5MTZSYUJodmFpa0lpL05McXpYUFZtTjJPdWpGSVAwbHFSVndWT0kweGcKLS0tIG1RdU5UYVZPcXdnZ3RlOGVURThPdUpXNnF4Wm91Z0pkZG1GcE13Y25GWlkKsjubuSu8mHEFIYwk4ZJrYjVGtqPsN70Sff0C6Xuc2HO2H3r/vq8I9p8JRM73YsJtHhWBoYE7wEH7k4q6evsasf05AryCZmlfV1aRwPuJy2A4Om9pUQtMYrmK74BUQb5DfQYEkfXDyvK1OwLph9VGTgwZ0zsYVMw3r9l2Ztz7Wx57+pnojiFQFfGraQ==",
+            "use-feed-proxy": true,
+            "headers": {
+                "Accept-Encoding": "gzip"
+            }
+        },
+        {
+            "name": "Trafiklab",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBGSFl1S1M0K3ZZN2syVGwwcWtIMDkrZk5vbGpOUGVBUTM3WEJ6SXh2blhZCm4vOW93RmlCUHdHY3J4SEttMlJER2Y1dmlMRGh2VThLMHZJQSt2TDVWd28KLT4gJHxeQX5ZfC1ncmVhc2Ugbj8KZ1ZJVTl6RjZ3eXVzdmNrUE5jSUFzbTM4WkdaYXVCMXZMMXAwR1YxS1dSUjhzV2hRMDB3K0FiVnZVVnZVL0tHKwphMjFXcEpxbHRGNlVDSHJXbTVZQjhxa2NmeUhDTEpOZzhMb2NyQkVRSE9jCi0tLSAxWWcyMXUzd2trZVF2ZHFlSHU3ek16bU9CVGlWV1Vob3pFeEdtWWg1bUkwCnxINqkInqcucOI22RR+6vgEmQO/TwN1RFBv8vMTPlq9n6Bwcl9igm5t/wK2CSR26Aj7H1a9Z7k2qbZ3fayYgkAd1j4o1cJrGZRYI9SQ7RYGC5Oc1Ou2KuVBEFseOY4MunTbHYYff8aYVFcrHgSbpE8UkZkihTNd6n7Mfru4hJPASQ1WIAgOWHJd+JsiKg==",
+            "use-feed-proxy": true,
+            "headers": {
+                "Accept-Encoding": "gzip"
+            }
+        },
+        {
+            "name": "Trafiklab",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBJZk9UZUZjYmlRNE5kQWtIZkdXeTVFd1VteXJoRy9ZL00wQVRJSmZPVnlVCldOK0pwT0NKNjJ1RHYxMnVsejA3ejliZzFreHlneXlWVFJwK2pOUmtzc3cKLT4gV34qQyomSHwtZ3JlYXNlIEVYRWBmcVQgfVxsdSB0ClJoOVc4ek81aXlxWTFDdzI5ZWtKdlJCMEV0Q2Q3OUE3Ylk5cm1XTTdwQzhlRy9wNGpOMzdPZ28vNUZNSDI5V0YKYy9FanRVemNEQWg4ZHdOUnNBCi0tLSBOOUpsWnU2VDJnWXFrUUp5SmFLWlBSejhlR0lNTmw5b1lGR2lTUXpKRCs4ChDo1KnAJBNysdcgwUXt7QexrbNsI1oEx/1zXqJHflbyh/tw8BcLx5avQSl5ETCMd56OfsSv1mJwfFnlF51ioahVgyaDU+1P5xeZngY5/0h0hBhpTiC47MT0uosbtVcH/O39kAdVoUzETqYwRQHSvWQi8FQYiTN3orDbJ3rhYo3QFziAGmyD9cAVdMqYLQk=",
+            "use-feed-proxy": true,
+            "headers": {
+                "Accept-Encoding": "gzip"
+            }
+        },
+        {
+            "name": "Trafiklab",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSByZldTcVB0YmJXUDh4VkpyU3Z2eDJ5V2NDeVZMc1VJU3k1blBoM3UzQVZZCldBeUJ1TjhwNW16eWRNZGQxY2NFcWIzY0pWeVdTd0Ewb1hpYWI4VHpnYkkKLT4gTTgwcGlQLWdyZWFzZSBeay5efD9NIF8KNzVqdGdCZnVPU3pRMExKV3lON1QKLS0tIFBvVFo5L28yYkVQMzZHVDM2QkRCTHY5LzFiOFd4SkxGNkRpOVhrKzdUdm8KAVoEza+uISsGvu88bpRIAXAHo7VuxpBU6Xsb4gPzruYLN17XzwShK0WnPOEHVHUrmf6d9KVNP5Yb1tYGGqANN3xn1yxiG/z4ut4qGLoU7dwsG51bnaffWgw7dSYImnbqUWt3Fztzblh8DrBJqeDfiHL9kjraJyoQjKRtdBNgvXJMLcxmsJIcJR7ElopvygEs",
+            "use-feed-proxy": true,
+            "headers": {
+                "Accept-Encoding": "gzip"
+            }
+        },
+        {
+            "name": "Trafiklab",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBEVHpQcWVCRDdLNkVDMjdiUDRuem9ibFpQcGVNQUNHWmJMUnJIeXVyNVVzCllDQjlIdENLYkpwQmJLM0RFWnpMRU1nYzU4by9rNlcxcXJGR1Q5WTFkcjAKLT4gIjt5XEI2Si1ncmVhc2UgfURYIERoa0dXQSEgdzVuU1oKS3RNdTNDb09WM3E0b2xjY1FzUDFuYVpKdXh3VHVnd0ErNUlwNWpvc1paa2QyYlFzRk53UC93L05VQQotLS0gYXcrSUZFVmJ5Nlh3Wk5IdGdyMGZnRTFRdWZweE16eDc1TTl3bGliK09mbwr5zlU3Q+nbLSQKcJVScgKkuVVUxrZcI2eiGyUDEDhi+mJkq7XlbYD9FG7MsQ+MkT327sUoPPwvr1E5uzVxLdzoxvJTA2u3088fFGFIqtANZL7AUvQJ3M2V06WnhWCyXCBoTnS/I3tWvI7USrPC0jfAz8uSUrjcBNEw6pdb9OyOK1P3Qr5v9IEAekNAUg==",
+            "use-feed-proxy": true,
+            "headers": {
+                "Accept-Encoding": "gzip"
+            }
+        },
+        {
+            "name": "Trafiklab",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSB6V2QzOGJrelduRVRWd0N1am9qSUtCdEdHbzNXQkdoc01oR01odXUrSURjCnVJUFM5VTFaSkpDZGpoZVJVVkF3MUdBdDNHMFQ0c05wRmx1RWZkOUVvSjgKLT4gYkItZ3JlYXNlIClsQTNAIS94IGVZV1BSQmsmIDhPCjBwZnJ5Z3lhTjd3eFkxSXA5SU8vWDRoNFlsa1h0TW5zb1J0dWwvMWtUTkdUUU1wUGhnZVBHdmwrakZJaUNTNXoKbFozSWJnCi0tLSB5aVQ5TmlDOU5TOGNBcXFTL0xtOEF0aHlPSitnVWs5YVNXSGhCZDFhVFJnCqI2DI2XjuS0TXIq1mUnDP+EK8wu7M/l3OscOCwoIS+hdFtbUbZ6QZSlTCBrwZ9dTSHsr17dXe3toj/GdVmpbkZI8VfHD4grsiJmOvR6Ds7aX5fV1d2HPE52DErkn1k3eFHk9FJ6qJ3Em+i7CtjCL0utS7St9qjNbzPSteM7pRJZ4b4Ma9QUYQa3dWA+jkw=",
+            "use-feed-proxy": true,
+            "headers": {
+                "Accept-Encoding": "gzip"
+            }
+        },
+        {
+            "name": "Trafiklab",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBPOW5oZkZHVU9KbXhTUnJWbjUxMzkyS0Fjcmx3MjR2b09jVTR0N3FSMW5FClluVmx1aEhpSWVRS0xmTGowbnNzSkV2U2djQUtiRm1EYjJKeGJDSEp0UUEKLT4gO3E5bF1SMi1ncmVhc2UgZ25UIgoxQUIraXJFbnRQRkhNN1hkTTMydkZqZU5KQWZHL085SWF0bjdxTFZTNkF0YU1Ic3pUWmErMTZSZGR5Z3lOakZYCjlkSUxlRXpOREVhcnJHU21jZUJ0Y2cKLS0tIGNCUHQ0WUVSN2VobTF1ZlAwa21RMHJCNHFCRkVCYWlQU01kNk83RmdRVkEK3xn7gds9ZIzr2p0Z/p3cBDQ0CowUDcE34OlwPj0sye/SjqM4Rb/2ibSQ67MzVsoR5YQDz7Aebqa9bLeF804mjtoDOSRohkE5M22+62Li8F9qhsyouQme0WD19N55HUnX3XfcnNnnb5dyBZfVFx9qNqrW9RnEAZxWY9L4nHQMJW3n681Cq0WH4alUHKhqlQ==",
+            "use-feed-proxy": true,
+            "headers": {
+                "Accept-Encoding": "gzip"
+            }
+        },
+        {
+            "name": "Trafiklab",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBTN2Q2a2laRTR4T2FtdzVWcXlSNUl2a3ZKT2hldkxDV0RuSnlIanVKaG5vCjlyL3lMelJnWXJ1bmdUK25NVS9wT1RrQTJxNFkycklDaVVzZE8rcUdjWHMKLT4gcC1ncmVhc2UgciBBP2dLSQo1SnVNNUNxcG1sQml1UWtsWjV2L3hyMnc1dUE4VitlalRhSkdtdVN2R1JoVAotLS0gSCttanRibXFqTEluK3JyOExDYWxYWCtkTUp4TXV2aVRqNnZnUllvUUJsUQq005tsdbScZMJc/jAFwmgpCYpBkADP8SbcNGN4rRVFd5Y4jUDvWF/oW6d88JNSe23VpCJ4cKIF8k/eT43wXoQTSYdEdPVfOJ2HCIpRAOwkIdeVCEaw5GuhVKLeV5iFarr99yhAmdwMCJGfV7D8PBN7FCLNzoZwlukDZ7rhw7lTaoUMttj6EAuHLRqPscQ5W70=",
+            "use-feed-proxy": true,
+            "headers": {
+                "Accept-Encoding": "gzip"
+            }
+        },
+        {
+            "name": "Trafiklab",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBKejlBZG4yK0UzU3NjdENpUkNCSmY4UGltZkcrelNQelZkdjRGcFFmTGg0CnVaK2ZIM1FXVEk0TmxrdTJ3ODdSMjZQTm1kK3dYekpZek11eWpQRjRCOEEKLT4gcmZdLWdyZWFzZSBzI0tbN3hqIFw3OncgKlY3ciphIEV1bV05ClhXd2hIb0RDVDJGNHlYamMyKzRKYmk5Q1lxcmlNQnZ4TnI2WE1RR0lwM1NTYmlaNm5DZmQ4ZXphV0JCckd6bWQKYUYza3kxU09vbU50eU41TzdTdEd3Nyt0TFpENlVoK1d3c1BTaXcKLS0tIGx5K1QwRk9mSzExMjN4RFNSWHcvMjBOb3dxbUVNU05rWm9GdjIvQkVlUEUKcmfJ6wbq/nSrEBsVYkVo7D7LG7NLP1CSFfz1/RBPyTFLMnseGF42tjh3hzsy8shvGXpvVIZy48QEm5yBFvlMBIjcsuE4R2F/RCHDj+L50LpbyPBiJ4ym5P2NpiJdFZW35pgcdVEqziOsqD21DNcnERyIhvTl1dHaX9te+dCAHGBEx0NqWY+N8URdEtE=",
+            "use-feed-proxy": true,
+            "headers": {
+                "Accept-Encoding": "gzip"
+            }
+        },
+        {
+            "name": "Trafiklab",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBCTCtzOTVGc0RvYzJyM2pXOVZURDZRNmt3QTNLNWJTSExTTUduc3BzcWtFCmgwOXJDR1FpTGZuNVo3MEdMeHdIZUpjVFJCakN1amlIV0ozeSswUmFYVTQKLT4gYSwkPkZEUnMtZ3JlYXNlIG0nO01SbCAtcnNAcm4/Sgp6c2M5V1dkbVFVQVV2WUdYSVdjdzdFZWk4bDFiK2RmdGd4MTZ3cVhmcnR0YUU4YXM4RXJjQkFkd2hnWVp4cStxClh4N2VWUFF2ZmpIZk93bGZnRHlNMVFXYmxnCi0tLSBZS05NZ1ptSzN1dW82T2pCa0QwZDh4dFRrQW1qTWJMMU9ZajN1YlpkNW5ZCk580qFm9uuE6xr0XtrdwYrvEyIGgYGXHphjoRhJ2E0LL5ETdxzcs3o8kiDh7ZuBAXDXovoJp7K6HJ66mfrkJe5bpcx9yBCsimQhHXo0+tDF6/VK/BUdpAuzZJofcXXXJ/9d0kCHtxk5BgTAI5NFKa7IlRbkWTOy8QgWPKbdw7pBxaO6glS1CvSKRJ4wfXU=",
+            "use-feed-proxy": true,
+            "headers": {
+                "Accept-Encoding": "gzip"
+            }
+        },
+        {
+            "name": "Trafiklab",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBVOWx5V1pXQmhLSUFJVEZTVlZFWlF0b01RNTczaTBCaWhUM1hmVTQ0aXpFClZjUzlONmVHNGV1ekdaaXd3YXEzRGp2U2dVdU1hRDVxNGRsSHhwd0FlalUKLT4gVH5KVi1ncmVhc2UgInQ1RzAgUlUoSgpKZ1IvVkk4dDRORlo1czJjSnZzM3JXN1hMTFVSdnJGNVFEL3pJRUdscUxnUW51RldRVTNwN2w2WDluLzB4T1lDCjhGV0NyeHVMdVZVM2xEQ1NPWStDTVBWc3VXTWhKVTQ4ck5xSWQxby9LZwotLS0gVjgwRjh5OXVHZFpHaG00Z2VFaHVtc2FlTHgxZ2RLVGdxaXE5d3ZaMVVVdwopMwxQovIarkADFpv018LK6F6XWl2NIFCVxjpWzxqAFZFteWAB4PgxMAm43DsYBUKEVm2QTl2Ujixn27+gi7A4d4fPWCVno2RU4oVQjl3n8vfH02olG9xBV/z4OhgLZdb2AqNLDTPaxeD7HA4/1aX8snqSuFKw8DYzzaoXAwmUweXZe6WHipLd7kJCv+tTTv0=",
+            "use-feed-proxy": true,
+            "headers": {
+                "Accept-Encoding": "gzip"
+            }
+        },
+        {
+            "name": "Trafiklab",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBKeXY4SksydFBhb0Q2aTQ4Zktvc2xmSnBBc3BBb1lBU2dnVUZUV3RwYmt3ClZUMW5wSW15dXorTjZ4NzdmK3VyUFpiODMrSkZnWGtzNkhyZnFlMXdwYW8KLT4gfTg8OWRHJTEtZ3JlYXNlIH4tTTNRV00KNWxKc21xQ3g2ZGI1VnA5Y2JLTFcweVRkczF6eDJ6SGZZbzR4RXZqS1BhY2NPV3NkQkxxVkhVWTJoVkk1MmRaeApyYUxrUkdESHlXQTIxcmNEakVOYVBNWXpwMHRSUkd6OUpXUHh5SDI1aTMzZEpZRkxDUXFMVFFmZWFwL2ZhcWdWCgotLS0gblhnalA1cjI0YWxjL0dyWlBPd3pXYlpybGk1N3BSWnNtNUNwSHNWOU93NAp6KRjOcYKCRUtMGoFobZ6YDh9HY71FyvFDY4nGHat3cvsrTSB/Y6kCjyR/T3dO4/aFrUAhner3n+vzvh25sZds4HeAP9/X+7OgupRsTV786lRhCWesc88OjZWT9ce1U9sOeSgMN4rU9FHmy7f3Z4LGoPpEg9yW/lgSJ/igtkCBqN36SCRSuJ/8EI20qpxErYPfog==",
+            "use-feed-proxy": true,
+            "headers": {
+                "Accept-Encoding": "gzip"
+            }
+        },
+        {
+            "name": "Trafiklab",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBZMldrTGZLL1pHUU9ndXN3R2lYYlhiaERLQ0tVNGJHUTl2RXliUkR0a1Q0CmhqOTFVdnp3bkZNSjdQMllnVXJiMFJjbGtYTFFPV29hOFdHSmhFUi9QY1EKLT4gInxOTjo9SC1ncmVhc2UKS2JjZGF1emVLeGJTTUJsV0hYRERkU0xmUmQvSWZ3dTlJRllnZWNZQ1p3dXZ4Y01KN3paOS9MTkEvWW1CT1o3NAprdGdqdEcvMUVZZkZZSlBEWTFkeFpGMAotLS0gaVlKTndYNmx1NHV4SWlQNmYwYkpwQ1pNREc0cHhobmFpSHNNemx2MHJlQQpqHePW02l2hcKvcV4921VoGTRZdpC2Nax74iPUDO4rqJXbScykHldkLbanpyW2mCkudbK+3I+jHpi5XSt+QOJi+wgM9ID5dYdsrTD64/SEn92+WPnpAg3UkxwJKfxR+8Wjfp9Fea77x39cZK+JEbVLHj6TtHWKJElbq6aLCkn1dDKsOUxFjQvUayxNmfHRHh80",
+            "use-feed-proxy": true,
+            "headers": {
+                "Accept-Encoding": "gzip"
+            }
+        },
+        {
+            "name": "Trafiklab",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBOUC9Hc0piSWthOGlGKzFkOUdCMC9LWWxhZlYydGZaR0l5R0VETTVuUVFnClhBYnk0c1pqWnVMa0grVmhZRG1GRktiTEdyUENubjRsY20reDROMERCOVEKLT4gNjFgUi1ncmVhc2UgWjp+c2RrYApCeFFoMFBlSXY0Y05SOVRTUit4WgotLS0gU0hJWFFmN09xb0MzQXJ6SUh1Njl2T1ZZOEdPU2IxdXBlZ0pmRHZ3SkxlUQqglXMKUJCiLq/+EvZ6FTvIBflS/K/9MfZbLiHtAFk70aGVXXEjuinzwJ47bG2DZBVBfkYkeqCHLy1RNTXNisNJlzXtQql5iUmZKN5argtnJ+dXq/LgsEuyBiVsyt9KbZNnWsiaOUQ6eqLOiAt5AOWu4JPQsGqTm+9/IfmMP1kJ5xJWVmtiXlbnV6MAgaPZFzTwcZE=",
+            "use-feed-proxy": true,
+            "headers": {
+                "Accept-Encoding": "gzip"
+            }
+        },
+        {
+            "name": "Trafiklab",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSA3Ty91MmZpR3o1SitibWtVazhPRGhNSUJaVFk5emZkcE5zbUw3QXdLU1VjCkljQ2hSUzBLdTFiV1BlZjVteEFyUi9RZDBNTGUyeGduWmZySkgrb2I4NncKLT4gfXdsZi1ncmVhc2UgMGYsClZ2Z1ZyZlRrRXI2MFZCT0t1TFZ5eFFlS2lFNjVUdzdZMFIrcnVRNlJXUnV1OWVkVEpzK1MwWU15dU50bjQ3eisKdmZBWHVoZ3ZJYjFzeEp3Wmd6R29VK1A2bmlBVG0xQ283YlBRQWxaL3dlUVNUdwotLS0gY09wazhpbElva2VSOUR3MElPK0hxb1piUjY0RWhJT1RTdit5MThXMXNFZwr+UJ32Jqh+9AQXIs7tEBL8liEk8jWVle6HgtUtjvDsUm2Xkzr9zKQBw9rJXziB460gvCYOnYRX/3kWWo+53tzavCsN9YxBciJdokubEVKgMKf6vbqscWzdlxiRtJGx2xzz7TEmlLpblfXwn3T0uaBAYOxVvpez0zyuFMOSsd6nKpX1nIHJYIRUgH8ypVVZ",
+            "use-feed-proxy": true,
+            "headers": {
+                "Accept-Encoding": "gzip"
+            }
+        },
+        {
+            "name": "Trafiklab",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBmWmVUVWN0YWRwSUk5ZlJnVmJRbmc3bURqOVQxQVZ5bFpob3laalp0emt3ClJuUzczWktjRjdxa1QrWEh0NTRNc0ZyOWRrS0FvcjFveEd3M2FHVmJKNjQKLT4gK3pVcC1ncmVhc2UgLVxsZVRzaApvdnh6aThaS2lMTWl2bHRKWVF3ZlVaY2RiL1JWcGFLd1Y0dmd2QlRpa3I1K2paNi8vTno3bzhlVG5wUkNTUS9oCmFBdi9tZm4rS0tweWdiSzlLcG54UGgyL0lUaDBGVUZBbnBBWDhEeEdUUmlsYTEwCi0tLSA0OFpscUVDOWhLNHgvYUk0Q0FHYWpRMEpaK0V3NVltMzBMZkFTVTUyVUZjCly3/OBCv8Hnwm3+NUaPK9a2rTLn6SA5CDcmKypw5OrCn5v+DVu3LE7n12OsgWelcOaGm/+w3VU1XWHDwNA/QfxQk+sIa7pUFKcoMJ+cqDhPuHs09mM6aXHIOLEKlh87MJX1i3iB7XnuW21DbcxQdAPiV4COwsafY6VicFVkEdW9lfzd3CzcpkQrbwikRm19yg==",
+            "use-feed-proxy": true,
+            "headers": {
+                "Accept-Encoding": "gzip"
+            }
+        },
+        {
+            "name": "Trafiklab",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBOTHVRMlVhWDZuejl0dzJTOVJKeHRoLzgxeUdXOFJrODBHRDlYaEtFMlhjCkhGb3BwR0NPT2Mra0NCdXlwRkswbC8xRGprZ0dUcnJJMVd5YW9VVWhHVlEKLT4gbi1ncmVhc2UgbGUgdCBcPFcnCklqVHlQb2N2K3d6bkx2dWdNZmVxTHVOcTFiVEVJbXBTbk9pSlhDNGh3alI3Z1hIaDdiR3Q2MnBWTjJXQnZBVjIKT2crUmtvVERnY0U1RFBtYzRUUkRNSm5INjJlUUw3bWR2bzAwc0FXZFhpcThnUHNhTWU4Ci0tLSBkNTFpSlFtL1RINU0yNSsvb2RvUE9DUjM4OExVRzRvdksvWU9Yb2FHNFFzCmW7U+p+wJB7cMHN6sZJclUQGaH9I2SOtuD65QO6twMyCAqN79fqQU8xzHjPQYWXdixkj9coMqFP2x7u6QzgJ0hituTbCfgrQqkxHOalPBCGJJbd7P9QCvxO0fpDAuMjlPCzv6iO5Ea0ydZU0cPUhGrXWdsuMNOeQ2EIyIo0/t08svKjYio6CmoTtgaMVg==",
+            "use-feed-proxy": true,
+            "headers": {
+                "Accept-Encoding": "gzip"
+            }
+        },
+        {
+            "name": "Trafiklab",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSB6dmRHWWEweS9CNFB6Y1VBYzIvZkN0ekw5RWZRZ09GN0Jac1k5Tlg5OFNVCmJYODdMVTN6blVEMDJiWmlkWmdWN0s2cVdIK0s3SDV3K3RWc0VOWHNoTVkKLT4gSkwnbmtkLWdyZWFzZSAnZ0kwP2kgVC8KTGNsUnIvYlBtempHREEKLS0tIERtSklnS0dSNTVZTlh4OWNPR05zYk1XM3FjaUlRUHVXRDBrMTUyMkVkUDgKnxbUFhaJnnzVBVIK67kpzApa2bTj242cbmM9xPi8Gc3aBs6u9zTZtsEclVsz4zjNBu203FkTaihX+HCFfmVCsaIPekIciNtCm0o/lFccKcxeeZ30MMbQgYlskieYb55pnz/MPGRlTJVFrm6D+Tg4yMLJsDOY7+/U9DS9RXstZ1M4EnWU2N3EoXEZ9t0bs9M=",
+            "use-feed-proxy": true,
+            "headers": {
+                "Accept-Encoding": "gzip"
+            }
+        },
+        {
+            "name": "Trafiklab",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBxa1NOQldRRFh3UDd4RnZNNFNTMFNpNHRLcUt0eGNVcEpNVXh2VlFuakVRCmxWMFlUWnNNbTFFVmNuNW1RSTBqa2w0Y0orVDdoMERFbUl2VTFKaE0wVE0KLT4gMVFMUi1ncmVhc2UgbmwrWTlybyUgJ1FGLT5uRCsgOyhEQApEeCtVTTd4WnAwTQotLS0gbWNSLzhETWszT3lWRVNTYmp6bUp3OTFzVE5QUnJXZW11WTRzMEw3dFdaMAp3szj/cPHk9L7f1WXdC0L/K/gir1JUuxvrNc11fbqd3dZo9+oQwvrxJJVxhXBFJqbMk9D5CaTqCfYZF+o33moL7gaVmbKKsclIiOEbwAmE6hp1gc7Mr5pX8Xi6dum9zpXsmubylxcluYZesVaTSUDxEhTAbL7zfqmp2vjADOfRrukw8BLEKXtmjRNkyLRzzg==",
+            "use-feed-proxy": true,
+            "headers": {
+                "Accept-Encoding": "gzip"
+            }
+        },
+        {
+            "name": "Trafiklab",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBiRGtwWWtzdjZ1YVc5VjJEa1VWZFVQaU1GZXlHWHE3dklhOWthWTZpSlhzCmJ3UlNubU9aREdGT1MwbU0yZWR3aWNmQUo4dnpTUU4vcVgvZHY2NytCZXMKLT4gIWBCRTxbLWdyZWFzZSBmIE1RdV5ZXicyIGkKUXhYR09tSlNpM3FSWm9DOGE4Znk2aFZTbFFxZjZRR0FpeXNnQWFLbWJBdHZEYWNKaGJKcngxWnJ2ZlZDNklwMQoxS29PZWhrK012MmZRUmROMlQ2bmMzNAotLS0gdTQ0anBDMWN6NFFGMUpMZkdLMXJIbkZIMmZCdFFYY25RQmhFa2ZzRmVDawosWRscUBa8a2Uw//C9TzSETjXwu1RntB8vrmm8Plu3sNuSMgcPaXJA68hFbbHv2LYlb/DgV55bz7sAnFDHzqRqWUElIrwvrQ5nVSFfNqKKDkupi77z9NBoGqr9vaiRIaWIOoRZB7PxfrN4qzCgZjM8dMIWYlaBA4PZh46UdtWb2bqwRkGA5CfSNUWp44I58Lky",
+            "use-feed-proxy": true,
+            "headers": {
+                "Accept-Encoding": "gzip"
+            }
+        },
+        {
+            "name": "Trafiklab",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSB0U2ZZM3BMTTBWSzNRUmwzTlJGL0lENkVpYVVjS2ZJTVpqa1lhbXNFZkRZCkFNWjJZWnl6TGVpdjk4SmJ2LzdteVIyZm9pdnJ6MnU3blQrbXJyRUUvY0UKLT4ga0ctZ3JlYXNlIGZaIHx9Om4KRm05U0t1YUFZM0dQNC9vbHNKSWNITW1hbzlZNWRxZEU2NTJXU0prSVVETjBBa2hCMlpOQjBQTnJxS25kSE9KOQovQ0hLRzdqOCs1NjZ3NGVWdlJvCi0tLSBSUlNiTVJUOFRpZDVTVjdjZjQ0NlV1Yzc1Vk9DOHVEa1VuSmxSVERmSkdvCspkTGHle9wyDuUFoQ60SfLbJH6vUUrgUhwgdHJGIisUJdCwB+91NxP/yNd1M30JkutdLxO1ejdcDW71gT4xuD+7ryOy7wCEIOrO+GOZqmPV4/0AswCP36ZXb16J7aoIUKB3bqRvSPY4PEAr1T1EhZDgNaBwgp/AsNSuiA9Tq+so4cF/Wfug9yH+G9wV1geNKb05SPQ=",
+            "use-feed-proxy": true,
+            "headers": {
+                "Accept-Encoding": "gzip"
+            }
+        },
+        {
+            "name": "Trafiklab",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBaQTNieWdxRnhpNHI3Mks2WGVjOFc3S0krcnVYTnMrUDk5Y1NRS1FWUGdFCjhZZU81S1FZaHdXZGZUUWJSam1wb1dmNUN5UnRNR25sOFo0bFZqbDlubm8KLT4geURaWmUtZ3JlYXNlICZyWUVPMDFYCjZMTGNibDkrd0pnbk12Y0NvQzd6Nm5yWTF3bmZxMXRkWTdUd3BYdkp1UVYyMXcKLS0tIEdEU0lrV29Rc2t0amhJbmVxT3hoTVBQbzZHM1l1eDkwZmpkb1NuTXV3bHcKeQ9K3vff0+VgPZ4Az7n/Hu6aH16Ntolip18ujRYlwogwAuYx1tyQx3qjitIdBO0r2n9+nWMQI0S1TiqruZHjd3Mmr49Z+6DPJGGI3ncBVSMOi0MqKzM+zguMSi0WFwVClx81MJEhdIb/GeK8YlEfXEnl6mo1ZCdsGuPKzmoyupXpKFFMB17BB7tHXHpeltLupD6kFplf",
+            "use-feed-proxy": true,
+            "headers": {
+                "Accept-Encoding": "gzip"
+            }
+        },
+        {
+            "name": "Trafiklab",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSByaUpyWUFxYVNJb0VmZWgwaERjK0x1SDJrWTBrNHN3MDRPbHp2VCs1TTFVCmd0N2g5YU1KQ3Vid2QxOXpDK3VqSkttb3RXWTlDZU9lZjNLNi9zbXVTTHcKLT4gdGBSNiUtZ3JlYXNlIE9JOStFIGFgdyA3XyAqCi9acFgrYzQvUW1TbForUG0vQUlzMk5MMU5WdlNBWkxXY3BvVXBQeEVXeDFVem9vZE90ZGtnWEk4YTRSYmpQUGsKa3poMjYrWDJYY05KYVBiUlJDMUI4V1ZFd2NocTJremhWdGNuWnBoMlJ0RU5seXpmVkJockJ3SFQKLS0tIHlkK0V0eUxLZTNRLzMyUVNMUldOcCtaNVdQMjBSejFCODBSYVJNK0VSZ3cKE6KZyM9m3WpgpAugf7LJW+RvOZjpnwCn4EV5Ugiku98BynsA8sRhFsrIOVYXCbBVELgWMz3/3jADo2dySR8h0+v8DjtLmYWQKosqBwTMaCNDMYItkOWESVJkRAsFUGWleTPGC1sowsWLjfmcX/kCTBr9InfCQtJSGtofy3jkgqdReVSK4xr974UZfQ==",
+            "use-feed-proxy": true,
+            "headers": {
+                "Accept-Encoding": "gzip"
+            }
+        },
+        {
+            "name": "Trafiklab",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSB3a0xvRUdEbzBpRWZZQ0lYQmpuRklUTEpwakkrak1YWmk5OVJTU3psZFFRCkRwT3l5MVZLRG9rdFNKWU5LSEdRNDhvSi9jV3RPZlllMTFFMitndnZkZEkKLT4gdT47byktZ3JlYXNlCnZtUkxXYjVTY1E5ZFByc3p6YzNvUEtsaAotLS0geGxZT2Q2VzlZNmNxc0JoV3B0UXVKU3VNZE9USlI1Z2h2bGNhTmZySTBpTQqTp7Sa9WsIf4Jc5/HP11jJm9LT1YrEAROvDouv5NbVHMhsBNCxhHUdafQP6T0t1g8RJHtPZ0ui+sA2qnlE/UFG7xdLLYnvXU0k++Bbzwg7stFjFiSIkSvQY8doHygTAiR7imh33Trzhd3dapwFlOP0Eqvo2UlC2AyZshSsp4IeHBL29DUGU3ey/iwYIJM=",
+            "use-feed-proxy": true,
+            "headers": {
+                "Accept-Encoding": "gzip"
+            }
+        },
+        {
+            "name": "Trafiklab",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBaVWRyN0hGbUlxb2hGd25BTGVTa0tYMk43MXRSaVRlNUtpUm50Mm9GUjAwClJFYXdPejNRSkxqSjdqeGZKZU0vTElmWGlBOU9SN1VDWlk1L1FyQS9HWHcKLT4gPj8vNlo4W0YtZ3JlYXNlIEMzP01gICpUUHpnMVxSIEQkckkgOT0zPT8ubCQKb0ZHeUVZM2FId0R1NFREZDJyOXhEK01VVzg1RE1XbkUrRndPd3JMZVlqbG9BY2xlMVhuZXhKMG1VYk8xNHBlagpaNkVja3JmOVB5SlZ0WWNJK3pkY3kyalVpdTJaTVJWL3Z6M0hiS2V3Ci0tLSB4OWkvV1Q5SENNZnJybHo0ZHB1TGt2N0d0cjZrV1R3NS9HTTBNQUtDeXVZCmNMKjA3iSZ/EqfDi/XK+1soUIV+3IhZPW9ffUZQbT8Jyxdtbe6NK5FvaCei1ZKK0w/I7BqCuSJiSh071shXHPmE+U9lkB4a+OwiKbMyQ/TD3m3hON0J/FeW2Z1jAVlEJKOUe/1DIAM0fi96wII5n0DfBMsywsQfcpu87Qx/63JIRiijxOT8zAOXWvc=",
+            "use-feed-proxy": true,
+            "headers": {
+                "Accept-Encoding": "gzip"
+            }
+        },
+        {
+            "name": "Trafiklab",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBkMW50SkI3d3VlZ1JyWUdpZE1ua0FPRVVCUjdVamJiQjgvajl4bzR3V1FZCkNMQlczbTdzMVJ1dEh1U1R2T0FWVTdlMGZYMXM3b1d4UUFSQm81ZmI0RVEKLT4gSEZXVy1ncmVhc2UgUSZeTXxhNycgKVxiVT8KZXNNUkdGdE9TVm5aMENxcFBBZFNTSW9QM3E0OHRTVzFsZE9NNWUwVkFlS1FndEpOTXlkdm1Mb1g1VGhCM1FTdgo5STJLUDFiZ1Bxa2IzYThHeWVNc1g2bXM3dFlNNytiRllwTDVhWXhSRFMrMSthZlN3dkUKLS0tIEhrdVJKRHdFd0hiRGRRS0t3VGQ2ajFSME1vWUZIRFVIU3ZvUExSenloYW8KQAHG4Em8fmfIYBw836jPonaWGlPT15En+0N+ozf0h9H7vs8foPtxFTycWdxQlJDUd6UjrLJvWNzGdAFyqG+gvW4Ez41QoGxKi3jriaYzTQaSI6oPAowWQRoF8kJhiLmsYgoLCDynzFPFRrfI6+WKsTL+9pNshCm3MXa/4APC9RUJC0wVkvJmzXhiHBPO",
+            "use-feed-proxy": true,
+            "headers": {
+                "Accept-Encoding": "gzip"
+            }
+        },
+        {
+            "name": "Trafiklab",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSA0enFwZE5vMnVNMEkwNjcvTDRrRzN3VFJ6ZG0zWW9qbmhXSGFLV3hFa1NnCmFjcTZ4QlVYOTY4U21LcGxMVGVDOHBLNlRxNUd1VlhqYVkvcXE1bUg5UUEKLT4gZXdEdy1ncmVhc2UgaSMkQCdDayBcQXsgVCBfClhRMXd5VnEyY1VQMVkwZ2Q1cWlNZndkcVZQZ0pKc0JiNHcKLS0tIGJ3aDUyQXAvYXJZZXlsVitOSjZ4enZ3OS83bkhDL3NjdmJEMnRBSzFJNEkKvifrpygRgQpMjBWeyPWTaOOglSy0jjRm7+7StxdDT4ht7jdZhUlBBGCixFIvNv94D54oW/YsVYQaZ33cN5LD+BLVTMgeP1l0lw1P0b5BLwHVhb59IfPCfA+qD9gEkpU4lWyqjndkKRn0VoUzHhK/patfv/f9pZqNCP1J5LHj4ATCcCr/WgiAylsDH2zVSAw=",
+            "use-feed-proxy": true,
+            "headers": {
+                "Accept-Encoding": "gzip"
+            }
+        },
+        {
+            "name": "Trafiklab",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBqQ1M5SU1KTnI0VnEwS0NialBKL1p1di9PRDJSNDBRVEgzZ2dCL3YzaGpNClpLVnF2TjRSd2grTmhOZmUwUDh0Wlp4MlRnWmRBd3JEZEV2ZjQvOUxMLzAKLT4gN2ozKjYtZ3JlYXNlCk9YcThPY3VlZzFKY2FpV05TSHdyMkRrOW9TdmdXdwotLS0gVHdub0JPZEVxaU5VWExXbTJNVkJUWjVpL0xWRFdRb1UvUC9nZUhMWXVUOArAywnbkGgAPVzahDKO54a62CQdXQOpkPkzVBONqau6ldPWEXeL5jhDL4GJMRr6MFfILboZX8/cYO390bjXZQc6nfsazrFvnFlBPf7u0oX75niZSEY5PfbyfTprc+s/2SWdLM7h8gODNci8LSB3ebzHPLIV3L3hQWF1BCiKIWm55UYm+Q5cgjQ3pgsJ5ZajV1NK",
+            "use-feed-proxy": true,
+            "headers": {
+                "Accept-Encoding": "gzip"
+            }
         }
     ]
 }
