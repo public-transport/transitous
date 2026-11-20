@@ -125,6 +125,17 @@ class Database:
                 result.skip = source.skip
                 result.skip_reason = source.skip_reason
                 result.use_feed_proxy = source.use_feed_proxy
+            case "gbfs":
+                result = UrlSource()
+                result.name = source.name
+                if source.url_override:
+                    result.url = source.url_override
+                else:
+                    result.url = feed["urls.direct_download"]
+                result.spec = "gbfs"
+                result.skip = source.skip
+                result.skip_reason = source.skip_reason
+                result.use_feed_proxy = source.use_feed_proxy
             case data_type:
                 eprint("Warning: Found MDB source that we can't handle:",
                        source.mdb_id, "of type", data_type)
