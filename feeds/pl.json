@@ -1984,7 +1984,11 @@
         {
             "name": "Manikar-Stronie-Slaskie",
             "type": "http",
-            "url": "https://hoermalmeister.github.io/gtfs-rehost/manikar/manikar.zip"
+            "url": "https://hoermalmeister.github.io/gtfs-rehost/manikar/manikar.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-NC-SA-4.0",
+                "url": "https://hoermalmeister.github.io/gtfs-rehost/manikar/LICENSE.txt"
+            }
         },
         {
             "name": "Bytów",
