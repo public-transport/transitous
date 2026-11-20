@@ -31,8 +31,11 @@ with open(region_file, "r") as f:
         if feed["status"] not in ("active", "inactive"):
             continue
 
-        def make_name(name: str, provider: str, feed_id: str):
-            return (provider or name or feed_id).replace("/", "").replace("_", "-").replace(" ", "-").replace(",", "")[0:50]
+        def replace_special_chars(name: str) -> str:
+            return name.replace("/", "").replace("_", "-").replace(" ", "-").replace(",", "")[0:50]
+
+        def make_name(name: str, provider: str, feed_id: str) -> str:
+            return replace_special_chars(provider or name or feed_id)
 
         name = ""
         if "static_reference" in feed and feed["static_reference"]:
@@ -46,7 +49,7 @@ with open(region_file, "r") as f:
             name = make_name(feed["name"], feed["provider"], feed["id"])
             # Static feeds need unique names, otherwise their output files collide
             if feed["id"] not in id_map and any(s.get("name") == name for s in region["sources"]):
-                name = f"{name[0:40]}-{feed['id']}"
+                name = replace_special_chars(f"{name[0:40]}-{feed['id']}")
 
 
         source = {
