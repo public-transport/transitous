@@ -26,7 +26,11 @@
         {
             "name": "CFM",
             "type": "http",
-            "url": "https://hoermalmeister.github.io/gtfs-rehost/cfm/cfm.zip"
+            "url": "https://hoermalmeister.github.io/gtfs-rehost/cfm/cfm.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-NC-ND-4.0",
+                "url": "https://hoermalmeister.github.io/gtfs-rehost/cfm/LICENSE.txt"
+            }
         },
         {
             "name": "Ungheni",
