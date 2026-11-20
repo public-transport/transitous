@@ -143,13 +143,15 @@
             "name": "rapska-vozidba",
             "type": "http",
             "url": "https://owncloud.cesnet.cz/index.php/s/UudJhpom7fgur2X/download",
-            "skip": true
+            "skip": true,
+            "skip-reason": "Feed expired"
         },
         {
             "name": "crikvenica",
             "type": "http",
             "url": "https://hoermalmeister.github.io/gtfs-rehost/crikvenica/crikvenica.zip",
-            "skip": true
+            "skip": true,
+            "skip-reason": "Feed expired"
         },
         {
             "name": "opatija",
@@ -164,7 +166,8 @@
             "name": "porec",
             "type": "http",
             "url": "https://hoermalmeister.github.io/gtfs-rehost/porec/porec.zip",
-            "skip": true
+            "skip": true,
+            "skip-reason": "Feed expired"
         },
         {
             "name": "sveta-nedelja",
@@ -179,7 +182,8 @@
             "name": "vela-luka",
             "type": "http",
             "url": "https://hoermalmeister.github.io/gtfs-rehost/vela_luka/vela_luka.zip",
-            "skip": true
+            "skip": true,
+            "skip-reason": "Feed expired"
         },
         {
             "name": "zadar",
