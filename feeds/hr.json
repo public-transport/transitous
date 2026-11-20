@@ -135,7 +135,7 @@
             "type": "http",
             "url": "https://hoermalmeister.github.io/gtfs-rehost/rapska_plovidba/rapska_plovidba.zip",
             "license": {
-                "spdx-identifier": "CC-BY-NC-ND-4.0",
+                "spdx-identifier": "CC-BY-NC-SA-4.0",
                 "url": "https://hoermalmeister.github.io/gtfs-rehost/rapska_plovidba/LICENSE.txt"
             }
         },
@@ -156,7 +156,7 @@
             "type": "http",
             "url": "https://hoermalmeister.github.io/gtfs-rehost/opatija/opatija.zip",
             "license": {
-                "spdx-identifier": "CC-BY-NC-ND-4.0",
+                "spdx-identifier": "CC-BY-NC-SA-4.0",
                 "url": "https://hoermalmeister.github.io/gtfs-rehost/opatija/LICENSE.txt"
             }
         },
@@ -171,7 +171,7 @@
             "type": "http",
             "url": "https://hoermalmeister.github.io/gtfs-rehost/sveta_nedelja/sveta_nedelja.zip",
             "license": {
-                "spdx-identifier": "CC-BY-NC-ND-4.0",
+                "spdx-identifier": "CC-BY-NC-SA-4.0",
                 "url": "https://hoermalmeister.github.io/gtfs-rehost/sveta_nedelja/LICENSE.txt"
             }
         },
@@ -203,7 +203,7 @@
             "type": "http",
             "url": "https://hoermalmeister.github.io/gtfs-rehost/slavonski_brod/slavonski_brod.zip",
             "license": {
-                "spdx-identifier": "CC-BY-NC-ND-4.0",
+                "spdx-identifier": "CC-BY-NC-SA-4.0",
                 "url": "https://hoermalmeister.github.io/gtfs-rehost/slavonski_brod/LICENSE.txt"
             }
         },
