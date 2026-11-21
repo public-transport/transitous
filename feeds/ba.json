@@ -46,6 +46,12 @@
             "fix": true
         },
         {
+            "name": "Mostar",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "http://ontrack.baguette.pirnet.si/gtfsrt/mostar?format=pb"
+        },
+        {
             "name": "livnobus",
             "type": "mobility-database",
             "fix": true,
@@ -70,6 +76,30 @@
             "name": "Konzorcijum-Dinamik-Turs-i-Viena-Tour",
             "type": "mobility-database",
             "mdb-id": "mdb-3647"
+        },
+        {
+            "name": "BL",
+            "type": "http",
+            "url": "https://gitlab.com/api/v4/projects/vekejsn%2Fgtfs-generators/packages/generic/banja-luka-gtfs/latest/banja_luka_gtfs.zip",
+            "fix": true
+        },
+        {
+            "name": "BL",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "http://ontrack.baguette.pirnet.si/gtfsrt/bl?format=pb"
+        },
+        {
+            "name": "Tuzla",
+            "type": "http",
+            "url": "https://gitlab.com/api/v4/projects/vekejsn%2Fgtfs-generators/packages/generic/tuzla-gtfs/latest/tuzla_gtfs.zip",
+            "fix": true
+        },
+        {
+            "name": "Tuzla",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "http://ontrack.baguette.pirnet.si/gtfsrt/tuzla?format=pb"
         }
     ]
 }
