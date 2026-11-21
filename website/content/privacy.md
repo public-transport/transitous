@@ -48,7 +48,7 @@ The log files are kept for up to 2 days, and deleted afterwards.
 
 If you want us to delete logs concerning you, please contact the server maintainer by e-mail with enough information to identify the relevant log areas (for example: IP address, timeframe or user-agent, if unique).
 
-Please direct the message to this e-mail address: `jbb-transitous-privacy` at `spline` dot `de`.
+Please direct the message to this e-mail address: `info` at `transitous` dot `org`.
 
 You may encrypt the message to [this PGP key](https://keys.openpgp.org/search?q=C3D7CAFBF442353F95F69F4AA81E075ABEC80A7E).
 
