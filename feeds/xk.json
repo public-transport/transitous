@@ -9,7 +9,11 @@
         {
             "name": "Trainkos",
             "type": "http",
-            "url": "https://hoermalmeister.github.io/gtfs-rehost/trainkos/trainkos.zip"
+            "url": "https://hoermalmeister.github.io/gtfs-rehost/trainkos/trainkos.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-NC-SA-4.0",
+                "url": "https://hoermalmeister.github.io/gtfs-rehost/trainkos/LICENSE.txt"
+            }
         }
     ]
 }

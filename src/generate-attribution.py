@@ -136,15 +136,26 @@ def http_source_attribution(source: HttpSource | FtpSource, source_id: str, regi
                     with z.open("licenses.txt", "r") as a:
                         with io.TextIOWrapper(a) as at:
                             licensestxt = csv.DictReader(at, delimiter=",", quotechar='"')
-                            licenses = filter(lambda l: l["licensed_table_name"] == "", licensestxt)
-                            try:
-                                license = next(licenses)
-                                if "license_spdx_id" in license and license["license_spdx_id"]:
-                                    attribution["spdx_license_identifier"] = license["license_spdx_id"]
-                                if "custom_license_url" in license and license["custom_license_url"]:
-                                    attribution["license_url"] = license["custom_license_url"]
-                            except StopIteration:
-                                pass
+
+                            attribution["file-licenses"] = {}
+
+                            for license in licensestxt:
+                                if license["licensed_table_name"] == "":
+                                    if "license_spdx_id" in license and license["license_spdx_id"]:
+                                        attribution["spdx_license_identifier"] = license["license_spdx_id"]
+                                    if "custom_license_url" in license and license["custom_license_url"]:
+                                        attribution["license_url"] = license["custom_license_url"]
+
+                                else:
+                                    table = license["licensed_table_name"] + ".txt"
+
+                                    if table not in attribution["file-licenses"]:
+                                        attribution["file-licenses"][table] = {}
+
+                                    if "license_spdx_id" in license and license["license_spdx_id"]:
+                                        attribution["file-licenses"][table]["spdx_license_identifier"] = license["license_spdx_id"]
+                                    if "custom_license_url" in license and license["custom_license_url"]:
+                                        attribution["file-licenses"][table]["license_url"] = license["custom_license_url"]
 
             attribution["contacts"] = \
                 list(filter(lambda c: c.get("email") or c.get("url"),
@@ -236,8 +247,6 @@ def get_region_data(code: str) -> dict:
         region_data["subdivision_code"] = code
         region_data["subdivision_name"] = override_subdivision if override_subdivision else subdivision.name
 
-    # TODO backward compatibility for not yet adapted consumer code, remove eventually
-    region_data["region_code"] = region_data.get("subdivision_code", region_data["country_code"])
     region_data["region_name"] = region_data.get("subdivision_name", region_data["country_name"])
 
     return region_data

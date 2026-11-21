@@ -1,0 +1,23 @@
+{
+    "maintainers": [],
+    "sources": [
+        {
+            "name": "Kigali-Bus-Services-Rwanda-Federation-of-Transport-dry",
+            "type": "mobility-database",
+            "mdb-id": "mdb-1961",
+            "extend-calendar": true,
+            "fix": true,
+            "skip": true,
+            "skip-reason": "Feed contains no trips"
+        },
+        {
+            "name": "Kigali-Bus-Services-Rwanda-Federation-of-Transport-wet",
+            "type": "mobility-database",
+            "mdb-id": "mdb-1962",
+            "extend-calendar": true,
+            "fix": true,
+            "skip": true,
+            "skip-reason": "Expired, extend-calendar ineffective (feed_end_date does not match calendar)"
+        }
+    ]
+}

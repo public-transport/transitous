@@ -70,9 +70,9 @@
             "transitland-atlas-id": "f-transportes~colectivos~do~barreiro~pt"
         },
         {
-            "name": "Funchal",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-etgc-hf~urbano~hf~interurbano"
+            "name": "Madeira-SIGA",
+            "type": "http",
+            "url": "https://gtfs.tiim.pt/rede-siga/rede-siga-gtfs.zip"
         },
         {
             "name": "Algarve-Vamus",
@@ -92,8 +92,10 @@
         {
             "name": "Porto-STCP",
             "type": "http",
-            "url": "https://opendata.porto.digital/dataset/horarios-paragens-e-rotas-em-formato-gtfs-stcp",
+            "url": "https://dadosabertos.cm-porto.pt/dataset/horarios-paragens-e-rotas-stcp",
             "function": "data_stcp_latest_resource",
+            "skip": true,
+            "skip-reason": "Newest feed on the Porto open data portal expired on 2026-09-23",
             "license": {
                 "spdx-identifier": "CC0-1.0"
             }
@@ -151,6 +153,24 @@
             "name": "Metro-Transportes-do-Sul",
             "type": "mobility-database",
             "mdb-id": "mdb-2408"
+        },
+               {
+            "name": "Metro-Mondego-Metrobus",
+            "type": "http",
+            "url": "https://bquelhas.github.io/brutemaps-data/gtfs/metro-mondego/metro-mondego.zip",
+            "license": {
+                "spdx-identifier": "ODbL-1.0",
+                "url": "https://github.com/bquelhas/brutemaps-data/tree/main/gtfs"
+            }
+        },
+        {
+            "name": "Metrobus-Porto",
+            "type": "http",
+            "url": "https://bquelhas.github.io/brutemaps-data/gtfs/metrobus-porto/metrobus-porto.zip",
+            "license": {
+                "spdx-identifier": "ODbL-1.0",
+                "url": "https://github.com/bquelhas/brutemaps-data/tree/main/gtfs"
+            }
         }
     ]
 }

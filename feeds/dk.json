@@ -9,7 +9,8 @@
         {
             "name": "rejseplanen",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-rejseplanen~dk~gtfs"
+            "transitland-atlas-id": "f-rejseplanen~dk~gtfs",
+            "script": "dk-rejseplanen.lua"
         },
         {
             "name": "rejseplanen",

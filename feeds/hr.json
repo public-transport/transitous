@@ -45,6 +45,11 @@
             "transitland-atlas-id": "f-u25k-zagrebačkielektričnitramvaj~rt"
         },
         {
+            "name": "zet-extra",
+            "type": "http",
+            "url": "https://gtfs.sorunome.de/zagrebextra.zip"
+        },
+        {
             "name": "jl",
             "type": "http",
             "url": "https://b2b.promet-info.hr/dc/b2b.gtfs.jl",
@@ -128,37 +133,57 @@
         {
             "name": "rapska-plovidba",
             "type": "http",
-            "url": "https://hoermalmeister.github.io/gtfs-rehost/rapska_plovidba/rapska_plovidba.zip"
+            "url": "https://hoermalmeister.github.io/gtfs-rehost/rapska_plovidba/rapska_plovidba.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-NC-SA-4.0",
+                "url": "https://hoermalmeister.github.io/gtfs-rehost/rapska_plovidba/LICENSE.txt"
+            }
         },
         {
             "name": "rapska-vozidba",
             "type": "http",
-            "url": "https://owncloud.cesnet.cz/index.php/s/UudJhpom7fgur2X/download"
+            "url": "https://owncloud.cesnet.cz/index.php/s/UudJhpom7fgur2X/download",
+            "skip": true,
+            "skip-reason": "Feed expired"
         },
         {
             "name": "crikvenica",
             "type": "http",
-            "url": "https://hoermalmeister.github.io/gtfs-rehost/crikvenica/crikvenica.zip"
+            "url": "https://hoermalmeister.github.io/gtfs-rehost/crikvenica/crikvenica.zip",
+            "skip": true,
+            "skip-reason": "Feed expired"
         },
         {
             "name": "opatija",
             "type": "http",
-            "url": "https://hoermalmeister.github.io/gtfs-rehost/opatija/opatija.zip"
+            "url": "https://hoermalmeister.github.io/gtfs-rehost/opatija/opatija.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-NC-SA-4.0",
+                "url": "https://hoermalmeister.github.io/gtfs-rehost/opatija/LICENSE.txt"
+            }
         },
         {
             "name": "porec",
             "type": "http",
-            "url": "https://hoermalmeister.github.io/gtfs-rehost/porec/porec.zip"
+            "url": "https://hoermalmeister.github.io/gtfs-rehost/porec/porec.zip",
+            "skip": true,
+            "skip-reason": "Feed expired"
         },
         {
             "name": "sveta-nedelja",
             "type": "http",
-            "url": "https://hoermalmeister.github.io/gtfs-rehost/sveta_nedelja/sveta_nedelja.zip"
+            "url": "https://hoermalmeister.github.io/gtfs-rehost/sveta_nedelja/sveta_nedelja.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-NC-SA-4.0",
+                "url": "https://hoermalmeister.github.io/gtfs-rehost/sveta_nedelja/LICENSE.txt"
+            }
         },
         {
             "name": "vela-luka",
             "type": "http",
-            "url": "https://hoermalmeister.github.io/gtfs-rehost/vela_luka/vela_luka.zip"
+            "url": "https://hoermalmeister.github.io/gtfs-rehost/vela_luka/vela_luka.zip",
+            "skip": true,
+            "skip-reason": "Feed expired"
         },
         {
             "name": "zadar",
@@ -180,7 +205,11 @@
         {
             "name": "terzic-slavonski-brod",
             "type": "http",
-            "url": "https://hoermalmeister.github.io/gtfs-rehost/slavonski_brod/slavonski_brod.zip"
+            "url": "https://hoermalmeister.github.io/gtfs-rehost/slavonski_brod/slavonski_brod.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-NC-SA-4.0",
+                "url": "https://hoermalmeister.github.io/gtfs-rehost/slavonski_brod/LICENSE.txt"
+            }
         },
         {
             "name": "bajs",

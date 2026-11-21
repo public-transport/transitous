@@ -11,37 +11,40 @@
     ],
     "sources": [
         {
-            "name": "great-britain",
+            "name": "dft-bods",
             "type": "http",
-            "url": "https://beta.aubin.app/gtfs/great_britain_gtfs.zip",
+            "url": "https://data.bus-data.dft.gov.uk/timetable/download/gtfs-file/all/",
             "fix": true,
             "license": {
-                "url": "https://transitous.org/sources-great-britain"
+                "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+                "attribution-text": "Data from Bus Open Data Service is licensed under the UK Open Government Licence (OGL) v3.0."
             },
             "drop-agency-names": [
                 "FlixBus"
             ],
+            "keep-additional-fields": false,
+            "drop-shapes": true
+        },
+        {
+            "name": "national-rail",
+            "type": "http",
+            "url": "https://github.com/planarnetwork/gb-transit/releases/latest/download/gtfs-national-rail-only.zip",
+            "fix": true,
+            "license": {
+                "url": "https://planarnetwork.github.io/gb-transit/",
+                "attribution-text": "This dataset contains data derived from Rail Delivery Group under RSP Data Licence, DfT under OGL v3.0 and National Rail Enquiries under National Rail Enquiries Knowledgebase Licence."
+            },
             "script": "gb-great-britain.lua",
             "keep-additional-fields": false,
             "drop-shapes": true
         },
         {
-            "name": "great-britain",
-            "type": "url",
-            "spec": "gtfs-rt",
-            "url": "https://realtime.aubin.app/great_britain_gtfsrt.binpb",
-            "license": {
-                "url": "https://transitous.org/sources-great-britain"
-            },
-            "use-feed-proxy": true
-        },
-        {
             "name": "northern-ireland",
             "type": "http",
-            "url": "https://blues3.transitpdf.com/files/sourcedata/northern-ireland.zip",
+            "url": "https://www.transportforireland.ie/transitData/Data/GTFS_NI.zip",
             "license": {
-                "url": "https://busmaps.com/en/license",
-                "attribution-text": "This product includes derivative public transportation data provided by busmaps.com. For more information, visit busmaps.com"
+                "spdx-identifier": "CC-BY-4.0",
+                "url": "https://data.gov.ie/dataset/nta-gtfs"
             }
         },
         {

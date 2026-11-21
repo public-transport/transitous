@@ -7,7 +7,7 @@ motis:
     crunchy:
       ansible_user: root
       ansible_host: crunchy.spline.de
-      motis_build_flavour: skylake-avx512
+      motis_build_flavour: debian-trixie-ticketing-fix
       motis_primary: true
       motis_update_time: "5:00:00" #Europe/Berlin
       transitous_woodpecker_agent_secret: !vault |

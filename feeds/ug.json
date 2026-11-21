@@ -1,0 +1,13 @@
+{
+    "maintainers": [],
+    "sources": [
+        {
+            "name": "14-Seater-Paratransit-Taxi-Buses-operated-by-Pione",
+            "type": "mobility-database",
+            "mdb-id": "mdb-1813",
+            "extend-calendar": true,
+            "skip": true,
+            "skip-reason": "Expired, extend-calendar ineffective (feed_end_date does not match calendar)"
+        }
+    ]
+}

@@ -8,7 +8,7 @@ listen {
 }
 
 namespace "rp" {
-  format = "[$time_local] $host rl=$request_length urt=\"$upstream_response_time\" rt=$request_time bbs=$body_bytes_sent s=$status ph=\"$upstream_addr\" uri=\"$uri\" sp=\"$server_protocol\" gz=\"$sent_http_content_encoding\" l=\"$http_accept_language\" ua=\"$http_user_agent\""
+  format = "[$time_local] $host rl=$request_length urt=\"$upstream_response_time\" rt=$request_time bbs=$body_bytes_sent s=$status ph=\"$upstream_addr\" uri=\"$uri\" sp=\"$server_protocol\" gz=\"$sent_http_content_encoding\" l=\"$http_accept_language\" ua=\"$http_user_agent\" cc=\"$geoip2_country_code\""
 
   source {
     files = ["/var/log/nginx/metrics.log"]
@@ -77,6 +77,19 @@ namespace "rp" {
 
     match "^([a-z]{2}).*" {
       replacement = "$1*"
+    }
+
+    match "^.*" {
+      replacement = "other"
+    }
+  }
+
+  relabel "country" {
+    only_counter = true
+    from         = "geoip2_country_code"
+
+    match "^([A-Z]{2})$" {
+      replacement = "$1"
     }
 
     match "^.*" {

@@ -14,6 +14,8 @@ country_code = sys.argv[2]
 
 mdb = Database.load()
 relevant_entries = filter(lambda entry: entry["location.country_code"] == country_code, mdb.by_id.values())
+# Handle static feeds first, so realtime feeds can pick up the name of their static feed
+relevant_entries = sorted(relevant_entries, key=lambda entry: entry["data_type"] == "gtfs_rt")
 
 with open(region_file, "r") as f:
     region = json.load(f)
@@ -25,11 +27,15 @@ with open(region_file, "r") as f:
             id_map[source["mdb-id"]] = source
 
     for feed in relevant_entries:
-        if feed["status"] != "active":
+        # Inactive feeds (usually expired) may still be usable with extend-calendar
+        if feed["status"] not in ("active", "inactive"):
             continue
 
-        def make_name(name: str, provider: str, feed_id: str):
-            return (provider or name or feed_id).replace("/", "").replace("_", "-").replace(" ", "-").replace(",", "")[0:50]
+        def replace_special_chars(name: str) -> str:
+            return name.replace("/", "").replace("_", "-").replace(" ", "-").replace(",", "")[0:50]
+
+        def make_name(name: str, provider: str, feed_id: str) -> str:
+            return replace_special_chars(provider or name or feed_id)
 
         name = ""
         if "static_reference" in feed and feed["static_reference"]:
@@ -41,6 +47,9 @@ with open(region_file, "r") as f:
                 name = make_name(res["name"], res["provider"], res["id"])
         else:
             name = make_name(feed["name"], feed["provider"], feed["id"])
+            # Static feeds need unique names, otherwise their output files collide
+            if feed["id"] not in id_map and any(s.get("name") == name for s in region["sources"]):
+                name = replace_special_chars(f"{name[0:40]}-{feed['id']}")
 
 
         source = {
@@ -51,6 +60,8 @@ with open(region_file, "r") as f:
         # Not really needed, just for easier reading of the result
         if feed["data_type"] == "gtfs_rt":
             source["spec"] = "gtfs-rt"
+        elif feed["status"] == "inactive":
+            source["extend-calendar"] = True
 
         if feed["id"] in id_map:
             id_map[feed["id"]].update(source)
@@ -61,6 +72,7 @@ with open(region_file, "r") as f:
             }
             new_source.update(source)
             region["sources"].append(new_source)
+            id_map[feed["id"]] = new_source
 
 with open(region_file, "w") as f:
     json.dump(region, f, indent=4, ensure_ascii=False)

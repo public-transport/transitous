@@ -1,0 +1,14 @@
+<!--
+SPDX-FileCopyrightText: 2026 jendrikw
+
+SPDX-License-Identifier: AGPL-3.0-or-later
+-->
+
+
+{{ with resources.Get "js/encrypt.js" }}
+{{ $js := . | js.Build (dict
+"target" "es2022"
+"minify" hugo.IsProduction
+) }}
+<script src="{{ $js.RelPermalink }}" defer></script>
+{{ end }}

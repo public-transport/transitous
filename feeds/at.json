@@ -30,6 +30,21 @@
             "use-gtfsclean": false
         },
         {
+            "name": "PTA-Eastern-Region-Flex-2027",
+            "type": "http",
+            "url": "https://data.mobilitaetsverbuende.at/api/public/v1/data-sets/80/2027/file",
+            "license": {
+                "url": "https://mobilitaetsverbuende.atlassian.net/wiki/spaces/DBP/pages/185237505/Terms+of+Use"
+            },
+            "function": "mvo_keycloak_token",
+            "http-options": {
+                "fetch-interval-days": 2
+            },
+            "managed-by-script": true,
+            "x-mvo-id": "80-2027",
+            "use-gtfsclean": false
+        },
+        {
             "name": "PTA-Styria-Flex-2026",
             "type": "http",
             "url": "https://data.mobilitaetsverbuende.at/api/public/v1/data-sets/79/2026/file",
@@ -47,7 +62,34 @@
             "use-gtfsclean": false
         },
         {
+            "name": "PTA-Styria-Flex-2027",
+            "type": "http",
+            "url": "https://data.mobilitaetsverbuende.at/api/public/v1/data-sets/79/2027/file",
+            "license": {
+                "url": "https://mobilitaetsverbuende.atlassian.net/wiki/spaces/DBP/pages/185237505/Terms+of+Use"
+            },
+            "function": "mvo_keycloak_token",
+            "http-options": {
+                "fetch-interval-days": 2
+            },
+            "managed-by-script": true,
+            "x-mvo-id": "79-2027",
+            "script": "at.lua",
+            "default-timezone": "Europe/Vienna",
+            "use-gtfsclean": false
+        },
+        {
             "name": "PTA-Styria-Flex-2026",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://efa.verbundlinie.at:7790/trips",
+            "license": {
+                "publisher": "Verkehrsverbund Steiermark GmbH",
+                "publisher-url": "https://www.verbundlinie.at"
+            }
+        },
+        {
+            "name": "PTA-Styria-Flex-2027",
             "type": "url",
             "spec": "gtfs-rt",
             "url": "https://efa.verbundlinie.at:7790/trips",
@@ -67,7 +109,27 @@
             }
         },
         {
+            "name": "PTA-Styria-Flex-2027",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://efa.verbundlinie.at:7792/trips",
+            "license": {
+                "publisher": "Verkehrsverbund Steiermark GmbH",
+                "publisher-url": "https://www.verbundlinie.at"
+            }
+        },
+        {
             "name": "PTA-Styria-Flex-2026",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://efa.verbundlinie.at:7794/trips",
+            "license": {
+                "publisher": "Verkehrsverbund Steiermark GmbH",
+                "publisher-url": "https://www.verbundlinie.at"
+            }
+        },
+        {
+            "name": "PTA-Styria-Flex-2027",
             "type": "url",
             "spec": "gtfs-rt",
             "url": "https://efa.verbundlinie.at:7794/trips",
@@ -87,7 +149,27 @@
             }
         },
         {
+            "name": "PTA-Styria-Flex-2027",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://efa.verbundlinie.at:7796/trips",
+            "license": {
+                "publisher": "Verkehrsverbund Steiermark GmbH",
+                "publisher-url": "https://www.verbundlinie.at"
+            }
+        },
+        {
             "name": "PTA-Styria-Flex-2026",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://efa.verbundlinie.at:7798/trips",
+            "license": {
+                "publisher": "Verkehrsverbund Steiermark GmbH",
+                "publisher-url": "https://www.verbundlinie.at"
+            }
+        },
+        {
+            "name": "PTA-Styria-Flex-2027",
             "type": "url",
             "spec": "gtfs-rt",
             "url": "https://efa.verbundlinie.at:7798/trips",
@@ -115,6 +197,24 @@
             "skip-reason": "Stay Seated forever during MOTIS import"
         },
         {
+            "name": "PTA-Carinthia-Flex-2027",
+            "type": "http",
+            "url": "https://data.mobilitaetsverbuende.at/api/public/v1/data-sets/78/2027/file",
+            "license": {
+                "url": "https://mobilitaetsverbuende.atlassian.net/wiki/spaces/DBP/pages/185237505/Terms+of+Use"
+            },
+            "function": "mvo_keycloak_token",
+            "http-options": {
+                "fetch-interval-days": 2
+            },
+            "default-timezone": "Europe/Vienna",
+            "managed-by-script": true,
+            "x-mvo-id": "78-2027",
+            "use-gtfsclean": false,
+            "skip": true,
+            "skip-reason": "Stay Seated forever during MOTIS import"
+        },
+        {
             "name": "PTA-Upper-Austria-Flex-2026",
             "type": "http",
             "url": "https://data.mobilitaetsverbuende.at/api/public/v1/data-sets/77/2026/file",
@@ -127,6 +227,22 @@
             },
             "managed-by-script": true,
             "x-mvo-id": "77-2026",
+            "use-gtfsclean": false,
+            "script": "at.lua"
+        },
+        {
+            "name": "PTA-Upper-Austria-Flex-2027",
+            "type": "http",
+            "url": "https://data.mobilitaetsverbuende.at/api/public/v1/data-sets/77/2027/file",
+            "license": {
+                "url": "https://mobilitaetsverbuende.atlassian.net/wiki/spaces/DBP/pages/185237505/Terms+of+Use"
+            },
+            "function": "mvo_keycloak_token",
+            "http-options": {
+                "fetch-interval-days": 2
+            },
+            "managed-by-script": true,
+            "x-mvo-id": "77-2027",
             "use-gtfsclean": false,
             "script": "at.lua"
         },
@@ -146,6 +262,21 @@
             "use-gtfsclean": false
         },
         {
+            "name": "PTA-Vorarlberg-Flex-2027",
+            "type": "http",
+            "url": "https://data.mobilitaetsverbuende.at/api/public/v1/data-sets/75/2027/file",
+            "license": {
+                "url": "https://mobilitaetsverbuende.atlassian.net/wiki/spaces/DBP/pages/185237505/Terms+of+Use"
+            },
+            "function": "mvo_keycloak_token",
+            "http-options": {
+                "fetch-interval-days": 2
+            },
+            "managed-by-script": true,
+            "x-mvo-id": "75-2027",
+            "use-gtfsclean": false
+        },
+        {
             "name": "PTA-Salzburg-Flex-2026",
             "type": "http",
             "url": "https://data.mobilitaetsverbuende.at/api/public/v1/data-sets/73/2026/file",
@@ -158,6 +289,22 @@
             },
             "managed-by-script": true,
             "x-mvo-id": "73-2026",
+            "script": "at.lua",
+            "use-gtfsclean": false
+        },
+        {
+            "name": "PTA-Salzburg-Flex-2027",
+            "type": "http",
+            "url": "https://data.mobilitaetsverbuende.at/api/public/v1/data-sets/73/2027/file",
+            "license": {
+                "url": "https://mobilitaetsverbuende.atlassian.net/wiki/spaces/DBP/pages/185237505/Terms+of+Use"
+            },
+            "function": "mvo_keycloak_token",
+            "http-options": {
+                "fetch-interval-days": 2
+            },
+            "managed-by-script": true,
+            "x-mvo-id": "73-2027",
             "script": "at.lua",
             "use-gtfsclean": false
         },
@@ -175,6 +322,23 @@
             },
             "managed-by-script": true,
             "x-mvo-id": "69-2026",
+            "skip": true,
+            "skip-reason": "We use the Flex feed instead"
+        },
+        {
+            "name": "Linz-AG-2027",
+            "type": "http",
+            "url": "https://data.mobilitaetsverbuende.at/api/public/v1/data-sets/69/2027/file",
+            "license": {
+                "url": "https://mobilitaetsverbuende.atlassian.net/wiki/spaces/DBP/pages/185237505/Terms+of+Use"
+            },
+            "fix": true,
+            "function": "mvo_keycloak_token",
+            "http-options": {
+                "fetch-interval-days": 2
+            },
+            "managed-by-script": true,
+            "x-mvo-id": "69-2027",
             "skip": true,
             "skip-reason": "We use the Flex feed instead"
         },
@@ -200,6 +364,27 @@
             "script": "at.lua"
         },
         {
+            "name": "Railway-Current-Reference-Data-2027",
+            "type": "http",
+            "url": "https://data.mobilitaetsverbuende.at/api/public/v1/data-sets/66/2027/file",
+            "license": {
+                "url": "https://mobilitaetsverbuende.atlassian.net/wiki/spaces/DBP/pages/185237505/Terms+of+Use"
+            },
+            "fix": true,
+            "function": "mvo_keycloak_token",
+            "http-options": {
+                "fetch-interval-days": 2
+            },
+            "drop-shapes": true,
+            "managed-by-script": true,
+            "x-mvo-id": "66-2027",
+            "display-name-options": {
+                "copy-trip-names-matching": "((IC)|(ECB)|(EC)|(RJ)|(RJX)|(D)|(NJ)|(EN)|(CJX)|(ICE)|(IR)|(REX)|(R)|(ER)|(ATB)|(WB)) \\d+",
+                "keep-route-names-matching": "((RE)|(RB)|S) ?\\d+"
+            },
+            "script": "at.lua"
+        },
+        {
             "name": "PTA-Tyrol-2026",
             "type": "http",
             "url": "https://data.mobilitaetsverbuende.at/api/public/v1/data-sets/57/2026/file",
@@ -213,6 +398,23 @@
             },
             "managed-by-script": true,
             "x-mvo-id": "57-2026",
+            "skip": true,
+            "skip-reason": "We use the Flex feed instead"
+        },
+        {
+            "name": "PTA-Tyrol-2027",
+            "type": "http",
+            "url": "https://data.mobilitaetsverbuende.at/api/public/v1/data-sets/57/2027/file",
+            "license": {
+                "url": "https://mobilitaetsverbuende.atlassian.net/wiki/spaces/DBP/pages/185237505/Terms+of+Use"
+            },
+            "fix": true,
+            "function": "mvo_keycloak_token",
+            "http-options": {
+                "fetch-interval-days": 2
+            },
+            "managed-by-script": true,
+            "x-mvo-id": "57-2027",
             "skip": true,
             "skip-reason": "We use the Flex feed instead"
         },
@@ -237,6 +439,21 @@
             "use-gtfsclean": false
         },
         {
+            "name": "Fahrplandaten-Verkehrsverbund-Tirol-Flex-2027",
+            "type": "http",
+            "url": "https://data.mobilitaetsverbuende.at/api/public/v1/data-sets/76/2027/file",
+            "license": {
+                "url": "https://mobilitaetsverbuende.atlassian.net/wiki/spaces/DBP/pages/185237505/Terms+of+Use"
+            },
+            "function": "mvo_keycloak_token",
+            "http-options": {
+                "fetch-interval-days": 2
+            },
+            "managed-by-script": true,
+            "x-mvo-id": "76-2027",
+            "use-gtfsclean": false
+        },
+        {
             "name": "Fahrplandaten-Linz-AG-Flex-2026",
             "type": "http",
             "url": "https://data.mobilitaetsverbuende.at/api/public/v1/data-sets/74/2026/file",
@@ -249,6 +466,21 @@
             },
             "managed-by-script": true,
             "x-mvo-id": "74-2026",
+            "use-gtfsclean": false
+        },
+        {
+            "name": "Fahrplandaten-Linz-AG-Flex-2027",
+            "type": "http",
+            "url": "https://data.mobilitaetsverbuende.at/api/public/v1/data-sets/74/2027/file",
+            "license": {
+                "url": "https://mobilitaetsverbuende.atlassian.net/wiki/spaces/DBP/pages/185237505/Terms+of+Use"
+            },
+            "function": "mvo_keycloak_token",
+            "http-options": {
+                "fetch-interval-days": 2
+            },
+            "managed-by-script": true,
+            "x-mvo-id": "74-2027",
             "use-gtfsclean": false
         }
     ]

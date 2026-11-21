@@ -1734,6 +1734,28 @@
         {
             "name": "offre-de-transport-du-reseau-tango-de-nimes-metropole-gtfs-gtfs-rt",
             "type": "url",
+            "url": "https://gtfs.bus-tracker.fr/gtfs-rt/tango/trip-updates",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/offre-de-transport-du-reseau-tango-de-nimes-metropole-gtfs-gtfs-rt",
+                "spdx-identifier": "etalab-2.0"
+            },
+            "spec": "gtfs-rt",
+            "x-data-gov-fr-dataset-id": "5c642379634f41657e9b5ea4"
+        },
+        {
+            "name": "offre-de-transport-du-reseau-tango-de-nimes-metropole-gtfs-gtfs-rt",
+            "type": "url",
+            "url": "https://gtfs.bus-tracker.fr/gtfs-rt/tango/vehicle-positions",
+            "license": {
+                "url": "https://transport.data.gouv.fr/datasets/offre-de-transport-du-reseau-tango-de-nimes-metropole-gtfs-gtfs-rt",
+                "spdx-identifier": "etalab-2.0"
+            },
+            "spec": "gtfs-rt",
+            "x-data-gov-fr-dataset-id": "5c642379634f41657e9b5ea4"
+        },
+        {
+            "name": "offre-de-transport-du-reseau-tango-de-nimes-metropole-gtfs-gtfs-rt",
+            "type": "url",
             "url": "https://www.data.gouv.fr/api/1/datasets/r/9be4a7ae-6436-4aab-bdb7-a81e09fa3233",
             "x-data-gov-fr-res-title": "GTFS-RT - Prochains passages en temps réel",
             "license": {
@@ -1759,7 +1781,9 @@
             "x-data-gov-fr-res-id": 80730,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "GTFS-RT Mise à jour des Alertes",
-            "x-data-gov-fr-dataset-id": "5c642379634f41657e9b5ea4"
+            "x-data-gov-fr-dataset-id": "5c642379634f41657e9b5ea4",
+            "skip": true,
+            "skip-reason": "Official Tango realtime feeds are not used, the Bus Tracker feeds are used instead (see #2643)"
         },
         {
             "name": "offre-de-transport-du-reseau-tango-de-nimes-metropole-gtfs-gtfs-rt",
@@ -1773,7 +1797,9 @@
             "x-data-gov-fr-res-id": 80731,
             "managed-by-script": true,
             "x-data-gov-fr-res-title": "GTFS-RT Mises à jour des trajets en temps réel",
-            "x-data-gov-fr-dataset-id": "5c642379634f41657e9b5ea4"
+            "x-data-gov-fr-dataset-id": "5c642379634f41657e9b5ea4",
+            "skip": true,
+            "skip-reason": "Trip and stop IDs do not match the GTFS, the Bus Tracker feed is used instead (see #2643)"
         },
         {
             "name": "horaires-theoriques-et-temps-reel-gtfs-gtfs-rt-du-reseau-palmbus-cannes-pays-de-lerins",

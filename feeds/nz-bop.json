@@ -12,8 +12,8 @@
     "sources": [
         {
             "name": "Baybus",
-            "type": "transitland-atlas",
-            "transitland-atlas-id": "f-boprc~nz"
+            "type": "http",
+            "url": "https://au-gtfs.remix.com/boprc-nz-public.zip"
         },
         {
             "name": "Baybus",

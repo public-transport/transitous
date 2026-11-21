@@ -1,0 +1,23 @@
+{
+    "maintainers": [],
+    "sources": [
+        {
+            "name": "Esprit-de-Mort-Esprit-de-Vie-Transco-Taxi-Jaune-Mo",
+            "type": "mobility-database",
+            "mdb-id": "mdb-1963",
+            "extend-calendar": true,
+            "fix": true,
+            "skip": true,
+            "skip-reason": "Expired, extend-calendar ineffective (feed_end_date does not match calendar)"
+        },
+        {
+            "name": "Esprit-de-Mort-Esprit-de-Vie-Transco-Taxi-Jaune",
+            "type": "mobility-database",
+            "mdb-id": "mdb-1964",
+            "extend-calendar": true,
+            "fix": true,
+            "skip": true,
+            "skip-reason": "Expired, extend-calendar ineffective (feed_end_date does not match calendar)"
+        }
+    ]
+}

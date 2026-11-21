@@ -34,7 +34,10 @@
         {
             "name": "ZFBiH",
             "type": "http",
-            "url": "https://owncloud.cesnet.cz/index.php/s/yWJhi9wjUIc3IC2/download"
+            "url": "https://hoermalmeister.github.io/gtfs-rehost/zfbih/zfbih.zip",
+            "license": {
+                "spdx-identifier": "CC-BY-NC-SA-4.0"
+            }
         },
         {
             "name": "Mostar",
@@ -44,9 +47,29 @@
         },
         {
             "name": "livnobus",
-            "type": "http",
-            "url": "https://livnobus.com/gtfs/google-transit",
-            "fix": true
+            "type": "mobility-database",
+            "fix": true,
+            "mdb-id": "mdb-3427"
+        },
+        {
+            "name": "nextbike-BIH",
+            "type": "mobility-database",
+            "mdb-id": "gbfs-nextbike_ba"
+        },
+        {
+            "name": "BL-bike",
+            "type": "mobility-database",
+            "mdb-id": "gbfs-nextbike_bj"
+        },
+        {
+            "name": "Zenica",
+            "type": "mobility-database",
+            "mdb-id": "gbfs-nextbike_bz"
+        },
+        {
+            "name": "Konzorcijum-Dinamik-Turs-i-Viena-Tour",
+            "type": "mobility-database",
+            "mdb-id": "mdb-3647"
         }
     ]
 }

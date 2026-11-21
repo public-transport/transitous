@@ -1,0 +1,21 @@
+{
+    "maintainers": [],
+    "sources": [
+        {
+            "name": "Петербургский-метрополитен---Petersburg-Metro",
+            "type": "mobility-database",
+            "mdb-id": "mdb-1186",
+            "extend-calendar": true,
+            "fix": true,
+            "skip": true,
+            "skip-reason": "Expired, extend-calendar ineffective (feed_end_date does not match calendar)"
+        },
+        {
+            "name": "Московский-транспорт---Moscow-Transport",
+            "type": "mobility-database",
+            "mdb-id": "mdb-3226",
+            "extend-calendar": true,
+            "fix": true
+        }
+    ]
+}

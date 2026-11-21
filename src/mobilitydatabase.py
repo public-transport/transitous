@@ -5,17 +5,68 @@
 from pathlib import Path
 from typing import Dict, Optional
 from metadata import UrlSource, HttpSource, Source, MobilityDatabaseSource, License, inherit_options_from_db_source
+from license_expression import get_spdx_licensing, ExpressionError, Licensing
 from utils import eprint
 import requests
 import csv
 import os
+import urllib
 
 
 class Database:
     by_id: Dict[str, dict]
+    licensing: Licensing
 
     def __init__(self):
         self.by_id = {}
+        self.licensing = get_spdx_licensing()
+
+    @staticmethod
+    def url_to_spdx(licensing: Licensing, url: str) -> Optional[str]:
+        parsed = urllib.parse.urlparse(url)
+        spdx_identifier = None
+
+        if parsed.hostname == "creativecommons.org":
+            path = iter(parsed.path.split("/"))
+            try:
+                next(path)
+                dir = next(path)
+
+                if dir == "licenses":
+                    cc_type = next(path).upper()
+                    version = next(path)
+                    document = next(path)
+                    country = None
+
+                    if not document.startswith("deed"):
+                        country = document.upper()
+
+                    if country:
+                        spdx_identifier = f"CC-{cc_type}-{version}-{country}"
+                    else:
+                        spdx_identifier = f"CC-{cc_type}-{version}"
+                elif dir == "publicdomain":
+                    cc_type = next(path)
+                    version = next(path)
+                    document = next(path)
+
+                    if document.startswith("deed"):
+                        match cc_type:
+                            case "zero":
+                                spdx_identifier = f"CC0-{version}"
+            except StopIteration:
+                pass
+        elif parsed.hostname == "opendatacommons.org":
+            if parsed.path.strip("/") == "licenses/odbl" or parsed.path.strip("/") == "licenses/odbl/1.0":
+                spdx_identifier = "ODbL-1.0"
+
+        try:
+            licensing.validate_license_keys(licensing.parse(spdx_identifier))
+        except ExpressionError as e:
+            spdx_identifier = None
+
+        return spdx_identifier
+
 
     @staticmethod
     def load() -> "Database":
@@ -74,6 +125,17 @@ class Database:
                 result.skip = source.skip
                 result.skip_reason = source.skip_reason
                 result.use_feed_proxy = source.use_feed_proxy
+            case "gbfs":
+                result = UrlSource()
+                result.name = source.name
+                if source.url_override:
+                    result.url = source.url_override
+                else:
+                    result.url = feed["urls.direct_download"]
+                result.spec = "gbfs"
+                result.skip = source.skip
+                result.skip_reason = source.skip_reason
+                result.use_feed_proxy = source.use_feed_proxy
             case data_type:
                 eprint("Warning: Found MDB source that we can't handle:",
                        source.mdb_id, "of type", data_type)
@@ -81,8 +143,9 @@ class Database:
 
         result.license = License()
 
-        if "license" in feed:
-            result.license.url = feed["license"]
+        if "urls.license" in feed and feed["urls.license"]:
+            result.license.url = feed["urls.license"]
+            result.license.spdx_identifier = Database.url_to_spdx(self.licensing, feed["urls.license"])
 
         # Allow to override these as mobility database does not have spdx-identifiers (yet)
         if source.license.spdx_identifier:

@@ -12,26 +12,31 @@
     "sources": [
         {
             "name": "zr-north-macedonia",
-            "type": "http",
-            "url": "https://hoermalmeister.github.io/gtfs-rehost/mzi/mzi.zip"
+            "type": "mobility-database",
+            "mdb-id": "mdb-3461"
         },
         {
             "name": "jsp",
-            "type": "http",
-            "url": "https://www.modeshift.app/api/v1/9814b106-2afe-47c8-919b-bdec6a5e521e/transport/gtfs/gtfs.zip",
-            "fix": true
+            "type": "mobility-database",
+            "fix": true,
+            "mdb-id": "mdb-3045"
         },
         {
             "name": "jsp",
-            "type": "url",
-            "spec": "gtfs-rt",
-            "url": "https://www.modeshift.app/api/v1/9814b106-2afe-47c8-919b-bdec6a5e521e/transport/gtfsrt/tripupdates.pb"
+            "type": "mobility-database",
+            "mdb-id": "mdb-3067",
+            "spec": "gtfs-rt"
         },
         {
             "name": "jsp",
-            "type": "url",
-            "spec": "gtfs-rt",
-            "url": "https://www.modeshift.app/api/v1/9814b106-2afe-47c8-919b-bdec6a5e521e/transport/gtfsrt/alerts.pb"
+            "type": "mobility-database",
+            "mdb-id": "mdb-3068",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "AD-Galeb",
+            "type": "mobility-database",
+            "mdb-id": "mdb-3653"
         }
-      ]
+    ]
 }
