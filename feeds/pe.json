@@ -12,6 +12,11 @@
             "name": "TMT-Trujillo---Gerencia-de-Transporte",
             "type": "mobility-database",
             "mdb-id": "mdb-2200"
+        },
+        {
+            "name": "Arequipa",
+            "type": "http",
+            "url": "https://github.com/trufi-association/trufi-arequipa/releases/download/v1.0.0/gtfs-arequipa.zip"
         }
     ]
 }
