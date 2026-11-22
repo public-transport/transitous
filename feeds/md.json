@@ -32,7 +32,9 @@
             "name": "Chișinău",
             "type": "mobility-database",
             "mdb-id": "mdb-2344",
-             "spec": "gtfs-rt"
+             "spec": "gtfs-rt",
+             "skip": true,
+             "skip-reason": "We currently don't make use of vehicle positions feeds"
         },
         {
             "name": "CFM",
