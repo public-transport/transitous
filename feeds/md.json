@@ -3,6 +3,10 @@
         {
             "name": "Jonah Brüchert",
             "github": "jbruechert"
+        },
+        {
+            "name": "Florea Costin Mario",
+            "github": "FloreaCostinMario"
         }
     ],
     "sources": [
@@ -10,18 +14,27 @@
             "name": "Chișinău",
             "type": "mobility-database",
             "mdb-id": "mdb-2341",
-            "license": {
-                "spdx-identifier": "CC-BY-SA-4.0"
-            },
             "extend-calendar": true
         },
         {
             "name": "Chișinău",
             "type": "mobility-database",
+            "mdb-id": "mdb-2342",
+            "spec": "gtfs-rt"
+        },
+        {
+            "name": "Chișinău",
+            "type": "mobility-database",
             "mdb-id": "mdb-2343",
-            "license": {
-                "spdx-identifier": "CC-BY-SA-4.0"
-            }
+             "spec": "gtfs-rt"
+        },
+        {
+            "name": "Chișinău",
+            "type": "mobility-database",
+            "mdb-id": "mdb-2344",
+             "spec": "gtfs-rt",
+             "skip": true,
+             "skip-reason": "We currently don't make use of vehicle positions feeds"
         },
         {
             "name": "CFM",
@@ -34,8 +47,8 @@
         },
         {
             "name": "Ungheni",
-            "type": "http",
-            "url": "https://github.com/UngheniTransport/gtfs/raw/main/ungheni_gtfs.zip",
+            "type": "mobility-database",
+            "mdb-id": "mdb-3046",
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             }
