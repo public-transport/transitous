@@ -27,6 +27,19 @@
             }
         },
         {
+            "name": "Carris-Metropolitana",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.carrismetropolitana.pt/v2/alerts.pb"
+        },
+        {
+            "name": "Carris-Metropolitana",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://api.carrismetropolitana.pt/v2/vehicles.pb",
+            "derive-trip-updates": true
+        },
+        {
             "name": "Carris",
             "type": "mobility-database",
             "mdb-id": "mdb-2929",
@@ -34,6 +47,13 @@
                 "spdx-identifier": "CC0-1.0"
             },
             "fix": true
+        },
+        {
+            "name": "Carris",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://gateway.carris.pt/gateway/gtfs/api/v2.8/GTFS/realtime/vehiclepositions",
+            "derive-trip-updates": true
         },
         {
             "name": "Metro-Lisboa",
