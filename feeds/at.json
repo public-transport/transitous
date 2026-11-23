@@ -192,9 +192,7 @@
             "default-timezone": "Europe/Vienna",
             "managed-by-script": true,
             "x-mvo-id": "78-2026",
-            "use-gtfsclean": false,
-            "skip": true,
-            "skip-reason": "Stay Seated forever during MOTIS import"
+            "use-gtfsclean": false
         },
         {
             "name": "PTA-Carinthia-Flex-2027",
@@ -210,9 +208,7 @@
             "default-timezone": "Europe/Vienna",
             "managed-by-script": true,
             "x-mvo-id": "78-2027",
-            "use-gtfsclean": false,
-            "skip": true,
-            "skip-reason": "Stay Seated forever during MOTIS import"
+            "use-gtfsclean": false
         },
         {
             "name": "PTA-Upper-Austria-Flex-2026",
