@@ -202,9 +202,7 @@
         {
             "name": "PATH",
             "type": "transitland-atlas",
-            "transitland-atlas-id": "f-dr5r-path~nj~us",
-            "skip": true,
-            "skip-reason": "authentication required"
+            "transitland-atlas-id": "f-dr5r-path~nj~us"
         },
         {
             "name": "MetroNorth",
