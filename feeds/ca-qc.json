@@ -89,7 +89,9 @@
             "name": "Exo-citduhaut-saint-laurent",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://birch.catenarymaps.org/gtfs_rt?feed_id=f-f259-exo~citduhaut~saint~laurent~rt&feed_type=trip"
+            "url": "https://birch.catenarymaps.org/gtfs_rt?feed_id=f-f259-exo~citduhaut~saint~laurent~rt&feed_type=trip",
+            "skip": true,
+            "skip-reason": "Feed expired"
         },
         {
             "name": "Exo-richelain-roussillon",
