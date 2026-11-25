@@ -81,7 +81,9 @@
         {
             "name": "Exo-citduhaut-saint-laurent",
             "type": "mobility-database",
-            "mdb-id": "mdb-745"
+            "mdb-id": "mdb-745",
+            "skip": true,
+            "skip-reason": "Feed expired"
         },
         {
             "name": "Exo-citduhaut-saint-laurent",
