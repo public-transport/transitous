@@ -194,6 +194,11 @@
             "url-override": "https://birch.catenarymaps.org/gtfs_rt?feed_id=f-mts~rt~onebusaway&feed_type=trip"
         },
         {
+            "name": "NCTD",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-9mu-northcountytransitdistrict"
+        },
+        {
             "name": "Monterey-Salinas-Transit",
             "type": "transitland-atlas",
             "transitland-atlas-id": "f-9q9-monterey~salinastransit"
