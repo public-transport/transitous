@@ -16,6 +16,7 @@
             "transitland-atlas-id": "f-9-amtrak~amtrakcalifornia~amtrakcharteredvehicle",
             "fix": true,
             "drop-shapes": false,
+            "url-override": "https://github.com/catenarytransit/amtrak-schedule-fixer/releases/download/latest/amtrak-gtfs-fixed.zip",
             "script": "us-amtrak.lua"
         },
         {
