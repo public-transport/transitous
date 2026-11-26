@@ -210,7 +210,8 @@
         {
             "name": "STO",
             "type": "mobility-database",
-            "mdb-id": "mdb-740"
+            "mdb-id": "mdb-740",
+            "fix": true
         },
         {
             "name": "STO",
