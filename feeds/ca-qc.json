@@ -81,13 +81,17 @@
         {
             "name": "Exo-citduhaut-saint-laurent",
             "type": "mobility-database",
-            "mdb-id": "mdb-745"
+            "mdb-id": "mdb-745",
+            "skip": true,
+            "skip-reason": "Feed expired"
         },
         {
             "name": "Exo-citduhaut-saint-laurent",
             "type": "url",
             "spec": "gtfs-rt",
-            "url": "https://birch.catenarymaps.org/gtfs_rt?feed_id=f-f259-exo~citduhaut~saint~laurent~rt&feed_type=trip"
+            "url": "https://birch.catenarymaps.org/gtfs_rt?feed_id=f-f259-exo~citduhaut~saint~laurent~rt&feed_type=trip",
+            "skip": true,
+            "skip-reason": "Feed expired"
         },
         {
             "name": "Exo-richelain-roussillon",
@@ -181,9 +185,33 @@
             "transitland-atlas-id": "f-f25f-rseaudetransportdelongueuil"
         },
         {
+            "name": "STL",
+            "type": "transitland-atlas",
+            "transitland-atlas-id": "f-f25e-societedetransportdelaval"
+        },
+        {
+            "name": "STL",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://apps.stl.laval.qc.ca/googlefeedtempsreel/v2/VehiculePositions.pb"
+        },
+        {
+            "name": "STL",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://apps.stl.laval.qc.ca/googlefeedtempsreel/v2/ServiceAlerts.pb"
+        },
+        {
+            "name": "STL",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://apps.stl.laval.qc.ca/googlefeedtempsreel/v2/TripUpdates.pb"
+        },
+        {
             "name": "STO",
             "type": "mobility-database",
-            "mdb-id": "mdb-740"
+            "mdb-id": "mdb-740",
+            "fix": true
         },
         {
             "name": "STO",
