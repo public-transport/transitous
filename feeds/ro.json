@@ -26,6 +26,13 @@
             "url": "https://rt.gtfs.baguette.pirnet.si/gtfs-rt/cfr-ro/trip_updates.pb"
         },
         {
+            "name": "railway",
+            "type": "url",
+            "spec": "siri",
+            "url": "AGE-ENCRYPTED:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBiYytNajN2blFXVnlIdEhJcU9CdXpocGRtcXhic2M5OU1sSFUwZlpwQmxZClNhWFZBbTlSWlZuKytmNU1iUzV3TnpXelFXMWxXN3RSNEc2N29pbHdvd1EKLS0tIDE4QTJIWUs4RHNOM3JkdC9iZUN6TWxWY3JUTE5KSkkxYzZjdDh1Mjg0aVkKNANeY+FQniSLFit+s1GGIuqhJ/kRuaQn87KdL4/qI3ZP8H9XCMIuhnkXzn0EwbAkXlzeIHRn2428NkWU7HiPkqD9O/DQXReMUhtDH3bTC9bIUPVpkYiam+iqxYczh1HNFA==",
+            "use-feed-proxy": true
+        },
+        {
             "name": "Alba-Iulia-Velocity",
             "type": "mobility-database",
             "license": {
