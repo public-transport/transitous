@@ -64,6 +64,11 @@ server {
                 {% endfor %}
             {% endif %}            
         }
+
+        # Stable URL per feed
+        location "/feed/{{item.value.url_hash_key}}" {
+            return 307 "/feed/{{item.key}}";
+        }
     {% endfor %}
 
     location @handle_redirects {
