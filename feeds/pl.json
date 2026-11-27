@@ -23,33 +23,6 @@
     ],
     "sources": [
         {
-            "name": "PKP-Intercity",
-            "type": "http",
-            "url": "https://gtfs.kasznia.net/static/pkp-ic.zip",
-            "script": "pl-PKP-Intercity.lua",
-            "license": {
-                "spdx-identifier": "CC-BY-4.0"
-            }
-        },
-        {
-            "name": "PKP-Intercity",
-            "type": "url",
-            "spec": "gtfs-rt",
-            "url": "https://gtfs.kasznia.net/rt/pkpicshim.pb",
-            "license": {
-                "spdx-identifier": "CC-BY-4.0"
-            },
-            "use-feed-proxy": true
-        },
-        {
-            "name": "PKP-Intercity-Germany",
-            "type": "http",
-            "url": "https://kasmar00.github.io/gtfs-pkp-de/latest.zip",
-            "license": {
-                "spdx-identifier": "CC-BY-4.0"
-            }
-        },
-        {
             "name": "Polish-Trains",
             "type": "http",
             "spec": "gtfs",
@@ -57,9 +30,6 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             },
-            "drop-agency-names": [
-                "PKP Intercity"
-            ],
             "script": "pl-polish-trains.lua",
             "fix": true
         },
