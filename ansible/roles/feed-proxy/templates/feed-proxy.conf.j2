@@ -172,6 +172,11 @@ server {
         location "/feed/{{item.key}}" {
             proxy_pass http://127.0.0.1:8081; 
         }
+
+        # Stable URL per feed
+        location "/feed/{{item.value.url_hash_key}}" {
+            return 307 "/feed/{{item.key}}";
+        }
     {% endfor %}
 }
 
