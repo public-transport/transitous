@@ -272,3 +272,11 @@ def transport_victoria_latest_resource(source: HttpSource) -> HttpSource:
     url = requests.get('https://opendata.transport.vic.gov.au/api/3/action/package_show?id=gtfs-schedule').json()['result']['resources'][0]['url']
     source.url = url + source.url
     return source
+
+def bgnap_latest_resource(source: HttpSource) -> HttpSource:
+    buckets = requests.get(source.url).json()
+    buckets.sort(key=lambda b: b["updated_at"])
+    bucket_id = buckets[0]["id"]
+
+    source.url = f"https://sipbg.gov.bg/bgnap/portal/api/catalog/files/{bucket_id}/download"
+    return source

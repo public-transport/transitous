@@ -134,11 +134,6 @@
             }
         },
         {
-            "name": "blagoevgrad",
-            "type": "http",
-            "url": "https://www.modeshift.app/api/v1/d2835d46-0fbd-4d65-aa94-a17a6304b460/transport/gtfs/gtfs.zip"
-        },
-        {
             "name": "stara-zagora",
             "type": "http",
             "url": "https://gtfs.livetransport.eu/gtfs/stara-zagora.zip",
@@ -178,6 +173,235 @@
             "license": {
                 "spdx-identifier": "CC-BY-4.0"
             }
+        },
+        {
+            "name": "blagoevgrad",
+            "type": "http",
+            "url": "https://sipbg.gov.bg/bgnap/portal/api/catalog/subsets/8da4ffaf-7e59-45e6-934c-185da3fe941a/files?format=gtfs-static",
+            "function": "bgnap_latest_resource",
+            "x-bgnap-subset-id": "8da4ffaf-7e59-45e6-934c-185da3fe941a"
+        },
+        {
+            "name": "blagoevgrad",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://sipbg.gov.bg/bgnap/portal/api/catalog/subsets/70d74136-1f87-4bab-b939-049798202b0d/realtime-download",
+            "x-bgnap-type": "trip_updates",
+            "x-bgnap-subset-id": "70d74136-1f87-4bab-b939-049798202b0d"
+        },
+        {
+            "name": "blagoevgrad",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://sipbg.gov.bg/bgnap/portal/api/catalog/subsets/aafbee49-fee4-4628-932b-41d87edc6ca7/realtime-download",
+            "x-bgnap-type": "alerts",
+            "x-bgnap-subset-id": "aafbee49-fee4-4628-932b-41d87edc6ca7"
+        },
+        {
+            "name": "blagoevgrad",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://sipbg.gov.bg/bgnap/portal/api/catalog/subsets/7effef39-63d3-4240-a99a-cd83d2eea1b3/realtime-download",
+            "x-bgnap-type": "vehicle_positions",
+            "x-bgnap-subset-id": "7effef39-63d3-4240-a99a-cd83d2eea1b3"
+        },
+        {
+            "name": "dobrich-city",
+            "type": "http",
+            "url": "https://sipbg.gov.bg/bgnap/portal/api/catalog/subsets/a88870a1-ea5d-4d1c-a693-8b6b8f5e007f/files?format=gtfs-static",
+            "function": "bgnap_latest_resource",
+            "x-bgnap-subset-id": "a88870a1-ea5d-4d1c-a693-8b6b8f5e007f"
+        },
+        {
+            "name": "operator-bulgarian-railways",
+            "type": "http",
+            "url": "https://sipbg.gov.bg/bgnap/portal/api/catalog/subsets/28055fe4-d0da-4471-a1b9-13c434e6d5d9/files?format=gtfs-static",
+            "function": "bgnap_latest_resource",
+            "x-bgnap-subset-id": "28055fe4-d0da-4471-a1b9-13c434e6d5d9",
+            "skip": true,
+            "skip-reason": "We use the postprocessed livetransport.eu feed instead"
+        },
+        {
+            "name": "operator-bulgarian-railways",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://sipbg.gov.bg/bgnap/portal/api/catalog/subsets/cddd12ef-5ae8-46a6-9afc-faeaafbc552d/realtime-download",
+            "x-bgnap-type": "vehicle_positions",
+            "x-bgnap-subset-id": "cddd12ef-5ae8-46a6-9afc-faeaafbc552d",
+            "skip": true,
+            "skip-reason": "We use the postprocessed livetransport.eu feed instead"
+        },
+        {
+            "name": "operator-bulgarian-railways",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://sipbg.gov.bg/bgnap/portal/api/catalog/subsets/cc43fe99-141e-4eb8-bef1-cae144870a0f/realtime-download",
+            "x-bgnap-type": "trip_updates",
+            "x-bgnap-subset-id": "cc43fe99-141e-4eb8-bef1-cae144870a0f"
+        },
+        {
+            "name": "sofia-city-sofia",
+            "type": "http",
+            "url": "https://sipbg.gov.bg/bgnap/portal/api/catalog/subsets/3835bc33-1329-439b-8255-8bd28521f661/files?format=gtfs-static",
+            "function": "bgnap_latest_resource",
+            "x-bgnap-subset-id": "3835bc33-1329-439b-8255-8bd28521f661"
+        },
+        {
+            "name": "sofia-city-sofia",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://sipbg.gov.bg/bgnap/portal/api/catalog/subsets/64f07726-eeb0-448e-b656-29ccc801845c/realtime-download",
+            "x-bgnap-type": "trip_updates",
+            "x-bgnap-subset-id": "64f07726-eeb0-448e-b656-29ccc801845c"
+        },
+        {
+            "name": "sofia-city-sofia",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://sipbg.gov.bg/bgnap/portal/api/catalog/subsets/1c6438f1-7af2-4086-ba52-99b6ee8d2e86/realtime-download",
+            "x-bgnap-type": "vehicle_positions",
+            "x-bgnap-subset-id": "1c6438f1-7af2-4086-ba52-99b6ee8d2e86"
+        },
+        {
+            "name": "sofia-city-sofia",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://sipbg.gov.bg/bgnap/portal/api/catalog/subsets/be58ab91-298f-43f4-bbd7-f95097c1353e/realtime-download",
+            "x-bgnap-type": "alerts",
+            "x-bgnap-subset-id": "be58ab91-298f-43f4-bbd7-f95097c1353e"
+        },
+        {
+            "name": "pleven-trolly-transport",
+            "type": "http",
+            "url": "https://sipbg.gov.bg/bgnap/portal/api/catalog/subsets/c02d5871-8bf4-4e3f-90fd-be704fbed53b/files?format=gtfs-static",
+            "function": "bgnap_latest_resource",
+            "x-bgnap-subset-id": "c02d5871-8bf4-4e3f-90fd-be704fbed53b"
+        },
+        {
+            "name": "sofia-province-samokov",
+            "type": "http",
+            "url": "https://sipbg.gov.bg/bgnap/portal/api/catalog/subsets/552cd733-dd87-4f9c-a90b-800c62ab923e/files?format=gtfs-static",
+            "function": "bgnap_latest_resource",
+            "x-bgnap-subset-id": "552cd733-dd87-4f9c-a90b-800c62ab923e"
+        },
+        {
+            "name": "sofia-province-samokov",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://sipbg.gov.bg/bgnap/portal/api/catalog/subsets/575a4271-f333-4eb4-b4ce-845e5b0a8a6e/realtime-download",
+            "x-bgnap-type": "trip_updates",
+            "x-bgnap-subset-id": "575a4271-f333-4eb4-b4ce-845e5b0a8a6e"
+        },
+        {
+            "name": "sofia-province-samokov",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://sipbg.gov.bg/bgnap/portal/api/catalog/subsets/981b8dc8-5788-482c-aaaf-93d4f7dcf2a7/realtime-download",
+            "x-bgnap-type": "alerts",
+            "x-bgnap-subset-id": "981b8dc8-5788-482c-aaaf-93d4f7dcf2a7"
+        },
+        {
+            "name": "sofia-province-samokov",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://sipbg.gov.bg/bgnap/portal/api/catalog/subsets/3f92f836-5958-4735-ae6e-d23a22f49467/realtime-download",
+            "x-bgnap-type": "vehicle_positions",
+            "x-bgnap-subset-id": "3f92f836-5958-4735-ae6e-d23a22f49467"
+        },
+        {
+            "name": "stara-zagora-kazanlak",
+            "type": "http",
+            "url": "https://sipbg.gov.bg/bgnap/portal/api/catalog/subsets/552207f4-972b-414a-841c-482887868b6e/files?format=gtfs-static",
+            "function": "bgnap_latest_resource",
+            "x-bgnap-subset-id": "552207f4-972b-414a-841c-482887868b6e"
+        },
+        {
+            "name": "stara-zagora-trolleys-and-busses",
+            "type": "http",
+            "url": "https://sipbg.gov.bg/bgnap/portal/api/catalog/subsets/5ebdbc00-eb3a-44fd-9ccd-a99f55173fd6/files?format=gtfs-static",
+            "function": "bgnap_latest_resource",
+            "x-bgnap-subset-id": "5ebdbc00-eb3a-44fd-9ccd-a99f55173fd6"
+        },
+        {
+            "name": "stara-zagora-trolleys-and-busses",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://sipbg.gov.bg/bgnap/portal/api/catalog/subsets/67103be8-34e3-43b0-952f-439c1144477b/realtime-download",
+            "x-bgnap-type": "trip_updates",
+            "x-bgnap-subset-id": "67103be8-34e3-43b0-952f-439c1144477b"
+        },
+        {
+            "name": "stara-zagora-trolleys-and-busses",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://sipbg.gov.bg/bgnap/portal/api/catalog/subsets/cbc776c2-14c8-46e5-a33e-c1f27f5a7eab/realtime-download",
+            "x-bgnap-type": "alerts",
+            "x-bgnap-subset-id": "cbc776c2-14c8-46e5-a33e-c1f27f5a7eab"
+        },
+        {
+            "name": "stara-zagora-trolleys-and-busses",
+            "type": "url",
+            "spec": "gtfs-rt",
+            "url": "https://sipbg.gov.bg/bgnap/portal/api/catalog/subsets/2903167d-48d9-497e-b8ce-18efb07946bf/realtime-download",
+            "x-bgnap-type": "vehicle_positions",
+            "x-bgnap-subset-id": "2903167d-48d9-497e-b8ce-18efb07946bf"
+        },
+        {
+            "name": "sliven",
+            "type": "http",
+            "url": "https://sipbg.gov.bg/bgnap/portal/api/catalog/subsets/491cbb70-d03f-4eeb-8acf-825559522d66/files?format=gtfs-static",
+            "function": "bgnap_latest_resource",
+            "x-bgnap-subset-id": "491cbb70-d03f-4eeb-8acf-825559522d66"
+        },
+        {
+            "name": "varna-sets",
+            "type": "http",
+            "url": "https://sipbg.gov.bg/bgnap/portal/api/catalog/subsets/37e52323-bd13-4820-8781-541abd81575c/files?format=gtfs-static",
+            "function": "bgnap_latest_resource",
+            "x-bgnap-subset-id": "37e52323-bd13-4820-8781-541abd81575c"
+        },
+        {
+            "name": "veliko-tarnovo",
+            "type": "http",
+            "url": "https://sipbg.gov.bg/bgnap/portal/api/catalog/subsets/d0d92c19-41f8-4367-a4f9-c75d612da4d4/files?format=gtfs-static",
+            "function": "bgnap_latest_resource",
+            "x-bgnap-subset-id": "d0d92c19-41f8-4367-a4f9-c75d612da4d4"
+        },
+        {
+            "name": "plovdiv",
+            "type": "http",
+            "url": "https://sipbg.gov.bg/bgnap/portal/api/catalog/subsets/9094922e-0863-411f-95ac-2dd1395c6979/files?format=gtfs-static",
+            "function": "bgnap_latest_resource",
+            "x-bgnap-subset-id": "9094922e-0863-411f-95ac-2dd1395c6979"
+        },
+        {
+            "name": "yambol",
+            "type": "http",
+            "url": "https://sipbg.gov.bg/bgnap/portal/api/catalog/subsets/d5dc78f3-dbb8-40ee-965e-4e6eb7106a05/files?format=gtfs-static",
+            "function": "bgnap_latest_resource",
+            "x-bgnap-subset-id": "d5dc78f3-dbb8-40ee-965e-4e6eb7106a05",
+            "extend-calendar": true
+        },
+        {
+            "name": "stara-zagora-inter-municipal",
+            "type": "http",
+            "url": "https://sipbg.gov.bg/bgnap/portal/api/catalog/subsets/4f3725ec-7018-4411-bb4e-49753b121b17/files?format=gtfs-static",
+            "function": "bgnap_latest_resource",
+            "x-bgnap-subset-id": "4f3725ec-7018-4411-bb4e-49753b121b17"
+        },
+        {
+            "name": "stara-zagora-municipal",
+            "type": "http",
+            "url": "https://sipbg.gov.bg/bgnap/portal/api/catalog/subsets/ca6acd49-5c4d-49b3-9416-dbdd5db98b44/files?format=gtfs-static",
+            "function": "bgnap_latest_resource",
+            "x-bgnap-subset-id": "ca6acd49-5c4d-49b3-9416-dbdd5db98b44"
+        },
+        {
+            "name": "silistra-2026",
+            "type": "http",
+            "url": "https://sipbg.gov.bg/bgnap/portal/api/catalog/subsets/b6b5279b-55d0-47f5-8bf1-53d8f5b647e8/files?format=gtfs-static",
+            "function": "bgnap_latest_resource",
+            "x-bgnap-subset-id": "b6b5279b-55d0-47f5-8bf1-53d8f5b647e8"
         }
     ]
 }
