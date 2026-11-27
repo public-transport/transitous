@@ -1,0 +1,18 @@
+{
+    "maintainers": [
+        {
+            "name": "PakBus",
+            "github": "pakbusapp"
+        }
+    ],
+    "sources": [
+        {
+            "name": "pakbus",
+            "type": "http",
+            "url": "https://pakbus.app/gtfs/pakbus.zip",
+            "license": {
+                "url": "https://pakbus.app/data#data-use"
+            }
+        }
+    ]
+}
