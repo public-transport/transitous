@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>Errance</title>
+  <rect width="64" height="64" rx="14" fill="#0b6bcb"/>
+  <g fill="none" stroke-width="6" stroke-linecap="round">
+    <path d="M20 14 H44" stroke="#ff6b5b"/>
+    <path d="M20 32 H38" stroke="#5ee08a"/>
+    <path d="M20 50 H44" stroke="#ffd24d"/>
+    <path d="M20 14 V50" stroke="#fff"/>
+  </g>
+  <g fill="#fff">
+    <circle cx="44" cy="14" r="5"/>
+    <circle cx="38" cy="32" r="5"/>
+    <circle cx="44" cy="50" r="5"/>
+  </g>
+</svg>
