@@ -61,7 +61,10 @@
                 "Nachtverkehr",
                 "Nachtverkehr Ausstieg",
                 "Tram CTS-Strasbourg",
-                "SNCF"
+                "SNCF",
+                "Bus Binder & Wolf",
+                "Bus Sonstige / Private",
+                "Stadtverkehr Pforzheim"
             ],
             "http-options": {
                 "fetch-interval-days": 2
