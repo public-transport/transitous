@@ -114,8 +114,6 @@
             "type": "http",
             "url": "https://dadosabertos.cm-porto.pt/dataset/horarios-paragens-e-rotas-stcp",
             "function": "data_stcp_latest_resource",
-            "skip": true,
-            "skip-reason": "Newest feed on the Porto open data portal expired on 2026-09-23",
             "license": {
                 "spdx-identifier": "CC0-1.0"
             }
