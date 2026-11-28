@@ -216,7 +216,7 @@ if __name__ == "__main__":
                     if not "rt" in config["timetable"]["datasets"][key]:
                         continue
                     for i, rt_feed in enumerate(config["timetable"]["datasets"][key]["rt"]):
-                        feed_vars[key + '-' + str(i)] = rt_feed + {
+                        feed_vars[key + '-' + str(i)] = rt_feed | {
                             'url_hash_key': key + '-' + hashlib.sha256(rt_feed['url'].encode()).hexdigest()[:8]
                         }
                 for key in config["gbfs"]["feeds"]:
