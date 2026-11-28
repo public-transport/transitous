@@ -75,6 +75,10 @@ server {
         return 403 "Generic user-agent headers are not allowed, please set your own. Please review the usage policy: https://transitous.org/api/";
     }
 
+    if ($http_user_agent ~* "(DB Hafas|Mixroutes|Linienblick|lostfoundations.org|s7-info.de|D6PNV-991|ipad-dashboard-privat|abfahrt-dashboard|toyu-provider)") {
+         return 403 "Please review the usage policy: https://transitous.org/api/. Make sure to include contact information and link to the source code.";
+    }
+
     # IP-addresses that have ignored usage policy, should be blocked and shown an according message
     # deny <ip-address>
     deny 208.113.190.160;  # distanzechilometriche.net/2.0
