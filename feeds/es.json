@@ -1900,6 +1900,12 @@
             "fix": true
         },
         {
+            "name": "EMT-Madrid-(CRTM)",
+            "type": "http",
+            "url": "https://crtm.maps.arcgis.com/sharing/rest/content/items/868df0e58fca47e79b942902dffd7da0/data",
+            "fix": true
+        },
+        {
             "name": "Barcelona-ATM",
             "type": "mobility-database",
             "mdb-id": "mdb-2826",
